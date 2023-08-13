@@ -8729,7 +8729,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 6
 		prerequisite = { 
-			#focus = POL_women_in_parlament 
+			#focus = POL_women_in_parlament
 			focus = POL_every_adult_men_in_parlament
 		}
 		relative_position_id = POL_every_adult_men_in_parlament
@@ -9180,7 +9180,9 @@ focus_tree = {
 		}
 		bypass = {
 			HUN = {
-				has_government = neutrality
+				HUN_deluge_andrassy_sandor = {
+					is_country_leader = yes
+				}
 			}
 		}
 		cancel_if_invalid = yes		
@@ -9673,20 +9675,70 @@ focus_tree = {
 		x = 4
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 8
 		prerequisite = { focus = POL_one_dynasty_two_institutions focus = POL_creation_of_real_union }
 		relative_position_id = POL_creation_of_real_union
 		available = {
 			
 		}
+		select_effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = POL
+					}
+					OR = {
+						owns_state = 62
+						owns_state = 807
+						owns_state = 85
+						owns_state = 63
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
 		completion_reward = {
-			
+			every_country = {
+				limit = {
+					NOT = {
+						tag = POL
+					}
+					OR = {
+						owns_state = 62
+						owns_state = 807
+						owns_state = 85
+						owns_state = 63
+					}
+				}
+				ROOT = {
+					create_wargoal = {
+						type = take_claimed_state
+						generator = {807 85 63 62}
+						target = PREV
+					}
+				}
+			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 40
+			modifier = {
+				if = {
+					limit = {
+						date < 1939.6.6
+					}
+				}
+				factor = 0
+			}
 		}
 		bypass = {
-			
+			POL = {
+				owns_state = 62
+				owns_state = 63
+				owns_state = 807
+				owns_state = 85
+			}
 		}
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
@@ -9698,14 +9750,90 @@ focus_tree = {
 		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 10
 		prerequisite = { focus = POL_retake_pomerania }
 		relative_position_id = POL_retake_pomerania
 		available = {
-			
+			POL = {
+				owns_state = 62
+				owns_state = 63
+				owns_state = 807
+				owns_state = 85
+			}
 		}
 		completion_reward = {
-			
+			62 = {
+				add_core_of = POL
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			62 = {
+				add_building_construction = {
+					type = naval_base
+					province = 6282
+					level = 2
+					instant_build = yes
+				}
+			}
+			63 = {
+				add_core_of = POL
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			85 = {
+				add_core_of = POL
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			85 = {
+				add_building_construction = {
+					type = naval_base
+					province = 362
+					level = 2
+					instant_build = yes
+				}
+			}
+			807 = {
+				add_core_of = POL
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -9723,20 +9851,53 @@ focus_tree = {
 		x = -1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 8
 		prerequisite = { focus = POL_retake_pomerania }
 		relative_position_id = POL_retake_pomerania
 		available = {
-			
+			has_global_flag = german_civil_war_ended
+		}
+		select_effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = POL
+						}
+					}
+					OR = {
+						owns_state = 68
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
 		}
 		completion_reward = {
-			
+			every_country = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = POL
+						}
+					}
+					OR = {
+						owns_state = 68
+					}
+				}
+				country_event = {
+					id = deluge_poland_foreign.70
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 40
 		}
 		bypass = {
-			
+			POL = {
+				owns_state = 68
+			}
 		}
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
@@ -9748,14 +9909,35 @@ focus_tree = {
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 6
 		prerequisite = { focus = POL_ultimatum_for_germany }
 		relative_position_id = POL_ultimatum_for_germany
 		available = {
-			
+			POL = {
+				owns_state = 68
+				controls_state = 68
+			}
 		}
 		completion_reward = {
-			
+			68 = {
+				add_core_of = POL
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -9806,9 +9988,116 @@ focus_tree = {
 		x = 1
 		y = 2
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 8
 		prerequisite = { focus = POL_one_dynasty_two_institutions focus = POL_creation_of_real_union }
 		relative_position_id = POL_creation_of_real_union
+		available = {
+			country_exists = TUR
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = TUR
+			}
+			add_war_support = 0.05
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		will_lead_to_war_with = TUR
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_retake_slovakia
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		x = -2
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 8
+		prerequisite = { focus = POL_one_dynasty_two_institutions focus = POL_creation_of_real_union }
+		relative_position_id = POL_creation_of_real_union
+		available = {
+			
+		}
+		select_effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = POL
+							tag = HUN
+						}
+					}
+					OR = {
+						owns_state = 73
+						owns_state = 664
+						owns_state = 71
+						owns_state = 70
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = POL
+							tag = HUN
+						}
+					}
+					OR = {
+						owns_state = 73
+						owns_state = 664
+						owns_state = 71
+						owns_state = 70
+					}
+				}
+				country_event = {
+					id = deluge_poland_foreign.86
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			OR = {
+				POL = {
+					owns_state = 664
+					owns_state = 73
+					owns_state = 71
+					owns_state = 70
+				}
+				HUN = {
+					owns_state = 664
+					owns_state = 73
+					owns_state = 71
+					owns_state = 70
+				}
+			}
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_demand_czechia
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 9
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 8
+		#prerequisite = { focus = POL_retake_slovakia}
+		relative_position_id = POL_elections_for_new_king
 		available = {
 			
 		}
@@ -9826,14 +10115,14 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = POL_retake_slovakia
-		icon = GFX_focus_RAJ_lions_of_the_great_war
-		x = -2
+		id = POL_develop_czechia
+		icon = GFX_forced_urbanization
+		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
-		prerequisite = { focus = POL_one_dynasty_two_institutions focus = POL_creation_of_real_union }
-		relative_position_id = POL_creation_of_real_union
+		cost = 8
+		prerequisite = { focus = POL_demand_czechia}
+		relative_position_id = POL_demand_czechia
 		available = {
 			
 		}
@@ -9856,14 +10145,177 @@ focus_tree = {
 		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 10
 		prerequisite = { focus = POL_retake_slovakia }
 		relative_position_id = POL_retake_slovakia
 		available = {
-			
+			OR = {
+				AND = {
+					owns_state = 73
+					controls_state = 73
+				}
+				AND = {
+					73 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 151
+					controls_state = 151
+				}
+				AND = {
+					151 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 71
+					controls_state = 71
+				}
+				AND = {
+					71 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 70
+					controls_state = 70
+				}
+				AND = {
+					70 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 664
+					controls_state = 664
+				}
+				AND = {
+					664 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			71 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			70 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			73 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			664 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = POL_creation_of_real_union
+				}
+				71 = {
+					add_core_of = POL
+				}
+				70 = {
+					add_core_of = POL
+				}
+				73 = {
+					add_core_of = POL
+				}
+				664 = {
+					add_core_of = POL
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = POL_one_dynasty_two_institutions
+				}
+				71 = {
+					add_core_of = HUN
+				}
+				70 = {
+					add_core_of = HUN
+				}
+				73 = {
+					add_core_of = HUN
+				}
+				664 = {
+					add_core_of = HUN
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = POL_one_dynasty_two_institutions
+						has_completed_focus = POL_creation_of_real_union
+					}
+				}
+				custom_effect_tooltip = POL_custom_effect_tooltip_264
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -9881,14 +10333,109 @@ focus_tree = {
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 9
 		prerequisite = { focus = POL_build_up_slovakia }
 		relative_position_id = POL_build_up_slovakia
 		available = {
-			
+			OR = {
+				AND = {
+					owns_state = 73
+					controls_state = 73
+				}
+				AND = {
+					73 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 151
+					controls_state = 151
+				}
+				AND = {
+					151 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 71
+					controls_state = 71
+				}
+				AND = {
+					71 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 70
+					controls_state = 70
+				}
+				AND = {
+					70 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 664
+					controls_state = 664
+				}
+				AND = {
+					664 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			70 = {
+				infrastructure > 4
+			}
+			71 = {
+				infrastructure > 4
+			}
+			73 = {
+				infrastructure > 4
+			}
+			664 = {
+				infrastructure > 4
+			}
 		}
 		completion_reward = {
-			
+			add_resource = {
+				type = tungsten
+				amount = 10
+				state = 70
+			}
+			add_resource = {
+				type = chromium
+				amount = 10
+				state = 664
+			}
+			add_resource = {
+				type = steel
+				amount = 23
+				state = 71
+			}
+			add_resource = {
+				type = oil
+				amount = 10
+				state = 73
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -9906,21 +10453,32 @@ focus_tree = {
 		x = -6
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 7
 		prerequisite = { focus = POL_one_dynasty_two_institutions focus = POL_creation_of_real_union }
 		relative_position_id = POL_creation_of_real_union
 		available = {
-			
+			CRO = {
+				has_capitulated = no
+				is_subject = no
+			}
+			country_exists = CRO
 		}
 		completion_reward = {
-			
+			CRO = {
+				country_event = {
+					id = deluge_poland_foreign.80
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 40
 		}
 		bypass = {
-			
+			CRO = {
+				is_subject_of = POL
+			}
 		}
+		will_lead_to_war_with = CRO
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
 		available_if_capitulated = yes
@@ -9931,20 +10489,72 @@ focus_tree = {
 		x = -4
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 8
 		prerequisite = { focus = POL_one_dynasty_two_institutions focus = POL_creation_of_real_union }
 		relative_position_id = POL_creation_of_real_union
 		available = {
 			
 		}
+		select_effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = POL
+							tag = HUN
+						}
+					}
+					OR = {
+						owns_state = 45
+						owns_state = 151
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_completed_focus = POL_creation_of_real_union
+				}
+				45 = {
+					add_core_of = POL
+				}
+			}
+			every_country = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = POL
+							tag = HUN
+						}
+					}
+					OR = {
+						owns_state = 45
+						owns_state = 151
+					}
+				}
+				country_event = {
+					id = deluge_poland_foreign.83
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 40
 		}
 		bypass = {
-			
+			OR = {
+				POL = {
+					owns_state = 45
+					owns_state = 151
+				}
+				HUN = {
+					owns_state = 45
+					owns_state = 151
+				}
+			}
 		}
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
@@ -9956,15 +10566,238 @@ focus_tree = {
 		x = -1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 14
 		prerequisite = { focus = POL_retake_vojvodina }
 		prerequisite = { focus = POL_restore_union_with_croatia }
 		relative_position_id = POL_retake_vojvodina
 		available = {
-			
+			OR = {
+				AND = {
+					owns_state = 45
+					controls_state = 45
+				}
+				AND = {
+					45 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 151
+					controls_state = 151
+				}
+				AND = {
+					151 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 109
+					controls_state = 109
+				}
+				AND = {
+					109 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 104
+					controls_state = 104
+				}
+				AND = {
+					104 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 103
+					controls_state = 103
+				}
+				AND = {
+					103 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_completed_focus = POL_creation_of_real_union
+				}
+				109 = {
+					add_core_of = POL
+				}
+				103 = {
+					add_core_of = POL
+				}
+				104 = {
+					add_core_of = POL
+				}
+				853 = {
+					add_core_of = POL
+				}
+				102 = {
+					add_core_of = POL
+				}
+				736 = {
+					add_core_of = POL
+				}
+				852 = {
+					add_core_of = POL
+				}
+				151 = {
+					add_core_of = POL
+				}
+				if = {
+					limit = {
+						CRO = {
+							is_subject_of = POL
+						}
+					}
+					annex_country = {
+						target = CRO
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = POL_one_dynasty_two_institutions
+				}
+				109 = {
+					add_core_of = HUN
+				}
+				103 = {
+					add_core_of = HUN
+				}
+				104 = {
+					add_core_of = HUN
+				}
+				853 = {
+					add_core_of = HUN
+				}
+				102 = {
+					add_core_of = HUN
+				}
+				736 = {
+					add_core_of = HUN
+				}
+				852 = {
+					add_core_of = HUN
+				}
+				151 = {
+					add_core_of = HUN
+				}
+				if = {
+					limit = {
+						CRO = {
+							is_subject_of = POL
+						}
+					}
+					HUN = {
+						annex_country = {
+							target = CRO
+							transfer_troops = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = POL_one_dynasty_two_institutions
+						has_completed_focus = POL_creation_of_real_union
+					}
+				}
+				custom_effect_tooltip = POL_custom_effect_tooltip_263
+			}
+			109 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			103 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			104 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			45 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			151 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_resource = {
+				type = tungsten
+				amount = 10
+				state = 104
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -9972,6 +10805,7 @@ focus_tree = {
 		bypass = {
 			
 		}
+		will_lead_to_war_with = CRO
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
 		available_if_capitulated = yes
@@ -9982,14 +10816,17 @@ focus_tree = {
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 5
 		prerequisite = { focus = POL_creation_of_real_union }
 		relative_position_id = POL_creation_of_real_union
 		available = {
 			
 		}
 		completion_reward = {
-			
+			country_event = {
+				id = deluge_poland.95
+			}
+			custom_effect_tooltip = POL_custom_effect_tooltip_259
 		}
 		ai_will_do = {
 			factor = 40
@@ -10017,6 +10854,31 @@ focus_tree = {
 		completion_reward = {
 			promote_character = POL_deluge_andrzej_walewski
 			set_party_name = { ideology = neutrality long_name = POL_walewski_name_long name = POL_walewski_name_short }
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_contact_less_radical_AF_members
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_bonaparte_bastard_wins }
+		relative_position_id = POL_bonaparte_bastard_wins
+		available = {
+			
+		}
+		completion_reward = {
+			
 		}
 		ai_will_do = {
 			factor = 40
