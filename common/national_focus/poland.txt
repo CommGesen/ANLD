@@ -39,7 +39,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_death_of_marshal
-		icon = GFX_death_of_marshall
+		icon = GFX_focus_POL_death_of_marshall
 		x = 10
 		y = 0.1
 		cost = 2
@@ -102,7 +102,7 @@ focus_tree = {
 	
 	focus = {
 		id = POL_smigly_wins
-		icon = GFX_smigly
+		icon = GFX_focus_POL_rydz_smigly_won
 		x = -3
 		y = 1
 		prerequisite = { focus = POL_continue_with_sanation }
@@ -222,7 +222,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_oppose_sanation
-		icon = GFX_focus_POL_ban_nazi_party
+		icon = GFX_focus_POL_oppose_sanation
 		x = 50
 		y = 1
 		prerequisite = { focus = POL_death_of_marshal }
@@ -2207,7 +2207,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_invite_ND_to_government
-		icon = GFX_goal_endecja_cooperation
+		icon = GFX_focus_POL_endecja_cooperation
 		x = 3
 		y = 1
 		prerequisite = { focus = POL_sikorski_wins }
@@ -2790,7 +2790,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_establish_zadruga
-		icon = GFX_focus_zadruga_logo
+		icon = GFX_focus_POL_zadruga_logo
 		x = -5
 		y = 1
 		prerequisite = { focus = POL_purge_the_party }
@@ -3149,7 +3149,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_repair_polish_ideomatrix
-		icon = GFX_light_bulb
+		icon = GFX_focus_generic_light_bulb
 		x = 1
 		y = 1
 		prerequisite = { focus = POL_mass_propagation_of_anthropocentrism }
@@ -3677,7 +3677,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_seek_support_from_ND
-		icon = GFX_goal_endecja_cooperation
+		icon = GFX_focus_POL_endecja_cooperation
 		x = -1
 		y = 1
 		prerequisite = { focus = POL_piasecki_wins}
@@ -3707,7 +3707,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_ONR_takes_over
-		icon = GFX_onr_falanga_logo2
+		icon = GFX_focus_POL_ONR_falanga
 		x = 6
 		y = 1
 		prerequisite = { focus = POL_purge_the_party}
@@ -4114,7 +4114,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_unite_with_onr_abc
-		icon = GFX_ONR_ABC
+		icon = GFX_focus_POL_ONR_ABC
 		x = 0
 		y = 1
 		prerequisite = { focus = POL_catholic_youth_organisations}
@@ -5863,7 +5863,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_ND_wins
-		icon = GFX_goal_endecja
+		icon = GFX_focus_POL_endecja
 		x = -2
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -6646,7 +6646,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_improve_states_healthcare
-		icon = GFX_improve_states_healthcare
+		icon = GFX_focus_POL_improve_states_healthcare
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT}
@@ -6769,7 +6769,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_birth_of_new_republic
-		icon = GFX_POL_birth_of_new_republic
+		icon = GFX_focus_POL_birth_of_new_republic
 		x = 0
 		y = 2
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -7420,7 +7420,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_reform_3rd_may_consitution
-		icon = GFX_new_polish_constitution
+		icon = GFX_focus_POL_new_polish_constitution
 		x = -1
 		y = 2
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -7578,7 +7578,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_cooperate_with_remnants_of_zadruga
-		icon = GFX_focus_zadruga_logo
+		icon = GFX_focus_POL_zadruga_logo
 		x = 2
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -8932,7 +8932,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_technocratic_government
-		icon = GFX_light_bulb
+		icon = GFX_focus_generic_light_bulb
 		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -10841,7 +10841,7 @@ focus_tree = {
 	focus = {
 		id = POL_bonaparte_bastard_wins
 		icon = GFX_old_bonaparte_emblem
-		x = -4
+		x = -7
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 1
@@ -10866,14 +10866,95 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
+		id = POL_ancient_regime
+		icon = GFX_focus_SWI_neutrality_on_the_move
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 6
+		prerequisite = { focus = POL_bonaparte_bastard_wins }
+		relative_position_id = POL_bonaparte_bastard_wins
+		mutually_exclusive = {
+			focus = POL_modern_regime
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
 		id = POL_contact_less_radical_AF_members
 		icon = GFX_focus_SOV_ivan_plays_baseball
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 5
+		prerequisite = { focus = POL_ancient_regime }
+		relative_position_id = POL_ancient_regime
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_modern_regime
+		icon = GFX_focus_focus_fra_third_empire
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 6
 		prerequisite = { focus = POL_bonaparte_bastard_wins }
 		relative_position_id = POL_bonaparte_bastard_wins
+		mutually_exclusive = {
+			focus = POL_ancient_regime
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_mix_napoleonic_code_and_constitution_of_3rd_may
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 5
+		prerequisite = { focus = POL_modern_regime }
+		relative_position_id = POL_modern_regime
 		available = {
 			
 		}
@@ -11417,7 +11498,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_PPS_wins
-		icon = GFX_pps_logo
+		icon = GFX_focus_POL_PPS
 		x = -12
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -12088,7 +12169,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_PKWN_wins
-		icon = GFX_goal_pkwn
+		icon = GFX_focus_POL_PKWN
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -12479,7 +12560,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_reform_into_pzpr
-		icon = GFX_goal_pzpr
+		icon = GFX_focus_POL_PZPR
 		x = 0
 		y = 1
 		search_filters = {}
@@ -12599,7 +12680,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_new_five_year_plan
-		icon = GFX_new_five_year_plan
+		icon = GFX_focus_POL_new_five_year_plan
 		x = -2
 		y = 1
 		search_filters = {}
@@ -13075,7 +13156,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_workers_militia
-		icon = GFX_generic_socialist_action
+		icon = GFX_focus_POL_ORMO
 		x = 14
 		y = 1
 		search_filters = {}
@@ -13249,7 +13330,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_political_commissars_in_army
-		icon = GFX_political_commissars_in_army
+		icon = GFX_focus_generic_political_commissars_in_army
 		x = 2
 		y = 1
 		search_filters = {}
@@ -13287,7 +13368,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_apolitical_army
-		icon = GFX_apolitical_army
+		icon = GFX_focus_generic_apolitical_army
 		x = 0
 		y = 1
 		search_filters = {}
@@ -13462,7 +13543,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_new_radical_constitution
-		icon = GFX_new_radical_constitution
+		icon = GFX_focus_generic_new_radical_constitution
 		x = 1
 		y = 1
 		search_filters = {}
@@ -13492,7 +13573,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_NSPR_wins
-		icon = GFX_goal_nspr
+		icon = GFX_focus_POL_NSPR
 		x = 14
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -14452,7 +14533,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_first_great_wave_of_promotions
-		icon = GFX_officer_promotions_1
+		icon = GFX_focus_generic_officer_promotions_1
 		x = -3
 		y = 1
 		search_filters = {FOCUS_FILTER_LAND_ARMY}
@@ -14481,7 +14562,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_second_great_wave_of_promotions
-		icon = GFX_officer_promotions_2
+		icon = GFX_focus_generic_officer_promotions_2
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_LAND_ARMY}
@@ -14520,7 +14601,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_third_great_wave_of_promotions
-		icon = GFX_officer_promotions_3
+		icon = GFX_focus_generic_officer_promotions_3
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_LAND_ARMY}
@@ -14587,7 +14668,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_special_training_in_iran
-		icon = GFX_iran_training
+		icon = GFX_focus_generic_iran_training
 		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_LAND_ARMY}

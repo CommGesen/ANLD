@@ -1129,4 +1129,16 @@ leader_traits = {
 		political_power_factor = 0.05
 		neutrality_drift = 0.05
 	}
+	weak_claim = {
+		random = no
+		war_support_factor = -0.05
+		stability_factor = -0.05
+		political_power_factor = -0.1
+	}
+	mentally_ill = {
+		random = no
+		political_power_factor = -0.05
+		stability_factor = -0.1
+		war_support_factor = -0.1
+	}
 }
