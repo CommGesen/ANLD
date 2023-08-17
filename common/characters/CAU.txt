@@ -1,4 +1,17 @@
 characters={
+	CAU_sergo_ordzhonikidze={
+		name = CAU_sergo_ordzhonikidze
+		portraits={
+			civilian={
+				large="gfx/leaders/CAU/portrait_CAU_sergo_ordzhonikidze.dds"
+			}
+		}
+		country_leader={
+			ideology=marxist_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	CAU_ioseb_jughashvili={
 		name="Ioseb Jughashvili"
 		portraits={

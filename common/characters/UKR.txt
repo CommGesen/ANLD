@@ -1,4 +1,17 @@
 characters={
+	UKR_sydir_kovpak={
+		name = UKR_sydir_kovpak
+		portraits={
+			civilian={
+				large="gfx/leaders/UKR/portrait_UKR_sydir_kovpak.dds"
+			}
+		}
+		country_leader={
+			ideology=jacobin_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	UKR_nestor_makhno={
 		name="Nestor Makhno"
 		portraits={
