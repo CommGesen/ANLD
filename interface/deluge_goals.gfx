@@ -6133,18 +6133,16 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = { 
-		name = "GFX_polish_resistance"
-		texturefile = "gfx/interface/goals/polish_resistance.dds"
+		name = "GFX_focus_POL_resistance2"
+		texturefile = "gfx/interface/goals/focus_POL_resistance2.dds"
 	}
-
 	SpriteType = { 
-		name = "GFX_polish_resistance_shine"
-		texturefile = "gfx/interface/goals/polish_resistance.dds"
+		name = "GFX_focus_POL_resistance2_shine"
+		texturefile = "gfx/interface/goals/focus_POL_resistance2.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/polish_resistance.dds"
+			animationmaskfile = "gfx/interface/goals/focus_POL_resistance2.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -6156,7 +6154,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/polish_resistance.dds"
+			animationmaskfile = "gfx/interface/goals/focus_POL_resistance2.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -6169,12 +6167,10 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = { 
 		name = "GFX_political_arrests"
 		texturefile = "gfx/interface/goals/political_arrests.dds"
 	}
-
 	SpriteType = { 
 		name = "GFX_political_arrests_shine"
 		texturefile = "gfx/interface/goals/political_arrests.dds"

@@ -421,6 +421,9 @@ focus_tree = {
 				add_idea = POL_scythian_national_myth
 				remove_idea = POL_colourful_national_myths
 			}
+			country_event = {
+				id = deluge_poland.103
+			}
 		}
 		ai_will_do = {
 			factor = 20
@@ -5030,7 +5033,7 @@ focus_tree = {
 				create_country_leader = {
 					name = "Pius XII"
 					desc = "pius_xii_desc"
-					picture = "GFX_portrait_ITA_papa_pio_xii"
+					picture = "gfx/leaders/ITA/portrait_ITA_papa_pio_xii.dds"
 					expire = "1965.1.1"
 					ideology = reactionary_ideology
 					traits = {
@@ -8666,7 +8669,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_healthcare_reform
-		icon = GFX_improve_states_healthcare
+		icon = GFX_focus_POL_improve_states_healthcare
 		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -9676,7 +9679,7 @@ focus_tree = {
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 8
-		prerequisite = { focus = POL_one_dynasty_two_institutions focus = POL_creation_of_real_union }
+		prerequisite = { focus = POL_one_dynasty_two_institutions focus = POL_creation_of_real_union focus = POL_restore_commonwealth focus = POL_restore_grand_duchy }
 		relative_position_id = POL_creation_of_real_union
 		available = {
 			
@@ -10974,7 +10977,7 @@ focus_tree = {
 	focus = {
 		id = POL_tyszkiewicz_wins
 		icon = GFX_tyszkiewicz_emblem
-		x = 6
+		x = 9
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 1
@@ -10996,6 +10999,670 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_invite_exiled_lithuanian_royalists
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_tyszkiewicz_wins }
+		relative_position_id = POL_tyszkiewicz_wins
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_demand_lithuanian_lands_from_baltia
+		icon = GFX_goal_demand_sudetenland
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_invite_exiled_lithuanian_royalists }
+		relative_position_id = POL_invite_exiled_lithuanian_royalists
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_demand_lithuanian_lands_from_belarus
+		icon = GFX_goal_demand_sudetenland
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_invite_exiled_lithuanian_royalists }
+		relative_position_id = POL_invite_exiled_lithuanian_royalists
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_restore_commonwealth
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_demand_lithuanian_lands_from_baltia }
+		prerequisite = { focus = POL_demand_lithuanian_lands_from_belarus }
+		relative_position_id = POL_demand_lithuanian_lands_from_baltia
+		mutually_exclusive = {
+			focus = POL_restore_grand_duchy
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_restore_grand_duchy
+		icon = GFX_focus_LIT_restore_the_grand_duchy
+		x = 2
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_demand_lithuanian_lands_from_baltia }
+		prerequisite = { focus = POL_demand_lithuanian_lands_from_belarus }
+		relative_position_id = POL_demand_lithuanian_lands_from_baltia
+		mutually_exclusive = {
+			focus = POL_restore_commonwealth
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_solving_restoration_problems
+		icon = GFX_focus_generic_home_defense
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_restore_grand_duchy focus = POL_restore_commonwealth }
+		relative_position_id = POL_restore_commonwealth
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_retake_ukraine
+		icon = GFX_focus_POL_ukrainian_army
+		x = -4
+		y = 2
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 2
+		prerequisite = { focus = POL_restore_grand_duchy focus = POL_restore_commonwealth }
+		relative_position_id = POL_restore_commonwealth
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_develop_ukraine
+		icon = GFX_focus_POL_ukrainian_army
+		x = 0
+		y = 2
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 2
+		prerequisite = { focus = POL_retake_ukraine }
+		relative_position_id = POL_retake_ukraine
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_retake_belarus
+		icon = GFX_focus_POL_belarus_army
+		x = -2
+		y = 2
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_restore_grand_duchy focus = POL_restore_commonwealth }
+		relative_position_id = POL_restore_commonwealth
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_develop_belarus
+		icon = GFX_focus_POL_belarus_army
+		x = 0
+		y = 2
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_retake_belarus }
+		relative_position_id = POL_retake_belarus
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_retake_our_old_lands_from_russia
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_retake_belarus focus = POL_retake_ukraine }
+		relative_position_id = POL_retake_ukraine
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_reintegrate_russian_lands
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 2
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_retake_our_old_lands_from_russia }
+		relative_position_id = POL_retake_our_old_lands_from_russia
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_polonization_of_lithuania
+		icon = GFX_POL_pressure_lithuania
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_solving_restoration_problems}
+		relative_position_id = POL_solving_restoration_problems
+		mutually_exclusive = {
+			focus = POL_mutual_respect
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_mutual_respect 
+		icon = GFX_blue_red_handshake
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_solving_restoration_problems}
+		relative_position_id = POL_solving_restoration_problems
+		mutually_exclusive = {
+			focus = POL_polonization_of_lithuania
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_respect_baltic_peoples
+		icon = GFX_focus_generic_baltic_entente
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_mutual_respect}
+		prerequisite = { focus = POL_incorporate_livonia}
+		relative_position_id = POL_mutual_respect
+		mutually_exclusive = {
+			focus = POL_polonize_livonia
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_respect_ruthenian_nations
+		icon = GFX_focus_SOV_free_Rutenia
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_mutual_respect}
+		prerequisite = { focus = POL_retake_belarus}
+		prerequisite = { focus = POL_retake_ukraine}
+		relative_position_id = POL_mutual_respect
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_republic_of_three_nations
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		#prerequisite = { focus = POL_respect_baltic_peoples}
+		prerequisite = { focus = POL_respect_ruthenian_nations}
+		relative_position_id = POL_respect_ruthenian_nations
+		mutually_exclusive = {
+			focus = POL_republic_of_four_nations
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_republic_of_four_nations
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 2
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_respect_baltic_peoples}
+		prerequisite = { focus = POL_respect_ruthenian_nations}
+		relative_position_id = POL_respect_ruthenian_nations
+		mutually_exclusive = {
+			focus = POL_republic_of_three_nations
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_polonize_kresy
+		icon = GFX_focus_POL_resistance2
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_polonization_of_lithuania}
+		prerequisite = { focus = POL_retake_belarus}
+		prerequisite = { focus = POL_retake_ukraine}
+		relative_position_id = POL_polonization_of_lithuania
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_develop_lithuania
+		icon = GFX_focus_generic_industry_2
+		x = 3
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_restore_grand_duchy focus = POL_restore_commonwealth }
+		relative_position_id = POL_restore_commonwealth
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_retake_livonia
+		icon = GFX_focus_LIT_reclaim_courland 
+		x = 3
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_restore_commonwealth focus = POL_restore_grand_duchy }
+		relative_position_id = POL_restore_grand_duchy
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_autonomus_duchy_of_livonia
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_retake_livonia }
+		relative_position_id = POL_retake_livonia
+		mutually_exclusive = {
+			focus = POL_incorporate_livonia
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_incorporate_livonia
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_retake_livonia }
+		relative_position_id = POL_retake_livonia
+		mutually_exclusive = {
+			focus = POL_autonomus_duchy_of_livonia
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_polonize_livonia
+		icon = GFX_focus_SOV_baltic_security
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_incorporate_livonia}
+		relative_position_id = POL_incorporate_livonia
+		mutually_exclusive = {
+			focus = POL_respect_baltic_peoples
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_develop_livonia
+		icon = GFX_goal_generic_construction
+		x = 3
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_incorporate_livonia focus = POL_autonomus_duchy_of_livonia }
+		relative_position_id = POL_incorporate_livonia
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 		available_if_capitulated = yes
 	}
 	focus = {

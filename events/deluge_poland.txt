@@ -7,7 +7,7 @@ country_event = {#Rydz wants to change flag and abolishes monarchy
 	desc = deluge_poland.1.d
 	picture = GFX_polish_flag
 	is_triggered_only = yes
-	option = { ##new flag
+	option = {##new flag
 		trigger = {
 			NOT = {
 				has_cosmetic_tag = POL_empire
@@ -19,7 +19,7 @@ country_event = {#Rydz wants to change flag and abolishes monarchy
 		set_cosmetic_tag = POL_rzeczpospolita
 		ai_chance = {factor = 1}
 	}
-	option = { #old flag
+	option = {#old flag
 		name = deluge_poland.1.b
 		add_political_power = 50
 		ai_chance = {factor = 1}
@@ -2788,6 +2788,7 @@ country_event = {##Prophet Ilja becames famous
 				modifier = POL_religious_sect_of_wierszalin
 			}
 		}
+		custom_effect_tooltip = POL_custom_effect_tooltip_161
 		ai_chance = {
 			base = 1
 		}
@@ -3006,7 +3007,7 @@ country_event = {##POL-HUN chooses new capital
 	id = deluge_poland.95
 	title = deluge_poland.95.t
 	desc = deluge_poland.95.d
-	picture = GFX_deluge_paris ##change it later to warsaw mermaid
+	picture = GFX_report_event_warsaw_mermaid
 	is_triggered_only = yes
 	option = {##Warsaw
 		name = deluge_poland.95.a
@@ -3052,6 +3053,182 @@ country_event = {##POL-HUN chooses new capital
 			}
 		}
 		set_capital = {state = 43}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##dealing with prophet Ilja
+	id = deluge_poland.96
+	title = deluge_poland.96.t
+	desc = deluge_poland.96.d
+	picture = GFX_report_event_prophet_ilja
+	is_triggered_only = yes
+	option = {##arrest him and his followers
+		name = deluge_poland.96.a
+		custom_effect_tooltip = POL_custom_effect_tooltip_159
+		hidden_effect = {
+			country_event = {
+				id = deluge_poland.98
+				days = 350
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {##show his followers that his actions are fake
+		name = deluge_poland.96.b
+		custom_effect_tooltip = POL_custom_effect_tooltip_158
+		hidden_effect = {
+			country_event = {
+				id = deluge_poland.97
+				days = 100
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##dealing with prophet Ilja - showing fakeness of Ilja
+	id = deluge_poland.97
+	title = deluge_poland.97.t
+	desc = deluge_poland.97.d
+	picture = GFX_report_event_prophet_ilja
+	is_triggered_only = yes
+	option = {##Ilja escapes
+		name = deluge_poland.97.a
+		hidden_effect = {
+			country_event = {
+				id = deluge_poland.99
+				days = 30
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {##Ilja dies
+		name = deluge_poland.97.b
+		hidden_effect = {
+			country_event = {
+				id = deluge_poland.100
+				days = 3
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##dealing with prophet Ilja - arresting him and his followers
+	id = deluge_poland.98
+	title = deluge_poland.98.t
+	desc = deluge_poland.98.d
+	picture = GFX_report_event_wierszalin_cult
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland.98.a
+		97 = {
+			remove_dynamic_modifier = {
+				modifier = POL_religious_sect_of_wierszalin
+			}
+			add_manpower = -1000
+		}
+		add_stability = -0.03
+		add_political_power = 20
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##dealing with prophet Ilja - Ilja goes missing
+	id = deluge_poland.99
+	title = deluge_poland.99.t
+	desc = deluge_poland.99.d
+	picture = GFX_report_event_wierszalins_cross
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland.99.a
+		97 = {
+			remove_dynamic_modifier = {
+				modifier = POL_religious_sect_of_wierszalin
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##dealing with prophet Ilja - Ilja dies
+	id = deluge_poland.100
+	title = deluge_poland.100.t
+	desc = deluge_poland.100.d
+	picture = GFX_report_event_wierszalins_cross
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland.100.a
+		97 = {
+			remove_dynamic_modifier = {
+				modifier = POL_religious_sect_of_wierszalin
+			}
+		}
+		add_stability = -0.01
+		add_political_power = 10
+		add_manpower = -900
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##tymbark established
+	id = deluge_poland.101
+	title = deluge_poland.101.t
+	desc = deluge_poland.101.d
+	picture = GFX_report_event_tymbark
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date > 1936.6.6
+	}
+	option = {
+		name = deluge_poland.101.a
+		add_political_power = 10
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##tymbark achieves international success
+	id = deluge_poland.102
+	title = deluge_poland.102.t
+	desc = deluge_poland.102.d
+	picture = GFX_report_event_tymbark
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date > 1941.1.1
+	}
+	option = {
+		name = deluge_poland.102.a
+		add_political_power = 50
+		add_to_variable = {POL_development_consumer_goods_factor = -0.01}
+		custom_effect_tooltip = POL_custom_effect_tooltip_160
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##lore event about sarmatians
+	id = deluge_poland.103
+	title = deluge_poland.103.t
+	desc = deluge_poland.103.d
+	picture = GFX_report_report_event_sarmatian
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland.103.a
+		add_political_power = 5
 		ai_chance = {
 			base = 1
 		}
@@ -7775,7 +7952,7 @@ country_event = {##POL demands from every owner of every state of Slovakia (664,
 	id = deluge_poland_foreign.86
 	title = deluge_poland_foreign.86.t
 	desc = deluge_poland_foreign.86.d
-	picture = GFX_report_event_polish_border ##change it later to polish slovakian border
+	picture = GFX_report_event_polish_slovakian_border
 	is_triggered_only = yes
 	option = {##accept
 		name = deluge_poland_foreign.86.a
@@ -7994,7 +8171,7 @@ country_event = {##POL sees that owner(s) of Slovakia reject POL demands
 	id = deluge_poland_foreign.87
 	title = deluge_poland_foreign.87.t
 	desc = deluge_poland_foreign.87.d
-	picture = GFX_report_event_polish_border ##change it later to polish slovakian border
+	picture = GFX_report_event_polish_slovakian_border
 	is_triggered_only = yes
 	option = {##do nothing
 		name = deluge_poland_foreign.87.a
@@ -8155,7 +8332,7 @@ news_event = {##global event that POL-HUN union get Slovakia
 	id = deluge_poland_foreign.88
 	title = deluge_poland_foreign.88.t
 	desc = deluge_poland_foreign.88.d
-	picture = GFX_report_event_polish_border ##change it later to polish slovak border
+	picture = GFX_news_event_polish_slovakian_border
 	is_triggered_only = yes
 	option = {
 		name = deluge_poland_foreign.88.a

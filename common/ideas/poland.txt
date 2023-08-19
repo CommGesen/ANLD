@@ -3225,6 +3225,24 @@ ideas = {
 				neutrality_drift = 0.05
 			}
 		}
+		the_gratitude_of_the_church = {
+			picture = SPR_appropriate_church_riches 
+			allowed = {
+				
+			}
+			available = {
+				#empty
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
 	}
 	tank_manufacturer = {
 		designer = yes

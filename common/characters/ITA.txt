@@ -11,7 +11,6 @@ characters={
 			ideology=corporatist_ideology
 			traits={ great_dictator }
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	ITA_pietro_badoglio={
@@ -31,7 +30,6 @@ characters={
 			defense_skill=1
 			planning_skill=2
 			logistics_skill=1
-			legacy_id=-1
 		}
 	}
 	ITA_emilio_de_bono={
@@ -51,7 +49,6 @@ characters={
 			defense_skill=2
 			planning_skill=1
 			logistics_skill=1
-			legacy_id=-1
 		}
 	}
 	ITA_ugo_cavallero={
@@ -71,7 +68,6 @@ characters={
 			defense_skill=1
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=-1
 		}
 	}
 	ITA_giovanni_messe={
@@ -91,7 +87,6 @@ characters={
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=4
-			legacy_id=-1
 		}
 	}
 	ITA_sebastiano_visconti_prasca={
@@ -111,7 +106,6 @@ characters={
 			defense_skill=1
 			planning_skill=1
 			logistics_skill=2
-			legacy_id=-1
 		}
 	}
 	ITA_ubaldo_soddu={
@@ -131,7 +125,6 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=1
-			legacy_id=-1
 		}
 	}
 	ITA_italo_balbo={
@@ -151,7 +144,6 @@ characters={
 			defense_skill=2
 			planning_skill=1
 			logistics_skill=1
-			legacy_id=-1
 		}
 	}
 	ITA_rodolfo_graziani={
@@ -171,7 +163,6 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=2
-			legacy_id=-1
 		}
 	}
 	ITA_inigo_campioni={
@@ -191,7 +182,6 @@ characters={
 			defense_skill=1
 			maneuvering_skill=1
 			coordination_skill=1
-			legacy_id=-1
 		}
 	}
 	ITA_alberto_da_zara={
@@ -211,7 +201,6 @@ characters={
 			defense_skill=1
 			maneuvering_skill=1
 			coordination_skill=1
-			legacy_id=-1
 		}
 	}
 	ITA_giuseppe_fioravanzo={
@@ -231,7 +220,6 @@ characters={
 			defense_skill=1
 			maneuvering_skill=1
 			coordination_skill=1
-			legacy_id=-1
 		}
 	}
 	ITA_carlo_bergamini={
@@ -251,7 +239,6 @@ characters={
 			defense_skill=1
 			maneuvering_skill=1
 			coordination_skill=1
-			legacy_id=-1
 		}
 	}
 	ITA_angelo_iachino={
@@ -271,11 +258,10 @@ characters={
 			defense_skill=1
 			maneuvering_skill=1
 			coordination_skill=1
-			legacy_id=-1
 		}
 	}
 	ITA_joachim_iii={
-		name="Joachim III"
+		name="Joachim VI"
 		portraits={
 			civilian={
 				large="gfx/leaders/ITA/joachim_murat.dds"
@@ -285,33 +271,30 @@ characters={
 			desc="italian_king_desc"
 			ideology=bonapartist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	ITA_antonio_gramsci={
 		name="Antonio Gramsci"
 		portraits={
 			civilian={
-				large="gfx/leaders/ITA/gramsci.dds"
+				large="gfx/leaders/ITA/portrait_ITA_antonio_gramsci.dds"
 			}
 		}
 		country_leader={
 			ideology=marxist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	ITA_alcide_de_gasperi={
 		name="Alcide De Gasperi"
 		portraits={
 			civilian={
-				large="gfx/leaders/ITA/alcide_de_gasperi.dds"
+				large="gfx/leaders/ITA/portrait_ITA_alcide_de_gasperi.dds"
 			}
 		}
 		country_leader={
 			ideology=liberal_republican_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 }
