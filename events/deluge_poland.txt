@@ -3234,6 +3234,131 @@ country_event = {##lore event about sarmatians
 		}
 	}
 }
+country_event = {##PLC chooses new capital
+	id = deluge_poland.104
+	title = deluge_poland.104.t
+	desc = deluge_poland.104.d
+	picture = GFX_report_event_warsaw_mermaid
+	is_triggered_only = yes
+	option = {##Warsaw
+		name = deluge_poland.104.a
+		trigger = {
+			POL = {
+				owns_state = 10
+			}
+		}
+		set_capital = {state = 10}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {##Kraków
+		name = deluge_poland.104.b
+		trigger = {
+			POL = {
+				owns_state = 88
+			}
+		}
+		set_capital = {state = 88}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {##Lublin
+		name = deluge_poland.104.c
+		trigger = {
+			POL = {
+				owns_state = 92
+			}
+		}
+		set_capital = {state = 92}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {##other options
+		name = deluge_poland.104.e
+		country_event = {
+			id = deluge_poland.105
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##PLC chooses new capital - other options
+	id = deluge_poland.105
+	title = deluge_poland.105.t
+	desc = deluge_poland.105.d
+	picture = GFX_report_event_warsaw_mermaid
+	is_triggered_only = yes
+	option = {##Poznań
+		name = deluge_poland.105.a
+		trigger = {
+			POL = {
+				owns_state = 86
+			}
+		}
+		set_capital = {state = 86}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {##Wilno/Vilnius
+		name = deluge_poland.105.b
+		trigger = {
+			POL = {
+				owns_state = 96
+			}
+		}
+		set_capital = {state = 96}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {##Kaunas/Kowno
+		name = deluge_poland.105.c
+		trigger = {
+			POL = {
+				owns_state = 11
+			}
+		}
+		set_capital = {state = 11}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {##previous options
+		name = deluge_poland.105.e
+		country_event = {
+			id = deluge_poland.104
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##restoration issues - question of direction
+	id = deluge_poland.106
+	title = deluge_poland.106.t
+	desc = deluge_poland.106.d
+	picture = GFX_report_event_plc_emblem
+	is_triggered_only = yes
+	option = {##mutual respect
+		name = deluge_poland.106.a
+		set_country_flag = POL_polonization_rejected
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {##polonization
+		name = deluge_poland.106.b
+		set_country_flag = POL_polonization_accepted
+		ai_chance = {
+			base = 1
+		}
+	}
+}
 country_event = {##POL proposes defense pact to UK
 	id = deluge_poland_foreign.1
 	title = deluge_poland_foreign.1.t
@@ -6933,6 +7058,10 @@ country_event = {##HUN gets ultimatum to be in personal union with Poland
 				end_civil_wars = no
 			}
 		}
+		HUN = {
+			promote_character = HUN_deluge_andrassy_sandor
+			set_party_name = { ideology = neutrality long_name = HUN_andrassy_party_long name = HUN_andrassy_party_short }
+		}
 		hidden_effect = {
 			news_event = {
 				id = deluge_poland_foreign.76
@@ -7021,6 +7150,10 @@ country_event = {##HUN gets ultimatum to be in personal union with Poland
 				end_civil_wars = no
 			}
 			set_country_flag = POL_HUN_disallowed_real_union
+		}
+		HUN = {
+			promote_character = HUN_deluge_andrassy_sandor
+			set_party_name = { ideology = neutrality long_name = HUN_andrassy_party_long name = HUN_andrassy_party_short }
 		}
 		ai_chance = {
 			base = 30
@@ -8336,5 +8469,362 @@ news_event = {##global event that POL-HUN union get Slovakia
 	is_triggered_only = yes
 	option = {
 		name = deluge_poland_foreign.88.a
+	}
+}
+country_event = {##POL demands Lithuanian lands from Belarus or Baltia 
+	id = deluge_poland_foreign.89
+	title = deluge_poland_foreign.89.t
+	desc = deluge_poland_foreign.89.d
+	picture = GFX_report_event_polish_border2
+	is_triggered_only = yes
+	option = {##accept
+		name = deluge_poland_foreign.89.a
+		hidden_effect = {
+			POL = {
+				country_event = {
+					id = deluge_poland_foreign.91
+				}
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					owns_state = 96
+				}
+			}
+			96 = {
+				transfer_state_to = POL
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					owns_state = 95
+				}
+			}
+			95 = {
+				transfer_state_to = POL
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					owns_state = 815
+				}
+			}
+			815 = {
+				transfer_state_to = POL
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					owns_state = 189
+				}
+			}
+			189 = {
+				transfer_state_to = POL
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					owns_state = 11
+				}
+			}
+			11 = {
+				transfer_state_to = POL
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					owns_state = 814
+				}
+			}
+			814 = {
+				transfer_state_to = POL
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					owns_state = 188
+				}
+			}
+			188 = {
+				transfer_state_to = POL
+			}
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {##reject
+		name = deluge_poland_foreign.89.b
+		hidden_effect = {
+			POL = {
+				country_event = {
+					id = deluge_poland_foreign.90
+				}
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+}
+country_event = {##POL sees that owner(s) of Lithuanian lands didn't wanted to give them to POL
+	id = deluge_poland_foreign.90
+	title = deluge_poland_foreign.90.t
+	desc = deluge_poland_foreign.90.d
+	picture = GFX_report_event_polish_border2
+	is_triggered_only = yes
+	option = {##do nothing
+		name = deluge_poland_foreign.90.a
+		add_war_support = -0.05
+		add_political_power = 10
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {##create wargoal
+		name = deluge_poland_foreign.90.b
+		create_wargoal = {
+			type = take_claimed_state
+			generator = {96 95 815 11 189 188 814}
+			target = FROM
+		}
+		add_stability = 0.02
+		add_war_support = -0.05
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.2
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.2 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+	option = {##attack owner now now
+		name = deluge_poland_foreign.90.c
+		POL = {
+			declare_war_on = {
+				target = FROM
+				type = take_claimed_state
+				generator = {96 95 815 11 189 188 814}
+			}
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+}
+country_event = {##POL gets info that it gets Lithuanian lands
+	id = deluge_poland_foreign.91
+	title = deluge_poland_foreign.91.t
+	desc = deluge_poland_foreign.91.d
+	picture = GFX_report_event_polish_border2
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland_foreign.91.a
+		ai_chance = {
+			base = 100
+		}
 	}
 }

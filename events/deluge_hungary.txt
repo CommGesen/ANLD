@@ -1,6 +1,6 @@
 add_namespace = deluge_hungary
 add_namespace = deluge_hungary_foreign
-country_event = {
+country_event = {##ai only - monarchist Hungary fully
 	id = deluge_hungary.1
 	title = deluge_hungary.1.t
 	desc = deluge_hungary.1.d
@@ -33,7 +33,7 @@ country_event = {
 		set_country_flag = HUN_horthy_monarchist_won
 		ai_chance = {factor = 1}
 	}
-	option = { #legitimist party wons snap elections
+	option = { #legitimist party wins snap elections
 		name = deluge_hungary.1.b
 		HUN = {country_event = {id = deluge_hungary.2}}
 		set_politics = {
@@ -46,7 +46,7 @@ country_event = {
 		ai_chance = {factor = 1}
 	}
 }
-country_event = {##monarchist chooses king
+country_event = {##monarchist chooses king - ai only
 	id = deluge_hungary.2
 	title = deluge_hungary.2.t
 	desc = deluge_hungary.2.d
@@ -96,6 +96,7 @@ country_event = {##monarchist chooses king
 	}
 	option = { #Andrássy 
 		name = deluge_hungary.2.c
+		set_party_name = { ideology = neutrality long_name = HUN_andrassy_party_long name = HUN_andrassy_party_short }
 		if = {
 			limit = {HUN = {has_country_flag = HUN_king_monarchist_won}}
 			promote_character = HUN_deluge_andrassy_sandor
@@ -115,7 +116,7 @@ country_event = {##monarchist chooses king
 		ai_chance = {factor = 1}
 	}
 }
-country_event = {##fascism Hungary
+country_event = {##fascist Hungary
 	id = deluge_hungary.3
 	title = deluge_hungary.3.t
 	desc = deluge_hungary.3.d
@@ -128,6 +129,7 @@ country_event = {##fascism Hungary
 		}
 		POL = {
 			has_completed_focus = POL_continue_with_sanation
+			has_completed_focus = POL_radicals_takeover
 		}
 	}
 	mean_time_to_happen = {

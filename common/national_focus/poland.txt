@@ -223,7 +223,7 @@ focus_tree = {
 	focus = {
 		id = POL_oppose_sanation
 		icon = GFX_focus_POL_oppose_sanation
-		x = 50
+		x = 51
 		y = 1
 		prerequisite = { focus = POL_death_of_marshal }
 		relative_position_id = POL_death_of_marshal
@@ -9249,21 +9249,98 @@ focus_tree = {
 				HUN = {
 					is_subject_of = POL
 				}
-				POL = {
-					owns_state = 76
-					controls_state = 76
-					owns_state = 84
-					controls_state = 84
-					owns_state = 83
-					controls_state = 83
-					owns_state = 82
-					controls_state = 82
-					owns_state = 154
-					controls_state = 154
-					owns_state = 43
-					controls_state = 43
-					owns_state = 155
-					controls_state = 155
+				AND = {
+					OR = {
+						AND = {
+							owns_state = 154
+							controls_state = 154
+						}
+						AND = {
+							154 = {
+								owner = {
+									is_subject_of = POL
+								}
+							}
+						}
+					}
+					OR = {
+						AND = {
+							owns_state = 82
+							controls_state = 82
+						}
+						AND = {
+							82 = {
+								owner = {
+									is_subject_of = POL
+								}
+							}
+						}
+					}
+					OR = {
+						AND = {
+							owns_state = 83
+							controls_state = 83
+						}
+						AND = {
+							83 = {
+								owner = {
+									is_subject_of = POL
+								}
+							}
+						}
+					}
+					OR = {
+						AND = {
+							owns_state = 84
+							controls_state = 84
+						}
+						AND = {
+							84 = {
+								owner = {
+									is_subject_of = POL
+								}
+							}
+						}
+					}
+					OR = {
+						AND = {
+							owns_state = 76
+							controls_state = 76
+						}
+						AND = {
+							76 = {
+								owner = {
+									is_subject_of = POL
+								}
+							}
+						}
+					}
+					OR = {
+						AND = {
+							owns_state = 43
+							controls_state = 43
+						}
+						AND = {
+							43 = {
+								owner = {
+									is_subject_of = POL
+								}
+							}
+						}
+					}
+					OR = {
+						AND = {
+							owns_state = 155
+							controls_state = 155
+						}
+						AND = {
+							155 = {
+								owner = {
+									is_subject_of = POL
+								}
+							}
+						}
+					}
 				}
 			}
 			NOT = {
@@ -11014,13 +11091,54 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			add_stability = 0.05
+			if = {
+				limit = {
+					country_exists = BAL
+				}
+				BAL = {
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.1
+					}
+					add_political_power = 100
+				}
+			}
+			if = {
+				limit = {
+					country_exists = LIT
+				}
+				LIT = {
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.1
+					}
+					add_political_power = 100
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 40
 		}
 		bypass = {
-			
+			OR = {
+				AND = {
+					country_exists = LIT
+					LIT = {
+						has_government = neutrality
+					}
+				}
+				AND = {
+					country_exists = BAL
+					BAL = {
+						has_government = neutrality
+					}
+				}
+			}
 		}
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
@@ -11032,20 +11150,55 @@ focus_tree = {
 		x = -1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 5
 		prerequisite = { focus = POL_invite_exiled_lithuanian_royalists }
 		relative_position_id = POL_invite_exiled_lithuanian_royalists
 		available = {
 			
 		}
+		select_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 11
+						owns_state = 814
+						owns_state = 188
+						owns_state = 189
+						owns_state = 815
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
 		completion_reward = {
-			
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 11
+						owns_state = 814
+						owns_state = 188
+						owns_state = 189
+						owns_state = 815
+					}
+				}
+				country_event = {
+					id = deluge_poland_foreign.89
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 40
 		}
 		bypass = {
-			
+			POL = {
+				owns_state = 11
+				owns_state = 814
+				owns_state = 188
+				owns_state = 189
+				owns_state = 815
+			}
 		}
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
@@ -11057,20 +11210,46 @@ focus_tree = {
 		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 5
 		prerequisite = { focus = POL_invite_exiled_lithuanian_royalists }
 		relative_position_id = POL_invite_exiled_lithuanian_royalists
 		available = {
 			
 		}
+		select_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 96
+						owns_state = 95
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
 		completion_reward = {
-			
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 96
+						owns_state = 95
+					}
+				}
+				country_event = {
+					id = deluge_poland_foreign.89
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 40
 		}
 		bypass = {
-			
+			POL = {
+				owns_state = 96
+				owns_state = 95
+			}
 		}
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
@@ -11082,7 +11261,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 10
 		prerequisite = { focus = POL_demand_lithuanian_lands_from_baltia }
 		prerequisite = { focus = POL_demand_lithuanian_lands_from_belarus }
 		relative_position_id = POL_demand_lithuanian_lands_from_baltia
@@ -11090,10 +11269,178 @@ focus_tree = {
 			focus = POL_restore_grand_duchy
 		}
 		available = {
-			
+			OR = {
+				AND = {
+					owns_state = 95
+					controls_state = 95
+				}
+				AND = {
+					95 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 189
+					controls_state = 189
+				}
+				AND = {
+					189 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 815
+					controls_state = 815
+				}
+				AND = {
+					815 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 96
+					controls_state = 96
+				}
+				AND = {
+					96 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 11
+					controls_state = 11
+				}
+				AND = {
+					11 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 814
+					controls_state = 814
+				}
+				AND = {
+					814 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 188
+					controls_state = 188
+				}
+				AND = {
+					188 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			set_cosmetic_tag = POL_commonwealth
+			add_ideas = restoration_issues
+			95 = {
+				add_core_of = POL
+			}
+			96 = {
+				add_core_of = POL
+			}
+			11 = {
+				add_core_of = POL
+			}
+			814 = {
+				add_core_of = POL
+			}
+			188 = {
+				add_core_of = POL
+			}
+			189 = {
+				add_core_of = POL
+			}
+			815 = {
+				add_core_of = POL
+			}
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 95
+					}
+				}
+				transfer_state = 95
+			}
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 96
+					}
+				}
+				transfer_state = 96
+			}
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 11
+					}
+				}
+				transfer_state = 11
+			}
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 814
+					}
+				}
+				transfer_state = 814
+			}
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 815
+					}
+				}
+				transfer_state = 815
+			}
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 188
+					}
+				}
+				transfer_state = 188
+			}
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 189
+					}
+				}
+				transfer_state = 189
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -11111,7 +11458,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 5
 		prerequisite = { focus = POL_demand_lithuanian_lands_from_baltia }
 		prerequisite = { focus = POL_demand_lithuanian_lands_from_belarus }
 		relative_position_id = POL_demand_lithuanian_lands_from_baltia
@@ -11119,10 +11466,167 @@ focus_tree = {
 			focus = POL_restore_commonwealth
 		}
 		available = {
-			
+			OR = {
+				AND = {
+					owns_state = 95
+					controls_state = 95
+				}
+				AND = {
+					95 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 189
+					controls_state = 189
+				}
+				AND = {
+					189 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 815
+					controls_state = 815
+				}
+				AND = {
+					815 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 96
+					controls_state = 96
+				}
+				AND = {
+					96 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 11
+					controls_state = 11
+				}
+				AND = {
+					11 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 814
+					controls_state = 814
+				}
+				AND = {
+					814 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 188
+					controls_state = 188
+				}
+				AND = {
+					188 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			LIT = {
+				set_cosmetic_tag = LIT_duchy
+				if = {
+					limit = {
+						NOT = {
+							owns_state = 95
+						}
+					}
+					transfer_state = 95
+				}
+				if = {
+					limit = {
+						NOT = {
+							owns_state = 96
+						}
+					}
+					transfer_state = 96
+				}
+				if = {
+					limit = {
+						NOT = {
+							owns_state = 11
+						}
+					}
+					transfer_state = 11
+				}
+				if = {
+					limit = {
+						NOT = {
+							owns_state = 814
+						}
+					}
+					transfer_state = 814
+				}
+				if = {
+					limit = {
+						NOT = {
+							owns_state = 815
+						}
+					}
+					transfer_state = 815
+				}
+				if = {
+					limit = {
+						NOT = {
+							owns_state = 188
+						}
+					}
+					transfer_state = 188
+				}
+				if = {
+					limit = {
+						NOT = {
+							owns_state = 189
+						}
+					}
+					transfer_state = 189
+				}
+			}
+			POL = {
+				set_autonomy = {
+					target = LIT
+					autonomy_state = autonomy_personal_union
+					end_wars = yes
+					end_civil_wars = no
+				}
+				add_ideas = restoration_issues
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -11140,14 +11644,25 @@ focus_tree = {
 		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 5
 		prerequisite = { focus = POL_restore_grand_duchy focus = POL_restore_commonwealth }
 		relative_position_id = POL_restore_commonwealth
 		available = {
 			
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_completed_focus = POL_restore_commonwealth
+				}
+				country_event = {
+					id = deluge_poland.104
+				}
+			}
+			country_event = {
+				id = deluge_poland.106
+			}
+			remove_ideas = restoration_issues
 		}
 		ai_will_do = {
 			factor = 40
@@ -11165,9 +11680,137 @@ focus_tree = {
 		x = -4
 		y = 2
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 2
+		cost = 10
 		prerequisite = { focus = POL_restore_grand_duchy focus = POL_restore_commonwealth }
 		relative_position_id = POL_restore_commonwealth
+		available = {
+			
+		}
+		select_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 202
+						owns_state = 203
+						owns_state = 834
+						owns_state = 192
+						owns_state = 197
+						owns_state = 226
+						owns_state = 259
+						owns_state = 193
+						owns_state = 225
+						owns_state = 221
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 202
+						owns_state = 203
+						owns_state = 834
+						owns_state = 192
+						owns_state = 197
+						owns_state = 226
+						owns_state = 259
+						owns_state = 193
+						owns_state = 225
+						owns_state = 221
+					}
+				}
+				POL = {
+					create_wargoal = {
+						type = take_claimed_state
+						target = PREV
+						generator = {  }
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_retake_moldova
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -2
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 10
+		prerequisite = { focus = POL_retake_ukraine }
+		relative_position_id = POL_retake_ukraine
+		available = {
+			
+		}
+		select_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 79
+						owns_state = 78
+						owns_state = 80
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 79
+						owns_state = 78
+						owns_state = 80
+					}
+				}
+				POL = {
+					create_wargoal = {
+						type = take_claimed_state
+						target = PREV
+						generator = {  }
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_develop_moldova
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 10
+		prerequisite = { focus = POL_retake_moldova }
+		relative_position_id = POL_retake_moldova
 		available = {
 			
 		}
@@ -11215,14 +11858,49 @@ focus_tree = {
 		x = -2
 		y = 2
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 10
 		prerequisite = { focus = POL_restore_grand_duchy focus = POL_restore_commonwealth }
 		relative_position_id = POL_restore_commonwealth
 		available = {
 			
 		}
+		select_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 207
+						owns_state = 206
+						owns_state = 204
+						owns_state = 194
+						owns_state = 241
+						owns_state = 764
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
 		completion_reward = {
-			
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 207
+						owns_state = 206
+						owns_state = 204
+						owns_state = 194
+						owns_state = 241
+						owns_state = 764
+					}
+				}
+				POL = {
+					create_wargoal = {
+						type = take_claimed_state
+						target = PREV
+						generator = {  }
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -11315,17 +11993,55 @@ focus_tree = {
 		x = -1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 6
 		prerequisite = { focus = POL_solving_restoration_problems}
 		relative_position_id = POL_solving_restoration_problems
 		mutually_exclusive = {
 			focus = POL_mutual_respect
 		}
 		available = {
-			
+			has_country_flag = POL_polonization_accepted
+			OR = {
+				LIT = {
+					is_subject_of = POL
+				}
+				AND = {
+					owns_state = 11
+					owns_state = 95
+					owns_state = 96
+					owns_state = 815
+					owns_state = 189
+					owns_state = 188
+					owns_state = 814
+				}
+			}
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_completed_focus = POL_restore_commonwealth
+				}
+				add_ideas = POL_polonization_of_lithuania
+			}
+			if = {
+				limit = {
+					has_completed_focus = POL_restore_grand_duchy
+				}
+				LIT = {
+					add_ideas = LIT_polonization_of_lithuania
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_completed_focus = POL_restore_grand_duchy
+							has_completed_focus = POL_restore_commonwealth
+						}
+					}
+				}
+				custom_effect_tooltip = POL_custom_effect_tooltip_162
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -11338,22 +12054,46 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = POL_mutual_respect 
+		id = POL_mutual_respect
 		icon = GFX_blue_red_handshake
 		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 6
 		prerequisite = { focus = POL_solving_restoration_problems}
 		relative_position_id = POL_solving_restoration_problems
 		mutually_exclusive = {
 			focus = POL_polonization_of_lithuania
 		}
 		available = {
-			
+			has_country_flag = POL_polonization_rejected
+			OR = {
+				LIT = {
+					is_subject_of = POL
+				}
+				AND = {
+					owns_state = 11
+					owns_state = 95
+					owns_state = 96
+					owns_state = 815
+					owns_state = 189
+					owns_state = 188
+					owns_state = 814
+				}
+			}
 		}
 		completion_reward = {
-			
+			add_ideas = POL_LIT_cooperation
+			if = {
+				limit = {
+					LIT = {
+						is_subject_of = POL
+					}
+				}
+				LIT = {
+					add_ideas = POL_LIT_cooperation
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -11371,9 +12111,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 8
 		prerequisite = { focus = POL_mutual_respect}
-		prerequisite = { focus = POL_incorporate_livonia}
+		prerequisite = { focus = POL_incorporate_livonia focus = POL_autonomus_duchy_of_livonia}
 		relative_position_id = POL_mutual_respect
 		mutually_exclusive = {
 			focus = POL_polonize_livonia
@@ -11382,7 +12122,17 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_ideas = POL_LIV_cooperation
+			if = {
+				limit = {
+					BAL = {
+						is_subject_of = POL
+					}
+				}
+				BAL = {
+					add_ideas = POL_LIV_cooperation
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -11438,7 +12188,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			set_cosmetic_tag = POL_ruthenia
 		}
 		ai_will_do = {
 			factor = 40
@@ -11467,7 +12217,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			set_cosmetic_tag = POL_livonia
 		}
 		ai_will_do = {
 			factor = 40
@@ -11512,14 +12262,184 @@ focus_tree = {
 		x = 3
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 12
 		prerequisite = { focus = POL_restore_grand_duchy focus = POL_restore_commonwealth }
 		relative_position_id = POL_restore_commonwealth
 		available = {
-			
+			OR = {
+				AND = {
+					owns_state = 95
+					controls_state = 95
+				}
+				AND = {
+					95 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 189
+					controls_state = 189
+				}
+				AND = {
+					189 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 815
+					controls_state = 815
+				}
+				AND = {
+					815 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 96
+					controls_state = 96
+				}
+				AND = {
+					96 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 11
+					controls_state = 11
+				}
+				AND = {
+					11 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 814
+					controls_state = 814
+				}
+				AND = {
+					814 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 188
+					controls_state = 188
+				}
+				AND = {
+					188 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			11 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			96 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			96 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			189 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			188 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			814 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			815 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -11537,14 +12457,57 @@ focus_tree = {
 		x = 3
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 8
 		prerequisite = { focus = POL_restore_commonwealth focus = POL_restore_grand_duchy }
 		relative_position_id = POL_restore_grand_duchy
 		available = {
 			
 		}
+		select_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 810
+						owns_state = 809
+						owns_state = 190
+						owns_state = 811
+						owns_state = 808
+						owns_state = 12
+						owns_state = 813
+						owns_state = 191
+						owns_state = 13
+						owns_state = 812
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
 		completion_reward = {
-			
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 810
+						owns_state = 809
+						owns_state = 190
+						owns_state = 811
+						owns_state = 808
+						owns_state = 12
+						owns_state = 813
+						owns_state = 191
+						owns_state = 13
+						owns_state = 812
+					}
+				}
+				POL = {
+					create_wargoal = {
+						type = take_claimed_state
+						target = PREV
+						generator = { 810 809 190 811 808 12 813 191 13 812 }
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -11562,17 +12525,166 @@ focus_tree = {
 		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 8
 		prerequisite = { focus = POL_retake_livonia }
 		relative_position_id = POL_retake_livonia
 		mutually_exclusive = {
 			focus = POL_incorporate_livonia
 		}
 		available = {
-			
+			OR = {
+				AND = {
+					owns_state = 810
+					controls_state = 810
+				}
+				AND = {
+					810 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 809
+					controls_state = 809
+				}
+				AND = {
+					809 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 190
+					controls_state = 190
+				}
+				AND = {
+					190 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 808
+					controls_state = 808
+				}
+				AND = {
+					808 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 12
+					controls_state = 12
+				}
+				AND = {
+					12 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 191
+					controls_state = 191
+				}
+				AND = {
+					191 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 13
+					controls_state = 13
+				}
+				AND = {
+					13 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 813
+					controls_state = 813
+				}
+				AND = {
+					813 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 812
+					controls_state = 812
+				}
+				AND = {
+					812 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 811
+					controls_state = 811
+				}
+				AND = {
+					811 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			BAL = {
+				transfer_state = 810
+				transfer_state = 811
+				transfer_state = 812
+				transfer_state = 813
+				transfer_state = 13
+				transfer_state = 12
+				transfer_state = 191
+				transfer_state = 190
+				transfer_state = 808
+				transfer_state = 809
+				set_cosmetic_tag = BAL_duchy
+			}
+			POL = {
+				set_autonomy = {
+					target = BAL
+					autonomy_state = autonomy_personal_union
+					end_wars = yes
+					end_civil_wars = no
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -11590,17 +12702,175 @@ focus_tree = {
 		x = -1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 8
 		prerequisite = { focus = POL_retake_livonia }
 		relative_position_id = POL_retake_livonia
 		mutually_exclusive = {
 			focus = POL_autonomus_duchy_of_livonia
 		}
 		available = {
-			
+			OR = {
+				AND = {
+					owns_state = 810
+					controls_state = 810
+				}
+				AND = {
+					810 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 809
+					controls_state = 809
+				}
+				AND = {
+					809 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 190
+					controls_state = 190
+				}
+				AND = {
+					190 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 808
+					controls_state = 808
+				}
+				AND = {
+					808 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 12
+					controls_state = 12
+				}
+				AND = {
+					12 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 191
+					controls_state = 191
+				}
+				AND = {
+					191 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 13
+					controls_state = 13
+				}
+				AND = {
+					13 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 813
+					controls_state = 813
+				}
+				AND = {
+					813 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 812
+					controls_state = 812
+				}
+				AND = {
+					812 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 811
+					controls_state = 811
+				}
+				AND = {
+					811 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			811 = {
+				add_core_of = POL
+			}
+			810 = {
+				add_core_of = POL
+			}
+			812 = {
+				add_core_of = POL
+			}
+			813 = {
+				add_core_of = POL
+			}
+			809 = {
+				add_core_of = POL
+			}
+			808 = {
+				add_core_of = POL
+			}
+			12 = {
+				add_core_of = POL
+			}
+			11 = {
+				add_core_of = POL
+			}
+			190 = {
+				add_core_of = POL
+			}
+			191 = {
+				add_core_of = POL
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -11618,17 +12888,170 @@ focus_tree = {
 		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 8
 		prerequisite = { focus = POL_incorporate_livonia}
 		relative_position_id = POL_incorporate_livonia
 		mutually_exclusive = {
 			focus = POL_respect_baltic_peoples
 		}
 		available = {
-			
+			OR = {
+				AND = {
+					owns_state = 810
+					controls_state = 810
+				}
+				AND = {
+					810 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 809
+					controls_state = 809
+				}
+				AND = {
+					809 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 190
+					controls_state = 190
+				}
+				AND = {
+					190 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 808
+					controls_state = 808
+				}
+				AND = {
+					808 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 12
+					controls_state = 12
+				}
+				AND = {
+					12 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 191
+					controls_state = 191
+				}
+				AND = {
+					191 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 13
+					controls_state = 13
+				}
+				AND = {
+					13 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 813
+					controls_state = 813
+				}
+				AND = {
+					813 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 812
+					controls_state = 812
+				}
+				AND = {
+					812 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 811
+					controls_state = 811
+				}
+				AND = {
+					811 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_completed_focus = POL_autonomus_duchy_of_livonia
+				}
+				BAL = {
+					add_ideas = BAL_polonization_of_livonia
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = POL_incorporate_livonia
+				}
+				add_ideas = POL_polonization_of_livonia
+			}
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_completed_focus = POL_autonomus_duchy_of_livonia
+							has_completed_focus = POL_incorporate_livonia
+						}
+					}
+				}
+				custom_effect_tooltip = POL_custom_effect_tooltip_163
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -11646,14 +13069,301 @@ focus_tree = {
 		x = 3
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 20
 		prerequisite = { focus = POL_incorporate_livonia focus = POL_autonomus_duchy_of_livonia }
 		relative_position_id = POL_incorporate_livonia
 		available = {
-			
+			OR = {
+				AND = {
+					owns_state = 810
+					controls_state = 810
+				}
+				AND = {
+					810 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 809
+					controls_state = 809
+				}
+				AND = {
+					809 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 190
+					controls_state = 190
+				}
+				AND = {
+					190 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 808
+					controls_state = 808
+				}
+				AND = {
+					808 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 12
+					controls_state = 12
+				}
+				AND = {
+					12 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 191
+					controls_state = 191
+				}
+				AND = {
+					191 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 13
+					controls_state = 13
+				}
+				AND = {
+					13 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 813
+					controls_state = 813
+				}
+				AND = {
+					813 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 812
+					controls_state = 812
+				}
+				AND = {
+					812 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					owns_state = 811
+					controls_state = 811
+				}
+				AND = {
+					811 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			808 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			808 = {
+				add_building_construction = {
+					type = naval_base
+					province = 9340
+					level = 2
+					instant_build = yes
+				}
+			}
+			190 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			809 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			810 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			12 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			191 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			13 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			812 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			812 = {
+				add_building_construction = {
+					type = naval_base
+					province = 3152
+					level = 2
+					instant_build = yes
+				}
+			}
+			811 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			811 = {
+				add_building_construction = {
+					type = naval_base
+					province = 185
+					level = 4
+					instant_build = yes
+				}
+			}
+			813 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 40
