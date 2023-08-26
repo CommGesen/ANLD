@@ -9,7 +9,6 @@ characters={
 		country_leader={
 			ideology=corporatist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	BHU_chithira_thirunal={
@@ -22,14 +21,13 @@ characters={
 		country_leader={
 			ideology=bonapartist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	BHU_louis_alexis_Étienne_bonvin={
 		name="Louis Alexis Étienne Bonvin"
 		portraits={
 			civilian={
-				large="gfx/leaders/BHU/louis_faidherbe.dds"
+				large="gfx/leaders/BHU/portrait_BHU_louis_bonvin.dds"
 			}
 		}
 		field_marshal={
@@ -43,7 +41,6 @@ characters={
 		country_leader={
 			ideology=reactionary_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	BHU_p._krishna_pillai={
@@ -57,7 +54,6 @@ characters={
 			desc="POLITICS_P_KRISHNA_PILLAI_DESC"
 			ideology=jacobin_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	BHU_b._p._sitaramayya={
@@ -71,7 +67,6 @@ characters={
 			desc="POLITICS_B_P_SITARAMAYYA_DESC"
 			ideology=liberal_republican_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 }

@@ -12,6 +12,18 @@ characters={
 			id=-1
 		}
 	}
+	BUR_prince_george={
+		name=BUR_prince_george_name
+		portraits={
+			civilian={
+				large="gfx/leaders/BUR/portrait_BUR_prince_george_duke_of_kent.dds"
+			}
+		}
+		country_leader={
+			ideology=bonapartist_ideology
+			expire="1965.1.1.1"
+		}
+	}
 	BUR_taw_phaya={
 		name="Taw Phaya"
 		portraits={

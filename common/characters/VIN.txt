@@ -25,25 +25,16 @@ characters={
 			id=-1
 		}
 	}
-	VIN_jules_davout_dauerstaedt={
-		name="Jules Davout d'Auerstaedt"
+	VIN_joseph_jules_brevie={
+		name="Joseph-Jules Brévié"
 		portraits={
 			civilian={
-				large="gfx/leaders/VIN/joseph_vinoy.dds"
+				large="gfx/leaders/VIN/portrait_VIN_joseph_jules_brevie.dds"
 			}
-		}
-		field_marshal={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-1
 		}
 		country_leader={
 			ideology=bonapartist_ideology
 			expire="1953.3.1.1"
-			id=-1
 		}
 	}
 	VIN_phan_boi_châu={
@@ -56,7 +47,6 @@ characters={
 		country_leader={
 			ideology=corporatist_ideology
 			expire="1953.3.1.1"
-			id=-1
 		}
 	}
 }

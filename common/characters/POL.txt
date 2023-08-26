@@ -421,8 +421,8 @@ characters={
 	POL_deluge_augustyn_czartoryski = {##Augustyn Józef Czartoryski
 		name = POL_Character_deluge_augustyn_czartoryski
 		portraits={
-			civilian={ 
-				large = "gfx/leaders/POL/augustyn_jozef_czartoryski.dds"
+			civilian={
+				large = "gfx/leaders/POL/portrait_POL_augustyn_jozef_czartoryski.dds"
 				#small = GFX_portrait_POL_roman_dmowski_small
 			}
 		}
@@ -439,7 +439,7 @@ characters={
 		name = POL_Character_deluge_pawel_salwator_piast_riedelski
 		portraits={
 			civilian={ 
-				large = "gfx/leaders/POL/pawel_salwator_piast_riedelski.dds"
+				large = "gfx/leaders/POL/portrait_POL_pawel_piast_riedelski.dds"
 			}
 		}
 		country_leader = {
@@ -489,7 +489,7 @@ characters={
 		name = POL_Character_deluge_andrassy_sandor
 		portraits = {
 			civilian = {
-				large="gfx/leaders/HUN/sandor.dds"
+				large="gfx/leaders/HUN/portrait_HUN_andrassy_sandor.dds"
 			}
 		}
 		country_leader = {
@@ -4290,11 +4290,11 @@ characters={
 		name = POL_Character_deluge_karol_radek
 		portraits={
 			civilian={
-				large="gfx/leaders/POL/karol_radek.dds"
+				large="gfx/leaders/POL/portrait_POL_karol_radek.dds"
 				small=GFX_karol_radek_picture_small
 			}
 			army={
-				large="gfx/leaders/POL/karol_radek.dds"
+				large="gfx/leaders/POL/portrait_POL_karol_radek.dds"
 				small=GFX_karol_radek_picture_small
 			}
 		}

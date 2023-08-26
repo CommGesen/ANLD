@@ -10,7 +10,6 @@ characters={
 			desc="POLITICS_SOLEYMAN_MIRZA_ESKANDARI_DESC"
 			ideology=jacobin_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	PER_hasan_arfa={
@@ -30,14 +29,13 @@ characters={
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=2
-			legacy_id=-1
 		}
 	}
-	PER_mozaffar_addin_shah_qajar={
-		name="Mozaffar ad-Din Shah Qajar"
+	PER_ahmad_shah_qajar={
+		name="Ahmad Shah Qajar"
 		portraits={
 			civilian={
-				large="gfx/leaders/PER/persian_shah.dds"
+				large="gfx/leaders/PER/portrait_PER_ahmad_shah_qajar.dds"
 			}
 		}
 		field_marshal={
@@ -46,12 +44,10 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=2
-			legacy_id=-1
 		}
 		country_leader={
 			ideology=reactionary_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	PER_reza_pahlavi={

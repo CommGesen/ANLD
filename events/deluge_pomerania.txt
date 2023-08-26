@@ -135,6 +135,7 @@ country_event = {##FRA decides what is gonna happen to POM
 				character = POM_philippe_petain
 				ideology = bonapartist_ideology
 			}
+			leave_faction = yes
 		}
 		country_event = {##fate of Petain for France
 			id = deluge_pomerania.15
@@ -819,6 +820,7 @@ country_event = {##Kashubians do a coup in Pomerania
 			}
 		}
 		set_global_flag = POM_issue_solved
+		leave_faction = yes
 		ai_chance = {
 			base = 1
 		}

@@ -3359,6 +3359,432 @@ country_event = {##restoration issues - question of direction
 		}
 	}
 }
+country_event = {##event about independence day
+	id = deluge_poland.107
+	title = deluge_poland.107.t
+	desc = deluge_poland.107.d
+	picture = GFX_report_event_polish_independence_day
+	is_triggered_only = yes
+	immediate = {
+		country_event = {
+			id = deluge_poland.107
+			days = 365
+		}
+	}
+	option = {
+		name = deluge_poland.107.a
+		add_political_power = 5
+		hidden_effect = {
+			POL = {
+				add_to_variable = {
+					var = POL_independence_day_aniversary
+					value = 1
+				}
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##POL decides what to do with eastern borderlands (PLC path)
+	id = deluge_poland.108
+	title = deluge_poland.108.t
+	desc = deluge_poland.108.d
+	picture = GFX_report_event_eastern_borderlands
+	is_triggered_only = yes
+	option = {##integrate all of borderlands into yourself - only when done restore Commonwealth focus
+		name = deluge_poland.108.a
+		trigger = {
+			POL = {
+				has_completed_focus = POL_restore_commonwealth
+			}
+		}
+		set_country_flag = POL_plc_annexed_borderlands
+		if = {
+			limit = {
+				has_completed_focus = POL_polonize_kresy
+			}
+			add_ideas = POL_polonization_of_ruthenia
+		}
+		if = {
+			limit = {
+				has_completed_focus = POL_respect_ruthenian_nations
+			}
+			add_ideas = POL_RUT_cooperation
+		}
+		194 = {
+			add_core_of = POL
+		}
+		241 = {
+			add_core_of = POL
+		}
+		204 = {
+			add_core_of = POL
+		}
+		206 = {
+			add_core_of = POL
+		}
+		764 = {
+			add_core_of = POL
+		}
+		207 = {
+			add_core_of = POL
+		}
+		201 = {
+			add_core_of = POL
+		}
+		199 = {
+			add_core_of = POL
+		}
+		193 = {
+			add_core_of = POL
+		}
+		198 = {
+			add_core_of = POL
+		}
+		259 = {
+			add_core_of = POL
+		}
+		202 = {
+			add_core_of = POL
+		}
+		203 = {
+			add_core_of = POL
+		}
+		221 = {
+			add_core_of = POL
+		}
+		197 = {
+			add_core_of = POL
+		}
+		192 = {
+			add_core_of = POL
+		}
+		834 = {
+			add_core_of = POL
+		}
+		226 = {
+			add_core_of = POL
+		}
+		225 = {
+			add_core_of = POL
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {##integrate northern belarus into LIT, annex rest - only when done restore grand duchy focus
+		name = deluge_poland.108.b
+		trigger = {
+			POL = {
+				has_completed_focus = POL_restore_grand_duchy
+			}
+		}
+		set_country_flag = POL_plc_gave_lit_northern_blr
+		set_country_flag = POL_plc_annex_south_only
+		if = {
+			limit = {
+				has_completed_focus = POL_polonize_kresy
+			}
+			add_ideas = POL_polonization_of_ruthenia
+		}
+		if = {
+			limit = {
+				has_completed_focus = POL_respect_ruthenian_nations
+			}
+			add_ideas = POL_RUT_cooperation
+		}
+		LIT = {
+			transfer_state = 207
+			transfer_state = 206
+			transfer_state = 204
+			transfer_state = 764
+		}
+		204 = {
+			add_core_of = LIT
+		}
+		206 = {
+			add_core_of = LIT
+		}
+		764 = {
+			add_core_of = LIT
+		}
+		207 = {
+			add_core_of = LIT
+		}
+		194 = {
+			add_core_of = POL
+		}
+		241 = {
+			add_core_of = POL
+		}
+		201 = {
+			add_core_of = POL
+		}
+		199 = {
+			add_core_of = POL
+		}
+		193 = {
+			add_core_of = POL
+		}
+		198 = {
+			add_core_of = POL
+		}
+		259 = {
+			add_core_of = POL
+		}
+		202 = {
+			add_core_of = POL
+		}
+		203 = {
+			add_core_of = POL
+		}
+		221 = {
+			add_core_of = POL
+		}
+		197 = {
+			add_core_of = POL
+		}
+		192 = {
+			add_core_of = POL
+		}
+		834 = {
+			add_core_of = POL
+		}
+		226 = {
+			add_core_of = POL
+		}
+		225 = {
+			add_core_of = POL
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {##integrate northern belarus into LIT, release rest as grand duchy of ruthenia - only when done restore grand duchy focus
+		name = deluge_poland.108.c
+		trigger = {
+			POL = {
+				has_completed_focus = POL_restore_grand_duchy
+			}
+		}
+		set_country_flag = POL_plc_gave_lit_northern_blr
+		set_country_flag = POL_plc_created_grand_duchy_of_ruthenia
+		if = {
+			limit = {
+				has_completed_focus = POL_respect_ruthenian_nations
+			}
+			add_ideas = POL_RUT_cooperation
+		}
+		LIT = {
+			transfer_state = 207
+			transfer_state = 206
+			transfer_state = 204
+			transfer_state = 764
+		}
+		204 = {
+			add_core_of = LIT
+		}
+		206 = {
+			add_core_of = LIT
+		}
+		764 = {
+			add_core_of = LIT
+		}
+		207 = {
+			add_core_of = LIT
+		}
+		UKR = {
+			transfer_state = 194
+			transfer_state = 241
+			transfer_state = 225
+			transfer_state = 193
+			transfer_state = 202
+			transfer_state = 201
+			transfer_state = 199
+			transfer_state = 198
+			transfer_state = 834
+			transfer_state = 203
+			transfer_state = 192
+			transfer_state = 193
+			transfer_state = 197
+			transfer_state = 226
+			transfer_state = 221
+			transfer_state = 193
+			transfer_state = 259
+			set_cosmetic_tag = UKR_duchy
+			create_country_leader = {
+				name = "Henryk Józewski"
+				desc = henryk_jozewski_desc
+				picture = "gfx/leaders/LIT/portrait_UKR_henryk_jozewski.dds"
+				expire = "1965.1.1"
+				ideology = reactionary_ideology
+				traits = {
+					
+				}
+			}
+			set_party_name = { ideology = neutrality long_name = POL_administration_name_long name = POL_administration_name_short }
+			if = {
+				limit = {
+					has_completed_focus = POL_polonize_kresy
+				}
+				add_ideas = UKR_polonization_of_ruthenia
+			}
+			if = {
+				limit = {
+					has_completed_focus = POL_respect_ruthenian_nations
+				}
+				add_ideas = POL_RUT_cooperation
+			}
+		}
+		194 = {
+			add_core_of = UKR
+		}
+		241 = {
+			add_core_of = UKR
+		}
+		POL = {
+			set_autonomy = {
+				target = UKR
+				autonomy_state = autonomy_personal_union
+				end_wars = yes
+				end_civil_wars = no
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {##annex northern belarus into POL, release rest as grand duchy of ruthenia - only when done restore commonwealth focus
+		name = deluge_poland.108.e
+		trigger = {
+			POL = {
+				has_completed_focus = POL_restore_commonwealth
+			}
+		}
+		set_country_flag = POL_plc_created_grand_duchy_of_ruthenia
+		set_country_flag = POL_plc_annexed_northern_blr
+		if = {
+			limit = {
+				has_completed_focus = POL_respect_ruthenian_nations
+			}
+			add_ideas = POL_RUT_cooperation
+		}
+		204 = {
+			add_core_of = POL
+		}
+		206 = {
+			add_core_of = POL
+		}
+		764 = {
+			add_core_of = POL
+		}
+		207 = {
+			add_core_of = POL
+		}
+		UKR = {
+			transfer_state = 194
+			transfer_state = 241
+			transfer_state = 225
+			transfer_state = 193
+			transfer_state = 202
+			transfer_state = 201
+			transfer_state = 199
+			transfer_state = 198
+			transfer_state = 834
+			transfer_state = 203
+			transfer_state = 192
+			transfer_state = 193
+			transfer_state = 197
+			transfer_state = 226
+			transfer_state = 221
+			transfer_state = 193
+			transfer_state = 259
+			set_cosmetic_tag = UKR_duchy
+			create_country_leader = {
+				name = "Henryk Józewski"
+				desc = henryk_jozewski_desc
+				picture = "gfx/leaders/LIT/portrait_UKR_henryk_jozewski.dds"
+				expire = "1965.1.1"
+				ideology = reactionary_ideology
+				traits = {
+					
+				}
+			}
+			set_party_name = { ideology = neutrality long_name = POL_administration_name_long name = POL_administration_name_short }
+			if = {
+				limit = {
+					has_completed_focus = POL_polonize_kresy
+				}
+				add_ideas = UKR_polonization_of_ruthenia
+			}
+			if = {
+				limit = {
+					has_completed_focus = POL_respect_ruthenian_nations
+				}
+				add_ideas = POL_RUT_cooperation
+			}
+		}
+		194 = {
+			add_core_of = UKR
+		}
+		241 = {
+			add_core_of = UKR
+		}
+		POL = {
+			set_autonomy = {
+				target = UKR
+				autonomy_state = autonomy_personal_union
+				end_wars = yes
+				end_civil_wars = no
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##lore event about śmigus-dyngus
+	id = deluge_poland.109
+	title = deluge_poland.109.t
+	desc = deluge_poland.109.d
+	picture = GFX_report_event_smigus_dyngus
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland.109.a
+		add_political_power = 10
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##lore event about marzanna
+	id = deluge_poland.110
+	title = deluge_poland.110.t
+	desc = deluge_poland.110.d
+	picture = GFX_report_event_marzanna
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland.110.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##lore event - Bolesław Piasecki's speech
+	id = deluge_poland.111
+	title = deluge_poland.111.t
+	desc = deluge_poland.111.d
+	picture = GFX_report_event_onr_meeting
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland.111.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
 country_event = {##POL proposes defense pact to UK
 	id = deluge_poland_foreign.1
 	title = deluge_poland_foreign.1.t

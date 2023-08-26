@@ -1314,4 +1314,18 @@ on_actions = {
 			}
 		}
 	}
+	on_startup = {
+		effect = {
+			POL = {
+				set_variable = {
+					var = POL_independence_day_aniversary
+					value = 129
+				}
+				country_event = {##polish independence day event - 9th of july
+					id = deluge_poland.107
+					days = 68
+				}
+			}
+		}
+	}
 }
