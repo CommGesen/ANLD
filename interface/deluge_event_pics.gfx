@@ -467,10 +467,6 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_event_polish_hungarian_handshake.dds"
 	}
 	spriteType = {
-		name = "GFX_news_event_polish_and_french_soldiers"
-		texturefile = "gfx/event_pictures/news_event_polish_and_french_soldiers.dds"
-	}
-	spriteType = {
 		name = "GFX_news_event_polish_border"
 		texturefile = "gfx/event_pictures/news_event_polish_border.dds"
 	}
@@ -553,5 +549,17 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_plc_emblem"
 		texturefile = "gfx/event_pictures/report_event_plc_emblem.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_olympics_1936"
+		texturefile = "gfx/event_pictures/news_event_olympics_1936.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_hungarian_grand_prix_1936"
+		texturefile = "gfx/event_pictures/news_event_hungarian_grand_prix_1936.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_worlds_fair_1937"
+		texturefile = "gfx/event_pictures/news_event_worlds_fair_1937.dds"
 	}
 }

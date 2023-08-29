@@ -280,6 +280,57 @@ news_event = {
 		name = deluge_world.7.a
 	}
 }
+news_event = {
+	id = deluge_world.8
+	title = deluge_world.8.t
+	desc = deluge_world.8.d
+	picture = GFX_news_event_olympics_1936
+	fire_only_once = yes
+	trigger = {
+		date > 1936.8.16
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	major = yes
+	option = {
+		name = deluge_world.8.a
+	}
+}
+news_event = {
+	id = deluge_world.9
+	title = deluge_world.9.t
+	desc = deluge_world.9.d
+	picture = GFX_news_event_hungarian_grand_prix_1936
+	fire_only_once = yes
+	trigger = {
+		date > 1936.6.21
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	major = yes
+	option = {
+		name = deluge_world.9.a
+	}
+}
+news_event = {
+	id = deluge_world.10
+	title = deluge_world.10.t
+	desc = deluge_world.10.d
+	picture = GFX_news_event_worlds_fair_1937
+	fire_only_once = yes
+	trigger = {
+		date > 1937.11.1
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	major = yes
+	option = {
+		name = deluge_world.10.a
+	}
+}
 
 
 

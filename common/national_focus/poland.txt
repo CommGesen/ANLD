@@ -5578,6 +5578,7 @@ focus_tree = {
 				has_completed_focus = POL_PPS_wins
 				has_completed_focus = POL_NSP_wins
 				has_completed_focus = POL_PKWN_wins
+				has_completed_focus = POL_monarchists_take_power
 			}
 		}
 		completion_reward = {
@@ -8916,13 +8917,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = sarmatian_myth
-			remove_ideas = remove_ideas = POL_problems_in_army
+			remove_ideas = POL_problems_in_army
 		}
 		ai_will_do = {
 			factor = 40
 		}
 		bypass = {
-			
+			has_completed_focus = POL_legacy_of_sarmatian_myth
 		}
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
@@ -9045,7 +9046,7 @@ focus_tree = {
 	focus = {
 		id = POL_piast_riedelski_wins
 		icon = GFX_piasts_emblem
-		x = 0
+		x = 6
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 1
@@ -9070,9 +9071,38 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
+		id = POL_legacy_of_sarmatian_myth
+		icon = GFX_scythian_myth
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_piast_riedelski_wins focus = POL_czartoryski_wins focus = POL_radziwill_wins }
+		relative_position_id = POL_piast_riedelski_wins
+		mutually_exclusive = {
+			focus = POL_reawake_pan_slavic_rethoric
+			focus = POL_invite_exiled_lithuanian_royalists
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			add_ideas = sarmatian_myth
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			has_completed_focus = POL_dissemination_of_sarmatian_myth
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
 		id = POL_czartoryski_wins
 		icon = GFX_czartoryscy_emblem
-		x = 2
+		x = 8
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 1
@@ -9099,7 +9129,7 @@ focus_tree = {
 	focus = {
 		id = POL_radziwill_wins
 		icon = GFX_radziwillowie_emblem
-		x = 4
+		x = 10
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 1
@@ -9137,9 +9167,125 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
+		id = POL_reawake_pan_slavic_rethoric
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_piast_riedelski_wins focus = POL_czartoryski_wins focus = POL_radziwill_wins }
+		relative_position_id = POL_radziwill_wins
+		mutually_exclusive = {
+			focus = POL_legacy_of_sarmatian_myth
+			focus = POL_invite_exiled_lithuanian_royalists
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_non_religious_approach
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_reawake_pan_slavic_rethoric }
+		relative_position_id = POL_reawake_pan_slavic_rethoric
+		mutually_exclusive = {
+			focus = POL_return_to_the_roots
+			focus = POL_christian_approach
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_return_to_the_roots
+		icon = GFX_restore_the_ancient_faith
+		x = 2
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_reawake_pan_slavic_rethoric }
+		relative_position_id = POL_reawake_pan_slavic_rethoric
+		mutually_exclusive = {
+			focus = POL_non_religious_approach
+			focus = POL_christian_approach
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_christian_approach
+		icon = GFX_strengthening_catholic_church
+		x = -2
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 1
+		prerequisite = { focus = POL_reawake_pan_slavic_rethoric }
+		relative_position_id = POL_reawake_pan_slavic_rethoric
+		mutually_exclusive = {
+			focus = POL_non_religious_approach
+			focus = POL_return_to_the_roots
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
 		id = POL_andrassy_wins
 		icon = GFX_andrassy_emblem
-		x = -2
+		x = 4
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 1
@@ -9757,6 +9903,7 @@ focus_tree = {
 				}
 				HUN = {
 					add_ideas = POL_HUN_cooperation
+					add_opinion_modifier = { target = POL modifier = opinion_modifier_remained_personal_union }
 				}
 			}
 		}
@@ -10942,7 +11089,7 @@ focus_tree = {
 	focus = {
 		id = POL_bonaparte_bastard_wins
 		icon = GFX_old_bonaparte_emblem
-		x = -7
+		x = -10
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 1
@@ -11073,9 +11220,83 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
+		id = POL_ultimatum_for_france
+		icon = GFX_focus_attack_france
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 5
+		prerequisite = { focus = POL_contact_less_radical_AF_members focus = POL_mix_napoleonic_code_and_constitution_of_3rd_may }
+		relative_position_id = POL_contact_less_radical_AF_members
+		mutually_exclusive = {
+			focus = POL_join_french_alliance
+		}
+		available = {
+			country_exists = FRA
+			FRA = {
+				is_subject = no
+			}
+		}
+		completion_reward = {
+			FRA = {
+				country_event = {
+					id = deluge_poland_foreign.92
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_join_french_alliance
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 5
+		prerequisite = { focus = POL_contact_less_radical_AF_members focus = POL_mix_napoleonic_code_and_constitution_of_3rd_may }
+		relative_position_id = POL_mix_napoleonic_code_and_constitution_of_3rd_may
+		mutually_exclusive = {
+			focus = POL_ultimatum_for_france
+		}
+		available = {
+			country_exists = FRA
+			FRA = {
+				NOT = {
+					has_government = communism
+				}
+				is_faction_leader = yes
+				is_subject = no
+			}
+		}
+		completion_reward = {
+			FRA = {
+				country_event = {
+					id = deluge_poland_foreign.95
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
 		id = POL_tyszkiewicz_wins
 		icon = GFX_tyszkiewicz_emblem
-		x = 9
+		x = 16
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 1
@@ -11106,8 +11327,12 @@ focus_tree = {
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 4
-		prerequisite = { focus = POL_tyszkiewicz_wins }
+		prerequisite = { focus = POL_tyszkiewicz_wins focus = POL_radziwill_wins focus = POL_czartoryski_wins }
 		relative_position_id = POL_tyszkiewicz_wins
+		mutually_exclusive = {
+			focus = POL_reawake_pan_slavic_rethoric
+			focus = POL_legacy_of_sarmatian_myth
+		}
 		available = {
 			
 		}
@@ -13675,6 +13900,9 @@ focus_tree = {
 					owns_state = 814
 				}
 			}
+			LIT = {
+				add_opinion_modifier = { target = POL modifier = opinion_modifier_polonization }
+			}
 		}
 		completion_reward = {
 			if = {
@@ -13753,6 +13981,9 @@ focus_tree = {
 				LIT = {
 					add_ideas = POL_LIT_cooperation
 				}
+			}
+			LIT = {
+				add_opinion_modifier = { target = POL modifier = opinion_modifier_mutual_respect }
 			}
 		}
 		ai_will_do = {
@@ -13921,6 +14152,16 @@ focus_tree = {
 				BAL = {
 					add_ideas = POL_LIV_cooperation
 				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = BAL
+						tag = EST
+						tag = LAT
+					}
+				}
+				add_opinion_modifier = { target = POL modifier = opinion_modifier_mutual_respect }
 			}
 		}
 		ai_will_do = {
@@ -14205,6 +14446,15 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				id = deluge_poland.108
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = UKR
+						tag = BLR
+					}
+				}
+				add_opinion_modifier = { target = POL modifier = opinion_modifier_mutual_respect }
 			}
 		}
 		ai_will_do = {
@@ -15274,6 +15524,15 @@ focus_tree = {
 			country_event = {
 				id = deluge_poland.108
 			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = UKR
+						tag = BLR
+					}
+				}
+				add_opinion_modifier = { target = POL modifier = opinion_modifier_polonization }
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -16104,6 +16363,16 @@ focus_tree = {
 				}
 				custom_effect_tooltip = POL_custom_effect_tooltip_163
 			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = EST
+						tag = LAT
+						tag = BAL
+					}
+				}
+				add_opinion_modifier = { target = POL modifier = opinion_modifier_polonization }
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -16667,7 +16936,7 @@ focus_tree = {
 		search_filters = {}
 		cost = 8
 		prerequisite = { focus = POL_puppet_workers_unions focus = POL_autonomy_for_workers_unions }
-		relative_position_id = POL_puppet_workers_unions
+		relative_position_id = POL_autonomy_for_workers_unions
 		mutually_exclusive = {focus = POL_delegalise_strikes_communist}
 		available = {
 			
@@ -16711,7 +16980,7 @@ focus_tree = {
 		search_filters = {}
 		cost = 8
 		prerequisite = { focus = POL_puppet_workers_unions focus = POL_autonomy_for_workers_unions }
-		relative_position_id = POL_autonomy_for_workers_unions
+		relative_position_id = POL_puppet_workers_unions
 		mutually_exclusive = {focus = POL_unite_workers_unions_and_government}
 		available = {
 			
@@ -16876,7 +17145,7 @@ focus_tree = {
 		cost = 6
 		prerequisite = { focus = POL_industrial_enlightment focus = POL_centralised_heavy_industry }
 		prerequisite = { focus = POL_decentralised_heavy_industry focus = POL_communal_land}
-		relative_position_id = POL_communal_land
+		relative_position_id = POL_industrial_enlightment
 		mutually_exclusive = {
 			focus = POL_centralization_and_discipline
 		}
@@ -16905,7 +17174,7 @@ focus_tree = {
 		cost = 6
 		prerequisite = { focus = POL_industrial_enlightment focus = POL_centralised_heavy_industry }
 		prerequisite = { focus = POL_decentralised_heavy_industry focus = POL_communal_land}
-		relative_position_id = POL_industrial_enlightment
+		relative_position_id = POL_communal_land
 		mutually_exclusive = {
 			focus = POL_local_initiatives
 		}
@@ -17717,7 +17986,7 @@ focus_tree = {
 	focus = {
 		id = POL_freedom_of_speech
 		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = 1
+		x = -1
 		y = 1
 		search_filters = {}
 		cost = 7
@@ -17749,7 +18018,7 @@ focus_tree = {
 	focus = {
 		id = POL_party_discipline
 		icon = GFX_focus_spr_masters_of_our_own_fate
-		x = -1
+		x = 1
 		y = 1
 		search_filters = {}
 		cost = 7
@@ -17781,12 +18050,12 @@ focus_tree = {
 	focus = {
 		id = POL_technocratic_tendencies
 		icon = GFX_goal_tfv_generic_tech_sharing
-		x = 2
+		x = 0
 		y = 1
 		search_filters = {}
 		cost = 7
 		prerequisite = { focus = POL_party_discipline focus = POL_freedom_of_speech}
-		relative_position_id = POL_party_discipline
+		relative_position_id = POL_freedom_of_speech
 		mutually_exclusive = {
 			focus = POL_militaristic_tendencies
 		}
@@ -17813,12 +18082,12 @@ focus_tree = {
 	focus = {
 		id = POL_militaristic_tendencies
 		icon = GFX_focus_generic_manpower
-		x = 0
+		x = 2
 		y = 1
 		search_filters = {}
 		cost = 7
 		prerequisite = { focus = POL_party_discipline focus = POL_freedom_of_speech }
-		relative_position_id = POL_party_discipline
+		relative_position_id = POL_freedom_of_speech
 		mutually_exclusive = {
 			focus = POL_technocratic_tendencies
 		}
@@ -17850,7 +18119,7 @@ focus_tree = {
 		search_filters = {}
 		cost = 5
 		prerequisite = { focus = POL_militaristic_tendencies focus = POL_technocratic_tendencies focus = POL_christian_socialist_realism focus = POL_cult_of_the_wodz focus = POL_cult_of_the_revolution}
-		relative_position_id = POL_militaristic_tendencies
+		relative_position_id = POL_technocratic_tendencies
 		available = {
 			
 		}
@@ -17885,7 +18154,7 @@ focus_tree = {
 		search_filters = {}
 		cost = 5
 		prerequisite = { focus = POL_militaristic_tendencies focus = POL_technocratic_tendencies focus = POL_christian_socialist_realism focus = POL_cult_of_the_wodz focus = POL_cult_of_the_revolution}
-		relative_position_id = POL_militaristic_tendencies
+		relative_position_id = POL_technocratic_tendencies
 		available = {
 			
 		}
@@ -17911,7 +18180,7 @@ focus_tree = {
 		search_filters = {}
 		cost = 5
 		prerequisite = { focus = POL_militaristic_tendencies focus = POL_technocratic_tendencies focus = POL_christian_socialist_realism focus = POL_cult_of_the_wodz focus = POL_cult_of_the_revolution}
-		relative_position_id = POL_militaristic_tendencies
+		relative_position_id = POL_technocratic_tendencies
 		available = {
 			
 		}
@@ -17937,7 +18206,7 @@ focus_tree = {
 		search_filters = {}
 		cost = 5
 		prerequisite = { focus = POL_militaristic_tendencies focus = POL_technocratic_tendencies focus = POL_christian_socialist_realism focus = POL_cult_of_the_wodz focus = POL_cult_of_the_revolution}
-		relative_position_id = POL_militaristic_tendencies
+		relative_position_id = POL_technocratic_tendencies
 		available = {
 			
 		}
@@ -18153,7 +18422,7 @@ focus_tree = {
 	focus = {
 		id = POL_collectivization_of_agriculture
 		icon = GFX_generic_radical_1
-		x = -1
+		x = 1
 		y = 1
 		search_filters = {}
 		cost = 6
@@ -18209,7 +18478,7 @@ focus_tree = {
 	focus = {
 		id = POL_regional_development
 		icon = GFX_focus_SOV_breadbasket_of_the_union
-		x = 1
+		x = -1
 		y = 1
 		search_filters = {}
 		cost = 6
