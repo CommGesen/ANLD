@@ -1545,16 +1545,13 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			news_event = { days = 1 id = deluge_americas.15 }
-
 			if = {
 				limit = {
 					FRA = { is_subject_of = LOU }
 				}
-				annex_country = { target = FRA transfer_troops = no }
+				annex_country = { target = FRA transfer_troops = yes }
 			}
-			
-			set_capital = 16
-			
+			set_capital = {state = 16}
 			if = {
 				limit = {
 					has_government = communism
@@ -1589,17 +1586,6 @@ focus_tree = {
 				set_party_name = { ideology = communism name = deluge_louisiana_french_communism_party_short long_name = deluge_louisiana_french_communism_party_long }
 				set_party_name = { ideology = fascism name = deluge_louisiana_french_ultranat_party_short long_name = deluge_louisiana_french_ultranat_party_long }
 			}
-
-			create_country_leader = {
-				name = "Louis XVIII"
-				desc = "bourbon_king_desc"
-				picture = "gfx/leaders/deluge/earl_of_wessex.dds"
-				expire = "1965.1.1"
-				ideology = reactionary_ideology
-				traits = {
-				}
-			}
-			
 			every_state = {
 				limit = {
 					is_core_of = FRA

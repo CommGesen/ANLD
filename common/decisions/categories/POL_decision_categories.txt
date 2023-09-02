@@ -526,5 +526,20 @@ polish_hungarian_union_decisions_category = {
 			}
 		}
 	}
-	visible_when_empty = yes
+	visible_when_empty = no
+}
+polish_new_order_decisions_category = {
+	icon = GFX_decision_category_ITA_cooperation_programs
+	picture = GFX_decision_cat_picture_ger_case_anton
+	priority = 2
+	allowed = {
+		original_tag = POL
+		has_completed_focus = POL_new_order
+	}
+	visible = {
+		POL = {
+			has_completed_focus = POL_new_order
+		}
+	}
+	visible_when_empty = no
 }

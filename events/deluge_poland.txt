@@ -3625,6 +3625,18 @@ country_event = {##POL decides what to do with eastern borderlands (PLC path)
 				}
 			}
 			set_party_name = { ideology = neutrality long_name = POL_administration_name_long name = POL_administration_name_short }
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48 
+			}
+			set_popularities = {
+				democratic = 0
+				neutrality = 100
+				fascism = 0
+				communism = 0
+			}
 			if = {
 				limit = {
 					has_completed_focus = POL_polonize_kresy
@@ -3713,6 +3725,18 @@ country_event = {##POL decides what to do with eastern borderlands (PLC path)
 				}
 			}
 			set_party_name = { ideology = neutrality long_name = POL_administration_name_long name = POL_administration_name_short }
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48 
+			}
+			set_popularities = {
+				democratic = 0
+				neutrality = 100
+				fascism = 0
+				communism = 0
+			}
 			if = {
 				limit = {
 					has_completed_focus = POL_polonize_kresy
@@ -9267,6 +9291,32 @@ country_event = {##POL demands from FRA to become lesser part of personal union
 				id = deluge_poland_foreign.94
 			}
 		}
+		every_country = {
+			limit = {
+				is_subject_of = FRA
+			}
+			POL = {
+				set_autonomy = {
+					target = FROM
+					autonomy_state = autonomy_puppet
+					end_wars = yes
+					end_civil_wars = no
+				}
+			}
+		}
+		if = {
+			limit = {
+				POM = {
+					is_subject_of = FRA
+				}
+			}
+			POL = {
+				annex_country = {
+					target = POM
+					transfer_troops = yes
+				}
+			}
+		}
 		POL = {
 			set_autonomy = {
 				target = FRA
@@ -9277,17 +9327,30 @@ country_event = {##POL demands from FRA to become lesser part of personal union
 		}
 		FRA = {
 			create_country_leader = {
-				name = "Andrzej Walewski"
+				name = "Andrew Walewski"
 				desc = POL_deluge_andrzej_walewski_desc
 				picture = "gfx/leaders/POL/andrzej_walewski.dds"
 				expire = "1965.1.1"
 				ideology = bonapartist_ideology
 				traits = {
-					
+					weak_claim
 				}
 			}
 			set_party_name = { ideology = neutrality long_name = POL_administration_name_long name = POL_administration_name_short }
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48 
+			}
+			set_popularities = {
+				democratic = 0
+				neutrality = 100
+				fascism = 0
+				communism = 0
+			}
 		}
+		set_global_flag = POL_FRA_became_lower_part_of_pu
 		ai_chance = {
 			base = 30
 			modifier = {
@@ -9661,5 +9724,17 @@ country_event = {##POL gets info that FRA rejected POL in it's faction
 	is_triggered_only = yes
 	option = {
 		name = deluge_poland_foreign.97.a
+		set_country_flag = POL_monarchist_french_rejected_poland
+	}
+}
+country_event = {##FRA gets info that POL is preparing to divide Germany
+	id = deluge_poland_foreign.98
+	title = deluge_poland_foreign.98.t
+	desc = deluge_poland_foreign.98.d
+	picture = GFX_report_event_worried_french
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland_foreign.98.a
+		set_global_flag = POL_walewski_will_divide_germany
 	}
 }

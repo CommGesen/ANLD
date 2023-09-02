@@ -3442,6 +3442,49 @@ ideas = {
 				industrial_capacity_factory = 0.02
 			}
 		}
+		POL_FRA_cooperation = {
+			picture = SPR_political_violence #change it to something ours
+			allowed = {
+				tag = POL
+			}
+			available = {
+				#empty
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.03
+				industrial_capacity_dockyard = 0.03
+				industrial_capacity_factory = 0.03
+			}
+		}
+		napoleonic_regime = {
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				tag = POL
+			}
+			available = {
+				#empty
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				neutrality_drift = 0.05
+			}
+		}
 	}
 	tank_manufacturer = {
 		designer = yes
@@ -3593,7 +3636,7 @@ ideas = {
 				anti_air_equipment = 0.15
 				rocket_artillery_equipment = 0.15
 			}
-			traits = { 
+			traits = {
 				smpa_designer_trait 
 			}
 			ai_will_do = {

@@ -1,0 +1,67 @@
+add_namespace = deluge_cities_fall
+news_event = {#POL: Fall of Berlin
+	id = deluge_cities_fall.1
+	title = deluge_cities_fall.1.t
+	desc = deluge_cities_fall.1.d
+	picture = GFX_news_event_poland_captures_berlin
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_cities_fall.1.a
+	}
+}
+news_event = {#POL: Fall of Instanbul
+	id = deluge_cities_fall.2
+	title = deluge_cities_fall.2.t
+	desc = deluge_cities_fall.2.d
+	picture = GFX_news_event_istanbul_falls
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_cities_fall.2.a
+	}
+}
+news_event = {#POL: Fall of Vienna
+	id = deluge_cities_fall.3
+	title = deluge_cities_fall.3.t
+	desc = deluge_cities_fall.3.d
+	picture = GFX_news_event_fall_of_vienna
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_cities_fall.3.a
+	}
+}
+news_event = {#POL: Fall of Moscow
+	id = deluge_cities_fall.4
+	title = deluge_cities_fall.4.t
+	desc = deluge_cities_fall.4.d
+	picture = GFX_news_event_fall_of_moscow
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland_cities.4.a
+	}
+}
+news_event = {#POL: Fall of Paris
+	id = deluge_cities_fall.5
+	title = deluge_cities_fall.5.t
+	desc = deluge_cities_fall.5.d
+	picture = GFX_news_event_fall_of_paris
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_cities_fall.5.a
+	}
+}
+news_event = {#GER/DDR/WGR: Fall of Paris
+	id = deluge_cities_fall.6
+	title = deluge_cities_fall.6.t
+	desc = deluge_cities_fall.6.d
+	picture = GFX_news_event_germany_captures_paris
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_cities_fall.6.a
+	}
+}

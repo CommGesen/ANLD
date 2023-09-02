@@ -304,7 +304,7 @@ characters={
 	POL_deluge_bielecki = {##Tadeusz Bielecki
 		name = POL_Character_deluge_bielecki
 		portraits={
-			civilian = {##large = "gfx/leaders/POL/bielecki.dds"
+			civilian = {
 				large="GFX_portrait_POL_tadeusz_bielecki"
 			}
 		}
@@ -339,7 +339,6 @@ characters={
 		portraits={
 			civilian={
 				large = "gfx/leaders/POL/portrait_POL_fryderyk_i.dds"
-				#small = GFX_portrait_POL_roman_dmowski_small
 			}
 		}
 		country_leader = {
@@ -356,7 +355,6 @@ characters={
 		portraits={
 			civilian={
 				large="GFX_portrait_POL_Sejmik_Regency"
-				#small = GFX_portrait_POL_roman_dmowski_small
 			}
 		}
 		country_leader = {
@@ -373,7 +371,6 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/POL/portrait_POL_the_sejm.dds"
-				
 			}
 		}
 		country_leader = {
@@ -389,7 +386,6 @@ characters={
 		name = POL_Character_deluge_christian_wettin
 		portraits={
 			civilian={ 
-				#large = "gfx/leaders/POL/Friedrich_Christian_Wettin.dds"
 				large="GFX_portrait_POL_friedrich_christian"
 			}
 		}
@@ -423,7 +419,6 @@ characters={
 		portraits={
 			civilian={
 				large = "gfx/leaders/POL/portrait_POL_augustyn_jozef_czartoryski.dds"
-				#small = GFX_portrait_POL_roman_dmowski_small
 			}
 		}
 		country_leader = {
@@ -456,7 +451,6 @@ characters={
 		portraits={
 			civilian={ 
 				large = "gfx/leaders/POL/andrzej_walewski.dds"
-				#small = GFX_portrait_POL_roman_dmowski_small
 			}
 		}
 		country_leader = {

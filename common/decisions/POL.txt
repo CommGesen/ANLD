@@ -2,9 +2,6 @@ integration_category = {
 	integrate_lit = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		available = {
-			#POL = {
-			#	has_completed_focus = POL_keep_friends_from_above_baltic
-			#}
 			has_manpower > 2000
 			has_equipment = { infantry_equipment > 1999 }
 			owns_state = 188
@@ -65,9 +62,6 @@ integration_category = {
 	integrate_lat = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		available = {
-			#POL = {
-			#	has_completed_focus = POL_keep_friends_from_above_baltic
-			#}
 			has_manpower > 2000
 			has_equipment = { infantry_equipment > 1999 }
 			owns_state = 12
@@ -3281,17 +3275,19 @@ seek_enemies_category = {
 		days_remove = 35
 		fire_only_once = no
 		days_re_enable = 5
+		complete_effect = {
+			SWE = {
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
 		remove_effect = {
 			if = { 
 				limit = { country_exists = SWE }
 				create_wargoal = {
 					type = puppet_wargoal_focus
 					target = SWE
-				}
-				SWE = {
-					country_event = {
-						id = generic.26
-					}
 				}
 			}
 			if = { 
@@ -3339,17 +3335,19 @@ seek_enemies_category = {
 		days_remove = 35
 		fire_only_once = no
 		days_re_enable = 5
+		complete_effect = {
+			SOV = {
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
 		remove_effect = {
 			if = { 
 				limit = { country_exists = SOV }
 				create_wargoal = {
 					type = puppet_wargoal_focus
 					target = SOV
-				}
-				SOV = {
-					country_event = {
-						id = generic.26
-					}
 				}
 			}
 		}
@@ -3385,17 +3383,19 @@ seek_enemies_category = {
 		days_remove = 35
 		fire_only_once = no
 		days_re_enable = 5
+		complete_effect = {
+			TUR = {
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
 		remove_effect = {
 			if = { 
 				limit = { country_exists = TUR }
 				create_wargoal = {
 					type = puppet_wargoal_focus
 					target = TUR
-				}
-				TUR = {
-					country_event = {
-						id = generic.26
-					}
 				}
 			}
 		}
@@ -3431,17 +3431,19 @@ seek_enemies_category = {
 		days_remove = 35
 		fire_only_once = no
 		days_re_enable = 5
+		complete_effect = {
+			FRA = {
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
 		remove_effect = {
 			if = { 
 				limit = { country_exists = FRA }
 				create_wargoal = {
 					type = puppet_wargoal_focus
 					target = FRA
-				}
-				FRA = {
-					country_event = {
-						id = generic.26
-					}
 				}
 			}
 		}
@@ -8195,6 +8197,62 @@ political_actions = {
 			base = 100
 		}
 	}
+	integrate_western_germany_france_walewski = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		available = {
+			has_manpower > 1000
+			has_equipment = { infantry_equipment > 999 }
+			owns_state = 56
+			controls_state = 56
+			owns_state = 57
+			controls_state = 57
+			owns_state = 51
+			controls_state = 51
+			owns_state = 55
+			controls_state = 55
+			owns_state = 50
+			controls_state = 50
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		allowed = {
+			tag = FRA
+			has_global_flag = POL_walewski_will_divide_germany
+		}
+		visible = {
+			OR = {
+				56 = { NOT = { is_core_of = POL } }
+				57 = { NOT = { is_core_of = POL } }
+				51 = { NOT = { is_core_of = POL } }
+				55 = { NOT = { is_core_of = POL } }
+				50 = { NOT = { is_core_of = POL } }
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -1000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -1000
+			}
+			56 = { add_core_of = POL }
+			57 = { add_core_of = POL }
+			51 = { add_core_of = POL }
+			51 = { add_core_of = POL }
+			50 = { add_core_of = POL }
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
+		}
+	}
 }
 restore_holy_sites_category = {
 	restore_radagoszcz = {
@@ -11475,6 +11533,1104 @@ POL_balance_of_power_monarchist_decisions_category = {
 		}
 		ai_will_do = {
 			base = 1
+		}
+	}
+}
+polish_new_order_decisions_category = {
+	eliminate_orleanist_threat = {
+		icon = GFX_decision_eng_support_imperialist_coup
+		visible = {
+			country_exists = LOU
+			LOU = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+		available = {
+			LOU = {
+				NOT = {
+					has_war_with = POL
+				}
+			}
+		}
+		cost = 50
+		days_remove = 40
+		fire_only_once = no
+		days_re_enable = 5
+		complete_effect = {
+			LOU = {
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			if = { 
+				limit = { country_exists = LOU }
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = LOU
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = no
+				factor = 10
+			}
+			modifier = {
+				has_war = yes
+				factor = 0.01
+			}
+		}
+	}
+	retake_netherlands = {
+		icon = GFX_decision_hol_inundate_water_lines
+		visible = {
+			any_country = {
+				OR = {
+					owns_state = 36
+					owns_state = 7
+					owns_state = 35
+					owns_state = 784
+					owns_state = 6
+					owns_state = 8
+					owns_state = 786
+					owns_state = 34
+				}
+				NOT = {
+					OR = {
+						tag = POL
+						is_subject_of = POL
+					}
+				}
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					owns_state = 36
+					owns_state = 7
+					owns_state = 35
+					owns_state = 784
+					owns_state = 6
+					owns_state = 8
+					owns_state = 786
+					owns_state = 34
+				}
+				NOT = {
+					is_in_faction_with = POL
+				}
+			}
+		}
+		cost = 50
+		days_remove = 40
+		fire_only_once = no
+		days_re_enable = 5
+		complete_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 36
+						owns_state = 7
+						owns_state = 35
+						owns_state = 784
+						owns_state = 6
+						owns_state = 8
+						owns_state = 786
+						owns_state = 34
+					}
+					NOT = {
+						is_in_faction_with = POL
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 36
+						owns_state = 7
+						owns_state = 35
+						owns_state = 784
+						owns_state = 6
+						owns_state = 8
+						owns_state = 786
+						owns_state = 34
+					}
+					NOT = {
+						is_in_faction_with = POL
+					}
+				}
+				POL = {
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = PREV
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = no
+				factor = 10
+			}
+			modifier = {
+				has_war = yes
+				factor = 0.01
+			}
+		}
+	}
+	pacify_iberia = {
+		icon = GFX_decision_generic_cavalry
+		visible = {
+			any_country = {
+				OR = {
+					owns_state = 165
+					owns_state = 794
+					owns_state = 166
+					owns_state = 176
+					owns_state = 172
+					owns_state = 792
+					owns_state = 804
+					owns_state = 790
+					owns_state = 171
+					owns_state = 174
+					owns_state = 791
+					owns_state = 788
+					owns_state = 41
+					owns_state = 793
+					owns_state = 167
+					owns_state = 168
+					owns_state = 175
+					owns_state = 170
+					owns_state = 789
+					owns_state = 173
+					owns_state = 169
+					owns_state = 180
+					owns_state = 181
+					owns_state = 112
+					owns_state = 795
+					owns_state = 179
+					owns_state = 118
+					owns_state = 177
+				}
+				NOT = {
+					OR = {
+						tag = POL
+						is_subject_of = POL
+					}
+				}
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					owns_state = 165
+					owns_state = 794
+					owns_state = 166
+					owns_state = 176
+					owns_state = 172
+					owns_state = 792
+					owns_state = 804
+					owns_state = 790
+					owns_state = 171
+					owns_state = 174
+					owns_state = 791
+					owns_state = 788
+					owns_state = 41
+					owns_state = 793
+					owns_state = 167
+					owns_state = 168
+					owns_state = 175
+					owns_state = 170
+					owns_state = 789
+					owns_state = 173
+					owns_state = 169
+					owns_state = 180
+					owns_state = 181
+					owns_state = 112
+					owns_state = 795
+					owns_state = 179
+					owns_state = 118
+					owns_state = 177
+				}
+				NOT = {
+					is_in_faction_with = POL
+				}
+			}
+		}
+		cost = 50
+		days_remove = 40
+		fire_only_once = no
+		days_re_enable = 5
+		complete_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 165
+						owns_state = 794
+						owns_state = 166
+						owns_state = 176
+						owns_state = 172
+						owns_state = 792
+						owns_state = 804
+						owns_state = 790
+						owns_state = 171
+						owns_state = 174
+						owns_state = 791
+						owns_state = 788
+						owns_state = 41
+						owns_state = 793
+						owns_state = 167
+						owns_state = 168
+						owns_state = 175
+						owns_state = 170
+						owns_state = 789
+						owns_state = 173
+						owns_state = 169
+						owns_state = 180
+						owns_state = 181
+						owns_state = 112
+						owns_state = 795
+						owns_state = 179
+						owns_state = 118
+						owns_state = 177
+					}
+					NOT = {
+						is_in_faction_with = POL
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 165
+						owns_state = 794
+						owns_state = 166
+						owns_state = 176
+						owns_state = 172
+						owns_state = 792
+						owns_state = 804
+						owns_state = 790
+						owns_state = 171
+						owns_state = 174
+						owns_state = 791
+						owns_state = 788
+						owns_state = 41
+						owns_state = 793
+						owns_state = 167
+						owns_state = 168
+						owns_state = 175
+						owns_state = 170
+						owns_state = 789
+						owns_state = 173
+						owns_state = 169
+						owns_state = 180
+						owns_state = 181
+						owns_state = 112
+						owns_state = 795
+						owns_state = 179
+						owns_state = 118
+						owns_state = 177
+					}
+					NOT = {
+						is_in_faction_with = POL
+					}
+				}
+				POL = {
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = PREV
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = no
+				factor = 10
+			}
+			modifier = {
+				has_war = yes
+				factor = 0.01
+			}
+		}
+	}
+	secure_scandinavia = {
+		icon = GFX_decision_border_war
+		visible = {
+			any_country = {
+				OR = {
+					owns_state = 58
+					owns_state = 99
+					owns_state = 37
+					owns_state = 138
+					owns_state = 139
+					owns_state = 140
+					owns_state = 141
+					owns_state = 38
+					owns_state = 666
+					owns_state = 124
+					owns_state = 110
+					owns_state = 142
+					owns_state = 143
+					owns_state = 144
+					owns_state = 145
+					owns_state = 111
+					owns_state = 149
+					owns_state = 150
+					owns_state = 146
+					owns_state = 148
+					owns_state = 147
+				}
+				NOT = {
+					OR = {
+						tag = POL
+						is_subject_of = POL
+					}
+				}
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					owns_state = 58
+					owns_state = 99
+					owns_state = 37
+					owns_state = 138
+					owns_state = 139
+					owns_state = 140
+					owns_state = 141
+					owns_state = 38
+					owns_state = 666
+					owns_state = 124
+					owns_state = 110
+					owns_state = 142
+					owns_state = 143
+					owns_state = 144
+					owns_state = 145
+					owns_state = 111
+					owns_state = 149
+					owns_state = 150
+					owns_state = 146
+					owns_state = 148
+					owns_state = 147
+				}
+				NOT = {
+					is_in_faction_with = POL
+				}
+			}
+		}
+		cost = 50
+		days_remove = 40
+		fire_only_once = no
+		days_re_enable = 5
+		complete_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 58
+						owns_state = 99
+						owns_state = 37
+						owns_state = 138
+						owns_state = 139
+						owns_state = 140
+						owns_state = 141
+						owns_state = 38
+						owns_state = 666
+						owns_state = 124
+						owns_state = 110
+						owns_state = 142
+						owns_state = 143
+						owns_state = 144
+						owns_state = 145
+						owns_state = 111
+						owns_state = 149
+						owns_state = 150
+						owns_state = 146
+						owns_state = 148
+						owns_state = 147
+					}
+					NOT = {
+						is_in_faction_with = POL
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 58
+						owns_state = 99
+						owns_state = 37
+						owns_state = 138
+						owns_state = 139
+						owns_state = 140
+						owns_state = 141
+						owns_state = 38
+						owns_state = 666
+						owns_state = 124
+						owns_state = 110
+						owns_state = 142
+						owns_state = 143
+						owns_state = 144
+						owns_state = 145
+						owns_state = 111
+						owns_state = 149
+						owns_state = 150
+						owns_state = 146
+						owns_state = 148
+						owns_state = 147
+					}
+					NOT = {
+						is_in_faction_with = POL
+					}
+				}
+				POL = {
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = PREV
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = no
+				factor = 10
+			}
+			modifier = {
+				has_war = yes
+				factor = 0.01
+			}
+		}
+	}
+	divide_germany = {
+		icon = GFX_decision_eng_puppet_usa
+		visible = {
+			any_country = {
+				OR = {
+					owns_state = 68
+					owns_state = 65
+					owns_state = 64
+					owns_state = 61
+					owns_state = 59
+					owns_state = 60
+					owns_state = 54
+					owns_state = 53
+					owns_state = 52
+					owns_state = 50
+					owns_state = 55
+					owns_state = 51
+					owns_state = 57
+					owns_state = 56
+				}
+				NOT = {
+					OR = {
+						tag = POL
+						is_subject_of = POL
+					}
+				}
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					owns_state = 68
+					owns_state = 65
+					owns_state = 64
+					owns_state = 61
+					owns_state = 59
+					owns_state = 60
+					owns_state = 54
+					owns_state = 53
+					owns_state = 52
+					owns_state = 50
+					owns_state = 55
+					owns_state = 51
+					owns_state = 57
+					owns_state = 56
+				}
+				NOT = {
+					is_in_faction_with = POL
+				}
+			}
+		}
+		cost = 50
+		days_remove = 75
+		fire_only_once = no
+		days_re_enable = 5
+		complete_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 68
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+						owns_state = 59
+						owns_state = 60
+						owns_state = 54
+						owns_state = 53
+						owns_state = 52
+						owns_state = 50
+						owns_state = 55
+						owns_state = 51
+						owns_state = 57
+						owns_state = 56
+					}
+					NOT = {
+						is_in_faction_with = POL
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+			FRA = {
+				country_event = {
+					id = deluge_poland_foreign.98
+				}
+			}
+		}
+		remove_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 68
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+						owns_state = 59
+						owns_state = 60
+						owns_state = 54
+						owns_state = 53
+						owns_state = 52
+						owns_state = 50
+						owns_state = 55
+						owns_state = 51
+						owns_state = 57
+						owns_state = 56
+					}
+					NOT = {
+						is_in_faction_with = POL
+					}
+				}
+				POL = {
+					declare_war_on = {
+						type = annex_everything
+						target = PREV
+					}
+				}
+			}
+			50 = {
+				add_claim_by = FRA
+			}
+			55 = {
+				add_claim_by = FRA
+			}
+			51 = {
+				add_claim_by = FRA
+			}
+			57 = {
+				add_claim_by = FRA
+			}
+			56 = {
+				add_claim_by = FRA
+			}
+			59 = {
+				add_claim_by = POL
+			}
+			60 = {
+				add_claim_by = POL
+			}
+			54 = {
+				add_claim_by = POL
+			}
+			52 = {
+				add_claim_by = POL
+			}
+			53 = {
+				add_claim_by = POL
+			}
+			65 = {
+				add_claim_by = POL
+			}
+			68 = {
+				add_claim_by = POL
+			}
+			64 = {
+				add_claim_by = POL
+			}
+			61 = {
+				add_claim_by = POL
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = no
+				factor = 10
+			}
+			modifier = {
+				has_war = yes
+				factor = 0.01
+			}
+		}
+	}
+	takeover_italian_peninsula = {
+		icon = GFX_decision_generic_colonial_administration
+		visible = {
+			any_country = {
+				OR = {
+					owns_state = 159
+					owns_state = 160
+					owns_state = 161
+					owns_state = 162
+					owns_state = 157
+					owns_state = 2
+					owns_state = 117
+					owns_state = 849
+					owns_state = 156
+					owns_state = 115
+					owns_state = 114
+				}
+				NOT = {
+					OR = {
+						tag = POL
+						is_subject_of = POL
+					}
+				}
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					owns_state = 159
+					owns_state = 160
+					owns_state = 161
+					owns_state = 162
+					owns_state = 157
+					owns_state = 2
+					owns_state = 117
+					owns_state = 849
+					owns_state = 156
+					owns_state = 115
+					owns_state = 114
+				}
+				NOT = {
+					is_in_faction_with = POL
+				}
+			}
+		}
+		cost = 50
+		days_remove = 40
+		fire_only_once = no
+		days_re_enable = 5
+		complete_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 159
+						owns_state = 160
+						owns_state = 161
+						owns_state = 162
+						owns_state = 157
+						owns_state = 2
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+						owns_state = 114
+					}
+					NOT = {
+						is_in_faction_with = POL
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 159
+						owns_state = 160
+						owns_state = 161
+						owns_state = 162
+						owns_state = 157
+						owns_state = 2
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+						owns_state = 114
+					}
+					NOT = {
+						is_in_faction_with = POL
+					}
+				}
+				POL = {
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = PREV
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = no
+				factor = 10
+			}
+			modifier = {
+				has_war = yes
+				factor = 0.01
+			}
+		}
+	}
+	eliminate_austrian_threat = {
+		icon = GFX_decision_SOV_place_hq
+		visible = {
+			country_exists = AUS
+		}
+		available = {
+			AUS = {
+				is_subject = no
+				NOT = {
+					is_in_faction_with = POL
+				}
+			}
+		}
+		cost = 50
+		days_remove = 35
+		fire_only_once = no
+		days_re_enable = 5
+		complete_effect = {
+			AUS = {
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			if = { 
+				limit = { country_exists = AUS }
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = AUS
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = no
+				factor = 10
+			}
+			modifier = {
+				has_war = yes
+				factor = 0.01
+			}
+		}
+	}
+	eliminate_russian_threat = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+		visible = {
+			country_exists = SOV
+		}
+		available = {
+			SOV = {
+				is_subject = no
+				NOT = {
+					is_in_faction_with = POL
+				}
+			}
+		}
+		cost = 50
+		days_remove = 35
+		fire_only_once = no
+		days_re_enable = 5
+		complete_effect = {
+			SOV = {
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			if = { 
+				limit = { country_exists = SOV }
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = SOV
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = no
+				factor = 10
+			}
+			modifier = {
+				has_war = yes
+				factor = 0.01
+			}
+		}
+	}
+	eliminate_british_threat = {
+		icon = GFX_decision_eng_abdication_crisis
+		visible = {
+			country_exists = ENG
+		}
+		available = {
+			ENG = {
+				is_subject = no
+				NOT = {
+					is_in_faction_with = POL
+				}
+			}
+		}
+		cost = 50
+		days_remove = 35
+		fire_only_once = no
+		days_re_enable = 5
+		complete_effect = {
+			ENG = {
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			if = { 
+				limit = { country_exists = ENG }
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = ENG
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = no
+				factor = 10
+			}
+			modifier = {
+				has_war = yes
+				factor = 0.01
+			}
+		}
+	}
+	integrate_pomerania_walewski = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		available = {
+			has_manpower > 1000
+			has_equipment = { infantry_equipment > 999 }
+			owns_state = 807
+			controls_state = 807
+			owns_state = 85
+			controls_state = 85
+			owns_state = 63
+			controls_state = 63
+			owns_state = 62
+			controls_state = 62
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			OR = {
+				807 = { NOT = { is_core_of = POL } }
+				85 = { NOT = { is_core_of = POL } }
+				63 = { NOT = { is_core_of = POL } }
+				62 = { NOT = { is_core_of = POL } }
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -1000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -1000
+			}
+			807 = { add_core_of = POL }
+			85 = { add_core_of = POL }
+			63 = { add_core_of = POL }
+			62 = { add_core_of = POL }
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
+		}
+	}
+	integrate_claimed_germany = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		available = {
+			has_manpower > 2000
+			has_equipment = { infantry_equipment > 1999 }
+			owns_state = 61
+			controls_state = 61
+			owns_state = 64
+			controls_state = 64
+			owns_state = 65
+			controls_state = 65
+			owns_state = 68
+			controls_state = 68
+			owns_state = 59
+			controls_state = 59
+			owns_state = 60
+			controls_state = 60
+			owns_state = 54
+			controls_state = 54
+			owns_state = 53
+			controls_state = 53
+			owns_state = 52
+			controls_state = 52
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			OR = {
+				64 = { NOT = { is_core_of = POL } }
+				65 = { NOT = { is_core_of = POL } }
+				61 = { NOT = { is_core_of = POL } }
+				68 = { NOT = { is_core_of = POL } }
+				59 = { NOT = { is_core_of = POL } }
+				60 = { NOT = { is_core_of = POL } }
+				54 = { NOT = { is_core_of = POL } }
+				53 = { NOT = { is_core_of = POL } }
+				52 = { NOT = { is_core_of = POL } }
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -2000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -2000
+			}
+			64 = { add_core_of = POL }
+			65 = { add_core_of = POL }
+			61 = { add_core_of = POL }
+			68 = { add_core_of = POL }
+			59 = { add_core_of = POL }
+			60 = { add_core_of = POL }
+			54 = { add_core_of = POL }
+			53 = { add_core_of = POL }
+			52 = { add_core_of = POL } 
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
+		}
+	}
+	eliminate_ideological_threat = {
+		icon = GFX_decision_POL_looming_peasants_strike
+		fire_only_once = no
+		target_trigger = {
+			FROM = {
+				capital_scope = {
+					is_on_continent = europe
+				}
+				has_government = communism
+			}
+		}
+		allowed = {
+			original_tag = POL
+			country_exists = FROM
+		}
+		visible = {
+			
+		}
+		available = {
+			FROM = {
+				has_civil_war = no
+				if = {
+					limit = {
+						tag = GER
+					}
+					NOT = {
+						has_war_with = DDR
+						has_war_with = WGR
+					}
+				}
+				if = {
+					limit = {
+						tag = DDR
+					}
+					NOT = {
+						has_war_with = GER
+						has_war_with = WGR
+					}
+				}
+				if = {
+					limit = {
+						tag = WGR
+					}
+					NOT = {
+						has_war_with = DDR
+						has_war_with = GER
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		cost = 60
+		days_remove = 30
+		complete_effect = {
+			FROM = {
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			POL = {
+				create_wargoal = {
+					type = topple_government
+					target = FROM
+				}
+			}
 		}
 	}
 }

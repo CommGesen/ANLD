@@ -5295,7 +5295,7 @@ focus_tree = {
 	focus = {
 		id = POL_divide_and_conquer
 		icon = GFX_focus_generic_military_dictatorship
-		x = 144
+		x = 165
 		y = 0
 		search_filters = {FOCUS_FILTER_FOREIGN_AFFAIRS FOCUS_FILTER_POLITICAL}
 		cost = 5
@@ -5651,7 +5651,7 @@ focus_tree = {
 	focus = {
 		id = POL_legacy_of_polish_legions_in_lombardy
 		icon = GFX_Banner_of_1st_Polish_Legion_in_Italy_focus
-		x = 149
+		x = 172
 		y = 1
 		search_filters = {FOCUS_FILTER_FOREIGN_AFFAIRS FOCUS_FILTER_WAR_SUPPORT}
 		cost = 8
@@ -5677,7 +5677,7 @@ focus_tree = {
 	focus = {
 		id = POL_establish_LMiR
 		icon = GFX_focus_POL_colonial_league
-		x = 2
+		x = 0
 		y = 1
 		prerequisite = {focus = POL_navy_reform}
 		prerequisite = {focus = POL_legacy_of_polish_legions_in_lombardy}
@@ -5894,9 +5894,9 @@ focus_tree = {
 			has_country_flag = ND_won
 		}
 		completion_reward = {
-			set_party_name = { ideology = democratic long_name = POL_ND_name_long name = POL_ND_name_short }
-			POL = {country_event = {id = deluge_poland.15 hours = 3}}
-			POL = {country_event = {id = deluge_poland.42 hours = 3}}
+			set_party_name = { ideology = democratic long_name = POL_democratic_party_long name = POL_democratic_party }
+			POL = {country_event = {id = deluge_poland.15 }}
+			POL = {country_event = {id = deluge_poland.42 }}
 		}
 		ai_will_do = {
 			factor = 40
@@ -7440,7 +7440,7 @@ focus_tree = {
 	focus = {
 		id = POL_reform_3rd_may_consitution
 		icon = GFX_focus_POL_new_polish_constitution
-		x = -1
+		x = 4
 		y = 2
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 6
@@ -9046,7 +9046,7 @@ focus_tree = {
 	focus = {
 		id = POL_piast_riedelski_wins
 		icon = GFX_piasts_emblem
-		x = 6
+		x = 32
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 1
@@ -9102,7 +9102,7 @@ focus_tree = {
 	focus = {
 		id = POL_czartoryski_wins
 		icon = GFX_czartoryscy_emblem
-		x = 8
+		x = 24
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 1
@@ -9129,7 +9129,7 @@ focus_tree = {
 	focus = {
 		id = POL_radziwill_wins
 		icon = GFX_radziwillowie_emblem
-		x = 10
+		x = 28
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 1
@@ -11089,7 +11089,7 @@ focus_tree = {
 	focus = {
 		id = POL_bonaparte_bastard_wins
 		icon = GFX_old_bonaparte_emblem
-		x = -10
+		x = -6
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 1
@@ -11126,10 +11126,17 @@ focus_tree = {
 			focus = POL_modern_regime
 		}
 		available = {
-			
+			has_country_leader = {
+				character = POL_deluge_andrzej_walewski
+				ruling_only = yes
+			}
 		}
 		completion_reward = {
-			
+			add_trait = {
+				character = POL_deluge_andrzej_walewski
+				ideology = bonapartist_ideology
+				trait = FRA_the_dictator
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -11154,7 +11161,16 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.2
+			}
+			add_stability = 0.07
+			add_political_power = 75
 		}
 		ai_will_do = {
 			factor = 40
@@ -11182,7 +11198,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_ideas = napoleonic_regime
 		}
 		ai_will_do = {
 			factor = 40
@@ -11204,10 +11220,13 @@ focus_tree = {
 		prerequisite = { focus = POL_modern_regime }
 		relative_position_id = POL_modern_regime
 		available = {
-			
+			has_completed_focus = POL_reform_3rd_may_consitution
 		}
 		completion_reward = {
-			
+			add_to_variable = { 3rd_may_political_power_factor = 0.03}
+			add_to_variable = { 3rd_may_conscription_factor = 0.02}
+			add_to_variable = { 3rd_may_neutrality_drift = 0.05}
+			custom_effect_tooltip = POL_custom_effect_tooltip_165
 		}
 		ai_will_do = {
 			factor = 40
@@ -11228,13 +11247,29 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = POL_contact_less_radical_AF_members focus = POL_mix_napoleonic_code_and_constitution_of_3rd_may }
 		relative_position_id = POL_contact_less_radical_AF_members
-		mutually_exclusive = {
-			focus = POL_join_french_alliance
-		}
+		#mutually_exclusive = {
+		#	focus = POL_join_french_alliance
+		#}
 		available = {
 			country_exists = FRA
 			FRA = {
 				is_subject = no
+			}
+			OR = {
+				AND = {
+					has_completed_focus = POL_join_french_alliance
+					has_country_flag = POL_monarchist_french_rejected_poland
+				}
+				NOT = {
+					has_completed_focus = POL_join_french_alliance
+				}
+			}
+		}
+		select_effect = {
+			FRA = {
+				country_event = {
+					id = generic.26
+				}
 			}
 		}
 		completion_reward = {
@@ -11243,6 +11278,173 @@ focus_tree = {
 					id = deluge_poland_foreign.92
 				}
 			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			FRA = {
+				is_subject_of = POL
+			}
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_coronation_in_paris
+		icon = GFX_focus_generic_take_france
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 5
+		prerequisite = { focus = POL_ultimatum_for_france }
+		relative_position_id = POL_ultimatum_for_france
+		available = {
+			OR = {
+				AND = {
+					owns_state = 16
+					controls_state = 16
+				}
+				AND = {
+					16 = {
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			OR = {
+				AND = {
+					country_exists = FRA
+					FRA = {
+						is_subject_of = POL
+					}
+				}
+				AND = {
+					any_state = {
+						is_core_of = FRA
+						OR = {
+							is_owned_by = POL
+							owner = {
+								is_subject_of = POL
+							}
+						}
+					}
+					NOT = {
+						country_exists = FRA
+					}
+				}
+			}
+		}
+		completion_reward = {
+			FRA = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = POL_FRA_became_lower_part_of_pu
+						}
+					}
+					create_country_leader = {
+						name = "Andrew I"
+						desc = "POL_deluge_andrzej_walewski_desc"
+						picture = "gfx/leaders/POL/andrzej_walewski.dds"
+						expire = "1965.1.1"
+						ideology = bonapartist_ideology
+						traits = {
+							
+						}
+					}
+					set_party_name = {
+						ideology = neutrality
+						long_name = POL_administration_name_long
+						name = POL_administration_name_short
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = POL_FRA_became_lower_part_of_pu
+					}
+					remove_country_leader_trait = weak_claim
+					set_country_leader_name = {
+						name = "Andrew I"
+					}
+				}
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48 
+				}
+				set_popularities = {
+					democratic = 0
+					neutrality = 100
+					fascism = 0
+					communism = 0
+				}
+			}
+			POL = {
+				set_autonomy = {
+					target = FRA
+					autonomy_state = autonomy_personal_union
+					end_wars = yes
+					end_civil_wars = no
+				}
+				remove_trait = {
+					character = POL_deluge_andrzej_walewski
+					ideology = bonapartist_ideology
+					trait = weak_claim
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = FRA
+					NOT = {
+						is_owned_by = FRA
+						is_core_of = POL
+					}
+					OR = {
+						is_owned_by = POL
+						owner = {
+							is_subject_of = POL
+						}
+					}
+				}
+				transfer_state_to = FRA
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_new_order
+		icon = GFX_focus_fra_le_deluge
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 5
+		prerequisite = { focus = POL_coronation_in_paris focus = POL_forgive_but_never_forget }
+		relative_position_id = POL_coronation_in_paris
+		available = {
+			OR = {
+				FRA = {
+					is_subject_of = POL
+				}
+				POL = {
+					is_in_faction_with = FRA
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip = POL_custom_effect_tooltip_164
 		}
 		ai_will_do = {
 			factor = 40
@@ -11263,9 +11465,9 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = POL_contact_less_radical_AF_members focus = POL_mix_napoleonic_code_and_constitution_of_3rd_may }
 		relative_position_id = POL_mix_napoleonic_code_and_constitution_of_3rd_may
-		mutually_exclusive = {
-			focus = POL_ultimatum_for_france
-		}
+		#mutually_exclusive = {
+		#	focus = POL_ultimatum_for_france
+		#}
 		available = {
 			country_exists = FRA
 			FRA = {
@@ -11275,12 +11477,64 @@ focus_tree = {
 				is_faction_leader = yes
 				is_subject = no
 			}
+			NOT = {
+				has_completed_focus = POL_ultimatum_for_france
+			}
 		}
 		completion_reward = {
 			FRA = {
 				country_event = {
 					id = deluge_poland_foreign.95
 				}
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			is_in_faction_with = FRA
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_forgive_but_never_forget
+		icon = GFX_POL_FRA_handshake
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 5
+		prerequisite = { focus = POL_join_french_alliance }
+		relative_position_id = POL_join_french_alliance
+		available = {
+			country_exists = FRA
+			POL = {
+				is_in_faction_with = FRA
+				NOT = {
+					has_completed_focus = POL_ultimatum_for_france
+				}
+			}
+		}
+		completion_reward = {
+			FRA = {
+				add_opinion_modifier = {
+					target = POL
+					modifier = opinion_modifier_forgive_but_never_forget
+				}
+				add_ideas = POL_FRA_cooperation
+			}
+			POL = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = opinion_modifier_forgive_but_never_forget
+				}
+				add_ideas = POL_FRA_cooperation
+			}
+			remove_trait = {
+				character = POL_deluge_andrzej_walewski
+				ideology = bonapartist_ideology
+				trait = weak_claim
 			}
 		}
 		ai_will_do = {
@@ -11961,6 +12215,18 @@ focus_tree = {
 					}
 				}
 				set_party_name = { ideology = neutrality long_name = POL_administration_name_long name = POL_administration_name_short }
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48 
+				}
+				set_popularities = {
+					democratic = 0
+					neutrality = 100
+					fascism = 0
+					communism = 0
+				}
 			}
 			POL = {
 				set_autonomy = {
@@ -14760,6 +15026,17 @@ focus_tree = {
 					transfer_troops = yes
 				}
 			}
+			if = {
+				limit = {
+					BLR = {
+						is_subject_of = POL
+					}
+				}
+				annex_country = {
+					target = BLR
+					transfer_troops = yes
+				}
+			}
 			every_state = {
 				limit = {
 					OR = {
@@ -15210,6 +15487,17 @@ focus_tree = {
 				}
 				annex_country = {
 					target = UKR
+					transfer_troops = yes
+				}
+			}
+			if = {
+				limit = {
+					BLR = {
+						is_subject_of = POL
+					}
+				}
+				annex_country = {
+					target = BLR
 					transfer_troops = yes
 				}
 			}
@@ -15981,6 +16269,18 @@ focus_tree = {
 					}
 				}
 				set_party_name = { ideology = neutrality long_name = POL_administration_name_long name = POL_administration_name_short }
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48 
+				}
+				set_popularities = {
+					democratic = 0
+					neutrality = 100
+					fascism = 0
+					communism = 0
+				}
 			}
 			POL = {
 				set_autonomy = {
@@ -17208,7 +17508,7 @@ focus_tree = {
 			has_country_flag = POL_PPS_won_in_event
 		}
 		completion_reward = {
-			set_party_name = { ideology = communism long_name = POL_PPS_name_long name = POL_PPS_name_short }
+			set_party_name = { ideology = communism long_name = POL_communism_party_long name = POL_communism_party }
 			country_event = {
 				id = deluge_poland.84
 			}
@@ -18888,11 +19188,13 @@ focus_tree = {
 		y = 1
 		search_filters = {}
 		cost = 6
-		prerequisite = { focus = POL_communist_youth_organisation focus = POL_workers_militia }
+		prerequisite = { focus = POL_communist_youth_organisation }
+		prerequisite = { focus = POL_workers_militia }
+		prerequisite = { focus = POL_encourage_class_war }
 		relative_position_id = POL_communist_youth_organisation
-		mutually_exclusive = {
-			focus = POL_support_dabrowszczacy
-		}
+		#mutually_exclusive = {
+		#	focus = POL_support_dabrowszczacy
+		#}
 		available = {
 			
 		}
@@ -18920,11 +19222,13 @@ focus_tree = {
 		y = 1
 		search_filters = {}
 		cost = 6
-		prerequisite = { focus = POL_communist_youth_organisation focus = POL_encourage_class_war }
+		prerequisite = { focus = POL_communist_youth_organisation }
+		prerequisite = { focus = POL_workers_militia }
+		prerequisite = { focus = POL_encourage_class_war }
 		relative_position_id = POL_communist_youth_organisation
-		mutually_exclusive = {
-			focus = POL_slavic_army_of_labour
-		}
+		#mutually_exclusive = {
+		#	focus = POL_slavic_army_of_labour
+		#}
 		available = {
 			
 		}
@@ -19302,7 +19606,7 @@ focus_tree = {
 	focus = {
 		id = POL_start_army_reform
 		icon = GFX_focus_POL_prepare_for_the_inevitable
-		x = 170
+		x = 191
 		y = 0
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		cost = 10
@@ -21340,7 +21644,7 @@ focus_tree = {
 	focus = {
 		id = POL_hire_economists
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 200
+		x = 221
 		y = 0
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
 		cost = 5
