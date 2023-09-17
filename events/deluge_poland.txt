@@ -3809,6 +3809,56 @@ country_event = {##lore event - Bolesław Piasecki's speech
 		}
 	}
 }
+country_event = {##lore event - Janusz Kwiek becomes king of Polish gypsies 
+	id = deluge_poland.112
+	title = deluge_poland.112.t
+	desc = deluge_poland.112.d
+	picture = GFX_report_event_polish_gypsy_king_coronation
+	trigger = {
+		tag = POL
+		date > 1937.7.4
+	}
+	option = {
+		name = deluge_poland.112.a
+		ai_chance = {
+			base = 1
+		}
+		add_political_power = 100
+		add_stability = -0.04
+	}
+	option = {
+		name = deluge_poland.112.b
+		ai_chance = {
+			base = 1
+		}
+		add_political_power = -25
+		add_stability = 0.01
+	}
+}
+country_event = {##lore event - Janusz Kwiek becomes king of Polish gypsies 
+	id = deluge_poland.113
+	title = deluge_poland.113.t
+	desc = deluge_poland.113.d
+	picture = GFX_report_event_andrzej_bobola
+	trigger = {
+		tag = POL
+		date > 1937.3.16
+		NOT = {
+			OR = {
+				has_completed_focus = POL_get_rid_of_opium_for_masses
+				has_completed_focus = POL_stachniuk_wins
+				has_completed_focus = POL_smigly_wins
+			}
+		}
+	}
+	option = {
+		name = deluge_poland.113.a
+		ai_chance = {
+			base = 1
+		}
+		add_political_power = 15
+	}
+}
 country_event = {##POL proposes defense pact to UK
 	id = deluge_poland_foreign.1
 	title = deluge_poland_foreign.1.t
@@ -3832,7 +3882,7 @@ country_event = {##POL proposes defense pact to UK
 		POL = {
 			add_opinion_modifier = { target = ENG modifier = polish_british_pact_signed }
 		}
-		custom_effect_tooltip = POL_effect_tooltip_1
+		custom_effect_tooltip = POL_custom_effect_tooltip_268
 		hidden_effect = {
 			news_event = { id = deluge_poland_foreign.2 hours = 10 }
 			clr_global_flag = POL_invites_someone
@@ -9736,5 +9786,375 @@ country_event = {##FRA gets info that POL is preparing to divide Germany
 	option = {
 		name = deluge_poland_foreign.98.a
 		set_global_flag = POL_walewski_will_divide_germany
+	}
+}
+country_event = {##PER is invited by sarmatian POL to join it's faction
+	id = deluge_poland_foreign.99
+	title = deluge_poland_foreign.99.t
+	desc = deluge_poland_foreign.99.d
+	picture = GFX_report_event_polish_tanks_01
+	is_triggered_only = yes
+	option = {##PER joins
+		name = deluge_poland_foreign.99.a
+		POL = {
+			add_to_faction = PER
+		}
+		hidden_effect = {
+			POL = {
+				country_event = {
+					id = deluge_poland_foreign.100
+				}
+			}
+		}
+	}
+	option = {##PER refuses
+		name = deluge_poland_foreign.99.b
+		hidden_effect = {
+			POL = {
+				country_event = {
+					id = deluge_poland_foreign.101
+				}
+			}
+		}
+	}
+}
+country_event = {##POL gets info that PER joined
+	id = deluge_poland_foreign.100
+	title = deluge_poland_foreign.100.t
+	desc = deluge_poland_foreign.100.d
+	picture = GFX_polish_cavalary_1
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland_foreign.100.a
+	}
+}
+country_event = {##POL gets info that PER refused to joined
+	id = deluge_poland_foreign.101
+	title = deluge_poland_foreign.101.t
+	desc = deluge_poland_foreign.101.d
+	picture = GFX_report_event_polish_tanks_01
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland_foreign.101.a
+	}
+}
+country_event = {##POL demands from PER to be anexed (Sarmatian path, PER is in faction with POL)
+	id = deluge_poland_foreign.102
+	title = deluge_poland_foreign.102.t
+	desc = deluge_poland_foreign.102.d
+	picture = GFX_report_event_polish_soldiers_marching
+	is_triggered_only = yes
+	option = {##accept
+		name = deluge_poland_foreign.102.a
+		hidden_effect = {
+			POL = {
+				country_event = {
+					id = deluge_poland_foreign.104
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				is_subject_of = PER
+			}
+			POL = {
+				annex_country = {
+					target = PREV
+					transfer_troops = yes
+				}
+			}
+		}
+		POL = {
+			annex_country = {
+				target = PER
+				transfer_troops = yes
+			}
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {##reject
+		name = deluge_poland_foreign.102.b
+		hidden_effect = {
+			POL = {
+				country_event = {
+					id = deluge_poland_foreign.103
+				}
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+}
+country_event = {##POL gets info that PER rejected POL's demands
+	id = deluge_poland_foreign.103
+	title = deluge_poland_foreign.103.t
+	desc = deluge_poland_foreign.103.d
+	picture = GFX_report_event_polish_soldiers_marching
+	is_triggered_only = yes
+	option = {##do nothing
+		name = deluge_poland_foreign.103.a
+		add_war_support = -0.05
+		add_political_power = 10
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {##create wargoal
+		name = deluge_poland_foreign.103.b
+		create_wargoal = {
+			type = annex_everything
+			target = PER
+		}
+		if = {
+			limit = {
+				PER = {
+					is_in_faction_with = POL
+				}
+			}
+			POL = {
+				remove_from_faction = PER
+			}
+		}
+		add_stability = 0.02
+		add_war_support = -0.05
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.2
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.2 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+	option = {##attack now
+		name = deluge_poland_foreign.103.c
+		if = {
+			limit = {
+				PER = {
+					is_in_faction_with = POL
+				}
+			}
+			POL = {
+				remove_from_faction = PER
+			}
+		}
+		POL = {
+			declare_war_on = {
+				target = PER
+				type = annex_everything
+			}
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+}
+country_event = {##POL gets info that PER accepted
+	id = deluge_poland_foreign.104
+	title = deluge_poland_foreign.104.t
+	desc = deluge_poland_foreign.104.d
+	picture = GFX_report_event_sarmatian
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland_foreign.104.a
+		add_political_power = 10
 	}
 }

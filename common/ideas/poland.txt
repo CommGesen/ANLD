@@ -3084,6 +3084,28 @@ ideas = {
 				neutrality_drift = 0.05
 			}
 		}
+		sarmatian_dominance = {
+			picture = generic_political_support #change it later
+			allowed = {
+				tag = POL
+			}
+			available = {
+				#empty
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.15
+				war_support_factor = 0.1
+				neutrality_drift = 0.1
+				stability_factor = 0.1
+				non_core_manpower = 0.1
+			}
+		}
 		noble_republic = {
 			picture = generic_democratic_drift_bonus #change it later maybe
 			allowed = {
@@ -3483,6 +3505,27 @@ ideas = {
 				stability_factor = 0.1
 				war_support_factor = 0.1
 				neutrality_drift = 0.05
+			}
+		}
+		POL_spirit_of_nomadic_steppe_cavalary_idea = {
+			picture = = ETH_national_studs
+			allowed = {
+				tag = POL
+			}
+			available = {
+				#empty
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				cavalry_attack_factor = 0.15
+				cavalry_defence_factor = 0.15
+				##cavalry_speed_factor = 0.15 ##cavalary speed is broken, doesn't work, even on wiki it is said that
+				conscription_factor = 0.02
 			}
 		}
 	}

@@ -8215,10 +8215,6 @@ political_actions = {
 		}
 		fire_only_once = no
 		days_re_enable = 10
-		allowed = {
-			tag = FRA
-			has_global_flag = POL_walewski_will_divide_germany
-		}
 		visible = {
 			OR = {
 				56 = { NOT = { is_core_of = POL } }
@@ -8227,6 +8223,8 @@ political_actions = {
 				55 = { NOT = { is_core_of = POL } }
 				50 = { NOT = { is_core_of = POL } }
 			}
+			tag = FRA
+			has_global_flag = POL_walewski_will_divide_germany
 		}
 		cost = 100
 		days_remove = 100
@@ -12631,6 +12629,1121 @@ polish_new_order_decisions_category = {
 					target = FROM
 				}
 			}
+		}
+	}
+}
+sarmatia_decisions_category = {
+	invite_iran = {
+		icon = GFX_decision_ETH_chitet
+		visible = {
+			country_exists = PER
+			PER = {
+				is_subject = no
+				NOT = {
+					has_war_with = POL
+				}
+			}
+			POL = {
+				is_subject = no
+			}
+		}
+		available = {
+			
+		}
+		cost = 30
+		days_remove = 14
+		fire_only_once = no
+		days_re_enable = 10
+		remove_effect = {
+			PER = {
+				country_event = {
+					id = deluge_poland_foreign.99
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	demand_iranian_annexation = {
+		icon = GFX_decision_eng_trade_unions_demand
+		visible = {
+			country_exists = PER
+			POL = {
+				is_subject = no
+			}
+		}
+		available = {
+			PER = {
+				is_in_faction_with = POL
+				NOT = {
+					has_war_with = POL
+				}
+			}
+		}
+		cost = 50
+		days_remove = 14
+		fire_only_once = no
+		days_re_enable = 10
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			PER = {
+				country_event = {
+					id = deluge_poland_foreign.102
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	integrate_iran = {
+		icon = GFX_decision_eng_trade_unions_support
+		visible = {
+			OR = {
+				NOT = {
+					419 = {
+						is_core_of = POL
+					}
+				}
+				NOT = {
+					420 = {
+						is_core_of = POL
+					}
+				}
+				NOT = {
+					421 = {
+						is_core_of = POL
+					}
+				}
+				NOT = {
+					417 = {
+						is_core_of = POL
+					}
+				}
+				NOT = {
+					266 = {
+						is_core_of = POL
+					}
+				}
+				NOT = {
+					418 = {
+						is_core_of = POL
+					}
+				}
+				NOT = {
+					411 = {
+						is_core_of = POL
+					}
+				}
+				NOT = {
+					413 = {
+						is_core_of = POL
+					}
+				}
+				NOT = {
+					412 = {
+						is_core_of = POL
+					}
+				}
+				NOT = {
+					414 = {
+						is_core_of = POL
+					}
+				}
+				NOT = {
+					416 = {
+						is_core_of = POL
+					}
+				}
+			}
+		}
+		available = {
+			POL = {
+				controls_state = 419
+				controls_state = 420
+				controls_state = 421
+				controls_state = 417
+				controls_state = 266
+				controls_state = 418
+				controls_state = 411
+				controls_state = 413
+				controls_state = 412
+				controls_state = 414
+				controls_state = 416
+			}
+		}
+		cost = 100
+		days_remove = 50
+		fire_only_once = no
+		days_re_enable = 10
+		remove_effect = {
+			419 = {
+				add_core_of = POL
+			}
+			420 = {
+				add_core_of = POL
+			}
+			421 = {
+				add_core_of = POL
+			}
+			417 = {
+				add_core_of = POL
+			}
+			266 = {
+				add_core_of = POL
+			}
+			418 = {
+				add_core_of = POL
+			}
+			411 = {
+				add_core_of = POL
+			}
+			413 = {
+				add_core_of = POL
+			}
+			412 = {
+				add_core_of = POL
+			}
+			414 = {
+				add_core_of = POL
+			}	
+			416 = {
+				add_core_of = POL
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	retake_central_europe = {
+		icon = GFX_decision_generic_prepare_civil_war
+		visible = {
+			POL = {
+				is_subject = no
+			}
+		}
+		available = {
+			
+		}
+		cost = 30
+		days_remove = 50
+		fire_only_once = no
+		days_re_enable = 10
+		complete_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 74
+						owns_state = 71
+						owns_state = 70
+						owns_state = 73
+						owns_state = 664
+						owns_state = 74
+						owns_state = 155
+						owns_state = 43
+						owns_state = 154
+						owns_state = 76
+						owns_state = 83
+						owns_state = 84
+						owns_state = 82
+						owns_state = 45
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 74
+						owns_state = 71
+						owns_state = 70
+						owns_state = 73
+						owns_state = 664
+						owns_state = 74
+						owns_state = 155
+						owns_state = 43
+						owns_state = 154
+						owns_state = 76
+						owns_state = 83
+						owns_state = 84
+						owns_state = 82
+						owns_state = 45
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+					}
+				}
+				create_wargoal = {
+					type = take_claimed_state
+					target = PREV
+					generator = {
+						
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	retake_eastern_europe = {
+		icon = GFX_decision_generic_prepare_civil_war
+		visible = {
+			POL = {
+				is_subject = no
+			}
+		}
+		available = {
+			
+		}
+		cost = 30
+		days_remove = 50
+		fire_only_once = no
+		days_re_enable = 10
+		complete_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 199
+						owns_state = 198
+						owns_state = 192
+						owns_state = 834
+						owns_state = 197
+						owns_state = 203
+						owns_state = 201
+						owns_state = 202
+						owns_state = 194
+						owns_state = 241
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 226
+						owns_state = 221
+						owns_state = 196
+						owns_state = 137
+						owns_state = 200
+						owns_state = 227
+						owns_state = 228
+						owns_state = 218
+						owns_state = 245
+						owns_state = 217
+						owns_state = 829
+						owns_state = 239
+						owns_state = 255
+						owns_state = 257
+						owns_state = 260
+						owns_state = 240
+						owns_state = 220
+						owns_state = 222
+						owns_state = 224
+						owns_state = 205
+						owns_state = 223
+						owns_state = 265
+						owns_state = 258
+						owns_state = 254
+						owns_state = 401
+						owns_state = 251
+						owns_state = 250
+						owns_state = 252
+						owns_state = 256
+						owns_state = 833
+						owns_state = 249
+						owns_state = 399
+						owns_state = 652
+						owns_state = 651
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 199
+						owns_state = 198
+						owns_state = 192
+						owns_state = 834
+						owns_state = 197
+						owns_state = 203
+						owns_state = 201
+						owns_state = 202
+						owns_state = 194
+						owns_state = 241
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 226
+						owns_state = 221
+						owns_state = 196
+						owns_state = 137
+						owns_state = 200
+						owns_state = 227
+						owns_state = 228
+						owns_state = 218
+						owns_state = 245
+						owns_state = 217
+						owns_state = 829
+						owns_state = 239
+						owns_state = 255
+						owns_state = 257
+						owns_state = 260
+						owns_state = 240
+						owns_state = 220
+						owns_state = 222
+						owns_state = 224
+						owns_state = 205
+						owns_state = 223
+						owns_state = 265
+						owns_state = 258
+						owns_state = 254
+						owns_state = 401
+						owns_state = 251
+						owns_state = 250
+						owns_state = 252
+						owns_state = 256
+						owns_state = 833
+						owns_state = 249
+						owns_state = 399
+						owns_state = 652
+						owns_state = 651
+					}
+				}
+				create_wargoal = {
+					type = take_claimed_state
+					target = PREV
+					generator = {
+						
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	retake_caucasus = {
+		icon = GFX_decision_generic_prepare_civil_war
+		visible = {
+			POL = {
+				is_subject = no
+			}
+		}
+		available = {
+			
+		}
+		cost = 30
+		days_remove = 50
+		fire_only_once = no
+		days_re_enable = 10
+		complete_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 234
+						owns_state = 238
+						owns_state = 235
+						owns_state = 237
+						owns_state = 236
+						owns_state = 232
+						owns_state = 269
+						owns_state = 821
+						owns_state = 828
+						owns_state = 827
+						owns_state = 311
+						owns_state = 826
+						owns_state = 231
+						owns_state = 233
+						owns_state = 230
+						owns_state = 229
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 234
+						owns_state = 238
+						owns_state = 235
+						owns_state = 237
+						owns_state = 236
+						owns_state = 232
+						owns_state = 269
+						owns_state = 821
+						owns_state = 828
+						owns_state = 827
+						owns_state = 311
+						owns_state = 826
+						owns_state = 231
+						owns_state = 233
+						owns_state = 230
+						owns_state = 229
+					}
+				}
+				create_wargoal = {
+					type = take_claimed_state
+					target = PREV
+					generator = {
+						
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	retake_steppes = {
+		icon = GFX_decision_generic_prepare_civil_war
+		visible = {
+			POL = {
+				is_subject = no
+			}
+		}
+		available = {
+			
+		}
+		cost = 30
+		days_remove = 50
+		fire_only_once = no
+		days_re_enable = 10
+		complete_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 407
+						owns_state = 406
+						owns_state = 402
+						owns_state = 881
+						owns_state = 404
+						owns_state = 585
+						owns_state = 830
+						owns_state = 823
+						owns_state = 831
+						owns_state = 587
+						owns_state = 584
+						owns_state = 832
+						owns_state = 742
+						owns_state = 732
+						owns_state = 405
+						owns_state = 586
+						owns_state = 589
+						owns_state = 588
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 407
+						owns_state = 406
+						owns_state = 402
+						owns_state = 881
+						owns_state = 404
+						owns_state = 585
+						owns_state = 830
+						owns_state = 823
+						owns_state = 831
+						owns_state = 587
+						owns_state = 584
+						owns_state = 832
+						owns_state = 742
+						owns_state = 732
+						owns_state = 405
+						owns_state = 586
+						owns_state = 589
+						owns_state = 588
+					}
+				}
+				create_wargoal = {
+					type = take_claimed_state
+					target = PREV
+					generator = {
+						
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	retake_siberia = {
+		icon = GFX_decision_generic_prepare_civil_war
+		visible = {
+			POL = {
+				is_subject = no
+			}
+		}
+		available = {
+			
+		}
+		cost = 30
+		days_remove = 50
+		fire_only_once = no
+		days_re_enable = 10
+		complete_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 582
+						owns_state = 573
+						owns_state = 572
+						owns_state = 653
+						owns_state = 583
+						owns_state = 590
+						owns_state = 882
+						owns_state = 40
+						owns_state = 654
+						owns_state = 570
+						owns_state = 571
+						owns_state = 403
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 582
+						owns_state = 573
+						owns_state = 572
+						owns_state = 653
+						owns_state = 583
+						owns_state = 590
+						owns_state = 882
+						owns_state = 40
+						owns_state = 654
+						owns_state = 570
+						owns_state = 571
+						owns_state = 403
+					}
+				}
+				create_wargoal = {
+					type = take_claimed_state
+					target = PREV
+					generator = {
+						
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	retake_india = {
+		icon = GFX_decision_generic_prepare_civil_war
+		visible = {
+			POL = {
+				is_subject = no
+			}
+		}
+		available = {
+			
+		}
+		cost = 30
+		days_remove = 50
+		fire_only_once = no
+		days_re_enable = 10
+		complete_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 267
+						owns_state = 415
+						owns_state = 442
+						owns_state = 445
+						owns_state = 444
+						owns_state = 443
+						owns_state = 440
+						owns_state = 441
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 267
+						owns_state = 415
+						owns_state = 442
+						owns_state = 445
+						owns_state = 444
+						owns_state = 443
+						owns_state = 440
+						owns_state = 441
+					}
+				}
+				create_wargoal = {
+					type = take_claimed_state
+					target = PREV
+					generator = {
+						
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	retake_dzungaria = {
+		icon = GFX_decision_generic_prepare_civil_war
+		visible = {
+			POL = {
+				is_subject = no
+			}
+		}
+		available = {
+			
+		}
+		cost = 30
+		days_remove = 50
+		fire_only_once = no
+		days_re_enable = 10
+		complete_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 619
+						owns_state = 287
+						owns_state = 759
+						owns_state = 617
+						owns_state = 618
+						owns_state = 760
+						owns_state = 818
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 619
+						owns_state = 287
+						owns_state = 759
+						owns_state = 617
+						owns_state = 618
+						owns_state = 760
+						owns_state = 818
+					}
+				}
+				create_wargoal = {
+					type = take_claimed_state
+					target = PREV
+					generator = {
+						
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	core_state_sarmatian = {
+		icon = GFX_decision_generic_form_nation
+		state_target = yes
+		on_map_mode = map_only
+		#target_array = POL.owned_states
+		visible = {
+			FROM = {
+				NOT = {
+					is_core_of = POL
+				}
+			}
+			POL = {
+				has_completed_focus = POL_prepare_for_conquest
+			}
+		}
+		target_trigger = {
+			FROM = {
+				NOT = {
+					is_core_of = POL
+				}
+				OR = {
+					state = 199
+					state = 198
+					state = 201
+					state = 203
+					state = 202
+					state = 834
+					state = 192
+					state = 197
+					state = 226
+					state = 259
+					state = 193
+					state = 225
+					state = 221
+					state = 196
+					state = 137
+					state = 200
+					state = 228
+					state = 227
+					state = 80
+					state = 79
+					state = 78
+					state = 194
+					state = 241
+					state = 76
+					state = 84
+					state = 83
+					state = 82
+					state = 241
+					state = 154
+					state = 43
+					state = 155
+					state = 45
+					state = 664
+					state = 241
+					state = 70
+					state = 71
+					state = 73
+					state = 74
+					state = 240
+					state = 220
+					state = 224
+					state = 74
+					state = 222
+					state = 205
+					state = 260
+					state = 258
+					state = 254
+					state = 223
+					state = 257
+					state = 255
+					state = 239
+					state = 265
+					state = 245
+					state = 218
+					state = 234
+					state = 238
+					state = 235
+					state = 237
+					state = 232
+					state = 311
+					state = 828
+					state = 827
+					state = 821
+					state = 269
+					state = 229
+					state = 230
+					state = 231
+					state = 233
+					state = 826
+					state = 217
+					state = 829
+					state = 401
+					state = 236
+					state = 407
+					state = 251
+					state = 406
+					state = 250
+					state = 652
+					state = 252
+					state = 833
+					state = 256
+					state = 249
+					state = 399
+					state = 651
+					state = 573
+					state = 653
+					state = 582
+					state = 402
+					state = 587
+					state = 584
+					state = 831
+					state = 823
+					state = 832
+					state = 830
+					state = 742
+					state = 732
+					state = 404
+					state = 405
+					state = 585
+					state = 586
+					state = 583
+					state = 572
+					state = 403
+					state = 571
+					state = 570
+					state = 40
+					state = 654
+					state = 588
+					state = 882
+					state = 590
+					state = 881
+					state = 589
+					state = 818
+					state = 618
+					state = 760
+					state = 617
+					state = 287
+					state = 759
+					state = 619
+					state = 441
+					state = 442
+					state = 267
+					state = 415
+					state = 440
+					state = 443
+					state = 445
+					state = 444
+					state = 89
+					state = 91
+					state = 92
+					state = 93
+					state = 94
+					state = 97
+					state = 762
+					state = 5
+					state = 98
+					state = 87
+					state = 10
+					state = 90
+					state = 88
+					state = 67
+					state = 66
+					state = 86
+				}
+			}
+		}
+		available = {
+			FROM = {
+				is_controlled_by = ROOT
+			}
+		}
+		cost = 35
+		days_remove = 50
+		fire_only_once = no
+		days_re_enable = 10
+		remove_effect = {
+			FROM = {
+				add_core_of = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	develop_state_sarmatian = {
+		icon = GFX_decision_generic_factory
+		state_target = yes
+		on_map_mode = map_only
+		#target_array = POL.owned_states
+		visible = {
+			FROM = {
+				NOT = {
+					has_state_flag = POL_sarmatia_developed
+				}
+			}
+			POL = {
+				has_completed_focus = POL_develop_sarmatian_lands
+			}
+		}
+		target_trigger = {
+			FROM = {
+				NOT = {
+					has_state_flag = POL_sarmatia_developed
+				}
+				OR = {
+					state = 199
+					state = 198
+					state = 201
+					state = 203
+					state = 202
+					state = 834
+					state = 192
+					state = 197
+					state = 226
+					state = 259
+					state = 193
+					state = 225
+					state = 221
+					state = 196
+					state = 137
+					state = 200
+					state = 228
+					state = 227
+					state = 80
+					state = 79
+					state = 78
+					state = 194
+					state = 241
+					state = 76
+					state = 84
+					state = 83
+					state = 82
+					state = 241
+					state = 154
+					state = 43
+					state = 155
+					state = 45
+					state = 664
+					state = 241
+					state = 70
+					state = 71
+					state = 73
+					state = 74
+					state = 240
+					state = 220
+					state = 224
+					state = 74
+					state = 222
+					state = 205
+					state = 260
+					state = 258
+					state = 254
+					state = 223
+					state = 257
+					state = 255
+					state = 239
+					state = 265
+					state = 245
+					state = 218
+					state = 234
+					state = 238
+					state = 235
+					state = 237
+					state = 232
+					state = 311
+					state = 828
+					state = 827
+					state = 821
+					state = 269
+					state = 229
+					state = 230
+					state = 231
+					state = 233
+					state = 826
+					state = 217
+					state = 829
+					state = 401
+					state = 236
+					state = 407
+					state = 251
+					state = 406
+					state = 250
+					state = 652
+					state = 252
+					state = 833
+					state = 256
+					state = 249
+					state = 399
+					state = 651
+					state = 573
+					state = 653
+					state = 582
+					state = 402
+					state = 587
+					state = 584
+					state = 831
+					state = 823
+					state = 832
+					state = 830
+					state = 742
+					state = 732
+					state = 404
+					state = 405
+					state = 585
+					state = 586
+					state = 583
+					state = 572
+					state = 403
+					state = 571
+					state = 570
+					state = 40
+					state = 654
+					state = 588
+					state = 882
+					state = 590
+					state = 881
+					state = 589
+					state = 818
+					state = 618
+					state = 760
+					state = 617
+					state = 287
+					state = 759
+					state = 619
+					state = 441
+					state = 442
+					state = 267
+					state = 415
+					state = 440
+					state = 443
+					state = 445
+					state = 444
+				}
+			}
+		}
+		available = {
+			FROM = {
+				is_controlled_by = ROOT
+			}
+		}
+		cost = 100
+		days_remove = 100
+		fire_only_once = no
+		days_re_enable = 10
+		remove_effect = {
+			FROM = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = POL_sarmatia_developed
+			}
+		}
+		ai_will_do = {
+			factor = 5
 		}
 	}
 }

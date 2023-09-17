@@ -9076,13 +9076,13 @@ focus_tree = {
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 1
+		cost = 5
 		prerequisite = { focus = POL_piast_riedelski_wins focus = POL_czartoryski_wins focus = POL_radziwill_wins }
 		relative_position_id = POL_piast_riedelski_wins
-		mutually_exclusive = {
-			focus = POL_reawake_pan_slavic_rethoric
-			focus = POL_invite_exiled_lithuanian_royalists
-		}
+		#mutually_exclusive = {
+		#	focus = POL_reawake_pan_slavic_rethoric
+		#	focus = POL_invite_exiled_lithuanian_royalists
+		#}
 		available = {
 			
 		}
@@ -9094,6 +9094,288 @@ focus_tree = {
 		}
 		bypass = {
 			has_completed_focus = POL_dissemination_of_sarmatian_myth
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_spirit_of_nomadic_steppe_cavalary
+		icon = GFX_focus_generic_horse_studs
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 5
+		prerequisite = { focus = POL_legacy_of_sarmatian_myth }
+		relative_position_id = POL_legacy_of_sarmatian_myth
+		available = {
+			
+		}
+		completion_reward = {
+			add_ideas = POL_spirit_of_nomadic_steppe_cavalary_idea
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_old_eastern_brothers
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 5
+		prerequisite = { focus = POL_spirit_of_nomadic_steppe_cavalary }
+		relative_position_id = POL_spirit_of_nomadic_steppe_cavalary
+		available = {
+			
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_custom_effect_tooltip_265
+			add_political_power = 100
+			add_opinion_modifier = { target = PER modifier = opinion_modifier_sarmatian_ties }
+			PER = {
+				add_opinion_modifier = { target = POL modifier = opinion_modifier_sarmatian_ties }
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_prepare_for_conquest
+		icon = GFX_army_mobilization
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 5
+		prerequisite = { focus = POL_old_eastern_brothers }
+		relative_position_id = POL_old_eastern_brothers
+		available = {
+			
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_custom_effect_tooltip_266
+			add_war_support = 0.1
+			army_experience = 20
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_proclaim_sarmatia
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 8
+		prerequisite = { focus = POL_prepare_for_conquest }
+		relative_position_id = POL_prepare_for_conquest
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = POL_custom_trigger_tooltip_50
+				POL = {
+					controls_state = 199
+					controls_state = 198
+					controls_state = 201
+					controls_state = 203
+					controls_state = 202
+					controls_state = 834
+					controls_state = 192
+					controls_state = 197
+					controls_state = 226
+					controls_state = 259
+					controls_state = 193
+					controls_state = 225
+					controls_state = 221
+					controls_state = 196
+					controls_state = 137
+					controls_state = 200
+					controls_state = 228
+					controls_state = 227
+					controls_state = 80
+					controls_state = 79
+					controls_state = 194
+					controls_state = 241
+					controls_state = 76
+					controls_state = 84
+					controls_state = 83
+					controls_state = 82
+					controls_state = 241
+					controls_state = 154
+					controls_state = 43
+					controls_state = 155
+					controls_state = 45
+					controls_state = 664
+					controls_state = 241
+					controls_state = 70
+					controls_state = 71
+					controls_state = 73
+					controls_state = 74
+					controls_state = 240
+					controls_state = 220
+					controls_state = 224
+					controls_state = 74
+					controls_state = 222
+					controls_state = 205
+					controls_state = 260
+					controls_state = 258
+					controls_state = 254
+					controls_state = 223
+					controls_state = 257
+					controls_state = 255
+					controls_state = 239
+					controls_state = 265
+					controls_state = 245
+					controls_state = 218
+					controls_state = 234
+					controls_state = 238
+					controls_state = 235
+					controls_state = 237
+					controls_state = 232
+					controls_state = 311
+					controls_state = 828
+					controls_state = 827
+					controls_state = 821
+					controls_state = 269
+					controls_state = 229
+					controls_state = 230
+					controls_state = 231
+					controls_state = 233
+					controls_state = 826
+					controls_state = 217
+					controls_state = 829
+					controls_state = 401
+					controls_state = 236
+					controls_state = 407
+					controls_state = 251
+					controls_state = 406
+					controls_state = 250
+					controls_state = 652
+					controls_state = 252
+					controls_state = 833
+					controls_state = 256
+					controls_state = 249
+					controls_state = 399
+					controls_state = 651
+					controls_state = 573
+					controls_state = 653
+					controls_state = 582
+					controls_state = 402
+					controls_state = 587
+					controls_state = 584
+					controls_state = 831
+					controls_state = 823
+					controls_state = 832
+					controls_state = 830
+					controls_state = 742
+					controls_state = 732
+					controls_state = 404
+					controls_state = 405
+					controls_state = 585
+					controls_state = 586
+					controls_state = 583
+					controls_state = 572
+					controls_state = 403
+					controls_state = 571
+					controls_state = 570
+					controls_state = 40
+					controls_state = 654
+					controls_state = 588
+					controls_state = 882
+					controls_state = 590
+					controls_state = 881
+					controls_state = 589
+					controls_state = 818
+					controls_state = 618
+					controls_state = 760
+					controls_state = 617
+					controls_state = 287
+					controls_state = 759
+					controls_state = 619
+					controls_state = 441
+					controls_state = 442
+					controls_state = 267
+					controls_state = 415
+					controls_state = 440
+					controls_state = 443
+					controls_state = 445
+					controls_state = 444
+					controls_state = 89
+					controls_state = 91
+					controls_state = 92
+					controls_state = 93
+					controls_state = 94
+					controls_state = 97
+					controls_state = 762
+					controls_state = 5
+					controls_state = 98
+					controls_state = 87
+					controls_state = 10
+					controls_state = 90
+					controls_state = 88
+					controls_state = 67
+					controls_state = 66
+					controls_state = 86
+				}
+			}
+		}
+		completion_reward = {
+			set_cosmetic_tag = POL_sarmatia
+			swap_ideas = {
+				remove_idea = sarmatian_myth
+				add_idea = sarmatian_dominance
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_develop_sarmatian_lands
+		icon = GFX_focus_generic_industry_3
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 4
+		prerequisite = { focus = POL_prepare_for_conquest }
+		relative_position_id = POL_prepare_for_conquest
+		available = {
+			
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_custom_effect_tooltip_267
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
 		}
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
@@ -9176,7 +9458,7 @@ focus_tree = {
 		prerequisite = { focus = POL_piast_riedelski_wins focus = POL_czartoryski_wins focus = POL_radziwill_wins }
 		relative_position_id = POL_radziwill_wins
 		mutually_exclusive = {
-			focus = POL_legacy_of_sarmatian_myth
+			#focus = POL_legacy_of_sarmatian_myth
 			focus = POL_invite_exiled_lithuanian_royalists
 		}
 		available = {
@@ -11585,7 +11867,7 @@ focus_tree = {
 		relative_position_id = POL_tyszkiewicz_wins
 		mutually_exclusive = {
 			focus = POL_reawake_pan_slavic_rethoric
-			focus = POL_legacy_of_sarmatian_myth
+			#focus = POL_legacy_of_sarmatian_myth
 		}
 		available = {
 			
@@ -17879,6 +18161,9 @@ focus_tree = {
 		cost = 15
 		prerequisite = { focus = POL_cult_of_the_wodz }
 		relative_position_id = POL_cult_of_the_wodz
+		allow_branch = {
+			always = no
+		}
 		available = {
 			
 		}
