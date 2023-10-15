@@ -5344,12 +5344,29 @@ seek_allies_category = {
 			NOT = {ENG = {has_idea = POL_ENG_defence_pact}}
 		}
 		available = {
-			NOT = {has_global_flag = POL_ENG_pact_once_signed}
-			NOT = { has_global_flag = POL_invites_someone }
-			NOT = {ENG = {is_in_faction_with = POL}}
+			NOT = {
+				has_global_flag = POL_ENG_pact_once_signed
+			}
+			NOT = {
+				has_global_flag = POL_invites_someone
+			}
+			NOT = {
+				ENG = {
+					is_in_faction_with = POL
+				}
+			}
+			NOT = {
+				ENG = {
+					has_government = communism
+				}
+			}
 			country_exists = ENG
-			NOT = { has_war_with = ENG }
-			ENG = { is_subject = no }
+			NOT = {
+				has_war_with = ENG
+			}
+			ENG = {
+				is_subject = no 
+			}
 		}
 		cost = 30
 		days_remove = 14
@@ -5362,7 +5379,7 @@ seek_allies_category = {
 			set_global_flag = POL_invites_someone
 		}
 		remove_effect = {
-			ENG = {country_event = { id = deluge_poland_foreign.1 hours = 1 }}
+			ENG = {country_event = { id = deluge_poland_foreign.1 }}
 		}
 		ai_will_do = {
 			factor = 5
@@ -13744,6 +13761,1876 @@ sarmatia_decisions_category = {
 		}
 		ai_will_do = {
 			factor = 5
+		}
+	}
+}
+wettins_foreign_policy_decisions_category = {
+	take_czechia_wettins = {
+		icon = GFX_decision_generic_operation
+		visible = {
+			POL = {
+				has_completed_focus = POL_direction_towards_west
+				NOT = {
+					owns_state = 75
+					owns_state = 74
+					owns_state = 72
+					owns_state = 9
+					owns_state = 69
+				}
+			}
+		}
+		available = {
+			OR = {
+				74 = { owner = { NOT = { is_in_faction_with = POL } } }
+				75 = { owner = { NOT = { is_in_faction_with = POL } } }
+				72 = { owner = { NOT = { is_in_faction_with = POL } } }
+				9 = { owner = { NOT = { is_in_faction_with = POL } } }
+				69 = { owner = { NOT = { is_in_faction_with = POL } } }
+			}
+			has_completed_focus = POL_demand_czechia
+		}
+		cost = 50
+		days_remove = 35
+		fire_only_once = no
+		days_re_enable = 5
+		complete_effect = {
+			if = { 
+				limit = { 
+					NOT = { 
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					} 
+				}
+				every_country = {
+					limit = {
+						OR = {
+							owns_state = 74 
+							owns_state = 72
+							owns_state = 72
+							owns_state = 9
+							owns_state = 69
+						}
+					}
+					country_event = {
+						id = generic.26
+					}
+				}
+			}
+		}
+		remove_effect = {
+			if = { 
+				limit = { 
+					NOT = {
+						74 = { is_claimed_by = POL }
+						75 = { is_claimed_by = POL }
+						72 = { is_claimed_by = POL }
+						9 = { is_claimed_by = POL }
+						69 = { is_claimed_by = POL }
+					} 
+				}
+				add_state_claim = 74
+				add_state_claim = 75
+				add_state_claim = 72
+				add_state_claim = 9
+				add_state_claim = 69
+			} 
+			if = { 
+				limit = { 
+					NOT = { 
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					} 
+				}
+				every_country = {
+					limit = {
+						OR = {
+							owns_state = 74 
+							owns_state = 72
+							owns_state = 72
+							owns_state = 9
+							owns_state = 69
+						}
+					}
+					ROOT = {
+						create_wargoal = {
+							type = take_claimed_state
+							target = PREV
+							generator = {
+								74 75 72 9 69 
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = no
+				factor = 10
+			}
+			modifier = {
+				has_war = yes
+				factor = 0.01
+			}
+		}
+	}
+	take_slovakia_wettins = {
+		icon = GFX_decision_generic_operation
+		visible = {
+			POL = {
+				has_completed_focus = POL_direction_towards_west
+				NOT = {
+					owns_state = 70
+					owns_state = 71
+					owns_state = 664
+					owns_state = 73
+				}
+			}
+		}
+		available = {
+			OR = {
+				70 = { owner = { NOT = { is_in_faction_with = POL } } }
+				71 = { owner = { NOT = { is_in_faction_with = POL } } }
+				664 = { owner = { NOT = { is_in_faction_with = POL } } }
+				73 = { owner = { NOT = { is_in_faction_with = POL } } }
+			}
+			has_completed_focus = POL_demand_czechia
+		}
+		cost = 50
+		days_remove = 35
+		fire_only_once = no
+		days_re_enable = 5
+		complete_effect = {
+			if = { 
+				limit = {
+					NOT = { 
+						owns_state = 70 
+						owns_state = 71
+						owns_state = 664
+						owns_state = 73
+					} 
+				}
+				every_country = {
+					limit = {
+						OR = {
+							owns_state = 70 
+							owns_state = 71
+							owns_state = 664
+							owns_state = 73
+						}
+					}
+					country_event = {
+						id = generic.26
+					}
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						70 = { is_claimed_by = POL }
+						71 = { is_claimed_by = POL }
+						664 = { is_claimed_by = POL }
+						73 = { is_claimed_by = POL }
+					} 
+				}
+				add_state_claim = 70
+				add_state_claim = 71
+				add_state_claim = 664
+				add_state_claim = 73
+			} 
+			if = { 
+				limit = {
+					NOT = { 
+						owns_state = 70 
+						owns_state = 71
+						owns_state = 664
+						owns_state = 73
+					} 
+				}
+				every_country = {
+					limit = {
+						OR = {
+							owns_state = 70 
+							owns_state = 71
+							owns_state = 664
+							owns_state = 73
+						}
+					}
+					ROOT = {
+						create_wargoal = {
+							type = take_claimed_state
+							target = PREV
+							generator = {
+								70 71 664 73 
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = no
+				factor = 10
+			}
+			modifier = {
+				has_war = yes
+				factor = 0.01
+			}
+		}
+	}
+	wettins_integrate_slovakia = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		available = {
+			has_manpower > 1000
+			has_equipment = { infantry_equipment > 999 }
+			owns_state = 70
+			controls_state = 70
+			owns_state = 664
+			controls_state = 664
+			owns_state = 71
+			controls_state = 71
+			owns_state = 73
+			controls_state = 73
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			AND = {
+				POL = {
+					has_completed_focus = POL_direction_towards_west
+				}
+				OR = {
+					73 = { NOT = { is_core_of = POL } } 
+					71 = { NOT = { is_core_of = POL } } 
+					664 = { NOT = { is_core_of = POL } } 
+					70 = { NOT = { is_core_of = POL } } 
+				}
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -1000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -1000
+			}
+			73 = { add_core_of = POL } 
+			71 = { add_core_of = POL } 
+			664 = { add_core_of = POL } 
+			70 = { add_core_of = POL } 
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
+		}
+	}
+	take_pomerania_wettins = {
+		icon = GFX_decision_generic_operation
+		visible = {
+			POL = {
+				has_completed_focus = POL_direction_towards_west
+				NOT = {
+					owns_state = 807
+					owns_state = 85
+					owns_state = 63
+					owns_state = 62
+				}
+			}
+		}
+		available = {
+			OR = {
+				807 = { owner = { NOT = { is_in_faction_with = POL } } }
+				85 = { owner = { NOT = { is_in_faction_with = POL } } }
+				63 = { owner = { NOT = { is_in_faction_with = POL } } }
+				62 = { owner = { NOT = { is_in_faction_with = POL } } }
+			}
+		}
+		cost = 50
+		days_remove = 35
+		fire_only_once = no
+		days_re_enable = 5
+		complete_effect = {
+			if = { 
+				limit = {
+					NOT = { 
+						owns_state = 807 
+						owns_state = 85
+						owns_state = 63
+						owns_state = 62
+					} 
+				}
+				every_country = {
+					limit = {
+						OR = {
+							owns_state = 807 
+							owns_state = 85
+							owns_state = 63
+							owns_state = 62
+						}
+					}
+					country_event = {
+						id = generic.26
+					}
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						807 = { is_claimed_by = POL }
+						85 = { is_claimed_by = POL }
+						63 = { is_claimed_by = POL }
+						62 = { is_claimed_by = POL }
+					} 
+				}
+				add_state_claim = 807
+				add_state_claim = 85
+				add_state_claim = 63
+				add_state_claim = 62
+			} 
+			if = { 
+				limit = {
+					NOT = { 
+						owns_state = 807 
+						owns_state = 85
+						owns_state = 63
+						owns_state = 62
+					} 
+				}
+				every_country = {
+					limit = {
+						OR = {
+							owns_state = 807 
+							owns_state = 85
+							owns_state = 63
+							owns_state = 62
+						}
+					}
+					ROOT = {
+						create_wargoal = {
+							type = take_claimed_state
+							target = PREV
+							generator = {
+								807 85 63 62 
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = no
+				factor = 10
+			}
+			modifier = {
+				has_war = yes
+				factor = 0.01
+			}
+		}
+	}
+	wettins_integrate_pomerania = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		available = {
+			has_manpower > 1000
+			has_equipment = { infantry_equipment > 999 }
+			owns_state = 807
+			controls_state = 807
+			owns_state = 85
+			controls_state = 85
+			owns_state = 63
+			controls_state = 63
+			owns_state = 62
+			controls_state = 62
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			AND = {
+				POL = {
+					has_completed_focus = POL_direction_towards_west
+				}
+				OR = {
+					807 = { NOT = { is_core_of = POL } } 
+					85 = { NOT = { is_core_of = POL } } 
+					63 = { NOT = { is_core_of = POL } } 
+					62 = { NOT = { is_core_of = POL } } 
+				}
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -1000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -1000
+			}
+			807 = { add_core_of = POL } 
+			85 = { add_core_of = POL } 
+			63 = { add_core_of = POL } 
+			62 = { add_core_of = POL } 
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
+		}
+	}
+	take_eastern_germany_wettins = {
+		icon = GFX_decision_generic_operation
+		visible = {
+			POL = {
+				has_completed_focus = POL_direction_towards_west
+				NOT = {
+					owns_state = 68
+					owns_state = 65
+					owns_state = 64
+					owns_state = 61
+				}
+			}
+		}
+		available = {
+			OR = {
+				68 = { owner = { NOT = { is_in_faction_with = POL } } }
+				65 = { owner = { NOT = { is_in_faction_with = POL } } }
+				64 = { owner = { NOT = { is_in_faction_with = POL } } }
+				61 = { owner = { NOT = { is_in_faction_with = POL } } }
+			}
+		}
+		cost = 50
+		days_remove = 35
+		fire_only_once = no
+		days_re_enable = 5
+		complete_effect = {
+			if = { 
+				limit = {
+					NOT = { 
+						owns_state = 68 
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+					} 
+				}
+				every_country = {
+					limit = {
+						OR = {
+							owns_state = 68 
+							owns_state = 65
+							owns_state = 64
+							owns_state = 61
+						}
+					}
+					country_event = {
+						id = generic.26
+					}
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						68 = { is_claimed_by = POL }
+						65 = { is_claimed_by = POL }
+						64 = { is_claimed_by = POL }
+						61 = { is_claimed_by = POL }
+					} 
+				}
+				add_state_claim = 68
+				add_state_claim = 65
+				add_state_claim = 64
+				add_state_claim = 61
+			} 
+			if = { 
+				limit = {
+					NOT = { 
+						owns_state = 68 
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+					} 
+				}
+				every_country = {
+					limit = {
+						OR = {
+							owns_state = 68 
+							owns_state = 65
+							owns_state = 64
+							owns_state = 61
+						}
+					}
+					ROOT = {
+						create_wargoal = {
+							type = take_claimed_state
+							target = PREV
+							generator = {
+								68 65 64 61 
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = no
+				factor = 10
+			}
+			modifier = {
+				has_war = yes
+				factor = 0.01
+			}
+		}
+	}
+	POL_recreate_HRE = {
+		fire_only_once = yes
+		icon = GFX_decision_eng_trade_unions_support
+		visible = {
+			has_completed_focus = POL_direction_towards_west
+		}
+		available = {
+			POL = {is_faction_leader = yes}
+			POL = {is_major = yes}
+			POL = {is_subject = no}
+			has_completed_focus = POL_the_fourth_rome
+			custom_trigger_tooltip = {##territories of HRE
+				tooltip = POL_custom_trigger_tooltip_51
+				OR = {
+					controls_state = 5
+					AND = {
+						5 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 86
+					AND = {
+						86 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 807
+					AND = {
+						807 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 85
+					AND = {
+						85 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 63
+					AND = {
+						63 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 62
+					AND = {
+						62 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 66
+					AND = {
+						66 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 67
+					AND = {
+						67 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 9
+					AND = {
+						9 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 69
+					AND = {
+						69 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 72
+					AND = {
+						72 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 75
+					AND = {
+						75 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 74
+					AND = {
+						74 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 4
+					AND = {
+						4 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 152
+					AND = {
+						152 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 153
+					AND = {
+						153 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 102
+					AND = {
+						102 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 853
+					AND = {
+						853 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 736
+					AND = {
+						736 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 852
+					AND = {
+						852 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 160
+					AND = {
+						160 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 850
+					AND = {
+						850 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 39
+					AND = {
+						39 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 848
+					AND = {
+						848 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 159
+					AND = {
+						159 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 161
+					AND = {
+						161 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 162
+					AND = {
+						162 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 2
+					AND = {
+						2 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 157
+					AND = {
+						157 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 114
+					AND = {
+						114 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 1
+					AND = {
+						1 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 158
+					AND = {
+						158 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 735
+					AND = {
+						735 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 851
+					AND = {
+						851 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 21
+					AND = {
+						21 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 32
+					AND = {
+						32 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 847
+					AND = {
+						847 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 845
+					AND = {
+						845 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 802
+					AND = {
+						802 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 3
+					AND = {
+						3 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 846
+					AND = {
+						846 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 17
+					AND = {
+						17 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 28
+					AND = {
+						28 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 42
+					AND = {
+						42 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 18
+					AND = {
+						18 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 29
+					AND = {
+						29 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 786
+					AND = {
+						786 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 8
+					AND = {
+						8 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 34
+					AND = {
+						34 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 6
+					AND = {
+						6 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 35
+					AND = {
+						35 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 784
+					AND = {
+						784 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 7
+					AND = {
+						7 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 36
+					AND = {
+						36 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 56
+					AND = {
+						56 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 56
+					AND = {
+						56 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 57
+					AND = {
+						57 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 51
+					AND = {
+						51 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 55
+					AND = {
+						55 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 59
+					AND = {
+						59 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 60
+					AND = {
+						60 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 54
+					AND = {
+						54 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 53
+					AND = {
+						53 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 52
+					AND = {
+						52 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 50
+					AND = {
+						50 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 65
+					AND = {
+						65 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 68
+					AND = {
+						68 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 64
+					AND = {
+						64 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 61
+					AND = {
+						61 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 58
+					AND = {
+						58 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 3
+					AND = {
+						3 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			add_trait = {
+				character = POL_deluge_christian_wettin
+				ideology = bonapartist_ideology
+				trait = holy_roman_emperor
+			}
+			news_event = {
+				id = deluge_poland_foreign.111
+			}
+		}
+	}
+	take_ukraine_wettins = {
+		icon = GFX_decision_generic_operation
+		visible = {
+			POL = {
+				has_completed_focus = POL_direction_towards_east
+				NOT = {
+					owns_state = 202
+					owns_state = 201
+					owns_state = 199
+					owns_state = 198
+					owns_state = 203
+					owns_state = 192
+					owns_state = 197
+					owns_state = 834
+				}
+			}
+		}
+		available = {
+			OR = {
+				202 = { owner = { NOT = { is_in_faction_with = POL } } }
+				201 = { owner = { NOT = { is_in_faction_with = POL } } }
+				199 = { owner = { NOT = { is_in_faction_with = POL } } }
+				198 = { owner = { NOT = { is_in_faction_with = POL } } }
+				203 = { owner = { NOT = { is_in_faction_with = POL } } }
+				192 = { owner = { NOT = { is_in_faction_with = POL } } }
+				197 = { owner = { NOT = { is_in_faction_with = POL } } }
+				834 = { owner = { NOT = { is_in_faction_with = POL } } }
+			}
+		}
+		cost = 50
+		days_remove = 35
+		fire_only_once = no
+		days_re_enable = 5
+		complete_effect = {
+			if = { 
+				limit = {
+					NOT = { 
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 203
+						owns_state = 192
+						owns_state = 197
+						owns_state = 834
+					} 
+				}
+				every_country = {
+					limit = {
+						OR = {
+							owns_state = 202
+							owns_state = 201
+							owns_state = 199
+							owns_state = 198
+							owns_state = 203
+							owns_state = 192
+							owns_state = 197
+							owns_state = 834
+						}
+					}
+					country_event = {
+						id = generic.26
+					}
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						202 = { is_claimed_by = POL }
+						201 = { is_claimed_by = POL }
+						199 = { is_claimed_by = POL }
+						198 = { is_claimed_by = POL }
+						203 = { is_claimed_by = POL }
+						192 = { is_claimed_by = POL }
+						197 = { is_claimed_by = POL }
+						834 = { is_claimed_by = POL }
+					} 
+				}
+				add_state_claim = 202
+				add_state_claim = 201
+				add_state_claim = 199
+				add_state_claim = 198
+				add_state_claim = 203
+				add_state_claim = 192
+				add_state_claim = 197
+				add_state_claim = 834
+			} 
+			if = { 
+				limit = {
+					NOT = { 
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 203
+						owns_state = 192
+						owns_state = 197
+						owns_state = 834
+					} 
+				}
+				every_country = {
+					limit = {
+						OR = {
+							owns_state = 202
+							owns_state = 201
+							owns_state = 199
+							owns_state = 198
+							owns_state = 203
+							owns_state = 192
+							owns_state = 197
+							owns_state = 834
+						}
+					}
+					ROOT = {
+						create_wargoal = {
+							type = take_claimed_state
+							target = PREV
+							generator = {
+								202 201 199 198 203 192 197 834
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = no
+				factor = 10
+			}
+			modifier = {
+				has_war = yes
+				factor = 0.01
+			}
+		}
+	}
+	wettins_integrate_ukraine = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		available = {
+			has_manpower > 1500
+			has_equipment = { infantry_equipment > 1499 }
+			owns_state = 202
+			controls_state = 202
+			owns_state = 201
+			controls_state = 201
+			owns_state = 199
+			controls_state = 199
+			owns_state = 198
+			controls_state = 198
+			owns_state = 203
+			controls_state = 203
+			owns_state = 192
+			controls_state = 192
+			owns_state = 197
+			controls_state = 197
+			owns_state = 834
+			controls_state = 834
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			AND = {
+				POL = {
+					has_completed_focus = POL_integrate_the_borderlands
+				}
+				OR = {
+					202 = { NOT = { is_core_of = POL } }
+					201 = { NOT = { is_core_of = POL } }
+					199 = { NOT = { is_core_of = POL } }
+					198 = { NOT = { is_core_of = POL } }
+					203 = { NOT = { is_core_of = POL } }
+					192 = { NOT = { is_core_of = POL } }
+					197 = { NOT = { is_core_of = POL } }
+					834 = { NOT = { is_core_of = POL } }
+				}
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -1500
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -1500
+			}
+			202 = { add_core_of = POL }
+			201 = { add_core_of = POL }
+			199 = { add_core_of = POL }
+			198 = { add_core_of = POL }
+			203 = { add_core_of = POL }
+			192 = { add_core_of = POL }
+			197 = { add_core_of = POL }
+			834 = { add_core_of = POL }
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
+		}
+	}
+	take_belarus_wettins = {
+		icon = GFX_decision_generic_operation
+		visible = {
+			POL = {
+				has_completed_focus = POL_direction_towards_east
+				NOT = {
+					owns_state = 194
+					owns_state = 204
+					owns_state = 206
+					owns_state = 207
+					owns_state = 95
+					owns_state = 96
+				}
+			}
+		}
+		available = {
+			OR = {
+				194 = { owner = { NOT = { is_in_faction_with = POL } } }
+				204 = { owner = { NOT = { is_in_faction_with = POL } } }
+				206 = { owner = { NOT = { is_in_faction_with = POL } } }
+				207 = { owner = { NOT = { is_in_faction_with = POL } } }
+				95 = { owner = { NOT = { is_in_faction_with = POL } } }
+				96 = { owner = { NOT = { is_in_faction_with = POL } } }
+			}
+		}
+		cost = 50
+		days_remove = 35
+		fire_only_once = no
+		days_re_enable = 5
+		complete_effect = {
+			if = { 
+				limit = {
+					NOT = { 
+						owns_state = 194
+						owns_state = 204
+						owns_state = 206
+						owns_state = 207
+						owns_state = 95
+						owns_state = 96
+					} 
+				}
+				every_country = {
+					limit = {
+						OR = {
+							owns_state = 194
+							owns_state = 204
+							owns_state = 206
+							owns_state = 207
+							owns_state = 95
+							owns_state = 96
+						}
+					}
+					country_event = {
+						id = generic.26
+					}
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						194 = { is_claimed_by = POL }
+						204 = { is_claimed_by = POL }
+						206 = { is_claimed_by = POL }
+						207 = { is_claimed_by = POL }
+						95 = { is_claimed_by = POL }
+						96 = { is_claimed_by = POL }
+					} 
+				}
+				add_state_claim = 194
+				add_state_claim = 204
+				add_state_claim = 206
+				add_state_claim = 207
+				add_state_claim = 95
+				add_state_claim = 96
+			} 
+			if = { 
+				limit = {
+					NOT = { 
+						owns_state = 194
+						owns_state = 204
+						owns_state = 206
+						owns_state = 207
+						owns_state = 95
+						owns_state = 96
+					} 
+				}
+				every_country = {
+					limit = {
+						OR = {
+							owns_state = 194
+							owns_state = 204
+							owns_state = 206
+							owns_state = 207
+							owns_state = 95
+							owns_state = 96
+						}
+					}
+					ROOT = {
+						create_wargoal = {
+							type = take_claimed_state
+							target = PREV
+							generator = {
+								194 204 206 207 95 96
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = no
+				factor = 10
+			}
+			modifier = {
+				has_war = yes
+				factor = 0.01
+			}
+		}
+	}
+	wettins_integrate_belarus = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		available = {
+			has_manpower > 1500
+			has_equipment = { infantry_equipment > 1499 }
+			owns_state = 194
+			controls_state = 194
+			owns_state = 204
+			controls_state = 204
+			owns_state = 206
+			controls_state = 206
+			owns_state = 207
+			controls_state = 207
+			owns_state = 95
+			controls_state = 95
+			owns_state = 96
+			controls_state = 96
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			AND = {
+				POL = {
+					has_completed_focus = POL_integrate_the_borderlands
+				}
+				OR = {
+					194 = { NOT = { is_core_of = POL } }
+					204 = { NOT = { is_core_of = POL } }
+					206 = { NOT = { is_core_of = POL } }
+					207 = { NOT = { is_core_of = POL } }
+					95 = { NOT = { is_core_of = POL } }
+					96 = { NOT = { is_core_of = POL } }
+				}
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -1500
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -1500
+			}
+			194 = { add_core_of = POL }
+			204 = { add_core_of = POL }
+			206 = { add_core_of = POL }
+			207 = { add_core_of = POL }
+			95 = { add_core_of = POL }
+			96 = { add_core_of = POL }
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
+		}
+	}
+	take_baltia_wettins = {
+		icon = GFX_decision_generic_operation
+		visible = {
+			POL = {
+				has_completed_focus = POL_direction_towards_east
+				NOT = {
+					owns_state = 11
+					owns_state = 814
+					owns_state = 188
+					owns_state = 189
+					owns_state = 815
+					owns_state = 809
+					owns_state = 190
+				}
+			}
+		}
+		available = {
+			OR = {
+				11 = { owner = { NOT = { is_in_faction_with = POL } } }
+				814 = { owner = { NOT = { is_in_faction_with = POL } } }
+				188 = { owner = { NOT = { is_in_faction_with = POL } } }
+				189 = { owner = { NOT = { is_in_faction_with = POL } } }
+				815 = { owner = { NOT = { is_in_faction_with = POL } } }
+				809 = { owner = { NOT = { is_in_faction_with = POL } } }
+				190 = { owner = { NOT = { is_in_faction_with = POL } } }
+			}
+		}
+		cost = 50
+		days_remove = 35
+		fire_only_once = no
+		days_re_enable = 5
+		complete_effect = {
+			if = { 
+				limit = {
+					NOT = { 
+						owns_state = 11
+						owns_state = 814
+						owns_state = 188
+						owns_state = 189
+						owns_state = 815
+						owns_state = 809
+						owns_state = 190
+					} 
+				}
+				every_country = {
+					limit = {
+						OR = {
+							owns_state = 11
+							owns_state = 814
+							owns_state = 188
+							owns_state = 189
+							owns_state = 815
+							owns_state = 809
+							owns_state = 190
+						}
+					}
+					country_event = {
+						id = generic.26
+					}
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						11 = { is_claimed_by = POL }
+						814 = { is_claimed_by = POL }
+						188 = { is_claimed_by = POL }
+						189 = { is_claimed_by = POL }
+						815 = { is_claimed_by = POL }
+						809 = { is_claimed_by = POL }
+						190 = { is_claimed_by = POL }
+					} 
+				}
+				add_state_claim = 11
+				add_state_claim = 814
+				add_state_claim = 188
+				add_state_claim = 189
+				add_state_claim = 815
+				add_state_claim = 809
+				add_state_claim = 190
+			} 
+			if = { 
+				limit = {
+					NOT = { 
+						owns_state = 11
+						owns_state = 814
+						owns_state = 188
+						owns_state = 189
+						owns_state = 815
+						owns_state = 809
+						owns_state = 190
+					} 
+				}
+				every_country = {
+					limit = {
+						OR = {
+							owns_state = 11
+							owns_state = 814
+							owns_state = 188
+							owns_state = 189
+							owns_state = 815
+							owns_state = 809
+							owns_state = 190
+						}
+					}
+					ROOT = {
+						create_wargoal = {
+							type = take_claimed_state
+							target = PREV
+							generator = {
+								11 814 188 189 815 809 190
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = no
+				factor = 10
+			}
+			modifier = {
+				has_war = yes
+				factor = 0.01
+			}
+		}
+	}
+	wettins_integrate_baltia = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		available = {
+			has_manpower > 1500
+			has_equipment = { infantry_equipment > 1499 }
+			owns_state = 11
+			controls_state = 11
+			owns_state = 814
+			controls_state = 814
+			owns_state = 188
+			controls_state = 188
+			owns_state = 189
+			controls_state = 189
+			owns_state = 815
+			controls_state = 815
+			owns_state = 809
+			controls_state = 809
+			owns_state = 190
+			controls_state = 190
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			AND = {
+				POL = {
+					has_completed_focus = POL_integrate_the_borderlands
+				}
+				OR = {
+					11 = { NOT = { is_core_of = POL } }
+					814 = { NOT = { is_core_of = POL } }
+					188 = { NOT = { is_core_of = POL } }
+					189 = { NOT = { is_core_of = POL } }
+					815 = { NOT = { is_core_of = POL } }
+					809 = { NOT = { is_core_of = POL } }
+					190 = { NOT = { is_core_of = POL } }
+				}
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -1500
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -1500
+			}
+			11 = { add_core_of = POL }
+			814 = { add_core_of = POL }
+			188 = { add_core_of = POL }
+			189 = { add_core_of = POL }
+			815 = { add_core_of = POL }
+			809 = { add_core_of = POL }
+			190 = { add_core_of = POL }
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
 		}
 	}
 }

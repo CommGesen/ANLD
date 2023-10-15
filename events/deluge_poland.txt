@@ -137,7 +137,7 @@ country_event = {#old king wettyn dies country
 			}
 		}
 		date > 1937.6.6
-		has_idea = old_wettyn_king
+		has_character = POL_deluge_augustus_wettin
 	}
 	mean_time_to_happen = {
 		days = 30
@@ -151,6 +151,7 @@ country_event = {#old king wettyn dies country
 				add_idea = fryderyk_ii_idea
 			}
 		}
+		retire_character = POL_deluge_augustus_wettin
 		POL = {
 			promote_character = POL_deluge_christian_wettin
 		}
@@ -5772,7 +5773,8 @@ country_event = {##POL asks FIN if they want to get independent
 				target = SOV
 				type = annex_everything
 			}
-			
+			retire_character = FIN_nikolai_nekrasov
+			promote_character = FIN_carl_gustaf_emil_mannerheim
 		}
 		if = {
 			limit = {
@@ -9806,6 +9808,45 @@ country_event = {##PER is invited by sarmatian POL to join it's faction
 				}
 			}
 		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				ROOT = {has_government = POL}
+				add = 5
+			}
+			modifier = {
+				POL = {
+					has_idea = POL_deluge_jozef_beck
+				}
+				add = 5
+			}
+			modifier = {
+				NOT = {ROOT = {has_government = POL}}
+				add = -5
+			}
+			modifier = {
+				has_opinion = {
+				    target = POL
+				    value < 30
+				}
+				add = -3
+			}
+			modifier = {
+				has_opinion = {
+				    target = POL
+				    value > 30
+				}
+				add = 3
+			}
+			modifier = {
+				check_variable = { POL.num_of_factories < ROOT.num_of_factories }
+				add = -5
+			}
+			modifier = {
+				check_variable = { POL.num_of_factories > ROOT.num_of_factories }
+				add = 5
+			}
+		}
 	}
 	option = {##PER refuses
 		name = deluge_poland_foreign.99.b
@@ -9814,6 +9855,39 @@ country_event = {##PER is invited by sarmatian POL to join it's faction
 				country_event = {
 					id = deluge_poland_foreign.101
 				}
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				ROOT = {has_government = POL}
+				add = -5
+			}
+			modifier = {
+				NOT = {ROOT = {has_government = POL}}
+				add = 5
+			}
+			modifier = {
+				has_opinion = {
+				    target = POL
+				    value < 30
+				}
+				add = 3
+			}
+			modifier = {
+				has_opinion = {
+				    target = POL
+				    value > 30
+				}
+				add = -3
+			}
+			modifier = {
+				check_variable = { POL.num_of_factories < ROOT.num_of_factories }
+				add = 5
+			}
+			modifier = {
+				check_variable = { POL.num_of_factories > ROOT.num_of_factories }
+				add = -5
 			}
 		}
 	}
@@ -10156,5 +10230,470 @@ country_event = {##POL gets info that PER accepted
 	option = {
 		name = deluge_poland_foreign.104.a
 		add_political_power = 10
+	}
+}
+country_event = {##AUS is invited by wettin POL to join it's faction
+	id = deluge_poland_foreign.105
+	title = deluge_poland_foreign.105.t
+	desc = deluge_poland_foreign.105.d
+	picture = GFX_report_event_queen_louise
+	is_triggered_only = yes
+	option = {##AUS joins
+		name = deluge_poland_foreign.105.a
+		POL = {
+			add_to_faction = AUS
+		}
+		hidden_effect = {
+			news_event = {
+				id = deluge_poland_foreign.106
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				ROOT = {has_government = POL}
+				add = 5
+			}
+			modifier = {
+				POL = {
+					has_idea = POL_deluge_jozef_beck
+				}
+				add = 5
+			}
+			modifier = {
+				NOT = {ROOT = {has_government = POL}}
+				add = -5
+			}
+			modifier = {
+				has_opinion = {
+				    target = POL
+				    value < 30
+				}
+				add = -3
+			}
+			modifier = {
+				has_opinion = {
+				    target = POL
+				    value > 30
+				}
+				add = 3
+			}
+			modifier = {
+				check_variable = { POL.num_of_factories < ROOT.num_of_factories }
+				add = -5
+			}
+			modifier = {
+				check_variable = { POL.num_of_factories > ROOT.num_of_factories }
+				add = 5
+			}
+		}
+	}
+	option = {##AUS refuses
+		name = deluge_poland_foreign.105.b
+		hidden_effect = {
+			POL = {
+				country_event = {
+					id = deluge_poland_foreign.107
+				}
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				ROOT = {has_government = POL}
+				add = -5
+			}
+			modifier = {
+				NOT = {ROOT = {has_government = POL}}
+				add = 5
+			}
+			modifier = {
+				has_opinion = {
+				    target = POL
+				    value < 30
+				}
+				add = 3
+			}
+			modifier = {
+				has_opinion = {
+				    target = POL
+				    value > 30
+				}
+				add = -3
+			}
+			modifier = {
+				check_variable = { POL.num_of_factories < ROOT.num_of_factories }
+				add = 5
+			}
+			modifier = {
+				check_variable = { POL.num_of_factories > ROOT.num_of_factories }
+				add = -5
+			}
+		}
+	}
+}
+news_event = {##POL gets info that AUS joined
+	id = deluge_poland_foreign.106
+	title = deluge_poland_foreign.106.t
+	desc = deluge_poland_foreign.106.d
+	picture = GFX_polish_cavalary_1
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland_foreign.106.a
+	}
+}
+country_event = {##POL gets info that AUS refused to joined
+	id = deluge_poland_foreign.107
+	title = deluge_poland_foreign.107.t
+	desc = deluge_poland_foreign.107.d
+	picture = GFX_report_event_queen_louise
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland_foreign.107.a
+	}
+}
+country_event = {##Wettin POL demands from every country that owns Czechia to give Czechia to POL
+	id = deluge_poland_foreign.108
+	title = deluge_poland_foreign.108.t
+	desc = deluge_poland_foreign.108.d
+	picture = GFX_report_event_polish_border2
+	is_triggered_only = yes
+	option = {##accept
+		name = deluge_poland_foreign.108.a
+		hidden_effect = {
+			POL = {
+				country_event = {
+					id = deluge_poland_foreign.109
+				}
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					owns_state = 9
+				}
+			}
+			9 = {
+				transfer_state_to = POL
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					owns_state = 69
+				}
+			}
+			69 = {
+				transfer_state_to = POL
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					owns_state = 72
+				}
+			}
+			72 = {
+				transfer_state_to = POL
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					owns_state = 75
+				}
+			}
+			75 = {
+				transfer_state_to = POL
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					owns_state = 74
+				}
+			}
+			74 = {
+				transfer_state_to = POL
+			}
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {##reject
+		name = deluge_poland_foreign.108.b
+		hidden_effect = {
+			POL = {
+				country_event = {
+					id = deluge_poland_foreign.110
+				}
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+}
+country_event = {##wettin POL gets info that countries give Czechia to POL
+	id = deluge_poland_foreign.109
+	title = deluge_poland_foreign.109.t
+	desc = deluge_poland_foreign.109.d
+	picture = GFX_report_event_polish_soldiers_marching
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland_foreign.109.a
+	}
+}
+country_event = {##wettin POL gets info that doesn't get Czechia
+	id = deluge_poland_foreign.110
+	title = deluge_poland_foreign.110.t
+	desc = deluge_poland_foreign.110.d
+	picture = GFX_report_event_polish_border2
+	is_triggered_only = yes
+	option = {##do nothing
+		name = deluge_poland_foreign.110.a
+		add_war_support = -0.05
+		add_political_power = 10
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {##create wargoal
+		name = deluge_poland_foreign.110.b
+		create_wargoal = {
+			type = take_claimed_state
+			target = FROM
+			generator = {}
+		}
+		add_stability = 0.02
+		add_war_support = -0.05
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.2
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.2 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+	option = {##attack owner now
+		name = deluge_poland_foreign.110.c
+		POL = {
+			declare_war_on = {
+				type = take_claimed_state
+				target = FROM
+				generator = {}
+			}
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+}
+news_event = {#Wettins reform HRE
+	id = deluge_poland_foreign.111
+	title = deluge_poland_foreign.111.t
+	desc = deluge_poland_foreign.111.d
+	picture = GFX_news_event_holy_roman_empire
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland_foreign.111.a
 	}
 }

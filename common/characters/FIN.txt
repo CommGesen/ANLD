@@ -9,7 +9,6 @@ characters={
 		country_leader={
 			ideology=constitutionalist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	FIN_aimo_aaltonen={
@@ -22,7 +21,6 @@ characters={
 		country_leader={
 			ideology=jacobin_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	FIN_vilho_annala={
@@ -35,7 +33,6 @@ characters={
 		country_leader={
 			ideology=corporatist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	FIN_erik_heinrichs={
@@ -55,7 +52,6 @@ characters={
 			defense_skill=4
 			planning_skill=3
 			logistics_skill=2
-			legacy_id=-1
 		}
 	}
 	FIN_vilho_petter_nenonen={
@@ -75,14 +71,13 @@ characters={
 			defense_skill=1
 			planning_skill=4
 			logistics_skill=2
-			legacy_id=-1
 		}
 	}
 	FIN_carl_gustaf_emil_mannerheim={
 		name="Carl Gustaf Emil Mannerheim"
 		portraits={
 			civilian={
-				large="gfx/leaders/FIN/gustav_mannerheim.dds"
+				large="gfx/leaders/FIN/portrait_fin_carl_mannerheim.dds"
 			}
 		}
 		field_marshal={
@@ -92,12 +87,10 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=2
-			legacy_id=-1
 		}
 		country_leader={
-			ideology=corporatist_ideology
+			ideology=reactionary_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	FIN_kyösti_kallio={
@@ -111,20 +104,18 @@ characters={
 			desc="POLITICS_KYÖSTI_KALLIO_DESC"
 			ideology=constitutionalist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
-	FIN_grand_duke_alexandrovich={
-		name="Grand Duke Alexandrovich"
+	FIN_nikolai_nekrasov={
+		name="Nikolai Nekrasov"
 		portraits={
 			civilian={
-				large="gfx/leaders/SOV/alexei_nikolayevich_romanov_in_his_20_s_by_cainisnotmyenemy.dds"
+				large="gfx/leaders/FIN/portrait_FIN_nikolai_nekrasov.dds"
 			}
 		}
 		country_leader={
-			ideology=bonapartist_ideology
+			ideology=reactionary_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 }

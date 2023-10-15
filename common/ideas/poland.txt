@@ -3528,6 +3528,27 @@ ideas = {
 				conscription_factor = 0.02
 			}
 		}
+		POL_wettins_estates_reogranized = {
+			picture = = generic_goods_red_bonus
+			allowed = {
+				tag = POL
+			}
+			available = {
+				#empty
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.02
+				neutrality_drift = 0.05
+				stability_factor = 0.03
+				political_power_factor = 0.03
+			}
+		}
 	}
 	tank_manufacturer = {
 		designer = yes

@@ -1146,4 +1146,11 @@ leader_traits = {
 		political_power_factor = -0.05
 		war_support_factor = -0.1
 	}
+	holy_roman_emperor = {
+		random = no
+		political_power_factor = 0.15
+		war_support_factor = 0.05
+		stability_factor = 0.1
+		compliance_growth = 0.2
+	}
 }

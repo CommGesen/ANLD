@@ -12,15 +12,15 @@ characters={
 			id=-1
 		}
 	}
-	BUR_prince_george={
-		name=BUR_prince_george_name
+	BUR_sir_archibald_douglas_cochrane={
+		name=BUR_sir_archibald_douglas_cochrane_name
 		portraits={
 			civilian={
-				large="gfx/leaders/BUR/portrait_BUR_prince_george_duke_of_kent.dds"
+				large="gfx/leaders/BUR/portrait_BUR_sir_archibald_douglas_cochrane.dds"
 			}
 		}
 		country_leader={
-			ideology=bonapartist_ideology
+			ideology=reactionary_ideology
 			expire="1965.1.1.1"
 		}
 	}

@@ -7310,7 +7310,7 @@ focus_tree = {
 	focus = {
 		id = POL_monarchists_take_power
 		icon = GFX_focus_generic_monarchy_2
-		x = 43
+		x = 49
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_BALANCE_OF_POWER}
 		cost = 5
@@ -7364,7 +7364,7 @@ focus_tree = {
 	focus = {
 		id = POL_house_of_wettin_continues
 		icon = GFX_wettins_emblem
-		x = -6
+		x = -13
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 5
@@ -7395,6 +7395,809 @@ focus_tree = {
 				}
 				POL = {
 					remove_ideas = old_wettyn_king
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_leader  = {
+							character = POL_deluge_augustus_wettin
+							ruling_only = yes
+						}
+					}
+				}
+				promote_character = POL_deluge_augustus_wettin
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_reorganization_of_saxon_estates
+		icon = GFX_majesty_and_splendor
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 8
+		prerequisite = { focus = POL_house_of_wettin_continues }
+		relative_position_id = POL_house_of_wettin_continues
+		available = {
+			
+		}
+		completion_reward = {
+			add_ideas = POL_wettins_estates_reogranized
+			random_owned_state = {
+				limit = {
+					is_controlled_by = POL
+					is_core_of = POL
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = POL
+					is_core_of = POL
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_saxon_military_duty
+		icon = GFX_army_attacks_monarchy
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 5
+		prerequisite = { focus = POL_reorganization_of_saxon_estates }
+		relative_position_id = POL_reorganization_of_saxon_estates
+		available = {
+			
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 100
+			add_corps_commander_role = {
+				Character = POL_deluge_ernest_henryk_wettyn
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			add_corps_commander_role = {
+				Character = POL_deluge_christian_wettin
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_ties_with_windsors
+		icon = GFX_focus_chi_british_cooperation
+		x = -2
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 7
+		prerequisite = { focus = POL_saxon_military_duty }
+		relative_position_id = POL_saxon_military_duty
+		available = {
+			country_exists = ENG
+			NOT = {
+				ENG = {
+					has_government = communism
+				}
+			}
+			ENG = {
+				is_subject = no
+			}
+		}
+		completion_reward = {
+			ENG = {
+				country_event = {
+					id = deluge_poland_foreign.1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_direction_towards_west
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 5
+		prerequisite = { focus = POL_saxon_military_duty }
+		relative_position_id = POL_saxon_military_duty
+		available = {
+			
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_custom_effect_tooltip_269
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_reverse_ostsiedlung
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 5
+		prerequisite = { focus = POL_direction_towards_west }
+		relative_position_id = POL_direction_towards_west
+		mutually_exclusive = { focus = POL_accept_the_germans}
+		available = {
+			owns_state = 61
+			controls_state = 61
+			owns_state = 64
+			controls_state = 64
+			owns_state = 65
+			controls_state = 65
+		}
+		completion_reward = {
+			65 = {
+				add_core_of = POL
+				add_dynamic_modifier = {
+					modifier = POL_reversed_ostsiedlung
+				}
+				if = {
+					limit = {
+						is_core_of = GER
+					}
+					remove_core_of = GER
+				}
+				if = {
+					limit = {
+						is_core_of = WGR
+					}
+					remove_core_of = WGR
+				}
+				if = {
+					limit = {
+						is_core_of = DDR
+					}
+					remove_core_of = DDR
+				}
+			}
+			64 = {
+				add_core_of = POL
+				add_dynamic_modifier = {
+					modifier = POL_reversed_ostsiedlung
+				}
+				if = {
+					limit = {
+						is_core_of = GER
+					}
+					remove_core_of = GER
+				}
+				if = {
+					limit = {
+						is_core_of = WGR
+					}
+					remove_core_of = WGR
+				}
+				if = {
+					limit = {
+						is_core_of = DDR
+					}
+					remove_core_of = DDR
+				}
+			}
+			61 = {
+				add_core_of = POL
+				add_dynamic_modifier = {
+					modifier = POL_reversed_ostsiedlung
+				}
+				if = {
+					limit = {
+						is_core_of = GER
+					}
+					remove_core_of = GER
+				}
+				if = {
+					limit = {
+						is_core_of = WGR
+					}
+					remove_core_of = WGR
+				}
+				if = {
+					limit = {
+						is_core_of = DDR
+					}
+					remove_core_of = DDR
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_accept_the_germans
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 5
+		prerequisite = { focus = POL_direction_towards_west }
+		relative_position_id = POL_direction_towards_west
+		mutually_exclusive = { focus = POL_reverse_ostsiedlung}
+		available = {
+			owns_state = 61
+			controls_state = 61
+			owns_state = 64
+			controls_state = 64
+			owns_state = 65
+			controls_state = 65
+		}
+		completion_reward = {
+			65 = {
+				add_core_of = POL
+				add_dynamic_modifier = {
+					modifier = POL_german_culture_accepted
+				}
+			}
+			64 = {
+				add_core_of = POL
+				add_dynamic_modifier = {
+					modifier = POL_german_culture_accepted
+				}
+			}
+			61 = {
+				add_core_of = POL
+				add_dynamic_modifier = {
+					modifier = POL_german_culture_accepted
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_direction_towards_east
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 7
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 5
+		prerequisite = { focus = POL_saxon_military_duty }
+		relative_position_id = POL_saxon_military_duty
+		available = {
+			
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_custom_effect_tooltip_270
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_integrate_the_borderlands
+		icon = GFX_support_countryside
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 5
+		prerequisite = { focus = POL_direction_towards_east }
+		relative_position_id = POL_direction_towards_east
+		available = {
+			OR = {
+				owns_state = 814
+				owns_state = 188
+				owns_state = 189
+				owns_state = 815
+				owns_state = 11
+				owns_state = 190
+				owns_state = 809
+				owns_state = 808
+				owns_state = 810
+				owns_state = 12
+				owns_state = 95
+				owns_state = 96
+				owns_state = 207
+				owns_state = 206
+				owns_state = 204
+				owns_state = 194
+				owns_state = 202
+				owns_state = 201
+				owns_state = 199
+				owns_state = 198
+				owns_state = 203
+				owns_state = 834
+				owns_state = 192
+				owns_state = 197
+			}
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_political_power = 100
+			add_manpower = 100000
+			custom_effect_tooltip = POL_custom_effect_tooltip_271
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_ties_with_habsburgs
+		icon = GFX_focus_POL_habsburg
+		x = 5
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 3
+		prerequisite = { focus = POL_saxon_military_duty }
+		relative_position_id = POL_saxon_military_duty
+		mutually_exclusive = { focus = POL_the_great_war_rivalry }
+		available = {
+			NOT = {
+				AUS = {
+					has_government = communism
+				}
+			}
+			country_exists = AUS
+			AUS = {
+				NOT = {
+					has_war_with = POL
+				}
+			}
+		}
+		completion_reward = {
+			add_opinion_modifier = { target = AUS modifier = opinion_modifier_habsburg_wettin_ties }
+			AUS = {
+				add_opinion_modifier = { target = POL modifier = opinion_modifier_habsburg_wettin_ties }
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_healing_the_wounds_of_the_great_war
+		icon = GFX_blue_red_handshake
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 5
+		prerequisite = { focus = POL_ties_with_habsburgs }
+		relative_position_id = POL_ties_with_habsburgs
+		available = {
+			country_exists = AUS
+			AUS = {
+				NOT = {
+					has_war_with = POL
+				}
+			}
+		}
+		completion_reward = {
+			add_opinion_modifier = { target = AUS modifier = opinion_modifier_healing_wounds_of_the_great_war }
+			AUS = {
+				add_opinion_modifier = { target = POL modifier = opinion_modifier_healing_wounds_of_the_great_war }
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_royal_alliance
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 5
+		prerequisite = { focus = POL_healing_the_wounds_of_the_great_war }
+		relative_position_id = POL_healing_the_wounds_of_the_great_war
+		available = {
+			NOT = {
+				AUS = {
+					has_government = communism
+				}
+			}
+			country_exists = AUS
+			AUS = {
+				NOT = {
+					has_war_with = POL
+				}
+				is_in_faction = no
+			}
+		}
+		completion_reward = {
+			AUS = {
+				country_event = {
+					id = deluge_poland_foreign.105
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_the_great_war_rivalry
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 3
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 3
+		prerequisite = { focus = POL_saxon_military_duty }
+		relative_position_id = POL_saxon_military_duty
+		mutually_exclusive = { focus = POL_ties_with_habsburgs }
+		available = {
+			
+		}
+		completion_reward = {
+			add_opinion_modifier = { target = AUS modifier = opinion_modifier_the_great_war_rivalry }
+			AUS = {
+				add_opinion_modifier = { target = POL modifier = opinion_modifier_the_great_war_rivalry }
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_demand_czechia
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 8
+		prerequisite = { focus = POL_the_great_war_rivalry}
+		prerequisite = { focus = POL_direction_towards_west}
+		relative_position_id = POL_the_great_war_rivalry
+		available = {
+			
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 9
+						owns_state = 69
+						owns_state = 72
+						owns_state = 75
+						owns_state = 74
+					}
+					NOT = {
+						tag = POL
+					}
+				}
+				country_event = {
+					id = deluge_poland_foreign.108
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			POL = {
+				owns_state = 9
+				owns_state = 69
+				owns_state = 72
+				owns_state = 75
+				owns_state = 74
+			}
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_the_fourth_rome
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -2
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 8
+		prerequisite = { focus = POL_demand_czechia}
+		prerequisite = { focus = POL_accept_the_germans focus = POL_reverse_ostsiedlung }
+		relative_position_id = POL_demand_czechia
+		available = {
+			
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_political_power = 100
+			add_manpower = 100000
+			custom_effect_tooltip = POL_custom_effect_tooltip_272
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_develop_eastern_germany
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 8
+		prerequisite = { focus = POL_accept_the_germans focus = POL_reverse_ostsiedlung }
+		relative_position_id = POL_reverse_ostsiedlung
+		available = {
+			owns_state = 64
+			controls_state = 64
+			owns_state = 68
+			controls_state = 68
+			owns_state = 61
+			controls_state= 61
+			owns_state = 65
+			controls_state = 65
+		}
+		completion_reward = {
+			64 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			68 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			61 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			65 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_develop_czechia
+		icon = GFX_forced_urbanization
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 8
+		prerequisite = { focus = POL_demand_czechia}
+		relative_position_id = POL_demand_czechia
+		available = {
+			owns_state = 9
+			controls_state = 9
+			owns_state = 69
+			controls_state = 69
+			owns_state = 72
+			controls_state = 72
+			owns_state = 75
+			controls_state = 75
+			owns_state = 74
+			controls_state = 74
+		}
+		completion_reward = {
+			9 = {
+				add_core_of = POL
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			69 = {
+				add_core_of = POL
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			72 = {
+				add_core_of = POL
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			74 = {
+				add_core_of = POL
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			75 = {
+				add_core_of = POL
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
@@ -9046,7 +9849,7 @@ focus_tree = {
 	focus = {
 		id = POL_piast_riedelski_wins
 		icon = GFX_piasts_emblem
-		x = 32
+		x = 25
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 1
@@ -9384,7 +10187,7 @@ focus_tree = {
 	focus = {
 		id = POL_czartoryski_wins
 		icon = GFX_czartoryscy_emblem
-		x = 24
+		x = 19
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 1
@@ -9397,6 +10200,7 @@ focus_tree = {
 		completion_reward = {
 			promote_character = POL_deluge_augustyn_czartoryski
 			set_party_name = { ideology = neutrality long_name = POL_czartoryski_name_long name = POL_czartoryski_name_short }
+			custom_effect_tooltip = POL_custom_effect_tooltip_166
 		}
 		ai_will_do = {
 			factor = 40
@@ -9411,7 +10215,7 @@ focus_tree = {
 	focus = {
 		id = POL_radziwill_wins
 		icon = GFX_radziwillowie_emblem
-		x = 28
+		x = 22
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 1
@@ -9437,6 +10241,7 @@ focus_tree = {
 				promote_character = POL_deluge_izabella_roza_radziwillowna
 			}
 			set_party_name = { ideology = neutrality long_name = POL_radziwill_name_long name = POL_radziwill_name_short }
+			custom_effect_tooltip = POL_custom_effect_tooltip_166
 		}
 		ai_will_do = {
 			factor = 40
@@ -9457,6 +10262,9 @@ focus_tree = {
 		cost = 1
 		prerequisite = { focus = POL_piast_riedelski_wins focus = POL_czartoryski_wins focus = POL_radziwill_wins }
 		relative_position_id = POL_radziwill_wins
+		allow_branch = {
+			always = no
+		}
 		mutually_exclusive = {
 			#focus = POL_legacy_of_sarmatian_myth
 			focus = POL_invite_exiled_lithuanian_royalists
@@ -10614,56 +11422,6 @@ focus_tree = {
 					owns_state = 70
 				}
 			}
-		}
-		cancel_if_invalid = yes		
-		continue_if_invalid = no		
-		available_if_capitulated = yes
-	}
-	focus = {
-		id = POL_demand_czechia
-		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = 0
-		y = 9
-		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 8
-		#prerequisite = { focus = POL_retake_slovakia}
-		relative_position_id = POL_elections_for_new_king
-		available = {
-			
-		}
-		completion_reward = {
-			
-		}
-		ai_will_do = {
-			factor = 40
-		}
-		bypass = {
-			
-		}
-		cancel_if_invalid = yes		
-		continue_if_invalid = no		
-		available_if_capitulated = yes
-	}
-	focus = {
-		id = POL_develop_czechia
-		icon = GFX_forced_urbanization
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 8
-		prerequisite = { focus = POL_demand_czechia}
-		relative_position_id = POL_demand_czechia
-		available = {
-			
-		}
-		completion_reward = {
-			
-		}
-		ai_will_do = {
-			factor = 40
-		}
-		bypass = {
-			
 		}
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
@@ -16782,7 +17540,7 @@ focus_tree = {
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 8
-		prerequisite = { focus = POL_incorporate_livonia}
+		prerequisite = { focus = POL_incorporate_livonia focus = POL_autonomus_duchy_of_livonia}
 		relative_position_id = POL_incorporate_livonia
 		mutually_exclusive = {
 			focus = POL_respect_baltic_peoples
