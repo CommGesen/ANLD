@@ -4,7 +4,7 @@ state={
 	name="STATE_807"
 
 	history={
-		owner = POM
+		owner = ROM
 		victory_points = {
 			9263 5 
 		}
@@ -25,11 +25,11 @@ state={
 			}
 
 		}
-		add_core_of = POM
+		add_core_of = ROM
 	}
 
 	provinces={
-		3295 3380 
+		657 687 3076 9635 
 	}
 	manpower=713370
 	buildings_max_level_factor=1.000

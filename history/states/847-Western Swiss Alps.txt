@@ -4,18 +4,19 @@ state={
 	name="STATE_847"
 
 	history={
-		owner = SWI
+		owner = SER
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 
 		}
-		add_core_of = SWI
-
+		add_core_of = SER
+		add_core_of = HUN
+		add_core_of = TRN
 	}
 
 	provinces={
-		3612 9587 
+		614 3614 6643 11787 
 	}
 	manpower=198600
 	buildings_max_level_factor=1.000
