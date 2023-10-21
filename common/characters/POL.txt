@@ -4,11 +4,11 @@ characters={
 		name = POL_Character_Pilsudski
 		portraits={
 			civilian= {
-				large="gfx/leaders/POL/jozef_pilsudski.dds"
+				large="gfx/leaders/POL/portrait_POL_jozef_pilsudski.dds"
 				small = "GFX_jozef_pilsudski_picture_small"
 			}
 			army = {
-				large="gfx/leaders/POL/jozef_pilsudski.dds"
+				large="gfx/leaders/POL/portrait_POL_jozef_pilsudski.dds"
 				small = "GFX_jozef_pilsudski_picture_small"
 			}
 		}
@@ -35,12 +35,12 @@ characters={
 		name = POL_Character_Smigly 
 		portraits = {
 			civilian = {
-				large="gfx/leaders/POL/edward_rydz_smigly.dds"
+				large="gfx/leaders/POL/portrait_POL_edward_rydz_smigly.dds"
 				#large = "GFX_portrait_POL_edward_rydz_smigly"
 				small = "GFX_edward_rydz_smigly_picture_small"
 			}
 			army = {
-				large="gfx/leaders/POL/edward_rydz_smigly.dds"
+				large="gfx/leaders/POL/portrait_POL_edward_rydz_smigly.dds"
 				#large = "GFX_portrait_POL_edward_rydz_smigly"
 				small = "GFX_edward_rydz_smigly_picture_small"
 			}
@@ -82,7 +82,7 @@ characters={
 		name = POL_Character_Sanation_Emergency_Council 
 		portraits={
 			civilian={
-				large="gfx/leaders/POL/SEC.dds"
+				large="gfx/leaders/POL/portrait_POL_SEC.dds"
 			}
 		}
 		country_leader = {
@@ -96,7 +96,7 @@ characters={
 		name = POL_Character_Piasecki
 		portraits={
 			civilian={
-				large="gfx/leaders/POL/piasecki_portrait.dds"
+				large="gfx/leaders/POL/portrait_POL_boleslaw_piasecki.dds"
 			}
 		}
 		country_leader = {
@@ -157,7 +157,7 @@ characters={
 		name = POL_Character_deluge_Stachniuk
 		portraits={
 			civilian={
-				large="gfx/leaders/POL/Stachniuk_picture.dds"
+				large="gfx/leaders/POL/portrait_POL_jan_stachniuk.dds"
 			}
 		}
 		country_leader = {
@@ -207,7 +207,7 @@ characters={
 		name = POL_Character_deluge_artur_sliwinski
 		portraits={
 			civilian = {
-				large = "gfx/leaders/POL/artur_sliwinski.dds"
+				large = "gfx/leaders/POL/portrait_POL_artur_sliwinski.dds"
 				small="GFX_idea_POL_walery_slawek"
 			}
 		}
@@ -224,7 +224,7 @@ characters={
 		name = POL_Character_deluge_rataj
 		portraits={
 			civilian = {
-				large="gfx/leaders/POL/rataj.dds"
+				large="gfx/leaders/POL/portrait_POL_maciej_rataj.dds"
 			}
 		}
 		country_leader = {
@@ -240,7 +240,7 @@ characters={
 		name = POL_Character_deluge_waleron
 		portraits={
 			civilian = {
-				large="gfx/leaders/POL/waleron.dds"
+				large="gfx/leaders/POL/portrait_POL_andrzej_waleron.dds"
 			}
 		}
 		country_leader = {
@@ -256,7 +256,7 @@ characters={
 		name = POL_Character_deluge_dabski
 		portraits={
 			civilian = {
-				large="gfx/leaders/POL/dabski.dds"
+				large="gfx/leaders/POL/portrait_POL_jan_dabski.dds"
 			}
 		}
 		country_leader = {
@@ -272,7 +272,7 @@ characters={
 		name = POL_Character_deluge_marian_seyda
 		portraits={
 			civilian = {
-				large="gfx/leaders/POL/marian_seyda.dds"
+				large="gfx/leaders/POL/portrait_POL_marian_seyda.dds"
 			}
 		}
 		country_leader = {
@@ -288,7 +288,7 @@ characters={
 		name = POL_Character_deluge_mosdorf
 		portraits={
 			civilian = {
-				large="gfx/leaders/POL/mosdorf.dds"
+				large="gfx/leaders/POL/portrait_POL_jan_mosdorf.dds"
 			}
 		}
 		country_leader = {
@@ -322,7 +322,7 @@ characters={
 		name = POL_Character_deluge_korfanty
 		portraits={
 			civilian = {
-				large = "gfx/leaders/POL/wojciech_korfanty.dds"
+				large = "gfx/leaders/POL/portrait_POL_wojciech_korfanty.dds"
 			}
 		}
 		country_leader = {
@@ -410,7 +410,7 @@ characters={
 		name = POL_Character_deluge_izabella_roza_radziwillowna
 		portraits={
 			civilian={ 
-				large = "gfx/leaders/POL/izabela_radziwillowna.dds"
+				large = "gfx/leaders/POL/portrait_POL_izabela_radziwillowna.dds"
 			}
 		}
 		country_leader = {
@@ -458,7 +458,7 @@ characters={
 		name = POL_Character_deluge_andrzej_walewski
 		portraits={
 			civilian={ 
-				large = "gfx/leaders/POL/andrzej_walewski.dds"
+				large = "gfx/leaders/POL/portrait_POL_andrzej_walewski.dds"
 			}
 		}
 		country_leader = {
@@ -474,8 +474,7 @@ characters={
 		name = POL_Character_deluge_aleksander_tyszkiewicz
 		portraits={
 			civilian={ 
-				large = "gfx/leaders/POL/aleksander_tyszkiewicz.dds"
-				#small = GFX_portrait_POL_roman_dmowski_small
+				large = "gfx/leaders/POL/portrait_POL_aleksander_tyszkiewicz.dds"
 			}
 		}
 		country_leader = {
@@ -587,7 +586,7 @@ characters={
 		name = POL_Character_deluge_Kleeberg
 		portraits={
 			army = {
-				large="gfx/leaders/POL/Kleeberg.dds"
+				large="gfx/leaders/POL/portrait_POL_franciszek_kleeberg.dds"
 				small = GFX_franciszek_kleeberg_picture_small
 			}
 		}
@@ -605,7 +604,7 @@ characters={
 		name = POL_Character_deluge_Rummel
 		portraits={
 			army = {
-				large="gfx/leaders/POL/rummel.dds"
+				large="gfx/leaders/POL/portrait_POL_juliusz_rummel.dds"
 				small = GFX_juliusz_rummel_picture_small
 			}
 		}
@@ -636,11 +635,11 @@ characters={
 			ledger = army
 		}
 	}
-	POL_deluge_Orlicz_Dreszer = {##Gustwa Orlicz-Dreszer
+	POL_deluge_Orlicz_Dreszer = {##Gustaw Orlicz-Dreszer
 		name = POL_Character_deluge_Orlicz_Dreszer
 		portraits={
 			army = {
-				large="gfx/leaders/POL/dreszer.dds"
+				large="gfx/leaders/POL/portrait_POL_gustaw_orlicz_dreszer.dds"
 				small = GFX_gustaw_orlicz_dreszer_picture_small
 			}
 		}
@@ -700,7 +699,7 @@ characters={
 		name = POL_Character_deluge_Maczek
 		portraits={
 			army = {
-				large="gfx/leaders/POL/maczek.dds"
+				large="gfx/leaders/POL/portrait_POL_stanislaw_maczek.dds"
 				small = GFX_stanislaw_maczek_picture_small
 			}
 		}
@@ -879,8 +878,7 @@ characters={
 		name = POL_Character_deluge_kowalski
 		portraits={
 			army = {
-				#large="GFX_portrait_POL_wincenty_kowalski" ##doesn't work for people without DLC
-				large="gfx/leaders/POL/wincenty_kowalski.dds"
+				large="gfx/leaders/POL/portrait_POL_wincenty_kowalski.dds"
 				small = GFX_wincenty_kowalski_picture_small
 			}
 		}
@@ -915,7 +913,7 @@ characters={
 		name = POL_Character_deluge_thommee
 		portraits={
 			army = {
-				large="gfx/leaders/POL/thommee.dds"
+				large="gfx/leaders/POL/portrait_POL_wiktor_thommee.dds"
 				small = GFX_wiktor_thommee_picture_small
 			}
 		}
@@ -950,7 +948,7 @@ characters={
 		name = POL_Character_deluge_Kapciuk
 		portraits={
 			army = {
-				large="gfx/leaders/POL/kapciuk.dds"
+				large="gfx/leaders/POL/portrait_POL_jozef_kapciuk.dds"
 				small = GFX_jozef_kapciuk_picture_small
 			}
 		}
@@ -987,7 +985,7 @@ characters={
 		name = POL_Character_deluge_Grzmot_Skotnicki
 		portraits={
 			army = {
-				large="gfx/leaders/POL/grzmot_skotnicki.dds"
+				large="gfx/leaders/POL/portrait_POL_stanislaw_grzmot_skotnicki.dds"
 				small = GFX_stanislaw_grzmot_skotnicki_picture_small
 			}
 		}
@@ -1005,12 +1003,12 @@ characters={
 		name = POL_Character_deluge_kopanski
 		portraits={
 			civilian = {
-				large="GFX_POL_stanislav_kopanski"
-				#large="gfx/leaders/POL/kopanski.dds"
+				#large="GFX_POL_stanislav_kopanski"
+				large="gfx/leaders/POL/portrait_POL_stanislaw_kopanski.dds"
 				small = GFX_stanislaw_kopanski_picture_small
 			}
 			army = {
-				large="gfx/leaders/POL/kopanski.dds"
+				large="gfx/leaders/POL/portrait_POL_stanislaw_kopanski.dds"
 				small = GFX_stanislaw_kopanski_picture_small
 			}
 		}
@@ -1105,7 +1103,7 @@ characters={
 		name = POL_Character_deluge_szylling
 		portraits={
 			army = {
-				large="gfx/leaders/POL/antoni_szylling.dds" 
+				large="gfx/leaders/POL/portrait_POL_antoni_szylling.dds" 
 				small = GFX_antoni_szylling_picture_small
 			}
 		}
@@ -1123,7 +1121,7 @@ characters={
 		name = POL_Character_deluge_berbecki
 		portraits={
 			army = {
-				large="gfx/leaders/POL/Leon_Berbecki.dds" 
+				large="gfx/leaders/POL/portrait_POL_leon_berbecki.dds" 
 				small = GFX_leon_berbecki_picture_small
 			}
 		}
@@ -1141,7 +1139,7 @@ characters={
 		name = POL_Character_deluge_orlik_ruckemann
 		portraits={
 			army = {
-				large="gfx/leaders/POL/orlik_ruckemann.dds"
+				large="gfx/leaders/POL/portrait_POL_wilhelm_orlik_ruckemann.dds"
 				small = GFX_wilhelm_orlik_rueckemann_picture_small
 			}
 		}
@@ -1159,7 +1157,7 @@ characters={
 		name = POL_Character_deluge_krukowicz_przedrzymirski
 		portraits={
 			army = {
-				large="gfx/leaders/POL/krukowicz_przedrzymirski.dds"
+				large="gfx/leaders/POL/portrait_POL_emil_krukowicz_przedrzymirski.dds"
 				small = GFX_emil_krukowicz_przedrzymirski_picture_small
 			}
 		}
@@ -1204,7 +1202,7 @@ characters={
 		country_leader = {
 			ideology = social_darwinist_ideology
 			expire = "1969.1.1.1"
-			traits = { famous_womanizer_and_legionary }
+			traits = { famous_womanizer legionary }
 			desc = "POL_deluge_wieniawa_dlugoszewski_desc"
 		}
 		corps_commander = {
@@ -1295,7 +1293,7 @@ characters={
 		name = POL_Character_deluge_tokarzewski_karaszewicz
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/michal_tokarzewski_karaszewicz.dds"
+				large="gfx/leaders/POL/portrait_POL_michal_tokarzewski_karaszewicz.dds"
 				small = GFX_michal_tokarzewski_karaszewicz_picture_small
 			}
 		}
@@ -1313,7 +1311,7 @@ characters={
 		name = POL_Character_deluge_czuma
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/walerian_czuma.dds"
+				large="gfx/leaders/POL/portrait_POL_walerian_czuma.dds"
 				small = GFX_marian_kukiel_picture_small
 			}
 		}
@@ -1331,7 +1329,7 @@ characters={
 		name = POL_Character_deluge_mlot_fijalkowski
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/czeslaw_mlot_fijalkowski.dds"
+				large="gfx/leaders/POL/portrait_POL_czeslaw_mlot_fijalkowski.dds"
 				small = GFX_marian_kukiel_picture_small
 			}
 		}
@@ -1349,7 +1347,7 @@ characters={
 		name = POL_Character_deluge_langner
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/wladyslaw_langner.dds"
+				large="gfx/leaders/POL/portrait_POL_wladyslaw_langner.dds"
 				small = GFX_marian_kukiel_picture_small
 			}
 		}
@@ -1367,7 +1365,7 @@ characters={
 		name = POL_Character_deluge_wlad
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/franciszek_wlad.dds"
+				large="gfx/leaders/POL/portrait_POL_franciszek_wlad.dds"
 				small = GFX_marian_kukiel_picture_small
 			}
 		}
@@ -1385,7 +1383,7 @@ characters={
 		name = POL_Character_deluge_boruta_spiechowicz
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/mieczyslaw_boruta_spiechowicz.dds"
+				large="gfx/leaders/POL/portrait_POL_mieczyslaw_boruta_spiechowicz.dds"
 				small = GFX_marian_kukiel_picture_small
 			}
 		}
@@ -1403,7 +1401,7 @@ characters={
 		name = POL_Character_deluge_knoll_kownacki
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/edmund_knoll_kownacki.dds"
+				large="gfx/leaders/POL/portrait_POL_edmund_knoll_kownacki.dds"
 				small = GFX_marian_kukiel_picture_small
 			}
 		}
@@ -1421,7 +1419,7 @@ characters={
 		name = POL_Character_deluge_fabrycy
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/kazimierz_fabrycy.dds"
+				large="gfx/leaders/POL/portrait_POL_kazimierz_fabrycy.dds"
 				small = GFX_kazimierz_fabrycy_picture_small
 			}
 		}
@@ -1439,7 +1437,7 @@ characters={
 		name = POL_Character_deluge_dab_biernacki
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/stefan_dab_biernacki.dds"
+				large="gfx/leaders/POL/portrait_POL_stefan_dab_biernacki.dds"
 				small = GFX_stefan_dab_biernacki_picture_small
 			}
 		}
@@ -1457,7 +1455,7 @@ characters={
 		name = POL_Character_deluge_rudolf_dreszer
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/rudolf_dreszer.dds"
+				large="gfx/leaders/POL/portrait_POL_rudolf_dreszer.dds"
 				small = GFX_rudolf_dreszer_picture_small
 			}
 		}
@@ -1475,7 +1473,7 @@ characters={
 		name = POL_Character_deluge_alter
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/franciszek_alter.dds"
+				large="gfx/leaders/POL/portrait_POL_franciszek_alter.dds"
 				small = GFX_marian_kukiel_picture_small
 			}
 		}
@@ -1493,7 +1491,7 @@ characters={
 		name = POL_Character_deluge_rowecki
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/stefan_rowecki.dds"
+				large="gfx/leaders/POL/portrait_POL_stefan_rowecki.dds"
 				small = GFX_stefan_rowecki_picture_small
 			}
 		}
@@ -1511,7 +1509,7 @@ characters={
 		name = POL_Character_deluge_przezdziecki
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/waclaw_jan_przezdziecki.dds"
+				large="gfx/leaders/POL/portrait_POL_waclaw_jan_przezdziecki.dds"
 				small = GFX_waclaw_przezdziecki_picture_small
 			}
 		}
@@ -1529,7 +1527,7 @@ characters={
 		name = POL_Character_deluge_boltuc
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/mikolaj_boltuc.dds"
+				large="gfx/leaders/POL/portrait_POL_mikolaj_boltuc.dds"
 				small = GFX_mikolaj_boltuc_picture_small
 			}
 		}
@@ -1547,7 +1545,7 @@ characters={
 		name = POL_Character_deluge_prugar_ketling
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/bronislaw_prugar_ketling.dds"
+				large="gfx/leaders/POL/portrait_POL_bronislaw_prugar_ketling.dds"
 				small = GFX_bronislaw_prugar_ketling_picture_small
 			}
 		}
@@ -1566,7 +1564,7 @@ characters={
 		name = POL_Character_deluge_rola_zymierski
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/michal_rola_zymierski.dds"
+				large="gfx/leaders/POL/portrait_POL_michal_rola_zymierski.dds"
 				small = GFX_michal_rola_zymierski_picture_small
 			}
 		}
@@ -1584,7 +1582,7 @@ characters={
 		name = POL_Character_deluge_zygumnt_berling
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/zygmunt_berling.dds"
+				large="gfx/leaders/POL/portrait_POL_zygmunt_berling.dds"
 				small = GFX_zygmunt_berling_picutre_small
 			}
 		}
@@ -1602,7 +1600,7 @@ characters={
 		name = POL_Character_deluge_roja
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/boleslaw_roja.dds"
+				large="gfx/leaders/POL/portrait_POL_boleslaw_roja.dds"
 				small = GFX_boleslaw_roja_picture_small
 			}
 		}
@@ -1620,7 +1618,7 @@ characters={
 		name = POL_Character_deluge_latinik
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/franciszek_latinik.dds"
+				large="gfx/leaders/POL/portrait_POL_franciszek_latinik.dds"
 				small = GFX_franciszek_latinik_picutre_small
 			}
 		}
@@ -1638,7 +1636,7 @@ characters={
 		name = POL_Character_deluge_jung
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/wladyslaw_jung.dds"
+				large="gfx/leaders/POL/portrait_POL_wladyslaw_jung.dds"
 				small = GFX_wladyslaw_jung_picture_small
 			}
 		}
@@ -1656,7 +1654,7 @@ characters={
 		name = POL_Character_deluge_stanislaw_haller
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/stanislaw_haller.dds"
+				large="gfx/leaders/POL/portrait_POL_stanislaw_haller.dds"
 				small = GFX_marian_kukiel_picture_small
 			}
 		}
@@ -1674,7 +1672,7 @@ characters={
 		name = POL_Character_deluge_dzierzykraj_stokalski
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/radoslaw_dzierzykraj_stokalski.dds"
+				large="gfx/leaders/POL/portrait_POL_radoslaw_dzierzykraj_stokalski.dds"
 				small = GFX_marian_kukiel_picture_small
 			}
 		}
@@ -1692,7 +1690,7 @@ characters={
 		name = POL_Character_deluge_poplawski
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/stanislaw_poplawski.dds"
+				large="gfx/leaders/POL/portrait_POL_stanislaw_poplawski.dds"
 				small = GFX_stanislaw_poplawski_picture_small
 			}
 		}
@@ -1710,7 +1708,7 @@ characters={
 		name = POL_Character_deluge_swierczewski
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/karol_swierczewski.dds"
+				large="gfx/leaders/POL/portrait_POL_karol_swierczewski.dds"
 				small = GFX_karol_swierczewski_picture_small
 			}
 		}
@@ -1728,7 +1726,7 @@ characters={
 		name = POL_Character_deluge_skierski
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/leonard_skierski.dds"
+				large="gfx/leaders/POL/portrait_POL_leonard_skierski.dds"
 				small = GFX_leonard_skierski_picture_small
 			}
 		}
@@ -1746,7 +1744,7 @@ characters={
 		name = POL_Character_deluge_dzierzanowski
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/kazimierz_dzierzanowski.dds"
+				large="gfx/leaders/POL/portrait_POL_kazimierz_dzierzanowski.dds"
 				small = GFX_marian_kukiel_picture_small
 			}
 		}
@@ -1764,7 +1762,7 @@ characters={
 		name = POL_Character_deluge_piskor
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/tadeusz_piskor.dds"
+				large="gfx/leaders/POL/portrait_POL_tadeusz_piskor.dds"
 				small = GFX_marian_kukiel_picture_small
 			}
 		}
@@ -1782,7 +1780,7 @@ characters={
 		name = POL_Character_deluge_zulauf
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/juliusz_zulauf.dds"
+				large="gfx/leaders/POL/portrait_POL_juliusz_zulauf.dds"
 				small = GFX_marian_kukiel_picture_small
 			}
 		}
@@ -1800,7 +1798,7 @@ characters={
 		name = POL_Character_deluge_prich
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/rudolf_prich.dds"
+				large="gfx/leaders/POL/portrait_POL_rudolf_prich.dds"
 				small = GFX_marian_kukiel_picture_small
 			}
 		}
@@ -1820,11 +1818,11 @@ characters={
 		portraits = {
 			army = {
 				small=GFX_xawery_czerniecki_picture_small
-				large="gfx/leaders/POL/xawery_czernicki.dds"
+				large="gfx/leaders/POL/portrait_POL_xawery_czernicki.dds"
 			}
 			navy = {
 				small=GFX_xawery_czerniecki_picture_small
-				large="gfx/leaders/POL/xawery_czernicki.dds"
+				large="gfx/leaders/POL/portrait_POL_xawery_czernicki.dds"
 			}
 		}
 		navy_leader = {
@@ -1860,11 +1858,11 @@ characters={
 		portraits = {
 			army = {
 				small=GFX_stanislaw_hryniewiecki_picture_small
-				large="gfx/leaders/POL/stanislaw_hryniewiecki.dds"
+				large="gfx/leaders/POL/portrait_POL_stanislaw_hryniewiecki.dds"
 			}
 			navy = {
 				small=GFX_stanislaw_hryniewiecki_picture_small
-				large="gfx/leaders/POL/stanislaw_hryniewiecki.dds"
+				large="gfx/leaders/POL/portrait_POL_stanislaw_hryniewiecki.dds"
 			}
 		}
 		navy_leader = {
@@ -1969,11 +1967,11 @@ characters={
 		portraits = {
 			army = {
 				small=GFX_adam_mohuczy_picture_small
-				large="gfx/leaders/POL/adam_mohuczy.dds"
+				large="gfx/leaders/POL/portrait_POL_adam_mohuczy.dds"
 			}
 			navy = {
 				small=GFX_adam_mohuczy_picture_small
-				large="gfx/leaders/POL/adam_mohuczy.dds"
+				large="gfx/leaders/POL/portrait_POL_adam_mohuczy.dds"
 			}
 		}
 		advisor = {
@@ -2012,11 +2010,11 @@ characters={
 		portraits = {
 			army = {
 				small=GFX_jerzy_swirski_picture_small
-				large="gfx/leaders/POL/jerzy_swirski.dds"
+				large="gfx/leaders/POL/portrait_POL_jerzy_swirski.dds"
 			}
 			navy = {
 				small=GFX_jerzy_swirski_picture_small
-				large="gfx/leaders/POL/jerzy_swirski.dds"
+				large="gfx/leaders/POL/portrait_POL_jerzy_swirski.dds"
 			}
 		}
 		advisor = {
@@ -2052,11 +2050,11 @@ characters={
 		portraits = {
 			army = {
 				small=GFX_wlodzimierz_steyer_picture_small
-				large="gfx/leaders/POL/wlodzimierz_steyer.dds"
+				large="gfx/leaders/POL/portrait_POL_wlodzimierz_steyer.dds"
 			}
 			navy = {
 				small=GFX_wlodzimierz_steyer_picture_small
-				large="gfx/leaders/POL/wlodzimierz_steyer.dds"
+				large="gfx/leaders/POL/portrait_POL_wlodzimierz_steyer.dds"
 			}
 		}
 		advisor = {
@@ -2589,7 +2587,7 @@ characters={
 		portraits={
 			civilian={
 				small="GFX_jozef_beck_picture_small"
-				large="gfx/leaders/POL/jozef_beck.dds"
+				large="gfx/leaders/POL/portrait_POL_jozef_beck.dds"
 			}
 		}
 		country_leader = {
@@ -3964,7 +3962,7 @@ characters={
 		name = POL_Character_deluge_zygumnt_marek
 		portraits={
 			civilian={ 
-				large = "gfx/leaders/POL/zygmunt_marek.dds"
+				large = "gfx/leaders/POL/portrait_POL_zygmunt_marek.dds"
 				small = GFX_zygmunt_marek_picture_small
 			}
 		}
@@ -4010,7 +4008,7 @@ characters={
 		name = POL_Character_deluge_jedrzej_moraczewski
 		portraits={
 			civilian={ 
-				large = "gfx/leaders/POL/jedrzej_moraczewski.dds"
+				large = "gfx/leaders/POL/portrait_POL_jedrzej_moraczewski.dds"
 				small = GFX_jedrzej_moraczewski_picture_small
 			}
 		}
@@ -4056,7 +4054,7 @@ characters={
 		name = POL_Character_deluge_tomasz_arciszewski
 		portraits={
 			civilian={ 
-				large = "gfx/leaders/POL/tomasz_arciszewski.dds"
+				large = "gfx/leaders/POL/portrait_POL_tomasz_arciszewski.dds"
 				small = GFX_tomasz_arciszewski_picture_small
 			}
 		}
@@ -4195,7 +4193,7 @@ characters={
 		name = POL_Character_deluge_julian_leszczynski
 		portraits={
 			civilian={ 
-				large = "gfx/leaders/POL/julian_leszczynski.dds"
+				large = "gfx/leaders/POL/portrait_POL_julian_leszczynski.dds"
 				small = GFX_julian_leszczynski_picture_small
 			}
 		}
@@ -4241,11 +4239,11 @@ characters={
 		name = POL_Character_deluge_wanda_wasilewska
 		portraits={
 			civilian={
-				large = "gfx/leaders/POL/wanda_wasilewska.dds"
+				large = "gfx/leaders/POL/portrait_POL_wanda_wasilewska.dds"
 				small = GFX_wanda_wasilewska_picture_small
 			}
 			army={
-				large = "gfx/leaders/POL/wanda_wasilewska.dds"
+				large = "gfx/leaders/POL/portrait_POL_wanda_wasilewska.dds"
 				small = GFX_wanda_wasilewska_picture_small
 			}
 		}
@@ -4463,7 +4461,7 @@ characters={
 		name = POL_Character_deluge_antoni_ciszak
 		portraits={
 			civilian={
-				large = "gfx/leaders/POL/antoni_ciszak.dds"
+				large = "gfx/leaders/POL/portrait_POL_antoni_ciszak.dds"
 				small = GFX_antoni_ciszak_picture_small
 			}
 		}
@@ -4480,7 +4478,7 @@ characters={
 		name = POL_Character_deluge_czeslaw_chmielewski
 		portraits={
 			civilian={ 
-				large = "gfx/leaders/POL/czeslaw_chmielewski.dds"
+				large = "gfx/leaders/POL/portrait_POL_czeslaw_chmielewski.dds"
 				small = GFX_czeslaw_chmielewski_picture_small
 			}
 		}
@@ -4618,7 +4616,7 @@ characters={
 		name = POL_Character_deluge_waclaw_kozielski
 		portraits={
 			civilian={ 
-				large = "gfx/leaders/POL/waclaw_kozielski.dds"
+				large = "gfx/leaders/POL/portrait_POL_waclaw_kozielski.dds"
 				small = GFX_waclaw_kozielski_picture_small
 			}
 		}
@@ -4667,7 +4665,7 @@ characters={
 		name = POL_Character_deluge_wladyslaw_orebski
 		portraits={
 			civilian={
-				large = "gfx/leaders/POL/wladyslaw_orebski.dds"
+				large = "gfx/leaders/POL/portrait_POL_wladyslaw_orebski.dds"
 				small = GFX_wladyslaw_orebski_picture_small
 			}
 		}
@@ -4716,7 +4714,7 @@ characters={
 		name = POL_Character_deluge_kazimierz_zakrzewski
 		portraits={
 			civilian={
-				large ="gfx/leaders/POL/kazimierz_zakrzewski.dds"
+				large ="gfx/leaders/POL/portrait_POL_kazimierz_zakrzewski.dds"
 				small =GFX_kazimierz_zakrzewski_picture_small
 			}
 		}
@@ -4766,11 +4764,11 @@ characters={
 		portraits={
 			civilian={
 				small=GFX_kazimierz_dagnan_picture_small
-				large="gfx/leaders/POL/dagnan.dds"
+				large="gfx/leaders/POL/portrait_POL_kazimierz_dagnan.dds"
 			}
 			army={
 				small=GFX_kazimierz_dagnan_picture_small
-				large="gfx/leaders/POL/dagnan.dds"
+				large="gfx/leaders/POL/portrait_POL_kazimierz_dagnan.dds"
 			}
 		}
 		advisor={
@@ -4818,7 +4816,7 @@ characters={
 		name = POL_Character_deluge_boleslaw_bierut
 		portraits={
 			civilian={
-				large = "gfx/leaders/POL/boleslaw_bierut.dds"
+				large = "gfx/leaders/POL/portrait_POL_boleslaw_bierut.dds"
 				small = GFX_boleslaw_bierut_picture_small
 			}
 		}
@@ -5593,11 +5591,11 @@ characters={
 		name = POL_Character_deluge_jasienski
 		portraits={
 			civilian={
-				large = "gfx/leaders/POL/bruno_jasienski.dds"
+				large = "gfx/leaders/POL/portrait_POL_bruno_jasienski.dds"
 				small=GFX_bruno_jasienski_picture_small
 			}
 			army={
-				large = "gfx/leaders/POL/bruno_jasienski.dds"
+				large = "gfx/leaders/POL/portrait_POL_bruno_jasienski.dds"
 				small=GFX_bruno_jasienski_picture_small
 			}
 		}

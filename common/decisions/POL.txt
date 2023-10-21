@@ -4,8 +4,6 @@ integration_category = {
 		available = {
 			has_manpower > 2000
 			has_equipment = { infantry_equipment > 1999 }
-			owns_state = 188
-			controls_state = 188
 			owns_state = 814
 			controls_state = 814
 			owns_state = 11
@@ -25,7 +23,6 @@ integration_category = {
 					}
 				}
 				OR = {
-					188 = { NOT = { is_core_of = POL } } 
 					814 = { NOT = { is_core_of = POL } } 
 					11 = { NOT = { is_core_of = POL } } 
 					815 = { NOT = { is_core_of = POL } } 
@@ -44,7 +41,6 @@ integration_category = {
 			    type = infantry_equipment
 			    amount = -2000
 			}
-			188 = { add_core_of = POL } 
 			814 = { add_core_of = POL } 
 			11 = { add_core_of = POL } 
 			815 = { add_core_of = POL } 
@@ -108,8 +104,7 @@ integration_category = {
 			810 = { add_core_of = POL } 
 			808 = { add_core_of = POL } 
 			809 = { add_core_of = POL } 
-			190 = { add_core_of = POL }  
-			188 = { add_core_of = POL } 
+			190 = { add_core_of = POL }   
 			814 = { add_core_of = POL } 
 			11 = { add_core_of = POL } 
 			815 = { add_core_of = POL } 
@@ -381,8 +376,6 @@ integration_category = {
 		available = {
 			has_manpower > 2000
 			has_equipment = { infantry_equipment > 1999 }
-			owns_state = 807
-			controls_state = 807
 			owns_state = 85
 			controls_state = 85
 			owns_state = 63
@@ -396,7 +389,6 @@ integration_category = {
 			OR = {
 				62 = { NOT = { is_core_of = POL } } 
 				63 = { NOT = { is_core_of = POL } } 
-				807 = { NOT = { is_core_of = POL } } 
 				85 = { NOT = { is_core_of = POL } } 
 			}
 		}
@@ -413,7 +405,6 @@ integration_category = {
 			}
 			62 = { add_core_of = POL } 
 			63 = { add_core_of = POL } 
-			807 = { add_core_of = POL } 
 			85 = { add_core_of = POL }		
 		}
 		ai_will_do = {
@@ -1667,8 +1658,6 @@ integration_category = {
 			has_equipment = { infantry_equipment > 999 }
 			owns_state = 814
 			controls_state = 814
-			owns_state = 188
-			controls_state = 188
 			owns_state = 11
 			controls_state = 11
 			owns_state = 189
@@ -1702,7 +1691,6 @@ integration_category = {
 			has_completed_focus = POL_torch_for_all_slavs
 			OR = {
 				814 = { NOT = { is_core_of = POL } } 
-				188 = { NOT = { is_core_of = POL } } 
 				11 = { NOT = { is_core_of = POL } } 
 				189 = { NOT = { is_core_of = POL } } 
 				815 = { NOT = { is_core_of = POL } } 
@@ -1730,7 +1718,6 @@ integration_category = {
 			    amount = -1000
 			}
 			814 = { add_core_of = POL } 
-			188 = { add_core_of = POL } 
 			11 = { add_core_of = POL } 
 			189 = { add_core_of = POL } 
 			815 = { add_core_of = POL } 
@@ -2432,8 +2419,23 @@ seek_enemies_category = {
 		cost = 75
 		fire_only_once = yes
 		days_remove = 15
+		complete_effect = {
+			POL = {
+				add_state_claim = 9
+				add_state_claim = 69
+				add_state_claim = 75
+				add_state_claim = 74
+				add_state_claim = 72
+			}
+			HUN = {
+				add_state_claim = 70
+				add_state_claim = 71
+				add_state_claim = 73
+				add_state_claim = 664
+			}
+		}
 		remove_effect = {
-			AUS = {country_event = { id = deluge_poland_foreign.30 hours = 10}}
+			AUS = {country_event = { id = deluge_poland_foreign.30 }}
 			set_global_flag = POL_invites_someone
 		}
 		ai_will_do = {
@@ -2490,6 +2492,30 @@ seek_enemies_category = {
 		days_remove = 35
 		fire_only_once = no
 		days_re_enable = 5
+		complete_effect = {
+			if = { limit = { NOT = { 
+					owns_state = 74 
+					owns_state = 72
+					owns_state = 72
+					owns_state = 9
+					owns_state = 69
+				} }
+				every_country = {
+					limit = { 
+						OR = {
+							owns_state = 74 
+							owns_state = 72
+							owns_state = 72
+							owns_state = 9
+							owns_state = 69
+						}
+					}
+					country_event = {
+						id = generic.26
+					}
+				}
+			}
+		}
 		remove_effect = {
 			if = { 
 				limit = { 
@@ -2533,9 +2559,6 @@ seek_enemies_category = {
 							}
 						}
 					}
-					country_event = {
-						id = generic.26
-					}
 				}
 			}
 		}
@@ -2564,14 +2587,12 @@ seek_enemies_category = {
 		available = {
 			POL = { 
 				OR = {
-					NOT = {owns_state = 807}
 					NOT = {owns_state = 85}
 					NOT = {owns_state = 63}
 					NOT = {owns_state = 62}
 				}
 			} 
 			OR = {
-				807 = { owner = { NOT = { is_in_faction_with = POL } } }
 				85 = { owner = { NOT = { is_in_faction_with = POL } } }
 				63 = { owner = { NOT = { is_in_faction_with = POL } } }
 				62 = { owner = { NOT = { is_in_faction_with = POL } } }
@@ -2581,23 +2602,8 @@ seek_enemies_category = {
 		days_remove = 35
 		fire_only_once = no
 		days_re_enable = 5
-		remove_effect = {
-			if = { 
-				limit = { 
-					NOT = {
-						807 = { is_claimed_by = POL }
-						85 = { is_claimed_by = POL }
-						63 = { is_claimed_by = POL }
-						62 = { is_claimed_by = POL }
-					} 
-				}
-				add_state_claim = 807
-				add_state_claim = 85
-				add_state_claim = 63
-				add_state_claim = 62
-			} 
+		complete_effect = {
 			if = { limit = { NOT = { 
-					owns_state = 807 
 					owns_state = 85
 					owns_state = 63
 					owns_state = 62
@@ -2605,7 +2611,38 @@ seek_enemies_category = {
 				every_country = {
 					limit = { 
 						OR = {
-							owns_state = 807 
+							owns_state = 85
+							owns_state = 62
+							owns_state = 63
+						}
+					}
+					country_event = {
+						id = generic.26
+					}
+				}
+			}
+		}
+		remove_effect = {
+			if = { 
+				limit = { 
+					NOT = {
+						85 = { is_claimed_by = POL }
+						63 = { is_claimed_by = POL }
+						62 = { is_claimed_by = POL }
+					} 
+				}
+				add_state_claim = 85
+				add_state_claim = 63
+				add_state_claim = 62
+			} 
+			if = { limit = { NOT = { 
+					owns_state = 85
+					owns_state = 63
+					owns_state = 62
+				} }
+				every_country = {
+					limit = { 
+						OR = {
 							owns_state = 85
 							owns_state = 62
 							owns_state = 63
@@ -2616,12 +2653,9 @@ seek_enemies_category = {
 							type = take_claimed_state
 							target = PREV
 							generator = {
-								807 85 63 62
+								85 63 62
 							}
 						}
-					}
-					country_event = {
-						id = generic.26
 					}
 				}
 			}
@@ -2666,6 +2700,26 @@ seek_enemies_category = {
 		days_remove = 35
 		fire_only_once = no
 		days_re_enable = 5
+		complete_effect = {
+			if = { limit = { NOT = { 
+					owns_state = 78
+					owns_state = 79
+					owns_state = 80
+				} }
+				every_country = {
+					limit = { 
+						OR = {
+							owns_state = 80
+							owns_state = 79
+							owns_state = 78
+						}
+					}
+					country_event = {
+						id = generic.26
+					}
+				}
+			}
+		}
 		remove_effect = {
 			if = { limit = { NOT = {
 				80 = { is_claimed_by = POL }
@@ -2697,9 +2751,6 @@ seek_enemies_category = {
 								80 79 78
 							}
 						}
-					}
-					country_event = {
-						id = generic.26
 					}
 				}
 			}
@@ -2747,6 +2798,26 @@ seek_enemies_category = {
 		days_remove = 35
 		fire_only_once = no
 		days_re_enable = 5
+		complete_effect = {
+			if = { limit = { NOT = { 
+					owns_state = 64
+					owns_state = 65
+					owns_state = 68
+					owns_state = 61
+				} }
+				random_country = {
+					limit = { 
+						owns_state = 64
+						owns_state = 65
+						owns_state = 68
+						owns_state = 61
+					}
+					country_event = {
+						id = generic.26
+					}
+				}
+			}
+		}
 		remove_effect = {
 			if = { limit = { NOT = {
 				61 = { is_claimed_by = POL }
@@ -2780,9 +2851,6 @@ seek_enemies_category = {
 								64 65 68 61 
 							}
 						}
-					}
-					country_event = {
-						id = generic.26
 					}
 				}
 			}
@@ -2829,6 +2897,28 @@ seek_enemies_category = {
 		days_remove = 35
 		fire_only_once = no
 		days_re_enable = 5
+		complete_effect = {
+			if = { limit = { NOT = { 
+					owns_state = 227
+					owns_state = 137
+					owns_state = 196
+					owns_state = 200
+				} }
+				every_country = {
+					limit = { 
+						OR = {
+							owns_state = 196
+							owns_state = 137
+							owns_state = 227
+							owns_state = 200
+						}
+					}
+					country_event = {
+						id = generic.26
+					}
+				}
+			}
+		}
 		remove_effect = {
 			if = { limit = { NOT = {
 				227 = { is_claimed_by = POL }
@@ -2864,9 +2954,6 @@ seek_enemies_category = {
 								196 227 200 137
 							}
 						}
-					}
-					country_event = {
-						id = generic.26
 					}
 				}
 			}
@@ -2931,6 +3018,46 @@ seek_enemies_category = {
 		days_remove = 35
 		fire_only_once = no
 		days_re_enable = 5
+		complete_effect = {
+			if = { limit = { NOT = { 
+					owns_state = 193
+					owns_state = 225
+					owns_state = 259
+					owns_state = 221
+					owns_state = 834
+					owns_state = 203
+					owns_state = 197
+					owns_state = 192
+					owns_state = 226
+					owns_state = 202
+					owns_state = 201
+					owns_state = 199
+					owns_state = 198
+				} }
+				every_country = {
+					limit = { 
+						OR = {
+							owns_state = 193
+							owns_state = 225
+							owns_state = 259
+							owns_state = 221
+							owns_state = 834
+							owns_state = 203
+							owns_state = 197
+							owns_state = 192
+							owns_state = 226
+							owns_state = 202
+							owns_state = 201
+							owns_state = 199
+							owns_state = 198
+						}
+					}
+					country_event = {
+						id = generic.26
+					}
+				}
+			}
+		}
 		remove_effect = {
 			if = { limit = { NOT = {
 				193 = { is_claimed_by = POL }
@@ -3003,9 +3130,6 @@ seek_enemies_category = {
 							}
 						}
 					}
-					country_event = {
-						id = generic.26
-					}
 				}
 			}
 		}
@@ -3042,7 +3166,6 @@ seek_enemies_category = {
 					NOT = {owns_state = 189}
 					NOT = {owns_state = 815}
 					NOT = {owns_state = 11}
-					NOT = {owns_state = 188}
 					NOT = {owns_state = 814}
 				}
 			} 
@@ -3055,7 +3178,6 @@ seek_enemies_category = {
 				189 = { owner = { NOT = { is_in_faction_with = POL } } }
 				815 = { owner = { NOT = { is_in_faction_with = POL } } }
 				11 = { owner = { NOT = { is_in_faction_with = POL } } }
-				188 = { owner = { NOT = { is_in_faction_with = POL } } }
 				814 = { owner = { NOT = { is_in_faction_with = POL } } }
 			}
 		}
@@ -3063,30 +3185,7 @@ seek_enemies_category = {
 		days_remove = 35
 		fire_only_once = no
 		days_re_enable = 5
-		remove_effect = {
-			if = { limit = { NOT = {
-				12 = { is_claimed_by = POL }
-				810 = { is_claimed_by = POL }
-				809 = { is_claimed_by = POL }
-				808 = { is_claimed_by = POL }
-				190 = { is_claimed_by = POL }
-				189 = { is_claimed_by = POL }
-				815 = { is_claimed_by = POL }
-				11 = { is_claimed_by = POL }
-				188 = { is_claimed_by = POL }
-				814 = { is_claimed_by = POL }
-				} }
-				add_state_claim = 12
-				add_state_claim = 810
-				add_state_claim = 809
-				add_state_claim = 808
-				add_state_claim = 190
-				add_state_claim = 189
-				add_state_claim = 815
-				add_state_claim = 11
-				add_state_claim = 188
-				add_state_claim = 814
-			} 
+		complete_effect = {
 			if = { limit = { NOT = { 
 					owns_state = 12
 					owns_state = 810
@@ -3096,7 +3195,6 @@ seek_enemies_category = {
 					owns_state = 189
 					owns_state = 815
 					owns_state = 11
-					owns_state = 188
 					owns_state = 814
 				} }
 				every_country = {
@@ -3110,7 +3208,59 @@ seek_enemies_category = {
 							owns_state = 189
 							owns_state = 815
 							owns_state = 11
-							owns_state = 188
+							owns_state = 814
+						}
+					}
+					country_event = {
+						id = generic.26
+					}
+				}
+			}
+		}
+		remove_effect = {
+			if = { limit = { NOT = {
+				12 = { is_claimed_by = POL }
+				810 = { is_claimed_by = POL }
+				809 = { is_claimed_by = POL }
+				808 = { is_claimed_by = POL }
+				190 = { is_claimed_by = POL }
+				189 = { is_claimed_by = POL }
+				815 = { is_claimed_by = POL }
+				11 = { is_claimed_by = POL }
+				814 = { is_claimed_by = POL }
+				} }
+				add_state_claim = 12
+				add_state_claim = 810
+				add_state_claim = 809
+				add_state_claim = 808
+				add_state_claim = 190
+				add_state_claim = 189
+				add_state_claim = 815
+				add_state_claim = 11
+				add_state_claim = 814
+			} 
+			if = { limit = { NOT = { 
+					owns_state = 12
+					owns_state = 810
+					owns_state = 809
+					owns_state = 808
+					owns_state = 190
+					owns_state = 189
+					owns_state = 815
+					owns_state = 11
+					owns_state = 814
+				} }
+				every_country = {
+					limit = { 
+						OR = {
+							owns_state = 12
+							owns_state = 810
+							owns_state = 809
+							owns_state = 808
+							owns_state = 190
+							owns_state = 189
+							owns_state = 815
+							owns_state = 11
 							owns_state = 814
 						}
 					}
@@ -3122,9 +3272,6 @@ seek_enemies_category = {
 								193 225 259 221 834 203 197 192 226 202 201 199 198
 							}
 						}
-					}
-					country_event = {
-						id = generic.26
 					}
 				}
 			}
@@ -3179,6 +3326,36 @@ seek_enemies_category = {
 		days_remove = 35
 		fire_only_once = no
 		days_re_enable = 5
+		complete_effect = {
+			if = { limit = { NOT = { 
+					owns_state = 241
+					owns_state = 764
+					owns_state = 207
+					owns_state = 206
+					owns_state = 204
+					owns_state = 194
+					owns_state = 95
+					owns_state = 96
+				} }
+				every_country = {
+					limit = { 
+						OR = {
+							owns_state = 241
+							owns_state = 764
+							owns_state = 207
+							owns_state = 206
+							owns_state = 204
+							owns_state = 194
+							owns_state = 95
+							owns_state = 96
+						}
+					}
+					country_event = {
+						id = generic.26
+					}
+				}
+			}
+		}
 		remove_effect = {
 			if = { limit = { NOT = {
 				241 = { is_claimed_by = POL }
@@ -3230,9 +3407,6 @@ seek_enemies_category = {
 								241 764 207 206 194 204 95 96
 							}
 						}
-					}
-					country_event = {
-						id = generic.26
 					}
 				}
 			}
@@ -3791,340 +3965,211 @@ seek_empire_category = {
 			custom_trigger_tooltip = {##Poland
 				tooltip = POL_custom_trigger_tooltip_POL
 				controls_state = 5
-				owns_state = 5
-				controls_state = 98 
-				owns_state = 98
-				controls_state = 87 
-				owns_state = 87
-				controls_state = 10 
-				owns_state = 10
+				controls_state = 98
+				controls_state = 87
+				controls_state = 10
 				controls_state = 90
-				owns_state = 90
 				controls_state = 88
-				owns_state = 88
-				controls_state = 67 
-				owns_state = 67
-				controls_state = 66 
-				owns_state = 66
-				controls_state = 86 
-				owns_state = 86
-				controls_state = 92 
-				owns_state = 92
-				controls_state = 97 
-				owns_state = 97
-				controls_state = 94 
-				owns_state = 94
-				controls_state = 93 
-				owns_state = 93
-				controls_state = 91 
-				owns_state = 91
-				controls_state = 89 
-				owns_state = 89
-				controls_state = 762 
-				owns_state = 762
+				controls_state = 67
+				controls_state = 66
+				controls_state = 86
+				controls_state = 92
+				controls_state = 97
+				controls_state = 94
+				controls_state = 93
+				controls_state = 91
+				controls_state = 89
+				controls_state = 762
 			}
 			custom_trigger_tooltip = {##Pomerania
 				tooltip = POL_custom_trigger_tooltip_4
-				controls_state = 807
-				owns_state = 807
 				controls_state = 85 
-				owns_state = 85
 				controls_state = 63 
-				owns_state = 63
 				controls_state = 62 
-				owns_state = 62
 			}
 			custom_trigger_tooltip = {##Eastern Germany
 				tooltip = POL_custom_trigger_tooltip_5
 				controls_state = 61
-				owns_state = 61
 				controls_state = 64
-				owns_state = 64
-				controls_state = 68 
-				owns_state = 68
-				controls_state = 65 
-				owns_state = 65
+				controls_state = 68
+				controls_state = 65
 			}
 			custom_trigger_tooltip = {##Czechia
 				tooltip = POL_custom_trigger_tooltip_6
 				controls_state = 9
-				owns_state = 9
 				controls_state = 69
-				owns_state = 69
-				controls_state = 72 
-				owns_state = 72
-				controls_state = 75 
-				owns_state = 75
-				controls_state = 74 
-				owns_state = 74
+				controls_state = 72
+				controls_state = 75
+				controls_state = 74
 			}
 			custom_trigger_tooltip = {###Slovakia
 				tooltip = POL_custom_trigger_tooltip_7
 				controls_state = 70
-				owns_state = 70
 				controls_state = 71
-				owns_state = 71
-				controls_state = 73 
-				owns_state = 73
-				controls_state = 664 
-				owns_state = 664
+				controls_state = 73
+				controls_state = 664
 			}
 			custom_trigger_tooltip = {###Austria
 				tooltip = POL_custom_trigger_tooltip_8
 				controls_state = 4
-				owns_state = 4
 				controls_state = 152
-				owns_state = 152
 				controls_state = 153 
-				owns_state = 153
 				controls_state = 848 
-				owns_state = 848
 			}
 			custom_trigger_tooltip = {##Slovenia
 				tooltip = POL_custom_trigger_tooltip_9
 				controls_state = 102
-				owns_state = 102
 				controls_state = 736
-				owns_state = 736
 				controls_state = 853
-				owns_state = 853
+				controls_state = 852
 			}
 			custom_trigger_tooltip = {##Croatia
 				tooltip = POL_custom_trigger_tooltip_10
 				controls_state = 109
-				owns_state = 109
 				controls_state = 103
-				owns_state = 103
 				controls_state = 104
-				owns_state = 104
-				controls_state = 852
-				owns_state = 852
 				controls_state = 151
-				owns_state = 151
 			}
 			custom_trigger_tooltip = {##Serbia
 				tooltip = POL_custom_trigger_tooltip_11
 				controls_state = 45
-				owns_state = 45
 				controls_state = 107
-				owns_state = 107
 				controls_state = 108
-				owns_state = 108
+				controls_state = 847
 			}
 			custom_trigger_tooltip = {##Albania
 				tooltip = POL_custom_trigger_tooltip_12
 				controls_state = 44
-				owns_state = 44
 				controls_state = 105
-				owns_state = 105
 				controls_state = 801
-				owns_state = 801
+				controls_state = 934
 			}
 			custom_trigger_tooltip = {##Bulgaria
 				tooltip = POL_custom_trigger_tooltip_13
 				controls_state = 106
-				owns_state = 106
 				controls_state = 48
-				owns_state = 48
 				controls_state = 212
-				owns_state = 212
 				controls_state = 211
-				owns_state = 211
 			}
 			custom_trigger_tooltip = {##Wallachia
 				tooltip = POL_custom_trigger_tooltip_14
 				controls_state = 46
-				owns_state = 46
 				controls_state = 81
-				owns_state = 81
 				controls_state = 77
-				owns_state = 77
+				controls_state = 807
 			}
 			custom_trigger_tooltip = {##Moldavia
 				tooltip = POL_custom_trigger_tooltip_15
 				controls_state = 78
-				owns_state = 78
 				controls_state = 79
-				owns_state = 79
 				controls_state = 80
-				owns_state = 80
 			}
 			custom_trigger_tooltip = {##Transylvania
 				tooltip = POL_custom_trigger_tooltip_16
 				controls_state = 76
-				owns_state = 76
 				controls_state = 84
-				owns_state = 84
 				controls_state = 82
-				owns_state = 82
 				controls_state = 83
-				owns_state = 83
 			}
 			custom_trigger_tooltip = {##Hungary 
 				tooltip = POL_custom_trigger_tooltip_17
 				controls_state = 154
-				owns_state = 154
 				controls_state = 43
-				owns_state = 43
 				controls_state = 155
-				owns_state = 155
 			}
 			custom_trigger_tooltip = {##Bavaria
 				tooltip = POL_custom_trigger_tooltip_18
 				controls_state = 54
-				owns_state = 54
 				controls_state = 53
-				owns_state = 53
 				controls_state = 52
-				owns_state = 52
 			}
-			custom_trigger_tooltip = {##Thuringen, Hannover, Schelswig-Holstein
+			custom_trigger_tooltip = {##Thuringen, Hannover, Holstein
 				tooltip = POL_custom_trigger_tooltip_19
 				controls_state = 60
-				owns_state = 60
 				controls_state = 59
-				owns_state = 59
 				controls_state = 58
-				owns_state = 58
 			}
 			custom_trigger_tooltip = {##Lithuania
 				tooltip = POL_custom_trigger_tooltip_20
 				controls_state = 11
-				owns_state = 11
 				controls_state = 814
-				owns_state = 814
-				controls_state = 188
-				owns_state = 188
 				controls_state = 189
-				owns_state = 189
 				controls_state = 815
-				owns_state = 815
 			}
 			custom_trigger_tooltip = {##Latvia
 				tooltip = POL_custom_trigger_tooltip_21
 				controls_state = 190
-				owns_state = 190
 				controls_state = 809
-				owns_state = 809
 				controls_state = 810
-				owns_state = 810
 				controls_state = 808
-				owns_state = 808
 				controls_state = 12
-				owns_state = 12
 			}
 			custom_trigger_tooltip = {##Estonia
 				tooltip = POL_custom_trigger_tooltip_22
 				controls_state = 191
-				owns_state = 191
 				controls_state = 813
-				owns_state = 813
 				controls_state = 13
-				owns_state = 13
 				controls_state = 812
-				owns_state = 812
 				controls_state = 811
-				owns_state = 811
 			}
 			custom_trigger_tooltip = {##Belarus
 				tooltip = POL_custom_trigger_tooltip_23
 				controls_state = 96
-				owns_state = 96
 				controls_state = 95
-				owns_state = 95
 				controls_state = 194
-				owns_state = 194
 				controls_state = 204
-				owns_state = 204
 				controls_state = 206
-				owns_state = 206
 				controls_state = 241
-				owns_state = 241
 				controls_state = 764
-				owns_state = 764
 				controls_state = 207
-				owns_state = 207
 			}
 			custom_trigger_tooltip = {##Ukraine
 				tooltip = POL_custom_trigger_tooltip_24
 				controls_state = 199
-				owns_state = 199
 				controls_state = 201
-				owns_state = 201
 				controls_state = 198
-				owns_state = 198
 				controls_state = 202
-				owns_state = 202
 				controls_state = 203
-				owns_state = 203
 				controls_state = 834
-				owns_state = 834
 				controls_state = 192
-				owns_state = 192
 				controls_state = 197
-				owns_state = 197
 				controls_state = 226
-				owns_state = 226
 				controls_state = 221
-				owns_state = 221
 				controls_state = 259
-				owns_state = 259
 				controls_state = 225
-				owns_state = 225
 				controls_state = 193
-				owns_state = 193
 			}
 			custom_trigger_tooltip = {##Crimea and Donetsk
 				tooltip = POL_custom_trigger_tooltip_25
 				controls_state = 137
-				owns_state = 137
 				controls_state = 196
-				owns_state = 196
 				controls_state = 200
-				owns_state = 200
 				controls_state = 227
-				owns_state = 227
 			}
 			custom_trigger_tooltip = {##Petersburg and rest
 				tooltip = POL_custom_trigger_tooltip_26
 				controls_state = 195
-				owns_state = 195
 				controls_state = 208
-				owns_state = 208
 				controls_state = 209
-				owns_state = 209
 				controls_state = 210
-				owns_state = 210
 				controls_state = 263
-				owns_state = 263
 				controls_state = 244
-				owns_state = 244
 			}
 			custom_trigger_tooltip = {##southern Russia
 				tooltip = POL_custom_trigger_tooltip_27
 				controls_state = 228
-				owns_state = 228
 				controls_state = 240
-				owns_state = 240
 				controls_state = 220
-				owns_state = 220
 				controls_state = 222
-				owns_state = 222
 				controls_state = 224
-				owns_state = 224
 			}
 			custom_trigger_tooltip = {##middle Russia
 				tooltip = POL_custom_trigger_tooltip_28
 				controls_state = 205
-				owns_state = 205
 				controls_state = 243
-				owns_state = 243
 				controls_state = 242
-				owns_state = 242
 				controls_state = 246
-				owns_state = 246
 				controls_state = 223
-				owns_state = 223
 			}
 		}
 		complete_effect = {
@@ -4149,585 +4194,321 @@ seek_empire_category = {
 			custom_trigger_tooltip = {##Poland
 				tooltip = POL_custom_trigger_tooltip_POL
 				controls_state = 5
-				owns_state = 5
-				controls_state = 98 
-				owns_state = 98
-				controls_state = 87 
-				owns_state = 87
-				controls_state = 10 
-				owns_state = 10
+				controls_state = 98
+				controls_state = 87
+				controls_state = 10
 				controls_state = 90
-				owns_state = 90
 				controls_state = 88
-				owns_state = 88
-				controls_state = 67 
-				owns_state = 67
-				controls_state = 66 
-				owns_state = 66
-				controls_state = 86 
-				owns_state = 86
-				controls_state = 92 
-				owns_state = 92
-				controls_state = 97 
-				owns_state = 97
-				controls_state = 94 
-				owns_state = 94
-				controls_state = 93 
-				owns_state = 93
-				controls_state = 91 
-				owns_state = 91
-				controls_state = 89 
-				owns_state = 89
-				controls_state = 762 
-				owns_state = 762
+				controls_state = 67
+				controls_state = 66
+				controls_state = 86
+				controls_state = 92
+				controls_state = 97
+				controls_state = 94
+				controls_state = 93
+				controls_state = 91
+				controls_state = 89
+				controls_state = 762
 			}
 			custom_trigger_tooltip = {##Pomerania
 				tooltip = POL_custom_trigger_tooltip_4
-				controls_state = 807
-				owns_state = 807
-				controls_state = 85 
-				owns_state = 85
-				controls_state = 63 
-				owns_state = 63
-				controls_state = 62 
-				owns_state = 62
+				controls_state = 85
+				controls_state = 63
+				controls_state = 62
 			}
 			custom_trigger_tooltip = {##Czechia
 				tooltip = POL_custom_trigger_tooltip_6
 				controls_state = 9
-				owns_state = 9
 				controls_state = 69
-				owns_state = 69
-				controls_state = 72 
-				owns_state = 72
-				controls_state = 75 
-				owns_state = 75
-				controls_state = 74 
-				owns_state = 74
+				controls_state = 72
+				controls_state = 75
+				controls_state = 74
 			}
 			custom_trigger_tooltip = {###Slovakia
 				tooltip = POL_custom_trigger_tooltip_7
 				controls_state = 70
-				owns_state = 70
 				controls_state = 71
-				owns_state = 71
-				controls_state = 73 
-				owns_state = 73
-				controls_state = 664 
-				owns_state = 664
+				controls_state = 73
+				controls_state = 664
 			}
 			custom_trigger_tooltip = {##Slovenia
 				tooltip = POL_custom_trigger_tooltip_9
 				controls_state = 102
-				owns_state = 102
 				controls_state = 736
-				owns_state = 736
 				controls_state = 853
-				owns_state = 853
+				controls_state = 852
 			}
 			custom_trigger_tooltip = {##Croatia
 				tooltip = POL_custom_trigger_tooltip_10
 				controls_state = 109
-				owns_state = 109
 				controls_state = 103
-				owns_state = 103
 				controls_state = 104
-				owns_state = 104
-				controls_state = 852
-				owns_state = 852
 				controls_state = 151
-				owns_state = 151
 			}
 			custom_trigger_tooltip = {##Serbia
 				tooltip = POL_custom_trigger_tooltip_11
 				controls_state = 45
-				owns_state = 45
 				controls_state = 107
-				owns_state = 107
 				controls_state = 108
-				owns_state = 108
+				controls_state = 847
 			}
 			custom_trigger_tooltip = {##Bulgaria
 				tooltip = POL_custom_trigger_tooltip_13
 				controls_state = 106
-				owns_state = 106
 				controls_state = 48
-				owns_state = 48
 				controls_state = 212
-				owns_state = 212
 				controls_state = 211
-				owns_state = 211
 			}
 			custom_trigger_tooltip = {##Belarus
 				tooltip = POL_custom_trigger_tooltip_23
 				controls_state = 96
-				owns_state = 96
 				controls_state = 95
-				owns_state = 95
 				controls_state = 194
-				owns_state = 194
 				controls_state = 204
-				owns_state = 204
 				controls_state = 206
-				owns_state = 206
 				controls_state = 241
-				owns_state = 241
 				controls_state = 764
-				owns_state = 764
 				controls_state = 207
-				owns_state = 207
 			}
 			custom_trigger_tooltip = {##Ukraine
 				tooltip = POL_custom_trigger_tooltip_24
 				controls_state = 199
-				owns_state = 199
 				controls_state = 201
-				owns_state = 201
 				controls_state = 198
-				owns_state = 198
 				controls_state = 202
-				owns_state = 202
 				controls_state = 203
-				owns_state = 203
 				controls_state = 834
-				owns_state = 834
 				controls_state = 192
-				owns_state = 192
 				controls_state = 197
-				owns_state = 197
 				controls_state = 226
-				owns_state = 226
 				controls_state = 221
-				owns_state = 221
 				controls_state = 259
-				owns_state = 259
 				controls_state = 225
-				owns_state = 225
 				controls_state = 193
-				owns_state = 193
 			}
-			owns_state = 105
 			controls_state = 105
-			owns_state = 801
 			controls_state = 801
 			custom_trigger_tooltip = {##Russia
 				tooltip = POL_custom_trigger_tooltip_29
 				controls_state = 137
-				owns_state = 137
-				controls_state = 196 
-				owns_state = 196
-				controls_state = 200 
-				owns_state = 200
-				controls_state = 227 
-				owns_state = 227
+				controls_state = 196
+				controls_state = 200
+				controls_state = 227
 				controls_state = 228
-				owns_state = 228
 				controls_state = 218
-				owns_state = 218
-				controls_state = 234 
-				owns_state = 234
-				controls_state = 235 
-				owns_state = 235
-				controls_state = 237 
-				owns_state = 237
-				controls_state = 232 
-				owns_state = 232
-				controls_state = 238 
-				owns_state = 238
-				controls_state = 245 
-				owns_state = 245
-				controls_state = 829 
-				owns_state = 829
-				controls_state = 217 
-				owns_state = 217
-				controls_state = 236 
-				owns_state = 236
-				controls_state = 401 
-				owns_state = 401
-				controls_state = 652 
-				owns_state = 652
-				controls_state = 251 
-				owns_state = 251
-				controls_state = 265 
-				owns_state = 265
-				controls_state = 239 
-				owns_state = 239
-				controls_state = 260 
-				owns_state = 260
-				controls_state = 240 
-				owns_state = 240
-				controls_state = 220 
-				owns_state = 220
-				controls_state = 224 
-				owns_state = 224
-				controls_state = 222 
-				owns_state = 222
-				controls_state = 223 
-				owns_state = 223
-				controls_state = 258 
-				owns_state = 258
-				controls_state = 257 
-				owns_state = 257
-				controls_state = 255 
-				owns_state = 255
-				controls_state = 250 
-				owns_state = 250
-				controls_state = 252 
-				owns_state = 252
-				controls_state = 254 
-				owns_state = 254
-				controls_state = 253 
-				owns_state = 253
-				controls_state = 219 
-				owns_state = 219
+				controls_state = 234
+				controls_state = 235
+				controls_state = 237
+				controls_state = 232
+				controls_state = 238
+				controls_state = 245
+				controls_state = 829
+				controls_state = 217
+				controls_state = 236
+				controls_state = 401
+				controls_state = 652
+				controls_state = 251
+				controls_state = 265
+				controls_state = 239
+				controls_state = 260
+				controls_state = 240
+				controls_state = 220
+				controls_state = 224
+				controls_state = 222
+				controls_state = 223
+				controls_state = 258
+				controls_state = 257
+				controls_state = 255
+				controls_state = 250
+				controls_state = 252
+				controls_state = 254
+				controls_state = 253
+				controls_state = 219
 				controls_state = 205 
-				owns_state = 205
-				controls_state = 242 
-				owns_state = 242
-				controls_state = 243 
-				owns_state = 243
-				controls_state = 246 
-				owns_state = 246
-				controls_state = 210 
-				owns_state = 210
-				controls_state = 263 
-				owns_state = 263
-				controls_state = 208 
-				owns_state = 208
-				controls_state = 209 
-				owns_state = 209
-				controls_state = 244 
-				owns_state = 244
-				controls_state = 195 
-				owns_state = 195
-				controls_state = 264 
-				owns_state = 264
-				controls_state = 247 
-				owns_state = 247
-				controls_state = 248 
-				owns_state = 248
-				controls_state = 351 
-				owns_state = 351
-				controls_state = 214 
-				owns_state = 214
-				controls_state = 216 
-				owns_state = 216
-				controls_state = 215 
-				owns_state = 215
-				controls_state = 213 
-				owns_state = 213
-				controls_state = 147 
-				owns_state = 147
-				controls_state = 722 
-				owns_state = 722
-				controls_state = 825 
-				owns_state = 825
-				controls_state = 262 
-				owns_state = 262
-				controls_state = 581 
-				owns_state = 581
-				controls_state = 397 
-				owns_state = 397
-				controls_state = 400 
-				owns_state = 400
-				controls_state = 249 
-				owns_state = 249
-				controls_state = 256 
-				owns_state = 256
-				controls_state = 833 
-				owns_state = 833
-				controls_state = 399 
-				owns_state = 399
-				controls_state = 398 
-				owns_state = 398
-				controls_state = 573 
-				owns_state = 573
-				controls_state = 651 
-				owns_state = 651
-				controls_state = 582 
-				owns_state = 582
-				controls_state = 572 
-				owns_state = 572
-				controls_state = 653 
-				owns_state = 653
-				controls_state = 580 
-				owns_state = 580
-				controls_state = 579 
-				owns_state = 579
-				controls_state = 403 
-				owns_state = 403
+				controls_state = 242
+				controls_state = 243
+				controls_state = 246
+				controls_state = 210
+				controls_state = 263
+				controls_state = 208
+				controls_state = 209
+				controls_state = 244
+				controls_state = 195
+				controls_state = 264
+				controls_state = 247
+				controls_state = 248
+				controls_state = 351
+				controls_state = 214
+				controls_state = 216
+				controls_state = 215
+				controls_state = 213
+				controls_state = 147
+				controls_state = 722
+				controls_state = 825
+				controls_state = 262
+				controls_state = 581
+				controls_state = 397
+				controls_state = 400
+				controls_state = 249
+				controls_state = 256
+				controls_state = 833
+				controls_state = 399
+				controls_state = 398
+				controls_state = 573
+				controls_state = 651
+				controls_state = 582
+				controls_state = 572
+				controls_state = 653
+				controls_state = 580
+				controls_state = 579
+				controls_state = 403
 				controls_state = 571 
-				owns_state = 571
-				controls_state = 654 
-				owns_state = 654
-				controls_state = 40 
-				owns_state = 40
-				controls_state = 570 
-				owns_state = 570
-				controls_state = 578 
-				owns_state = 578
-				controls_state = 577 
-				owns_state = 577
-				controls_state = 576 
-				owns_state = 576
-				controls_state = 824 
-				owns_state = 824
-				controls_state = 516 
-				owns_state = 516
-				controls_state = 568 
-				owns_state = 568
-				controls_state = 569 
-				owns_state = 569
-				controls_state = 567 
-				owns_state = 567
-				controls_state = 564 
-				owns_state = 564
-				controls_state = 566 
-				owns_state = 566
-				controls_state = 575 
-				owns_state = 575
-				controls_state = 565 
-				owns_state = 565
-				controls_state = 563 
-				owns_state = 563
-				controls_state = 574 
-				owns_state = 574
-				controls_state = 644 
-				owns_state = 644
-				controls_state = 562 
-				owns_state = 562
-				controls_state = 822 
-				owns_state = 822
-				controls_state = 637 
-				owns_state = 637
-				controls_state = 650 
-				owns_state = 650
-				controls_state = 463 
-				owns_state = 463
-				controls_state = 471 
-				owns_state = 471
-				controls_state = 739 
-				owns_state = 739
-				}
+				controls_state = 654
+				controls_state = 40
+				controls_state = 570
+				controls_state = 578
+				controls_state = 577
+				controls_state = 576
+				controls_state = 824
+				controls_state = 516
+				controls_state = 568
+				controls_state = 569
+				controls_state = 567
+				controls_state = 564
+				controls_state = 566
+				controls_state = 575
+				controls_state = 565
+				controls_state = 563
+				controls_state = 574
+				controls_state = 644
+				controls_state = 562
+				controls_state = 822
+				controls_state = 637
+				controls_state = 650
+				controls_state = 463
+				controls_state = 471
+				controls_state = 739
+			}
 		}
 		complete_effect = {
 			hidden_effect = {
-				137 = { add_core_of = POL } 
-				##137
-				196 = { add_core_of = POL } 
-				##196
-				200 = { add_core_of = POL } 
-				##200
-				227 = { add_core_of = POL } 
-				##227
-				228 = { add_core_of = POL } 
-				##228
-				218 = { add_core_of = POL } 
-				##218
-				234 = { add_core_of = POL } 
-				##234
-				235 = { add_core_of = POL } 
-				##235
-				237 = { add_core_of = POL } 
-				##237
-				232 = { add_core_of = POL } 
-				##232
-				238 = { add_core_of = POL } 
-				##238
-				245 = { add_core_of = POL } 
-				##245
-				829 = { add_core_of = POL } 
-				##829
-				217 = { add_core_of = POL } 
-				##217
-				236 = { add_core_of = POL } 
-				##236
-				401 = { add_core_of = POL } 
-				##401
-				652 = { add_core_of = POL } 
-				##652
-				251 = { add_core_of = POL } 
-				##251
-				265 = { add_core_of = POL } 
-				##265
-				239 = { add_core_of = POL } 
-				##239
-				260 = { add_core_of = POL } 
-				##260
-				240 = { add_core_of = POL } 
-				##240
-				220 = { add_core_of = POL } 
-				##220
-				224 = { add_core_of = POL } 
-				##224
-				222 = { add_core_of = POL } 
-				##222
-				223 = { add_core_of = POL } 
-				##223
-				258 = { add_core_of = POL } 
-				##258
-				257 = { add_core_of = POL } 
-				##257
-				255 = { add_core_of = POL } 
-				##255
-				250 = { add_core_of = POL } 
-				##250
-				252 = { add_core_of = POL } 
-				##252
-				254 = { add_core_of = POL } 
-				##254
-				253 = { add_core_of = POL } 
-				##253
-				219 = { add_core_of = POL } 
-				##219
-				205 = { add_core_of = POL } 
-				##205
-				242 = { add_core_of = POL } 
-				##242
-				243 = { add_core_of = POL } 
-				##243
-				246 = { add_core_of = POL } 
-				##246
-				210 = { add_core_of = POL } 
-				##210
-				263 = { add_core_of = POL } 
-				##263
-				208 = { add_core_of = POL } 
-				##208
-				209 = { add_core_of = POL } 
-				##209
-				244 = { add_core_of = POL } 
-				##244
-				195 = { add_core_of = POL } 
-				##195
-				264 = { add_core_of = POL } 
-				##264
-				247 = { add_core_of = POL } 
-				##247
-				248 = { add_core_of = POL } 
-				##248
-				351 = { add_core_of = POL } 
-				##351
-				214 = { add_core_of = POL } 
-				##214
-				216 = { add_core_of = POL } 
-				##216
-				215 = { add_core_of = POL } 
-				##215
-				213 = { add_core_of = POL } 
-				##213
-				147 = { add_core_of = POL } 
-				##147
-				722 = { add_core_of = POL } 
-				##722
-				825 = { add_core_of = POL } 
-				##825
-				262 = { add_core_of = POL } 
-				##262
-				581 = { add_core_of = POL } 
-				##581
-				397 = { add_core_of = POL } 
-				##397
-				400 = { add_core_of = POL } 
-				##400
-				249 = { add_core_of = POL } 
-				##249
-				256 = { add_core_of = POL } 
-				##256
-				833 = { add_core_of = POL } 
-				##833
-				399 = { add_core_of = POL } 
-				##399
-				398 = { add_core_of = POL } 
-				##398
-				573 = { add_core_of = POL } 
-				##573
-				651 = { add_core_of = POL } 
-				##651
-				582 = { add_core_of = POL } 
-				##582
-				572 = { add_core_of = POL } 
-				##572
-				653 = { add_core_of = POL } 
-				##653
-				580 = { add_core_of = POL } 
-				##580
-				579 = { add_core_of = POL } 
-				##579
-				403 = { add_core_of = POL } 
-				##403
-				571 = { add_core_of = POL } 
-				##571
-				654 = { add_core_of = POL } 
-				##654
-				40 = { add_core_of = POL } 
-				##40
-				570 = { add_core_of = POL } 
-				##570
+				137 = { add_core_of = POL }
+				196 = { add_core_of = POL }
+				200 = { add_core_of = POL }
+				227 = { add_core_of = POL }
+				228 = { add_core_of = POL }
+				218 = { add_core_of = POL }
+				234 = { add_core_of = POL }
+				235 = { add_core_of = POL }
+				237 = { add_core_of = POL }
+				232 = { add_core_of = POL }
+				238 = { add_core_of = POL }
+				245 = { add_core_of = POL }
+				829 = { add_core_of = POL }
+				217 = { add_core_of = POL }
+				236 = { add_core_of = POL }
+				401 = { add_core_of = POL }
+				652 = { add_core_of = POL }
+				251 = { add_core_of = POL }
+				265 = { add_core_of = POL }
+				239 = { add_core_of = POL }
+				260 = { add_core_of = POL }
+				240 = { add_core_of = POL }
+				220 = { add_core_of = POL }
+				224 = { add_core_of = POL }
+				222 = { add_core_of = POL }
+				223 = { add_core_of = POL }
+				258 = { add_core_of = POL }
+				257 = { add_core_of = POL }
+				255 = { add_core_of = POL }
+				250 = { add_core_of = POL }
+				252 = { add_core_of = POL }
+				254 = { add_core_of = POL }
+				253 = { add_core_of = POL }
+				219 = { add_core_of = POL }
+				205 = { add_core_of = POL }
+				242 = { add_core_of = POL }
+				243 = { add_core_of = POL }
+				246 = { add_core_of = POL }
+				210 = { add_core_of = POL }
+				263 = { add_core_of = POL }
+				208 = { add_core_of = POL }
+				209 = { add_core_of = POL }
+				244 = { add_core_of = POL }
+				195 = { add_core_of = POL }
+				264 = { add_core_of = POL }
+				247 = { add_core_of = POL }
+				248 = { add_core_of = POL }
+				351 = { add_core_of = POL }
+				214 = { add_core_of = POL }
+				216 = { add_core_of = POL }
+				215 = { add_core_of = POL }
+				213 = { add_core_of = POL }
+				147 = { add_core_of = POL }
+				722 = { add_core_of = POL }
+				825 = { add_core_of = POL }
+				262 = { add_core_of = POL }
+				581 = { add_core_of = POL }
+				397 = { add_core_of = POL }
+				400 = { add_core_of = POL }
+				249 = { add_core_of = POL }
+				256 = { add_core_of = POL }
+				833 = { add_core_of = POL }
+				399 = { add_core_of = POL }
+				398 = { add_core_of = POL }
+				573 = { add_core_of = POL }
+				651 = { add_core_of = POL }
+				582 = { add_core_of = POL }
+				572 = { add_core_of = POL }
+				653 = { add_core_of = POL }
+				580 = { add_core_of = POL }
+				579 = { add_core_of = POL }
+				403 = { add_core_of = POL }
+				571 = { add_core_of = POL }
+				654 = { add_core_of = POL }
+				40 = { add_core_of = POL }
+				570 = { add_core_of = POL }
 				578 = { add_core_of = POL } 
-				##578
-				577 = { add_core_of = POL } 
-				##577
-				576 = { add_core_of = POL } 
-				##576
-				824 = { add_core_of = POL } 
-				##824
-				516 = { add_core_of = POL } 
-				##516
-				568 = { add_core_of = POL } 
-				##568
-				569 = { add_core_of = POL } 
-				##569
-				567 = { add_core_of = POL } 
-				##567
-				564 = { add_core_of = POL } 
-				##564
-				566 = { add_core_of = POL } 
-				##566
-				575 = { add_core_of = POL } 
-				##575
-				565 = { add_core_of = POL } 
-				##565
-				563 = { add_core_of = POL } 
-				##563
-				574 = { add_core_of = POL } 
-				##574
-				644 = { add_core_of = POL } 
-				##644
-				562 = { add_core_of = POL } 
-				##562
-				822 = { add_core_of = POL } 
-				##822
-				637 = { add_core_of = POL } 
-				##637
-				650 = { add_core_of = POL } 
-				##650
-				463 = { add_core_of = POL } 
-				##463
-				471 = { add_core_of = POL } 
-				##471
-				739 = { add_core_of = POL } 
-				##739
-				736 = { add_core_of = POL } 
-				736 = { add_core_of = POL } 
-				102 = { add_core_of = POL } 
-				103 = { add_core_of = POL } 
-				104 = { add_core_of = POL } 
-				109 = { add_core_of = POL } 
-				45 = { add_core_of = POL } 
-				107 = { add_core_of = POL } 
-				108 = { add_core_of = POL } 
-				801 = { add_core_of = POL } 
-				105 = { add_core_of = POL } 
-				106 = { add_core_of = POL } 
-				48 = { add_core_of = POL } 
-				212 = { add_core_of = POL } 
-				211 = { add_core_of = POL } 
-				77 = { add_core_of = POL } 
-				807 = { add_core_of = POL } 
-				85 = { add_core_of = POL } 
-				63 = { add_core_of = POL } 
-				62 = { add_core_of = POL } 
+				577 = { add_core_of = POL }
+				576 = { add_core_of = POL }
+				824 = { add_core_of = POL }
+				516 = { add_core_of = POL }
+				568 = { add_core_of = POL }
+				569 = { add_core_of = POL }
+				567 = { add_core_of = POL }
+				564 = { add_core_of = POL }
+				566 = { add_core_of = POL }
+				575 = { add_core_of = POL }
+				565 = { add_core_of = POL }
+				563 = { add_core_of = POL }
+				574 = { add_core_of = POL }
+				644 = { add_core_of = POL }
+				562 = { add_core_of = POL }
+				822 = { add_core_of = POL }
+				637 = { add_core_of = POL }
+				650 = { add_core_of = POL }
+				463 = { add_core_of = POL }
+				471 = { add_core_of = POL }
+				739 = { add_core_of = POL }
+				736 = { add_core_of = POL }
+				736 = { add_core_of = POL }
+				102 = { add_core_of = POL }
+				103 = { add_core_of = POL }
+				104 = { add_core_of = POL }
+				109 = { add_core_of = POL }
+				45 = { add_core_of = POL }
+				107 = { add_core_of = POL }
+				108 = { add_core_of = POL }
+				801 = { add_core_of = POL }
+				105 = { add_core_of = POL }
+				106 = { add_core_of = POL }
+				48 = { add_core_of = POL }
+				212 = { add_core_of = POL }
+				211 = { add_core_of = POL }
+				77 = { add_core_of = POL }
+				85 = { add_core_of = POL }
+				63 = { add_core_of = POL }
+				62 = { add_core_of = POL }
 			}
 			custom_effect_tooltip = POL_custom_effect_tooltip_82
 			set_cosmetic_tag = POL_slavic
@@ -4751,72 +4532,42 @@ seek_empire_category = {
 			custom_trigger_tooltip = {##Poland
 				tooltip = POL_custom_trigger_tooltip_POL
 				controls_state = 5
-				owns_state = 5
-				controls_state = 98 
-				owns_state = 98
-				controls_state = 87 
-				owns_state = 87
-				controls_state = 10 
-				owns_state = 10
+				controls_state = 98
+				controls_state = 87
+				controls_state = 10
 				controls_state = 90
-				owns_state = 90
 				controls_state = 88
-				owns_state = 88
-				controls_state = 67 
-				owns_state = 67
-				controls_state = 66 
-				owns_state = 66
-				controls_state = 86 
-				owns_state = 86
-				controls_state = 92 
-				owns_state = 92
-				controls_state = 97 
-				owns_state = 97
-				controls_state = 94 
-				owns_state = 94
-				controls_state = 93 
-				owns_state = 93
-				controls_state = 91 
-				owns_state = 91
-				controls_state = 89 
-				owns_state = 89
-				controls_state = 762 
-				owns_state = 762
+				controls_state = 67
+				controls_state = 66
+				controls_state = 86
+				controls_state = 92
+				controls_state = 97
+				controls_state = 94
+				controls_state = 93
+				controls_state = 91
+				controls_state = 89
+				controls_state = 762
 			}
 			custom_trigger_tooltip = {##Pomerania
 				tooltip = POL_custom_trigger_tooltip_4
-				controls_state = 807
-				owns_state = 807
-				controls_state = 85 
-				owns_state = 85
-				controls_state = 63 
-				owns_state = 63
-				controls_state = 62 
-				owns_state = 62
+				controls_state = 85
+				controls_state = 63
+				controls_state = 62
 			}
 			custom_trigger_tooltip = {##Czechia
 				tooltip = POL_custom_trigger_tooltip_6
 				controls_state = 9
-				owns_state = 9
 				controls_state = 69
-				owns_state = 69
-				controls_state = 72 
-				owns_state = 72
-				controls_state = 75 
-				owns_state = 75
-				controls_state = 74 
-				owns_state = 74
+				controls_state = 72
+				controls_state = 75
+				controls_state = 74
 			}
 			custom_trigger_tooltip = {###Slovakia
 				tooltip = POL_custom_trigger_tooltip_7
 				controls_state = 70
-				owns_state = 70
 				controls_state = 71
-				owns_state = 71
-				controls_state = 73 
-				owns_state = 73
-				controls_state = 664 
-				owns_state = 664
+				controls_state = 73
+				controls_state = 664
 			}
 		}
 		complete_effect = {
@@ -4840,125 +4591,74 @@ seek_empire_category = {
 			POL = {is_subject = no}
 			custom_trigger_tooltip = {##Pomerania
 				tooltip = POL_custom_trigger_tooltip_4
-				controls_state = 807
-				owns_state = 807
-				controls_state = 85 
-				owns_state = 85
-				controls_state = 63 
-				owns_state = 63
-				controls_state = 62 
-				owns_state = 62
+				controls_state = 85
+				controls_state = 63
+				controls_state = 62
 			}
 			custom_trigger_tooltip = {##Eastern Germany
 				tooltip = POL_custom_trigger_tooltip_5
 				controls_state = 61
-				owns_state = 61
 				controls_state = 64
-				owns_state = 64
-				controls_state = 68 
-				owns_state = 68
-				controls_state = 65 
-				owns_state = 65
+				controls_state = 68
+				controls_state = 65
 			}
 			custom_trigger_tooltip = {##Czechia
 				tooltip = POL_custom_trigger_tooltip_6
 				controls_state = 9
-				owns_state = 9
 				controls_state = 69
-				owns_state = 69
-				controls_state = 72 
-				owns_state = 72
-				controls_state = 75 
-				owns_state = 75
-				controls_state = 74 
-				owns_state = 74
+				controls_state = 72
+				controls_state = 75
+				controls_state = 74
 			}
 			custom_trigger_tooltip = {##Lithuania
 				tooltip = POL_custom_trigger_tooltip_20
 				controls_state = 11
-				owns_state = 11
 				controls_state = 814
-				owns_state = 814
-				controls_state = 188
-				owns_state = 188
 				controls_state = 189
-				owns_state = 189
 				controls_state = 815
-				owns_state = 815
 			}
 			custom_trigger_tooltip = {##Latvia
 				tooltip = POL_custom_trigger_tooltip_21
 				controls_state = 190
-				owns_state = 190
 				controls_state = 809
-				owns_state = 809
 				controls_state = 810
-				owns_state = 810
 				controls_state = 808
-				owns_state = 808
 				controls_state = 12
-				owns_state = 12
 			}
 			custom_trigger_tooltip = {##Estonia
 				tooltip = POL_custom_trigger_tooltip_22
 				controls_state = 191
-				owns_state = 191
 				controls_state = 813
-				owns_state = 813
 				controls_state = 13
-				owns_state = 13
 				controls_state = 812
-				owns_state = 812
 				controls_state = 811
-				owns_state = 811
 			}
 			custom_trigger_tooltip = {##Belarus
 				tooltip = POL_custom_trigger_tooltip_23
 				controls_state = 96
-				owns_state = 96
 				controls_state = 95
-				owns_state = 95
 				controls_state = 194
-				owns_state = 194
 				controls_state = 204
-				owns_state = 204
 				controls_state = 206
-				owns_state = 206
 				controls_state = 241
-				owns_state = 241
 				controls_state = 764
-				owns_state = 764
 				controls_state = 207
-				owns_state = 207
 			}
 			custom_trigger_tooltip = {##Ukraine
 				tooltip = POL_custom_trigger_tooltip_24
 				controls_state = 199
-				owns_state = 199
 				controls_state = 201
-				owns_state = 201
 				controls_state = 198
-				owns_state = 198
 				controls_state = 202
-				owns_state = 202
 				controls_state = 203
-				owns_state = 203
 				controls_state = 834
-				owns_state = 834
 				controls_state = 192
-				owns_state = 192
 				controls_state = 197
-				owns_state = 197
 				controls_state = 226
-				owns_state = 226
 				controls_state = 221
-				owns_state = 221
 				controls_state = 259
-				owns_state = 259
 				controls_state = 225
-				owns_state = 225
 				controls_state = 193
-				owns_state = 193
 			}
 		}
 		complete_effect = {
@@ -4980,14 +4680,9 @@ seek_empire_category = {
 			POL = {is_subject = no}
 			custom_trigger_tooltip = {##Pomerania
 				tooltip = POL_custom_trigger_tooltip_4
-				controls_state = 807
-				owns_state = 807
-				controls_state = 85 
-				owns_state = 85
-				controls_state = 63 
-				owns_state = 63
-				controls_state = 62 
-				owns_state = 62
+				controls_state = 85
+				controls_state = 63
+				controls_state = 62
 			}
 			has_completed_focus = POL_recreate_kingdom_of_jerusalem
 			owns_state = 68
@@ -5012,14 +4707,9 @@ seek_empire_category = {
 			POL = {is_subject = no}
 			custom_trigger_tooltip = {##Pomerania
 				tooltip = POL_custom_trigger_tooltip_4
-				controls_state = 807
-				owns_state = 807
-				controls_state = 85 
-				owns_state = 85
-				controls_state = 63 
-				owns_state = 63
-				controls_state = 62 
-				owns_state = 62
+				controls_state = 85
+				controls_state = 63
+				controls_state = 62
 			}
 			owns_state = 68
 			controls_state = 68
@@ -9605,11 +9295,6 @@ european_cooperation_category = {
 						owns_state = 85
 					}
 				}
-				POL = {
-					NOT = {
-						owns_state = 807
-					}
-				}
 			}
 		}
 		available = {
@@ -9629,11 +9314,6 @@ european_cooperation_category = {
 						owns_state = 85
 					}
 				}
-				POL = {
-					NOT = {
-						owns_state = 807
-					}
-				}
 			}
 		}
 		ai_will_do = {
@@ -9647,7 +9327,6 @@ european_cooperation_category = {
 						owns_state = 62 
 						owns_state = 63
 						owns_state = 85
-						owns_state = 807
 					}
 				}
 				country_event = {
@@ -10228,560 +9907,350 @@ new_revolution_category = {
 			custom_trigger_tooltip = {##Poland
 				tooltip = POL_custom_trigger_tooltip_POL
 				controls_state = 5
-				owns_state = 5
 				controls_state = 98 
-				owns_state = 98
 				controls_state = 87 
-				owns_state = 87
 				controls_state = 10 
-				owns_state = 10
 				controls_state = 90
-				owns_state = 90
 				controls_state = 88
-				owns_state = 88
 				controls_state = 67 
-				owns_state = 67
 				controls_state = 66 
-				owns_state = 66
 				controls_state = 86 
-				owns_state = 86
 				controls_state = 92 
-				owns_state = 92
 				controls_state = 97 
-				owns_state = 97
 				controls_state = 94 
-				owns_state = 94
 				controls_state = 93 
-				owns_state = 93
 				controls_state = 91 
-				owns_state = 91
 				controls_state = 89 
-				owns_state = 89
 				controls_state = 762 
-				owns_state = 762
 			}
 			custom_trigger_tooltip = {##Pomerania
 				tooltip = POL_custom_trigger_tooltip_4
-				controls_state = 807
-				owns_state = 807
 				controls_state = 85 
-				owns_state = 85
 				controls_state = 63 
-				owns_state = 63
 				controls_state = 62 
-				owns_state = 62
 			}
 			custom_trigger_tooltip = {##Germany
 				tooltip = POL_custom_trigger_tooltip_30
 				controls_state = 61
-				owns_state = 61
 				controls_state = 64
-				owns_state = 64
-				controls_state = 68 
-				owns_state = 68
-				controls_state = 65 
-				owns_state = 65
-				controls_state = 59 
-				owns_state = 59
-				controls_state = 56 
-				owns_state = 56
-				controls_state = 57 
-				owns_state = 57
-				controls_state = 51 
-				owns_state = 51
-				controls_state = 55 
-				owns_state = 55
-				controls_state = 54 
-				owns_state = 54
-				controls_state = 60 
-				owns_state = 60
-				controls_state = 50 
-				owns_state = 50
-				controls_state = 52 
-				owns_state = 52
-				controls_state = 53 
-				owns_state = 53
+				controls_state = 68
+				controls_state = 65
+				controls_state = 59
+				controls_state = 56
+				controls_state = 57
+				controls_state = 51
+				controls_state = 55
+				controls_state = 54
+				controls_state = 60
+				controls_state = 50
+				controls_state = 52
+				controls_state = 53
 			}
 			custom_trigger_tooltip = {##Czechia
 				tooltip = POL_custom_trigger_tooltip_6
 				controls_state = 9
-				owns_state = 9
 				controls_state = 69
-				owns_state = 69
-				controls_state = 72 
-				owns_state = 72
-				controls_state = 75 
-				owns_state = 75
-				controls_state = 74 
-				owns_state = 74
+				controls_state = 72
+				controls_state = 75
+				controls_state = 74
 			}
 			custom_trigger_tooltip = {###Slovakia
 				tooltip = POL_custom_trigger_tooltip_7
 				controls_state = 70
-				owns_state = 70
 				controls_state = 71
-				owns_state = 71
 				controls_state = 73 
-				owns_state = 73
 				controls_state = 664 
-				owns_state = 664
 			}
 			custom_trigger_tooltip = {###Austria
 				tooltip = POL_custom_trigger_tooltip_31
 				controls_state = 4
-				owns_state = 4
 				controls_state = 152
-				owns_state = 152
 				controls_state = 153 
-				owns_state = 153
 				controls_state = 848 
-				owns_state = 848
 				controls_state = 39 
-				owns_state = 39
 				controls_state = 850 
-				owns_state = 850
 			}
 			custom_trigger_tooltip = {##Slovenia
 				tooltip = POL_custom_trigger_tooltip_9
 				controls_state = 102
-				owns_state = 102
 				controls_state = 736
-				owns_state = 736
 				controls_state = 853
-				owns_state = 853
+				controls_state = 852
 			}
 			custom_trigger_tooltip = {##Croatia
 				tooltip = POL_custom_trigger_tooltip_10
 				controls_state = 109
-				owns_state = 109
 				controls_state = 103
-				owns_state = 103
 				controls_state = 104
-				owns_state = 104
-				controls_state = 852
-				owns_state = 852
-				controls_state = 151
-				owns_state = 151
 			}
 			custom_trigger_tooltip = {##Serbia
 				tooltip = POL_custom_trigger_tooltip_11
 				controls_state = 45
-				owns_state = 45
 				controls_state = 107
-				owns_state = 107
 				controls_state = 108
-				owns_state = 108
+				controls_state = 151
+				controls_state = 847
 			}
 			custom_trigger_tooltip = {##Albania
 				tooltip = POL_custom_trigger_tooltip_33
 				controls_state = 44
-				owns_state = 44
 				controls_state = 105
-				owns_state = 105
 				controls_state = 801
-				owns_state = 801
 				controls_state = 805
-				owns_state = 805
 				controls_state = 185
-				owns_state = 185
+				controls_state = 934
 			}
 			custom_trigger_tooltip = {##Bulgaria
 				tooltip = POL_custom_trigger_tooltip_13
 				controls_state = 106
-				owns_state = 106
 				controls_state = 48
-				owns_state = 48
 				controls_state = 212
-				owns_state = 212
 				controls_state = 211
-				owns_state = 211
 			}
 			custom_trigger_tooltip = {##Wallachia
 				tooltip = POL_custom_trigger_tooltip_14
 				controls_state = 46
-				owns_state = 46
 				controls_state = 81
-				owns_state = 81
 				controls_state = 77
-				owns_state = 77
+				controls_state = 807
 			}
 			custom_trigger_tooltip = {##Moldavia
 				tooltip = POL_custom_trigger_tooltip_15
 				controls_state = 78
-				owns_state = 78
 				controls_state = 79
-				owns_state = 79
 				controls_state = 80
-				owns_state = 80
 			}
 			custom_trigger_tooltip = {##Transylvania
 				tooltip = POL_custom_trigger_tooltip_16
 				controls_state = 76
-				owns_state = 76
 				controls_state = 84
-				owns_state = 84
 				controls_state = 82
-				owns_state = 82
 				controls_state = 83
-				owns_state = 83
 			}
 			custom_trigger_tooltip = {##Hungary 
 				tooltip = POL_custom_trigger_tooltip_17
 				controls_state = 154
-				owns_state = 154
 				controls_state = 43
-				owns_state = 43
 				controls_state = 155
-				owns_state = 155
 			}
 			custom_trigger_tooltip = {##Lithuania
 				tooltip = POL_custom_trigger_tooltip_20
 				controls_state = 11
-				owns_state = 11
 				controls_state = 814
-				owns_state = 814
-				controls_state = 188
-				owns_state = 188
 				controls_state = 189
-				owns_state = 189
 				controls_state = 815
-				owns_state = 815
 			}
 			custom_trigger_tooltip = {##Latvia
 				tooltip = POL_custom_trigger_tooltip_21
 				controls_state = 190
-				owns_state = 190
 				controls_state = 809
-				owns_state = 809
 				controls_state = 810
-				owns_state = 810
 				controls_state = 808
-				owns_state = 808
 				controls_state = 12
-				owns_state = 12
 			}
 			custom_trigger_tooltip = {##Estonia
 				tooltip = POL_custom_trigger_tooltip_22
 				controls_state = 191
-				owns_state = 191
 				controls_state = 813
-				owns_state = 813
 				controls_state = 13
-				owns_state = 13
 				controls_state = 812
-				owns_state = 812
 				controls_state = 811
-				owns_state = 811
 			}
 			custom_trigger_tooltip = {##Belarus
 				tooltip = POL_custom_trigger_tooltip_23
 				controls_state = 96
-				owns_state = 96
 				controls_state = 95
-				owns_state = 95
 				controls_state = 194
-				owns_state = 194
 				controls_state = 204
-				owns_state = 204
 				controls_state = 206
-				owns_state = 206
 				controls_state = 241
-				owns_state = 241
 				controls_state = 764
-				owns_state = 764
 				controls_state = 207
-				owns_state = 207
 			}
 			custom_trigger_tooltip = {##Ukraine
 				tooltip = POL_custom_trigger_tooltip_24
 				controls_state = 199
-				owns_state = 199
 				controls_state = 201
-				owns_state = 201
 				controls_state = 198
-				owns_state = 198
 				controls_state = 202
-				owns_state = 202
 				controls_state = 203
-				owns_state = 203
 				controls_state = 834
-				owns_state = 834
 				controls_state = 192
-				owns_state = 192
 				controls_state = 197
-				owns_state = 197
 				controls_state = 226
-				owns_state = 226
 				controls_state = 221
-				owns_state = 221
 				controls_state = 259
-				owns_state = 259
 				controls_state = 225
-				owns_state = 225
 				controls_state = 193
-				owns_state = 193
 			}
 			custom_trigger_tooltip = {##Italy
 				tooltip = POL_custom_trigger_tooltip_32
 				controls_state = 159
-				owns_state = 159
 				controls_state = 160
-				owns_state = 160
 				controls_state = 161
-				owns_state = 161
 				controls_state = 162
-				owns_state = 162
 				controls_state = 157
-				owns_state = 157
 				controls_state = 2
-				owns_state = 2
 				controls_state = 117
-				owns_state = 117
 				controls_state = 849
-				owns_state = 849
 				controls_state = 156
-				owns_state = 156
 				controls_state = 115
-				owns_state = 115
 				controls_state = 114
-				owns_state = 114
 			}
 			controls_state = 116
-			owns_state = 116
 			custom_trigger_tooltip = {##Greece and Turkish European part
 				tooltip = POL_custom_trigger_tooltip_34
 				controls_state = 731
-				owns_state = 731
 				controls_state = 47
-				owns_state = 47
 				controls_state = 186
-				owns_state = 186
 				controls_state = 182
-				owns_state = 182
 				controls_state = 184
-				owns_state = 184
 				controls_state = 341
-				owns_state = 341
 				controls_state = 187
-				owns_state = 187
 				controls_state = 164
-				owns_state = 164
 			}
 			custom_trigger_tooltip = {##Holland
 				tooltip = POL_custom_trigger_tooltip_35
 				controls_state = 36
-				owns_state = 36
 				controls_state = 35
-				owns_state = 35
 				controls_state = 7
-				owns_state = 7
 				controls_state = 784
-				owns_state = 784
 				controls_state = 6
-				owns_state = 6
 			}
 			custom_trigger_tooltip = {##Grand Duchy of Luxembourg/Belgium
 				tooltip = POL_custom_trigger_tooltip_36
 				controls_state = 786
-				owns_state = 786
 				controls_state = 8
-				owns_state = 8
 				controls_state = 34
-				owns_state = 34
 			}
 			custom_trigger_tooltip = {##Switzerland
 				tooltip = POL_custom_trigger_tooltip_37
 				controls_state = 846
-				owns_state = 846
 				controls_state = 3
-				owns_state = 3
 				controls_state = 802
-				owns_state = 802
 				controls_state = 845
-				owns_state = 845
 				controls_state = 847
-				owns_state = 847
 			}
 			custom_trigger_tooltip = {##France
 				tooltip = POL_custom_trigger_tooltip_38
 				controls_state = 42
-				owns_state = 42
 				controls_state = 28
-				owns_state = 28
 				controls_state = 17
-				owns_state = 17
 				controls_state = 18
-				owns_state = 18
 				controls_state = 29
-				owns_state = 29
 				controls_state = 16
-				owns_state = 16
 				controls_state = 15
-				owns_state = 15
 				controls_state = 30
-				owns_state = 30
 				controls_state = 14
-				owns_state = 14
 				controls_state = 23
-				owns_state = 23
 				controls_state = 24
-				owns_state = 24
 				controls_state = 33
-				owns_state = 33
 				controls_state = 27
-				owns_state = 27
 				controls_state = 26
-				owns_state = 26
 				controls_state = 25
-				owns_state = 25
 				controls_state = 19
-				owns_state = 19
 				controls_state = 806
-				owns_state = 806
 				controls_state = 31
-				owns_state = 31
 				controls_state = 22
-				owns_state = 22
 				controls_state = 20
-				owns_state = 20
 				controls_state = 32
-				owns_state = 32
 				controls_state = 21
-				owns_state = 21
-				controls_state = 29
-				owns_state = 29
 				controls_state = 851
-				owns_state = 851
-				controls_state = 29
-				owns_state = 29
 				controls_state = 735
-				owns_state = 735
 				controls_state = 158
-				owns_state = 158
 				controls_state = 1
-				owns_state = 1
 			}
 			custom_trigger_tooltip = {##Spain with Giblartar
 				tooltip = POL_custom_trigger_tooltip_39
 				controls_state = 118
-				owns_state = 118
 				controls_state = 169
-				owns_state = 169
 				controls_state = 173
-				owns_state = 173
 				controls_state = 789
-				owns_state = 789
 				controls_state = 168
-				owns_state = 168
 				controls_state = 175
-				owns_state = 175
 				controls_state = 170
-				owns_state = 170
 				controls_state = 41
-				owns_state = 41
 				controls_state = 793
-				owns_state = 793
 				controls_state = 167
-				owns_state = 167
 				controls_state = 177
-				owns_state = 177
 				controls_state = 794
-				owns_state = 794
 				controls_state = 166
-				owns_state = 166
 				controls_state = 165
-				owns_state = 165
 				controls_state = 176
-				owns_state = 176
 				controls_state = 172
-				owns_state = 172
 				controls_state = 792
-				owns_state = 792
 				controls_state = 804
-				owns_state = 804
 				controls_state = 790
-				owns_state = 790
 				controls_state = 171
-				owns_state = 171
 				controls_state = 174
-				owns_state = 174
 				controls_state = 791
-				owns_state = 791
 				controls_state = 788
-				owns_state = 788
 				controls_state = 178
-				owns_state = 178
 			}
 			custom_trigger_tooltip = {##Portugal
 				tooltip = POL_custom_trigger_tooltip_40
 				controls_state = 180
-				owns_state = 180
 				controls_state = 181
-				owns_state = 181
 				controls_state = 112
-				owns_state = 112
 				controls_state = 795
-				owns_state = 795
 				controls_state = 179
-				owns_state = 179
 				controls_state = 698
-				owns_state = 698
 				controls_state = 697
-				owns_state = 697
 			}
 			custom_trigger_tooltip = {##Sweden
 				tooltip = POL_custom_trigger_tooltip_41
 				controls_state = 138
-				owns_state = 138
 				controls_state = 139
-				owns_state = 139
 				controls_state = 140
-				owns_state = 140
 				controls_state = 141
-				owns_state = 141
 				controls_state = 38
-				owns_state = 38
 				controls_state = 666
-				owns_state = 666
 				controls_state = 124
-				owns_state = 124
+				controls_state = 913
+				controls_state = 188
+				controls_state = 919
+				controls_state = 915
+				controls_state = 916
+				controls_state = 917
+				controls_state = 918
 			}
 			custom_trigger_tooltip = {##Denmark
 				tooltip = POL_custom_trigger_tooltip_42
 				controls_state = 37
-				owns_state = 37
 				controls_state = 99
-				owns_state = 99
 				controls_state = 58
-				owns_state = 58
+				controls_state = 910
+				controls_state = 911
+				controls_state = 912
+				controls_state = 909
 			}
 			custom_trigger_tooltip = {##Norawy
 				tooltip = POL_custom_trigger_tooltip_43
 				controls_state = 110
-				owns_state = 110
 				controls_state = 142
-				owns_state = 142
 				controls_state = 143
-				owns_state = 143
 				controls_state = 144
-				owns_state = 144
+				controls_state = 921
+				controls_state = 922
+				controls_state = 920
+				controls_state = 923
+				controls_state = 924
+				controls_state = 925
 			}
 			custom_trigger_tooltip = {##Finland
 				tooltip = POL_custom_trigger_tooltip_44
 				controls_state = 145
-				owns_state = 145
 				controls_state = 111
-				owns_state = 111
 				controls_state = 149
-				owns_state = 149
 				controls_state = 146
-				owns_state = 146
 				controls_state = 150
-				owns_state = 150
 				controls_state = 148
-				owns_state = 148
 				controls_state = 147
-				owns_state = 147
+				controls_state = 928
+				controls_state = 926
+				controls_state = 927
+				controls_state = 930
+				controls_state = 929
 			}
 		}
 		ai_will_do = {
@@ -10792,58 +10261,264 @@ new_revolution_category = {
 			set_cosmetic_tag = EUR_UNIFIED
 			every_state = {
 				limit = {
-					is_on_continent = europe
 					OR = {
-						is_core_of = POM
-						is_core_of = POL
-						is_core_of = GER
-						is_core_of = WGR 
-						is_core_of = DDR
-						is_core_of = DEN
-						is_core_of = NOR
-						is_core_of = SWE
-						is_core_of = FIN
-						is_core_of = SWI
-						is_core_of = BEL
-						is_core_of = HOL
-						is_core_of = FRA
-						is_core_of = SPR
-						is_core_of = POR
-						is_core_of = ITA
-						is_core_of = CRO
-						is_core_of = SER
-						is_core_of = AUS
-						is_core_of = ALB
-						is_core_of = GRE
-						is_core_of = TUR
-						is_core_of = HUN
-						is_core_of = SLO
-						is_core_of = TRN
-						is_core_of = ROM
-						is_core_of = UKR
-						is_core_of = BAL
-						is_core_of = BLR
-						is_core_of = LIT
-						is_core_of = LAT
-						is_core_of = EST
-						is_core_of = BUL
-						is_core_of = SAV
-						is_core_of = CAT
-						is_core_of = ARA
-						is_core_of = OCC
-						is_core_of = BRI
-						is_core_of = NMD
-						is_core_of = BGD
-						is_core_of = ALS
+						state = 5
+						state = 98 
+						state = 87 
+						state = 10 
+						state = 90
+						state = 88
+						state = 67 
+						state = 66 
+						state = 86 
+						state = 92 
+						state = 97 
+						state = 94 
+						state = 93 
+						state = 91 
+						state = 89 
+						state = 762 
+						state = 85 
+						state = 63 
+						state = 62 
+						state = 61
+						state = 64
+						state = 68
+						state = 65
+						state = 59
+						state = 56
+						state = 57
+						state = 51
+						state = 55
+						state = 54
+						state = 60
+						state = 50
+						state = 52
+						state = 53
+						state = 9
+						state = 69
+						state = 72
+						state = 75
+						state = 74
+						state = 70
+						state = 71
+						state = 73 
+						state = 664 
+						state = 4
+						state = 152
+						state = 153 
+						state = 848 
+						state = 39 
+						state = 850 
+						state = 102
+						state = 736
+						state = 853
+						state = 852
+						state = 109
+						state = 103
+						state = 104
+						state = 45
+						state = 107
+						state = 108
+						state = 151
+						state = 847
+						state = 44
+						state = 105
+						state = 801
+						state = 805
+						state = 185
+						state = 934
+						state = 106
+						state = 48
+						state = 212
+						state = 211
+						state = 46
+						state = 81
+						state = 77
+						state = 807
+						state = 78
+						state = 79
+						state = 80
+						state = 76
+						state = 84
+						state = 82
+						state = 83
+						state = 154
+						state = 43
+						state = 155
+						state = 11
+						state = 814
+						state = 189
+						state = 815
+						state = 190
+						state = 809
+						state = 810
+						state = 808
+						state = 12
+						state = 191
+						state = 813
+						state = 13
+						state = 812
+						state = 811
+						state = 96
+						state = 95
+						state = 194
+						state = 204
+						state = 206
+						state = 241
+						state = 764
+						state = 207
+						state = 786
+						state = 8
+						state = 34
+						state = 36
+						state = 35
+						state = 7
+						state = 784
+						state = 6
+						state = 731
+						state = 47
+						state = 186
+						state = 182
+						state = 184
+						state = 341
+						state = 187
+						state = 164
+						state = 159
+						state = 160
+						state = 161
+						state = 162
+						state = 157
+						state = 2
+						state = 117
+						state = 849
+						state = 156
+						state = 115
+						state = 114
+						state = 145
+						state = 111
+						state = 149
+						state = 146
+						state = 150
+						state = 148
+						state = 147
+						state = 928
+						state = 926
+						state = 927
+						state = 930
+						state = 929
+						state = 110
+						state = 142
+						state = 143
+						state = 144
+						state = 921
+						state = 922
+						state = 920
+						state = 923
+						state = 924
+						state = 925
+						state = 37
+						state = 99
+						state = 58
+						state = 910
+						state = 911
+						state = 912
+						state = 909
+						state = 138
+						state = 139
+						state = 140
+						state = 141
+						state = 38
+						state = 666
+						state = 124
+						state = 913
+						state = 188
+						state = 919
+						state = 915
+						state = 916
+						state = 917
+						state = 918
+						state = 180
+						state = 181
+						state = 112
+						state = 795
+						state = 179
+						state = 698
+						state = 697
+						state = 118
+						state = 169
+						state = 173
+						state = 789
+						state = 168
+						state = 175
+						state = 170
+						state = 41
+						state = 793
+						state = 167
+						state = 177
+						state = 794
+						state = 166
+						state = 165
+						state = 176
+						state = 172
+						state = 792
+						state = 804
+						state = 790
+						state = 171
+						state = 174
+						state = 791
+						state = 788
+						state = 178
+						state = 42
+						state = 28
+						state = 17
+						state = 18
+						state = 29
+						state = 16
+						state = 15
+						state = 30
+						state = 14
+						state = 23
+						state = 24
+						state = 33
+						state = 27
+						state = 26
+						state = 25
+						state = 19
+						state = 806
+						state = 31
+						state = 22
+						state = 20
+						state = 32
+						state = 21
+						state = 851
+						state = 735
+						state = 158
+						state = 1
+						state = 846
+						state = 3
+						state = 802
+						state = 845
+						state = 847
+						state = 199
+						state = 201
+						state = 198
+						state = 202
+						state = 203
+						state = 834
+						state = 192
+						state = 197
+						state = 226
+						state = 221
+						state = 259
+						state = 225
+						state = 193
 					}
 				}
 				add_core_of = POL
 			}
 			add_political_power = 100
 			hidden_effect = {
-				164 = {##it's Dodecanses - wasn't cored by previus code, so maybe it's counted as Asia???
-					add_core_of = POL
-				}
 				news_event = {
 					id = deluge_poland_foreign.74
 				}
@@ -10865,35 +10540,22 @@ new_revolution_category = {
 			custom_trigger_tooltip = {##England, Scotland and Wales
 				tooltip = POL_custom_trigger_tooltip_45
 				controls_state = 127
-				owns_state = 127
 				controls_state = 123
-				owns_state = 123
 				controls_state = 338
-				owns_state = 338
 				controls_state = 126
-				owns_state = 126
 				controls_state = 125
-				owns_state = 125
 				controls_state = 129
-				owns_state = 129
 				controls_state = 128
-				owns_state = 128
 				controls_state = 122
-				owns_state = 122
 				controls_state = 132
-				owns_state = 132
 				controls_state = 130
-				owns_state = 130
 				controls_state = 131
-				owns_state = 131
 				controls_state = 121
-				owns_state = 121
 				controls_state = 133
-				owns_state = 133
 				controls_state = 136
-				owns_state = 136
 				controls_state = 120
-				owns_state = 120
+				controls_state = 932
+				controls_state = 931
 			}
 		}
 		ai_will_do = {
@@ -10947,6 +10609,12 @@ new_revolution_category = {
 				120 = {
 					add_core_of = POL
 				}
+				932 = {
+					add_core_of = POL
+				}
+				931 = {
+					add_core_of = POL
+				}
 			}
 			custom_effect_tooltip = POL_custom_effect_tooltip_242
 		}
@@ -10963,13 +10631,9 @@ new_revolution_category = {
 		available = {
 			POL = {has_country_flag = POL_formed_eu}
 			controls_state = 119
-			owns_state = 119
 			controls_state = 134
-			owns_state = 134
 			controls_state = 113
-			owns_state = 113
 			controls_state = 135
-			owns_state = 135
 		}
 		ai_will_do = {
 			factor = 5
@@ -11002,11 +10666,10 @@ new_revolution_category = {
 		available = {
 			POL = {has_country_flag = POL_formed_eu}
 			controls_state = 101
-			owns_state = 101
 			controls_state = 100
-			owns_state = 100
 			controls_state = 337
-			owns_state = 337
+			controls_state = 933
+			controls_state = 914
 		}
 		ai_will_do = {
 			factor = 5
@@ -11020,6 +10683,12 @@ new_revolution_category = {
 				add_core_of = POL
 			}
 			100 = {
+				add_core_of = POL
+			}
+			914 = {
+				add_core_of = POL
+			}
+			933 = {
 				add_core_of = POL
 			}
 		}
@@ -11036,7 +10705,6 @@ new_revolution_category = {
 		available = {
 			POL = {has_country_flag = POL_formed_eu}
 			controls_state = 183
-			owns_state = 183
 		}
 		ai_will_do = {
 			factor = 5
@@ -11911,6 +11579,27 @@ polish_new_order_decisions_category = {
 					owns_state = 146
 					owns_state = 148
 					owns_state = 147
+					owns_state = 909
+					owns_state = 912
+					owns_state = 911
+					owns_state = 910
+					owns_state = 915
+					owns_state = 919
+					owns_state = 916
+					owns_state = 917
+					owns_state = 918
+					owns_state = 188
+					owns_state = 921
+					owns_state = 922
+					owns_state = 920
+					owns_state = 923
+					owns_state = 924
+					owns_state = 925
+					owns_state = 929
+					owns_state = 926
+					owns_state = 927
+					owns_state = 928
+					owns_state = 930
 				}
 				NOT = {
 					OR = {
@@ -11944,6 +11633,27 @@ polish_new_order_decisions_category = {
 					owns_state = 146
 					owns_state = 148
 					owns_state = 147
+					owns_state = 909
+					owns_state = 912
+					owns_state = 911
+					owns_state = 910
+					owns_state = 915
+					owns_state = 919
+					owns_state = 916
+					owns_state = 917
+					owns_state = 918
+					owns_state = 188
+					owns_state = 921
+					owns_state = 922
+					owns_state = 920
+					owns_state = 923
+					owns_state = 924
+					owns_state = 925
+					owns_state = 929
+					owns_state = 926
+					owns_state = 927
+					owns_state = 928
+					owns_state = 930
 				}
 				NOT = {
 					is_in_faction_with = POL
@@ -11979,6 +11689,27 @@ polish_new_order_decisions_category = {
 						owns_state = 146
 						owns_state = 148
 						owns_state = 147
+						owns_state = 909
+						owns_state = 912
+						owns_state = 911
+						owns_state = 910
+						owns_state = 915
+						owns_state = 919
+						owns_state = 916
+						owns_state = 917
+						owns_state = 918
+						owns_state = 188
+						owns_state = 921
+						owns_state = 922
+						owns_state = 920
+						owns_state = 923
+						owns_state = 924
+						owns_state = 925
+						owns_state = 929
+						owns_state = 926
+						owns_state = 927
+						owns_state = 928
+						owns_state = 930
 					}
 					NOT = {
 						is_in_faction_with = POL
@@ -12014,6 +11745,27 @@ polish_new_order_decisions_category = {
 						owns_state = 146
 						owns_state = 148
 						owns_state = 147
+						owns_state = 909
+						owns_state = 912
+						owns_state = 911
+						owns_state = 910
+						owns_state = 915
+						owns_state = 919
+						owns_state = 916
+						owns_state = 917
+						owns_state = 918
+						owns_state = 188
+						owns_state = 921
+						owns_state = 922
+						owns_state = 920
+						owns_state = 923
+						owns_state = 924
+						owns_state = 925
+						owns_state = 929
+						owns_state = 926
+						owns_state = 927
+						owns_state = 928
+						owns_state = 930
 					}
 					NOT = {
 						is_in_faction_with = POL
@@ -12466,8 +12218,6 @@ polish_new_order_decisions_category = {
 		available = {
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 807
-			controls_state = 807
 			owns_state = 85
 			controls_state = 85
 			owns_state = 63
@@ -12479,7 +12229,6 @@ polish_new_order_decisions_category = {
 		days_re_enable = 10
 		visible = {
 			OR = {
-				807 = { NOT = { is_core_of = POL } }
 				85 = { NOT = { is_core_of = POL } }
 				63 = { NOT = { is_core_of = POL } }
 				62 = { NOT = { is_core_of = POL } }
@@ -12496,7 +12245,6 @@ polish_new_order_decisions_category = {
 			    type = infantry_equipment
 			    amount = -1000
 			}
-			807 = { add_core_of = POL }
 			85 = { add_core_of = POL }
 			63 = { add_core_of = POL }
 			62 = { add_core_of = POL }
@@ -12870,11 +12618,32 @@ sarmatia_decisions_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 847
 					}
 				}
 				country_event = {
 					id = generic.26
 				}
+			}
+			POL = {
+				add_state_claim = 74
+				add_state_claim = 71
+				add_state_claim = 70
+				add_state_claim = 73
+				add_state_claim = 664
+				add_state_claim = 74
+				add_state_claim = 155
+				add_state_claim = 43
+				add_state_claim = 154
+				add_state_claim = 76
+				add_state_claim = 83
+				add_state_claim = 84
+				add_state_claim = 82
+				add_state_claim = 45
+				add_state_claim = 80
+				add_state_claim = 79
+				add_state_claim = 78
+				add_state_claim = 847
 			}
 		}
 		remove_effect = {
@@ -12898,13 +12667,16 @@ sarmatia_decisions_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 847
 					}
 				}
-				create_wargoal = {
-					type = take_claimed_state
-					target = PREV
-					generator = {
-						
+				POL = {
+					create_wargoal = {
+						type = take_claimed_state
+						target = PREV
+						generator = {
+							74 71 70 73 664 74 155 43 154 76 83 84 82 45 80 79 78 847
+						}
 					}
 				}
 			}
@@ -12984,6 +12756,55 @@ sarmatia_decisions_category = {
 					id = generic.26
 				}
 			}
+			POL = {
+				add_state_claim = 199
+				add_state_claim = 198
+				add_state_claim = 192
+				add_state_claim = 834
+				add_state_claim = 197
+				add_state_claim = 203
+				add_state_claim = 201
+				add_state_claim = 202
+				add_state_claim = 194
+				add_state_claim = 241
+				add_state_claim = 193
+				add_state_claim = 225
+				add_state_claim = 259
+				add_state_claim = 226
+				add_state_claim = 221
+				add_state_claim = 196
+				add_state_claim = 137
+				add_state_claim = 200
+				add_state_claim = 227
+				add_state_claim = 228
+				add_state_claim = 218
+				add_state_claim = 245
+				add_state_claim = 217
+				add_state_claim = 829
+				add_state_claim = 239
+				add_state_claim = 255
+				add_state_claim = 257
+				add_state_claim = 260
+				add_state_claim = 240
+				add_state_claim = 220
+				add_state_claim = 222
+				add_state_claim = 224
+				add_state_claim = 205
+				add_state_claim = 223
+				add_state_claim = 265
+				add_state_claim = 258
+				add_state_claim = 254
+				add_state_claim = 401
+				add_state_claim = 251
+				add_state_claim = 250
+				add_state_claim = 252
+				add_state_claim = 256
+				add_state_claim = 833
+				add_state_claim = 249
+				add_state_claim = 399
+				add_state_claim = 652
+				add_state_claim = 651
+			}
 		}
 		remove_effect = {
 			every_country = {
@@ -13038,11 +12859,13 @@ sarmatia_decisions_category = {
 						owns_state = 651
 					}
 				}
-				create_wargoal = {
-					type = take_claimed_state
-					target = PREV
-					generator = {
-						
+				POL = {
+					create_wargoal = {
+						type = take_claimed_state
+						target = PREV
+						generator = {
+							651 652 399 249 833 256 252 250 251 401 254 258 265 223 205 224 222 220 240 260 257 255 239 829 217 245 218 228 227 200 137 196 221 226 259 225 193 241 194 202 201 203 197 834 192 198 199
+						}
 					}
 				}
 			}
@@ -13091,6 +12914,24 @@ sarmatia_decisions_category = {
 					id = generic.26
 				}
 			}
+			POL = {
+				add_state_claim = 234
+				add_state_claim = 238
+				add_state_claim = 235
+				add_state_claim = 237
+				add_state_claim = 236
+				add_state_claim = 232
+				add_state_claim = 269
+				add_state_claim = 821
+				add_state_claim = 828
+				add_state_claim = 827
+				add_state_claim = 311
+				add_state_claim = 826
+				add_state_claim = 231
+				add_state_claim = 233
+				add_state_claim = 230
+				add_state_claim = 229
+			}
 		}
 		remove_effect = {
 			every_country = {
@@ -13118,7 +12959,7 @@ sarmatia_decisions_category = {
 					type = take_claimed_state
 					target = PREV
 					generator = {
-						
+						234 238 235 237 236 232 269 821 828 827 311 826 231 233 230 229
 					}
 				}
 			}
@@ -13169,6 +13010,26 @@ sarmatia_decisions_category = {
 					id = generic.26
 				}
 			}
+			POL = {
+				add_state_claim = 407
+				add_state_claim = 406
+				add_state_claim = 402
+				add_state_claim = 881
+				add_state_claim = 404
+				add_state_claim = 585
+				add_state_claim = 830
+				add_state_claim = 823
+				add_state_claim = 831
+				add_state_claim = 587
+				add_state_claim = 584
+				add_state_claim = 832
+				add_state_claim = 742
+				add_state_claim = 732
+				add_state_claim = 405
+				add_state_claim = 586
+				add_state_claim = 589
+				add_state_claim = 588
+			}
 		}
 		remove_effect = {
 			every_country = {
@@ -13194,11 +13055,13 @@ sarmatia_decisions_category = {
 						owns_state = 588
 					}
 				}
-				create_wargoal = {
-					type = take_claimed_state
-					target = PREV
-					generator = {
-						
+				POL = {
+					create_wargoal = {
+						type = take_claimed_state
+						target = PREV
+						generator = {
+							407 406 402 881 404 585 830 823 831 587 584 832 742 732 405 586 589 588
+						}
 					}
 				}
 			}
@@ -13243,6 +13106,20 @@ sarmatia_decisions_category = {
 					id = generic.26
 				}
 			}
+			POL = {
+				add_state_claim = 582
+				add_state_claim = 573
+				add_state_claim = 572
+				add_state_claim = 653
+				add_state_claim = 583
+				add_state_claim = 590
+				add_state_claim = 882
+				add_state_claim = 40
+				add_state_claim = 654
+				add_state_claim = 570
+				add_state_claim = 571
+				add_state_claim = 403
+			}
 		}
 		remove_effect = {
 			every_country = {
@@ -13262,11 +13139,13 @@ sarmatia_decisions_category = {
 						owns_state = 403
 					}
 				}
-				create_wargoal = {
-					type = take_claimed_state
-					target = PREV
-					generator = {
-						
+				POL = {
+					create_wargoal = {
+						type = take_claimed_state
+						target = PREV
+						generator = {
+							582 573 572 653 583 590 882 40 654 570 571 403
+						}
 					}
 				}
 			}
@@ -13307,6 +13186,16 @@ sarmatia_decisions_category = {
 					id = generic.26
 				}
 			}
+			POL = {
+				add_state_claim = 267
+				add_state_claim = 415
+				add_state_claim = 442
+				add_state_claim = 445
+				add_state_claim = 444
+				add_state_claim = 443
+				add_state_claim = 440
+				add_state_claim = 441
+			}
 		}
 		remove_effect = {
 			every_country = {
@@ -13322,11 +13211,13 @@ sarmatia_decisions_category = {
 						owns_state = 441
 					}
 				}
-				create_wargoal = {
-					type = take_claimed_state
-					target = PREV
-					generator = {
-						
+				POL = {
+					create_wargoal = {
+						type = take_claimed_state
+						target = PREV
+						generator = {
+							267 415 442 445 444 443 440 441
+						}
 					}
 				}
 			}
@@ -13366,6 +13257,15 @@ sarmatia_decisions_category = {
 					id = generic.26
 				}
 			}
+			POL = {
+				add_state_claim = 619
+				add_state_claim = 287
+				add_state_claim = 759
+				add_state_claim = 617
+				add_state_claim = 618
+				add_state_claim = 760
+				add_state_claim = 818
+			}
 		}
 		remove_effect = {
 			every_country = {
@@ -13380,11 +13280,13 @@ sarmatia_decisions_category = {
 						owns_state = 818
 					}
 				}
-				create_wargoal = {
-					type = take_claimed_state
-					target = PREV
-					generator = {
-						
+				POL = {
+					create_wargoal = {
+						type = take_claimed_state
+						target = PREV
+						generator = {
+							619 287 759 617 618 760 818
+						}
 					}
 				}
 			}
@@ -13557,6 +13459,7 @@ sarmatia_decisions_category = {
 					state = 67
 					state = 66
 					state = 86
+					state = 847
 				}
 			}
 		}
@@ -13726,6 +13629,7 @@ sarmatia_decisions_category = {
 					state = 443
 					state = 445
 					state = 444
+					state = 847
 				}
 			}
 		}
@@ -14048,7 +13952,6 @@ wettins_foreign_policy_decisions_category = {
 			POL = {
 				has_completed_focus = POL_direction_towards_west
 				NOT = {
-					owns_state = 807
 					owns_state = 85
 					owns_state = 63
 					owns_state = 62
@@ -14057,7 +13960,6 @@ wettins_foreign_policy_decisions_category = {
 		}
 		available = {
 			OR = {
-				807 = { owner = { NOT = { is_in_faction_with = POL } } }
 				85 = { owner = { NOT = { is_in_faction_with = POL } } }
 				63 = { owner = { NOT = { is_in_faction_with = POL } } }
 				62 = { owner = { NOT = { is_in_faction_with = POL } } }
@@ -14071,7 +13973,6 @@ wettins_foreign_policy_decisions_category = {
 			if = { 
 				limit = {
 					NOT = { 
-						owns_state = 807 
 						owns_state = 85
 						owns_state = 63
 						owns_state = 62
@@ -14080,7 +13981,6 @@ wettins_foreign_policy_decisions_category = {
 				every_country = {
 					limit = {
 						OR = {
-							owns_state = 807 
 							owns_state = 85
 							owns_state = 63
 							owns_state = 62
@@ -14096,13 +13996,11 @@ wettins_foreign_policy_decisions_category = {
 			if = {
 				limit = {
 					NOT = {
-						807 = { is_claimed_by = POL }
 						85 = { is_claimed_by = POL }
 						63 = { is_claimed_by = POL }
 						62 = { is_claimed_by = POL }
 					} 
 				}
-				add_state_claim = 807
 				add_state_claim = 85
 				add_state_claim = 63
 				add_state_claim = 62
@@ -14110,7 +14008,6 @@ wettins_foreign_policy_decisions_category = {
 			if = { 
 				limit = {
 					NOT = { 
-						owns_state = 807 
 						owns_state = 85
 						owns_state = 63
 						owns_state = 62
@@ -14119,7 +14016,6 @@ wettins_foreign_policy_decisions_category = {
 				every_country = {
 					limit = {
 						OR = {
-							owns_state = 807 
 							owns_state = 85
 							owns_state = 63
 							owns_state = 62
@@ -14130,7 +14026,7 @@ wettins_foreign_policy_decisions_category = {
 							type = take_claimed_state
 							target = PREV
 							generator = {
-								807 85 63 62 
+								85 63 62 
 							}
 						}
 					}
@@ -14154,8 +14050,6 @@ wettins_foreign_policy_decisions_category = {
 		available = {
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 807
-			controls_state = 807
 			owns_state = 85
 			controls_state = 85
 			owns_state = 63
@@ -14171,7 +14065,6 @@ wettins_foreign_policy_decisions_category = {
 					has_completed_focus = POL_direction_towards_west
 				}
 				OR = {
-					807 = { NOT = { is_core_of = POL } } 
 					85 = { NOT = { is_core_of = POL } } 
 					63 = { NOT = { is_core_of = POL } } 
 					62 = { NOT = { is_core_of = POL } } 
@@ -14189,7 +14082,6 @@ wettins_foreign_policy_decisions_category = {
 			    type = infantry_equipment
 			    amount = -1000
 			}
-			807 = { add_core_of = POL } 
 			85 = { add_core_of = POL } 
 			63 = { add_core_of = POL } 
 			62 = { add_core_of = POL } 
@@ -14343,9 +14235,9 @@ wettins_foreign_policy_decisions_category = {
 					}
 				}
 				OR = {
-					controls_state = 807
+					controls_state = 912
 					AND = {
-						807 = {
+						912 = {
 							controller = {
 								is_subject_of = POL
 							}
@@ -14683,9 +14575,9 @@ wettins_foreign_policy_decisions_category = {
 					}
 				}
 				OR = {
-					controls_state = 847
+					controls_state = 909
 					AND = {
-						847 = {
+						909 = {
 							controller = {
 								is_subject_of = POL
 							}
@@ -15445,7 +15337,6 @@ wettins_foreign_policy_decisions_category = {
 				NOT = {
 					owns_state = 11
 					owns_state = 814
-					owns_state = 188
 					owns_state = 189
 					owns_state = 815
 					owns_state = 809
@@ -15457,7 +15348,6 @@ wettins_foreign_policy_decisions_category = {
 			OR = {
 				11 = { owner = { NOT = { is_in_faction_with = POL } } }
 				814 = { owner = { NOT = { is_in_faction_with = POL } } }
-				188 = { owner = { NOT = { is_in_faction_with = POL } } }
 				189 = { owner = { NOT = { is_in_faction_with = POL } } }
 				815 = { owner = { NOT = { is_in_faction_with = POL } } }
 				809 = { owner = { NOT = { is_in_faction_with = POL } } }
@@ -15474,7 +15364,6 @@ wettins_foreign_policy_decisions_category = {
 					NOT = { 
 						owns_state = 11
 						owns_state = 814
-						owns_state = 188
 						owns_state = 189
 						owns_state = 815
 						owns_state = 809
@@ -15486,7 +15375,6 @@ wettins_foreign_policy_decisions_category = {
 						OR = {
 							owns_state = 11
 							owns_state = 814
-							owns_state = 188
 							owns_state = 189
 							owns_state = 815
 							owns_state = 809
@@ -15505,7 +15393,6 @@ wettins_foreign_policy_decisions_category = {
 					NOT = {
 						11 = { is_claimed_by = POL }
 						814 = { is_claimed_by = POL }
-						188 = { is_claimed_by = POL }
 						189 = { is_claimed_by = POL }
 						815 = { is_claimed_by = POL }
 						809 = { is_claimed_by = POL }
@@ -15514,7 +15401,6 @@ wettins_foreign_policy_decisions_category = {
 				}
 				add_state_claim = 11
 				add_state_claim = 814
-				add_state_claim = 188
 				add_state_claim = 189
 				add_state_claim = 815
 				add_state_claim = 809
@@ -15525,7 +15411,6 @@ wettins_foreign_policy_decisions_category = {
 					NOT = { 
 						owns_state = 11
 						owns_state = 814
-						owns_state = 188
 						owns_state = 189
 						owns_state = 815
 						owns_state = 809
@@ -15537,7 +15422,6 @@ wettins_foreign_policy_decisions_category = {
 						OR = {
 							owns_state = 11
 							owns_state = 814
-							owns_state = 188
 							owns_state = 189
 							owns_state = 815
 							owns_state = 809
@@ -15549,7 +15433,7 @@ wettins_foreign_policy_decisions_category = {
 							type = take_claimed_state
 							target = PREV
 							generator = {
-								11 814 188 189 815 809 190
+								11 814 189 815 809 190
 							}
 						}
 					}
@@ -15577,8 +15461,6 @@ wettins_foreign_policy_decisions_category = {
 			controls_state = 11
 			owns_state = 814
 			controls_state = 814
-			owns_state = 188
-			controls_state = 188
 			owns_state = 189
 			controls_state = 189
 			owns_state = 815
@@ -15598,7 +15480,6 @@ wettins_foreign_policy_decisions_category = {
 				OR = {
 					11 = { NOT = { is_core_of = POL } }
 					814 = { NOT = { is_core_of = POL } }
-					188 = { NOT = { is_core_of = POL } }
 					189 = { NOT = { is_core_of = POL } }
 					815 = { NOT = { is_core_of = POL } }
 					809 = { NOT = { is_core_of = POL } }
@@ -15619,7 +15500,6 @@ wettins_foreign_policy_decisions_category = {
 			}
 			11 = { add_core_of = POL }
 			814 = { add_core_of = POL }
-			188 = { add_core_of = POL }
 			189 = { add_core_of = POL }
 			815 = { add_core_of = POL }
 			809 = { add_core_of = POL }

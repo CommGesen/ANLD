@@ -10,7 +10,6 @@ characters={
 			desc="POLITICS_MOSES_KOTANE_DESC"
 			ideology=marxist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	SAF_pixley_ka_isaka_seme={
@@ -24,7 +23,6 @@ characters={
 			desc="POLITICS_PIXLEY_SEME_DESC"
 			ideology=marxist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	SAF_jan_smuts={
@@ -38,7 +36,6 @@ characters={
 			desc="POLITICS_JAN_SMUTS_DESC"
 			ideology=corporatist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	SAF_george_edwin_brink={
@@ -77,7 +74,6 @@ characters={
 			defense_skill=1
 			maneuvering_skill=1
 			coordination_skill=1
-			legacy_id=-1
 		}
 	}
 	SAF_j._b._m._hertzog={
@@ -90,7 +86,6 @@ characters={
 		country_leader={
 			ideology=constitutionalist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	SAF_d._f._malan={
@@ -104,20 +99,18 @@ characters={
 			desc="POLITICS_DF_MALAN_DESC"
 			ideology=social_darwinist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	SAF_prince_arthur_of_connaught={
 		name="Prince Arthur of Connaught"
 		portraits={
 			civilian={
-				large="gfx/leaders/SAF/prince_of_Connaught.dds"
+				large="gfx/leaders/SAF/portrait_SAF_arthur_of_connaught.dds"
 			}
 		}
 		country_leader={
 			ideology=bonapartist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 }

@@ -1840,8 +1840,11 @@ country_event = {##POL gets event that controller of Rome refused
 			remove_from_faction = FROM
 		}
 		declare_war_on = {
-            target = FROM
-            type = annex_everything
+            type = take_claimed_state
+			target = FROM
+			generator = {
+				2
+			}
         }
 		ai_chance = {
 			base = 1
@@ -7240,11 +7243,14 @@ country_event = {##POL gets info that FROM rejected Polish demands
 	is_triggered_only = yes
 	option = {
 		name = deluge_poland_foreign.68.a
+		add_state_claim = 62
+		add_state_claim = 63
+		add_state_claim = 85
 		create_wargoal = {
 			type = take_claimed_state
 			target = FROM
 			generator = {
-				62 63 85 807
+				62 63 85
 			}
 		}
 		ai_chance = {
@@ -7390,6 +7396,7 @@ country_event = {##POL gets info that FROM rejected Polish demands
 	is_triggered_only = yes
 	option = {
 		name = deluge_poland_foreign.71.a
+		add_state_claim = 68
 		create_wargoal = {
 			type = take_claimed_state
 			target = FROM
@@ -8286,6 +8293,33 @@ country_event = {##POL demands from every owner of 45 and 151 to give it to POL 
 		if = {
 			limit = {
 				ROOT = {
+					owns_state = 847
+				}
+			}
+			if = {
+				limit = {
+					POL = {
+						has_completed_focus = POL_creation_of_real_union
+					}
+				}
+				847 = {
+					transfer_state_to = POL
+				}
+			}
+			if = {
+				limit = {
+					POL = {
+						has_completed_focus = POL_one_dynasty_two_institutions
+					}
+				}
+				847 = {
+					transfer_state_to = HUN
+				}
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
 					owns_state = 151
 				}
 			}
@@ -8466,7 +8500,7 @@ country_event = {##POL sees that owner(s) of 151 or/and 45 reject POL demands
 		name = deluge_poland_foreign.81.b
 		create_wargoal = {
 			type = take_claimed_state
-			generator = {151 45}
+			generator = {151 45 847}
 			target = FROM
 		}
 		add_stability = 0.02
@@ -8521,7 +8555,7 @@ country_event = {##POL sees that owner(s) of 151 or/and 45 reject POL demands
 			declare_war_on = {
 				target = FROM
 				type = take_claimed_state
-				generator = {151 45}
+				generator = {151 45 847}
 			}
 		}
 		ai_chance = {
@@ -9048,16 +9082,6 @@ country_event = {##POL demands Lithuanian lands from Belarus or Baltia
 				transfer_state_to = POL
 			}
 		}
-		if = {
-			limit = {
-				ROOT = {
-					owns_state = 188
-				}
-			}
-			188 = {
-				transfer_state_to = POL
-			}
-		}
 		ai_chance = {
 			base = 30
 			modifier = {
@@ -9214,7 +9238,9 @@ country_event = {##POL sees that owner(s) of Lithuanian lands didn't wanted to g
 		name = deluge_poland_foreign.90.b
 		create_wargoal = {
 			type = take_claimed_state
-			generator = {96 95 815 11 189 188 814}
+			generator = {
+				96 95 815 11 189 814
+			}
 			target = FROM
 		}
 		add_stability = 0.02
@@ -9269,7 +9295,9 @@ country_event = {##POL sees that owner(s) of Lithuanian lands didn't wanted to g
 			declare_war_on = {
 				target = FROM
 				type = take_claimed_state
-				generator = {96 95 815 11 189 188 814}
+				generator = {
+					96 95 815 11 189 814
+				}
 			}
 		}
 		ai_chance = {
@@ -10584,7 +10612,7 @@ country_event = {##wettin POL gets info that doesn't get Czechia
 		create_wargoal = {
 			type = take_claimed_state
 			target = FROM
-			generator = {}
+			generator = { 9 69 72 75 74 }
 		}
 		add_stability = 0.02
 		add_war_support = -0.05
@@ -10638,7 +10666,7 @@ country_event = {##wettin POL gets info that doesn't get Czechia
 			declare_war_on = {
 				type = take_claimed_state
 				target = FROM
-				generator = {}
+				generator = { 9 69 72 75 74 }
 			}
 		}
 		ai_chance = {

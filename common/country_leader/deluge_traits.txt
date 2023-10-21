@@ -781,13 +781,17 @@ leader_traits = {
 		political_power_factor = 0.1
 		surrender_limit = 0.3
 	}
-	famous_womanizer_and_legionary = {
+	famous_womanizer = {
 		random = yes
 		sprite = 12
-		political_power_factor = 0.05
+		political_power_factor = -0.03
+		monthly_population = 0.01
+	}
+	legionary = {
+		random = yes
+		sprite = 12
 		army_core_attack_factor = 0.05
 		army_core_defence_factor = 0.05
-		monthly_population = 0.05
 	}
 	naval_invasion_expert = {
 		random = yes
