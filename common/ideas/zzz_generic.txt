@@ -915,7 +915,10 @@ ideas = {
 
 			allowed = {
 				NOT = {
+					OR = {
 					original_tag = POL
+					original_tag = FRA
+					}					
 				}
 				NOT = {
 					has_available_idea_with_traits = { idea = industrial_concern limit = 1 }
@@ -937,7 +940,10 @@ ideas = {
 
 			allowed = {
 				NOT = {
+					OR = {
 					original_tag = POL
+					original_tag = FRA
+					}
 				}
 				NOT = {
 					has_available_idea_with_traits = { idea = electronics_concern limit = 1 }
@@ -959,7 +965,10 @@ ideas = {
 
 			allowed = {
 				NOT = {
+					OR = {
 					original_tag = POL
+					original_tag = FRA
+					}
 				}
 				NOT = {
 					has_available_idea_with_traits = { idea = refinery_concern limit = 1 }
@@ -983,7 +992,10 @@ ideas = {
 
 			allowed = {
 				NOT = {
+					OR = {
 					original_tag = POL
+					original_tag = FRA
+					}
 				}
 				NOT = {
 					has_available_idea_with_traits = { idea = appliance_maker limit = 1 }
