@@ -1005,11 +1005,8 @@ ideas = {
 	}
 	
 	industrial_concern = {
-					
 		pechiney = {
-			
 			picture = generic_industrial_concern_2
-			
 			allowed = {
 				OR = {
 					original_tag = FRA
@@ -1024,22 +1021,17 @@ ideas = {
 					original_tag = CAT
 				}
 			}
-			
 			research_bonus = {
 				industry = 0.05
 				construction_tech = 0.1
 			}
-			
 			traits = { pechiney_designer_trait }
-			
 			modifier = {
 			}
 		}					
 					
 		cfp = {
-			
 			picture = generic_refining_concern_1
-
 			allowed = {
 				OR = {
 					original_tag = FRA
@@ -1054,23 +1046,16 @@ ideas = {
 					original_tag = CAT
 				}
 			}
-			
-
-			
 			research_bonus = {
 				synth_resources = 0.10
 			}
-			
 			traits = { cfp_designer_trait }
-			
 			modifier = {
 			}
 		}
 		
 		schneider_cie = {
-			
 			picture = generic_electronics_concern_2
-
 			allowed = {
 				OR = {
 					original_tag = FRA
@@ -1085,24 +1070,17 @@ ideas = {
 					original_tag = CAT
 				}
 			}
-			
-
-			
 			research_bonus = {
 				industry = 0.05
 				electronics = 0.05
 			}
-			
 			traits = { schneider_cie_designer_trait }
-			
 			modifier = {
 			}
 		}
 
 		legrand_cie = {
-			
 			picture = generic_electronics_concern_3
-
 			allowed = {
 				OR = {
 					original_tag = FRA
@@ -1117,22 +1095,15 @@ ideas = {
 					original_tag = CAT
 				}
 			}
-			
-
-			
 			research_bonus = {
 				industry = 0.05
 			}
-			
 			traits = { legrand_cie_designer_trait }
-			
 			modifier = {
 			}
 		}
 		sncf = {
-			
 			picture = generic_industrial_concern_1
-
 			allowed = {
 				OR = {
 					original_tag = FRA
@@ -1147,15 +1118,10 @@ ideas = {
 					original_tag = CAT
 				}
 			}
-			
-
-			
 			research_bonus = {
 				industry = 0.05
 			}
-			
 			traits = { sncf_designer_trait }
-			
 			modifier = {
 			}
 		}
