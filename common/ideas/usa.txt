@@ -413,67 +413,76 @@ ideas = {
 	
 	industrial_concern = {
 					
-		carnegie = {
-			
+		carnegiesteel = {
+			picture = carnegie
 			allowed = {
 				OR = {
 					original_tag = USA
-					original_tag = LOU
 				}
 			}
-			
 			research_bonus = {
-				industry = 0.15
+				industry = 0.05
 			}
-			
-			traits = { industrial_concern }
-			
+			traits = { carnegie_designer_trait }
 			modifier = {
 			}
 		}					
 					
-		standard_oil_california = {
-			
-			
+		standard_oil = {
+			picture = standard_oil_california
 			allowed = {
 				OR = {
 					original_tag = USA
-					original_tag = LOU
 				}
 			}
-			
-
-			
 			research_bonus = {
-				industry = 0.05
-				construction_tech = 0.10
 				synth_resources = 0.10
 			}
-			
-			traits = { refinery_concern }
-			
+			traits = { standardoil_designer_trait }
+			modifier = {
+			}
+		}
+
+		general_electric = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			research_bonus = {
+				electronics = 0.15
+			}
+			traits = { genelectric_designer_trait }
 			modifier = {
 			}
 		}
 		
-		general_electric = {
-			
-			
+		galvin = {
+		picture = generic_electronics_concern_3
 			allowed = {
 				OR = {
 					original_tag = USA
-					original_tag = LOU
 				}
 			}
-			
-
-			
 			research_bonus = {
-				electronics = 0.10
+				industry = 0.05
 			}
-			
-			traits = { electronics_concern }
-			
+			traits = { galvin_designer_trait }
+			modifier = {
+			}
+		}
+
+		frails = {
+			picture = generic_industrial_concern_3
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			research_bonus = {
+				industry = 0.05
+			}
+			traits = { frails_designer_trait }
 			modifier = {
 			}
 		}
