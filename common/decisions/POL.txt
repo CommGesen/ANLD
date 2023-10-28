@@ -5431,6 +5431,9 @@ seek_allies_category = {
 		icon =  GFX_decision_hol_exchange_intelligence_data
 		visible = {
 			tag = POL
+			NOT = {
+				has_global_flag = POL_HUN_friendship_proclaimed
+			}
 		}
 		available = {
 			NOT = {

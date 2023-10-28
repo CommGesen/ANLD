@@ -247,16 +247,8 @@ on_actions = {
 				}
 				set_province_name = { id = 362 name = "Gdańsk" }
 				set_province_name = { id = 9263 name = "Gdynia" }
-				85 = { set_state_name = "Prusy Królewskie" }
-			}
-			if = {#POMERANIA to POL
-				limit = {
-					POL = {
-						has_full_control_of_state = 807
-					}
-				}
 				set_province_name = { id = 3295 name = "Toruń" }
-				807 = { set_state_name = "Toruń" }		
+				85 = { set_state_name = "Prusy Królewskie" }
 			}
 			if = {#EASTERN GERMANY to POL
 				limit = {
@@ -380,14 +372,6 @@ on_actions = {
 			if = {#LITHUANIA to POL
 				limit = {
 					POL = {
-						has_full_control_of_state = 188
-					}
-				}
-				188 = { set_state_name = "Prusy Litewskie" }
-			}
-			if = {#LITHUANIA to POL
-				limit = {
-					POL = {
 						has_full_control_of_state = 814
 					}
 				}
@@ -401,6 +385,7 @@ on_actions = {
 				}
 				set_province_name = { id = 6314 name = "Połąga" }
 				set_province_name = { id = 9483 name = "Szawle" }
+				set_province_name = { id = 9499 name = "Kłajpeda" }
 				189 = { set_state_name = "Żmudź" }
 			}
 			if = {#LITHUANIA to POL
@@ -1233,6 +1218,7 @@ on_actions = {
 							has_idea = HUN_esterhazy_national_spirit
 							has_idea = HUN_szechenyi_national_spirit
 							has_idea = HUN_andrassy_national_spirit
+							has_idea = HUN_holy_crown_of_hungary
 						}
 					}
 					NOT = {
@@ -1246,16 +1232,57 @@ on_actions = {
 				}
 				HUN = {
 					if = {
-						limit = {has_global_flag = HUN_esterhazy_chosen}
+						limit = {
+							AND = {
+								has_global_flag = HUN_esterhazy_chosen
+								NOT = {
+									OR = {
+										has_country_flag = HUN_regency
+										has_country_flag = HUN_monarchy_abolished
+									}
+								}
+							}
+						}
 						add_ideas = HUN_esterhazy_national_spirit
 					}
 					if = {
-						limit = {has_global_flag = HUN_szechenyi_chosen}
+						limit = {
+							AND = {
+								has_global_flag = HUN_szechenyi_chosen
+								NOT = {
+									OR = {
+										has_country_flag = HUN_regency
+										has_country_flag = HUN_monarchy_abolished
+									}
+								}
+							}
+						}
 						add_ideas = HUN_szechenyi_national_spirit
 					}
 					if = {
-						limit = {has_global_flag = HUN_andrassy_chosen}
+						limit = {
+							AND = {
+								has_global_flag = HUN_andrassy_chosen
+								NOT = {
+									OR = {
+										has_country_flag = HUN_regency
+										has_country_flag = HUN_monarchy_abolished
+									}
+								}
+							}
+						}
 						add_ideas = HUN_andrassy_national_spirit
+					}
+					if = {
+						limit = {
+							AND = {
+								has_country_flag = HUN_regency
+								NOT = {
+									has_country_flag = HUN_monarchy_abolished
+								}
+							}
+						}
+						add_ideas = HUN_holy_crown_of_hungary
 					}
 				}
 			}
@@ -1270,6 +1297,7 @@ on_actions = {
 						has_idea = HUN_esterhazy_national_spirit
 						has_idea = HUN_szechenyi_national_spirit
 						has_idea = HUN_andrassy_national_spirit
+						has_idea = HUN_holy_crown_of_hungary
 					}
 					NOT = {
 						OR = {
@@ -1280,16 +1308,20 @@ on_actions = {
 				}
 				HUN = {
 					if = {
-						limit = {has_global_flag = HUN_esterhazy_chosen}
+						limit = {has_idea = HUN_esterhazy_national_spirit}
 						remove_ideas = HUN_esterhazy_national_spirit
 					}
 					if = {
-						limit = {has_global_flag = HUN_szechenyi_chosen}
+						limit = {has_idea = HUN_szechenyi_national_spirit}
 						remove_ideas = HUN_szechenyi_national_spirit
 					}
 					if = {
-						limit = {has_global_flag = HUN_andrassy_chosen}
+						limit = {has_idea = HUN_andrassy_national_spirit}
 						remove_ideas = HUN_andrassy_national_spirit
+					}
+					if = {
+						limit = {has_idea = HUN_holy_crown_of_hungary}
+						remove_ideas = HUN_holy_crown_of_hungary
 					}
 				}
 			}

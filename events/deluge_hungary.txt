@@ -31,6 +31,7 @@ country_event = {##ai only - monarchist Hungary fully
 		###HUN = {country_event = {id = deluge_hungary.2}}
 		add_ideas = HUN_holy_crown_of_hungary
 		set_country_flag = HUN_horthy_monarchist_won
+		set_party_name = { ideology = neutrality long_name = HUN_neutrality_party_long name = HUN_neutrality_party }
 		ai_chance = {factor = 1}
 	}
 	option = { #legitimist party wins snap elections
@@ -94,7 +95,7 @@ country_event = {##monarchist chooses king - ai only
 		set_global_flag = HUN_szechenyi_chosen
 		ai_chance = {factor = 1}
 	}
-	option = { #Andrássy 
+	option = { #Andrássy
 		name = deluge_hungary.2.c
 		set_party_name = { ideology = neutrality long_name = HUN_andrassy_party_long name = HUN_andrassy_party_short }
 		if = {
@@ -240,5 +241,403 @@ country_event = {##democratic Hungary
 		promote_character = HUN_deluge_tildy
 		set_party_name = { ideology = democratic long_name = HUN_fkgp_party_long name = HUN_fkgp_party_short }
 		ai_chance = {factor = 1}
+	}
+}
+country_event = {##Piłsudski died, Emergency Cabient does snap elections
+	id = deluge_hungary.5
+	title = deluge_hungary.5.t
+	desc = deluge_hungary.5.d
+	picture = GFX_report_event_arrow_cross_party
+	fire_only_once = yes
+	trigger = {
+		tag = HUN
+		HUN = {
+			is_ai = no
+		}
+		has_global_flag = POL_Pilsudski_died
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {#ultranationalists
+		name = deluge_hungary.5.a
+		set_country_flag = HUN_going_fascism
+		country_event = {
+			id = deluge_hungary.6
+			days = 15
+		}
+	}
+	option = {#monarchists
+		name = deluge_hungary.5.b
+		set_country_flag = HUN_going_monarchist
+		country_event = {
+			id = deluge_hungary.6
+			days = 15
+		}
+	}
+	option = {#democratic
+		name = deluge_hungary.5.c
+		set_country_flag = HUN_going_democratic
+		country_event = {
+			id = deluge_hungary.6
+			days = 15
+		}
+	}
+}
+country_event = {##choosing king, for player only
+	id = deluge_hungary.6
+	title = deluge_hungary.6.t
+	desc = deluge_hungary.6.d
+	picture = GFX_report_event_hungarian_monarchists
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {#Esterházy
+		name = deluge_hungary.6.a
+		set_global_flag = HUN_esterhazy_chosen
+		promote_character = HUN_deluge_esterhazy_moricz
+		set_party_name = { ideology = neutrality long_name = HUN_esterhazy_party_long name = HUN_esterhazy_party_short }
+		if = {
+			limit = {
+				has_country_flag = HUN_going_fascism
+			}
+			country_event = {
+				id = deluge_hungary.7
+				days = 2
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = HUN_going_monarchist
+			}
+			country_event = {
+				id = deluge_hungary.8
+				days = 2
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = HUN_going_democratic
+			}
+			country_event = {
+				id = deluge_hungary.9
+				days = 2
+			}
+		}
+	}
+	option = {#Széchenyi
+		name = deluge_hungary.6.b
+		set_global_flag = HUN_szechenyi_chosen
+		promote_character = HUN_deluge_szechenyi
+		set_party_name = { ideology = neutrality long_name = HUN_szechneyi_party_long name = HUN_szechneyi_party_short }
+		if = {
+			limit = {
+				has_country_flag = HUN_going_fascism
+			}
+			country_event = {
+				id = deluge_hungary.7
+				days = 2
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = HUN_going_monarchist
+			}
+			country_event = {
+				id = deluge_hungary.8
+				days = 2
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = HUN_going_democratic
+			}
+			country_event = {
+				id = deluge_hungary.9
+				days = 2
+			}
+		}
+	}
+	option = {#Andrássy
+		name = deluge_hungary.6.c
+		set_global_flag = HUN_andrassy_chosen
+		promote_character = HUN_deluge_andrassy_sandor
+		set_party_name = { ideology = neutrality long_name = HUN_andrassy_party_long name = HUN_andrassy_party_short }
+		if = {
+			limit = {
+				has_country_flag = HUN_going_fascism
+			}
+			country_event = {
+				id = deluge_hungary.7
+				days = 2
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = HUN_going_monarchist
+			}
+			country_event = {
+				id = deluge_hungary.8
+				days = 2
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = HUN_going_democratic
+			}
+			country_event = {
+				id = deluge_hungary.9
+				days = 2
+			}
+		}
+	}
+}
+country_event = {##Prónay Pál's plan
+	id = deluge_hungary.7
+	title = deluge_hungary.7.t
+	desc = deluge_hungary.7.d
+	picture = GFX_report_event_pal_pronay
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {###Gömbös becomes prime minister
+		name = deluge_hungary.7.a
+		if = {
+			limit = {
+				has_global_flag = HUN_esterhazy_chosen
+			}
+			add_ideas = HUN_esterhazy_national_spirit
+		}
+		if = {
+			limit = {
+				has_global_flag = HUN_szechenyi_chosen
+			}
+			add_ideas = HUN_szechenyi_national_spirit
+		}
+		if = {
+			limit = {
+				has_global_flag = HUN_andrassy_chosen
+			}
+			add_ideas = HUN_andrassy_national_spirit
+		}
+		set_politics = {
+			ruling_party = fascism
+			last_election = "1935.3.31"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		promote_character = HUN_deluge_gombos
+		set_country_flag = HUN_gombos_prime_minister
+	}
+	option = {###Gömbös becomes royal regent
+		name = deluge_hungary.7.b
+		set_politics = {
+			ruling_party = fascism
+			last_election = "1935.3.31"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		promote_character = HUN_deluge_gombos
+		remove_trait = {
+			character = HUN_deluge_gombos
+			ideology = social_darwinist_ideology
+			trait = ultranationalist_prime_minister
+		}
+		add_trait = {
+			character = HUN_deluge_gombos
+			ideology = social_darwinist_ideology
+			trait = holy_regent
+		}
+		set_country_flag = HUN_regency
+		add_ideas = HUN_holy_crown_of_hungary
+	}
+}
+country_event = {##Horthy's plan
+	id = deluge_hungary.8
+	title = deluge_hungary.8.t
+	desc = deluge_hungary.8.d
+	picture = GFX_report_event_miklos_horthy
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {###king takes full power
+		name = deluge_hungary.8.a
+		set_politics = {
+			ruling_party = neutrality
+			last_election = "1935.3.31"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		set_country_flag = HUN_king_monarchist_won
+	}
+	option = {###Horthy becomes royal regent
+		name = deluge_hungary.7.b
+		set_politics = {
+			ruling_party = neutrality
+			last_election = "1935.3.31"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		promote_character = HUN_miklós_horthy
+		promote_character = HUN_deluge_gombos
+		add_ideas = HUN_holy_crown_of_hungary
+		set_country_flag = HUN_regency
+		set_party_name = { ideology = neutrality long_name = HUN_neutrality_party_long name = HUN_neutrality_party }
+	}
+}
+country_event = {##democratic elections
+	id = deluge_hungary.9
+	title = deluge_hungary.9.t
+	desc = deluge_hungary.9.d
+	picture = GFX_report_event_hungarian_fkgp
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {###KNP wins
+		name = deluge_hungary.9.a
+		hidden_effect = {
+			country_event = {
+				id = deluge_hungary.10
+				days = 2
+			}
+		}
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1935.3.31"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		set_country_flag = HUN_democracy_wins
+		if = {
+			limit = {
+				not = {
+					has_country_leader =  {
+						character = HUN_deluge_bethlen
+						ruling_only = yes
+					}
+				}
+			}
+			promote_character = HUN_deluge_bethlen
+		}
+		if = {
+			limit = {
+				has_global_flag = HUN_esterhazy_chosen
+			}
+			add_ideas = HUN_esterhazy_national_spirit
+		}
+		if = {
+			limit = {
+				has_global_flag = HUN_szechenyi_chosen
+			}
+			add_ideas = HUN_szechenyi_national_spirit
+		}
+		if = {
+			limit = {
+				has_global_flag = HUN_andrassy_chosen
+			}
+			add_ideas = HUN_andrassy_national_spirit
+		}
+	}
+	option = {###F48P wins
+		name = deluge_hungary.9.b
+		hidden_effect = {
+			country_event = {
+				id = deluge_hungary.10
+				days = 2
+			}
+		}
+		set_country_flag = HUN_democracy_wins
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1935.3.31"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		promote_character = HUN_deluge_mihaly
+		set_party_name = { ideology = democratic long_name = HUN_party_of_independence_long name = HUN_party_of_independence_short }
+		if = {
+			limit = {
+				has_global_flag = HUN_esterhazy_chosen
+			}
+			add_ideas = HUN_esterhazy_national_spirit
+		}
+		if = {
+			limit = {
+				has_global_flag = HUN_szechenyi_chosen
+			}
+			add_ideas = HUN_szechenyi_national_spirit
+		}
+		if = {
+			limit = {
+				has_global_flag = HUN_andrassy_chosen
+			}
+			add_ideas = HUN_andrassy_national_spirit
+		}
+	}
+	option = {###FKgP
+		name = deluge_hungary.9.c
+		hidden_effect = {
+			country_event = {
+				id = deluge_hungary.10
+				days = 2
+			}
+		}
+		set_country_flag = HUN_democracy_wins
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1935.3.31"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		promote_character = HUN_deluge_tildy
+		set_party_name = { ideology = democratic long_name = HUN_fkgp_party_long name = HUN_fkgp_party_short }
+		if = {
+			limit = {
+				has_global_flag = HUN_esterhazy_chosen
+			}
+			add_ideas = HUN_esterhazy_national_spirit
+		}
+		if = {
+			limit = {
+				has_global_flag = HUN_szechenyi_chosen
+			}
+			add_ideas = HUN_szechenyi_national_spirit
+		}
+		if = {
+			limit = {
+				has_global_flag = HUN_andrassy_chosen
+			}
+			add_ideas = HUN_andrassy_national_spirit
+		}
+	}
+}
+country_event = {##doubt in the monarchy
+	id = deluge_hungary.10
+	title = deluge_hungary.10.t
+	desc = deluge_hungary.10.d
+	picture = GFX_report_event_hungarian_monarchists
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {###monarchy stays
+		name = deluge_hungary.10.a
+		add_stability = 0.03
+	}
+	option = {###monarchy is abolished
+		name = deluge_hungary.10.b
+		set_country_flag = HUN_monarchy_abolished
+		if = {
+			limit = {
+				has_idea = HUN_esterhazy_national_spirit
+			}
+			remove_ideas = HUN_esterhazy_national_spirit
+		}
+		if = {
+			limit = {
+				has_idea = HUN_szechenyi_national_spirit
+			}
+			remove_ideas = HUN_szechenyi_national_spirit
+		}
+		if = {
+			limit = {
+				has_idea = HUN_andrassy_chosen
+			}
+			remove_ideas = HUN_andrassy_chosen
+		}
 	}
 }

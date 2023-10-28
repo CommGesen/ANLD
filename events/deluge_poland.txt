@@ -14,14 +14,14 @@ country_event = {#Rydz wants to change flag and abolishes monarchy
 			}
 		}
 		name = deluge_poland.1.a
-		add_political_power = -10
-		add_stability = -0.1
+		add_political_power = -5
+		add_stability = -0.01
 		set_cosmetic_tag = POL_rzeczpospolita
 		ai_chance = {factor = 1}
 	}
 	option = {#old flag
 		name = deluge_poland.1.b
-		add_political_power = 50
+		add_political_power = 10
 		ai_chance = {factor = 1}
 	}
 }
@@ -47,6 +47,7 @@ country_event = {#Pilsudski dies country
 		name = deluge_poland.2.a
 		retire_character = POL_Pilsudski
 		promote_character = POL_Sanation_Emergency_Council
+		set_global_flag = POL_Pilsudski_died
 		hidden_effect = {
 			news_event = {
 				id = deluge_poland.3
@@ -4532,10 +4533,10 @@ country_event = {##HUN is asked by POL to proclaim eternal friendship
 		POL = {
 			add_opinion_modifier = { target = HUN modifier = polish_hungarian_friendship }
 		}
+		set_global_flag = POL_HUN_friendship_proclaimed
 		hidden_effect = {
 			news_event = {
 				id = deluge_poland_foreign.16
-				hours = 3
 			}
 		}
 		ai_chance = {

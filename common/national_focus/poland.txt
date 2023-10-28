@@ -5419,7 +5419,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_seek_collaboration
-		icon = GFX_focus_eng_move_to_secure_the_dominions
+		icon = GFX_focus_generic_sword
 		x = 0
 		y = 1
 		prerequisite = { focus = POL_seek_enemies }
@@ -5444,7 +5444,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_seek_cooperation
-		icon = GFX_seek_cooperation
+		icon = GFX_focus_generic_shield
 		x = 0
 		y = 1
 		prerequisite = { focus = POL_seek_allies }
@@ -7373,7 +7373,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_house_of_wettin_continues
-		icon = GFX_wettins_emblem
+		icon = GFX_focus_POL_wettins
 		x = -13
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -9858,7 +9858,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_increase_influence_of_AMORC_knights
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_rose_cross
 		x = 3
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -18506,7 +18506,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_communal_land
-		icon = GFX_worker_census
+		icon = GFX_focus_generic_communal_land
 		x = 0
 		y = 1
 		search_filters = {}
@@ -18746,7 +18746,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_mobilize_the_proletariat
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_focus_generic_civil_defense
 		x = 1
 		y = 1
 		search_filters = {}
@@ -20317,7 +20317,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_support_dabrowszczacy
-		icon = GFX_focus_SOV_support_spanish_poum
+		icon = GFX_focus_POL_for_our_freedom_and_yours
 		x = -1
 		y = 1
 		search_filters = {}

@@ -1,0 +1,256 @@
+##TANKS
+
+deluge_POL_pzinz_organization = {
+	icon = GFX_idea_POL_pzinz
+	allowed = {	
+		tag = POL
+	}
+	available = {
+		
+	}
+	equipment_type = { mio_cat_eq_all_medium_tank }
+	research_categories = { mio_cat_tech_medium_armor_and_modules }
+	initial_trait = {
+		name = deluge_POL_mio_trait_medium_tank_designer
+		limit_to_equipment_type = { 
+			armor
+		}
+		equipment_bonus = {
+			armor_value = 0.02
+			maximum_speed = -0.01
+			reliability = 0.02
+		}
+	}
+	trait = {
+		token = deluge_POL_mio_trait_improved_tracks
+		name = deluge_POL_mio_trait_improved_tracks
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_production
+
+		position = { x=1 y=0 }
+		
+		equipment_bonus = {
+			maximum_speed = 0.02
+		}
+	}
+	trait = {
+		token = deluge_POL_mio_trait_simplified_suspension
+		name = deluge_POL_mio_trait_simplified_suspension
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_conversion
+
+		position = { x=4 y=0 }
+		
+		equipment_bonus = {
+			reliability = 0.02
+		}
+	}
+	trait = {
+		token = deluge_POL_mio_trait_simplification_of_construction
+		name = deluge_POL_mio_trait_simplification_of_construction
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_line_efficiency
+
+		position = { x=7 y=0 }
+		
+		equipment_bonus = {
+			build_cost_ic = -0.03
+			reliability = -0.01
+		}
+		
+		mutually_exclusive = {
+			deluge_POL_mio_trait_introduction_of_new_solutions
+		}
+	}
+	trait = {
+		token = deluge_POL_mio_trait_introduction_of_new_solutions
+		name = deluge_POL_mio_trait_introduction_of_new_solutions
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_engine
+
+		position = { x=9 y=0 }
+		
+		equipment_bonus = {
+			soft_attack = 0.02
+			hard_attack = 0.02
+			reliability = -0.03
+		}
+		
+		mutually_exclusive = {
+			deluge_POL_mio_trait_simplification_of_construction
+		}
+	}
+}
+
+deluge_POL_ksus_organization = {
+	icon = GFX_idea_ksus
+	allowed = {	
+		tag = POL
+	}
+	available = {
+		
+	}
+	equipment_type = { mio_cat_eq_all_light_tank  }
+	research_categories = { mio_cat_tech_light_armor_and_modules }
+	initial_trait = {
+		name = deluge_POL_mio_trait_light_tank_designer
+		limit_to_equipment_type = {
+			armor
+		}
+		equipment_bonus = {
+			maximum_speed = 0.04
+			reliability = 0.02
+		}
+	}
+}
+
+deluge_POL_BBTBrPanc_organization = {
+	icon = GFX_idea_generic_tank_manufacturer_2
+	allowed = {	
+		tag = POL
+	}
+	available = {
+		
+	}
+	equipment_type = { mio_cat_eq_all_heavy_tank  }
+	research_categories = { mio_cat_tech_heavy_armor_and_modules }
+	initial_trait = {
+		name = deluge_POL_mio_trait_light_tank_designer
+		limit_to_equipment_type = {
+			armor
+		}
+		equipment_bonus = {
+			armor_value = 0.04
+			reliability = 0.02
+		}
+	}
+}
+
+deluge_POL_ursus_tanks_organization = {
+	icon = GFX_idea_ursus
+	allowed = {	
+		tag = POL
+	}
+	available = {
+		
+	}
+	equipment_type = { mio_cat_eq_all_tank_destroyers  }
+	research_categories = { mio_cat_tech_light_armor_and_modules mio_cat_tech_medium_armor_and_modules mio_cat_tech_heavy_armor_and_modules }
+	initial_trait = {
+		name = deluge_POL_mio_trait_light_tank_designer
+		limit_to_equipment_type = {
+			armor
+		}
+		equipment_bonus = {
+			maximum_speed = 0.04
+			reliability = 0.02
+		}
+	}
+}
+
+##SHIPS
+
+deluge_POL_stocznia_krolewiec_organization = {
+	icon = GFX_idea_generic_naval_manufacturer_3
+	allowed = {
+		tag = POL
+	}
+	available = {
+		POL = {
+			owns_state = 5
+			controls_state = 5
+		}
+	}
+	equipment_type = { submarine }
+	research_categories = { mio_cat_tech_all_submarine_and_modules }
+	initial_trait = {
+		name = deluge_POL_mio_trait_submarine_designer
+		limit_to_equipment_type = {
+			submarine
+		}
+		equipment_bonus = {
+			surface_detection = 0.03
+		}
+	}
+}
+
+deluge_POL_stocznia_gdansk_organization = {
+	icon = GFX_idea_stocznia_gdanska
+	allowed = {
+		tag = POL
+	}
+	available = {
+		POL = {
+			owns_state = 85
+			controls_state = 85
+		}
+	}
+	equipment_type = { screen_ship }
+	research_categories = { mio_cat_tech_all_screen_ship_and_modules }
+	initial_trait = {
+		name = deluge_POL_mio_trait_screen_ship_designer
+		limit_to_equipment_type = {
+			screen_ship
+		}
+		equipment_bonus = {
+			sub_detection = 0.03
+		}
+	}
+}
+
+deluge_POL_ironworks_agreement_organization = {
+	icon = GFX_idea_huta_zgoda
+	allowed = {
+		tag = POL
+	}
+	available = {
+		
+	}
+	equipment_type = { mio_cat_eq_all_carrier mio_cat_eq_all_cruiser submarine mio_cat_eq_all_destroyer mio_cat_eq_all_battleship }
+	research_categories = { mio_cat_tech_all_capital_ship_and_modules mio_cat_tech_all_screen_ship_and_modules mio_cat_tech_all_submarine_and_modules mio_cat_tech_all_carrier_and_modules mio_cat_tech_all_cruiser_and_modules
+	mio_cat_tech_all_destroyer_and_modules }
+	initial_trait = {
+		name = deluge_POL_mio_trait_cheap_ships_designer
+		limit_to_equipment_type = {
+			naval_equipment
+		}
+		equipment_bonus = {
+			build_cost_ic = -0.07
+			lg_attack = -0.03
+			hg_attack = -0.03
+			torpedo_attack = -0.03
+		}
+	}
+}
+
+##PLANES
+
+POL_pws_organization = {
+	icon = GFX_idea_POL_pws
+	allowed = {	
+		tag = POL
+	}
+}
+POL_pzl_organization = {
+	icon = GFX_idea_POL_pzl
+	allowed = {	
+		tag = POL
+	}
+}
+
+#MATERIAL
+
+POL_fb_organization = {
+	icon = GFX_idea_POL_fb
+	allowed = {	
+		tag = POL
+	}
+}
+POL_lrl_organization = {
+	icon = GFX_idea_POL_lrl
+	allowed = {	
+		tag = POL
+	}
+}
+POL_smpa_organization = {
+	icon = GFX_idea_POL_smpa
+	allowed = {	
+		tag = POL
+	}
+}

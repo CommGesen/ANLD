@@ -25,7 +25,7 @@ POL_power_balance = {
 	### MOW - Monarchistyczna Organizacja Wszechstanowa (monarchist all-state organization)
 	side = {
 		id = POL_mow_side
-		icon = GFX_bop_ITA_grand_council_side
+		icon = GFX_bop_POL_MOW
 
 		range = {
 			id = POL_mow_low_control_range
@@ -58,10 +58,18 @@ POL_power_balance = {
 				war_support_factor = 0.1
 			}
 			on_activate = {
-				
+				set_power_balance_gfx = {
+					id = POL_power_balance
+					side = POL_mow_side
+					gfx = GFX_bop_POL_MOW_better
+				}
 			}
 			on_deactivate = {
-				
+				set_power_balance_gfx = {
+					id = POL_power_balance
+					side = POL_mow_side
+					gfx = GFX_bop_POL_MOW
+				}
 			}
 		}
 
@@ -78,10 +86,18 @@ POL_power_balance = {
 				stability_factor = -0.05
 			}
 			on_activate = {
-				
+				set_power_balance_gfx = {
+					id = POL_power_balance
+					side = POL_mow_side
+					gfx = GFX_bop_POL_MOW_better
+				}
 			}
 			on_deactivate = {
-				
+				set_power_balance_gfx = {
+					id = POL_power_balance
+					side = POL_mow_side
+					gfx = GFX_bop_POL_MOW
+				}
 			}
 		}
 
@@ -99,10 +115,18 @@ POL_power_balance = {
 				research_speed_factor = -0.03
 			}
 			on_activate = {
-				
+				set_power_balance_gfx = {
+					id = POL_power_balance
+					side = POL_mow_side
+					gfx = GFX_bop_POL_MOW_better
+				}
 			}
 			on_deactivate = {
-				
+				set_power_balance_gfx = {
+					id = POL_power_balance
+					side = POL_mow_side
+					gfx = GFX_bop_POL_MOW
+				}
 			}
 		}
 	}
@@ -110,7 +134,7 @@ POL_power_balance = {
 	### Synarchist Group
 	side = {
 		id = POL_synarchist_group_side
-		icon = GFX_bop_ITA_mussolini_side
+		icon = GFX_bop_POL_synarchists
 
 		range = {
 			id = POL_synarchist_group_low_control_range
@@ -143,10 +167,18 @@ POL_power_balance = {
 				consumer_goods_factor = -0.05
 			}
 			on_activate = {
-				
+				set_power_balance_gfx = {
+					id = POL_power_balance
+					side = POL_synarchist_group_side
+					gfx = GFX_bop_POL_synarchists_better
+				}
 			}
 			on_deactivate = {
-				
+				set_power_balance_gfx = {
+					id = POL_power_balance
+					side = POL_synarchist_group_side
+					gfx = GFX_bop_POL_synarchists
+				}
 			}
 		}
 
@@ -163,10 +195,18 @@ POL_power_balance = {
 				war_support_factor = -0.05
 			}
 			on_activate = {
-				
+				set_power_balance_gfx = {
+					id = POL_power_balance
+					side = POL_synarchist_group_side
+					gfx = GFX_bop_POL_synarchists_better
+				}
 			}
 			on_deactivate = {
-				
+				set_power_balance_gfx = {
+					id = POL_power_balance
+					side = POL_synarchist_group_side
+					gfx = GFX_bop_POL_synarchists
+				}
 			}
 		}
 
@@ -184,10 +224,18 @@ POL_power_balance = {
 				monthly_population = -0.03
 			}
 			on_activate = {
-				
+				set_power_balance_gfx = {
+					id = POL_power_balance
+					side = POL_synarchist_group_side
+					gfx = GFX_bop_POL_synarchists_better
+				}
 			}
 			on_deactivate = {
-				
+				set_power_balance_gfx = {
+					id = POL_power_balance
+					side = POL_synarchist_group_side
+					gfx = GFX_bop_POL_synarchists
+				}
 			}
 		}
 	}

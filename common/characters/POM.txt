@@ -43,11 +43,11 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/POM/karl_jesco_von_puttkamer.dds"
-				#small="GFX_philippe_petain_picture_small"
+				small=GFX_karl_jesko_von_puttkamer_picture_small
 			}
 			army={
 				large="gfx/leaders/POM/karl_jesco_von_puttkamer.dds"
-				#small="GFX_philippe_petain_picture_small"
+				small=GFX_karl_jesko_von_puttkamer_picture_small
 			}
 		}
 		country_leader={
@@ -74,7 +74,6 @@ characters={
 		country_leader={
 			ideology=liberal_republican_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	POM_wilhelm_stuckart={
@@ -87,7 +86,6 @@ characters={
 		country_leader={
 			ideology=social_darwinist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	POM_marie_clotilde_bonaparte={

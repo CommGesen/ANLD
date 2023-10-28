@@ -20,7 +20,7 @@ integration_category = {
 }
 seek_enemies_category = {
 	icon = GFX_decision_category_border_conflicts
-	picture = GFX_decision_category_seek_enemies
+	picture = GFX_decision_cat_polish_enemies
 	priority = 2
 	allowed = {
 		original_tag = POL
@@ -53,7 +53,7 @@ seek_collaboration_category = {
 }
 seek_cooperation_category = {
 	icon = GFX_decision_category_generic_foreign_policy
-	picture = GFX_decision_category_seek_cooperation
+	picture = GFX_decision_cat_polish_cooperation
 	priority = 2
 	allowed = {
 		original_tag = POL
@@ -85,7 +85,7 @@ seek_empire_category = {
 }
 seek_allies_category = {
 	icon = GFX_decision_category_generic_fascism
-	picture = GFX_decision_category_seek_allies
+	picture = GFX_decision_cat_polish_allies
 	priority = 2
 	allowed = {
 		original_tag = POL
@@ -112,7 +112,7 @@ establish_honor_i_ojczyzna_category = {
 }
 army_reform_category = {
 	icon = GFX_decision_category_military_operation
-	picture = GFX_decisions_category_polish_army
+	picture = GFX_decisions_cat_polish_army
 	priority = 2
 	allowed = {
 		original_tag = POL
@@ -208,7 +208,7 @@ expand_urban_regions_category = {
 }
 export_catholicism_category = {
 	icon = GFX_decision_category_spr_the_seeds_of_revolution
-	picture = GFX_decision_category_polish_church
+	picture = GFX_decision_cat_polish_church
 	priority = 2
 	allowed = {
 		original_tag = POL

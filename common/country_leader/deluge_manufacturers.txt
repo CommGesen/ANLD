@@ -412,7 +412,13 @@ leader_traits = {
 	}
 	ava_designer_trait = {
 		production_speed_radar_station_factor = 0.1
-		production_speed_rocket_site_factor = 0.1
+		#production_speed_rocket_site_factor = 0.1
+		equipment_bonus = {
+			support_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
 	}
 	ursus_industry_designer_trait = {
 		production_factory_max_efficiency_factor = 0.05
