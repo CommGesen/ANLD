@@ -7,13 +7,17 @@
 ###		prerequisite = { }
 ###		relative_position_id =
 ###		search_filters = { }
+###     mutually_exclusive = { }
 ###		cost = 
+###     allow_branch = {
+###     }
+###     select_effect = {
+###     }
 ###		available = {
 ###		}
 ###		completion_reward = {
 ###		}
 ###     bypass = {
-###
 ###		}
 ###		cancel_if_invalid = yes
 ###		continue_if_invalid = no
@@ -35,7 +39,11 @@ focus_tree = {
 	
 	default = no
 	
-	continuous_focus_position = { x = 50 y = 1200 }
+	continuous_focus_position = { x = 50 y = 2000 }
+
+	initial_show_position = {
+		focus = POL_death_of_marshal
+	}
 
 	focus = {
 		id = POL_death_of_marshal
@@ -72,7 +80,7 @@ focus_tree = {
 	
 	focus = {
 		id = POL_continue_with_sanation
-		icon = GFX_sanation_stays
+		icon = GFX_focus_POL_party_of_healing
 		x = -5
 		y = 1
 		prerequisite = { focus = POL_death_of_marshal }
@@ -80,7 +88,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INTERNAL_AFFAIRS }
 		mutually_exclusive = {focus = POL_oppose_sanation}
 		cost = 1
+		allow_branch = {
+			NOT = { has_completed_focus = POL_oppose_sanation }
+		}
+		offset = {
+			x = 5
+			y = 0
+			trigger = {
+				has_completed_focus = POL_continue_with_sanation
+			}
+		}
 		available = {
+			
 		}
 		completion_reward = {
 			add_stability = 0.1
@@ -88,6 +107,7 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.20
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 50
@@ -110,6 +130,21 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_LAND_ARMY FOCUS_FILTER_AVITATION}
 		cost = 3
 		mutually_exclusive = { focus = POL_sikorski_wins focus = POL_stachniuk_wins focus = POL_piasecki_wins }
+		allow_branch = {
+			NOT = {
+				has_completed_focus = POL_sikorski_wins 
+				has_completed_focus = POL_piasecki_wins 
+				has_completed_focus = POL_stachniuk_wins
+				has_completed_focus = POL_oppose_sanation
+			}
+		}
+		offset = {
+			x = 3
+			y = 0
+			trigger = {
+				has_completed_focus = POL_smigly_wins
+			}
+		}
 		available = {
 			
 		}
@@ -119,6 +154,7 @@ focus_tree = {
 				news_event = { id = deluge_poland.4 hours = 6 }
 				retire_character = POL_Sanation_Emergency_Council
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -132,7 +168,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_sikorski_wins
-		icon = GFX_sikorski
+		icon = GFX_focus_POL_sikorski_won
 		x = 5
 		y = 1
 		prerequisite = { focus = POL_continue_with_sanation }
@@ -140,6 +176,19 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
 		cost = 3
 		mutually_exclusive = { focus = POL_smigly_wins focus = POL_stachniuk_wins focus = POL_piasecki_wins }
+		allow_branch = {
+			NOT = { has_completed_focus = POL_smigly_wins }
+			NOT = { has_completed_focus = POL_piasecki_wins }
+			NOT = { has_completed_focus = POL_stachniuk_wins }
+			NOT = { has_completed_focus = POL_oppose_sanation }
+		}
+		offset = {
+			x = -5
+			y = 0
+			trigger = {
+				has_completed_focus = POL_sikorski_wins
+			}
+		}
 		available = {
 			
 		}
@@ -149,6 +198,7 @@ focus_tree = {
 				news_event = { id = deluge_poland.5 hours = 6 } 
 				retire_character = POL_Sanation_Emergency_Council
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -162,7 +212,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_stachniuk_wins
-		icon = GFX_stachniuk
+		icon = GFX_focus_POL_stachniuk_won
 		x = 20
 		y = 1
 		prerequisite = { focus = POL_continue_with_sanation }
@@ -170,6 +220,19 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
 		cost = 3
 		mutually_exclusive = { focus = POL_smigly_wins focus = POL_sikorski_wins focus = POL_piasecki_wins }
+		allow_branch = {
+			NOT = { has_completed_focus = POL_sikorski_wins }
+			NOT = { has_completed_focus = POL_piasecki_wins }
+			NOT = { has_completed_focus = POL_smigly_wins }
+			NOT = { has_completed_focus = POL_oppose_sanation }
+		}
+		offset = {
+			x = -20
+			y = 0
+			trigger = {
+				has_completed_focus = POL_stachniuk_wins
+			}
+		}
 		available = {
 			
 		}
@@ -179,6 +242,7 @@ focus_tree = {
 				news_event = { id = deluge_poland.6 hours = 6 }
 				retire_character = POL_Sanation_Emergency_Council
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -192,7 +256,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_piasecki_wins
-		icon = GFX_piasecki
+		icon = GFX_focus_POL_piasecki_won
 		x = 28
 		y = 1
 		prerequisite = { focus = POL_continue_with_sanation }
@@ -200,6 +264,19 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
 		cost = 3
 		mutually_exclusive = { focus = POL_smigly_wins focus = POL_sikorski_wins focus = POL_stachniuk_wins }
+		allow_branch = {
+			NOT = { has_completed_focus = POL_sikorski_wins }
+			NOT = { has_completed_focus = POL_stachniuk_wins }
+			NOT = { has_completed_focus = POL_smigly_wins }
+			NOT = { has_completed_focus = POL_oppose_sanation }
+		}
+		offset = {
+			x = -28
+			y = 0
+			trigger = {
+				has_completed_focus = POL_piasecki_wins
+			}
+		}
 		available = {
 			
 		}
@@ -209,6 +286,7 @@ focus_tree = {
 				news_event = { id = deluge_poland.7 hours = 6 } 
 				retire_character = POL_Sanation_Emergency_Council
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -230,6 +308,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
 		mutually_exclusive = {focus = POL_continue_with_sanation}
 		cost = 10
+		allow_branch = {
+			NOT = { has_completed_focus = POL_continue_with_sanation }
+		}
+		offset = {
+			x = -51
+			y = 0
+			trigger = {
+				has_completed_focus = POL_oppose_sanation
+			}
+		}
 		available = {
 			is_subject = no
 		}
@@ -238,6 +326,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_18
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 50
@@ -466,7 +555,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_start_project_in_south_east
-		icon = GFX_UKR_death_industry
+		icon = GFX_focus_UKR_death_industry
 		x = 3
 		y = 1
 		prerequisite = { focus = POL_begin_oczyszczenie_project }
@@ -787,13 +876,13 @@ focus_tree = {
 		bypass = {
 			is_subject = yes
 		}		
-		cancel_if_invalid = yes		
-		continue_if_invalid = no		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 		available_if_capitulated = no
 	}
 	focus = {
 		id = POL_start_project_in_germany
-		icon = GFX_GER_death_industry
+		icon = GFX_focus_GER_death_industry
 		x = 0
 		y = 1
 		prerequisite = { focus = POL_start_project_in_kashubia }
@@ -906,7 +995,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_continue_project_in_ukraine
-		icon = GFX_UKR_death_industry
+		icon = GFX_focus_UKR_death_industry
 		x = 0
 		y = 1
 		prerequisite = { focus = POL_start_project_in_south_east }
@@ -1689,7 +1778,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_teach_about_etatism
-		icon = GFX_focus_ETH_adopt_the_lira
+		icon = GFX_focus_SWE_landsverk
 		x = 0
 		y = 1
 		prerequisite = { focus = POL_massive_propaganda_efforts }
@@ -1723,6 +1812,13 @@ focus_tree = {
 		relative_position_id = POL_smigly_wins
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_WAR_SUPPORT}
 		cost = 10
+		offset = {
+			x = -5
+			y = 0
+			trigger = {
+				has_completed_focus = POL_sikorski_wins
+			}
+		}
 		available = {
 			
 		}
@@ -1776,7 +1872,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_state_that_gives
-		icon = GFX_POL_national_economy
+		icon = GFX_focus_generic_welfare_state
 		x = 0
 		y = 1
 		prerequisite = { focus = POL_mobilize_the_masses }
@@ -1833,6 +1929,13 @@ focus_tree = {
 		relative_position_id = POL_crush_decadency
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY }
 		cost = 5
+		offset = {
+			x = -1
+			y = -1
+			trigger = {
+				has_completed_focus = POL_sikorski_wins
+			}
+		}
 		available = {
 			
 		}
@@ -2773,6 +2876,20 @@ focus_tree = {
 		relative_position_id = POL_find_support_among_radicals
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
 		cost = 10
+		offset = {
+			x = -4
+			y = 0
+			trigger = {
+				has_completed_focus = POL_stachniuk_wins
+			}
+		}
+		offset = {
+			x = -24
+			y = 0
+			trigger = {
+				has_completed_focus = POL_piasecki_wins
+			}
+		}
 		available = {
 			
 		}
@@ -2798,6 +2915,21 @@ focus_tree = {
 		relative_position_id = POL_purge_the_party
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
 		cost = 10
+		allow_branch = {
+			NOT = {
+				has_completed_focus = POL_piasecki_wins
+				has_completed_focus = POL_sikorski_wins
+				has_completed_focus = POL_smigly_wins
+				has_completed_focus = POL_oppose_sanation
+			}
+		}
+		offset = {
+			x = 5
+			y = 0
+			trigger = {
+				has_completed_focus = POL_stachniuk_wins
+			}
+		}
 		available = {
 			has_completed_focus = POL_stachniuk_wins
 		}
@@ -3234,7 +3366,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_cult_of_emilia_plater
-		icon = GFX_cult_of_emilia_plater
+		icon = GFX_focus_POL_cult_of_emilia_plater
 		x = -1
 		y = 1
 		prerequisite = { focus = POL_liberate_women_from_catholic_slavery }
@@ -3615,6 +3747,10 @@ focus_tree = {
 					has_country_flag = POL_formed_slavic_union
 					has_country_flag = POL_created_lechia
 				}
+				has_country_leader = {
+					character = POL_deluge_Stachniuk
+					ruling_only = yes
+				}
 			}
 		}
 		completion_reward = {
@@ -3622,6 +3758,10 @@ focus_tree = {
 				character = POL_deluge_Stachniuk
 				ideology = social_darwinist_ideology
 				trait = the_44
+			}
+			set_country_leader_portrait = {
+				ideology = fascism
+				portrait = GFX_portrait_POL_jan_stachniuk_44
 			}
 		}
 		ai_will_do = {
@@ -3727,6 +3867,21 @@ focus_tree = {
 		relative_position_id = POL_purge_the_party
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_LAND_ARMY}
 		cost = 10
+		allow_branch = {
+			NOT = {
+				has_completed_focus = POL_stachniuk_wins
+				has_completed_focus = POL_sikorski_wins
+				has_completed_focus = POL_smigly_wins
+				has_completed_focus = POL_oppose_sanation
+			}
+		}
+		offset = {
+			x = -6
+			y = 0
+			trigger = {
+				has_completed_focus = POL_piasecki_wins
+			}
+		}
 		available = {
 			has_completed_focus = POL_piasecki_wins
 		}
@@ -4462,7 +4617,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_autarky
-		icon = GFX_autarky
+		icon = GFX_focus_generic_autarky
 		x = 1
 		y = 1
 		prerequisite = { focus = POL_delegalise_strikes focus = POL_expand_war_industry}
@@ -4537,6 +4692,20 @@ focus_tree = {
 		relative_position_id = POL_ONR_takes_over
 		search_filters = {FOCUS_FILTER_FOREIGN_AFFAIRS}
 		cost = 10
+		offset = {
+			x = -52
+			y = 0
+			trigger = {
+				has_completed_focus = POL_oppose_sanation
+			}
+		}
+		offset = {
+			x = 10
+			y = 0
+			trigger = {
+				has_completed_focus = POL_democracy_prevails
+			}
+		}
 		available = {
 			
 		}
@@ -5868,6 +6037,20 @@ focus_tree = {
 		prerequisite = { focus = POL_oppose_sanation }
 		relative_position_id = POL_oppose_sanation
 		mutually_exclusive = {focus = POL_radicals_takeover focus = POL_monarchists_take_power}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = POL_radicals_takeover
+				has_completed_focus = POL_monarchists_take_power
+				has_completed_focus = POL_continue_with_sanation
+			}
+		}
+		offset = {
+			x = 10
+			y = 0
+			trigger = {
+				has_completed_focus = POL_democracy_prevails
+			}
+		}
 		available = {
 			POL = {
 				has_government = democratic
@@ -5879,6 +6062,7 @@ focus_tree = {
 				remove_ideas = state_of_emergency_idea
 			}
 			POL = {country_event = {id = deluge_poland.13 hours = 3}}
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 40
@@ -6206,7 +6390,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_formalize_youth_organisations
-		icon = GFX_POL_new_type_of_man
+		icon = GFX_focus_generic_youth
 		x = 0
 		y = 2
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_LAND_ARMY}
@@ -6905,6 +7089,13 @@ focus_tree = {
 		cost = 8
 		prerequisite = { focus = POL_birth_of_new_republic focus = POL_PPS_wins }
 		relative_position_id = POL_birth_of_new_republic
+		offset = {
+			x = -10
+			y = 0
+			trigger = {
+				has_completed_focus = POL_radicals_takeover
+			}
+		}
 		available = {
 			NOT = {
 				has_completed_focus = POL_integrate_minorities
@@ -7059,6 +7250,9 @@ focus_tree = {
 			add_ideas = POL_SCh_influence
 			set_party_name = { ideology = democratic long_name = POL_SL_name_long name = POL_SL_name_short }
 			custom_effect_tooltip = POL_custom_effect_tooltip_advisors
+			country_event = {
+				id = deluge_poland.114
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -7233,12 +7427,12 @@ focus_tree = {
 	focus = {
 		id = POL_restrict_foreign_companies
 		icon = GFX_restrict_foreign_companies
-		x = 2
+		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 8
 		prerequisite = { focus = POL_full_equality_for_women}
-		relative_position_id = POL_tax_the_rich
+		relative_position_id = POL_full_equality_for_women
 		available = {
 			
 		}
@@ -7275,7 +7469,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_controlled_capitalism
-		icon = GFX_controlled_capitalism
+		icon = GFX_focus_generic_controlled_capitalism
 		x = 3
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -7327,6 +7521,20 @@ focus_tree = {
 		prerequisite = { focus = POL_oppose_sanation }
 		relative_position_id = POL_oppose_sanation
 		mutually_exclusive = {focus = POL_radicals_takeover focus = POL_democracy_prevails }
+		allow_branch = {
+			NOT = {
+				has_completed_focus = POL_radicals_takeover
+				has_completed_focus = POL_democracy_prevails
+				has_completed_focus = POL_continue_with_sanation
+			}
+		}
+		offset = {
+			x = -49
+			y = 0
+			trigger = {
+				has_completed_focus = POL_monarchists_take_power
+			}
+		}
 		available = {
 			POL = {
 				has_government = neutrality
@@ -7360,6 +7568,7 @@ focus_tree = {
 					landed
 				}
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 40
@@ -7381,6 +7590,21 @@ focus_tree = {
 		prerequisite = { focus = POL_monarchists_take_power }
 		relative_position_id = POL_monarchists_take_power
 		mutually_exclusive = {focus = POL_elections_for_new_king}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = POL_elections_for_new_king
+				has_completed_focus = POL_continue_with_sanation
+				has_completed_focus = POL_democracy_prevails
+				has_completed_focus = POL_radicals_takeover
+			}
+		}
+		offset = {
+			x = 13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_house_of_wettin_continues
+			}
+		}
 		available = {
 			NOT = {
 				has_global_flag = POL_king_died_abroad
@@ -7418,6 +7642,7 @@ focus_tree = {
 				}
 				promote_character = POL_deluge_augustus_wettin
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 40
@@ -7852,7 +8077,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_healing_the_wounds_of_the_great_war
-		icon = GFX_blue_red_handshake
+		icon = GFX_focus_generic_blue_red_handshake
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -8257,14 +8482,30 @@ focus_tree = {
 		prerequisite = { focus = POL_monarchists_take_power }
 		relative_position_id = POL_monarchists_take_power
 		mutually_exclusive = {focus = POL_house_of_wettin_continues}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = POL_house_of_wettin_continues
+				has_completed_focus = POL_continue_with_sanation
+				has_completed_focus = POL_democracy_prevails
+				has_completed_focus = POL_radicals_takeover
+			}
+		}
+		offset = {
+			x = -18
+			y = 0
+			trigger = {
+				has_completed_focus = POL_elections_for_new_king
+			}
+		}
 		available = {
 			has_global_flag = POL_king_died_abroad
 		}
 		select_effect = {
-			country_event = { id = deluge_poland.43 days = 1 } 
+			country_event = { id = deluge_poland.43 } 
 		}
 		completion_reward = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_142
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 40
@@ -8285,6 +8526,62 @@ focus_tree = {
 		cost = 6
 		prerequisite = { focus = POL_elections_for_new_king focus = POL_house_of_wettin_continues }
 		relative_position_id = POL_monarchists_take_power
+		offset = {
+			x = 13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_house_of_wettin_continues
+			}
+		}
+		offset = {
+			x = -18
+			y = 0
+			trigger = {
+				has_completed_focus = POL_elections_for_new_king
+			}
+		}
+		offset = {
+			x = 6
+			y = 0
+			trigger = {
+				has_completed_focus = POL_bonaparte_bastard_wins
+			}
+		}
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_completed_focus = POL_andrassy_wins
+			}
+		}
+		offset = {
+			x = -5
+			y = 0
+			trigger = {
+				has_completed_focus = POL_tyszkiewicz_wins
+			}
+		}
+		offset = {
+			x = -7
+			y = 0
+			trigger = {
+				has_completed_focus = POL_czartoryski_wins
+			}
+		}
+		offset = {
+			x = -10
+			y = 0
+			trigger = {
+				has_completed_focus = POL_radziwill_wins
+			}
+		}
+		offset = {
+			x = 4
+			y = 0
+			trigger = {
+				has_completed_focus = POL_piast_riedelski_wins
+			}
+		}
 		available = {
 			OR = {
 				has_completed_focus = POL_house_of_wettin_continues
@@ -9892,12 +10189,34 @@ focus_tree = {
 		prerequisite = { focus = POL_elections_for_new_king }
 		relative_position_id = POL_elections_for_new_king
 		mutually_exclusive = {focus = POL_czartoryski_wins focus = POL_bonaparte_bastard_wins focus = POL_andrassy_wins focus = POL_radziwill_wins focus = POL_tyszkiewicz_wins}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = POL_andrassy_wins
+				has_completed_focus = POL_tyszkiewicz_wins
+				has_completed_focus = POL_bonaparte_bastard_wins
+				has_completed_focus = POL_czartoryski_wins
+				has_completed_focus = POL_radziwill_wins
+				has_completed_focus = POL_house_of_wettin_continues
+				has_completed_focus = POL_continue_with_sanation
+				has_completed_focus = POL_democracy_prevails
+				has_completed_focus = POL_radicals_takeover
+			}
+		}
+		offset = {
+			x = -25
+			y = 0
+			trigger = {
+				has_completed_focus = POL_piast_riedelski_wins
+			}
+		}
 		available = {
 			
 		}
 		completion_reward = {
 			promote_character = POL_deluge_pawel_salwator_piast_riedelski
 			set_party_name = { ideology = neutrality long_name = POL_piast_name_long name = POL_piast_name_short }
+			custom_effect_tooltip = POL_custom_effect_tooltip_166
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 40
@@ -9912,21 +10231,52 @@ focus_tree = {
 	focus = {
 		id = POL_legacy_of_sarmatian_myth
 		icon = GFX_scythian_myth
-		x = 0
+		x = -1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 5
 		prerequisite = { focus = POL_piast_riedelski_wins focus = POL_czartoryski_wins focus = POL_radziwill_wins }
 		relative_position_id = POL_piast_riedelski_wins
-		#mutually_exclusive = {
-		#	focus = POL_reawake_pan_slavic_rethoric
-		#	focus = POL_invite_exiled_lithuanian_royalists
-		#}
+		offset = {
+			x = -14
+			y = 0
+			trigger = {
+				has_completed_focus = POL_czartoryski_wins
+			}
+		}
+		offset = {
+			x = -17
+			y = 0
+			trigger = {
+				has_completed_focus = POL_radziwill_wins
+			}
+		}
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_completed_focus = POL_piast_riedelski_wins
+			}
+		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = POL_invite_exiled_lithuanian_royalists
+				has_completed_focus = POL_tyszkiewicz_wins
+				has_completed_focus = POL_continue_with_sanation
+				has_completed_focus = POL_democracy_prevails
+				has_completed_focus = POL_radicals_takeover
+			}
+		}
+		mutually_exclusive = {
+		   #focus = POL_reawake_pan_slavic_rethoric
+			focus = POL_invite_exiled_lithuanian_royalists
+		}
 		available = {
 			
 		}
 		completion_reward = {
 			add_ideas = sarmatian_myth
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 40
@@ -10235,7 +10585,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_czartoryski_wins
-		icon = GFX_czartoryscy_emblem
+		icon = GFX_focus_generic_czartoryscy_emblem
 		x = 19
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -10243,6 +10593,26 @@ focus_tree = {
 		prerequisite = { focus = POL_elections_for_new_king }
 		relative_position_id = POL_elections_for_new_king
 		mutually_exclusive = {focus = POL_bonaparte_bastard_wins focus = POL_piast_riedelski_wins focus = POL_andrassy_wins focus = POL_radziwill_wins focus = POL_tyszkiewicz_wins}
+		offset = {
+			x = -19
+			y = 0
+			trigger = {
+				has_completed_focus = POL_czartoryski_wins
+			}
+		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = POL_andrassy_wins
+				has_completed_focus = POL_tyszkiewicz_wins
+				has_completed_focus = POL_piast_riedelski_wins
+				has_completed_focus = POL_bonaparte_bastard_wins
+				has_completed_focus = POL_radziwill_wins
+				has_completed_focus = POL_house_of_wettin_continues
+				has_completed_focus = POL_continue_with_sanation
+				has_completed_focus = POL_democracy_prevails
+				has_completed_focus = POL_radicals_takeover
+			}
+		}
 		available = {
 			
 		}
@@ -10250,6 +10620,7 @@ focus_tree = {
 			promote_character = POL_deluge_augustyn_czartoryski
 			set_party_name = { ideology = neutrality long_name = POL_czartoryski_name_long name = POL_czartoryski_name_short }
 			custom_effect_tooltip = POL_custom_effect_tooltip_166
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 40
@@ -10271,6 +10642,26 @@ focus_tree = {
 		prerequisite = { focus = POL_elections_for_new_king }
 		relative_position_id = POL_elections_for_new_king
 		mutually_exclusive = {focus = POL_czartoryski_wins focus = POL_piast_riedelski_wins focus = POL_andrassy_wins focus = POL_bonaparte_bastard_wins focus = POL_tyszkiewicz_wins}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = POL_andrassy_wins
+				has_completed_focus = POL_tyszkiewicz_wins
+				has_completed_focus = POL_piast_riedelski_wins
+				has_completed_focus = POL_czartoryski_wins
+				has_completed_focus = POL_bonaparte_bastard_wins
+				has_completed_focus = POL_house_of_wettin_continues
+				has_completed_focus = POL_continue_with_sanation
+				has_completed_focus = POL_democracy_prevails
+				has_completed_focus = POL_radicals_takeover
+			}
+		}
+		offset = {
+			x = -22
+			y = 0
+			trigger = {
+				has_completed_focus = POL_radziwill_wins
+			}
+		}
 		available = {
 			
 		}
@@ -10291,6 +10682,7 @@ focus_tree = {
 			}
 			set_party_name = { ideology = neutrality long_name = POL_radziwill_name_long name = POL_radziwill_name_short }
 			custom_effect_tooltip = POL_custom_effect_tooltip_166
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 40
@@ -10314,10 +10706,10 @@ focus_tree = {
 		allow_branch = {
 			always = no
 		}
-		mutually_exclusive = {
-			#focus = POL_legacy_of_sarmatian_myth
-			focus = POL_invite_exiled_lithuanian_royalists
-		}
+		#mutually_exclusive = {
+		#	focus = POL_legacy_of_sarmatian_myth
+		#	focus = POL_invite_exiled_lithuanian_royalists
+		#}
 		available = {
 			
 		}
@@ -10394,7 +10786,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_christian_approach
-		icon = GFX_strengthening_catholic_church
+		icon = GFX_focus_generic_strengthening_catholic_church
 		x = -2
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -10423,7 +10815,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_andrassy_wins
-		icon = GFX_andrassy_emblem
+		icon = GFX_focus_generic_andrassy_emblem
 		x = 4
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -10431,12 +10823,33 @@ focus_tree = {
 		prerequisite = { focus = POL_elections_for_new_king }
 		relative_position_id = POL_elections_for_new_king
 		mutually_exclusive = {focus = POL_czartoryski_wins focus = POL_piast_riedelski_wins focus = POL_bonaparte_bastard_wins focus = POL_radziwill_wins focus = POL_tyszkiewicz_wins}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = POL_bonaparte_bastard_wins
+				has_completed_focus = POL_tyszkiewicz_wins
+				has_completed_focus = POL_piast_riedelski_wins
+				has_completed_focus = POL_czartoryski_wins
+				has_completed_focus = POL_radziwill_wins
+				has_completed_focus = POL_house_of_wettin_continues
+				has_completed_focus = POL_continue_with_sanation
+				has_completed_focus = POL_democracy_prevails
+				has_completed_focus = POL_radicals_takeover
+			}
+		}
+		offset = {
+			x = -4
+			y = 0
+			trigger = {
+				has_completed_focus = POL_andrassy_wins
+			}
+		}
 		available = {
 			
 		}
 		completion_reward = {
 			promote_character = POL_deluge_andrassy_sandor
 			set_party_name = { ideology = neutrality long_name = POL_andrassy_name_long name = POL_andrassy_name_short }
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 40
@@ -10540,7 +10953,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_creation_of_real_union
-		icon = GFX_blue_red_handshake
+		icon = GFX_focus_generic_blue_red_handshake
 		x = -1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -10781,7 +11194,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_one_dynasty_two_institutions
-		icon = GFX_epic_generic_monarchy_icon
+		icon = GFX_focus_generic_monarchy_3
 		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -11065,6 +11478,27 @@ focus_tree = {
 		cost = 8
 		prerequisite = { focus = POL_one_dynasty_two_institutions focus = POL_creation_of_real_union focus = POL_restore_commonwealth focus = POL_restore_grand_duchy }
 		relative_position_id = POL_creation_of_real_union
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_completed_focus = POL_tyszkiewicz_wins
+			}
+		}
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_completed_focus = POL_czartoryski_wins
+			}
+		}
+		offset = {
+			x = -4
+			y = 0
+			trigger = {
+				has_completed_focus = POL_radziwill_wins
+			}
+		}
 		available = {
 			
 		}
@@ -12215,12 +12649,33 @@ focus_tree = {
 		prerequisite = { focus = POL_elections_for_new_king }
 		relative_position_id = POL_elections_for_new_king
 		mutually_exclusive = {focus = POL_czartoryski_wins focus = POL_piast_riedelski_wins focus = POL_andrassy_wins focus = POL_radziwill_wins focus = POL_tyszkiewicz_wins}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = POL_andrassy_wins
+				has_completed_focus = POL_tyszkiewicz_wins
+				has_completed_focus = POL_piast_riedelski_wins
+				has_completed_focus = POL_czartoryski_wins
+				has_completed_focus = POL_radziwill_wins
+				has_completed_focus = POL_house_of_wettin_continues
+				has_completed_focus = POL_continue_with_sanation
+				has_completed_focus = POL_democracy_prevails
+				has_completed_focus = POL_radicals_takeover
+			}
+		}
+		offset = {
+			x = 6
+			y = 0
+			trigger = {
+				has_completed_focus = POL_bonaparte_bastard_wins
+			}
+		}
 		available = {
 			
 		}
 		completion_reward = {
 			promote_character = POL_deluge_andrzej_walewski
 			set_party_name = { ideology = neutrality long_name = POL_walewski_name_long name = POL_walewski_name_short }
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 40
@@ -12676,12 +13131,41 @@ focus_tree = {
 		prerequisite = { focus = POL_elections_for_new_king }
 		relative_position_id = POL_elections_for_new_king
 		mutually_exclusive = {focus = POL_czartoryski_wins focus = POL_piast_riedelski_wins focus = POL_andrassy_wins focus = POL_radziwill_wins focus = POL_bonaparte_bastard_wins}
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				has_completed_focus = POL_tyszkiewicz_wins
+			}
+		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = POL_andrassy_wins
+				has_completed_focus = POL_bonaparte_bastard_wins
+				has_completed_focus = POL_piast_riedelski_wins
+				has_completed_focus = POL_czartoryski_wins
+				has_completed_focus = POL_radziwill_wins
+				has_completed_focus = POL_house_of_wettin_continues
+				has_completed_focus = POL_continue_with_sanation
+				has_completed_focus = POL_democracy_prevails
+				has_completed_focus = POL_radicals_takeover
+			}
+		}
+		offset = {
+			x = -16
+			y = 0
+			trigger = {
+				has_completed_focus = POL_tyszkiewicz_wins
+			}
+		}
 		available = {
 			
 		}
 		completion_reward = {
 			promote_character = POL_deluge_aleksander_tyszkiewicz
 			set_party_name = { ideology = neutrality long_name = POL_tyszkiewicz_name_long name = POL_tyszkiewicz_name_short }
+			custom_effect_tooltip = POL_custom_effect_tooltip_166
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 40
@@ -12696,15 +13180,45 @@ focus_tree = {
 	focus = {
 		id = POL_invite_exiled_lithuanian_royalists
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 0
+		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 4
 		prerequisite = { focus = POL_tyszkiewicz_wins focus = POL_radziwill_wins focus = POL_czartoryski_wins }
 		relative_position_id = POL_tyszkiewicz_wins
+		allow_branch = {
+			NOT = {
+				has_completed_focus = POL_legacy_of_sarmatian_myth
+				has_completed_focus = POL_piast_riedelski_wins
+				has_completed_focus = POL_continue_with_sanation
+				has_completed_focus = POL_democracy_prevails
+				has_completed_focus = POL_radicals_takeover
+			}
+		}
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_completed_focus = POL_tyszkiewicz_wins
+			}
+		}
+		offset = {
+			x = -19
+			y = 0
+			trigger = {
+				has_completed_focus = POL_czartoryski_wins
+			}
+		}
+		offset = {
+			x = -22
+			y = 0
+			trigger = {
+				has_completed_focus = POL_radziwill_wins
+			}
+		}
 		mutually_exclusive = {
-			focus = POL_reawake_pan_slavic_rethoric
-			#focus = POL_legacy_of_sarmatian_myth
+			#focus = POL_reawake_pan_slavic_rethoric
+			focus = POL_legacy_of_sarmatian_myth
 		}
 		available = {
 			
@@ -12739,6 +13253,7 @@ focus_tree = {
 					add_political_power = 100
 				}
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 40
@@ -13319,7 +13834,7 @@ focus_tree = {
 	focus = {
 		id = POL_solving_restoration_problems
 		icon = GFX_focus_generic_home_defense
-		x = 1
+		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 5
@@ -13355,7 +13870,7 @@ focus_tree = {
 	focus = {
 		id = POL_retake_ukraine
 		icon = GFX_focus_POL_ukrainian_army
-		x = -4
+		x = -5
 		y = 2
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 10
@@ -14118,7 +14633,7 @@ focus_tree = {
 	focus = {
 		id = POL_retake_belarus
 		icon = GFX_focus_POL_belarus_army
-		x = -2
+		x = -3
 		y = 2
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 10
@@ -15320,7 +15835,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_mutual_respect
-		icon = GFX_blue_red_handshake
+		icon = GFX_focus_generic_blue_red_handshake
 		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -16946,7 +17461,7 @@ focus_tree = {
 	focus = {
 		id = POL_develop_lithuania
 		icon = GFX_focus_generic_industry_2
-		x = 3
+		x = 2
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 12
@@ -17036,11 +17551,6 @@ focus_tree = {
 			11 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
@@ -17055,19 +17565,11 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			96 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
@@ -17115,7 +17617,7 @@ focus_tree = {
 	focus = {
 		id = POL_retake_livonia
 		icon = GFX_focus_LIT_reclaim_courland 
-		x = 3
+		x = 2
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		cost = 8
@@ -18095,7 +18597,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_radicals_takeover
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_generic_radical_coup
 		x = 10
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -18103,6 +18605,20 @@ focus_tree = {
 		prerequisite = { focus = POL_oppose_sanation }
 		relative_position_id = POL_oppose_sanation
 		mutually_exclusive = {focus = POL_monarchists_take_power focus = POL_democracy_prevails }
+		allow_branch = {
+			NOT = {
+				has_completed_focus = POL_democracy_prevails
+				has_completed_focus = POL_monarchists_take_power
+				has_completed_focus = POL_continue_with_sanation
+			}
+		}
+		offset = {
+			x = -10
+			y = 0
+			trigger = {
+				has_completed_focus = POL_radicals_takeover
+			}
+		}
 		available = {
 			POL = {
 				has_government = communism
@@ -18115,6 +18631,7 @@ focus_tree = {
 				remove_ideas = state_of_emergency_idea
 			}
 			POL = {country_event = {id = deluge_poland.42 hours = 3}}
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 40
@@ -18128,7 +18645,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_the_new_system
-		icon = GFX_radical_revolution
+		icon = GFX_focus_generic_abolish_monarchy
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -18914,7 +19431,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_dictatorship_of_proletariat
-		icon = GFX_dictatorship_of_proletariat
+		icon = GFX_focus_generic_dictatorship_of_proletariat
 		x = -2
 		y = 1
 		search_filters = {}
@@ -18943,7 +19460,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_cult_of_the_wodz
-		icon = GFX_cult_of_the_wodz
+		icon = GFX_focus_generic_cult_of_the_leader
 		x = 1
 		y = 1
 		search_filters = {}
@@ -19154,7 +19671,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_socialist_eucharist
-		icon = GFX_focus_SOV_the_last_purge
+		icon = GFX_focus_generic_church_handshake
 		x = -1
 		y = 1
 		search_filters = {}
@@ -19183,7 +19700,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_revolutionary_eucharist
-		icon = GFX_focus_SOV_builder_of_the_red_army
+		icon = GFX_focus_generic_church_chains
 		x = 1
 		y = 1
 		search_filters = {}
@@ -19212,7 +19729,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_christian_socialist_realism
-		icon = GFX_christian_socialist_realism
+		icon = GFX_focus_generic_christian_socialist_realism
 		x = 1
 		y = 1
 		search_filters = {}
@@ -19238,7 +19755,7 @@ focus_tree = {
 	focus = {
 		id = POL_propaganda_at_its_finest
 		icon = GFX_goal_generic_propaganda
-		x = 2
+		x = 3
 		y = 1
 		search_filters = {}
 		cost = 8
@@ -19600,7 +20117,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_integrate_anarchists
-		icon = GFX_anarchists
+		icon = GFX_focus_generic_anarcho_communists
 		x = 9
 		y = 1
 		search_filters = {}
@@ -21580,7 +22097,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_steel_hussars
-		icon = GFX_steel_hussars
+		icon = GFX_focus_POL_steel_hussars
 		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_LAND_ARMY}

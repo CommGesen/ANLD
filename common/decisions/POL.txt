@@ -15517,3 +15517,109 @@ wettins_foreign_policy_decisions_category = {
 		}
 	}
 }
+royal_affairs_decisions_category = {
+	construction_of_museums = {
+		icon = GFX_decision_eng_trade_unions_support
+		available = {
+			
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = POL_tyszkiewicz_wins
+		}
+		cost = 25
+		days_remove = 30
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_political_power = 50
+			add_stability = 0.02
+			add_war_support = 0.01
+			random_owned_state = {
+				limit = {
+					is_controlled_by = POL
+					is_owned_by = POL
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
+		}
+	}
+	hunting_promotion = {
+		icon = GFX_decision_generic_industry
+		available = {
+			
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = POL_tyszkiewicz_wins
+		}
+		cost = 25
+		days_remove = 30
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_political_power = 50
+			add_war_support = 0.02
+			random_owned_state = {
+				limit = {
+					is_controlled_by = POL
+					is_owned_by = POL
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
+		}
+	}
+	full_reconciliation_with_the_Lithuanian_nobility = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		available = {
+			
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = POL_tyszkiewicz_wins
+		}
+		cost = 25
+		days_remove = 30
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_political_power = 75
+			add_stability = 0.03
+			add_war_support = 0.03
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
+		}
+	}
+}

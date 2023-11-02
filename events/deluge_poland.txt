@@ -269,32 +269,9 @@ country_event = {#POL chooses leader for PSL
 	option = {##Artur Śliwiński
 		name = deluge_poland.14.b
 		promote_character = POL_deluge_artur_sliwinski
-		hidden_effect = {
-			news_event = {
-				id = deluge_poland.54
-				hours = 6
-			}
+		trigger = {
+			always = no
 		}
-		ai_chance = {
-			base = 1
-		}
-	}
-	option = {##Andrzej Waleron
-		name = deluge_poland.14.c
-		promote_character = POL_deluge_waleron
-		hidden_effect = {
-			news_event = {
-				id = deluge_poland.54
-				hours = 6
-			}
-		}
-		ai_chance = {
-			base = 1
-		}
-	}
-	option = {##Jan Dąbski
-		name = deluge_poland.14.e
-		promote_character = POL_deluge_dabski
 		hidden_effect = {
 			news_event = {
 				id = deluge_poland.54
@@ -338,6 +315,9 @@ country_event = {#POL chooses leader for ND
 	option = {##Marian Seyda
 		name = deluge_poland.15.b
 		promote_character = POL_deluge_marian_seyda
+		trigger = {
+			always = no
+		}
 		hidden_effect = {
 			news_event = {
 				id = deluge_poland.55
@@ -351,6 +331,9 @@ country_event = {#POL chooses leader for ND
 	option = {##Jan Mosdorf
 		name = deluge_poland.15.c
 		promote_character = POL_deluge_mosdorf
+		trigger = {
+			always = no
+		}
 		hidden_effect = {
 			news_event = {
 				id = deluge_poland.55
@@ -428,6 +411,7 @@ country_event = {#Roman Dmowski dies
 			POL_deluge_Dmowski = {
 				is_country_leader = yes
 			}
+			always = no
 		}
 		retire_character = POL_deluge_Dmowski
 		promote_character = POL_deluge_marian_seyda
@@ -447,6 +431,7 @@ country_event = {#Roman Dmowski dies
 			POL_deluge_Dmowski = {
 				is_country_leader = yes
 			}
+			always = no
 		}
 		retire_character = POL_deluge_Dmowski
 		promote_character = POL_deluge_mosdorf
@@ -507,8 +492,7 @@ country_event = {##first oppose Sanation event
 	desc = deluge_poland.19.d
 	picture = GFX_report_event_polish_psl_politicians
 	is_triggered_only = yes
-	option = {
-		name = deluge_poland.19.a
+	immediate = {
 		hidden_effect = {
 			set_variable = {
 				var = POL_number_of_factions
@@ -516,6 +500,9 @@ country_event = {##first oppose Sanation event
 			}
 			country_event = { id = deluge_poland.20 days = 7 }
 		}
+	}
+	option = {
+		name = deluge_poland.19.a
 		ai_chance = {
 			base = 1
 		}
@@ -527,13 +514,17 @@ country_event = {##question of monarchists
 	desc = deluge_poland.20.d
 	picture = GFX_report_event_polish_monarchists
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = { id = deluge_poland.21 days = 7 }
+		}
+	}
 	option = {##agree
 		name = deluge_poland.20.a
 		add_political_power = -10
 		add_stability = -0.1
 		hidden_effect = {
 			add_to_variable = {POL_number_of_factions = 1}
-			country_event = { id = deluge_poland.21 days = 7 }
 			set_country_flag = POL_invite_monarchists
 		}
 		ai_chance = {
@@ -543,9 +534,6 @@ country_event = {##question of monarchists
 	option = {##don't agree
 		name = deluge_poland.20.b
 		add_political_power = 20
-		hidden_effect = {
-			country_event = { id = deluge_poland.21 days = 7 }
-		}
 		ai_chance = {
 			base = 1
 		}
@@ -557,13 +545,17 @@ country_event = {##question of radicals
 	desc = deluge_poland.21.d
 	picture = GFX_report_event_polish_communist_party
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = { id = deluge_poland.22 days = 7 }
+		}
+	}
 	option = {##agree
 		name = deluge_poland.21.a
 		add_political_power = -10
 		add_stability = -0.1
 		hidden_effect = {
 			add_to_variable = {POL_number_of_factions = 1}
-			country_event = { id = deluge_poland.22 days = 7 }
 			set_country_flag = POL_invite_radicals
 		}
 		ai_chance = {
@@ -573,9 +565,6 @@ country_event = {##question of radicals
 	option = {##don't agree
 		name = deluge_poland.21.b
 		add_political_power = 20
-		hidden_effect = {
-			country_event = { id = deluge_poland.22 days = 7 }
-		}
 		ai_chance = {
 			base = 1
 		}
@@ -587,21 +576,47 @@ country_event = {##king wants to leave
 	desc = deluge_poland.22.d
 	picture = GFX_old_polish_king
 	is_triggered_only = yes
+	immediate = {
+		country_event = { id = deluge_poland.23 days = 14 }
+	}
 	option = {##agree - king leaves
 		name = deluge_poland.22.a
 		add_political_power = -20
 		add_stability = -0.1
 		add_war_support = -0.1
 		if = {
-			limit = {POL = {has_idea = old_wettyn_king}}
+			limit = {
+				POL = {
+					has_idea = old_wettyn_king
+				}
+			}
 			remove_ideas = old_wettyn_king
 		}
-		else_if = {
-			limit = {POL = {has_idea = fryderyk_ii_idea}}
+		if = {
+			limit = {
+				POL = {
+					has_idea = fryderyk_ii_idea
+				}
+			}
 			remove_ideas = fryderyk_ii_idea
 		}
+		if = {
+			limit = {
+				POL = {
+					has_character = POL_deluge_augustus_wettin
+				}
+			}
+			retire_character = POL_deluge_augustus_wettin
+		}
+		if = {
+			limit = {
+				POL = {
+					has_character = POL_deluge_christian_wettin
+				}
+			}
+			retire_character = POL_deluge_christian_wettin
+		}
 		hidden_effect = {
-			country_event = { id = deluge_poland.23 days = 7 }
 			set_country_flag = POL_king_left
 		}
 		POL = {
@@ -614,9 +629,6 @@ country_event = {##king wants to leave
 	option = {##don't agree
 		name = deluge_poland.22.b
 		add_political_power = 20
-		hidden_effect = {
-			country_event = { id = deluge_poland.23 days = 7 }
-		}
 		ai_chance = {
 			base = 1
 		}
@@ -628,14 +640,16 @@ country_event = {##state of emergency in Poland
 	desc = deluge_poland.23.d
 	picture = GFX_report_event_bul_military_parade_vidin
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = { id = deluge_poland.86 days = 14 }
+		}
+	}
 	option = {
 		name = deluge_poland.23.a
 		add_political_power = -30
 		add_stability = 0.1
 		add_ideas = state_of_emergency_idea
-		hidden_effect = {
-			country_event = { id = deluge_poland.86 days = 7 }
-		}
 	}
 }
 country_event = {##Circle of God's Cause infiltrates POL government
@@ -644,14 +658,16 @@ country_event = {##Circle of God's Cause infiltrates POL government
 	desc = deluge_poland.86.d
 	picture = GFX_report_event_andrzej_towianski
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = { id = deluge_poland.24 days = 14 }
+		}
+	}
 	option = {
 		name = deluge_poland.86.a
 		add_political_power = -5
 		add_stability = -0.05
 		add_ideas = POL_circle_of_gods_cause
-		hidden_effect = {
-			country_event = { id = deluge_poland.24 days = 14 }
-		}
 	}
 }
 country_event = {##plot happenes
@@ -1452,12 +1468,14 @@ country_event = {##elections for king are being announced
 	desc = deluge_poland.43.d
 	picture = GFX_report_event_generic_rally2
 	is_triggered_only = yes
-	option = {
-		name = deluge_poland.43.a
-		add_political_power = 10
+	immediate = {
 		hidden_effect = {
 			country_event = { id = deluge_poland.44 days = 7 }
 		}
+	}
+	option = {
+		name = deluge_poland.43.a
+		add_political_power = 10
 	}
 }
 country_event = {##Polish royal houses are chosen by Council
@@ -1466,12 +1484,14 @@ country_event = {##Polish royal houses are chosen by Council
 	desc = deluge_poland.44.d
 	picture = GFX_report_event_polish_monarchists
 	is_triggered_only = yes
-	option = {
-		name = deluge_poland.44.a
-		add_political_power = 10
+	immediate = {
 		hidden_effect = {
 			country_event = { id = deluge_poland.45 days = 7 }
 		}
+	}
+	option = {
+		name = deluge_poland.44.a
+		add_political_power = 10
 	}
 }
 country_event = {##Foreign royal houses are chosen by Council
@@ -1480,12 +1500,14 @@ country_event = {##Foreign royal houses are chosen by Council
 	desc = deluge_poland.45.d
 	picture = GFX_report_event_foreign_nobility_in_poland 
 	is_triggered_only = yes
-	option = {
-		name = deluge_poland.45.a
-		add_political_power = 10
+	immediate = {
 		hidden_effect = {
 			country_event = { id = deluge_poland.46 days = 3 }
 		}
+	}
+	option = {
+		name = deluge_poland.45.a
+		add_political_power = 10
 	}
 }
 country_event = {##Karol Mikołaj Radziwiłł dies
@@ -1494,14 +1516,16 @@ country_event = {##Karol Mikołaj Radziwiłł dies
 	desc = deluge_poland.46.d
 	picture = GFX_report_event_karol_mikolaj_radziwill 
 	is_triggered_only = yes
-	option = {
-		name = deluge_poland.46.a
-		add_political_power = -10
-		add_stability = -0.01
+	immediate = {
 		hidden_effect = {
 			country_event = { id = deluge_poland.47 days = 4 }
 			set_country_flag = POL_karol_radziwill_died
 		}
+	}
+	option = {
+		name = deluge_poland.46.a
+		add_political_power = -10
+		add_stability = -0.01
 	}
 }
 country_event = {##Andrzej Walewski arrives
@@ -1510,12 +1534,14 @@ country_event = {##Andrzej Walewski arrives
 	desc = deluge_poland.47.d
 	picture = GFX_report_event_andrzej_walewski
 	is_triggered_only = yes
-	option = {
-		name = deluge_poland.47.a
-		add_stability = -0.01
+	immediate = {
 		hidden_effect = {
 			country_event = { id = deluge_poland.48 days = 7 }
 		}
+	}
+	option = {
+		name = deluge_poland.47.a
+		add_stability = -0.01
 	}
 }
 country_event = {##Paweł Salwator Piast-Riedelski arrives
@@ -1524,12 +1550,14 @@ country_event = {##Paweł Salwator Piast-Riedelski arrives
 	desc = deluge_poland.48.d
 	picture = GFX_report_event_pawel_salwator_piast_riedelski
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = { id = deluge_poland.49 days = 7 }
+		}
+	}
 	option = {
 		name = deluge_poland.48.a
 		add_stability = -0.01
-		hidden_effect = {
-			country_event = { id = deluge_poland.49 days = 5 }
-		}
 	}
 }
 country_event = {##elections for king happen
@@ -2563,6 +2591,7 @@ country_event = {##new communist party chooses it's leader
 	option = {##PPS - Jędrzej Moraczewski
 		name = deluge_poland.84.moraczewski
 		trigger = {
+			always = no
 			has_country_flag = POL_PPS_won_in_event
 		}
 		promote_character = POL_deluge_jedrzej_moraczewski
@@ -2681,6 +2710,7 @@ country_event = {##new communist party chooses it's leader
 		name = deluge_poland.84.chmielewski
 		trigger = {
 			has_country_flag = POL_NSP_won_in_event
+			always = no
 		}
 		promote_character = POL_deluge_czeslaw_chmielewski
 		hidden_effect = {
@@ -2694,6 +2724,7 @@ country_event = {##new communist party chooses it's leader
 		name = deluge_poland.84.popiel
 		trigger = {
 			has_country_flag = POL_NSP_won_in_event
+			always = no
 		}
 		promote_character = POL_deluge_karol_popiel
 		hidden_effect = {
@@ -2746,6 +2777,7 @@ country_event = {##new communist party chooses it's leader
 		name = deluge_poland.84.kozielski
 		trigger = {
 			has_country_flag = POL_NSPR_won_in_event
+			always = no
 		}
 		promote_character = POL_deluge_waclaw_kozielski
 		hidden_effect = {
@@ -3840,7 +3872,7 @@ country_event = {##lore event - Janusz Kwiek becomes king of Polish gypsies
 		add_stability = 0.01
 	}
 }
-country_event = {##lore event - Janusz Kwiek becomes king of Polish gypsies 
+country_event = {##lore event about Andrzej Bobola
 	id = deluge_poland.113
 	title = deluge_poland.113.t
 	desc = deluge_poland.113.d
@@ -3862,6 +3894,37 @@ country_event = {##lore event - Janusz Kwiek becomes king of Polish gypsies
 			base = 1
 		}
 		add_political_power = 15
+	}
+}
+country_event = {##PSL-SCh coaltion is created, player can choose new leader
+	id = deluge_poland.114
+	title = deluge_poland.114.t
+	desc = deluge_poland.114.d
+	picture = GFX_report_event_sanation_left_victory
+	is_triggered_only = yes
+	option = {##no new leader
+		name = deluge_poland.114.a
+		ai_chance = {
+			base = 1
+		}
+		add_political_power = 5
+	}
+	option = {##Andrzej Waleron
+		name = deluge_poland.114.b
+		ai_chance = {
+			base = 1
+		}
+		promote_character = POL_deluge_waleron
+	}
+	option = {##Jan Dąbski
+		name = deluge_poland.114.c
+		trigger = {
+			always = no
+		}
+		ai_chance = {
+			base = 1
+		}
+		promote_character = POL_deluge_dabski
 	}
 }
 country_event = {##POL proposes defense pact to UK
