@@ -416,6 +416,49 @@ ideas = {
 	}
 
 
+		industrial_concern = {
+		vattenfall_ab = {
+		picture = SWE_vattenfall
+			allowed = {
+				OR = {
+					original_tag = SWE
+				}
+			}
+			research_bonus = {
+				industry = 0.05
+			}
+			traits = { vattenfall_designer_trait }
+			modifier = {
+			}
+		}
+		ericsson = {
+		picture = SWE_ericsson
+			allowed = {
+				OR = {
+					original_tag = SWE
+				}
+			}
+			research_bonus = {
+				electronics = 0.05
+			}
+			traits = { ericsson_designer_trait }
+			modifier = {
+			}
+		}
+		sj = {
+			picture = generic_industrial_concern_3
+			allowed = {
+				OR = {
+					original_tag = SWE
+				}
+			}
+			traits = { sj_designer_trait }
+			modifier = {
+			}
+		}
+	}
+
+
 	guns_manufacturer_slot = {
 		
 		designer = yes

@@ -482,4 +482,22 @@ leader_traits = {
 		production_speed_infrastructure_factor = 0.1
 		production_speed_rail_way_factor = 0.1
 	}
+###SWEDEN HAPPENS
+	vattenfall_designer_trait = {
+		local_resources_factor = 0.05
+		industrial_capacity_factory = 0.05
+	}
+	ericsson_designer_trait = {
+		coordination_bonus = 0.02
+		equipment_bonus = {
+			support_equipment = {
+				instant = yes
+				build_cost_ic = -0.05
+			}
+	}
+	}
+	sj_designer_trait {
+		production_speed_infrastructure_factor = 0.05
+		production_speed_rail_way_factor = 0.05
+    }
 }
