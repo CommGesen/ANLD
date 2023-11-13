@@ -1157,4 +1157,20 @@ leader_traits = {
 		stability_factor = 0.1
 		compliance_growth = 0.2
 	}
+	elected_chairman = {
+		random = no
+		political_power_factor = 0.03
+		stability_factor = 0.05
+		democratic_acceptance = 40
+	}
+	red_dragon_with_the_eyes_of_jade = {
+		random = no
+		war_support_factor = 0.05
+		army_core_attack_factor = 0.05
+	}
+	apostle_of_the_bronze_race = {
+		random = no
+		stability_factor = 0.05
+		army_core_defence_factor = 0.05
+	}
 }

@@ -49,18 +49,18 @@ if = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "1935.3.5"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 
 set_popularities = {
 	democratic = 30
-	fascism = 55
+	fascism = 05
 	communism = 10
-	neutrality = 5
+	neutrality = 55
 }
 	
 add_ideas = {
@@ -71,7 +71,7 @@ add_ideas = {
 	restricted
 }
 recruit_character = DES_upton_sinclair
-recruit_character = DES_israel_m._smith
+recruit_character = DES_herbert_j_grant
 recruit_character = DES_lorenzo_benson
 recruit_character = DES_albert_mckay
 recruit_character = DES_george_s._patton

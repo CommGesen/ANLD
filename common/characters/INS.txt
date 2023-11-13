@@ -1,17 +1,4 @@
 characters={
-	INS_karel_doorman = {
-		name="Karel Doorman"
-		portraits={
-			civilian={
-				large="gfx/leaders/INS/karel_doorman.dds"
-			}
-		}
-		country_leader={
-			ideology=liberal_republican_ideology
-			expire="1953.3.1.1"
-			id=-1
-		}
-	}
 	INS_sukarno={
 		name="Sukarno"
 		portraits={
@@ -22,7 +9,6 @@ characters={
 		country_leader={
 			ideology=liberal_republican_ideology
 			expire="1953.3.1.1"
-			id=-1
 		}
 	}
 	INS_amir_sjarifuddin_harahap={
@@ -35,7 +21,6 @@ characters={
 		country_leader={
 			ideology=marxist_ideology
 			expire="1953.3.1.1"
-			id=-1
 		}
 	}
 	INS_suharto={
@@ -48,7 +33,6 @@ characters={
 		country_leader={
 			ideology=corporatist_ideology
 			expire="1953.3.1.1"
-			id=-1
 		}
 	}
 	INS_sutan_sjahrir={
@@ -61,20 +45,18 @@ characters={
 		country_leader={
 			ideology=bonapartist_ideology
 			expire="1953.3.1.1"
-			id=-1
 		}
 	}
-	INS_a._t._van_starkenborgh_stachouwer={
-		name="A. T. van Starkenborgh Stachouwer"
+	INS_alidius_tjarda_van_starkenborgh_stachouwer={
+		name="Alidius Tjarda van Starkenborgh Stachouwer"
 		portraits={
 			civilian={
-				large="gfx/leaders/deluge/alidius_tjarda_van_starkenborgh_stachouwer.dds"
+				large=GFX_portrait_indonesia_at_van_starkenborgh
 			}
 		}
 		country_leader={
 			ideology=liberal_republican_ideology
 			expire="1953.3.1.1"
-			id=-1
 		}
 	}
 }

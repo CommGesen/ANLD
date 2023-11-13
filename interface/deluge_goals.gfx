@@ -1811,15 +1811,15 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_radziwillowie_emblem"
-		texturefile = "gfx/interface/goals/radziwillowie_emblem.dds"			
+		name = "GFX_focus_generic_radziwillowie_emblem"
+		texturefile = "gfx/interface/goals/focus_generic_radziwillowie_emblem.dds"			
 	}
 	SpriteType = {
-		name = "GFX_radziwillowie_emblem_shine"
-		texturefile = "gfx/interface/goals/radziwillowie_emblem.dds"
+		name = "GFX_focus_generic_radziwillowie_emblem_shine"
+		texturefile = "gfx/interface/goals/focus_generic_radziwillowie_emblem.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/radziwillowie_emblem.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_radziwillowie_emblem.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1832,7 +1832,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/radziwillowie_emblem.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_radziwillowie_emblem.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1991,15 +1991,15 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_old_bonaparte_emblem"
-		texturefile = "gfx/interface/goals/old_bonaparte_emblem.dds"			
+		name = "GFX_focus_generic_old_bonaparte_emblem"
+		texturefile = "gfx/interface/goals/focus_generic_old_bonaparte_emblem.dds"			
 	}
 	SpriteType = {
-		name = "GFX_old_bonaparte_emblem_shine"
-		texturefile = "gfx/interface/goals/old_bonaparte_emblem.dds"
+		name = "GFX_focus_generic_old_bonaparte_emblem_shine"
+		texturefile = "gfx/interface/goals/focus_generic_old_bonaparte_emblem.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/old_bonaparte_emblem.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_old_bonaparte_emblem.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2012,7 +2012,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/old_bonaparte_emblem.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_old_bonaparte_emblem.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2171,15 +2171,15 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_tyszkiewicz_emblem"
-		texturefile = "gfx/interface/goals/tyszkiewicz_emblem.dds"			
+		name = "GFX_focus_generic_tyszkiewicz_emblem"
+		texturefile = "gfx/interface/goals/focus_generic_tyszkiewicz_emblem.dds"			
 	}
 	SpriteType = {
-		name = "GFX_tyszkiewicz_emblem_shine"
-		texturefile = "gfx/interface/goals/tyszkiewicz_emblem.dds"
+		name = "GFX_focus_generic_tyszkiewicz_emblem_shine"
+		texturefile = "gfx/interface/goals/focus_generic_tyszkiewicz_emblem.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/tyszkiewicz_emblem.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_tyszkiewicz_emblem.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2192,7 +2192,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/tyszkiewicz_emblem.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_tyszkiewicz_emblem.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -3107,15 +3107,15 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_piasts_emblem"
-		texturefile = "gfx/interface/goals/piasts_emblem.dds"			
+		name = "GFX_focus_generic_piasts_emblem"
+		texturefile = "gfx/interface/goals/focus_generic_piasts_emblem.dds"			
 	}
 	SpriteType = {
-		name = "GFX_piasts_emblem_shine"
-		texturefile = "gfx/interface/goals/piasts_emblem.dds"
+		name = "GFX_focus_generic_piasts_emblem_shine"
+		texturefile = "gfx/interface/goals/focus_generic_piasts_emblem.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/piasts_emblem.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_piasts_emblem.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -3128,7 +3128,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/piasts_emblem.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_piasts_emblem.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -6547,15 +6547,15 @@ spriteTypes = {
 	}
 	
 	SpriteType = { 
-		name = "GFX_protect_forests"
-		texturefile = "gfx/interface/goals/protect_forests.dds"
+		name = "GFX_focus_generic_protect_forests"
+		texturefile = "gfx/interface/goals/focus_generic_protect_forests.dds"
 	}
 	SpriteType = { 
-		name = "GFX_protect_forests_shine"
-		texturefile = "gfx/interface/goals/protect_forests.dds"
+		name = "GFX_focus_generic_protect_forests_shine"
+		texturefile = "gfx/interface/goals/focus_generic_protect_forests.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/protect_forests.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_protect_forests.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -6567,7 +6567,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/protect_forests.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_protect_forests.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

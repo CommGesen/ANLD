@@ -418,6 +418,7 @@ characters={
 			expire = "1969.1.1.1"
 			traits = {
 				overwhelming_decadency
+				weak_claim
 			}
 			desc = "POL_deluge_izabella_roza_radziwillowna_desc"
 		}
@@ -1865,15 +1866,15 @@ characters={
 				large="gfx/leaders/POL/portrait_POL_stanislaw_hryniewiecki.dds"
 			}
 		}
-		navy_leader = {
-			traits = { naval_lineage blockade_runner }
-			skill=3
-			attack_skill=2
-			defense_skill=1
-			maneuvering_skill=4
-			coordination_skill=3
-			desc = "POL_deluge_stanislaw_hryniewiecki_desc"
-		}
+		#navy_leader = {
+		#	traits = { naval_lineage blockade_runner }
+		#	skill=3
+		#	attack_skill=2
+		#	defense_skill=1
+		#	maneuvering_skill=4
+		#	coordination_skill=3
+		#	desc = "POL_deluge_stanislaw_hryniewiecki_desc"
+		#}
 	}
 	POL_deluge_stefan_frankowski = {
 		name=POL_Character_deluge_stefan_frankowski
@@ -4041,7 +4042,7 @@ characters={
 					has_completed_focus = POL_PPS_wins
 					has_completed_focus = POL_KPP_wins
 				}
-				is_country_leader = no
+				#is_country_leader = no
 			}
 			traits = {
 				minister_of_communications
@@ -4511,7 +4512,7 @@ characters={
 					has_completed_focus = POL_NSP_wins
 					has_completed_focus = POL_PKWN_wins
 				}
-				is_country_leader = no
+				#is_country_leader = no
 			}
 			traits = {
 				doctor_of_laws
@@ -4557,7 +4558,7 @@ characters={
 					has_completed_focus = POL_NSP_wins
 					has_completed_focus = POL_PKWN_wins
 				}
-				is_country_leader = no
+				#is_country_leader = no
 			}
 			traits = {
 				minister_of_justice
@@ -4661,12 +4662,12 @@ characters={
 			ledger = civilian
 		}
 	}
-	POL_deluge_wladyslaw_orebski = {##Władysław Orębski
-		name = POL_Character_deluge_wladyslaw_orebski
+	POL_deluge_wladyslaw_obrebski = {##Władysław Obrębski
+		name = POL_Character_deluge_wladyslaw_obrebski
 		portraits={
 			civilian={
-				large = "gfx/leaders/POL/portrait_POL_wladyslaw_orebski.dds"
-				small = GFX_wladyslaw_orebski_picture_small
+				large = "gfx/leaders/POL/portrait_POL_wladyslaw_obrebski.dds"
+				small = GFX_wladyslaw_obrebski_picture_small
 			}
 		}
 		country_leader = {
@@ -4675,11 +4676,11 @@ characters={
 			traits = {
 				headstrong
 			}
-			desc = "POL_deluge_wladyslaw_orebski_desc"
+			desc = "POL_deluge_wladyslaw_obrebski_desc"
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = POL_deluge_wladyslaw_orebski
+			idea_token = POL_deluge_wladyslaw_obrebski
 			allowed = { tag = POL }
 			visible = {
 				tag = POL
@@ -4701,7 +4702,7 @@ characters={
 					has_completed_focus = POL_find_support_among_radicals
 					has_completed_focus = POL_contact_nationalist_radicals
 				}
-				is_country_leader = no
+				#is_country_leader = no
 			}
 			traits = {
 				devoted_corporatist
@@ -4750,7 +4751,7 @@ characters={
 					has_completed_focus = POL_find_support_among_radicals
 					has_completed_focus = POL_contact_nationalist_radicals
 				}
-				is_country_leader = no
+				#is_country_leader = no
 			}
 			traits = {
 				totalitarian_systems_analyst

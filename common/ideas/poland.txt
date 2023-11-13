@@ -2317,8 +2317,8 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
-		karol_wojtyla_pope = {
-			picture = karol_wojtyla_picture
+		stefan_wyszynski_pope = {#karol_wojtyla_pope - old
+			picture = MEX_church_power_5
 			allowed = {
 				tag = POL
 			}
@@ -3286,25 +3286,6 @@ ideas = {
 				consumer_goods_factor = 0.05
 			}
 		}
-		POL_polonization_of_lithuania = {
-			picture = SPR_political_violence
-			allowed = {
-				tag = POL
-			}
-			available = {
-				#empty
-			}
-			cancel = {
-				
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				political_power_factor = 0.1
-				conscription = -0.003
-			}
-		}
 		LIT_polonization_of_lithuania = {
 			picture = SPR_political_violence
 			allowed = {
@@ -3323,25 +3304,6 @@ ideas = {
 				cic_to_overlord_factor = 0.4
 				mic_to_overlord_factor = 0.4
 				extra_trade_to_overlord_factor = 0.4
-			}
-		}
-		POL_polonization_of_livonia = {
-			picture = SPR_political_violence
-			allowed = {
-				tag = POL
-			}
-			available = {
-				#empty
-			}
-			cancel = {
-				
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				political_power_factor = 0.1
-				conscription = -0.001
 			}
 		}
 		BAL_polonization_of_livonia = {
@@ -3364,25 +3326,6 @@ ideas = {
 				extra_trade_to_overlord_factor = 0.4
 			}
 		}
-		POL_polonization_of_ruthenia = {
-			picture = SPR_political_violence
-			allowed = {
-				tag = POL
-			}
-			available = {
-				#empty
-			}
-			cancel = {
-				
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				political_power_factor = 0.1
-				conscription = -0.003
-			}
-		}
 		UKR_polonization_of_ruthenia = {
 			picture = SPR_political_violence
 			allowed = {
@@ -3401,67 +3344,6 @@ ideas = {
 				cic_to_overlord_factor = 0.4
 				mic_to_overlord_factor = 0.4
 				extra_trade_to_overlord_factor = 0.4
-			}
-		}
-		POL_LIT_cooperation = {
-			picture = SPR_political_violence #change it to something ours
-			allowed = {
-				tag = POL
-			}
-			available = {
-				#empty
-			}
-			cancel = {
-				
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				consumer_goods_factor = -0.02
-				research_speed_factor = 0.02
-				experience_gain_army_factor = 0.03
-			}
-		}
-		POL_LIV_cooperation = {
-			picture = SPR_political_violence #change it to something ours
-			allowed = {
-				tag = POL
-			}
-			available = {
-				#empty
-			}
-			cancel = {
-				
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				consumer_goods_factor = -0.02
-				research_speed_factor = 0.01
-				production_speed_buildings_factor = 0.02
-			}
-		}
-		POL_RUT_cooperation = {
-			picture = SPR_political_violence #change it to something ours
-			allowed = {
-				tag = POL
-			}
-			available = {
-				#empty
-			}
-			cancel = {
-				
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				production_speed_buildings_factor = 0.02
-				research_speed_factor = 0.01
-				industrial_capacity_dockyard = 0.02
-				industrial_capacity_factory = 0.02
 			}
 		}
 		POL_FRA_cooperation = {

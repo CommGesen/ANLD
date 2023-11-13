@@ -2760,10 +2760,11 @@ country_event = {##new communist party chooses it's leader
 			base = 1
 		}
 	}
-	option = {##NSPR - Władysław Orębski
-		name = deluge_poland.84.orebski
+	option = {##NSPR - Władysław Obrębski
+		name = deluge_poland.84.obrebski
 		trigger = {
 			has_country_flag = POL_NSPR_won_in_event
+			always = no
 		}
 		promote_character = POL_deluge_wladyslaw_orebski
 		hidden_effect = {
@@ -2777,7 +2778,6 @@ country_event = {##new communist party chooses it's leader
 		name = deluge_poland.84.kozielski
 		trigger = {
 			has_country_flag = POL_NSPR_won_in_event
-			always = no
 		}
 		promote_character = POL_deluge_waclaw_kozielski
 		hidden_effect = {
@@ -3438,73 +3438,50 @@ country_event = {##POL decides what to do with eastern borderlands (PLC path)
 			}
 		}
 		set_country_flag = POL_plc_annexed_borderlands
-		if = {
+		every_state = {
 			limit = {
-				has_completed_focus = POL_polonize_kresy
+				OR = {
+					state = 194
+					state = 241
+					state = 204
+					state = 206
+					state = 764
+					state = 207
+					state = 201
+					state = 199
+					state = 198
+					state = 193
+					state = 259
+					state = 202
+					state = 203
+					state = 221
+					state = 197
+					state = 192
+					state = 834
+					state = 225
+					state = 226
+				}
 			}
-			add_ideas = POL_polonization_of_ruthenia
-		}
-		if = {
-			limit = {
-				has_completed_focus = POL_respect_ruthenian_nations
+			if = {
+				limit = {
+					POL = {
+						has_completed_focus = POL_polonize_kresy
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = POL_polonization
+				}
 			}
-			add_ideas = POL_RUT_cooperation
-		}
-		194 = {
-			add_core_of = POL
-		}
-		241 = {
-			add_core_of = POL
-		}
-		204 = {
-			add_core_of = POL
-		}
-		206 = {
-			add_core_of = POL
-		}
-		764 = {
-			add_core_of = POL
-		}
-		207 = {
-			add_core_of = POL
-		}
-		201 = {
-			add_core_of = POL
-		}
-		199 = {
-			add_core_of = POL
-		}
-		193 = {
-			add_core_of = POL
-		}
-		198 = {
-			add_core_of = POL
-		}
-		259 = {
-			add_core_of = POL
-		}
-		202 = {
-			add_core_of = POL
-		}
-		203 = {
-			add_core_of = POL
-		}
-		221 = {
-			add_core_of = POL
-		}
-		197 = {
-			add_core_of = POL
-		}
-		192 = {
-			add_core_of = POL
-		}
-		834 = {
-			add_core_of = POL
-		}
-		226 = {
-			add_core_of = POL
-		}
-		225 = {
+			if = {
+				limit = {
+					POL = {
+						has_completed_focus = POL_respect_ruthenian_nations
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = POL_multiculturalism
+				}
+			}
 			add_core_of = POL
 		}
 		ai_chance = {
@@ -3520,17 +3497,47 @@ country_event = {##POL decides what to do with eastern borderlands (PLC path)
 		}
 		set_country_flag = POL_plc_gave_lit_northern_blr
 		set_country_flag = POL_plc_annex_south_only
-		if = {
+		every_state = {
 			limit = {
-				has_completed_focus = POL_polonize_kresy
+				OR = {
+					state = 194
+					state = 241
+					state = 201
+					state = 199
+					state = 198
+					state = 193
+					state = 259
+					state = 202
+					state = 203
+					state = 221
+					state = 197
+					state = 192
+					state = 834
+					state = 225
+					state = 226
+				}
 			}
-			add_ideas = POL_polonization_of_ruthenia
-		}
-		if = {
-			limit = {
-				has_completed_focus = POL_respect_ruthenian_nations
+			if = {
+				limit = {
+					POL = {
+						has_completed_focus = POL_polonize_kresy
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = POL_polonization
+				}
 			}
-			add_ideas = POL_RUT_cooperation
+			if = {
+				limit = {
+					POL = {
+						has_completed_focus = POL_respect_ruthenian_nations
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = POL_multiculturalism
+				}
+			}
+			add_core_of = POL
 		}
 		LIT = {
 			transfer_state = 207
@@ -3538,62 +3545,36 @@ country_event = {##POL decides what to do with eastern borderlands (PLC path)
 			transfer_state = 204
 			transfer_state = 764
 		}
-		204 = {
+		every_state = {
+			limit = {
+				OR = {
+					state = 204
+					state = 206
+					state = 764
+					state = 207
+				}
+			}
+			if = {
+				limit = {
+					POL = {
+						has_completed_focus = POL_polonize_kresy
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = POL_polonization
+				}
+			}
+			if = {
+				limit = {
+					POL = {
+						has_completed_focus = POL_respect_ruthenian_nations
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = POL_multiculturalism
+				}
+			}
 			add_core_of = LIT
-		}
-		206 = {
-			add_core_of = LIT
-		}
-		764 = {
-			add_core_of = LIT
-		}
-		207 = {
-			add_core_of = LIT
-		}
-		194 = {
-			add_core_of = POL
-		}
-		241 = {
-			add_core_of = POL
-		}
-		201 = {
-			add_core_of = POL
-		}
-		199 = {
-			add_core_of = POL
-		}
-		193 = {
-			add_core_of = POL
-		}
-		198 = {
-			add_core_of = POL
-		}
-		259 = {
-			add_core_of = POL
-		}
-		202 = {
-			add_core_of = POL
-		}
-		203 = {
-			add_core_of = POL
-		}
-		221 = {
-			add_core_of = POL
-		}
-		197 = {
-			add_core_of = POL
-		}
-		192 = {
-			add_core_of = POL
-		}
-		834 = {
-			add_core_of = POL
-		}
-		226 = {
-			add_core_of = POL
-		}
-		225 = {
-			add_core_of = POL
 		}
 		ai_chance = {
 			base = 1
@@ -3608,28 +3589,41 @@ country_event = {##POL decides what to do with eastern borderlands (PLC path)
 		}
 		set_country_flag = POL_plc_gave_lit_northern_blr
 		set_country_flag = POL_plc_created_grand_duchy_of_ruthenia
-		if = {
-			limit = {
-				has_completed_focus = POL_respect_ruthenian_nations
-			}
-			add_ideas = POL_RUT_cooperation
-		}
 		LIT = {
 			transfer_state = 207
 			transfer_state = 206
 			transfer_state = 204
 			transfer_state = 764
 		}
-		204 = {
-			add_core_of = LIT
-		}
-		206 = {
-			add_core_of = LIT
-		}
-		764 = {
-			add_core_of = LIT
-		}
-		207 = {
+		every_state = {
+			limit = {
+				OR = {
+					state = 204
+					state = 206
+					state = 764
+					state = 207
+				}
+			}
+			if = {
+				limit = {
+					POL = {
+						has_completed_focus = POL_polonize_kresy
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = POL_polonization
+				}
+			}
+			if = {
+				limit = {
+					POL = {
+						has_completed_focus = POL_respect_ruthenian_nations
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = POL_multiculturalism
+				}
+			}
 			add_core_of = LIT
 		}
 		UKR = {
@@ -3654,7 +3648,7 @@ country_event = {##POL decides what to do with eastern borderlands (PLC path)
 			create_country_leader = {
 				name = "Henryk Józewski"
 				desc = henryk_jozewski_desc
-				picture = "gfx/leaders/LIT/portrait_UKR_henryk_jozewski.dds"
+				picture = "gfx/leaders/UKR/portrait_UKR_henryk_jozewski.dds"
 				expire = "1965.1.1"
 				ideology = reactionary_ideology
 				traits = {
@@ -3680,18 +3674,55 @@ country_event = {##POL decides what to do with eastern borderlands (PLC path)
 				}
 				add_ideas = UKR_polonization_of_ruthenia
 			}
+		}
+		every_state = {
+			limit = {
+				OR = {
+					state = 194
+					state = 241
+					state = 201
+					state = 199
+					state = 198
+					state = 193
+					state = 259
+					state = 202
+					state = 203
+					state = 221
+					state = 197
+					state = 192
+					state = 834
+					state = 225
+					state = 226
+				}
+			}
 			if = {
 				limit = {
-					has_completed_focus = POL_respect_ruthenian_nations
+					POL = {
+						has_completed_focus = POL_polonize_kresy
+					}
 				}
-				add_ideas = POL_RUT_cooperation
+				add_dynamic_modifier = {
+					modifier = POL_polonization
+				}
 			}
-		}
-		194 = {
-			add_core_of = UKR
-		}
-		241 = {
-			add_core_of = UKR
+			if = {
+				limit = {
+					POL = {
+						has_completed_focus = POL_respect_ruthenian_nations
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = POL_multiculturalism
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						is_core_of = UKR
+					}
+				}
+				add_core_of = UKR
+			}
 		}
 		POL = {
 			set_autonomy = {
@@ -3714,22 +3745,35 @@ country_event = {##POL decides what to do with eastern borderlands (PLC path)
 		}
 		set_country_flag = POL_plc_created_grand_duchy_of_ruthenia
 		set_country_flag = POL_plc_annexed_northern_blr
-		if = {
+		every_state = {
 			limit = {
-				has_completed_focus = POL_respect_ruthenian_nations
+				OR = {
+					state = 204
+					state = 206
+					state = 764
+					state = 207
+				}
 			}
-			add_ideas = POL_RUT_cooperation
-		}
-		204 = {
-			add_core_of = POL
-		}
-		206 = {
-			add_core_of = POL
-		}
-		764 = {
-			add_core_of = POL
-		}
-		207 = {
+			if = {
+				limit = {
+					POL = {
+						has_completed_focus = POL_polonize_kresy
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = POL_polonization
+				}
+			}
+			if = {
+				limit = {
+					POL = {
+						has_completed_focus = POL_respect_ruthenian_nations
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = POL_multiculturalism
+				}
+			}
 			add_core_of = POL
 		}
 		UKR = {
@@ -3754,7 +3798,7 @@ country_event = {##POL decides what to do with eastern borderlands (PLC path)
 			create_country_leader = {
 				name = "Henryk Józewski"
 				desc = henryk_jozewski_desc
-				picture = "gfx/leaders/LIT/portrait_UKR_henryk_jozewski.dds"
+				picture = "gfx/leaders/UKR/portrait_UKR_henryk_jozewski.dds"
 				expire = "1965.1.1"
 				ideology = reactionary_ideology
 				traits = {
@@ -3780,18 +3824,55 @@ country_event = {##POL decides what to do with eastern borderlands (PLC path)
 				}
 				add_ideas = UKR_polonization_of_ruthenia
 			}
+		}
+		every_state = {
+			limit = {
+				OR = {
+					state = 194
+					state = 241
+					state = 201
+					state = 199
+					state = 198
+					state = 193
+					state = 259
+					state = 202
+					state = 203
+					state = 221
+					state = 197
+					state = 192
+					state = 834
+					state = 225
+					state = 226
+				}
+			}
 			if = {
 				limit = {
-					has_completed_focus = POL_respect_ruthenian_nations
+					POL = {
+						has_completed_focus = POL_polonize_kresy
+					}
 				}
-				add_ideas = POL_RUT_cooperation
+				add_dynamic_modifier = {
+					modifier = POL_polonization
+				}
 			}
-		}
-		194 = {
-			add_core_of = UKR
-		}
-		241 = {
-			add_core_of = UKR
+			if = {
+				limit = {
+					POL = {
+						has_completed_focus = POL_respect_ruthenian_nations
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = POL_multiculturalism
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						is_core_of = UKR
+					}
+				}
+				add_core_of = UKR
+			}
 		}
 		POL = {
 			set_autonomy = {
@@ -10787,5 +10868,141 @@ news_event = {#Wettins reform HRE
 	is_triggered_only = yes
 	option = {
 		name = deluge_poland_foreign.111.a
+	}
+}
+country_event = {##controller of state 542 (Bechualand) is asked by POL to let POL make an investigation
+	id = deluge_poland_foreign.112
+	title = deluge_poland_foreign.112.t
+	desc = deluge_poland_foreign.112.d
+	picture = GFX_report_event_south_african_chicken_farm
+	is_triggered_only = yes
+	option = {##agree
+		name = deluge_poland_foreign.112.a
+		hidden_effect = {
+			POL = {
+				country_event = {
+					id = deluge_poland_foreign.113
+				}
+			}
+			set_global_flag = POL_can_investigate_south_africa
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+		}
+	}
+	option = {##disagree
+		name = deluge_poland_foreign.112.b
+		hidden_effect = {
+			POL = {
+				country_event = {
+					id = deluge_poland_foreign.113
+				}
+			}
+			set_global_flag = POL_can_investigate_south_africa
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+		}
+	}
+}
+country_event = {##this event for POL can have 3 meanings:
+	#1. Controller of 542 (Bechualand) disagreed for Poland's request
+	#2. Controller of 542 (Bechualand) agreed for Poland's request
+	#3. Poland controlls 542 (Bechualand) and deals with Mafia by herself
+	id = deluge_poland_foreign.113
+	title = deluge_poland_foreign.113.t
+	desc = {
+		text = deluge_poland.113.d1
+		trigger = {
+			POL = {
+				NOT = {
+					controlls = 542
+				}
+			}
+		}
+	}
+	desc = {
+		text = deluge_poland.113.d2
+		trigger = {
+			POL = {
+				NOT = {
+					controlls = 542
+				}
+			}
+			has_global_flag = POL_can_investigate_south_africa
+		}
+	}
+	desc = {
+		text = deluge_poland.113.d3
+		trigger = {
+			POL = {
+				controlls = 542
+			}
+		}
+	}
+	picture = GFX_report_event_south_african_chicken_farm
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland_foreign.113.a
+		hidden_effect = {
+			POL = {
+				country_event = {
+					id = deluge_poland_foreign.114
+					days = 100
+				}
+			}
+		}
+		custom_effect_tooltip = POL_custom_effect_tooltip_162
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+country_event = {##investigation is finished
+	id = deluge_poland_foreign.114
+	title = deluge_poland_foreign.114.t
+	desc = deluge_poland_foreign.114.d
+	picture = GFX_report_event_karol_and_izabella_radziwill
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland_foreign.113.a
+		POL = {
+			remove_trait = {
+				character = POL_deluge_izabella_roza_radziwillowna
+				ideology = bonapartist_ideology
+				trait = weak_claim
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
 	}
 }

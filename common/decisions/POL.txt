@@ -15622,4 +15622,176 @@ royal_affairs_decisions_category = {
 			}
 		}
 	}
+	bribe_parliamentarians = {
+		icon = GFX_decision_generic_welfare
+		available = {
+			
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = POL_piast_riedelski_wins
+		}
+		cost = 30
+		days_remove = 40
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		remove_effect = {
+			add_political_power = 40
+			add_stability = -0.02
+			set_country_flag = POL_pawel_bribed_politicians
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
+		}
+	}
+	rally_far_right = {
+		icon = GFX_decision_eng_blackshirt_march
+		available = {
+			
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = POL_piast_riedelski_wins
+		}
+		cost = 50
+		days_remove = 50
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_war_support = 0.05
+			set_country_flag = POL_pawel_rallied_right
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
+		}
+	}
+	take_absolute_control = {
+		icon = GFX_decision_generic_break_treaty
+		available = {
+			has_country_flag = POL_pawel_bribed_politicians
+			has_country_flag = POL_pawel_rallied_right
+			NOT = {
+				has_completed_focus = POL_king_only_figurehead
+			}
+			has_completed_focus = POL_only_nobility_in_the_parlament
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = POL_piast_riedelski_wins
+			has_character = POL_deluge_pawel_salwator_piast_riedelski
+		}
+		cost = 70
+		days_remove = 15
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_trait = {
+				character = POL_deluge_pawel_salwator_piast_riedelski
+				ideology = bonapartist_ideology
+				trait = FRA_the_dictator
+			}
+			set_country_flag = POL_pawel_took_absolute_power
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
+		}
+	}
+	deal_with_poultry_mafia = {
+		icon = GFX_decision_generic_arrest
+		available = {
+			OR = {
+				controls_state = 542
+				542 = {
+					controller = {
+						is_subject_of = POL
+					}
+				}
+				542 = {
+					controller = {
+						is_in_faction_with = POL
+					}
+				}
+				542 = {
+					controller = {
+						has_opinion = { target = POL value > 39 }
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = POL_radziwill_wins
+		}
+		cost = 30
+		days_remove = 20
+		modifier = {
+			
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					OR = {
+						POL = {
+							controls_state = 542
+						}
+						542 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				POL = {
+					country_event = {
+						id = deluge_poland_foreign.113
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						542 = {
+							controller = {
+								is_in_faction_with = POL
+							}
+						}
+						542 = {
+							controller = {
+								has_opinion = { target = POL value > 39 }
+							}
+						}
+					}
+				}
+				542 = {
+					controller = {
+						country_event = {
+							id = deluge_poland_foreign.112
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
+		}
+	}
 }

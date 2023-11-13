@@ -10,7 +10,6 @@ characters={
 			desc="POLITICS_SALVADOR_ABASCAL_DESC"
 			ideology=corporatist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	MEX_heliodoro_charis={
@@ -30,7 +29,6 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=2
-			legacy_id=700
 		}
 	}
 	MEX_luis_farell={
@@ -50,20 +48,18 @@ characters={
 			defense_skill=1
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=701
 		}
 	}
-	MEX_antonio_lópez_iv={
-		name="Antonio López IV"
+	MEX_maria_josepha_sophia_de_iturbide={
+		name="Maria Josepha Sophia de Iturbide"
 		portraits={
 			civilian={
-				large="gfx/leaders/MEX/mexican_general.dds"
+				large="gfx/leaders/MEX/portrait_MEX_maria_josepha_sophia_de_iturbide.dds"
 			}
 		}
 		country_leader={
 			ideology=bonapartist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	MEX_Álvaro_obregón={
@@ -76,7 +72,6 @@ characters={
 		country_leader={
 			ideology=liberal_republican_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	MEX_pancho_villa={
@@ -89,7 +84,6 @@ characters={
 		country_leader={
 			ideology=anarchist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	MEX_gildardo_magaña={
@@ -109,7 +103,6 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-			legacy_id=702
 		}
 	}
 	MEX_manuel_pérez_treviño={
@@ -129,7 +122,6 @@ characters={
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=703
 		}
 	}
 	MEX_abelardo_l._rodríguez={
@@ -149,7 +141,6 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=2
-			legacy_id=704
 		}
 	}
 	MEX_manuel_Ávila_camacho={
@@ -169,7 +160,6 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-			legacy_id=705
 		}
 	}
 	MEX_othón_p._blanco_núñez_de_cáceres={
@@ -189,7 +179,6 @@ characters={
 			defense_skill=1
 			maneuvering_skill=1
 			coordination_skill=1
-			legacy_id=706
 		}
 	}
 	MEX_heriberto_jara_corona={
@@ -209,7 +198,6 @@ characters={
 			defense_skill=1
 			maneuvering_skill=1
 			coordination_skill=1
-			legacy_id=707
 		}
 	}
 }

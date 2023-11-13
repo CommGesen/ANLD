@@ -25,25 +25,27 @@ create_import = {
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1932.6.5"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 30
-	fascism = 20
+	democratic = 60
+	fascism = 15
 	communism = 10
-	neutrality = 40
+	neutrality = 15
 }
 	
 add_ideas = {
+	restricted
 	deluge_native_independence_idea
 	extensive_conscription
 	partial_economic_mobilisation
 	floating_exchange
 }
+recruit_character = CSC_felipe_carrillo_puerto
 recruit_character = CSC_juan_josé_arévalo_bermejo
 recruit_character = CSC_emiliano_zapata
 recruit_character = CSC_josé_gonzález_beytia

@@ -10,20 +10,27 @@ characters={
 			desc="POLITICS_EDWIN_BARCLAY_DESC"
 			ideology=constitutionalist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
-	LIB_siaka_i={
-		name="Siaka I"
+	LIB_pierpont_morgan_hamilton={
+		name="Pierpont I"
 		portraits={
 			civilian={
-				large="gfx/leaders/LIB/brigadier_Siaka_stevens.dds"
+				large="gfx/leaders/LIB/portrait_LIB_pierpont_morgan_hamilton.dds"
 			}
 		}
 		country_leader={
 			ideology=bonapartist_ideology
 			expire="1965.1.1.1"
-			id=-1
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			desc = "LIB_pierpont_morgan_hamilton_desc"
 		}
 	}
 	LIB_archbishop_michael_francis={
@@ -36,7 +43,6 @@ characters={
 		country_leader={
 			ideology=religious_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	LIB_sam_bockarie={
@@ -49,7 +55,6 @@ characters={
 		country_leader={
 			ideology=jacobin_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 }
