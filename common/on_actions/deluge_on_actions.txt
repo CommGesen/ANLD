@@ -1418,6 +1418,80 @@ on_actions = {
 			}
 		}
 	}
+	on_weekly_POL = {
+		effect = {
+			if = {
+				limit = {
+					POL = {
+						is_subject = yes
+					}
+				}
+				POL = {
+					add_country_leader_role = {
+						character = POL_deluge_swietlicki
+						promote_leader = yes
+						country_leader = {
+							ideology = social_darwinist_ideology
+							expire = "1965.1.1.1"
+							traits = {}
+						}
+					}
+					add_country_leader_role = {
+						character = POL_deluge_boleslaw_bierut
+						promote_leader = yes
+						country_leader = {
+							ideology = jacobin_ideology
+							expire = "1965.1.1.1"
+							traits = {}
+						}
+					}
+					add_country_leader_role = {
+						character = POL_deluge_wladyslaw_studnicki
+						promote_leader = yes
+						country_leader = {
+							ideology = reactionary_ideology
+							expire = "1965.1.1.1"
+							traits = {}
+						}
+					}
+					add_country_leader_role = {
+						character = POL_deluge_wlodzimierz_marszewski
+						promote_leader = yes
+						country_leader = {
+							ideology = constitutionalist_ideology
+							expire = "1965.1.1.1"
+							traits = {exiled_national_democrat}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					POL = {
+						is_subject = no
+					}
+				}
+				POL = {
+					remove_country_leader_role = {
+						character = POL_deluge_swietlicki
+						ideology = social_darwinist_ideology
+					}
+					remove_country_leader_role = {
+						character = POL_deluge_boleslaw_bierut
+						ideology = jacobin_ideology
+					}
+					remove_country_leader_role = {
+						character = POL_deluge_wladyslaw_studnicki
+						ideology = reactionary_ideology
+					}
+					remove_country_leader_role = {
+						character = POL_deluge_wlodzimierz_marszewski
+						ideology = constitutionalist_ideology
+					}
+				}
+			}
+		}
+	}
 	on_leave_faction = {
 		effect = {
 			if = {##conseqences of leaving Polish european cooperation

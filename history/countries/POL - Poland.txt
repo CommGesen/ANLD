@@ -45,6 +45,8 @@ set_technology = {
 	fuel_silos = 1
 	synth_oil_experiments = 1
 	basic_train = 1
+	tech_trucks = 1
+	motorised_infantry = 1
 }
 
 if = {
@@ -477,7 +479,6 @@ recruit_character = POL_deluge_julian_leszczynski
 
 recruit_character = POL_deluge_maria_koszutska
 recruit_character = POL_deluge_czeslaw_chmielewski
-recruit_character = POL_deluge_wanda_wasilewska
 recruit_character = POL_deluge_karol_popiel
 
 recruit_character = POL_deluge_adam_chadzynski
@@ -505,4 +506,5 @@ recruit_character = POL_deluge_wladyslaw_studnicki
 recruit_character = POL_deluge_edward_gierek
 recruit_character = POL_deluge_andrassy_sandor
 recruit_character = POL_deluge_sejm
-recruit_character = POL_deluge_ernest_henryk_wettyn
+recruit_character = POL_deluge_wlodzimierz_marszewski
+

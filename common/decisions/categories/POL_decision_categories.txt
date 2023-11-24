@@ -833,15 +833,14 @@ royal_affairs_decisions_category = {
 	priority = 2
 	allowed = {
 		original_tag = POL
+	}
+	visible = {
 		OR = {
 			has_completed_focus = POL_tyszkiewicz_wins
 			has_completed_focus = POL_czartoryski_wins
 			has_completed_focus = POL_radziwill_wins
 			has_completed_focus = POL_piast_riedelski_wins
 		}
-	}
-	visible = {
-		
 	}
 	visible_when_empty = no
 }

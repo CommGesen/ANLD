@@ -110,13 +110,13 @@ characters={
 		name = POL_Character_deluge_Sikorski
 		portraits = {
 			civilian = {
-				#large="gfx/leaders/POL/Sikorski_picture.dds"
-				large = "GFX_portrait_POL_wladyslaw_sikorski"
+				large="gfx/leaders/POL/portrait_POL_wladyslaw_sikorski.dds"
+				#large = "GFX_portrait_POL_wladyslaw_sikorski"
 				small = GFX_wladyslaw_sikorski_picture_small
 			}
 			army = {
-				#large="gfx/leaders/POL/Sikorski_picture.dds"
-				large = "GFX_portrait_POL_wladyslaw_sikorski"
+				large="gfx/leaders/POL/portrait_POL_wladyslaw_sikorski.dds"
+				#large = "GFX_portrait_POL_wladyslaw_sikorski"
 				small = GFX_wladyslaw_sikorski_picture_small
 			}
 		}
@@ -184,6 +184,14 @@ characters={
 				dislikes_germany_deluge
 			}
 			desc = "POL_deluge_Dmowski_desc"
+		}
+	}
+	POL_deluge_wlodzimierz_marszewski = {##Włodzimierz Marszewski - exiled ND leader for collaboration Poland
+		name = POL_Character_deluge_wlodzimierz_marszewski
+		portraits={
+			civilian={
+				large = "gfx/leaders/POL/portrait_POL_wlodzimierz_marszewski.dds"
+			}
 		}
 	}
 	POL_deluge_slawek = {##Walery Sławek
@@ -404,6 +412,18 @@ characters={
 			civilian={ 
 				large="gfx/leaders/POL/portrait_POL_ernest_wettyn"
 			}
+			army={
+				large="gfx/leaders/POL/portrait_POL_ernest_wettyn"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer infantry_expert infantry_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			desc = "POL_deluge_ernest_henryk_wettyn_desc"
 		}
 	}
 	POL_deluge_izabella_roza_radziwillowna = {##Izabella Róża Radziwiłłówna
@@ -2749,9 +2769,11 @@ characters={
 		portraits={
 			civilian={
 				small=GFX_andrzej_swietlicki_picture_small
+				large="gfx/leaders/POL/portrait_POL_andrzej_swietlicki.dds"
 			}
 			army={
 				small=GFX_andrzej_swietlicki_picture_small
+				large="gfx/leaders/POL/portrait_POL_andrzej_swietlicki.dds"
 			}
 		}
 		advisor={
@@ -3919,9 +3941,11 @@ characters={
 		portraits={
 			civilian={
 				small=GFX_wladyslaw_gimbert_studniecki_picture_small
+				large="gfx/leaders/POL/portrait_POL_wladyslaw_studnicki.dds"
 			}
 			army={
 				small=GFX_wladyslaw_gimbert_studniecki_picture_small
+				large="gfx/leaders/POL/portrait_POL_wladyslaw_studnicki.dds"
 			}
 		}
 		advisor={
@@ -3948,14 +3972,6 @@ characters={
 			}
 			ai_will_do = { factor = 1.0 }
 			ledger = civilian
-		}
-		country_leader = {
-			ideology = bonapartist_ideology
-			expire = "1969.1.1.1"
-			traits = {
-				
-			}
-			desc = "POL_deluge_wladyslaw_studnicki_desc"
 		}
 	}
 	##COMMUNISTS:
@@ -4285,6 +4301,15 @@ characters={
 			}
 			ai_will_do = { factor = 1.0 }
 			ledger = civilian
+		}
+		corps_commander = {
+			traits = { infantry_officer infantry_expert infantry_leader }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			desc = "POL_deluge_wanda_wasilewska_desc"
 		}
 	}
 	POL_deluge_karol_radek = {##Karol Radek/Karol Sobelsohn
@@ -4820,14 +4845,6 @@ characters={
 				large = "gfx/leaders/POL/portrait_POL_boleslaw_bierut.dds"
 				small = GFX_boleslaw_bierut_picture_small
 			}
-		}
-		country_leader = {
-			ideology = jacobin_ideology
-			expire = "1969.1.1.1"
-			traits = {
-				
-			}
-			desc = "POL_deluge_boleslaw_bierut_desc"
 		}
 	}
 	POL_deluge_pkwn = {##Polski Komitet Wyzwolenia Narodowego - PKWN - Polish Committee of National Liberation

@@ -2021,8 +2021,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_zadruga_idea_icon"
-		texturefile = "gfx/interface/ideas/spirits/zadruga_idea_icon.dds"
+		name = "GFX_idea_spirit_zadruga"
+		texturefile = "gfx/interface/ideas/spirits/spirit_zadruga.dds"
 	}
 	
 	spriteType = {
@@ -2261,13 +2261,13 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_Banner_of_1st_Polish_Legion_in_Italy_idea"
-		texturefile = "gfx/interface/ideas/spirits/Banner_of_1st_Polish_Legion_in_Italy_idea.dds"
+		name = "GFX_idea_spirit_polish_legions_in_italy"
+		texturefile = "gfx/interface/ideas/spirits/spirit_polish_legions_in_italy.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_idea_vatican_dissatisfied_idea"
-		texturefile = "gfx/interface/ideas/spirits/vatican_dissatisfied.dds"
+		name = "GFX_idea_spirit_papal_relations"
+		texturefile = "gfx/interface/ideas/spirits/spirit_papal_relations.dds"
 	}
 
 	spriteType = {
@@ -2484,8 +2484,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/designers/hsw.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_synthetic_rubber"
-		texturefile = "gfx/interface/ideas/spirits/synthetic_rubber.dds"
+		name = "GFX_idea_spirit_synthetic_rubber"
+		texturefile = "gfx/interface/ideas/spirits/spirit_synthetic_rubber.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_POL_plan_w"
@@ -2508,12 +2508,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/spirits/idea_new_five_year_plan.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_decadency_at_its_fullest"
-		texturefile = "gfx/interface/ideas/spirits/idea_decadency_at_its_fullest.dds"
+		name = "GFX_idea_spirit_decadency"
+		texturefile = "gfx/interface/ideas/spirits/spirit_decadency.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_flag_of_workers_brigades"
-		texturefile = "gfx/interface/ideas/spirits/flag_of_workers_brigades.dds"
+		name = "GFX_idea_spirit_flag_of_workers_brigades"
+		texturefile = "gfx/interface/ideas/spirits/spirit_flag_of_workers_brigades.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_New_Marshall_idea"
@@ -2674,5 +2674,33 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_wladyslaw_obrebski_picture_small"
 		texturefile = "gfx/interface/ideas/characters/wladyslaw_obrebski_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_falanga"
+		texturefile = "gfx/interface/ideas/spirits/spirit_falanga.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_OZN"
+		texturefile = "gfx/interface/ideas/spirits/spirit_OZN.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_PLC_restoration_issues"
+		texturefile = "gfx/interface/ideas/spirits/spirit_PLC_restoration_issues.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_POL_FRA_cooperation"
+		texturefile = "gfx/interface/ideas/spirits/spirit_POL_FRA_cooperation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_PNS"
+		texturefile = "gfx/interface/ideas/spirits/spirit_PNS.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_SCh"
+		texturefile = "gfx/interface/ideas/spirits/spirit_SCh.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_secret_societies_disbanded"
+		texturefile = "gfx/interface/ideas/spirits/spirit_secret_societies_disbanded.dds"
 	}
 }

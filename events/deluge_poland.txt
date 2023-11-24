@@ -10933,10 +10933,7 @@ country_event = {##controller of state 542 (Bechualand) is asked by POL to let P
 		}
 	}
 }
-country_event = {##this event for POL can have 3 meanings:
-	#1. Controller of 542 (Bechualand) disagreed for Poland's request
-	#2. Controller of 542 (Bechualand) agreed for Poland's request
-	#3. Poland controlls 542 (Bechualand) and deals with Mafia by herself
+country_event = {##this event for POL can have 3 meanings: 1. Controller of 542 (Bechualand) disagreed for Poland's request 2. Controller of 542 (Bechualand) agreed for Poland's request 3. Poland controlls 542 (Bechualand) and deals with Mafia by herself
 	id = deluge_poland_foreign.113
 	title = deluge_poland_foreign.113.t
 	desc = {
@@ -10972,6 +10969,21 @@ country_event = {##this event for POL can have 3 meanings:
 	is_triggered_only = yes
 	option = {
 		name = deluge_poland_foreign.113.a
+		trigger = {
+			OR = {
+				POL = {
+					controlls = 542
+				}
+				AND = {
+					POL = {
+						NOT = {
+							controlls = 542
+						}
+					}
+					has_global_flag = POL_can_investigate_south_africa
+				}
+			}
+		}
 		hidden_effect = {
 			POL = {
 				country_event = {
@@ -10981,6 +10993,19 @@ country_event = {##this event for POL can have 3 meanings:
 			}
 		}
 		custom_effect_tooltip = POL_custom_effect_tooltip_162
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = deluge_poland_foreign.113.b
+		trigger = {
+			POL = {
+				NOT = {
+					controlls = 542
+				}
+			}
+		}
 		ai_chance = {
 			base = 10
 		}

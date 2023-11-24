@@ -1173,4 +1173,10 @@ leader_traits = {
 		stability_factor = 0.05
 		army_core_defence_factor = 0.05
 	}
+	exiled_national_democrat = {
+		random = no
+		autonomy_gain = 0.04
+		stability_factor = 0.03
+		political_power_factor = 0.03
+	}
 }

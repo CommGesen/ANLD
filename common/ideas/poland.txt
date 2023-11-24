@@ -856,7 +856,7 @@ ideas = {
 			}
 		}
 		secret_societies_disbanded = {
-			picture = ast_abandon_the_westminster_system
+			picture = spirit_secret_societies_disbanded
 			allowed = {
 				tag = POL
 			}
@@ -1983,7 +1983,7 @@ ideas = {
 			}
 		}
 		POL_legacy_of_polish_legions_in_italy = {
-			picture = Banner_of_1st_Polish_Legion_in_Italy_idea
+			picture = spirit_polish_legions_in_italy
 			allowed = {
 				tag = POL
 			}
@@ -2004,7 +2004,7 @@ ideas = {
 			}
 		}
 		POL_legacy_of_polish_legions_in_italy_2 = {
-			picture = Banner_of_1st_Polish_Legion_in_Italy_idea
+			picture = spirit_polish_legions_in_italy
 			allowed = {
 				tag = POL
 			}
@@ -2257,7 +2257,7 @@ ideas = {
 			}
 		}
 		POL_vatican_dissatisfied = {
-			picture = vatican_dissatisfied_idea
+			picture = spirit_papal_relations
 			allowed = {
 				tag = POL
 			}
@@ -2278,7 +2278,7 @@ ideas = {
 			}
 		}
 		hated_by_catholic_world = {
-			picture = vatican_dissatisfied_idea
+			picture = spirit_papal_relations
 			allowed = {
 				tag = POL
 			}
@@ -2299,7 +2299,7 @@ ideas = {
 			}
 		}
 		member_of_new_polish_church = {
-			picture = vatican_dissatisfied_idea
+			picture = spirit_papal_relations
 			allowed = {
 				tag = POL
 			}
@@ -2599,7 +2599,7 @@ ideas = {
 			}
 		}
 		POL_SCh_influence = {
-			picture = generic_agrarian_reform ##change it later for our icon
+			picture = spirit_SCh
 			allowed = {
 				tag = POL
 			}
@@ -2644,7 +2644,7 @@ ideas = {
 			}
 		}
 		POL_national_radicals_in_government = {
-			picture = hol_haven_of_tolerance ##change it later for our icon
+			picture = spirit_PNS
 			allowed = {
 				tag = POL
 			}
@@ -3266,7 +3266,7 @@ ideas = {
 			}
 		}
 		restoration_issues = {
-			picture = FRA_matignon_agreements ##change later to something ours
+			picture = spirit_PLC_restoration_issues
 			allowed = {
 				tag = POL
 			}
@@ -3347,7 +3347,7 @@ ideas = {
 			}
 		}
 		POL_FRA_cooperation = {
-			picture = SPR_political_violence #change it to something ours
+			picture = spirit_POL_FRA_cooperation
 			allowed = {
 				tag = POL
 			}
@@ -3852,7 +3852,7 @@ ideas = {
 			}
 		}
 		dwl = {
-			picture = generic_air_manufacturer_3
+			picture = lwd
 			allowed = {
 				original_tag = POL
 			}
@@ -3932,11 +3932,35 @@ ideas = {
 				original_tag = POL
 			}
 			available = {
-				has_idea = ursus_tanks
-				has_idea = ursus_vehicles
-				has_idea = ursus_artilery
-				has_idea = ursus_guns
-				has_idea = ursus_ships
+				if = {
+					limit = {
+						has_aat = yes
+					}
+					deluge_POL_ursus_tanks_organization = {
+						has_mio_size > 4
+					}
+					deluge_POL_ursus_ships_organization = {
+						has_mio_size > 4
+					}
+					deluge_POL_ursus_planes_organization = {
+						has_mio_size > 4
+					}
+					deluge_POL_ursus_vehicles_organization = {
+						has_mio_size > 4
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_aat = yes
+						}
+					}
+					has_idea = ursus_tanks
+					has_idea = ursus_vehicles
+					has_idea = ursus_artilery
+					has_idea = ursus_guns
+					has_idea = ursus_ships
+				}
 				has_completed_focus = POL_support_ursus
 			}
 			research_bonus = {
