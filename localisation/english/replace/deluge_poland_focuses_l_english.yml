@@ -510,8 +510,8 @@
  POL_ties_with_windsors_desc:0 "Apart from the fact that Poland and Great Britain fought on the same side during the Great War, the Windsors are just another branch of the Wettyns. It is obvious that our destinies are connected historically, so we are obliged to offer them the hand of friendship."
  POL_direction_towards_west:0 "The Look to the West"
  POL_direction_towards_west_desc:0 "The so-called Pomerania is part of the lands taken from us after the Great War. We must focus on the return of these territories. The whole east of Germany rightfully belongs to Poland, because before the Wendish Crusade there lived many Slavic tribes who spoke the Lechitic language — an ancient version of Polish."
- POL_reverse_ostsiedlung:0 "Reverse Ostsiedlung"
- POL_reverse_ostsiedlung_desc:0 "Ostsiedlung is a German term meaning the German colonization of eastern territories, including Slavic, Baltic, Hungarian and Romanian lands. Now the main priority should be to reverse this process on the lands of the ancestors of our kind."
+ POL_reverse_ostsiedlung:0 "Reverse Settlement to the East"
+ POL_reverse_ostsiedlung_desc:0 "Settlement to the East is a German term meaning the German colonization of eastern territories, including Slavic, Baltic, Hungarian and Romanian lands. Now the main priority should be to reverse this process on the lands of the ancestors of our kind."
  POL_develop_eastern_germany:0 "Development of the New West"
  POL_develop_eastern_germany_desc:0 "With the exception of Berlin, all our new Western voivodeships are not so rich in every sense. The traumas caused by the Great War and the German Civil War will remain there for a long time, so we must pay special attention to the development of these regions."
  POL_accept_the_germans:0 "Reconciliation"
@@ -605,7 +605,7 @@
  POL_encourage_imigration_desc:0 "After we extinguish the fire of nationalism, and everyone in Poland will treat each other as equals, we will even be able to encourage immigration to the country. This will increase the workforce pool, so we will be able to manage human resources more boldly than before."
  POL_economy_controlled_by_synarch:0 "Synarchic Vision"
  POL_economy_controlled_by_synarch_desc:0 "The capitalist system is often unpredictable and in moments of failures leads to the suffering of both ordinary people and owners. We must allow the synarch to take control of the Polish market and, if anything happens, crush the impending crisis, so as not to get another Great Depression."
- POL_cut_off_greedy_nobility:0 "Remove Corrupted Nobility from Power"
+ POL_cut_off_greedy_nobility:0 "Remove the Corrupt Nobility"
  POL_cut_off_greedy_nobility_desc:0 "Many nobles are greedy, they put themselves above the fatherland and society. They use the treasury for their own selfish interests and consider the state only as a fodder base. It is necessary to demonstratively take care of several particularly important persons of the nobility for the edification of others."
  POL_disband_parlament:0 "Dissolution of Parliament"
  POL_disband_parlament_desc:0 "Now that we have gained full power, the parliament, consisting of the nobility and other parasitic intermediaries, has lost its relevance and no longer plays any role. Now the Synarchic Union and the synarch of Poland have the necessary power to lead our kingdom to greatness."
@@ -757,6 +757,10 @@
  
  ###MILITARY TREE###
  
+ POL_league_ratification:0 "Ratification of International Conventions"
+ POL_league_ratification_desc:0 "In the name of disarmament and the prevention of hostilities, the Member States of the League of Nations voted on the conventions, and now we can begin to implement the adopted proposals."
+ POL_league_leave:0 "Leave the League of Nations"
+ POL_league_leave_desc:0 "Perhaps it was too utopian to think that we would be able to resolve differences through diplomatic negotiations when an atmosphere of distrust and neglect reigns around our country. We must end our membership in the League of Nations."
  POL_divide_and_conquer:0 "Show Ourselves"
  POL_divide_and_conquer_desc:0 "It is impossible not to pay attention to what is happening around us. Poland does not exist in a vacuum, and it has the right to influence the world around us as well as all other countries. We must confidently declare our position on the world stage or we will simply not be taken into account."
  POL_rising_of_central_powers:0 "Dawn Over Visegrád"
@@ -1006,10 +1010,3 @@
  POL_help_debica_tire_company_desc:0 "Our young manufacturing industry needs support. Having our own tyre company will bring us more income and help us produce cars. The town of Dębica is a good place to start."
  POL_introudce_polish_zloty:0 "Polish Złoty"
  POL_introudce_polish_zloty_desc:0 "As our economy is slowly turning into a bull market, the Polish monetary system is in dire need of reform. The Polish franc, which had been used since the end of the Napoleonic Wars, became less reliable with the beginning of the Great War. By establishing a national currency, we will be able to get rid of the threat of another inflationary crisis."
- 
- ##League of Nations##
- POL_league_ratification:0 "League of Nations Ratification"
- POL_league_ratification_desc:0 "The member states have voted on the Conventions and we can now begin implementing the proposals which passed."
- POL_league_leave:0 "Leave the League of Nations"
- POL_league_leave_desc:0 "Perhaps it was too utopian to think we could settle our differences when surrounded by such hateful enemies. We should end our participation in the League of Nations."
- 
