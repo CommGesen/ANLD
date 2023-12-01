@@ -1,0 +1,78 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ideology_monarchist_group"
+		texturefile = "gfx/interface/ideologies/neutrality_group.dds"
+	}	
+	spriteType = {
+		name = "GFX_ideology_communism_group"
+		texturefile = "gfx/interface/ideologies/communism_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_fascism_group"
+		texturefile = "gfx/interface/ideologies/fascism_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_democratic_group"
+		texturefile = "gfx/interface/ideologies/democratic_group.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_universal"
+		texturefile = "gfx/interface/ideas/generic/idea_voting_red_rosette.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_restricted"
+		texturefile = "gfx/interface/ideas/generic/idea_voting_blue_rosette.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_landed"
+		texturefile = "gfx/interface/ideas/generic/idea_voting_purple_rosette.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_novote"
+		texturefile = "gfx/interface/ideas/generic/idea_voting_black_rosette.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_voting_locked"
+		texturefile = "gfx/interface/ideas/generic/idea_voting_locked.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gold_standard"
+		texturefile = "gfx/interface/ideas/generic/idea_money_gold_standard.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fixed_exchange"
+		texturefile = "gfx/interface/ideas/generic/idea_money_fixed_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_floating_exchange"
+		texturefile = "gfx/interface/ideas/generic/idea_money_floating_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_printing"
+		texturefile = "gfx/interface/ideas/generic/idea_money_printing.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_money_locked"
+		texturefile = "gfx/interface/ideas/generic/idea_money_locked.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_welfare_state"
+		texturefile = "gfx/interface/ideas/generic/idea_order_welfare_state.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_robber_barons"
+		texturefile = "gfx/interface/ideas/generic/idea_order_robber_barons.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_established_religion"
+		texturefile = "gfx/interface/ideas/generic/idea_order_established_religion.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_labour_camps"
+		texturefile = "gfx/interface/ideas/generic/idea_order_labour_camps.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_order_locked"
+		texturefile = "gfx/interface/ideas/generic/idea_order_locked.dds"
+	}
+}

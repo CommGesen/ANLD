@@ -6541,7 +6541,7 @@ focus_tree = {
 		prerequisite = { focus = POL_new_foreign_policy }
 		relative_position_id = POL_new_foreign_policy
 		search_filters = {FOCUS_FILTER_FOREIGN_AFFAIRS}
-		mutually_exclusive = {focus = POL_european_cooperation_focus focus = POL_new_revolution }
+		mutually_exclusive = {focus = POL_european_cooperation_focus focus = POL_new_revolution focus = POL_royal_foreign_policy}
 		cost = 10
 		available = {
 			OR = {
@@ -6581,8 +6581,13 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = POL_new_foreign_policy }
 		relative_position_id = POL_new_foreign_policy
-		mutually_exclusive = {focus = POL_new_revanchist_policy focus = POL_new_revolution }
+		mutually_exclusive = {focus = POL_new_revanchist_policy focus = POL_new_revolution focus = POL_royal_foreign_policy}
 		search_filters = {FOCUS_FILTER_FOREIGN_AFFAIRS}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = POL_monarchists_take_power
+			}
+		}
 		cost = 10
 		available = {
 			OR = {
@@ -6590,7 +6595,6 @@ focus_tree = {
 				has_completed_focus = POL_PPS_wins
 				has_completed_focus = POL_NSP_wins
 				has_completed_focus = POL_PKWN_wins
-				has_completed_focus = POL_monarchists_take_power
 			}
 		}
 		completion_reward = {
@@ -6628,6 +6632,35 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
+		id = POL_royal_foreign_policy
+		icon = GFX_focus_NORDIC_mon_selector_airforce
+		x = 1
+		y = 1
+		prerequisite = { focus = POL_new_foreign_policy }
+		relative_position_id = POL_new_foreign_policy
+		mutually_exclusive = {focus = POL_new_revanchist_policy focus = POL_new_revolution focus = POL_european_cooperation_focus }
+		search_filters = {FOCUS_FILTER_FOREIGN_AFFAIRS}
+		allow_branch = {
+			has_completed_focus = POL_monarchists_take_power
+		}
+		cost = 5
+		available = {
+			has_completed_focus = POL_monarchists_take_power
+		}
+		completion_reward = {
+			add_ideas = royal_foreign_policy
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
 		id = POL_new_revolution
 		icon = GFX_focus_SOV_proclaim_soviet_hegemony
 		x = 3
@@ -6635,7 +6668,7 @@ focus_tree = {
 		prerequisite = { focus = POL_new_foreign_policy }
 		prerequisite = { focus = POL_legacy_of_polish_legions_in_lombardy }
 		relative_position_id = POL_new_foreign_policy
-		mutually_exclusive = {focus = POL_new_revanchist_policy focus = POL_european_cooperation_focus }
+		mutually_exclusive = {focus = POL_new_revanchist_policy focus = POL_european_cooperation_focus focus = POL_royal_foreign_policy}
 		search_filters = {FOCUS_FILTER_FOREIGN_AFFAIRS}
 		cost = 10
 		available = {

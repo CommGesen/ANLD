@@ -167,6 +167,10 @@ country_event = {##fascist Hungary
 			ideology = social_darwinist_ideology
 			trait = holy_regent
 		}
+		set_portraits = {
+			character = HUN_deluge_gombos
+			civilian = { large ="GFX_portrait_HUN_gyula_gombos_regent" }
+		}
 		promote_character = HUN_deluge_gombos
 		set_country_flag = HUN_gombos_royal_regent
 		add_ideas = HUN_holy_crown_of_hungary
@@ -445,6 +449,10 @@ country_event = {##Prónay Pál's plan
 			character = HUN_deluge_gombos
 			ideology = social_darwinist_ideology
 			trait = holy_regent
+		}
+		set_portraits = {
+			character = HUN_deluge_gombos
+			civilian = { large ="GFX_portrait_HUN_gyula_gombos_regent" }
 		}
 		set_country_flag = HUN_regency
 		add_ideas = HUN_holy_crown_of_hungary

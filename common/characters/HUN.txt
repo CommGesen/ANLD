@@ -235,7 +235,7 @@ characters={
 		name = HUN_Character_deluge_gombos
 		portraits = {
 			civilian = {
-				large="gfx/leaders/HUN/gombos.dds"
+				large="gfx/leaders/HUN/portrait_HUN_gyula_gombos_PM.dds" #second portrait: portrait_HUN_gyula_gombos_regent
 			}
 		}
 		country_leader = {
@@ -251,7 +251,7 @@ characters={
 		name = HUN_Character_deluge_bethlen
 		portraits = {
 			civilian = {
-				large="gfx/leaders/HUN/bethlen.dds"
+				large="gfx/leaders/HUN/portrait_HUN_istvan_bethlen.dds"
 			}
 		}
 		country_leader = {

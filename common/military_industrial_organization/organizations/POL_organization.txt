@@ -15,7 +15,7 @@ deluge_POL_pzinz_organization = {
 
 deluge_POL_ksus_organization = {
 	include = generic_mobile_tank_organization
-	icon = GFX_idea_ksus
+	icon = GFX_idea_designer_ksus
 	allowed = {	
 		tag = POL
 	}
@@ -41,7 +41,7 @@ deluge_POL_BBTBrPanc_organization = {
 
 deluge_POL_ursus_tanks_organization = {
 	include = generic_tank_organization
-	icon = GFX_idea_ursus
+	icon = GFX_idea_designer_ursus
 	allowed = {	
 		tag = POL
 	}
@@ -69,7 +69,7 @@ deluge_POL_stocznia_krolewiec_organization = {
 }
 
 deluge_POL_stocznia_gdansk_organization = {
-	icon = GFX_idea_stocznia_gdanska
+	icon = GFX_idea_designer_stocznia_gdanska
 	include = generic_raider_ship_organization
 	allowed = {
 		tag = POL
@@ -83,7 +83,7 @@ deluge_POL_stocznia_gdansk_organization = {
 }
 
 deluge_POL_ursus_ships_organization = {
-	icon = GFX_idea_ksus
+	icon = GFX_idea_designer_ursus
 	include = generic_refurbishment_repair_organization
 	allowed = {
 		tag = POL
@@ -94,7 +94,7 @@ deluge_POL_ursus_ships_organization = {
 }
 
 deluge_POL_ironworks_agreement_organization = {
-	icon = GFX_idea_huta_zgoda
+	icon = GFX_idea_designer_huta_zgoda
 	include = generic_task_force_ship_organization
 	allowed = {
 		tag = POL
@@ -123,7 +123,7 @@ deluge_POL_pzl_organization = {
 }
 
 deluge_POL_lot_organization = {
-	icon = GFX_idea_lot
+	icon = GFX_idea_designer_lot
 	include = generic_heavy_aircraft_organization
 	allowed = {	
 		tag = POL
@@ -131,7 +131,7 @@ deluge_POL_lot_organization = {
 }
 
 deluge_POL_dwl_organization = {
-	icon = GFX_idea_lwd
+	icon = GFX_idea_designer_dwl
 	include = generic_naval_aircraft_organization
 	allowed = {	
 		tag = POL
@@ -139,7 +139,7 @@ deluge_POL_dwl_organization = {
 }
 
 deluge_POL_plage_and_laskiewicz_organization = {
-	icon = GFX_idea_lws
+	icon = GFX_idea_designer_lws
 	include = generic_cas_aircraft_organization
 	allowed = {	
 		tag = POL
@@ -147,7 +147,7 @@ deluge_POL_plage_and_laskiewicz_organization = {
 }
 
 deluge_POL_ursus_planes_organization = {
-	icon = GFX_idea_ursus
+	icon = GFX_idea_designer_ursus
 	include = generic_range_focused_aircraft_organization
 	allowed = {	
 		tag = POL
@@ -173,7 +173,7 @@ deluge_POL_lrl_organization = {
 }
 
 deluge_POL_cegielski_organization = {
-	icon = GFX_idea_h_cegielski
+	icon = GFX_idea_designer_h_cegielski
 	include = generic_artillery_organization
 	allowed = {	
 		tag = POL
@@ -181,7 +181,7 @@ deluge_POL_cegielski_organization = {
 }
 
 deluge_POL_starachowice_organization = {
-	icon = GFX_idea_starachowice_works
+	icon = GFX_idea_designer_starachowice_works
 	include = generic_support_equipment_organization
 	allowed = {	
 		tag = POL
@@ -197,7 +197,7 @@ deluge_POL_smpa_organization = {
 }
 
 deluge_POL_ursus_vehicles_organization = {
-	icon = GFX_idea_ursus
+	icon = GFX_idea_designer_ursus
 	include = generic_armored_car_organization
 	allowed = {	
 		tag = POL

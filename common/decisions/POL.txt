@@ -2541,7 +2541,7 @@ seek_enemies_category = {
 					owns_state = 69
 				} }
 				every_country = {
-					limit = { 
+					limit = {
 						OR = {
 							owns_state = 74 
 							owns_state = 72
@@ -8636,6 +8636,8 @@ export_catholicism_category = {
 		}
 		allowed = {
 			original_tag = POL
+		}
+		visible = {
 			country_exists = FROM
 		}
 		available = {
@@ -8685,12 +8687,9 @@ export_catholicism_category = {
 		}
 		allowed = {
 			original_tag = POL
+		}
+		visible = {
 			country_exists = FROM
-			FROM = {
-				NOT = {
-					has_government = communism
-				}
-			}
 		}
 		available = {
 			FROM = {
@@ -8741,12 +8740,9 @@ export_catholicism_category = {
 		}
 		allowed = {
 			original_tag = POL
+		}
+		visible = {
 			country_exists = FROM
-			FROM = {
-				NOT = {
-					has_government = communism
-				}
-			}
 		}
 		available = {
 			FROM = {
@@ -8795,12 +8791,9 @@ export_catholicism_category = {
 		}
 		allowed = {
 			original_tag = POL
+		}
+		visible = {
 			country_exists = FROM
-			FROM = {
-				NOT = {
-					has_government = communism
-				}
-			}
 		}
 		available = {
 			FROM = {
@@ -8860,23 +8853,15 @@ export_catholicism_category = {
 			}
 		}
 		allowed = {
-			POL = {
-				has_completed_focus = POL_our_own_pope
-			}
 			original_tag = POL
+		}
+		visible = {
 			country_exists = FROM
-			FROM = {
-				NOT = {
-					has_government = communism
-				}
-			}
 		}
 		available = {
 			POL = {
 				has_completed_focus = POL_our_own_pope
 			}
-			original_tag = POL
-			country_exists = FROM
 			FROM = {
 				is_subject = no
 			}
@@ -8916,6 +8901,8 @@ export_catholicism_category = {
 		}
 		allowed = {
 			original_tag = POL
+		}
+		visible = {
 			country_exists = FROM
 		}
 		available = {
@@ -8954,7 +8941,15 @@ european_cooperation_category = {
 			}
 		}
 		available = {
-			
+			OR = {
+				NOT = {
+					has_global_flag = POL_EU_COOP_reform_done
+				}
+				has_global_flag = {
+					flag = POL_EU_COOP_reform_done
+					days > 150
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 5
@@ -8963,6 +8958,13 @@ european_cooperation_category = {
 		complete_effect = {
 			set_country_flag = POL_eu_coop_common_currency
 			set_global_flag = POL_eu_coop_common_currency_introduced
+			if = {
+				limit = {
+					has_global_flag = POL_EU_COOP_reform_done
+				}
+				clr_global_flag = POL_EU_COOP_reform_done
+			}
+			set_global_flag = POL_EU_COOP_reform_done
 			hidden_effect = {
 				add_to_variable = { POL_european_cooperation_industrial_capacity_factory = 0.05}
 				add_to_variable = { POL_european_cooperation_industrial_capacity_dockyard = 0.05}
@@ -8999,7 +9001,15 @@ european_cooperation_category = {
 			}
 		}
 		available = {
-			
+			OR = {
+				NOT = {
+					has_global_flag = POL_EU_COOP_reform_done
+				}
+				has_global_flag = {
+					flag = POL_EU_COOP_reform_done
+					days > 150
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 5
@@ -9008,6 +9018,13 @@ european_cooperation_category = {
 		complete_effect = {
 			set_country_flag = POL_eu_coop_no_borders
 			set_global_flag = POL_eu_coop_no_borders_introduced
+			if = {
+				limit = {
+					has_global_flag = POL_EU_COOP_reform_done
+				}
+				clr_global_flag = POL_EU_COOP_reform_done
+			}
+			set_global_flag = POL_EU_COOP_reform_done
 			hidden_effect = {
 				add_to_variable = { POL_european_cooperation_production_speed_buildings_factor = 0.05}
 				add_to_variable = { POL_european_cooperation_consumer_goods_factor = -0.05}
@@ -9044,7 +9061,15 @@ european_cooperation_category = {
 			}
 		}
 		available = {
-			
+			OR = {
+				NOT = {
+					has_global_flag = POL_EU_COOP_reform_done
+				}
+				has_global_flag = {
+					flag = POL_EU_COOP_reform_done
+					days > 150
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 5
@@ -9053,6 +9078,13 @@ european_cooperation_category = {
 		complete_effect = {
 			set_country_flag = POL_eu_coop_shared_research
 			set_global_flag = POL_eu_coop_shared_research_introduced
+			if = {
+				limit = {
+					has_global_flag = POL_EU_COOP_reform_done
+				}
+				clr_global_flag = POL_EU_COOP_reform_done
+			}
+			set_global_flag = POL_EU_COOP_reform_done
 			hidden_effect = {
 				add_to_variable = { POL_european_cooperation_research_speed_factor = 0.07}
 				add_to_variable = {
@@ -9088,7 +9120,15 @@ european_cooperation_category = {
 			}
 		}
 		available = {
-			
+			OR = {
+				NOT = {
+					has_global_flag = POL_EU_COOP_reform_done
+				}
+				has_global_flag = {
+					flag = POL_EU_COOP_reform_done
+					days > 150
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 5
@@ -9097,6 +9137,13 @@ european_cooperation_category = {
 		complete_effect = {
 			set_country_flag = POL_eu_coop_events
 			set_global_flag = POL_eu_coop_events_introduced
+			if = {
+				limit = {
+					has_global_flag = POL_EU_COOP_reform_done
+				}
+				clr_global_flag = POL_EU_COOP_reform_done
+			}
+			set_global_flag = POL_EU_COOP_reform_done
 			hidden_effect = {
 				add_to_variable = { POL_european_cooperation_political_power_gain = 0.03}
 				add_to_variable = { POL_european_cooperation_stability_factor = 0.05}
@@ -9134,7 +9181,15 @@ european_cooperation_category = {
 			}
 		}
 		available = {
-			
+			OR = {
+				NOT = {
+					has_global_flag = POL_EU_COOP_reform_done
+				}
+				has_global_flag = {
+					flag = POL_EU_COOP_reform_done
+					days > 150
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 5
@@ -9143,6 +9198,13 @@ european_cooperation_category = {
 		complete_effect = {
 			set_country_flag = POL_eu_coop_new_routes
 			set_global_flag = POL_eu_coop_new_routes_introduced
+			if = {
+				limit = {
+					has_global_flag = POL_EU_COOP_reform_done
+				}
+				clr_global_flag = POL_EU_COOP_reform_done
+			}
+			set_global_flag = POL_EU_COOP_reform_done
 			hidden_effect = {
 				add_to_variable = { POL_european_cooperation_production_factory_max_efficiency_factor = 0.05}
 				add_to_variable = { POL_european_cooperation_production_factory_efficiency_gain_factor = 0.05}
@@ -9179,7 +9241,15 @@ european_cooperation_category = {
 			}
 		}
 		available = {
-			
+			OR = {
+				NOT = {
+					has_global_flag = POL_EU_COOP_reform_done
+				}
+				has_global_flag = {
+					flag = POL_EU_COOP_reform_done
+					days > 150
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 5
@@ -9188,6 +9258,13 @@ european_cooperation_category = {
 		complete_effect = {
 			set_global_flag= POL_eu_coop_research_group_established
 			set_country_flag = POLeu_coop_research_group_member
+			if = {
+				limit = {
+					has_global_flag = POL_EU_COOP_reform_done
+				}
+				clr_global_flag = POL_EU_COOP_reform_done
+			}
+			set_global_flag = POL_EU_COOP_reform_done
 			POL = {
 				add_to_tech_sharing_group = deluge_eu_coop_tech_group
 			}
@@ -9250,9 +9327,9 @@ european_cooperation_category = {
 		}
 		allowed = {
 			original_tag = POL
-			country_exists = FROM
 		}
 		visible = {
+			country_exists = FROM
 			FROM = {
 				is_in_faction = no
 				has_war = no
@@ -9446,10 +9523,9 @@ european_cooperation_category = {
 		}
 		allowed = {
 			original_tag = POL
-			country_exists = FROM
 		}
 		visible = {
-			
+			country_exists = FROM
 		}
 		available = {
 			FROM = {
@@ -9510,9 +9586,10 @@ european_cooperation_joining_category = {
 		icon = GFX_decision_hol_attract_foreign_investors
 		fire_only_once = yes
 		allowed = {
-			is_in_faction_with = POL
+			
 		}
 		visible = {
+			is_in_faction_with = POL
 			has_dynamic_modifier = {
 				modifier = POL_european_cooperation
 			}
@@ -9545,9 +9622,10 @@ european_cooperation_joining_category = {
 		icon = GFX_decision_generic_trucks
 		fire_only_once = yes
 		allowed = {
-			is_in_faction_with = POL
+			
 		}
 		visible = {
+			is_in_faction_with = POL
 			has_dynamic_modifier = {
 				modifier = POL_european_cooperation
 			}
@@ -9580,9 +9658,10 @@ european_cooperation_joining_category = {
 		icon = GFX_decision_generic_research
 		fire_only_once = yes
 		allowed = {
-			is_in_faction_with = POL
+			
 		}
 		visible = {
+			is_in_faction_with = POL
 			has_dynamic_modifier = {
 				modifier = POL_european_cooperation
 			}
@@ -9614,9 +9693,10 @@ european_cooperation_joining_category = {
 		icon = GFX_decision_hol_radio_oranje
 		fire_only_once = yes
 		allowed = {
-			is_in_faction_with = POL
+			
 		}
 		visible = {
+			is_in_faction_with = POL
 			has_dynamic_modifier = {
 				modifier = POL_european_cooperation
 			}
@@ -9650,9 +9730,10 @@ european_cooperation_joining_category = {
 		icon = GFX_decision_generic_electricity
 		fire_only_once = yes
 		allowed = {
-			is_in_faction_with = POL
+			
 		}
 		visible = {
+			is_in_faction_with = POL
 			has_dynamic_modifier = {
 				modifier = POL_european_cooperation
 			}
@@ -10726,9 +10807,9 @@ polish_hungarian_union_decisions_category = {
 		fire_only_once = yes
 		allowed = {
 			original_tag = POL
-			has_completed_focus = POL_andrassy_wins
 		}
 		visible = {
+			has_completed_focus = POL_andrassy_wins
 			has_completed_focus = POL_question_of_capital
 		}
 		available = {
@@ -10750,9 +10831,9 @@ polish_hungarian_union_decisions_category = {
 		fire_only_once = yes
 		allowed = {
 			original_tag = POL
-			has_completed_focus = POL_andrassy_wins
 		}
 		visible = {
+			has_completed_focus = POL_andrassy_wins
 			OR = {
 				has_completed_focus = POL_question_of_capital
 				has_completed_focus = POL_increase_cooperation
@@ -10776,9 +10857,9 @@ polish_hungarian_union_decisions_category = {
 		fire_only_once = yes
 		allowed = {
 			original_tag = POL
-			has_completed_focus = POL_andrassy_wins
 		}
 		visible = {
+			has_completed_focus = POL_andrassy_wins
 			OR = {
 				has_completed_focus = POL_question_of_capital
 				has_completed_focus = POL_increase_cooperation
@@ -10848,9 +10929,9 @@ polish_hungarian_union_decisions_category = {
 		fire_only_once = yes
 		allowed = {
 			original_tag = POL
-			has_completed_focus = POL_andrassy_wins
 		}
 		visible = {
+			has_completed_focus = POL_andrassy_wins
 			OR = {
 				has_completed_focus = POL_question_of_capital
 				has_completed_focus = POL_increase_cooperation
@@ -12341,10 +12422,9 @@ polish_new_order_decisions_category = {
 		}
 		allowed = {
 			original_tag = POL
-			country_exists = FROM
 		}
 		visible = {
-			
+			country_exists = FROM
 		}
 		available = {
 			FROM = {
@@ -15732,8 +15812,13 @@ royal_affairs_decisions_category = {
 					}
 				}
 			}
+			NOT = {
+				has_global_flag = POL_started_to_investigate_south_africa
+			}
+			POL_deluge_izabella_roza_radziwillowna = {
+				has_trait = weak_claim
+			}
 		}
-		fire_only_once = yes
 		visible = {
 			has_completed_focus = POL_radziwill_wins
 		}
@@ -15758,7 +15843,7 @@ royal_affairs_decisions_category = {
 				}
 				POL = {
 					country_event = {
-						id = deluge_poland_foreign.113
+						id = deluge_poland_foreign.115
 					}
 				}
 			}
@@ -15785,6 +15870,232 @@ royal_affairs_decisions_category = {
 					}
 				}
 			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
+		}
+	}
+	send_queen_to_therapy = {
+		icon = GFX_decision_generic_independence
+		available = {
+			POL_deluge_izabella_roza_radziwillowna = {
+				has_trait = overwhelming_decadency
+			}
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = POL_radziwill_wins
+		}
+		cost = 0
+		days_remove = 150
+		modifier = {
+			consumer_goods_factor = 0.01
+			political_power_factor = -0.02
+		}
+		remove_effect = {
+			remove_trait = {
+				character = POL_deluge_izabella_roza_radziwillowna
+				ideology = bonapartist_ideology
+				trait = overwhelming_decadency
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
+		}
+	}
+	establishing_institutions_helping_women = {
+		icon = GFX_decision_generic_fundraising
+		available = {
+			
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = POL_radziwill_wins
+		}
+		cost = 40
+		days_remove = 100
+		modifier = {
+			consumer_goods_factor = 0.03
+		}
+		remove_effect = {
+			add_ideas = institutions_helping_women
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
+		}
+	}
+	propose_SPR_an_alliance = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		available = {
+			country_exists = SPR
+			NOT = {
+				has_war_with = SPR
+			}
+			NOT = {
+				SPR = {
+					has_government = communism
+				}
+			}
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = POL_czartoryski_wins
+		}
+		cost = 25
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+			SPR = {
+				country_event = {
+					id = deluge_poland_foreign.117
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
+		}
+	}
+	claim_two_sicillies = {
+		icon = GFX_decision_eng_trade_unions_demand
+		available = {
+			117 = {
+				owner = {
+					NOT = {
+						is_in_faction_with = POL
+					}
+				}
+			}
+			849 = {
+				owner = {
+					NOT = {
+						is_in_faction_with = POL
+					}
+				}
+			}
+			156 = {
+				owner = {
+					NOT = {
+						is_in_faction_with = POL
+					}
+				}
+			}
+			115 = {
+				owner = {
+					NOT = {
+						is_in_faction_with = POL
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = POL_czartoryski_wins
+		}
+		cost = 50
+		days_remove = 100
+		modifier = {
+			
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			117 = {
+				add_claim_by = POL
+			}
+			849 = {
+				add_claim_by = POL
+			}
+			156 = {
+				add_claim_by = POL
+			}
+			115 = {
+				add_claim_by = POL
+			}
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+					}
+				}
+				ROOT = {
+					create_wargoal = {
+						type = take_claimed_state
+						target = PREV
+						generator = {
+							117 849 156 115 
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
+		}
+	}
+	recruit_king_to_army = {
+		icon = GFX_decision_generic_army_support
+		available = {
+			POL = {
+				has_character = POL_deluge_augustyn_czartoryski
+			}
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = POL_czartoryski_wins
+		}
+		cost = 30
+		days_remove = 0
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_corps_commander_role = {
+				Character = POL_deluge_augustyn_czartoryski
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			add_war_support = 0.02
 		}
 		ai_will_do = {
 			factor = 5
