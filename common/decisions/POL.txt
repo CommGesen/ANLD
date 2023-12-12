@@ -48,11 +48,7 @@ integration_category = {
 			#set_province_name = { id = 9499 name = "Kłajpeda" }#doesnt work for some reason, says that id is invalid or no city there despite it exists
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_lat = {
@@ -111,11 +107,7 @@ integration_category = {
 			189 = { add_core_of = POL }  
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_cze = {
@@ -163,11 +155,7 @@ integration_category = {
 			69 = { add_core_of = POL }  
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_south_ukr = {
@@ -211,11 +199,7 @@ integration_category = {
 			192 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_west_ukr = {
@@ -259,11 +243,7 @@ integration_category = {
 			198 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_east_ukr = {
@@ -311,11 +291,7 @@ integration_category = {
 			226 = { add_core_of = POL } 		
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_crim = {
@@ -364,11 +340,7 @@ integration_category = {
 			227 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_pom = {
@@ -408,11 +380,7 @@ integration_category = {
 			85 = { add_core_of = POL }		
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_east_ger = {
@@ -456,11 +424,7 @@ integration_category = {
 			61 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_south_west_blr = {
@@ -504,11 +468,7 @@ integration_category = {
 			194 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_north_east_blr = {
@@ -552,11 +512,7 @@ integration_category = {
 			206 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_mol = {
@@ -596,11 +552,7 @@ integration_category = {
 			78 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_slovenia_lech = {
@@ -642,11 +594,7 @@ integration_category = {
 			853 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_west_ger_lech = {
@@ -688,11 +636,7 @@ integration_category = {
 			58 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_bav_lech = {
@@ -734,11 +678,7 @@ integration_category = {
 			52 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_aus_lech = {
@@ -784,11 +724,7 @@ integration_category = {
 			848 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_north_ita_lech = {
@@ -834,11 +770,7 @@ integration_category = {
 			850 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_cro_lech = {
@@ -888,11 +820,7 @@ integration_category = {
 			151 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_ser_lech = {
@@ -934,11 +862,7 @@ integration_category = {
 			108 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_north_alb_lech = {
@@ -980,11 +904,7 @@ integration_category = {
 			44 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_bul_lech = {
@@ -1030,11 +950,7 @@ integration_category = {
 			212 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_wal_lech = {
@@ -1076,11 +992,7 @@ integration_category = {
 			81 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_mol_lech = {
@@ -1122,11 +1034,7 @@ integration_category = {
 			80 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_hun_lech = {
@@ -1168,11 +1076,7 @@ integration_category = {
 			154 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_trans_lech = {
@@ -1218,11 +1122,7 @@ integration_category = {
 			82 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_novo_lech = {
@@ -1276,11 +1176,7 @@ integration_category = {
 			208 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_south_rus_lech = {
@@ -1330,11 +1226,7 @@ integration_category = {
 			224 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_mid_rus_lech = {
@@ -1384,11 +1276,7 @@ integration_category = {
 			246 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_est_lech = {
@@ -1438,11 +1326,7 @@ integration_category = {
 			13 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_north_gre_lech = {
@@ -1488,11 +1372,7 @@ integration_category = {
 			184 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_south_gre_lech = {
@@ -1538,11 +1418,7 @@ integration_category = {
 			187 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_east_tur_lech = {
@@ -1588,11 +1464,7 @@ integration_category = {
 			347 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_fin_slav = {
@@ -1642,11 +1514,7 @@ integration_category = {
 			148 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_bal_slav = {
@@ -1733,11 +1601,7 @@ integration_category = {
 			811 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_slovakia_slavia = {
@@ -1790,11 +1654,7 @@ integration_category = {
 			70 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_hungary_slavia = {
@@ -1856,11 +1716,7 @@ integration_category = {
 			82 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_romania_slavia = {
@@ -1914,11 +1770,7 @@ integration_category = {
 			81 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_caucas_slavia = {
@@ -1993,11 +1845,7 @@ integration_category = {
 			826 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_south_balkans_slavia = {
@@ -2056,11 +1904,7 @@ integration_category = {
 			185 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_khanates_slavia = {
@@ -2167,11 +2011,7 @@ integration_category = {
 			586 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_mongols_slavia = {
@@ -2254,11 +2094,7 @@ integration_category = {
 			760 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 	integrate_far_east_slavia = {
@@ -2345,11 +2181,7 @@ integration_category = {
 			761 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			factor = 100
 		}
 	}
 }
@@ -2386,11 +2218,7 @@ seek_enemies_category = {
 			POL = { add_ideas = wojna_totalna_idea }
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 100
-			}
+			factor = 1000
 		}
 	}
 	send_ultimatum_to_austria = {
@@ -2439,13 +2267,97 @@ seek_enemies_category = {
 			set_global_flag = POL_invites_someone
 		}
 		ai_will_do = {
+			base = 10
 			modifier = {
-				strength_ratio = { tag = AUS ratio > 2.0 }
-				factor = 10
+				date > 1941.1.1
+				factor = 100
 			}
 			modifier = {
-				strength_ratio = { tag = AUS ratio < 2.0 }
-				factor = 0.1
+				strength_ratio = { tag = AUS ratio > 1.7 }
+				add = 100
+			}
+			modifier = {
+				strength_ratio = { tag = AUS ratio < 1.7 }
+				add = -100
+			}
+			modifier = {
+				AUS = {
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				AUS = {
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				check_variable = { POL.num_of_factories > AUS.num_of_factories }
+				add = 100
+			}
+			modifier = {
+				check_variable = { POL.num_of_factories < AUS.num_of_factories }
+				add = -100
+			}
+			modifier = {
+				has_war = no
+				factor = 100
+			}
+			modifier = {
+				has_war = yes
+				factor = -200
+			}
+			modifier = {
+				add = -100
+				AUS = {
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				NOT = {
+					AUS = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				date < 1940.1.1
 			}
 		}
 	}
@@ -2563,14 +2475,159 @@ seek_enemies_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
 			modifier = {
 				has_war = no
-				factor = 10
+				add = 100
 			}
 			modifier = {
 				has_war = yes
-				factor = 0.01
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				date < 1941.1.1
 			}
 		}
 	}
@@ -2661,14 +2718,143 @@ seek_enemies_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 85
+						owns_state = 62
+						owns_state = 63
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 85
+						owns_state = 62
+						owns_state = 63
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 85
+						owns_state = 62
+						owns_state = 63
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 85
+						owns_state = 62
+						owns_state = 63
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 85
+						owns_state = 62
+						owns_state = 63
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 85
+						owns_state = 62
+						owns_state = 63
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 85
+						owns_state = 62
+						owns_state = 63
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 85
+						owns_state = 62
+						owns_state = 63
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
 			modifier = {
 				has_war = no
-				factor = 10
+				add = 100
 			}
 			modifier = {
 				has_war = yes
-				factor = 0.01
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				date < 1941.1.1
 			}
 		}
 	}
@@ -2756,14 +2942,143 @@ seek_enemies_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
 			modifier = {
 				has_war = no
-				factor = 10
+				add = 100
 			}
 			modifier = {
 				has_war = yes
-				factor = 0.01
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				date < 1938.6.6
 			}
 		}
 	}
@@ -2856,14 +3171,151 @@ seek_enemies_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 64
+						owns_state = 65
+						owns_state = 68
+						owns_state = 61
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 64
+						owns_state = 65
+						owns_state = 68
+						owns_state = 61
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 64
+						owns_state = 65
+						owns_state = 68
+						owns_state = 61
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 64
+						owns_state = 65
+						owns_state = 68
+						owns_state = 61
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 64
+						owns_state = 65
+						owns_state = 68
+						owns_state = 61
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 64
+						owns_state = 65
+						owns_state = 68
+						owns_state = 61
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 64
+						owns_state = 65
+						owns_state = 68
+						owns_state = 61
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 64
+						owns_state = 65
+						owns_state = 68
+						owns_state = 61
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
 			modifier = {
 				has_war = no
-				factor = 10
+				add = 100
 			}
 			modifier = {
 				has_war = yes
-				factor = 0.01
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				date < 1941.6.6
 			}
 		}
 	}
@@ -2959,14 +3411,151 @@ seek_enemies_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 196
+						owns_state = 137
+						owns_state = 227
+						owns_state = 200
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 196
+						owns_state = 137
+						owns_state = 227
+						owns_state = 200
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 196
+						owns_state = 137
+						owns_state = 227
+						owns_state = 200
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 196
+						owns_state = 137
+						owns_state = 227
+						owns_state = 200
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 196
+						owns_state = 137
+						owns_state = 227
+						owns_state = 200
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 196
+						owns_state = 137
+						owns_state = 227
+						owns_state = 200
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 196
+						owns_state = 137
+						owns_state = 227
+						owns_state = 200
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 196
+						owns_state = 137
+						owns_state = 227
+						owns_state = 200
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
 			modifier = {
 				has_war = no
-				factor = 10
+				add = 100
 			}
 			modifier = {
 				has_war = yes
-				factor = 0.01
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				date < 1942.1.1
 			}
 		}
 	}
@@ -3134,14 +3723,223 @@ seek_enemies_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 221
+						owns_state = 834
+						owns_state = 203
+						owns_state = 197
+						owns_state = 192
+						owns_state = 226
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 221
+						owns_state = 834
+						owns_state = 203
+						owns_state = 197
+						owns_state = 192
+						owns_state = 226
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 221
+						owns_state = 834
+						owns_state = 203
+						owns_state = 197
+						owns_state = 192
+						owns_state = 226
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 221
+						owns_state = 834
+						owns_state = 203
+						owns_state = 197
+						owns_state = 192
+						owns_state = 226
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 221
+						owns_state = 834
+						owns_state = 203
+						owns_state = 197
+						owns_state = 192
+						owns_state = 226
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 221
+						owns_state = 834
+						owns_state = 203
+						owns_state = 197
+						owns_state = 192
+						owns_state = 226
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 221
+						owns_state = 834
+						owns_state = 203
+						owns_state = 197
+						owns_state = 192
+						owns_state = 226
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 221
+						owns_state = 834
+						owns_state = 203
+						owns_state = 197
+						owns_state = 192
+						owns_state = 226
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
 			modifier = {
 				has_war = no
-				factor = 10
+				add = 100
 			}
 			modifier = {
 				has_war = yes
-				factor = 0.01
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				date < 1940.1.1
 			}
 		}
 	}
@@ -3277,14 +4075,191 @@ seek_enemies_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 12
+						owns_state = 810
+						owns_state = 809
+						owns_state = 808
+						owns_state = 190
+						owns_state = 189
+						owns_state = 815
+						owns_state = 11
+						owns_state = 814
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 12
+						owns_state = 810
+						owns_state = 809
+						owns_state = 808
+						owns_state = 190
+						owns_state = 189
+						owns_state = 815
+						owns_state = 11
+						owns_state = 814
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 12
+						owns_state = 810
+						owns_state = 809
+						owns_state = 808
+						owns_state = 190
+						owns_state = 189
+						owns_state = 815
+						owns_state = 11
+						owns_state = 814
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 12
+						owns_state = 810
+						owns_state = 809
+						owns_state = 808
+						owns_state = 190
+						owns_state = 189
+						owns_state = 815
+						owns_state = 11
+						owns_state = 814
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 12
+						owns_state = 810
+						owns_state = 809
+						owns_state = 808
+						owns_state = 190
+						owns_state = 189
+						owns_state = 815
+						owns_state = 11
+						owns_state = 814
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 12
+						owns_state = 810
+						owns_state = 809
+						owns_state = 808
+						owns_state = 190
+						owns_state = 189
+						owns_state = 815
+						owns_state = 11
+						owns_state = 814
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 12
+						owns_state = 810
+						owns_state = 809
+						owns_state = 808
+						owns_state = 190
+						owns_state = 189
+						owns_state = 815
+						owns_state = 11
+						owns_state = 814
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 12
+						owns_state = 810
+						owns_state = 809
+						owns_state = 808
+						owns_state = 190
+						owns_state = 189
+						owns_state = 815
+						owns_state = 11
+						owns_state = 814
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
 			modifier = {
 				has_war = no
-				factor = 10
+				add = 100
 			}
 			modifier = {
 				has_war = yes
-				factor = 0.01
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				date < 1940.1.1
 			}
 		}
 	}
@@ -3412,16 +4387,185 @@ seek_enemies_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 241
+						owns_state = 764
+						owns_state = 207
+						owns_state = 206
+						owns_state = 204
+						owns_state = 194
+						owns_state = 95
+						owns_state = 96
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 241
+						owns_state = 764
+						owns_state = 207
+						owns_state = 206
+						owns_state = 204
+						owns_state = 194
+						owns_state = 95
+						owns_state = 96
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 241
+						owns_state = 764
+						owns_state = 207
+						owns_state = 206
+						owns_state = 204
+						owns_state = 194
+						owns_state = 95
+						owns_state = 96
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 241
+						owns_state = 764
+						owns_state = 207
+						owns_state = 206
+						owns_state = 204
+						owns_state = 194
+						owns_state = 95
+						owns_state = 96
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 241
+						owns_state = 764
+						owns_state = 207
+						owns_state = 206
+						owns_state = 204
+						owns_state = 194
+						owns_state = 95
+						owns_state = 96
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 241
+						owns_state = 764
+						owns_state = 207
+						owns_state = 206
+						owns_state = 204
+						owns_state = 194
+						owns_state = 95
+						owns_state = 96
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 241
+						owns_state = 764
+						owns_state = 207
+						owns_state = 206
+						owns_state = 204
+						owns_state = 194
+						owns_state = 95
+						owns_state = 96
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 241
+						owns_state = 764
+						owns_state = 207
+						owns_state = 206
+						owns_state = 204
+						owns_state = 194
+						owns_state = 95
+						owns_state = 96
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
 			modifier = {
 				has_war = no
-				factor = 10
+				add = 100
 			}
 			modifier = {
 				has_war = yes
-				factor = 0.01
+				add = -200
 			}
-		}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				date < 1940.1.1
+			}
+		}##here i stopped
 	}
 	avenge_swedish_deluge = {
 		icon = GFX_decision_generic_operation 
@@ -3464,28 +4608,99 @@ seek_enemies_category = {
 					target = SWE
 				}
 			}
-			if = { 
-				limit = { country_exists = SWD }
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = SWD
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				SWE = {
+					strength_ratio = { tag = POL ratio < 1.7 }
 				}
-				SWD = {
-					country_event = {
-						id = generic.26
+				add = 100
+			}
+			modifier = {
+				SWE = {
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				SWE = {
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				SWE = {
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				check_variable = { SWE.num_of_factories < ROOT.num_of_factories }
+				add = 100
+			}
+			modifier = {
+				check_variable = { SWE.num_of_factories > ROOT.num_of_factories }
+				add = -100
+			}
+			modifier = {
+				add = -100
+				SWE = {
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
 					}
 				}
 			}
-		}
-		ai_will_do = {
-			factor = 5
+			modifier = {
+				add = 100
+				SWE = {
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
 			modifier = {
 				has_war = no
-				factor = 10
+				add = 100
 			}
 			modifier = {
 				has_war = yes
-				factor = 0.01
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				date < 1943.1.1
 			}
 		}
 	}
@@ -3526,14 +4741,97 @@ seek_enemies_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
+			modifier = {
+				SOV = {
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				SOV = {
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				SOV = {
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				SOV = {
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				check_variable = { SOV.num_of_factories < ROOT.num_of_factories }
+				add = 100
+			}
+			modifier = {
+				check_variable = { SOV.num_of_factories > ROOT.num_of_factories }
+				add = -100
+			}
+			modifier = {
+				add = -100
+				SOV = {
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SWE
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				SOV = {
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SWE
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
 			modifier = {
 				has_war = no
-				factor = 10
+				add = 100
 			}
 			modifier = {
 				has_war = yes
-				factor = 0.01
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				date < 1941.9.9
 			}
 		}
 	}
@@ -3574,14 +4872,97 @@ seek_enemies_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
+			modifier = {
+				AUS = {
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				AUS = {
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				AUS = {
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				AUS = {
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				check_variable = { AUS.num_of_factories < ROOT.num_of_factories }
+				add = 100
+			}
+			modifier = {
+				check_variable = { AUS.num_of_factories > ROOT.num_of_factories }
+				add = -100
+			}
+			modifier = {
+				add = -100
+				AUS = {
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SWE
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = SOV
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				AUS = {
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SWE
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = SOV
+						}
+					}
+				}
+			}
 			modifier = {
 				has_war = no
-				factor = 10
+				add = 100
 			}
 			modifier = {
 				has_war = yes
-				factor = 0.01
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				date < 1938.9.9
 			}
 		}
 	}
@@ -3622,14 +5003,97 @@ seek_enemies_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
+			modifier = {
+				FRA = {
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				FRA = {
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				FRA = {
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				FRA = {
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				check_variable = { FRA.num_of_factories < ROOT.num_of_factories }
+				add = 100
+			}
+			modifier = {
+				check_variable = { FRA.num_of_factories > ROOT.num_of_factories }
+				add = -100
+			}
+			modifier = {
+				add = -100
+				FRA = {
+					OR = {
+						is_guaranteed_by = AUS
+						is_guaranteed_by = USA
+						is_guaranteed_by = SWE
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = SOV
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				FRA = {
+					NOT = {
+						OR = {
+							is_guaranteed_by = AUS
+							is_guaranteed_by = USA
+							is_guaranteed_by = SWE
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = SOV
+						}
+					}
+				}
+			}
 			modifier = {
 				has_war = no
-				factor = 10
+				add = 100
 			}
 			modifier = {
 				has_war = yes
-				factor = 0.01
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				date < 1938.9.9
 			}
 		}
 	}
@@ -3662,15 +5126,7 @@ seek_collaboration_category = {
 			FROM = { add_manpower = -10000 }
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 0.01
-			}
-			modifier = {
-				has_war = yes
-				factor = 10
-			}
+			base = 600
 		}
 	}
 	take_military_industry = {
@@ -3704,15 +5160,7 @@ seek_collaboration_category = {
 			FROM = { add_offsite_building = { type = arms_factory level = 3 } }
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 0.01
-			}
-			modifier = {
-				has_war = yes
-				factor = 10
-			}
+			base = 600
 		}
 	}
 	take_civilian_industry = {
@@ -3746,15 +5194,7 @@ seek_collaboration_category = {
 			FROM = { add_offsite_building = { type = industrial_complex level = 3 } }
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-			modifier = {
-				has_war = yes
-				factor = 0.01
-			}
+			base = 600
 		}
 	}
 	take_naval_industry = {
@@ -3830,15 +5270,7 @@ seek_collaboration_category = {
 			FROM = { remove_ideas = taken_scientists }
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-			modifier = {
-				has_war = yes
-				factor = 0.01
-			}
+			base = 600
 		}
 	}
 	bajonskie_sums_for_france = {
@@ -3871,7 +5303,7 @@ seek_collaboration_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 1000
+			base = 1000
 		}
 	}
 }
@@ -3929,6 +5361,9 @@ seek_empire_category = {
 				news_event = { id = deluge_poland.17 hours = 6 } 
 			}
 		}
+		ai_will_do = {
+			base = 1000
+		}
 	}
 	create_empire_sikor = {
 		fire_only_once = yes
@@ -3950,6 +5385,9 @@ seek_empire_category = {
 			hidden_effect = {
 				news_event = { id = deluge_poland.18 hours = 6 } 
 			}
+		}
+		ai_will_do = {
+			base = 1000
 		}
 	}
 	create_empire_lechia = {
@@ -4179,6 +5617,9 @@ seek_empire_category = {
 			hidden_effect = {
 				news_event = { id = deluge_poland.27 hours = 6 } 
 			}
+		}
+		ai_will_do = {
+			base = 1000
 		}
 	}
 	create_empire_slavia = {
@@ -4518,6 +5959,9 @@ seek_empire_category = {
 				news_event = { id = deluge_poland.29 hours = 6 } 
 			}
 		}
+		ai_will_do = {
+			base = 1000
+		}
 	}
 	create_empire_zapadoslavia = {
 		fire_only_once = yes
@@ -4577,6 +6021,9 @@ seek_empire_category = {
 			hidden_effect = {
 				news_event = { id = deluge_poland.28 hours = 6 } 
 			}
+		}
+		ai_will_do = {
+			base = 1000
 		}
 	}
 	create_empire_pias = {
@@ -4667,6 +6114,9 @@ seek_empire_category = {
 				news_event = { id = deluge_poland.83 hours = 6 } 
 			}
 		}
+		ai_will_do = {
+			base = 1000
+		}
 	}
 	create_empire_nd = {
 		fire_only_once = yes
@@ -4694,6 +6144,9 @@ seek_empire_category = {
 			#	news_event = { id = deluge_poland.83 hours = 6 } 
 			#}
 		}
+		ai_will_do = {
+			base = 1000
+		}
 	}
 	create_empire_psl = {
 		fire_only_once = yes
@@ -4720,6 +6173,9 @@ seek_empire_category = {
 			#hidden_effect = {
 			#	news_event = { id = deluge_poland.83 hours = 6 } 
 			#}
+		}
+		ai_will_do = {
+			base = 1000
 		}
 	}
 }
@@ -4759,14 +6215,10 @@ seek_cooperation_category = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_84
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
 			modifier = {
-				has_war = no
-				factor = 10
-			}
-			modifier = {
-				has_war = yes
-				factor = 0.01
+				has_army_experience < 100
+				add = 500
 			}
 		}
 	}
@@ -4805,14 +6257,10 @@ seek_cooperation_category = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_84
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
 			modifier = {
-				has_war = no
-				factor = 10
-			}
-			modifier = {
-				has_war = yes
-				factor = 0.01
+				has_air_experience < 100
+				add = 500
 			}
 		}
 	}
@@ -4851,14 +6299,10 @@ seek_cooperation_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
 			modifier = {
-				has_war = no
-				factor = 10
-			}
-			modifier = {
-				has_war = yes
-				factor = 0.01
+				has_navy_experience < 100
+				add = 500
 			}
 		}
 	}
@@ -4896,15 +6340,7 @@ seek_cooperation_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-			modifier = {
-				has_war = yes
-				factor = 20
-			}
+			base = 600
 		}
 	}
 	international_propaganda_campaigns = {
@@ -4941,14 +6377,14 @@ seek_cooperation_category = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_84
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
 			modifier = {
-				has_war = no
+				has_stability < 1.0
 				factor = 10
 			}
 			modifier = {
-				has_war = yes
-				factor = 20
+				has_war_support < 1.0
+				factor = 10
 			}
 		}
 	}
@@ -4986,15 +6422,7 @@ seek_cooperation_category = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_84
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-			modifier = {
-				has_war = yes
-				factor = 20
-			}
+			base = 600
 		}
 	}
 	establish_visegrad_research_group = {
@@ -5022,11 +6450,11 @@ seek_cooperation_category = {
 			set_global_flag = POL_established_visegrad_tech_group
 		}
 		ai_will_do = {
-			factor = 100
+			base = 600
 		}
 	}
 }
-seek_allies_category = {
+seek_allies_category = {##stoped here
 	invite_uk = {
 		icon =  GFX_decision_eng_install_government
 		visible = {
@@ -5620,7 +7048,7 @@ army_reform_category = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_19
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 100
 		}
 	}
 	increase_POW = {
@@ -5646,7 +7074,7 @@ army_reform_category = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_20
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 0
 		}
 	}
 	dissolve_POW = {
@@ -5671,11 +7099,11 @@ army_reform_category = {
 		}
 		remove_effect = {
 			add_to_variable = {POL_WPvsPOW_army_attack_factor = 0.1}
-			add_to_variable = {POL_WPvsPOW_army_org_factor = 0.13}
+			add_to_variable = {POL_WPvsPOW_army_org_factor = 0.12}
 			add_to_variable = {POL_WPvsPOW_army_defence_factor = 0.1}
 			add_to_variable = {POL_WPvsPOW_war_support_factor = 0.2}
-			add_to_variable = {POL_WPvsPOW_army_speed_factor = 0.05}
-			add_to_variable = {POL_WPvsPOW_max_planning_factor = 0.1}
+			add_to_variable = {POL_WPvsPOW_army_speed_factor = 0.03}
+			add_to_variable = {POL_WPvsPOW_max_planning_factor = 0.05}
 			clear_variable = POL_WP_strength
 			clear_variable = POL_POW_strength
 			set_country_flag = POL_army_problem_solved
@@ -5683,7 +7111,7 @@ army_reform_category = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_21
 		}
 		ai_will_do = {
-			factor = 50
+			factor = 100
 		}
 	}
 	change_WP_high_command = {
@@ -5712,11 +7140,8 @@ army_reform_category = {
 			add_to_variable = {POL_WPvsPOW_army_org_factor = 0.1}
 			add_to_variable = {POL_WPvsPOW_army_defence_factor = 0.1}
 			add_to_variable = {POL_WPvsPOW_war_support_factor = 0.3}
-			#add_to_variable = {POL_WPvsPOW_max_dig_in_factor = 0.1}
 			add_to_variable = {POL_WPvsPOW_resistance_damage_to_garrison = -0.1}
 			add_to_variable = {POL_WPvsPOW_promote_cost_factor = -0.35}
-			#add_to_variable = {POL_WPvsPOW_army_morale = 0.1}
-			#add_to_variable = {POL_WPvsPOW_special_forces_cap = 0.2}
 			clear_variable = POL_WP_strength
 			clear_variable = POL_POW_strength
 			set_country_flag = POL_army_problem_solved
@@ -5724,7 +7149,7 @@ army_reform_category = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_22
 		}
 		ai_will_do = {
-			factor = 50
+			factor = 0
 		}
 	}
 	internal_scuffles = {
@@ -5862,7 +7287,6 @@ economy_decisions = {
 		}
 	}
 }
-##has_army_manpower = { size > 849999 }
 establish_honor_i_ojczyzna_category = {
 	#invite_general_to_H2O = {
 	#	icon =  GFX_decision_eng_blackshirt_march
@@ -5899,13 +7323,6 @@ establish_honor_i_ojczyzna_category = {
 			original_tag = POL
 		}
 		days_remove = 70
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 4
 		}
@@ -5915,6 +7332,9 @@ establish_honor_i_ojczyzna_category = {
 			add_to_variable = { POL_honor_i_ojczyzna_experience_gain_army_factor = 0.1 }
 			add_to_variable = { POL_honor_i_ojczyzna_experience_gain_navy_factor = 0.1 }
 			custom_effect_tooltip = POL_custom_effect_tooltip_57
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	expand_high_command = {
@@ -5927,13 +7347,6 @@ establish_honor_i_ojczyzna_category = {
 			original_tag = POL
 		}
 		days_remove = 70
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 4
 		}
@@ -5942,6 +7355,9 @@ establish_honor_i_ojczyzna_category = {
 			add_to_variable = { POL_honor_i_ojczyzna_max_planning_factor = 0.05 }
 			add_to_variable = { POL_honor_i_ojczyzna_planning_speed = 0.1 }
 			custom_effect_tooltip = POL_custom_effect_tooltip_58
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	establish_grom = {
@@ -5974,6 +7390,9 @@ establish_honor_i_ojczyzna_category = {
 			add_to_variable = { POL_honor_i_ojczyzna_special_forces_defence_factor = 0.05 }
 			custom_effect_tooltip = POL_custom_effect_tooltip_59
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	expand_volounteer_corps = {
 		icon = GFX_decision_generic_air
@@ -6001,6 +7420,9 @@ establish_honor_i_ojczyzna_category = {
 			add_to_variable = { POL_honor_i_ojczyzna_send_volunteers_tension = -0.1 }
 			add_to_variable = { POL_honor_i_ojczyzna_send_volunteer_size = 3 }
 			custom_effect_tooltip = POL_custom_effect_tooltip_60
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 }

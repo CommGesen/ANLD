@@ -1,0 +1,159 @@
+SER_AI_hating_albania = {
+	allowed = { 
+		original_tag = SER
+	}
+	enable = {
+		ALB = {
+			OR = {
+				controls_state = 105
+				controls_state = 106
+				controls_state = 801
+			}
+		}
+	}
+	abort = {
+		OR = {
+			ALB = {
+				NOT = {
+					controls_state = 105
+					controls_state = 801
+					controls_state = 106
+				}
+			}
+			is_in_faction_with = ALB
+		}
+	}
+	ai_strategy = {
+		type = ignore
+		id = "ALB"
+		value = 500
+	}
+	ai_strategy = {
+		type = conquer
+		id = "ALB"
+		value = 500
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "ALB"
+		value = 500
+	}
+}
+
+SER_AI_greek_serbian_friendship = {
+	allowed = { 
+		original_tag = SER
+	}
+	enable = {
+		country_exists = GRE
+		NOT = {
+			has_war_with = GRE
+		}
+	}
+	abort = {
+		has_war_with = GRE
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GRE"
+		value = 600
+	}
+	ai_strategy = {
+		type = befriend
+		id = "GRE"
+		value = 600
+	}
+	ai_strategy = {
+		type = support
+		id = "GRE"
+		value = 600
+	}
+	ai_strategy = {
+		type = protect
+		id = "GRE"
+		value = 600
+	}
+}
+
+SER_AI_disliking_bulgaria = {
+	allowed = { 
+		original_tag = SER
+	}
+	enable = {
+		any_state = {
+			OR = {
+				is_core_of = SER
+				is_claimed_by = SER
+			}
+			controller = BUL
+		}
+	}
+	abort = {
+		NOT = {
+			any_state = {
+				OR = {
+					is_core_of = SER
+					is_claimed_by = SER
+				}
+				controller = BUL
+			}
+		}
+	}
+	ai_strategy = {
+		type = ignore
+		id = "BUL"
+		value = 600
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "BUL"
+		value = 600
+	}
+	ai_strategy = {
+		type = conquer
+		id = "BUL"
+		value = 600
+	}
+}
+
+SER_AI_disliking_croatia = {
+	allowed = { 
+		original_tag = SER
+	}
+	enable = {
+		any_state = {
+			OR = {
+				is_core_of = SER
+				is_claimed_by = SER
+			}
+			controller = CRO
+		}
+	}
+	abort = {
+		NOT = {
+			any_state = {
+				OR = {
+					is_core_of = SER
+					is_claimed_by = SER
+				}
+				controller = CRO
+			}
+		}
+	}
+	ai_strategy = {
+		type = ignore
+		id = "CRO"
+		value = 600
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "CRO"
+		value = 600
+	}
+	ai_strategy = {
+		type = conquer
+		id = "CRO"
+		value = 600
+	}
+}
+

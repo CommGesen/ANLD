@@ -1,0 +1,157 @@
+GRE_AI_hating_albania = {
+	allowed = { 
+		original_tag = GRE
+	}
+	enable = {
+		ALB = {
+			OR = {
+				controls_state = 185
+				controls_state = 805
+			}
+		}
+	}
+	abort = {
+		OR = {
+			ALB = {
+				NOT = {
+					controls_state = 185
+					controls_state = 805
+				}
+			}
+			is_in_faction_with = ALB
+		}
+	}
+	ai_strategy = {
+		type = ignore
+		id = "ALB"
+		value = 500
+	}
+	ai_strategy = {
+		type = conquer
+		id = "ALB"
+		value = 500
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "ALB"
+		value = 500
+	}
+}
+
+GRE_AI_greek_serbian_friendship = {
+	allowed = { 
+		original_tag = GRE
+	}
+	enable = {
+		country_exists = SER
+		NOT = {
+			has_war_with = SER
+		}
+	}
+	abort = {
+		has_war_with = SER
+	}
+	ai_strategy = {
+		type = alliance
+		id = "SER"
+		value = 600
+	}
+	ai_strategy = {
+		type = befriend
+		id = "SER"
+		value = 600
+	}
+	ai_strategy = {
+		type = support
+		id = "SER"
+		value = 600
+	}
+	ai_strategy = {
+		type = protect
+		id = "SER"
+		value = 600
+	}
+}
+
+GRE_AI_hating_ottomans = {
+	allowed = { 
+		original_tag = GRE
+	}
+	enable = {
+		any_state = {
+			OR = {
+				is_core_of = GRE
+				is_claimed_by = GRE
+			}
+			controller = TUR
+		}
+	}
+	abort = {
+		NOT = {
+			any_state = {
+				OR = {
+					is_core_of = GRE
+					is_claimed_by = GRE
+				}
+				controller = TUR
+			}
+		}
+	}
+	ai_strategy = {
+		type = ignore
+		id = "TUR"
+		value = 600
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "TUR"
+		value = 600
+	}
+	ai_strategy = {
+		type = conquer
+		id = "TUR"
+		value = 600
+	}
+}
+
+GRE_AI_not_trusting_bulgaria = {
+	allowed = { 
+		original_tag = GRE
+	}
+	enable = {
+		any_state = {
+			OR = {
+				is_core_of = GRE
+				is_claimed_by = GRE
+			}
+			controller = BUL
+		}
+	}
+	abort = {
+		NOT = {
+			any_state = {
+				OR = {
+					is_core_of = GRE
+					is_claimed_by = GRE
+				}
+				controller = BUL
+			}
+		}
+	}
+	ai_strategy = {
+		type = ignore
+		id = "BUL"
+		value = 400
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "BUL"
+		value = 400
+	}
+	ai_strategy = {
+		type = conquer
+		id = "BUL"
+		value = 400
+	}
+}
+

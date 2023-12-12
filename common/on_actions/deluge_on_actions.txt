@@ -1581,6 +1581,80 @@ on_actions = {
 					id = deluge_poland.107
 					days = 69
 				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = POL_ai_behavior
+							option = RANDOM
+						}
+						is_historical_focus_on = no
+					}
+					random_list = {
+						5 = {
+							set_country_flag = POL_rydz_smigly_ai_chosen
+						}
+						5 = {
+							set_country_flag = POL_sikorski_left_ai_chosen
+						}
+						5 = {
+							set_country_flag = POL_sikorski_right_ai_chosen
+						}
+						5 = {
+							set_country_flag = POL_zadruga_lechitic_ai_chosen
+						}
+						5 = {
+							set_country_flag = POL_zadruga_panslavic_ai_chosen
+						}
+						5 = {
+							set_country_flag = POL_falanga_ai_chosen
+						}
+						5 = {
+							set_country_flag = POL_ND_ai_chosen
+						}
+						4 = {
+							set_country_flag = POL_PSL_ai_chosen
+						}
+						4 = {
+							set_country_flag = POL_PPS_ai_chosen
+						}
+						4 = {
+							set_country_flag = POL_KPP_ai_chosen
+						}
+						5 = {
+							set_country_flag = POL_PKWN_ai_chosen
+						}
+						5 = {
+							set_country_flag = POL_PZPR_ai_chosen
+						}
+						4 = {
+							set_country_flag = POL_NSP_ai_chosen
+						}
+						4 = {
+							set_country_flag = POL_NSPR_ai_chosen
+						}
+						5 = {
+							set_country_flag = POL_Wettins_ai_chosen
+						}
+						5 = {
+							set_country_flag = POL_Walewski_ai_chosen
+						}
+						5 = {
+							set_country_flag = POL_Andrassy_ai_chosen
+						}
+						5 = {
+							set_country_flag = POL_Tyszkiewicz_ai_chosen
+						}
+						5 = {
+							set_country_flag = POL_Czartoryski_ai_chosen
+						}
+						5 = {
+							set_country_flag = POL_Radziwill_ai_chosen
+						}
+						5 = {
+							set_country_flag = POL_Piast_ai_chosen
+						}
+					}
+				}
 			}
 		}
 	}

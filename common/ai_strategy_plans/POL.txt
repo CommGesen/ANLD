@@ -1,0 +1,1660 @@
+Poland_rydz_smigly_path = {
+	name = "Rydz-Śmigły takes over Poland!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			is_historical_focus_on = yes
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = RYDZ_SMIGLY
+			}
+			has_country_flag = POL_rydz_smigly_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_continue_with_sanation
+		POL_smigly_wins
+		POL_purge_undersirables
+		POL_cult_of_old_marshal
+		
+		POL_rising_of_central_powers
+		POL_seek_enemies
+		POL_seek_allies
+		POL_seek_collaboration
+		POL_seek_cooperation
+		POL_seek_empire
+		
+		POL_force_atheism
+		POL_nationalise_churches
+		POL_create_ozn
+		POL_begin_oczyszczenie_project
+		POL_abolish_monarchy
+		POL_ensure_complete_political_dominance
+		POL_cult_of_new_marshal
+		POL_use_futurists
+		POL_enforce_patriarchy
+		POL_teach_about_national_myths_in_schools
+		POL_national_myth_of_hyperborea
+	}
+	
+	#research = {
+	#	infantry_weapons = 50.0
+	#	infantry_tech = 15.0
+	#	artillery = 8.0
+	#	support_tech = 6.5
+	#}
+
+	ideas = {
+		POL_deluge_koc = 15
+		POL_deluge_jozef_beck = 15
+		POL_deluge_raczkiewicz = 15
+		POL_deluge_bartel = 15
+		POL_deluge_grabski = 15
+		POL_deluge_zdziechowski = 15
+	}
+
+	#traits = {
+	#	captain_of_industry = 5
+	#}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+Poland_sikorski_left_wing = {
+	name = "Sikorski takes power and cooperates with PPP!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = SIKORSKI_LEFT
+			}
+			has_country_flag = POL_sikorski_left_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_continue_with_sanation
+		POL_sikorski_wins
+		POL_invite_PSL_to_government
+		POL_cult_of_old_marshal
+		
+		POL_rising_of_central_powers
+		POL_seek_enemies
+		POL_seek_allies
+		POL_seek_collaboration
+		POL_seek_cooperation
+		POL_seek_empire
+		
+		POL_freedom_of_religion
+		POL_equality_of_man_and_woman
+		POL_culture_not_race
+		POL_start_cultural_integration
+		POL_make_deal_with_king
+		POL_partly_free_elections
+	}
+
+	ideas = {
+		POL_deluge_zyndram_koscialkowski = 15
+		POL_deluge_jozef_beck = 15
+		POL_deluge_raczkiewicz = 15
+		POL_deluge_bartel = 15
+		POL_deluge_grabski = 15
+		POL_deluge_zdziechowski = 15
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+Poland_sikorski_right_wing = {
+	name = "Sikorski takes power and cooperates with ND!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = SIKORSKI_RIGHT
+			}
+			has_country_flag = POL_sikorski_right_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_continue_with_sanation
+		POL_sikorski_wins
+		POL_invite_ND_to_government
+		POL_cult_of_old_marshal
+		
+		POL_rising_of_central_powers
+		POL_seek_enemies
+		POL_seek_allies
+		POL_seek_collaboration
+		POL_seek_cooperation
+		POL_seek_empire
+		
+		POL_freedom_of_religion
+		POL_emphasize_catholic_values
+		POL_culture_not_race
+		POL_start_cultural_integration
+		POL_make_deal_with_king
+		POL_partly_free_elections
+	}
+
+	ideas = {
+		POL_deluge_zygmunt_seyda = 15
+		POL_deluge_jozef_beck = 15
+		POL_deluge_raczkiewicz = 15
+		POL_deluge_bartel = 15
+		POL_deluge_grabski = 15
+		POL_deluge_zdziechowski = 15
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+Poland_zadruga_lechitic = {
+	name = "Stachniuk takes power and enpowers lechitic myth!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = ZADRUGA_LECHITIC
+			}
+			has_country_flag = POL_zadruga_lechitic_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_continue_with_sanation
+		POL_stachniuk_wins
+		POL_find_support_among_artists
+		POL_find_support_among_radicals
+		POL_purge_the_party
+		POL_establish_zadruga
+		
+		POL_rising_of_central_powers
+		POL_seek_enemies
+		POL_seek_allies
+		POL_seek_collaboration
+		POL_seek_cooperation
+		POL_seek_empire
+		
+		POL_lechitic_legacy
+		POL_gloryfiy_mieslaws_uprising
+		POL_take_peoples_property_from_christians
+		POL_mass_propagation_of_anthropocentrism
+		POL_take_peoples_property_from_capitalists
+		POL_propagation_of_proletarian_nationalism
+		POL_replace_germanic_king
+	}
+
+	ideas = {
+		POL_deluge_tadeusz_then = 15
+		POL_deluge_stepinski = 15
+		POL_deluge_klopocka = 15
+		POL_deluge_szukalski = 15
+		POL_deluge_grabski = 15
+		POL_deluge_jozef_beck = 15
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+Poland_zadruga_panslavic = {
+	name = "Stachniuk takes power and promotes Pan-Slavic sentiments!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = ZADRUGA_PANSLAVIC
+			}
+			has_country_flag = POL_zadruga_panslavic_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_continue_with_sanation
+		POL_stachniuk_wins
+		POL_find_support_among_artists
+		POL_find_support_among_radicals
+		POL_purge_the_party
+		POL_establish_zadruga
+		
+		POL_rising_of_central_powers
+		POL_seek_enemies
+		POL_seek_allies
+		POL_seek_collaboration
+		POL_seek_cooperation
+		POL_seek_empire
+		
+		POL_torch_for_all_slavs
+		POL_keep_friends_from_above_baltic
+		POL_take_peoples_property_from_christians
+		POL_mass_propagation_of_anthropocentrism
+		POL_take_peoples_property_from_capitalists
+		POL_propagation_of_proletarian_nationalism
+		POL_replace_germanic_king
+	}
+
+	ideas = {
+		POL_deluge_tadeusz_then = 15
+		POL_deluge_stepinski = 15
+		POL_deluge_klopocka = 15
+		POL_deluge_szukalski = 15
+		POL_deluge_grabski = 15
+		POL_deluge_jozef_beck = 15
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+Poland_falanga = {
+	name = "Piasecki takes power!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = FALANGA
+			}
+			has_country_flag = POL_falanga_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_continue_with_sanation
+		POL_piasecki_wins
+		POL_seek_support_from_catholic_church
+		POL_seek_support_from_ND
+		POL_purge_the_party
+		POL_ONR_takes_over
+		
+		POL_rising_of_central_powers
+		POL_seek_enemies
+		POL_seek_allies
+		POL_seek_collaboration
+		POL_seek_cooperation
+		POL_seek_empire
+		
+		POL_promote_national_radical_ideology
+		POL_establish_universal_educational_organization
+		POL_the_third_way
+		POL_falangist_corporatism
+		POL_falanga_and_monarch
+		POL_return_of_crusades
+		POL_catholic_universalism
+	}
+
+	ideas = {
+		POL_deluge_swietlicki = 15
+		POL_deluge_szpakowski = 15
+		POL_deluge_zdziechowski = 15
+		POL_deluge_stanislaw_piasecki = 15
+		POL_deluge_grabski = 15
+		POL_deluge_jozef_beck = 15
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+Poland_national_democracy = {
+	name = "ND takes power in Poland!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = ND
+			}
+			has_country_flag = POL_ND_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_oppose_sanation
+		POL_democracy_prevails
+		POL_ND_wins
+		
+		POL_new_foreign_policy
+		POL_new_revanchist_policy
+		
+		POL_attract_foreign_investments
+		POL_reforms_towards_free_market
+		POL_question_of_monarchy_in_republic
+		POL_rise_of_national_liberal_catholicism
+		POL_seek_support_among_peasants
+		POL_fight_corruption_in_army
+		POL_fight_corruption_in_administration
+		
+		POL_return_of_crusades
+		POL_catholic_universalism
+	}
+
+	ideas = {
+		POL_deluge_adam_doboszynski = 15
+		POL_deluge_bartel = 15
+		POL_deluge_zdziechowski = 15
+		POL_deluge_zygmunt_seyda = 15
+		POL_deluge_grabski = 15
+		POL_deluge_niewiadomski = 15
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+Poland_polish_peoples_party = {
+	name = "Polish People's Party takes power in Poland!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = PSL
+			}
+			has_country_flag = POL_PSL_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_oppose_sanation
+		POL_democracy_prevails
+		POL_PSL_wins
+		
+		POL_new_foreign_policy
+		POL_european_cooperation_focus
+		
+		POL_question_of_monarchy_in_republic
+		POL_birth_of_new_republic
+		POL_seek_support_among_peasants
+		POL_fight_corruption_in_army
+		POL_fight_corruption_in_administration
+	}
+
+	ideas = {
+		POL_deluge_jozef_panas = 15
+		POL_deluge_bartel = 15
+		POL_deluge_zdziechowski = 15
+		POL_deluge_zyndram_koscialkowski = 15
+		POL_deluge_grabski = 15
+		POL_deluge_jan_woznicki = 15
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+Poland_polish_socialist_party = {
+	name = "Polish Socialist Party takes power in Poland!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = PPS
+			}
+			has_country_flag = POL_PPS_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_oppose_sanation
+		POL_radicals_takeover
+		POL_the_new_system
+		POL_PPS_wins
+		
+		POL_new_foreign_policy
+		POL_new_revolution
+		
+		POL_alliance_with_church
+		POL_socialist_eucharist
+		
+		POL_cult_of_progress
+		POL_socialist_education
+		POL_remember_the_history
+		
+		POL_workers_militia
+		POL_communist_youth_organisation
+		POL_encourage_class_war
+		POL_slavic_army_of_labour
+		POL_glorify_warrioress
+		POL_apolitical_army
+		POL_guerrilla_tactics
+		POL_country_for_all
+		POL_new_radical_constitution
+		
+		POL_protection_of_workers_unions
+		POL_autonomy_for_workers_unions
+		POL_unite_workers_unions_and_government
+		
+		POL_new_five_year_plan
+		POL_regional_development
+		POL_forced_urbanization
+		POL_transformation_of_nature
+		POL_centralised_heavy_industry
+	}
+
+	ideas = {
+		POL_deluge_stanislaw_wojciechowski = 15
+		POL_deluge_norbert_barlicki = 15
+		POL_deluge_adam_ciolkosz = 15
+		POL_deluge_alfred_lampe = 15
+		POL_deluge_edward_osobka_morawski = 15
+		POL_deluge_jozef_cyrankiewicz = 15
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+Poland_communist_party_of_poland = {
+	name = "Communist Party of Poland takes power in Poland!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = KPP
+			}
+			has_country_flag = POL_KPP_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_oppose_sanation
+		POL_radicals_takeover
+		POL_the_new_system
+		POL_KPP_wins
+		
+		POL_new_foreign_policy
+		POL_new_revolution
+		
+		POL_get_rid_of_opium_for_masses
+		POL_nationalize_churchs_property
+		POL_cult_of_the_revolution
+		
+		POL_cult_of_progress
+		POL_socialist_education
+		POL_militarized_schools
+		
+		POL_workers_militia
+		POL_communist_youth_organisation
+		POL_encourage_class_war
+		POL_slavic_army_of_labour
+		POL_glorify_warrioress
+		POL_political_commissars_in_army
+		POL_anti_guerrilla_tactics
+		POL_country_for_all
+		POL_new_radical_constitution
+		
+		POL_protection_of_workers_unions
+		POL_puppet_workers_unions
+		POL_delegalise_strikes_communist
+		
+		POL_new_five_year_plan
+		POL_collectivization_of_agriculture
+		POL_forced_urbanization
+		POL_transformation_of_nature
+		POL_centralised_heavy_industry
+	}
+
+	ideas = {
+		POL_deluge_stanislaw_wojciechowski = 15
+		POL_deluge_norbert_barlicki = 15
+		POL_deluge_adam_ciolkosz = 15
+		POL_deluge_alfred_lampe = 15
+		POL_deluge_edward_osobka_morawski = 15
+		POL_deluge_jozef_cyrankiewicz = 15
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+Poland_national_party_of_labour = {
+	name = "National Party of Labour takes power in Poland!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = NSP
+			}
+			has_country_flag = POL_NSP_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_oppose_sanation
+		POL_radicals_takeover
+		POL_the_new_system
+		POL_NSP_wins
+		
+		POL_new_foreign_policy
+		POL_new_revanchist_policy
+		
+		POL_alliance_with_church
+		POL_revolutionary_eucharist
+		
+		POL_cult_of_progress
+		POL_socialist_education
+		POL_militarized_schools
+		
+		POL_workers_militia
+		POL_communist_youth_organisation
+		POL_encourage_class_war
+		POL_slavic_army_of_labour
+		POL_glorify_mothers
+		POL_apolitical_army
+		POL_guerrilla_tactics
+		POL_integrate_minorities
+		POL_new_radical_constitution
+		
+		POL_protection_of_workers_unions
+		POL_autonomy_for_workers_unions
+		POL_delegalise_strikes_communist
+		
+		POL_new_five_year_plan
+		POL_regional_development
+		POL_socialist_agrarianism
+		POL_unity_of_men_and_nature
+		POL_decentralised_heavy_industry
+	}
+
+	ideas = {
+		POL_deluge_ludwik_waszkiewicz = 15
+		POL_deluge_stanislaw_mroz = 15
+		POL_deluge_adam_ciolkosz = 15
+		POL_deluge_alfred_lampe = 15
+		POL_deluge_edward_osobka_morawski = 15
+		POL_deluge_jozef_cyrankiewicz = 15
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+Poland_national_socialist_workers_party = {
+	name = "National-Socialist Workers' Party takes power in Poland!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = NSPR
+			}
+			has_country_flag = POL_NSPR_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_oppose_sanation
+		POL_radicals_takeover
+		POL_the_new_system
+		POL_NSPR_wins
+		
+		POL_new_foreign_policy
+		POL_new_revanchist_policy
+		
+		POL_get_rid_of_opium_for_masses
+		POL_nationalize_churchs_property
+		POL_cult_of_the_wodz
+		
+		POL_cult_of_progress
+		POL_socialist_education
+		POL_militarized_schools
+		
+		POL_workers_militia
+		POL_communist_youth_organisation
+		POL_encourage_class_war
+		POL_slavic_army_of_labour
+		POL_glorify_mothers
+		POL_political_commissars_in_army
+		POL_anti_guerrilla_tactics
+		POL_integrate_minorities
+		POL_new_radical_constitution
+		
+		POL_protection_of_workers_unions
+		POL_puppet_workers_unions
+		POL_delegalise_strikes_communist
+		
+		POL_new_five_year_plan
+		POL_collectivization_of_agriculture
+		POL_forced_urbanization
+		POL_transformation_of_nature
+		POL_centralised_heavy_industry
+	}
+
+	ideas = {
+		POL_deluge_ludwik_waszkiewicz = 15
+		POL_deluge_stanislaw_mroz = 15
+		POL_deluge_adam_ciolkosz = 15
+		POL_deluge_alfred_lampe = 15
+		POL_deluge_edward_osobka_morawski = 15
+		POL_deluge_jozef_cyrankiewicz = 15
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+Poland_polish_commitee_of_national_liberation = {
+	name = "Polish Commitee of National Liberation takes power in Poland!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = PKWN
+			}
+			has_country_flag = POL_PKWN_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_oppose_sanation
+		POL_radicals_takeover
+		POL_the_new_system
+		POL_PKWN_wins
+		POL_democracy_in_the_party
+		
+		POL_new_foreign_policy
+		POL_new_revolution
+		
+		POL_party_discipline
+		POL_technocratic_tendencies
+		POL_integrate_PNS
+		POL_integrate_futurists
+		POL_integrate_SCh
+		POL_integrate_anarchists
+		POL_continue_pluralism_in_party
+		
+		POL_get_rid_of_opium_for_masses
+		POL_nationalize_churchs_property
+		POL_cult_of_the_revolution
+		
+		POL_cult_of_progress
+		POL_socialist_education
+		POL_militarized_schools
+		
+		POL_workers_militia
+		POL_communist_youth_organisation
+		POL_encourage_class_war
+		POL_slavic_army_of_labour
+		POL_glorify_warrioress
+		POL_apolitical_army
+		POL_anti_guerrilla_tactics
+		POL_country_for_all
+		POL_new_radical_constitution
+		
+		POL_protection_of_workers_unions
+		POL_puppet_workers_unions
+		POL_delegalise_strikes_communist
+		
+		POL_new_five_year_plan
+		POL_regional_development
+		POL_forced_urbanization
+		POL_transformation_of_nature
+		POL_decentralised_heavy_industry
+	}
+
+	ideas = {
+		POL_deluge_anatol_stern = 15
+		POL_deluge_stanislaw_mikolajczyk = 15
+		POL_deluge_adam_ciolkosz = 15
+		POL_deluge_alfred_lampe = 15
+		POL_deluge_edward_osobka_morawski = 15
+		POL_deluge_jozef_cyrankiewicz = 15
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+Poland_polish_united_workers_party = {
+	name = "Polish Commitee of National Liberation takes power in Poland and later transforms into Polish United Workers' Party!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = PZPR
+			}
+			has_country_flag = POL_PZPR_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_oppose_sanation
+		POL_radicals_takeover
+		POL_the_new_system
+		POL_PKWN_wins
+		POL_democracy_in_the_party
+		
+		POL_new_foreign_policy
+		POL_new_revolution
+		
+		POL_party_discipline
+		POL_technocratic_tendencies
+		POL_integrate_PNS
+		POL_integrate_futurists
+		POL_integrate_SCh
+		POL_integrate_anarchists
+		POL_reform_into_pzpr
+		
+		POL_get_rid_of_opium_for_masses
+		POL_nationalize_churchs_property
+		POL_cult_of_the_revolution
+		
+		POL_cult_of_progress
+		POL_socialist_education
+		POL_militarized_schools
+		
+		POL_workers_militia
+		POL_communist_youth_organisation
+		POL_encourage_class_war
+		POL_slavic_army_of_labour
+		POL_glorify_warrioress
+		POL_apolitical_army
+		POL_anti_guerrilla_tactics
+		POL_country_for_all
+		POL_new_radical_constitution
+		
+		POL_protection_of_workers_unions
+		POL_puppet_workers_unions
+		POL_delegalise_strikes_communist
+		
+		POL_new_five_year_plan
+		POL_regional_development
+		POL_forced_urbanization
+		POL_transformation_of_nature
+		POL_decentralised_heavy_industry
+	}
+
+	ideas = {
+		POL_deluge_anatol_stern = 15
+		POL_deluge_stanislaw_mikolajczyk = 15
+		POL_deluge_adam_ciolkosz = 15
+		POL_deluge_alfred_lampe = 15
+		POL_deluge_edward_osobka_morawski = 15
+		POL_deluge_jozef_cyrankiewicz = 15
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+Poland_wettins = {
+	name = "Wettins take power in Poland!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = WETTINS
+			}
+			has_country_flag = POL_Wettins_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_oppose_sanation
+		POL_monarchists_take_power
+		POL_house_of_wettin_continues
+		POL_reform_3rd_may_consitution
+		
+		POL_new_foreign_policy
+		POL_royal_foreign_policy
+		
+		POL_reorganization_of_saxon_estates
+		POL_saxon_military_duty
+		POL_direction_towards_west
+		POL_direction_towards_east
+		POL_the_great_war_rivalry
+		POL_ties_with_windsors
+		
+		POL_limited_rights_for_religious_minorities
+		POL_alliance_with_church_monarchist
+		POL_deal_with_jews
+		POL_equality_of_race
+		POL_mixed_economy
+		POL_every_adult_men_in_parlament
+		POL_enpower_bourgeoisie
+	}
+
+	ideas = {
+		POL_deluge_edward_saryusz_stokowski = 15
+		POL_deluge_eustachy_sapieha = 15
+		POL_deluge_waclaw_niemojowski = 15
+		POL_deluge_grabski = 15
+		POL_deluge_zdziechowski = 15
+		POL_deluge_jan_kochanowski = 15
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+Poland_walewski = {
+	name = "Walewski takes power in Poland!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = WALEWSKI
+			}
+			has_country_flag = POL_Walewski_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_oppose_sanation
+		POL_monarchists_take_power
+		POL_elections_for_new_king
+		POL_bonaparte_bastard_wins
+		POL_reform_3rd_may_consitution
+		
+		POL_new_foreign_policy
+		POL_royal_foreign_policy
+		
+		POL_modern_regime
+		POL_mix_napoleonic_code_and_constitution_of_3rd_may
+		POL_ultimatum_for_france
+		POL_coronation_in_paris
+		POL_new_order
+		
+		POL_limited_rights_for_religious_minorities
+		POL_alliance_with_church_monarchist
+		POL_deal_with_jews
+		POL_equality_of_race
+		POL_mixed_economy
+		POL_women_in_parlament
+		POL_socialist_kingdom
+	}
+
+	ideas = {
+		POL_deluge_edward_saryusz_stokowski = 15
+		POL_deluge_eustachy_sapieha = 15
+		POL_deluge_waclaw_niemojowski = 15
+		POL_deluge_grabski = 15
+		POL_deluge_zdziechowski = 15
+		POL_deluge_jan_kochanowski = 15
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+Poland_andrassy = {
+	name = "Andrassy takes power in Poland!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = ANDRASSY
+			}
+			has_country_flag = POL_Andrassy_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_oppose_sanation
+		POL_monarchists_take_power
+		POL_elections_for_new_king
+		POL_andrassy_wins
+		POL_reform_3rd_may_consitution
+		
+		POL_new_foreign_policy
+		POL_royal_foreign_policy
+		
+		POL_contact_hungarian_monarchists
+		POL_restore_personal_union
+		POL_creation_of_real_union
+		
+		POL_limited_rights_for_religious_minorities
+		POL_alliance_with_church_monarchist
+		POL_deal_with_jews
+		POL_equality_of_race
+		POL_mixed_economy
+		POL_every_adult_men_in_parlament
+		POL_enpower_bourgeoisie
+	}
+
+	ideas = {
+		POL_deluge_edward_saryusz_stokowski = 15
+		POL_deluge_eustachy_sapieha = 15
+		POL_deluge_waclaw_niemojowski = 15
+		POL_deluge_grabski = 15
+		POL_deluge_zdziechowski = 15
+		POL_deluge_jan_kochanowski = 15
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+Poland_tyszkiewicz = {
+	name = "Tyszkiewicz takes power in Poland!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = TYSZKIEWICZ
+			}
+			has_country_flag = POL_Tyszkiewicz_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_oppose_sanation
+		POL_monarchists_take_power
+		POL_elections_for_new_king
+		POL_tyszkiewicz_wins
+		POL_reform_3rd_may_consitution
+		
+		POL_new_foreign_policy
+		POL_royal_foreign_policy
+		
+		POL_invite_exiled_lithuanian_royalists
+		POL_demand_lithuanian_lands_from_baltia
+		POL_demand_lithuanian_lands_from_belarus
+		POL_restore_commonwealth
+		POL_solving_restoration_problems
+		POL_mutual_respect
+		
+		POL_restore_warsaw_confederation
+		POL_cooperate_with_remnants_of_zadruga
+		POL_protect_the_jews_monarchist
+		POL_encourage_imigration
+		POL_economy_controlled_by_synarch
+		POL_cut_off_greedy_nobility
+		POL_disband_parlament
+		POL_technocratic_government
+		POL_empower_the_synarch
+	}
+
+	ideas = {
+		POL_deluge_edward_saryusz_stokowski = 15
+		POL_deluge_eustachy_sapieha = 15
+		POL_deluge_waclaw_niemojowski = 15
+		POL_deluge_grabski = 15
+		POL_deluge_zdziechowski = 15
+		POL_deluge_stanislaw_gaszynski = 15
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+Poland_czartoryski = {
+	name = "Czartoryski takes power in Poland!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = CZARTORYSKI
+			}
+			has_country_flag = POL_Czartoryski_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_oppose_sanation
+		POL_monarchists_take_power
+		POL_elections_for_new_king
+		POL_czartoryski_wins
+		POL_reform_3rd_may_consitution
+		
+		POL_new_foreign_policy
+		POL_royal_foreign_policy
+		
+		POL_invite_exiled_lithuanian_royalists
+		POL_demand_lithuanian_lands_from_baltia
+		POL_demand_lithuanian_lands_from_belarus
+		POL_restore_commonwealth
+		POL_solving_restoration_problems
+		POL_mutual_respect
+		
+		POL_limited_rights_for_religious_minorities
+		POL_alliance_with_church_monarchist
+		POL_deal_with_jews
+		POL_equality_of_race
+		POL_mixed_economy
+		POL_every_adult_men_in_parlament
+		POL_enpower_bourgeoisie
+	}
+
+	ideas = {
+		POL_deluge_edward_saryusz_stokowski = 15
+		POL_deluge_eustachy_sapieha = 15
+		POL_deluge_waclaw_niemojowski = 15
+		POL_deluge_grabski = 15
+		POL_deluge_zdziechowski = 15
+		POL_deluge_jan_kochanowski = 15
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+Poland_radziwill = {
+	name = "Radziwiłł takes power in Poland!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = RADZWILL
+			}
+			has_country_flag = POL_Radziwill_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_oppose_sanation
+		POL_monarchists_take_power
+		POL_elections_for_new_king
+		POL_radziwill_wins
+		POL_reform_3rd_may_consitution
+		
+		POL_new_foreign_policy
+		POL_royal_foreign_policy
+		
+		POL_invite_exiled_lithuanian_royalists
+		POL_demand_lithuanian_lands_from_baltia
+		POL_demand_lithuanian_lands_from_belarus
+		POL_restore_commonwealth
+		POL_solving_restoration_problems
+		POL_mutual_respect
+		
+		POL_limited_rights_for_religious_minorities
+		POL_alliance_with_church_monarchist
+		POL_deal_with_jews
+		POL_equality_of_race
+		POL_mixed_economy
+		POL_women_in_parlament
+		POL_socialist_kingdom
+	}
+
+	ideas = {
+		POL_deluge_edward_saryusz_stokowski = 15
+		POL_deluge_eustachy_sapieha = 15
+		POL_deluge_waclaw_niemojowski = 15
+		POL_deluge_grabski = 15
+		POL_deluge_zdziechowski = 15
+		POL_deluge_jan_kochanowski = 15
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+Poland_piast = {
+	name = "Piast-Riedelski takes power in Poland!"
+	desc = ""
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = POL_AI_BEHAVIOR
+				option = PIAST
+			}
+			has_country_flag = POL_Piast_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		POL_start_army_reform
+		POL_divide_and_conquer
+		POL_hire_economists
+		POL_end_recovery
+		POL_legacy_of_polish_legions_in_lombardy
+		POL_national_defense_found
+		
+		POL_death_of_marshal
+		POL_oppose_sanation
+		POL_monarchists_take_power
+		POL_elections_for_new_king
+		POL_piast_riedelski_wins
+		POL_reform_3rd_may_consitution
+		
+		POL_new_foreign_policy
+		POL_royal_foreign_policy
+		
+		POL_legacy_of_sarmatian_myth
+		POL_spirit_of_nomadic_steppe_cavalary
+		POL_old_eastern_brothers
+		POL_prepare_for_conquest
+		POL_develop_sarmatian_lands
+		
+		POL_catholicism_state_religion
+		POL_alliance_with_church_monarchist
+		POL_confiscation_of_jewish_property
+		POL_path_towards_racial_purity
+		POL_free_market_economy
+		POL_only_nobility_in_the_parlament
+		POL_bring_back_patriarchy
+	}
+
+	ideas = {
+		POL_deluge_edward_saryusz_stokowski = 15
+		POL_deluge_eustachy_sapieha = 15
+		POL_deluge_waclaw_niemojowski = 15
+		POL_deluge_grabski = 15
+		POL_deluge_zdziechowski = 15
+		POL_deluge_leszek_gembarzewski = 15
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}

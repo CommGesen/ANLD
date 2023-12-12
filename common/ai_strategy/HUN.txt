@@ -1,0 +1,183 @@
+HUN_AI_polish_hungarian_friendship = {
+	allowed = { 
+		original_tag = HUN
+	}
+	enable = {
+		HUN = {
+			is_in_faction_with = POL
+		}
+	}
+	abort = {
+		has_war_with = POL
+	}
+	ai_strategy = {
+		type = alliance
+		id = "POL"
+		value = 1000
+	}
+	ai_strategy = {
+		type = befriend
+		id = "POL"
+		value = 1000
+	}
+	ai_strategy = {
+		type = support
+		id = "POL"
+		value = 1000
+	}
+	ai_strategy = {
+		type = protect
+		id = "POL"
+		value = 1000
+	}
+}
+
+HUN_AI_disliking_austria = {
+	allowed = { 
+		original_tag = HUN
+	}
+	enable = {
+		AUS = {
+			OR = {
+				controls_state = 70
+				controls_state = 71
+				controls_state = 73 
+				controls_state = 664 
+			}
+		}
+	}
+	abort = {
+		NOT = {
+			AUS = {
+				controls_state = 70
+				controls_state = 71
+				controls_state = 73 
+				controls_state = 664 
+			}
+		}
+	}
+	ai_strategy = {
+		type = ignore
+		id = "AUS"
+		value = 100
+	}
+	ai_strategy = {
+		type = conquer
+		id = "AUS"
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "AUS"
+		value = 100
+	}
+}
+
+HUN_AI_wanting_croatia = {
+	allowed = { 
+		original_tag = HUN
+	}
+	enable = {
+		CRO = {
+			OR = {
+				controls_state = 109
+				controls_state = 103
+				controls_state = 104
+			}
+		}
+	}
+	abort = {
+		NOT = {
+			CRO = {
+				controls_state = 109
+				controls_state = 103
+				controls_state = 104
+			}
+		}
+	}
+	ai_strategy = {
+		type = ignore
+		id = "CRO"
+		value = 50
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "CRO"
+		value = 50
+	}
+	ai_strategy = {
+		type = conquer
+		id = "CRO"
+		value = 300
+	}
+}
+
+HUN_AI_not_trusting_serbia = {
+	allowed = { 
+		original_tag = HUN
+	}
+	enable = {
+		SER = {
+			OR = {
+				controls_state = 45
+				controls_state = 847
+			}
+		}
+	}
+	abort = {
+		OR = {
+			NOT = {
+				SER = {
+					controls_state = 847
+					controls_state = 45
+				}
+			}
+			SER = {
+				is_in_faction_with = HUN
+			}
+		}
+	}
+	ai_strategy = {
+		type = ignore
+		id = "CRO"
+		value = 150
+	}
+	ai_strategy = {
+		type = conquer
+		id = "CRO"
+		value = 150
+	}
+}
+
+HUN_AI_not_trusting_romania = {
+	allowed = { 
+		original_tag = HUN
+	}
+	enable = {
+		country_exists = ROM
+	}
+	abort = {
+		OR = {
+			ROM = {
+				is_in_faction_with = HUN
+			}
+			ROM = {
+				is_subject = yes
+			}
+			NOT = {
+				country_exists = ROM
+			}
+		}
+	}
+	ai_strategy = {
+		type = ignore
+		id = "ROM"
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "ROM"
+		value = 100
+	}
+}
+

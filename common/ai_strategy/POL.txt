@@ -1,0 +1,441 @@
+POL_AI_polish_hungarian_friendship = {
+	allowed = { 
+		original_tag = POL
+	}
+	enable = {
+		POL = {
+			is_in_faction_with = HUN
+		}
+	}
+	abort = {
+		has_war_with = HUN
+	}
+	ai_strategy = {
+		type = alliance
+		id = "POL"
+		value = 1000
+	}
+	ai_strategy = {
+		type = befriend
+		id = "POL"
+		value = 1000
+	}
+	ai_strategy = {
+		type = support
+		id = "POL"
+		value = 1000
+	}
+	ai_strategy = {
+		type = protect
+		id = "POL"
+		value = 1000
+	}
+}
+
+POL_AI_disliking_austria = {
+	allowed = { 
+		original_tag = POL
+	}
+	enable = {
+		AUS = {
+			OR = {
+				controls_state = 9
+				controls_state = 69
+				controls_state = 72
+				controls_state = 75
+				controls_state = 74
+			}
+		}
+		NOT = {
+			has_completed_focus = POL_PSL_wins
+		}
+		NOT = {
+			has_completed_focus = POL_radicals_takeover
+		}
+	}
+	abort = {
+		NOT = {
+			AUS = {
+				controls_state = 9
+				controls_state = 69
+				controls_state = 72
+				controls_state = 75
+				controls_state = 74
+			}
+		}
+	}
+	ai_strategy = {
+		type = ignore
+		id = "AUS"
+		value = 100
+	}
+	ai_strategy = {
+		type = conquer
+		id = "AUS"
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "AUS"
+		value = 100
+	}
+}
+
+POL_AI_wanting_pomerania = {
+	allowed = { 
+		original_tag = POL
+	}
+	enable = {
+		POM = {
+			OR = {
+				controls_state = 63
+				controls_state = 62
+				controls_state = 85
+			}
+		}
+	}
+	abort = {
+		NOT = {
+			POM = {
+				controls_state = 63
+				controls_state = 62
+				controls_state = 85
+			}
+		}
+	}
+	ai_strategy = {
+		type = conquer
+		id = "POM"
+		value = 200
+	}
+	ai_strategy = {
+		type = consider_weak
+		id = "POM"
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "POM"
+		value = 50
+	}
+	ai_strategy = {
+		type = contain
+		id = "POM"
+		value = 150
+	}
+}
+
+POL_AI_disliking_germany = {
+	allowed = { 
+		original_tag = POL
+	}
+	enable = {
+		OR = {
+			GER = {
+				OR = {
+					controls_state = 68
+					controls_state = 62
+					controls_state = 63
+					controls_state = 85
+				}
+			}
+			WGR = {
+				OR = {
+					controls_state = 68
+					controls_state = 62
+					controls_state = 63
+					controls_state = 85
+				}
+			}
+			DDR = {
+				OR = {
+					controls_state = 68
+					controls_state = 62
+					controls_state = 63
+					controls_state = 85
+				}
+			}
+		}
+		has_global_flag = german_civil_war_ended
+		NOT = {
+			has_completed_focus = POL_radicals_takeover
+		}
+	}
+	abort = {
+		NOT = {
+			OR = {
+				GER = {
+					controls_state = 68
+					controls_state = 62
+					controls_state = 63
+					controls_state = 85
+				}
+				WGR = {
+					controls_state = 68
+					controls_state = 62
+					controls_state = 63
+					controls_state = 85
+				}
+				DDR = {
+					controls_state = 68
+					controls_state = 62
+					controls_state = 63
+					controls_state = 85
+				}
+			}
+		}
+	}
+	ai_strategy = {
+		type = ignore
+		id = "GER"
+		value = 400
+	}
+	ai_strategy = {
+		type = conquer
+		id = "GER"
+		value = 400
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "GER"
+		value = 400
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = "WGR"
+		value = 400
+	}
+	ai_strategy = {
+		type = conquer
+		id = "WGR"
+		value = 400
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "WGR"
+		value = 400
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = "DDR"
+		value = 400
+	}
+	ai_strategy = {
+		type = conquer
+		id = "DDR"
+		value = 400
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "DDR"
+		value = 400
+	}
+}
+
+POL_AI_not_trusting_baltia = {
+	allowed = { 
+		original_tag = POL
+	}
+	enable = {
+		BAL = {
+			OR = {
+				controls_state = 814
+				controls_state = 11
+				controls_state = 815
+				controls_state = 189
+				controls_state = 190
+				controls_state = 809
+				controls_state = 808
+				controls_state = 810
+				controls_state = 12
+			}
+		}
+	}
+	abort = {
+		OR = {
+			NOT = {
+				BAL = {
+					controls_state = 814
+					controls_state = 11
+					controls_state = 815
+					controls_state = 189
+					controls_state = 190
+					controls_state = 809
+					controls_state = 808
+					controls_state = 810
+					controls_state = 12
+				}
+			}
+			BAL = {
+				is_in_faction_with = POL
+			}
+		}
+	}
+	ai_strategy = {
+		type = ignore
+		id = "BAL"
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "BAL"
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = "BAL"
+		value = 250
+	}
+}
+
+POL_AI_not_trusting_belarus = {
+	allowed = { 
+		original_tag = POL
+	}
+	enable = {
+		BLR = {
+			OR = {
+				controls_state = 95
+				controls_state = 96
+				controls_state = 207
+				controls_state = 206
+				controls_state = 204
+				controls_state = 194
+			}
+		}
+	}
+	abort = {
+		OR = {
+			NOT = {
+				BLR = {
+					controls_state = 95
+					controls_state = 96
+					controls_state = 207
+					controls_state = 206
+					controls_state = 204
+					controls_state = 194
+				}
+			}
+			BLR = {
+				is_in_faction_with = POL
+			}
+		}
+	}
+	ai_strategy = {
+		type = ignore
+		id = "BLR"
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "BLR"
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = "BLR"
+		value = 250
+	}
+}
+
+POL_AI_not_trusting_ukraine = {
+	allowed = { 
+		original_tag = POL
+	}
+	enable = {
+		UKR = {
+			OR = {
+				controls_state = 201
+				controls_state = 199
+				controls_state = 198
+				controls_state = 202
+				controls_state = 203
+				controls_state = 834
+				controls_state = 192
+				controls_state = 197
+			}
+		}
+	}
+	abort = {
+		OR = {
+			NOT = {
+				UKR = {
+					controls_state = 201
+					controls_state = 199
+					controls_state = 198
+					controls_state = 202
+					controls_state = 203
+					controls_state = 834
+					controls_state = 192
+					controls_state = 197
+				}
+			}
+			UKR = {
+				is_in_faction_with = POL
+			}
+		}
+	}
+	ai_strategy = {
+		type = ignore
+		id = "UKR"
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "UKR"
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = "UKR"
+		value = 250
+	}
+}
+
+POL_AI_disliking_france = {
+	allowed = { 
+		original_tag = POL
+	}
+	enable = {
+		date > 1936.5.2
+	}
+	abort = {
+		has_completed_focus = POL_bonaparte_bastard_wins
+		is_in_faction_with = FRA
+	}
+	ai_strategy = {
+		type = ignore
+		id = "FRA"
+		value = 300
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "FRA"
+		value = 300
+	}
+}
+
+POL_AI_disliking_russia = {
+	allowed = { 
+		original_tag = POL
+	}
+	enable = {
+		date > 1936.5.2
+	}
+	abort = {
+		has_completed_focus = POL_ND_wins
+	}
+	ai_strategy = {
+		type = ignore
+		id = "SOV"
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "SOV"
+		value = 200
+	}
+}
+

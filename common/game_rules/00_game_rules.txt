@@ -547,3 +547,118 @@ maximum_fort_level = {
 #		desc = "RULE_ALLOW_IDEOLOGY_CHANGE_USA_BLOCKED_DESC"
 #	}
 #}
+
+POL_ai_behavior = {
+	name = "POL_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+	option = {
+		name = RYDZ_SMIGLY
+		text = "RULE_OPTION_RYDZ_SMIGLY"
+		desc = "RULE_OPTION_RYDZ_SMIGLY_POL_AI_DESC"
+	}
+	option = {
+		name = SIKORSKI_LEFT
+		text = "RULE_OPTION_SIKORSKI_LEFT"
+		desc = "RULE_OPTION_SIKORSKI_LEFT_POL_AI_DESC"
+	}
+	option = {
+		name = SIKORSKI_RIGHT
+		text = "RULE_OPTION_SIKORSKI_RIGHT"
+		desc = "RULE_OPTION_SIKORSKI_RIGHT_POL_AI_DESC"
+	}
+	option = {
+		name = ZADRUGA_LECHITIC
+		text = "RULE_OPTION_ZADRUGA_LECHITIC"
+		desc = "RULE_OPTION_ZADRUGA_LECHITIC_POL_AI_DESC"
+	}
+	option = {
+		name = ZADRUGA_PANSLAVIC
+		text = "RULE_OPTION_ZADRUGA_PANSLAVIC"
+		desc = "RULE_OPTION_ZADRUGA_PANSLAVIC_POL_AI_DESC"
+	}
+	option = {
+		name = FALANGA
+		text = "RULE_OPTION_FALANGA"
+		desc = "RULE_OPTION_FALANGA_POL_AI_DESC"
+	}
+	option = {
+		name = ND
+		text = "RULE_OPTION_ND"
+		desc = "RULE_OPTION_ND_POL_AI_DESC"
+	}
+	option = {
+		name = PSL
+		text = "RULE_OPTION_PSL"
+		desc = "RULE_OPTION_PSL_POL_AI_DESC"
+	}
+	option = {
+		name = WETTINS
+		text = "RULE_OPTION_WETTINS"
+		desc = "RULE_OPTION_WETTINS_POL_AI_DESC"
+	}
+	option = {
+		name = WALEWSKI
+		text = "RULE_OPTION_WALEWSKI"
+		desc = "RULE_OPTION_WALEWSKI_POL_AI_DESC"
+	}
+	option = {
+		name = ANDRASSY
+		text = "RULE_OPTION_ANDRASSY"
+		desc = "RULE_OPTION_ANDRASSY_POL_AI_DESC"
+	}
+	option = {
+		name = TYSZKIEWICZ
+		text = "RULE_OPTION_TYSZKIEWICZ"
+		desc = "RULE_OPTION_TYSZKIEWICZ_POL_AI_DESC"
+	}
+	option = {
+		name = CZARTORYSKI
+		text = "RULE_OPTION_CZARTORYSKI"
+		desc = "RULE_OPTION_CZARTORYSKI_POL_AI_DESC"
+	}
+	option = {
+		name = RADZWILL
+		text = "RULE_OPTION_RADZWILL"
+		desc = "RULE_OPTION_RADZWILL_POL_AI_DESC"
+	}
+	option = {
+		name = PIAST
+		text = "RULE_OPTION_PIAST"
+		desc = "RULE_OPTION_PIAST_POL_AI_DESC"
+	}
+	option = {
+		name = PPS
+		text = "RULE_OPTION_PPS"
+		desc = "RULE_OPTION_PPS_POL_AI_DESC"
+	}
+	option = {
+		name = KPP
+		text = "RULE_OPTION_KPP"
+		desc = "RULE_OPTION_KPP_POL_AI_DESC"
+	}
+	option = {
+		name = PKWN
+		text = "RULE_OPTION_PKWN"
+		desc = "RULE_OPTION_PKWN_POL_AI_DESC"
+	}
+	option = {
+		name = PZPR
+		text = "RULE_OPTION_PZPR"
+		desc = "RULE_OPTION_PZPR_POL_AI_DESC"
+	}
+	option = {
+		name = NSP
+		text = "RULE_OPTION_NSP"
+		desc = "RULE_OPTION_NSP_POL_AI_DESC"
+	}
+	option = {
+		name = NSPR
+		text = "RULE_OPTION_NSPR"
+		desc = "RULE_OPTION_NSPR_POL_AI_DESC"
+	}
+}

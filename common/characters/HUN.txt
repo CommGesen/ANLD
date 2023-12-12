@@ -5,7 +5,7 @@ characters={
 			army={
 				small="GFX_lajos_veress_picture_small"
 				#large="GFX_Portrait_hungary_lajos_veress"
-				large="gfx/leaders/HUN/lajos_veress.dds"
+				large="gfx/leaders/HUN/portrait_HUN_lajos_veress.dds"
 			}
 		}
 		corps_commander={
@@ -23,7 +23,7 @@ characters={
 			army={
 				small="GFX_ferenc_feketehalmy_czeydner_picture_small"
 				#large="GFX_Portrait_hungary_ferenc_feketehalmy_czeydner"
-				large="gfx/leaders/HUN/ferenc_feketehalmy_czeydner.dds"
+				large="gfx/leaders/HUN/portrait_HUN_ferenc_feketehalmy_czeydner.dds"
 			}
 		}
 		field_marshal={
@@ -72,7 +72,7 @@ characters={
 			army={
 				small="GFX_geza_lakatos_picture_small"
 				#large="GFX_Portrait_hungary_geza_lakatos"
-				large="gfx/leaders/HUN/geza_lakatos.dds"
+				large="gfx/leaders/HUN/portrait_HUN_geza_lakatos.dds"
 			}
 		}
 		corps_commander={
@@ -89,7 +89,7 @@ characters={
 			army={
 				small="GFX_ivan_hindy_picture_small"
 				#large="GFX_Portrait_hungary_ivan_hindy"
-				large="gfx/leaders/HUN/ivan_hindy.dds"
+				large="gfx/leaders/HUN/portrait_HUN_ivan_hindy.dds"
 			}
 		}
 		corps_commander={
@@ -107,7 +107,7 @@ characters={
 			army={
 				small="GFX_karoly_beregfy_picture_small"
 				#large="GFX_Portrait_hungary_karoly_beregfy"
-				large="gfx/leaders/HUN/karoly_beregfy.dds"
+				large="gfx/leaders/HUN/portrait_HUN_karoly_beregfy.dds"
 			}
 		}
 		corps_commander={
@@ -123,7 +123,7 @@ characters={
 		portraits={
 			army={
 				#large="GFX_portrait_SPR_janos_galicz"
-				large="gfx/leaders/HUN/janos_galicz.dds"
+				large="gfx/leaders/HUN/portrait_HUN_janos_galicz.dds"
 				small=GFX_portrait_SPR_janos_galicz_small
 			}
 		}
@@ -156,7 +156,7 @@ characters={
 		name = HUN_Character_deluge_esterhazy_moricz
 		portraits={
 			civilian={
-				large="gfx/leaders/HUN/esterhazy.dds"
+				large="gfx/leaders/HUN/portrait_HUN_moric_esterhazy.dds"
 			}
 		}
 		country_leader={
@@ -203,7 +203,7 @@ characters={
 		name = HUN_Character_deluge_szechenyi
 		portraits = {
 			civilian = {
-				large="gfx/leaders/HUN/szechenyi.dds"
+				large="gfx/leaders/HUN/portrait_HUN_zsigmond-szechenyi.dds"
 			}
 		}
 		country_leader={
@@ -267,7 +267,7 @@ characters={
 		name = HUN_Character_deluge_mihaly
 		portraits = {
 			civilian = {
-				large="gfx/leaders/HUN/mihaly.dds"
+				large="gfx/leaders/HUN/portrait_HUN_karolyi_mihaly.dds"
 			}
 		}
 		country_leader = {
@@ -283,7 +283,7 @@ characters={
 		name = HUN_Character_deluge_tildy
 		portraits = {
 			civilian = {
-				large="gfx/leaders/HUN/tildy.dds"
+				large="gfx/leaders/HUN/portrait_HUN_zoltan_tildy.dds"
 				small = GFX_zoltan_tildy_picture_small
 			}
 		}
@@ -317,7 +317,7 @@ characters={
 		name = HUN_Character_deluge_emergency_cabinet
 		portraits = {
 			civilian = {
-				large="gfx/leaders/HUN/hun_emergency_cabinet.dds"
+				large="gfx/leaders/HUN/portrait_HUN_emergency_cabinet.dds"
 			}
 		}
 		country_leader = {
@@ -334,10 +334,10 @@ characters={
 		portraits = {
 			civilian = {
 				small = GFX_pronay_pal_picture_small
-				large="gfx/leaders/HUN/pronay_pal.dds"
+				large="gfx/leaders/HUN/portrait_HUN_pal_pronay.dds"
 			}
 			army = {
-				large="gfx/leaders/HUN/pronay_pal.dds"
+				large="gfx/leaders/HUN/portrait_HUN_pal_pronay.dds"
 				small = GFX_pronay_pal_picture_small
 			}
 		}
@@ -871,12 +871,12 @@ characters={
 		name = HUN_Character_deluge_nopcsa_ferenc
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/HUN/Franz_Nopcsa_Ferenc.dds"
+				large = "gfx/leaders/HUN/portrait_HUN_franz_nopcsa_ferenc.dds"
 				small = GFX_nopcsa_ferenc_picture_small
 			}
 			army = {
 				small = GFX_nopcsa_ferenc_picture_small
-				large = "gfx/leaders/HUN/Franz_Nopcsa_Ferenc.dds"
+				large = "gfx/leaders/HUN/portrait_HUN_franz_nopcsa_ferenc.dds"
 			}
 		}
 		advisor={

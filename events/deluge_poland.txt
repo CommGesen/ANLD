@@ -17,12 +17,16 @@ country_event = {#Rydz wants to change flag and abolishes monarchy
 		add_political_power = -5
 		add_stability = -0.01
 		set_cosmetic_tag = POL_rzeczpospolita
-		ai_chance = {factor = 1}
+		ai_chance = {
+			base = 1000
+		}
 	}
 	option = {#old flag
 		name = deluge_poland.1.b
 		add_political_power = 10
-		ai_chance = {factor = 1}
+		ai_chance = {
+			base = 0
+		}
 	}
 }
 country_event = {#Pilsudski dies country
@@ -241,10 +245,60 @@ country_event = {#POL chooses between ND and PSL
 	option = {##PSL
 		name = deluge_poland.13.a
 		set_country_flag = PSL_won
+		ai_chance = {
+			base = 1
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PSL
+					}
+					has_country_flag = POL_PSL_ai_chosen
+				}
+				factor = 1000
+			}
+			modifier = {
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = PSL
+						}
+						has_country_flag = POL_PSL_ai_chosen
+					}
+				}
+				factor = 0
+			}
+		}
 	}
 	option = {##ND
 		name = deluge_poland.13.b
 		set_country_flag = ND_won
+		ai_chance = {
+			base = 1
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = ND
+					}
+					has_country_flag = POL_ND_ai_chosen
+				}
+				factor = 1000
+			}
+			modifier = {
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = ND
+						}
+						has_country_flag = POL_ND_ai_chosen
+					}
+				}
+				factor = 0
+			}
+		}
 	}
 }
 country_event = {#POL chooses leader for PSL
@@ -542,6 +596,88 @@ country_event = {##question of monarchists
 		}
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 1000
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = WETTINS
+					}
+					has_country_flag = POL_Wettins_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = WALEWSKI
+					}
+					has_country_flag = POL_Walewski_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = ANDRASSY
+					}
+					has_country_flag = POL_Andrassy_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = TYSZKIEWICZ
+					}
+					has_country_flag = POL_Tyszkiewicz_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = CZARTORYSKI
+					}
+					has_country_flag = POL_Czartoryski_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = RADZWILL
+					}
+					has_country_flag = POL_Radziwill_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PIAST
+					}
+					has_country_flag = POL_Piast_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = WETTINS
+						}
+						has_country_flag = POL_Wettins_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = WALEWSKI
+						}
+						has_country_flag = POL_Walewski_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = ANDRASSY
+						}
+						has_country_flag = POL_Andrassy_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = TYSZKIEWICZ
+						}
+						has_country_flag = POL_Tyszkiewicz_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = CZARTORYSKI
+						}
+						has_country_flag = POL_Czartoryski_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = RADZWILL
+						}
+						has_country_flag = POL_Radziwill_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = PIAST
+						}
+						has_country_flag = POL_Piast_ai_chosen
+					}
+				}
+			}
 		}
 	}
 	option = {##don't agree
@@ -549,6 +685,88 @@ country_event = {##question of monarchists
 		add_political_power = 20
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = WETTINS
+					}
+					has_country_flag = POL_Wettins_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = WALEWSKI
+					}
+					has_country_flag = POL_Walewski_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = ANDRASSY
+					}
+					has_country_flag = POL_Andrassy_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = TYSZKIEWICZ
+					}
+					has_country_flag = POL_Tyszkiewicz_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = CZARTORYSKI
+					}
+					has_country_flag = POL_Czartoryski_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = RADZWILL
+					}
+					has_country_flag = POL_Radziwill_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PIAST
+					}
+					has_country_flag = POL_Piast_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 1000
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = WETTINS
+						}
+						has_country_flag = POL_Wettins_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = WALEWSKI
+						}
+						has_country_flag = POL_Walewski_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = ANDRASSY
+						}
+						has_country_flag = POL_Andrassy_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = TYSZKIEWICZ
+						}
+						has_country_flag = POL_Tyszkiewicz_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = CZARTORYSKI
+						}
+						has_country_flag = POL_Czartoryski_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = RADZWILL
+						}
+						has_country_flag = POL_Radziwill_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = PIAST
+						}
+						has_country_flag = POL_Piast_ai_chosen
+					}
+				}
+			}
 		}
 	}
 }
@@ -573,6 +791,78 @@ country_event = {##question of radicals
 		}
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 1000
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PPS
+					}
+					has_country_flag = POL_PPS_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = KPP
+					}
+					has_country_flag = POL_KPP_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = NSP
+					}
+					has_country_flag = POL_NSP_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = NSPR
+					}
+					has_country_flag = POL_NSPR_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PKWN
+					}
+					has_country_flag = POL_PKWN_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PZPR
+					}
+					has_country_flag = POL_PZPR_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = PPS
+						}
+						has_country_flag = POL_PPS_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = KPP
+						}
+						has_country_flag = POL_KPP_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = NSP
+						}
+						has_country_flag = POL_NSP_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = NSPR
+						}
+						has_country_flag = POL_NSPR_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = PKWN
+						}
+						has_country_flag = POL_PKWN_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = PZPR
+						}
+						has_country_flag = POL_PZPR_ai_chosen
+					}
+				}
+			}
 		}
 	}
 	option = {##don't agree
@@ -580,6 +870,78 @@ country_event = {##question of radicals
 		add_political_power = 20
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PPS
+					}
+					has_country_flag = POL_PPS_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = KPP
+					}
+					has_country_flag = POL_KPP_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = NSP
+					}
+					has_country_flag = POL_NSP_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = NSPR
+					}
+					has_country_flag = POL_NSPR_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PKWN
+					}
+					has_country_flag = POL_PKWN_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PZPR
+					}
+					has_country_flag = POL_PZPR_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 1000
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = PPS
+						}
+						has_country_flag = POL_PPS_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = KPP
+						}
+						has_country_flag = POL_KPP_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = NSP
+						}
+						has_country_flag = POL_NSP_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = NSPR
+						}
+						has_country_flag = POL_NSPR_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = PKWN
+						}
+						has_country_flag = POL_PKWN_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = PZPR
+						}
+						has_country_flag = POL_PZPR_ai_chosen
+					}
+				}
+			}
 		}
 	}
 }
@@ -639,6 +1001,28 @@ country_event = {##king wants to leave
 		}
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = WETTINS
+					}
+					has_country_flag = POL_Wettins_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 1000
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = WETTINS
+						}
+						has_country_flag = POL_Wettins_ai_chosen
+					}
+				}
+			}
 		}
 	}
 	option = {##don't agree
@@ -646,6 +1030,28 @@ country_event = {##king wants to leave
 		add_political_power = 20
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 1000
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = WETTINS
+					}
+					has_country_flag = POL_Wettins_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = WETTINS
+						}
+						has_country_flag = POL_Wettins_ai_chosen
+					}
+				}
+			}
 		}
 	}
 }
@@ -749,6 +1155,38 @@ country_event = {##plot happenes
 		}
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 1000
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PSL
+					}
+					has_country_flag = POL_PSL_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = ND
+					}
+					has_country_flag = POL_ND_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = PSL
+						}
+						has_country_flag = POL_PSL_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = ND
+						}
+						has_country_flag = POL_ND_ai_chosen
+					}
+				}
+			}
 		}
 	}
 	option = {
@@ -811,6 +1249,78 @@ country_event = {##plot happenes
 		}
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 1000
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PPS
+					}
+					has_country_flag = POL_PPS_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = KPP
+					}
+					has_country_flag = POL_KPP_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = NSP
+					}
+					has_country_flag = POL_NSP_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = NSPR
+					}
+					has_country_flag = POL_NSPR_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PKWN
+					}
+					has_country_flag = POL_PKWN_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PZPR
+					}
+					has_country_flag = POL_PZPR_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = PPS
+						}
+						has_country_flag = POL_PPS_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = KPP
+						}
+						has_country_flag = POL_KPP_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = NSP
+						}
+						has_country_flag = POL_NSP_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = NSPR
+						}
+						has_country_flag = POL_NSPR_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = PKWN
+						}
+						has_country_flag = POL_PKWN_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = PZPR
+						}
+						has_country_flag = POL_PZPR_ai_chosen
+					}
+				}
+			}
 		}
 	}
 	option = {
@@ -871,6 +1381,88 @@ country_event = {##plot happenes
 		}
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 1000
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = WETTINS
+					}
+					has_country_flag = POL_Wettins_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = WALEWSKI
+					}
+					has_country_flag = POL_Walewski_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = ANDRASSY
+					}
+					has_country_flag = POL_Andrassy_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = TYSZKIEWICZ
+					}
+					has_country_flag = POL_Tyszkiewicz_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = CZARTORYSKI
+					}
+					has_country_flag = POL_Czartoryski_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = RADZWILL
+					}
+					has_country_flag = POL_Radziwill_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PIAST
+					}
+					has_country_flag = POL_Piast_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = WETTINS
+						}
+						has_country_flag = POL_Wettins_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = WALEWSKI
+						}
+						has_country_flag = POL_Walewski_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = ANDRASSY
+						}
+						has_country_flag = POL_Andrassy_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = TYSZKIEWICZ
+						}
+						has_country_flag = POL_Tyszkiewicz_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = CZARTORYSKI
+						}
+						has_country_flag = POL_Czartoryski_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = RADZWILL
+						}
+						has_country_flag = POL_Radziwill_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = PIAST
+						}
+						has_country_flag = POL_Piast_ai_chosen
+					}
+				}
+			}
 		}
 	}
 }
@@ -888,7 +1480,7 @@ country_event = {##Stachniuk/Piasecki purges people
 			retire_character = POL_deluge_sosnowski
 		}
 		ai_chance = {
-			base = 1
+			base = 0
 		}
 	}
 	option = {##Purge economists
@@ -899,7 +1491,7 @@ country_event = {##Stachniuk/Piasecki purges people
 			retire_character = POL_deluge_bartel
 		}
 		ai_chance = {
-			base = 1
+			base = 0
 		}
 	}
 	option = {##Purge people of science 
@@ -910,7 +1502,7 @@ country_event = {##Stachniuk/Piasecki purges people
 			retire_character = POL_deluge_Moscicki
 		}
 		ai_chance = {
-			base = 1
+			base = 100
 		}
 	}
 }
@@ -927,7 +1519,7 @@ country_event = {##Stachniuk changes king
 			add_idea = POL_piast_king
 		}
 		ai_chance = {
-			base = 1
+			base = 100
 		}
 	}
 	option = {##Stachniuk put Czartoryski on the throne
@@ -937,7 +1529,7 @@ country_event = {##Stachniuk changes king
 			add_idea = POL_czartoryski_king
 		}
 		ai_chance = {
-			base = 1
+			base = 50
 		}
 	}
 	option = {##Stachniuk deletes monarchy in Poland
@@ -945,7 +1537,7 @@ country_event = {##Stachniuk changes king
 		remove_ideas = fryderyk_ii_idea
 		POL = {add_political_power = 100}
 		ai_chance = {
-			base = 1
+			base = 100
 		}
 	}
 }
@@ -998,7 +1590,7 @@ country_event = {##Stachniuk changes capital
 		}
 		set_capital = {state = 86}
 		ai_chance = {
-			base = 1
+			base = 100
 		}
 	}
 	option = {##Moskwa
@@ -1011,7 +1603,7 @@ country_event = {##Stachniuk changes capital
 		}
 		set_capital = {state = 219}
 		ai_chance = {
-			base = 1
+			base = 0
 		}
 	}
 	option = {##Kijów
@@ -1024,7 +1616,7 @@ country_event = {##Stachniuk changes capital
 		}
 		set_capital = {state = 202}
 		ai_chance = {
-			base = 1
+			base = 0
 		}
 	}
 	option = {##Kraków
@@ -1037,7 +1629,7 @@ country_event = {##Stachniuk changes capital
 		}
 		set_capital = {state = 88}
 		ai_chance = {
-			base = 1
+			base = 75
 		}
 	}
 	option = {##Warszawa remains capital
@@ -1052,7 +1644,7 @@ country_event = {##Stachniuk changes capital
 			add_political_power = 25
 		}
 		ai_chance = {
-			base = 1
+			base = 75
 		}
 	}
 }
@@ -1111,39 +1703,39 @@ country_event = {##PER gets message about training in it by POL
 			base = 10
 			modifier = {
 				PER = {has_government = POL}
-				add = 3
+				add = 10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories > PER.num_of_factories }
-				add = 3
+				add = 10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories < PER.num_of_factories }
-				add = -3
+				add = -10
 			}
 			modifier = {
 				NOT = {PER = {has_government = POL}}
-				add = -3
+				add = -10
 			}
 			modifier = {
 				POL = {
 					has_idea = POL_deluge_jozef_beck
 				}
-				add = 7
+				add = 20
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value < 30
 				}
-				add = -3
+				add = -10
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value > 30
 				}
-				add = 3
+				add = 10
 			}
 		}
 	}
@@ -1154,39 +1746,39 @@ country_event = {##PER gets message about training in it by POL
 			base = 10
 			modifier = {
 				PER = {has_government = POL}
-				add = -3
+				add = -10
 			}
 			modifier = {
 				NOT = {PER = {has_government = POL}}
-				add = 3
+				add = 10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories < PER.num_of_factories }
-				add = 3
+				add = 10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories > PER.num_of_factories }
-				add = -3
+				add = -10
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value < 30
 				}
-				add = 3
+				add = 10
 			}
 			modifier = {
 				POL = {
 					has_idea = POL_deluge_jozef_beck
 				}
-				add = -7
+				add = -20
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value > 30
 				}
-				add = -3
+				add = -10
 			}
 		}
 	}
@@ -1239,39 +1831,39 @@ country_event = {##FIN gets message about training in it by POL
 			base = 10
 			modifier = {
 				FIN = {has_government = POL}
-				add = 3
+				add = 10
 			}
 			modifier = {
 				NOT = {FIN = {has_government = POL}}
-				add = -3
+				add = -10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories > FIN.num_of_factories }
-				add = 3
+				add = 10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories < FIN.num_of_factories }
-				add = -3
+				add = -10
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value < 30
 				}
-				add = -3
+				add = -10
 			}
 			modifier = {
 				POL = {
 					has_idea = POL_deluge_jozef_beck
 				}
-				add = 7
+				add = 20
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value > 30
 				}
-				add = 3
+				add = 10
 			}
 		}
 	}
@@ -1282,39 +1874,39 @@ country_event = {##FIN gets message about training in it by POL
 			base = 10
 			modifier = {
 				FIN = {has_government = POL}
-				add = -3
+				add = -10
 			}
 			modifier = {
 				NOT = {FIN = {has_government = POL}}
-				add = 3
+				add = 10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories < FIN.num_of_factories }
-				add = 3
+				add = 10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories > FIN.num_of_factories }
-				add = -3
+				add = -10
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value < 30
 				}
-				add = 3
+				add = 10
 			}
 			modifier = {
 				POL = {
 					has_idea = POL_deluge_jozef_beck
 				}
-				add = -7
+				add = -20
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value > 30
 				}
-				add = -3
+				add = -10
 			}
 		}
 	}
@@ -1366,7 +1958,7 @@ country_event = {##Piasecki changes king
 			add_idea = POL_piast_king
 		}
 		ai_chance = {
-			base = 1
+			base = 100
 		}
 	}
 	option = {##Piasecki put Czartoryski on the throne
@@ -1376,7 +1968,7 @@ country_event = {##Piasecki changes king
 			add_idea = POL_czartoryski_king
 		}
 		ai_chance = {
-			base = 1
+			base = 75
 		}
 	}
 	option = {##Piasecki deletes monarchy in Poland
@@ -1384,7 +1976,7 @@ country_event = {##Piasecki changes king
 		remove_ideas = fryderyk_ii_idea
 		POL = {add_political_power = -50}
 		ai_chance = {
-			base = 1
+			base = 100
 		}
 	}
 	option = {##Piasecki makes deal with king
@@ -1395,7 +1987,7 @@ country_event = {##Piasecki changes king
 		}
 		POL = {add_political_power = 100}		
 		ai_chance = {
-			base = 1
+			base = 75
 		}
 	}
 }
@@ -1700,6 +2292,28 @@ country_event = {##Poland decides about goverment of Mandate of Palestine
 		set_global_flag = PAL_will_become_fascist
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = FALANGA
+					}
+					has_country_flag = POL_falanga_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = FALANGA
+						}
+						has_country_flag = POL_falanga_ai_chosen
+					}
+				}
+			}
 		}
 	}
 	option = {##PAL will become neutral
@@ -1707,6 +2321,28 @@ country_event = {##Poland decides about goverment of Mandate of Palestine
 		set_global_flag = PAL_will_become_neutral
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = ND
+					}
+					has_country_flag = POL_ND_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = ND
+						}
+						has_country_flag = POL_ND_ai_chosen
+					}
+				}
+			}
 		}
 	}
 }
@@ -1823,7 +2459,43 @@ country_event = {##controller of Rome is asked by POL to annex vatican city and 
 			}
 		}
 		ai_chance = {
-			base = 1
+			base = 10
+			modifier = {
+				ROOT = {has_government = POL}
+				add = 10
+			}
+			modifier = {
+				NOT = {ROOT = {has_government = POL}}
+				add = -10
+			}
+			modifier = {
+				check_variable = { POL.num_of_factories > ROOT.num_of_factories }
+				add = 10
+			}
+			modifier = {
+				check_variable = { POL.num_of_factories < ROOT.num_of_factories }
+				add = -10
+			}
+			modifier = {
+				has_opinion = {
+				    target = POL
+				    value < 30
+				}
+				add = -10
+			}
+			modifier = {
+				POL = {
+					has_idea = POL_deluge_jozef_beck
+				}
+				add = 20
+			}
+			modifier = {
+				has_opinion = {
+				    target = POL
+				    value > 30
+				}
+				add = 10
+			}
 		}
 	}
 	option = {#disagree
@@ -1838,7 +2510,43 @@ country_event = {##controller of Rome is asked by POL to annex vatican city and 
 			custom_effect_tooltip = POL_custom_effect_tooltip_153
 		}
 		ai_chance = {
-			base = 1
+			base = 10
+			modifier = {
+				ROOT = {has_government = POL}
+				add = -10
+			}
+			modifier = {
+				NOT = {ROOT = {has_government = POL}}
+				add = 10
+			}
+			modifier = {
+				check_variable = { POL.num_of_factories > ROOT.num_of_factories }
+				add = -10
+			}
+			modifier = {
+				check_variable = { POL.num_of_factories < ROOT.num_of_factories }
+				add = 10
+			}
+			modifier = {
+				has_opinion = {
+				    target = POL
+				    value < 30
+				}
+				add = 10
+			}
+			modifier = {
+				POL = {
+					has_idea = POL_deluge_jozef_beck
+				}
+				add = -20
+			}
+			modifier = {
+				has_opinion = {
+				    target = POL
+				    value > 30
+				}
+				add = -10
+			}
 		}
 	}
 }
@@ -1891,7 +2599,47 @@ country_event = {##POL gets event that controller of Rome refused
 			}
         }
 		ai_chance = {
-			base = 1
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.2
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.2 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
 		}
 	}
 	option = {#attack later
@@ -1904,7 +2652,47 @@ country_event = {##POL gets event that controller of Rome refused
 			}
 		}
 		ai_chance = {
-			base = 1
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
 		}
 	}
 }
@@ -2084,6 +2872,28 @@ country_event = {##player/AI chooses ruling communist party
 		}
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PPS
+					}
+					has_country_flag = POL_PPS_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = PPS
+						}
+						has_country_flag = POL_PPS_ai_chosen
+					}
+				}
+			}
 		}
 	}
 	option = {#KPP
@@ -2097,6 +2907,28 @@ country_event = {##player/AI chooses ruling communist party
 		}
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = KPP
+					}
+					has_country_flag = POL_KPP_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = KPP
+						}
+						has_country_flag = POL_KPP_ai_chosen
+					}
+				}
+			}
 		}
 	}
 	option = {#another options
@@ -2106,6 +2938,58 @@ country_event = {##player/AI chooses ruling communist party
 		}
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = NSP
+					}
+					has_country_flag = POL_NSP_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = NSPR
+					}
+					has_country_flag = POL_NSPR_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PKWN
+					}
+					has_country_flag = POL_PKWN_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PZPR
+					}
+					has_country_flag = POL_PZPR_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = NSP
+						}
+						has_country_flag = POL_NSP_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = NSPR
+						}
+						has_country_flag = POL_NSPR_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = PKWN
+						}
+						has_country_flag = POL_PKWN_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = PZPR
+						}
+						has_country_flag = POL_PZPR_ai_chosen
+					}
+				}
+			}
 		}
 	}
 }
@@ -2126,6 +3010,28 @@ country_event = {##player/AI chooses ruling communist party part 2
 		}
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = NSP
+					}
+					has_country_flag = POL_NSP_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = NSP
+						}
+						has_country_flag = POL_NSP_ai_chosen
+					}
+				}
+			}
 		}
 	}
 	option = {#NSPR
@@ -2139,6 +3045,28 @@ country_event = {##player/AI chooses ruling communist party part 2
 		}
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = NSPR
+					}
+					has_country_flag = POL_NSPR_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = NSPR
+						}
+						has_country_flag = POL_NSPR_ai_chosen
+					}
+				}
+			}
 		}
 	}
 	option = {#another options (only one left)
@@ -2148,6 +3076,38 @@ country_event = {##player/AI chooses ruling communist party part 2
 		}
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PKWN
+					}
+					has_country_flag = POL_PKWN_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PZPR
+					}
+					has_country_flag = POL_PZPR_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = PKWN
+						}
+						has_country_flag = POL_PKWN_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = PZPR
+						}
+						has_country_flag = POL_PZPR_ai_chosen
+					}
+				}
+			}
 		}
 	}
 }
@@ -2167,7 +3127,7 @@ country_event = {##player/AI chooses ruling communist party part 3
 			#}
 		}
 		ai_chance = {
-			base = 1
+			base = 100
 		}
 	}
 }
@@ -2192,33 +3152,33 @@ country_event = {##other countries get event that Poland asks them to join their
 			base = 10
 			modifier = {
 				ROOT = {has_government = POL}
-				add = 3
+				add = 10
 			}
 			modifier = {
 				NOT = {ROOT = {has_government = POL}}
-				add = -3
+				add = -10
 			}
 			modifier = {
 				has_opinion = {
 					target = POL
 					value < 30
 				}
-				add = -3
+				add = -10
 			}
 			modifier = {
 				has_opinion = {
 					target = POL
 					value > 30
 				}
-				add = 3
+				add = 10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories < ROOT.num_of_factories }
-				add = -3
+				add = -10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories > ROOT.num_of_factories }
-				add = 3
+				add = 10
 			}
 		}
 	}
@@ -2236,33 +3196,33 @@ country_event = {##other countries get event that Poland asks them to join their
 			base = 10
 			modifier = {
 				ROOT = {has_government = POL}
-				add = -3
+				add = -10
 			}
 			modifier = {
 				NOT = {ROOT = {has_government = POL}}
-				add = 3
+				add = 10
 			}
 			modifier = {
 				has_opinion = {
 					target = POL
 					value < 30
 				}
-				add = 3
+				add = 10
 			}
 			modifier = {
 				has_opinion = {
 					target = POL
 					value > 30
 				}
-				add = -3
+				add = -10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories < ROOT.num_of_factories }
-				add = 3
+				add = 10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories > ROOT.num_of_factories }
-				add = -3
+				add = -10
 			}
 		}
 	}
@@ -2517,7 +3477,7 @@ country_event = {##event about history of Józef Poniatowski
 		}
 	}
 }
-country_event = {##Sikorski brings back democracy to Poland 
+country_event = {##Sikorski brings back democracy to Poland
 	id = deluge_poland.82
 	title = deluge_poland.82.t
 	desc = deluge_poland.82.d
@@ -2560,8 +3520,33 @@ country_event = {##Sikorski brings back democracy to Poland
 				traits = { liberal_marshal }
 			}
 		}
+		promote_character = POL_deluge_Sikorski
+		set_party_name = { ideology = fascism long_name = POL_falanga_name_long name = POL_falanga_name_short }
+		promote_character = POL_Piasecki 
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = SIKORSKI_LEFT
+					}
+					has_country_flag = POL_sikorski_left_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = SIKORSKI_LEFT
+						}
+						has_country_flag = POL_sikorski_left_ai_chosen
+					}
+				}
+			}
 		}
 	}
 	option = {##Wojciech Konfranty becomes leader
@@ -2581,8 +3566,32 @@ country_event = {##Sikorski brings back democracy to Poland
 			long_name = POL_morges_name_long
 			name = POL_morges_name_short
 		}
+		set_party_name = { ideology = fascism long_name = POL_falanga_name_long name = POL_falanga_name_short }
+		promote_character = POL_Piasecki
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = SIKORSKI_RIGHT
+					}
+					has_country_flag = POL_sikorski_right_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = SIKORSKI_RIGHT
+						}
+						has_country_flag = POL_sikorski_right_ai_chosen
+					}
+				}
+			}
 		}
 	}
 }
@@ -3070,7 +4079,7 @@ country_event = {##POL-HUN chooses new capital
 		}
 		set_capital = {state = 10}
 		ai_chance = {
-			base = 1
+			base = 90
 		}
 	}
 	option = {##Kraków
@@ -3082,7 +4091,7 @@ country_event = {##POL-HUN chooses new capital
 		}
 		set_capital = {state = 88}
 		ai_chance = {
-			base = 1
+			base = 100
 		}
 	}
 	option = {##Poznań
@@ -3094,7 +4103,7 @@ country_event = {##POL-HUN chooses new capital
 		}
 		set_capital = {state = 86}
 		ai_chance = {
-			base = 1
+			base = 75
 		}
 	}
 	option = {##Budapest
@@ -3106,7 +4115,7 @@ country_event = {##POL-HUN chooses new capital
 		}
 		set_capital = {state = 43}
 		ai_chance = {
-			base = 1
+			base = 100
 		}
 	}
 }
@@ -3401,6 +4410,38 @@ country_event = {##restoration issues - question of direction
 		set_country_flag = POL_polonization_rejected
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = TYSZKIEWICZ
+					}
+					has_country_flag = POL_Tyszkiewicz_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = RADZWILL
+					}
+					has_country_flag = POL_Radziwill_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = TYSZKIEWICZ
+						}
+						has_country_flag = POL_Tyszkiewicz_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = RADZWILL
+						}
+						has_country_flag = POL_Radziwill_ai_chosen
+					}
+				}
+			}
 		}
 	}
 	option = {##polonization
@@ -3408,6 +4449,28 @@ country_event = {##restoration issues - question of direction
 		set_country_flag = POL_polonization_accepted
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = CZARTORYSKI
+					}
+					has_country_flag = POL_Czartoryski_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = CZARTORYSKI
+						}
+						has_country_flag = POL_Czartoryski_ai_chosen
+					}
+				}
+			}
 		}
 	}
 }
@@ -3503,6 +4566,38 @@ country_event = {##POL decides what to do with eastern borderlands (PLC path)
 		}
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = TYSZKIEWICZ
+					}
+					has_country_flag = POL_Tyszkiewicz_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = CZARTORYSKI
+					}
+					has_country_flag = POL_Czartoryski_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = TYSZKIEWICZ
+						}
+						has_country_flag = POL_Tyszkiewicz_ai_chosen
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = CZARTORYSKI
+						}
+						has_country_flag = POL_Czartoryski_ai_chosen
+					}
+				}
+			}
 		}
 	}
 	option = {##integrate northern belarus into LIT, annex rest - only when done restore grand duchy focus
@@ -3751,6 +4846,28 @@ country_event = {##POL decides what to do with eastern borderlands (PLC path)
 		}
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = RADZWILL
+					}
+					has_country_flag = POL_Radziwill_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = POL_AI_BEHAVIOR
+							option = RADZWILL
+						}
+						has_country_flag = POL_Radziwill_ai_chosen
+					}
+				}
+			}
 		}
 	}
 	option = {##annex northern belarus into POL, release rest as grand duchy of ruthenia - only when done restore commonwealth focus
@@ -4058,39 +5175,39 @@ country_event = {##POL proposes defense pact to UK
 			base = 10
 			modifier = {
 				ENG = {has_government = POL}
-				add = 3
+				add = 10
 			}
 			modifier = {
 				POL = {
 					has_idea = POL_deluge_jozef_beck
 				}
-				add = 5
+				add = 20
 			}
 			modifier = {
 				NOT = {ENG = {has_government = POL}}
-				add = -3
+				add = -10
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value < 30
 				}
-				add = -3
+				add = -10
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value > 30
 				}
-				add = 3
+				add = 10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories < ENG.num_of_factories }
-				add = -3
+				add = -10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories > ENG.num_of_factories }
-				add = 3
+				add = 10
 			}
 		}
 	}
@@ -4103,33 +5220,33 @@ country_event = {##POL proposes defense pact to UK
 			base = 10
 			modifier = {
 				ENG = {has_government = POL}
-				add = -3
+				add = -10
 			}
 			modifier = {
 				NOT = {ENG = {has_government = POL}}
-				add = 3
+				add = 10
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value < 30
 				}
-				add = 3
+				add = 10
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value > 30
 				}
-				add = -3
+				add = -10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories < ENG.num_of_factories }
-				add = 3
+				add = 10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories > ENG.num_of_factories }
-				add = -3
+				add = -10
 			}
 		}
 	}
@@ -4314,39 +5431,39 @@ country_event = {##POL invites countries to faction
 			base = 10
 			modifier = {
 				ROOT = {has_government = POL}
-				add = 5
+				add = 10
 			}
 			modifier = {
 				POL = {
 					has_idea = POL_deluge_jozef_beck
 				}
-				add = 5
+				add = 10
 			}
 			modifier = {
 				NOT = {ROOT = {has_government = POL}}
-				add = -5
+				add = -10
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value < 30
 				}
-				add = -3
+				add = -10
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value > 30
 				}
-				add = 3
+				add = 10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories < ROOT.num_of_factories }
-				add = -5
+				add = -10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories > ROOT.num_of_factories }
-				add = 5
+				add = 10
 			}
 		}
 	}
@@ -4356,33 +5473,33 @@ country_event = {##POL invites countries to faction
 			base = 10
 			modifier = {
 				ROOT = {has_government = POL}
-				add = -5
+				add = -10
 			}
 			modifier = {
 				NOT = {ROOT = {has_government = POL}}
-				add = 5
+				add = 10
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value < 30
 				}
-				add = 3
+				add = 10
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value > 30
 				}
-				add = -3
+				add = -10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories < ROOT.num_of_factories }
-				add = 5
+				add = 10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories > ROOT.num_of_factories }
-				add = -5
+				add = -10
 			}
 		}
 		hidden_effect = {
@@ -4486,39 +5603,39 @@ country_event = {##many countries gain information about preparing of crusade
 			base = 10
 			modifier = {
 				ROOT  = {has_government = POL}
-				add = 2
+				add = 10
 			}
 			modifier = {
 				POL = {
 					has_idea = POL_deluge_jozef_beck
 				}
-				add = 5
+				add = 20
 			}
 			modifier = {
 				NOT = {ROOT  = {has_government = POL}}
-				add = -2
+				add = -10
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value < 30
 				}
-				add = -3
+				add = -10
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value > 30
 				}
-				add = 3
+				add = 10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories < ROOT.num_of_factories }
-				add = -5
+				add = -10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories > ROOT.num_of_factories }
-				add = 5
+				add = 10
 			}
 		}
 	}
@@ -4528,33 +5645,33 @@ country_event = {##many countries gain information about preparing of crusade
 			base = 10
 			modifier = {
 				ROOT  = {has_government = POL}
-				add = -2
+				add = -10
 			}
 			modifier = {
 				NOT = {ROOT  = {has_government = POL}}
-				add = 2
+				add = 10
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value < 30
 				}
-				add = 3
+				add = 10
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value > 30
 				}
-				add = -3
+				add = -10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories < ROOT.num_of_factories }
-				add = 5
+				add = 10
 			}
 			modifier = {
 				check_variable = { POL.num_of_factories > ROOT.num_of_factories }
-				add = -5
+				add = -10
 			}
 		}
 	}
@@ -4898,7 +6015,35 @@ country_event = {##countries are getting invited to Polish european cooperation
 			add_dynamic_modifier = { modifier = POL_european_cooperation }
 		}
 		ai_chance = {
-			base = 100
+			base = 10
+			modifier = {
+				add = 50
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -50
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = 60
+				FROM = {
+					has_government = ROOT
+				}
+			}
+			modifier = {
+				add = -60
+				NOT = {
+					FROM = {
+						has_government = ROOT
+					}
+				}
+			}
 		}
 	}
 	option = {##reject
@@ -4911,7 +6056,35 @@ country_event = {##countries are getting invited to Polish european cooperation
 			}
 		}
 		ai_chance = {
-			base = 100
+			base = 10
+			modifier = {
+				add = -50
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 50
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = -60
+				FROM = {
+					has_government = ROOT
+				}
+			}
+			modifier = {
+				add = 60
+				NOT = {
+					FROM = {
+						has_government = ROOT
+					}
+				}
+			}
 		}
 	}
 }
@@ -5081,18 +6254,18 @@ country_event = {##one of sides of POL-ENG act calls other to war
 		ai_chance = {
 			base = 10
 			modifier = {
-				add = 5
+				add = 10
 				POL = {has_government = ENG}
 			}
 			modifier = {
 				NOT = {POL={has_government = ENG}}
-				add = -5
+				add = -10
 			}
 			modifier = {
 				POL = {
 					has_idea = POL_deluge_jozef_beck
 				}
-				add = 5
+				add = 20
 			}
 			modifier = {
 				if = {
@@ -5161,7 +6334,7 @@ country_event = {##one of sides of POL-ENG act calls other to war
 						}
 					}
 				}
-				add = 5
+				add = 10
 			}
 			modifier = {
 				if = {
@@ -5230,7 +6403,7 @@ country_event = {##one of sides of POL-ENG act calls other to war
 						}
 					}
 				}
-				add = -5
+				add = -10
 			}
 		}
 	}
@@ -5262,11 +6435,11 @@ country_event = {##one of sides of POL-ENG act calls other to war
 		ai_chance = {
 			base = 10
 			modifier = {
-				add = 5
+				add = 10
 				NOT = {POL = {has_government = ENG}}
 			}
 			modifier = {
-				add = -5
+				add = -10
 				POL = {has_government = ENG}
 			}
 			modifier = {
@@ -5336,13 +6509,13 @@ country_event = {##one of sides of POL-ENG act calls other to war
 						}
 					}
 				}
-				add = -5
+				add = -10
 			}
 			modifier = {
 				POL = {
 					has_idea = POL_deluge_jozef_beck
 				}
-				add = -5
+				add = -20
 			}
 			modifier = {
 				if = {
@@ -5411,7 +6584,7 @@ country_event = {##one of sides of POL-ENG act calls other to war
 						}
 					}
 				}
-				add = 5
+				add = 10
 			}
 		}
 	}
@@ -5467,7 +6640,7 @@ country_event = {##POL sends ultimatum to AUS for CZE and SLO
 				POL = {
 					has_idea = POL_deluge_jozef_beck
 				}
-				add = 5
+				add = 20
 			}
 			modifier = {
 				add = 10
@@ -5520,7 +6693,7 @@ country_event = {##POL sends ultimatum to AUS for CZE and SLO
 				POL = {
 					has_idea = POL_deluge_jozef_beck
 				}
-				add = -3
+				add = -10
 			}
 			modifier = {
 				add = -10
@@ -5557,7 +6730,7 @@ country_event = {##POL sends ultimatum to AUS for CZE and SLO
 				POL = {
 					has_idea = POL_deluge_jozef_beck
 				}
-				add = -5
+				add = -20
 			}
 		}
 	}
@@ -5574,11 +6747,11 @@ country_event = {##FRA decides
 		ai_chance = {
 			base = 10
 			modifier = {
-				add = 5
+				add = 10
 				POL = {has_government = POL}
 			}
 			modifier = {
-				add = -5
+				add = -10
 				NOT = {
 					POL = {has_government = POL}
 				}
@@ -5588,20 +6761,20 @@ country_event = {##FRA decides
 				    target = POL
 				    value > 30
 				}
-				add = 3
+				add = 5
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value < 30
 				}
-				add = -3
+				add = -5
 			}
 			modifier = {
 				POL = {
 					has_idea = POL_deluge_jozef_beck
 				}
-				add = 5
+				add = 20
 			}
 		}
 	}
@@ -5611,11 +6784,11 @@ country_event = {##FRA decides
 		ai_chance = {
 			base = 10
 			modifier = {
-				add = -5
+				add = -10
 				POL = {has_government = POL}
 			}
 			modifier = {
-				add = 5
+				add = 10
 				NOT = {
 					POL = {has_government = POL}
 				}
@@ -5625,20 +6798,20 @@ country_event = {##FRA decides
 				    target = POL
 				    value > 30
 				}
-				add = -3
+				add = -5
 			}
 			modifier = {
 				has_opinion = {
 				    target = POL
 				    value < 30
 				}
-				add = 3
+				add = 5
 			}
 			modifier = {
 				POL = {
 					has_idea = POL_deluge_jozef_beck
 				}
-				add = -5
+				add = -20
 			}
 		}
 	}
@@ -5668,7 +6841,7 @@ country_event = {##FRA decides
 				POL = {
 					has_idea = POL_deluge_jozef_beck
 				}
-				add = -3
+				add = -10
 			}
 			modifier = {
 				NOT = {
@@ -5676,7 +6849,7 @@ country_event = {##FRA decides
 						has_idea = POL_deluge_jozef_beck
 					}
 				}
-				add = 3
+				add = 10
 			}
 		}
 	}
@@ -5688,7 +6861,7 @@ country_event = {##FRA decides
 		}
 		ai_chance = {
 			modifier = {
-				factor = 10
+				add = 50
 				OR = {
 					AND = {
 						strength_ratio = {tag = POL ratio < 1.5}
@@ -5960,7 +7133,7 @@ country_event = {##POL asks FIN if they want to get independent
 			}
 		}
 		ai_chance = {
-			base = 10
+			base = 100
 			modifier = {
 				add = 30
 				POL = {
@@ -5973,7 +7146,7 @@ country_event = {##POL asks FIN if they want to get independent
 		name = deluge_poland_foreign.37.b
 		POL = {country_event = {id = deluge_poland_foreign.42 hours = 10}}
 		ai_chance = {
-			base = 10
+			base = 1
 		}
 	}
 }
@@ -6196,7 +7369,7 @@ country_event = {##JAP is asked if POL can send it's advisor there
 				add = -10
 			}
 			modifier = {
-				add = 10
+				add = 30
 				POL = {
 					has_idea = POL_deluge_jozef_beck
 				}
@@ -9135,7 +10308,7 @@ country_event = {##POL sees that owner(s) of Slovakia reject POL demands
 			}
 		}
 	}
-	option = {##attack owner now now
+	option = {##attack owner now
 		name = deluge_poland_foreign.87.c
 		POL = {
 			declare_war_on = {

@@ -6546,7 +6546,6 @@ focus_tree = {
 		available = {
 			OR = {
 				has_completed_focus = POL_ND_wins
-				#has_completed_focus = POL_monarchists_take_power
 				has_completed_focus = POL_NSPR_wins
 				has_completed_focus = POL_NSP_wins
 				has_completed_focus = POL_PKWN_wins
@@ -6583,11 +6582,6 @@ focus_tree = {
 		relative_position_id = POL_new_foreign_policy
 		mutually_exclusive = {focus = POL_new_revanchist_policy focus = POL_new_revolution focus = POL_royal_foreign_policy}
 		search_filters = {FOCUS_FILTER_FOREIGN_AFFAIRS}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = POL_monarchists_take_power
-			}
-		}
 		cost = 10
 		available = {
 			OR = {
@@ -6634,15 +6628,12 @@ focus_tree = {
 	focus = {
 		id = POL_royal_foreign_policy
 		icon = GFX_focus_NORDIC_mon_selector_airforce
-		x = 1
+		x = 5
 		y = 1
 		prerequisite = { focus = POL_new_foreign_policy }
 		relative_position_id = POL_new_foreign_policy
 		mutually_exclusive = {focus = POL_new_revanchist_policy focus = POL_new_revolution focus = POL_european_cooperation_focus }
 		search_filters = {FOCUS_FILTER_FOREIGN_AFFAIRS}
-		allow_branch = {
-			has_completed_focus = POL_monarchists_take_power
-		}
 		cost = 5
 		available = {
 			has_completed_focus = POL_monarchists_take_power
@@ -6696,7 +6687,7 @@ focus_tree = {
 	focus = {
 		id = POL_legacy_of_polish_legions_in_lombardy
 		icon = GFX_focus_POL_legions_in_italy
-		x = 5
+		x = 7
 		y = 0
 		search_filters = {FOCUS_FILTER_FOREIGN_AFFAIRS FOCUS_FILTER_WAR_SUPPORT}
 		relative_position_id = POL_new_foreign_policy
@@ -9624,7 +9615,12 @@ focus_tree = {
 			}
 			custom_effect_tooltip = POL_custom_effect_tooltip_246
 			custom_effect_tooltip = POL_custom_effect_tooltip_advisors
-			remove_ideas = POL_circle_of_gods_cause
+			if = {
+				limit = {
+					has_idea = POL_circle_of_gods_cause
+				}
+				remove_ideas = POL_circle_of_gods_cause
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -9660,9 +9656,14 @@ focus_tree = {
 				popularity = 0.07
 			}
 			custom_effect_tooltip = POL_custom_effect_tooltip_advisors
-			swap_ideas = {
-				remove_idea = POL_circle_of_gods_cause
-				add_idea = POL_circle_of_gods_cause_good
+			if = {
+				limit = {
+					has_idea = POL_circle_of_gods_cause
+				}
+				swap_ideas = {
+					remove_idea = POL_circle_of_gods_cause
+					add_idea = POL_circle_of_gods_cause_good
+				}
 			}
 		}
 		ai_will_do = {
@@ -9847,6 +9848,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = POL_nobility_excluded_from_obligatory_army_service
+			remove_ideas = POL_problems_in_army
 		}
 		ai_will_do = {
 			factor = 40
@@ -9918,6 +9920,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = POL_professional_army_idea
+			remove_ideas = POL_problems_in_army
 		}
 		ai_will_do = {
 			factor = 40
@@ -10734,7 +10737,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = monarchist_healthcare_reform
-			remove_ideas = POL_problems_in_army
 		}
 		ai_will_do = {
 			factor = 40
@@ -10944,7 +10946,7 @@ focus_tree = {
 		icon = GFX_focus_generic_sarmatian_warrior
 		x = 1
 		y = 1
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_LAND_ARMY}
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
 		cost = 6
 		prerequisite = { focus = POL_only_nobility_in_the_parlament}
 		relative_position_id = POL_only_nobility_in_the_parlament
@@ -10953,7 +10955,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = sarmatian_myth
-			remove_ideas = POL_problems_in_army
 		}
 		ai_will_do = {
 			factor = 40
@@ -11067,7 +11068,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = royal_amorc_knights
-			remove_ideas = POL_problems_in_army
 		}
 		ai_will_do = {
 			factor = 40
@@ -22120,7 +22120,7 @@ focus_tree = {
 	focus = {
 		id = POL_start_army_reform
 		icon = GFX_focus_POL_prepare_for_the_inevitable
-		x = 184
+		x = 186
 		y = 0
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		cost = 10
@@ -24249,7 +24249,7 @@ focus_tree = {
 	focus = {
 		id = POL_hire_economists
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 213
+		x = 215
 		y = 0
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
 		cost = 5
