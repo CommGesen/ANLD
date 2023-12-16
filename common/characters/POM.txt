@@ -42,11 +42,11 @@ characters={
 		name="Karl-Jesko von Puttkamer"
 		portraits={
 			civilian={
-				large="gfx/leaders/POM/karl_jesco_von_puttkamer.dds"
+				large="gfx/leaders/POM/portrait_POM_karl_jesko_von_puttkamer.dds"
 				small=GFX_karl_jesko_von_puttkamer_picture_small
 			}
 			army={
-				large="gfx/leaders/POM/karl_jesco_von_puttkamer.dds"
+				large="gfx/leaders/POM/portrait_POM_karl_jesko_von_puttkamer.dds"
 				small=GFX_karl_jesko_von_puttkamer_picture_small
 			}
 		}
@@ -64,6 +64,18 @@ characters={
 			logistics_skill=3
 		}
 	}
+	POM_aleksander_majkowski={
+		name="Aleksander Majkòwsczi"
+		portraits={
+			civilian={
+				large="gfx/leaders/POM/portrait_POM_aleksander_majkowski.dds"
+			}
+		}
+		country_leader={
+			ideology=constitutionalist_ideology
+			expire="1965.1.1.1"
+		}
+	}
 	POM_lech_bądkowski={
 		name="Lech Bądkowski"
 		portraits={
@@ -74,6 +86,14 @@ characters={
 		country_leader={
 			ideology=liberal_republican_ideology
 			expire="1965.1.1.1"
+		}
+		corps_commander={
+			traits={}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
 		}
 	}
 	POM_wilhelm_stuckart={

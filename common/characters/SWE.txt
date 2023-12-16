@@ -9,33 +9,42 @@ characters={
 		country_leader={
 			ideology=constitutionalist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	SWE_sven_linderot={
 		name="Sven Linderot"
 		portraits={
 			civilian={
-				large="gfx/leaders/SWE/sven_linderot.dds"
+				large="gfx/leaders/SWE/portrait_SWE_sven_linderot.dds"
 			}
 		}
 		country_leader={
 			ideology=jacobin_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	SWE_axel_pehrssonbramstorp={
 		name="Axel Pehrsson-Bramstorp"
 		portraits={
 			civilian={
-				large="gfx/leaders/SWE/axel_pehrssonbramstorp.dds"
+				large="gfx/leaders/SWE/portrait_SWE_axel_pehrsson_bramstorp.dds"
+			}
+		}
+		#country_leader={
+		#	ideology=social_darwinist_ideology
+		#	expire="1965.1.1.1"
+		#}
+	}
+	SWE_sven_olov_lindholm={
+		name="Sven Olov Lindholm"
+		portraits={
+			civilian={
+				large="gfx/leaders/SWE/portrait_SWE_sven_olav_lindholm.dds"
 			}
 		}
 		country_leader={
 			ideology=social_darwinist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	SWE_erik_af_edholm={
@@ -43,9 +52,7 @@ characters={
 		portraits={
 			army={
 				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
-			}
-			army={
-				large="gfx/leaders/SWE/erik_af_edholm.dds"
+				large="gfx/leaders/SWE/portrait_SWE_erik_af_edholm.dds"
 			}
 		}
 		corps_commander={
@@ -55,7 +62,6 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=2
-			legacy_id=-1
 		}
 	}
 	SWE_ivar_holmquist={
@@ -63,9 +69,7 @@ characters={
 		portraits={
 			army={
 				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
-			}
-			army={
-				large="gfx/leaders/SWE/ivar_holmquist.dds"
+				large="gfx/leaders/SWE/portrait_SWE_ivar_holmquist.dds"
 			}
 		}
 		field_marshal={
@@ -75,21 +79,19 @@ characters={
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=-1
 		}
 	}
 	SWE_gustav_v={
 		name="Gustaf V"
 		portraits={
 			civilian={
-				large="gfx/leaders/SWE/gustaf_v.dds"
+				large="gfx/leaders/SWE/portrait_SWE_gustaf_v.dds"
 			}
 		}
 		country_leader={
 			desc="swedish_king_desc"
 			ideology=bonapartist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	SWE_folke_högberg={
@@ -97,9 +99,7 @@ characters={
 		portraits={
 			army={
 				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
-			}
-			army={
-				large="gfx/leaders/SWE/folke_högberg.dds"
+				large="gfx/leaders/SWE/portrait_SWE_folke_hogberg.dds"
 			}
 		}
 		corps_commander={
@@ -109,7 +109,6 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=2
-			legacy_id=-1
 		}
 	}
 	SWE_claes_lindström={
@@ -123,13 +122,215 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ blockade_runner }
+			traits={ battleship_adherent blockade_runner }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			maneuvering_skill=3
+			coordination_skill=3
+		}
+	}
+	SWE_per_sylvan={
+		name="Per Sylvan"
+		portraits={
+			army={
+				small="GFX_portrait_SWE_per_sylvan_small"
+				large="gfx/leaders/SWE/portrait_SWE_per_sylvan.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
 			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+		}
+	}
+	SWE_carl_ehrensvard ={
+		name="Carl Ehrensvärd"
+		portraits={
+			army={
+				large="gfx/leaders/SWE/portrait_SWE_carl_ehrensvard.dds"
+			}
+		}
+		corps_commander={
+			traits={ war_hero politically_connected inflexible_strategist }
+			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	SWE_gosta_ehrensvard={
+		name="Gösta Ehrensvärd"
+		portraits={
+			army={
+				small="GFX_portrait_SWE_gosta_ehrensvard_small"
+				large="gfx/leaders/SWE/portrait_SWE_gosta_ehrensvard.dds"
+			}
+		}
+		navy_leader={
+			traits={ navy_career_officer fleet_protector }
+			skill=1
 			attack_skill=1
 			defense_skill=1
 			maneuvering_skill=1
 			coordination_skill=1
-			legacy_id=-1
+		}
+	}
+	SWE_helge_stromback={
+		name="Helge Strömbäck"
+		portraits={
+			army={
+				small="GFX_portrait_SWE_helge_stromback_small"
+				large="gfx/leaders/SWE/portrait_SWE_helge_stromback.dds"
+			}
+		}
+		navy_leader={
+			traits={ fleet_protector aviation_enthusiast }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=2
+		}
+	}
+	SWE_helge_jung={
+		name="Helge Jung"
+		portraits={
+			army={
+				small="GFX_portrait_SWE_helge_jung_small"
+				large="gfx/leaders/SWE/portrait_SWE_helge_jung.dds"
+			}
+		}
+		corps_commander={
+			traits={ skilled_staffer politically_connected old_guard }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+		}
+	}
+	SWE_olof_thornell={
+		name="Olof Thörnell"
+		portraits={
+			army={
+				small="GFX_portrait_SWE_olof_thornell_small"
+				large="gfx/leaders/SWE/portrait_SWE_olof_thornell.dds"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected old_guard harsh_leader }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	SWE_charles_de_champs={
+		name="Charles Léon de Champs"
+		portraits={
+			army={
+				small="GFX_portrait_SWE_charles_leon_de_champs_small"
+				large="gfx/leaders/SWE/portrait_SWE_charles_leon_de_champs.dds"
+			}
+		}
+		navy_leader={
+			traits={ navy_career_officer gentlemanly naval_lineage }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=2
+		}
+	}
+	SWE_axel_rappe={
+		name="Axel Rappe"
+		portraits={
+			army={
+				small="GFX_portrait_SWE_axel_rappe_small"
+				large="gfx/leaders/SWE/portrait_SWE_axel_rappe.dds"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected war_hero engineer_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+	SWE_oscar_nygren={
+		name="Oscar Nygren"
+		portraits={
+			army={
+				small="GFX_portrait_SWE_oscar_nygren_small"
+				large="gfx/leaders/SWE/portrait_SWE_oscar_nygren.dds"
+			}
+		}
+		field_marshal = {
+			traits={ winter_specialist }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	SWE_axel_ljungdahl={
+		name="Axel Ljungdahl"
+		portraits={
+			army={
+				small="GFX_portrait_SWE_axel_ljungdahl_small"
+				large="gfx/leaders/SWE/portrait_SWE_axel_ljungdahl.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	SWE_archibald_douglas={
+		name="Archibald Douglas"
+		portraits={
+			army={
+				small="GFX_portrait_SWE_archibald_douglas_small"
+				large="gfx/leaders/SWE/portrait_SWE_archibald_douglas.dds"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_leader war_hero }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+	SWE_ernst_linder={
+		name="Ernst Linder"
+		portraits={
+			army={
+				small="GFX_portrait_SWE_ernst_linder_small"
+				large="gfx/leaders/SWE/portrait_SWE_ernst_linder.dds"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_leader war_hero }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
 		}
 	}
 }

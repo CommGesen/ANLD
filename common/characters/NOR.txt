@@ -3,7 +3,7 @@ characters={
 		name="Vidkun Quisling"
 		portraits={
 			civilian={
-				large=GFX_portrait_Vidkun_Quisling
+				large="gfx/leaders/NOR/Portrait_Norway_Vidkun_Quisling.dds"
 			}
 		}
 		country_leader={
@@ -18,7 +18,7 @@ characters={
 		name="Haakon VII"
 		portraits={
 			civilian={
-				large="gfx/leaders/NOR/haakon_vii.dds"
+				large="gfx/leaders/NOR/portrait_NOR_king_haakon_vii.dds"
 			}
 		}
 		country_leader={
@@ -33,7 +33,7 @@ characters={
 		name="Martin Tranmæl"
 		portraits={
 			civilian={
-				large="gfx/leaders/NOR/martin_tranmael.dds"
+				large="gfx/leaders/NOR/portrait_NOR_martin_tranmael.dds"
 			}
 		}
 		country_leader={
@@ -48,7 +48,7 @@ characters={
 		name="Adam Egede-Nissen"
 		portraits={
 			civilian={
-				large="gfx/leaders/NOR/adam_egede_nissen.dds"
+				large="gfx/leaders/NOR/portrait_NOR_adam_egede_nissen.dds"
 			}
 		}
 		country_leader={
@@ -94,9 +94,7 @@ characters={
 		portraits={
 			army={
 				small="gfx/interface/ideas/idea_europe_generic_land_1.dds"
-			}
-			army={
-				large="gfx/leaders/NOR/carl_gustav_fleischer.dds"
+				large="gfx/leaders/NOR/portrait_NOR_carl_gustav_fleischer.dds"
 			}
 		}
 		corps_commander={
@@ -113,9 +111,7 @@ characters={
 		portraits={
 			army={
 				small="gfx/interface/ideas/idea_europe_generic_navy_3.dds"
-			}
-			army={
-				large="gfx/leaders/NOR/elias_corneliussen.dds"
+				large="gfx/leaders/NOR/portrait_NOR_Elias_Corneliussen.dds"
 			}
 		}
 		navy_leader={
@@ -125,6 +121,125 @@ characters={
 			defense_skill=1
 			maneuvering_skill=1
 			coordination_skill=1
+		}
+	}
+	NOR_jacob_ager_laurantzon={
+		name="Jacob Ager Laurantzon"
+		portraits={
+			army={
+				large="gfx/leaders/NOR/portrait_NOR_jacob_ager_laurantzon.dds"
+				small=GFX_portrait_NOR_jacob_ager_laurantzon_small
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	NOR_jacob_von_der_lippe={
+		name="Jakob von der Lippe"
+		portraits={
+			army={
+				large=GFX_portrait_jacob_von_der_lippe
+				small=GFX_portrait_jacob_von_der_lippe_small
+			}
+		}
+		navy_leader={
+			traits={ inshore_fighter big_guns_expert }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=3
+		}
+	}	
+	NOR_edgar_otto={
+		name="Edgar Otto"
+		portraits={
+			army={
+				large=GFX_portrait_edgar_otto
+				small=GFX_portrait_edgar_otto_small
+			}
+		}
+		navy_leader={
+			traits={ inshore_fighter }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+		}		
+	}
+	NOR_carsten_tank_nielsen={
+		name="Carsten Tank-Nielsen"
+		portraits={
+			army={
+				large=GFX_portrait_carsten_tank_nielsen
+				small=GFX_portrait_carsten_tank_nielsen_small
+			}
+		}
+		navy_leader={
+			traits={ inshore_fighter seawolf }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=1
+		}
+	}	
+	NOR_wilhelm_von_tangen_hansteen={
+		name="Wilhelm von Tangen Hansteen"	
+		corps_commander={
+			traits={ politically_connected }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+		portraits={
+			army={
+				large="gfx/leaders/NOR/portrait_NOR_wilhelm_von_tangen_hansteen.dds"
+				small="GFX_portrait_NOR_wilhelm_von_tangen_hansteen_small"
+			}
+		}
+	}
+	NOR_jacob_hivden_haug={
+		name="Jacob Hvinden Haug"
+		corps_commander={
+			traits={ career_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+		portraits={
+			army={
+				large="gfx/leaders/NOR/portrait_NOR_jacob_hvinden_haug.dds"
+				small="GFX_portrait_NOR_jacob_hvinden_haug_small"
+			}
+		}
+	}
+	NOR_henry_diesen={
+		name="Henry Diesen" 
+		portraits={
+			army={
+				large="gfx/leaders/NOR/portrait_NOR_Henry_Diesen.dds"
+				small=GFX_portrait_NOR_henry_diesen_small
+			}
+		}
+		navy_leader={
+			traits={ navy_career_officer inshore_fighter mine_layer}
+			skill=3
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=4
 		}
 	}
 }

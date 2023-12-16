@@ -494,7 +494,7 @@ ideas = {
 			}
 		}
 		equality_of_man_and_woman = {
-			picture = generic_manpower_bonus
+			picture = spirit_equality_of_men_and_women
 			allowed = {
 				tag = POL
 			}
@@ -532,7 +532,7 @@ ideas = {
 			}
 		}
 		emphasize_catholic_values_idea = {
-			picture = MEX_church_power_5
+			picture = spirit_catholic_values
 			allowed = {
 				tag = POL
 			}
@@ -554,7 +554,7 @@ ideas = {
 			}
 		}
 		priests_in_military = {
-			picture = chi_army_corruption2
+			picture = spirit_priests_in_military
 			allowed = {
 				tag = POL
 			}
@@ -707,7 +707,7 @@ ideas = {
 				tag = POL
 			}
 			
-			picture = generic_fascism_drift_2
+			picture = spirit_POL_nationalist_school_reform
 			
 			available = {
 				#empty
@@ -797,7 +797,7 @@ ideas = {
 			}
 		}
 		international_propaganda_campaigns_idea = {
-			picture =  generic_fascism_drift_bonus
+			picture = spirit_allied_propaganda_campaigns
 			allowed = {
 				tag = POL
 			}
@@ -876,7 +876,7 @@ ideas = {
 			}
 		}
 		POL_ENG_defence_pact = {
-			picture = soviet_german_friendship
+			picture = spirit_POL_ENG_defense_pact
 			allowed = {
 				OR = {
 					tag = POL
@@ -1146,7 +1146,7 @@ ideas = {
 			}
 		}
 		POL_revengeance_idea = {
-			picture = POL_the_peasants_strike
+			picture = spirit_knife_and_fists
 			allowed = {
 				tag = POL
 			}
@@ -1193,7 +1193,7 @@ ideas = {
 			}
 		}
 		western_slavs_united_idea = {
-			picture = FRA_scw_intervention_republicans_focus
+			picture = spirit_unity_of_western_slavs
 			allowed = {
 				tag = POL
 			}
@@ -3619,10 +3619,10 @@ ideas = {
 				
 			}
 			research_bonus = {
-				artillery = 0.15
-				anti_tank_equipment = 0.15
-				anti_air_equipment = 0.15
-				rocket_artillery_equipment = 0.15
+				artillery = 0.1
+				anti_tank_equipment = 0.1
+				anti_air_equipment = 0.1
+				rocket_artillery_equipment = 0.1
 			}
 			traits = {
 				smpa_designer_trait 
@@ -3643,10 +3643,10 @@ ideas = {
 				
 			}
 			research_bonus = {
-				artillery = 0.15
-				anti_tank_equipment = 0.15
-				anti_air_equipment = 0.15
-				rocket_artillery_equipment = 0.15
+				artillery = 0.1
+				anti_tank_equipment = 0.1
+				anti_air_equipment = 0.1
+				rocket_artillery_equipment = 0.1
 			}
 			traits = { 
 				cegielski_designer_trait 
@@ -3664,10 +3664,10 @@ ideas = {
 				
 			}
 			research_bonus = {
-				artillery = 0.15
-				anti_tank_equipment = 0.15
-				anti_air_equipment = 0.15
-				rocket_artillery_equipment = 0.15
+				artillery = 0.1
+				anti_tank_equipment = 0.1
+				anti_air_equipment = 0.1
+				rocket_artillery_equipment = 0.1
 			}
 			traits = { 
 				starachowice_designer_trait 
@@ -3688,10 +3688,10 @@ ideas = {
 				
 			}
 			research_bonus = {
-				artillery = 0.15
-				anti_tank_equipment = 0.15
-				anti_air_equipment = 0.15
-				rocket_artillery_equipment = 0.15
+				artillery = 0.1
+				rocket_artillery_equipment = 0.1
+				anti_air_equipment = 0.1
+				anti_tank_equipment = 0.1
 			}
 			traits = { 
 				ursus_artilery_designer_trait 
@@ -3972,25 +3972,29 @@ ideas = {
 			available = {
 				if = {
 					limit = {
-						has_aat = yes
+						has_dlc = "Arms Against Tyranny"
 					}
-					deluge_POL_ursus_tanks_organization = {
+					any_military_industrial_organization = {
 						has_mio_size > 4
+						is_military_industrial_organization = deluge_POL_ursus_tanks_organization
 					}
-					deluge_POL_ursus_ships_organization = {
+					any_military_industrial_organization = {
 						has_mio_size > 4
+						is_military_industrial_organization = deluge_POL_ursus_ships_organization
 					}
-					deluge_POL_ursus_planes_organization = {
+					any_military_industrial_organization = {
 						has_mio_size > 4
+						is_military_industrial_organization = deluge_POL_ursus_planes_organization
 					}
-					deluge_POL_ursus_vehicles_organization = {
+					any_military_industrial_organization = {
 						has_mio_size > 4
+						is_military_industrial_organization = deluge_POL_ursus_vehicles_organization
 					}
 				}
 				if = {
 					limit = {
 						NOT = {
-							has_aat = yes
+							has_dlc = "Arms Against Tyranny"
 						}
 					}
 					has_idea = ursus_tanks

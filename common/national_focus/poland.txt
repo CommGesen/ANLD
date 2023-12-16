@@ -544,7 +544,7 @@ focus_tree = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_1
 		}
 		ai_will_do = {
-			factor = 20
+			base = 1000
 		}
 		bypass = {
 			
@@ -651,10 +651,10 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 15
+			base = 1000
 		}
 		bypass = {
-			is_subject = yes
+			
 		}		
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
@@ -764,10 +764,10 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 15
+			base = 1000
 		}
 		bypass = {
-			is_subject = yes
+			
 		}		
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
@@ -871,10 +871,10 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 15
+			base = 1000
 		}
 		bypass = {
-			is_subject = yes
+			
 		}		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -984,10 +984,10 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 15
+			base = 1000
 		}
 		bypass = {
-			is_subject = yes
+			
 		}		
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
@@ -1093,10 +1093,10 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 15
+			base = 1000
 		}
 		bypass = {
-			is_subject = yes
+			
 		}		
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
@@ -1200,10 +1200,10 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 15
+			base = 1000
 		}
 		bypass = {
-			is_subject = yes
+			
 		}		
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
@@ -1310,10 +1310,10 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 15
+			base = 1000
 		}
 		bypass = {
-			is_subject = yes
+			
 		}		
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
@@ -1401,7 +1401,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			base = 1000
 		}
 		bypass = {
 			
@@ -3585,7 +3585,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 20
+			base = 75
 		}
 		bypass = {
 			
@@ -3622,7 +3622,7 @@ focus_tree = {
 			retire_character = POL_deluge_orlik_ruckemann
 		}
 		ai_will_do = {
-			factor = 20
+			base = 75
 		}
 		bypass = {
 			
@@ -3674,7 +3674,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 20
+			base = 75
 		}
 		bypass = {
 			
@@ -3721,7 +3721,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 20
+			base = 1000
 		}
 		bypass = {
 			
@@ -3765,7 +3765,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 20
+			base = 1000
 		}
 		bypass = {
 			
@@ -3793,7 +3793,7 @@ focus_tree = {
 			add_ideas = POL_revengeance_idea
 		}
 		ai_will_do = {
-			factor = 30
+			base = 75
 		}
 		bypass = {
 			
@@ -4921,7 +4921,7 @@ focus_tree = {
 		}
 		#will_lead_to_war_with = TUR
 		ai_will_do = {
-			base = 30
+			base = 15
 			modifier = {
 				any_neighbor_country = {
 					owns_state = 454
@@ -5168,7 +5168,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 30
+			base = 1000
 		}
 		bypass = {
 			
@@ -5226,7 +5226,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 30
+			base = 0
 		}
 		bypass = {
 			
@@ -5251,7 +5251,7 @@ focus_tree = {
 			add_ideas = POL_vatican_support_idea
 		}
 		ai_will_do = {
-			factor = 30
+			base = 30
 		}
 		bypass = {
 			
@@ -5281,7 +5281,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 30
+			base = 30
 		}
 		bypass = {
 			
@@ -5312,7 +5312,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 30
+			base = 1000
 		}
 		bypass = {
 			
@@ -5357,7 +5357,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 30
+			base = 1000
 		}
 		bypass = {
 			owns_state = 2
@@ -5436,7 +5436,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 30
+			base = 1000
 		}
 		bypass = {
 			
@@ -5462,7 +5462,7 @@ focus_tree = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_154
 		}
 		ai_will_do = {
-			factor = 30
+			base = 1000
 		}
 		bypass = {
 			
@@ -9851,7 +9851,17 @@ focus_tree = {
 			remove_ideas = POL_problems_in_army
 		}
 		ai_will_do = {
-			factor = 40
+			base = 0
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PIAST
+					}
+					has_country_flag = POL_Piast_ai_chosen
+				}
+				add = 50
+			}
 		}
 		bypass = {
 			
@@ -9923,7 +9933,17 @@ focus_tree = {
 			remove_ideas = POL_problems_in_army
 		}
 		ai_will_do = {
-			factor = 40
+			base = 50
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = PIAST
+					}
+					has_country_flag = POL_Piast_ai_chosen
+				}
+				add = -50
+			}
 		}
 		bypass = {
 			
@@ -12449,7 +12469,131 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			base = 40
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 62
+						owns_state = 85
+						owns_state = 63
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 62
+						owns_state = 85
+						owns_state = 63
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 62
+						owns_state = 85
+						owns_state = 63
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 62
+						owns_state = 85
+						owns_state = 63
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 62
+						owns_state = 85
+						owns_state = 63
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 62
+						owns_state = 85
+						owns_state = 63
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 62
+						owns_state = 85
+						owns_state = 63
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 62
+						owns_state = 85
+						owns_state = 63
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
 			modifier = {
 				if = {
 					limit = {
@@ -12457,6 +12601,14 @@ focus_tree = {
 					}
 				}
 				factor = 0
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
 			}
 		}
 		bypass = {
@@ -12476,7 +12628,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY}
-		cost = 10
+		cost = 15
 		prerequisite = { focus = POL_retake_pomerania }
 		relative_position_id = POL_retake_pomerania
 		available = {
@@ -12489,11 +12641,6 @@ focus_tree = {
 		completion_reward = {
 			62 = {
 				add_core_of = POL
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
@@ -12511,11 +12658,6 @@ focus_tree = {
 			}
 			63 = {
 				add_core_of = POL
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
@@ -12531,11 +12673,6 @@ focus_tree = {
 					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
 			}
 			85 = {
 				add_building_construction = {
@@ -12603,7 +12740,123 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 68
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 68
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
 		}
 		bypass = {
 			POL = {
@@ -12713,7 +12966,101 @@ focus_tree = {
 			add_war_support = 0.05
 		}
 		ai_will_do = {
-			factor = 40
+			base = 10
+			modifier = {
+				check_variable = { TUR.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { TUR.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = TUR 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = TUR 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				TUR = {
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				TUR = {
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				TUR = {
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				TUR = {
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
 		}
 		bypass = {
 			
@@ -12790,7 +13137,147 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 73
+						owns_state = 664
+						owns_state = 71
+						owns_state = 70
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 73
+						owns_state = 664
+						owns_state = 71
+						owns_state = 70
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 73
+						owns_state = 664
+						owns_state = 71
+						owns_state = 70
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 73
+						owns_state = 664
+						owns_state = 71
+						owns_state = 70
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 73
+						owns_state = 664
+						owns_state = 71
+						owns_state = 70
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 73
+						owns_state = 664
+						owns_state = 71
+						owns_state = 70
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 73
+						owns_state = 664
+						owns_state = 71
+						owns_state = 70
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 73
+						owns_state = 664
+						owns_state = 71
+						owns_state = 70
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
 		}
 		bypass = {
 			OR = {
@@ -12818,7 +13305,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY}
-		cost = 10
+		cost = 15
 		prerequisite = { focus = POL_retake_slovakia }
 		relative_position_id = POL_retake_slovakia
 		available = {
@@ -12910,11 +13397,6 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
@@ -12927,11 +13409,6 @@ focus_tree = {
 					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
 			}
 			664 = {
 				add_building_construction = {
@@ -12940,11 +13417,6 @@ focus_tree = {
 					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
 			}
 			if = {
 				limit = {
@@ -13006,7 +13478,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY}
-		cost = 9
+		cost = 10
 		prerequisite = { focus = POL_build_up_slovakia }
 		relative_position_id = POL_build_up_slovakia
 		available = {
@@ -13144,7 +13616,101 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 10
+			modifier = {
+				check_variable = { CRO.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { CRO.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = CRO 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = CRO 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				CRO = {
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				CRO = {
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				CRO = {
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				CRO = {
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
 		}
 		bypass = {
 			CRO = {
@@ -13230,7 +13796,139 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 45
+						owns_state = 151
+						owns_state = 847
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 45
+						owns_state = 151
+						owns_state = 847
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 45
+						owns_state = 151
+						owns_state = 847
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 45
+						owns_state = 151
+						owns_state = 847
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 45
+						owns_state = 151
+						owns_state = 847
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 45
+						owns_state = 151
+						owns_state = 847
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 45
+						owns_state = 151
+						owns_state = 847
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 45
+						owns_state = 151
+						owns_state = 847
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
 		}
 		bypass = {
 			OR = {
@@ -13256,7 +13954,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY}
-		cost = 14
+		cost = 20
 		prerequisite = { focus = POL_retake_vojvodina }
 		prerequisite = { focus = POL_restore_union_with_croatia }
 		relative_position_id = POL_retake_vojvodina
@@ -13438,17 +14136,7 @@ focus_tree = {
 			109 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
 					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
@@ -13460,19 +14148,9 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
 			}
 			104 = {
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -13481,11 +14159,6 @@ focus_tree = {
 			}
 			45 = {
 				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -14802,7 +15475,219 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 202
+						owns_state = 203
+						owns_state = 834
+						owns_state = 192
+						owns_state = 197
+						owns_state = 226
+						owns_state = 259
+						owns_state = 193
+						owns_state = 225
+						owns_state = 221
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 202
+						owns_state = 203
+						owns_state = 834
+						owns_state = 192
+						owns_state = 197
+						owns_state = 226
+						owns_state = 259
+						owns_state = 193
+						owns_state = 225
+						owns_state = 221
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 202
+						owns_state = 203
+						owns_state = 834
+						owns_state = 192
+						owns_state = 197
+						owns_state = 226
+						owns_state = 259
+						owns_state = 193
+						owns_state = 225
+						owns_state = 221
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 202
+						owns_state = 203
+						owns_state = 834
+						owns_state = 192
+						owns_state = 197
+						owns_state = 226
+						owns_state = 259
+						owns_state = 193
+						owns_state = 225
+						owns_state = 221
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 202
+						owns_state = 203
+						owns_state = 834
+						owns_state = 192
+						owns_state = 197
+						owns_state = 226
+						owns_state = 259
+						owns_state = 193
+						owns_state = 225
+						owns_state = 221
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 202
+						owns_state = 203
+						owns_state = 834
+						owns_state = 192
+						owns_state = 197
+						owns_state = 226
+						owns_state = 259
+						owns_state = 193
+						owns_state = 225
+						owns_state = 221
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 202
+						owns_state = 203
+						owns_state = 834
+						owns_state = 192
+						owns_state = 197
+						owns_state = 226
+						owns_state = 259
+						owns_state = 193
+						owns_state = 225
+						owns_state = 221
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 202
+						owns_state = 203
+						owns_state = 834
+						owns_state = 192
+						owns_state = 197
+						owns_state = 226
+						owns_state = 259
+						owns_state = 193
+						owns_state = 225
+						owns_state = 221
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
 		}
 		bypass = {
 			OR = {
@@ -15041,7 +15926,139 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 79
+						owns_state = 78
+						owns_state = 80
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 79
+						owns_state = 78
+						owns_state = 80
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 79
+						owns_state = 78
+						owns_state = 80
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 79
+						owns_state = 78
+						owns_state = 80
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 79
+						owns_state = 78
+						owns_state = 80
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 79
+						owns_state = 78
+						owns_state = 80
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 79
+						owns_state = 78
+						owns_state = 80
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 79
+						owns_state = 78
+						owns_state = 80
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
 		}
 		bypass = {
 			
@@ -15105,11 +16122,6 @@ focus_tree = {
 				add_core_of = POL
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
@@ -15120,11 +16132,6 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
@@ -15155,7 +16162,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		search_filters = {FOCUS_FILTER_INDUSTRY}
-		cost = 10
+		cost = 20
 		prerequisite = { focus = POL_retake_ukraine }
 		relative_position_id = POL_retake_ukraine
 		available = {
@@ -15415,11 +16422,6 @@ focus_tree = {
 			226 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
@@ -15544,7 +16546,163 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 207
+						owns_state = 206
+						owns_state = 204
+						owns_state = 194
+						owns_state = 241
+						owns_state = 764
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 207
+						owns_state = 206
+						owns_state = 204
+						owns_state = 194
+						owns_state = 241
+						owns_state = 764
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 207
+						owns_state = 206
+						owns_state = 204
+						owns_state = 194
+						owns_state = 241
+						owns_state = 764
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 207
+						owns_state = 206
+						owns_state = 204
+						owns_state = 194
+						owns_state = 241
+						owns_state = 764
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 207
+						owns_state = 206
+						owns_state = 204
+						owns_state = 194
+						owns_state = 241
+						owns_state = 764
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 207
+						owns_state = 206
+						owns_state = 204
+						owns_state = 194
+						owns_state = 241
+						owns_state = 764
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 207
+						owns_state = 206
+						owns_state = 204
+						owns_state = 194
+						owns_state = 241
+						owns_state = 764
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 207
+						owns_state = 206
+						owns_state = 204
+						owns_state = 194
+						owns_state = 241
+						owns_state = 764
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
 		}
 		bypass = {
 			OR = {
@@ -15636,7 +16794,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		search_filters = {FOCUS_FILTER_INDUSTRY}
-		cost = 8
+		cost = 20
 		prerequisite = { focus = POL_retake_belarus }
 		relative_position_id = POL_retake_belarus
 		available = {
@@ -15726,11 +16884,6 @@ focus_tree = {
 			207 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
@@ -15745,11 +16898,6 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
@@ -15782,11 +16930,6 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
 					level = 1
 					instant_build = yes
 				}
@@ -15894,7 +17037,219 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 137
+						owns_state = 196
+						owns_state = 200
+						owns_state = 227
+						owns_state = 228
+						owns_state = 240
+						owns_state = 220
+						owns_state = 222
+						owns_state = 224
+						owns_state = 242
+						owns_state = 243
+						owns_state = 210
+						owns_state = 209
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 137
+						owns_state = 196
+						owns_state = 200
+						owns_state = 227
+						owns_state = 228
+						owns_state = 240
+						owns_state = 220
+						owns_state = 222
+						owns_state = 224
+						owns_state = 242
+						owns_state = 243
+						owns_state = 210
+						owns_state = 209
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 137
+						owns_state = 196
+						owns_state = 200
+						owns_state = 227
+						owns_state = 228
+						owns_state = 240
+						owns_state = 220
+						owns_state = 222
+						owns_state = 224
+						owns_state = 242
+						owns_state = 243
+						owns_state = 210
+						owns_state = 209
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 137
+						owns_state = 196
+						owns_state = 200
+						owns_state = 227
+						owns_state = 228
+						owns_state = 240
+						owns_state = 220
+						owns_state = 222
+						owns_state = 224
+						owns_state = 242
+						owns_state = 243
+						owns_state = 210
+						owns_state = 209
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 137
+						owns_state = 196
+						owns_state = 200
+						owns_state = 227
+						owns_state = 228
+						owns_state = 240
+						owns_state = 220
+						owns_state = 222
+						owns_state = 224
+						owns_state = 242
+						owns_state = 243
+						owns_state = 210
+						owns_state = 209
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 137
+						owns_state = 196
+						owns_state = 200
+						owns_state = 227
+						owns_state = 228
+						owns_state = 240
+						owns_state = 220
+						owns_state = 222
+						owns_state = 224
+						owns_state = 242
+						owns_state = 243
+						owns_state = 210
+						owns_state = 209
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 137
+						owns_state = 196
+						owns_state = 200
+						owns_state = 227
+						owns_state = 228
+						owns_state = 240
+						owns_state = 220
+						owns_state = 222
+						owns_state = 224
+						owns_state = 242
+						owns_state = 243
+						owns_state = 210
+						owns_state = 209
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 137
+						owns_state = 196
+						owns_state = 200
+						owns_state = 227
+						owns_state = 228
+						owns_state = 240
+						owns_state = 220
+						owns_state = 222
+						owns_state = 224
+						owns_state = 242
+						owns_state = 243
+						owns_state = 210
+						owns_state = 209
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
 		}
 		bypass = {
 			OR = {
@@ -16077,7 +17432,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		search_filters = {FOCUS_FILTER_INDUSTRY}
-		cost = 15
+		cost = 25
 		prerequisite = { focus = POL_retake_our_old_lands_from_russia }
 		relative_position_id = POL_retake_our_old_lands_from_russia
 		available = {
@@ -16263,17 +17618,7 @@ focus_tree = {
 			137 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
 					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
@@ -16301,11 +17646,6 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
 			}
 			228 = {
 				add_extra_state_shared_building_slots = 1
@@ -16330,11 +17670,6 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
 			}
 			222 = {
 				add_extra_state_shared_building_slots = 1
@@ -16354,16 +17689,6 @@ focus_tree = {
 			}
 			242 = {
 				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
 			}
 			210 = {
 				add_extra_state_shared_building_slots = 1
@@ -16675,7 +18000,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 1000
 		}
 		bypass = {
 			
@@ -16744,7 +18069,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 1000
 		}
 		bypass = {
 			
@@ -16945,7 +18270,32 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 10
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = CZARTORYSKI
+					}
+					has_country_flag = POL_Czartoryski_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = RADZWILL
+					}
+					has_country_flag = POL_Radziwill_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = TYSZKIEWICZ
+					}
+					has_country_flag = POL_Tyszkiewicz_ai_chosen
+				}
+			}
 		}
 		bypass = {
 			
@@ -17239,7 +18589,32 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 10
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = CZARTORYSKI
+					}
+					has_country_flag = POL_Czartoryski_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = RADZWILL
+					}
+					has_country_flag = POL_Radziwill_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = TYSZKIEWICZ
+					}
+					has_country_flag = POL_Tyszkiewicz_ai_chosen
+				}
+			}
 		}
 		bypass = {
 			
@@ -17567,7 +18942,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 0
 		}
 		bypass = {
 			
@@ -18045,7 +19420,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 1000
 		}
 		bypass = {
 			
@@ -18339,7 +19714,32 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 10
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = CZARTORYSKI
+					}
+					has_country_flag = POL_Czartoryski_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = RADZWILL
+					}
+					has_country_flag = POL_Radziwill_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = TYSZKIEWICZ
+					}
+					has_country_flag = POL_Tyszkiewicz_ai_chosen
+				}
+			}
 		}
 		bypass = {
 			
@@ -18354,7 +19754,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY}
-		cost = 12
+		cost = 20
 		prerequisite = { focus = POL_restore_grand_duchy focus = POL_restore_commonwealth }
 		relative_position_id = POL_restore_commonwealth
 		available = {
@@ -18445,11 +19845,6 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
 			}
 			96 = {
 				add_extra_state_shared_building_slots = 2
@@ -18458,21 +19853,11 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
 			}
 			189 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
@@ -18575,7 +19960,195 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 810
+						owns_state = 809
+						owns_state = 190
+						owns_state = 811
+						owns_state = 808
+						owns_state = 12
+						owns_state = 813
+						owns_state = 191
+						owns_state = 13
+						owns_state = 812
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 810
+						owns_state = 809
+						owns_state = 190
+						owns_state = 811
+						owns_state = 808
+						owns_state = 12
+						owns_state = 813
+						owns_state = 191
+						owns_state = 13
+						owns_state = 812
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 810
+						owns_state = 809
+						owns_state = 190
+						owns_state = 811
+						owns_state = 808
+						owns_state = 12
+						owns_state = 813
+						owns_state = 191
+						owns_state = 13
+						owns_state = 812
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 810
+						owns_state = 809
+						owns_state = 190
+						owns_state = 811
+						owns_state = 808
+						owns_state = 12
+						owns_state = 813
+						owns_state = 191
+						owns_state = 13
+						owns_state = 812
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 810
+						owns_state = 809
+						owns_state = 190
+						owns_state = 811
+						owns_state = 808
+						owns_state = 12
+						owns_state = 813
+						owns_state = 191
+						owns_state = 13
+						owns_state = 812
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 810
+						owns_state = 809
+						owns_state = 190
+						owns_state = 811
+						owns_state = 808
+						owns_state = 12
+						owns_state = 813
+						owns_state = 191
+						owns_state = 13
+						owns_state = 812
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 810
+						owns_state = 809
+						owns_state = 190
+						owns_state = 811
+						owns_state = 808
+						owns_state = 12
+						owns_state = 813
+						owns_state = 191
+						owns_state = 13
+						owns_state = 812
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 810
+						owns_state = 809
+						owns_state = 190
+						owns_state = 811
+						owns_state = 808
+						owns_state = 12
+						owns_state = 813
+						owns_state = 191
+						owns_state = 13
+						owns_state = 812
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
 		}
 		bypass = {
 			
@@ -18781,7 +20354,32 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 10
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = CZARTORYSKI
+					}
+					has_country_flag = POL_Czartoryski_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = TYSZKIEWICZ
+					}
+					has_country_flag = POL_Tyszkiewicz_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = RADZWILL
+					}
+					has_country_flag = POL_Radziwill_ai_chosen
+				}
+			}
 		}
 		bypass = {
 			
@@ -18962,7 +20560,32 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 10
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = CZARTORYSKI
+					}
+					has_country_flag = POL_Czartoryski_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = TYSZKIEWICZ
+					}
+					has_country_flag = POL_Tyszkiewicz_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = RADZWILL
+					}
+					has_country_flag = POL_Radziwill_ai_chosen
+				}
+			}
 		}
 		bypass = {
 			
@@ -19172,7 +20795,32 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 10
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = CZARTORYSKI
+					}
+					has_country_flag = POL_Czartoryski_ai_chosen
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = RADZWILL
+					}
+					has_country_flag = POL_Radziwill_ai_chosen
+					has_game_rule = {
+						rule = POL_AI_BEHAVIOR
+						option = TYSZKIEWICZ
+					}
+					has_country_flag = POL_Tyszkiewicz_ai_chosen
+				}
+			}
 		}
 		bypass = {
 			
@@ -19332,17 +20980,7 @@ focus_tree = {
 			808 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
 					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
@@ -19362,11 +21000,6 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
 			}
 			809 = {
 				add_extra_state_shared_building_slots = 1
@@ -19375,32 +21008,12 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
 			}
 			810 = {
 				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
 			}
 			12 = {
 				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -19409,16 +21022,6 @@ focus_tree = {
 			}
 			191 = {
 				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
 			}
 			13 = {
 				add_extra_state_shared_building_slots = 1
@@ -19427,24 +21030,9 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
 			}
 			812 = {
 				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
 			}
 			812 = {
 				add_building_construction = {
@@ -19456,16 +21044,6 @@ focus_tree = {
 			}
 			811 = {
 				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
 			}
 			811 = {
 				add_building_construction = {
@@ -19477,16 +21055,6 @@ focus_tree = {
 			}
 			813 = {
 				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
 			}
 		}
 		ai_will_do = {
@@ -25757,7 +27325,7 @@ focus_tree = {
         	   resource = rubber
         	   amount = 1
         	}
-			add_to_variable = {POL_development_production_oil_factor = 0.1}
+			add_to_variable = {POL_development_production_oil_factor = 0.03}
 			custom_effect_tooltip = POL_custom_effect_tooltip_41
 		}
 		ai_will_do = {
@@ -25790,7 +27358,7 @@ focus_tree = {
 		completion_reward = {
 			POL = {country_event = {id = deluge_poland.11 hours = 10}}
 			add_research_slot = 1
-			add_to_variable = {POL_development_research_speed_factor = 0.05}
+			add_to_variable = {POL_development_research_speed_factor = 0.02}
 			custom_effect_tooltip = POL_custom_effect_tooltip_42
 		}
 		ai_will_do = {
@@ -25903,7 +27471,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_to_variable = {POL_development_industrial_capacity_dockyard = 0.1}
+			add_to_variable = {POL_development_industrial_capacity_dockyard = 0.05}
 			custom_effect_tooltip = POL_custom_effect_tooltip_45
 		}
 		ai_will_do = {
@@ -25961,7 +27529,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_to_variable = {POL_development_industrial_capacity_dockyard = 0.1}
+			add_to_variable = {POL_development_industrial_capacity_dockyard = 0.05}
 			custom_effect_tooltip = POL_custom_effect_tooltip_45
 		}
 		ai_will_do = {
@@ -26143,10 +27711,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			add_to_variable = {POL_development_stability_factor = 0.20}
-			add_to_variable = {POL_development_production_speed_buildings_factor = 0.05}
-			add_to_variable = {POL_development_industrial_capacity_factory = 0.05}
-			add_to_variable = {POL_development_industrial_capacity_factory = -0.03}
+			add_to_variable = {POL_development_stability_factor = 0.05}
+			add_to_variable = {POL_development_production_speed_buildings_factor = 0.02}
+			add_to_variable = {POL_development_industrial_capacity_factory = 0.02}
+			add_to_variable = {POL_development_consumer_goods_factor = -0.01}
 			custom_effect_tooltip = POL_custom_effect_tooltip_51
 			hidden_effect = {
 				news_event = {id = deluge_poland.12 hours = 10}

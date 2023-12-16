@@ -4565,7 +4565,7 @@ seek_enemies_category = {
 				is_historical_focus_on = yes
 				date < 1940.1.1
 			}
-		}##here i stopped
+		}
 	}
 	avenge_swedish_deluge = {
 		icon = GFX_decision_generic_operation 
@@ -4716,8 +4716,8 @@ seek_enemies_category = {
 		}
 		available = {
 			POL = { 
-					country_exists = SOV
-					NOT = {is_in_faction_with = SOV}
+				country_exists = SOV
+				NOT = {is_in_faction_with = SOV}
 			}
 		}
 		cost = 50
@@ -4847,8 +4847,8 @@ seek_enemies_category = {
 		}
 		available = {
 			POL = { 
-					country_exists = TUR
-					NOT = {is_in_faction_with = TUR}
+				country_exists = TUR
+				NOT = {is_in_faction_with = TUR}
 			}
 		}
 		cost = 50
@@ -6454,7 +6454,7 @@ seek_cooperation_category = {
 		}
 	}
 }
-seek_allies_category = {##stoped here
+seek_allies_category = {
 	invite_uk = {
 		icon =  GFX_decision_eng_install_government
 		visible = {
@@ -6500,14 +6500,70 @@ seek_allies_category = {##stoped here
 			ENG = {country_event = { id = deluge_poland_foreign.1 }}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
 			modifier = {
 				ENG = {has_government = POL}
-				factor = 30
+				add = 50
+			}
+			modifier = {
+				ENG = {has_government = communism}
+				factor = 0
 			}
 			modifier = {
 				NOT = {ENG = {has_government = POL}}
-				factor = 0.1
+				add = -50
+			}
+			modifier = {
+				check_variable = { POL.num_of_factories < SWE.num_of_factories }
+				add = 50
+			}
+			modifier = {
+				check_variable = { POL.num_of_factories < DEN.num_of_factories }
+				add = 50
+			}
+			modifier = {
+				check_variable = { POL.num_of_factories < FRA.num_of_factories }
+				add = 50
+			}
+			modifier = {
+				check_variable = { POL.num_of_factories < WGR.num_of_factories }
+				add = 50
+			}
+			modifier = {
+				check_variable = { POL.num_of_factories < DDR.num_of_factories }
+				add = 50
+			}
+			modifier = {
+				check_variable = { POL.num_of_factories < GER.num_of_factories }
+				add = 50
+			}
+			modifier = {
+				strength_ratio = { tag = SWE ratio < 1.5 }
+				add = 50
+			}
+			modifier = {
+				strength_ratio = { tag = DEN ratio < 1.5 }
+				add = 50
+			}
+			modifier = {
+				strength_ratio = { tag = FRA ratio < 1.5 }
+				add = 50
+			}
+			modifier = {
+				strength_ratio = { tag = WGR ratio < 1.5 }
+				add = 50
+			}
+			modifier = {
+				strength_ratio = { tag = DDR ratio < 1.5 }
+				add = 50
+			}
+			modifier = {
+				strength_ratio = { tag = GER ratio < 1.5 }
+				add = 50
+			}
+			modifier = {
+				factor = 1000
+				is_historical_focus_on = yes
 			}
 		}
 	}
@@ -6538,14 +6594,18 @@ seek_allies_category = {##stoped here
 			ITA = {country_event = { id = deluge_poland_foreign.4 hours = 1 }}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 50
 			modifier = {
 				ITA = {has_government = POL}
-				factor = 30
+				add = 30
 			}
 			modifier = {
-				NOT = {ITA = {has_government = POL}}
-				factor = 0.1
+				ITA = {has_government = communism}
+				factor = 0
+			}
+			modifier = {
+				factor = 1000
+				is_historical_focus_on = yes
 			}
 		}
 	}
@@ -6575,15 +6635,28 @@ seek_allies_category = {##stoped here
 		remove_effect = {
 			AUS = {country_event = { id = deluge_poland_foreign.4 hours = 1 }}
 		}
-		ai_will_do = {
-			factor = 5
+		ai_will_do = {##here is stopped
+			base = 5
 			modifier = {
 				AUS = {has_government = POL}
-				factor = 30
+				add = 30
 			}
 			modifier = {
-				NOT = {AUS = {has_government = POL}}
-				factor = 0.1
+				AUS = {
+					NOT = {
+						owns_state = 9
+						
+					}
+				}
+				add = 80
+			}
+			modifier = {
+				AUS = {has_government = communism}
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
 			}
 		}
 	}
@@ -6615,14 +6688,18 @@ seek_allies_category = {##stoped here
 			SER = {country_event = { id = deluge_poland_foreign.4 hours = 1 }}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 50
 			modifier = {
 				SER = {has_government = POL}
-				factor = 30
+				add = 30
 			}
 			modifier = {
-				NOT = {SER = {has_government = POL}}
-				factor = 0.1
+				factor = 1000
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				SER = {has_government = communism}
+				factor = 0
 			}
 		}
 	}
@@ -6653,14 +6730,18 @@ seek_allies_category = {##stoped here
 			CRO = {country_event = { id = deluge_poland_foreign.4 hours = 1 }}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
 			modifier = {
 				CRO = {has_government = POL}
-				factor = 30
+				add = 50
 			}
 			modifier = {
-				NOT = {CRO = {has_government = POL}}
-				factor = 0.1
+				CRO = {has_government = communism}
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
 			}
 		}
 	}
@@ -6692,14 +6773,18 @@ seek_allies_category = {##stoped here
 			ALB = {country_event = { id = deluge_poland_foreign.4 hours = 1 }}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
 			modifier = {
 				ALB = {has_government = POL}
-				factor = 30
+				add = 50
 			}
 			modifier = {
-				NOT = {ALB = {has_government = POL}}
-				factor = 0.1
+				ALB = {has_government = communism}
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
 			}
 		}
 	}
@@ -6730,14 +6815,18 @@ seek_allies_category = {##stoped here
 			GRE = {country_event = { id = deluge_poland_foreign.4 hours = 1 }}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 50
 			modifier = {
 				GRE = {has_government = POL}
-				factor = 30
+				add = 50
 			}
 			modifier = {
-				NOT = {GRE = {has_government = POL}}
-				factor = 0.1
+				GRE = {has_government = communism}
+				factor = 0
+			}
+			modifier = {
+				factor = 1000
+				is_historical_focus_on = yes
 			}
 		}
 	}
@@ -6768,14 +6857,18 @@ seek_allies_category = {##stoped here
 			BUL = {country_event = { id = deluge_poland_foreign.4 hours = 1 }}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
 			modifier = {
 				BUL = {has_government = POL}
-				factor = 30
+				add = 50
 			}
 			modifier = {
-				BUL = {ALB = {has_government = POL}}
-				factor = 0.1
+				BUL = {has_government = communism}
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
 			}
 		}
 	}
@@ -6806,14 +6899,18 @@ seek_allies_category = {##stoped here
 			ROM = {country_event = { id = deluge_poland_foreign.4 hours = 1 }}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
 			modifier = {
 				ROM = {has_government = POL}
-				factor = 30
+				add = 50
 			}
 			modifier = {
-				NOT = {ROM = {has_government = POL}}
-				factor = 0.1
+				ROM = {has_government = communism}
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
 			}
 		}
 	}
@@ -6844,14 +6941,18 @@ seek_allies_category = {##stoped here
 			DEN = {country_event = { id = deluge_poland_foreign.4 hours = 1 }}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
 			modifier = {
 				DEN = {has_government = POL}
-				factor = 30
+				add = 50
 			}
 			modifier = {
-				NOT = {DEN = {has_government = POL}}
-				factor = 0.1
+				DEN = {has_government = communism}
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
 			}
 		}
 	}
@@ -6888,7 +6989,7 @@ seek_allies_category = {##stoped here
 			}
 		}
 		ai_will_do = {
-			base = 100
+			base = 1000
 		}
 	}
 	pact_with_russia = {
@@ -6923,7 +7024,27 @@ seek_allies_category = {##stoped here
 			SOV = {country_event = { id = deluge_poland_foreign.49 hours = 3 }}
 		}
 		ai_will_do = {
-			factor = 40
+			base = 10
+			modifier = {
+				BAL = {has_government = POL}
+				add = 50
+			}
+			modifier = {
+				UKR = {has_government = communism}
+				add = 50
+			}
+			modifier = {
+				BLR = {has_government = communism}
+				add = 50
+			}
+			modifier = {
+				SOV = {has_government = communism}
+				factor = 0
+			}
+			modifier = {
+				factor = 1000
+				is_historical_focus_on = yes
+			}
 		}
 	}
 	send_attache_to_japan = {
@@ -6939,6 +7060,9 @@ seek_allies_category = {##stoped here
 		complete_effect = {
 			JAP = {country_event = {id = deluge_poland_foreign.45 hours = 20}}
 			set_global_flag = POL_invites_someone
+		}
+		ai_will_do = {
+			base = 1000
 		}
 	}
 	visit_attache_in_japan = {
@@ -6992,6 +7116,9 @@ seek_allies_category = {##stoped here
 			FIN = {country_event = {id = deluge_poland_foreign.37 hours = 3}}
 			set_global_flag = POL_invites_someone
 		}
+		ai_will_do = {
+			base = 1000
+		}
 	}
 	support_teutonic_reich = {
 		icon = GFX_decision_eng_trade_unions_demand
@@ -7022,6 +7149,9 @@ seek_allies_category = {##stoped here
 			GER = {country_event = {id = deluge_poland_foreign.53 hours = 3}}
 			set_global_flag = POL_invites_someone
 		}
+		ai_will_do = {
+			base = 1000
+		}
 	}
 }
 army_reform_category = {
@@ -7048,7 +7178,7 @@ army_reform_category = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_19
 		}
 		ai_will_do = {
-			factor = 100
+			base = 100
 		}
 	}
 	increase_POW = {
@@ -7074,7 +7204,7 @@ army_reform_category = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_20
 		}
 		ai_will_do = {
-			factor = 0
+			base = 0
 		}
 	}
 	dissolve_POW = {
@@ -7111,7 +7241,7 @@ army_reform_category = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_21
 		}
 		ai_will_do = {
-			factor = 100
+			base = 100
 		}
 	}
 	change_WP_high_command = {
@@ -7149,7 +7279,7 @@ army_reform_category = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_22
 		}
 		ai_will_do = {
-			factor = 0
+			base = 0
 		}
 	}
 	internal_scuffles = {
@@ -7446,13 +7576,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -7479,7 +7602,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -7489,17 +7612,15 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_poznan = {
@@ -7521,13 +7642,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -7554,7 +7668,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -7564,17 +7678,15 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_lodz = {
@@ -7596,13 +7708,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -7629,7 +7734,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -7639,17 +7744,15 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_wroclaw = {
@@ -7671,13 +7774,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -7704,7 +7800,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -7714,17 +7810,15 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_katowice = {
@@ -7746,13 +7840,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -7779,7 +7866,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -7789,17 +7876,15 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_krakow = {
@@ -7821,13 +7906,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -7854,7 +7932,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -7864,17 +7942,15 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_lublin = {
@@ -7896,13 +7972,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -7929,7 +7998,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -7939,17 +8008,15 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_lwow = {
@@ -7971,13 +8038,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -8004,7 +8064,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -8014,17 +8074,15 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_stanislawow = {
@@ -8046,13 +8104,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -8079,7 +8130,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -8089,17 +8140,15 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_brzesc = {
@@ -8121,13 +8170,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -8154,7 +8196,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -8164,17 +8206,15 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_krolewiec = {
@@ -8196,13 +8236,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -8229,7 +8262,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -8239,16 +8272,11 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 				add_building_construction = {
 					type = naval_base
 					province = 6332
@@ -8256,6 +8284,9 @@ expand_cities_category = {
 					instant_build = yes
 				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_tri_city = {
@@ -8277,13 +8308,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -8330,11 +8354,6 @@ expand_cities_category = {
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
 					type = naval_base
 					province = 362
 					level = 2
@@ -8347,6 +8366,9 @@ expand_cities_category = {
 					instant_build = yes
 				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_kijow = {
@@ -8368,13 +8390,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -8401,7 +8416,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -8411,17 +8426,15 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_wilno = {
@@ -8443,13 +8456,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -8476,7 +8482,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -8486,17 +8492,15 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_kaunas = {
@@ -8518,13 +8522,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -8551,7 +8548,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -8561,17 +8558,15 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_ryga = {
@@ -8593,13 +8588,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -8626,7 +8614,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -8636,16 +8624,11 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 				add_building_construction = {
 					type = naval_base
 					province = 9340
@@ -8653,6 +8636,9 @@ expand_cities_category = {
 					instant_build = yes
 				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_minsk = {
@@ -8674,13 +8660,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -8707,7 +8686,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -8717,17 +8696,15 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_odessa = {
@@ -8749,13 +8726,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -8782,7 +8752,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -8792,16 +8762,11 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 				add_building_construction = {
 					type = naval_base
 					province = 11670
@@ -8809,6 +8774,9 @@ expand_cities_category = {
 					instant_build = yes
 				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_praga = {
@@ -8830,13 +8798,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -8863,7 +8824,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -8873,17 +8834,15 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_brno = {
@@ -8905,13 +8864,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -8938,7 +8890,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -8948,17 +8900,15 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_szczecin = {
@@ -8980,13 +8930,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -9013,7 +8956,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -9023,16 +8966,11 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 				add_building_construction = {
 					type = naval_base
 					province = 6282
@@ -9040,6 +8978,9 @@ expand_cities_category = {
 					instant_build = yes
 				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_drezno_and_lipsk = {
@@ -9061,13 +9002,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -9098,7 +9032,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -9108,17 +9042,15 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	develop_branibor_and_dziewin = {
@@ -9140,13 +9072,6 @@ expand_cities_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -9177,7 +9102,7 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -9187,20 +9112,17 @@ expand_cities_category = {
 					}
 					add_building_construction = {
 						type = radar_station
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 			}
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
-	
 }
 political_actions = {
 	Stachniuk_move_capital = {
@@ -9226,12 +9148,12 @@ political_actions = {
 		visible = {
 			has_completed_focus = POL_return_of_ancient_faith
 		}
-		ai_will_do = {
-			factor = 100
-		}
 		cost = 0
 		complete_effect = {
 			POL = {country_event = {id = deluge_poland.30 hours = 0}}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	training_in_iran = {
@@ -9299,7 +9221,7 @@ political_actions = {
 			#set_country_flag = joined_visegrad_tech_group
 		}
 		ai_will_do = {
-			factor = 100
+			base = 100
 		}
 	}
 	solution_of_the_issue_of_the_prophet_ilja = {
@@ -9376,11 +9298,7 @@ political_actions = {
 			50 = { add_core_of = POL }
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			base = 100
 		}
 	}
 }
@@ -9404,13 +9322,6 @@ restore_holy_sites_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 10
 		}
@@ -9427,7 +9338,7 @@ restore_holy_sites_category = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -9442,6 +9353,9 @@ restore_holy_sites_category = {
 				path = { 3312 3258 268 11276}
 			}
 			custom_effect_tooltip = POL_custom_effect_tooltip_83
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	rebuild_temple_on_wolin = {
@@ -9524,6 +9438,9 @@ restore_holy_sites_category = {
 				value = 5
 			}
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	rebuild_temple_rujana_island = {
 		icon = GFX_decision_generic_electricity
@@ -9544,13 +9461,6 @@ restore_holy_sites_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 3
 		}
@@ -9587,6 +9497,9 @@ restore_holy_sites_category = {
 				value = 9
 			}
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	rebuild_temple_in_trzebiatow = {
 		icon = GFX_decision_generic_electricity
@@ -9607,13 +9520,6 @@ restore_holy_sites_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 3
 		}
@@ -9650,6 +9556,9 @@ restore_holy_sites_category = {
 				value = 12
 			}
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	rebuild_temple_in_plock = {
 		icon = GFX_decision_generic_electricity
@@ -9670,13 +9579,6 @@ restore_holy_sites_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 3
 		}
@@ -9701,6 +9603,9 @@ restore_holy_sites_category = {
 				value = 15
 			}
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	rebuild_temple_in_kijow = {
 		icon = GFX_decision_generic_electricity
@@ -9721,13 +9626,6 @@ restore_holy_sites_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 3
 		}
@@ -9752,6 +9650,9 @@ restore_holy_sites_category = {
 				value = 5
 			}
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	rebuild_temple_in_nowogrod = {
 		icon = GFX_decision_generic_electricity
@@ -9772,13 +9673,6 @@ restore_holy_sites_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 3
 		}
@@ -9803,6 +9697,9 @@ restore_holy_sites_category = {
 				value = 15
 			}
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	build_temple_on_lysa_gora = {
 		icon = GFX_decision_generic_electricity
@@ -9823,13 +9720,6 @@ restore_holy_sites_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 3
 		}
@@ -9854,6 +9744,9 @@ restore_holy_sites_category = {
 				value = 15
 			}
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	build_temple_on_sleza_mountain = {
 		icon = GFX_decision_generic_electricity
@@ -9874,13 +9767,6 @@ restore_holy_sites_category = {
 			original_tag = POL
 		}
 		days_remove = 60
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		modifier = {
 			civilian_factory_use = 3
 		}
@@ -9904,6 +9790,9 @@ restore_holy_sites_category = {
 				province = 9570
 				value = 10
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 }
@@ -10037,7 +9926,7 @@ expand_urban_regions_category = {
 			}
 		}	
 		ai_will_do = {
-			factor = 30
+			base = 100
 		}
 	}
 }
@@ -10068,23 +9957,47 @@ export_catholicism_category = {
 			}
 		}
 		days_remove = 100
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
+		cost = 50
+		complete_effect = {
+			FROM = {
+				country_event = {
+					id = generic.26
+				}
 			}
 		}
-		cost = 50
 		remove_effect = {
 			POL = {
 				create_wargoal = {
 					type = puppet_wargoal_focus
 					target = FROM
 				}
-				FROM = {
-					country_event = {
-						id = generic.26
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
 					}
 				}
 			}
@@ -10121,23 +10034,47 @@ export_catholicism_category = {
 			}
 		}
 		days_remove = 100
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
+		cost = 50
+		complete_effect = {
+			FROM = {
+				country_event = {
+					id = generic.26
+				}
 			}
 		}
-		cost = 50
 		remove_effect = {
 			POL = {
 				create_wargoal = {
 					type = puppet_wargoal_focus
 					target = FROM
 				}
-				FROM = {
-					country_event = {
-						id = generic.26
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
 					}
 				}
 			}
@@ -10174,23 +10111,47 @@ export_catholicism_category = {
 			}
 		}
 		days_remove = 100
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
+		cost = 50
+		complete_effect = {
+			FROM = {
+				country_event = {
+					id = generic.26
+				}
 			}
 		}
-		cost = 50
 		remove_effect = {
 			POL = {
 				create_wargoal = {
 					type = puppet_wargoal_focus
 					target = FROM
 				}
-				FROM = {
-					country_event = {
-						id = generic.26
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
 					}
 				}
 			}
@@ -10225,23 +10186,47 @@ export_catholicism_category = {
 			}
 		}
 		days_remove = 100
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
+		cost = 50
+		complete_effect = {
+			FROM = {
+				country_event = {
+					id = generic.26
+				}
 			}
 		}
-		cost = 50
 		remove_effect = {
 			POL = {
 				create_wargoal = {
 					type = puppet_wargoal_focus
 					target = FROM
 				}
-				FROM = {
-					country_event = {
-						id = generic.26
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
 					}
 				}
 			}
@@ -10294,18 +10279,40 @@ export_catholicism_category = {
 			}
 		}
 		days_remove = 14
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = no
-				factor = 10
-			}
-		}
 		cost = 50
 		remove_effect = {
 			FROM = {
 				country_event = {
 					id = deluge_poland.71
+				}
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
 				}
 			}
 		}
@@ -10348,6 +10355,9 @@ export_catholicism_category = {
 				add_ideas = member_of_new_polish_church
 			}
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 }
 european_cooperation_category = {
@@ -10372,9 +10382,6 @@ european_cooperation_category = {
 					days > 150
 				}
 			}
-		}
-		ai_will_do = {
-			factor = 5
 		}
 		cost = 20
 		complete_effect = {
@@ -10410,6 +10417,9 @@ european_cooperation_category = {
 				}
 			}
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	abolish_border_controls = {
 		icon = GFX_decision_generic_trucks
@@ -10432,9 +10442,6 @@ european_cooperation_category = {
 					days > 150
 				}
 			}
-		}
-		ai_will_do = {
-			factor = 5
 		}
 		cost = 20
 		complete_effect = {
@@ -10470,6 +10477,9 @@ european_cooperation_category = {
 				}
 			}
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	form_shared_research_facitilies = {
 		icon = GFX_decision_generic_research
@@ -10492,9 +10502,6 @@ european_cooperation_category = {
 					days > 150
 				}
 			}
-		}
-		ai_will_do = {
-			factor = 5
 		}
 		cost = 20
 		complete_effect = {
@@ -10529,6 +10536,9 @@ european_cooperation_category = {
 				}
 			}
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	organize_international_cultural_events = {
 		icon = GFX_decision_hol_radio_oranje
@@ -10551,9 +10561,6 @@ european_cooperation_category = {
 					days > 150
 				}
 			}
-		}
-		ai_will_do = {
-			factor = 5
 		}
 		cost = 20
 		complete_effect = {
@@ -10590,6 +10597,9 @@ european_cooperation_category = {
 				}
 			}
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	creation_of_new_trade_routes = {
 		icon = GFX_decision_generic_electricity
@@ -10612,9 +10622,6 @@ european_cooperation_category = {
 					days > 150
 				}
 			}
-		}
-		ai_will_do = {
-			factor = 5
 		}
 		cost = 20
 		complete_effect = {
@@ -10650,6 +10657,9 @@ european_cooperation_category = {
 				}
 			}
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	share_industrial_and_military_techs = {
 		icon = GFX_decision_generic_research
@@ -10672,9 +10682,6 @@ european_cooperation_category = {
 					days > 150
 				}
 			}
-		}
-		ai_will_do = {
-			factor = 5
 		}
 		cost = 20
 		complete_effect = {
@@ -10704,6 +10711,9 @@ european_cooperation_category = {
 					id = deluge_poland_foreign.65
 				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	intive_other_countries = {
@@ -10761,15 +10771,52 @@ european_cooperation_category = {
 		available = {
 			
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 10
 		complete_effect = {
 			FROM = {
 				country_event = {
 					id = deluge_poland_foreign.27
 				}
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				add = 40
+				FROM = {
+					has_government = POL
+				}
+			}
+			modifier = {
+				add = 100
+				ROOT = {
+					has_opinion = {
+						target = FROM
+						value > 40
+					}
+				}
+			}
+			modifier = {
+				add = 40
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 40
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 40
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
 			}
 		}
 	}
@@ -10818,11 +10865,23 @@ european_cooperation_category = {
 				}
 			}
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 10
+		days_remove = 25
 		complete_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 62 
+						owns_state = 63
+						owns_state = 85
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
 			every_country = {
 				limit = {
 					OR = {
@@ -10834,6 +10893,53 @@ european_cooperation_category = {
 				country_event = {
 					id = deluge_poland_foreign.67
 				}
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				add = -25
+				ROOT = {
+					has_opinion = {
+						target = FROM
+						value > 40
+					}
+				}
+			}
+			modifier = {
+				add = 25
+				ROOT = {
+					has_opinion = {
+						target = FROM
+						value < 40
+					}
+				}
+			}
+			modifier = {
+				add = -40
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 40
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -40
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+			}
+			modifier = {
+				add = 40
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
 			}
 		}
 	}
@@ -10889,11 +10995,19 @@ european_cooperation_category = {
 				}
 			}
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 10
+		days_remove = 25
 		complete_effect = {
+			every_country = {
+				limit = {
+					owns_state = 68 
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
 			every_country = {
 				limit = {
 					owns_state = 68 
@@ -10901,6 +11015,53 @@ european_cooperation_category = {
 				country_event = {
 					id = deluge_poland_foreign.70
 				}
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				add = -25
+				ROOT = {
+					has_opinion = {
+						target = FROM
+						value > 40
+					}
+				}
+			}
+			modifier = {
+				add = 25
+				ROOT = {
+					has_opinion = {
+						target = FROM
+						value < 40
+					}
+				}
+			}
+			modifier = {
+				add = -40
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 40
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -40
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+			}
+			modifier = {
+				add = 40
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
 			}
 		}
 	}
@@ -10981,9 +11142,6 @@ european_cooperation_category = {
 				}
 			}
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 60
 		days_remove = 30
 		complete_effect = {
@@ -10998,6 +11156,35 @@ european_cooperation_category = {
 				create_wargoal = {
 					type = topple_government
 					target = FROM
+				}
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
 				}
 			}
 		}
@@ -11023,9 +11210,6 @@ european_cooperation_joining_category = {
 		available = {
 			
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 20
 		complete_effect = {
 			set_country_flag = POL_eu_coop_common_currency
@@ -11038,6 +11222,9 @@ european_cooperation_joining_category = {
 				}
 			}
 			custom_effect_tooltip = POL_custom_effect_tooltip_193
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	join_abolish_border_controls = {
@@ -11059,9 +11246,6 @@ european_cooperation_joining_category = {
 		available = {
 			
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 20
 		complete_effect = {
 			set_country_flag = POL_eu_coop_no_borders
@@ -11074,6 +11258,9 @@ european_cooperation_joining_category = {
 				}
 			}
 			custom_effect_tooltip = POL_custom_effect_tooltip_194
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	join_form_shared_research_facitilies = {
@@ -11095,9 +11282,6 @@ european_cooperation_joining_category = {
 		available = {
 			
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 20
 		complete_effect = {
 			set_country_flag = POL_eu_coop_shared_research
@@ -11109,6 +11293,9 @@ european_cooperation_joining_category = {
 				}
 			}
 			custom_effect_tooltip = POL_custom_effect_tooltip_195
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	join_organize_international_cultural_events = {
@@ -11130,9 +11317,6 @@ european_cooperation_joining_category = {
 		available = {
 			
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 20
 		complete_effect = {
 			set_country_flag = POL_eu_coop_events
@@ -11146,6 +11330,9 @@ european_cooperation_joining_category = {
 				}
 			}
 			custom_effect_tooltip = POL_custom_effect_tooltip_196
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	join_creation_of_new_trade_routes = {
@@ -11167,9 +11354,6 @@ european_cooperation_joining_category = {
 		available = {
 			
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 20
 		complete_effect = {
 			set_country_flag = POL_eu_coop_new_routes
@@ -11182,6 +11366,9 @@ european_cooperation_joining_category = {
 				}
 			}
 			custom_effect_tooltip = POL_custom_effect_tooltip_197
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	join_share_industrial_and_military_techs = {
@@ -11199,13 +11386,13 @@ european_cooperation_joining_category = {
 		available = {
 			
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 20
 		complete_effect = {
 			set_country_flag = POLeu_coop_research_group_member
 			add_to_tech_sharing_group = deluge_eu_coop_tech_group
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 }
@@ -11232,15 +11419,52 @@ new_revolution_category = {
 				has_war = no
 			}
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 10
 		complete_effect = {
 			FROM = {
 				country_event = {
 					id = deluge_poland_foreign.73
 				}
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				add = 40
+				FROM = {
+					has_government = POL
+				}
+			}
+			modifier = {
+				add = 100
+				ROOT = {
+					has_opinion = {
+						target = FROM
+						value > 40
+					}
+				}
+			}
+			modifier = {
+				add = 40
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 40
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 40
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
 			}
 		}
 	}
@@ -11266,9 +11490,6 @@ new_revolution_category = {
 		available = {
 			
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 50
 		complete_effect = {
 			FROM = {
@@ -11279,6 +11500,9 @@ new_revolution_category = {
 			FROM = {
 				remove_ideas = POL_spreading_radicalism
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	decrease_stability_in_neighbour = {
@@ -11305,9 +11529,6 @@ new_revolution_category = {
 				communism > 0.1
 			}
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 50
 		remove_effect = {
 			FROM = {
@@ -11317,6 +11538,9 @@ new_revolution_category = {
 					popularity = -0.02
 				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	decrease_war_support_in_neighbour = {
@@ -11343,9 +11567,6 @@ new_revolution_category = {
 				communism > 0.1
 			}
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 50
 		remove_effect = {
 			FROM = {
@@ -11355,6 +11576,9 @@ new_revolution_category = {
 					popularity = -0.02
 				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	attack_non_radical_neighbour = {
@@ -11379,9 +11603,6 @@ new_revolution_category = {
 		available = {
 			
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 50
 		complete_effect = {
 			FROM = {
@@ -11394,6 +11615,35 @@ new_revolution_category = {
 			create_wargoal = {
 				type = topple_government
 				target = FROM
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
 			}
 		}
 	}
@@ -11759,9 +12009,6 @@ new_revolution_category = {
 				controls_state = 929
 			}
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 0
 		complete_effect = {
 			set_cosmetic_tag = EUR_UNIFIED
@@ -12031,6 +12278,9 @@ new_revolution_category = {
 				set_country_flag = POL_formed_eu
 			}
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	integrate_uk_into_eu = {
 		icon = GFX_decision_eng_install_government
@@ -12063,9 +12313,6 @@ new_revolution_category = {
 				controls_state = 932
 				controls_state = 931
 			}
-		}
-		ai_will_do = {
-			factor = 5
 		}
 		cost = 0
 		complete_effect = {
@@ -12124,6 +12371,9 @@ new_revolution_category = {
 			}
 			custom_effect_tooltip = POL_custom_effect_tooltip_242
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	integrate_ireland_into_eu = {
 		icon = GFX_decision_oppression
@@ -12141,9 +12391,6 @@ new_revolution_category = {
 			controls_state = 113
 			controls_state = 135
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 0
 		complete_effect = {
 			119 = {
@@ -12158,6 +12405,9 @@ new_revolution_category = {
 			113 = {
 				add_core_of = POL
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	integrate_northern_islands_into_eu = {
@@ -12177,9 +12427,6 @@ new_revolution_category = {
 			controls_state = 933
 			controls_state = 914
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 0
 		complete_effect = {
 			337 = {
@@ -12198,6 +12445,9 @@ new_revolution_category = {
 				add_core_of = POL
 			}
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	integrate_cyprus_into_eu = {
 		icon = GFX_decision_eng_trade_unions_demand
@@ -12212,14 +12462,14 @@ new_revolution_category = {
 			POL = {has_country_flag = POL_formed_eu}
 			controls_state = 183
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 0
 		complete_effect = {
 			183 = {
 				add_core_of = POL
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 }
@@ -12239,13 +12489,13 @@ polish_hungarian_union_decisions_category = {
 				is_capital = no
 			}
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 5
 		complete_effect = {
 			add_political_power = 105
 			add_stability = -0.01
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	build_statues_of_stephan_batory = {
@@ -12264,14 +12514,14 @@ polish_hungarian_union_decisions_category = {
 		available = {
 			
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 25
 		complete_effect = {
 			add_war_support = 0.05
 			add_stability = 0.05
 			add_political_power = 150
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	establish_new_language_institutes = {
@@ -12289,9 +12539,6 @@ polish_hungarian_union_decisions_category = {
 		}
 		available = {
 			
-		}
-		ai_will_do = {
-			factor = 5
 		}
 		cost = 25
 		complete_effect = {
@@ -12345,6 +12592,9 @@ polish_hungarian_union_decisions_category = {
 				}
 			}
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	make_23_march_national_holiday = {
 		icon = GFX_decision_eng_trade_unions_support
@@ -12381,6 +12631,9 @@ polish_hungarian_union_decisions_category = {
 					add_ideas = POL_HUN_eternal_friendship_HUN_version
 				}
 			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 }
@@ -12764,14 +13017,32 @@ polish_new_order_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 1
 			modifier = {
-				has_war = no
-				factor = 10
+				check_variable = { LOU.num_of_factories < ROOT.num_of_factories }
+				add = 40
 			}
 			modifier = {
-				has_war = yes
-				factor = 0.01
+				check_variable = { LOU.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = LOU 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = LOU 
+						ratio < 1.5 
+					}
+				}
 			}
 		}
 	}
@@ -12866,14 +13137,44 @@ polish_new_order_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 1
 			modifier = {
-				has_war = no
-				factor = 10
+				add = 50
+				any_country = {
+					OR = {
+						owns_state = 36
+						owns_state = 7
+						owns_state = 35
+						owns_state = 784
+						owns_state = 6
+						owns_state = 8
+						owns_state = 786
+						owns_state = 34
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio < 1.5 
+					}
+				}
 			}
 			modifier = {
-				has_war = yes
-				factor = 0.01
+				add = -50
+				any_country = {
+					OR = {
+						owns_state = 36
+						owns_state = 7
+						owns_state = 35
+						owns_state = 784
+						owns_state = 6
+						owns_state = 8
+						owns_state = 786
+						owns_state = 34
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio > 1.5 
+					}
+				}
 			}
 		}
 	}
@@ -13048,14 +13349,84 @@ polish_new_order_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 1
 			modifier = {
-				has_war = no
-				factor = 10
+				add = 50
+				any_country = {
+					OR = {
+						owns_state = 165
+						owns_state = 794
+						owns_state = 166
+						owns_state = 176
+						owns_state = 172
+						owns_state = 792
+						owns_state = 804
+						owns_state = 790
+						owns_state = 171
+						owns_state = 174
+						owns_state = 791
+						owns_state = 788
+						owns_state = 41
+						owns_state = 793
+						owns_state = 167
+						owns_state = 168
+						owns_state = 175
+						owns_state = 170
+						owns_state = 789
+						owns_state = 173
+						owns_state = 169
+						owns_state = 180
+						owns_state = 181
+						owns_state = 112
+						owns_state = 795
+						owns_state = 179
+						owns_state = 118
+						owns_state = 177
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio < 1.5 
+					}
+				}
 			}
 			modifier = {
-				has_war = yes
-				factor = 0.01
+				add = -50
+				any_country = {
+					OR = {
+						owns_state = 165
+						owns_state = 794
+						owns_state = 166
+						owns_state = 176
+						owns_state = 172
+						owns_state = 792
+						owns_state = 804
+						owns_state = 790
+						owns_state = 171
+						owns_state = 174
+						owns_state = 791
+						owns_state = 788
+						owns_state = 41
+						owns_state = 793
+						owns_state = 167
+						owns_state = 168
+						owns_state = 175
+						owns_state = 170
+						owns_state = 789
+						owns_state = 173
+						owns_state = 169
+						owns_state = 180
+						owns_state = 181
+						owns_state = 112
+						owns_state = 795
+						owns_state = 179
+						owns_state = 118
+						owns_state = 177
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio > 1.5 
+					}
+				}
 			}
 		}
 	}
@@ -13286,14 +13657,112 @@ polish_new_order_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 1
 			modifier = {
-				has_war = no
-				factor = 10
+				add = 50
+				any_country = {
+					OR = {
+						owns_state = 58
+						owns_state = 99
+						owns_state = 37
+						owns_state = 138
+						owns_state = 139
+						owns_state = 140
+						owns_state = 141
+						owns_state = 38
+						owns_state = 666
+						owns_state = 124
+						owns_state = 110
+						owns_state = 142
+						owns_state = 143
+						owns_state = 144
+						owns_state = 145
+						owns_state = 111
+						owns_state = 149
+						owns_state = 150
+						owns_state = 146
+						owns_state = 148
+						owns_state = 147
+						owns_state = 909
+						owns_state = 912
+						owns_state = 911
+						owns_state = 910
+						owns_state = 915
+						owns_state = 919
+						owns_state = 916
+						owns_state = 917
+						owns_state = 918
+						owns_state = 188
+						owns_state = 921
+						owns_state = 922
+						owns_state = 920
+						owns_state = 923
+						owns_state = 924
+						owns_state = 925
+						owns_state = 929
+						owns_state = 926
+						owns_state = 927
+						owns_state = 928
+						owns_state = 930
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio < 1.5 
+					}
+				}
 			}
 			modifier = {
-				has_war = yes
-				factor = 0.01
+				add = -50
+				any_country = {
+					OR = {
+						owns_state = 58
+						owns_state = 99
+						owns_state = 37
+						owns_state = 138
+						owns_state = 139
+						owns_state = 140
+						owns_state = 141
+						owns_state = 38
+						owns_state = 666
+						owns_state = 124
+						owns_state = 110
+						owns_state = 142
+						owns_state = 143
+						owns_state = 144
+						owns_state = 145
+						owns_state = 111
+						owns_state = 149
+						owns_state = 150
+						owns_state = 146
+						owns_state = 148
+						owns_state = 147
+						owns_state = 909
+						owns_state = 912
+						owns_state = 911
+						owns_state = 910
+						owns_state = 915
+						owns_state = 919
+						owns_state = 916
+						owns_state = 917
+						owns_state = 918
+						owns_state = 188
+						owns_state = 921
+						owns_state = 922
+						owns_state = 920
+						owns_state = 923
+						owns_state = 924
+						owns_state = 925
+						owns_state = 929
+						owns_state = 926
+						owns_state = 927
+						owns_state = 928
+						owns_state = 930
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio > 1.5 
+					}
+				}
 			}
 		}
 	}
@@ -13459,14 +13928,56 @@ polish_new_order_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 1
 			modifier = {
-				has_war = no
-				factor = 10
+				add = 50
+				any_country = {
+					OR = {
+						owns_state = 68
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+						owns_state = 59
+						owns_state = 60
+						owns_state = 54
+						owns_state = 53
+						owns_state = 52
+						owns_state = 50
+						owns_state = 55
+						owns_state = 51
+						owns_state = 57
+						owns_state = 56
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio < 1.5 
+					}
+				}
 			}
 			modifier = {
-				has_war = yes
-				factor = 0.01
+				add = -50
+				any_country = {
+					OR = {
+						owns_state = 68
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+						owns_state = 59
+						owns_state = 60
+						owns_state = 54
+						owns_state = 53
+						owns_state = 52
+						owns_state = 50
+						owns_state = 55
+						owns_state = 51
+						owns_state = 57
+						owns_state = 56
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio > 1.5 
+					}
+				}
 			}
 		}
 	}
@@ -13573,14 +14084,50 @@ polish_new_order_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 1
 			modifier = {
-				has_war = no
-				factor = 10
+				add = 50
+				any_country = {
+					OR = {
+						owns_state = 159
+						owns_state = 160
+						owns_state = 161
+						owns_state = 162
+						owns_state = 157
+						owns_state = 2
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+						owns_state = 114
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio < 1.5 
+					}
+				}
 			}
 			modifier = {
-				has_war = yes
-				factor = 0.01
+				add = -50
+				any_country = {
+					OR = {
+						owns_state = 159
+						owns_state = 160
+						owns_state = 161
+						owns_state = 162
+						owns_state = 157
+						owns_state = 2
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+						owns_state = 114
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio > 1.5 
+					}
+				}
 			}
 		}
 	}
@@ -13618,14 +14165,32 @@ polish_new_order_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 1
 			modifier = {
-				has_war = no
-				factor = 10
+				check_variable = { AUS.num_of_factories < ROOT.num_of_factories }
+				add = 40
 			}
 			modifier = {
-				has_war = yes
-				factor = 0.01
+				check_variable = { AUS.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = AUS 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = AUS 
+						ratio < 1.5 
+					}
+				}
 			}
 		}
 	}
@@ -13663,14 +14228,32 @@ polish_new_order_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 1
 			modifier = {
-				has_war = no
-				factor = 10
+				check_variable = { SOV.num_of_factories < ROOT.num_of_factories }
+				add = 40
 			}
 			modifier = {
-				has_war = yes
-				factor = 0.01
+				check_variable = { SOV.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = SOV 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = SOV 
+						ratio < 1.5 
+					}
+				}
 			}
 		}
 	}
@@ -13708,14 +14291,32 @@ polish_new_order_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 1
 			modifier = {
-				has_war = no
-				factor = 10
+				check_variable = { ENG.num_of_factories < ROOT.num_of_factories }
+				add = 40
 			}
 			modifier = {
-				has_war = yes
-				factor = 0.01
+				check_variable = { ENG.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = ENG 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = ENG 
+						ratio < 1.5 
+					}
+				}
 			}
 		}
 	}
@@ -13756,11 +14357,7 @@ polish_new_order_decisions_category = {
 			62 = { add_core_of = POL }
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			base = 100
 		}
 	}
 	integrate_claimed_germany = {
@@ -13824,11 +14421,7 @@ polish_new_order_decisions_category = {
 			52 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			base = 100
 		}
 	}
 	eliminate_ideological_threat = {
@@ -13900,6 +14493,35 @@ polish_new_order_decisions_category = {
 				}
 			}
 		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+		}
 	}
 }
 sarmatia_decisions_category = {
@@ -13932,7 +14554,7 @@ sarmatia_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 100
 		}
 	}
 	demand_iranian_annexation = {
@@ -13966,7 +14588,33 @@ sarmatia_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 1
+			modifier = {
+				check_variable = { PER.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { PER.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = PER 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = PER 
+						ratio < 1.5 
+					}
+				}
+			}
 		}
 	}
 	integrate_iran = {
@@ -14085,7 +14733,7 @@ sarmatia_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 100
 		}
 	}
 	retake_central_europe = {
@@ -14187,7 +14835,65 @@ sarmatia_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 1
+			modifier = {
+				add = 50
+				any_country = {
+					OR = {
+						owns_state = 74
+						owns_state = 71
+						owns_state = 70
+						owns_state = 73
+						owns_state = 664
+						owns_state = 74
+						owns_state = 155
+						owns_state = 43
+						owns_state = 154
+						owns_state = 76
+						owns_state = 83
+						owns_state = 84
+						owns_state = 82
+						owns_state = 45
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+						owns_state = 847
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				any_country = {
+					OR = {
+						owns_state = 74
+						owns_state = 71
+						owns_state = 70
+						owns_state = 73
+						owns_state = 664
+						owns_state = 74
+						owns_state = 155
+						owns_state = 43
+						owns_state = 154
+						owns_state = 76
+						owns_state = 83
+						owns_state = 84
+						owns_state = 82
+						owns_state = 45
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+						owns_state = 847
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio > 1.5 
+					}
+				}
+			}
 		}
 	}
 	retake_eastern_europe = {
@@ -14376,7 +15082,123 @@ sarmatia_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 1
+			modifier = {
+				add = 50
+				any_country = {
+					OR = {
+						owns_state = 199
+						owns_state = 198
+						owns_state = 192
+						owns_state = 834
+						owns_state = 197
+						owns_state = 203
+						owns_state = 201
+						owns_state = 202
+						owns_state = 194
+						owns_state = 241
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 226
+						owns_state = 221
+						owns_state = 196
+						owns_state = 137
+						owns_state = 200
+						owns_state = 227
+						owns_state = 228
+						owns_state = 218
+						owns_state = 245
+						owns_state = 217
+						owns_state = 829
+						owns_state = 239
+						owns_state = 255
+						owns_state = 257
+						owns_state = 260
+						owns_state = 240
+						owns_state = 220
+						owns_state = 222
+						owns_state = 224
+						owns_state = 205
+						owns_state = 223
+						owns_state = 265
+						owns_state = 258
+						owns_state = 254
+						owns_state = 401
+						owns_state = 251
+						owns_state = 250
+						owns_state = 252
+						owns_state = 256
+						owns_state = 833
+						owns_state = 249
+						owns_state = 399
+						owns_state = 652
+						owns_state = 651
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				any_country = {
+					OR = {
+						owns_state = 199
+						owns_state = 198
+						owns_state = 192
+						owns_state = 834
+						owns_state = 197
+						owns_state = 203
+						owns_state = 201
+						owns_state = 202
+						owns_state = 194
+						owns_state = 241
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 226
+						owns_state = 221
+						owns_state = 196
+						owns_state = 137
+						owns_state = 200
+						owns_state = 227
+						owns_state = 228
+						owns_state = 218
+						owns_state = 245
+						owns_state = 217
+						owns_state = 829
+						owns_state = 239
+						owns_state = 255
+						owns_state = 257
+						owns_state = 260
+						owns_state = 240
+						owns_state = 220
+						owns_state = 222
+						owns_state = 224
+						owns_state = 205
+						owns_state = 223
+						owns_state = 265
+						owns_state = 258
+						owns_state = 254
+						owns_state = 401
+						owns_state = 251
+						owns_state = 250
+						owns_state = 252
+						owns_state = 256
+						owns_state = 833
+						owns_state = 249
+						owns_state = 399
+						owns_state = 652
+						owns_state = 651
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio > 1.5 
+					}
+				}
+			}
 		}
 	}
 	retake_caucasus = {
@@ -14470,7 +15292,61 @@ sarmatia_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 1
+			modifier = {
+				add = 50
+				any_country = {
+					OR = {
+						owns_state = 234
+						owns_state = 238
+						owns_state = 235
+						owns_state = 237
+						owns_state = 236
+						owns_state = 232
+						owns_state = 269
+						owns_state = 821
+						owns_state = 828
+						owns_state = 827
+						owns_state = 311
+						owns_state = 826
+						owns_state = 231
+						owns_state = 233
+						owns_state = 230
+						owns_state = 229
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				any_country = {
+					OR = {
+						owns_state = 234
+						owns_state = 238
+						owns_state = 235
+						owns_state = 237
+						owns_state = 236
+						owns_state = 232
+						owns_state = 269
+						owns_state = 821
+						owns_state = 828
+						owns_state = 827
+						owns_state = 311
+						owns_state = 826
+						owns_state = 231
+						owns_state = 233
+						owns_state = 230
+						owns_state = 229
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio > 1.5 
+					}
+				}
+			}
 		}
 	}
 	retake_steppes = {
@@ -14572,7 +15448,65 @@ sarmatia_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 1
+			modifier = {
+				add = 50
+				any_country = {
+					OR = {
+						owns_state = 407
+						owns_state = 406
+						owns_state = 402
+						owns_state = 881
+						owns_state = 404
+						owns_state = 585
+						owns_state = 830
+						owns_state = 823
+						owns_state = 831
+						owns_state = 587
+						owns_state = 584
+						owns_state = 832
+						owns_state = 742
+						owns_state = 732
+						owns_state = 405
+						owns_state = 586
+						owns_state = 589
+						owns_state = 588
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				any_country = {
+					OR = {
+						owns_state = 407
+						owns_state = 406
+						owns_state = 402
+						owns_state = 881
+						owns_state = 404
+						owns_state = 585
+						owns_state = 830
+						owns_state = 823
+						owns_state = 831
+						owns_state = 587
+						owns_state = 584
+						owns_state = 832
+						owns_state = 742
+						owns_state = 732
+						owns_state = 405
+						owns_state = 586
+						owns_state = 589
+						owns_state = 588
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio > 1.5 
+					}
+				}
+			}
 		}
 	}
 	retake_siberia = {
@@ -14656,7 +15590,53 @@ sarmatia_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 1
+			modifier = {
+				add = 50
+				any_country = {
+					OR = {
+						owns_state = 582
+						owns_state = 573
+						owns_state = 572
+						owns_state = 653
+						owns_state = 583
+						owns_state = 590
+						owns_state = 882
+						owns_state = 40
+						owns_state = 654
+						owns_state = 570
+						owns_state = 571
+						owns_state = 403
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				any_country = {
+					OR = {
+						owns_state = 582
+						owns_state = 573
+						owns_state = 572
+						owns_state = 653
+						owns_state = 583
+						owns_state = 590
+						owns_state = 882
+						owns_state = 40
+						owns_state = 654
+						owns_state = 570
+						owns_state = 571
+						owns_state = 403
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio > 1.5 
+					}
+				}
+			}
 		}
 	}
 	retake_india = {
@@ -14728,7 +15708,45 @@ sarmatia_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 1
+			modifier = {
+				add = 50
+				any_country = {
+					OR = {
+						owns_state = 267
+						owns_state = 415
+						owns_state = 442
+						owns_state = 445
+						owns_state = 444
+						owns_state = 443
+						owns_state = 440
+						owns_state = 441
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				any_country = {
+					OR = {
+						owns_state = 267
+						owns_state = 415
+						owns_state = 442
+						owns_state = 445
+						owns_state = 444
+						owns_state = 443
+						owns_state = 440
+						owns_state = 441
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio > 1.5 
+					}
+				}
+			}
 		}
 	}
 	retake_dzungaria = {
@@ -14797,7 +15815,43 @@ sarmatia_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 1
+			modifier = {
+				add = 50
+				any_country = {
+					OR = {
+						owns_state = 619
+						owns_state = 287
+						owns_state = 759
+						owns_state = 617
+						owns_state = 618
+						owns_state = 760
+						owns_state = 818
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				any_country = {
+					OR = {
+						owns_state = 619
+						owns_state = 287
+						owns_state = 759
+						owns_state = 617
+						owns_state = 618
+						owns_state = 760
+						owns_state = 818
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio > 1.5 
+					}
+				}
+			}
 		}
 	}
 	core_state_sarmatian = {
@@ -15279,14 +16333,154 @@ wettins_foreign_policy_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
 			modifier = {
 				has_war = no
-				factor = 10
+				add = 100
 			}
 			modifier = {
 				has_war = yes
-				factor = 0.01
+				add = -200
 			}
 		}
 	}
@@ -15387,14 +16581,146 @@ wettins_foreign_policy_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 70 
+						owns_state = 71
+						owns_state = 664
+						owns_state = 73
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 70 
+						owns_state = 71
+						owns_state = 664
+						owns_state = 73
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 70 
+						owns_state = 71
+						owns_state = 664
+						owns_state = 73
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 70 
+						owns_state = 71
+						owns_state = 664
+						owns_state = 73
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 70 
+						owns_state = 71
+						owns_state = 664
+						owns_state = 73
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 70 
+						owns_state = 71
+						owns_state = 664
+						owns_state = 73
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 70 
+						owns_state = 71
+						owns_state = 664
+						owns_state = 73
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 70 
+						owns_state = 71
+						owns_state = 664
+						owns_state = 73
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
 			modifier = {
 				has_war = no
-				factor = 10
+				add = 100
 			}
 			modifier = {
 				has_war = yes
-				factor = 0.01
+				add = -200
 			}
 		}
 	}
@@ -15444,11 +16770,7 @@ wettins_foreign_policy_decisions_category = {
 			70 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			base = 100
 		}
 	}
 	take_pomerania_wettins = {
@@ -15539,14 +16861,138 @@ wettins_foreign_policy_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 85
+						owns_state = 63
+						owns_state = 62
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 85
+						owns_state = 63
+						owns_state = 62
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 85
+						owns_state = 63
+						owns_state = 62
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 85
+						owns_state = 63
+						owns_state = 62
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 85
+						owns_state = 63
+						owns_state = 62
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 85
+						owns_state = 63
+						owns_state = 62
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 85
+						owns_state = 63
+						owns_state = 62
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 85
+						owns_state = 63
+						owns_state = 62
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
 			modifier = {
 				has_war = no
-				factor = 10
+				add = 100
 			}
 			modifier = {
 				has_war = yes
-				factor = 0.01
+				add = -200
 			}
 		}
 	}
@@ -15592,11 +17038,7 @@ wettins_foreign_policy_decisions_category = {
 			62 = { add_core_of = POL } 
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			base = 100
 		}
 	}
 	take_eastern_germany_wettins = {
@@ -15695,14 +17137,146 @@ wettins_foreign_policy_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68 
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68 
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68 
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68 
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68 
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68 
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 68 
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 68 
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
 			modifier = {
 				has_war = no
-				factor = 10
+				add = 100
 			}
 			modifier = {
 				has_war = yes
-				factor = 0.01
+				add = -200
 			}
 		}
 	}
@@ -16441,6 +18015,9 @@ wettins_foreign_policy_decisions_category = {
 				id = deluge_poland_foreign.111
 			}
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	take_ukraine_wettins = {
 		icon = GFX_decision_generic_operation
@@ -16570,14 +18147,178 @@ wettins_foreign_policy_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 203
+						owns_state = 192
+						owns_state = 197
+						owns_state = 834
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 203
+						owns_state = 192
+						owns_state = 197
+						owns_state = 834
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 203
+						owns_state = 192
+						owns_state = 197
+						owns_state = 834
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 203
+						owns_state = 192
+						owns_state = 197
+						owns_state = 834
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 203
+						owns_state = 192
+						owns_state = 197
+						owns_state = 834
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 203
+						owns_state = 192
+						owns_state = 197
+						owns_state = 834
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 203
+						owns_state = 192
+						owns_state = 197
+						owns_state = 834
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 203
+						owns_state = 192
+						owns_state = 197
+						owns_state = 834
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
 			modifier = {
 				has_war = no
-				factor = 10
+				add = 100
 			}
 			modifier = {
 				has_war = yes
-				factor = 0.01
+				add = -200
 			}
 		}
 	}
@@ -16643,11 +18384,7 @@ wettins_foreign_policy_decisions_category = {
 			834 = { add_core_of = POL }
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			base = 100
 		}
 	}
 	take_belarus_wettins = {
@@ -16762,14 +18499,162 @@ wettins_foreign_policy_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 194
+						owns_state = 204
+						owns_state = 206
+						owns_state = 207
+						owns_state = 95
+						owns_state = 96
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 194
+						owns_state = 204
+						owns_state = 206
+						owns_state = 207
+						owns_state = 95
+						owns_state = 96
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 194
+						owns_state = 204
+						owns_state = 206
+						owns_state = 207
+						owns_state = 95
+						owns_state = 96
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 194
+						owns_state = 204
+						owns_state = 206
+						owns_state = 207
+						owns_state = 95
+						owns_state = 96
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 194
+						owns_state = 204
+						owns_state = 206
+						owns_state = 207
+						owns_state = 95
+						owns_state = 96
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 194
+						owns_state = 204
+						owns_state = 206
+						owns_state = 207
+						owns_state = 95
+						owns_state = 96
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 194
+						owns_state = 204
+						owns_state = 206
+						owns_state = 207
+						owns_state = 95
+						owns_state = 96
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 194
+						owns_state = 204
+						owns_state = 206
+						owns_state = 207
+						owns_state = 95
+						owns_state = 96
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
 			modifier = {
 				has_war = no
-				factor = 10
+				add = 100
 			}
 			modifier = {
 				has_war = yes
-				factor = 0.01
+				add = -200
 			}
 		}
 	}
@@ -16827,11 +18712,7 @@ wettins_foreign_policy_decisions_category = {
 			96 = { add_core_of = POL }
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			base = 100
 		}
 	}
 	take_baltia_wettins = {
@@ -16946,14 +18827,162 @@ wettins_foreign_policy_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 11
+						owns_state = 814
+						owns_state = 189
+						owns_state = 815
+						owns_state = 809
+						owns_state = 190
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 11
+						owns_state = 814
+						owns_state = 189
+						owns_state = 815
+						owns_state = 809
+						owns_state = 190
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 11
+						owns_state = 814
+						owns_state = 189
+						owns_state = 815
+						owns_state = 809
+						owns_state = 190
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 11
+						owns_state = 814
+						owns_state = 189
+						owns_state = 815
+						owns_state = 809
+						owns_state = 190
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 11
+						owns_state = 814
+						owns_state = 189
+						owns_state = 815
+						owns_state = 809
+						owns_state = 190
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 11
+						owns_state = 814
+						owns_state = 189
+						owns_state = 815
+						owns_state = 809
+						owns_state = 190
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 11
+						owns_state = 814
+						owns_state = 189
+						owns_state = 815
+						owns_state = 809
+						owns_state = 190
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 11
+						owns_state = 814
+						owns_state = 189
+						owns_state = 815
+						owns_state = 809
+						owns_state = 190
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
 			modifier = {
 				has_war = no
-				factor = 10
+				add = 100
 			}
 			modifier = {
 				has_war = yes
-				factor = 0.01
+				add = -200
 			}
 		}
 	}
@@ -17011,11 +19040,7 @@ wettins_foreign_policy_decisions_category = {
 			190 = { add_core_of = POL }
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			base = 100
 		}
 	}
 }
@@ -17052,11 +19077,7 @@ royal_affairs_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			base = 100
 		}
 	}
 	hunting_promotion = {
@@ -17090,11 +19111,7 @@ royal_affairs_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			base = 100
 		}
 	}
 	full_reconciliation_with_the_Lithuanian_nobility = {
@@ -17117,11 +19134,7 @@ royal_affairs_decisions_category = {
 			add_war_support = 0.03
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			base = 100
 		}
 	}
 	bribe_parliamentarians = {
@@ -17144,11 +19157,7 @@ royal_affairs_decisions_category = {
 			set_country_flag = POL_pawel_bribed_politicians
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			base = 100
 		}
 	}
 	rally_far_right = {
@@ -17170,11 +19179,7 @@ royal_affairs_decisions_category = {
 			set_country_flag = POL_pawel_rallied_right
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			base = 100
 		}
 	}
 	take_absolute_control = {
@@ -17206,11 +19211,7 @@ royal_affairs_decisions_category = {
 			set_country_flag = POL_pawel_took_absolute_power
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			base = 100
 		}
 	}
 	deal_with_poultry_mafia = {
@@ -17294,11 +19295,7 @@ royal_affairs_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			base = 100
 		}
 	}
 	send_queen_to_therapy = {
@@ -17326,11 +19323,7 @@ royal_affairs_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			base = 100
 		}
 	}
 	establishing_institutions_helping_women = {
@@ -17351,11 +19344,7 @@ royal_affairs_decisions_category = {
 			add_ideas = institutions_helping_women
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			base = 100
 		}
 	}
 	propose_SPR_an_alliance = {
@@ -17388,10 +19377,43 @@ royal_affairs_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 1
 			modifier = {
-				has_war = yes
-				factor = 0.5
+				add = 40
+				SPR = {
+					has_government = POL
+				}
+			}
+			modifier = {
+				add = 100
+				ROOT = {
+					has_opinion = {
+						target = SPR
+						value > 40
+					}
+				}
+			}
+			modifier = {
+				add = 40
+				ROOT = {
+					strength_ratio = {
+						tag = SPR 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 40
+				ROOT = {
+					strength_ratio = {
+						tag = SPR 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 40
+				check_variable = { SPR.num_of_factories > ROOT.num_of_factories }
 			}
 		}
 	}
@@ -17485,10 +19507,146 @@ royal_affairs_decisions_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			base = 10
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
 			modifier = {
 				has_war = yes
-				factor = 0.5
+				add = -200
 			}
 		}
 	}
@@ -17520,11 +19678,7 @@ royal_affairs_decisions_category = {
 			add_war_support = 0.02
 		}
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				factor = 0.5
-			}
+			base = 100
 		}
 	}
 }

@@ -37,6 +37,10 @@ country_event = {##FRA decides what is gonna happen to POM
 		ai_chance = {
 			base = 10
 			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
 				add = 10
 				POL = {
 					NOT = {
@@ -163,6 +167,10 @@ country_event = {##FRA decides what is gonna happen to POM
 		set_global_flag = FRA_gave_POM_independence
 		ai_chance = {
 			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 			modifier = {
 				add = 10
 				POL = {
@@ -344,6 +352,10 @@ country_event = {##FRA decides what is gonna happen to POM
 		ai_chance = {
 			base = 10
 			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+			modifier = {
 				add = 10
 				POL = {
 					NOT = {
@@ -426,6 +438,10 @@ country_event = {##FRA decides what is gonna happen to POM
 		}
 		ai_chance = {
 			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 			modifier = {
 				add = 50
 				AND = {
@@ -554,6 +570,76 @@ country_event = {##FRA decides what is gonna happen to POM - part 2
 		set_global_flag = POM_issue_solved
 		ai_chance = {
 			base = 10
+			modifier = {
+				add = 10
+				POL = {
+					has_government = FRA
+				}
+			}
+			modifier = {
+				add = -10
+				POL = {
+					NOT = {
+						has_government = FRA
+					}
+				}
+			}
+			modifier = {
+				add = -10
+				if = {
+					limit = {
+						country_exists = GER
+					}
+					GER = {
+						has_government = FRA
+					}
+				}
+				if = {
+					limit = {
+						country_exists = WGR
+					}
+					WGR = {
+						has_government = FRA
+					}
+				}
+				if = {
+					limit = {
+						country_exists = DDR
+					}
+					DDR = {
+						has_government = FRA
+					}
+				}
+			}
+			modifier = {
+				add = 10
+				NOT = {
+					if = {
+						limit = {
+							country_exists = GER
+						}
+						GER = {
+							has_government = FRA
+						}
+					}
+					if = {
+						limit = {
+							country_exists = WGR
+						}
+						WGR = {
+							has_government = FRA
+						}
+					}
+					if = {
+						limit = {
+							country_exists = DDR
+						}
+						DDR = {
+							has_government = FRA
+						}
+					}
+				}
+			}
 		}
 	}
 	option = {#give POM to GER/WGR/DDR 
@@ -633,6 +719,76 @@ country_event = {##FRA decides what is gonna happen to POM - part 2
 		set_global_flag = POM_issue_solved
 		ai_chance = {
 			base = 10
+			modifier = {
+				add = -10
+				POL = {
+					has_government = FRA
+				}
+			}
+			modifier = {
+				add = 10
+				POL = {
+					NOT = {
+						has_government = FRA
+					}
+				}
+			}
+			modifier = {
+				add = 10
+				if = {
+					limit = {
+						country_exists = GER
+					}
+					GER = {
+						has_government = FRA
+					}
+				}
+				if = {
+					limit = {
+						country_exists = WGR
+					}
+					WGR = {
+						has_government = FRA
+					}
+				}
+				if = {
+					limit = {
+						country_exists = DDR
+					}
+					DDR = {
+						has_government = FRA
+					}
+				}
+			}
+			modifier = {
+				add = -10
+				NOT = {
+					if = {
+						limit = {
+							country_exists = GER
+						}
+						GER = {
+							has_government = FRA
+						}
+					}
+					if = {
+						limit = {
+							country_exists = WGR
+						}
+						WGR = {
+							has_government = FRA
+						}
+					}
+					if = {
+						limit = {
+							country_exists = DDR
+						}
+						DDR = {
+							has_government = FRA
+						}
+					}
+				}
+			}
 		}
 	}
 	option = {#previous options
@@ -642,6 +798,78 @@ country_event = {##FRA decides what is gonna happen to POM - part 2
 		}
 		ai_chance = {
 			base = 10
+			modifier = {
+				add = 50
+				AND = {
+					POL = {
+						has_government = FRA
+					}
+					if = {
+						limit = {
+							country_exists = GER
+						}
+						GER = {
+							has_government = FRA
+						}
+					}
+					if = {
+						limit = {
+							country_exists = WGR
+						}
+						WGR = {
+							has_government = FRA
+						}
+					}
+					if = {
+						limit = {
+							country_exists = DDR
+						}
+						DDR = {
+							has_government = FRA
+						}
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				AND = {
+					POL = {
+						NOT = {
+							has_government = FRA
+						}
+					}
+					if = {
+						limit = {
+							country_exists = GER
+						}
+						GER = {
+							NOT = {
+								has_government = FRA
+							}
+						}
+					}
+					if = {
+						limit = {
+							country_exists = WGR
+						}
+						WGR = {
+							NOT = {
+								has_government = FRA
+							}
+						}
+					}
+					if = {
+						limit = {
+							country_exists = DDR
+						}
+						DDR = {
+							NOT = {
+								has_government = FRA
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -676,7 +904,7 @@ country_event = {##Fate of Petain for Pomerania
 			}
 		}
 		ai_chance = {
-			base = 1
+			base = 10
 		}
 	}
 	option = {#keep him
@@ -687,7 +915,7 @@ country_event = {##Fate of Petain for Pomerania
 			}
 		}
 		ai_chance = {
-			base = 1
+			base = 0
 		}
 	}
 	option = {#execute him
@@ -706,7 +934,7 @@ country_event = {##Fate of Petain for Pomerania
 		}
 		retire_character = POM_philippe_petain
 		ai_chance = {
-			base = 1
+			base = 20
 		}
 	}
 }

@@ -208,171 +208,171 @@ leader_traits = {
 	pzinz_designer_trait = {
 		equipment_bonus = {
 			armor = {
-				reliability = 0.15
-				soft_attack = 0.1
+				reliability = 0.05
+				soft_attack = 0.03
 			}			
 		}
 	}
 	bbt_br_panc_designer_trait = {
 		equipment_bonus = {
 			armor = {
-				armor_value = 0.05
-				maximum_speed = 0.05
+				armor_value = 0.03
+				maximum_speed = 0.03
 			}			
 		}
 	}
 	ksus_designer_trait = {
 		equipment_bonus = {
 			armor = {
-				armor_value = 0.05
-				soft_attack = 0.05
+				armor_value = 0.03
+				soft_attack = 0.03
 			}			
 		}
 	}
 	ursus_tank_designer_trait = {
 		equipment_bonus = {
 			armor = {
-				armor_value = 0.1
-				hard_attack = 0.1
+				armor_value = 0.03
+				hard_attack = 0.03
 			}			
 		}
 	}
 	ursus_vehicle_designer_trait = {
 		equipment_bonus = {
 			mechanized = {
-				hardness = 0.1
-				reliability = 0.1
+				hardness = 0.03
+				reliability = 0.03
 			}	
 			armored_car_equipment = {
-				hardness = 0.1
-				reliability = 0.1
+				hardness = 0.03
+				reliability = 0.03
 			}
 			amphibious_mechanized_equipment = {
-				hardness = 0.1
-				reliability = 0.1
+				hardness = 0.03
+				reliability = 0.03
 			}
 			motorized = {
-				hardness = 0.1
-				reliability = 0.1
+				hardness = 0.03
+				reliability = 0.03
 			}
 			motorized_rocket_equipment = {
-				hardness = 0.1
-				reliability = 0.1
+				hardness = 0.03
+				reliability = 0.03
 			}
 		}
 	}
 	lrl_designer_trait = {
 		equipment_bonus = {
 			mechanized = {
-				build_cost_ic  = -0.1
+				build_cost_ic  = -0.05
 			}	
 			armored_car_equipment = {
-				build_cost_ic  = -0.1
+				build_cost_ic  = -0.05
 			}
 			amphibious_mechanized_equipment = {
-				build_cost_ic  = -0.1
+				build_cost_ic  = -0.05
 			}
 			motorized  = {
-				build_cost_ic  = -0.1
+				build_cost_ic  = -0.05
 			}
 			motorized_rocket_equipment = {
-				build_cost_ic  = -0.1
+				build_cost_ic  = -0.05
 			}
 		}
 	}
 	wsabp_designer_trait = {
 		equipment_bonus = {
 			train_equipment = {
-				build_cost_ic  = -0.1
-				reliability = 0.15
+				build_cost_ic  = -0.05
+				reliability = 0.05
 			}	
 		}
 	}
 	smpa_designer_trait = {
 		equipment_bonus = {
 			rocket_artillery_equipment = {
-				reliability = 0.1
+				reliability = 0.03
 			}
 			artillery = {
-				reliability = 0.1
+				reliability = 0.03
 			}
 			anti_tank_equipment = {
-				reliability = 0.1
+				reliability = 0.03
 			}
 			anti_air_equipment = {
-				reliability = 0.1
+				reliability = 0.03
 			}			
 		}
 	}
 	cegielski_designer_trait = {
 		equipment_bonus = {
 			rocket_artillery_equipment = {
-				soft_attack = 0.1
+				soft_attack = 0.03
 			}
 			artillery = {
-				soft_attack = 0.1
+				soft_attack = 0.03
 			}
 			anti_tank_equipment = {
-				soft_attack = 0.1
+				soft_attack = 0.03
 			}
 			anti_air_equipment = {
-				soft_attack = 0.1
+				soft_attack = 0.03
 			}			
 		}
 	}
 	starachowice_designer_trait = {
 		equipment_bonus = {
 			rocket_artillery_equipment = {
-				build_cost_ic = -0.1
+				build_cost_ic = -0.05
 			}
 			artillery = {
-				build_cost_ic = -0.1
+				build_cost_ic = -0.05
 			}
 			anti_tank_equipment = {
-				build_cost_ic = -0.1
+				build_cost_ic = -0.05
 			}
 			anti_air_equipment = {
-				build_cost_ic = -0.1
+				build_cost_ic = -0.05
 			}			
 		}
 	}
 	ursus_artilery_designer_trait = {
 		equipment_bonus = {
 			rocket_artillery_equipment = {
-				reliability = 0.05
-				soft_attack = 0.05
-				hard_attack = 0.05
+				reliability = 0.02
+				soft_attack = 0.02
+				hard_attack = 0.02
 			}
 			artillery = {
-				reliability = 0.05
-				soft_attack = 0.05
-				hard_attack = 0.05
+				reliability = 0.02
+				soft_attack = 0.02
+				hard_attack = 0.02
 			}
 			anti_tank_equipment = {
-				reliability = 0.05
-				soft_attack = 0.05
-				hard_attack = 0.05
+				reliability = 0.02
+				soft_attack = 0.02
+				hard_attack = 0.02
 			}
 			anti_air_equipment = {
-				reliability = 0.05
-				soft_attack = 0.05
-				hard_attack = 0.05
-			}			
+				reliability = 0.02
+				soft_attack = 0.02
+				hard_attack = 0.02
+			}
 		}
 	}
 	ursus_guns_designer_trait = {
 		equipment_bonus = {
 			infantry_equipment = {
-				reliability = 0.1
-				soft_attack = 0.05
-				hard_attack = 0.05
+				reliability = 0.05
+				soft_attack = 0.02
+				hard_attack = 0.02
 			}		
 		}
 	}
 	fb_designer_trait = {
 		equipment_bonus = {
 			infantry_equipment = {
-				build_cost_ic = -0.1
+				build_cost_ic = -0.05
 			}
 		}
 	}
@@ -386,13 +386,13 @@ leader_traits = {
 		lend_lease_tension = -0.5
 	}
 	ursus_ships_designer_trait = {
-		industrial_capacity_dockyard = -0.1
-		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = -0.05
+		industrial_capacity_factory = 0.05
 	}
 	gdansk_dockyard_designer_trait = {
 		equipment_bonus = {
 			submarine = {
-				naval_range = 0.25
+				naval_range = 0.15
 			}
 		}
 	}
@@ -404,7 +404,7 @@ leader_traits = {
 		}
 	}
 	ironworks_agreement_designer_trait = {
-		industrial_capacity_dockyard = 0.15
+		industrial_capacity_dockyard = 0.1
 	}
 	pkp_designer_trait = {
 		production_speed_infrastructure_factor = 0.1
@@ -412,7 +412,6 @@ leader_traits = {
 	}
 	ava_designer_trait = {
 		production_speed_radar_station_factor = 0.1
-		#production_speed_rocket_site_factor = 0.1
 		equipment_bonus = {
 			support_equipment = {
 				build_cost_ic = -0.05

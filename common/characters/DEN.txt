@@ -3,7 +3,7 @@ characters={
 		name="Chrystian X"
 		portraits={
 			civilian={
-				large="gfx/leaders/DEN/chrystian_x.dds"
+				large="gfx/leaders/DEN/portrait_DEN_christian_x.dds"
 			}
 		}
 		country_leader={
@@ -51,7 +51,7 @@ characters={
 		name="Frits Clausen"
 		portraits={
 			civilian={
-				large="gfx/leaders/DEN/frits_clausen.dds"
+				large="gfx/leaders/DEN/portrait_DEN_frits_clausen.dds"
 			}
 		}
 		country_leader={
@@ -67,7 +67,7 @@ characters={
 		name="Aksel Larsen"
 		portraits={
 			civilian={
-				large="gfx/leaders/DEN/aksel_larsen.dds"
+				large="gfx/leaders/DEN/portrait_DEN_aksel_larsen.dds"
 			}
 		}
 		country_leader={
@@ -84,9 +84,7 @@ characters={
 		portraits={
 			army={
 				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/DEN/wilhelm_wain_prior.dds"
+				large="gfx/leaders/DEN/portrait_DEN_william_wain_prior.dds"
 			}
 		}
 		corps_commander={
@@ -97,6 +95,278 @@ characters={
 			planning_skill=2
 			logistics_skill=2
 			legacy_id=-1
+		}
+	}
+	DEN_erik_with ={
+		name = "Erik With"
+		portraits={
+			army={
+				large="gfx/leaders/DEN/portrait_DEN_erik_with.dds"
+				small=GFX_portrait_DEN_erik_with_small
+			}
+		}
+		field_marshal = {
+			traits = { unyielding_defender politically_connected }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	DEN_ebbe_gortz = {
+		name = "Ebbe Gørtz"
+		portraits = {
+			army = {
+				large="gfx/leaders/DEN/portrait_DEN_ebbe_gortz.dds"
+				small = GFX_portrait_DEN_ebbe_gortz_small
+			}
+		}
+		field_marshal = {
+			traits = { organisational_leader career_officer trait_cautious }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	DEN_frederik_christian_essemann = {
+		name = "Frederik Christian Essemann"
+		portraits = {
+			army = {
+				large="gfx/leaders/DEN/portrait_DEN_frederik_christian_essemann.dds"
+				small=GFX_portrait_Wilhelm_Wain_Prior_small
+			}
+		}
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	DEN_carl_jacobsen = {
+		name = "Carl Jacobsen"
+		portraits = {
+			army = {
+				large="gfx/leaders/DEN/portrait_DEN_carl_jacobsen.dds"
+				small=GFX_portrait_Wilhelm_Wain_Prior_small
+			}
+		}
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	DEN_christian_peder_kryssing = {
+		name = "Christian Peder Kryssing"
+		portraits = {
+			army = {
+				large="gfx/leaders/DEN/portrait_DEN_christian_peder_kryssing.dds"
+				small=GFX_portrait_Wilhelm_Wain_Prior_small
+			}
+		}
+		corps_commander={
+			traits = { trait_engineer fortress_buster } 
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	DEN_erik_leschly = {
+		name = "Erik Leschly"
+		portraits = {
+			army = {
+				large="gfx/leaders/DEN/portrait_DEN_erik_leschly.dds"
+				small=GFX_portrait_Wilhelm_Wain_Prior_small
+			}
+		}
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	DEN_erik_moller = {
+		name = "Erik Moller"
+		portraits = {
+			army = {
+				large="gfx/leaders/DEN/portrait_DEN_erik_moller.dds"
+				small=GFX_portrait_Wilhelm_Wain_Prior_small
+			}
+		}
+		corps_commander={
+			traits = { inflexible_strategist organizer trickster }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	DEN_paul_ramm = {
+		name = "Paul Ramm"
+		portraits = {
+			army = {
+				large="gfx/leaders/DEN/portrait_DEN_paul_ramm.dds"
+				small=GFX_portrait_Wilhelm_Wain_Prior_small
+			}
+		}
+		corps_commander={
+			traits = { trait_engineer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	DEN_charles_henry_rye = {
+		name = "Charles Henry Rye"
+		portraits = {
+			army = {
+				large="gfx/leaders/DEN/portrait_DEN_charles_henry_rye.dds"
+				small=GFX_portrait_Wilhelm_Wain_Prior_small
+			}
+		}
+		corps_commander={
+			traits = { old_guard organizer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	DEN_christian_frederik_von_schalburg={
+		name = "Christian Frederik von Schalburg"
+		portraits = {
+			army = {
+				large="gfx/leaders/DEN/portrait_DEN_christian_frederik_von_schalburg.dds"
+				small=GFX_portrait_Wilhelm_Wain_Prior_small
+			}
+		}
+		corps_commander={
+			traits = { trait_reckless infantry_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	DEN_hjalmar_rechnitzer = {
+		name = "Hjalmar Rechnitzer"
+		portraits = {
+			navy = {
+				large="gfx/leaders/DEN/portrait_DEN_hjalmar_rechnitzer.dds"
+				small = GFX_portrait_DEN_hjalmar_rechnitzer_small
+			}
+		}
+		navy_leader = {
+			traits = { safety_first green_water_expert }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 2
+		}
+	}
+	DEN_aage_vedel = {
+		name = "Aage Helgesen Vedel"
+		portraits = {
+			navy = {
+				large="gfx/leaders/DEN/portrait_DEN_aage_vedel.dds"
+				small = GFX_portrait_DEN_aage_vedel_small
+			}
+		}
+		navy_leader = {
+			traits = { superior_tactician navy_media_personality fleet_protector }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+	}
+	DEN_emmanuel_briand_de_crevecoeur = {
+		name = "Emmanuel Briand de Crèvecoeur"
+		portraits = {
+			navy = {
+				large="gfx/leaders/DEN/portrait_DEN_emmanuel_briand_de_crevecoeur.dds"
+				small = GFX_portrait_DEN_emmanuel_briand_de_crevecoeur_small
+			}
+		}
+		navy_leader = {
+			traits = { fly_swatter gunnery_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+	DEN_christian_evers = {
+		name = "Christian Evers"
+		portraits = {
+			navy = {
+				large="gfx/leaders/DEN/portrait_DEN_christian_evers.dds"
+				small = GFX_portrait_DEN_christian_evers_small
+			}
+		}
+		navy_leader = {
+			traits = { seawolf chief_engineer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 1
+		}
+	}
+	DEN_carl_hammerich = {
+		name = "Carl Hammerich"
+		portraits = {
+			army = {
+				large="gfx/leaders/DEN/portrait_DEN_carl_hammerich.dds"
+				small=GFX_portrait_DEN_carl_hammerich_small
+			}
+		}
+		navy_leader = {
+			traits = { torpedo_expert navy_career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 1
+		}
+	}
+	DEN_paul_ipsen = {
+		name = "Paul Ipsen"
+		portraits = {
+			navy = {
+				large="gfx/leaders/DEN/portrait_DEN_paul_ipsen.dds"
+				small = GFX_portrait_DEN_paul_ipsen_small
+			}
+		}
+		navy_leader = {
+			traits = { bold blockade_runner }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
 		}
 	}
 }
