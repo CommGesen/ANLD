@@ -45,13 +45,11 @@ idea_categories = {
 	}
 	
 	military_production = {
-	
-		slot = small_arms_manufacturer_slot
-		slot = guns_manufacturer_slot
-		slot = vehicle_manufacturer_slot
+
 		slot = tank_manufacturer
-		slot = aircraft_manufacturer
 		slot = naval_manufacturer
+		slot = aircraft_manufacturer
+		slot = materiel_manufacturer
 
 		ledger = civilian
 		cost = 150
