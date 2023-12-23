@@ -3,12 +3,58 @@ HUN_AI_polish_hungarian_friendship = {
 		original_tag = HUN
 	}
 	enable = {
-		HUN = {
-			is_in_faction_with = POL
+		OR = {
+			HUN = {
+				is_in_faction_with = POL
+			}
+			AND = {
+				POL = {
+					has_government = communism
+				}
+				HUN = {
+					has_government = communism
+				}
+			}
+			AND = {
+				POL = {
+					NOT = {
+						has_government = communism
+					}
+				}
+				HUN = {
+					NOT = {
+						has_government = communism
+					}
+				}
+			}
 		}
 	}
 	abort = {
-		has_war_with = POL
+		OR = {
+			has_war_with = POL
+			OR = {
+				AND = {
+					POL = {
+						has_government = communism
+					}
+					NOT = {
+						HUN = {
+							has_government = communism
+						}
+					}
+				}
+				AND = {
+					HUN = {
+						has_government = communism
+					}
+					NOT = {
+						POL = {
+							has_government = communism
+						}
+					}
+				}
+			}
+		}
 	}
 	ai_strategy = {
 		type = alliance

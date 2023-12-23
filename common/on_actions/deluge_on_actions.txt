@@ -1592,66 +1592,87 @@ on_actions = {
 					random_list = {
 						5 = {
 							set_country_flag = POL_rydz_smigly_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: Rydz-Śmigły"
 						}
 						5 = {
 							set_country_flag = POL_sikorski_left_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: Sikorski - left"
 						}
 						5 = {
 							set_country_flag = POL_sikorski_right_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: Sikorski - right"
 						}
 						5 = {
 							set_country_flag = POL_zadruga_lechitic_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: Zadruga - Lechitic"
 						}
 						5 = {
 							set_country_flag = POL_zadruga_panslavic_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: Zadruga - Panslavic"
 						}
 						5 = {
 							set_country_flag = POL_falanga_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: Falanga"
 						}
 						5 = {
 							set_country_flag = POL_ND_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: National Democracy"
 						}
 						4 = {
 							set_country_flag = POL_PSL_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: Polish People's Party"
 						}
 						4 = {
 							set_country_flag = POL_PPS_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: Polish Socialist Party"
 						}
 						4 = {
 							set_country_flag = POL_KPP_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: Communist Party of Poland"
 						}
 						5 = {
 							set_country_flag = POL_PKWN_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: Polish Commitee of National Liberation"
 						}
 						5 = {
 							set_country_flag = POL_PZPR_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: Polish United Workers' Party"
 						}
 						4 = {
 							set_country_flag = POL_NSP_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: National Labour Party"
 						}
 						4 = {
 							set_country_flag = POL_NSPR_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: National-Socialist Workers' Party"
 						}
 						5 = {
 							set_country_flag = POL_Wettins_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: Wettins - Saxon king"
 						}
 						5 = {
 							set_country_flag = POL_Walewski_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: Walewski - French king"
 						}
 						5 = {
 							set_country_flag = POL_Andrassy_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: Andrassy - Hungarian king"
 						}
 						5 = {
 							set_country_flag = POL_Tyszkiewicz_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: Tyszkiewicz - Lithuanian king"
 						}
 						5 = {
 							set_country_flag = POL_Czartoryski_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: Czartoryski - Polish king"
 						}
 						5 = {
 							set_country_flag = POL_Radziwill_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: Radziwiłł - Polish queen"
 						}
 						5 = {
 							set_country_flag = POL_Piast_ai_chosen
+							log = "Randomness chose AI path for [POL.GetName]: Piast-Riedelski - crazy king"
 						}
 					}
 				}
@@ -1676,7 +1697,7 @@ on_actions = {
 						original_tag = POL 
 					}
 				}
-				news_event = deluge_cities_fall.1
+				#news_event = deluge_cities_fall.1
 			}
 			if = {##Poland Captures Istanbul
 				limit = {
@@ -1690,7 +1711,7 @@ on_actions = {
 						original_tag = POL 
 					}
 				}
-				news_event = deluge_cities_fall.2
+				#news_event = deluge_cities_fall.2
 			}
 			if = {#Poland Captures Vienna
 				limit = {
@@ -1704,7 +1725,7 @@ on_actions = {
 						original_tag = POL 
 					}
 				}
-				news_event = deluge_cities_fall.3
+				#news_event = deluge_cities_fall.3
 			}
 			if = {#Poland Captures Moscow
 				limit = {
@@ -1718,7 +1739,7 @@ on_actions = {
 						original_tag = POL 
 					}
 				}
-				news_event = deluge_cities_fall.4
+				#news_event = deluge_cities_fall.4
 			}
 			if = {#Poland Captures Paris
 				limit = {
@@ -1732,7 +1753,7 @@ on_actions = {
 						original_tag = POL 
 					}
 				}
-				news_event = deluge_cities_fall.5
+				#news_event = deluge_cities_fall.5
 			}
 			if = {#Germany Captures Paris
 				limit = {
@@ -1750,7 +1771,7 @@ on_actions = {
 						}
 					}
 				}
-				news_event = deluge_cities_fall.6
+				#news_event = deluge_cities_fall.6
 			}
 		}
 	}

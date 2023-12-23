@@ -56,6 +56,9 @@
  germany_claim_pom:0 "Claim Pomerania"
  fra_install_marie_claudette:0 "Install Marie Claudette Bonaparte in [POM.GetName]"
  recruit_norwegian_generals:0 "Recruit Norwegian Generals"
+ war_propaganda_film_industry:0 "Expand Film Industry"
+ war_propaganda_film_industry_desc:0 "Film industry can be useful tool in creating and propagate propaganda!"
+ change_surname:0 "Change Surname"
  
  ###POLAND###
  
@@ -462,7 +465,7 @@
  eliminate_ideological_threat:0 "Deal with the Radical Threat"
  eliminate_ideological_threat_desc:0 "Radicals in our country pose a threat to the current order. They must be eliminated to ensure the security of the state."
  integrate_claimed_germany:0 "Integrate the East of Germany"
- integrate_claimed_germany_desc0 "It's time to put the Germans in the east in their place."
+ integrate_claimed_germany_desc:0 "It's time to put the Germans in the east in their place."
  integrate_pomerania_walewski:0 "Integrate Pomorze"
  integrate_pomerania_walewski_desc:0 "It's time to put the Germans in Pomorze in their place."
  eliminate_british_threat:0 "Eliminate the [ENG.GetAdjectiveCap] Threat"

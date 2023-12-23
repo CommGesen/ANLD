@@ -6215,11 +6215,7 @@ seek_cooperation_category = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_84
 		}
 		ai_will_do = {
-			base = 10
-			modifier = {
-				has_army_experience < 100
-				add = 500
-			}
+			base = 0
 		}
 	}
 	joint_air_exercises = {
@@ -6257,11 +6253,7 @@ seek_cooperation_category = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_84
 		}
 		ai_will_do = {
-			base = 10
-			modifier = {
-				has_air_experience < 100
-				add = 500
-			}
+			base = 0
 		}
 	}
 	joint_naval_exercises = {
@@ -6299,11 +6291,7 @@ seek_cooperation_category = {
 			}
 		}
 		ai_will_do = {
-			base = 10
-			modifier = {
-				has_navy_experience < 100
-				add = 500
-			}
+			base = 0
 		}
 	}
 	economic_agreements = {
@@ -6379,12 +6367,12 @@ seek_cooperation_category = {
 		ai_will_do = {
 			base = 10
 			modifier = {
-				has_stability < 1.0
-				factor = 10
+				has_stability < 0.85
+				add = 10
 			}
 			modifier = {
-				has_war_support < 1.0
-				factor = 10
+				has_war_support < 0.85
+				add = 10
 			}
 		}
 	}
@@ -11428,7 +11416,7 @@ new_revolution_category = {
 			}
 		}
 		ai_will_do = {
-			base = 1
+			base = 10
 			modifier = {
 				add = 40
 				FROM = {
@@ -11502,7 +11490,7 @@ new_revolution_category = {
 			}
 		}
 		ai_will_do = {
-			base = 100
+			base = 1
 		}
 	}
 	decrease_stability_in_neighbour = {
@@ -11540,7 +11528,7 @@ new_revolution_category = {
 			}
 		}
 		ai_will_do = {
-			base = 100
+			base = 1
 		}
 	}
 	decrease_war_support_in_neighbour = {
@@ -11578,7 +11566,7 @@ new_revolution_category = {
 			}
 		}
 		ai_will_do = {
-			base = 100
+			base = 1
 		}
 	}
 	attack_non_radical_neighbour = {
@@ -11618,7 +11606,7 @@ new_revolution_category = {
 			}
 		}
 		ai_will_do = {
-			base = 1
+			base = 10
 			modifier = {
 				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
 				add = 40

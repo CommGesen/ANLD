@@ -21,11 +21,11 @@ Poland_rydz_smigly_path = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_continue_with_sanation
@@ -33,6 +33,7 @@ Poland_rydz_smigly_path = {
 		POL_purge_undersirables
 		POL_cult_of_old_marshal
 		
+		POL_divide_and_conquer
 		POL_rising_of_central_powers
 		POL_seek_enemies
 		POL_seek_allies
@@ -110,11 +111,11 @@ Poland_sikorski_left_wing = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_continue_with_sanation
@@ -122,6 +123,7 @@ Poland_sikorski_left_wing = {
 		POL_invite_PSL_to_government
 		POL_cult_of_old_marshal
 		
+		POL_divide_and_conquer
 		POL_rising_of_central_powers
 		POL_seek_enemies
 		POL_seek_allies
@@ -181,11 +183,11 @@ Poland_sikorski_right_wing = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_continue_with_sanation
@@ -193,6 +195,7 @@ Poland_sikorski_right_wing = {
 		POL_invite_ND_to_government
 		POL_cult_of_old_marshal
 		
+		POL_divide_and_conquer
 		POL_rising_of_central_powers
 		POL_seek_enemies
 		POL_seek_allies
@@ -252,11 +255,11 @@ Poland_zadruga_lechitic = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_continue_with_sanation
@@ -266,6 +269,7 @@ Poland_zadruga_lechitic = {
 		POL_purge_the_party
 		POL_establish_zadruga
 		
+		POL_divide_and_conquer
 		POL_rising_of_central_powers
 		POL_seek_enemies
 		POL_seek_allies
@@ -326,11 +330,11 @@ Poland_zadruga_panslavic = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_continue_with_sanation
@@ -340,6 +344,7 @@ Poland_zadruga_panslavic = {
 		POL_purge_the_party
 		POL_establish_zadruga
 		
+		POL_divide_and_conquer
 		POL_rising_of_central_powers
 		POL_seek_enemies
 		POL_seek_allies
@@ -400,11 +405,11 @@ Poland_falanga = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_continue_with_sanation
@@ -414,6 +419,7 @@ Poland_falanga = {
 		POL_purge_the_party
 		POL_ONR_takes_over
 		
+		POL_divide_and_conquer
 		POL_rising_of_central_powers
 		POL_seek_enemies
 		POL_seek_allies
@@ -474,17 +480,18 @@ Poland_national_democracy = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_oppose_sanation
 		POL_democracy_prevails
 		POL_ND_wins
 		
+		POL_divide_and_conquer
 		POL_new_foreign_policy
 		POL_new_revanchist_policy
 		
@@ -544,17 +551,18 @@ Poland_polish_peoples_party = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_oppose_sanation
 		POL_democracy_prevails
 		POL_PSL_wins
 		
+		POL_divide_and_conquer
 		POL_new_foreign_policy
 		POL_european_cooperation_focus
 		
@@ -609,11 +617,11 @@ Poland_polish_socialist_party = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_oppose_sanation
@@ -621,6 +629,7 @@ Poland_polish_socialist_party = {
 		POL_the_new_system
 		POL_PPS_wins
 		
+		POL_divide_and_conquer
 		POL_new_foreign_policy
 		POL_new_revolution
 		
@@ -696,11 +705,11 @@ Poland_communist_party_of_poland = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_oppose_sanation
@@ -708,6 +717,7 @@ Poland_communist_party_of_poland = {
 		POL_the_new_system
 		POL_KPP_wins
 		
+		POL_divide_and_conquer
 		POL_new_foreign_policy
 		POL_new_revolution
 		
@@ -784,11 +794,11 @@ Poland_national_party_of_labour = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_oppose_sanation
@@ -796,6 +806,7 @@ Poland_national_party_of_labour = {
 		POL_the_new_system
 		POL_NSP_wins
 		
+		POL_divide_and_conquer
 		POL_new_foreign_policy
 		POL_new_revanchist_policy
 		
@@ -871,11 +882,11 @@ Poland_national_socialist_workers_party = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_oppose_sanation
@@ -883,6 +894,7 @@ Poland_national_socialist_workers_party = {
 		POL_the_new_system
 		POL_NSPR_wins
 		
+		POL_divide_and_conquer
 		POL_new_foreign_policy
 		POL_new_revanchist_policy
 		
@@ -959,11 +971,11 @@ Poland_polish_commitee_of_national_liberation = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_oppose_sanation
@@ -972,6 +984,7 @@ Poland_polish_commitee_of_national_liberation = {
 		POL_PKWN_wins
 		POL_democracy_in_the_party
 		
+		POL_divide_and_conquer
 		POL_new_foreign_policy
 		POL_new_revolution
 		
@@ -980,7 +993,6 @@ Poland_polish_commitee_of_national_liberation = {
 		POL_integrate_PNS
 		POL_integrate_futurists
 		POL_integrate_SCh
-		POL_integrate_anarchists
 		POL_continue_pluralism_in_party
 		
 		POL_get_rid_of_opium_for_masses
@@ -1056,11 +1068,11 @@ Poland_polish_united_workers_party = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_oppose_sanation
@@ -1069,6 +1081,7 @@ Poland_polish_united_workers_party = {
 		POL_PKWN_wins
 		POL_democracy_in_the_party
 		
+		POL_divide_and_conquer
 		POL_new_foreign_policy
 		POL_new_revolution
 		
@@ -1077,7 +1090,6 @@ Poland_polish_united_workers_party = {
 		POL_integrate_PNS
 		POL_integrate_futurists
 		POL_integrate_SCh
-		POL_integrate_anarchists
 		POL_reform_into_pzpr
 		
 		POL_get_rid_of_opium_for_masses
@@ -1153,11 +1165,11 @@ Poland_wettins = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_oppose_sanation
@@ -1165,6 +1177,7 @@ Poland_wettins = {
 		POL_house_of_wettin_continues
 		POL_reform_3rd_may_consitution
 		
+		POL_divide_and_conquer
 		POL_new_foreign_policy
 		POL_royal_foreign_policy
 		
@@ -1228,11 +1241,11 @@ Poland_walewski = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_oppose_sanation
@@ -1241,6 +1254,7 @@ Poland_walewski = {
 		POL_bonaparte_bastard_wins
 		POL_reform_3rd_may_consitution
 		
+		POL_divide_and_conquer
 		POL_new_foreign_policy
 		POL_royal_foreign_policy
 		
@@ -1303,11 +1317,11 @@ Poland_andrassy = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_oppose_sanation
@@ -1316,6 +1330,7 @@ Poland_andrassy = {
 		POL_andrassy_wins
 		POL_reform_3rd_may_consitution
 		
+		POL_divide_and_conquer
 		POL_new_foreign_policy
 		POL_royal_foreign_policy
 		
@@ -1376,11 +1391,11 @@ Poland_tyszkiewicz = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_oppose_sanation
@@ -1389,6 +1404,7 @@ Poland_tyszkiewicz = {
 		POL_tyszkiewicz_wins
 		POL_reform_3rd_may_consitution
 		
+		POL_divide_and_conquer
 		POL_new_foreign_policy
 		POL_royal_foreign_policy
 		
@@ -1454,11 +1470,11 @@ Poland_czartoryski = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_oppose_sanation
@@ -1467,6 +1483,7 @@ Poland_czartoryski = {
 		POL_czartoryski_wins
 		POL_reform_3rd_may_consitution
 		
+		POL_divide_and_conquer
 		POL_new_foreign_policy
 		POL_royal_foreign_policy
 		
@@ -1530,11 +1547,11 @@ Poland_radziwill = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_oppose_sanation
@@ -1543,6 +1560,7 @@ Poland_radziwill = {
 		POL_radziwill_wins
 		POL_reform_3rd_may_consitution
 		
+		POL_divide_and_conquer
 		POL_new_foreign_policy
 		POL_royal_foreign_policy
 		
@@ -1606,11 +1624,11 @@ Poland_piast = {
 
 	ai_national_focuses = {
 		POL_start_army_reform
-		POL_divide_and_conquer
 		POL_hire_economists
 		POL_end_recovery
+		POL_support_countryside
+		POL_build_dams
 		POL_legacy_of_polish_legions_in_lombardy
-		POL_national_defense_found
 		
 		POL_death_of_marshal
 		POL_oppose_sanation
@@ -1619,6 +1637,7 @@ Poland_piast = {
 		POL_piast_riedelski_wins
 		POL_reform_3rd_may_consitution
 		
+		POL_divide_and_conquer
 		POL_new_foreign_policy
 		POL_royal_foreign_policy
 		

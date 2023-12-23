@@ -129,8 +129,10 @@ country_event = {##fascist Hungary
 			is_ai = yes
 		}
 		POL = {
-			has_completed_focus = POL_continue_with_sanation
-			has_completed_focus = POL_radicals_takeover
+			OR = {
+				has_completed_focus = POL_continue_with_sanation
+				has_completed_focus = POL_radicals_takeover
+			}
 		}
 	}
 	mean_time_to_happen = {

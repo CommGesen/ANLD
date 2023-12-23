@@ -1,15 +1,14 @@
 characters={
-	POM_stanislaw_germalowicz={
-		name="Stanisław Germałowicz"
+	POM_erich_wiesner={
+		name="Erich Wiesner"
 		portraits={
 			civilian={
-				large="gfx/leaders/POM/stanislaw_germalowicz.dds"
+				large="gfx/leaders/POM/portrait_POM_erich_wiesner.dds"
 			}
 		}
 		country_leader={
 			ideology=marxist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	POM_philippe_petain={
@@ -76,7 +75,7 @@ characters={
 			expire="1965.1.1.1"
 		}
 	}
-	POM_lech_bądkowski={
+	POM_lech_badkowski={
 		name="Lech Bądkowski"
 		portraits={
 			civilian={
@@ -100,7 +99,7 @@ characters={
 		name="Wilhelm Stuckart"
 		portraits={
 			civilian={
-				large="gfx/leaders/POM/wilhelm_stuckart.dds"
+				large="gfx/leaders/POM/portrait_POM_wilhelm_stuckart.dds"
 			}
 		}
 		country_leader={
@@ -112,7 +111,7 @@ characters={
 		name="Marie Clotilde Bonaparte"
 		portraits={
 			civilian={
-				large="gfx/leaders/POM/marie_clotilde_bonaparte.dds"
+				large="gfx/leaders/POM/portrait_POM_marie_clotilde_bonaparte.dds"
 			}
 		}
 		country_leader={

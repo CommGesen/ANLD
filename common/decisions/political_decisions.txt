@@ -372,8 +372,6 @@ political_actions = {
 		available = {
 			has_manpower > 2000
 			has_equipment = { infantry_equipment > 1999 }
-			owns_state = 807
-			controls_state = 807
 			owns_state = 85
 			controls_state = 85
 			owns_state = 63
@@ -391,10 +389,9 @@ political_actions = {
 			}
 			has_global_flag = POM_issue_solved
 			OR = {
-				62 = { NOT = { is_core_of = ROOT } } 
-				63 = { NOT = { is_core_of = ROOT } } 
-				807 = { NOT = { is_core_of = ROOT } } 
-				85 = { NOT = { is_core_of = ROOT } } 
+				62 = { NOT = { is_core_of = ROOT } }
+				63 = { NOT = { is_core_of = ROOT } }
+				85 = { NOT = { is_core_of = ROOT } }
 			}
 		}
 		cost = 100
@@ -408,10 +405,9 @@ political_actions = {
 			    type = infantry_equipment
 			    amount = -2000
 			}
-			62 = { add_core_of = ROOT } 
-			63 = { add_core_of = ROOT } 
-			807 = { add_core_of = ROOT } 
-			85 = { add_core_of = ROOT }		
+			62 = { add_core_of = ROOT }
+			63 = { add_core_of = ROOT }
+			85 = { add_core_of = ROOT }
 		}
 		ai_will_do = {
 			factor = 5
@@ -435,14 +431,12 @@ political_actions = {
 		available = {
 			ROOT = { 
 				OR = {
-					NOT = {owns_state = 807}
 					NOT = {owns_state = 85}
 					NOT = {owns_state = 63}
 					NOT = {owns_state = 62}
 				}
 			} 
 			OR = {
-				807 = { owner = { NOT = { is_in_faction_with = ROOT } } }
 				85 = { owner = { NOT = { is_in_faction_with = ROOT } } }
 				63 = { owner = { NOT = { is_in_faction_with = ROOT } } }
 				62 = { owner = { NOT = { is_in_faction_with = ROOT } } }
@@ -456,19 +450,16 @@ political_actions = {
 			if = { 
 				limit = { 
 					NOT = {
-						807 = { is_claimed_by = ROOT }
 						85 = { is_claimed_by = ROOT }
 						63 = { is_claimed_by = ROOT }
 						62 = { is_claimed_by = ROOT }
 					} 
 				}
-				add_state_claim = 807
 				add_state_claim = 85
 				add_state_claim = 63
 				add_state_claim = 62
 			} 
 			if = { limit = { NOT = { 
-					owns_state = 807 
 					owns_state = 85
 					owns_state = 63
 					owns_state = 62
@@ -476,7 +467,6 @@ political_actions = {
 				every_country = {
 					limit = { 
 						OR = {
-							owns_state = 807 
 							owns_state = 85
 							owns_state = 62
 							owns_state = 63
@@ -487,7 +477,7 @@ political_actions = {
 							type = take_claimed_state
 							target = PREV
 							generator = {
-								807 85 63 62
+								85 63 62
 							}
 						}
 					}

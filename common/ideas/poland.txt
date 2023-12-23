@@ -1251,7 +1251,7 @@ ideas = {
 			}
 		}
 		POL_mass_production_of_guns = {
-			picture = generic_infantry_bonus
+			picture = spirit_mass_production_of_guns
 			allowed = {
 				tag = POL
 			}
@@ -1312,9 +1312,7 @@ ideas = {
 			}
 		}
 		POL_mass_production_of_anti_air = {
-		
-			picture = generic_mountain_warfare
-			
+			picture = spirit_mass_production_of_anti_air
 			allowed = {
 				tag = POL
 			}
@@ -1322,6 +1320,7 @@ ideas = {
 				#empty
 			}
 			cancel = {
+				
 			}
 			allowed_civil_war = {
 				always = yes
@@ -1334,9 +1333,7 @@ ideas = {
 			}
 		}
 		POL_mass_production_of_artillery = {
-		
-			picture = generic_mountain_warfare
-			
+			picture = spirit_mass_production_of_artillery
 			allowed = {
 				tag = POL
 			}
@@ -1447,7 +1444,7 @@ ideas = {
 			}
 		}
 		POL_building_ghettos = {
-			picture = generic_production_bonus
+			picture = spirit_creating_ghettos
 			allowed = {
 				tag = POL
 			}
@@ -3369,7 +3366,7 @@ ideas = {
 			}
 		}
 		napoleonic_regime = {
-			picture = FRA_scw_intervention_republicans_focus
+			picture = spirit_napoleonic_regime
 			allowed = {
 				tag = POL
 			}
@@ -3411,7 +3408,7 @@ ideas = {
 			}
 		}
 		POL_wettins_estates_reogranized = {
-			picture = generic_goods_red_bonus
+			picture = spirit_saxon_estates_reorganized
 			allowed = {
 				tag = POL
 			}
@@ -3432,7 +3429,7 @@ ideas = {
 			}
 		}
 		institutions_helping_women = {
-			picture = = FIN_finnish_federation_of_trade_unions_light
+			picture = spirit_POL_institutions_helping_women
 			allowed = {
 				#tag = POL
 			}
@@ -3453,7 +3450,7 @@ ideas = {
 			}
 		}
 		royal_foreign_policy = {
-			picture = = por_monarchist_uprising
+			picture = = spirit_royal_foreign_policy
 			allowed = {
 				#tag = POL
 			}

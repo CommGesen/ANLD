@@ -716,7 +716,7 @@ focus_tree = {
 	#Повсеместная лояльность
 	focus = {
 		id = FRA_widespread_loyalty
-		icon = GFX_additional_reservists
+		icon = GFX_focus_generic_additional_reservists
 		x = 11
 		y = 2
 		cost = 10
@@ -865,7 +865,7 @@ focus_tree = {
 	#Домашнее управление
 	focus = {
 		id = FRA_home_management
-		icon = GFX_agricultural_industry
+		icon = GFX_focus_generic_agricultural_industry
 		x = 11
 		y = 4
 		cost = 10
