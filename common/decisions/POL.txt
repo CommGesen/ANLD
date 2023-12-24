@@ -2359,6 +2359,10 @@ seek_enemies_category = {
 				is_historical_focus_on = yes
 				date < 1940.1.1
 			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
 		}
 	}
 	claim_cze = {
@@ -2629,6 +2633,38 @@ seek_enemies_category = {
 				is_historical_focus_on = yes
 				date < 1941.1.1
 			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					}
+					has_war_with = ROOT
+				}
+			}
 		}
 	}
 	claim_pom = {
@@ -2856,6 +2892,34 @@ seek_enemies_category = {
 				is_historical_focus_on = yes
 				date < 1941.1.1
 			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 85
+						owns_state = 62
+						owns_state = 63
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 85
+						owns_state = 62
+						owns_state = 63
+					}
+					has_war_with = ROOT
+				}
+			}
 		}
 	}
 	retake_mol = {
@@ -3079,6 +3143,34 @@ seek_enemies_category = {
 				factor = 0
 				is_historical_focus_on = yes
 				date < 1938.6.6
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+					}
+					has_war_with = ROOT
+				}
 			}
 		}
 	}
@@ -3316,6 +3408,36 @@ seek_enemies_category = {
 				factor = 0
 				is_historical_focus_on = yes
 				date < 1941.6.6
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 64
+						owns_state = 65
+						owns_state = 68
+						owns_state = 61
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 64
+						owns_state = 65
+						owns_state = 68
+						owns_state = 61
+					}
+					has_war_with = ROOT
+				}
 			}
 		}
 	}
@@ -3556,6 +3678,36 @@ seek_enemies_category = {
 				factor = 0
 				is_historical_focus_on = yes
 				date < 1942.1.1
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 196
+						owns_state = 137
+						owns_state = 227
+						owns_state = 200
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 196
+						owns_state = 137
+						owns_state = 227
+						owns_state = 200
+					}
+					has_war_with = ROOT
+				}
 			}
 		}
 	}
@@ -3941,6 +4093,54 @@ seek_enemies_category = {
 				is_historical_focus_on = yes
 				date < 1940.1.1
 			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 221
+						owns_state = 834
+						owns_state = 203
+						owns_state = 197
+						owns_state = 192
+						owns_state = 226
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 221
+						owns_state = 834
+						owns_state = 203
+						owns_state = 197
+						owns_state = 192
+						owns_state = 226
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+					}
+					has_war_with = ROOT
+				}
+			}
 		}
 	}
 	conquer_bal = {
@@ -4261,6 +4461,46 @@ seek_enemies_category = {
 				is_historical_focus_on = yes
 				date < 1940.1.1
 			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 12
+						owns_state = 810
+						owns_state = 809
+						owns_state = 808
+						owns_state = 190
+						owns_state = 189
+						owns_state = 815
+						owns_state = 11
+						owns_state = 814
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 12
+						owns_state = 810
+						owns_state = 809
+						owns_state = 808
+						owns_state = 190
+						owns_state = 189
+						owns_state = 815
+						owns_state = 11
+						owns_state = 814
+					}
+					has_war_with = ROOT
+				}
+			}
 		}
 	}
 	conquer_blr = {
@@ -4565,6 +4805,44 @@ seek_enemies_category = {
 				is_historical_focus_on = yes
 				date < 1940.1.1
 			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 241
+						owns_state = 764
+						owns_state = 207
+						owns_state = 206
+						owns_state = 204
+						owns_state = 194
+						owns_state = 95
+						owns_state = 96
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 241
+						owns_state = 764
+						owns_state = 207
+						owns_state = 206
+						owns_state = 204
+						owns_state = 194
+						owns_state = 95
+						owns_state = 96
+					}
+					has_war_with = ROOT
+				}
+			}
 		}
 	}
 	avenge_swedish_deluge = {
@@ -4702,6 +4980,18 @@ seek_enemies_category = {
 				is_historical_focus_on = yes
 				date < 1943.1.1
 			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				has_wargoal_against = SWE
+			}
+			modifier = {
+				factor = 0
+				has_war_with = SWE
+			}
 		}
 	}
 	russia_once_again = {
@@ -4832,6 +5122,18 @@ seek_enemies_category = {
 				factor = 0
 				is_historical_focus_on = yes
 				date < 1941.9.9
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				has_wargoal_against = SOV
+			}
+			modifier = {
+				factor = 0
+				has_war_with = SOV
 			}
 		}
 	}
@@ -4964,6 +5266,18 @@ seek_enemies_category = {
 				is_historical_focus_on = yes
 				date < 1938.9.9
 			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				has_wargoal_against = AUS
+			}
+			modifier = {
+				factor = 0
+				has_war_with = AUS
+			}
 		}
 	}
 	revenge_for_versailles = {
@@ -5094,6 +5408,18 @@ seek_enemies_category = {
 				factor = 0
 				is_historical_focus_on = yes
 				date < 1938.9.9
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				has_wargoal_against = FRA
+			}
+			modifier = {
+				factor = 0
+				has_war_with = FRA
 			}
 		}
 	}
@@ -6623,7 +6949,7 @@ seek_allies_category = {
 		remove_effect = {
 			AUS = {country_event = { id = deluge_poland_foreign.4 hours = 1 }}
 		}
-		ai_will_do = {##here is stopped
+		ai_will_do = {
 			base = 5
 			modifier = {
 				AUS = {has_government = POL}
@@ -9989,6 +10315,18 @@ export_catholicism_category = {
 					}
 				}
 			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				has_wargoal_against = FROM
+			}
+			modifier = {
+				factor = 0
+				has_war_with = FROM
+			}
 		}
 	}
 	destroy_heretical_factions = {
@@ -10065,6 +10403,18 @@ export_catholicism_category = {
 						ratio < 1.5 
 					}
 				}
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				has_wargoal_against = FROM
+			}
+			modifier = {
+				factor = 0
+				has_war_with = FROM
 			}
 		}
 	}
@@ -10143,6 +10493,18 @@ export_catholicism_category = {
 					}
 				}
 			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				has_wargoal_against = FROM
+			}
+			modifier = {
+				factor = 0
+				has_war_with = FROM
+			}
 		}
 	}
 	destroy_infidels = {
@@ -10217,6 +10579,18 @@ export_catholicism_category = {
 						ratio < 1.5 
 					}
 				}
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				has_wargoal_against = FROM
+			}
+			modifier = {
+				factor = 0
+				has_war_with = FROM
 			}
 		}
 	}
@@ -10302,6 +10676,18 @@ export_catholicism_category = {
 						ratio < 1.5 
 					}
 				}
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				has_wargoal_against = FROM
+			}
+			modifier = {
+				factor = 0
+				has_war_with = FROM
 			}
 		}
 	}
@@ -10886,48 +11272,166 @@ european_cooperation_category = {
 		ai_will_do = {
 			base = 1
 			modifier = {
-				add = -25
-				ROOT = {
-					has_opinion = {
-						target = FROM
-						value > 40
+				any_country = {
+					OR = {
+						owns_state = 62 
+						owns_state = 63
+						owns_state = 85
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 62 
+						owns_state = 63
+						owns_state = 85
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 62 
+						owns_state = 63
+						owns_state = 85
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 62 
+						owns_state = 63
+						owns_state = 85
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 62 
+						owns_state = 63
+						owns_state = 85
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 62 
+						owns_state = 63
+						owns_state = 85
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 62 
+						owns_state = 63
+						owns_state = 85
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
 					}
 				}
 			}
 			modifier = {
-				add = 25
-				ROOT = {
-					has_opinion = {
-						target = FROM
-						value < 40
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 62 
+						owns_state = 63
+						owns_state = 85
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
 					}
 				}
 			}
 			modifier = {
-				add = -40
-				ROOT = {
-					strength_ratio = {
-						tag = FROM 
-						ratio < 1.5 
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 64
+						owns_state = 65
+						owns_state = 68
+						owns_state = 61
+					}
+					ROOT = {
+						has_wargoal_against = PREV
 					}
 				}
 			}
 			modifier = {
-				add = 40
-				ROOT = {
-					strength_ratio = {
-						tag = FROM 
-						ratio > 1.5 
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 64
+						owns_state = 65
+						owns_state = 68
+						owns_state = 61
 					}
+					has_war_with = ROOT
 				}
-			}
-			modifier = {
-				add = -40
-				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
-			}
-			modifier = {
-				add = 40
-				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
 			}
 		}
 	}
@@ -10988,7 +11492,7 @@ european_cooperation_category = {
 		complete_effect = {
 			every_country = {
 				limit = {
-					owns_state = 68 
+					owns_state = 68
 				}
 				country_event = {
 					id = generic.26
@@ -11008,48 +11512,144 @@ european_cooperation_category = {
 		ai_will_do = {
 			base = 1
 			modifier = {
-				add = -25
-				ROOT = {
-					has_opinion = {
-						target = FROM
-						value > 40
+				any_country = {
+					OR = {
+						owns_state = 68
+					}
+					strength_ratio = { tag = POL ratio < 1.7 }
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68
+					}
+					strength_ratio = { tag = POL ratio > 1.7 }
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 68
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
 					}
 				}
 			}
 			modifier = {
-				add = 25
-				ROOT = {
-					has_opinion = {
-						target = FROM
-						value < 40
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 68
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
 					}
 				}
 			}
 			modifier = {
-				add = -40
-				ROOT = {
-					strength_ratio = {
-						tag = FROM 
-						ratio < 1.5 
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 68
+					}
+					ROOT = {
+						has_wargoal_against = PREV
 					}
 				}
 			}
 			modifier = {
-				add = 40
-				ROOT = {
-					strength_ratio = {
-						tag = FROM 
-						ratio > 1.5 
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 68
 					}
+					has_war_with = ROOT
 				}
-			}
-			modifier = {
-				add = -40
-				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
-			}
-			modifier = {
-				add = 40
-				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
 			}
 		}
 	}
@@ -11173,6 +11773,22 @@ european_cooperation_category = {
 						tag = FROM 
 						ratio < 1.5 
 					}
+				}
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				ROOT = {
+					has_wargoal_against = FROM
+				}
+			}
+			modifier = {
+				factor = 0
+				ROOT = {
+					has_war_with = FROM
 				}
 			}
 		}
@@ -11631,6 +12247,22 @@ new_revolution_category = {
 						tag = FROM 
 						ratio < 1.5 
 					}
+				}
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				ROOT = {
+					has_wargoal_against = FROM
+				}
+			}
+			modifier = {
+				factor = 0
+				ROOT = {
+					has_war_with = FROM
 				}
 			}
 		}
@@ -13032,6 +13664,22 @@ polish_new_order_decisions_category = {
 					}
 				}
 			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				ROOT = {
+					has_wargoal_against = LOU
+				}
+			}
+			modifier = {
+				factor = 0
+				ROOT = {
+					has_war_with = LOU
+				}
+			}
 		}
 	}
 	retake_netherlands = {
@@ -13162,6 +13810,184 @@ polish_new_order_decisions_category = {
 						tag = POL 
 						ratio > 1.5 
 					}
+				}
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 36
+						owns_state = 7
+						owns_state = 35
+						owns_state = 784
+						owns_state = 6
+						owns_state = 8
+						owns_state = 786
+						owns_state = 34
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 36
+						owns_state = 7
+						owns_state = 35
+						owns_state = 784
+						owns_state = 6
+						owns_state = 8
+						owns_state = 786
+						owns_state = 34
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 36
+						owns_state = 7
+						owns_state = 35
+						owns_state = 784
+						owns_state = 6
+						owns_state = 8
+						owns_state = 786
+						owns_state = 34
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 36
+						owns_state = 7
+						owns_state = 35
+						owns_state = 784
+						owns_state = 6
+						owns_state = 8
+						owns_state = 786
+						owns_state = 34
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 36
+						owns_state = 7
+						owns_state = 35
+						owns_state = 784
+						owns_state = 6
+						owns_state = 8
+						owns_state = 786
+						owns_state = 34
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 36
+						owns_state = 7
+						owns_state = 35
+						owns_state = 784
+						owns_state = 6
+						owns_state = 8
+						owns_state = 786
+						owns_state = 34
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 36
+						owns_state = 7
+						owns_state = 35
+						owns_state = 784
+						owns_state = 6
+						owns_state = 8
+						owns_state = 786
+						owns_state = 34
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 36
+						owns_state = 7
+						owns_state = 35
+						owns_state = 784
+						owns_state = 6
+						owns_state = 8
+						owns_state = 786
+						owns_state = 34
+					}
+					has_war_with = ROOT
 				}
 			}
 		}
@@ -13414,6 +14240,344 @@ polish_new_order_decisions_category = {
 						tag = POL 
 						ratio > 1.5 
 					}
+				}
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 165
+						owns_state = 794
+						owns_state = 166
+						owns_state = 176
+						owns_state = 172
+						owns_state = 792
+						owns_state = 804
+						owns_state = 790
+						owns_state = 171
+						owns_state = 174
+						owns_state = 791
+						owns_state = 788
+						owns_state = 41
+						owns_state = 793
+						owns_state = 167
+						owns_state = 168
+						owns_state = 175
+						owns_state = 170
+						owns_state = 789
+						owns_state = 173
+						owns_state = 169
+						owns_state = 180
+						owns_state = 181
+						owns_state = 112
+						owns_state = 795
+						owns_state = 179
+						owns_state = 118
+						owns_state = 177
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 165
+						owns_state = 794
+						owns_state = 166
+						owns_state = 176
+						owns_state = 172
+						owns_state = 792
+						owns_state = 804
+						owns_state = 790
+						owns_state = 171
+						owns_state = 174
+						owns_state = 791
+						owns_state = 788
+						owns_state = 41
+						owns_state = 793
+						owns_state = 167
+						owns_state = 168
+						owns_state = 175
+						owns_state = 170
+						owns_state = 789
+						owns_state = 173
+						owns_state = 169
+						owns_state = 180
+						owns_state = 181
+						owns_state = 112
+						owns_state = 795
+						owns_state = 179
+						owns_state = 118
+						owns_state = 177
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 165
+						owns_state = 794
+						owns_state = 166
+						owns_state = 176
+						owns_state = 172
+						owns_state = 792
+						owns_state = 804
+						owns_state = 790
+						owns_state = 171
+						owns_state = 174
+						owns_state = 791
+						owns_state = 788
+						owns_state = 41
+						owns_state = 793
+						owns_state = 167
+						owns_state = 168
+						owns_state = 175
+						owns_state = 170
+						owns_state = 789
+						owns_state = 173
+						owns_state = 169
+						owns_state = 180
+						owns_state = 181
+						owns_state = 112
+						owns_state = 795
+						owns_state = 179
+						owns_state = 118
+						owns_state = 177
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 165
+						owns_state = 794
+						owns_state = 166
+						owns_state = 176
+						owns_state = 172
+						owns_state = 792
+						owns_state = 804
+						owns_state = 790
+						owns_state = 171
+						owns_state = 174
+						owns_state = 791
+						owns_state = 788
+						owns_state = 41
+						owns_state = 793
+						owns_state = 167
+						owns_state = 168
+						owns_state = 175
+						owns_state = 170
+						owns_state = 789
+						owns_state = 173
+						owns_state = 169
+						owns_state = 180
+						owns_state = 181
+						owns_state = 112
+						owns_state = 795
+						owns_state = 179
+						owns_state = 118
+						owns_state = 177
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 165
+						owns_state = 794
+						owns_state = 166
+						owns_state = 176
+						owns_state = 172
+						owns_state = 792
+						owns_state = 804
+						owns_state = 790
+						owns_state = 171
+						owns_state = 174
+						owns_state = 791
+						owns_state = 788
+						owns_state = 41
+						owns_state = 793
+						owns_state = 167
+						owns_state = 168
+						owns_state = 175
+						owns_state = 170
+						owns_state = 789
+						owns_state = 173
+						owns_state = 169
+						owns_state = 180
+						owns_state = 181
+						owns_state = 112
+						owns_state = 795
+						owns_state = 179
+						owns_state = 118
+						owns_state = 177
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 165
+						owns_state = 794
+						owns_state = 166
+						owns_state = 176
+						owns_state = 172
+						owns_state = 792
+						owns_state = 804
+						owns_state = 790
+						owns_state = 171
+						owns_state = 174
+						owns_state = 791
+						owns_state = 788
+						owns_state = 41
+						owns_state = 793
+						owns_state = 167
+						owns_state = 168
+						owns_state = 175
+						owns_state = 170
+						owns_state = 789
+						owns_state = 173
+						owns_state = 169
+						owns_state = 180
+						owns_state = 181
+						owns_state = 112
+						owns_state = 795
+						owns_state = 179
+						owns_state = 118
+						owns_state = 177
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 165
+						owns_state = 794
+						owns_state = 166
+						owns_state = 176
+						owns_state = 172
+						owns_state = 792
+						owns_state = 804
+						owns_state = 790
+						owns_state = 171
+						owns_state = 174
+						owns_state = 791
+						owns_state = 788
+						owns_state = 41
+						owns_state = 793
+						owns_state = 167
+						owns_state = 168
+						owns_state = 175
+						owns_state = 170
+						owns_state = 789
+						owns_state = 173
+						owns_state = 169
+						owns_state = 180
+						owns_state = 181
+						owns_state = 112
+						owns_state = 795
+						owns_state = 179
+						owns_state = 118
+						owns_state = 177
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 165
+						owns_state = 794
+						owns_state = 166
+						owns_state = 176
+						owns_state = 172
+						owns_state = 792
+						owns_state = 804
+						owns_state = 790
+						owns_state = 171
+						owns_state = 174
+						owns_state = 791
+						owns_state = 788
+						owns_state = 41
+						owns_state = 793
+						owns_state = 167
+						owns_state = 168
+						owns_state = 175
+						owns_state = 170
+						owns_state = 789
+						owns_state = 173
+						owns_state = 169
+						owns_state = 180
+						owns_state = 181
+						owns_state = 112
+						owns_state = 795
+						owns_state = 179
+						owns_state = 118
+						owns_state = 177
+					}
+					has_war_with = ROOT
 				}
 			}
 		}
@@ -13752,6 +14916,456 @@ polish_new_order_decisions_category = {
 					}
 				}
 			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 58
+						owns_state = 99
+						owns_state = 37
+						owns_state = 138
+						owns_state = 139
+						owns_state = 140
+						owns_state = 141
+						owns_state = 38
+						owns_state = 666
+						owns_state = 124
+						owns_state = 110
+						owns_state = 142
+						owns_state = 143
+						owns_state = 144
+						owns_state = 145
+						owns_state = 111
+						owns_state = 149
+						owns_state = 150
+						owns_state = 146
+						owns_state = 148
+						owns_state = 147
+						owns_state = 909
+						owns_state = 912
+						owns_state = 911
+						owns_state = 910
+						owns_state = 915
+						owns_state = 919
+						owns_state = 916
+						owns_state = 917
+						owns_state = 918
+						owns_state = 188
+						owns_state = 921
+						owns_state = 922
+						owns_state = 920
+						owns_state = 923
+						owns_state = 924
+						owns_state = 925
+						owns_state = 929
+						owns_state = 926
+						owns_state = 927
+						owns_state = 928
+						owns_state = 930
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 58
+						owns_state = 99
+						owns_state = 37
+						owns_state = 138
+						owns_state = 139
+						owns_state = 140
+						owns_state = 141
+						owns_state = 38
+						owns_state = 666
+						owns_state = 124
+						owns_state = 110
+						owns_state = 142
+						owns_state = 143
+						owns_state = 144
+						owns_state = 145
+						owns_state = 111
+						owns_state = 149
+						owns_state = 150
+						owns_state = 146
+						owns_state = 148
+						owns_state = 147
+						owns_state = 909
+						owns_state = 912
+						owns_state = 911
+						owns_state = 910
+						owns_state = 915
+						owns_state = 919
+						owns_state = 916
+						owns_state = 917
+						owns_state = 918
+						owns_state = 188
+						owns_state = 921
+						owns_state = 922
+						owns_state = 920
+						owns_state = 923
+						owns_state = 924
+						owns_state = 925
+						owns_state = 929
+						owns_state = 926
+						owns_state = 927
+						owns_state = 928
+						owns_state = 930
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 58
+						owns_state = 99
+						owns_state = 37
+						owns_state = 138
+						owns_state = 139
+						owns_state = 140
+						owns_state = 141
+						owns_state = 38
+						owns_state = 666
+						owns_state = 124
+						owns_state = 110
+						owns_state = 142
+						owns_state = 143
+						owns_state = 144
+						owns_state = 145
+						owns_state = 111
+						owns_state = 149
+						owns_state = 150
+						owns_state = 146
+						owns_state = 148
+						owns_state = 147
+						owns_state = 909
+						owns_state = 912
+						owns_state = 911
+						owns_state = 910
+						owns_state = 915
+						owns_state = 919
+						owns_state = 916
+						owns_state = 917
+						owns_state = 918
+						owns_state = 188
+						owns_state = 921
+						owns_state = 922
+						owns_state = 920
+						owns_state = 923
+						owns_state = 924
+						owns_state = 925
+						owns_state = 929
+						owns_state = 926
+						owns_state = 927
+						owns_state = 928
+						owns_state = 930
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 58
+						owns_state = 99
+						owns_state = 37
+						owns_state = 138
+						owns_state = 139
+						owns_state = 140
+						owns_state = 141
+						owns_state = 38
+						owns_state = 666
+						owns_state = 124
+						owns_state = 110
+						owns_state = 142
+						owns_state = 143
+						owns_state = 144
+						owns_state = 145
+						owns_state = 111
+						owns_state = 149
+						owns_state = 150
+						owns_state = 146
+						owns_state = 148
+						owns_state = 147
+						owns_state = 909
+						owns_state = 912
+						owns_state = 911
+						owns_state = 910
+						owns_state = 915
+						owns_state = 919
+						owns_state = 916
+						owns_state = 917
+						owns_state = 918
+						owns_state = 188
+						owns_state = 921
+						owns_state = 922
+						owns_state = 920
+						owns_state = 923
+						owns_state = 924
+						owns_state = 925
+						owns_state = 929
+						owns_state = 926
+						owns_state = 927
+						owns_state = 928
+						owns_state = 930
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 58
+						owns_state = 99
+						owns_state = 37
+						owns_state = 138
+						owns_state = 139
+						owns_state = 140
+						owns_state = 141
+						owns_state = 38
+						owns_state = 666
+						owns_state = 124
+						owns_state = 110
+						owns_state = 142
+						owns_state = 143
+						owns_state = 144
+						owns_state = 145
+						owns_state = 111
+						owns_state = 149
+						owns_state = 150
+						owns_state = 146
+						owns_state = 148
+						owns_state = 147
+						owns_state = 909
+						owns_state = 912
+						owns_state = 911
+						owns_state = 910
+						owns_state = 915
+						owns_state = 919
+						owns_state = 916
+						owns_state = 917
+						owns_state = 918
+						owns_state = 188
+						owns_state = 921
+						owns_state = 922
+						owns_state = 920
+						owns_state = 923
+						owns_state = 924
+						owns_state = 925
+						owns_state = 929
+						owns_state = 926
+						owns_state = 927
+						owns_state = 928
+						owns_state = 930
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 58
+						owns_state = 99
+						owns_state = 37
+						owns_state = 138
+						owns_state = 139
+						owns_state = 140
+						owns_state = 141
+						owns_state = 38
+						owns_state = 666
+						owns_state = 124
+						owns_state = 110
+						owns_state = 142
+						owns_state = 143
+						owns_state = 144
+						owns_state = 145
+						owns_state = 111
+						owns_state = 149
+						owns_state = 150
+						owns_state = 146
+						owns_state = 148
+						owns_state = 147
+						owns_state = 909
+						owns_state = 912
+						owns_state = 911
+						owns_state = 910
+						owns_state = 915
+						owns_state = 919
+						owns_state = 916
+						owns_state = 917
+						owns_state = 918
+						owns_state = 188
+						owns_state = 921
+						owns_state = 922
+						owns_state = 920
+						owns_state = 923
+						owns_state = 924
+						owns_state = 925
+						owns_state = 929
+						owns_state = 926
+						owns_state = 927
+						owns_state = 928
+						owns_state = 930
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 58
+						owns_state = 99
+						owns_state = 37
+						owns_state = 138
+						owns_state = 139
+						owns_state = 140
+						owns_state = 141
+						owns_state = 38
+						owns_state = 666
+						owns_state = 124
+						owns_state = 110
+						owns_state = 142
+						owns_state = 143
+						owns_state = 144
+						owns_state = 145
+						owns_state = 111
+						owns_state = 149
+						owns_state = 150
+						owns_state = 146
+						owns_state = 148
+						owns_state = 147
+						owns_state = 909
+						owns_state = 912
+						owns_state = 911
+						owns_state = 910
+						owns_state = 915
+						owns_state = 919
+						owns_state = 916
+						owns_state = 917
+						owns_state = 918
+						owns_state = 188
+						owns_state = 921
+						owns_state = 922
+						owns_state = 920
+						owns_state = 923
+						owns_state = 924
+						owns_state = 925
+						owns_state = 929
+						owns_state = 926
+						owns_state = 927
+						owns_state = 928
+						owns_state = 930
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 58
+						owns_state = 99
+						owns_state = 37
+						owns_state = 138
+						owns_state = 139
+						owns_state = 140
+						owns_state = 141
+						owns_state = 38
+						owns_state = 666
+						owns_state = 124
+						owns_state = 110
+						owns_state = 142
+						owns_state = 143
+						owns_state = 144
+						owns_state = 145
+						owns_state = 111
+						owns_state = 149
+						owns_state = 150
+						owns_state = 146
+						owns_state = 148
+						owns_state = 147
+						owns_state = 909
+						owns_state = 912
+						owns_state = 911
+						owns_state = 910
+						owns_state = 915
+						owns_state = 919
+						owns_state = 916
+						owns_state = 917
+						owns_state = 918
+						owns_state = 188
+						owns_state = 921
+						owns_state = 922
+						owns_state = 920
+						owns_state = 923
+						owns_state = 924
+						owns_state = 925
+						owns_state = 929
+						owns_state = 926
+						owns_state = 927
+						owns_state = 928
+						owns_state = 930
+					}
+					has_war_with = ROOT
+				}
+			}
 		}
 	}
 	divide_germany = {
@@ -13967,6 +15581,232 @@ polish_new_order_decisions_category = {
 					}
 				}
 			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+						owns_state = 59
+						owns_state = 60
+						owns_state = 54
+						owns_state = 53
+						owns_state = 52
+						owns_state = 50
+						owns_state = 55
+						owns_state = 51
+						owns_state = 57
+						owns_state = 56
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+						owns_state = 59
+						owns_state = 60
+						owns_state = 54
+						owns_state = 53
+						owns_state = 52
+						owns_state = 50
+						owns_state = 55
+						owns_state = 51
+						owns_state = 57
+						owns_state = 56
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+						owns_state = 59
+						owns_state = 60
+						owns_state = 54
+						owns_state = 53
+						owns_state = 52
+						owns_state = 50
+						owns_state = 55
+						owns_state = 51
+						owns_state = 57
+						owns_state = 56
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 68
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+						owns_state = 59
+						owns_state = 60
+						owns_state = 54
+						owns_state = 53
+						owns_state = 52
+						owns_state = 50
+						owns_state = 55
+						owns_state = 51
+						owns_state = 57
+						owns_state = 56
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 68
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+						owns_state = 59
+						owns_state = 60
+						owns_state = 54
+						owns_state = 53
+						owns_state = 52
+						owns_state = 50
+						owns_state = 55
+						owns_state = 51
+						owns_state = 57
+						owns_state = 56
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 68
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+						owns_state = 59
+						owns_state = 60
+						owns_state = 54
+						owns_state = 53
+						owns_state = 52
+						owns_state = 50
+						owns_state = 55
+						owns_state = 51
+						owns_state = 57
+						owns_state = 56
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 68
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+						owns_state = 59
+						owns_state = 60
+						owns_state = 54
+						owns_state = 53
+						owns_state = 52
+						owns_state = 50
+						owns_state = 55
+						owns_state = 51
+						owns_state = 57
+						owns_state = 56
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 68
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+						owns_state = 59
+						owns_state = 60
+						owns_state = 54
+						owns_state = 53
+						owns_state = 52
+						owns_state = 50
+						owns_state = 55
+						owns_state = 51
+						owns_state = 57
+						owns_state = 56
+					}
+					has_war_with = ROOT
+				}
+			}
 		}
 	}
 	takeover_italian_peninsula = {
@@ -14117,6 +15957,208 @@ polish_new_order_decisions_category = {
 					}
 				}
 			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 159
+						owns_state = 160
+						owns_state = 161
+						owns_state = 162
+						owns_state = 157
+						owns_state = 2
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+						owns_state = 114
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 159
+						owns_state = 160
+						owns_state = 161
+						owns_state = 162
+						owns_state = 157
+						owns_state = 2
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+						owns_state = 114
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 159
+						owns_state = 160
+						owns_state = 161
+						owns_state = 162
+						owns_state = 157
+						owns_state = 2
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+						owns_state = 114
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 159
+						owns_state = 160
+						owns_state = 161
+						owns_state = 162
+						owns_state = 157
+						owns_state = 2
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+						owns_state = 114
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 159
+						owns_state = 160
+						owns_state = 161
+						owns_state = 162
+						owns_state = 157
+						owns_state = 2
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+						owns_state = 114
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 159
+						owns_state = 160
+						owns_state = 161
+						owns_state = 162
+						owns_state = 157
+						owns_state = 2
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+						owns_state = 114
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 159
+						owns_state = 160
+						owns_state = 161
+						owns_state = 162
+						owns_state = 157
+						owns_state = 2
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+						owns_state = 114
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 159
+						owns_state = 160
+						owns_state = 161
+						owns_state = 162
+						owns_state = 157
+						owns_state = 2
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+						owns_state = 114
+					}
+					has_war_with = ROOT
+				}
+			}
 		}
 	}
 	eliminate_austrian_threat = {
@@ -14178,6 +16220,90 @@ polish_new_order_decisions_category = {
 						tag = AUS 
 						ratio < 1.5 
 					}
+				}
+			}
+			modifier = {
+				AUS = {
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				AUS = {
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				AUS = {
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				AUS = {
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				ROOT = {
+					has_wargoal_against = AUS
+				}
+			}
+			modifier = {
+				factor = 0
+				AUS = {
+					has_war_with = ROOT
 				}
 			}
 		}
@@ -14243,6 +16369,90 @@ polish_new_order_decisions_category = {
 					}
 				}
 			}
+			modifier = {
+				SOV = {
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				SOV = {
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				SOV = {
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				SOV = {
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				ROOT = {
+					has_wargoal_against = SOV
+				}
+			}
+			modifier = {
+				factor = 0
+				SOV = {
+					has_war_with = ROOT
+				}
+			}
 		}
 	}
 	eliminate_british_threat = {
@@ -14304,6 +16514,90 @@ polish_new_order_decisions_category = {
 						tag = ENG 
 						ratio < 1.5 
 					}
+				}
+			}
+			modifier = {
+				ENG = {
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				ENG = {
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				ENG = {
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				ENG = {
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				ROOT = {
+					has_wargoal_against = ENG
+				}
+			}
+			modifier = {
+				factor = 0
+				ENG = {
+					has_war_with = ROOT
 				}
 			}
 		}
@@ -14507,6 +16801,22 @@ polish_new_order_decisions_category = {
 						tag = FROM 
 						ratio < 1.5 
 					}
+				}
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				ROOT = {
+					has_wargoal_against = FROM
+				}
+			}
+			modifier = {
+				factor = 0
+				ROOT = {
+					has_war_with = FROM
 				}
 			}
 		}
@@ -14882,6 +17192,264 @@ sarmatia_decisions_category = {
 					}
 				}
 			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 74
+						owns_state = 71
+						owns_state = 70
+						owns_state = 73
+						owns_state = 664
+						owns_state = 74
+						owns_state = 155
+						owns_state = 43
+						owns_state = 154
+						owns_state = 76
+						owns_state = 83
+						owns_state = 84
+						owns_state = 82
+						owns_state = 45
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+						owns_state = 847
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 74
+						owns_state = 71
+						owns_state = 70
+						owns_state = 73
+						owns_state = 664
+						owns_state = 74
+						owns_state = 155
+						owns_state = 43
+						owns_state = 154
+						owns_state = 76
+						owns_state = 83
+						owns_state = 84
+						owns_state = 82
+						owns_state = 45
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+						owns_state = 847
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 74
+						owns_state = 71
+						owns_state = 70
+						owns_state = 73
+						owns_state = 664
+						owns_state = 74
+						owns_state = 155
+						owns_state = 43
+						owns_state = 154
+						owns_state = 76
+						owns_state = 83
+						owns_state = 84
+						owns_state = 82
+						owns_state = 45
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+						owns_state = 847
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 74
+						owns_state = 71
+						owns_state = 70
+						owns_state = 73
+						owns_state = 664
+						owns_state = 74
+						owns_state = 155
+						owns_state = 43
+						owns_state = 154
+						owns_state = 76
+						owns_state = 83
+						owns_state = 84
+						owns_state = 82
+						owns_state = 45
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+						owns_state = 847
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 74
+						owns_state = 71
+						owns_state = 70
+						owns_state = 73
+						owns_state = 664
+						owns_state = 74
+						owns_state = 155
+						owns_state = 43
+						owns_state = 154
+						owns_state = 76
+						owns_state = 83
+						owns_state = 84
+						owns_state = 82
+						owns_state = 45
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+						owns_state = 847
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 74
+						owns_state = 71
+						owns_state = 70
+						owns_state = 73
+						owns_state = 664
+						owns_state = 74
+						owns_state = 155
+						owns_state = 43
+						owns_state = 154
+						owns_state = 76
+						owns_state = 83
+						owns_state = 84
+						owns_state = 82
+						owns_state = 45
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+						owns_state = 847
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 74
+						owns_state = 71
+						owns_state = 70
+						owns_state = 73
+						owns_state = 664
+						owns_state = 74
+						owns_state = 155
+						owns_state = 43
+						owns_state = 154
+						owns_state = 76
+						owns_state = 83
+						owns_state = 84
+						owns_state = 82
+						owns_state = 45
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+						owns_state = 847
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 74
+						owns_state = 71
+						owns_state = 70
+						owns_state = 73
+						owns_state = 664
+						owns_state = 74
+						owns_state = 155
+						owns_state = 43
+						owns_state = 154
+						owns_state = 76
+						owns_state = 83
+						owns_state = 84
+						owns_state = 82
+						owns_state = 45
+						owns_state = 80
+						owns_state = 79
+						owns_state = 78
+						owns_state = 847
+					}
+					has_war_with = ROOT
+				}
+			}
 		}
 	}
 	retake_eastern_europe = {
@@ -15187,6 +17755,496 @@ sarmatia_decisions_category = {
 					}
 				}
 			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 199
+						owns_state = 198
+						owns_state = 192
+						owns_state = 834
+						owns_state = 197
+						owns_state = 203
+						owns_state = 201
+						owns_state = 202
+						owns_state = 194
+						owns_state = 241
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 226
+						owns_state = 221
+						owns_state = 196
+						owns_state = 137
+						owns_state = 200
+						owns_state = 227
+						owns_state = 228
+						owns_state = 218
+						owns_state = 245
+						owns_state = 217
+						owns_state = 829
+						owns_state = 239
+						owns_state = 255
+						owns_state = 257
+						owns_state = 260
+						owns_state = 240
+						owns_state = 220
+						owns_state = 222
+						owns_state = 224
+						owns_state = 205
+						owns_state = 223
+						owns_state = 265
+						owns_state = 258
+						owns_state = 254
+						owns_state = 401
+						owns_state = 251
+						owns_state = 250
+						owns_state = 252
+						owns_state = 256
+						owns_state = 833
+						owns_state = 249
+						owns_state = 399
+						owns_state = 652
+						owns_state = 651
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 199
+						owns_state = 198
+						owns_state = 192
+						owns_state = 834
+						owns_state = 197
+						owns_state = 203
+						owns_state = 201
+						owns_state = 202
+						owns_state = 194
+						owns_state = 241
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 226
+						owns_state = 221
+						owns_state = 196
+						owns_state = 137
+						owns_state = 200
+						owns_state = 227
+						owns_state = 228
+						owns_state = 218
+						owns_state = 245
+						owns_state = 217
+						owns_state = 829
+						owns_state = 239
+						owns_state = 255
+						owns_state = 257
+						owns_state = 260
+						owns_state = 240
+						owns_state = 220
+						owns_state = 222
+						owns_state = 224
+						owns_state = 205
+						owns_state = 223
+						owns_state = 265
+						owns_state = 258
+						owns_state = 254
+						owns_state = 401
+						owns_state = 251
+						owns_state = 250
+						owns_state = 252
+						owns_state = 256
+						owns_state = 833
+						owns_state = 249
+						owns_state = 399
+						owns_state = 652
+						owns_state = 651
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 199
+						owns_state = 198
+						owns_state = 192
+						owns_state = 834
+						owns_state = 197
+						owns_state = 203
+						owns_state = 201
+						owns_state = 202
+						owns_state = 194
+						owns_state = 241
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 226
+						owns_state = 221
+						owns_state = 196
+						owns_state = 137
+						owns_state = 200
+						owns_state = 227
+						owns_state = 228
+						owns_state = 218
+						owns_state = 245
+						owns_state = 217
+						owns_state = 829
+						owns_state = 239
+						owns_state = 255
+						owns_state = 257
+						owns_state = 260
+						owns_state = 240
+						owns_state = 220
+						owns_state = 222
+						owns_state = 224
+						owns_state = 205
+						owns_state = 223
+						owns_state = 265
+						owns_state = 258
+						owns_state = 254
+						owns_state = 401
+						owns_state = 251
+						owns_state = 250
+						owns_state = 252
+						owns_state = 256
+						owns_state = 833
+						owns_state = 249
+						owns_state = 399
+						owns_state = 652
+						owns_state = 651
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 199
+						owns_state = 198
+						owns_state = 192
+						owns_state = 834
+						owns_state = 197
+						owns_state = 203
+						owns_state = 201
+						owns_state = 202
+						owns_state = 194
+						owns_state = 241
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 226
+						owns_state = 221
+						owns_state = 196
+						owns_state = 137
+						owns_state = 200
+						owns_state = 227
+						owns_state = 228
+						owns_state = 218
+						owns_state = 245
+						owns_state = 217
+						owns_state = 829
+						owns_state = 239
+						owns_state = 255
+						owns_state = 257
+						owns_state = 260
+						owns_state = 240
+						owns_state = 220
+						owns_state = 222
+						owns_state = 224
+						owns_state = 205
+						owns_state = 223
+						owns_state = 265
+						owns_state = 258
+						owns_state = 254
+						owns_state = 401
+						owns_state = 251
+						owns_state = 250
+						owns_state = 252
+						owns_state = 256
+						owns_state = 833
+						owns_state = 249
+						owns_state = 399
+						owns_state = 652
+						owns_state = 651
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 199
+						owns_state = 198
+						owns_state = 192
+						owns_state = 834
+						owns_state = 197
+						owns_state = 203
+						owns_state = 201
+						owns_state = 202
+						owns_state = 194
+						owns_state = 241
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 226
+						owns_state = 221
+						owns_state = 196
+						owns_state = 137
+						owns_state = 200
+						owns_state = 227
+						owns_state = 228
+						owns_state = 218
+						owns_state = 245
+						owns_state = 217
+						owns_state = 829
+						owns_state = 239
+						owns_state = 255
+						owns_state = 257
+						owns_state = 260
+						owns_state = 240
+						owns_state = 220
+						owns_state = 222
+						owns_state = 224
+						owns_state = 205
+						owns_state = 223
+						owns_state = 265
+						owns_state = 258
+						owns_state = 254
+						owns_state = 401
+						owns_state = 251
+						owns_state = 250
+						owns_state = 252
+						owns_state = 256
+						owns_state = 833
+						owns_state = 249
+						owns_state = 399
+						owns_state = 652
+						owns_state = 651
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 199
+						owns_state = 198
+						owns_state = 192
+						owns_state = 834
+						owns_state = 197
+						owns_state = 203
+						owns_state = 201
+						owns_state = 202
+						owns_state = 194
+						owns_state = 241
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 226
+						owns_state = 221
+						owns_state = 196
+						owns_state = 137
+						owns_state = 200
+						owns_state = 227
+						owns_state = 228
+						owns_state = 218
+						owns_state = 245
+						owns_state = 217
+						owns_state = 829
+						owns_state = 239
+						owns_state = 255
+						owns_state = 257
+						owns_state = 260
+						owns_state = 240
+						owns_state = 220
+						owns_state = 222
+						owns_state = 224
+						owns_state = 205
+						owns_state = 223
+						owns_state = 265
+						owns_state = 258
+						owns_state = 254
+						owns_state = 401
+						owns_state = 251
+						owns_state = 250
+						owns_state = 252
+						owns_state = 256
+						owns_state = 833
+						owns_state = 249
+						owns_state = 399
+						owns_state = 652
+						owns_state = 651
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 199
+						owns_state = 198
+						owns_state = 192
+						owns_state = 834
+						owns_state = 197
+						owns_state = 203
+						owns_state = 201
+						owns_state = 202
+						owns_state = 194
+						owns_state = 241
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 226
+						owns_state = 221
+						owns_state = 196
+						owns_state = 137
+						owns_state = 200
+						owns_state = 227
+						owns_state = 228
+						owns_state = 218
+						owns_state = 245
+						owns_state = 217
+						owns_state = 829
+						owns_state = 239
+						owns_state = 255
+						owns_state = 257
+						owns_state = 260
+						owns_state = 240
+						owns_state = 220
+						owns_state = 222
+						owns_state = 224
+						owns_state = 205
+						owns_state = 223
+						owns_state = 265
+						owns_state = 258
+						owns_state = 254
+						owns_state = 401
+						owns_state = 251
+						owns_state = 250
+						owns_state = 252
+						owns_state = 256
+						owns_state = 833
+						owns_state = 249
+						owns_state = 399
+						owns_state = 652
+						owns_state = 651
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 199
+						owns_state = 198
+						owns_state = 192
+						owns_state = 834
+						owns_state = 197
+						owns_state = 203
+						owns_state = 201
+						owns_state = 202
+						owns_state = 194
+						owns_state = 241
+						owns_state = 193
+						owns_state = 225
+						owns_state = 259
+						owns_state = 226
+						owns_state = 221
+						owns_state = 196
+						owns_state = 137
+						owns_state = 200
+						owns_state = 227
+						owns_state = 228
+						owns_state = 218
+						owns_state = 245
+						owns_state = 217
+						owns_state = 829
+						owns_state = 239
+						owns_state = 255
+						owns_state = 257
+						owns_state = 260
+						owns_state = 240
+						owns_state = 220
+						owns_state = 222
+						owns_state = 224
+						owns_state = 205
+						owns_state = 223
+						owns_state = 265
+						owns_state = 258
+						owns_state = 254
+						owns_state = 401
+						owns_state = 251
+						owns_state = 250
+						owns_state = 252
+						owns_state = 256
+						owns_state = 833
+						owns_state = 249
+						owns_state = 399
+						owns_state = 652
+						owns_state = 651
+					}
+					has_war_with = ROOT
+				}
+			}
 		}
 	}
 	retake_caucasus = {
@@ -15333,6 +18391,248 @@ sarmatia_decisions_category = {
 						tag = POL 
 						ratio > 1.5 
 					}
+				}
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 234
+						owns_state = 238
+						owns_state = 235
+						owns_state = 237
+						owns_state = 236
+						owns_state = 232
+						owns_state = 269
+						owns_state = 821
+						owns_state = 828
+						owns_state = 827
+						owns_state = 311
+						owns_state = 826
+						owns_state = 231
+						owns_state = 233
+						owns_state = 230
+						owns_state = 229
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 234
+						owns_state = 238
+						owns_state = 235
+						owns_state = 237
+						owns_state = 236
+						owns_state = 232
+						owns_state = 269
+						owns_state = 821
+						owns_state = 828
+						owns_state = 827
+						owns_state = 311
+						owns_state = 826
+						owns_state = 231
+						owns_state = 233
+						owns_state = 230
+						owns_state = 229
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 234
+						owns_state = 238
+						owns_state = 235
+						owns_state = 237
+						owns_state = 236
+						owns_state = 232
+						owns_state = 269
+						owns_state = 821
+						owns_state = 828
+						owns_state = 827
+						owns_state = 311
+						owns_state = 826
+						owns_state = 231
+						owns_state = 233
+						owns_state = 230
+						owns_state = 229
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 234
+						owns_state = 238
+						owns_state = 235
+						owns_state = 237
+						owns_state = 236
+						owns_state = 232
+						owns_state = 269
+						owns_state = 821
+						owns_state = 828
+						owns_state = 827
+						owns_state = 311
+						owns_state = 826
+						owns_state = 231
+						owns_state = 233
+						owns_state = 230
+						owns_state = 229
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 234
+						owns_state = 238
+						owns_state = 235
+						owns_state = 237
+						owns_state = 236
+						owns_state = 232
+						owns_state = 269
+						owns_state = 821
+						owns_state = 828
+						owns_state = 827
+						owns_state = 311
+						owns_state = 826
+						owns_state = 231
+						owns_state = 233
+						owns_state = 230
+						owns_state = 229
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 234
+						owns_state = 238
+						owns_state = 235
+						owns_state = 237
+						owns_state = 236
+						owns_state = 232
+						owns_state = 269
+						owns_state = 821
+						owns_state = 828
+						owns_state = 827
+						owns_state = 311
+						owns_state = 826
+						owns_state = 231
+						owns_state = 233
+						owns_state = 230
+						owns_state = 229
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 234
+						owns_state = 238
+						owns_state = 235
+						owns_state = 237
+						owns_state = 236
+						owns_state = 232
+						owns_state = 269
+						owns_state = 821
+						owns_state = 828
+						owns_state = 827
+						owns_state = 311
+						owns_state = 826
+						owns_state = 231
+						owns_state = 233
+						owns_state = 230
+						owns_state = 229
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 234
+						owns_state = 238
+						owns_state = 235
+						owns_state = 237
+						owns_state = 236
+						owns_state = 232
+						owns_state = 269
+						owns_state = 821
+						owns_state = 828
+						owns_state = 827
+						owns_state = 311
+						owns_state = 826
+						owns_state = 231
+						owns_state = 233
+						owns_state = 230
+						owns_state = 229
+					}
+					has_war_with = ROOT
 				}
 			}
 		}
@@ -15495,6 +18795,264 @@ sarmatia_decisions_category = {
 					}
 				}
 			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 407
+						owns_state = 406
+						owns_state = 402
+						owns_state = 881
+						owns_state = 404
+						owns_state = 585
+						owns_state = 830
+						owns_state = 823
+						owns_state = 831
+						owns_state = 587
+						owns_state = 584
+						owns_state = 832
+						owns_state = 742
+						owns_state = 732
+						owns_state = 405
+						owns_state = 586
+						owns_state = 589
+						owns_state = 588
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 407
+						owns_state = 406
+						owns_state = 402
+						owns_state = 881
+						owns_state = 404
+						owns_state = 585
+						owns_state = 830
+						owns_state = 823
+						owns_state = 831
+						owns_state = 587
+						owns_state = 584
+						owns_state = 832
+						owns_state = 742
+						owns_state = 732
+						owns_state = 405
+						owns_state = 586
+						owns_state = 589
+						owns_state = 588
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 407
+						owns_state = 406
+						owns_state = 402
+						owns_state = 881
+						owns_state = 404
+						owns_state = 585
+						owns_state = 830
+						owns_state = 823
+						owns_state = 831
+						owns_state = 587
+						owns_state = 584
+						owns_state = 832
+						owns_state = 742
+						owns_state = 732
+						owns_state = 405
+						owns_state = 586
+						owns_state = 589
+						owns_state = 588
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 407
+						owns_state = 406
+						owns_state = 402
+						owns_state = 881
+						owns_state = 404
+						owns_state = 585
+						owns_state = 830
+						owns_state = 823
+						owns_state = 831
+						owns_state = 587
+						owns_state = 584
+						owns_state = 832
+						owns_state = 742
+						owns_state = 732
+						owns_state = 405
+						owns_state = 586
+						owns_state = 589
+						owns_state = 588
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 407
+						owns_state = 406
+						owns_state = 402
+						owns_state = 881
+						owns_state = 404
+						owns_state = 585
+						owns_state = 830
+						owns_state = 823
+						owns_state = 831
+						owns_state = 587
+						owns_state = 584
+						owns_state = 832
+						owns_state = 742
+						owns_state = 732
+						owns_state = 405
+						owns_state = 586
+						owns_state = 589
+						owns_state = 588
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 407
+						owns_state = 406
+						owns_state = 402
+						owns_state = 881
+						owns_state = 404
+						owns_state = 585
+						owns_state = 830
+						owns_state = 823
+						owns_state = 831
+						owns_state = 587
+						owns_state = 584
+						owns_state = 832
+						owns_state = 742
+						owns_state = 732
+						owns_state = 405
+						owns_state = 586
+						owns_state = 589
+						owns_state = 588
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 407
+						owns_state = 406
+						owns_state = 402
+						owns_state = 881
+						owns_state = 404
+						owns_state = 585
+						owns_state = 830
+						owns_state = 823
+						owns_state = 831
+						owns_state = 587
+						owns_state = 584
+						owns_state = 832
+						owns_state = 742
+						owns_state = 732
+						owns_state = 405
+						owns_state = 586
+						owns_state = 589
+						owns_state = 588
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 407
+						owns_state = 406
+						owns_state = 402
+						owns_state = 881
+						owns_state = 404
+						owns_state = 585
+						owns_state = 830
+						owns_state = 823
+						owns_state = 831
+						owns_state = 587
+						owns_state = 584
+						owns_state = 832
+						owns_state = 742
+						owns_state = 732
+						owns_state = 405
+						owns_state = 586
+						owns_state = 589
+						owns_state = 588
+					}
+					has_war_with = ROOT
+				}
+			}
 		}
 	}
 	retake_siberia = {
@@ -15625,6 +19183,216 @@ sarmatia_decisions_category = {
 					}
 				}
 			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 582
+						owns_state = 573
+						owns_state = 572
+						owns_state = 653
+						owns_state = 583
+						owns_state = 590
+						owns_state = 882
+						owns_state = 40
+						owns_state = 654
+						owns_state = 570
+						owns_state = 571
+						owns_state = 403
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 582
+						owns_state = 573
+						owns_state = 572
+						owns_state = 653
+						owns_state = 583
+						owns_state = 590
+						owns_state = 882
+						owns_state = 40
+						owns_state = 654
+						owns_state = 570
+						owns_state = 571
+						owns_state = 403
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 582
+						owns_state = 573
+						owns_state = 572
+						owns_state = 653
+						owns_state = 583
+						owns_state = 590
+						owns_state = 882
+						owns_state = 40
+						owns_state = 654
+						owns_state = 570
+						owns_state = 571
+						owns_state = 403
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 582
+						owns_state = 573
+						owns_state = 572
+						owns_state = 653
+						owns_state = 583
+						owns_state = 590
+						owns_state = 882
+						owns_state = 40
+						owns_state = 654
+						owns_state = 570
+						owns_state = 571
+						owns_state = 403
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 582
+						owns_state = 573
+						owns_state = 572
+						owns_state = 653
+						owns_state = 583
+						owns_state = 590
+						owns_state = 882
+						owns_state = 40
+						owns_state = 654
+						owns_state = 570
+						owns_state = 571
+						owns_state = 403
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 582
+						owns_state = 573
+						owns_state = 572
+						owns_state = 653
+						owns_state = 583
+						owns_state = 590
+						owns_state = 882
+						owns_state = 40
+						owns_state = 654
+						owns_state = 570
+						owns_state = 571
+						owns_state = 403
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 582
+						owns_state = 573
+						owns_state = 572
+						owns_state = 653
+						owns_state = 583
+						owns_state = 590
+						owns_state = 882
+						owns_state = 40
+						owns_state = 654
+						owns_state = 570
+						owns_state = 571
+						owns_state = 403
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 582
+						owns_state = 573
+						owns_state = 572
+						owns_state = 653
+						owns_state = 583
+						owns_state = 590
+						owns_state = 882
+						owns_state = 40
+						owns_state = 654
+						owns_state = 570
+						owns_state = 571
+						owns_state = 403
+					}
+					has_war_with = ROOT
+				}
+			}
 		}
 	}
 	retake_india = {
@@ -15735,6 +19503,184 @@ sarmatia_decisions_category = {
 					}
 				}
 			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 267
+						owns_state = 415
+						owns_state = 442
+						owns_state = 445
+						owns_state = 444
+						owns_state = 443
+						owns_state = 440
+						owns_state = 441
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 267
+						owns_state = 415
+						owns_state = 442
+						owns_state = 445
+						owns_state = 444
+						owns_state = 443
+						owns_state = 440
+						owns_state = 441
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 267
+						owns_state = 415
+						owns_state = 442
+						owns_state = 445
+						owns_state = 444
+						owns_state = 443
+						owns_state = 440
+						owns_state = 441
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 267
+						owns_state = 415
+						owns_state = 442
+						owns_state = 445
+						owns_state = 444
+						owns_state = 443
+						owns_state = 440
+						owns_state = 441
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 267
+						owns_state = 415
+						owns_state = 442
+						owns_state = 445
+						owns_state = 444
+						owns_state = 443
+						owns_state = 440
+						owns_state = 441
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 267
+						owns_state = 415
+						owns_state = 442
+						owns_state = 445
+						owns_state = 444
+						owns_state = 443
+						owns_state = 440
+						owns_state = 441
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 267
+						owns_state = 415
+						owns_state = 442
+						owns_state = 445
+						owns_state = 444
+						owns_state = 443
+						owns_state = 440
+						owns_state = 441
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 267
+						owns_state = 415
+						owns_state = 442
+						owns_state = 445
+						owns_state = 444
+						owns_state = 443
+						owns_state = 440
+						owns_state = 441
+					}
+					has_war_with = ROOT
+				}
+			}
 		}
 	}
 	retake_dzungaria = {
@@ -15838,6 +19784,176 @@ sarmatia_decisions_category = {
 						tag = POL 
 						ratio > 1.5 
 					}
+				}
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 619
+						owns_state = 287
+						owns_state = 759
+						owns_state = 617
+						owns_state = 618
+						owns_state = 760
+						owns_state = 818
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 619
+						owns_state = 287
+						owns_state = 759
+						owns_state = 617
+						owns_state = 618
+						owns_state = 760
+						owns_state = 818
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 619
+						owns_state = 287
+						owns_state = 759
+						owns_state = 617
+						owns_state = 618
+						owns_state = 760
+						owns_state = 818
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 619
+						owns_state = 287
+						owns_state = 759
+						owns_state = 617
+						owns_state = 618
+						owns_state = 760
+						owns_state = 818
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 619
+						owns_state = 287
+						owns_state = 759
+						owns_state = 617
+						owns_state = 618
+						owns_state = 760
+						owns_state = 818
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 619
+						owns_state = 287
+						owns_state = 759
+						owns_state = 617
+						owns_state = 618
+						owns_state = 760
+						owns_state = 818
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 619
+						owns_state = 287
+						owns_state = 759
+						owns_state = 617
+						owns_state = 618
+						owns_state = 760
+						owns_state = 818
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 619
+						owns_state = 287
+						owns_state = 759
+						owns_state = 617
+						owns_state = 618
+						owns_state = 760
+						owns_state = 818
+					}
+					has_war_with = ROOT
 				}
 			}
 		}
@@ -16470,6 +20586,38 @@ wettins_foreign_policy_decisions_category = {
 				has_war = yes
 				add = -200
 			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 74 
+						owns_state = 72
+						owns_state = 72
+						owns_state = 9
+						owns_state = 69
+					}
+					has_war_with = ROOT
+				}
+			}
 		}
 	}
 	take_slovakia_wettins = {
@@ -16709,6 +20857,36 @@ wettins_foreign_policy_decisions_category = {
 			modifier = {
 				has_war = yes
 				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 70 
+						owns_state = 71
+						owns_state = 664
+						owns_state = 73
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 70 
+						owns_state = 71
+						owns_state = 664
+						owns_state = 73
+					}
+					has_war_with = ROOT
+				}
 			}
 		}
 	}
@@ -16981,6 +21159,34 @@ wettins_foreign_policy_decisions_category = {
 			modifier = {
 				has_war = yes
 				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 85
+						owns_state = 63
+						owns_state = 62
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 85
+						owns_state = 63
+						owns_state = 62
+					}
+					has_war_with = ROOT
+				}
 			}
 		}
 	}
@@ -17265,6 +21471,36 @@ wettins_foreign_policy_decisions_category = {
 			modifier = {
 				has_war = yes
 				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 68 
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 68 
+						owns_state = 65
+						owns_state = 64
+						owns_state = 61
+					}
+					has_war_with = ROOT
+				}
 			}
 		}
 	}
@@ -18308,6 +22544,44 @@ wettins_foreign_policy_decisions_category = {
 				has_war = yes
 				add = -200
 			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 203
+						owns_state = 192
+						owns_state = 197
+						owns_state = 834
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 202
+						owns_state = 201
+						owns_state = 199
+						owns_state = 198
+						owns_state = 203
+						owns_state = 192
+						owns_state = 197
+						owns_state = 834
+					}
+					has_war_with = ROOT
+				}
+			}
 		}
 	}
 	wettins_integrate_ukraine = {
@@ -18644,6 +22918,40 @@ wettins_foreign_policy_decisions_category = {
 				has_war = yes
 				add = -200
 			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 194
+						owns_state = 204
+						owns_state = 206
+						owns_state = 207
+						owns_state = 95
+						owns_state = 96
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 194
+						owns_state = 204
+						owns_state = 206
+						owns_state = 207
+						owns_state = 95
+						owns_state = 96
+					}
+					has_war_with = ROOT
+				}
+			}
 		}
 	}
 	wettins_integrate_belarus = {
@@ -18971,6 +23279,40 @@ wettins_foreign_policy_decisions_category = {
 			modifier = {
 				has_war = yes
 				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 11
+						owns_state = 814
+						owns_state = 189
+						owns_state = 815
+						owns_state = 809
+						owns_state = 190
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 11
+						owns_state = 814
+						owns_state = 189
+						owns_state = 815
+						owns_state = 809
+						owns_state = 190
+					}
+					has_war_with = ROOT
+				}
 			}
 		}
 	}
@@ -19635,6 +23977,36 @@ royal_affairs_decisions_category = {
 			modifier = {
 				has_war = yes
 				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 117
+						owns_state = 849
+						owns_state = 156
+						owns_state = 115
+					}
+					has_war_with = ROOT
+				}
 			}
 		}
 	}

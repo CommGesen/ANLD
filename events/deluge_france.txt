@@ -543,7 +543,7 @@ country_event = {
 					communism > 0.25
 				}
 				set_global_flag = French_Civil_War_has_happened
-				country_event = { days = 1 id = deluge_france.19 }
+				#country_event = { days = 1 id = deluge_france.19 }
 				if = {
 					limit = {
 						has_government = democratic
@@ -614,7 +614,7 @@ country_event = {
 					communism > 0.25
 				}
 				set_global_flag = French_Civil_War_has_happened
-				country_event = { days = 1 id = deluge_france.19 }
+				#country_event = { days = 1 id = deluge_france.19 }
 				if = {
 					limit = {
 						has_government = democratic
@@ -728,7 +728,7 @@ country_event = {
 					communism > 0.25
 				}
 				set_global_flag = French_Civil_War_has_happened
-				country_event = { days = 1 id = deluge_france.19 }
+				#country_event = { days = 1 id = deluge_france.19 }
 				if = {
 					limit = {
 						has_government = democratic
@@ -799,7 +799,7 @@ country_event = {
 					communism > 0.25
 				}
 				set_global_flag = French_Civil_War_has_happened
-				country_event = { days = 1 id = deluge_france.19 }
+				#country_event = { days = 1 id = deluge_france.19 }
 				if = {
 					limit = {
 						has_government = democratic
@@ -915,7 +915,7 @@ country_event = {
 					communism > 0.25
 				}
 				set_global_flag = French_Civil_War_has_happened
-				country_event = { days = 1 id = deluge_france.19 }
+				#country_event = { days = 1 id = deluge_france.19 }
 				if = {
 					limit = {
 						has_government = democratic
@@ -986,7 +986,7 @@ country_event = {
 					communism > 0.25
 				}
 				set_global_flag = French_Civil_War_has_happened
-				country_event = { days = 1 id = deluge_france.19 }
+				#country_event = { days = 1 id = deluge_france.19 }
 				if = {
 					limit = {
 						has_government = democratic

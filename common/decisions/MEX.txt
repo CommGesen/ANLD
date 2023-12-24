@@ -1,11 +1,11 @@
 political_actions = {
-	change_surname = {
+	MEX_change_surname_to_iturbide = {
 		icon = GFX_decision_generic_decision
 		allowed = {
 			original_tag = MEX
 		}
 		visible = {
-			always = no
+			has_country_flag = MEX_has_habsburg_surname
 		}
 		available = {
 			
@@ -14,25 +14,35 @@ political_actions = {
 		fire_only_once = no
 		days_re_enable = 1
 		complete_effect = {
-			if = {
-				limit = {
-					has_country_flag = MEX_has_habsburg_surname
-				}
-				MEX = {
-					set_country_flag = MEX_has_iturbide_surname
-					clr_country_flag = MEX_has_habsburg_surname
-					set_party_name = { ideology = neutrality long_name = MEX_de_iturbide_party_long name = MEX_de_iturbide_party }
-				}
+			MEX = {
+				set_country_flag = MEX_has_iturbide_surname
+				clr_country_flag = MEX_has_habsburg_surname
+				set_party_name = { ideology = neutrality long_name = MEX_de_iturbide_party_long name = MEX_de_iturbide_party }
 			}
-			if = {
-				limit = {
-					has_country_flag = MEX_has_iturbide_surname
-				}
-				MEX = {
-					set_country_flag = MEX_has_habsburg_surname
-					clr_country_flag = MEX_has_iturbide_surname
-					set_party_name = { ideology = neutrality long_name = MEX_neutrality_party_long name = MEX_neutrality_party }
-				}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	MEX_change_surname_to_habsburg = {
+		icon = GFX_decision_generic_decision
+		allowed = {
+			original_tag = MEX
+		}
+		visible = {
+			has_country_flag = MEX_has_iturbide_surname
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 1
+		complete_effect = {
+			MEX = {
+				set_country_flag = MEX_has_habsburg_surname
+				clr_country_flag = MEX_has_iturbide_surname
+				set_party_name = { ideology = neutrality long_name = MEX_neutrality_party_long name = MEX_neutrality_party }
 			}
 		}
 		ai_will_do = {
