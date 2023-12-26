@@ -2431,6 +2431,7 @@ seek_enemies_category = {
 					}
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = { 
@@ -2477,6 +2478,7 @@ seek_enemies_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
@@ -2636,6 +2638,10 @@ seek_enemies_category = {
 			modifier = {
 				factor = 0
 				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
 			}
 			modifier = {
 				factor = 0
@@ -2714,6 +2720,7 @@ seek_enemies_category = {
 					}
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = { 
@@ -2752,6 +2759,7 @@ seek_enemies_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
@@ -2898,6 +2906,10 @@ seek_enemies_category = {
 			}
 			modifier = {
 				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
+			modifier = {
+				factor = 0
 				any_country = {
 					OR = {
 						owns_state = 85
@@ -2969,6 +2981,7 @@ seek_enemies_category = {
 					}
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = { limit = { NOT = {
@@ -3004,6 +3017,7 @@ seek_enemies_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
@@ -3150,6 +3164,10 @@ seek_enemies_category = {
 			}
 			modifier = {
 				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
+			modifier = {
+				factor = 0
 				any_country = {
 					OR = {
 						owns_state = 80
@@ -3224,6 +3242,7 @@ seek_enemies_category = {
 					}
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = { limit = { NOT = {
@@ -3261,6 +3280,7 @@ seek_enemies_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
@@ -3415,6 +3435,10 @@ seek_enemies_category = {
 			}
 			modifier = {
 				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
+			modifier = {
+				factor = 0
 				any_country = {
 					OR = {
 						owns_state = 64
@@ -3492,6 +3516,7 @@ seek_enemies_category = {
 					}
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = { limit = { NOT = {
@@ -3531,6 +3556,7 @@ seek_enemies_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
@@ -3685,6 +3711,10 @@ seek_enemies_category = {
 			}
 			modifier = {
 				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
+			modifier = {
+				factor = 0
 				any_country = {
 					OR = {
 						owns_state = 196
@@ -3798,6 +3828,7 @@ seek_enemies_category = {
 					}
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = { limit = { NOT = {
@@ -3873,6 +3904,7 @@ seek_enemies_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
@@ -4096,6 +4128,10 @@ seek_enemies_category = {
 			modifier = {
 				factor = 0
 				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
 			}
 			modifier = {
 				factor = 0
@@ -4214,6 +4250,7 @@ seek_enemies_category = {
 					}
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = { limit = { NOT = {
@@ -4273,6 +4310,7 @@ seek_enemies_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
@@ -4464,6 +4502,10 @@ seek_enemies_category = {
 			modifier = {
 				factor = 0
 				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
 			}
 			modifier = {
 				factor = 0
@@ -4570,6 +4612,7 @@ seek_enemies_category = {
 					}
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = { limit = { NOT = {
@@ -4625,6 +4668,7 @@ seek_enemies_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
@@ -4811,6 +4855,10 @@ seek_enemies_category = {
 			}
 			modifier = {
 				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
+			modifier = {
+				factor = 0
 				any_country = {
 					OR = {
 						owns_state = 241
@@ -4877,6 +4925,7 @@ seek_enemies_category = {
 					id = generic.26
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = { 
@@ -4886,6 +4935,7 @@ seek_enemies_category = {
 					target = SWE
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
@@ -4986,6 +5036,10 @@ seek_enemies_category = {
 			}
 			modifier = {
 				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
+			modifier = {
+				factor = 0
 				has_wargoal_against = SWE
 			}
 			modifier = {
@@ -5020,6 +5074,7 @@ seek_enemies_category = {
 					id = generic.26
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = { 
@@ -5029,6 +5084,7 @@ seek_enemies_category = {
 					target = SOV
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
@@ -5129,6 +5185,10 @@ seek_enemies_category = {
 			}
 			modifier = {
 				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
+			modifier = {
+				factor = 0
 				has_wargoal_against = SOV
 			}
 			modifier = {
@@ -5163,6 +5223,7 @@ seek_enemies_category = {
 					id = generic.26
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = { 
@@ -5172,6 +5233,7 @@ seek_enemies_category = {
 					target = TUR
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
@@ -5272,6 +5334,10 @@ seek_enemies_category = {
 			}
 			modifier = {
 				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
+			modifier = {
+				factor = 0
 				has_wargoal_against = AUS
 			}
 			modifier = {
@@ -5306,6 +5372,7 @@ seek_enemies_category = {
 					id = generic.26
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = { 
@@ -5315,6 +5382,7 @@ seek_enemies_category = {
 					target = FRA
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
@@ -5412,6 +5480,10 @@ seek_enemies_category = {
 			modifier = {
 				factor = 0
 				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
 			}
 			modifier = {
 				factor = 0
@@ -7636,7 +7708,12 @@ economy_decisions = {
 		icon = GFX_decision_generic_construction
 		is_good = no
 		selectable_mission = no
-		cancel_if_not_visible = yes
+		#cancel_if_not_visible = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 92
+			}
+		}
 		visible = {
 			NOT = {
 				92 = {
@@ -7669,7 +7746,12 @@ economy_decisions = {
 		icon = GFX_decision_generic_construction
 		is_good = no
 		selectable_mission = no
-		cancel_if_not_visible = yes
+		#cancel_if_not_visible = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 90
+			}
+		}
 		visible = {
 			NOT = {
 				90 = {
@@ -7702,7 +7784,12 @@ economy_decisions = {
 		icon = GFX_decision_generic_construction
 		is_good = no
 		selectable_mission = no
-		cancel_if_not_visible = yes
+		#cancel_if_not_visible = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 88
+			}
+		}
 		visible = {
 			NOT = {
 				88 = {
@@ -10278,6 +10365,7 @@ export_catholicism_category = {
 					id = generic.26
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			POL = {
@@ -10286,6 +10374,7 @@ export_catholicism_category = {
 					target = FROM
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
@@ -10326,6 +10415,10 @@ export_catholicism_category = {
 			modifier = {
 				factor = 0
 				has_war_with = FROM
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
 			}
 		}
 	}
@@ -10367,6 +10460,7 @@ export_catholicism_category = {
 					id = generic.26
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			POL = {
@@ -10375,6 +10469,7 @@ export_catholicism_category = {
 					target = FROM
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
@@ -10415,6 +10510,10 @@ export_catholicism_category = {
 			modifier = {
 				factor = 0
 				has_war_with = FROM
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
 			}
 		}
 	}
@@ -10456,6 +10555,7 @@ export_catholicism_category = {
 					id = generic.26
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			POL = {
@@ -10464,6 +10564,7 @@ export_catholicism_category = {
 					target = FROM
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
@@ -10504,6 +10605,10 @@ export_catholicism_category = {
 			modifier = {
 				factor = 0
 				has_war_with = FROM
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
 			}
 		}
 	}
@@ -10543,6 +10648,7 @@ export_catholicism_category = {
 					id = generic.26
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			POL = {
@@ -10551,6 +10657,7 @@ export_catholicism_category = {
 					target = FROM
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
@@ -10591,6 +10698,10 @@ export_catholicism_category = {
 			modifier = {
 				factor = 0
 				has_war_with = FROM
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
 			}
 		}
 	}
@@ -11738,6 +11849,7 @@ european_cooperation_category = {
 					id = generic.26
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			POL = {
@@ -11746,6 +11858,7 @@ european_cooperation_category = {
 					target = FROM
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
@@ -11790,6 +11903,10 @@ european_cooperation_category = {
 				ROOT = {
 					has_war_with = FROM
 				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
 			}
 		}
 	}
@@ -12214,12 +12331,14 @@ new_revolution_category = {
 					id = generic.26
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			create_wargoal = {
 				type = topple_government
 				target = FROM
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
@@ -12264,6 +12383,10 @@ new_revolution_category = {
 				ROOT = {
 					has_war_with = FROM
 				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
 			}
 		}
 	}
@@ -13626,6 +13749,7 @@ polish_new_order_decisions_category = {
 					id = generic.26
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = { 
@@ -13635,6 +13759,7 @@ polish_new_order_decisions_category = {
 					target = LOU
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
@@ -13679,6 +13804,10 @@ polish_new_order_decisions_category = {
 				ROOT = {
 					has_war_with = LOU
 				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
 			}
 		}
 	}
@@ -13746,6 +13875,7 @@ polish_new_order_decisions_category = {
 					id = generic.26
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			every_country = {
@@ -13771,6 +13901,7 @@ polish_new_order_decisions_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
@@ -13990,6 +14121,10 @@ polish_new_order_decisions_category = {
 					has_war_with = ROOT
 				}
 			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
 		}
 	}
 	pacify_iberia = {
@@ -14116,6 +14251,7 @@ polish_new_order_decisions_category = {
 					id = generic.26
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			every_country = {
@@ -14161,6 +14297,7 @@ polish_new_order_decisions_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
@@ -14505,6 +14642,10 @@ polish_new_order_decisions_category = {
 			modifier = {
 				factor = 0
 				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
 			}
 			modifier = {
 				factor = 0
@@ -14748,6 +14889,7 @@ polish_new_order_decisions_category = {
 					id = generic.26
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			every_country = {
@@ -14807,6 +14949,7 @@ polish_new_order_decisions_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
@@ -15266,6 +15409,10 @@ polish_new_order_decisions_category = {
 			}
 			modifier = {
 				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
+			modifier = {
+				factor = 0
 				any_country = {
 					OR = {
 						owns_state = 58
@@ -15455,6 +15602,7 @@ polish_new_order_decisions_category = {
 					id = deluge_poland_foreign.98
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			every_country = {
@@ -15528,9 +15676,14 @@ polish_new_order_decisions_category = {
 			61 = {
 				add_claim_by = POL
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
 			modifier = {
 				add = 50
 				any_country = {
@@ -15882,6 +16035,7 @@ polish_new_order_decisions_category = {
 					id = generic.26
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			every_country = {
@@ -15910,9 +16064,14 @@ polish_new_order_decisions_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
 			modifier = {
 				add = 50
 				any_country = {
@@ -16184,6 +16343,7 @@ polish_new_order_decisions_category = {
 					id = generic.26
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = { 
@@ -16193,9 +16353,14 @@ polish_new_order_decisions_category = {
 					target = AUS
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
 			modifier = {
 				check_variable = { AUS.num_of_factories < ROOT.num_of_factories }
 				add = 40
@@ -16331,6 +16496,7 @@ polish_new_order_decisions_category = {
 					id = generic.26
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = { 
@@ -16340,9 +16506,14 @@ polish_new_order_decisions_category = {
 					target = SOV
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
 			modifier = {
 				check_variable = { SOV.num_of_factories < ROOT.num_of_factories }
 				add = 40
@@ -16478,6 +16649,7 @@ polish_new_order_decisions_category = {
 					id = generic.26
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = { 
@@ -16487,9 +16659,14 @@ polish_new_order_decisions_category = {
 					target = ENG
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
 			modifier = {
 				check_variable = { ENG.num_of_factories < ROOT.num_of_factories }
 				add = 40
@@ -16755,9 +16932,6 @@ polish_new_order_decisions_category = {
 				}
 			}
 		}
-		ai_will_do = {
-			factor = 5
-		}
 		cost = 60
 		days_remove = 30
 		complete_effect = {
@@ -16766,6 +16940,7 @@ polish_new_order_decisions_category = {
 					id = generic.26
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			POL = {
@@ -16774,9 +16949,14 @@ polish_new_order_decisions_category = {
 					target = FROM
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
 			modifier = {
 				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
 				add = 40
@@ -16876,7 +17056,7 @@ sarmatia_decisions_category = {
 		fire_only_once = no
 		days_re_enable = 10
 		complete_effect = {
-			
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			PER = {
@@ -16884,6 +17064,7 @@ sarmatia_decisions_category = {
 					id = deluge_poland_foreign.102
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
@@ -16912,6 +17093,10 @@ sarmatia_decisions_category = {
 						ratio < 1.5 
 					}
 				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
 			}
 		}
 	}
@@ -17096,6 +17281,7 @@ sarmatia_decisions_category = {
 				add_state_claim = 78
 				add_state_claim = 847
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			every_country = {
@@ -17131,9 +17317,14 @@ sarmatia_decisions_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
 			modifier = {
 				add = 50
 				any_country = {
@@ -17572,6 +17763,7 @@ sarmatia_decisions_category = {
 				add_state_claim = 652
 				add_state_claim = 651
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			every_country = {
@@ -17636,9 +17828,14 @@ sarmatia_decisions_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
 			modifier = {
 				add = 50
 				any_country = {
@@ -18305,6 +18502,7 @@ sarmatia_decisions_category = {
 				add_state_claim = 230
 				add_state_claim = 229
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			every_country = {
@@ -18336,9 +18534,14 @@ sarmatia_decisions_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
 			modifier = {
 				add = 50
 				any_country = {
@@ -18699,6 +18902,7 @@ sarmatia_decisions_category = {
 				add_state_claim = 589
 				add_state_claim = 588
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			every_country = {
@@ -18734,6 +18938,7 @@ sarmatia_decisions_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
@@ -18765,6 +18970,10 @@ sarmatia_decisions_category = {
 						ratio < 1.5 
 					}
 				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
 			}
 			modifier = {
 				add = -50
@@ -19105,6 +19314,7 @@ sarmatia_decisions_category = {
 				add_state_claim = 571
 				add_state_claim = 403
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			every_country = {
@@ -19134,9 +19344,14 @@ sarmatia_decisions_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
 			modifier = {
 				add = 50
 				any_country = {
@@ -19437,6 +19652,7 @@ sarmatia_decisions_category = {
 				add_state_claim = 440
 				add_state_claim = 441
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			every_country = {
@@ -19462,6 +19678,7 @@ sarmatia_decisions_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
@@ -19534,6 +19751,10 @@ sarmatia_decisions_category = {
 					is_in_faction = yes
 				}
 				add = -100
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
 			}
 			modifier = {
 				any_country = {
@@ -19723,6 +19944,7 @@ sarmatia_decisions_category = {
 				add_state_claim = 760
 				add_state_claim = 818
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			every_country = {
@@ -19747,6 +19969,7 @@ sarmatia_decisions_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 1
@@ -19785,6 +20008,10 @@ sarmatia_decisions_category = {
 						ratio > 1.5 
 					}
 				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
 			}
 			modifier = {
 				any_country = {
@@ -20386,6 +20613,7 @@ wettins_foreign_policy_decisions_category = {
 					}
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = { 
@@ -20435,6 +20663,7 @@ wettins_foreign_policy_decisions_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
@@ -20617,6 +20846,10 @@ wettins_foreign_policy_decisions_category = {
 					}
 					has_war_with = ROOT
 				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
 			}
 		}
 	}
@@ -20670,6 +20903,7 @@ wettins_foreign_policy_decisions_category = {
 					}
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = {
@@ -20715,6 +20949,7 @@ wettins_foreign_policy_decisions_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
@@ -20887,6 +21122,10 @@ wettins_foreign_policy_decisions_category = {
 					}
 					has_war_with = ROOT
 				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
 			}
 		}
 	}
@@ -20984,6 +21223,7 @@ wettins_foreign_policy_decisions_category = {
 					}
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = {
@@ -21025,6 +21265,7 @@ wettins_foreign_policy_decisions_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
@@ -21121,6 +21362,10 @@ wettins_foreign_policy_decisions_category = {
 						is_guaranteed_by = AUS
 					}
 				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
 			}
 			modifier = {
 				add = 100
@@ -21284,6 +21529,7 @@ wettins_foreign_policy_decisions_category = {
 					}
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = {
@@ -21329,9 +21575,14 @@ wettins_foreign_policy_decisions_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
 			modifier = {
 				any_country = {
 					OR = {
@@ -22308,6 +22559,7 @@ wettins_foreign_policy_decisions_category = {
 					}
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = {
@@ -22331,7 +22583,7 @@ wettins_foreign_policy_decisions_category = {
 				add_state_claim = 192
 				add_state_claim = 197
 				add_state_claim = 834
-			} 
+			}
 			if = { 
 				limit = {
 					NOT = { 
@@ -22369,6 +22621,7 @@ wettins_foreign_policy_decisions_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
@@ -22500,6 +22753,10 @@ wettins_foreign_policy_decisions_category = {
 						is_guaranteed_by = AUS
 					}
 				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
 			}
 			modifier = {
 				add = 100
@@ -22706,6 +22963,7 @@ wettins_foreign_policy_decisions_category = {
 					}
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = {
@@ -22759,9 +23017,14 @@ wettins_foreign_policy_decisions_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
 			modifier = {
 				any_country = {
 					OR = {
@@ -23068,6 +23331,7 @@ wettins_foreign_policy_decisions_category = {
 					}
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			if = {
@@ -23121,9 +23385,14 @@ wettins_foreign_policy_decisions_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
 			modifier = {
 				any_country = {
 					OR = {
@@ -23802,6 +24071,7 @@ royal_affairs_decisions_category = {
 					id = generic.26
 				}
 			}
+			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
 			117 = {
@@ -23835,9 +24105,14 @@ royal_affairs_decisions_category = {
 					}
 				}
 			}
+			clr_country_flag = AI_making_wargoal
 		}
 		ai_will_do = {
 			base = 10
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
 			modifier = {
 				any_country = {
 					OR = {

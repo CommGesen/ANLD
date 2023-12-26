@@ -5066,6 +5066,7 @@ country_event = {##lore event - Janusz Kwiek becomes king of Polish gypsies
 	title = deluge_poland.112.t
 	desc = deluge_poland.112.d
 	picture = GFX_report_event_polish_gypsy_king_coronation
+	fire_only_once = yes
 	trigger = {
 		tag = POL
 		date > 1937.7.4
@@ -7105,7 +7106,10 @@ country_event = {##POL asks FIN if they want to get independent
 			type = infantry_equipment
 			amount = 5000
 		}
-		SOV = { set_autonomy = { target = FIN autonomy_state = autonomy_free } }
+		SOV = {
+			set_autonomy = { target = FIN autonomy_state = autonomy_free }
+			remove_from_faction = FIN
+		}
 		POL = {add_to_faction = FIN}
 		FIN = {
 			declare_war_on = {

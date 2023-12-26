@@ -1574,7 +1574,7 @@ ideas = {
 			}
 		}
 		POL_problems_in_administration = {
-			picture = POL_disjointed_industry
+			picture = spirit_POL_administrative_crisis
 			allowed = {
 				tag = POL
 			}
@@ -1594,7 +1594,7 @@ ideas = {
 			}
 		}
 		POL_lack_of_competent_workers = {
-			picture = FRA_matignon_agreements
+			picture = spirit_shortage_of_employees
 			allowed = {
 				tag = POL
 			}
@@ -1613,7 +1613,7 @@ ideas = {
 			}
 		}
 		POL_female_dominated_administration = {
-			picture = FRA_market_dynamism
+			picture = spirit_women_in_administration
 			allowed = {
 				tag = POL
 			}
@@ -1633,7 +1633,7 @@ ideas = {
 			}
 		}
 		POL_catholic_dominated_administration = {
-			picture = FRA_market_dynamism
+			picture = spirit_pro_catholic_administration
 			allowed = {
 				tag = POL
 			}
@@ -1693,7 +1693,7 @@ ideas = {
 			}
 		}
 		POL_catholic_army = {
-			picture = MEX_church_power_5
+			picture = spirit_catholic_army
 			allowed = {
 				tag = POL
 			}
@@ -1714,7 +1714,7 @@ ideas = {
 			}
 		}
 		POL_support_from_peasants = {
-			picture = ITA_battaglie_per_la_nascite
+			picture = spirit_peasant_support
 			allowed = {
 				tag = POL
 			}
@@ -1736,7 +1736,7 @@ ideas = {
 			}
 		}
 		POL_support_from_society = {
-			picture = ITA_battaglie_per_la_nascite
+			picture = spirit_universal_support
 			allowed = {
 				tag = POL
 			}
@@ -1760,7 +1760,7 @@ ideas = {
 			}
 		}
 		POL_private_schools = {
-			picture = jap_supremacy_of_will
+			picture = spirit_book_and_pen
 			allowed = {
 				tag = POL
 			}
@@ -1780,7 +1780,7 @@ ideas = {
 			}
 		}
 		POL_public_schools = {
-			picture = jap_supremacy_of_technology
+			picture = spirit_book_and_people
 			allowed = {
 				tag = POL
 			}
@@ -1800,7 +1800,7 @@ ideas = {
 			}
 		}
 		POL_private_schools_and_healthcare = {
-			picture = generic_constitutional_guarantees
+			picture = spirit_private_schools_and_healthcare
 			allowed = {
 				tag = POL
 			}
@@ -1821,7 +1821,7 @@ ideas = {
 			}
 		}
 		POL_public_schools_and_healthcare = {
-			picture = generic_morale_bonus
+			picture = spirit_public_schools_and_healthcare
 			allowed = {
 				tag = POL
 			}
@@ -1843,7 +1843,7 @@ ideas = {
 			}
 		}
 		POL_new_quality_of_life_psl = {
-			picture = generic_economic_increase
+			picture = spirit_new_quality_of_life_PSL
 			allowed = {
 				tag = POL
 			}
@@ -1866,7 +1866,7 @@ ideas = {
 			}
 		}
 		POL_new_quality_of_life_nd = {
-			picture = generic_goods_red_bonus
+			picture = spirit_new_quality_of_life_ND
 			allowed = {
 				tag = POL
 			}
@@ -1889,7 +1889,7 @@ ideas = {
 			}
 		}
 		POL_member_of_crusade = {
-			picture = FRA_scw_intervention_nationalists_focus
+			picture = spirit_crusader_helmet
 			allowed = {
 				
 			}
@@ -1907,7 +1907,7 @@ ideas = {
 			}
 		}
 		POL_member_of_crusade_2 = {
-			picture = FRA_scw_intervention_nationalists_focus
+			picture = spirit_crusader_helmet
 			allowed = {
 				
 			}
@@ -2168,7 +2168,7 @@ ideas = {
 			}
 		}
 		POL_concessions_to_christians_idea = {
-			picture = MEX_church_power_5
+			picture = spirit_concessions_to_christians
 			allowed = {
 				tag = POL
 			}
@@ -2190,7 +2190,7 @@ ideas = {
 			}
 		}
 		POL_vatican_support_idea = {
-			picture = MEX_church_power_5
+			picture = spirit_vatican_support
 			allowed = {
 				tag = POL
 			}
@@ -2213,7 +2213,7 @@ ideas = {
 			}
 		}
 		POL_vatican_support_idea_2 = {
-			picture = MEX_church_power_5
+			picture = spirit_vatican_support
 			allowed = {
 				tag = POL
 			}
@@ -2523,7 +2523,7 @@ ideas = {
 			}
 		}
 		POL_revolutionary_eucharist_idea = {
-			picture = home_of_revolution
+			picture = spirit_pro_government_church
 			allowed = {
 				tag = POL
 			}
@@ -2547,7 +2547,7 @@ ideas = {
 			}
 		}
 		POL_socialist_eucharist_idea = {
-			picture = generic_production_bonus
+			picture = spirit_autonomous_church
 			allowed = {
 				tag = POL
 			}
@@ -2867,7 +2867,7 @@ ideas = {
 			}
 		}
 		POL_nobility_excluded_from_obligatory_army_service = {
-			picture = generic_monarchist_uprising 
+			picture = spirit_POL_nobility_released_from_army_service 
 			allowed = {
 				tag = POL
 			}
@@ -2887,7 +2887,7 @@ ideas = {
 			}
 		}
 		POL_nobility_rules_the_army = {
-			picture = tur_disorganised_armed_forces 
+			picture = spirit_POL_nobility_leads_the_army 
 			allowed = {
 				tag = POL
 			}
@@ -2909,7 +2909,7 @@ ideas = {
 			}
 		}
 		POL_professional_army_idea = {
-			picture = chi_army_corruption2 
+			picture = spirit_POL_professional_army 
 			allowed = {
 				tag = POL
 			}
@@ -2929,7 +2929,7 @@ ideas = {
 			}
 		}
 		POL_professional_army_idea_2 = {
-			picture = chi_army_corruption2 
+			picture = spirit_POL_professional_army 
 			allowed = {
 				tag = POL
 			}
@@ -2951,7 +2951,7 @@ ideas = {
 			}
 		}
 		POL_cut_off_greedy_nobility_idea = {
-			picture = generic_economic_increase 
+			picture = spirit_away_from_money 
 			allowed = {
 				tag = POL
 			}
@@ -3039,7 +3039,7 @@ ideas = {
 			}
 		}
 		liberum_veto = {
-			picture = generic_constitutional_guarantee 
+			picture = spirit_liberum_veto 
 			allowed = {
 				tag = POL
 			}

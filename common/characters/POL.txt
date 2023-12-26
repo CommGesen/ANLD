@@ -4851,7 +4851,8 @@ characters={
 		name = POL_Character_deluge_pkwn
 		portraits={
 			civilian={
-				large = GFX_portrait_SOV_supreme_soviet
+				#large = GFX_portrait_SOV_supreme_soviet 
+				large = "gfx/leaders/POL/portrait_POL_PCNL.dds"
 			}
 		}
 		country_leader = {
