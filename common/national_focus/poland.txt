@@ -12695,7 +12695,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_ultimatum_for_germany
-		icon = GFX_focus_attack_germany
+		icon = GFX_goal_generic_occypy_states_ongoing_war
 		x = -1
 		y = 1
 		search_filters = {FOCUS_FILTER_FOREIGN_AFFAIRS}

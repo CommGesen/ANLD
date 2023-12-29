@@ -123,9 +123,9 @@
 	air_wing_names_template = AIR_WING_NAME_POL_FALLBACK
 
 	#Air wings can only be named through archetype
-	fighter_equipment = {
+	small_plane_airframe = {
 		prefix = ""
-		generic = { "Dywizjon mysliwski" }
+		generic = { "Dywizjon Myśliwski" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
 		unique = {
 		}	
@@ -133,44 +133,44 @@
 
 	jet_fighter_equipment = {
 		prefix = ""
-		generic = { "Dywizjon mysliwski" }
+		generic = { "Dywizjon Myśliwski" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
 		unique = {
 		}	
 	}
 
-	heavy_fighter_equipment = {
+	medium_plane_fighter_airframe = {
 		prefix = ""
-		generic = { "Dywizjon mysliwski" }
+		generic = { "Dywizjon Myśliwski" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
 		unique = {
 		}	
 	}
 
-	CAS_equipment = {
-		prefix = ""
-		generic = { "Dywizjon bombowy" }
-		generic_pattern = AIR_WING_NAME_POL_GENERIC
-		unique = {
-		}	
-	}
-
-	cv_fighter_equipment = {
-		prefix = ""
-		generic = { "Dywizjon mysliwski" }
-		generic_pattern = AIR_WING_NAME_POL_GENERIC
-		unique = {
-		}	
-	}
-
-	cv_CAS_equipment = {
+	small_plane_cas_airframe = {
 		prefix = ""
 		generic = { "Dywizjon bombowy" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
 		unique = {
 		}	
 	}
-	cv_nav_bomber_equipment = {
+
+	cv_small_plane_airframe = {
+		prefix = ""
+		generic = { "Dywizjon Myśliwski" }
+		generic_pattern = AIR_WING_NAME_POL_GENERIC
+		unique = {
+		}	
+	}
+
+	cv_small_plane_cas_airframe = {
+		prefix = ""
+		generic = { "Dywizjon bombowy" }
+		generic_pattern = AIR_WING_NAME_POL_GENERIC
+		unique = {
+		}	
+	}
+	cv_small_plane_naval_bomber_airframe = {
 		prefix = ""
 		generic = { "Morski dyon lotniczy" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
@@ -178,7 +178,7 @@
 		}	
 	}
 
-	tac_bomber_equipment = {
+	medium_plane_airframe = {
 		prefix = ""
 		generic = { "Dywizjon bombowy" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
@@ -194,7 +194,7 @@
 		}	
 	}
 
-	nav_bomber_equipment = {
+	small_plane_naval_bomber_airframe = {
 		prefix = ""
 		generic = { "Morski dyon lotniczy" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
@@ -202,7 +202,7 @@
 		}	
 	}
 
-	strat_bomber_equipment = {
+	large_plane_airframe = {
 		prefix = ""
 		generic = { "Dywizjon bombowy" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
