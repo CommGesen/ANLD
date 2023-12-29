@@ -245,7 +245,7 @@ set_stability = 0.5
 set_war_support = 0.5
 set_convoys = 200
 
-diplomatic_relation = { country = SOV relation = non_aggression_pact }
+#diplomatic_relation = { country = SOV relation = non_aggression_pact }
 
 add_opinion_modifier = { target = WGR modifier = great_war_hostility_modifier }
 add_opinion_modifier = { target = WGR modifier = historic_rivalry_modifier }
@@ -297,7 +297,7 @@ set_variable = {POL_WPvsPOW_army_defence_factor = -0.1 }
 set_variable = {POL_WPvsPOW_war_support_factor = -0.2 }
 add_dynamic_modifier = { modifier = POL_rivalry_between_POW_and_WP_dynamic_modifier }
 
-set_variable = {POL_development_consumer_goods_factor = 0.1}
+set_variable = {POL_development_consumer_goods_factor = 0.3}
 set_variable = {POL_development_industrial_capacity_factory = -0.15}
 set_variable = {POL_development_production_speed_buildings_factor = -0.1}
 add_dynamic_modifier = { modifier = POL_current_state_of_development }

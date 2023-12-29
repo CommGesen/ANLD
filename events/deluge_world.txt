@@ -287,8 +287,7 @@ news_event = {
 	picture = GFX_news_event_olympics_1936
 	fire_only_once = yes
 	trigger = {
-		#date > 1936.8.16
-		always = no
+		date > 1936.8.16
 	}
 	mean_time_to_happen = {
 		days = 30
@@ -305,8 +304,7 @@ news_event = {
 	picture = GFX_news_event_hungarian_grand_prix_1936
 	fire_only_once = yes
 	trigger = {
-		#date > 1936.6.21
-		always = no
+		date > 1936.6.21
 	}
 	mean_time_to_happen = {
 		days = 30
@@ -323,8 +321,7 @@ news_event = {
 	picture = GFX_news_event_worlds_fair_1937
 	fire_only_once = yes
 	trigger = {
-		#date > 1937.11.1
-		always = no
+		date > 1937.11.1
 	}
 	mean_time_to_happen = {
 		days = 30

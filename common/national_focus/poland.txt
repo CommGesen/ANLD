@@ -1789,7 +1789,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			add_to_variable = { POL_ozn_consumer_goods_factor = -0.05 }
+			add_to_variable = { POL_ozn_consumer_goods_factor = -0.15 }
 			add_to_variable = { POL_ozn_industrial_capacity_factory = 0.05 }
 			custom_effect_tooltip = POL_custom_effect_tooltip_12
 		}
@@ -3131,7 +3131,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			add_to_variable = { POL_zadruga_consumer_goods_factor = -0.02}
+			add_to_variable = { POL_zadruga_consumer_goods_factor = -0.05}
 			add_to_variable = { POL_zadruga_production_factory_max_efficiency_factor = 0.03}
 			add_to_variable = { POL_zadruga_production_factory_efficiency_gain_factor = 0.02}
 			custom_effect_tooltip = POL_custom_effect_tooltip_69
@@ -4105,7 +4105,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_to_variable = { POL_falanga_stability_factor = -0.05}
-			add_to_variable = { POL_falanga_consumer_goods_factor = -0.02}
+			add_to_variable = { POL_falanga_consumer_goods_factor = -0.05}
 			add_to_variable = { POL_falanga_war_support_factor = -0.05}
 			custom_effect_tooltip = POL_custom_effect_tooltip_127
 			random_owned_state = {
@@ -4233,7 +4233,7 @@ focus_tree = {
 				ideology = communism
 				popularity = -0.05
 			}
-			add_to_variable = { POL_falanga_consumer_goods_factor = -0.03}
+			add_to_variable = { POL_falanga_consumer_goods_factor = -0.1}
 			add_to_variable = { POL_falanga_conscription = 0.005}
 			POL = {
 				add_political_power = 50
@@ -4516,7 +4516,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_to_variable = { POL_falanga_production_speed_buildings_factor = 0.03}
-			add_to_variable = { POL_falanga_consumer_goods_factor = -0.03}
+			add_to_variable = { POL_falanga_consumer_goods_factor = -0.1}
 			add_to_variable = { POL_falanga_local_resources_factor = 0.03}
 			custom_effect_tooltip = POL_custom_effect_tooltip_138
 		}
@@ -4629,7 +4629,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_to_variable = { POL_falanga_local_resources_factor = 0.07}
-			add_to_variable = { POL_falanga_consumer_goods_factor = -0.05}
+			add_to_variable = { POL_falanga_consumer_goods_factor = -0.15}
 			add_to_variable = { POL_falanga_production_lack_of_resource_penalty_factor = -0.1}
 			custom_effect_tooltip = POL_custom_effect_tooltip_137
 			if = {
@@ -7377,7 +7377,7 @@ focus_tree = {
 		completion_reward = {
 			10 = { add_manpower = -10000 }
 			add_to_variable = { POL_nat_lib_cath_conscription = -0.01}
-			add_to_variable = { POL_nat_lib_cath_consumer_goods_factor = -0.05}
+			add_to_variable = { POL_nat_lib_cath_consumer_goods_factor = -0.15}
 			add_to_variable = { POL_nat_lib_cath_war_support_factor = 0.05}
 			custom_effect_tooltip = POL_custom_effect_tooltip_150
 			retire_character = POL_deluge_julian_tuwin
@@ -8136,7 +8136,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_to_variable = { POL_demo_reborn_industrial_capacity_factory = 0.05}
-			add_to_variable = { POL_demo_reborn_consumer_goods_factor = -0.05}
+			add_to_variable = { POL_demo_reborn_consumer_goods_factor = -0.15}
 			custom_effect_tooltip = POL_custom_effect_tooltip_180
 			random_owned_state = {
 				limit = {
@@ -8200,7 +8200,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_to_variable = { POL_demo_reborn_production_speed_buildings_factor = 0.05}
-			add_to_variable = { POL_demo_reborn_consumer_goods_factor = -0.02}
+			add_to_variable = { POL_demo_reborn_consumer_goods_factor = -0.05}
 			custom_effect_tooltip = POL_custom_effect_tooltip_181
 		}
 		ai_will_do = {
@@ -8269,7 +8269,7 @@ focus_tree = {
 			add_to_variable = { POL_demo_reborn_stability_factor = 0.05}
 			add_to_variable = { POL_demo_reborn_political_power_factor = 0.02}
 			add_to_variable = { POL_demo_reborn_monthly_population = 0.1}
-			add_to_variable = { POL_demo_reborn_consumer_goods_factor = 0.03}
+			add_to_variable = { POL_demo_reborn_consumer_goods_factor = 0.1}
 			custom_effect_tooltip = POL_custom_effect_tooltip_183
 		}
 		ai_will_do = {
@@ -8300,7 +8300,7 @@ focus_tree = {
 					has_completed_focus = POL_the_new_system
 				}
 				add_to_variable = { POL_new_system_trade_opinion_factor = -0.45}
-				add_to_variable = { POL_demo_reborn_consumer_goods_factor = 0.05}
+				add_to_variable = { POL_demo_reborn_consumer_goods_factor = 0.15}
 				add_to_variable = { POL_demo_reborn_production_speed_buildings_factor = 0.1}
 				add_to_variable = { POL_new_system_industrial_capacity_factory = 0.03}
 				add_to_variable = { POL_new_system_industrial_capacity_dockyard = 0.03}
@@ -8310,7 +8310,7 @@ focus_tree = {
 					has_completed_focus = POL_democracy_prevails
 				}
 				add_to_variable = { POL_demo_reborn_trade_opinion_factor = -0.35}
-				add_to_variable = { POL_demo_reborn_consumer_goods_factor = 0.02}
+				add_to_variable = { POL_demo_reborn_consumer_goods_factor = 0.05}
 				add_to_variable = { POL_demo_reborn_production_speed_buildings_factor = 0.05}
 			}
 			custom_effect_tooltip = POL_custom_effect_tooltip_186
@@ -8355,7 +8355,7 @@ focus_tree = {
 			add_to_variable = { POL_demo_reborn_industrial_capacity_factory = 0.03}
 			add_to_variable = { POL_demo_reborn_industrial_capacity_dockyard = 0.05}
 			add_to_variable = { POL_demo_reborn_industrial_capacity_factory = 0.05}
-			add_to_variable = { POL_demo_reborn_consumer_goods_factor = -0.05}
+			add_to_variable = { POL_demo_reborn_consumer_goods_factor = -0.15}
 			custom_effect_tooltip = POL_custom_effect_tooltip_187
 			add_political_power = 100
 		}
@@ -9349,7 +9349,7 @@ focus_tree = {
 			}
 		}
 		available = {
-			has_global_flag = POL_king_died_abroad
+			has_country_flag = POL_king_died_abroad
 		}
 		select_effect = {
 			country_event = { id = deluge_poland.43 } 
@@ -9809,7 +9809,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			hidden_effect = {
-				add_to_variable = { 3rd_may_consumer_goods_factor = -0.03}
+				add_to_variable = { 3rd_may_consumer_goods_factor = -0.1}
 				add_to_variable = { 3rd_may_production_speed_buildings_factor = 0.05}
 				add_to_variable = { 3rd_may_political_power_factor = 0.02}
 			}
@@ -10146,7 +10146,7 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				add_to_variable = { 3rd_may_trade_opinion_factor = 0.3}
-				add_to_variable = { 3rd_may_consumer_goods_factor = -0.05}
+				add_to_variable = { 3rd_may_consumer_goods_factor = -0.15}
 				add_to_variable = { 3rd_may_min_export = 0.3}
 				add_to_variable = { 3rd_may_production_speed_buildings_factor = 0.05}
 			}
@@ -10252,7 +10252,7 @@ focus_tree = {
 				add_to_variable = { 3rd_may_production_factory_max_efficiency_factor = 0.02}
 				add_to_variable = { 3rd_may_industrial_capacity_dockyard = 0.02}
 				add_to_variable = { 3rd_may_industrial_capacity_factory = 0.02}
-				add_to_variable = { 3rd_may_consumer_goods_factor = -0.02}
+				add_to_variable = { 3rd_may_consumer_goods_factor = -0.05}
 				add_to_variable = { 3rd_may_production_speed_buildings_factor = 0.02}
 				add_to_variable = { 3rd_may_political_power_factor = 0.05}
 			}
@@ -22784,7 +22784,7 @@ focus_tree = {
 			set_country_flag = cant_change_money_law
 			custom_effect_tooltip = cant_change_money_law_tooltip
 			hidden_effect = {
-				add_to_variable = {POL_new_plan_consumer_goods_factor = -0.02}
+				add_to_variable = {POL_new_plan_consumer_goods_factor = -0.05}
 				add_dynamic_modifier = {
 					modifier = POL_new_five_year_plan_modifier
 				}
@@ -22840,7 +22840,7 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
-				add_to_variable = {POL_new_plan_consumer_goods_factor = -0.03}
+				add_to_variable = {POL_new_plan_consumer_goods_factor = -0.1}
 				add_to_variable = {POL_new_plan_stability_factor = -0.1}
 				add_to_variable = {POL_new_plan_war_support_factor = -0.05}
 				add_to_variable = {POL_new_plan_production_speed_buildings_factor = 0.05}
@@ -25989,7 +25989,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			add_to_variable = {POL_development_consumer_goods_factor = -0.05}##smaller bonus
+			add_to_variable = {POL_development_consumer_goods_factor = -0.15}##smaller bonus
 			add_to_variable = {POL_development_industrial_capacity_factory = 0.20}###bigger bonus
 			add_to_variable = {POL_development_production_speed_buildings_factor = 0.05}##smaller bonus
 			custom_effect_tooltip = POL_custom_effect_tooltip_35
@@ -26029,7 +26029,7 @@ focus_tree = {
 				uses = 1
 				category = cat_production
 			}
-			add_to_variable = {POL_development_consumer_goods_factor = -0.025}
+			add_to_variable = {POL_development_consumer_goods_factor = -0.07}
 			custom_effect_tooltip = POL_custom_effect_tooltip_52
 		}
 		ai_will_do = {
@@ -26158,7 +26158,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_to_variable = {POL_development_consumer_goods_factor = -0.025}
+			add_to_variable = {POL_development_consumer_goods_factor = -0.08}
 			custom_effect_tooltip = POL_custom_effect_tooltip_52
 		}
 		ai_will_do = {
@@ -26542,7 +26542,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			add_to_variable = {POL_development_consumer_goods_factor = -0.08}###bigger bonus
+			add_to_variable = {POL_development_consumer_goods_factor = -0.25}###bigger bonus
 			add_to_variable = {POL_development_industrial_capacity_factory = 0.10}##smaller bonus
 			add_to_variable = {POL_development_production_speed_buildings_factor = 0.10}###bigger bonus
 			custom_effect_tooltip = POL_custom_effect_tooltip_34
@@ -26610,7 +26610,7 @@ focus_tree = {
 				category = electronics
 			}
 			add_to_variable = {POL_development_industrial_capacity_factory = 0.05}
-			add_to_variable = {POL_development_consumer_goods_factor = -0.03}
+			add_to_variable = {POL_development_consumer_goods_factor = -0.1}
 			custom_effect_tooltip = POL_custom_effect_tooltip_92
 		}
 		ai_will_do = {
@@ -26731,7 +26731,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_to_variable = {POL_development_min_export = -0.15}
-			add_to_variable = {POL_development_consumer_goods_factor = -0.03}
+			add_to_variable = {POL_development_consumer_goods_factor = -0.1}
 			custom_effect_tooltip = POL_custom_effect_tooltip_91
 		}
 		ai_will_do = {
@@ -26784,7 +26784,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			add_to_variable = {POL_development_consumer_goods_factor = -0.02}
+			add_to_variable = {POL_development_consumer_goods_factor = -0.05}
 			custom_effect_tooltip = POL_custom_effect_tooltip_94
 			random_owned_state = {
 				limit = {
@@ -26820,9 +26820,10 @@ focus_tree = {
 		mutually_exclusive = {focus = POL_protect_forests}
 		cost = 8
 		available = {
+			
 		}
 		completion_reward = {
-			add_to_variable = {POL_development_consumer_goods_factor = -0.01}
+			add_to_variable = {POL_development_consumer_goods_factor = -0.03}
 			add_to_variable = {POL_development_global_building_slots_factor = 0.05}
 			add_to_variable = {POL_development_political_power_factor = -0.05}
 			custom_effect_tooltip = POL_custom_effect_tooltip_95
@@ -26920,7 +26921,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_to_variable = {POL_development_consumer_goods_factor = -0.07}
+			add_to_variable = {POL_development_consumer_goods_factor = -0.20}
 			add_to_variable = {POL_development_trade_opinion_factor = 0.4}
 			custom_effect_tooltip = POL_custom_effect_tooltip_97
 		}
@@ -26961,7 +26962,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_to_variable = {POL_development_consumer_goods_factor = -0.03}
+			add_to_variable = {POL_development_consumer_goods_factor = -0.1}
 			add_to_variable = {POL_development_local_resources_factor = 0.1}
 			add_to_variable = {POL_development_global_building_slots_factor = 0.05}
 			custom_effect_tooltip = POL_custom_effect_tooltip_98
@@ -27204,7 +27205,7 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {POL_development_monthly_population = 0.05}
-			add_to_variable = {POL_development_consumer_goods_factor = -0.03}
+			add_to_variable = {POL_development_consumer_goods_factor = -0.1}
 			custom_effect_tooltip = POL_custom_effect_tooltip_38
 		}
 		ai_will_do = {
@@ -27270,10 +27271,10 @@ focus_tree = {
 					}
 				}
 				add_to_variable = {POL_development_monthly_population = 0.03}
-				add_to_variable = {POL_development_consumer_goods_factor = -0.02}
+				add_to_variable = {POL_development_consumer_goods_factor = -0.06}
 			}
 			add_to_variable = {POL_development_monthly_population = 0.02}
-			add_to_variable = {POL_development_consumer_goods_factor = -0.01}
+			add_to_variable = {POL_development_consumer_goods_factor = -0.03}
 			custom_effect_tooltip = POL_custom_effect_tooltip_39
 			custom_effect_tooltip = POL_custom_effect_tooltip_40
 		}
@@ -27558,7 +27559,7 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = {POL_development_production_factory_efficiency_gain_factor = 0.05}
 			add_to_variable = {POL_development_line_change_production_efficiency_factor = 0.05}
-			add_to_variable = {POL_development_consumer_goods_factor = 0.05}
+			add_to_variable = {POL_development_consumer_goods_factor = 0.15}
 			custom_effect_tooltip = POL_custom_effect_tooltip_46
 		}
 		ai_will_do = {
@@ -27586,7 +27587,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_to_variable = {POL_development_production_factory_efficiency_gain_factor = -0.05}
-			add_to_variable = {POL_development_consumer_goods_factor = -0.05}
+			add_to_variable = {POL_development_consumer_goods_factor = -0.15}
 			add_to_variable = {POL_development_production_speed_buildings_factor = 0.05}
 			custom_effect_tooltip = POL_custom_effect_tooltip_47
 		}
@@ -27680,7 +27681,7 @@ focus_tree = {
 				uses = 1
 				category = cat_production 
 			}
-			add_to_variable = {POL_development_consumer_goods_factor = -0.05}
+			add_to_variable = {POL_development_consumer_goods_factor = -0.15}
 			add_to_variable = {POL_development_political_power_gain = 0.15}
 			custom_effect_tooltip = POL_custom_effect_tooltip_50
 		}
@@ -27714,10 +27715,10 @@ focus_tree = {
 			add_to_variable = {POL_development_stability_factor = 0.05}
 			add_to_variable = {POL_development_production_speed_buildings_factor = 0.02}
 			add_to_variable = {POL_development_industrial_capacity_factory = 0.02}
-			add_to_variable = {POL_development_consumer_goods_factor = -0.01}
+			add_to_variable = {POL_development_consumer_goods_factor = -0.03}
 			custom_effect_tooltip = POL_custom_effect_tooltip_51
 			hidden_effect = {
-				news_event = {id = deluge_poland.12 hours = 10}
+				news_event = {id = deluge_poland.12}
 			}
 		}
 		ai_will_do = {

@@ -281,11 +281,9 @@ country_event = {##FRA decides what is gonna happen to POM
 				country_exists = POL
 			}
 			POL = {
-				add_state_core = 807
 				add_state_core = 85
 				add_state_core = 63
 				add_state_core = 62
-				transfer_state = 807
 				transfer_state = 85
 				transfer_state = 63
 			}
@@ -296,7 +294,6 @@ country_event = {##FRA decides what is gonna happen to POM
 			}
 			GER = {
 				add_state_core = 62
-				add_state_core = 807
 				add_state_core = 63
 				add_state_core = 85
 				transfer_state = 62
@@ -312,7 +309,6 @@ country_event = {##FRA decides what is gonna happen to POM
 			}
 			DDR = {
 				add_state_core = 62
-				add_state_core = 807
 				add_state_core = 63
 				add_state_core = 85
 				transfer_state = 62
@@ -328,7 +324,6 @@ country_event = {##FRA decides what is gonna happen to POM
 			}
 			WGR = {
 				add_state_core = 62
-				add_state_core = 807
 				add_state_core = 63
 				add_state_core = 85
 				transfer_state = 62
@@ -547,11 +542,9 @@ country_event = {##FRA decides what is gonna happen to POM - part 2
 				country_exists = POL
 			}
 			POL = {
-				add_state_core = 807
 				add_state_core = 85
 				add_state_core = 63
 				add_state_core = 62
-				transfer_state = 807
 				transfer_state = 85
 				transfer_state = 63
 				transfer_state = 62
@@ -666,11 +659,9 @@ country_event = {##FRA decides what is gonna happen to POM - part 2
 				country_exists = GER
 			}
 			GER = {
-				add_state_core = 807
 				add_state_core = 85
 				add_state_core = 63
 				add_state_core = 62
-				transfer_state = 807
 				transfer_state = 85
 				transfer_state = 63
 				transfer_state = 62
@@ -681,11 +672,9 @@ country_event = {##FRA decides what is gonna happen to POM - part 2
 				country_exists = DDR
 			}
 			DDR = {
-				add_state_core = 807
 				add_state_core = 85
 				add_state_core = 63
 				add_state_core = 62
-				transfer_state = 807
 				transfer_state = 85
 				transfer_state = 63
 				transfer_state = 62
@@ -696,11 +685,9 @@ country_event = {##FRA decides what is gonna happen to POM - part 2
 				country_exists = WGR
 			}
 			WGR = {
-				add_state_core = 807
 				add_state_core = 85
 				add_state_core = 63
 				add_state_core = 62
-				transfer_state = 807
 				transfer_state = 85
 				transfer_state = 63
 				transfer_state = 62

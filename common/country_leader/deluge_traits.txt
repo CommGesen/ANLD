@@ -335,7 +335,7 @@ leader_traits = {
 	}
 	leftist_freemanson = {
 		sprite = 13
-		consumer_goods_factor = -0.02
+		consumer_goods_factor = -0.07
 		improve_relations_maintain_cost_factor = -0.3
 		stability_factor = 0.05
 		enemy_justify_war_goal_time = 0.3
@@ -602,9 +602,9 @@ leader_traits = {
 	treasury_minister = {
 		sprite = 13
 		random = no
-		consumer_goods_factor = -0.03
+		consumer_goods_factor = -0.1
 		industrial_capacity_factory = 0.03
-		stability_factor = 0.05
+		#stability_factor = 0.05
 	}
 	leader_of_national_combat_organization = {
 		sprite = 7
@@ -678,7 +678,7 @@ leader_traits = {
 		sprite = 12
 		political_power_factor = 0.15
 		stability_factor = 0.05
-		consumer_goods_factor = -0.02
+		consumer_goods_factor = -0.07
 	}
 	steadfast_prince = {
 		random = no
@@ -711,7 +711,7 @@ leader_traits = {
 	effective_administrator = {
 		random = yes
 		sprite = 14
-		consumer_goods_factor = -0.03
+		consumer_goods_factor = -0.1
 		production_factory_max_efficiency_factor = 0.03
 		production_speed_buildings_factor = 0.03
 	}
@@ -836,7 +836,7 @@ leader_traits = {
 	theoretician_of_national_bolshevism = {
 		random = no
 		sprite = 12
-		consumer_goods_factor = -0.03
+		consumer_goods_factor = -0.1
 		communism_drift = 0.1
 		fascism_drift = 0.1
 		war_support_factor = 0.1
@@ -844,7 +844,7 @@ leader_traits = {
 	theoretician_of_national_bolshevism_weaker = {
 		random = no
 		sprite = 12
-		consumer_goods_factor = -0.01
+		consumer_goods_factor = -0.04
 		communism_drift = 0.05
 		fascism_drift = 0.05
 		war_support_factor = 0.05
@@ -1106,7 +1106,7 @@ leader_traits = {
 	}
 	central_planner_of_reality = {
 		monthly_population = 0.05
-		consumer_goods_factor = -0.03
+		consumer_goods_factor = -0.1
 		fascism_drift = 0.05
 		communism_drift = 0.1
 		war_support_weekly = 0.01
@@ -1120,7 +1120,7 @@ leader_traits = {
 		sprite = 10
 		production_speed_buildings_factor = 0.03
 		local_resources_factor = 0.05
-		consumer_goods_factor = -0.01
+		consumer_goods_factor = -0.04
 	}
 	famous_social_democrat = {
 		random = no
@@ -1133,7 +1133,7 @@ leader_traits = {
 	corrupted = {
 		random = no
 		stability_factor = -0.05
-		consumer_goods_factor = 0.03
+		consumer_goods_factor = 0.1
 	}
 	the_synarch = {
 		random = no
@@ -1156,9 +1156,9 @@ leader_traits = {
 	}
 	mentally_ill = {
 		random = no
-		political_power_factor = -0.05
-		stability_factor = -0.1
-		war_support_factor = -0.1
+		political_power_factor = -0.03
+		stability_factor = -0.05
+		#war_support_factor = -0.1
 	}
 	excluded_from_the_line_of_succession = {
 		random = no
