@@ -35,41 +35,7 @@ music = {
 	}
 }
 music = {
-	song = "the_red_poppies_on_monte_cassino"
-
-	chance = {
-		factor = 1
-		modifier = {
-			factor = 3
-			original_tag = POL
-			has_war = no
-		}
-		modifier = {
-			factor = 0
-			original_tag = POL
-			has_war = yes
-		}
-	}
-}
-music = {
 	song = "heart_in_a_satchel"
-
-	chance = {
-		factor = 1
-		modifier = {
-			factor = 3
-			original_tag = POL
-			has_war = no
-		}
-		modifier = {
-			factor = 0
-			original_tag = POL
-			has_war = yes
-		}
-	}
-}
-music = {
-	song = "weeping_willows"
 
 	chance = {
 		factor = 1
@@ -373,6 +339,23 @@ music = {
 	}
 }
 music = {
+	song = "the_red_poppies_on_monte_cassino"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			original_tag = POL
+			has_war = no
+		}
+		modifier = {
+			factor = 3
+			original_tag = POL
+			has_war = yes
+		}
+	}
+}
+music = {
 	song = "camp_march"
 
 	chance = {
@@ -584,6 +567,23 @@ music = {
 			NOT = {
 				has_government = communism
 			}
+		}
+	}
+}
+music = {
+	song = "weeping_willows"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			original_tag = POL
+		}
+		modifier = {
+			factor = 3
+			original_tag = POL
+			has_government = communism
+			has_war = yes
 		}
 	}
 }
