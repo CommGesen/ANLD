@@ -555,7 +555,6 @@ polish_new_order_decisions_category = {
 	priority = 2
 	allowed = {
 		original_tag = POL
-		has_completed_focus = POL_new_order
 	}
 	visible = {
 		POL = {

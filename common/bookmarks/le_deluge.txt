@@ -10,7 +10,6 @@ bookmarks = {
 		"USA"={
 			history = "USA_DELUGE_DESC"
 			ideas = {
-				american_king
 				deluge_legacy_of_slavery
 				deluge_great_war_horrors_idea
 			}
@@ -23,7 +22,6 @@ bookmarks = {
 		"ENG"={
 			history = "ENG_DELUGE_DESC"
 			ideas = {
-				fighting_king
 				deluge_great_war_horrors_idea
 			}
 			focuses = {
@@ -35,7 +33,6 @@ bookmarks = {
 		"AUS"={
 			history = "AUS_DELUGE_DESC"
 			ideas = {
-				habsburg_emperor
 				deluge_great_war_horrors_idea
 			}
 			focuses = {
@@ -73,7 +70,6 @@ bookmarks = {
 		"SOV"={
 			history = "SOV_DELUGE_DESC"
 			ideas = {
-				emperor_russia
 				deluge_great_war_horrors_idea
 				deluge_russia_incompetent_military
 			}
@@ -115,7 +111,6 @@ bookmarks = {
 			minor = yes
 			history = "WGR_DELUGE_DESC"
 			ideas = {
-				westphalian_king
 				deluge_german_civil_war_idea
 			}
 			focuses = {
@@ -141,8 +136,7 @@ bookmarks = {
 			minor = yes
 			history = "TUR_DELUGE_DESC"
 			ideas = {
-				ottoman_emperor
-				TUR_ataturk
+				#TUR_ataturk
 			}
 			focuses = {
 				turkey_depose_monarch
@@ -154,7 +148,7 @@ bookmarks = {
 			minor = yes
 			history = "SWE_DELUGE_DESC"
 			ideas = {
-				swedish_king
+				
 			}
 			focuses = {
 				sweden_depose_monarch
@@ -166,7 +160,6 @@ bookmarks = {
 			minor = yes
 			history = "LOU_DELUGE_DESC"
 			ideas = {
-				bourbon_king
 				deluge_legacy_of_slavery
 			}
 			focuses = {
@@ -190,9 +183,20 @@ bookmarks = {
 		"CHI"={
 			minor = yes
 			history = "CHI_DELUGE_DESC"
-			ideology = democratic
 			ideas = {
-				emperor_puyi
+				deluge_chinese_sectarianism_idea
+				deluge_china_vestiges_feudalism
+			}
+			focuses = {
+				china_deluge_self-strengthening
+				china_deluge_war_with_japan
+				china_deluge_cultural_reform
+			}
+		}
+		"PRC"={
+			minor = yes
+			history = "PRC_DELUGE_DESC"
+			ideas = {
 				deluge_chinese_sectarianism_idea
 				deluge_china_vestiges_feudalism
 			}

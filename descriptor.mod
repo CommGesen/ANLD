@@ -1,8 +1,8 @@
-version="2.0"
+version="1.0"
 tags={
 	"Alternative History"
 }
-name="Après Nous Le Déluge"
+name="ANLD_test"
 replace_path="common/ai_equipment"
 replace_path="common/ai_focuses"
 replace_path="common/ai_strategy"
@@ -24,5 +24,5 @@ replace_path="events"
 replace_path="map/supplyareas"
 replace_path="gfx/flags"
 replace_path="gfx/loadingscreens"
-supported_version="1.13.*"
-remote_file_id="2820767946"
+supported_version="1.13.6"
+remote_file_id="3127523372"

@@ -453,8 +453,8 @@ focus_tree = {
 			}
 			has_completed_focus = POL_enforce_patriarchy
 		}		
-		cancel_if_invalid = yes		
-		continue_if_invalid = no		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 		available_if_capitulated = yes
 	}
 	focus = {
@@ -5528,7 +5528,7 @@ focus_tree = {
 			}
 		}
 		offset = {
-			x = -142
+			x = -141
 			y = 0
 			trigger = {
 				has_completed_focus = POL_bonaparte_bastard_wins
@@ -5563,7 +5563,7 @@ focus_tree = {
 			}
 		}
 		offset = {
-			x = -142
+			x = -141
 			y = 0
 			trigger = {
 				has_completed_focus = POL_piast_riedelski_wins
@@ -9436,6 +9436,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_completed_focus = POL_house_of_wettin_continues
+				has_completed_focus = POL_bonaparte_bastard_wins
 				has_completed_focus = POL_piast_riedelski_wins
 				has_completed_focus = POL_andrassy_wins
 				has_completed_focus = POL_czartoryski_wins

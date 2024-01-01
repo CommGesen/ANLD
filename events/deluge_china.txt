@@ -1513,7 +1513,7 @@ news_event = {
 	}
 }
 
-# Hu Hanmin dies soon after the game starts and is replaced by a republican general or mob boss
+# Hu Hanmin dies soon after the game starts and Zhang Lan is replaced by a republican general or Zhang Lan stays
 
 country_event = {
 	id = deluge_china.23
@@ -1536,18 +1536,18 @@ country_event = {
 	option = {
 		name = deluge_china23opta
 		
-		kill_country_leader = yes
+		#kill_country_leader = yes
 		
-		create_country_leader = {
-			name = "Zhang Xueliang"
-			desc = ""
-			picture = "gfx/leaders/deluge/young_marshall.dds"
-			expire = "1965.1.1"
-			ideology = constitutionalist_ideology
-			traits = {
-				
-			}
-		}
+		#create_country_leader = {
+		#	name = "Zhang Xueliang"
+		#	desc = ""
+		#	picture = "gfx/leaders/deluge/young_marshall.dds"
+		#	expire = "1965.1.1"
+		#	ideology = constitutionalist_ideology
+		#	traits = {
+		#		
+		#	}
+		#}
 		
 		add_timed_idea = { idea = deluge_chinese_drift_communism days = 1095 }
 		
@@ -1601,39 +1601,39 @@ country_event = {
 		}
 	}
 	
-	option = {
-		name = deluge_china23optc
-		
-		kill_country_leader = yes
-		
-		create_country_leader = {
-			name = "Du Yuesheng"
-			desc = ""
-			picture = "gfx/leaders/deluge/chow_yun-fat.dds"
-			expire = "1965.1.1"
-			ideology = constitutionalist_ideology
-			traits = {
-				
-			}
-		}
-		
-		add_timed_idea = { idea = deluge_chinese_mobsters_in_government_idea days = 1095 }
-		
-		hidden_effect = {
-			news_event = {
-				id = deluge_china.26
-				days = 1
-			}
-			country_event = {
-				id = deluge_china.33
-				days = 45
-			}
-		}
-		
-		ai_chance = {
-			factor = 1
-		}
-	}
+	#option = {
+	#	name = deluge_china23optc
+	#	
+	#	kill_country_leader = yes
+	#	
+	#	create_country_leader = {
+	#		name = "Du Yuesheng"
+	#		desc = ""
+	#		picture = "gfx/leaders/deluge/chow_yun-fat.dds"
+	#		expire = "1965.1.1"
+	#		ideology = constitutionalist_ideology
+	#		traits = {
+	#			
+	#		}
+	#	}
+	#	
+	#	add_timed_idea = { idea = deluge_chinese_mobsters_in_government_idea days = 1095 }
+	#	
+	#	hidden_effect = {
+	#		news_event = {
+	#			id = deluge_china.26
+	#			days = 1
+	#		}
+	#		country_event = {
+	#			id = deluge_china.33
+	#			days = 45
+	#		}
+	#	}
+	#	
+	#	ai_chance = {
+	#		factor = 1
+	#	}
+	#}
 }
 
 # News event for Zhang Xueliang taking over
