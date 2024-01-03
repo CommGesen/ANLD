@@ -320,7 +320,10 @@ focus_tree = {
 		icon = GFX_goal_tfv_burn_the_royal_portraits
 		prerequisite = { focus = russia_deluge_popular_sovereignty }
 		available = {
-			has_idea = emperor_russia
+			OR = {
+				has_idea = emperor_russia
+				has_government = communism
+			}
 			NOT = { has_government = neutrality }
 		}
 		x = 1
@@ -336,7 +339,7 @@ focus_tree = {
 				}
 				remove_ideas = emperor_russia
 			}
-			
+			set_country_flag = country_deposed_monarch
 			hidden_effect = {
 				if = {
 					limit = {
@@ -351,19 +354,7 @@ focus_tree = {
 					}
 					set_cosmetic_tag = SOV_REPUBLICAN
 				}
-			
-				create_country_leader = {
-					name = "Alexander Fyodorovich Kerensky"
-					desc = ""
-					picture = "gfx/leaders/deluge/russians/alexander_kerensky.dds"
-					expire = "1953.3.1"
-					ideology = liberal_republican_ideology
-					traits = {
-						
-					}
-				}
-			}
-						
+			}		
 			if = {
 				limit = {
 					has_government = communism

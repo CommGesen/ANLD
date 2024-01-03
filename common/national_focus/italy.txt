@@ -177,7 +177,10 @@ focus_tree = {
 		prerequisite = { focus = italy_deluge_popular_sovereignty }
 		available = {
 			is_subject = no
-			#NOT = { has_global_flag = flag_italy_restore_rome }
+			OR = {
+				has_idea = italian_king
+				has_government = communism
+			}
 			NOT = { has_government = neutrality }
 		}
 		x = 1
@@ -186,7 +189,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			#set_global_flag = flag_italy_form_republic
-			
+			set_country_flag = country_deposed_monarch
 			add_political_power = 150
 			
 			if = {

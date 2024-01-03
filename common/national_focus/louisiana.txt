@@ -176,7 +176,10 @@ focus_tree = {
 		icon = GFX_goal_generic_war_with_comintern
 		prerequisite = { focus = louisiana_deluge_popular_sovereignty }
 		available = {
-			has_idea = bourbon_king
+			OR = {
+				has_idea = bourbon_king
+				has_government = communism
+			}
 			NOT = { has_government = neutrality }
 		}
 		x = 1
@@ -191,6 +194,7 @@ focus_tree = {
 				}
 				remove_ideas = bourbon_king
 			}
+			set_country_flag = country_deposed_monarch
 		}
 		ai_will_do = {
 			factor = 1

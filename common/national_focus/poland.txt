@@ -8465,7 +8465,7 @@ focus_tree = {
 		}
 		available = {
 			NOT = {
-				has_global_flag = POL_king_died_abroad
+				has_country_flag = POL_king_died_abroad
 			}
 		}
 		completion_reward = {
@@ -14432,7 +14432,7 @@ focus_tree = {
 					create_country_leader = {
 						name = "Andrew I"
 						desc = "POL_deluge_andrzej_walewski_desc"
-						picture = "gfx/leaders/POL/andrzej_walewski.dds"
+						picture = "gfx/leaders/POL/portrait_POL_andrzej_walewski.dds"
 						expire = "1965.1.1"
 						ideology = bonapartist_ideology
 						traits = {
@@ -16062,7 +16062,30 @@ focus_tree = {
 			}
 		}
 		bypass = {
-			
+			80 = {
+				owner = {
+					OR = {
+						tag = POL
+						is_subject_of = POL
+					}
+				}
+			}
+			79 = {
+				owner = {
+					OR = {
+						tag = POL
+						is_subject_of = POL
+					}
+				}
+			}
+			78 = {
+				owner = {
+					OR = {
+						tag = POL
+						is_subject_of = POL
+					}
+				}
+			}
 		}
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
@@ -19917,6 +19940,12 @@ focus_tree = {
 						owns_state = 13
 						owns_state = 812
 					}
+					NOT = {
+						OR = {
+							tag = POL
+							is_subject_of = POL
+						}
+					}
 				}
 				country_event = {
 					id = generic.26
@@ -19949,6 +19978,12 @@ focus_tree = {
 						owns_state = 191
 						owns_state = 13
 						owns_state = 812
+					}
+					NOT = {
+						OR = {
+							tag = POL
+							is_subject_of = POL
+						}
 					}
 				}
 				POL = {
@@ -20152,7 +20187,86 @@ focus_tree = {
 			}
 		}
 		bypass = {
-			
+			810 = {
+				owner = {
+					OR = {
+						tag = POL
+						is_subject_of = POL
+					}
+				}
+			}
+			809 = {
+				owner = {
+					OR = {
+						tag = POL
+						is_subject_of = POL
+					}
+				}
+			}
+			190 = {
+				owner = {
+					OR = {
+						tag = POL
+						is_subject_of = POL
+					}
+				}
+			}
+			811 = {
+				owner = {
+					OR = {
+						tag = POL
+						is_subject_of = POL
+					}
+				}
+			}
+			808 = {
+				owner = {
+					OR = {
+						tag = POL
+						is_subject_of = POL
+					}
+				}
+			}
+			12 = {
+				owner = {
+					OR = {
+						tag = POL
+						is_subject_of = POL
+					}
+				}
+			}
+			813 = {
+				owner = {
+					OR = {
+						tag = POL
+						is_subject_of = POL
+					}
+				}
+			}
+			191 = {
+				owner = {
+					OR = {
+						tag = POL
+						is_subject_of = POL
+					}
+				}
+			}
+			13 = {
+				owner = {
+					OR = {
+						tag = POL
+						is_subject_of = POL
+					}
+				}
+			}
+			812 = {
+				owner = {
+					OR = {
+						tag = POL
+						is_subject_of = POL
+					}
+				}
+			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no

@@ -174,7 +174,10 @@ focus_tree = {
 		icon = GFX_goal_generic_war_with_comintern
 		prerequisite = { focus = america_deluge_popular_sovereignty }
 		available = {
-			has_idea = american_king
+			OR = {
+				has_idea = american_king
+				has_government = communism
+			}
 			NOT = { has_government = neutrality }
 		}
 		x = 1
@@ -183,7 +186,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			add_political_power = 150
-			
+			set_country_flag = country_deposed_monarch
 			if = {
 				limit = {
 					has_idea = american_king
