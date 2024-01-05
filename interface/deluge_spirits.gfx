@@ -4,44 +4,60 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/spirits/le_deluge.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_swedish_king"
-		texturefile = "gfx/interface/ideas/spirits/gustav_sweden.dds"
+		name = "GFX_idea_spirit_gustaf_v"
+		texturefile = "gfx/interface/ideas/spirits/spirit_gustaf_v.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_emperor_napoleon"
-		texturefile = "gfx/interface/ideas/spirits/napoleon_prince_imperial_small.dds"
+		name = "GFX_idea_spirit_dimitire_ghica"
+		texturefile = "gfx/interface/ideas/spirits/spirit_dimitire_ghica.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_emperor_napoleon_old"
-		texturefile = "gfx/interface/ideas/spirits/napoleon_portrait.dds"
+		name = "GFX_idea_spirit_karl_jesko_von_puttkamer"
+		texturefile = "gfx/interface/ideas/spirits/spirit_karl_jesko_von_puttkamer.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_american_king"
-		texturefile = "gfx/interface/ideas/spirits/american_king.dds"
+		name = "GFX_idea_spirit_napoleon_v"
+		texturefile = "gfx/interface/ideas/spirits/spirit_napoleon_v.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ottoman_emperor"
-		texturefile = "gfx/interface/ideas/spirits/ottoman_emperor_small.dds"
+		name = "GFX_idea_spirit_john_ii"
+		texturefile = "gfx/interface/ideas/spirits/spirit_john_ii.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_fighting_king"
-		texturefile = "gfx/interface/ideas/spirits/king_george_viii_small.dds"
+		name = "GFX_idea_spirit_abdulmecid_ii"
+		texturefile = "gfx/interface/ideas/spirits/spirit_abdulmecid_ii.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_ahmed_iv_nihad"
+		texturefile = "gfx/interface/ideas/spirits/spirit_ahmed_iv_nihad.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_sehzade_omer_faruk"
+		texturefile = "gfx/interface/ideas/spirits/spirit_sehzade_omer_faruk.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_sehzade_osman_fuad"
+		texturefile = "gfx/interface/ideas/spirits/spirit_sehzade_osman_fuad.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_george_viii"
+		texturefile = "gfx/interface/ideas/spirits/spirit_george_viii.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_hu_hanmin"
 		texturefile = "gfx/interface/ideas/spirits/hu_hanmin_small.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_emperor_puyi"
-		texturefile = "gfx/interface/ideas/spirits/emperor_puyi_small.dds"
+		name = "GFX_idea_spirit_aisin_gioro_puyi"
+		texturefile = "gfx/interface/ideas/spirits/spirit_aisin_gioro_puyi.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_sohn_seiner_klasse"
 		texturefile = "gfx/interface/ideas/spirits/ernst_thaelmann_small.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_habsburg_emperor"
-		texturefile = "gfx/interface/ideas/spirits/otto_small.dds"
+		name = "GFX_idea_spirit_otto_von_habsburg"
+		texturefile = "gfx/interface/ideas/spirits/spirit_otto_von_habsburg.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_aryan_supremacist"
@@ -52,20 +68,24 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/spirits/hitler_small.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_westphalian_king"
-		texturefile = "gfx/interface/ideas/spirits/german_prince.dds"
+		name = "GFX_idea_spirit_frederick_ii"
+		texturefile = "gfx/interface/ideas/spirits/spirit_frederick_ii.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_life_hussar"
 		texturefile = "gfx/interface/ideas/spirits/mackensen_small.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_bourbon_king"
-		texturefile = "gfx/interface/ideas/spirits/bourbon_king_small.dds"
+		name = "GFX_idea_spirit_jean_iii"
+		texturefile = "gfx/interface/ideas/spirits/spirit_jean_iii.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_italian_king"
-		texturefile = "gfx/interface/ideas/spirits/joachim_murat_small.dds"
+		name = "GFX_idea_spirit_henri_d_orleans"
+		texturefile = "gfx/interface/ideas/spirits/spirit_henri_d_orleans.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_joachim_murat"
+		texturefile = "gfx/interface/ideas/spirits/spirit_joachim_murat.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_deluge_legacy_of_slavery"
@@ -92,16 +112,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/spirits/dare_to_die.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_emperor_russia"
-		texturefile = "gfx/interface/ideas/spirits/russian_duke_small.dds"
+		name = "GFX_idea_spirit_nikolai_ii"
+		texturefile = "gfx/interface/ideas/spirits/spirit_nikolai_ii.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_hexagramme_eye"
 		texturefile = "gfx/interface/ideas/spirits/hexagramme_eye.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_fryderyk_ii_idea"
-		texturefile = "gfx/interface/ideas/spirits/fryderyk_ii_idea.dds"
+		name = "GFX_idea_spirit_fryderyk_i"
+		texturefile = "gfx/interface/ideas/spirits/spirit_fryderyk_i.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_fryderyk_ii"
+		texturefile = "gfx/interface/ideas/spirits/spirit_fryderyk_ii.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_new_marshall_idea"
@@ -112,24 +136,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/spirits/old_marshall_idea.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_maria_draskovic_idea"
-		texturefile = "gfx/interface/ideas/spirits/maria_draskovic_idea.dds"
+		name = "GFX_idea_spirit_maria_draskovic"
+		texturefile = "gfx/interface/ideas/spirits/spirit_maria_draskovic.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_esterhazy_moricz_idea"
-		texturefile = "gfx/interface/ideas/spirits/esterhazy_moricz_idea.dds"
+		name = "GFX_idea_spirit_esterhazy_moricz"
+		texturefile = "gfx/interface/ideas/spirits/spirit_esterhazy_moricz.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_zsigmond_szechneyi_idea"
-		texturefile = "gfx/interface/ideas/spirits/zsigmond_szechneyi_idea.dds"
+		name = "GFX_idea_spirit_zsigmond_szechneyi"
+		texturefile = "gfx/interface/ideas/spirits/spirit_zsigmond_szechneyi.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_andrassy_sandor_idea"
-		texturefile = "gfx/interface/ideas/spirits/andrassy_sandor_idea.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_fryderyk_i_idea"
-		texturefile = "gfx/interface/ideas/spirits/fryderyk_i_idea.dds"
+		name = "GFX_idea_spirit_andrassy_sandor"
+		texturefile = "gfx/interface/ideas/spirits/spirit_andrassy_sandor.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_spirit_zadruga"
@@ -148,12 +168,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/spirits/spirit_papal_relations.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_pawel_salwator_piast_riedelski_spirit"
-		texturefile = "gfx/interface/ideas/spirits/pawel_salwator_piast_riedelski_spirit.dds"
+		name = "GFX_idea_spirit_pawel_salwator_piast_riedelski"
+		texturefile = "gfx/interface/ideas/spirits/spirit_pawel_salwator_piast_riedelski.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_augustyn_jozef_czartoryski_spirit"
-		texturefile = "gfx/interface/ideas/spirits/augustyn_jozef_czartoryski_spirit.dds"
+		name = "GFX_idea_spirit_augustyn_jozef_czartoryski"
+		texturefile = "gfx/interface/ideas/spirits/spirit_augustyn_jozef_czartoryski.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_spirit_polish_national_army"

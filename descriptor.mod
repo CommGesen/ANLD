@@ -1,4 +1,4 @@
-version="1.0"
+version="2.0"
 tags={
 	"Alternative History"
 }
@@ -24,5 +24,5 @@ replace_path="events"
 replace_path="map/supplyareas"
 replace_path="gfx/flags"
 replace_path="gfx/loadingscreens"
-supported_version="1.13.6"
-remote_file_id="3127523372"
+supported_version="1.13.*"
+remote_file_id="2820767946"

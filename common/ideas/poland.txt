@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		old_wettyn_king = {
-			picture = fryderyk_i_idea
+			picture = spirit_fryderyk_i
 			allowed = {
 				tag = POL
 			}
@@ -22,7 +22,7 @@ ideas = {
 			}
 		}
 		fryderyk_ii_idea = {#new_wettyn_king - old name
-			#picture = fryderyk_ii_idea
+			#picture = spirit_fryderyk_ii
 			allowed = {
 				tag = POL
 			}
@@ -43,7 +43,7 @@ ideas = {
 			}
 		}
 		new_wettyn_king_figurehead = {
-			picture = fryderyk_ii_icon
+			picture = spirit_fryderyk_ii
 			allowed = {
 				tag = POL
 			}
@@ -62,7 +62,7 @@ ideas = {
 			}
 		}
 		new_wettyn_king_sikorski = {
-			picture = fryderyk_ii_icon
+			picture = spirit_fryderyk_ii
 			allowed = {
 				tag = POL
 			}
@@ -82,7 +82,7 @@ ideas = {
 			}
 		}
 		new_wettyn_king_piasecki = {
-			picture = fryderyk_ii_icon
+			picture = spirit_fryderyk_ii
 			allowed = {
 				tag = POL
 			}
@@ -1017,7 +1017,7 @@ ideas = {
 			}
 		}
 		POL_piast_king = {
-			picture = pawel_salwator_piast_riedelski_spirit
+			picture = spirit_pawel_salwator_piast_riedelski
 			allowed = {
 				tag = POL
 			}
@@ -1041,7 +1041,7 @@ ideas = {
 			}
 		}
 		POL_czartoryski_king = {
-			picture = augustyn_jozef_czartoryski_spirit
+			picture = spirit_augustyn_jozef_czartoryski
 			allowed = {
 				tag = POL
 			}
@@ -1062,7 +1062,7 @@ ideas = {
 			}
 		}
 		POL_andrassy_king = {
-			picture = generic_pp_unity_bonus
+			picture = spirit_andrassy_sandor
 			allowed = {
 				tag = POL
 			}

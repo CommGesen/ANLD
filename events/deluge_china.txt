@@ -1513,7 +1513,7 @@ news_event = {
 	}
 }
 
-# Hu Hanmin dies soon after the game starts and Zhang Lan is replaced by a republican general or Zhang Lan stays
+# Hu Hanmin dies soon after the game starts and is replaced by a republican general or Zhang Lan
 
 country_event = {
 	id = deluge_china.23
@@ -1532,12 +1532,12 @@ country_event = {
 	mean_time_to_happen = {
 		months = 3
 	}
-		
+	
 	option = {
 		name = deluge_china23opta
-		
+		retire_character = CHI_hu_hanmin
 		#kill_country_leader = yes
-		
+		promote_character = CHI_zhang_lan
 		#create_country_leader = {
 		#	name = "Zhang Xueliang"
 		#	desc = ""
@@ -1570,7 +1570,7 @@ country_event = {
 	option = {
 		name = deluge_china23optb
 		
-		kill_country_leader = yes
+		retire_character = CHI_hu_hanmin
 		
 		create_country_leader = {
 			name = "Chiang Kai-shek"

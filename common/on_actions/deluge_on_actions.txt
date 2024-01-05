@@ -873,6 +873,75 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					tag = POM
+					NOT = {
+						has_idea = kashubian_king
+					}
+					is_subject = no
+					NOT = {
+						AND = {
+							OR = {
+								has_government = neutrality
+								has_government = communism
+							}
+						}
+					}
+				}
+				POM = {
+					add_ideas = kashubian_king
+				}
+			}
+			if = {
+				limit = {
+					tag = POM
+					has_idea = kashubian_king
+					NOT = {
+						OR = {
+							has_government = fascism
+							has_government = democratic
+						}
+					}
+				}
+				POM = {
+					remove_ideas = kashubian_king
+				}
+			}
+			if = {
+				limit = {
+					tag = ROM
+					NOT = {
+						has_idea = romanian_king
+					}
+					NOT = {
+						AND = {
+							OR = {
+								has_government = neutrality
+								has_government = communism
+							}
+						}
+					}
+				}
+				ROM = {
+					add_ideas = romanian_king
+				}
+			}
+			if = {
+				limit = {
+					tag = ROM
+					has_idea = romanian_king
+					NOT = {
+						OR = {
+							has_government = fascism
+							has_government = democratic
+						}
+					}
+				}
+				ROM = {
+					remove_ideas = romanian_king
+				}
+			}
+			if = {
+				limit = {
 					tag = AUS
 					NOT = {
 						has_idea = habsburg_emperor

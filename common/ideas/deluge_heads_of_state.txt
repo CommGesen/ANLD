@@ -3,7 +3,7 @@ ideas = {
 	country = {
 
 		bourbon_king = {
-			picture = generic_pp_unity_bonus
+			picture = spirit_jean_iii
 			allowed = {
 				original_tag = LOU
 			}
@@ -23,7 +23,7 @@ ideas = {
 			}
 		}
 		bourbon_king_2 = {
-			picture = generic_pp_unity_bonus
+			picture = spirit_henri_d_orleans
 			allowed = {
 				original_tag = LOU
 			}
@@ -43,7 +43,7 @@ ideas = {
 			}
 		}
 		american_king = {
-			
+			picture = spirit_john_ii
 			allowed = {
 				original_tag = USA
 			}
@@ -57,7 +57,7 @@ ideas = {
 			}
 		}
 		swedish_king = {
-			picture = generic_pp_unity_bonus
+			picture = spirit_gustaf_v
 			allowed = {
 				original_tag = SWE
 			}
@@ -157,7 +157,7 @@ ideas = {
 			}
 		}
 		emperor_napoleon = {
-			
+			picture = spirit_napoleon_v
 			allowed = {
 				original_tag = FRA
 			}
@@ -170,9 +170,8 @@ ideas = {
 				neutrality_drift = 0.05
 			}
 		}
-		
 		ottoman_emperor = {
-			
+			picture = spirit_abdulmecid_ii
 			allowed = {
 				original_tag = TUR
 			}
@@ -188,7 +187,7 @@ ideas = {
 			}
 		}
 		emperor_osman_faud = {
-			picture = generic_pp_unity_bonus
+			picture = spirit_sehzade_osman_fuad
 			allowed = {
 				original_tag = TUR
 			}
@@ -203,7 +202,7 @@ ideas = {
 			}
 		}
 		emperor_sehzade_omer_faruk = {
-			picture = generic_pp_unity_bonus
+			picture = spirit_sehzade_omer_faruk
 			allowed = {
 				original_tag = TUR
 			}
@@ -219,7 +218,7 @@ ideas = {
 			}
 		}
 		emperor_ahmed_nihad = {
-			picture = generic_pp_unity_bonus
+			picture = spirit_ahmed_iv_nihad
 			allowed = {
 				original_tag = TUR
 			}
@@ -233,9 +232,8 @@ ideas = {
 				war_support_factor = 0.1
 			}
 		}
-		
 		fighting_king = {
-			
+			picture = spirit_george_viii
 			allowed = {
 				original_tag = ENG
 			}
@@ -252,7 +250,7 @@ ideas = {
 		
 		
 		emperor_puyi = {
-			
+			picture = spirit_aisin_gioro_puyi
 			allowed = {
 				original_tag = CHI
 			}
@@ -330,7 +328,7 @@ ideas = {
 		}
 		
 		habsburg_emperor = {
-			
+			picture = spirit_otto_von_habsburg
 			allowed = {
 				original_tag = AUS
 			}
@@ -345,7 +343,7 @@ ideas = {
 		}
 		
 		westphalian_king = {
-			
+			picture = spirit_frederick_ii
 			allowed = {
 				original_tag = WGR
 			}
@@ -360,9 +358,7 @@ ideas = {
 		}
 		
 		german_emperor = {
-			
-			picture = westphalian_king
-			
+			picture = spirit_frederick_ii
 			allowed = {
 				original_tag = WGR
 			}
@@ -377,9 +373,7 @@ ideas = {
 		}
 		
 		german_king = {
-			
-			picture = westphalian_king
-			
+			picture = spirit_frederick_ii
 			allowed = {
 				original_tag = WGR
 			}
@@ -395,9 +389,7 @@ ideas = {
 		}
 		
 		german_tyrant = {
-			
-			picture = westphalian_king
-			
+			picture = spirit_frederick_ii
 			allowed = {
 				original_tag = WGR
 			}
@@ -428,7 +420,7 @@ ideas = {
 		}
 		
 		italian_king = {
-			
+			picture = spirit_joachim_murat
 			allowed = {
 				original_tag = ITA
 			}
@@ -456,9 +448,8 @@ ideas = {
 				fascism_drift = 0.05
 			}
 		}
-		
 		emperor_russia = {
-			
+			picture = spirit_nikolai_ii
 			allowed = {
 				original_tag = SOV
 			}
@@ -471,7 +462,34 @@ ideas = {
 				neutrality_drift = 0.05
 			}
 		}
-		
+		kashubian_king = {
+			picture = spirit_karl_jesko_von_puttkamer
+			allowed = {
+				original_tag = POM
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+			}
+		}
+		romanian_king = {
+			picture = spirit_dimitire_ghica
+			allowed = {
+				original_tag = ROM
+			}
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+			}
+		}
 	}
 	
 }

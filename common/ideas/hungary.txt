@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		HUN_esterhazy_national_spirit = {
-			picture = esterhazy_moricz_idea
+			picture = spirit_esterhazy_moricz
 			allowed = {
 				tag = HUN
 			}
@@ -21,7 +21,7 @@ ideas = {
 			}
 		}
 		HUN_szechenyi_national_spirit = {
-			picture = zsigmond_szechneyi_idea
+			picture = spirit_zsigmond_szechneyi
 			allowed = {
 				tag = HUN
 			}
@@ -41,7 +41,7 @@ ideas = {
 			}
 		}
 		HUN_andrassy_national_spirit = {
-			picture = andrassy_sandor_idea
+			picture = spirit_andrassy_sandor
 			allowed = {
 				tag = HUN
 			}
