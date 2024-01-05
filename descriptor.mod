@@ -2,7 +2,7 @@ version="1.0"
 tags={
 	"Alternative History"
 }
-name="ANLD_test"
+name="Après Nous Le Déluge"
 replace_path="common/ai_equipment"
 replace_path="common/ai_focuses"
 replace_path="common/ai_strategy"
