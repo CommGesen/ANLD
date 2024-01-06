@@ -1,18 +1,74 @@
 ﻿
 # Events for Ottoman Empire/Turkey
 
-add_namespace = deluge_turkey
+add_namespace = turkey
 add_namespace = turbop
 
-
+country_event = {
+	id = turkey.0
+	title = turkey.0.t
+	desc = turkey.0.d
+	picture = GFX_deluge_istanbul_small
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.0.a
+		
+	}
+}
+country_event = {
+	id = turkey.1
+	title = turkey.1.t
+	desc = turkey.1.d
+	picture = GFX_deluge_istanbul_small
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.1.a
+		remove_ideas = TUR_national_Revolutionaries
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.5
+		}
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = "Islamists"
+			name = "Islamist Faction"
+		}
+		retire_character = TUR_fevzi_Çakmak
+		promote_character = TUR_Mustafa_Sabri
+	}
+}
+country_event = {
+	id = turbop.1
+	title = turbop.1.t
+	desc = turbop.1.d
+	picture = GFX_deluge_istanbul_small
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turbop.1.a
+		set_power_balance = {
+			id = TUR_power_balance
+			left_side = TUR_Federalism
+			right_side = TUR_Reformation
+		}
+		set_country_flag = TUR_BOP_on
+		activate_mission = TUR_act_quickly
+	}
+}
 
 country_event = {
 	id = turbop.2
 	title = turbop.2.t
 	desc = turbop.2.d
 	picture = GFX_deluge_istanbul_small
-	major = yes
 	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = turbop.2.a
 		hidden_effect = {
@@ -25,6 +81,10 @@ country_event = {
 				puppet = HEJ
 				clr_country_flag = TUR_BOP_on
 				set_country_flag = TUR_BOP_off
+				create_faction = "Ottoman Federation"
+				add_to_faction = IRQ
+				add_to_faction = HEJ
+				add_to_faction = SYR
 			}
 			IRQ={
 				add_ideas = ottoman_emperor
@@ -38,6 +98,11 @@ country_event = {
 					ruling_party = neutrality
 					elections_allowed = no
 				}
+				create_country_leader = {
+					name = "Ajmai Al Sa'adun"
+					picture = "gfx/leaders/IRQ/Portrait_IRQ_Ajami_al_Saadun.png"
+					ideology = reactionary_ideology
+				}
 			}
 			HEJ={
 				add_ideas = ottoman_emperor
@@ -49,6 +114,7 @@ country_event = {
 					ruling_party = neutrality
 					elections_allowed = no
 				}
+				
 			}
 			SYR={
 				add_ideas = ottoman_emperor
@@ -58,9 +124,15 @@ country_event = {
 				transfer_state = 554
 				transfer_state = 553
 				transfer_state = 667
+				set_state_owner = 667
 				set_politics = {
 					ruling_party = neutrality
 					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Shakib Arslan"
+					picture = "gfx/leaders/SYR/Portrait_OTT_Shakib_Arslan.png"
+					ideology = reactionary_ideology
 				}
 			}
 			SAU={
@@ -75,7 +147,7 @@ country_event = {
 	title = turbop.3.t
 	desc = turbop.3.d
 	picture = GFX_deluge_istanbul_small
-	major = yes
+	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
 		name = turbop.3.a
@@ -103,69 +175,91 @@ country_event = {
 	title = turbop.4.t
 	desc = turbop.4.d
 	picture = GFX_deluge_istanbul_small
-	major = yes
+	fire_only_once = yes
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			TUR={
+				clr_country_flag = TUR_BOP_on
+				set_country_flag = TUR_BOP_off
+				remove_power_balance = {
+					id = TUR_power_balance
+				}
+			}
+			IRQ={
+				transfer_state = 291
+				transfer_state = 676
+				transfer_state = 656
+				transfer_state = 935
+				transfer_state = 680
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+				}
+				add_ideas = communist_factor
+			}
+			HEJ={
+				transfer_state = 856
+				transfer_state = 679
+				transfer_state = 855
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+			}
+			SYR={
+				transfer_state = 455
+				transfer_state = 554
+				transfer_state = 553
+				transfer_state = 667
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				add_ideas = democratic_opposition
+			}
+			LEB={
+				transfer_state = 553
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+			}
+			PAL={
+				transfer_state = 454
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+			}
+			FRA={
+				puppet = LEB
+			}
+			SAU={
+				transfer_state = 675
+				transfer_state = 854
+			}
+		}
+	}
 	option = {
 		name = turbop.4.a
-		TUR={
-			clr_country_flag = TUR_BOP_on
-			set_country_flag = TUR_BOP_off
-			remove_power_balance = {
-				id = TUR_power_balance
-			}
-		}
+	}
+	option = {
+		name = turbop.4.b
 		IRQ={
-			transfer_state = 291
-			transfer_state = 676
-			transfer_state = 656
-			transfer_state = 935
-			transfer_state = 680
-			set_politics = {
-				ruling_party = democratic
-				elections_allowed = yes
-			}
-			add_ideas = communist_factor
+			change_tag_from = ROOT
 		}
+	}
+	option = {
+		name = turbop.4.c
 		HEJ={
-			transfer_state = 856
-			transfer_state = 679
-			transfer_state = 855
-			set_politics = {
-				ruling_party = neutrality
-				elections_allowed = no
-			}
+			change_tag_from = ROOT
 		}
+	}
+	option = {
+		name = turbop.4.e
 		SYR={
-			transfer_state = 455
-			transfer_state = 554
-			transfer_state = 553
-			transfer_state = 667
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
-			add_ideas = democratic_opposition
-		}
-		LEB={
-			transfer_state = 553
-			set_politics = {
-				ruling_party = neutrality
-				elections_allowed = no
-			}
-		}
-		PAL={
-			transfer_state = 454
-			set_politics = {
-				ruling_party = neutrality
-				elections_allowed = no
-			}
-		}
-		FRA={
-			puppet = LEB
-		}
-		SAU={
-			transfer_state = 675
-			transfer_state = 854
+			change_tag_from = ROOT
 		}
 	}
 }

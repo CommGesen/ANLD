@@ -95,9 +95,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Hashim al-Atassi"
+	name = "Bexhara El Khouri"
 	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds"
+	picture = "gfx/leaders/LEB/Portrait_Bechara_el_Khoury.dds"
 	ideology = liberal_republican_ideology
 	traits = {
 		#
@@ -107,27 +107,23 @@ create_country_leader = {
 create_country_leader = {
 	name = "Pierre Gemayel"
 	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Europe_Generic_fascism1.dds"
-	ideology = religious_ideology
+	picture = "gfx/leaders/LEB/Portrait_Pierre_Gemayel.png"
+	ideology = corporatist_ideology
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Melick Yarad"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_3.dds"
+	name = "Shakib Arslan"
+	picture = "gfx/leaders/SYR/Portrait_OTT_Shakib_Arslan.png"
 	ideology = reactionary_ideology
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
-	name = "Rami Sarraff"
+	name = "Farajallah El Helou"
 	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_2.dds"
+	picture = "gfx/leaders/LEB/Portrait_Farajallah_el-Helou.dds"
 	ideology = marxist_ideology
 	traits = {
 		#

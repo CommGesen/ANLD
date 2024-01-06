@@ -13,14 +13,50 @@ if = {
 }
 set_convoys = 20
 set_politics = {
-	ruling_party = fascism
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 0
-	fascism = 50
-	communism = 0
-	neutrality = 50
+	democratic = 50
+	fascism = 20
+	communism = 10
+	neutrality = 20
+}
+
+create_country_leader = {
+	name = "Raghib Al Nashashibi"
+	desc = ""
+	picture = "gfx/leaders/PAL/Portrait_PAL_Nashashibi.dds"
+	ideology = liberal_republican_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Amin Al Husyini"
+	desc = ""
+	picture = "gfx/leaders/PAL/Portrait_PAL_The_Mufti.png"
+	ideology = religious_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Abdul Qadir Al Husyini"
+	picture = "gfx/leaders/PAL/Portrait_PAL_al_Husayni.png"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Radwan El Helou"
+	desc = ""
+	picture = "gfx/leaders/PAL/Portrait_PAL_Radwan-Helou.dds"
+	ideology = marxist_ideology
+	traits = {
+		#
+	}
 }

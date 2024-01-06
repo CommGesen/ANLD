@@ -6,7 +6,7 @@ ideas = {
 				original_tag = TUR
 			}
 			removal_cost = -1
-			picture = HOL_workplace_democracy
+			picture = spirit_book_and_people
 
 			modifier = {
 				political_power_gain = -0.05
@@ -20,12 +20,55 @@ ideas = {
 				original_tag = TUR
 			}
 			removal_cost = -1
-			picture = HOL_workplace_democracy
+			picture = spirit_book_and_people
 
 			modifier = {
 				political_power_gain = -0.05
 				stability_weekly = 0.01
 				army_morale_factor = 0.04
+			}
+		}
+		TUR_national_Revolutionaries = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TUR_national_Revolutionaries"}
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			picture = spirit_noble_republic
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_weekly = -0.01
+				fascism_drift =  0.01
+			}
+		}
+		TUR_legacy_of_the_1800s = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TUR_legacy_of_the_1800s"}
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			picture = spirit_the_war_on_decadence
+
+			modifier = {
+				war_stability_factor = -0.1
+				stability_factor = -0.05
+				research_speed_factor = -0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		TUR_4th_Tanzimat_Era_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TUR_4th_Tanzimat_Era_idea"}
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			picture = spirit_allied_propaganda_campaigns
+
+			modifier = {
+				stability_factor = 0.05
+				research_speed_factor = 0.05
+				consumer_goods_factor = 0.05
 			}
 		}
 	}
