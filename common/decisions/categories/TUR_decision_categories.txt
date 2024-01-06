@@ -1,0 +1,10 @@
+TUR_power_struggle_category={
+	allowed = { original_tag = TUR }
+	priority = 80
+	icon = GFX_decision_category_power_struggle
+}
+TUR_power_struggle_category_mission = {
+	allowed = { original_tag = TUR }
+	priority = 80
+	icon = GFX_decision_category_generic_crisis
+}

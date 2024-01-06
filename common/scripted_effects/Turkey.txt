@@ -1,0 +1,15 @@
+TUR_federal_increase = {
+	add_power_balance_value = {
+		id = TUR_power_balance
+		value = -0.1
+		tooltip_side = TUR_Federalism
+	}
+}
+
+TUR_reform_increase = {
+	add_power_balance_value = {
+		id = TUR_power_balance
+		value = 0.1
+		tooltip_side = TUR_Reformation
+	}
+}

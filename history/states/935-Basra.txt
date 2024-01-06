@@ -1,0 +1,33 @@
+
+state={
+	id=935
+	name="STATE_935"
+	manpower = 100478
+	
+	state_category = town
+	
+	resources={
+		oil=15
+	}
+
+	history={
+		owner = TUR
+		victory_points = {
+			2089 3 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1 
+			air_base = 2
+			2089 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = TUR
+		add_core_of = IRQ
+	}
+
+	provinces={
+		78 2004 2089 7977 12726 8001
+	}
+}

@@ -1,0 +1,179 @@
+TUR_power_balance = {
+  initial_value = 0.0
+  left_side = TUR_Federalism #Monarchists seeking to minimize losses
+  right_side = TUR_Reformation #Democrats seeking to actual reform and democratization of the Empire
+  decision_category = TUR_power_struggle_category
+
+  range = {
+		id = TUR_balance_range
+		min = -0.10
+		max = 0.10
+		modifier = { }
+		on_activate = { }
+		on_deactivate = { }
+	}
+
+  side = {
+    id = TUR_Federalism
+    icon = GFX_bop_TUR_Federalism
+
+    range = {
+      id = TUR_Federalism_low_control_range
+      min = -0.3
+      max = -0.1
+      modifier = {
+        political_power_cost = 0.05
+        stability_factor = -0.05
+      }
+      on_activate = {
+        set_power_balance_gfx = {
+          id = TUR_power_balance
+          side = TUR_Federalism
+          gfx = GFX_bop_TUR_Federalism
+        }
+      }
+      on_deactivate = {
+        set_power_balance_gfx = {
+          id = TUR_power_balance
+          side = TUR_Federalism
+          gfx = GFX_bop_TUR_Federalism
+        }
+      }
+    }
+
+    range = {
+      id = TUR_Federalism_medium_control_range
+      min = -0.6
+      max = -0.3
+      modifier = {
+        political_power_cost = 0.1
+        stability_factor = -0.05
+      }
+      on_activate = {
+        set_power_balance_gfx = {
+          id = TUR_power_balance
+          side = TUR_Federalism
+          gfx = GFX_bop_TUR_Federalism
+        }
+      }
+      on_deactivate = {
+        set_power_balance_gfx = {
+          id = TUR_power_balance
+          side = TUR_Federalism
+          gfx = GFX_bop_TUR_Federalism
+        }
+      }
+    }
+
+    range = {
+      id = TUR_Federalism_high_control_range
+      min = -0.9
+      max = -0.6
+      modifier = {
+        political_power_cost = 0.15
+        stability_factor = -0.05
+      }
+      on_activate = {
+        hidden_effect = {
+			country_event = { id = turbop.2 days = 7 }
+			set_country_flag = TUR_Ottoman_Federation
+        }
+      }
+      on_deactivate = { }
+    }
+
+    range = {
+      id = TUR_Federalism_total_control_range
+      min = -1
+      max = -0.9
+      modifier = {
+        political_power_cost = 0.25
+        stability_factor = -0.05
+      }
+      on_activate = {}
+      on_deactivate = {}
+    }
+  }
+
+  side = {
+    id = TUR_Reformation
+    icon = GFX_bop_TUR_Reformation
+
+    range = {
+      id = TUR_Reformation_low_control_range
+      min = 0.1
+      max = 0.3
+      modifier = {
+        max_command_power_mult = -0.05
+        stability_factor = -0.05
+      }
+      on_activate = {
+        set_power_balance_gfx = {
+          id = TUR_power_balance
+          side = TUR_Reformation
+          gfx = GFX_bop_TUR_Reformation
+        }
+      }
+      on_deactivate = {
+        set_power_balance_gfx = {
+          id = TUR_power_balance
+          side = TUR_Reformation
+          gfx = GFX_bop_TUR_Reformation
+        }
+      }
+    }
+
+    range = {
+      id = TUR_Reformation_medium_control_range
+      min = 0.3
+      max = 0.6
+      modifier = {
+        max_command_power_mult = -0.1
+        stability_factor = -0.05
+      }
+      on_activate = {
+        set_power_balance_gfx = {
+          id = TUR_power_balance
+          side = TUR_Reformation
+          gfx = GFX_bop_TUR_Reformation
+        }
+      }
+      on_deactivate = {
+        set_power_balance_gfx = {
+          id = TUR_power_balance
+          side = TUR_Reformation
+          gfx = GFX_bop_TUR_Reformation
+        }
+      }
+    }
+
+    range = {
+      id = TUR_Reformation_high_control_range
+      min = 0.6
+      max = 0.9
+      modifier = {
+        max_command_power_mult = -0.15
+        stability_factor = -0.05
+      }
+      on_activate = {
+        hidden_effect = {
+          country_event = { id = turbop.3 days = 7 }
+		     set_country_flag = TUR_Reformed_Empire
+        }
+      }
+      on_deactivate = {}
+    }
+
+    range = {
+      id = TUR_Reformation_total_control_range
+      min = 0.9
+      max = 1
+      modifier = {
+        max_command_power_mult = -0.25
+        stability_factor = -0.05
+      }
+      on_activate = {}
+      on_deactivate = {}
+    }
+  }
+}

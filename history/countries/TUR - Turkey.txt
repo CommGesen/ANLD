@@ -1,5 +1,11 @@
 ﻿capital = 341
-
+set_power_balance = {
+    id = TUR_power_balance
+    left_side = TUR_Federalism
+    right_side = TUR_Reformation
+}
+set_country_flag = TUR_BOP_on
+activate_mission = TUR_act_quickly
 oob = "TUR_1936"
 
 if = {
@@ -123,6 +129,7 @@ recruit_character = TUR_cemil_cahit_toydemir
 recruit_character = TUR_rauf_orbay
 recruit_character = TUR_nazmi_solok
 recruit_character = TUR_sefik_hüsnü
+recruit_character = TUR_Ali_Kemal
 recruit_character = TUR_celâl_bayar
 recruit_character = TUR_ismet_inönü
 

@@ -72,6 +72,20 @@ characters={
 			id=-1
 		}
 	}
+	TUR_Ali_Kemal={
+		name="Ali Kemal"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/Portrait_TUR_Ali_Kemal.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ALI_KEMAL_DESC"
+			ideology=constitutionalist_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	TUR_celâl_bayar={
 		name="Celâl Bayar"
 		portraits={
@@ -131,7 +145,7 @@ characters={
 		name="Abdulmejid II"
 		portraits={
 			civilian={
-				large="GFX_portrait_tur_abdulmejid_ii"
+				large="gfx/leaders/TUR/ottoman_emperor.dds"
 			}
 		}
 		country_leader={

@@ -1,0 +1,389 @@
+TUR_power_struggle_category={
+	TUR_campaign_federal = {
+
+		icon = GFX_decision_tur_unifying_the_country_category
+
+		cost = 10
+
+		fire_only_once = no
+
+		days_remove = 5
+
+		allowed = {
+			OR = {
+				original_tag = TUR
+			}
+		}
+		available = {
+			tag = TUR
+			NOT={
+				OR={
+					has_country_flag = TUR_reform_gameplay
+					has_country_flag = TUR_federal_gameplay
+				}
+			}
+		}
+
+		visible = {
+			country_exists = TUR
+		}
+
+		complete_effect = {
+			set_country_flag = TUR_federal_gameplay
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
+
+		remove_effect = {
+		}
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	TUR_ally_imams = {
+
+		icon = GFX_decision_faction_tur_traditionalist
+
+		cost = 80
+
+		fire_only_once = no
+
+		days_remove = 50
+
+		allowed = {
+			OR = {
+				original_tag = TUR
+			}
+		}
+		available = {
+			tag = TUR
+		}
+
+		visible = {
+			country_exists = TUR
+			has_country_flag = TUR_federal_gameplay
+		}
+
+		complete_effect = {
+			TUR_federal_increase = yes
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_days_mission_timeout = {
+				mission = TUR_act_quickly
+				days = 50
+			}
+			add_timed_idea = {
+				idea = TUR_Imam_Support
+				days = 50
+			}
+		}
+
+		remove_effect = {
+		}
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	TUR_appoint_loyalist_walis = {
+
+		icon = GFX_decision_SWI_no_elected_president
+
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = custom_cost_joint_training_exercise
+
+		fire_only_once = no
+
+		days_remove = 100
+
+		allowed = {
+			OR = {
+				original_tag = TUR
+			}
+		}
+		available = {
+			tag = TUR
+		}
+
+		visible = {
+			country_exists = TUR
+			has_country_flag = TUR_federal_gameplay
+		}
+
+		complete_effect = {
+			TUR_federal_increase = yes
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_days_mission_timeout = {
+				mission = TUR_act_quickly
+				days = 50
+			}
+		}
+
+		remove_effect = {
+		}
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	TUR_crackdown_on_socialism = {
+
+		icon = GFX_decision_generic_arrest
+
+		custom_cost_text = PP_30_infantry_equipment_500
+		custom_cost_trigger = {
+			has_political_power > 49.99
+			has_equipment = { infantry_equipment > 49 }
+		}
+
+		fire_only_once = no
+
+		days_remove = 100
+
+		allowed = {
+			OR = {
+				original_tag = TUR
+			}
+		}
+		available = {
+			tag = TUR
+		}
+
+		visible = {
+			country_exists = TUR
+			has_country_flag = TUR_federal_gameplay
+		}
+
+		complete_effect = {
+			TUR_federal_increase = yes
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+			add_days_mission_timeout = {
+				mission = TUR_act_quickly
+				days = -10
+			}
+		}
+
+		remove_effect = {
+		}
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	TUR_campaign_reform = {
+
+		icon = GFX_decision_faction_tur_unaligned
+
+		cost = 10
+
+		fire_only_once = no
+
+		days_remove = 5
+
+		allowed = {
+			OR = {
+				original_tag = TUR
+			}
+		}
+		available = {
+			tag = TUR
+			NOT={
+				OR={
+					has_country_flag = TUR_reform_gameplay
+					has_country_flag = TUR_federal_gameplay
+				}
+			}
+		}
+
+		visible = {
+			country_exists = TUR
+		}
+
+		complete_effect = {
+			set_country_flag = TUR_reform_gameplay
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+		}
+
+		remove_effect = {
+		}
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	TUR_ally_arabs = {
+
+		icon = GFX_decision_SWI_no_elected_president
+
+		custom_cost_text = PP_25_CP_100
+		custom_cost_trigger = {
+			has_political_power > 24.99
+			command_power > 99
+		}
+
+		fire_only_once = no
+
+		days_remove = 50
+
+		allowed = {
+			OR = {
+				original_tag = TUR
+			}
+		}
+		available = {
+			tag = TUR
+		}
+
+		visible = {
+			country_exists = TUR
+			has_country_flag = TUR_reform_gameplay
+		}
+
+		complete_effect = {
+			TUR_reform_increase = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_days_mission_timeout = {
+				mission = TUR_act_quickly
+				days = 50
+			}
+			add_timed_idea = {
+				idea = TUR_Arab_Support
+				days = 50
+			}
+		}
+
+		remove_effect = {
+		}
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	TUR_appoint_minority_walis = {
+
+		icon = GFX_decision_SWI_swiss_democratic_tradition_campaign
+
+		custom_cost_trigger = {
+			command_power > 25
+		}
+		custom_cost_text = custom_cost_joint_training_exercise
+
+		fire_only_once = no
+
+		days_remove = 100
+
+		allowed = {
+			OR = {
+				original_tag = TUR
+			}
+		}
+		available = {
+			tag = TUR
+		}
+
+		visible = {
+			country_exists = TUR
+			has_country_flag = TUR_reform_gameplay
+		}
+
+		complete_effect = {
+			TUR_federal_increase = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_days_mission_timeout = {
+				mission = TUR_act_quickly
+				days = 50
+			}
+		}
+
+		remove_effect = {
+		}
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	TUR_crackdown_on_turk_nationalism = {
+
+		icon = GFX_decision_generic_arrest
+
+		custom_cost_text = PP_30_infantry_equipment_500
+		custom_cost_trigger = {
+			has_political_power > 49.99
+			has_equipment = { infantry_equipment > 49 }
+		}
+
+		fire_only_once = no
+
+		days_remove = 30
+
+		allowed = {
+			OR = {
+				original_tag = TUR
+			}
+		}
+		available = {
+			tag = TUR
+		}
+
+		visible = {
+			country_exists = TUR
+			has_country_flag = TUR_reform_gameplay
+		}
+
+		complete_effect = {
+			TUR_federal_increase = yes
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+			add_days_mission_timeout = {
+				mission = TUR_act_quickly
+				days = -10
+			}
+		}
+
+		remove_effect = {
+		}
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+}
+
+
+TUR_power_struggle_category_mission = {
+	TUR_act_quickly = {
+		icon = GFX_decision_revolt
+		is_good = no
+		days_mission_timeout = 169
+		activation = {
+			has_country_flag = TUR_BOP_on
+		}
+		available = {
+			has_country_flag = TUR_BOP_off
+		}
+		timeout_effect = {
+			custom_effect_tooltip = TUR_no_empire_tt
+			hidden_effect = {
+				TUR = {
+					country_event = { id = turbop.4 days = 5 }
+				}
+			}
+		}
+	}
+}
