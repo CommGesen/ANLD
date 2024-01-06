@@ -109,7 +109,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rashid Ali al-Gaylani"
 	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_fascism1.dds"
+	picture = "gfx/leaders/IRQ/portrait_irq_rashid_al_gaylani.dds"
 	expire = "1965.1.1"
 	ideology = religious_ideology
 	traits = {
@@ -120,9 +120,20 @@ create_country_leader = {
 create_country_leader = {
 	name = "Yusuf Salman Yusuf"
 	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
+	picture = "gfx/leaders/IRQ/Portrait_IRQ_Yusuf_Salman_Yusuf.png"
 	expire = "1965.1.1"
 	ideology = jacobin_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kamel Al Chaderchi"
+	desc = ""
+	picture = "gfx/leaders/IRQ/Portrait_IRQ_Kamil_Chadirchi.png"
+	expire = "1965.1.1"
+	ideology = social_democratic_ideology
 	traits = {
 		#
 	}
