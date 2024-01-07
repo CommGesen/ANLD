@@ -1,0 +1,25 @@
+
+state={
+	id=939
+	name="STATE_939"
+	
+	impassable = yes
+
+	history={
+		owner = LBA
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = EGY
+
+	}
+
+	provinces={
+		12733 10907 10869 12764
+	}
+	manpower=19539
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

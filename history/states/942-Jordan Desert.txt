@@ -1,0 +1,23 @@
+
+state={
+	id=942
+	name="STATE_942"
+
+	history={
+		owner = ANZ
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_claim_by = SAU
+		add_core_of = ANZ
+	}
+
+	provinces={
+		4440 4562
+	}
+	manpower=19539
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=941
+	name="STATE_941"
+	
+	impassable = yes
+
+	history={
+		owner = LBA
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = SUD
+
+	}
+
+	provinces={
+		12816
+	}
+	manpower=19539
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

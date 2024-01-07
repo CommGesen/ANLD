@@ -1,65 +1,128 @@
 characters={
-	TUR_cemil_cahit_toydemir={
-		name="Cemil Cahit Toydemir"
+	TUR_abdulmejid_ii={
+		name="Abdulmejid II"
 		portraits={
-			army={
-				small="GFX_idea_tur_cemil_cahit_toydemir"
-			}
-			army={
-				large="GFX_portrait_tur_cemil_cahit_toydemir"
+			civilian={
+				large="gfx/leaders/TUR/ottoman_emperor.dds"
 			}
 		}
-		corps_commander={
-			traits={ desert_fox }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=-1
+		country_leader={
+			desc="abdulmejid_ii_desc"
+			ideology=reactionary_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits={ war_hero media_personality }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 		}
 	}
-	TUR_rauf_orbay={
-		name="Rauf Orbay"
+	TUR_osman_faud={
+		name="Şehzade Osman Fuad"
 		portraits={
-			army={
-				small="GFX_idea_tur_rauf_orbay"
-			}
-			army={
-				large="GFX_portrait_TUR_rauf_orbay"
+			civilian={
+				large="gfx/leaders/TUR/osman_faud.dds"
 			}
 		}
+		#country_leader={
+		#	desc="osman_faud_leader_desc"
+		#	ideology=reactionary_ideology
+		#	expire="1965.1.1.1"
+		#	traits = {
+		#		war_lover
+		#	}
+		#}
 		corps_commander={
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	TUR_nazmi_solok={
-		name="Nazmi Solok"
-		portraits={
-			army={
-				small="GFX_portrait_TUR_nazmi_solok_small"
-			}
-			army={
-				large="GFX_portrait_TUR_nazmi_solok"
-			}
-		}
-		corps_commander={
-			traits={ trickster }
+			traits={ war_hero }
 			skill=2
 			attack_skill=2
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=2
-			legacy_id=-1
+			
+		}
+	}
+	TUR_sehzade_omer_faruk={
+		name="Şehzade Ömer Faruk"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/sehzade_omer_faruk.dds"
+			}
+		}
+		#country_leader={
+		#	desc="sehzade_omer_faruk_leader_desc"
+		##	ideology=reactionary_ideology
+		#	expire="1965.1.1.1"
+		#	traits = {
+		#		sultan_of_glory
+		#	}
+		#}
+		corps_commander={
+			traits={ politically_connected }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			
+		}
+	}
+	TUR_ahmed_nihad={
+		name="Şehzade Ahmed Nihad"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/ahmed_nihad.dds"
+			}
+		}
+		#country_leader={
+		#	desc="ahmed_nihad_leader_desc"
+		#	ideology=reactionary_ideology
+		#	expire="1965.1.1.1"
+		#	traits = {
+		#		polite_sultan
+		#	}
+		#}
+		corps_commander={
+			traits={ politically_connected }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			
+		}
+	}
+	
+	
+	TUR_mustafa_kemal_pasha={
+		name="Mustafa Kemal Pasha"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/ataturk_large.dds"
+				small="gfx/interface/ideas/TUR_mustafa_kemal_pasha.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ATATURK_DESC"
+			ideology= jacobin_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			traits={ offensive_doctrine defensive_doctrine }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 		}
 	}
 	TUR_sefik_hüsnü={
-		name="Sefik Hüsnü"
+		name="Sefik Hüsnü Bey"
 		portraits={
 			civilian={
 				large="gfx/leaders/TUR/Portrait_Turkey_Sefik_Husnu.dds"
@@ -73,7 +136,7 @@ characters={
 		}
 	}
 	TUR_Ali_Kemal={
-		name="Ali Kemal"
+		name="Ali Kemal Bey"
 		portraits={
 			civilian={
 				large="gfx/leaders/TUR/Portrait_TUR_Ali_Kemal.dds"
@@ -93,29 +156,38 @@ characters={
 				large="GFX_portrait_tur_celal_bayar"
 			}
 		}
-		country_leader={
-			desc="POLITICS_CELAL_BAYAR_DESC"
-			ideology=constitutionalist_ideology
-			expire="1965.1.1.1"
-			id=-1
-		}
+		#country_leader={
+		#	desc="POLITICS_CELAL_BAYAR_DESC"
+		#	ideology=constitutionalist_ideology
+		#	expire="1965.1.1.1"
+		#	id=-1
+		#}
 	}
 	TUR_ismet_inönü={
-		name="Ismet Inönü"
+		name="Mustafa Ismet Pasha"
 		portraits={
 			civilian={
 				large="gfx/leaders/TUR/Portrait_Turkey_Ismet_Inonu.dds"
 			}
 		}
-		country_leader={
-			desc="POLITICS_ISMET_INÖNÜ_DESC"
-			ideology=constitutionalist_ideology
-			expire="1965.1.1.1"
-			id=-1
+		#country_leader={
+		#	desc="POLITICS_ISMET_INÖNÜ_DESC"
+		#	ideology=constitutionalist_ideology
+		#	expire="1965.1.1.1"
+		#	id=-1
+		#}
+		corps_commander={
+			traits={ hidden_sympathies }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			
 		}
 	}
 	TUR_fevzi_Çakmak={
-		name="Fevzi Çakmak"
+		name="Fevzi Pasha"
 		portraits={
 			civilian={
 				large="gfx/leaders/TUR/TUR_fevzi_Çakmak.dds"
@@ -126,6 +198,15 @@ characters={
 			ideology=corporatist_ideology
 			expire="1965.1.1.1"
 			id=-1
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			
 		}
 	}
 	TUR_Mustafa_Sabri={
@@ -140,107 +221,337 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+		
 	}
-	TUR_abdulmejid_ii={
-		name="Abdulmejid II"
+
+	TUR_cemil_cahit_toydemir={
+		name="Cemil Toydemir Bey"
 		portraits={
-			civilian={
-				large="gfx/leaders/TUR/ottoman_emperor.dds"
+			army={
+				large="gfx/leaders/TUR/Portrait_TUR_cemil_cahit_toydemir.dds"
 			}
 		}
-		country_leader={
-			desc="abdulmejid_ii_desc"
-			ideology=reactionary_ideology
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	TUR_osman_faud={
-		name="Şehzade Osman Fuad"
-		portraits={
-			civilian={
-				large="gfx/leaders/TUR/osman_faud.dds"
+		advisor={
+			slot = army_chief
+			idea_token = TUR_cemil_cahit_toydemir
+			allowed = {
+				original_tag = TUR
 			}
-		}
-		country_leader={
-			desc="osman_faud_leader_desc"
-			ideology=reactionary_ideology
-			expire="1965.1.1.1"
 			traits = {
-				polite_sultan
+				army_chief_reform_2
 			}
-		}
-	}
-	TUR_sehzade_omer_faruk={
-		name="Şehzade Ömer Faruk"
-		portraits={
-			civilian={
-				large="gfx/leaders/TUR/sehzade_omer_faruk.dds"
-			}
-		}
-		country_leader={
-			desc="sehzade_omer_faruk_leader_desc"
-			ideology=reactionary_ideology
-			expire="1965.1.1.1"
-			traits = {
-				sultan_of_glory
-			}
-		}
-	}
-	TUR_ahmed_nihad={
-		name="Ahmed IV Nihad"
-		portraits={
-			civilian={
-				large="gfx/leaders/TUR/ahmed_nihad.dds"
-			}
-		}
-		country_leader={
-			desc="ahmed_nihad_leader_desc"
-			ideology=reactionary_ideology
-			expire="1965.1.1.1"
-			traits = {
-				war_lover
-			}
-		}
-	}
-	TUR_mustafa_kemal_pasha={
-		name="Mustafa Kemal Pasha"
-		portraits={
-			army={
-				small=""
-			}
-			army={
-				large="gfx/leaders/TUR/ataturk_large.dds"
-			}
-		}
-		field_marshal={
-			traits={ offensive_doctrine defensive_doctrine }
-			skill=5
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=200
-		}
-	}
-	TUR_salih_omurtak={
-		name="Salih Omurtak"
-		portraits={
-			army={
-				small="GFX_idea_tur_salih_omurtak"
-			}
-			army={
-				large="GFX_portrait_tur_salih_omurtak"
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		corps_commander={
-			traits={ hill_fighter }
+			traits={ career_officer infantry_officer hill_fighter }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	TUR_ahmet_fevzi_pasha = {
+		name="Ahmet Fevzi Pasha"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/portrait_tur_ahmet_fevzi_pasha.dds"
+			}
+		}
+		corps_commander = {
+			traits = { war_hero trait_cautious trait_mountaineer trait_TUR_ottoman_loyalist }
+			skill = 3 
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	TUR_refet_pasha = {
+		name="Refat Bele Pasha"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/portrait_tur_refe_pasha.dds"
+			}
+		}
+		corps_commander = {
+			traits = { harsh_leader war_hero brilliant_strategist trickster }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	TUR_mehmet_esat_pasha = {
+		name="Mehmet Esat Pasha"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/Portrait_TUR_mehmet_esat_pasha.dds"
+			}
+		}
+		corps_commander = {
+			traits = { war_hero inflexible_strategist media_personality trickster hill_fighter }
+			skill = 4 #13
+			attack_skill = 2
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	TUR_kazim_orbay={
+		name="Kazim Orbay Bey"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/Portrait_TUR_Kazim_Orbay.dds"
+				small="gfx/interface/ideas/idea_TUR_kazim_orbay.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = TUR_kazim_orbay
+			ledger = army
+			name = TUR_kazim_orbay
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ media_personality war_hero infantry_leader }
+			skill=4
+			attack_skill=2
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=3
+		}
+	}
+	TUR_rauf_orbay={
+		name="Rauf Orbay Pasha"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/Portrait_TUR_rauf_orbay.dds"
+				small="gfx/interface/ideas/idea_TUR_rauf_orbay.dds"
+			}
+		}
+		advisor={
+			cost = 150	
+			slot = theorist
+			idea_token = TUR_rauf_orbay
+			ledger = navy
+			name = TUR_rauf_orbay
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				grand_fleet_proponent
+			}
+		}
+		navy_leader={
+			traits = { bold }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 2
+		}			
+	}
+	TUR_fahrettin_altay={
+		name="Fahrettin Altay Pasha"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/Portrait_TUR_fahrettin_altay.dds"
+				small="gfx/interface/ideas/idea_TUR_fahrettin_altay.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = TUR_fahrettin_altay
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				army_chief_maneuver_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		corps_commander={
+			traits={ brilliant_strategist cavalry_officer war_hero hill_fighter }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=2
+		}
+	}
+	TUR_izzettin_chalishlar={
+		name="Izzettin Bey"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/portrait_tur_izzettin_calislar.dds"
+				small=GFX_portrait_TUR_izzettin_chalishlar_small
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer war_hero trait_TUR_kemalist_champion trait_mountaineer }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+	TUR_kazim_karabekir={
+		name="Kazim Karabekir Pasha"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/portrait_tur_kazim_karabekir.dds"
+				small="GFX_idea_tur_kazim_karabekir"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = TUR_kazim_karabekir
+			ledger = army
+			traits = {
+				grand_battle_plan_expert
+			}
+		}
+
+		corps_commander={
+			traits={ trait_cautious politically_connected desert_fox }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			
+		}
+	}
+	TUR_mustafa_muglali={
+		name="Mughali Bey"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/portrait_tur_mustafa_mugali.dds"
+				small=GFX_portrait_TUR_mustafa_muglali_small
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			
+		}
+	}
+
+	TUR_mehmet_salih_omurtak={
+		name="Mehmet Omurtak Bey"
+		portraits={
+			army={
+				small="GFX_idea_tur_salih_omurtak"
+				large="gfx/leaders/TUR/portrait_tur_salih_omurtak.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = TUR_mehmet_salih_omurtak
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader infantry_officer politically_connected trait_TUR_kemalist_champion }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}		
+	}
+
+	TUR_hayrullah_fisek={
+		name="Hayrullah Bey"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/portrait_tur_hayrullah_fisek.dds"
+				small=GFX_portrait_TUR_hayrullah_fisek_small
+			}
+		}
+		corps_commander={
+			traits={ career_officer trickster }
 			skill=2
 			attack_skill=2
 			defense_skill=2
 			planning_skill=2
+			logistics_skill=1
+			
+		}
+	}
+
+	TUR_mehmet_nuri_yamut={
+		name="Mehmet Yamut Pasha"
+		portraits={
+			army={
+				large="gfx/leaders/TUR/portrait_tur_mehmet_nuri_yamut.dds"
+				small=GFX_portrait_TUR_mehmet_nuri_yamut_small
+			}
+		}
+		corps_commander={
+			traits={ career_officer trait_reckless }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
 			logistics_skill=2
-			legacy_id=-1
+		}
+	}
+	TUR_fakhri_pasha={
+		name="Ömer Fahrettin Pasha"
+		portraits={
+			army={
+				small=GFX_portrait_TUR_fakhri_pasha_small
+				large="gfx/leaders/TUR/portrait_tur_fakhri_pasha.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = TUR_fakhri_pasha
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ career_officer trait_reckless trait_TUR_ottoman_loyalist }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 		}
 	}
 }
