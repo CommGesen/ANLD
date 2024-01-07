@@ -476,8 +476,8 @@ OCC = {
 	color_ui = rgb { 120 200 90 }
 }
 OMA = {
-	color = rgb { 100 180 90 }
-	color_ui = rgb { 120 200 110 }
+	color = rgb { 100 0 40 }
+	color_ui = rgb { 100 20 40 }
 }
 OSS = {
 	color = rgb { 210 210 130 }
@@ -688,8 +688,8 @@ WSR = {
 	color_ui = rgb { 200 240 250 }
 }
 YEM = {
-	color = rgb { 190 0 40 }
-	color_ui = rgb { 210 20 60 }
+	color = rgb { 120 0 20 }
+	color_ui = rgb { 120 20 20 }
 }
 YUG = {
 	color = rgb { 170 160 190 }
@@ -763,4 +763,8 @@ D15 = {
 PAL = {
 	color = rgb { 92 15 44 }
 	color_ui = rgb { 92 15 44 }
+}
+ANZ={
+	color = rgb { 120 0 20 }
+	color_ui = rgb { 120 20 20 }
 }

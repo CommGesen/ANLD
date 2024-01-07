@@ -1,0 +1,22 @@
+
+state={
+	id=945
+	name="STATE_945"
+	history={
+		owner = ANZ
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = ANZ
+		add_core_of = SAU
+	}
+
+	provinces={
+		12749 5058
+	}
+	manpower=19539
+	buildings_max_level_factor=1.000
+	state_category= pastoral
+	local_supplies=0.000
+}

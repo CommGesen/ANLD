@@ -7,8 +7,9 @@ state={
 	}
 
 	history={
-		owner = SAU
-		add_core_of = SAU
+		owner = ENG
+		add_core_of = ABU
+		add_claim_by = SAU
 		buildings = {
 			infrastructure = 1
 			12702 = {
@@ -21,7 +22,7 @@ state={
 	}
 
 	provinces={
-		1955 4932 10791 10850 12702 
+		4932 10791 12702 
 	}
 	manpower=440000
 	buildings_max_level_factor=1.000
