@@ -134,3 +134,14 @@ create_country_leader = {
 		#
 	}
 }
+
+create_corps_commander = {
+	name = "Sultan Al Atrash"
+	picture = "gfx/leaders/SYR/portrait_syria_ali_rikabi.dds"
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+	traits = { }
+}

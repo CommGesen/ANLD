@@ -391,3 +391,49 @@ POL_resistance_to_incorporation = {
 	state_production_speed_buildings_factor = -0.1
 	local_building_slots_factor = -0.1
 }
+
+TUR_minority_unrest0 = {
+	icon = GFX_modifier_resistance_ott
+	remove_trigger = {
+	  NOT = { is_controlled_by = TUR }
+	}
+	recruitable_population_factor = -0.2
+	state_production_speed_buildings_factor = -0.2
+	local_building_slots_factor = -0.2
+}
+TUR_minority_unrest1 = {
+	icon = GFX_modifier_resistance_ott
+	remove_trigger = {
+	  NOT = { is_controlled_by = TUR }
+	}
+	recruitable_population_factor = -0.1
+	state_production_speed_buildings_factor = -0.1
+	local_building_slots_factor = -0.1
+}
+TUR_minority_unrest2 = {
+	icon = GFX_modifier_resistance_ott2
+	remove_trigger = {
+	  NOT = { is_controlled_by = TUR }
+	}
+	recruitable_population_factor = -0.05
+	state_production_speed_buildings_factor = -0.05
+	local_building_slots_factor = -0.05
+}
+TUR_minority_unrest3 = {
+	icon = GFX_modifier_resistance_ott2
+	remove_trigger = {
+	  NOT = { is_controlled_by = TUR }
+	}
+	recruitable_population_factor = 0.05
+	state_production_speed_buildings_factor = 0.05
+	local_building_slots_factor = 0.05
+}
+TUR_minority_unrest4 = {
+	icon = GFX_modifier_multiculturalism2
+	remove_trigger = {
+	  NOT = { is_controlled_by = TUR }
+	}
+	recruitable_population_factor = 0.1
+	state_production_speed_buildings_factor = 0.1
+	local_building_slots_factor = 0.1
+}

@@ -8,6 +8,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/state_modifiers/modifier_multiculturalism.dds"
 	}
 	spriteType = {
+		name = "GFX_modifier_multiculturalism2"
+		texturefile = "gfx/interface/state_modifiers/modifier_multiculturalism2.dds"
+	}
+	spriteType = {
 		name = "GFX_modifier_polonization"
 		texturefile = "gfx/interface/state_modifiers/modifier_polonization.dds"
 	}
@@ -18,6 +22,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_modifier_resistance_to_incorporation"
 		texturefile = "gfx/interface/state_modifiers/modifier_resistance_to_incorporation.dds"
+	}
+	spriteType = {
+		name = "GFX_modifier_resistance_ott"
+		texturefile = "gfx/interface/state_modifiers/TUR_Minority.dds"
+	}
+	spriteType = {
+		name = "GFX_modifier_resistance_ott2"
+		texturefile = "gfx/interface/state_modifiers/TUR_Minority2.dds"
 	}
 	spriteType = {
 		name = "GFX_modifier_reversed_ostsiedlung"

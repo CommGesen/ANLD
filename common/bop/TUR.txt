@@ -1,7 +1,7 @@
 TUR_power_balance = {
   initial_value = 0.0
-  left_side = TUR_Federalism #Monarchists seeking to minimize losses
-  right_side = TUR_Reformation #Democrats seeking to actual reform and democratization of the Empire
+  left_side = TUR_Sultan #Monarchists 
+  right_side = TUR_Reformation #Democrats 
   decision_category = TUR_power_struggle_category
 
   range = {
@@ -14,11 +14,11 @@ TUR_power_balance = {
 	}
 
   side = {
-    id = TUR_Federalism
-    icon = GFX_bop_TUR_Federalism
+    id = TUR_Sultan
+    icon = GFX_bop_TUR_Sultan3
 
     range = {
-      id = TUR_Federalism_low_control_range
+      id = TUR_Sultan_low_control_range
       min = -0.3
       max = -0.1
       modifier = {
@@ -28,21 +28,21 @@ TUR_power_balance = {
       on_activate = {
         set_power_balance_gfx = {
           id = TUR_power_balance
-          side = TUR_Federalism
-          gfx = GFX_bop_TUR_Federalism
+          side = TUR_Sultan
+          gfx = GFX_bop_TUR_Sultan2
         }
       }
       on_deactivate = {
         set_power_balance_gfx = {
           id = TUR_power_balance
-          side = TUR_Federalism
-          gfx = GFX_bop_TUR_Federalism
+          side = TUR_Sultan
+          gfx = GFX_bop_TUR_Sultan3
         }
       }
     }
 
     range = {
-      id = TUR_Federalism_medium_control_range
+      id = TUR_Sultan_medium_control_range
       min = -0.6
       max = -0.3
       modifier = {
@@ -52,21 +52,21 @@ TUR_power_balance = {
       on_activate = {
         set_power_balance_gfx = {
           id = TUR_power_balance
-          side = TUR_Federalism
-          gfx = GFX_bop_TUR_Federalism
+          side = TUR_Sultan
+          gfx = GFX_bop_TUR_Sultan
         }
       }
       on_deactivate = {
         set_power_balance_gfx = {
           id = TUR_power_balance
-          side = TUR_Federalism
-          gfx = GFX_bop_TUR_Federalism
+          side = TUR_Sultan
+          gfx = GFX_bop_TUR_Sultan2
         }
       }
     }
 
     range = {
-      id = TUR_Federalism_high_control_range
+      id = TUR_Sultan_high_control_range
       min = -0.9
       max = -0.6
       modifier = {
@@ -83,7 +83,7 @@ TUR_power_balance = {
     }
 
     range = {
-      id = TUR_Federalism_total_control_range
+      id = TUR_Sultan_total_control_range
       min = -1
       max = -0.9
       modifier = {
@@ -97,7 +97,7 @@ TUR_power_balance = {
 
   side = {
     id = TUR_Reformation
-    icon = GFX_bop_TUR_Reformation
+    icon = GFX_bop_TUR_Reformation3
 
     range = {
       id = TUR_Reformation_low_control_range
@@ -111,14 +111,14 @@ TUR_power_balance = {
         set_power_balance_gfx = {
           id = TUR_power_balance
           side = TUR_Reformation
-          gfx = GFX_bop_TUR_Reformation
+          gfx = GFX_bop_TUR_Reformation2
         }
       }
       on_deactivate = {
         set_power_balance_gfx = {
           id = TUR_power_balance
           side = TUR_Reformation
-          gfx = GFX_bop_TUR_Reformation
+          gfx = GFX_bop_TUR_Reformation3
         }
       }
     }
@@ -142,7 +142,7 @@ TUR_power_balance = {
         set_power_balance_gfx = {
           id = TUR_power_balance
           side = TUR_Reformation
-          gfx = GFX_bop_TUR_Reformation
+          gfx = GFX_bop_TUR_Reformation2
         }
       }
     }

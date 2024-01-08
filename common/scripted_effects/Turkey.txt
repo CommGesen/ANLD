@@ -1,15 +1,136 @@
-TUR_federal_increase = {
+TUR_sultan_increase = {
 	add_power_balance_value = {
 		id = TUR_power_balance
 		value = -0.1
-		tooltip_side = TUR_Federalism
+		tooltip_side = TUR_Sultan
 	}
 }
-
+TUR_sultan_increase_small = {
+	add_power_balance_value = {
+		id = TUR_power_balance
+		value = -0.05
+		tooltip_side = TUR_Sultan
+	}
+}
 TUR_reform_increase = {
 	add_power_balance_value = {
 		id = TUR_power_balance
 		value = 0.1
 		tooltip_side = TUR_Reformation
+	}
+}
+TUR_reform_increase_small = {
+	add_power_balance_value = {
+		id = TUR_power_balance
+		value = 0.05
+		tooltip_side = TUR_Reformation
+	}
+}
+TUR_minority_happy = {
+	if = {
+		limit = {
+			has_dynamic_modifier = {
+				modifier = TUR_minority_unrest0
+			}
+		}
+		remove_dynamic_modifier = {
+			modifier = TUR_minority_unrest0
+		}
+		add_dynamic_modifier = {
+			modifier = TUR_minority_unrest1
+		}
+	}
+	if = {
+		limit = {
+			has_dynamic_modifier = {
+				modifier = TUR_minority_unrest1
+			}
+		}
+		remove_dynamic_modifier = {
+			modifier = TUR_minority_unrest1
+		}
+		add_dynamic_modifier = {
+			modifier = TUR_minority_unrest2
+		}
+	}
+	if = {
+		limit = {
+			has_dynamic_modifier = {
+				modifier = TUR_minority_unrest2
+			}
+		}
+		remove_dynamic_modifier = {
+			modifier = TUR_minority_unrest2
+		}
+		add_dynamic_modifier = {
+			modifier = TUR_minority_unrest3
+		}
+	}
+	if = {
+		limit = {
+			has_dynamic_modifier = {
+				modifier = TUR_minority_unrest3
+			}
+		}
+		remove_dynamic_modifier = {
+			modifier = TUR_minority_unrest3
+		}
+		add_dynamic_modifier = {
+			modifier = TUR_minority_unrest4
+		}
+	}
+}
+TUR_minority_angry={
+	if = {
+		limit = {
+			has_dynamic_modifier = {
+				modifier = TUR_minority_unrest4
+			}
+		 }
+		 remove_dynamic_modifier = {
+			modifier = TUR_minority_unrest4
+		 }
+		 add_dynamic_modifier = {
+			modifier = TUR_minority_unrest3
+		 }
+	}
+	if = {
+		limit = {
+			has_dynamic_modifier = {
+				modifier = TUR_minority_unrest3
+			}
+		 }
+		 remove_dynamic_modifier = {
+			modifier = TUR_minority_unrest3
+		 }
+		 add_dynamic_modifier = {
+			modifier = TUR_minority_unrest2
+		 }
+	}
+	if = {
+		limit = {
+			has_dynamic_modifier = {
+				modifier = TUR_minority_unrest2
+			}
+		 }
+		 remove_dynamic_modifier = {
+			modifier = TUR_minority_unrest2
+		 }
+		 add_dynamic_modifier = {
+			modifier = TUR_minority_unrest1
+		 }
+	}
+	if = {
+		limit = {
+			has_dynamic_modifier = {
+				modifier = TUR_minority_unrest1
+			}
+		 }
+		 remove_dynamic_modifier = {
+			modifier = TUR_minority_unrest1
+		 }
+		 add_dynamic_modifier = {
+			modifier = TUR_minority_unrest0
+		 }
 	}
 }
