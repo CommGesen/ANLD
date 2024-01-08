@@ -6,7 +6,7 @@ ideas = {
 				original_tag = TUR
 			}
 			removal_cost = -1
-			picture = spirit_book_and_people
+			picture = tur_varlik_vergisi
 
 			modifier = {
 				political_power_gain = -0.05
@@ -15,17 +15,43 @@ ideas = {
 			}
 		}
 		TUR_Arab_Support = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TUR_Imam_Support"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TUR_Arab_Support"}
 			allowed = {
 				original_tag = TUR
 			}
 			removal_cost = -1
-			picture = spirit_book_and_people
+			picture = tur_kemalist_army_officers_powerful_neutral
 
 			modifier = {
 				political_power_gain = -0.05
 				stability_weekly = 0.01
 				army_morale_factor = 0.04
+			}
+		}
+		TUR_Camelry = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TUR_Camelry"}
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			picture = tur_kemalist_army_officers_powerful_neutral
+
+			modifier = {
+				attrition = -0.1
+			}
+		}
+		TUR_debt = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TUR_debt"}
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			picture = tur_odpa
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				min_export = 0.15
+				political_power_gain = -0.05
 			}
 		}
 		TUR_national_Revolutionaries = {
@@ -34,7 +60,7 @@ ideas = {
 				original_tag = TUR
 			}
 			removal_cost = -1
-			picture = spirit_noble_republic
+			picture = tur_etatism_bonus
 
 			modifier = {
 				political_power_gain = -0.1
@@ -48,7 +74,7 @@ ideas = {
 				original_tag = TUR
 			}
 			removal_cost = -1
-			picture = spirit_the_war_on_decadence
+			picture = tur_kemalist_army_officers_minimal_power_disloyal
 
 			modifier = {
 				war_stability_factor = -0.1
@@ -63,7 +89,7 @@ ideas = {
 				original_tag = TUR
 			}
 			removal_cost = -1
-			picture = spirit_allied_propaganda_campaigns
+			picture = tur_funkplan
 
 			modifier = {
 				stability_factor = 0.05
@@ -73,190 +99,206 @@ ideas = {
 		}
 	}
 	industrial_concern = {
-	
-		koc_holding = {
-			
-			allowed = {
-				original_TAG = TUR
-			}
-			
-			research_bonus = {
-				industry = 0.15
-			}
-			
+		karabuk_demir = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea karabuk_demir" }
+			allowed = { original_tag = TUR }
 			traits = { industrial_concern }
-			
 			modifier = {
+				country_resource_steel = 8
+				production_speed_industrial_complex_factor = 0.05
+			}
+			research_bonus = {
+				industry = 0.1
 			}
 		}
-		
-		turkish_petroleum = {
-			
-			allowed = {
-				original_TAG = TUR
-			}			
-			
-			research_bonus = {
-				industry = 0.05
-				construction_tech = 0.10
-				synth_resources = 0.10
-			}
-			
-			traits = { refinery_concern }
-			
+		koc = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea koc" }
+			picture = tur_koc_ticaret_as
+			allowed = { original_tag = TUR }
+			traits = { industrial_concern }
 			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				production_speed_industrial_complex_factor = 0.10
+			}
+			research_bonus = {
+				industry = 0.1
 			}
 		}
-		
-		arcelik = {
-			
-			allowed = {
-				original_TAG = TUR
+		sadolin = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea sadolin" }
+			allowed = { original_tag = TUR }
+			traits = { chemical_plant_manufacturer }
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.15
 			}
-			
 			research_bonus = {
-				electronics = 0.10
+				synth_resources = 0.1
+				industry = 0.1
 			}
-			
+		}
+		ddum = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ddum" }
+			allowed = { original_tag = TUR }
+			traits = { railway_company }
+			modifier = {
+				production_speed_infrastructure_factor = 0.20
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+		postahane = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea postahane" }
+			allowed = { original_tag = TUR }
 			traits = { electronics_concern }
-			
 			modifier = {
+				production_speed_radar_station_factor = 0.1
+			}
+			research_bonus = {
+				electronics = 0.1
+				industry = 0.1
 			}
 		}
-		
+		tpc = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea tpc" }
+			allowed = { original_tag = TUR }
+			traits = { refinery_concern }
+			modifier = {
+				country_resource_oil = 10
+				production_speed_fuel_silo_factor = 0.10
+			}
+			research_bonus = {
+				synth_resources = 0.1
+				industry = 0.1
+			}
+		}
 	}
-	
+	materiel_manufacturer = {
+		designer = yes
+
+		ankara_tufek = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ankara_tufek" }
+			allowed = { original_tag = TUR }
+			traits = { infantry_equipment_manufacturer }
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+		}
+
+		sarsilmaz = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea sarsilmaz" }
+			allowed = { original_tag = TUR }
+			traits = { mass_assault_expert }
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+		}
+
+		mke = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea mke" }
+			allowed = { original_tag = TUR }
+			traits = { artillery_manufacturer }
+			research_bonus = {
+				artillery = 0.1
+			}
+		}
+
+		opel_osmanen = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea opel_osmanen" }
+			picture = opel
+			allowed = { original_tag = TUR }
+			traits = { motorized_equipment_manufacturer }
+			research_bonus = {
+				motorized_equipment = 0.1
+			}
+		}
+	}
 	tank_manufacturer = {
-	
-		turkish_state_rail = {
-			
-			allowed = {
-				original_TAG = TUR
-			}
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { medium_tank_manufacturer }
-			
-			modifier = {
-			}
-		}
-		
-		turkish_locomotives = {
-			
-			allowed = {
-				original_TAG = TUR
-			}
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { heavy_tank_manufacturer }
-			
-			modifier = {
-			}
-		}
-	}
-	
-	aircraft_manufacturer = { 
-		
 		designer = yes
-		
-		thk = {
-			
-			picture = generic_air_manufacturer_2
 
-			
-			allowed = {
-				original_tag = TUR
-			}
-			
+		uzel_traktor = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea uzel_traktor" }
+			allowed = { original_tag = TUR }
+			traits = { tankette_manufacturer }
 			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { light_aircraft_manufacturer }
-			
-			equipment_bonus = {
-				# trainers, and air ambulances?
-			}
-			
-			ai_will_do = {
-				factor = 1
+				armor = 0.1
 			}
 		}
 
-		ktf = {
-			
-			picture = generic_air_manufacturer_1
-
-			
-			allowed = {
-				original_tag = TUR
-			}
-			
+		basak = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea basak" }
+			allowed = { original_tag = TUR }
+			traits = { tankette_manufacturer }
 			research_bonus = {
-				air_equipment = 0.15
+				armor = 0.1
 			}
-			
-			traits = { medium_aircraft_manufacturer }
-			
-			equipment_bonus = {
-				# assembled license aircrafts from across the world 
-			}
-			
-			ai_will_do = {
-				factor = 1
+		}
+
+		hulomsas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea hulomsas" }
+			allowed = { original_tag = TUR }
+			traits = { tank_manufacturer }
+			research_bonus = {
+				armor = 0.1
 			}
 		}
 	}
-
 	naval_manufacturer = {
-			
 		designer = yes
-		
-		golcuk_nsy = {
-			
-			picture = generic_naval_manufacturer_1
 
-			
-			allowed = {
-				original_tag = TUR
-			}
-			
+		taskizak_tersanesi = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea taskizak_tersanesi" }
+			allowed = { original_tag = TUR }
+			traits = { ICE_shipping_concern }
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = 0.1
 			}
-			
-			traits = { atlantic_fleet_naval_manufacturer }
+		}
+		golcuk_tersanesi = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea golcuk_tersanesi" }
+			picture = tur_golcuk_naval_base
+			allowed = { original_tag = TUR }
+			traits = { naval_manufacturer }
+			research_bonus = {
+				naval_equipment = 0.1
+			}
 		}
 	}
-	
-	small_arms_manufacturer_slot = {
-			
+	aircraft_manufacturer = {
 		designer = yes
-		
-		istanbul_military_industries = {
-			
-			picture = generic_infantry_equipment_manufacturer_2
-
-			
-			allowed = {
-				original_tag = TUR
-			}
-			
+		hurkus = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea hurkus" }
+			allowed = { original_tag = TUR }
+			traits = { aircraft_manufacturer }
 			research_bonus = {
-				infantry_weapons = 0.15
+				air_equipment = 0.1
 			}
-			
-			equipment_bonus = {
-				# rifles and pistols
+		}
+		tomtas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea tomtas" }
+			picture = tur_tomtasch
+			allowed = { original_tag = TUR }
+			traits = { aircraft_manufacturer }
+			research_bonus = {
+				air_equipment = 0.1
 			}
-			
-			traits = { mass_producer_manufacturer }
+		}
+		nuri_demirag_company = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea nuri_demirag_company" }
+			picture = tur_nud
+			allowed = { original_tag = TUR }
+			traits = { CAS_manufacturer }
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+		thk_company = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea thk_company" }
+			allowed = { original_tag = TUR }
+			traits = { aircraft_manufacturer }
+			research_bonus = {
+				air_equipment = 0.1
+			}
 		}
 	}
 }

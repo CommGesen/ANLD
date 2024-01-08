@@ -100,3 +100,13 @@ create_country_leader = {
 	picture = "gfx/leaders/HEJ/Portrait_HEJ_Abdullah_bin_al_Hussein.png"
 	ideology = reactionary_ideology
 }
+create_corps_commander = {
+	name = "Zeid bin Hussien"
+	picture = "gfx/leaders/HEJ/Portrait_Zeid_bin_Hussein.dds"
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+	traits = { }
+}

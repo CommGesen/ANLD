@@ -1,5 +1,5 @@
 TUR_power_struggle_category={
-	TUR_campaign_federal = {
+	TUR_campaign_sultan = {
 
 		icon = GFX_decision_tur_unifying_the_country_category
 
@@ -19,7 +19,7 @@ TUR_power_struggle_category={
 			NOT={
 				OR={
 					has_country_flag = TUR_reform_gameplay
-					has_country_flag = TUR_federal_gameplay
+					has_country_flag = TUR_sultan_gameplay
 				}
 			}
 		}
@@ -29,7 +29,7 @@ TUR_power_struggle_category={
 		}
 
 		complete_effect = {
-			set_country_flag = TUR_federal_gameplay
+			set_country_flag = TUR_sultan_gameplay
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.1
@@ -63,11 +63,11 @@ TUR_power_struggle_category={
 
 		visible = {
 			country_exists = TUR
-			has_country_flag = TUR_federal_gameplay
+			has_country_flag = TUR_sultan_gameplay
 		}
 
 		complete_effect = {
-			TUR_federal_increase = yes
+			TUR_sultan_increase = yes
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.05
@@ -112,11 +112,11 @@ TUR_power_struggle_category={
 
 		visible = {
 			country_exists = TUR
-			has_country_flag = TUR_federal_gameplay
+			has_country_flag = TUR_sultan_gameplay
 		}
 
 		complete_effect = {
-			TUR_federal_increase = yes
+			TUR_sultan_increase = yes
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.05
@@ -137,11 +137,10 @@ TUR_power_struggle_category={
 
 		icon = GFX_decision_generic_arrest
 
-		custom_cost_text = PP_30_infantry_equipment_500
 		custom_cost_trigger = {
-			has_political_power > 49.99
-			has_equipment = { infantry_equipment > 49 }
+			has_equipment = { infantry_equipment > 1999 }
 		}
+		custom_cost_text = 2000_infantry_equipment_1
 
 		fire_only_once = no
 
@@ -158,11 +157,11 @@ TUR_power_struggle_category={
 
 		visible = {
 			country_exists = TUR
-			has_country_flag = TUR_federal_gameplay
+			has_country_flag = TUR_sultan_gameplay
 		}
 
 		complete_effect = {
-			TUR_federal_increase = yes
+			TUR_sultan_increase = yes
 			add_popularity = {
 				ideology = communism
 				popularity = -0.1
@@ -199,7 +198,7 @@ TUR_power_struggle_category={
 			NOT={
 				OR={
 					has_country_flag = TUR_reform_gameplay
-					has_country_flag = TUR_federal_gameplay
+					has_country_flag = TUR_sultan_gameplay
 				}
 			}
 		}

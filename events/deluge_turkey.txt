@@ -16,7 +16,7 @@ country_event = {
 		
 	}
 }
-country_event = {
+country_event = { #Baghdad Protest
 	id = turkey.1
 	title = turkey.1.t
 	desc = turkey.1.d
@@ -25,32 +25,395 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = turkey.1.a
-		ANZ={
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.5
+		291={
+			TUR_minority_angry = yes
+		}
+		country_event = {
+			id = turkey.2
+			days = 20
+		}
+		TUR_sultan_increase_small = yes
+	}
+	option = {
+		name = turkey.1.b
+		291={
+			TUR_minority_happy = yes
+		}
+		country_event = {
+			id = turkey.2
+			days = 40
+		}
+		hidden_effect = {
+			set_country_flag = TUR_Iraqi_demand
+		}
+		TUR_reform_increase = yes
+	}
+}
+country_event = { #Emir of Ahwaz refuse to pay 
+	id = turkey.2
+	title = turkey.2.t
+	desc = turkey.2.d
+	picture = GFX_deluge_istanbul_small
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.2.a
+		413={
+			TUR_minority_angry = yes
+		}
+		country_event = {
+			id = turkey.3
+			days = 20
+		}
+		TUR_sultan_increase_small = yes
+	}
+	option = {
+		name = turkey.2.b
+		413={
+			TUR_minority_happy = yes
+		}
+		country_event = {
+			id = turkey.3
+			days = 40
+		}
+		hidden_effect = {
+			set_country_flag = TUR_Ahwazi_demand
+		}
+		TUR_reform_increase = yes
+	}
+}
+country_event = { #Syrian Nobility Gathering
+	id = turkey.3
+	title = turkey.3.t
+	desc = turkey.3.d
+	picture = GFX_deluge_istanbul_small
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.3.a
+		554={
+			TUR_minority_angry = yes
+		}
+		country_event = {
+			id = turkey.4
+			days = 20
+		}
+		TUR_sultan_increase_small = yes
+	}
+	option = {
+		name = turkey.3.b
+		554={
+			TUR_minority_happy = yes
+		}
+		country_event = {
+			id = turkey.4
+			days = 40
+		}
+		hidden_effect = {
+			set_country_flag = TUR_Syrian_demand
+		}
+		TUR_reform_increase = yes
+	}
+}
+country_event = { #Kurds demand more autonomy
+	id = turkey.4
+	title = turkey.4.t
+	desc = turkey.4.d
+	picture = GFX_deluge_istanbul_small
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.4.a
+		every_state = {
+			if = {
+				limit = {
+					is_owned_by = TUR
+					is_core_of = KUR
+				 }
+				 add_dynamic_modifier = {
+					modifier = TUR_minority_unrest2
+				 }
 			}
-			set_politics = {
-				ruling_party = neutrality
-				elections_allowed = no
+		}
+		add_ideas = TUR_Kurdish_Autonomy
+		country_event = {
+			id = turkey.5
+			days = 20
+		}
+		TUR_sultan_increase_small = yes
+	}
+	option = {
+		name = turkey.4.b
+		add_stability = 0.1
+		country_event = {
+			id = turkey.5
+			days = 40
+		}
+		TUR_reform_increase = yes
+	}
+}
+country_event = { #Armenian riot
+	id = turkey.5
+	title = turkey.5.t
+	desc = turkey.5.d
+	picture = GFX_deluge_istanbul_small
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.5.a
+		354={
+			TUR_minority_angry = yes
+		}
+		country_event = {
+			id = turkey.6
+			days = 20
+		}
+		TUR_sultan_increase_small = yes
+	}
+	option = {
+		name = turkey.5.b
+		354={
+			TUR_minority_happy = yes
+		}
+		country_event = {
+			id = turkey.6
+			days = 40
+		}
+		TUR_reform_increase = yes
+	}
+}
+country_event = { #Libyans demand more autonomy
+	id = turkey.6
+	title = turkey.6.t
+	desc = turkey.6.d
+	picture = GFX_deluge_istanbul_small
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.6.a
+		every_state = {
+			if = {
+				limit = {
+					is_owned_by = TUR
+					is_core_of = LBA
+				 }
+				 TUR_minority_angry = yes
 			}
 		}
-		remove_ideas = TUR_national_Revolutionaries
-		add_popularity = {
-			ideology = neutrality
-			popularity = 0.5
+		if = {
+			limit = {
+				has_country_flag = TUR_Iraqi_demand
+			 }
+			 country_event = {
+				id = turkey.7
+				days = 40
+			}
 		}
-		set_politics = {
-			ruling_party = neutrality
-			elections_allowed = no
+		TUR_sultan_increase_small = yes
+	}
+	option = {
+		name = turkey.6.b
+		every_state = {
+			if = {
+				limit = {
+					is_owned_by = TUR
+					is_core_of = LBA
+				 }
+				 TUR_minority_happy = yes
+			}
 		}
-		set_party_name = {
-			ideology = fascism
-			long_name = "Islamists"
-			name = "Islamist Faction"
+		add_ideas = TUR_Libyan_Autonomy
+		if = {
+			limit = {
+				has_country_flag = TUR_Iraqi_demand
+			 }
+			 country_event = {
+				id = turkey.7
+				days = 40
+			}
 		}
-		retire_character = TUR_fevzi_Çakmak
-		promote_character = TUR_Mustafa_Sabri
+		TUR_reform_increase = yes
+	}
+}
+country_event = { #Iraqis demand more autonomy
+	id = turkey.7
+	title = turkey.7.t
+	desc = turkey.7.d
+	picture = GFX_deluge_istanbul_small
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.7.a
+		every_state = {
+			if = {
+				limit = {
+					is_owned_by = TUR
+					is_core_of = IRQ
+				 }
+				 TUR_minority_angry = yes
+			}
+		}
+		TUR_sultan_increase_small = yes
+		if = {
+			limit = {
+				has_country_flag = TUR_Syrian_demand
+			 }
+			 country_event = {
+				id = turkey.8
+				days = 40
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = TUR_Ahwazi_demand
+			 }
+			 country_event = {
+				id = turkey.9
+				days = 30
+			}
+		}
+	}
+	option = {
+		name = turkey.7.b
+		every_state = {
+			if = {
+				limit = {
+					is_owned_by = TUR
+					is_core_of = IRQ
+				 }
+				 TUR_minority_happy = yes
+			}
+		}
+		TUR_reform_increase = yes
+		add_ideas = TUR_Iraqi_Autonomy
+		if = {
+			limit = {
+				has_country_flag = TUR_Syrian_demand
+			 }
+			 country_event = {
+				id = turkey.8
+				days = 40
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = TUR_Ahwazi_demand
+			 }
+			 country_event = {
+				id = turkey.9
+				days = 50
+			}
+		}
+	}
+}
+country_event = { #Syrians demand more autonomy
+	id = turkey.8
+	title = turkey.8.t
+	desc = turkey.8.d
+	picture = GFX_deluge_istanbul_small
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.8.a
+		every_state = {
+			if = {
+				limit = {
+					is_owned_by = TUR
+					is_core_of = SYR
+				 }
+				 TUR_minority_angry = yes
+			}
+		}
+		TUR_sultan_increase_small = yes
+	}
+	option = {
+		name = turkey.8.b
+		every_state = {
+			if = {
+				limit = {
+					is_owned_by = TUR
+					is_core_of = SYR
+				 }
+				 TUR_minority_happy = yes
+			}
+		}
+		TUR_reform_increase = yes
+		add_ideas = TUR_Syrian_Autonomy
+	}
+}
+country_event = { #Emir of Ahwaz demands full autonomy
+	id = turkey.9
+	title = turkey.9.t
+	desc = turkey.9.d
+	picture = GFX_deluge_istanbul_small
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.9.a
+		every_state = {
+			if = {
+				limit = {
+					is_owned_by = TUR
+					is_core_of = AHZ
+				 }
+				 TUR_minority_angry = yes
+			}
+		}
+		TUR_sultan_increase_small = yes
+	}
+	option = {
+		name = turkey.9.b
+		413={
+			transfer_state_to = AHZ
+		}
+		TUR={
+			puppet = AHZ
+		}
+		TUR_reform_increase = yes
+		country_event = {
+			id = turkey.10
+			days = 50
+		}
+	}
+}
+country_event = { #Sharif of Hejaz demands full autonomy
+	id = turkey.10
+	title = turkey.10.t
+	desc = turkey.10.d
+	picture = GFX_deluge_istanbul_small
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.10.a
+		every_state = {
+			if = {
+				limit = {
+					is_owned_by = TUR
+					is_core_of = HEJ
+				 }
+				 TUR_minority_angry = yes
+			}
+		}
+		TUR_sultan_increase_small = yes
+	}
+	option = {
+		name = turkey.10.b
+		855={
+			transfer_state_to = HEJ
+		}
+		679={
+			transfer_state_to = HEJ
+		}
+		856={
+			transfer_state_to = HEJ
+		}
+		TUR_reform_increase = yes
+		TUR={
+			puppet = HEJ
+		}
+		HEJ={
+			set_cosmetic_tag = HEJ_OTT
+		}
 	}
 }
 country_event = {
@@ -64,7 +427,7 @@ country_event = {
 		name = turbop.1.a
 		set_power_balance = {
 			id = TUR_power_balance
-			left_side = TUR_Federalism
+			left_side = TUR_Sultan
 			right_side = TUR_Reformation
 		}
 		set_country_flag = TUR_BOP_on
@@ -86,64 +449,9 @@ country_event = {
 				id = TUR_power_balance
 			}
 			TUR={
-				puppet = IRQ
-				puppet = SYR
-				puppet = HEJ
 				clr_country_flag = TUR_BOP_on
 				set_country_flag = TUR_BOP_off
-				create_faction = "Ottoman Federation"
-				add_to_faction = IRQ
-				add_to_faction = HEJ
-				add_to_faction = SYR
-			}
-			IRQ={
-				add_ideas = ottoman_emperor
-				set_cosmetic_tag = IRQ_OTT
-				transfer_state = 291
-				transfer_state = 676
-				transfer_state = 656
-				transfer_state = 935
-				set_politics = {
-					ruling_party = neutrality
-					elections_allowed = no
-				}
-				create_country_leader = {
-					name = "Ajmai Al Sa'adun"
-					picture = "gfx/leaders/IRQ/Portrait_IRQ_Ajami_al_Saadun.png"
-					ideology = reactionary_ideology
-				}
-			}
-			HEJ={
-				add_ideas = ottoman_emperor
-				set_cosmetic_tag = HEJ_OTT
-				transfer_state = 856
-				transfer_state = 679
-				transfer_state = 855
-				set_politics = {
-					ruling_party = neutrality
-					elections_allowed = no
-				}
-				
-			}
-			SYR={
-				add_ideas = ottoman_emperor
-				set_cosmetic_tag = SYR_OTT
-				transfer_state = 455
-				transfer_state = 454
-				transfer_state = 554
-				transfer_state = 553
-				transfer_state = 680
-				transfer_state = 667
-				set_state_owner = 667
-				set_politics = {
-					ruling_party = neutrality
-					elections_allowed = no
-				}
-				create_country_leader = {
-					name = "Shakib Arslan"
-					picture = "gfx/leaders/SYR/Portrait_OTT_Shakib_Arslan.png"
-					ideology = reactionary_ideology
-				}
+				set_country_flag = TUR_Sultan
 			}
 		}
 	}
@@ -163,6 +471,7 @@ country_event = {
 			}
 			clr_country_flag = TUR_BOP_on
 			set_country_flag = TUR_BOP_off
+			set_country_flag = TUR_democrats
 			set_politics = {
 				ruling_party = democratic
 				elections_allowed = yes
@@ -191,57 +500,12 @@ country_event = {
 				remove_power_balance = {
 					id = TUR_power_balance
 				}
-			}
-			IRQ={
-				transfer_state = 291
-				transfer_state = 676
-				transfer_state = 656
-				transfer_state = 935
-				set_politics = {
-					ruling_party = democratic
-					elections_allowed = yes
-				}
-				add_ideas = communist_factor
-			}
-			HEJ={
-				transfer_state = 856
-				transfer_state = 679
-				transfer_state = 855
-				set_politics = {
-					ruling_party = neutrality
-					elections_allowed = no
+				set_country_flag = incoming_civil_war
+				country_event = {
+					id = turbop.5
+					days = 7
 				}
 			}
-			SYR={
-				transfer_state = 455
-				transfer_state = 554
-				transfer_state = 553
-				transfer_state = 667
-				transfer_state = 680
-				set_politics = {
-					ruling_party = communism
-					elections_allowed = no
-				}
-				add_ideas = democratic_opposition
-			}
-			LEB={
-				transfer_state = 553
-				set_politics = {
-					ruling_party = neutrality
-					elections_allowed = no
-				}
-			}
-			PAL={
-				transfer_state = 454
-				set_politics = {
-					ruling_party = neutrality
-					elections_allowed = no
-				}
-			}
-			FRA={
-				puppet = LEB
-			}
-			end_puppet = ANZ
 		}
 	}
 	option = {
@@ -264,5 +528,363 @@ country_event = {
 		SYR={
 			change_tag_from = ROOT
 		}
+	}
+}
+country_event = {
+	id = turbop.5
+	title = turbop.5.t
+	desc = turbop.5.d
+	picture = GFX_deluge_istanbul_small
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			HEJ={
+				transfer_state = 856
+				transfer_state = 679
+				transfer_state = 855
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+			}
+			TUR={
+				country_event = {
+					id = turbop.6
+					days = 7
+				}
+			}
+		}
+	}
+	option = {
+		name = turbop.5.a
+		TUR={
+			add_stability = -0.1
+		}
+	}
+	option = {
+		name = turbop.5.b
+		HEJ={
+			change_tag_from = ROOT
+		}
+	}
+}
+country_event = {
+	id = turbop.6
+	title = turbop.6.t
+	desc = turbop.6.d
+	picture = GFX_deluge_istanbul_small
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			AHZ={
+				transfer_state = 413
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+			}
+			TUR={
+				country_event = {
+					id = turbop.7
+					days = 7
+				}
+			}
+			end_puppet = AHZ
+		}
+	}
+	option = {
+		name = turbop.6.a
+		TUR={
+			add_stability = -0.1
+		}
+	}
+	option = {
+		name = turbop.6.b
+		AHZ={
+			change_tag_from = ROOT
+		}
+	}
+}
+country_event = {
+	id = turbop.7
+	title = turbop.7.t
+	desc = turbop.7.d
+	picture = GFX_deluge_istanbul_small
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			EGY={
+				transfer_state = 453
+				puppet = PAL
+			}
+			PAL={
+				transfer_state = 454
+				create_country_leader = {
+					name = "Muhammad Ali Tawfik"
+					picture = "gfx/leaders/EGY/Mohammad_Ali_Tewfik.dds"
+					ideology = reactionary_ideology
+				}
+				set_cosmetic_tag = PAL_EGY
+			}
+			TUR={
+				country_event = {
+					id = turbop.8
+					days = 12
+				}
+			}
+			
+			country_event = {
+				id = turbop.9
+				days = 2
+			}
+
+			country_event = {
+				id = turbop.11
+				days = 6
+			}
+			country_event = {
+				id = turbop.12
+				days = 15
+			}
+		}
+	}
+	option = {
+		name = turbop.7.a
+		TUR={
+			add_stability = -0.1
+		}
+	}
+}
+country_event = {
+	id = turbop.8
+	title = turbop.8.t
+	desc = turbop.8.d
+	picture = GFX_deluge_istanbul_small
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			IRQ={
+				transfer_state = 291
+				transfer_state = 935
+				transfer_state = 676
+				transfer_state = 656
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+				}
+				division_template = {
+					name = "Iraqi Militias"
+					is_locked = no
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }							
+					}
+				}
+				291 = {
+					create_unit = {
+						division = "name = \"Iraqi Militias\" division_template = \"Iraqi Militias\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = TUR
+						allow_spawning_on_enemy_provs = yes 
+						count = 1 
+					}
+				}
+				676 = {
+					create_unit = {
+						division = "name = \"Iraqi Militias\" division_template = \"Iraqi Militias\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = TUR
+						allow_spawning_on_enemy_provs = yes 
+						count = 1 
+					}
+				}
+				656 = {
+					create_unit = {
+						division = "name = \"Iraqi Militias\" division_template = \"Iraqi Militias\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = TUR
+						allow_spawning_on_enemy_provs = yes 
+						count = 1 
+					}
+				}
+				935 = {
+					create_unit = {
+						division = "name = \"Iraqi Militias\" division_template = \"Iraqi Militias\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = TUR
+						allow_spawning_on_enemy_provs = yes 
+						count = 1 
+					}
+				}
+			}
+			SYR={
+				transfer_state = 554
+				transfer_state = 553
+				transfer_state = 677
+				transfer_state = 455
+				transfer_state = 680
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = yes
+				}
+				division_template = {
+					name = "Syrian Militias"
+					is_locked = no
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }							
+					}
+				}
+				554 = {
+					create_unit = {
+						division = "name = \"Syrian' Militia\" division_template = \"Syrian' Militias\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = TUR
+						allow_spawning_on_enemy_provs = yes 
+						count = 1 
+					}
+				}
+				553 = {
+					create_unit = {
+						division = "name = \"Syrian' Militia\" division_template = \"Syrian' Militias\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = TUR
+						allow_spawning_on_enemy_provs = yes 
+						count = 1 
+					}
+				}
+				455 = {
+					create_unit = {
+						division = "name = \"Syrian' Militia\" division_template = \"Syrian' Militias\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = TUR
+						allow_spawning_on_enemy_provs = yes 
+						count = 1 
+					}
+				}
+				667 = {
+					create_unit = {
+						division = "name = \"Syrian' Militia\" division_template = \"Syrian' Militias\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = TUR
+						allow_spawning_on_enemy_provs = yes 
+						count = 1 
+					}
+				}
+				680 = {
+					create_unit = {
+						division = "name = \"Syrian' Militia\" division_template = \"Syrian' Militias\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = TUR
+						allow_spawning_on_enemy_provs = yes 
+						count = 1 
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = turbop.8.a
+		TUR={
+			add_stability = -0.1
+		}
+	}
+	option = {
+		name = turbop.8.b
+		IRQ={
+			change_tag_from = ROOT
+		}
+	}
+	option = {
+		name = turbop.8.c
+		SYR={
+			change_tag_from = ROOT
+		}
+	}
+}
+country_event = {
+	id = turbop.9
+	title = turbop.9.t
+	desc = turbop.9.d
+	picture = GFX_deluge_istanbul_small
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turbop.9.a
+		end_puppet = ANZ
+		SAU={
+			declare_war_on = {
+				target = ANZ
+				type = annex_everything
+			}
+		}
+	}
+}
+news_event = {
+	id = turbop.10
+	title = turbop.10.t
+	desc = turbop.10.d
+	picture = GFX_deluge_istanbul_large
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turbop.10.a
+		hidden_effect = {
+			TUR={
+				country_event = {
+					id = turbop.5
+					days = 7
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = turbop.11
+	title = turbop.11.t
+	desc = turbop.11.d
+	picture = GFX_deluge_istanbul_small
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			LBA={
+				transfer_state = 451
+				transfer_state = 450
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+			}
+			FRA={
+				transfer_state = 448
+				transfer_state = 449
+				transfer_state = 661
+				transfer_state = 662
+				transfer_state = 273
+			}
+		}
+	}
+	option = {
+		name = turbop.11.a
+		TUR={
+			add_stability = -0.1
+		}
+	}
+	option = {
+		name = turbop.11.b
+		LBA={
+			change_tag_from = ROOT
+		}
+	}
+}
+country_event = {
+	id = turbop.12
+	title = turbop.12.t
+	desc = turbop.12.d
+	picture = GFX_deluge_istanbul_small
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turbop.12.a
+		set_global_flag = OTT_dead
 	}
 }
