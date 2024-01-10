@@ -1,0 +1,109 @@
+﻿division_template = {
+	name = "Liwa Al Mashuat"		# Infantry Brigade 
+
+	regiments = {
+		irregular_infantry = { x = 0 y = 0 }
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 0 y = 2 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Liwa Alfursan"		# Cavalry Brigade
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+
+units = {
+	division = {
+		name = "1. Liwa Alfursan"
+		location = 7063
+		division_template = "Liwa Alfursan"		
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.3
+	}
+}
+units = {
+	division = {
+		name = "2. Liwa Alfursan"
+		location = 4133
+		division_template = "Liwa Alfursan"		
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.3
+	}
+}
+units = {
+	division = {
+		name = "3. Liwa Alfursan"
+		location = 8069
+		division_template = "Liwa Alfursan"		
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.3
+	}
+}
+
+units = {
+	division = {
+		name = "1. Liwa Al Mashuat"
+		location = 4063
+		division_template = "Liwa Al Mashuat"		
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.3
+	}
+}
+units = {
+	division = {
+		name = "2. Liwa Al Mashuat"
+		location = 4060
+		division_template = "Liwa Al Mashuat"		
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.3
+	}
+}
+units = {
+	division = {
+		name = "3. Liwa Al Mashuat"
+		location = 4200
+		division_template = "Liwa Al Mashuat"		
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.3
+	}
+}
+units = {
+	division = {
+		name = "4. Liwa Al Mashuat"
+		location = 7136
+		division_template = "Liwa Al Mashuat"		
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.3
+	}
+}
+units = {
+	division = {
+		name = "5. Liwa Al Mashuat"
+		location = 12025
+		division_template = "Liwa Al Mashuat"		
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.3
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "LBA"
+		}
+		requested_factories = 1
+		progress = 0.25
+		efficiency = 100
+	}
+}
