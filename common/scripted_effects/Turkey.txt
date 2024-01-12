@@ -26,6 +26,7 @@ TUR_reform_increase_small = {
 		tooltip_side = TUR_Reformation
 	}
 }
+
 TUR_minority_happy = {
 	if = {
 		limit = {
@@ -40,7 +41,7 @@ TUR_minority_happy = {
 			modifier = TUR_minority_unrest1
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_dynamic_modifier = {
 				modifier = TUR_minority_unrest1
@@ -53,7 +54,7 @@ TUR_minority_happy = {
 			modifier = TUR_minority_unrest2
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_dynamic_modifier = {
 				modifier = TUR_minority_unrest2
@@ -66,7 +67,7 @@ TUR_minority_happy = {
 			modifier = TUR_minority_unrest3
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_dynamic_modifier = {
 				modifier = TUR_minority_unrest3
@@ -94,43 +95,43 @@ TUR_minority_angry={
 			modifier = TUR_minority_unrest3
 		 }
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_dynamic_modifier = {
 				modifier = TUR_minority_unrest3
 			}
-		 }
-		 remove_dynamic_modifier = {
+		}
+		remove_dynamic_modifier = {
 			modifier = TUR_minority_unrest3
-		 }
-		 add_dynamic_modifier = {
+		}
+		add_dynamic_modifier = {
 			modifier = TUR_minority_unrest2
-		 }
+		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_dynamic_modifier = {
 				modifier = TUR_minority_unrest2
 			}
-		 }
-		 remove_dynamic_modifier = {
+		}
+		remove_dynamic_modifier = {
 			modifier = TUR_minority_unrest2
-		 }
-		 add_dynamic_modifier = {
+		}
+		add_dynamic_modifier = {
 			modifier = TUR_minority_unrest1
-		 }
+		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_dynamic_modifier = {
 				modifier = TUR_minority_unrest1
 			}
-		 }
-		 remove_dynamic_modifier = {
+		}
+		remove_dynamic_modifier = {
 			modifier = TUR_minority_unrest1
-		 }
-		 add_dynamic_modifier = {
+		}
+		add_dynamic_modifier = {
 			modifier = TUR_minority_unrest0
-		 }
+		}
 	}
 }
