@@ -2,22 +2,19 @@
 state={
 	id=941
 	name="STATE_941"
-	
-	impassable = yes
 
 	history={
-		owner = LBA
+		owner = CAU
 		buildings = {
 			infrastructure = 0
 
 		}
-		add_core_of = EGY
-		add_core_of = SUD
-
+		add_core_of = SOV
+		add_core_of = CAU
 	}
 
 	provinces={
-		12816
+		685 6674 
 	}
 	manpower=19539
 	buildings_max_level_factor=1.000

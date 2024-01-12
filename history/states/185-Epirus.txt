@@ -14,7 +14,6 @@ state={
 			arms_factory = 1
 			industrial_complex = 1
 			air_base = 3
-			
 
 		}
 		add_claim_by = ALB
@@ -22,12 +21,11 @@ state={
 		victory_points = {
 			1205 1 
 		}
-		
 
 	}
 
 	provinces={
-		 1106 1205 3980 9916 11786 11895 12001 
+		1106 1205 3980 6930 9916 11786 11895 12001 
 	}
 	manpower=760900
 	buildings_max_level_factor=1.000
