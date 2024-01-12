@@ -105,4 +105,56 @@ is_same_or_close_ideology = {
 		}
 	}
 }
-
+#Ottoman
+is_iraqi_state={
+	OR={
+		state = 291
+		state = 676
+		state = 656
+		state = 935
+	}
+}
+is_core_syrian_state={
+	OR={
+		state = 554
+		state = 455
+		state = 667
+		state = 680
+	}
+}
+is_hejazi_state={
+	OR={
+		state = 855
+		state = 679
+		state = 856
+	}
+}
+is_kurdish_state={
+	OR={
+		state = 936
+		state = 937
+		state = 701
+		state = 352
+		state = 353
+		state = 350
+	}
+}
+is_turkish_state={
+	OR={
+		state = 344
+		state = 349
+		state = 354
+		state = 355
+		state = 348
+		state = 345
+		state = 346
+		state = 49
+		state = 356
+		state = 347
+		state = 343
+		state = 342
+		state = 339
+		state = 340
+		state = 341
+	}
+}

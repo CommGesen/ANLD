@@ -32,6 +32,10 @@ country_event = { #Baghdad Protest
 			id = turkey.2
 			days = 20
 		}
+		country_event = {
+			id = turkey.6
+			days = 10
+		}
 		TUR_sultan_increase_small = yes
 	}
 	option = {
@@ -42,6 +46,10 @@ country_event = { #Baghdad Protest
 		country_event = {
 			id = turkey.2
 			days = 40
+		}
+		country_event = {
+			id = turkey.6
+			days = 20
 		}
 		hidden_effect = {
 			set_country_flag = TUR_Iraqi_demand
@@ -176,6 +184,44 @@ country_event = { #Armenian riot
 			TUR_minority_happy = yes
 		}
 		TUR_reform_increase = yes
+	}
+}
+country_event = {
+	id = turkey.6
+	title = turkey.6.t
+	desc = turkey.6.d
+	picture = GFX_report_event_IRQ_Salima
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.6.a
+		291={
+			TUR_minority_happy = yes 
+		}
+		676={
+			TUR_minority_happy = yes 
+		}
+		656={
+			TUR_minority_happy = yes 
+		}
+		935={
+			TUR_minority_happy = yes 
+		}
+	}
+	option = {
+		name = turkey.6.b
+		291={
+			TUR_minority_angry = yes 
+		}
+		676={
+			TUR_minority_angry = yes 
+		}
+		656={
+			TUR_minority_angry = yes 
+		}
+		935={
+			TUR_minority_angry = yes 
+		}
 	}
 }
 country_event = {
