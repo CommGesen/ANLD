@@ -1,20 +1,79 @@
 characters={
-	FRA_pierre_laval={ #Democratic Leader
-		name=FRA_pierre_laval
+	##Bonapartists
+	FRA_deluge_napoleon_v={
+		name=FRA_deluge_napoleon_v_name
 		portraits={
 			civilian={
-				large="GFX_portrait_fra_pierre_laval"
+				large="gfx/leaders/FRA/portrait_FRA_napoleon_v.dds"
 			}
 		}
 		country_leader={
-			ideology=liberal_republican_ideology
-			traits={ stout_defender }
+			desc="FRA_deluge_napoleon_v_desc"
+			ideology=bonapartist_ideology
 			expire="1965.1.1.1"
-			id=-1
+			traits = {
+				
+			}
 		}
 	}
-	FRA_edouard_daladier={
-		name=FRA_edouard_daladier
+	##French Section of the Workers' International (SFIO; jacobinism)
+	FRA_deluge_leon_blum={
+		name=FRA_deluge_leon_blum_name
+		portraits={
+			civilian={
+				small="GFX_andre_leon_blum_picture_small"
+				large="GFX_portrait_fra_leon_blum"
+			}
+		}
+		country_leader={
+			ideology=jacobin_ideology
+			desc="FRA_deluge_leon_blum_desc"
+			traits={ social_reformer }
+			expire="1965.1.1.1"
+		}
+	}
+	FRA_deluge_felix_gouin={
+		name=FRA_deluge_felix_gouin_name
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/portrait_FRA_felix_gouin.dds"
+			}
+		}
+		country_leader={
+			ideology=jacobin_ideology
+			desc="FRA_deluge_felix_gouin_desc"
+			traits={ defender_of_human_rights }
+			expire="1965.1.1.1"
+		}
+	}
+	FRA_deluge_pierre_laval={
+		name=FRA_deluge_pierre_laval_name
+		portraits={
+			civilian={
+				small="GFX_pierre_laval_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_pierre_laval
+			allowed = { tag = FRA }
+			visible = {
+				
+			}
+			cost = 150
+			available = { 
+				
+			}
+			traits = {
+				lawyer
+			}
+			ai_will_do = { factor = 1.0 }
+			ledger = civilian
+		}
+	}
+	
+	FRA_deluge_edouard_daladier={
+		name=FRA_Character_deluge_edouard_daladier
 		portraits={
 			civilian={
 				large=GFX_portrait_FRA_edouard_daladier
@@ -22,9 +81,8 @@ characters={
 		}
 		country_leader={
 			ideology=social_democratic_ideology
-			traits={ stout_defender }
+			traits={  }
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	FRA_jacques_doriot={
@@ -32,7 +90,7 @@ characters={
 		portraits={
 			civilian={
 				#large=GFX_portrait_fra_jacques_doriot
-				large="gfx/leaders/FRA/jacques_doriot.dds"
+				large="gfx/leaders/FRA/portrait_FRA_jacques_doriot.dds"
 			}
 		}
 		country_leader={
@@ -41,27 +99,15 @@ characters={
 			expire="1965.1.1.1"
 		}
 	}
-#	FRA_denis_guillaumat={ #Non-Aligned Leader
-#		name=FRA_denis_guillaumat
-#		portraits={
-#			civilian={
-#				large=GFX_portrait_FRA_denis_guillaumat
-#			}
-#		}
-#		country_leader={
-#			ideology=reactionary_ideology
-#			traits={ editor eager_collaborator }
-#			expire="1949.1.1.12"
-#			id=-1
-#		}
-#	}
 	FRA_maurice_thorez={ #Communist Leader
 		name=FRA_maurice_thorez
 		portraits={
 			army={
 				small="GFX_maurice_thorez_picture_small"
+				large="GFX_portrait_fra_maurice_thorez"
 			}
 			civilian={
+				small="GFX_maurice_thorez_picture_small"
 				large="GFX_portrait_fra_maurice_thorez"
 			}
 		}
@@ -116,22 +162,7 @@ characters={
 			ideology=marxist_ideology
 			expire="1965.1.1.1"
 		}
-	}	
-	FRA_napoleon_v={
-		name="Napoleon V"
-		portraits={
-			civilian={
-				large="gfx/leaders/FRA/napoleon_v.dds"
-			}
-		}
-		country_leader={
-			desc="emperor_napoleon_desc"
-			ideology=bonapartist_ideology
-			expire="1965.1.1.1"
-			id=-1
-		}
 	}
-
 	FRA_jean_de_lattre_de_tassigny={
 		name=FRA_jean_de_lattre_de_tassigny
 		portraits={
@@ -1097,55 +1128,6 @@ characters={
 			}
 		}
 	}
-
-
-	### POLITICAL ADVISORS ###
-
-	# Thorez up there
-
-	FRA_leon_blum={
-		name=FRA_leon_blum
-		portraits={
-			army={
-				small="GFX_andre_leon_blum_picture_small"
-			}
-			civilian = {
-				large="GFX_portrait_fra_leon_blum"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = leon_blum
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-			
-				has_completed_focus  = FRA_reconciliation_committee 
-				
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
-			traits  = {
-				democratic_reformer 
-			}
-			do_effect  = {
-				NOT  = {
-					has_government  = democratic 
-				}
-			}
-			ai_will_do  = {
-				factor  = 0.000
-			}
-		}
-	}
-
 	FRA_marcel_bucard={
 		name=FRA_marcel_bucard
 		portraits={
@@ -1502,33 +1484,6 @@ characters={
 			}
 		}
 	}
-
-	FRA_felix_gouin={
-		name=FRA_felix_gouin
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_4"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = FRA_felix_gouin
-			allowed  = {
-				original_tag  = FRA
-			}
-			traits  = {
-				captain_of_industry 
-			}
-			on_add  = {
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-	}
-
 	FRA_charles_tillon={
 		name=FRA_charles_tillon
 		portraits={

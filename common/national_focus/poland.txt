@@ -5588,7 +5588,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_league_ratification
-		icon = GFX_league_of_nations_treaty
+		icon = GFX_focus_generic_league_of_nations
 		x = -5
 		y = 1
 		search_filters = {FOCUS_FILTER_FOREIGN_AFFAIRS}
@@ -6231,7 +6231,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_league_leave
-		icon = GFX_focus_league_of_nations
+		icon = GFX_focus_generic_league_of_nations
 		prerequisite = { focus = POL_league_ratification }
 		relative_position_id = POL_league_ratification
 		search_filters = {FOCUS_FILTER_FOREIGN_AFFAIRS}

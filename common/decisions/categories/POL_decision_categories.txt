@@ -540,10 +540,9 @@ polish_hungarian_union_decisions_category = {
 	}
 	visible = {
 		POL = {
-			has_completed_focus = POL_andrassy_wins
 			OR = {
-				has_completed_focus = POL_creation_of_real_union
-				has_completed_focus = POL_one_dynasty_two_institutions
+				has_completed_focus = POL_question_of_capital
+				has_completed_focus = POL_increase_cooperation
 			}
 		}
 	}

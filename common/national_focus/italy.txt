@@ -1471,7 +1471,7 @@ focus_tree = {
 	
 	focus = {
 		id = italy_league_ratification
-		icon = GFX_focus_league_of_nations
+		icon = GFX_focus_generic_league_of_nations
 		available = {
 			OR = {
 				has_idea = deluge_league_of_nations_prospective_member
@@ -2114,7 +2114,7 @@ focus_tree = {
 	
 	focus = {
 		id = italy_league_leave
-		icon = GFX_focus_league_of_nations
+		icon = GFX_focus_generic_league_of_nations
 		prerequisite = { focus = italy_league_ratification }
 		available = {
 			NOT = { has_global_flag = flag_league_of_nations_disbanded }

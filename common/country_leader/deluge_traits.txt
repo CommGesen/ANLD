@@ -996,6 +996,13 @@ leader_traits = {
 		stability_factor = 0.1
 		experience_loss_factor = -0.03
 	}
+	lawyer = {
+		random = yes
+		sprite = 13
+		trade_laws_cost_factor = -0.33
+		economy_cost_factor = -0.33
+		political_power_factor = 0.05
+	}
 	doctor_of_laws = {
 		random = yes
 		sprite = 13
@@ -1193,5 +1200,17 @@ leader_traits = {
 		autonomy_gain = 0.04
 		stability_factor = 0.03
 		political_power_factor = 0.03
+	}
+	social_reformer = {
+		random = yes
+		political_power_factor = 0.05
+		monthly_population = 0.05
+		stability_factor = 0.03
+	}
+	defender_of_human_rights = {
+		random = no
+		political_power_factor = 0.05
+		war_support_factor = -0.03
+		communism_drift = 0.05
 	}
 }

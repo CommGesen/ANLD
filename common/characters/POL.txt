@@ -904,7 +904,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { bearer_of_artillery trickster expert_improviser }
+			traits = { artillery_officer trickster expert_improviser }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -974,7 +974,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { bearer_of_artillery panzer_leader panzer_expert}
+			traits = { artillery_officer panzer_leader panzer_expert}
 			skill=4
 			attack_skill=3
 			defense_skill=4
@@ -1301,7 +1301,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { bearer_of_artillery }
+			traits = { artillery_officer bearer_of_artillery }
 			skill=1
 			attack_skill=2
 			defense_skill=1
@@ -1427,7 +1427,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { trait_cautious bearer_of_artillery }
+			traits = { trait_cautious artillery_officer artillery_leader }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -1752,7 +1752,7 @@ characters={
 			}
 		}
 		field_marshal = {
-			traits = { old_guard war_hero bearer_of_artillery aggressive_assaulter}
+			traits = { old_guard war_hero artillery_officer aggressive_assaulter}
 			skill=2
 			attack_skill=2
 			defense_skill=3
@@ -1770,7 +1770,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { bearer_of_artillery }
+			traits = { artillery_officer }
 			skill=2
 			attack_skill=2
 			defense_skill=3

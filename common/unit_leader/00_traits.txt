@@ -444,6 +444,67 @@ leader_traits = {
 		planning_skill_factor = 1
 	}
 	
+	artillery_officer = { 
+		type = land
+		trait_type = personality_trait 
+		
+		unit_trigger = {
+			OR = {
+				division_has_majority_template = artillery
+				division_has_majority_template = rocket_artillery
+				division_has_majority_template = artillery_brigade
+				division_has_majority_template = mot_artillery_brigade
+				division_has_majority_template = rocket_artillery_brigade
+				division_has_majority_template = mot_rocket_artillery_brigade
+				division_has_majority_template = motorized_rocket_brigade
+				division_has_majority_template = anti_tank
+				division_has_majority_template = anti_tank_brigade
+				division_has_majority_template = mot_anti_tank_brigade
+				division_has_majority_template = anti_air
+				division_has_majority_template = anti_air_brigade
+				division_has_majority_template = mot_anti_air_brigade
+				
+				owner = {
+					has_idea = superior_firepower_academy_spirit
+				}
+			}
+			owner = {
+				NOT = {
+					OR = {
+						#has_idea = best_of_the_best_spirit
+						#has_idea = academy_scholarships_spirit
+						has_idea = SOV_purged_junior_army_officers_3
+					}
+				}
+			}
+		}
+		
+		trait_xp_factor = {
+			artillery_leader = 1     #+100%
+		}
+		
+		new_commander_weight = {
+			factor = 1
+			
+			modifier = {
+				FROM = { 
+					has_idea = superior_firepower_academy_spirit
+				}
+				factor = 2
+			}
+			
+			modifier = {
+				FROM = { 
+					has_dlc = "By Blood Alone"
+				}
+				#factor = 0
+			}
+			
+		}
+		attack_skill_factor = 1
+		logistics_skill_factor = 1
+	}
+	
 	cavalry_officer = { 
 		type = land
 		trait_type = personality_trait
@@ -1122,7 +1183,7 @@ leader_traits = {
 		}
 		trait_type = assignable_trait
 		any_parent = { skilled_staffer }
-		gui_row = 15
+		gui_row = 16
 	}
 
 
@@ -1210,6 +1271,31 @@ leader_traits = {
 		
 		gui_row = 6
 	}
+	artillery_leader = {
+		type = corps_commander
+		gain_xp = {
+			set_temp_variable = { temp = num_units }
+			multiply_temp_variable = { temp = 0.8 }
+			check_variable = { num_artillery > temp }
+		}
+		custom_gain_xp_trigger_tooltip = artillery_ratio_over_80
+		
+		cost = 1000
+		modifier = {
+			army_artillery_defence_factor = 0.13
+		}
+		
+		slot = high_command
+		specialist_advisor_trait = army_artillery_1
+		expert_advisor_trait = army_artillery_2
+		genius_advisor_trait = army_artillery_3
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		gui_row = 8
+	}
 	skilled_staffer = { 
 		type = corps_commander
 		gain_xp_leader = {
@@ -1234,7 +1320,7 @@ leader_traits = {
 		}
 		logistics_skill_factor = 2
 		
-		gui_row = 15
+		gui_row = 16
 		
 		slot = high_command
 		specialist_advisor_trait = army_logistics_1
@@ -1260,7 +1346,7 @@ leader_traits = {
 			factor = 1
 		}
 		
-		gui_row = 13
+		gui_row = 14
 	}
 
 
@@ -1414,7 +1500,7 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 		}
-		gui_row = 10
+		gui_row = 12
 		
 		slot = high_command
 		specialist_advisor_trait = army_commando_1
@@ -1597,7 +1683,7 @@ leader_traits = {
 			factor = 1
 		}
 		
-		gui_row = 8
+		gui_row = 9
 	}
 	
 ##################################
@@ -1782,6 +1868,24 @@ leader_traits = {
 		
 		gui_row = 7
 	}
+	artillery_expert = { 
+		type = corps_commander
+		gain_xp = {
+			always = no # not gainable
+		}
+		cost = 500
+		modifier = {
+			army_artillery_attack_factor = 0.10
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		trait_type = assignable_trait
+		any_parent = { artillery_leader }
+		gui_row = 8
+	}
 	invader_ii = { 
 		type = corps_commander
 		gain_xp = {
@@ -1801,7 +1905,7 @@ leader_traits = {
 		trait_type = assignable_trait
 		any_parent = { naval_invader }
 		
-		gui_row = 8
+		gui_row = 9
 	}
 	naval_liason = { 
 		type = corps_commander
@@ -1820,7 +1924,7 @@ leader_traits = {
 		trait_type = assignable_trait
 		any_parent = { naval_invader }
 		
-		gui_row = 9
+		gui_row = 10
 	}
 	
 	skirmisher = { 
@@ -1841,7 +1945,7 @@ leader_traits = {
 		trait_type = assignable_trait
 		any_parent = { commando }
 		
-		gui_row = 10
+		gui_row = 11
 	}
 	
 	paratrooper = { 
@@ -1863,7 +1967,7 @@ leader_traits = {
 		trait_type = assignable_trait
 		any_parent = { commando }
 		
-		gui_row = 11
+		gui_row = 12
 	}
 	
 	
@@ -1890,7 +1994,7 @@ leader_traits = {
 		trait_type = assignable_trait
 		any_parent = { commando }
 		
-		gui_row = 12
+		gui_row = 13
 	}
 	
 	expert_improviser = { 
@@ -1941,7 +2045,7 @@ leader_traits = {
 		}
 		custom_prerequisite_tooltip = needs_at_least_one_terrain
 		
-		gui_row = 13
+		gui_row = 14
 	}
 	
 	guerilla_fighter = { 
@@ -1961,7 +2065,7 @@ leader_traits = {
 		trait_type = assignable_trait
 		any_parent = { trickster }
 		
-		gui_row = 14
+		gui_row = 15
 	}
 	
 	
