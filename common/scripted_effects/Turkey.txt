@@ -135,3 +135,252 @@ TUR_minority_angry={
 		}
 	}
 }
+
+
+increase_debt_idea = {
+	if = {
+		limit = { has_idea = TUR_debt }
+		swap_ideas = {
+			remove_idea = TUR_debt
+			add_idea = TUR_debt1
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt2 }
+		swap_ideas = {
+			remove_idea = TUR_debt2
+			add_idea = TUR_debt
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt3 }
+		swap_ideas = {
+			remove_idea = TUR_debt3
+			add_idea = TUR_debt2
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt4 }
+		swap_ideas = {
+			remove_idea = TUR_debt4
+			add_idea = TUR_debt3
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt5 }
+		swap_ideas = {
+			remove_idea = TUR_debt5
+			add_idea = TUR_debt4
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt6 }
+		swap_ideas = {
+			remove_idea = TUR_debt6
+			add_idea = TUR_debt5
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt7 }
+		swap_ideas = {
+			remove_idea = TUR_debt7
+			add_idea = TUR_debt6
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt8 }
+		swap_ideas = {
+			remove_idea = TUR_debt8
+			add_idea = TUR_debt7
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt9 }
+		swap_ideas = {
+			remove_idea = TUR_debt9
+			add_idea = TUR_debt8
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt10 }
+		swap_ideas = {
+			remove_idea = TUR_debt10
+			add_idea = TUR_debt9
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt11 }
+		swap_ideas = {
+			remove_idea = TUR_debt11
+			add_idea = TUR_debt10
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt12 }
+		swap_ideas = {
+			remove_idea = TUR_debt12
+			add_idea = TUR_debt11
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt13 }
+		swap_ideas = {
+			remove_idea = TUR_debt13
+			add_idea = TUR_debt12
+		}
+	}
+}
+
+remove_opda_idea = {
+	if = {
+		limit = { has_idea = TUR_debt1 }
+		swap_ideas = {
+			remove_idea = TUR_debt1
+			add_idea = TUR_debt
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt }
+		swap_ideas = {
+			remove_idea = TUR_debt
+			add_idea = TUR_debt2
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt2 }
+		swap_ideas = {
+			remove_idea = TUR_debt2
+			add_idea = TUR_debt3
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt3 }
+		swap_ideas = {
+			remove_idea = TUR_debt3
+			add_idea = TUR_debt4
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt4 }
+		swap_ideas = {
+			remove_idea = TUR_debt4
+			add_idea = TUR_debt5
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt5 }
+		swap_ideas = {
+			remove_idea = TUR_debt5
+			add_idea = TUR_debt6
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt6 }
+		swap_ideas = {
+			remove_idea = TUR_debt6
+			add_idea = TUR_debt7
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt7 }
+		swap_ideas = {
+			remove_idea = TUR_debt7
+			add_idea = TUR_debt8
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt8 }
+		swap_ideas = {
+			remove_idea = TUR_debt8
+			add_idea = TUR_debt9
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt9 }
+		swap_ideas = {
+			remove_idea = TUR_debt9
+			add_idea = TUR_debt10
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt10 }
+		swap_ideas = {
+			remove_idea = TUR_debt10
+			add_idea = TUR_debt11
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt11 }
+		swap_ideas = {
+			remove_idea = TUR_debt11
+			add_idea = TUR_debt12
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt12 }
+		swap_ideas = {
+			remove_idea = TUR_debt12
+			add_idea = TUR_debt13
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_debt13 }
+		remove_ideas = TUR_debt13
+	}
+	else = {
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = TUR_debt
+				add_idea = TUR_debt2
+			}
+		}
+	}
+}
+TUR_defualt_debt={
+	if = {
+		limit = {
+			OR={
+				has_idea = TUR_debt
+				has_idea = TUR_debt2
+				has_idea = TUR_debt3
+				has_idea = TUR_debt4
+				has_idea = TUR_debt5
+				has_idea = TUR_debt6
+				has_idea = TUR_debt7
+				has_idea = TUR_debt8
+				has_idea = TUR_debt9
+				has_idea = TUR_debt10
+				has_idea = TUR_debt11
+				has_idea = TUR_debt12
+				has_idea = TUR_debt13
+			}
+		}
+		remove_ideas = {
+			TUR_debt
+			TUR_debt2
+			TUR_debt3
+			TUR_debt4
+			TUR_debt5
+			TUR_debt6
+			TUR_debt7
+			TUR_debt8
+			TUR_debt9
+			TUR_debt10
+			TUR_debt11
+			TUR_debt12
+			TUR_debt13
+		}
+		add_opinion_modifier = {
+			target = ENG
+			modifier = TUR_defaulted_on_debts
+		}
+		add_opinion_modifier = {
+			target = ITA
+			modifier = TUR_defaulted_on_debts
+		}
+		add_opinion_modifier = {
+			target = FRA
+			modifier = TUR_defaulted_on_debts
+		}
+	}
+}

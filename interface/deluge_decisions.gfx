@@ -413,4 +413,12 @@ spriteTypes = {
 		name = "GFX_decision_cat_baghdad_protest"
 		texturefile = "gfx/interface/decisions/decision_cat_baghdad_protest.dds"
 	}
+	spriteType = {
+		name = "GFX_decision_category_ottoman_council"
+		texturefile = "gfx/interface/decisions/decision_category_ottoman_council.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_arab_lands"
+		texturefile = "gfx/interface/decisions/decision_category_arab_lands.dds"
+	}
 }

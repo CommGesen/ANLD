@@ -9,3 +9,97 @@ TUR_power_struggle_category_mission = {
 	icon = GFX_decision_category_generic_crisis
 	picture = GFX_decision_cat_baghdad_protest
 }
+TUR_Vilayets_category = {
+	icon = GFX_decision_category_ottoman_council
+	picture = GFX_decision_category_arab_lands
+	allowed = {
+		original_tag = TUR
+	}
+	visible = {
+	}
+	visible_when_empty = yes
+	on_map_area = {
+		name = TUR_Iraqi_vilayets
+		zoom = 250
+		targets = { 291 935 676 656 }
+		target_trigger = {
+			owns_state = FROM
+			FROM = {
+				is_claimed_by = ROOT
+			}
+		}
+	}
+	on_map_area = {
+		name = TUR_Syrian_vilayets
+		zoom = 250
+		targets = { 677 554 680 455 }
+		target_trigger = {
+			owns_state = FROM
+			FROM = {
+				is_claimed_by = ROOT
+			}
+		}
+	}
+	on_map_area = {
+		name = TUR_Kurdish_vilayets
+		zoom = 250
+		targets = { 936 937 701 352 350 353 }
+		target_trigger = {
+			owns_state = FROM
+			FROM = {
+				OR={
+					is_claimed_by = ROOT
+					is_core_of =  ROOT
+				}
+			}
+		}
+	}
+	on_map_area = {
+		name = TUR_palestine_mutasarrifate
+		zoom = 250
+
+		targets = { 454 453 }
+		target_trigger = {
+			owns_state = FROM
+			FROM = {
+				is_claimed_by = ROOT
+			}
+		}
+	}
+	on_map_area = {
+		name = TUR_lebanon_mutasarrifate
+		zoom = 250
+
+		targets = { 553 }
+		target_trigger = {
+			owns_state = FROM
+			FROM = {
+				is_claimed_by = ROOT
+			}
+		}
+	}
+	on_map_area = {
+		name = TUR_hejaz_sharifate
+		zoom = 250
+
+		targets = { 855 679 856 }
+		target_trigger = {
+			owns_state = FROM
+			FROM = {
+				is_claimed_by = ROOT
+			}
+		}
+	}
+	on_map_area = {
+		name = TUR_ahwaz_emirate
+		zoom = 250
+
+		targets = { 413 }
+		target_trigger = {
+			owns_state = FROM
+			FROM = {
+				is_claimed_by = ROOT
+			}
+		}
+	}
+}

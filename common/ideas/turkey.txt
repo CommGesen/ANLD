@@ -40,18 +40,173 @@ ideas = {
 				attrition = -0.1
 			}
 		}
-		TUR_debt = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TUR_debt"}
+		TUR_debt13 = {
 			allowed = {
 				original_tag = TUR
 			}
 			removal_cost = -1
 			picture = tur_odpa
-
+			name = TUR_debt
+			modifier = {
+				consumer_goods_factor = 0.02
+				min_export = 0.02
+				political_power_gain = -0.01
+			}
+		}
+		TUR_debt12 = {
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			picture = tur_odpa
+			name = TUR_debt
+			modifier = {
+				consumer_goods_factor = 0.05
+				min_export = 0.05
+				political_power_gain = -0.05
+			}
+		}
+		TUR_debt11 = {
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			picture = tur_odpa
+			name = TUR_debt
 			modifier = {
 				consumer_goods_factor = 0.1
-				min_export = 0.15
+				min_export = 0.1
 				political_power_gain = -0.05
+			}
+		}
+		TUR_debt10 = {
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			picture = tur_odpa
+			name = TUR_debt
+			modifier = {
+				consumer_goods_factor = 0.015
+				min_export = 0.015
+				political_power_gain = -0.05
+			}
+		}
+		TUR_debt9 = {
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			picture = tur_odpa
+			name = TUR_debt
+			modifier = {
+				consumer_goods_factor = 0.2
+				min_export = 0.2
+				political_power_gain = -0.05
+			}
+		}
+		TUR_debt8 = {
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			picture = tur_odpa
+			name = TUR_debt
+			modifier = {
+				consumer_goods_factor = 0.025
+				min_export = 0.025
+				political_power_gain = -0.05
+			}
+		}
+		TUR_debt7 = {
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			picture = tur_odpa
+			name = TUR_debt
+			modifier = {
+				consumer_goods_factor = 0.3
+				min_export = 0.3
+				political_power_gain = -0.1
+			}
+		}
+		TUR_debt6 = {
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			picture = tur_odpa
+			name = TUR_debt
+			modifier = {
+				consumer_goods_factor = 0.035
+				min_export = 0.035
+				political_power_gain = -0.1
+			}
+		}
+		TUR_debt5 = {
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			picture = tur_odpa
+			name = TUR_debt
+			modifier = {
+				consumer_goods_factor = 0.4
+				min_export = 0.4
+				political_power_gain = -0.1
+			}
+		}
+		TUR_debt4 = {
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			picture = tur_odpa
+			name = TUR_debt
+			modifier = {
+				consumer_goods_factor = 0.045
+				min_export = 0.045
+				political_power_gain = -0.1
+			}
+		}
+		TUR_debt3 = {
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			picture = tur_odpa
+			name = TUR_debt
+			modifier = {
+				consumer_goods_factor = 0.5
+				min_export = 0.5
+				political_power_gain = -0.015
+			}
+		}
+		TUR_debt2 = {
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			picture = tur_odpa
+			name = TUR_debt
+			modifier = {
+				consumer_goods_factor = 0.055
+				min_export = 0.055
+				political_power_gain = -0.015
+			}
+		}
+		TUR_debt = {
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			picture = tur_odpa
+			name = TUR_debt
+			modifier = {
+				consumer_goods_factor = 0.6
+				min_export = 0.6
+				political_power_gain = -0.2
 			}
 		}
 		TUR_national_Revolutionaries = {
