@@ -7,7 +7,7 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = FRA
+		owner = LBA
 		add_core_of = LBA
 		victory_points = {
 			1130 5 
@@ -19,7 +19,9 @@ state={
 				naval_base = 6
 			}
 		}
-
+		FRA = {
+			set_province_controller = 1130
+		}
 	}
 
 	provinces={
