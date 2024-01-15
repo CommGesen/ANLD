@@ -51,6 +51,262 @@ on_actions = {
 				72 = { set_state_name = "Południowe Czechy" }
 				set_province_name = { id = 9541 name = "Budziejowice" }
 			}
+			if = {##to CZECHIA
+				limit = {
+					CZE = {
+						has_full_control_of_state = 69
+					}
+				}
+				69 = { set_state_name = "Plzenský kraj" }
+				set_province_name = { id = 6418 name = " Plzeň" }
+				set_province_name = { id = 11432 name = "Ústí nad Labem" }
+				set_province_name = { id = 3585 name = "Karlovy Vary" }
+			}
+			if = {##to CZECHIA
+				limit = {
+					CZE = {
+						has_full_control_of_state = 74
+					}
+				}
+				74 = { set_state_name = "Ceské Slezsko" }
+				set_province_name = { id = 3583 name = "Ostrava" }
+			}
+			if = {##to CZECHIA
+				limit = {
+					CZE = {
+						has_full_control_of_state = 9
+					}
+				}
+				9 = { set_state_name = "Strední Cechy" }
+				set_province_name = { id = 11542 name = "Praha" }
+				set_province_name = { id = 9569 name = "Tábor" }
+				set_province_name = { id = 11401 name = "Liberec" }
+			}
+			if = {##to CZECHIA
+				limit = {
+					CZE = {
+						has_full_control_of_state = 75
+					}
+				}
+				75 = { set_state_name = "Morava" }
+				set_province_name = { id = 3569 name = "Brno" }
+				set_province_name = { id = 6562 name = "Olomouc" }
+			}
+			if = {##to CZECHIA
+				limit = {
+					CZE = {
+						has_full_control_of_state = 72
+					}
+				}
+				72 = { set_state_name = "Jižní Cechy" }
+				set_province_name = { id = 9541 name = "Budějovice" }
+			}
+			
+		if = {##to AUS
+			limit = {
+				AUS = {
+					has_full_control_of_state = 69
+				}
+			}
+			69 = { set_state_name = "Pilsner Region" }
+			set_province_name = { id = 6418 name = "Pilsen" }
+			set_province_name = { id = 11432 name = "Aussig" }
+			set_province_name = { id = 3585 name = "Karlsbad" }
+		}
+		if = {##to AUS
+			limit = {
+				AUS = {
+					has_full_control_of_state = 74
+				}
+			}
+			74 = { set_state_name = "Tschechisch-Schlesien" }
+			set_province_name = { id = 3583 name = "Ostrau" }
+		}
+		if = {##to AUS
+			limit = {
+				AUS = {
+					has_full_control_of_state = 9
+				}
+			}
+			9 = { set_state_name = "Mittelböhmen" }
+			set_province_name = { id = 11542 name = "Prag" }
+			set_province_name = { id = 9569 name = "Tabor" }
+			set_province_name = { id = 11401 name = "Reichenberg" }
+		}
+		if = {##to AUS
+			limit = {
+				AUS = {
+					has_full_control_of_state = 75
+				}
+			}
+			75 = { set_state_name = "Mähren" }
+			set_province_name = { id = 3569 name = "Brünn" }
+			set_province_name = { id = 6562 name = "Olmütz" }
+		}
+		if = {##to AUS
+			limit = {
+				AUS = {
+					has_full_control_of_state = 72
+				}
+			}
+			72 = { set_state_name = "Südböhmen" }
+			set_province_name = { id = 9541 name = "Budweis" }
+		}	
+		
+		if = {##to GER
+		limit = {
+			GER = {
+				has_full_control_of_state = 69
+			}
+		}
+		69 = { set_state_name = "Pilsner Region" }
+		set_province_name = { id = 6418 name = "Pilsen" }
+		set_province_name = { id = 11432 name = "Aussig" }
+		set_province_name = { id = 3585 name = "Karlsbad" }
+	}
+	if = {##to GER
+		limit = {
+			GER = {
+				has_full_control_of_state = 74
+			}
+		}
+		74 = { set_state_name = "Tschechisch-Schlesien" }
+		set_province_name = { id = 3583 name = "Ostrau" }
+	}
+	if = {##to GER
+		limit = {
+			GER = {
+				has_full_control_of_state = 9
+			}
+		}
+		9 = { set_state_name = "Mittelböhmen" }
+		set_province_name = { id = 11542 name = "Prag" }
+		set_province_name = { id = 9569 name = "Tabor" }
+		set_province_name = { id = 11401 name = "Reichenberg" }
+	}
+	if = {##to GER
+		limit = {
+			GER = {
+				has_full_control_of_state = 75
+			}
+		}
+		75 = { set_state_name = "Mähren" }
+		set_province_name = { id = 3569 name = "Brünn" }
+		set_province_name = { id = 6562 name = "Olmütz" }
+	}
+	if = {##to GER
+		limit = {
+			GER = {
+				has_full_control_of_state = 72
+			}
+		}
+		72 = { set_state_name = "Südböhmen" }
+		set_province_name = { id = 9541 name = "Budweis" }
+	}
+
+	if = {##to WGR
+	limit = {
+		WGR = {
+			has_full_control_of_state = 69
+		}
+	}
+	69 = { set_state_name = "Pilsner Region" }
+	set_province_name = { id = 6418 name = "Pilsen" }
+	set_province_name = { id = 11432 name = "Aussig" }
+	set_province_name = { id = 3585 name = "Karlsbad" }
+}
+if = {##to WGR
+	limit = {
+		WGR = {
+			has_full_control_of_state = 74
+		}
+	}
+	74 = { set_state_name = "Tschechisch-Schlesien" }
+	set_province_name = { id = 3583 name = "Ostrau" }
+}
+if = {##to WGR
+	limit = {
+		WGR = {
+			has_full_control_of_state = 9
+		}
+	}
+	9 = { set_state_name = "Mittelböhmen" }
+	set_province_name = { id = 11542 name = "Prag" }
+	set_province_name = { id = 9569 name = "Tabor" }
+	set_province_name = { id = 11401 name = "Reichenberg" }
+}
+if = {##to WGR
+	limit = {
+		WGR = {
+			has_full_control_of_state = 75
+		}
+	}
+	75 = { set_state_name = "Mähren" }
+	set_province_name = { id = 3569 name = "Brünn" }
+	set_province_name = { id = 6562 name = "Olmütz" }
+}
+if = {##to WGR
+	limit = {
+		WGR = {
+			has_full_control_of_state = 72
+		}
+	}
+	72 = { set_state_name = "Südböhmen" }
+	set_province_name = { id = 9541 name = "Budweis" }
+}
+if = {##to DDR
+limit = {
+	DDR = {
+		has_full_control_of_state = 69
+	}
+}
+69 = { set_state_name = "Pilsner Region" }
+set_province_name = { id = 6418 name = "Pilsen" }
+set_province_name = { id = 11432 name = "Aussig" }
+set_province_name = { id = 3585 name = "Karlsbad" }
+}
+if = {##to DDR
+limit = {
+	DDR = {
+		has_full_control_of_state = 74
+	}
+}
+74 = { set_state_name = "Tschechisch-Schlesien" }
+set_province_name = { id = 3583 name = "Ostrau" }
+}
+if = {##to DDR
+limit = {
+	DDR = {
+		has_full_control_of_state = 9
+	}
+}
+9 = { set_state_name = "Mittelböhmen" }
+set_province_name = { id = 11542 name = "Prag" }
+set_province_name = { id = 9569 name = "Tabor" }
+set_province_name = { id = 11401 name = "Reichenberg" }
+}
+if = {##to DDR
+limit = {
+	DDR = {
+		has_full_control_of_state = 75
+	}
+}
+75 = { set_state_name = "Mähren" }
+set_province_name = { id = 3569 name = "Brünn" }
+set_province_name = { id = 6562 name = "Olmütz" }
+}
+if = {##to DDR
+limit = {
+	DDR = {
+		has_full_control_of_state = 72
+	}
+}
+72 = { set_state_name = "Südböhmen" }
+set_province_name = { id = 9541 name = "Budweis" }
+}
+
+
+			###
 			if = {##UKRAINE to POL
 				limit = {
 					POL = {
@@ -594,6 +850,7 @@ on_actions = {
 				set_province_name = { id = 11241 name = "Wiciebsk" }
 				207 = { set_state_name = "Wiciebsk" }
 			}
+	
 		}
 	}
 	on_ruling_party_change = {##add/remove ideas of queens/kings of countries
