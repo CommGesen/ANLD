@@ -305,8 +305,6 @@ limit = {
 set_province_name = { id = 9541 name = "Budweis" }
 }
 
-
-			###
 			if = {##UKRAINE to POL
 				limit = {
 					POL = {
@@ -700,6 +698,231 @@ set_province_name = { id = 9541 name = "Budweis" }
 				set_province_name = { id = 3548 name = "Mukaczewo" }
 				73 = { set_state_name = "Zakarpacie" }
 			}
+
+			if = {#to SLOVAKIA
+				limit = {
+					SLO = {
+						has_full_control_of_state = 70
+					}
+				}
+				set_province_name = { id = 9692 name = "Bratislava" }
+				set_province_name = { id = 11539 name = "Žilina" }
+				70 = { set_state_name = "Zapadne Slovensko" }
+			}
+			if = {#to SLOVAKIA
+				limit = {
+					SLO = {
+						has_full_control_of_state = 664
+					}
+				}
+				set_province_name = { id = 6573 name = "Košice" }
+				664 = { set_state_name = "Juzne Slovensko" }
+			}
+			if = {#to SLOVAKIA
+				limit = {
+					SLO = {
+						has_full_control_of_state = 71
+					}
+				}
+				set_province_name = { id = 3581 name = "Prešov" }
+				71 = { set_state_name = "Stredne Slovensko" }
+			}
+			if = {#to SLOVAKIA
+				limit = {
+					SLO = {
+						has_full_control_of_state = 73
+					}
+				}
+				set_province_name = { id = 3548 name = "Mukačevo" }
+				73 = { set_state_name = "Podkarpatska-Rus" }
+			}
+			if = {#SLO to Austria
+				limit = {
+					AUS = {
+						has_full_control_of_state = 70
+					}
+				}
+				set_province_name = { id = 9692 name = "Pressburg" }
+				set_province_name = { id = 11539 name = "Sillein" }
+				70 = { set_state_name = "Westslowakei" }
+			}
+			if = {#SLO to Austria
+				limit = {
+					AUS = {
+						has_full_control_of_state = 664
+					}
+				}
+				set_province_name = { id = 6573 name = "Kashau" }
+				664 = { set_state_name = "Ostslowakei" }
+			}
+			if = {#SLO to Austria
+				limit = {
+					AUS = {
+						has_full_control_of_state = 71
+					}
+				}
+				set_province_name = { id = 3581 name = "Eperies" }
+				71 = { set_state_name = "Mittelslowakei" }
+			}
+			if = {#SLO to Austria
+				limit = {
+					AUS = {
+						has_full_control_of_state = 73
+					}
+				}
+				set_province_name = { id = 3548 name = "Munkatsch" }
+				73 = { set_state_name = "Marmarosch" }
+			}
+		if = {#SLO to Germanies
+			limit = {
+				GER = {
+					has_full_control_of_state = 70
+				}
+			}
+			set_province_name = { id = 9692 name = "Pressburg" }
+			set_province_name = { id = 11539 name = "Sillein" }
+			70 = { set_state_name = "Westslowakei" }
+		}
+		if = {#SLO to Germanies
+			limit = {
+				GER = {
+					has_full_control_of_state = 664
+				}
+			}
+			set_province_name = { id = 6573 name = "Kashau" }
+			664 = { set_state_name = "Ostslowakei" }
+		}
+		if = {#SLO to Germanies
+			limit = {
+				GER = {
+					has_full_control_of_state = 71
+				}
+			}
+			set_province_name = { id = 3581 name = "Eperies" }
+			71 = { set_state_name = "Mittelslowakei" }
+		}
+		if = {#SLO to Germanies
+			limit = {
+				GER = {
+					has_full_control_of_state = 73
+				}
+			}
+			set_province_name = { id = 3548 name = "Munkatsch" }
+			73 = { set_state_name = "Marmarosch" }
+		}
+		if = {#SLO to Germanies
+			limit = {
+				DDR = {
+					has_full_control_of_state = 70
+				}
+			}
+			set_province_name = { id = 9692 name = "Pressburg" }
+			set_province_name = { id = 11539 name = "Sillein" }
+			70 = { set_state_name = "Westslowakei" }
+		}
+		if = {#SLO to Germanies
+			limit = {
+				DDR = {
+					has_full_control_of_state = 664
+				}
+			}
+			set_province_name = { id = 6573 name = "Kashau" }
+			664 = { set_state_name = "Ostslowakei" }
+		}
+		if = {#SLO to Germanies
+			limit = {
+				DDR = {
+					has_full_control_of_state = 71
+				}
+			}
+			set_province_name = { id = 3581 name = "Eperies" }
+			71 = { set_state_name = "Mittelslowakei" }
+		}
+		if = {#SLO to Germanies
+			limit = {
+				DDR = {
+					has_full_control_of_state = 73
+				}
+			}
+			set_province_name = { id = 3548 name = "Munkatsch" }
+			73 = { set_state_name = "Marmarosch" }
+		}
+		if = {#SLO to Germanies
+			limit = {
+				WGR = {
+					has_full_control_of_state = 70
+				}
+			}
+			set_province_name = { id = 9692 name = "Pressburg" }
+			set_province_name = { id = 11539 name = "Sillein" }
+			70 = { set_state_name = "Westslowakei" }
+		}
+		if = {#SLO to Germanies
+			limit = {
+				WGR = {
+					has_full_control_of_state = 664
+				}
+			}
+			set_province_name = { id = 6573 name = "Kashau" }
+			664 = { set_state_name = "Ostslowakei" }
+		}
+		if = {#SLO to Germanies
+			limit = {
+				WGR = {
+					has_full_control_of_state = 71
+				}
+			}
+			set_province_name = { id = 3581 name = "Eperies" }
+			71 = { set_state_name = "Mittelslowakei" }
+		}
+		if = {#SLO to Germanies
+			limit = {
+				WGR = {
+					has_full_control_of_state = 73
+				}
+			}
+			set_province_name = { id = 3548 name = "Munkatsch" }
+			73 = { set_state_name = "Marmarosch" }
+		}
+		if = {#SLOVAKIA to HUN
+		limit = {
+			HUN = {
+				has_full_control_of_state = 70
+			}
+		}
+		set_province_name = { id = 9692 name = "Pozsony" }
+		set_province_name = { id = 11539 name = "Zsolna" }
+		70 = { set_state_name = "Nyugat-Szlovakia" }
+	}
+	if = {#SLOVAKIA to HUN
+		limit = {
+			HUN = {
+				has_full_control_of_state = 664
+			}
+		}
+		set_province_name = { id = 6573 name = "Kassa" }
+		664 = { set_state_name = "Del-Szlovakia" }
+	}
+	if = {#SLOVAKIA to HUN
+		limit = {
+			HUN = {
+				has_full_control_of_state = 71
+			}
+		}
+		set_province_name = { id = 3581 name = "Eperjes" }
+		71 = { set_state_name = "Kozep-Szlovakia" }
+	}
+	if = {#SLOVAKIA to HUN
+		limit = {
+			HUN = {
+				has_full_control_of_state = 73
+			}
+		}
+		set_province_name = { id = 3548 name = "Munkács" }
+		73 = { set_state_name = "Karpatalja" }
+	}
+
+
 			if = {#Belarus to POL
 				limit = {
 					POL = {
@@ -783,7 +1006,7 @@ set_province_name = { id = 9541 name = "Budweis" }
 				}
 				set_province_name = { id = 9304 name = "Baranovichi" }
 				set_province_name = { id = 9304 name = "Hrodna" }
-				73 = { set_state_name = "Hrodna" }
+				95 = { set_state_name = "Hrodna" }
 			}
 			if = {#Belarus to BLR
 				limit = {
