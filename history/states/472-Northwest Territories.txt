@@ -2,9 +2,6 @@
 state={
 	id=472
 	name="STATE_472"
-	
-	state_category=wasteland
-	impassable = yes
 
 	history={
 		owner = AQN
@@ -17,8 +14,10 @@ state={
 	}
 
 	provinces={
-		2407 2976 4272 7348 7696 7766 7830 7858 7901 10527 10703 12534 13075 
+		2407 2976 4272 7348 7696 7766 7830 7858 7901 8653 10527 10703 12534 13075 13167 13189 13192 
 	}
 	manpower=127681
 	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
 }
