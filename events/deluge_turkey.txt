@@ -16,3 +16,236 @@ country_event = {
 		
 	}
 }
+country_event = {
+	id = turkey.1
+	title = turkey.1.t
+	desc = turkey.1.d
+	picture = GFX_interior_ruins
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.1.a
+		set_country_flag = TUR_Mejlis_explode
+		country_event = {
+			id = turkey.2
+			days = 5
+		}
+	}
+}
+country_event = {
+	id = turkey.2
+	title = turkey.2.t
+	desc = turkey.2.d
+	picture = GFX_damascus_protest
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.2.a
+		set_country_flag = TUR_Mejlis_explode
+		554={
+			TUR_minority_angry = yes
+		}
+		country_event = {
+			id = turkey.3
+			days = 5
+		}
+	}
+}
+country_event = {
+	id = turkey.3
+	title = turkey.3.t
+	desc = turkey.3.d
+	picture = GFX_baghdad_protest
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.3.a
+		set_country_flag = TUR_Mejlis_explode
+		291={
+			TUR_minority_angry = yes
+		}
+		country_event = {
+			id = turkey.4
+			days = 5
+		}
+	}
+}
+country_event = {
+	id = turkey.4
+	title = turkey.4.t
+	desc = turkey.4.d
+	picture = GFX_young_turks
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.4.a
+		country_event = {
+			id = turkey.5
+			days = 5
+		}
+		hidden_effect = {
+			set_country_flag = TUR_Arab_Troll
+		}
+	}
+	option = {
+		name = turkey.4.b
+		country_event = {
+			id = turkey.5
+			days = 5
+		}
+		hidden_effect = {
+			set_country_flag = TUR_Socialist_Troll
+		}
+	}
+	option = {
+		name = turkey.4.c
+	}
+}
+country_event = {
+	id = turkey.5
+	title = turkey.5.t
+	desc = turkey.5.d
+	picture = GFX_young_turks
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.5.a
+		country_event = {
+			id = turkey.6
+			days = 30
+		}
+		trigger = {
+			has_country_flag = TUR_Arab_Troll
+		}
+	}
+	option = {
+		name = turkey.5.b
+		country_event = {
+			id = turkey.7
+			days = 15
+		}
+		trigger = {
+			has_country_flag = TUR_Socialist_Troll
+		}
+	}
+}
+country_event = {
+	id = turkey.6
+	title = turkey.6.t
+	desc = turkey.6.d
+	picture = GFX_arab_government
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.6.a
+		hidden_effect = {
+			AHZ={
+				transfer_state = 413
+			}
+			IRQ={
+				transfer_state = 935
+				transfer_state = 676
+				transfer_state = 656
+				transfer_state = 291
+				add_country_leader_role = {
+					character = IRQ_Nuri_Said
+					promote_leader = yes
+					country_leader = {
+						ideology = reactionary_ideology
+						expire = "1965.1.1.1"
+						traits = {}
+					}
+				}
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = yes
+				}
+				set_cosmetic_tag = IRQ_Junta
+				set_party_name = {
+					ideology = neutrality
+					long_name = "National Defence Government"
+					name = "National Government"
+				}
+			}
+			SYR={
+				transfer_state = 455
+				transfer_state = 454
+				transfer_state = 554
+				transfer_state = 667
+				transfer_state = 680
+				add_country_leader_role = {
+					character = SYR_Husni_Zaim
+					promote_leader = yes
+					country_leader = {
+						ideology = reactionary_ideology
+						expire = "1965.1.1.1"
+						traits = {}
+					}
+				}
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = yes
+				}
+				set_cosmetic_tag = SYR_Junta
+				set_party_name = {
+					ideology = neutrality
+					long_name = "People's Government"
+					name = "People's Government"
+				}
+			}
+			FRA={
+				transfer_state = 553
+			}
+			EGY={
+				transfer_state = 453
+			}
+			HEJ={
+				transfer_state = 856
+				transfer_state = 855
+				transfer_state = 679
+			}
+			TUR={
+				retire_character = TUR_Nuri_Said
+				retire_character = TUR_Jafar_Askari
+				retire_character = TUR_Husni_Zaim
+				retire_character = TUR_Sultan_Atrash
+				retire_character = TUR_AbdulQadir_Hussieni
+				retire_character = TUR_Ajami_Saadon
+				set_cosmetic_tag = TUR_no_empire
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = yes
+				}
+				set_country_flag = TUR_Monarchy_Abolished
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.4
+				}
+				remove_ideas = TUR_national_Revolutionaries
+				remove_ideas = TUR_legacy_of_the_1800s
+			}
+		}
+	}
+}
+country_event = {
+	id = turkey.7
+	title = turkey.7.t
+	desc = turkey.7.d
+	picture = GFX_CHP_government
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.7.a
+		self_destruct_ott = yes
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.4
+		}
+		remove_ideas = TUR_national_Revolutionaries
+		remove_ideas = TUR_legacy_of_the_1800s
+	}
+}

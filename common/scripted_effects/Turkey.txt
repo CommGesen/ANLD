@@ -384,3 +384,51 @@ TUR_defualt_debt={
 		}
 	}
 }
+
+self_destruct_ott={
+	AHZ={
+		transfer_state = 413
+	}
+	IRQ={
+		transfer_state = 935
+		transfer_state = 676
+		transfer_state = 656
+		transfer_state = 291
+	}
+	SYR={
+		transfer_state = 455
+		transfer_state = 454
+		transfer_state = 554
+		transfer_state = 667
+		transfer_state = 680
+	}
+	FRA={
+		transfer_state = 553
+	}
+	EGY={
+		transfer_state = 453
+	}
+	HEJ={
+		transfer_state = 856
+		transfer_state = 855
+		transfer_state = 679
+	}
+	TUR={
+		retire_character = TUR_Nuri_Said
+		retire_character = TUR_Jafar_Askari
+		retire_character = TUR_Husni_Zaim
+		retire_character = TUR_Sultan_Atrash
+		retire_character = TUR_AbdulQadir_Hussieni
+		retire_character = TUR_Ajami_Saadon
+		set_cosmetic_tag = TUR_no_empire
+		if = {
+			limit = { 
+				has_country_flag = TUR_Socialist_Troll
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+	}
+}

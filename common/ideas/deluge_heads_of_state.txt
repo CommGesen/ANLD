@@ -179,7 +179,12 @@ ideas = {
 				NOT = { has_government = communism }
 			}
 			removal_cost = -1
-			
+			cancel = {
+				OR={
+					has_country_flag = TUR_Monarchy_Abolished
+					has_government = communism
+				}
+			}
 			modifier = {
 				war_support_factor = 0.1
 				stability_factor = 0.1

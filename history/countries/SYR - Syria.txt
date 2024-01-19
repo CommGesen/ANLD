@@ -94,54 +94,9 @@ set_popularities = {
 	neutrality = 50
 }
 	
-create_country_leader = {
-	name = "Hashim al-Atassi"
-	desc = ""
-	picture = "gfx/leaders/SYR/Portrait_SYR_Hashim.png"
-	ideology = liberal_republican_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Antun Saadeh"
-	desc = ""
-	picture = "gfx/leaders/SYR/Portrait_SYR_Antoun_Sadeh.png"
-	ideology = corporatist_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Ghazi I"
-	desc = "POLITICS_GHAZI_I_DESC"
-	picture = "GFX_portrait_iraq_ghazi"
-	expire = "1965.1.1"
-	ideology = bonapartist_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Khalid Bakdash"
-	desc = ""
-	picture = "gfx/leaders/SYR/Portrait_SYR_Khalid_Bakdash.png"
-	ideology = marxist_ideology
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "Sultan Al Atrash"
-	picture = "gfx/leaders/SYR/portrait_syria_ali_rikabi.dds"
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 3
-	traits = { }
-}
+recruit_character = SYR_Hashim
+recruit_character = SYR_Antoun_Sadeh
+recruit_character = SYR_Ghazi
+recruit_character = SYR_Khalid_Bakdash
+recruit_character = SYR_Sultan_Atrash
+recruit_character = SYR_Husni_Zaim

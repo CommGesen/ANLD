@@ -95,57 +95,10 @@ set_popularities = {
 	neutrality = 50
 }
 
-create_country_leader = {
-	name = "Ghazi I"
-	desc = "POLITICS_GHAZI_I_DESC"
-	picture = "GFX_portrait_iraq_ghazi"
-	expire = "1965.1.1"
-	ideology = bonapartist_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Rashid Ali al-Gaylani"
-	desc = ""
-	picture = "gfx/leaders/IRQ/portrait_irq_rashid_al_gaylani.dds"
-	expire = "1965.1.1"
-	ideology = religious_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Yusuf Salman Yusuf"
-	desc = ""
-	picture = "gfx/leaders/IRQ/Portrait_IRQ_Yusuf_Salman_Yusuf.png"
-	expire = "1965.1.1"
-	ideology = jacobin_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Kamel Al Chaderchi"
-	desc = ""
-	picture = "gfx/leaders/IRQ/Portrait_IRQ_Kamil_Chadirchi.png"
-	expire = "1965.1.1"
-	ideology = social_democratic_ideology
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "Nuri Al Said"
-	picture = "gfx/leaders/IRQ/Portrait_Nuri_al_Said.dds"
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 3
-	traits = { }
-}
+recruit_character = IRQ_Nuri_Said
+recruit_character = IRQ_Jafar_Askari
+recruit_character = IRQ_Zeid
+recruit_character = IRQ_Gaylani
+recruit_character = IRQ_Yusuf_Salman_Yusuf
+recruit_character = IRQ_Kamil_Chadirchi
+recruit_character = IRQ_Ajami_Saadon

@@ -1,0 +1,97 @@
+characters={
+	IRQ_Nuri_Said ={
+		name="Nuri Pasha Al Said"
+		portraits={
+			army={
+				large="gfx/leaders/IRQ/Portrait_Nuri_al_Said.dds"
+				small=GFX_portrait_IRQ_Nuri_Said
+			}
+		}
+		corps_commander={
+			traits={ career_officer hidden_sympathies war_hero cavalry_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	IRQ_Jafar_Askari ={
+		name="Jafar Pasha Al Askari"
+		portraits={
+			army={
+				large="gfx/leaders/IRQ/Portrait_Jafar_al_Askari.dds"
+				small=GFX_portrait_IRQ_Jafar_Askari
+			}
+		}
+		corps_commander={
+			traits={ career_officer hidden_sympathies war_hero desert_fox }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+	IRQ_Ajami_Saadon ={
+		name="Ajami Pasha Al Saadon"
+		portraits={
+			army={
+				large="gfx/leaders/IRQ/Portrait_IRQ_Ajami_al_Saadun.png"
+				small=GFX_portrait_IRQ_Ajami_al_Saadun
+			}
+		}
+		corps_commander={
+			traits={ hidden_sympathies war_hero irregulars_officer politically_connected }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	IRQ_Zeid ={
+		name="Zeid I"
+		portraits={
+			army={
+				large="gfx/leaders/IRQ/portrait_irq_zeid.dds"
+			}
+		}
+		country_leader = {
+			ideology = bonapartist_ideology
+		}
+	}
+	IRQ_Gaylani ={
+		name="Rashid Ali al-Gaylani"
+		portraits={
+			army={
+				large="gfx/leaders/IRQ/portrait_irq_rashid_al_gaylani.dds"
+			}
+		}
+		country_leader = {
+			ideology = corporatist_ideology
+		}
+	}
+	IRQ_Yusuf_Salman_Yusuf ={
+		name="Yusuf Salman Yusuf"
+		portraits={
+			army={
+				large="gfx/leaders/IRQ/Portrait_IRQ_Yusuf_Salman_Yusuf.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxist_ideology
+		}
+	}
+	IRQ_Kamil_Chadirchi ={
+		name="Kamil Al Chaderchi"
+		portraits={
+			army={
+				large="gfx/leaders/IRQ/Portrait_IRQ_Kamil_Chadirchi.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democratic_ideology
+		}
+	}
+}

@@ -365,24 +365,20 @@ TUR_power_struggle_category={
 }
 
 
-TUR_power_struggle_category_mission = {
+TUR_Act_Fast = {
 	TUR_act_quickly = {
 		icon = GFX_decision_revolt
 		is_good = no
-		days_mission_timeout = 169
+		days_mission_timeout = 365
 		activation = {
-			has_country_flag = TUR_BOP_on
+			has_country_flag = TUR_Mejlis_explode
 		}
 		available = {
-			has_country_flag = TUR_BOP_off
+			has_country_flag = TUR_sloved_problem
 		}
 		timeout_effect = {
 			custom_effect_tooltip = TUR_no_empire_tt
-			hidden_effect = {
-				TUR = {
-					country_event = { id = turbop.4 days = 5 }
-				}
-			}
+			self_destruct_ott = yes
 		}
 	}
 }

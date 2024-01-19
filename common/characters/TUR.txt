@@ -128,12 +128,12 @@ characters={
 				large="gfx/leaders/TUR/Portrait_Turkey_Sefik_Husnu.dds"
 			}
 		}
-		country_leader={
-			desc="POLITICS_SEFIK_HUSNU_DESC"
-			ideology=marxist_ideology
-			expire="1965.1.1.1"
-			id=-1
-		}
+		#country_leader={
+		#	desc="POLITICS_SEFIK_HUSNU_DESC"
+		#	ideology=marxist_ideology
+		#	expire="1965.1.1.1"
+		#	id=-1
+		#}
 	}
 	TUR_Ali_Kemal={
 		name="Ali Kemal Bey"
@@ -549,6 +549,108 @@ characters={
 			traits={ career_officer trait_reckless trait_TUR_ottoman_loyalist }
 			skill=3
 			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	TUR_Nuri_Said ={
+		name="Nuri Pasha Al Said"
+		portraits={
+			army={
+				large="gfx/leaders/IRQ/Portrait_Nuri_al_Said.dds"
+				small=GFX_portrait_IRQ_Nuri_Said
+			}
+		}
+		corps_commander={
+			traits={ career_officer hidden_sympathies war_hero cavalry_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	TUR_Jafar_Askari ={
+		name="Jafar Pasha Al Askari"
+		portraits={
+			army={
+				large="gfx/leaders/IRQ/Portrait_Jafar_al_Askari.dds"
+				small=GFX_portrait_IRQ_Jafar_Askari
+			}
+		}
+		corps_commander={
+			traits={ career_officer hidden_sympathies war_hero desert_fox }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+	TUR_Ajami_Saadon ={
+		name="Ajami Pasha Al Saadon"
+		portraits={
+			army={
+				large="gfx/leaders/IRQ/Portrait_IRQ_Ajami_al_Saadun.png"
+				small=GFX_portrait_IRQ_Ajami_al_Saadun
+			}
+		}
+		corps_commander={
+			traits={ hidden_sympathies war_hero irregulars_officer politically_connected }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	TUR_Husni_Zaim ={
+		name="Husni Pasha Al Zaim"
+		portraits={
+			army={
+				large="gfx/leaders/SYR/Portrait_SYR_Husni_al_Zaim.png"
+				small=GFX_portrait_SYR_Husni_Zaim
+			}
+		}
+		corps_commander={
+			traits={ career_officer hidden_sympathies infantry_expert }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+	TUR_Sultan_Atrash ={
+		name="Sultan Pasha Al Atrash"
+		portraits={
+			army={
+				large="gfx/leaders/SYR/portrait_SYR_Sultan_Atrash.dds"
+				small=GFX_portrait_SYR_Sultan_Atrash
+			}
+		}
+		corps_commander={
+			traits={ hidden_sympathies war_hero irregulars_officer }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	TUR_AbdulQadir_Hussieni ={
+		name="Abdul Qadir Bey Al Hussieni"
+		portraits={
+			army={
+				large="gfx/leaders/PAL/Portrait_PAL_al_Husayni.png"
+				small=GFX_portrait_PAL_AbdulQadir_Hussieni
+			}
+		}
+		corps_commander={
+			traits={ hidden_sympathies politically_connected infantry_officer }
+			skill=2
+			attack_skill=2
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=2

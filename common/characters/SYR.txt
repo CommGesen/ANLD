@@ -1,0 +1,81 @@
+characters={
+	SYR_Husni_Zaim ={
+		name="Husni Pasha Al Zaim"
+		portraits={
+			army={
+				large="gfx/leaders/SYR/Portrait_SYR_Husni_al_Zaim.png"
+				small=GFX_portrait_SYR_Husni_Zaim
+			}
+		}
+		corps_commander={
+			traits={ career_officer hidden_sympathies infantry_expert }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+	SYR_Sultan_Atrash ={
+		name="Sultan Pasha Al Atrash"
+		portraits={
+			army={
+				large="gfx/leaders/SYR/portrait_syria_sultan_atrash.dds"
+				small=GFX_portrait_SYR_Sultan_Atrash
+			}
+		}
+		corps_commander={
+			traits={ hidden_sympathies war_hero irregulars_officer }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	SYR_Khalid_Bakdash ={
+		name="Khalid Bakdash"
+		portraits={
+			army={
+				large="gfx/leaders/SYR/Portrait_SYR_Khalid_Bakdash.dds"
+				small=GFX_portrait_SYR_Husni_Zaim
+			}
+		}
+		country_leader = {
+			ideology = marxist_ideology
+		}
+	}
+	SYR_Ghazi ={
+		name="Ghazi I"
+		portraits={
+			army={
+				large="gfx/leaders/IRQ/portrait_IRQ_Zeid.dds"
+			}
+		}
+		country_leader = {
+			ideology = bonapartist_ideology
+		}
+	}
+	SYR_Antoun_Sadeh ={
+		name="Antoun Saadeh"
+		portraits={
+			army={
+				large="gfx/leaders/IRQ/Portrait_SYR_Antoun_Sadeh.dds"
+			}
+		}
+		country_leader = {
+			ideology = corporatist_ideology
+		}
+	}
+	SYR_Hashim ={
+		name="Hashim Al Atassi"
+		portraits={
+			army={
+				large="gfx/leaders/IRQ/Portrait_SYR_Hashim.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberal_republican_ideology
+		}
+	}
+}
