@@ -336,7 +336,7 @@ leader_traits = {
 	leftist_freemanson = {
 		sprite = 13
 		consumer_goods_factor = -0.07
-		improve_relations_maintain_cost_factor = -0.3
+		improve_relations_maintain_cost_factor = -0.15
 		stability_factor = 0.05
 		enemy_justify_war_goal_time = 0.3
 	}
@@ -844,7 +844,7 @@ leader_traits = {
 	theoretician_of_national_bolshevism_weaker = {
 		random = no
 		sprite = 12
-		consumer_goods_factor = -0.04
+		consumer_goods_factor = -0.05
 		communism_drift = 0.05
 		fascism_drift = 0.05
 		war_support_factor = 0.05
@@ -1127,7 +1127,7 @@ leader_traits = {
 		sprite = 10
 		production_speed_buildings_factor = 0.03
 		local_resources_factor = 0.05
-		consumer_goods_factor = -0.04
+		consumer_goods_factor = -0.1
 	}
 	famous_social_democrat = {
 		random = no
@@ -1203,14 +1203,57 @@ leader_traits = {
 	}
 	social_reformer = {
 		random = yes
+		sprite = 13
 		political_power_factor = 0.05
 		monthly_population = 0.05
 		stability_factor = 0.03
 	}
 	defender_of_human_rights = {
 		random = no
+		sprite = 9
 		political_power_factor = 0.05
 		war_support_factor = -0.03
 		communism_drift = 0.05
+	}
+	journalist = {
+		random = yes
+		sprite = 12
+		political_power_factor = 0.1
+		stability_factor = 0.05
+	}
+	businessman = {
+		random = yes
+		sprite = 10
+		industrial_capacity_dockyard = 0.05
+		industrial_capacity_factory = 0.05
+	}
+	humanist = {
+		random = yes
+		sprite = 12
+		stability_factor = 0.1
+		war_support_factor = -0.1
+		political_power_factor = 0.1
+	}
+	minister_of_agriculture = {
+		sprite = 13
+		random = yes
+		global_building_slots_factor = 0.1
+		monthly_population = 0.05
+	}
+	general_secretary = {
+		random = no
+		communism_drift = 0.05
+		stability_factor = 0.1
+	}
+	manipulator = {
+		random = yes
+		political_power_factor = -0.05
+		war_support_factor = 0.05
+		conscription_factor = 0.05
+	}
+	minister_of_defence = {
+		random = yes
+		production_speed_bunker_factor = 0.1
+		production_speed_coastal_bunker_factor = 0.1
 	}
 }

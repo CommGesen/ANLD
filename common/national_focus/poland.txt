@@ -7443,7 +7443,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_only_catholic_politicians_allowed
-		icon = GFX_only_catholic_politicians_allowed
+		icon = GFX_focus_generic_politicians_and_cross
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}

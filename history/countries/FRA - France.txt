@@ -886,9 +886,8 @@ add_to_faction = BEL
 add_to_faction = POM
 add_to_faction = BHU
 add_to_faction = VIN
-
+add_to_faction = SPR
 add_ideas = {
-	#emperor_napoleon
 	FRA_le_deluge
 	FRA_the_financial_collapse
 	limited_conscription
@@ -897,37 +896,45 @@ add_ideas = {
 }
 
 recruit_character = FRA_deluge_napoleon_v
+recruit_character = FRA_deluge_louis_franchet_d_esperey
+recruit_character = FRA_deluge_maxime_weygand
+recruit_character = FRA_deluge_henri_mordacq
 recruit_character = FRA_deluge_leon_blum
 recruit_character = FRA_deluge_felix_gouin
 recruit_character = FRA_deluge_pierre_laval
+recruit_character = FRA_deluge_paul_de_cassagnac
+recruit_character = FRA_deluge_francois_coty
 
-recruit_character = FRA_maurice_thorez
-recruit_character = FRA_jean_de_lattre_de_tassigny
-recruit_character = FRA_alphonse_juin
-recruit_character = FRA_maurice_gamelin
-recruit_character = FRA_maxime_weygand
+recruit_character = FRA_deluge_ernest_petit
+recruit_character = FRA_deluge_marceau_pivert
+recruit_character = FRA_deluge_vincent_auriol
+recruit_character = FRA_deluge_georges_monnet
+recruit_character = FRA_deluge_maurice_thorez
+recruit_character = FRA_deluge_jean_de_lattre_de_tassigny
+recruit_character = FRA_deluge_maurice_gamelin
+recruit_character = FRA_deluge_alphonse_juin
+recruit_character = FRA_deluge_alphonse_georges
 
-recruit_character = FRA_jacques_doriot
-recruit_character = FRA_alphonse_georges
-recruit_character = FRA_charles_de_gaulle
-recruit_character = FRA_philippe_leclerc
-recruit_character = FRA_henri_giraud
+recruit_character = FRA_deluge_antoine_marie_benoit_besson
+recruit_character = FRA_deluge_jacques_duclos
+recruit_character = FRA_deluge_jacques_doriot
+recruit_character = FRA_deluge_charles_de_gaulle
+recruit_character = FRA_deluge_philippe_leclerc
+recruit_character = FRA_deluge_henri_giraud
 
-recruit_character = FRA_charles_huntziger
+recruit_character = FRA_deluge_charles_huntziger
 recruit_character = FRA_jeanmarie_charles_abrial
 recruit_character = FRA_jeanpierre_esteva
 recruit_character = FRA_jean_de_laborde
 recruit_character = FRA_charles_maurras
-recruit_character = FRA_edouard_daladier
+recruit_character = FRA_deluge_edouard_daladier
 recruit_character = FRA_jean_marie_bergeret
 recruit_character = FRA_louis_kahn
 
 recruit_character = FRA_rene_emile_godfroy
-recruit_character = FRA_rene_nicod
-recruit_character = FRA_antoinemariebenoit_besson
-recruit_character = FRA_gastonhenri_billotte
-recruit_character = FRA_henry_freydenberg
-recruit_character = FRA_rene_olry
+recruit_character = FRA_deluge_gaston_henri_billotte
+recruit_character = FRA_deluge_henry_freydenberg
+recruit_character = FRA_deluge_rene_olry
 recruit_character = FRA_francois_darlan
 recruit_character = FRA_victor_denain
 
@@ -953,7 +960,6 @@ recruit_character = FRA_georges_bonnet
 recruit_character = FRA_philippe_henriot
 recruit_character = FRA_pierre_pucheu
 recruit_character = FRA_gaston_henry_haye
-recruit_character = FRA_jacques_duclos
 recruit_character = FRA_paul_baudouin
 recruit_character = FRA_vincent_auriol
 recruit_character = FRA_roger_salengro

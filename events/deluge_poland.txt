@@ -7644,14 +7644,17 @@ country_event = {###SOV needs to give back territoires of second side
 	title = deluge_poland_foreign.52.t
 	desc = deluge_poland_foreign.52.d
 	picture = GFX_report_event_bunker_01
-	#is_triggered_only = no
 	mean_time_to_happen = {
-		days = 1
+		days = 3
 	}
 	trigger = {
 		is_subject = no
 		original_tag = SOV
 		has_global_flag = POL_SOV_pact_signed
+		country_exists = POL
+		POL = {
+			is_subject = no
+		}
 		OR = {
 			owns_state = 197
 			owns_state = 203
@@ -7676,152 +7679,126 @@ country_event = {###SOV needs to give back territoires of second side
 	}
 	option = {
 		name = deluge_poland_foreign.52.a
-		#if = {
-			#limit = {original_tag = SOV}
-			if = {
-				limit = {
-					SOV = {owns_state = 197}
-					#197 = {owner = SOV}
-				}
-				#197 = {transfer_state_to = POL}
-				POL = {
-					transfer_state =197
-				}
+		if = {
+			limit = {
+				SOV = {owns_state = 197}
 			}
-			if = {
-				limit = {
-					SOV = {owns_state = 203}
-					#203 = {owner = SOV}
-				}
-				203 = {transfer_state_to = POL}
+			197 = {transfer_state_to = POL}
+		}
+		if = {
+			limit = {
+				SOV = {owns_state = 203}
 			}
-			if = {
-				limit = {
-					SOV = {owns_state = 192}
-					#192 = {owner = SOV}
-				}
-				192 = {transfer_state_to = POL}
+			203 = {transfer_state_to = POL}
+		}
+		if = {
+			limit = {
+				SOV = {owns_state = 192}
 			}
-			if = {
-				limit = {
-					SOV = {owns_state = 834}
-					#834 = {owner = SOV}
-				}
-				834 = {transfer_state_to = POL}
+			192 = {transfer_state_to = POL}
+		}
+		if = {
+			limit = {
+				SOV = {owns_state = 834}
 			}
-			if = {
-				limit = {
-					SOV = {owns_state = 198}
-					#198 = {owner = SOV}
-				}
-				198 = {transfer_state_to = POL}
+			834 = {transfer_state_to = POL}
+		}
+		if = {
+			limit = {
+				SOV = {owns_state = 198}
 			}
-			if = {
-				limit = {
-					SOV = {owns_state = 202}
-					#202 = {owner = SOV}
-				}
-				202 = {transfer_state_to = POL}
+			198 = {transfer_state_to = POL}
+		}
+		if = {
+			limit = {
+				SOV = {owns_state = 202}
 			}
-			if = {
-				limit = {
-					SOV = {owns_state = 199}
-					#199 = {owner = SOV}
-				}
-				199 = {transfer_state_to = POL}
+			202 = {transfer_state_to = POL}
+		}
+		if = {
+			limit = {
+				SOV = {owns_state = 199}
 			}
-			if = {
-				limit = {
-					SOV = {owns_state = 201}
-					#201 = {owner = SOV}
-				}
-				201 = {transfer_state_to = POL}
+			199 = {transfer_state_to = POL}
+		}
+		if = {
+			limit = {
+				SOV = {owns_state = 201}
 			}
-			if = {
-				limit = {
-					SOV = {owns_state = 194}
-					#194 = {owner = SOV}
-				}
-				194 = {transfer_state_to = POL}
+			201 = {transfer_state_to = POL}
+		}
+		if = {
+			limit = {
+				SOV = {owns_state = 194}
 			}
-			if = {
-				limit = {
-					SOV = {owns_state = 204}
-					#204 = {owner = SOV}
-				}
-				204 = {transfer_state_to = POL}
+			194 = {transfer_state_to = POL}
+		}
+		if = {
+			limit = {
+				SOV = {owns_state = 204}
 			}
-			if = {
-				limit = {
-					SOV = {owns_state = 95}
-					#95 = {owner = SOV}
-				}
-				95 = {transfer_state_to = POL}
+			204 = {transfer_state_to = POL}
+		}
+		if = {
+			limit = {
+				SOV = {owns_state = 95}
 			}
-			if = {
-				limit = {
-					SOV = {owns_state = 96}
-					#96 = {owner = SOV}
-				}
-				96 = {transfer_state_to = POL}
+			95 = {transfer_state_to = POL}
+		}
+		if = {
+			limit = {
+				SOV = {owns_state = 96}
 			}
-			if = {
-				limit = {
-					SOV = {owns_state = 11}
-					#11 = {owner = SOV}
-				}
-				11 = {transfer_state_to = POL}
+			96 = {transfer_state_to = POL}
+		}
+		if = {
+			limit = {
+				SOV = {owns_state = 11}
 			}
-			if = {
-				limit = {
-					SOV = {owns_state = 814}
-					#814 = {owner = SOV}
-				}
-				814 = {transfer_state_to = POL}
+			11 = {transfer_state_to = POL}
+		}
+		if = {
+			limit = {
+				SOV = {owns_state = 814}
 			}
-			if = {
-				limit = {
-					SOV = {owns_state = 188}
-					#188 = {owner = SOV}
-				}
-				188 = {transfer_state_to = POL}
+			814 = {transfer_state_to = POL}
+		}
+		if = {
+			limit = {
+				SOV = {owns_state = 188}
 			}
-			if = {
-				limit = {
-					SOV = {owns_state = 189}
-					#189 = {owner = SOV}
-				}
-				189 = {transfer_state_to = POL}
+			188 = {transfer_state_to = POL}
+		}
+		if = {
+			limit = {
+				SOV = {owns_state = 189}
 			}
-			if = {
-				limit = {
-					SOV = {owns_state = 815}
-					#815 = {owner = SOV}
-				}
-				815 = {transfer_state_to = POL}
+			189 = {transfer_state_to = POL}
+		}
+		if = {
+			limit = {
+				SOV = {owns_state = 815}
 			}
-			if = {
-				limit = {
-					SOV = {owns_state = 809}
-					#809 = {owner = SOV}
-				}
-				809 = {transfer_state_to = POL}
+			815 = {transfer_state_to = POL}
+		}
+		if = {
+			limit = {
+				SOV = {owns_state = 809}
 			}
-			if = {
-				limit = {
-					SOV = {owns_state = 190}
-					#190 = {owner = SOV}
-				}
-				190 = {transfer_state_to = POL}
+			809 = {transfer_state_to = POL}
+		}
+		if = {
+			limit = {
+				SOV = {owns_state = 190}
 			}
-			if = {
-				limit = {
-					SOV = {owns_state = 808}
-					#808 = {owner = SOV}
-				}
-				808 = {transfer_state_to = POL}
+			190 = {transfer_state_to = POL}
+		}
+		if = {
+			limit = {
+				SOV = {owns_state = 808}
 			}
-		#}
+			808 = {transfer_state_to = POL}
+		}
 	}
 }
 country_event = {###POL needs to give back territoires of second side
@@ -7829,14 +7806,17 @@ country_event = {###POL needs to give back territoires of second side
 	title = deluge_poland_foreign.52.t
 	desc = deluge_poland_foreign.52.d
 	picture = GFX_report_event_bunker_01
-	#is_triggered_only = no
 	mean_time_to_happen = {
-		days = 1
+		days = 3
 	}
 	trigger = {
 		is_subject = no
 		original_tag = POL
 		has_global_flag = POL_SOV_pact_signed
+		country_exists = SOV
+		SOV = {
+			is_subject = no
+		}
 		OR = {
 			owns_state = 812
 			owns_state = 13
@@ -7861,112 +7841,96 @@ country_event = {###POL needs to give back territoires of second side
 		if = {
 			limit = {
 				POL = {owns_state = 813}
-				#813 = {owner = POL}
 			}
 			813 = {transfer_state_to = SOV}
 		}
 		if = {
 			limit = {
 				POL = {owns_state = 191}
-				#191 = {owner = POL}
 			}
 			191 = {transfer_state_to = SOV}
 		}
 		if = {
 			limit = {
 				POL = {owns_state = 13}
-				#13 = {owner = POL}
 			}
 			13 = {transfer_state_to = SOV}
 		}
 		if = {
 			limit = {
 				POL = {owns_state = 812}
-				#812 = {owner = POL}
 			}
 			812 = {transfer_state_to = SOV}
 		}
 		if = {
 			limit = {
 				POL = {owns_state = 811}
-				#811 = {owner = POL}
 			}
 			811 = {transfer_state_to = SOV}
 		}
 		if = {
 			limit = {
 				POL = {owns_state = 810}
-				#810 = {owner = POL}
 			}
 			810 = {transfer_state_to = SOV}
 		}
 		if = {
 			limit = {
 				POL = {owns_state = 12}
-				#12 = {owner = POL}
 			}
 			12 = {transfer_state_to = SOV}
 		}
 		if = {
 			limit = {
 				POL = {owns_state = 207}
-				#207 = {owner = POL}
 			}
 			207 = {transfer_state_to = SOV}
 		}
 		if = {
 			limit = {
 				POL = {owns_state = 206}
-				#206 = {owner = POL}
 			}
 			206 = {transfer_state_to = SOV}
 		}
 		if = {
 			limit = {
 				POL = {owns_state = 241}
-				#241 = {owner = POL}
 			}
 			241 = {transfer_state_to = SOV}
 		}
 		if = {
 			limit = {
 				POL = {owns_state = 764}
-				#764 = {owner = POL}
 			}
 			764 = {transfer_state_to = SOV}
 		}
 		if = {
 			limit = {
 				POL = {owns_state = 193}
-				#193 = {owner = POL}
 			}
 			193 = {transfer_state_to = SOV}
 		}
 		if = {
 			limit = {
 				POL = {owns_state = 225}
-				#225 = {owner = POL}
 			}
 			225 = {transfer_state_to = SOV}
 		}
 		if = {
 			limit = {
 				POL = {owns_state = 259}
-				#259 = {owner = POL}
 			}
 			259 = {transfer_state_to = SOV}
 		}
 		if = {
 			limit = {
 				POL = {owns_state = 221}
-				#221 = {owner = POL}
 			}
 			221 = {transfer_state_to = SOV}
 		}
 		if = {
 			limit = {
 				POL = {owns_state = 226}
-				#226 = {owner = POL}
 			}
 			226 = {transfer_state_to = SOV}
 		}

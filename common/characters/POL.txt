@@ -67,7 +67,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			cost = 150
+			#cost = 150
 			available = { 
 				
 			}
@@ -142,7 +142,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			cost = 150
+			#cost = 150
 			available = { 
 				
 			}
@@ -448,6 +448,7 @@ characters={
 		portraits={
 			civilian={
 				large = "gfx/leaders/POL/portrait_POL_augustyn_jozef_czartoryski.dds"
+				small = "GFX_augustyn_czartoryski_picture_small"
 			}
 		}
 		country_leader = {
@@ -549,7 +550,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			cost = 150
+			#cost = 150
 			available = { 
 				
 			}
@@ -596,7 +597,7 @@ characters={
 			traits = {
 				army_regrouping_3
 			}
-			cost = 150
+			#cost = 150
 			ai_will_do = {
 				factor = 1
 			}
@@ -645,7 +646,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			cost = 150
+			#cost = 150
 			available = { 
 				
 			}
@@ -705,7 +706,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			cost = 150
+			#cost = 150
 			available = { 
 				
 			}
@@ -777,7 +778,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			cost = 150
+			#cost = 150
 			available = { 
 				
 			}
@@ -848,7 +849,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			cost = 150
+			#cost = 150
 			available = { 
 				
 			}
@@ -919,7 +920,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			cost = 150
+			#cost = 150
 			available = { 
 				
 			}
@@ -954,7 +955,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			cost = 150
+			#cost = 150
 			available = { 
 				
 			}
@@ -989,7 +990,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			cost = 150
+			#cost = 150
 			available = { 
 				POL = {
 					has_completed_focus = POL_superiority_of_mobility
@@ -1049,7 +1050,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			cost = 150
+			#cost = 150
 			available = { 
 				
 			}
@@ -1109,7 +1110,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			cost = 150
+			#cost = 150
 			available = { 
 				
 			}
@@ -1204,7 +1205,7 @@ characters={
 			traits = {
 				army_logistics_2
 			}
-			cost = 150
+			#cost = 150
 			ai_will_do = {
 				factor = 1
 			}
@@ -1280,7 +1281,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			cost = 150
+			#cost = 150
 			available = { 
 				
 			}
@@ -1864,7 +1865,7 @@ characters={
 			traits = {
 				navy_chief_old_guard 
 			}
-			cost = 150
+			#cost = 150
 			available = { 
 				
 			}
@@ -1967,7 +1968,7 @@ characters={
 			traits = {
 				navy_chief_maneuver_2
 			}
-			cost = 150
+			#cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -2010,7 +2011,7 @@ characters={
 			traits = {
 				navy_chief_decisive_battle_1
 			}
-			cost = 150
+			#cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -2093,7 +2094,7 @@ characters={
 			traits = {
 				navy_amphibious_assault_1
 			}
-			cost = 150
+			#cost = 150
 			ai_will_do = {
 				factor = 1
 			}
@@ -5390,7 +5391,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			cost = 150
+			#cost = 150
 			available = { 
 				
 			}
@@ -5418,7 +5419,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			cost = 150
+			#cost = 150
 			available = { 
 				
 			}
@@ -5446,7 +5447,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			cost = 150
+			#cost = 150
 			available = { 
 				
 			}
@@ -5474,7 +5475,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			cost = 150
+			#cost = 150
 			available = { 
 				
 			}
@@ -5502,7 +5503,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			cost = 150
+			#cost = 150
 			available = { 
 				
 			}

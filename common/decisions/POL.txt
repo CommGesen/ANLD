@@ -5708,7 +5708,7 @@ seek_collaboration_category = {
 seek_empire_category = {
 	create_empire_rydz = {
 		fire_only_once = yes
-		icon = GFX_decision_eng_trade_unions_support
+		icon = GFX_decision_POL_rise_of_the_empire
 		visible = {
 			has_completed_focus = POL_smigly_wins
 		}
@@ -5790,7 +5790,7 @@ seek_empire_category = {
 	}
 	create_empire_lechia = {
 		fire_only_once = yes
-		icon = GFX_decision_eng_trade_unions_support
+		icon = GFX_decision_slavic_sun
 		visible = {
 			has_completed_focus = POL_lechitic_legacy
 		}
@@ -6022,7 +6022,7 @@ seek_empire_category = {
 	}
 	create_empire_slavia = {
 		fire_only_once = yes
-		icon = GFX_decision_eng_trade_unions_support
+		icon = GFX_decision_POL_create_a_supernation
 		visible = {
 			has_completed_focus = POL_torch_for_all_slavs
 		}
@@ -6363,7 +6363,7 @@ seek_empire_category = {
 	}
 	create_empire_zapadoslavia = {
 		fire_only_once = yes
-		icon = GFX_decision_eng_trade_unions_support
+		icon = GFX_decision_generic_unite_the_western_slavs
 		visible = {
 			has_completed_focus = POL_torch_for_all_slavs
 		}
@@ -13844,7 +13844,7 @@ POL_balance_of_power_monarchist_decisions_category = {
 }
 polish_new_order_decisions_category = {
 	eliminate_orleanist_threat = {
-		icon = GFX_decision_eng_support_imperialist_coup
+		icon = GFX_decision_generic_orleanist_emblem
 		visible = {
 			country_exists = LOU
 			LOU = {
@@ -13933,7 +13933,7 @@ polish_new_order_decisions_category = {
 		}
 	}
 	retake_netherlands = {
-		icon = GFX_decision_hol_inundate_water_lines
+		icon = GFX_decision_generic_netherlands
 		visible = {
 			any_country = {
 				OR = {
@@ -14249,7 +14249,7 @@ polish_new_order_decisions_category = {
 		}
 	}
 	pacify_iberia = {
-		icon = GFX_decision_generic_cavalry
+		icon = GFX_decision_generic_iberia
 		visible = {
 			any_country = {
 				OR = {
@@ -14845,7 +14845,7 @@ polish_new_order_decisions_category = {
 		}
 	}
 	secure_scandinavia = {
-		icon = GFX_decision_border_war
+		icon = GFX_decision_generic_scandinavia
 		visible = {
 			any_country = {
 				OR = {
@@ -15637,7 +15637,7 @@ polish_new_order_decisions_category = {
 		}
 	}
 	divide_germany = {
-		icon = GFX_decision_eng_puppet_usa
+		icon = GFX_decision_POL_divide_germany
 		visible = {
 			any_country = {
 				OR = {
@@ -16084,7 +16084,7 @@ polish_new_order_decisions_category = {
 		}
 	}
 	takeover_italian_peninsula = {
-		icon = GFX_decision_generic_colonial_administration
+		icon = GFX_decision_generic_italy
 		visible = {
 			any_country = {
 				OR = {
@@ -16442,7 +16442,7 @@ polish_new_order_decisions_category = {
 		}
 	}
 	eliminate_austrian_threat = {
-		icon = GFX_decision_SOV_place_hq
+		icon = GFX_decision_generic_habsburgs_emblem
 		visible = {
 			country_exists = AUS
 		}
@@ -16595,7 +16595,7 @@ polish_new_order_decisions_category = {
 		}
 	}
 	eliminate_russian_threat = {
-		icon = GFX_decision_hol_draw_up_staff_plans
+		icon = GFX_decision_generic_romanovs_emblem
 		visible = {
 			country_exists = SOV
 		}
@@ -16748,7 +16748,7 @@ polish_new_order_decisions_category = {
 		}
 	}
 	eliminate_british_threat = {
-		icon = GFX_decision_eng_abdication_crisis
+		icon = GFX_decision_generic_windsors_emblem
 		visible = {
 			country_exists = ENG
 		}
