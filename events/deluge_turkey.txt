@@ -28,7 +28,11 @@ country_event = {
 		set_country_flag = TUR_Mejlis_explode
 		country_event = {
 			id = turkey.2
-			days = 5
+			days = 10
+		}
+		country_event = {
+			id = turkey.9
+			days = 3
 		}
 	}
 }
@@ -99,6 +103,12 @@ country_event = {
 	}
 	option = {
 		name = turkey.4.c
+		hidden_effect = {
+			country_event = {
+				id = turkey.8
+				days = 30
+			}
+		}
 	}
 }
 country_event = {
@@ -114,6 +124,7 @@ country_event = {
 			id = turkey.6
 			days = 30
 		}
+		remove_ideas = TUR_investigations
 		trigger = {
 			has_country_flag = TUR_Arab_Troll
 		}
@@ -124,6 +135,7 @@ country_event = {
 			id = turkey.7
 			days = 15
 		}
+		remove_ideas = TUR_investigations
 		trigger = {
 			has_country_flag = TUR_Socialist_Troll
 		}
@@ -212,6 +224,8 @@ country_event = {
 				retire_character = TUR_AbdulQadir_Hussieni
 				retire_character = TUR_Ajami_Saadon
 				set_cosmetic_tag = TUR_no_empire
+				end_puppet = ANZ
+				end_puppet = AHZ
 				set_politics = {
 					ruling_party = fascism
 					elections_allowed = yes
@@ -247,5 +261,41 @@ country_event = {
 		}
 		remove_ideas = TUR_national_Revolutionaries
 		remove_ideas = TUR_legacy_of_the_1800s
+	}
+}
+country_event = {
+	id = turkey.8
+	title = turkey.8.t
+	desc = turkey.8.d
+	picture = GFX_Osman_Fuat
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.8.a
+		set_power_balance = {
+			id = TUR_power_balance
+			right_side = TUR_Reformation
+			left_side = TUR_Sultan
+		}
+		retire_character = TUR_fevzi_Çakmak
+		promote_character = TUR_Mustafa_Sabri
+		set_party_name = {
+			ideology = fascism
+			long_name = "Islami Firkasi"
+			name = "Islami Firkasi"
+		}
+		remove_ideas = TUR_investigations
+	}
+}
+country_event = {
+	id = turkey.9
+	title = turkey.9.t
+	desc = turkey.9.d
+	picture = GFX_ottoman_police
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.9.a
+		add_ideas = TUR_investigations
 	}
 }

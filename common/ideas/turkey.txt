@@ -1,5 +1,18 @@
 ideas = {
 	country = {
+		TUR_investigations = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TUR_Arab_Support"}
+			allowed = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			picture = generic_secret_police
+
+			modifier = {
+				stability_factor = -0.05
+				political_power_cost = 0.05
+			}
+		}
 		TUR_Imam_Support = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TUR_Imam_Support"}
 			allowed = {

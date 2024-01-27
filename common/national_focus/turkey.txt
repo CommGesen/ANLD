@@ -1229,7 +1229,7 @@ focus_tree = {
 	focus = {
 		id = TUR_Convene_Majlis
 		icon = GFX_focus_ETH_re-convene_the_parliament
-		cost = 10
+		cost = 5
 
 		x = 30
 		y = 0
@@ -1239,13 +1239,6 @@ focus_tree = {
 		}
 
 		ai_will_do = { factor = 100 }
-
-		select_effect = {
-			log = "[GetDateText]: [Root.GetName]: Select Focus TUR_Convene_Majlis"
-			hidden_effect = {
-				country_event = { id = turkey.1 days = 5 }
-			}
-		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_Convene_Majlis"
