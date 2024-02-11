@@ -10,7 +10,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_may_day_results
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_may_day_results
 		x = 0
 		y = 0
 		#prerequisite = { focus =  }
@@ -32,7 +32,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			country_event = {
+				id = deluge_france.1
+				hours = 3
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -46,13 +49,13 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_towards_republic
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_towards_republic
 		x = -15
 		y = 1
 		prerequisite = { focus = FRA_may_day_results }
 		relative_position_id = FRA_may_day_results
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { focus = FRA_previous_course }
 		allow_branch = {
 			
@@ -68,7 +71,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = FRA_spirit_towards_republic
+				days = 450
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -118,7 +124,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_cooperate_with_workers
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_cooperate_with_workers
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_public_opinion }
@@ -226,7 +232,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_secure_city_dwellers
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_secure_city_dwellers
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_soldiers_solidarity }
@@ -262,7 +268,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_republic_forever
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_republic_forever
 		x = -2
 		y = 1
 		prerequisite = { focus = FRA_cooperate_with_workers }
@@ -336,7 +342,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_fire_movement
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_fire_movement
 		x = -2
 		y = 1
 		prerequisite = { focus = FRA_march_on_paris }
@@ -588,7 +594,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_french_popular_party
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_french_popular_party
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_march_on_paris }
@@ -841,7 +847,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_french_social_party
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_french_social_party
 		x = 6
 		y = 1
 		prerequisite = { focus = FRA_march_on_paris }
@@ -1057,7 +1063,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_creation_of_the_parliament
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_parliament
 		x = 10
 		y = 1
 		prerequisite = { focus = FRA_republic_forever }
@@ -2033,7 +2039,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_french_section_of_workers_internationale
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_french_section_of_workers_internationale
 		x = -5
 		y = 1
 		prerequisite = { focus = FRA_another_revolution }
@@ -2069,7 +2075,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_french_communist_party
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_french_communist_party2
 		x = -2
 		y = 1
 		prerequisite = { focus = FRA_another_revolution }
@@ -2360,7 +2366,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_proudhon_circle
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_proudhon_circle
 		x = 3
 		y = 1
 		prerequisite = { focus = FRA_another_revolution }
@@ -2612,7 +2618,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_nobility_loyalty
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_nobility
 		x = -2
 		y = 1
 		prerequisite = { focus = FRA_previous_course }
@@ -2684,7 +2690,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_improve_living_conditions
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_improve_living_conditions
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_previous_course }
@@ -2720,7 +2726,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_reform_the_old
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_reform_the_old
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_improve_living_conditions }
@@ -2756,7 +2762,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_delegalize_trade_unions
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_ban_trade_unions
 		x = 2
 		y = 1
 		prerequisite = { focus = FRA_previous_course }
@@ -2792,7 +2798,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_partial_reactionism
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_partial_reactionism
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_delegalize_trade_unions }
@@ -2828,7 +2834,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_the_reformer
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_the_reformer
 		x = -2
 		y = 2
 		prerequisite = { focus = FRA_soldiers_loyalty }
@@ -2865,7 +2871,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_the_guarantor
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_the_guarantor
 		x = 2
 		y = 2
 		prerequisite = { focus = FRA_reform_the_old focus = FRA_partial_reactionism }
@@ -3262,7 +3268,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_the_dictator
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_the_dictator
 		x = 8
 		y = 2
 		prerequisite = { focus = FRA_partial_reactionism }
@@ -3595,6 +3601,440 @@ focus_tree = {
 		search_filters = { }
 		cost = 1
 		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_foreign_policy
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 22
+		y = 0
+		#prerequisite = { focus = }
+		#relative_position_id = 
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_question_of_pomerania
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 5
+		y = 1
+		prerequisite = { focus = FRA_foreign_policy }
+		relative_position_id = FRA_foreign_policy
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			date < 1939.1.1
+		}
+		completion_reward = {
+			country_event = {
+				id = deluge_pomerania.1
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_continental_system_focus
+		icon = GFX_focus_fra_le_deluge
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_foreign_policy }
+		relative_position_id = FRA_foreign_policy
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_new_french_sphere focus = FRA_revolutionary_approach focus = FRA_european_union}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_new_french_sphere
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 3
+		y = 1
+		prerequisite = { focus = FRA_foreign_policy }
+		relative_position_id = FRA_foreign_policy
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_continental_system_focus focus = FRA_revolutionary_approach focus = FRA_european_union}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_revolutionary_approach
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
+		x = -2
+		y = 1
+		prerequisite = { focus = FRA_foreign_policy }
+		relative_position_id = FRA_foreign_policy
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_continental_system_focus focus = FRA_new_french_sphere focus = FRA_european_union}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_european_union
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -4
+		y = 1
+		prerequisite = { focus = FRA_foreign_policy }
+		relative_position_id = FRA_foreign_policy
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_continental_system_focus focus = FRA_new_french_sphere focus = FRA_revolutionary_approach}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_charlemagnes_legacy
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_new_french_sphere }
+		relative_position_id = FRA_new_french_sphere
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_irredentism
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_new_french_sphere focus = FRA_continental_system_focus }
+		relative_position_id = FRA_new_french_sphere
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_expand_european_cooperation}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_expand_european_cooperation
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_continental_system_focus focus = FRA_european_union focus = FRA_revolutionary_approach}
+		relative_position_id = FRA_continental_system_focus
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_irredentism focus = FRA_watchman_of_global_security }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_prepare_unification
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_expand_european_cooperation}
+		relative_position_id = FRA_expand_european_cooperation
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_further_cooperation}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_further_cooperation
+		icon = GFX_goal_generic_national_unity
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_expand_european_cooperation}
+		relative_position_id = FRA_expand_european_cooperation
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_prepare_unification}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_watchman_of_global_security
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -3
+		y = 1
+		prerequisite = { focus = FRA_continental_system_focus focus = FRA_european_union focus = FRA_revolutionary_approach}
+		relative_position_id = FRA_continental_system_focus
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_expand_european_cooperation}
 		allow_branch = {
 			
 		}

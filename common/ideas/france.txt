@@ -1,5 +1,23 @@
 ideas = {
 	country = {
+		FRA_spirit_towards_republic = {
+			picture = generic_victors_of_ww1 ##later change
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				neutrality_drift = -0.03
+			}
+		}
 		FRA_spirit_obsolete_army = {
 			picture = generic_victors_of_ww1
 			allowed = {

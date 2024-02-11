@@ -10,7 +10,6 @@ characters={
 			desc="POLITICS_ARMANDO_SALES_DESC"
 			ideology=constitutionalist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	BRA_eurico_gaspar_dutra={
@@ -30,7 +29,6 @@ characters={
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=-1
 		}
 	}
 	BRA_mascarenhas_de_morais={
@@ -50,7 +48,6 @@ characters={
 			defense_skill=4
 			planning_skill=3
 			logistics_skill=4
-			legacy_id=-1
 		}
 	}
 	BRA_augusto_rademaker={
@@ -69,7 +66,18 @@ characters={
 			defense_skill=1
 			maneuvering_skill=1
 			coordination_skill=1
-			legacy_id=-1
+		}
+	}
+	BRA_dom_duarte_nuno={
+		name="Dom Duarte Nuno"
+		portraits={
+			civilian={
+				large="gfx/leaders/BRA/portrait_BRA_duarte_nuno.dds"
+			}
+		}
+		country_leader={
+			ideology=reactionary_ideology
+			expire="1989.1.1.1"
 		}
 	}
 	BRA_pedro_iv={
@@ -80,9 +88,8 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=bonapartist_ideology
+			ideology=reactionary_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	BRA_getúlio_vargas={
@@ -95,7 +102,6 @@ characters={
 		country_leader={
 			ideology=constitutionalist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	BRA_plínio_salgado={

@@ -334,6 +334,35 @@ characters={
 			desc = "FRA_deluge_edouard_daladier_desc"
 		}
 	}
+	##Democratic Republican Alliance:
+	FRA_deluge_paul_reynaud={
+		name=FRA_deluge_paul_reynaud_name
+		portraits={
+			civilian={
+				large=GFX_portrait_FRA_paul_reynaud
+			}
+		}
+		country_leader={
+			ideology=liberal_republican_ideology
+			traits={ economic_liberal }
+			expire="1965.1.1.1"
+			desc = "FRA_deluge_paul_reynaud_desc"
+		}
+	}
+	FRA_deluge_pierre_etienne_flandin={
+		name=FRA_deluge_pierre_etienne_flandin_name
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/portrait_FRA_pierre_etienne_flandin.dds" 
+			}
+		}
+		country_leader={
+			ideology=liberal_republican_ideology
+			traits={ treasury_minister }
+			expire="1965.1.1.1"
+			desc = "FRA_deluge_pierre_etienne_flandin_desc"
+		}
+	}
 	##Generals and Field Marshals:
 	FRA_deluge_henri_mordacq={
 		name=FRA_deluge_henri_mordacq_name
@@ -636,7 +665,7 @@ characters={
 	FRA_deluge_gaston_henri_billotte={
 		name=FRA_deluge_gaston_henri_billotte_name
 		portraits={
-			army={##small portrait to do
+			army={##small and big portrait to do
 				large=GFX_portrait_FRA_gastonhenri_billotte
 				small="GFX_gaston_henri_billotte_picture_small"
 			}
@@ -1614,36 +1643,6 @@ characters={
 			}
 		}
 	}
-
-	FRA_paul_reynaud={
-		name=FRA_paul_reynaud
-		portraits={
-			army={
-				small=GFX_portrait_FRA_paul_reynaud_small
-			}
-			civilian = {
-				large = GFX_portrait_FRA_paul_reynaud
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = FRA_paul_reynaud
-			allowed  = {
-				original_tag  = FRA
-			}
-			traits  = {
-				quartermaster_general 
-			}
-			on_add  = {
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}		
-	}
-		
 	FRA_maurice_gauche={
 		name=FRA_maurice_gauche
 		portraits={

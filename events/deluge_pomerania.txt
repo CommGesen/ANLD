@@ -1005,7 +1005,7 @@ country_event = {##Kashubians do a coup in Pomerania
 	trigger = {
 		tag = POM
 		is_subject_of = FRA
-		date > 1939.6.1
+		date > 1939.1.1
 	}
 	mean_time_to_happen = {
 		days = 10

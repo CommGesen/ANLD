@@ -459,7 +459,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_national_myth_of_hyperborea
-		icon = GFX_national_myth_of_hyperborea
+		icon = GFX_focus_generic_panslavic_propaganda
 		x = 1
 		y = 1
 		prerequisite = { focus = POL_teach_about_national_myths_in_schools }
@@ -775,7 +775,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_start_project_in_kashubia
-		icon = GFX_KSH_death_industry
+		icon = GFX_focus_POM_death_industry
 		x = -3
 		y = 1
 		prerequisite = { focus = POL_begin_oczyszczenie_project }
@@ -1211,7 +1211,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_continue_project_in_lithuania
-		icon = GFX_LIT_death_industry
+		icon = GFX_focus_LIT_death_industry
 		x = -1
 		y = 1
 		prerequisite = { focus = POL_start_project_in_north_east }
@@ -1604,7 +1604,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_ensure_complete_political_dominance
-		icon = GFX_political_arrests
+		icon = GFX_focus_generic_political_arrests
 		x = 0
 		y = 1
 		prerequisite = { focus = POL_create_ozn }
@@ -2135,7 +2135,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_cult_of_new_marshal
-		icon = GFX_focus_POL_cult_of_rydz
+		icon = GFX_focus_POL_cult_of_rydz_smigly
 		x = 2
 		y = 1
 		prerequisite = { focus = POL_create_ozn }
@@ -3596,7 +3596,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_eliminate_przechrztowie
-		icon = GFX_purge_citizens
+		icon = GFX_focus_generic_purge_citizens
 		x = -1
 		y = 1
 		prerequisite = { focus = POL_revengeance_on_enemy_with_god_and_even_in_spite_of_god}
@@ -3685,7 +3685,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_return_of_ancient_faith
-		icon = GFX_restore_the_ancient_faith
+		icon = GFX_focus_slavic_restore_the_ancient_faith
 		x = 0
 		y = 1
 		prerequisite = { focus = POL_incorporate_beauty_of_east focus = POL_eliminate_przechrztowie}
@@ -4163,7 +4163,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_clean_the_ghettos
-		icon = GFX_purge_citizens
+		icon = GFX_focus_generic_purge_citizens
 		x = 0
 		y = 1
 		prerequisite = { focus = POL_nationalise_minorites_fortunes}
@@ -7686,7 +7686,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_privatization_of_healthcare
-		icon = GFX_privatisation_of_healthcare
+		icon = GFX_focus_generic_privatisation_of_healthcare
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_INDUSTRY}
@@ -8090,7 +8090,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_alliance_with_SCh
-		icon = GFX_SCh_logo
+		icon = GFX_focus_generic_SCh_logo
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_POLITICAL}
@@ -8514,7 +8514,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_reorganization_of_saxon_estates
-		icon = GFX_majesty_and_splendor
+		icon = GFX_focus_generic_residence
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
@@ -9216,7 +9216,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_develop_czechia
-		icon = GFX_forced_urbanization
+		icon = GFX_focus_generic_urbanization
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -9324,7 +9324,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_elections_for_new_king
-		icon = GFX_regency_council
+		icon = GFX_focus_generic_regency_council
 		x = 18
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -9463,7 +9463,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_catholicism_state_religion
-		icon = GFX_only_catholic_politicians_allowed
+		icon = GFX_focus_generic_politicians_and_cross
 		x = -3
 		y = 1
 		search_filters = {FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
@@ -9994,7 +9994,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_path_towards_racial_purity
-		icon = GFX_purge_citizens
+		icon = GFX_focus_generic_purge_citizens
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_POLITICAL}
@@ -11685,7 +11685,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_return_to_the_roots
-		icon = GFX_restore_the_ancient_faith
+		icon = GFX_focus_slavic_restore_the_ancient_faith
 		x = 2
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -14194,7 +14194,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_question_of_capital
-		icon = GFX_majesty_and_splendor
+		icon = GFX_focus_generic_residence
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -17957,7 +17957,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_polonization_of_lithuania
-		icon = GFX_POL_pressure_lithuania
+		icon = GFX_focus_POL_pressure_lithuania
 		x = -1
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -21300,7 +21300,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_KPP_wins
-		icon = GFX_focus_POL_CPP
+		icon = GFX_focus_POL_communist_party_of_poland
 		x = -7
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -22668,7 +22668,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_integrate_SCh
-		icon = GFX_SCh_logo
+		icon = GFX_focus_generic_SCh_logo
 		x = 7
 		y = 1
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_POLITICAL}
@@ -23001,7 +23001,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_forced_urbanization
-		icon = GFX_forced_urbanization
+		icon = GFX_focus_generic_urbanization
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -23143,7 +23143,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_unity_of_men_and_nature
-		icon = GFX_unity_of_men_and_nature
+		icon = GFX_focus_generic_peace
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL}
@@ -23446,7 +23446,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_glorify_mothers
-		icon = GFX_glorify_mothers
+		icon = GFX_focus_generic_glorify_mothers
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY}
@@ -23493,7 +23493,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_glorify_warrioress
-		icon = GFX_glorify_warrioress
+		icon = GFX_focus_generic_glorify_warrioress
 		x = 2
 		y = 1
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_RESEARCH}
@@ -25062,7 +25062,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_decentralised_high_command
-		icon = GFX_army_modernizations
+		icon = GFX_focus_generic_army_modernizations
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_LAND_ARMY}
@@ -26831,7 +26831,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_state_owned_farms
-		icon = GFX_privatisation_of_healthcare
+		icon = GFX_focus_generic_privatisation_of_healthcare
 		x = -1
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY}

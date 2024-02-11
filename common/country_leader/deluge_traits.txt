@@ -603,8 +603,7 @@ leader_traits = {
 		sprite = 13
 		random = no
 		consumer_goods_factor = -0.1
-		industrial_capacity_factory = 0.03
-		#stability_factor = 0.05
+		industrial_capacity_factory = 0.04
 	}
 	leader_of_national_combat_organization = {
 		sprite = 7
@@ -1255,5 +1254,11 @@ leader_traits = {
 		random = yes
 		production_speed_bunker_factor = 0.1
 		production_speed_coastal_bunker_factor = 0.1
+	}
+	economic_liberal = {
+		random = no
+		sprite = 10
+		production_speed_buildings_factor = 0.05
+		consumer_goods_factor = -0.1
 	}
 }
