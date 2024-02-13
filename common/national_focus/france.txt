@@ -4061,4 +4061,1194 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 	}
+focus = {
+		id = FRA_devaluate_the_franc
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 45
+		y = 0
+		prerequisite = { focus =  }
+		relative_position_id = 
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+focus = {
+		id = FRA_decrease_export
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_devaluate_the_franc }
+		relative_position_id = FRA_devaluate_the_franc
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+focus = {
+		id = FRA_keep_with_gold
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -2
+		y = 1
+		prerequisite = { focus = FRA_devaluate_the_franc }
+		relative_position_id = FRA_devaluate_the_franc
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_abandon_gold_standard }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+focus = {
+		id = FRA_abandon_gold_standard
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -4
+		y = 1
+		prerequisite = { focus = FRA_devaluate_the_franc }
+		relative_position_id = FRA_devaluate_the_franc
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_keep_with_gold }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+focus = {
+		id = FRA_support_small_and_medium_business
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 4
+		y = 1
+		prerequisite = { focus = FRA_devaluate_the_franc }
+		relative_position_id = FRA_devaluate_the_franc
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus =  }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+focus = {
+		id = FRA_tax_reform
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_support_small_and_medium_business  }
+		relative_position_id = FRA_support_small_and_medium_business
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus =  }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+	focus = {
+		id = FRA_cut_jobs
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_decrease_export }
+		relative_position_id = FRA_decrease_export
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus =  }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+focus = {
+		id = FRA_matignon_agreements
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_cut_jobs }
+		relative_position_id = FRA_cut_jobs
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_put_down_strikes }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_put_down_strikes
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_cut_jobs }
+		relative_position_id = FRA_cut_jobs
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_matignon_agreements  }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_increase_social_welfare
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_keep_with_gold focus = FRA_abandon_gold_standard  }
+		relative_position_id = FRA_keep_with_gold
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_manpower_from_colonies  }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+focus = {
+		id = FRA_manpower_from_colonies
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_keep_with_gold focus = FRA_abandon_gold_standard }
+		relative_position_id = FRA_abandon_gold_standard
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_increase_social_welfare  }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+focus = {
+		id = FRA_reform_administration
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_manpower_from_colonies focus = FRA_increase_social_welfare }
+		relative_position_id = FRA_increase_social_welfare
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus =   }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+focus = {
+		id = FRA_reduce_veterans_pension
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -3
+		y = 1
+		prerequisite = { focus = FRA_manpower_from_colonies focus = FRA_increase_social_welfare }
+		relative_position_id = FRA_increase_social_welfare
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus =   }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+focus = {
+		id = FRA_reform_central_bank
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_tax_reform }
+		relative_position_id = FRA_tax_reform
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_marginalize_central_bank  }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+focus = {
+		id = FRA_marginalize_central_bank
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_tax_reform }
+		relative_position_id = FRA_tax_reform
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_reform_central_bank  }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+focus = {
+		id = FRA_budget_deficit_law
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_matignon_agreements  focus = FRA_put_down_strikes }
+		prerequisite = { focus = FRA_marginalize_central_bank  focus = FRA_reform_central_bank }
+		prerequisite = { focus = FRA_reform_administration }
+		relative_position_id = FRA_matignon_agreements
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus =   }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+focus = {
+		id = FRA_third_way
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -4
+		y = 1
+		prerequisite = { focus = FRA_budget_deficit_law  }
+		relative_position_id = FRA_budget_deficit_law
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_centrally_planned_economy focus =  FRA_laiszes_faire   }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+	focus = {		
+		id = FRA_centrally_planned_economy
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_budget_deficit_law  }
+		relative_position_id = FRA_budget_deficit_law
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_third_way focus = FRA_laiszes_faire   }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+		id = FRA_laiszes_faire
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 4
+		y = 1
+		prerequisite = { focus = FRA_budget_deficit_law  }
+		relative_position_id = FRA_budget_deficit_law
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_third_way focus = FRA_FRA_centrally_planned_economy   }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+		id = FRA_militarize_economy
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_third_way }
+		relative_position_id = FRA_third_way
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+		id = FRA_productivist_propaganda
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -2
+		y = 1
+		prerequisite = { focus = FRA_third_way }
+		relative_position_id = FRA_third_way
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+		id = FRA_introduce_corporatism
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_militarize_economy }
+		relative_position_id = FRA_militarize_economy
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+		id = FRA_autarky
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_introduce_corporatism }
+		relative_position_id = FRA_introduce_corporatism
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+		id = FRA_puppet_trade_unions
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_introduce_corporatism focus = FRA_communal_property }
+		relative_position_id = FRA_introduce_corporatism
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+		id = FRA_centralize_economy
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 3
+		y = 1
+		prerequisite = { focus = FRA_introduce_corporatism focus = FRA_communal_property }
+		relative_position_id = FRA_introduce_corporatism
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+		id = FRA_collectivisation_agriculture
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_centrally_planned_economy  }
+		relative_position_id = FRA_centrally_planned_economy
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+		id = FRA_collectivisation_industry
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_centrally_planned_economy  }
+		relative_position_id = FRA_centrally_planned_economy
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+		id = FRA_communal_property
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_collectivisation_industry focus = FRA_collectivisation_agriculture }
+		relative_position_id = FRA_collectivisation_industry
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+		id = FRA_free_competition
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_laiszes_faire }
+		relative_position_id = FRA_laiszes_faire
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+		id = FRA_promote_consumption
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_laiszes_faire }
+		relative_position_id = FRA_laiszes_faire
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+		id = FRA_faciliating_trade
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_promote_consumption focus = FRA_free_competition  }
+		relative_position_id = FRA_promote_consumption
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+		id = FRA_open_markets
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_faciliating_trade }
+		relative_position_id = FRA_faciliating_trade
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+	id = FRA_promote_investments_in_the_stockmarket
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_faciliating_trade }
+		relative_position_id = FRA_faciliating_trade
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
 }
