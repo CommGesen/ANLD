@@ -374,7 +374,10 @@ TUR_Act_Fast = {
 			has_country_flag = TUR_Mejlis_explode
 		}
 		available = {
-			has_country_flag = TUR_sloved_problem
+			OR={
+				has_country_flag = TUR_sloved_problem
+				has_country_flag = TUR_No_Empire
+			}
 		}
 		timeout_effect = {
 			custom_effect_tooltip = TUR_no_empire_tt

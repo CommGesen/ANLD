@@ -384,8 +384,8 @@ TUR_defualt_debt={
 		}
 	}
 }
-
-self_destruct_ott={
+self_destruct_ott2={
+	set_country_flag = TUR_No_Empire
 	AHZ={
 		transfer_state = 413
 	}
@@ -394,12 +394,111 @@ self_destruct_ott={
 		transfer_state = 676
 		transfer_state = 656
 		transfer_state = 291
+		add_country_leader_role = {
+			character = IRQ_Nuri_Said
+			promote_leader = yes
+			country_leader = {
+				ideology = reactionary_ideology
+				expire = "1965.1.1.1"
+				traits = {}
+			}
+		}
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = yes
+		}
+		set_cosmetic_tag = IRQ_Junta
+		set_party_name = {
+			ideology = neutrality
+			long_name = "National Defence Government"
+			name = "National Government"
+		}
 	}
 	SYR={
 		transfer_state = 455
 		transfer_state = 454
 		transfer_state = 554
-		transfer_state = 667
+		transfer_state = 677
+		transfer_state = 680
+		add_country_leader_role = {
+			character = SYR_Husni_Zaim
+			promote_leader = yes
+			country_leader = {
+				ideology = reactionary_ideology
+				expire = "1965.1.1.1"
+				traits = {}
+			}
+		}
+		create_country_leader = {
+			name = "Husni Al Zaim"
+			picture = "gfx/leaders/SYR/Portrait_SYR_Husni_al_Zaim.dds"
+			ideology = reactionary_ideology
+		}
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = yes
+		}
+		set_cosmetic_tag = SYR_Junta
+		set_party_name = {
+			ideology = neutrality
+			long_name = "People's Government"
+			name = "People's Government"
+		}
+	}
+	FRA={
+		transfer_state = 553
+	}
+	EGY={
+		transfer_state = 453
+	}
+	HEJ={
+		transfer_state = 856
+		transfer_state = 855
+		transfer_state = 679
+	}
+	TUR={
+		retire_character = TUR_Nuri_Said
+		retire_character = TUR_Jafar_Askari
+		retire_character = TUR_Husni_Zaim
+		retire_character = TUR_Sultan_Atrash
+		retire_character = TUR_AbdulQadir_Hussieni
+		retire_character = TUR_Ajami_Saadon
+		set_cosmetic_tag = TUR_no_empire
+		end_puppet = ANZ
+		end_puppet = AHZ
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = yes
+		}
+		set_country_flag = TUR_Monarchy_Abolished
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.4
+		}
+		remove_ideas = TUR_national_Revolutionaries
+		remove_ideas = TUR_legacy_of_the_1800s
+	}
+}
+self_destruct_ott={
+	set_country_flag = TUR_No_Empire
+	AHZ={
+		transfer_state = 413
+	}
+	IRQ={
+		transfer_state = 935
+		transfer_state = 676
+		transfer_state = 656
+		transfer_state = 291
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+	}
+	SYR={
+		transfer_state = 455
+		transfer_state = 454
+		transfer_state = 554
+		transfer_state = 677
 		transfer_state = 680
 	}
 	FRA={
@@ -432,5 +531,11 @@ self_destruct_ott={
 				elections_allowed = no
 			}
 		}
+	}
+	KUR={
+		transfer_state = 936
+		transfer_state = 937
+		transfer_state = 701
+		transfer_state = 352
 	}
 }
