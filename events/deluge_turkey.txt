@@ -26,13 +26,16 @@ country_event = {
 	option = {
 		name = turkey.1.a
 		set_country_flag = TUR_Mejlis_explode
-		country_event = {
-			id = turkey.2
-			days = 10
-		}
-		country_event = {
-			id = turkey.9
-			days = 3
+		complete_national_focus = TUR_Matters_of_Sultanate
+		hidden_effect = {
+			country_event = {
+				id = turkey.2
+				days = 10
+			}
+			country_event = {
+				id = turkey.9
+				days = 3
+			}
 		}
 	}
 }
@@ -152,7 +155,7 @@ country_event = {
 		name = turkey.6.a
 		hidden_effect = {
 			self_destruct_ott2 = yes
-			
+			drop_cosmetic_tag = yes
 		}
 	}
 }
@@ -167,6 +170,7 @@ country_event = {
 		name = turkey.7.a
 		set_country_flag = TUR_No_Empire
 		self_destruct_ott = yes
+		drop_cosmetic_tag = yes
 		set_politics = {
 			ruling_party = communism
 			elections_allowed = yes
@@ -201,6 +205,7 @@ country_event = {
 			name = "Islami Firkasi"
 		}
 		remove_ideas = TUR_investigations
+		remove_ideas = TUR_national_Revolutionaries
 	}
 }
 country_event = {
