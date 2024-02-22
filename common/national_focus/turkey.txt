@@ -1695,8 +1695,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
-		id = TUR_Istanbul
-		icon = GFX_focus_generic_improve_the_administration
+		id = TUR_Abolish_Nobility
+		icon = GFX_focus_spr_class_war
 		cost = 6.00
 		x = -1
 		y = 2
@@ -1705,7 +1705,7 @@ focus_tree = {
 			
 		}
 		mutually_exclusive = {
-			focus = TUR_Baghdad
+			focus = TUR_Arab_Turk_Nobility
 		}
 		prerequisite = {
 			focus = TUR_Federal_Republic focus = TUR_Elect_a_king
@@ -1718,8 +1718,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
-		id = TUR_Baghdad
-		icon = GFX_focus_generic_improve_the_administration
+		id = TUR_Arab_Turk_Nobility
+		icon = GFX_focus_generic_nobility
 		cost = 6.00
 		x = 1
 		y = 2
@@ -1728,7 +1728,7 @@ focus_tree = {
 			
 		}
 		mutually_exclusive = {
-			focus = TUR_Istanbul
+			focus = TUR_Abolish_Nobility
 		}
 		prerequisite = {
 			focus = TUR_Federal_Republic focus = TUR_Elect_a_king
@@ -1741,8 +1741,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
-		id = TUR_Arab_Turk_Union
-		icon = GFX_focus_TUR_reform_the_balkan_pact
+		id = TUR_Matter_of_capital
+		icon = GFX_focus_generic_improve_the_administration
 		cost = 6.00
 		x = 0
 		y = 3
@@ -1751,7 +1751,7 @@ focus_tree = {
 			
 		}
 		prerequisite = {
-			focus = TUR_Baghdad focus = TUR_Istanbul
+			focus = TUR_Arab_Turk_Nobility focus = TUR_Abolish_Nobility
 		}
 		relative_position_id = TUR_get_rid_of_the_sultan
 		completion_reward = {
@@ -2402,6 +2402,393 @@ focus_tree = {
 			focus = TUR_Matters_of_Sultanate
 		}
 		relative_position_id = TUR_Matters_of_Sultanate
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_political_power = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = TUR_New_Wave_Islamism
+		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
+		cost = 6.00
+		x = 4
+		y = 1
+		ai_will_do = {
+			factor = 10
+			
+		}
+		mutually_exclusive = {
+			focus = TUR_Modern_Sultanate
+		}
+		prerequisite = {
+			focus = TUR_reverse_the_tanzimat
+		}
+		relative_position_id = TUR_reverse_the_tanzimat
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_political_power = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = TUR_expel_foreign_bankers
+		icon = GFX_focus_generic_monetary_advantage
+		cost = 6.00
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 10
+			
+		}
+		prerequisite = {
+			focus = TUR_New_Wave_Islamism
+		}
+		relative_position_id = TUR_New_Wave_Islamism
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_political_power = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = TUR_build_more_mosques
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 6.00
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 10
+			
+		}
+		prerequisite = {
+			focus = TUR_expel_foreign_bankers
+		}
+		relative_position_id = TUR_New_Wave_Islamism
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_political_power = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = TUR_protect_only_abrahamic_religions
+		icon = GFX_focus_generic_church_handshake
+		cost = 6.00
+		x = 3
+		y = 2
+		ai_will_do = {
+			factor = 10
+			
+		}
+		prerequisite = {
+			focus = TUR_expel_foreign_bankers
+		}
+		relative_position_id = TUR_New_Wave_Islamism
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_political_power = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = TUR_islamic_education
+		icon = GFX_focus_NORDIC_dem_capstone_research
+		cost = 6.00
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 10
+			
+		}
+		prerequisite = {
+			focus = TUR_New_Wave_Islamism
+		}
+		relative_position_id = TUR_New_Wave_Islamism
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_political_power = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = TUR_parliament_status
+		icon = GFX_focus_FRA_parliament
+		cost = 6.00
+		x = -3
+		y = 1
+		ai_will_do = {
+			factor = 10
+			
+		}
+		prerequisite = {
+			focus = TUR_New_Wave_Islamism focus = TUR_Modern_Sultanate
+		}
+		relative_position_id = TUR_New_Wave_Islamism
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_political_power = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = TUR_divan_reform
+		icon = GFX_focus_NOR_continue_nygaardsvold_government
+		cost = 6.00
+		x = -3
+		y = 2
+		ai_will_do = {
+			factor = 10
+			
+		}
+		prerequisite = {
+			focus = TUR_parliament_status
+		}
+		relative_position_id = TUR_New_Wave_Islamism
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_political_power = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = TUR_military_islamization
+		icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
+		cost = 6.00
+		x = -1
+		y = 2
+		ai_will_do = {
+			factor = 10
+			
+		}
+		prerequisite = {
+			focus = TUR_islamic_education
+		}
+		relative_position_id = TUR_New_Wave_Islamism
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_political_power = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = TUR_Embrace_Pan_Islamism
+		icon = GFX_focus_ETH_expand_the_levy
+		cost = 6.00
+		x = 0
+		y = 3
+		ai_will_do = {
+			factor = 10
+			
+		}
+		prerequisite = {
+			focus = TUR_military_islamization
+		}
+		prerequisite = {
+			focus = TUR_build_more_mosques
+		}
+		relative_position_id = TUR_New_Wave_Islamism
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_political_power = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = TUR_regulate_zakat_collection
+		icon = GFX_focus_ETH_adopt_the_lira
+		cost = 6.00
+		x = -2
+		y = 3
+		ai_will_do = {
+			factor = 10
+			
+		}
+		prerequisite = {
+			focus = TUR_military_islamization
+		}
+		prerequisite = {
+			focus = TUR_divan_reform
+		}
+		prerequisite = {
+			focus = TUR_build_more_mosques
+		}
+		relative_position_id = TUR_New_Wave_Islamism
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_political_power = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = TUR_Modern_Sultanate
+		icon = GFX_focus_generic_improve_the_administration
+		cost = 6.00
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 10
+			
+		}
+		mutually_exclusive = {
+			focus = TUR_New_Wave_Islamism
+		}
+		prerequisite = {
+			focus = TUR_reverse_the_tanzimat
+		}
+		relative_position_id = TUR_reverse_the_tanzimat
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_political_power = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = TUR_western_education
+		icon = GFX_focus_NORDIC_com_capstone_research
+		cost = 6.00
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 10
+			
+		}
+		prerequisite = {
+			focus = TUR_Modern_Sultanate
+		}
+		relative_position_id = TUR_Modern_Sultanate
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_political_power = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = TUR_invite_foreign_investors
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 6.00
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 10
+			
+		}
+		prerequisite = {
+			focus = TUR_Modern_Sultanate
+		}
+		relative_position_id = TUR_Modern_Sultanate
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_political_power = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = TUR_modernize_the_tabu_system
+		icon = GFX_focus_generic_agricultural_industry
+		cost = 6.00
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 10
+			
+		}
+		prerequisite = {
+			focus = TUR_Modern_Sultanate
+		}
+		relative_position_id = TUR_Modern_Sultanate
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_political_power = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = TUR_modernize_military_academy
+		icon = GFX_focus_generic_military_academy
+		cost = 6.00
+		x = -1
+		y = 3
+		ai_will_do = {
+			factor = 10
+			
+		}
+		prerequisite = {
+			focus = TUR_western_education
+		}
+		relative_position_id = TUR_Modern_Sultanate
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_political_power = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = TUR_guarantee_woman_rights
+		icon = GFX_focus_generic_women_in_military
+		cost = 6.00
+		x = 1
+		y = 3
+		ai_will_do = {
+			factor = 10
+			
+		}
+		prerequisite = {
+			focus = TUR_invite_foreign_investors
+		}
+		relative_position_id = TUR_Modern_Sultanate
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_political_power = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = TUR_continue_pan_ottomanism
+		icon = GFX_focus_TUR_pivot_to_the_past
+		cost = 6.00
+		x = 0
+		y = 4
+		ai_will_do = {
+			factor = 10
+			
+		}
+		prerequisite = {
+			focus = TUR_modernize_military_academy
+		}
+		prerequisite = {
+			focus = TUR_modernize_the_tabu_system
+		}
+		prerequisite = {
+			focus = TUR_guarantee_woman_rights
+		}
+		relative_position_id = TUR_Modern_Sultanate
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_political_power = 100
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = TUR_bid_for_international_fair
+		icon = GFX_focus_POL_support_global_falangism
+		cost = 6.00
+		x = 2
+		y = 4
+		ai_will_do = {
+			factor = 10
+			
+		}
+		prerequisite = {
+			focus = TUR_modernize_military_academy
+		}
+		prerequisite = {
+			focus = TUR_divan_reform
+		}
+		prerequisite = {
+			focus = TUR_guarantee_woman_rights
+		}
+		relative_position_id = TUR_Modern_Sultanate
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
 			add_political_power = 100
