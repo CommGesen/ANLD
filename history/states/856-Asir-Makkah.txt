@@ -6,6 +6,8 @@ state={
 	}
 	history = {
 		owner = TUR
+		set_state_flag = arab_minor
+		set_state_flag = arab_emirate
 		add_claim_by = TUR
 		add_claim_by = SAU
 		add_core_of = HEJ

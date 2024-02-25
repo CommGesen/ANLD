@@ -784,7 +784,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			
 			navy_experience = 10
 			add_doctrine_cost_reduction = {
 				name = naval_doc_bonus
@@ -1239,7 +1239,7 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1259,8 +1259,11 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Matters_of_Sultanate
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1279,8 +1282,8 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Matters_of_Sultanate
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			
+			add_ideas = closed_economy
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1299,8 +1302,8 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Matters_of_Sultanate
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			
+			add_ideas = TUR_masonic_politicans_contained
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1319,8 +1322,13 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Matters_of_Sultanate
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			
+			FRA={
+				country_event = {
+					id = turkey.fra1
+					days = 5
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1339,7 +1347,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Matters_of_Sultanate
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1359,8 +1367,11 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Matters_of_Sultanate
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			
+			add_timed_idea = {
+				idea = TUR_rural_support_idea
+				days = 300
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1379,8 +1390,17 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Matters_of_Sultanate
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			
+			add_political_power = -50
+			add_ideas = TUR_donations
+			if = {
+				limit = { 
+					any_state = {
+						has_state_flag = arab_emirate
+					}
+				}
+				TUR_minority_happy = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1394,6 +1414,9 @@ focus_tree = {
 			factor = 10
 			
 		}
+		available = {
+			always = no
+		}
 		mutually_exclusive = {
 			focus = TUR_reverse_the_tanzimat
 		}
@@ -1402,8 +1425,16 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Matters_of_Sultanate
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.5
+			}
+			add_ideas = ottoman_emperor
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1425,8 +1456,8 @@ focus_tree = {
 		}
 		relative_position_id = TUR_new_era_of_tanzim
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			
+			unlock_decision_category_tooltip = TUR_End_Feudalism
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1448,8 +1479,9 @@ focus_tree = {
 		}
 		relative_position_id = TUR_new_era_of_tanzim
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			
 			add_political_power = 100
+			add_stability = 0.05
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1468,7 +1500,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_new_era_of_tanzim
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1488,8 +1520,20 @@ focus_tree = {
 		}
 		relative_position_id = TUR_new_era_of_tanzim
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = christ_minor
+					}
+				 }
+				 TUR_minority_happy = yes
+			}
+			add_political_power = -20
+			add_stability = 0.1
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1508,8 +1552,34 @@ focus_tree = {
 		}
 		relative_position_id = TUR_new_era_of_tanzim
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			
+			add_ideas = TUR_rations_for_poor
+			every_owned_state = {
+				limit = {
+						is_core_of = TUR
+						is_controlled_by = ROOT
+						infrastructure < 9
+					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1531,8 +1601,11 @@ focus_tree = {
 		}
 		relative_position_id = TUR_new_era_of_tanzim
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			
+			country_event = {
+				id = turkey.10
+				days = 30
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1546,6 +1619,9 @@ focus_tree = {
 			factor = 10
 			
 		}
+		available = {
+			always = no
+		}
 		mutually_exclusive = {
 			focus = TUR_hurriyet_ve_itlaf_victory
 		}
@@ -1554,7 +1630,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_new_era_of_tanzim
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1574,8 +1650,16 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Qahtaniyah_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			
 			add_political_power = 100
+			if = {
+				limit = { 
+					any_state = {
+						has_state_flag = arab_minor
+					}
+				}
+				TUR_minority_happy = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1597,8 +1681,15 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Qahtaniyah_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
 			add_political_power = 100
+			if = {
+				limit = { 
+					any_state = {
+						has_state_flag = kurd_minor
+					}
+				}
+				TUR_minority_happy = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1617,8 +1708,10 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Qahtaniyah_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			add_popularity = {
+				ideology = communism
+				popularity = -0.5
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1643,8 +1736,13 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Qahtaniyah_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			remove_ideas = ottoman_emperor
+			set_cosmetic_tag = ARB_TUR
+			create_country_leader = {
+				name = "Abdul Karim Al Khalil" #عبدالكريم الخليل
+				picture = "gfx/leaders/SYR/Portrait_Abdul_Karim_Khalil.png"
+				ideology = constitutionalist_ideology
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1666,8 +1764,18 @@ focus_tree = {
 		}
 		relative_position_id = TUR_get_rid_of_the_sultan
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			country_event = {
+				id = turkey.11
+				days = 10
+			}
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = arab_minor
+					}
+				 }
+				 TUR_Arab_Turk_Unity = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1689,8 +1797,16 @@ focus_tree = {
 		}
 		relative_position_id = TUR_get_rid_of_the_sultan
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			set_cosmetic_tag = ARB_TUR_REP
 			add_political_power = 100
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = arab_minor
+					}
+				 }
+				 TUR_Arab_Turk_Unity = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1712,8 +1828,24 @@ focus_tree = {
 		}
 		relative_position_id = TUR_get_rid_of_the_sultan
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			add_stability = -0.1
+			increase_debt_idea = yes
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = kurd_minor
+					}
+				 }
+				 TUR_minority_angry = yes
+			}
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = christ_minor
+					}
+				 }
+				 TUR_minority_happy = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1735,8 +1867,16 @@ focus_tree = {
 		}
 		relative_position_id = TUR_get_rid_of_the_sultan
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			reduce_debt_idea = yes 
+			add_stability = 0.1
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = kurd_minor
+					}
+				 }
+				 TUR_minority_angry = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1755,8 +1895,10 @@ focus_tree = {
 		}
 		relative_position_id = TUR_get_rid_of_the_sultan
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			country_event = {
+				id = turkey.12
+				days = 5
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1781,8 +1923,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Qahtaniyah_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			set_cosmetic_tag = OTT_Arab
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1801,7 +1942,14 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Arabo_Ottoman_Empire
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = arab_minor
+					}
+				 }
+				 TUR_Arab_Turk_Unity = yes
+			}
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1821,7 +1969,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Arabo_Ottoman_Empire
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			remove_ideas = TUR_masonic_politicans_contained
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1844,7 +1992,14 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Arabo_Ottoman_Empire
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = christ_minor
+					}
+				 }
+				 TUR_minority_angry = yes
+			}
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1864,7 +2019,6 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Arabo_Ottoman_Empire
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1887,7 +2041,14 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Arabo_Ottoman_Empire
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = christ_minor
+					}
+				 }
+				 TUR_minority_happy = yes
+			}
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1907,8 +2068,40 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Arabo_Ottoman_Empire
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			create_wargoal = {
+				target = PER
+				type = puppet_wargoal_focus
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+
+	focus = {
+		id = TUR_internal_investments
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 6.00
+		x = 4
+		y = 3
+		ai_will_do = {
+			factor = 10
+			
+		}
+		prerequisite = {
+			focus = TUR_Federal_Republic focus = TUR_equal_rights focus = TUR_Elect_a_king
+		}
+		relative_position_id = TUR_Arabo_Ottoman_Empire
+		completion_reward = {
+			random_owned_state = { add_extra_state_shared_building_slots = 1 }
+			random_owned_state = { add_extra_state_shared_building_slots = 1 }
+			random_owned_state = { add_extra_state_shared_building_slots = 1 }
+			random_owned_state = { add_extra_state_shared_building_slots = 1 }
+			random_owned_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_tech_bonus = {
+				bonus = 0.33
+				uses = 2
+				category = construction_tech
+			}
+			reduce_debt_idea = yes
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1930,8 +2123,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Qahtaniyah_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			add_research_slot = 1
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1950,8 +2142,13 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Qahtaniyah_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			
+			retire_character = TUR_mustafa_kemal_pasha
+			promote_character = TUR_sefik_hüsnü
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1970,8 +2167,27 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Qahtaniyah_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_timed_idea = {
+				idea = TUR_modern_land_reforms
+				days = 600
+			}
 			add_political_power = 100
+			if = {
+				limit = { 
+					any_state = {
+						has_state_flag = arab_emirate
+					}
+				}
+				TUR_minority_angry = yes
+			}
+			if = {
+				limit = { 
+					any_state = {
+						has_state_flag = kurd_minor
+					}
+				}
+				TUR_minority_angry = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1990,8 +2206,25 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Qahtaniyah_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			reduce_debt_idea = yes
+			291 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			935 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			676 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			554 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			553 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			454 = {
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2013,7 +2246,6 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Qahtaniyah_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2033,8 +2265,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Qahtaniyah_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			add_ideas = TUR_state_welfare_idea
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2053,8 +2284,26 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Qahtaniyah_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			TUR_Nuri_Said = {
+				add_field_marshal_role = {
+					traits={ career_officer hidden_sympathies war_hero cavalry_leader }
+					skill=3
+					attack_skill=3
+					defense_skill=2
+					planning_skill=3
+					logistics_skill=2
+				}
+			}
+			TUR_Husni_Zaim = {
+				add_field_marshal_role = {
+					traits={ career_officer hidden_sympathies war_hero cavalry_leader }
+					skill=3
+					attack_skill=3
+					defense_skill=2
+					planning_skill=3
+					logistics_skill=2
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2073,8 +2322,8 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Qahtaniyah_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			add_ideas = free_trade
+			reduce_debt_idea = yes
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2096,7 +2345,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Qahtaniyah_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2117,9 +2366,12 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = TUR_Qahtaniyah_victory
 		}
+		available = {
+			always = no
+		}
 		relative_position_id = TUR_new_era_of_tanzim
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2139,8 +2391,8 @@ focus_tree = {
 		}
 		relative_position_id = TUR_hurriyet_ve_itlaf_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			reduce_debt_idea = yes
+			add_ideas = TUR_labour_reforms
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2159,7 +2411,38 @@ focus_tree = {
 		}
 		relative_position_id = TUR_hurriyet_ve_itlaf_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = arab_minor
+					}
+				 }
+				 TUR_minority_happy = yes
+			}
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = kurd_minor
+					}
+				 }
+				 TUR_minority_happy = yes
+			}
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = greek_minor
+					}
+				 }
+				 TUR_minority_happy = yes
+			}
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = armenian_minor
+					}
+				 }
+				 TUR_minority_happy = yes
+			}
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2179,7 +2462,14 @@ focus_tree = {
 		}
 		relative_position_id = TUR_hurriyet_ve_itlaf_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = christ_minor
+					}
+				 }
+				 TUR_minority_happy = yes
+			}
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2199,7 +2489,10 @@ focus_tree = {
 		}
 		relative_position_id = TUR_hurriyet_ve_itlaf_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2219,8 +2512,10 @@ focus_tree = {
 		}
 		relative_position_id = TUR_hurriyet_ve_itlaf_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2239,8 +2534,23 @@ focus_tree = {
 		}
 		relative_position_id = TUR_hurriyet_ve_itlaf_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			if = {
+				limit = { 
+					any_state = {
+						has_state_flag = arab_emirate
+					}
+				}
+				TUR_minority_angry = yes
+			}
+			if = {
+				limit = { 
+					any_state = {
+						has_state_flag = kurd_minor
+					}
+				}
+				TUR_minority_angry = yes
+			}
+			increase_debt_idea = yes
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2262,8 +2572,11 @@ focus_tree = {
 		}
 		relative_position_id = TUR_hurriyet_ve_itlaf_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			reduce_debt_idea = yes
+			swap_ideas = {
+				remove_idea = TUR_masonic_politicans_contained
+				add_idea = TUR_freemason_allowed
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2285,7 +2598,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_hurriyet_ve_itlaf_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2303,12 +2616,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TUR_equal_races
 		}
-		prerequisite = {
-			focus = TUR_state_serving_people
-		}
 		relative_position_id = TUR_hurriyet_ve_itlaf_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2326,13 +2636,25 @@ focus_tree = {
 		prerequisite = {
 			focus = TUR_labour_reforms
 		}
-		prerequisite = {
-			focus = TUR_state_serving_people
-		}
 		relative_position_id = TUR_hurriyet_ve_itlaf_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			random_owned_state = { add_extra_state_shared_building_slots = 2 }
+			random_owned_state = { add_extra_state_shared_building_slots = 2 }
+			random_owned_state = { add_extra_state_shared_building_slots = 2 }
+			random_owned_state = { add_extra_state_shared_building_slots = 2 }
+			random_owned_state = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			random_owned_state = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_tech_bonus = {
+				bonus = 0.33
+				uses = 2
+				category = industry
+			}
+			add_tech_bonus = {
+				bonus = 0.33
+				uses = 2
+				category = construction_tech
+			}
+			reduce_debt_idea = yes
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2354,7 +2676,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_hurriyet_ve_itlaf_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_ideas = free_trade
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2380,7 +2702,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_hurriyet_ve_itlaf_victory
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2401,9 +2723,15 @@ focus_tree = {
 		prerequisite = {
 			focus = TUR_Matters_of_Sultanate
 		}
+		available = {
+			always = no
+		}
 		relative_position_id = TUR_Matters_of_Sultanate
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.5
+			}
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2426,7 +2754,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_reverse_the_tanzimat
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2446,8 +2774,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_New_Wave_Islamism
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			increase_debt_idea = yes
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2466,8 +2793,18 @@ focus_tree = {
 		}
 		relative_position_id = TUR_New_Wave_Islamism
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2486,8 +2823,14 @@ focus_tree = {
 		}
 		relative_position_id = TUR_New_Wave_Islamism
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = christ_minor
+					}
+				 }
+				 TUR_minority_happy = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2506,8 +2849,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_New_Wave_Islamism
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			add_research_slot = 1
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2526,8 +2868,10 @@ focus_tree = {
 		}
 		relative_position_id = TUR_New_Wave_Islamism
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			country_event = {
+				id = turkey.13
+				days = 10
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2546,8 +2890,8 @@ focus_tree = {
 		}
 		relative_position_id = TUR_New_Wave_Islamism
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			#choose some Grand Viziers event or smth later
+			add_stability = 0.1
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2566,8 +2910,8 @@ focus_tree = {
 		}
 		relative_position_id = TUR_New_Wave_Islamism
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			add_war_support = 0.1
+			add_political_power = 50
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2589,8 +2933,56 @@ focus_tree = {
 		}
 		relative_position_id = TUR_New_Wave_Islamism
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = arab_minor
+					}
+				 }
+				 TUR_minority_happy = yes
+			}
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = kurd_minor
+					}
+				 }
+				 TUR_minority_happy = yes
+			}
+			add_opinion_modifier = {
+				target = EGY
+				modifier = opinion_modifier_pan_islamic_ties
+			}
+			add_opinion_modifier = {
+				target = PER
+				modifier = opinion_modifier_pan_islamic_ties
+			}
+			add_opinion_modifier = {
+				target = AFG
+				modifier = opinion_modifier_pan_islamic_ties
+			}
+			add_opinion_modifier = {
+				target = SAU
+				modifier = opinion_modifier_pan_islamic_ties
+			}
+			add_opinion_modifier = {
+				target = ANZ
+				modifier = opinion_modifier_pan_islamic_ties
+			}
+			add_opinion_modifier = {
+				target = OMA
+				modifier = opinion_modifier_pan_islamic_ties
+			}
+			add_opinion_modifier = {
+				target = YEM
+				modifier = opinion_modifier_pan_islamic_ties
+			}
+			add_opinion_modifier = {
+				target = ALB
+				modifier = opinion_modifier_pan_islamic_ties
+			}
+
+			#code event for pan islamic confernece and anti-colonial stuff
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2615,8 +3007,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_New_Wave_Islamism
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			add_ideas = TUR_zakat_modernization
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2638,7 +3029,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_reverse_the_tanzimat
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2658,8 +3049,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Modern_Sultanate
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			add_research_slot = 1
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2678,8 +3068,21 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Modern_Sultanate
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			random_owned_state = { add_extra_state_shared_building_slots = 2 }
+			random_owned_state = { add_extra_state_shared_building_slots = 2 }
+			random_owned_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			random_owned_state = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = industry
+			}
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = construction_tech
+			}
+			increase_debt_idea = yes
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2698,8 +3101,25 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Modern_Sultanate
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			reduce_debt_idea = yes
+			291 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			935 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			676 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			554 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			553 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			454 = {
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2718,8 +3138,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Modern_Sultanate
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			army_experience = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2738,7 +3157,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Modern_Sultanate
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2764,8 +3183,31 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Modern_Sultanate
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
-			add_political_power = 100
+			#unlock some decisions to fully core the empire to be added later
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = arab_minor
+					}
+				 }
+				 TUR_minority_happy = yes
+			}
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = kurd_minor
+					}
+				 }
+				 TUR_minority_happy = yes
+			}
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = christ_minor
+					}
+				 }
+				 TUR_minority_happy = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2790,7 +3232,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Modern_Sultanate
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TUR_navy"
+			
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }

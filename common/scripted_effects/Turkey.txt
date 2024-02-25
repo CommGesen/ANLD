@@ -135,7 +135,23 @@ TUR_minority_angry={
 		}
 	}
 }
-
+TUR_Arab_Turk_Unity={
+	remove_dynamic_modifier = {
+		modifier = TUR_minority_unrest0
+	}
+	remove_dynamic_modifier = {
+		modifier = TUR_minority_unrest1
+	}
+	remove_dynamic_modifier = {
+		modifier = TUR_minority_unrest2
+	}
+	remove_dynamic_modifier = {
+		modifier = TUR_minority_unrest3
+	}
+	remove_dynamic_modifier = {
+		modifier = TUR_minority_unrest4
+	}
+}
 
 increase_debt_idea = {
 	if = {
@@ -231,7 +247,7 @@ increase_debt_idea = {
 	}
 }
 
-remove_opda_idea = {
+reduce_debt_idea = {
 	if = {
 		limit = { has_idea = TUR_debt1 }
 		swap_ideas = {

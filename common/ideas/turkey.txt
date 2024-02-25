@@ -1,7 +1,121 @@
 ideas = {
 	country = {
+		TUR_modern_land_reforms = {
+			allowed = { always = no }
+			picture = generic_agrarian_society
+			modifier = {
+				political_power_gain = 0.05
+				consumer_goods_factor = -0.15
+			}
+		}
+		TUR_rations_for_poor = {
+			picture = FIN_socialist_welfare
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.10
+				stability_factor = 0.15
+			}
+		}
+		TUR_state_welfare_idea = {
+			picture = FIN_socialist_welfare
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.15
+				industry_repair_factor = 0.25
+				stability_factor = 0.05
+				political_power_factor = 0.04
+			}
+		}
+		TUR_donations = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = NOR_printing_money
+			modifier = {
+				political_power_gain = -0.05
+				industry_free_repair_factor	= 0.05
+				production_oil_factor = 0.05
+				local_resources	= 0.05
+				recruitable_population_factor = 0.01
+				command_power_gain = 0.03
+			}
+		}
+		TUR_zakat_modernization = {
+			picture = raj_marginalized_muslim_community_happy
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				local_resources_factor = 0.20
+			}
+		}
+		TUR_labour_reforms = {
+
+			picture = generic_agrarian_society
+
+			allowed = {
+					always = yes
+				}
+
+				modifier = {
+					research_speed_factor = 0.02
+					production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		TUR_rural_support_idea = {
+
+			allowed = {
+				original_tag = TUR
+			}
+			
+			removal_cost = -1
+			picture = generic_agrarian_society
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				min_export = -0.05
+				political_power_gain = -0.10
+				stability_weekly = 0.001
+			}
+		}
+		TUR_freemason_allowed = {
+			picture = spirit_masonic_lodges
+			allowed = {
+				tag = TUR
+			}
+			available = {
+				#empty
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				neutrality_drift = 0.05
+			}
+		}
+		TUR_masonic_politicans_contained = {
+			picture = spirit_masonic_lodges
+			allowed = {
+				tag = TUR
+			}
+			available = {
+				#empty
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.05
+			}
+		}
 		TUR_investigations = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TUR_Arab_Support"}
 			allowed = {
 				original_tag = TUR
 			}

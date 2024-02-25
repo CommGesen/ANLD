@@ -9,6 +9,8 @@ state={
 	}
 	history={
 		owner = TUR
+		set_state_flag = arab_minor
+		set_state_flag = arab_emirate
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

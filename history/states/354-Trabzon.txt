@@ -12,7 +12,8 @@ state={
 
 	history={
 		owner = TUR
-		
+		set_state_flag = armenian_minor
+		set_state_flag = christ_minor
 		victory_points = {
 			9932 3
 		}
@@ -26,6 +27,7 @@ state={
 		add_core_of = TUR
 		add_core_of = CAU
 		add_core_of = ARM
+		
 	}
 
 	provinces={

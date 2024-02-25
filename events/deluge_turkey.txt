@@ -220,3 +220,124 @@ country_event = {
 		add_ideas = TUR_investigations
 	}
 }
+country_event = {
+	id = turkey.10
+	title = turkey.10.t
+	desc = turkey.10.d
+	picture = GFX_ottoman_police
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.10.a
+		complete_national_focus = TUR_Qahtaniyah_victory
+		set_party_name = {
+			ideology = democratic
+			long_name = "Al Jamiyah Al Qahtaniyah"
+			name = "Qahtaniyah"
+		}
+		create_country_leader = {
+			name = "Shakib Arslan"
+			picture = "gfx/leaders/SYR/Portrait_OTT_Shakib_Arslan.png"
+			ideology = constitutionalist_ideology
+		}
+	}
+	option = {
+		name = turkey.10.b
+		complete_national_focus = TUR_hurriyet_ve_itlaf_victory
+		
+	}
+}
+country_event = {
+	id = turkey.11
+	title = turkey.11.t
+	desc = turkey.11.d
+	picture = GFX_ottoman_police
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.11.a
+		
+	}
+	option = {
+		name = turkey.11.b
+		
+	}
+	option = {
+		name = turkey.10.c
+		
+	}
+	option = {
+		name = turkey.11.e
+		
+	}
+	option = {
+		name = turkey.11.f
+		
+	}
+}
+country_event = {
+	id = turkey.12
+	title = turkey.12.t
+	desc = turkey.12.d
+	picture = GFX_ottoman_police
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.12.a
+		
+	}
+	option = {
+		name = turkey.12.b
+		
+	}
+	option = {
+		name = turkey.12.c
+		
+	}
+	option = {
+		name = turkey.12.e
+		
+	}
+}
+country_event = {
+	id = turkey.13
+	title = turkey.13.t
+	desc = turkey.13.d
+	picture = GFX_ottoman_police
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.13.a
+	}
+	option = {
+		name = turkey.13.b
+	}
+}
+country_event = {
+	id = turkey.fra1
+	title = turkey.fra1.t
+	desc = turkey.fra1.d
+	picture = GFX_ottoman_police
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.fra1.a
+		TUR={
+			add_opinion_modifier = {
+				target = FRA
+				modifier = refused_help
+			}
+		}
+	}
+	option = {
+		name = turkey.fra1.b
+		TUR={
+			add_opinion_modifier = {
+				target = FRA
+				modifier = large_increase
+			}
+			give_military_access = FRA
+		}
+
+	}
+}
