@@ -1227,7 +1227,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_Matters_of_Sultanate
-		icon = GFX_focus_TUR_turanist_ambition
+		icon = GFX_focus_TUR_sultanate_matters
 		cost = 6.00
 		x = 30
 		y = 0
@@ -1309,7 +1309,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_reach_out_to_france
-		icon = GFX_focus_FRA_partial_reactionism
+		icon = GFX_focus_TUR_paris
 		cost = 6.00
 		x = -3
 		y = 1
@@ -1377,7 +1377,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_seek_nobility_support
-		icon = GFX_focus_generic_nobility
+		icon = GFX_focus_TUR_pashatic_nobility
 		cost = 6.00
 		x = 2
 		y = 2
@@ -1406,7 +1406,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_new_era_of_tanzim
-		icon = GFX_focus_generic_social_state
+		icon = GFX_focus_TUR_new_tanzim
 		cost = 6.00
 		x = 6
 		y = 3
@@ -1851,7 +1851,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_Arab_Turk_Nobility
-		icon = GFX_focus_generic_nobility
+		icon = GFX_focus_TUR_pashatic_nobility
 		cost = 6.00
 		x = 1
 		y = 2
@@ -2006,7 +2006,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_new_aristocratic_class
-		icon = GFX_focus_generic_nobility
+		icon = GFX_focus_TUR_pashatic_nobility
 		cost = 6.00
 		x = -2
 		y = 2
@@ -2709,7 +2709,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_reverse_the_tanzimat
-		icon = GFX_tax_reform
+		icon = GFX_focus_TUR_end_tanzim
 		cost = 6.00
 		x = -6
 		y = 3
