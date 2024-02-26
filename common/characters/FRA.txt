@@ -196,6 +196,61 @@ characters={
 			ledger = civilian
 		}
 	}
+	##French Communist Party:
+	FRA_deluge_maurice_thorez={
+		name=FRA_deluge_maurice_thorez_name
+		portraits={
+			army={
+				small="GFX_maurice_thorez_picture_small"
+				large="GFX_portrait_fra_maurice_thorez"
+			}
+			civilian={
+				small="GFX_maurice_thorez_picture_small"
+				large="GFX_portrait_fra_maurice_thorez"
+			}
+		}
+		country_leader={
+			ideology=marxist_ideology
+			expire="1965.1.1.1"
+			traits = {
+				general_secretary
+			}
+			desc = "FRA_deluge_maurice_thorez_desc"
+		}
+	}
+	FRA_deluge_jacques_duclos={
+		name=FRA_deluge_jacques_duclos_name
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/portrait_FRA_jacques_duclos.dds"
+			}
+		}
+		country_leader={
+			ideology=marxist_ideology
+			expire="1965.1.1.1"
+			traits = {
+				manipulator
+			}
+			desc = "FRA_deluge_jacques_duclos_desc"
+		}
+	}
+	##Proudhon Circle:
+	FRA_deluge_georges_valois={
+		name=FRA_deluge_georges_valois_name
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/portrait_FRA_georges_valois.dds"
+			}
+		}
+		country_leader={
+			ideology=marxist_ideology
+			expire="1965.1.1.1"
+			traits = {
+				
+			}
+			desc = "FRA_deluge_georges_valois_desc"
+		}
+	}
 	##Boulangists:
 	FRA_deluge_louis_franchet_d_esperey={
 		name=FRA_deluge_louis_franchet_d_esperey_name
@@ -281,42 +336,19 @@ characters={
 			desc = "FRA_deluge_jacques_doriot_desc"
 		}
 	}
-	##French Communist Party:
-	FRA_deluge_maurice_thorez={
-		name=FRA_deluge_maurice_thorez_name
+	##Fire Movement/Le Feu:
+	FRA_deluge_maurice_delaunay={
+		name=FRA_deluge_maurice_delaunay_name
 		portraits={
-			army={
-				small="GFX_maurice_thorez_picture_small"
-				large="GFX_portrait_fra_maurice_thorez"
-			}
 			civilian={
-				small="GFX_maurice_thorez_picture_small"
-				large="GFX_portrait_fra_maurice_thorez"
+				large="gfx/leaders/FRA/portrait_FRA_maurice_delaunay.dds"
 			}
 		}
 		country_leader={
-			ideology=jacobin_ideology
+			ideology=social_darwinist_ideology
+			traits={ mentally_ill }
 			expire="1965.1.1.1"
-			traits = {
-				general_secretary
-			}
-			desc = "FRA_deluge_maurice_thorez_desc"
-		}
-	}
-	FRA_deluge_jacques_duclos={
-		name=FRA_deluge_jacques_duclos_name
-		portraits={
-			civilian={
-				large="gfx/leaders/FRA/portrait_FRA_jacques_duclos.dds"
-			}
-		}
-		country_leader={
-			ideology=jacobin_ideology
-			expire="1965.1.1.1"
-			traits = {
-				manipulator
-			}
-			desc = "FRA_deluge_jacques_duclos_desc"
+			desc = "FRA_deluge_maurice_delaunay_desc"
 		}
 	}
 	##Radical Party:
@@ -387,7 +419,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_ernest_petit_picture_small"
-				large="gfx/leaders/FRA/portrait_FRA_ernest_petit.dds" 
+				large="gfx/leaders/FRA/portrait_FRA_ernest_petit.dds"
 			}
 		}
 		corps_commander={
@@ -666,7 +698,7 @@ characters={
 		name=FRA_deluge_gaston_henri_billotte_name
 		portraits={
 			army={##small and big portrait to do
-				large=GFX_portrait_FRA_gastonhenri_billotte
+				large="gfx/leaders/FRA/portrait_FRA_gaston_henri_billotte.dds" 
 				small="GFX_gaston_henri_billotte_picture_small"
 			}
 		}
@@ -714,6 +746,78 @@ characters={
 			planning_skill=2
 			logistics_skill=2
 			desc = "FRA_deluge_rene_olry_desc"
+		}
+	}
+	FRA_deluge_georges_blanchard={
+		name=FRA_deluge_georges_blanchard_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_georges_blanchard.dds" 
+				small="GFX_georges_blanchard_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ skilled_staffer }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			desc = "FRA_deluge_georges_blanchard_desc"
+		}
+	}
+	FRA_deluge_pierre_lelong={
+		name=FRA_deluge_pierre_lelong_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_pierre_lelong.dds" 
+				small="GFX_pierre_lelong_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			desc = "FRA_deluge_pierre_lelong_desc"
+		}
+	}
+	FRA_deluge_marie_pierre_koenig={
+		name=FRA_deluge_marie_pierre_koenig_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_marie_pierre_koenig.dds" 
+				small="GFX_marie_pierre_koenig_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ organizer brilliant_strategist }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			desc = "FRA_deluge_marie_pierre_koenig_desc"
+		}
+	}
+	FRA_deluge_henri_rol_tanguy={
+		name=FRA_deluge_henri_rol_tanguy_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_henri_rol_tanguy.dds" 
+				small="GFX_henri_rol_tanguy_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ organizer infantry_officer urban_assault_specialist }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			desc = "FRA_deluge_henri_rol_tanguy_desc"
 		}
 	}
 
@@ -1155,17 +1259,6 @@ characters={
 			}
 		}
 	}
-
-
-	### MILITARY HIGH COMMAND ###
-
-	# Leclerc up there
-
-	# Huntziger up there
-
-	# Godfroy up there
-
-	# Laborde up there
 
 	FRA_martial_valin={
 		name=FRA_martial_valin

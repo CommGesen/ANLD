@@ -1835,6 +1835,7 @@ spriteTypes = {
 		name = "GFX_wladyslaw_obrebski_picture_small"
 		texturefile = "gfx/interface/ideas/characters/wladyslaw_obrebski_picture_small.dds"
 	}
+	##from here are not made icons
 	spriteType = {
 		name = "GFX_ernest_petit_picture_small"
 		texturefile = "gfx/interface/ideas/characters/ernest_petit_picture_small.dds"
@@ -1890,5 +1891,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_gaston_henri_billotte_picture_small"
 		texturefile = "gfx/interface/ideas/characters/gaston_henri_billotte_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_leopold_lis_kula_picture_small"
+		texturefile = "gfx/interface/ideas/characters/leopold_lis_kula_picture_small.dds"
 	}
 }

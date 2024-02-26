@@ -1099,7 +1099,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_popular_republican_movemenet
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_popular_republican_movement
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_creation_of_the_parliament focus = FRA_the_reformer }
@@ -1171,7 +1171,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_capitalist_reforms
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_capitalist_reforms
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_popular_republican_movemenet focus = FRA_french_social_party }
@@ -1279,7 +1279,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_coalition_with_republican_federation
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_deal_with_conservatives
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_deals_with_church }
@@ -1353,7 +1353,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_partial_women_emancipation
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_partial_women_emancipation
 		x = 2
 		y = 1
 		prerequisite = { focus = FRA_popular_republican_movemenet focus = FRA_french_social_party }
@@ -1533,7 +1533,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_democratic_republican_alliance
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_democratic_republican_alliance
 		x = 8
 		y = 1
 		prerequisite = { focus = FRA_creation_of_the_parliament focus = FRA_the_reformer }
@@ -1786,7 +1786,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_radical_party
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_marianne
 		x = 12
 		y = 1
 		prerequisite = { focus = FRA_creation_of_the_parliament focus = FRA_the_reformer }
@@ -3305,7 +3305,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_absolutist_grip
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_hand_and_crown
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_the_dictator }
@@ -3341,7 +3341,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_supermacist_propaganda
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_supremacist_propaganda
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_absolutist_grip focus = FRA_boulangists_takeover }
@@ -3449,7 +3449,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_boulangists_takeover
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_georges_boulanger
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_the_dictator }
@@ -3485,7 +3485,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_stratocratic_government
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_stratocratic_government
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_boulangists_takeover }
@@ -3521,7 +3521,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_invite_the_nationalists
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_invite_the_nationalists
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_stratocratic_government }
@@ -3557,7 +3557,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_support_rural_life
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_support_rural_life
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_invite_the_nationalists }

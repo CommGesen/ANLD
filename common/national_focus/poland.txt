@@ -55,7 +55,7 @@ focus_tree = {
 		available = {
 			NOT = {
 				has_country_leader =  {
-					character = POL_Pilsudski
+					character = POL_deluge_jozef_pilsudski
 					ruling_only = yes
 				}
 			}
@@ -149,10 +149,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			promote_character = POL_Smigly
+			promote_character = POL_deluge_edward_rydz_smigly
 			hidden_effect = {
 				news_event = { id = deluge_poland.4 hours = 6 }
-				retire_character = POL_Sanation_Emergency_Council
+				retire_character = POL_deluge_sanation_emergency_council
 			}
 			mark_focus_tree_layout_dirty = yes
 		}
@@ -193,10 +193,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			promote_character = POL_deluge_Sikorski
+			promote_character = POL_deluge_wladyslaw_sikorski
 			hidden_effect = {
 				news_event = { id = deluge_poland.5 hours = 6 } 
-				retire_character = POL_Sanation_Emergency_Council
+				retire_character = POL_deluge_sanation_emergency_council
 			}
 			mark_focus_tree_layout_dirty = yes
 		}
@@ -237,10 +237,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			promote_character = POL_deluge_Stachniuk
+			promote_character = POL_deluge_jan_stachniuk
 			hidden_effect = {
 				news_event = { id = deluge_poland.6 hours = 6 }
-				retire_character = POL_Sanation_Emergency_Council
+				retire_character = POL_deluge_sanation_emergency_council
 			}
 			mark_focus_tree_layout_dirty = yes
 		}
@@ -281,10 +281,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			promote_character = POL_Piasecki
+			promote_character = POL_deluge_boleslaw_piasecki
 			hidden_effect = {
 				news_event = { id = deluge_poland.7 hours = 6 } 
-				retire_character = POL_Sanation_Emergency_Council
+				retire_character = POL_deluge_sanation_emergency_council
 			}
 			mark_focus_tree_layout_dirty = yes
 		}
@@ -1615,8 +1615,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			retire_character = POL_deluge_Sikorski
-			retire_character = POL_deluge_slawek
+			retire_character = POL_deluge_wladyslaw_sikorski
+			retire_character = POL_deluge_walery_slawek
 			set_party_name = { ideology = fascism long_name = POL_OZN_name_long name = POL_OZN_name_short }
 			add_popularity = {
 				ideology = fascism
@@ -1628,12 +1628,12 @@ focus_tree = {
 			if = {
 				limit = {
 					has_country_leader =  {
-						character = POL_Smigly
+						character = POL_deluge_edward_rydz_smigly
 						ruling_only = yes
 					}
 				}
 				add_trait = {
-					character = POL_Smigly
+					character = POL_deluge_edward_rydz_smigly
 					ideology = social_darwinist_ideology
 					trait = dictator
 				}
@@ -1947,12 +1947,12 @@ focus_tree = {
 			if = {
 				limit = {
 					has_country_leader =  {
-						character = POL_Smigly
+						character = POL_deluge_edward_rydz_smigly
 						ruling_only = yes
 					}
 				}
 				add_trait = {
-					character = POL_Smigly
+					character = POL_deluge_edward_rydz_smigly
 					ideology = social_darwinist_ideology
 					trait = succcessful_painter
 				}
@@ -3748,14 +3748,14 @@ focus_tree = {
 					has_country_flag = POL_created_lechia
 				}
 				has_country_leader = {
-					character = POL_deluge_Stachniuk
+					character = POL_deluge_jan_stachniuk
 					ruling_only = yes
 				}
 			}
 		}
 		completion_reward = {
 			add_trait = {
-				character = POL_deluge_Stachniuk
+				character = POL_deluge_jan_stachniuk
 				ideology = social_darwinist_ideology
 				trait = the_44
 			}

@@ -9942,6 +9942,41 @@ political_actions = {
 			base = 100
 		}
 	}
+	heal_rydz_smigly = {
+		icon = GFX_decision_POL_sanation_right_opposition_1
+		fire_only_once = yes
+		visible = {
+			has_country_leader =  {
+				character = POL_deluge_edward_rydz_smigly
+				ruling_only = no
+			}
+			POL_deluge_edward_rydz_smigly = {
+				has_trait = overwhelming_decadency
+			}
+		}
+		available = {
+			
+		}
+		cost = 10
+		fire_only_once = yes
+		modifier = {
+			
+		}
+		days_remove = 150
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			remove_trait = {
+				character = POL_deluge_edward_rydz_smigly
+				ideology = social_darwinist_ideology
+				trait = overwhelming_decadency
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
 	integrate_western_germany_france_walewski = {
 		icon = GFX_decision_generic_integration
 		available = {

@@ -40,7 +40,7 @@ country_event = {#Pilsudski dies country
 		date > 1937.1.1
 		has_government = fascism
 		has_country_leader =  {
-			character = POL_Pilsudski
+			character = POL_deluge_jozef_pilsudski
 			ruling_only = no
 		}
 	}
@@ -49,8 +49,8 @@ country_event = {#Pilsudski dies country
 	}
 	option = {
 		name = deluge_poland.2.a
-		retire_character = POL_Pilsudski
-		promote_character = POL_Sanation_Emergency_Council
+		retire_character = POL_deluge_jozef_pilsudski
+		promote_character = POL_deluge_sanation_emergency_council
 		set_global_flag = POL_Pilsudski_died
 		hidden_effect = {
 			news_event = {
@@ -309,7 +309,7 @@ country_event = {#POL chooses leader for PSL
 	is_triggered_only = yes
 	option = {##Maciej Rataj
 		name = deluge_poland.14.a
-		promote_character = POL_deluge_rataj
+		promote_character = POL_deluge_maciej_rataj
 		hidden_effect = {
 			news_event = {
 				id = deluge_poland.54
@@ -349,12 +349,12 @@ country_event = {#POL chooses leader for ND
 			limit = {
 				NOT = {
 					has_country_leader =  {
-						character = POL_deluge_Dmowski
+						character = POL_deluge_roman_dmowski
 						ruling_only = yes
 					}
 				}
 			}
-			promote_character = POL_deluge_Dmowski
+			promote_character = POL_deluge_roman_dmowski
 		}
 		hidden_effect = {
 			news_event = {
@@ -384,7 +384,7 @@ country_event = {#POL chooses leader for ND
 	}
 	option = {##Jan Mosdorf
 		name = deluge_poland.15.c
-		promote_character = POL_deluge_mosdorf
+		promote_character = POL_deluge_jan_mosdorf
 		trigger = {
 			always = no
 		}
@@ -400,7 +400,7 @@ country_event = {#POL chooses leader for ND
 	}
 	option = {##Tadeusz Bielecki
 		name = deluge_poland.15.e
-		promote_character = POL_deluge_bielecki
+		promote_character = POL_deluge_tadeusz_bielecki
 		hidden_effect = {
 			news_event = {
 				id = deluge_poland.55
@@ -418,7 +418,7 @@ country_event = {#Roman Dmowski dies
 	desc = {
 		text = deluge_poland.16.d1
 		trigger = {
-			POL_deluge_Dmowski = {
+			POL_deluge_roman_dmowski = {
 				is_country_leader = yes
 			}
 			has_completed_focus = POL_ND_wins
@@ -427,7 +427,7 @@ country_event = {#Roman Dmowski dies
 	desc = {
 		text = deluge_poland.16.d2
 		trigger = {
-			POL_deluge_Dmowski = {
+			POL_deluge_roman_dmowski = {
 				is_country_leader = no
 			}
 			has_completed_focus = POL_ND_wins
@@ -436,7 +436,7 @@ country_event = {#Roman Dmowski dies
 	desc = {
 		text = deluge_poland.16.d3
 		trigger = {
-			POL_deluge_Dmowski = {
+			POL_deluge_roman_dmowski = {
 				is_country_leader = no
 			}
 			NOT = {
@@ -449,19 +449,19 @@ country_event = {#Roman Dmowski dies
 		tag = POL
 		date > 1940.1.1
 		POL = {
-			has_character = POL_deluge_Dmowski
+			has_character = POL_deluge_roman_dmowski
 		}
 	}
 	fire_only_once = yes
 	option = {##Tadeusz Bielecki
 		name = deluge_poland.16.a
 		trigger = {
-			POL_deluge_Dmowski = {
+			POL_deluge_roman_dmowski = {
 				is_country_leader = yes
 			}
 		}
-		retire_character = POL_deluge_Dmowski
-		promote_character = POL_deluge_bielecki
+		retire_character = POL_deluge_roman_dmowski
+		promote_character = POL_deluge_tadeusz_bielecki
 		hidden_effect = {
 			news_event = {
 				id = deluge_poland.56
@@ -475,12 +475,12 @@ country_event = {#Roman Dmowski dies
 	option = {##Marian Seyda
 		name = deluge_poland.16.b
 		trigger = {
-			POL_deluge_Dmowski = {
+			POL_deluge_roman_dmowski = {
 				is_country_leader = yes
 			}
 			always = no
 		}
-		retire_character = POL_deluge_Dmowski
+		retire_character = POL_deluge_roman_dmowski
 		promote_character = POL_deluge_marian_seyda
 		hidden_effect = {
 			news_event = {
@@ -495,13 +495,13 @@ country_event = {#Roman Dmowski dies
 	option = {##Jan Mosdorf
 		name = deluge_poland.16.c
 		trigger = {
-			POL_deluge_Dmowski = {
+			POL_deluge_roman_dmowski = {
 				is_country_leader = yes
 			}
 			always = no
 		}
-		retire_character = POL_deluge_Dmowski
-		promote_character = POL_deluge_mosdorf
+		retire_character = POL_deluge_roman_dmowski
+		promote_character = POL_deluge_jan_mosdorf
 		hidden_effect = {
 			news_event = {
 				id = deluge_poland.56
@@ -515,11 +515,11 @@ country_event = {#Roman Dmowski dies
 	option = {##Dmowski dies but not as leader
 		name = deluge_poland.16.e
 		trigger = {
-			POL_deluge_Dmowski = {
+			POL_deluge_roman_dmowski = {
 				is_country_leader = no
 			}
 		}
-		retire_character = POL_deluge_Dmowski
+		retire_character = POL_deluge_roman_dmowski
 		hidden_effect = {
 			news_event = {
 				id = deluge_poland.56
@@ -1143,10 +1143,10 @@ country_event = {##plot happenes
 		}
 		add_ideas = POL_problems_in_administration
 		add_ideas = POL_problems_in_army
-		retire_character = POL_Smigly
-		retire_character = POL_Sanation_Emergency_Council
+		retire_character = POL_deluge_edward_rydz_smigly
+		retire_character = POL_deluge_sanation_emergency_council
 		set_party_name = { ideology = fascism long_name = POL_falanga_name_long name = POL_falanga_name_short }
-		promote_character = POL_Piasecki
+		promote_character = POL_deluge_boleslaw_piasecki
 		hidden_effect = {
 			news_event = {
 				id = deluge_poland.53
@@ -1235,10 +1235,10 @@ country_event = {##plot happenes
 		}
 		add_ideas = POL_problems_in_administration
 		add_ideas = POL_problems_in_army
-		retire_character = POL_Smigly
-		retire_character = POL_Sanation_Emergency_Council
+		retire_character = POL_deluge_edward_rydz_smigly
+		retire_character = POL_deluge_sanation_emergency_council
 		set_party_name = { ideology = fascism long_name = POL_falanga_name_long name = POL_falanga_name_short }
-		promote_character = POL_Piasecki
+		promote_character = POL_deluge_boleslaw_piasecki
 		promote_character = POL_deluge_pkwn
 		set_party_name = { ideology = communism long_name = POL_PKWN_name_long name = POL_PKWN_name_short }
 		hidden_effect = {
@@ -1369,10 +1369,10 @@ country_event = {##plot happenes
 		}
 		add_ideas = POL_problems_in_administration
 		add_ideas = POL_problems_in_army
-		retire_character = POL_Smigly
-		retire_character = POL_Sanation_Emergency_Council
+		retire_character = POL_deluge_edward_rydz_smigly
+		retire_character = POL_deluge_sanation_emergency_council
 		set_party_name = { ideology = fascism long_name = POL_falanga_name_long name = POL_falanga_name_short }
-		promote_character = POL_Piasecki
+		promote_character = POL_deluge_boleslaw_piasecki
 		hidden_effect = {
 			news_event = {
 				id = deluge_poland.53
@@ -2045,7 +2045,7 @@ country_event = {##New generals come and some retire
 			
 			retire_character = POL_deluge_sosnowski
 			retire_character = POL_deluge_Rummel
-			retire_character = POL_deluge_Sikorski
+			retire_character = POL_deluge_wladyslaw_sikorski
 			
 			recruit_character = POL_deluge_rola_zymierski
 			recruit_character = POL_deluge_zygumnt_berling
@@ -2713,10 +2713,10 @@ country_event = {##Rydz-Śmigły kills himself if Warsaw was lost
 			}
 		}
 		has_country_leader =  {
-			character = POL_Smigly
+			character = POL_deluge_edward_rydz_smigly
 			ruling_only = no
 		}
-		POL_Smigly = {
+		POL_deluge_edward_rydz_smigly = {
 			NOT = {
 				has_trait = overwhelming_decadency
 			}
@@ -2726,7 +2726,7 @@ country_event = {##Rydz-Śmigły kills himself if Warsaw was lost
 	option = {#Śmigły doesn't do that
 		name = deluge_poland.64.a
 		add_trait = {
-			character = POL_Smigly
+			character = POL_deluge_edward_rydz_smigly
 			ideology = social_darwinist_ideology
 			trait = overwhelming_decadency
 		}
@@ -2737,7 +2737,7 @@ country_event = {##Rydz-Śmigły kills himself if Warsaw was lost
 	}
 	option = {#Haller
 		name = deluge_poland.64.b
-		retire_character = POL_Smigly
+		retire_character = POL_deluge_edward_rydz_smigly
 		promote_character = POL_deluge_Haller
 		hidden_effect = {
 			news_event = {
@@ -2751,7 +2751,7 @@ country_event = {##Rydz-Śmigły kills himself if Warsaw was lost
 	}
 	option = {#Wieniawa-Długoszewski
 		name = deluge_poland.64.c
-		retire_character = POL_Smigly
+		retire_character = POL_deluge_edward_rydz_smigly
 		promote_character = POL_deluge_wieniawa_dlugoszewski
 		hidden_effect = {
 			news_event = {
@@ -2803,7 +2803,7 @@ country_event = {##Rydz-Śmigły kills himself if Warsaw was lost part 2
 	is_triggered_only = yes
 	option = {#Orlicz-Dreszer
 		name = deluge_poland.64.e
-		retire_character = POL_Smigly
+		retire_character = POL_deluge_edward_rydz_smigly
 		promote_character = POL_deluge_Orlicz_Dreszer
 		hidden_effect = {
 			news_event = {
@@ -2817,7 +2817,7 @@ country_event = {##Rydz-Śmigły kills himself if Warsaw was lost part 2
 	}
 	option = {#Józef Bek
 		name = deluge_poland.64.h
-		retire_character = POL_Smigly
+		retire_character = POL_deluge_edward_rydz_smigly
 		promote_character = POL_deluge_jozef_beck
 		hidden_effect = {
 			news_event = {
@@ -2831,7 +2831,7 @@ country_event = {##Rydz-Śmigły kills himself if Warsaw was lost part 2
 	}
 	option = {#Kazimierz Sosnkowski
 		name = deluge_poland.64.i
-		retire_character = POL_Smigly
+		retire_character = POL_deluge_edward_rydz_smigly
 		promote_character = POL_deluge_sosnowski
 		hidden_effect = {
 			news_event = {
@@ -3508,11 +3508,11 @@ country_event = {##Sikorski brings back democracy to Poland
 			name = POL_morges_name_short
 		}
 		remove_country_leader_role = {
-			character = POL_deluge_Sikorski
+			character = POL_deluge_wladyslaw_sikorski
 			ideology = corporatist_ideology
 		}
 		add_country_leader_role = {
-			character = POL_deluge_Sikorski
+			character = POL_deluge_wladyslaw_sikorski
 			promote_leader = yes
 			country_leader = {
 				ideology = constitutionalist_ideology
@@ -3520,9 +3520,9 @@ country_event = {##Sikorski brings back democracy to Poland
 				traits = { liberal_marshal }
 			}
 		}
-		promote_character = POL_deluge_Sikorski
+		promote_character = POL_deluge_wladyslaw_sikorski
 		set_party_name = { ideology = fascism long_name = POL_falanga_name_long name = POL_falanga_name_short }
-		promote_character = POL_Piasecki 
+		promote_character = POL_deluge_boleslaw_piasecki 
 		ai_chance = {
 			base = 1
 			modifier = {
@@ -3551,7 +3551,7 @@ country_event = {##Sikorski brings back democracy to Poland
 	}
 	option = {##Wojciech Konfranty becomes leader
 		name = deluge_poland.82.b
-		promote_character = POL_deluge_korfanty
+		promote_character = POL_deluge_wojciech_korfanty
 		set_rule = {can_declare_war_on_same_ideology = yes}
 		set_rule = {can_only_justify_war_on_threat_country = no}
 		swap_ideas = {
@@ -3567,7 +3567,7 @@ country_event = {##Sikorski brings back democracy to Poland
 			name = POL_morges_name_short
 		}
 		set_party_name = { ideology = fascism long_name = POL_falanga_name_long name = POL_falanga_name_short }
-		promote_character = POL_Piasecki
+		promote_character = POL_deluge_boleslaw_piasecki
 		ai_chance = {
 			base = 1
 			modifier = {
@@ -5131,7 +5131,7 @@ country_event = {##PSL-SCh coaltion is created, player can choose new leader
 		ai_chance = {
 			base = 1
 		}
-		promote_character = POL_deluge_waleron
+		promote_character = POL_deluge_andrzej_waleron
 	}
 	option = {##Jan Dąbski
 		name = deluge_poland.114.c
@@ -5141,7 +5141,7 @@ country_event = {##PSL-SCh coaltion is created, player can choose new leader
 		ai_chance = {
 			base = 1
 		}
-		promote_character = POL_deluge_dabski
+		promote_character = POL_deluge_jan_dabski
 	}
 }
 country_event = {##POL proposes defense pact to UK

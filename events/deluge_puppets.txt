@@ -13,10 +13,7 @@ country_event = {
 	picture = GFX_deluge_militia
 	
 	trigger = {
-		OR = {
-			is_subject = yes
-			is_subject = yes
-		}
+		is_subject = yes
 		any_other_country = {
 			ROOT = {
 				is_subject_of = PREV
