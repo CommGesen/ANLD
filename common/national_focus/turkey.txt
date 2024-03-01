@@ -2329,7 +2329,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_increase_women_rights
-		icon = GFX_focus_SOV_womens_fascist_movement
+		icon = GFX_focus_generic_partial_women_emancipation
 		cost = 6.00
 		x = -5
 		y = 3
@@ -2761,7 +2761,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_expel_foreign_bankers
-		icon = GFX_focus_generic_monetary_advantage
+		icon = GFX_focus_TUR_expel_banks
 		cost = 6.00
 		x = 1
 		y = 1
@@ -2780,7 +2780,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_build_more_mosques
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_TUR_mosques
 		cost = 6.00
 		x = 1
 		y = 2
@@ -2810,7 +2810,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_protect_only_abrahamic_religions
-		icon = GFX_focus_generic_church_handshake
+		icon = GFX_focus_TUR_protect_abrahamic_religions
 		cost = 6.00
 		x = 3
 		y = 2
@@ -2836,7 +2836,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_islamic_education
-		icon = GFX_focus_NORDIC_dem_capstone_research
+		icon = GFX_focus_TUR_islamic_education
 		cost = 6.00
 		x = -1
 		y = 1
@@ -2855,7 +2855,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_parliament_status
-		icon = GFX_focus_FRA_parliament
+		icon = GFX_focus_TUR_majlis
 		cost = 6.00
 		x = -3
 		y = 1
@@ -2877,7 +2877,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_divan_reform
-		icon = GFX_focus_NOR_continue_nygaardsvold_government
+		icon = GFX_focus_TUR_sultan_divan
 		cost = 6.00
 		x = -3
 		y = 2
@@ -2897,7 +2897,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_military_islamization
-		icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
+		icon = GFX_focus_TUR_military_islamization
 		cost = 6.00
 		x = -1
 		y = 2
@@ -3088,7 +3088,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_modernize_the_tabu_system
-		icon = GFX_focus_generic_agricultural_industry
+		icon = GFX_focus_TUR_modernize_tabu
 		cost = 6.00
 		x = 0
 		y = 2
@@ -3144,7 +3144,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_guarantee_woman_rights
-		icon = GFX_focus_generic_women_in_military
+		icon = GFX_focus_generic_partial_women_emancipation
 		cost = 6.00
 		x = 1
 		y = 3
@@ -3213,7 +3213,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_bid_for_international_fair
-		icon = GFX_focus_POL_support_global_falangism
+		icon = GFX_focus_TUR_international_fair
 		cost = 6.00
 		x = 2
 		y = 4
