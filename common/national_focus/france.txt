@@ -5251,4 +5251,655 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		}
+focus = {		
+	id = FRA_new_industry_standards
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 12
+		y = 1
+		prerequisite = { focus = FRA_budget_deficit_law }
+		relative_position_id = FRA_budget_deficit_law
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+	id = FRA_transport_modernization
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 2
+		y = 1
+		prerequisite = { focus = FRA_new_industry_standards }
+		relative_position_id = FRA_new_industry_standards
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+	id = FRA_support_air_france
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 2
+		y = 1
+		prerequisite = { focus = FRA_transport_modernization }
+		relative_position_id = FRA_transport_modernization
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+	id = FRA_develop_southern_infrastructure
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_transport_modernization }
+		relative_position_id = FRA_transport_modernization
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+	id = FRA_develop_northern_infrastructure
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -2
+		y = 1
+		prerequisite = { focus = FRA_transport_modernization }
+		relative_position_id = FRA_transport_modernization
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+	id = FRA_all_roads_lead_to_paris
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_develop_northern_infrastructure }
+prerequisite = { focus = FRA_develop_southern_infrastructure  }
+		relative_position_id = FRA_develop_northern_infrastructure
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+	id = FRA_urbanize_countryside
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_all_roads_lead_to_paris }
+		relative_position_id = FRA_all_roads_lead_to_paris
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { FRA_limit_urbanization }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+	id = FRA_limit_urbanization
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 2
+		y = 1
+		prerequisite = { focus = FRA_all_roads_lead_to_paris }
+		relative_position_id = FRA_all_roads_lead_to_paris
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { FRA_urbanize_countryside }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+	id = FRA_subsidize_city_devolopment
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -2
+		y = 1
+		prerequisite = { focus = FRA_all_roads_lead_to_paris }
+		relative_position_id = FRA_all_roads_lead_to_paris
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+	id = FRA_start_rearnament
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -3
+		y = 1
+		prerequisite = { focus = FRA_new_industry_standards }
+		relative_position_id = FRA_new_industry_standards
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+	id = FRA_reorganize_military_aviation_industry
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_start_rearnament }
+		relative_position_id = FRA_start_rearnament
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+	id = FRA_nationalize_military_complexes
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_reorganize_military_aviation_industry }
+		relative_position_id = FRA_reorganize_military_aviation_industry
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+	id = FRA_expand_military_industry
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_start_rearnament }
+		relative_position_id = FRA_start_rearnament
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+	id = FRA_expand_naval_industry
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_expand_military_industry }
+		relative_position_id = FRA_expand_military_industry
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+	id = FRA_expand_state_refineries
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_expand_naval_industry }
+prerequisite = { focus = 	FRA_nationalize_military_complexes }
+		relative_position_id = FRA_expand_naval_industry
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+	id = FRA_expand_civilian_industry
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 6
+		y = 1
+		prerequisite = { focus = FRA_new_industry_standards }
+		relative_position_id = FRA_new_industry_standards
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+	id = FRA_build_dams
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_expand_civilian_industry }
+		relative_position_id = FRA_expand_civilian_industry
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+focus = {		
+	id = FRA_expand_mining_industry
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 2
+		prerequisite = { focus = FRA_expand_civilian_industry }
+		relative_position_id = FRA_expand_civilian_industry
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		}
+
 }
