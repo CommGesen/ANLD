@@ -437,3 +437,11 @@ TUR_minority_unrest4 = {
 	state_production_speed_buildings_factor = 0.1
 	local_building_slots_factor = 0.1
 }
+TUR_feudalism_dynamic_modifier = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_ARG_political_corruption_modifier
+	research_speed_factor = TUR_feudalism_research_speed_factor # $MODIFIER_RESEARCH_SPEED_FACTOR$
+	production_speed_buildings_factor = TUR_feudalism_production_speed_buildings_factor # $MODIFIER_PRODUCTION_SPEED_BUILDINGS_FACTOR$
+	production_factory_max_efficiency_factor = TUR_feudalism_production_factory_max_efficiency_factor # $MODIFIER_PRODUCTION_FACTORY_MAX_EFFICIENCY$
+}

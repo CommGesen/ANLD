@@ -13,6 +13,13 @@ set_research_slots = 3
 set_stability = 0.4
 set_war_support = 0.2
 
+add_dynamic_modifier = {
+	modifier = TUR_feudalism_dynamic_modifier
+}
+set_variable = { TUR_feudalism_research_speed_factor = -0.25 }
+set_variable = { TUR_feudalism_production_speed_buildings_factor = -0.25 }
+set_variable = { TUR_feudalism_production_factory_max_efficiency_factor = -0.1 }
+
 add_opinion_modifier = { target = FRA modifier = great_war_alliance_modifier }
 add_opinion_modifier = { target = USA modifier = great_war_friendship_modifier }
 add_opinion_modifier = { target = WGR modifier = great_war_friendship_modifier }
@@ -22,7 +29,14 @@ add_opinion_modifier = { target = HUN modifier = great_war_hostility_modifier }
 add_opinion_modifier = { target = SOV modifier = great_war_hostility_modifier }
 add_opinion_modifier = { target = SOV modifier = historic_rivalry_modifier }
 add_opinion_modifier = { target = PER modifier = historic_rivalry_modifier }
-
+set_variable = {
+	var = TUR_influence_sultanists
+	value = 60
+}
+set_variable = {
+	var = TUR_influence_republicans
+	value = 40
+}
 add_ideas = {
 	limited_conscription
 	TUR_debt8

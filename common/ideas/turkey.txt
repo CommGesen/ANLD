@@ -1,5 +1,15 @@
 ideas = {
 	country = {
+		TUR_angry_pashas = {
+			allowed = { always = no }
+			picture = SPR_class_war
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				political_power_cost = 0.05
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
 		TUR_modern_land_reforms = {
 			allowed = { always = no }
 			picture = generic_agrarian_society

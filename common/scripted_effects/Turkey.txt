@@ -555,3 +555,16 @@ self_destruct_ott={
 		transfer_state = 352
 	}
 }
+
+TUR_clamp_variables = {
+	clamp_variable = {
+		var = TUR_influence_sultanists
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = TUR_influence_republicans
+		min = 0
+		max = 100
+	}
+}

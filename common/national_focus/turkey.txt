@@ -1440,7 +1440,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_replace_feudalism_with_capitalism_campaign
-		icon = GFX_focus_generic_capitalist_census
+		icon = GFX_focus_TUR_Root_out_feudalism
 		cost = 6.00
 		x = -1
 		y = 2
@@ -1456,14 +1456,16 @@ focus_tree = {
 		}
 		relative_position_id = TUR_new_era_of_tanzim
 		completion_reward = {
-			
-			unlock_decision_category_tooltip = TUR_End_Feudalism
+			custom_effect_tooltip = TUR_Feudalism_end
+			hidden_effect = {
+				set_country_flag = TUR_end_feudalism
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = TUR_women_sufferage
-		icon = GFX_focus_TUR_womens_sufferage
+		icon = GFX_focus_generic_universal_suffrage
 		cost = 6.00
 		x = 1
 		y = 2
@@ -1487,7 +1489,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_seperate_state_and_religion
-		icon = GFX_focus_generic_force_atheism
+		icon = GFX_focus_TUR_Separate_state_and_religion
 		cost = 6.00
 		x = 0
 		y = 1
@@ -1585,7 +1587,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_general_elections
-		icon = GFX_hold_an_election
+		icon = GFX_focus_ARG_defense_and_democracy
 		cost = 6.00
 		x = 0
 		y = 3
@@ -1611,7 +1613,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_Qahtaniyah_victory
-		icon = GFX_hold_an_election
+		icon = GFX_focus_TUR_jamiyah_qahtaniyah
 		cost = 6.00
 		x = -3
 		y = 4
@@ -1650,7 +1652,18 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Qahtaniyah_victory
 		completion_reward = {
-			
+			custom_effect_tooltip = REPUBLICANS_INCREASE_3
+			hidden_effect = {
+				add_to_variable = {
+					var = TUR_influence_republicans
+					value = 3
+				}
+				add_to_variable = {
+					var = TUR_influence_sultanists
+					value = -3
+				}
+				KAZ_clamp_variables = yes
+			}
 			add_political_power = 100
 			if = {
 				limit = { 
@@ -1781,7 +1794,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_Federal_Republic
-		icon = GFX_focus_ITA_the_italian_republic
+		icon = GFX_focus_CHL_union_of_hispanic_republics
 		cost = 6.00
 		x = -1
 		y = 1
@@ -1812,7 +1825,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_Abolish_Nobility
-		icon = GFX_focus_spr_class_war
+		icon = GFX_focus_ARG_anti_corruption_policies
 		cost = 6.00
 		x = -1
 		y = 2
@@ -1851,7 +1864,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_Arab_Turk_Nobility
-		icon = GFX_focus_TUR_pashatic_nobility
+		icon = GFX_focus_CHL_invite_french_aristocracy
 		cost = 6.00
 		x = 1
 		y = 2
@@ -1929,7 +1942,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_equal_rights
-		icon = GFX_focus_race_relations
+		icon = GFX_focus_generic_support_the_left_right
 		cost = 6.00
 		x = 1
 		y = 1
@@ -2078,7 +2091,7 @@ focus_tree = {
 
 	focus = {
 		id = TUR_internal_investments
-		icon = GFX_focus_generic_the_giant_wakes
+		icon = GFX_focus_generic_industrialists
 		cost = 6.00
 		x = 4
 		y = 3
@@ -2352,7 +2365,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_hurriyet_ve_itlaf_victory
-		icon = GFX_hold_an_election
+		icon = GFX_focus_TUR_Hurriet_ve_itilaf
 		cost = 6.00
 		x = 3
 		y = 4
@@ -2683,7 +2696,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_allow_women_polticians
-		icon = GFX_focus_SOV_womens_fascist_movement
+		icon = GFX_focus_TUR_womens_sufferage
 		cost = 6.00
 		x = 0
 		y = 4

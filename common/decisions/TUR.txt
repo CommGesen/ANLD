@@ -387,6 +387,100 @@ TUR_Act_Fast = {
 }
 
 TUR_Vilayets_category={
+	TUR_abolish_state_privileges = {
+		icon = GFX_decision_gre_investment_decisions
+		
+		available = {
+			has_country_flag = TUR_end_feudalism
+		}
+
+		ai_will_do = { factor = 100 }
+
+		fire_only_once = yes
+
+		custom_cost_text = PP_25_CP_100
+		custom_cost_trigger = {
+			has_political_power > 24.99
+			command_power > 99
+		}
+
+		days_remove = 100
+
+		complete_effect = {
+			add_ideas = TUR_angry_pashas
+		}
+
+		remove_effect = {
+			remove_ideas = TUR_angry_pashas
+			add_to_variable = { TUR_feudalism_production_factory_max_efficiency_factor = 0.05 }
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	TUR_imprison_landlords = {
+		icon = GFX_decision_generic_arrest
+		available = {
+			has_country_flag = TUR_end_feudalism
+		}
+
+		fire_only_once = yes
+		custom_cost_text = PP_25_CP_100
+		custom_cost_trigger = {
+			has_political_power > 24.99
+			command_power > 99
+		}
+		days_remove = 100
+		complete_effect = {
+			add_stability = 0.05
+			add_political_power = 100
+			add_manpower = -500
+			set_country_flag = TUR_powerful_landlords_imprisoned
+			add_to_variable = { TUR_feudalism_production_speed_buildings_factor = 0.05 }
+		}
+	}
+	TUR_invest_in_peasent_education = {
+		icon = GFX_decision_eng_trade_unions_support
+		available = {
+			has_country_flag = TUR_end_feudalism
+		}
+
+		custom_cost_text = PP_25_CP_100
+		custom_cost_trigger = {
+			has_political_power > 24.99
+			command_power > 99
+		}
+		days_remove = 150
+		days_re_enable = 50
+		complete_effect = {
+			add_to_variable = { TUR_feudalism_research_speed_factor = 0.05 }
+		}
+	}
+	TUR_regulate_factories = {
+		icon = GFX_decision_eng_trade_unions_demand
+		available = {
+			has_country_flag = TUR_end_feudalism
+		}
+
+		cost = 150
+		days_remove = 100
+		days_re_enable = 50
+		complete_effect = {
+			add_to_variable = { TUR_feudalism_production_factory_max_efficiency_factor =  0.05 }
+		}
+	}
+	TUR_labour_checks = {
+		icon = GFX_decision_CHL_mapuche_reorganize_the_canadian_government
+		available = {
+			has_country_flag = TUR_end_feudalism
+		}
+
+		cost = 50
+		days_remove = 200
+		days_re_enable = 50
+		complete_effect = {
+			add_to_variable = { TUR_feudalism_production_speed_buildings_factor =   0.05 }
+		}
+	}
 	TUR_Develop_Baghdad = {
 		icon = GFX_decision_gre_paying_ifc_debt
 
