@@ -1,25 +1,33 @@
 state={
-	id=937
-	name="STATE_937"
+	id=971
+	name="STATE_971"
 	manpower = 74095
 	
-	state_category = rural
+	state_category = town
+	
+	resources={
+		oil=8
+	}
 
 
 	history={
 		owner = TUR
 		set_state_flag = kurd_minor
 		buildings = {
+			industrial_complex = 1
 			infrastructure = 2
 		}
 		victory_points = {
-			1549 1
+			10793 10
+		}
+		victory_points = {
+			3916 5
 		}
 		add_core_of = TUR
 		add_core_of = KUR
 	}
 	
 	provinces={
-		1549 1578 6883
+		10793 6826 5014 3916 10811
 	}
 }

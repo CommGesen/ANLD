@@ -1,21 +1,20 @@
 
 state={
-	id=939
-	name="STATE_939"
-	
+	id=979
+	name="STATE_979"
 	impassable = yes
-
 	history={
-		owner = LBA
+		owner = SAU
 		buildings = {
 			infrastructure = 0
 
 		}
-		add_core_of = EGY
+		add_claim_by = SAU
+		add_core_of = OMA
 	}
 
 	provinces={
-		10869 10907 12733 12764 12816 
+		2059 2018 5049
 	}
 	manpower=19539
 	buildings_max_level_factor=1.000

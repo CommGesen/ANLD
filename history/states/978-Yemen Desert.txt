@@ -1,21 +1,20 @@
 
 state={
-	id=942
-	name="STATE_942"
-
+	id=978
+	name="STATE_978"
+	impassable = yes
 	history={
-		owner = ANZ
+		owner = SAU
 		buildings = {
 			infrastructure = 0
 
 		}
 		add_claim_by = SAU
-		add_core_of = ANZ
-
+		add_core_of = YEM
 	}
 
 	provinces={
-		1631 4440 4562 
+		4976 12894
 	}
 	manpower=19539
 	buildings_max_level_factor=1.000

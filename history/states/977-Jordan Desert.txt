@@ -1,22 +1,24 @@
 
 state={
-	id=945
-	name="STATE_945"
+	id=977
+	name="STATE_977"
+
 	history={
 		owner = ANZ
 		buildings = {
 			infrastructure = 0
 
 		}
+		add_claim_by = SAU
 		add_core_of = ANZ
-		add_core_of = SAU
+
 	}
 
 	provinces={
-		12749 5058
+		1631 4440 4562 
 	}
 	manpower=19539
 	buildings_max_level_factor=1.000
-	state_category= pastoral
+	state_category=wasteland
 	local_supplies=0.000
 }
