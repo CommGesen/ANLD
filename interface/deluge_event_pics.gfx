@@ -227,6 +227,18 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/ottoman_police.dds"
 	}
 	spriteType = {
+		name = "GFX_ottoman_capital"
+		texturefile = "gfx/event_pictures/ottoman_capital.dds"
+	}
+	spriteType = {
+		name = "GFX_ottoman_king"
+		texturefile = "gfx/event_pictures/ottoman_king.dds"
+	}
+	spriteType = {
+		name = "GFX_ottoman_election"
+		texturefile = "gfx/event_pictures/ottoman_election.dds"
+	}
+	spriteType = {
 		name = "GFX_young_turks"
 		texturefile = "gfx/event_pictures/young_turks.dds"
 	}

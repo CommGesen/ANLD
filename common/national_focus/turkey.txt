@@ -1761,7 +1761,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_Elect_a_king
-		icon = GFX_focus_generic_regency_council
+		icon = GFX_focus_Elect_king
 		cost = 6.00
 		x = 1
 		y = 1
@@ -1917,7 +1917,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_Arabo_Ottoman_Empire
-		icon = GFX_focus_generic_monarchy_2
+		icon = GFX_focus_Arabo_Ottoman_sultanate
 		cost = 6.00
 		x = -4
 		y = 4
@@ -1969,7 +1969,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_true_fight_against_masonic_lodges
-		icon = GFX_focus_generic_ban_the_freemasonry
+		icon = GFX_focus_Root_out_freemasonry
 		cost = 6.00
 		x = -1
 		y = 1
@@ -2284,7 +2284,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_promote_arab_generals
-		icon = GFX_focus_DEN_generalkommandoen
+		icon = GFX_focus_Promote_arabs_high_command
 		cost = 6.00
 		x = -4
 		y = 2
@@ -2512,7 +2512,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_fire_royals_from_political_positions
-		icon = GFX_focus_ICE_break_with_the_crown
+		icon = GFX_focus_Expel_royals_from_political_positions
 		cost = 6.00
 		x = -2
 		y = 2
