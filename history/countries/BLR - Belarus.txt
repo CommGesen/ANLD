@@ -1,11 +1,13 @@
 ﻿capital = 206
 
+oob = "BLR_1936"
+
+set_cosmetic_tag = BLR_council
+
 set_research_slots = 3
 set_stability = 0.4
 set_war_support = 0.2
 set_convoys = 1
-
-oob = "BLR_1936"
 
 add_opinion_modifier = { target = BAL modifier = great_war_alliance_modifier }
 add_opinion_modifier = { target = UKR modifier = great_war_alliance_modifier }

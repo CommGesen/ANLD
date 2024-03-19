@@ -1,10 +1,12 @@
 ﻿capital = 231
 
+oob = "CAU_1936"
+
+set_cosmetic_tag = CAU_council
+
 set_research_slots = 3
 set_stability = 0.4
 set_war_support = 0.2
-
-oob = "CAU_1936"
 
 add_opinion_modifier = { target = BLR modifier = great_war_alliance_modifier }
 add_opinion_modifier = { target = UKR modifier = great_war_alliance_modifier }
