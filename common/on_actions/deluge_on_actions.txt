@@ -1,6 +1,264 @@
 on_actions = {
 	on_state_control_changed = {##renaming of provinces and cities
 		effect = {
+			
+			
+			
+			if = {##DENMARK to GERMANY
+			limit = {
+				OR = {
+					AUS = {
+						has_full_control_of_state = 58
+					}
+					GER = {
+						has_full_control_of_state = 58
+					}
+					WGR = {
+						has_full_control_of_state = 58
+					}
+					DDR = {
+						has_full_control_of_state = 58
+					}
+					DEN = {
+						has_full_control_of_state = 58
+					}
+				}
+			
+				58 = { set_state_name = "Holstein" }
+				set_province_name = { id = 6389 name = "Kiel" }
+				set_province_name = { id = 11331 name = "Lübeck" }
+			}
+			if = { #to GERMANY
+			limit = {
+				OR = {
+					AUS = {
+						has_full_control_of_state = 61
+					}
+					GER = {
+						has_full_control_of_state = 61
+					}
+					WGR = {
+						has_full_control_of_state = 61
+					}
+					DDR = {
+						has_full_control_of_state = 61
+					}
+					DEN = {
+						has_full_control_of_state = 61
+					}
+				}
+			}
+				61 = { set_state_name = "Mecklenburg" }
+				set_province_name = { id = 11305 name = "Schwerin" }
+				set_province_name = { id = 321 name = "Rostock" }
+			
+		}
+		if = { #to GERMANY
+		limit = {
+			OR = {
+				AUS = {
+					has_full_control_of_state = 64
+				}
+				GER = {
+					has_full_control_of_state = 64
+				}
+				WGR = {
+					has_full_control_of_state = 64
+				}
+				DDR = {
+					has_full_control_of_state = 64
+				}
+				DEN = {
+					has_full_control_of_state = 64
+				}
+			}
+		}
+			set_province_name = { id = 6521 name = "Berlin" }
+			set_province_name = { id = 3522 name = "Magdeburg" }
+			set_province_name = { id = 375 name = "Spandau" }
+			set_province_name = { id = 3499 name = "Potsdam" }
+			64 = { set_state_name = "Brandenburg" }
+		
+	}
+	if = { #to GERMANY
+		limit = {
+			OR = {
+				AUS = {
+					has_full_control_of_state = 68
+				}
+				GER = {
+					has_full_control_of_state = 68
+				}
+				WGR = {
+					has_full_control_of_state = 68
+				}
+				DDR = {
+					has_full_control_of_state = 68
+				}
+				DEN = {
+					has_full_control_of_state = 68
+				}
+			}
+		}
+			set_province_name = { id = 3473 name = "Küstrin" }
+			set_province_name = { id = 11415 name = "Cottbus" }
+			68 = { set_state_name = "Neumark" }
+		
+	}	
+	if = { #to GERMANY
+	limit = {
+		OR = {
+			AUS = {
+				has_full_control_of_state = 65
+			}
+			GER = {
+				has_full_control_of_state = 65
+			}
+			WGR = {
+				has_full_control_of_state = 65
+			}
+			DDR = {
+				has_full_control_of_state = 65
+			}
+			DEN = {
+				has_full_control_of_state = 65
+			}
+		}
+	}
+		set_province_name = { id = 514 name = "Dresden" }
+		set_province_name = { id = 3535 name = "Leipzig" }
+		set_province_name = { id = 9471 name = "Chemnitz" }
+		set_province_name = { id = 9535 name = "Görlitz" }
+		65 = { set_state_name = "Sachsen" }
+	
+}
+if = { # POM to GERMANY
+	limit = {
+		OR = {
+			AUS = {
+				has_full_control_of_state = 62
+			}
+			GER = {
+				has_full_control_of_state = 62
+			}
+			WGR = {
+				has_full_control_of_state = 62
+			}
+			DDR = {
+				has_full_control_of_state = 62
+			}
+			DEN = {
+				has_full_control_of_state = 62
+			}
+		}
+	}
+		set_province_name = { id = 6282 name = "Stettin" }
+		set_province_name = { id = 9388 name = "Kap Arkona" }
+		62 = { set_state_name = "Pommern" }
+	
+}
+if = { # POM to GERMANY
+	limit = {
+		OR = {
+			AUS = {
+				has_full_control_of_state = 63
+			}
+			GER = {
+				has_full_control_of_state = 63
+			}
+			WGR = {
+				has_full_control_of_state = 63
+			}
+			DDR = {
+				has_full_control_of_state = 63
+			}
+			DEN = {
+				has_full_control_of_state = 63
+			}
+		}
+	}
+		set_province_name = { id = 9334 name = "Kolberg" }
+		set_province_name = { id = 9361 name = "Köslin" }
+		63 = { set_state_name = "Hinterpommern" }
+	
+}
+if = { # POM to GERMANY
+	limit = {
+		OR = {
+			AUS = {
+				has_full_control_of_state = 85
+			}
+			GER = {
+				has_full_control_of_state = 85
+			}
+			WGR = {
+				has_full_control_of_state = 85
+			}
+			DDR = {
+				has_full_control_of_state = 85
+			}
+			DEN = {
+				has_full_control_of_state = 85
+			}
+		}
+	}
+		set_province_name = { id = 362 name = "Danzig" }
+		set_province_name = { id = 9263 name = "Gdingen" }
+		set_province_name = { id = 3295 name = "Thorn" }
+		85 = { set_state_name = "Königlich-Preußen" }
+	
+}
+if = { # to POM 
+	limit = {
+		POM = {
+			has_full_control_of_state = 62
+		}
+	}
+		set_province_name = { id = 6282 name = "Szczecëno" }
+		set_province_name = { id = 9388 name = "Strzałowo" }
+		62 = { set_state_name = "Zôpadnô Pòmòrskô" }
+	
+}
+if = { # to POM 
+	limit = {
+		POM = {
+			has_full_control_of_state = 63
+		}
+	}
+		set_province_name = { id = 9334 name = "Kòlbrzég" }
+		set_province_name = { id = 9361 name = "Kòszalëno" }
+		63 = { set_state_name = "Pòmòrskô" }
+	
+}
+if = { # to POM 
+	limit = {
+		POM = {
+				has_full_control_of_state = 85
+			}
+		}
+
+		set_province_name = { id = 362 name = "Gduńsk" }
+		set_province_name = { id = 9263 name = "Gdiniô" }
+		set_province_name = { id = 3295 name = "Torń" }
+		85 = { set_state_name = "Gduńsczim Pòmòrzã" }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			if = {##CZECHIA to POL
 				limit = {
 					POL = {
