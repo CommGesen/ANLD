@@ -880,6 +880,32 @@ if = {
 	}
 }
 
+set_variable = {french_depression_consumer_goods_factor = 0.6 }
+set_variable = {french_depression_production_speed_buildings_factor = -0.6 }
+set_variable = {french_depression_industrial_capacity_dockyard = -0.3 }
+set_variable = {french_depression_industrial_capacity_factory = -0.3 }
+set_variable = {french_depression_production_factory_efficiency_gain_factor = -0.2 }
+set_variable = {french_depression_production_factory_max_efficiency_factor = -0.15 }
+set_variable = {french_depression_production_lack_of_resource_penalty_factor = 0.2 }
+set_variable = {french_depression_local_resources_factor = -0.2 }
+set_variable = {french_depression_global_building_slots_factor = -0.2 }
+set_variable = {french_depression_stability_factor = -0.15 }
+set_variable = {french_depression_war_support_factor = -0.05 }
+set_variable = {french_depression_political_power_factor = -0.25 }
+add_dynamic_modifier = { modifier = FRA_modifier_economic_depression }
+
+set_variable = {french_bad_army_naval_doctrine_cost_factor = 0.9 }
+set_variable = {french_bad_army_land_doctrine_cost_factor = 0.9 }
+set_variable = {french_bad_army_air_doctrine_cost_factor = 0.9 }
+set_variable = {french_bad_army_experience_gain_army_factor = -0.75 }
+set_variable = {french_bad_army_experience_gain_navy_factor = -0.75 }
+set_variable = {french_bad_army_experience_gain_air_factor = -0.75 }
+set_variable = {french_bad_army_command_power_gain_mult = -0.8 }
+set_variable = {french_bad_army_army_defence_factor = -0.2 }
+set_variable = {french_bad_army_army_attack_factor = -0.2 }
+set_variable = {french_bad_army_army_org_factor = -0.2 }
+add_dynamic_modifier = { modifier = FRA_modifier_obsolete_army }
+
 create_faction = Continental_System
 add_to_faction = FRA
 add_to_faction = BEL
@@ -888,11 +914,16 @@ add_to_faction = BHU
 add_to_faction = VIN
 add_to_faction = SPR
 add_ideas = {
-	FRA_le_deluge
-	FRA_the_financial_collapse
+	FRA_spirit_le_deluge
+	FRA_spirit_political_instability
+	FRA_spirit_decadent_society
 	limited_conscription
-	deluge_great_war_horrors_idea
+	FRA_spirit_horrors_of_the_great_war
 	robber_barons
+}
+add_timed_idea = {
+	idea = FRA_spirit_senussi_rebellion
+	days = 250
 }
 
 recruit_character = FRA_deluge_napoleon_v
@@ -904,6 +935,7 @@ recruit_character = FRA_deluge_felix_gouin
 recruit_character = FRA_deluge_pierre_laval
 recruit_character = FRA_deluge_paul_de_cassagnac
 recruit_character = FRA_deluge_francois_coty
+recruit_character = FRA_deluge_victor_henri_schweisguth
 
 recruit_character = FRA_deluge_ernest_petit
 recruit_character = FRA_deluge_marceau_pivert
@@ -914,6 +946,7 @@ recruit_character = FRA_deluge_jean_de_lattre_de_tassigny
 recruit_character = FRA_deluge_maurice_gamelin
 recruit_character = FRA_deluge_alphonse_juin
 recruit_character = FRA_deluge_alphonse_georges
+recruit_character = FRA_deluge_paul_legentilhomme
 
 recruit_character = FRA_deluge_antoine_marie_benoit_besson
 recruit_character = FRA_deluge_jacques_duclos
@@ -922,49 +955,64 @@ recruit_character = FRA_deluge_charles_de_gaulle
 recruit_character = FRA_deluge_philippe_leclerc
 recruit_character = FRA_deluge_henri_giraud
 recruit_character = FRA_deluge_pierre_etienne_flandin
+recruit_character = FRA_deluge_henri_frenay
+recruit_character = FRA_deluge_marcel_descour
+recruit_character = FRA_deluge_henri_meric_de_bellefon
 
 recruit_character = FRA_deluge_charles_huntziger
-recruit_character = FRA_jeanmarie_charles_abrial
-recruit_character = FRA_jeanpierre_esteva
-recruit_character = FRA_jean_de_laborde
-recruit_character = FRA_charles_maurras
+recruit_character = FRA_deluge_jean_pierre_esteva
+recruit_character = FRA_deluge_jean_de_laborde
+recruit_character = FRA_deluge_charles_nogues
 recruit_character = FRA_deluge_edouard_daladier
-recruit_character = FRA_jean_marie_bergeret
-recruit_character = FRA_louis_kahn
+recruit_character = FRA_jean_marie_bergeret ##
+recruit_character = FRA_deluge_louis_kahn
+recruit_character = FRA_deluge_adolphe_guillaumat
+recruit_character = FRA_deluge_georges_catroux
+recruit_character = FRA_deluge_andre_boris
 
-recruit_character = FRA_rene_emile_godfroy
+recruit_character = FRA_deluge_rene_emile_godfroy
 recruit_character = FRA_deluge_gaston_henri_billotte
 recruit_character = FRA_deluge_henry_freydenberg
 recruit_character = FRA_deluge_rene_olry
-recruit_character = FRA_francois_darlan
-recruit_character = FRA_victor_denain
+recruit_character = FRA_deluge_francois_darlan
+recruit_character = FRA_victor_denain ##
+recruit_character = FRA_deluge_louis_bouisson
+recruit_character = FRA_deluge_jean_edouard_verneau
+recruit_character = FRA_deluge_charles_delestraint
+recruit_character = FRA_deluge_aime_doumenc
 
-recruit_character = FRA_jean_decoux
-recruit_character = FRA_frederic_irene_joliot_curie
+recruit_character = FRA_deluge_jean_decoux
+recruit_character = FRA_frederic_irene_joliot_curie ##
 #recruit_character = FRA_henri_marie_auguste_bineau
 #recruit_character = FRA_pierre_alombert_goget
-recruit_character = FRA_marcel_gensoul
-recruit_character = FRA_jean_marie_abrial
-recruit_character = FRA_joseph_vuillemin
-recruit_character = FRA_robert_odic
-recruit_character = FRA_philippe_fequant
+recruit_character = FRA_deluge_marcel_gensoul
+recruit_character = FRA_deluge_jean_marie_abrial
+recruit_character = FRA_joseph_vuillemin #
+recruit_character = FRA_robert_odic #
+recruit_character = FRA_philippe_fequant #
+recruit_character = FRA_deluge_andre_corap
 
-recruit_character = FRA_martial_valin
-recruit_character = FRA_jean_francois_jannekeyn
-recruit_character = FRA_emile_muselier
-recruit_character = FRA_alfred_heurtaux
-recruit_character = FRA_rene_prioux
-recruit_character = FRA_marcel_bucard
-recruit_character = FRA_rene_massigli
-recruit_character = FRA_georges_bonnet
+recruit_character = FRA_martial_valin #
+recruit_character = FRA_jean_francois_jannekeyn #
+recruit_character = FRA_deluge_emile_muselier
+recruit_character = FRA_alfred_heurtaux #
+recruit_character = FRA_deluge_rene_prioux
+recruit_character = FRA_marcel_bucard #
+recruit_character = FRA_rene_massigli #
+recruit_character = FRA_georges_bonnet #
+recruit_character = FRA_deluge_jean_flavigny
+recruit_character = FRA_deluge_charles_marie_conde
 
-recruit_character = FRA_philippe_henriot
-recruit_character = FRA_pierre_pucheu
-recruit_character = FRA_gaston_henry_haye
-recruit_character = FRA_paul_baudouin
-recruit_character = FRA_vincent_auriol
-recruit_character = FRA_roger_salengro
-recruit_character = FRA_zivony_peshkov
+recruit_character = FRA_philippe_henriot #
+recruit_character = FRA_pierre_pucheu #
+recruit_character = FRA_gaston_henry_haye #
+recruit_character = FRA_paul_baudouin #
+recruit_character = FRA_deluge_maurice_le_luc
+recruit_character = FRA_roger_salengro #
+recruit_character = FRA_zivony_peshkov #
+recruit_character = FRA_deluge_jules_buhrer
+recruit_character = FRA_deluge_louis_colson
+recruit_character = FRA_deluge_henri_dentz
 
 recruit_character = FRA_charles_tillon
 recruit_character = FRA_deluge_paul_reynaud
@@ -976,6 +1024,43 @@ recruit_character = FRA_deluge_henri_rol_tanguy
 recruit_character = FRA_deluge_maurice_delaunay
 recruit_character = FRA_deluge_georges_valois
 
-#recruit_character = 
+recruit_character = FRA_deluge_maurice_grisot
+recruit_character = FRA_deluge_jean_touzet_du_vigier
+recruit_character = FRA_deluge_diego_brosset
+recruit_character = FRA_deluge_aubert_frere
+recruit_character = FRA_deluge_clement_blanc
+recruit_character = FRA_deluge_joseph_putz
+recruit_character = FRA_deluge_raoul_magrin_vernerey
+recruit_character = FRA_deluge_henri_adeline
+recruit_character = FRA_deluge_georges_revers
+recruit_character = FRA_deluge_pierre_hering
 
+recruit_character = FRA_deluge_robert_touchon
+recruit_character = FRA_deluge_andre_gaston_pretelat
+recruit_character = FRA_deluge_victor_bourret
+recruit_character = FRA_deluge_marcel_garchery
+recruit_character = FRA_deluge_robert_altmayer
+recruit_character = FRA_deluge_edouard_requin
+recruit_character = FRA_deluge_jean_bouffet
+recruit_character = FRA_deluge_emile_laure
+recruit_character = FRA_deluge_gabriel_bougrain
+recruit_character = FRA_deluge_paul_vauthier
+
+recruit_character = FRA_deluge_edgar_de_larminat
+recruit_character = FRA_deluge_joseph_de_goislard_de_monsabert
+recruit_character = FRA_deluge_henri_nomy
+recruit_character = FRA_deluge_paul_ortoli
+recruit_character = FRA_deluge_raoul_castex
+recruit_character = FRA_deluge_emilie_duplat
+recruit_character = FRA_deluge_andre_lemonnier
+recruit_character = FRA_deluge_georges_thierry_d_drgenlieu
+recruit_character = FRA_deluge_emmanuel_ollive
+recruit_character = FRA_deluge_georges_robert
+
+recruit_character = FRA_deluge_philippe_auboyneau
+recruit_character = FRA_deluge_gabriel_auphan
+recruit_character = FRA_deluge_georges_durand_viel
+recruit_character = FRA_deluge_emile_marie_lacroix
+recruit_character = FRA_deluge_henri_blehaut
+recruit_character = FRA_deluge_lucien_lacaze
 

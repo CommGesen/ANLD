@@ -75,6 +75,7 @@ focus_tree = {
 				idea = FRA_spirit_towards_republic
 				days = 450
 			}
+			remove_ideas = FRA_spirit_le_deluge
 		}
 		ai_will_do = {
 			factor = 25
@@ -1714,7 +1715,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_women_emancipation
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_womens_rights
 		x = 2
 		y = 1
 		prerequisite = { focus = FRA_democratic_republican_alliance focus = FRA_radical_party }
@@ -1858,7 +1859,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_limit_bourgeoisie
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_limit_bourgeoisie
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_state_serves_the_people }
@@ -1894,7 +1895,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_limit_corporations
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_chains_on_building
 		x = 2
 		y = 1
 		prerequisite = { focus = FRA_radical_party }
@@ -1930,7 +1931,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_labour_reforms
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_hammer_in_hand
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_limit_corporations }
@@ -1966,7 +1967,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_abolish_old_norms
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_scroll
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_labour_reforms }
@@ -2588,7 +2589,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_may_day_results }
 		relative_position_id = FRA_may_day_results
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { focus = FRA_towards_republic }
 		allow_branch = {
 			
@@ -2604,7 +2605,12 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_stability = 0.05
+			add_political_power = 50
 		}
 		ai_will_do = {
 			factor = 25
@@ -2908,7 +2914,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_old_new_ways
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_old_new_ways
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_the_guarantor }
@@ -3016,7 +3022,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_expand_civil_rights
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_expand_civil_rights
 		x = -2
 		y = 1
 		prerequisite = { focus = FRA_old_new_ways }
@@ -3052,7 +3058,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_protect_the_citizens
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_protect_the_citizens
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_expand_civil_rights }
@@ -3088,7 +3094,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_modernize_napoleonic_code
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_modernize_napoleonic_code
 		x = 3
 		y = 1
 		prerequisite = { focus = FRA_old_new_ways focus = FRA_absolutist_grip }
@@ -3124,7 +3130,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_womens_rights
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_womens_rights
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_modernize_napoleonic_code }
@@ -3160,7 +3166,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_continue_patriarchy
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_continue_patriarchy
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_modernize_napoleonic_code }
@@ -3196,7 +3202,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_abolish_concordat_of_1801
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_abolish_concordat_of_1801
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_womens_rights focus = FRA_continue_patriarchy }
@@ -3593,7 +3599,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_new_regime
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_new_regime
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_deal_with_minorities focus = FRA_abolish_concordat_of_1801 focus = FRA_improve_relations_with_church focus = FRA_support_rural_life }
@@ -4061,9 +4067,9 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 	}
-focus = {
+	focus = {
 		id = FRA_devaluate_the_franc
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_fra_devalue_the_franc
 		x = 45
 		y = 0
 		prerequisite = { focus =  }
@@ -4097,7 +4103,7 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 	}
-focus = {
+	focus = {
 		id = FRA_decrease_export
 		icon = GFX_focus_SOV_ivan_plays_baseball
 		x = 0
@@ -4133,9 +4139,9 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 	}
-focus = {
+	focus = {
 		id = FRA_keep_with_gold
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_usa_reestablish_the_gold_standard
 		x = -2
 		y = 1
 		prerequisite = { focus = FRA_devaluate_the_franc }
@@ -4169,9 +4175,9 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 	}
-focus = {
+	focus = {
 		id = FRA_abandon_gold_standard
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_hol_abandon_the_gold_standard
 		x = -4
 		y = 1
 		prerequisite = { focus = FRA_devaluate_the_franc }
@@ -4205,9 +4211,9 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 	}
-focus = {
+	focus = {
 		id = FRA_support_small_and_medium_business
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		x = 4
 		y = 1
 		prerequisite = { focus = FRA_devaluate_the_franc }
@@ -4313,9 +4319,9 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 	}
-focus = {
+	focus = {
 		id = FRA_matignon_agreements
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_peaceful_offering
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_cut_jobs }
@@ -4387,7 +4393,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_increase_social_welfare
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_welfare_state
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_keep_with_gold focus = FRA_abandon_gold_standard  }
@@ -4421,9 +4427,9 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 	}
-focus = {
+	focus = {
 		id = FRA_manpower_from_colonies
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_population_growth
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_keep_with_gold focus = FRA_abandon_gold_standard }
@@ -4459,7 +4465,7 @@ focus = {
 	}
 focus = {
 		id = FRA_reform_administration
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_improve_the_administration
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_manpower_from_colonies focus = FRA_increase_social_welfare }
@@ -4601,7 +4607,7 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 	}
-focus = {
+	focus = {
 		id = FRA_budget_deficit_law
 		icon = GFX_focus_SOV_ivan_plays_baseball
 		x = 1
@@ -4639,10 +4645,10 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 	}
-focus = {
+	focus = {
 		id = FRA_third_way
 		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = -4
+		x = -9
 		y = 1
 		prerequisite = { focus = FRA_budget_deficit_law  }
 		relative_position_id = FRA_budget_deficit_law
@@ -4678,7 +4684,7 @@ focus = {
 	focus = {		
 		id = FRA_centrally_planned_economy
 		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = 0
+		x = -5
 		y = 1
 		prerequisite = { focus = FRA_budget_deficit_law  }
 		relative_position_id = FRA_budget_deficit_law
@@ -4711,10 +4717,10 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		}
-focus = {		
+	focus = {		
 		id = FRA_laiszes_faire
 		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = 4
+		x = -1
 		y = 1
 		prerequisite = { focus = FRA_budget_deficit_law  }
 		relative_position_id = FRA_budget_deficit_law
@@ -4747,7 +4753,7 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		}
-focus = {		
+	focus = {		
 		id = FRA_militarize_economy
 		icon = GFX_focus_SOV_ivan_plays_baseball
 		x = 0
@@ -4855,7 +4861,7 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		}
-focus = {		
+	focus = {		
 		id = FRA_autarky
 		icon = GFX_focus_SOV_ivan_plays_baseball
 		x = -1
@@ -4890,8 +4896,8 @@ focus = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = yes
-		}
-focus = {		
+	}
+	focus = {		
 		id = FRA_puppet_trade_unions
 		icon = GFX_focus_SOV_ivan_plays_baseball
 		x = 1
@@ -4927,7 +4933,7 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		}
-focus = {		
+	focus = {		
 		id = FRA_centralize_economy
 		icon = GFX_focus_SOV_ivan_plays_baseball
 		x = 3
@@ -5035,7 +5041,7 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		}
-focus = {		
+	focus = {		
 		id = FRA_communal_property
 		icon = GFX_focus_SOV_ivan_plays_baseball
 		x = -1
@@ -5070,8 +5076,44 @@ focus = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = yes
+	}
+	focus = {		
+		id = FRA_provide_job_to_everyone
+		icon = GFX_focus_generic_full_employment
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_communal_property }
+		relative_position_id = FRA_communal_property
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { }
+		allow_branch = {
+			
 		}
-focus = {		
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {		
 		id = FRA_free_competition
 		icon = GFX_focus_SOV_ivan_plays_baseball
 		x = -1
@@ -5143,9 +5185,9 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		}
-focus = {		
+	focus = {		
 		id = FRA_faciliating_trade
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_goal_generic_trade
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_promote_consumption focus = FRA_free_competition  }
@@ -5178,10 +5220,10 @@ focus = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = yes
-		}
-focus = {		
+	}
+	focus = {		
 		id = FRA_open_markets
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_goal_generic_positive_trade_relations
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_faciliating_trade }
@@ -5215,8 +5257,8 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		}
-focus = {		
-	id = FRA_promote_investments_in_the_stockmarket
+	focus = {		
+		id = FRA_promote_investments_in_the_stockmarket
 		icon = GFX_focus_SOV_ivan_plays_baseball
 		x = -1
 		y = 1
@@ -5251,10 +5293,10 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		}
-focus = {		
-	id = FRA_new_industry_standards
-		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = 12
+	focus = {		
+		id = FRA_new_industry_standards
+		icon = GFX_focus_generic_industry_3
+		x = 7
 		y = 1
 		prerequisite = { focus = FRA_budget_deficit_law }
 		relative_position_id = FRA_budget_deficit_law
@@ -5287,9 +5329,9 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		}
-focus = {		
-	id = FRA_transport_modernization
-		icon = GFX_focus_SOV_ivan_plays_baseball
+	focus = {		
+		id = FRA_transport_modernization
+		icon = GFX_focus_generic_railroad
 		x = 2
 		y = 1
 		prerequisite = { focus = FRA_new_industry_standards }
@@ -5322,9 +5364,9 @@ focus = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = yes
-		}
-focus = {		
-	id = FRA_support_air_france
+	}
+	focus = {		
+		id = FRA_support_air_france
 		icon = GFX_focus_SOV_ivan_plays_baseball
 		x = 2
 		y = 1
@@ -5576,9 +5618,9 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		}
-focus = {		
-	id = FRA_start_rearnament
-		icon = GFX_focus_SOV_ivan_plays_baseball
+	focus = {		
+		id = FRA_start_rearnament
+		icon = GFX_focus_generic_license_production
 		x = -3
 		y = 1
 		prerequisite = { focus = FRA_new_industry_standards }
@@ -5611,10 +5653,10 @@ focus = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = yes
-		}
-focus = {		
-	id = FRA_reorganize_military_aviation_industry
-		icon = GFX_focus_SOV_ivan_plays_baseball
+	}
+	focus = {		
+		id = FRA_reorganize_military_aviation_industry
+		icon = GFX_focus_generic_aircraft_production
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_start_rearnament }
@@ -5648,9 +5690,9 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		}
-focus = {		
-	id = FRA_nationalize_military_complexes
-		icon = GFX_focus_SOV_ivan_plays_baseball
+	focus = {		
+		id = FRA_nationalize_military_complexes
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_reorganize_military_aviation_industry }
@@ -5684,9 +5726,9 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		}
-focus = {		
-	id = FRA_expand_military_industry
-		icon = GFX_focus_SOV_ivan_plays_baseball
+	focus = {		
+		id = FRA_expand_military_industry
+		icon = GFX_focus_generic_reorient_production
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_start_rearnament }
@@ -5720,9 +5762,9 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		}
-focus = {		
-	id = FRA_expand_naval_industry
-		icon = GFX_focus_SOV_ivan_plays_baseball
+	focus = {		
+		id = FRA_expand_naval_industry
+		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_expand_military_industry }
@@ -5756,13 +5798,13 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		}
-focus = {		
-	id = FRA_expand_state_refineries
+	focus = {		
+		id = FRA_expand_state_refineries
 		icon = GFX_focus_SOV_ivan_plays_baseball
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_expand_naval_industry }
-prerequisite = { focus = 	FRA_nationalize_military_complexes }
+		prerequisite = { focus = FRA_nationalize_military_complexes }
 		relative_position_id = FRA_expand_naval_industry
 		search_filters = { }
 		cost = 1
@@ -5792,10 +5834,10 @@ prerequisite = { focus = 	FRA_nationalize_military_complexes }
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = yes
-		}
-focus = {		
-	id = FRA_expand_civilian_industry
-		icon = GFX_focus_SOV_ivan_plays_baseball
+	}
+	focus = {		
+		id = FRA_expand_civilian_industry
+		icon = GFX_goal_generic_construct_civ_factory
 		x = 6
 		y = 1
 		prerequisite = { focus = FRA_new_industry_standards }
@@ -5829,9 +5871,9 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		}
-focus = {		
-	id = FRA_build_dams
-		icon = GFX_focus_SOV_ivan_plays_baseball
+	focus = {		
+		id = FRA_build_dams
+		icon = GFX_focus_generic_hydroelectric_energy
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_expand_civilian_industry }
@@ -5865,13 +5907,13 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		}
-focus = {		
-	id = FRA_expand_mining_industry
-		icon = GFX_focus_SOV_ivan_plays_baseball
+	focus = {		
+		id = FRA_expand_mining_industry
+		icon = GFX_focus_generic_mining_industry
 		x = 0
-		y = 2
-		prerequisite = { focus = FRA_expand_civilian_industry }
-		relative_position_id = FRA_expand_civilian_industry
+		y = 1
+		prerequisite = { focus = FRA_build_dams }
+		relative_position_id = FRA_build_dams
 		search_filters = { }
 		cost = 1
 		#mutually_exclusive = { }

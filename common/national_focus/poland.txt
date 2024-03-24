@@ -39,7 +39,7 @@ focus_tree = {
 	
 	default = no
 	
-	continuous_focus_position = { x = 50 y = 2000 }
+	continuous_focus_position = { x = 70 y = 2100 }
 
 	initial_show_position = {
 		focus = POL_death_of_marshal
@@ -119,7 +119,1550 @@ focus_tree = {
 		continue_if_invalid = yes		
 		available_if_capitulated = yes
 	}
-	
+	focus = {
+		id = POL_slawek_wins
+		icon = GFX_focus_POL_walery_slawek_won
+		x = -21
+		y = 1
+		prerequisite = { focus = POL_continue_with_sanation }
+		relative_position_id = POL_continue_with_sanation
+		search_filters = { }
+		cost = 3
+		mutually_exclusive = { focus = POL_sikorski_wins focus = POL_stachniuk_wins focus = POL_piasecki_wins focus = POL_smigly_wins }
+		allow_branch = {
+			NOT = {
+				has_completed_focus = POL_sikorski_wins 
+				has_completed_focus = POL_piasecki_wins 
+				has_completed_focus = POL_stachniuk_wins
+				has_completed_focus = POL_oppose_sanation
+				has_completed_focus = POL_smigly_wins
+			}
+		}
+		offset = {
+			x = 21
+			y = 0
+			trigger = {
+				has_completed_focus = POL_slawek_wins
+			}
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			promote_character = POL_deluge_walery_slawek
+			hidden_effect = {
+				news_event = { id = deluge_poland.74 hours = 6 }
+				retire_character = POL_deluge_sanation_emergency_council
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_finish_the_underground
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 2
+		y = 1
+		prerequisite = { focus = POL_slawek_wins }
+		relative_position_id = POL_slawek_wins
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_women_emancipation
+		icon = GFX_focus_generic_partial_women_emancipation
+		x = 2
+		y = 1
+		prerequisite = { focus = POL_finish_the_underground }
+		relative_position_id = POL_finish_the_underground
+		mutually_exclusive = { focus = POL_enforce_patriarchy }
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_deals_with_endecja
+		icon = GFX_focus_POL_endecja_cooperation
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_finish_the_underground }
+		relative_position_id = POL_finish_the_underground
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_gain_support_among_sanation
+		icon = GFX_focus_POL_gain_support_among_sanation
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_slawek_wins }
+		relative_position_id = POL_slawek_wins
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_marginalize_rydz_smigly
+		icon = GFX_focus_POL_marginalize_rydz_smigly
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_gain_support_among_sanation }
+		relative_position_id = POL_gain_support_among_sanation
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_contact_PSL
+		icon = GFX_focus_POL_collaborate_with_PSL
+		x = -2
+		y = 1
+		prerequisite = { focus = POL_slawek_wins }
+		relative_position_id = POL_slawek_wins
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_deal_with_the_left
+		icon = GFX_generic_radical_1
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_contact_PSL }
+		relative_position_id = POL_contact_PSL
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_remove_problematic_king
+		icon = GFX_focus_POL_remove_problematic_king
+		x = 2
+		y = 2
+		prerequisite = { focus = POL_deal_with_the_left }
+		prerequisite = { focus = POL_marginalize_rydz_smigly }
+		prerequisite = { focus = POL_deals_with_endecja }
+		relative_position_id = POL_deal_with_the_left
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_accelerated_consitutional_act
+		icon = GFX_focus_generic_act_and_politician
+		x = -6
+		y = 1
+		prerequisite = { focus = POL_remove_problematic_king }
+		relative_position_id = POL_remove_problematic_king
+		mutually_exclusive = {focus = POL_haller_januszajtis_coup}
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_second_brest_trails
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_accelerated_consitutional_act }
+		relative_position_id = POL_accelerated_consitutional_act
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_triumph_of_the_colonels
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_second_brest_trails }
+		relative_position_id = POL_second_brest_trails
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_jedrzejewiczs_education_reform
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 5
+		y = 1
+		prerequisite = { focus = POL_triumph_of_the_colonels }
+		relative_position_id = POL_triumph_of_the_colonels
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_subjugate_trade_unions
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = POL_jedrzejewiczs_education_reform }
+		relative_position_id = POL_jedrzejewiczs_education_reform
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_expand_banking_sector
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_subjugate_trade_unions }
+		relative_position_id = POL_subjugate_trade_unions
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_regional_arms_industries
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 1
+		y = 1
+		prerequisite = { focus = POL_jedrzejewiczs_education_reform }
+		relative_position_id = POL_jedrzejewiczs_education_reform
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_peoples_agrarian_reform
+		icon = GFX_focus_generic_farmland
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_regional_arms_industries }
+		relative_position_id = POL_regional_arms_industries
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_form_new_elites
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -4
+		y = 1
+		prerequisite = { focus = POL_triumph_of_the_colonels }
+		relative_position_id = POL_triumph_of_the_colonels
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_elicitation_of_outstanding_units
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_form_new_elites }
+		relative_position_id = POL_form_new_elites
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_myth_of_overman
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_elicitation_of_outstanding_units }
+		relative_position_id = POL_elicitation_of_outstanding_units
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_restoring_the_rule_of_law
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = POL_triumph_of_the_colonels }
+		relative_position_id = POL_triumph_of_the_colonels
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_solving_the_question_of_freemasonry
+		icon = GFX_focus_generic_masonic_lodges
+		x = -1
+		y = 1
+		prerequisite = { focus = POL_restoring_the_rule_of_law }
+		relative_position_id = POL_restoring_the_rule_of_law
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_the_ideal_of_non_partisanship
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = POL_triumph_of_the_colonels }
+		relative_position_id = POL_triumph_of_the_colonels
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_cult_of_pilsudski
+		icon = GFX_focus_POL_cult_of_old_marshal
+		x = 1
+		y = 1
+		prerequisite = { focus = POL_the_ideal_of_non_partisanship }
+		relative_position_id = POL_the_ideal_of_non_partisanship
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_common_organization_of_society
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = POL_the_ideal_of_non_partisanship focus = POL_restoring_the_rule_of_law }
+		relative_position_id = POL_the_ideal_of_non_partisanship
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_cos_self_determination_of_voivodeships
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_common_organization_of_society }
+		relative_position_id = POL_common_organization_of_society
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_cos_self_determination_of_counties
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_cos_self_determination_of_voivodeships }
+		relative_position_id = POL_cos_self_determination_of_voivodeships
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_cos_self_determination_of_municipalities
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_cos_self_determination_of_counties }
+		relative_position_id = POL_cos_self_determination_of_counties
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_cos_social_corporatism
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -2
+		y = 1
+		prerequisite = { focus = POL_common_organization_of_society }
+		relative_position_id = POL_common_organization_of_society
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_cos_militarization
+		icon = GFX_focus_generic_full_social_mobilization
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_cos_social_corporatism }
+		relative_position_id = POL_cos_social_corporatism
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_cos_mutual_learning
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_cos_militarization }
+		relative_position_id = POL_cos_militarization
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_cos_racial_unification
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 2
+		y = 1
+		prerequisite = { focus = POL_common_organization_of_society }
+		relative_position_id = POL_common_organization_of_society
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_cos_cult_of_the_nation
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_cos_racial_unification }
+		relative_position_id = POL_cos_racial_unification
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_cos_building_trust
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_cos_cult_of_the_nation }
+		relative_position_id = POL_cos_cult_of_the_nation
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_socialised_state
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_cos_self_determination_of_municipalities }
+		prerequisite = { focus = POL_cos_building_trust }
+		prerequisite = { focus = POL_cos_mutual_learning }
+		relative_position_id = POL_cos_self_determination_of_municipalities
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_haller_januszajtis_coup
+		icon = GFX_focus_POL_haller_januszajtis_coup
+		x = 6
+		y = 1
+		prerequisite = { focus = POL_remove_problematic_king }
+		relative_position_id = POL_remove_problematic_king
+		mutually_exclusive = {focus = POL_accelerated_consitutional_act}
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_fully_pardon_endecja
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = POL_haller_januszajtis_coup }
+		relative_position_id = POL_haller_januszajtis_coup
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_unify_national_bloc
+		icon = GFX_POL_church_nation_state
+		x = 0
+		y = 3
+		prerequisite = { focus = POL_fully_pardon_endecja }
+		relative_position_id = POL_fully_pardon_endecja
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_invite_monarchists_sanation
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 3
+		y = 1
+		prerequisite = { focus = POL_haller_januszajtis_coup }
+		relative_position_id = POL_haller_januszajtis_coup
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_justified_by_god
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = POL_fully_pardon_endecja }
+		prerequisite = { focus = POL_invite_monarchists_sanation }
+		relative_position_id = POL_invite_monarchists_sanation
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_accept_foreign_nobility
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 2
+		prerequisite = { focus = POL_invite_monarchists_sanation }
+		relative_position_id = POL_invite_monarchists_sanation
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_develop_eastern_poland
+		icon = GFX_focus_generic_modernize_industry
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_accept_foreign_nobility }
+		relative_position_id = POL_accept_foreign_nobility
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_purge_the_colonels
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -3
+		y = 1
+		prerequisite = { focus = POL_haller_januszajtis_coup }
+		relative_position_id = POL_haller_januszajtis_coup
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_ennoblement_of_soldiers
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 3
+		prerequisite = { focus = POL_purge_the_colonels }
+		relative_position_id = POL_purge_the_colonels
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_agricultural_way_of_life
+		icon = GFX_focus_generic_peasants
+		x = 2
+		y = 1
+		prerequisite = { focus = POL_purge_the_colonels focus = POL_fully_pardon_endecja }
+		relative_position_id = POL_purge_the_colonels
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_neo_serfdom
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = POL_agricultural_way_of_life }
+		relative_position_id = POL_agricultural_way_of_life
+		mutually_exclusive = {focus = POL_return_to_folk_culture}
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_return_to_folk_culture
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = POL_agricultural_way_of_life }
+		relative_position_id = POL_agricultural_way_of_life
+		mutually_exclusive = {focus = POL_neo_serfdom}
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_januszajtis_triumphs
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_develop_eastern_poland }
+		relative_position_id = POL_develop_eastern_poland
+		mutually_exclusive = {focus = POL_haller_triumphs focus = POL_unexcepcted_outcome }
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_haller_triumphs
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_ennoblement_of_soldiers }
+		relative_position_id = POL_ennoblement_of_soldiers
+		mutually_exclusive = {focus = POL_januszajtis_triumphs focus = POL_unexcepcted_outcome }
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_unexcepcted_outcome
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_unify_national_bloc }
+		relative_position_id = POL_unify_national_bloc
+		mutually_exclusive = {focus = POL_januszajtis_triumphs focus = POL_haller_triumphs }
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_fill_royal_vaccum
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = POL_unexcepcted_outcome focus = POL_haller_triumphs focus = POL_januszajtis_triumphs }
+		relative_position_id = POL_unexcepcted_outcome
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_union_of_princedoms
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_fill_royal_vaccum }
+		relative_position_id = POL_fill_royal_vaccum
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_towards_empire
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -2
+		y = 1
+		prerequisite = { focus = POL_fill_royal_vaccum }
+		relative_position_id = POL_fill_royal_vaccum
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_reconciliation_with_lithuanians
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 2
+		y = 1
+		prerequisite = { focus = POL_fill_royal_vaccum }
+		relative_position_id = POL_fill_royal_vaccum
+		search_filters = { }
+		cost = 3
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = no		
+		continue_if_invalid = yes		
+		available_if_capitulated = yes
+	}
 	focus = {
 		id = POL_smigly_wins
 		icon = GFX_focus_POL_rydz_smigly_won
@@ -129,7 +1672,7 @@ focus_tree = {
 		relative_position_id = POL_continue_with_sanation
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_LAND_ARMY FOCUS_FILTER_AVITATION}
 		cost = 3
-		mutually_exclusive = { focus = POL_sikorski_wins focus = POL_stachniuk_wins focus = POL_piasecki_wins }
+		mutually_exclusive = { focus = POL_sikorski_wins focus = POL_stachniuk_wins focus = POL_piasecki_wins focus = POL_slawek_wins }
 		allow_branch = {
 			NOT = {
 				has_completed_focus = POL_sikorski_wins 
@@ -175,7 +1718,7 @@ focus_tree = {
 		relative_position_id = POL_continue_with_sanation
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
 		cost = 3
-		mutually_exclusive = { focus = POL_smigly_wins focus = POL_stachniuk_wins focus = POL_piasecki_wins }
+		mutually_exclusive = { focus = POL_smigly_wins focus = POL_stachniuk_wins focus = POL_piasecki_wins focus = POL_slawek_wins }
 		allow_branch = {
 			NOT = { has_completed_focus = POL_smigly_wins }
 			NOT = { has_completed_focus = POL_piasecki_wins }
@@ -219,7 +1762,7 @@ focus_tree = {
 		relative_position_id = POL_continue_with_sanation
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
 		cost = 3
-		mutually_exclusive = { focus = POL_smigly_wins focus = POL_sikorski_wins focus = POL_piasecki_wins }
+		mutually_exclusive = { focus = POL_smigly_wins focus = POL_sikorski_wins focus = POL_piasecki_wins focus = POL_slawek_wins }
 		allow_branch = {
 			NOT = { has_completed_focus = POL_sikorski_wins }
 			NOT = { has_completed_focus = POL_piasecki_wins }
@@ -263,7 +1806,7 @@ focus_tree = {
 		relative_position_id = POL_continue_with_sanation
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
 		cost = 3
-		mutually_exclusive = { focus = POL_smigly_wins focus = POL_sikorski_wins focus = POL_stachniuk_wins }
+		mutually_exclusive = { focus = POL_smigly_wins focus = POL_sikorski_wins focus = POL_stachniuk_wins focus = POL_slawek_wins }
 		allow_branch = {
 			NOT = { has_completed_focus = POL_sikorski_wins }
 			NOT = { has_completed_focus = POL_stachniuk_wins }
@@ -407,6 +1950,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = POL_purge_undersirables }
 		relative_position_id = POL_purge_undersirables
+		mutually_exclusive = { focus = POL_women_emancipation }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_INDUSTRY}
 		cost = 8
 		available = {
@@ -429,9 +1973,9 @@ focus_tree = {
 	focus = {
 		id = POL_teach_about_national_myths_in_schools
 		icon = GFX_focus_generic_military_academy
-		x = 0
+		x = -1
 		y = 1
-		prerequisite = { focus = POL_enforce_patriarchy }
+		prerequisite = { focus = POL_enforce_patriarchy focus = POL_women_emancipation}
 		relative_position_id = POL_enforce_patriarchy
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_LAND_ARMY FOCUS_FILTER_INDUSTRY}
 		cost = 8
@@ -476,7 +2020,7 @@ focus_tree = {
 				remove_idea = POL_colourful_national_myths
 			}
 			country_event = {
-				id = deluge_poland.74
+				id = deluge_poland_lore.1
 			}
 		}
 		ai_will_do = {
@@ -511,7 +2055,7 @@ focus_tree = {
 				remove_idea = POL_colourful_national_myths
 			}
 			country_event = {
-				id = deluge_poland.103
+				id = deluge_poland_lore.2
 			}
 		}
 		ai_will_do = {
@@ -1636,7 +3180,12 @@ focus_tree = {
 					character = POL_deluge_edward_rydz_smigly
 					ideology = social_darwinist_ideology
 					trait = dictator
-				}
+				} 
+				remove_trait = {
+					character = POL_deluge_edward_rydz_smigly
+					ideology = social_darwinist_ideology
+					trait = pilsudskis_left_hand
+				} 
 			}
 		}
 		ai_will_do = {
@@ -3243,7 +4792,7 @@ focus_tree = {
 			}
 			hidden_effect = {
 				country_event = {
-					id = deluge_poland.109
+					id = deluge_poland_lore.3
 					days = 2
 				}
 			}
@@ -3277,7 +4826,7 @@ focus_tree = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_71
 			hidden_effect = {
 				country_event = {
-					id = deluge_poland.110
+					id = deluge_poland.4
 					days = 2
 				}
 			}
@@ -3942,7 +5491,7 @@ focus_tree = {
 			set_country_flag = cant_change_social_order
 			custom_effect_tooltip = cant_change_social_order_tooltip
 			country_event = {
-				id = deluge_poland.111
+				id = deluge_poland.5
 				days = 1
 			}
 		}
@@ -9786,7 +11335,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_deal_with_jews
-		icon = GFX_peaceful_offering
+		icon = GFX_focus_generic_peaceful_offering
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}
@@ -23034,7 +24583,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_socialist_agrarianism
-		icon = GFX_focus_generic_coffee
+		icon = GFX_focus_generic_farmland
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER}

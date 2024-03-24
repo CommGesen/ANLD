@@ -48,7 +48,7 @@ characters={
 		country_leader = {
 			ideology = social_darwinist_ideology
 			expire = "1969.1.1.1"
-			traits = { marshal_of_sky_and_soil }
+			traits = { marshal_of_sky_and_soil pilsudskis_left_hand }
 			desc = "POL_deluge_edward_rydz_smigly_desc"
 		}
 		field_marshal = {
@@ -200,23 +200,23 @@ characters={
 			civilian = {
 				large = "gfx/leaders/POL/portrait_POL_walery_slawek.dds"
 				#large="GFX_portrait_POL_walery_slawek"
-				small="GFX_idea_POL_walery_slawek"
+				small= GFX_walery_slawek_picture_small
 			}
 		}
 		field_marshal = {
 			traits = { war_hero harsh_leader politically_connected organizer logistics_wizard }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
 			desc = "POL_deluge_walery_slawek_desc"
 		}
 		country_leader = {
-			ideology = social_darwinist_ideology
+			ideology = corporatist_ideology
 			expire = "1969.1.1.1"
 			traits = {
-				
+				pilsudskis_right_hand
 			}
 			desc = "POL_deluge_walery_slawek_desc"
 		}
@@ -352,9 +352,8 @@ characters={
 			desc = "POL_deluge_wojciech_korfanty_desc"
 		}
 	}
-	##here finished renaming
 	POL_deluge_augustus_wettin = {##Frederick Augustus III of Wettin/Fryderyk I Wettyn
-		name = POL_Character_deluge_augustus_wettin
+		name = POL_deluge_augustus_wettin_name
 		portraits={
 			civilian={
 				large = "gfx/leaders/POL/portrait_POL_fryderyk_i.dds"
@@ -370,7 +369,7 @@ characters={
 		}
 	}
 	POL_deluge_monarchist_consul = {##Monarchist Consul
-		name = POL_Character_deluge_monarchist_consul
+		name = POL_deluge_monarchist_consul_name
 		portraits={
 			civilian={
 				large="GFX_portrait_POL_Sejmik_Regency"
@@ -386,7 +385,7 @@ characters={
 		}
 	}
 	POL_deluge_sejm = {##sejm
-		name = POL_Character_deluge_sejm
+		name = POL_deluge_sejm_name
 		portraits={
 			civilian={
 				large="gfx/leaders/POL/portrait_POL_the_sejm.dds"
@@ -402,7 +401,7 @@ characters={
 		}
 	}
 	POL_deluge_christian_wettin = {##Friedrich Christian Wettin/Fryderyk II Wettyn
-		name = POL_Character_deluge_christian_wettin
+		name = POL_deluge_christian_wettin_name
 		portraits={
 			civilian={ 
 				large="GFX_portrait_POL_friedrich_christian"
@@ -418,7 +417,7 @@ characters={
 		}
 	}
 	POL_deluge_ernest_henryk_wettyn = {#Ernest Henryk Wettyn/Prince Ernst Heinrich of Saxony
-		name = POL_Character_deluge_ernest_henryk_wettyn
+		name = POL_deluge_ernest_henryk_wettyn_name
 		portraits={
 			civilian={
 				large="gfx/leaders/POL/portrait_POL_ernst_heinrich_wettin.dds"
@@ -438,7 +437,7 @@ characters={
 		}
 	}
 	POL_deluge_izabella_roza_radziwillowna = {##Izabella Róża Radziwiłłówna
-		name = POL_Character_deluge_izabella_roza_radziwillowna
+		name = POL_deluge_izabella_roza_radziwillowna_name
 		portraits={
 			civilian={ 
 				large = "gfx/leaders/POL/portrait_POL_izabela_radziwillowna.dds"
@@ -455,7 +454,7 @@ characters={
 		}
 	}
 	POL_deluge_augustyn_czartoryski = {##Augustyn Józef Czartoryski
-		name = POL_Character_deluge_augustyn_czartoryski
+		name = POL_deluge_augustyn_czartoryski_name
 		portraits={
 			civilian={
 				large = "gfx/leaders/POL/portrait_POL_augustyn_jozef_czartoryski.dds"
@@ -472,7 +471,7 @@ characters={
 		}
 	}
 	POL_deluge_pawel_salwator_piast_riedelski = {##Paweł Salwator Piast-Riedelski
-		name = POL_Character_deluge_pawel_salwator_piast_riedelski
+		name = POL_deluge_pawel_salwator_piast_riedelski_name
 		portraits={
 			civilian={ 
 				large = "gfx/leaders/POL/portrait_POL_pawel_piast_riedelski.dds"
@@ -488,7 +487,7 @@ characters={
 		}
 	}
 	POL_deluge_andrzej_walewski = {##Andrew/Andrzej Walewski
-		name = POL_Character_deluge_andrzej_walewski
+		name = POL_deluge_andrzej_walewski_name
 		portraits={
 			civilian={ 
 				large = "gfx/leaders/POL/portrait_POL_andrzej_walewski.dds"
@@ -504,7 +503,7 @@ characters={
 		}
 	}
 	POL_deluge_aleksander_tyszkiewicz = {##Aleksander Tyszkiewicz
-		name = POL_Character_deluge_aleksander_tyszkiewicz
+		name = POL_deluge_aleksander_tyszkiewicz_name
 		portraits={
 			civilian={ 
 				large = "gfx/leaders/POL/portrait_POL_aleksander_tyszkiewicz.dds"
@@ -520,14 +519,14 @@ characters={
 		}
 	}
 	POL_deluge_andrassy_sandor = {
-		name = POL_Character_deluge_andrassy_sandor
+		name = POL_deluge_andrassy_sandor_name
 		portraits = {
 			civilian = {
 				large="gfx/leaders/HUN/portrait_HUN_andrassy_sandor.dds"
 			}
 		}
 		country_leader = {
-			desc = "andrassy_desc"
+			desc = "POL_deluge_andrassy_sandor_desc"
 			ideology = bonapartist_ideology
 			traits = {
 				car_enthusiast
@@ -535,9 +534,25 @@ characters={
 			expire = "1965.1.1"
 		}
 	}
+	POL_deluge_jadwiga_pilsudska = {
+		name = POL_deluge_jadwiga_pilsudska_name
+		portraits = {
+			civilian = {
+				large="gfx/leaders/HUN/portrait_HUN_jadwiga_pilsudska.dds"
+			}
+		}
+		country_leader = {
+			desc = "POL_deluge_jadwiga_pilsudska_desc"
+			ideology = bonapartist_ideology
+			traits = {
+				
+			}
+			expire = "1965.1.1"
+		}
+	}
 	##GENERALS:
-	POL_deluge_Kukiel = {##Marian Kukiel
-		name = POL_Character_deluge_Kukiel
+	POL_deluge_marian_kukiel = {##Marian Kukiel
+		name = POL_deluge_marian_kukiel_name
 		portraits = {
 			army = {
 				large="GFX_portrait_POL_marian_kukiel"
@@ -552,11 +567,11 @@ characters={
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=4
-			desc = "POL_deluge_Kukiel_desc"
+			desc = "POL_deluge_marian_kukiel_desc"
 		}
 		advisor={
 			slot = high_command
-			idea_token = POL_deluge_Kukiel
+			idea_token = POL_deluge_marian_kukiel
 			allowed = { tag = POL }
 			visible = {
 				tag = POL
@@ -572,8 +587,8 @@ characters={
 			ledger = army
 		}
 	}
-	POL_deluge_Haller = {##Józef Haller
-		name = POL_Character_deluge_Haller
+	POL_deluge_jozef_haller = {##Józef Haller
+		name = POL_deluge_jozef_haller_name
 		portraits={
 			army = {
 				large = "GFX_portrait_POL_jozef_haller"
@@ -584,7 +599,7 @@ characters={
 			ideology = social_darwinist_ideology
 			expire = "1969.1.1.1"
 			traits = { national_hero_haller }
-			desc = "POL_deluge_Haller_desc"
+			desc = "POL_deluge_jozef_haller_desc"
 		}
 		corps_commander = {
 			traits = { war_hero old_guard }
@@ -593,11 +608,11 @@ characters={
 			defense_skill=4
 			planning_skill=4
 			logistics_skill=3
-			desc = "POL_deluge_Haller_desc"
+			desc = "POL_deluge_jozef_haller_desc"
 		}
 		advisor = {
 			slot = chief_of_staff_slot
-			idea_token = POL_deluge_Haller
+			idea_token = POL_deluge_jozef_haller
 			ledger = army
 			allowed = {
 				original_tag = POL
@@ -615,8 +630,32 @@ characters={
 			ledger = army
 		}
 	}
-	POL_deluge_Kleeberg = {##Franciszek Kleeberg
-		name = POL_Character_deluge_Kleeberg
+	POL_deluge_marian_januszajtis_zegota = {##Marian Januszajtis-Żegota
+		name = POL_deluge_marian_januszajtis_zegota_name
+		portraits={
+			army = {
+				large="gfx/leaders/POL/portrait_POL_marian_januszajtis_zegota.dds"
+				small = GFX_marian_januszajtis_zegota_picture_small
+			}
+		}
+		country_leader = {
+			ideology = social_darwinist_ideology
+			expire = "1969.1.1.1"
+			traits = {  }
+			desc = "POL_deluge_marian_januszajtis_zegota_desc"
+		}
+		corps_commander = {
+			traits = { infantry_officer trait_reckless trait_mountaineer hill_fighter }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			desc = "POL_deluge_marian_januszajtis_zegota_desc"
+		}
+	}
+	POL_deluge_franciszek_kleeberg = {##Franciszek Kleeberg
+		name = POL_deluge_franciszek_kleeberg_name
 		portraits={
 			army = {
 				large="gfx/leaders/POL/portrait_POL_franciszek_kleeberg.dds"
@@ -630,11 +669,11 @@ characters={
 			defense_skill=3
 			planning_skill=4
 			logistics_skill=4
-			desc = "POL_deluge_Kleeberg_desc"
+			desc = "POL_deluge_franciszek_kleeberg_desc"
 		}
 	}
-	POL_deluge_Rummel = {##Juliusz Rómmel/Rummel
-		name = POL_Character_deluge_Rummel
+	POL_deluge_juliusz_rummel = {##Juliusz Rómmel/Rummel
+		name = POL_deluge_juliusz_rummel_name
 		portraits={
 			army = {
 				large="gfx/leaders/POL/portrait_POL_juliusz_rummel.dds"
@@ -648,7 +687,7 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=3
-			desc = "POL_deluge_Rummel_desc"
+			desc = "POL_deluge_juliusz_rummel_desc"
 		}
 		advisor={
 			slot = high_command
@@ -668,8 +707,8 @@ characters={
 			ledger = army
 		}
 	}
-	POL_deluge_Orlicz_Dreszer = {##Gustaw Orlicz-Dreszer
-		name = POL_Character_deluge_Orlicz_Dreszer
+	POL_deluge_gustaw_orlicz_dreszer = {##Gustaw Orlicz-Dreszer
+		name = POL_deluge_gustaw_orlicz_dreszer_name
 		portraits={
 			army = {
 				large="gfx/leaders/POL/portrait_POL_gustaw_orlicz_dreszer.dds"
@@ -680,7 +719,7 @@ characters={
 			ideology = social_darwinist_ideology
 			expire = "1969.1.1.1"
 			traits = { naval_invasion_expert }
-			desc = "POL_deluge_Orlicz_Dreszer_desc"
+			desc = "POL_deluge_gustaw_orlicz_dreszer_desc"
 		}
 		corps_commander = {
 			traits = { media_personality naval_liason politically_connected }
@@ -689,11 +728,11 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=3
-			desc = "POL_deluge_Orlicz_Dreszer_desc"
+			desc = "POL_deluge_gustaw_orlicz_dreszer_desc"
 		}
 	}
-	POL_deluge_Anders = {##Władysław Anders
-		name = POL_Character_deluge_Anders
+	POL_deluge_wladyslaw_anders = {##Władysław Anders
+		name = POL_deluge_wladyslaw_anders_name
 		portraits={
 			army = {
 				large="GFX_POL_wladislaw_anders"
@@ -708,11 +747,11 @@ characters={
 			defense_skill=1
 			planning_skill=2
 			logistics_skill=4
-			desc = "POL_deluge_Anders_desc"
+			desc = "POL_deluge_wladyslaw_anders_desc"
 		}
 		advisor={
 			slot = army_chief
-			idea_token = POL_deluge_Anders
+			idea_token = POL_deluge_wladyslaw_anders
 			allowed = { tag = POL }
 			visible = {
 				tag = POL
@@ -728,8 +767,8 @@ characters={
 			ledger = army
 		}
 	}
-	POL_deluge_Maczek = {##Stanisław Maczek
-		name = POL_Character_deluge_Maczek
+	POL_deluge_stanislaw_maczek = {##Stanisław Maczek
+		name = POL_deluge_stanislaw_maczek_name
 		portraits={
 			army = {
 				large="gfx/leaders/POL/portrait_POL_stanislaw_maczek.dds"
@@ -743,11 +782,11 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-			desc = "POL_deluge_Maczek_desc"
+			desc = "POL_deluge_stanislaw_maczek_desc"
 		}
 		advisor={
 			slot = theorist
-			idea_token = POL_deluge_Maczek
+			idea_token = POL_deluge_stanislaw_maczek
 			allowed = { tag = POL }
 			visible = {
 				tag = POL
@@ -765,8 +804,8 @@ characters={
 			ledger = army
 		}
 	}
-	POL_deluge_Sosabowski = {##Stanisław Sosabowski
-		name = POL_Character_deluge_Sosabowski
+	POL_deluge_stanislaw_sosabowski = {##Stanisław Sosabowski
+		name = POL_deluge_stanislaw_sosabowski_name
 		portraits={
 			army = {
 				large="GFX_portrait_POL_stanislaw_sosabowski"
@@ -780,7 +819,7 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=4
-			desc = "POL_deluge_Sosabowski_desc"
+			desc = "POL_deluge_stanislaw_sosabowski_desc"
 		}
 		advisor={
 			slot = high_command
@@ -800,8 +839,8 @@ characters={
 			ledger = army
 		}
 	}
-	POL_deluge_Pilecki = {##Witold Pilecki
-		name = POL_Character_deluge_Pilecki
+	POL_deluge_witold_pilecki = {##Witold Pilecki
+		name = POL_deluge_witold_pilecki_name
 		portraits={
 			army = {
 				large="GFX_portrait_POL_witold_pilecki"
@@ -815,11 +854,11 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=3
-			desc = "POL_deluge_Pilecki_desc"
+			desc = "POL_deluge_witold_pilecki_desc"
 		}
 		advisor={
 			slot = security_chief_slot
-			idea_token = POL_deluge_Pilecki
+			idea_token = POL_deluge_witold_pilecki
 			allowed = { tag = POL }
 			visible = {
 				tag = POL
@@ -835,8 +874,8 @@ characters={
 			ledger = civilian
 		}
 	}
-	POL_deluge_Zeligowski = {##Lucjan Żeligowski
-		name = POL_Character_deluge_Zeligowski
+	POL_deluge_lucjan_zeligowski = {##Lucjan Żeligowski
+		name = POL_deluge_lucjan_zeligowski_name
 		portraits={
 			army = {
 				large="GFX_portrait_POL_lucjan_zeligowski"
@@ -851,11 +890,11 @@ characters={
 			defense_skill=4
 			planning_skill=4
 			logistics_skill=3
-			desc = "POL_deluge_Zeligowski_desc"
+			desc = "POL_deluge_lucjan_zeligowski_desc"
 		}
 		advisor={
 			slot = chief_of_staff_slot
-			idea_token = POL_deluge_Zeligowski
+			idea_token = POL_deluge_lucjan_zeligowski
 			allowed = { tag = POL }
 			visible = {
 				tag = POL
@@ -871,8 +910,8 @@ characters={
 			ledger = army
 		}
 	}
-	POL_deluge_abraham = {##Roman Abraham
-		name = POL_Character_deluge_abraham
+	POL_deluge_roman_abraham = {##Roman Abraham
+		name = POL_deluge_roman_abraham_name
 		portraits={
 			army = {
 				large="GFX_POL_roman_abraham"
@@ -887,11 +926,11 @@ characters={
 			defense_skill=4
 			planning_skill=3
 			logistics_skill=3
-			desc = "POL_deluge_abraham_desc"
+			desc = "POL_deluge_roman_abraham_desc"
 		}
 		advisor={
 			slot = theorist
-			idea_token = POL_deluge_abraham
+			idea_token = POL_deluge_roman_abraham
 			allowed = { tag = POL }
 			visible = {
 				tag = POL
@@ -907,6 +946,7 @@ characters={
 			ledger = army
 		}
 	}
+	##here i finished starndardization
 	POL_deluge_kowalski = {##Wincenty Kowalski
 		name = POL_Character_deluge_kowalski
 		portraits={
@@ -1361,7 +1401,7 @@ characters={
 	POL_deluge_czuma = {##Walerian Czuma
 		name = POL_Character_deluge_czuma
 		portraits = {
-			army = {
+			army = {##wrong small picture
 				large="gfx/leaders/POL/portrait_POL_walerian_czuma.dds"
 				small = GFX_marian_kukiel_picture_small
 			}

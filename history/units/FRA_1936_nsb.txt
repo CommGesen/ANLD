@@ -804,7 +804,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 98
 		}
-		location = 1130
+		location = 12088
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
@@ -816,7 +816,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 95
 		}
-		location = 1130
+		location = 12088
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
@@ -828,7 +828,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 96
 		}
-		location = 11954
+		location = 13073
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
@@ -840,7 +840,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 97
 		}
-		location = 1130
+		location = 12088
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
@@ -849,7 +849,7 @@ units = {
 	}
 	division= {	
 		name = "Groupement de Cyrénaïque"
-		location = 11954
+		location = 13073
 		division_template = "Division de Cavalerie" 	
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1

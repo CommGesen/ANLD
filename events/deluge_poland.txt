@@ -1,6 +1,7 @@
 ﻿###file for events for poland
 add_namespace = deluge_poland
 add_namespace = deluge_poland_foreign
+add_namespace = deluge_poland_lore
 country_event = {#Rydz wants to change flag and abolishes monarchy
 	id = deluge_poland.1
 	title = deluge_poland.1.t
@@ -1475,8 +1476,8 @@ country_event = {##Stachniuk/Piasecki purges people
 	option = {##purge generals
 		name = deluge_poland.25.a
 		POL = {
-			retire_character = POL_deluge_Kleeberg
-			retire_character = POL_deluge_Anders
+			retire_character = POL_deluge_franciszek_kleeberg
+			retire_character = POL_deluge_wladyslaw_anders
 			retire_character = POL_deluge_sosnowski
 		}
 		ai_chance = {
@@ -2003,11 +2004,9 @@ country_event = {##New generals come and some retire
 			limit = {
 				has_completed_focus = POL_ND_wins
 			}
-			retire_character = POL_deluge_Orlicz_Dreszer
-			#retire_character = POL_deluge_Haller
-			retire_character = POL_deluge_Zeligowski
+			retire_character = POL_deluge_gustaw_orlicz_dreszer
+			retire_character = POL_deluge_lucjan_zeligowski
 			retire_character = POL_deluge_Grzmot_Skotnicki
-			#retire_character = POL_deluge_sosnowski
 			retire_character = POL_deluge_wieniawa_dlugoszewski
 			
 			recruit_character = POL_deluge_jung
@@ -2020,9 +2019,9 @@ country_event = {##New generals come and some retire
 			limit = {
 				has_completed_focus = POL_PSL_wins
 			}
-			retire_character = POL_deluge_Orlicz_Dreszer
-			retire_character = POL_deluge_Haller
-			retire_character = POL_deluge_Zeligowski
+			retire_character = POL_deluge_gustaw_orlicz_dreszer
+			retire_character = POL_deluge_jozef_haller
+			retire_character = POL_deluge_lucjan_zeligowski
 			retire_character = POL_deluge_Grzmot_Skotnicki
 			retire_character = POL_deluge_sosnowski
 			retire_character = POL_deluge_wieniawa_dlugoszewski
@@ -2037,14 +2036,14 @@ country_event = {##New generals come and some retire
 			limit = {
 				has_completed_focus = POL_radicals_takeover
 			}
-			retire_character = POL_deluge_Orlicz_Dreszer
-			retire_character = POL_deluge_Haller
-			retire_character = POL_deluge_Zeligowski
+			retire_character = POL_deluge_gustaw_orlicz_dreszer
+			retire_character = POL_deluge_jozef_haller
+			retire_character = POL_deluge_lucjan_zeligowski
 			retire_character = POL_deluge_Grzmot_Skotnicki
 			retire_character = POL_deluge_wieniawa_dlugoszewski
 			
 			retire_character = POL_deluge_sosnowski
-			retire_character = POL_deluge_Rummel
+			retire_character = POL_deluge_juliusz_rummel
 			retire_character = POL_deluge_wladyslaw_sikorski
 			
 			recruit_character = POL_deluge_rola_zymierski
@@ -2056,11 +2055,9 @@ country_event = {##New generals come and some retire
 			limit = {
 				has_completed_focus = POL_monarchists_take_power
 			}
-			retire_character = POL_deluge_Orlicz_Dreszer
-			#retire_character = POL_deluge_Haller
-			retire_character = POL_deluge_Zeligowski
+			retire_character = POL_deluge_gustaw_orlicz_dreszer
+			retire_character = POL_deluge_lucjan_zeligowski
 			retire_character = POL_deluge_Grzmot_Skotnicki
-			#retire_character = POL_deluge_sosnowski
 			
 			recruit_character = POL_deluge_dzierzanowski
 			recruit_character = POL_deluge_piskor
@@ -2737,8 +2734,11 @@ country_event = {##Rydz-Śmigły kills himself if Warsaw was lost
 	}
 	option = {#Haller
 		name = deluge_poland.64.b
+		trigger = {##Haller is possible leader in new Sławek tree, so he will not be possible here
+			always = no
+		}
 		retire_character = POL_deluge_edward_rydz_smigly
-		promote_character = POL_deluge_Haller
+		promote_character = POL_deluge_jozef_haller
 		hidden_effect = {
 			news_event = {
 				id = deluge_poland.65
@@ -2804,7 +2804,7 @@ country_event = {##Rydz-Śmigły kills himself if Warsaw was lost part 2
 	option = {#Orlicz-Dreszer
 		name = deluge_poland.64.e
 		retire_character = POL_deluge_edward_rydz_smigly
-		promote_character = POL_deluge_Orlicz_Dreszer
+		promote_character = POL_deluge_gustaw_orlicz_dreszer
 		hidden_effect = {
 			news_event = {
 				id = deluge_poland.65
@@ -3258,17 +3258,15 @@ country_event = {##POL gets info that other country rejected joining their churc
 		}
 	}
 }
-country_event = {##event about lore of Polish Hyperborea
+news_event = {##Walery Sławek takes power in Poland
 	id = deluge_poland.74
 	title = deluge_poland.74.t
 	desc = deluge_poland.74.d
-	picture = GFX_report_event_hyperborea
+	picture = GFX_news_event_sanationist_propaganda
 	is_triggered_only = yes
+	major = yes
 	option = {
 		name = deluge_poland.74.a
-		ai_chance = {
-			base = 1
-		}
 	}
 }
 country_event = {##question of monarchy in new Polish Republic
@@ -3346,132 +3344,6 @@ country_event = {##question of monarchy in new Polish Republic
 			}
 			add_ideas = POL_czartoryski_king
 		}
-		ai_chance = {
-			base = 1
-		}
-	}
-}
-country_event = {##event about history of Tadeusz Kościuszko
-	id = deluge_poland.76
-	title = deluge_poland.76.t
-	desc = deluge_poland.76.d
-	picture = GFX_report_event_tadeusz_kosciuszko
-	fire_only_once = yes
-	trigger = {
-		tag = POL
-		date > 1937.10.13
-	}
-	mean_time_to_happen = {
-		days = 10
-	}
-	option = {
-		name = deluge_poland.76.a
-		add_political_power = 5
-		ai_chance = {
-			base = 1
-		}
-	}
-}
-country_event = {##event about history of Maria Curie-Skłodowska
-	id = deluge_poland.77
-	title = deluge_poland.77.t
-	desc = deluge_poland.77.d
-	picture = GFX_report_event_maria_curie_sklodowska
-	fire_only_once = yes
-	trigger = {
-		tag = POL
-		date > 1939.7.3
-	}
-	mean_time_to_happen = {
-		days = 10
-	}
-	option = {
-		name = deluge_poland.77.a
-		add_political_power = 5
-		ai_chance = {
-			base = 1
-		}
-	}
-}
-country_event = {##event about history of Adam Mickiewicz
-	id = deluge_poland.78
-	title = deluge_poland.78.t
-	desc = deluge_poland.78.d
-	picture = GFX_report_event_adam_mickiewicz
-	fire_only_once = yes
-	trigger = {
-		tag = POL
-		date > 1938.12.13
-	}
-	mean_time_to_happen = {
-		days = 10
-	}
-	option = {
-		name = deluge_poland.78.a
-		add_political_power = 5
-		ai_chance = {
-			base = 1
-		}
-	}
-}
-country_event = {##event about history of Emilia Plater
-	id = deluge_poland.79
-	title = deluge_poland.79.t
-	desc = deluge_poland.79.d
-	picture = GFX_report_event_emilia_plater
-	fire_only_once = yes
-	trigger = {
-		tag = POL
-		date > 1936.11.12
-	}
-	mean_time_to_happen = {
-		days = 10
-	}
-	option = {
-		name = deluge_poland.79.a
-		add_political_power = 5
-		ai_chance = {
-			base = 1
-		}
-	}
-}
-country_event = {##event about history of Wojciech Głowacki
-	id = deluge_poland.80
-	title = deluge_poland.80.t
-	desc = deluge_poland.80.d
-	picture = GFX_report_event_battle_for_raclawice
-	fire_only_once = yes
-	trigger = {
-		tag = POL
-		date > 1938.6.1
-	}
-	mean_time_to_happen = {
-		days = 10
-	}
-	option = {
-		name = deluge_poland.80.a
-		add_political_power = 5
-		ai_chance = {
-			base = 1
-		}
-	}
-}
-country_event = {##event about history of Józef Poniatowski
-	id = deluge_poland.81
-	title = deluge_poland.81.t
-	desc = deluge_poland.81.d
-	picture = GFX_report_event_napoleon_and_poniatowski
-	fire_only_once = yes
-	trigger = {
-		tag = POL
-		date > 1938.10.18
-	}
-	mean_time_to_happen = {
-		days = 10
-	}
-	option = {
-		name = deluge_poland.81.a
-		add_political_power = 5
 		ai_chance = {
 			base = 1
 		}
@@ -4281,20 +4153,6 @@ country_event = {##tymbark achieves international success
 		}
 	}
 }
-country_event = {##lore event about sarmatians
-	id = deluge_poland.103
-	title = deluge_poland.103.t
-	desc = deluge_poland.103.d
-	picture = GFX_report_report_event_sarmatian
-	is_triggered_only = yes
-	option = {
-		name = deluge_poland.103.a
-		add_political_power = 5
-		ai_chance = {
-			base = 1
-		}
-	}
-}
 country_event = {##PLC chooses new capital
 	id = deluge_poland.104
 	title = deluge_poland.104.t
@@ -5019,98 +4877,6 @@ country_event = {##POL decides what to do with eastern borderlands (PLC path)
 		ai_chance = {
 			base = 1
 		}
-	}
-}
-country_event = {##lore event about śmigus-dyngus
-	id = deluge_poland.109
-	title = deluge_poland.109.t
-	desc = deluge_poland.109.d
-	picture = GFX_report_event_smigus_dyngus
-	is_triggered_only = yes
-	option = {
-		name = deluge_poland.109.a
-		add_political_power = 10
-		ai_chance = {
-			base = 1
-		}
-	}
-}
-country_event = {##lore event about marzanna
-	id = deluge_poland.110
-	title = deluge_poland.110.t
-	desc = deluge_poland.110.d
-	picture = GFX_report_event_marzanna
-	is_triggered_only = yes
-	option = {
-		name = deluge_poland.110.a
-		ai_chance = {
-			base = 1
-		}
-	}
-}
-country_event = {##lore event - Bolesław Piasecki's speech
-	id = deluge_poland.111
-	title = deluge_poland.111.t
-	desc = deluge_poland.111.d
-	picture = GFX_report_event_onr_meeting
-	is_triggered_only = yes
-	option = {
-		name = deluge_poland.111.a
-		ai_chance = {
-			base = 1
-		}
-	}
-}
-country_event = {##lore event - Janusz Kwiek becomes king of Polish gypsies 
-	id = deluge_poland.112
-	title = deluge_poland.112.t
-	desc = deluge_poland.112.d
-	picture = GFX_report_event_polish_gypsy_king_coronation
-	fire_only_once = yes
-	trigger = {
-		tag = POL
-		date > 1937.7.4
-	}
-	option = {
-		name = deluge_poland.112.a
-		ai_chance = {
-			base = 1
-		}
-		add_political_power = 100
-		add_stability = -0.04
-	}
-	option = {
-		name = deluge_poland.112.b
-		ai_chance = {
-			base = 1
-		}
-		add_political_power = -25
-		add_stability = 0.01
-	}
-}
-country_event = {##lore event about Andrzej Bobola
-	id = deluge_poland.113
-	title = deluge_poland.113.t
-	desc = deluge_poland.113.d
-	picture = GFX_report_event_andrzej_bobola
-	fire_only_once = yes
-	trigger = {
-		tag = POL
-		date > 1937.3.16
-		NOT = {
-			OR = {
-				has_completed_focus = POL_get_rid_of_opium_for_masses
-				has_completed_focus = POL_stachniuk_wins
-				has_completed_focus = POL_smigly_wins
-			}
-		}
-	}
-	option = {
-		name = deluge_poland.113.a
-		ai_chance = {
-			base = 1
-		}
-		add_political_power = 15
 	}
 }
 country_event = {##PSL-SCh coaltion is created, player can choose new leader
@@ -12355,6 +12121,251 @@ country_event = {##POL gets info that SPR rejected idea of alliance
 		name = deluge_poland_foreign.119.a
 		ai_chance = {
 			base = 30
+		}
+	}
+}
+country_event = {##event about lore of Polish Hyperborea
+	id = deluge_poland_lore.1
+	title = deluge_poland_lore.1.t
+	desc = deluge_poland_lore.1.d
+	picture = GFX_report_event_hyperborea
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland_lore.1.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##lore event about sarmatians
+	id = deluge_poland_lore.2
+	title = deluge_poland_lore.2.t
+	desc = deluge_poland_lore.2.d
+	picture = GFX_report_report_event_sarmatian
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland.2.a
+		add_political_power = 5
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##lore event about śmigus-dyngus
+	id = deluge_poland_lore.3
+	title = deluge_poland_lore.3.t
+	desc = deluge_poland_lore.3.d
+	picture = GFX_report_event_smigus_dyngus
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland_lore.3.a
+		add_political_power = 10
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##lore event about marzanna
+	id = deluge_poland_lore.4
+	title = deluge_poland_lore.4.t
+	desc = deluge_poland_lore.4.d
+	picture = GFX_report_event_marzanna
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland_lore.4.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##lore event - Bolesław Piasecki's speech
+	id = deluge_poland_lore.5
+	title = deluge_poland_lore.5.t
+	desc = deluge_poland_lore.5.d
+	picture = GFX_report_event_onr_meeting
+	is_triggered_only = yes
+	option = {
+		name = deluge_poland_lore.5.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##lore event - Janusz Kwiek becomes king of Polish gypsies 
+	id = deluge_poland_lore.6
+	title = deluge_poland_lore.6.t
+	desc = deluge_poland_lore.6.d
+	picture = GFX_report_event_polish_gypsy_king_coronation
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date > 1937.7.4
+	}
+	option = {
+		name = deluge_poland_lore.6.a
+		ai_chance = {
+			base = 1
+		}
+		add_political_power = 100
+		add_stability = -0.04
+	}
+	option = {
+		name = deluge_poland_lore.6.b
+		ai_chance = {
+			base = 1
+		}
+		add_political_power = -25
+		add_stability = 0.01
+	}
+}
+country_event = {##lore event about Andrzej Bobola
+	id = deluge_poland_lore.7
+	title = deluge_poland_lore.7.t
+	desc = deluge_poland_lore.7.d
+	picture = GFX_report_event_andrzej_bobola
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date > 1937.3.16
+		NOT = {
+			OR = {
+				has_completed_focus = POL_get_rid_of_opium_for_masses
+				has_completed_focus = POL_stachniuk_wins
+				has_completed_focus = POL_smigly_wins
+			}
+		}
+	}
+	option = {
+		name = deluge_poland_lore.7.a
+		ai_chance = {
+			base = 1
+		}
+		add_political_power = 15
+	}
+}
+country_event = {##event about history of Tadeusz Kościuszko
+	id = deluge_poland_lore.8
+	title = deluge_poland_lore.8.t
+	desc = deluge_poland_lore.8.d
+	picture = GFX_report_event_tadeusz_kosciuszko
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date > 1937.10.13
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = deluge_poland_lore.8.a
+		add_political_power = 5
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##event about history of Maria Curie-Skłodowska
+	id = deluge_poland_lore.9
+	title = deluge_poland_lore.9.t
+	desc = deluge_poland_lore.9.d
+	picture = GFX_report_event_maria_curie_sklodowska
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date > 1939.7.3
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = deluge_poland_lore.9.a
+		add_political_power = 5
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##event about history of Adam Mickiewicz
+	id = deluge_poland_lore.10
+	title = deluge_poland_lore.10.t
+	desc = deluge_poland_lore.10.d
+	picture = GFX_report_event_adam_mickiewicz
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date > 1938.12.13
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = deluge_poland_lore.10.a
+		add_political_power = 5
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##event about history of Emilia Plater
+	id = deluge_poland_lore.11
+	title = deluge_poland_lore.11.t
+	desc = deluge_poland_lore.11.d
+	picture = GFX_report_event_emilia_plater
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date > 1936.11.12
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = deluge_poland_lore.11.a
+		add_political_power = 5
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##event about history of Wojciech Głowacki
+	id = deluge_poland_lore.12
+	title = deluge_poland_lore.12.t
+	desc = deluge_poland_lore.12.d
+	picture = GFX_report_event_battle_for_raclawice
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date > 1938.6.1
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = deluge_poland_lore.12.a
+		add_political_power = 5
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+country_event = {##event about history of Józef Poniatowski
+	id = deluge_poland_lore.13
+	title = deluge_poland_lore.13.t
+	desc = deluge_poland_lore.13.d
+	picture = GFX_report_event_napoleon_and_poniatowski
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date > 1938.10.18
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = deluge_poland_lore.13.a
+		add_political_power = 5
+		ai_chance = {
+			base = 1
 		}
 	}
 }

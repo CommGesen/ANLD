@@ -1,3 +1,17 @@
+##some tips:
+##1. use whole GFX name, not shorter one, like in national spirits
+##2. some names that are different in files and different in game:
+## - industrial_capacity_dockyard = dockyard output
+## - industrial_capacity_factory = factory output
+## - production_speed_buildings_factor = construction speed
+## - production_speed_bunker_factor = construction speed of a bunker (replace bunker with any building you want)
+## - production_factory_efficiency_gain_factor = production effiency growth
+## - production_factory_max_efficiency_factor = production effiency cap
+## - production_lack_of_resource_penalty_factor = lack of resources penalty
+## - conscription = recruitable population
+## - conscription_factor = recruitable population factor
+## - army_morale = division recovery rate
+## - army_morale_factor = division recovery rate by percentages
 POL_ozn_dynamic_modifier = { ##POL_ozn_
 	enable = { always = yes }
 	icon = GFX_idea_spirit_OZN
@@ -16,13 +30,11 @@ POL_ozn_dynamic_modifier = { ##POL_ozn_
 POL_rivalry_between_POW_and_WP_dynamic_modifier = { ##POL_WPvsPOW_
 	enable = { always = yes }
 	icon = GFX_idea_spirit_polish_national_army
-	##POW:
 	max_dig_in_factor = POL_WPvsPOW_max_dig_in_factor
 	resistance_damage_to_garrison = POL_WPvsPOW_resistance_damage_to_garrison
 	promote_cost_factor = POL_WPvsPOW_promote_cost_factor
 	army_morale = POL_WPvsPOW_army_morale
 	special_forces_cap = POL_WPvsPOW_special_forces_cap
-	##WP:
 	supply_consumption_factor = POL_WPvsPOW_supply_consumption_factor
 	army_fuel_consumption_factor = POL_WPvsPOW_army_fuel_consumption_factor
 	air_fuel_consumption_factor = POL_WPvsPOW_air_fuel_consumption_factor
@@ -30,12 +42,10 @@ POL_rivalry_between_POW_and_WP_dynamic_modifier = { ##POL_WPvsPOW_
 	army_speed_factor = POL_WPvsPOW_army_speed_factor
 	max_planning_factor = POL_WPvsPOW_max_planning_factor
 	org_loss_when_moving = POL_WPvsPOW_org_loss_when_moving
-	##both:
 	army_attack_factor = POL_WPvsPOW_army_attack_factor
 	army_org_factor = POL_WPvsPOW_army_org_factor
 	war_support_factor = POL_WPvsPOW_war_support_factor
 	army_defence_factor = POL_WPvsPOW_army_defence_factor
-	###in army tree
 	breakthrough_factor = POL_WPvsPOW_breakthrough_factor
 	initiative_factor = POL_WPvsPOW_initiative_factor
 	army_armor_attack_factor = POL_WPvsPOW_army_armor_attack_factor
@@ -149,11 +159,8 @@ POL_zadruga_dynamic_modifier = {##POL_zadruga_
 	army_attack_against_major_factor = POL_zadruga_army_attack_against_major_factor
 	army_defence_against_major_factor = POL_zadruga_army_defence_against_major_factor
 	consumer_goods_factor = POL_zadruga_consumer_goods_factor
-	##production effiency cap:
 	production_factory_max_efficiency_factor = POL_zadruga_production_factory_max_efficiency_factor
-	##production effiency growth:
 	production_factory_efficiency_gain_factor = POL_zadruga_production_factory_efficiency_gain_factor
-	##construction speed:
 	production_speed_buildings_factor = POL_zadruga_production_speed_buildings_factor
 	local_resources_factor = POL_zadruga_local_resources_factor
 	production_lack_of_resource_penalty_factor = POL_zadruga_production_lack_of_resource_penalty_factor
@@ -161,7 +168,6 @@ POL_zadruga_dynamic_modifier = {##POL_zadruga_
 	research_speed_factor = POL_zadruga_research_speed_factor
 	army_core_attack_factor = POL_zadruga_army_core_attack_factor
 	army_core_defence_factor = POL_zadruga_army_core_defence_factor
-	##factory output
 	industrial_capacity_factory = POL_zadruga_industrial_capacity_factory
 	compliance_growth = POL_zadruga_compliance_growth
 	surrender_limit = POL_zadruga_surrender_limit
@@ -347,6 +353,36 @@ POL_3rd_may_consitution_modifier = {##3rd_may_
 	special_forces_cap = 3rd_may_special_forces_cap
 	global_building_slots_factor = 3rd_may_global_building_slots_factor
 	min_export = 3rd_may_min_export
+}
+FRA_modifier_economic_depression = {##french_depression_
+	enable = { always = yes }
+	icon = GFX_idea_usa_great_depression_3
+	consumer_goods_factor = french_depression_consumer_goods_factor
+	production_speed_buildings_factor = french_depression_production_speed_buildings_factor
+	industrial_capacity_dockyard = french_depression_industrial_capacity_dockyard
+	industrial_capacity_factory = french_depression_industrial_capacity_factory
+	production_factory_efficiency_gain_factor = french_depression_production_factory_efficiency_gain_factor
+	production_factory_max_efficiency_factor = french_depression_production_factory_max_efficiency_factor
+	production_lack_of_resource_penalty_factor = french_depression_production_lack_of_resource_penalty_factor
+	stability_factor = french_depression_stability_factor
+	war_support_factor = french_depression_war_support_factor
+	political_power_factor = french_depression_political_power_factor
+	global_building_slots_factor = french_depression_global_building_slots_factor
+	local_resources_factor = french_depression_local_resources_factor
+}
+FRA_modifier_obsolete_army = {##french_bad_army_
+	enable = { always = yes }
+	icon = GFX_idea_generic_victors_of_ww1
+	naval_doctrine_cost_factor = french_bad_army_naval_doctrine_cost_factor
+	land_doctrine_cost_factor = french_bad_army_land_doctrine_cost_factor
+	air_doctrine_cost_factor = french_bad_army_air_doctrine_cost_factor
+	experience_gain_army_factor = french_bad_army_experience_gain_army_factor
+	experience_gain_navy_factor = french_bad_army_experience_gain_navy_factor
+	experience_gain_air_factor = french_bad_army_experience_gain_air_factor
+	command_power_gain_mult = french_bad_army_command_power_gain_mult
+	army_defence_factor = french_bad_army_army_defence_factor
+	army_attack_factor = french_bad_army_army_attack_factor
+	army_org_factor = french_bad_army_army_org_factor
 }
 POL_religious_sect_of_wierszalin = {
 	enable = { always = yes }

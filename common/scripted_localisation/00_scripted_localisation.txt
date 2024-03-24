@@ -3,7 +3,7 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = POL
-			has_character = POL_deluge_Orlicz_Dreszer
+			has_character = POL_deluge_gustaw_orlicz_dreszer
 		}
 		localization_key = POL_ListenToOrliczDreszer_has_Dreszer
 	}
@@ -11,7 +11,7 @@ defined_text = {
 		trigger = {
 			original_tag = POL
 			NOT = {
-				has_character = POL_deluge_Orlicz_Dreszer
+				has_character = POL_deluge_gustaw_orlicz_dreszer
 			}
 		}
 		localization_key = POL_ListenToOrliczDreszer_has_not_Dreszer
@@ -22,7 +22,7 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = POL
-			has_character = POL_deluge_Orlicz_Dreszer
+			has_character = POL_deluge_gustaw_orlicz_dreszer
 		}
 		localization_key = POL_ListenToOrliczDreszer_has_DreszerDESC
 	}
@@ -30,7 +30,7 @@ defined_text = {
 		trigger = {
 			original_tag = POL
 			NOT = {
-				has_character = POL_deluge_Orlicz_Dreszer
+				has_character = POL_deluge_gustaw_orlicz_dreszer
 			}
 		}
 		localization_key = POL_ListenToOrliczDreszer_has_not_DreszerDESC

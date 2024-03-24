@@ -265,10 +265,10 @@ if = { # to POM
 						has_full_control_of_state = 69
 					}
 				}
-				69 = { set_state_name = "Kraj Pilzneński" }
-				set_province_name = { id = 6418 name = "Pilzno" }
-				set_province_name = { id = 11432 name = "Uście nad Łabą" }
-				set_province_name = { id = 3585 name = "Karlowe Wary" }
+				69 = { set_state_name = STATE_69_POL }
+				set_province_name = { id = 6418 name = VICTORY_POINTS_6418_POL }
+				set_province_name = { id = 11432 name = VICTORY_POINTS_11432_POL }
+				set_province_name = { id = 3585 name = VICTORY_POINTS_3585_POL }
 			}
 			if = {##CZECHIA to POL
 				limit = {
@@ -276,8 +276,8 @@ if = { # to POM
 						has_full_control_of_state = 74
 					}
 				}
-				74 = { set_state_name = "Śląsk Czeski" }
-				set_province_name = { id = 3583 name = "Ostrawa" }
+				74 = { set_state_name = STATE_74_POL }
+				set_province_name = { id = 3583 name = VICTORY_POINTS_3583_POL }
 			}
 			if = {##CZECHIA to POL
 				limit = {
@@ -285,10 +285,10 @@ if = { # to POM
 						has_full_control_of_state = 9
 					}
 				}
-				9 = { set_state_name = "Środkowe Czechy" }
-				set_province_name = { id = 11542 name = "Praga" }
-				set_province_name = { id = 9569 name = "Tábor" }
-				set_province_name = { id = 11401 name = "Liberec" }
+				9 = { set_state_name = STATE_9_POL }
+				set_province_name = { id = 11542 name = VICTORY_POINTS_11542_POL }
+				set_province_name = { id = 9569 name = VICTORY_POINTS_9569_POL }
+				set_province_name = { id = 11401 name = VICTORY_POINTS_11401_POL }
 			}
 			if = {##CZECHIA to POL
 				limit = {
@@ -296,9 +296,9 @@ if = { # to POM
 						has_full_control_of_state = 75
 					}
 				}
-				75 = { set_state_name = "Morawy" }
-				set_province_name = { id = 3569 name = "Brno" }
-				set_province_name = { id = 6562 name = "Ołomuniec" }
+				75 = { set_state_name = STATE_75_POL }
+				set_province_name = { id = 3569 name = VICTORY_POINTS_3569_POL }
+				set_province_name = { id = 6562 name = VICTORY_POINTS_6562_POL }
 			}
 			if = {##CZECHIA to POL
 				limit = {
@@ -306,8 +306,8 @@ if = { # to POM
 						has_full_control_of_state = 72
 					}
 				}
-				72 = { set_state_name = "Południowe Czechy" }
-				set_province_name = { id = 9541 name = "Budziejowice" }
+				72 = { set_state_name = STATE_72_POL }
+				set_province_name = { id = 9541 name = VICTORY_POINTS_9541_POL }
 			}
 			if = {##CZECHIA to CZE
 				limit = {
@@ -315,10 +315,10 @@ if = { # to POM
 						has_full_control_of_state = 69
 					}
 				}
-				69 = { set_state_name = "Plzenský kraj" }
-				set_province_name = { id = 6418 name = " Plzeň" }
-				set_province_name = { id = 11432 name = "Ústí nad Labem" }
-				set_province_name = { id = 3585 name = "Karlovy Vary" }
+				69 = { set_state_name = STATE_69_CZE }
+				set_province_name = { id = 6418 name = VICTORY_POINTS_6418_CZE }
+				set_province_name = { id = 11432 name = VICTORY_POINTS_11432_CZE }
+				set_province_name = { id = 3585 name = VICTORY_POINTS_3585_CZE }
 			}
 			if = {##CZECHIA to CZE
 				limit = {
@@ -326,8 +326,8 @@ if = { # to POM
 						has_full_control_of_state = 74
 					}
 				}
-				74 = { set_state_name = "Ceské Slezsko" }
-				set_province_name = { id = 3583 name = "Ostrava" }
+				74 = { set_state_name = STATE_74_CZE }
+				set_province_name = { id = 3583 name = VICTORY_POINTS_3583_CZE }
 			}
 			if = {##CZECHIA to CZE
 				limit = {
@@ -335,10 +335,10 @@ if = { # to POM
 						has_full_control_of_state = 9
 					}
 				}
-				9 = { set_state_name = "Strední Cechy" }
-				set_province_name = { id = 11542 name = "Praha" }
-				set_province_name = { id = 9569 name = "Tábor" }
-				set_province_name = { id = 11401 name = "Liberec" }
+				9 = { set_state_name = STATE_9_CZE }
+				set_province_name = { id = 11542 name = VICTORY_POINTS_11542_CZE }
+				set_province_name = { id = 9569 name = VICTORY_POINTS_9569_CZE }
+				set_province_name = { id = 11401 name = VICTORY_POINTS_11401_CZE }
 			}
 			if = {##CZECHIA to CZE
 				limit = {
@@ -346,9 +346,9 @@ if = { # to POM
 						has_full_control_of_state = 75
 					}
 				}
-				75 = { set_state_name = "Morava" }
-				set_province_name = { id = 3569 name = "Brno" }
-				set_province_name = { id = 6562 name = "Olomouc" }
+				75 = { set_state_name = STATE_75_CZE }
+				set_province_name = { id = 3569 name = VICTORY_POINTS_3569_CZE }
+				set_province_name = { id = 6562 name = VICTORY_POINTS_6562_CZE }
 			}
 			if = {##CZECHIA to CZE
 				limit = {
@@ -356,8 +356,8 @@ if = { # to POM
 						has_full_control_of_state = 72
 					}
 				}
-				72 = { set_state_name = "Jižní Cechy" }
-				set_province_name = { id = 9541 name = "Budějovice" }
+				72 = { set_state_name = STATE_72_CZE }
+				set_province_name = { id = 9541 name = VICTORY_POINTS_9541_CZE }
 			}
 			if = {##CZECHIA to AUS/GER/WGR/DDR
 				limit = {
@@ -376,10 +376,10 @@ if = { # to POM
 						}
 					}
 				}
-				69 = { set_state_name = "Pilsner Region" }
-				set_province_name = { id = 6418 name = "Pilsen" }
-				set_province_name = { id = 11432 name = "Aussig" }
-				set_province_name = { id = 3585 name = "Karlsbad" }
+				69 = { set_state_name = STATE_69 }
+				set_province_name = { id = 6418 name = VICTORY_POINTS_6418 }
+				set_province_name = { id = 11432 name = VICTORY_POINTS_11432 }
+				set_province_name = { id = 3585 name = VICTORY_POINTS_3585 }
 			}
 			if = {##CZECHIA to AUS/GER/WGR/DDR
 				limit = {
@@ -398,8 +398,8 @@ if = { # to POM
 						}
 					}
 				}
-				74 = { set_state_name = "Tschechisch-Schlesien" }
-				set_province_name = { id = 3583 name = "Ostrau" }
+				74 = { set_state_name = STATE_74 }
+				set_province_name = { id = 3583 name = VICTORY_POINTS_3583 }
 			}
 			if = {##CZECHIA to AUS/GER/WGR/DDR
 				limit = {
@@ -418,10 +418,10 @@ if = { # to POM
 						}
 					}
 				}
-				9 = { set_state_name = "Mittelböhmen" }
-				set_province_name = { id = 11542 name = "Prag" }
-				set_province_name = { id = 9569 name = "Tabor" }
-				set_province_name = { id = 11401 name = "Reichenberg" }
+				9 = { set_state_name = STATE_9 }
+				set_province_name = { id = 11542 name = VICTORY_POINTS_11542 }
+				set_province_name = { id = 9569 name = VICTORY_POINTS_9569 }
+				set_province_name = { id = 11401 name = VICTORY_POINTS_11401 }
 			}
 			if = {##CZECHIA to AUS/GER/WGR/DDR
 				limit = {
@@ -440,9 +440,9 @@ if = { # to POM
 						}
 					}
 				}
-				75 = { set_state_name = "Mähren" }
-				set_province_name = { id = 3569 name = "Brünn" }
-				set_province_name = { id = 6562 name = "Olmütz" }
+				75 = { set_state_name = STATE_75 }
+				set_province_name = { id = 3569 name = VICTORY_POINTS_3569 }
+				set_province_name = { id = 6562 name = VICTORY_POINTS_6562 }
 			}
 			if = {##CZECHIA to AUS/GER/WGR/DDR
 				limit = {
@@ -461,8 +461,8 @@ if = { # to POM
 						}
 					}
 				}
-				72 = { set_state_name = "Südböhmen" }
-				set_province_name = { id = 9541 name = "Budweis" }
+				72 = { set_state_name = STATE_72 }
+				set_province_name = { id = 9541 name = VICTORY_POINTS_9541 }
 			}
 			if = {##UKRAINE to POL
 				limit = {

@@ -28,11 +28,13 @@ characters={
 			idea_token = FRA_deluge_paul_de_cassagnac
 			allowed = { tag = FRA }
 			visible = {
-				
+				NOT = {
+					has_completed_focus = FRA_towards_republic
+				}
 			}
 			cost = 150
 			available = {
-				
+				has_completed_focus = FRA_previous_course
 			}
 			traits = {
 				journalist
@@ -53,11 +55,13 @@ characters={
 			idea_token = FRA_deluge_francois_coty
 			allowed = { tag = FRA }
 			visible = {
-				
+				NOT = {
+					has_completed_focus = FRA_towards_republic
+				}
 			}
 			cost = 150
 			available = {
-				
+				has_completed_focus = FRA_previous_course
 			}
 			traits = {
 				businessman
@@ -108,11 +112,19 @@ characters={
 			idea_token = FRA_deluge_pierre_laval
 			allowed = { tag = FRA }
 			visible = {
-				
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_previous_course
+						has_completed_focus = FRA_march_on_paris
+						has_completed_focus = FRA_french_communist_party
+						has_completed_focus = FRA_proudhon_circle
+						has_completed_focus = FRA_creation_of_the_parliament
+					}
+				}
 			}
 			cost = 150
 			available = { 
-				
+				has_completed_focus = FRA_french_section_of_workers_internationale
 			}
 			traits = {
 				lawyer
@@ -133,11 +145,19 @@ characters={
 			idea_token = FRA_deluge_marceau_pivert
 			allowed = { tag = FRA }
 			visible = {
-				
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_previous_course
+						has_completed_focus = FRA_march_on_paris
+						has_completed_focus = FRA_french_communist_party
+						has_completed_focus = FRA_proudhon_circle
+						has_completed_focus = FRA_creation_of_the_parliament
+					}
+				}
 			}
 			cost = 150
 			available = {
-				
+				has_completed_focus = FRA_french_section_of_workers_internationale
 			}
 			traits = {
 				humanist
@@ -158,11 +178,19 @@ characters={
 			idea_token = FRA_deluge_vincent_auriol
 			allowed = { tag = FRA }
 			visible = {
-				
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_previous_course
+						has_completed_focus = FRA_march_on_paris
+						has_completed_focus = FRA_french_communist_party
+						has_completed_focus = FRA_proudhon_circle
+						has_completed_focus = FRA_creation_of_the_parliament
+					}
+				}
 			}
 			cost = 150
 			available = {
-				
+				has_completed_focus = FRA_french_section_of_workers_internationale
 			}
 			traits = {
 				financial_expert
@@ -183,11 +211,19 @@ characters={
 			idea_token = FRA_deluge_georges_monnet
 			allowed = { tag = FRA }
 			visible = {
-				
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_previous_course
+						has_completed_focus = FRA_march_on_paris
+						has_completed_focus = FRA_french_communist_party
+						has_completed_focus = FRA_proudhon_circle
+						has_completed_focus = FRA_creation_of_the_parliament
+					}
+				}
 			}
 			cost = 150
 			available = {
-				
+				has_completed_focus = FRA_french_section_of_workers_internationale
 			}
 			traits = {
 				minister_of_agriculture
@@ -503,6 +539,24 @@ characters={
 			desc = "FRA_deluge_maurice_gamelin_desc"
 		}
 	}
+	FRA_deluge_victor_henri_schweisguth={
+		name=FRA_deluge_victor_henri_schweisguth_name
+		portraits={
+			army={##small and big portrait to do
+				small="GFX_victor_henri_schweisguth_picture_small"
+				large="gfx/leaders/FRA/portrait_FRA_victor_henri_schweisguth.dds"
+			}
+		}
+		field_marshal={
+			traits={ politically_connected defensive_doctrine }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			desc = "FRA_deluge_victor_henri_schweisguth_desc"
+		}
+	}
 	FRA_deluge_alphonse_georges={
 		name=FRA_deluge_alphonse_georges_name
 		portraits={
@@ -698,7 +752,7 @@ characters={
 		name=FRA_deluge_gaston_henri_billotte_name
 		portraits={
 			army={##small and big portrait to do
-				large="gfx/leaders/FRA/portrait_FRA_gaston_henri_billotte.dds" 
+				large="gfx/leaders/FRA/portrait_FRA_gaston_henri_billotte.dds"
 				small="GFX_gaston_henri_billotte_picture_small"
 			}
 		}
@@ -734,7 +788,7 @@ characters={
 		name=FRA_deluge_rene_olry_name
 		portraits={
 			army={##small portrait to do
-				large=GFX_portrait_FRA_rene_olry
+				large="gfx/leaders/FRA/portrait_FRA_rene_olry.dds"
 				small="GFX_rene_olry_picture_small"
 			}
 		}
@@ -751,7 +805,7 @@ characters={
 	FRA_deluge_georges_blanchard={
 		name=FRA_deluge_georges_blanchard_name
 		portraits={
-			army={##small and big portrait to do
+			army={##small portrait to do
 				large="gfx/leaders/FRA/portrait_FRA_georges_blanchard.dds" 
 				small="GFX_georges_blanchard_picture_small"
 			}
@@ -769,7 +823,7 @@ characters={
 	FRA_deluge_pierre_lelong={
 		name=FRA_deluge_pierre_lelong_name
 		portraits={
-			army={##small and big portrait to do
+			army={##small portrait to do
 				large="gfx/leaders/FRA/portrait_FRA_pierre_lelong.dds" 
 				small="GFX_pierre_lelong_picture_small"
 			}
@@ -787,7 +841,7 @@ characters={
 	FRA_deluge_marie_pierre_koenig={
 		name=FRA_deluge_marie_pierre_koenig_name
 		portraits={
-			army={##small and big portrait to do
+			army={##small portrait to do
 				large="gfx/leaders/FRA/portrait_FRA_marie_pierre_koenig.dds" 
 				small="GFX_marie_pierre_koenig_picture_small"
 			}
@@ -820,9 +874,747 @@ characters={
 			desc = "FRA_deluge_henri_rol_tanguy_desc"
 		}
 	}
-
-	FRA_francois_darlan={
-		name=FRA_francois_darlan
+	FRA_deluge_paul_legentilhomme={
+		name=FRA_deluge_paul_legentilhomme_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_paul_legentilhomme.dds" 
+				small="GFX_paul_legentilhomme_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ commando hill_fighter }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			desc = "FRA_deluge_paul_legentilhomme_desc"
+		}
+	}
+	FRA_deluge_henri_frenay={
+		name=FRA_deluge_henri_frenay_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_henri_frenay.dds" 
+				small="GFX_henri_frenay_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ inflexible_strategist }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			desc = "FRA_deluge_henri_frenay_desc"
+		}
+	}
+	FRA_deluge_marcel_descour={
+		name=FRA_deluge_marcel_descour_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_marcel_descour.dds" 
+				small="GFX_marcel_descour_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ commando }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			desc = "FRA_deluge_marcel_descour_desc"
+		}
+	}
+	FRA_deluge_henri_meric_de_bellefon={
+		name=FRA_deluge_henri_meric_de_bellefon_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_henri_meric_de_bellefon.dds" 
+				small="GFX_henri_meric_de_bellefon_picture_small"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			desc = "FRA_deluge_henri_meric_de_bellefon_desc"
+		}
+	}
+	FRA_deluge_adolphe_guillaumat={
+		name=FRA_deluge_adolphe_guillaumat_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_adolphe_guillaumat.dds" 
+				small="GFX_adolphe_guillaumat_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ old_guard }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			desc = "FRA_deluge_adolphe_guillaumat_desc"
+		}
+	}
+	FRA_deluge_charles_nogues={
+		name=FRA_deluge_charles_nogues_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_charles_nogues.dds" 
+				small="GFX_charles_nogues_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ desert_fox }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			desc = "FRA_deluge_charles_nogues_desc"
+		}
+	}
+	FRA_deluge_georges_catroux={
+		name=FRA_deluge_georges_catroux_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_georges_catroux.dds" 
+				small="GFX_georges_catroux_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ organizer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			desc = "FRA_deluge_georges_catroux_desc"
+		}
+	}
+	FRA_deluge_andre_boris={
+		name=FRA_deluge_andre_boris_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_andre_boris.dds" 
+				small="GFX_andre_boris_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ career_officer artillery_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			desc = "FRA_deluge_andre_boris_desc"
+		}
+	}
+	FRA_deluge_louis_bouisson={
+		name=FRA_deluge_louis_bouisson_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_louis_bouisson.dds" 
+				small="GFX_louis_bouisson_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			desc = "FRA_deluge_louis_bouisson_desc"
+		}
+	}
+	FRA_deluge_jean_edouard_verneau={
+		name=FRA_deluge_jean_edouard_verneau_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_jean_edouard_verneau.dds" 
+				small="GFX_jean_edouard_verneau_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			desc = "FRA_deluge_jean_edouard_verneau_desc"
+		}
+	}
+	FRA_deluge_charles_delestraint={
+		name=FRA_deluge_charles_delestraint_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_charles_delestraint.dds" 
+				small="GFX_charles_delestraint_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ career_officer armor_officer }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			desc = "FRA_deluge_charles_delestraint_desc"
+		}
+	}
+	FRA_deluge_aime_doumenc={
+		name=FRA_deluge_aime_doumenc_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_aime_doumenc.dds" 
+				small="GFX_aime_doumenc_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ old_guard armor_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+			desc = "FRA_deluge_aime_doumenc_desc"
+		}
+	}
+	FRA_deluge_maurice_grisot={
+		name=FRA_deluge_maurice_grisot_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_maurice_grisot.dds" 
+				small="GFX_maurice_grisot_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ artillery_expert }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			desc = "FRA_deluge_maurice_grisot_desc"
+		}
+	}
+	FRA_deluge_jean_touzet_du_vigier={
+		name=FRA_deluge_jean_touzet_du_vigier_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_jean_touzet_du_vigier.dds" 
+				small="GFX_jean_touzet_du_vigier_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ armor_leader career_officer combined_arms_expert }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+			desc = "FRA_deluge_jean_touzet_du_vigier_desc"
+		}
+	}
+	FRA_deluge_aubert_frere={
+		name=FRA_deluge_aubert_frere_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_aubert_frere.dds" 
+				small="GFX_aubert_frere_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ war_hero desert_fox }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+			desc = "FRA_deluge_aubert_frere_desc"
+		}
+	}
+	FRA_deluge_diego_brosset={
+		name=FRA_deluge_diego_brosset_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_diego_brosset.dds" 
+				small="GFX_diego_brosset_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			desc = "FRA_deluge_diego_brosset_desc"
+		}
+	}
+	FRA_deluge_clement_blanc={
+		name=FRA_deluge_clement_blanc_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_clement_blanc.dds" 
+				small="GFX_clement_blanc_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ artillery_officer artillery_leader }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=3
+			desc = "FRA_deluge_clement_blanc_desc"
+		}
+	}
+	FRA_deluge_joseph_putz={
+		name=FRA_deluge_joseph_putz_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_joseph_putz.dds" 
+				small="GFX_joseph_putz_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			desc = "FRA_deluge_joseph_putz_desc"
+		}
+	}
+	FRA_deluge_raoul_magrin_vernerey={
+		name=FRA_deluge_raoul_magrin_vernerey_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_raoul_magrin_vernerey.dds" 
+				small="GFX_raoul_magrin_vernerey_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless harsh_leader commando }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			desc = "FRA_deluge_raoul_magrin_vernerey_desc"
+		}
+	}
+	FRA_deluge_henri_adeline={
+		name=FRA_deluge_henri_adeline_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_henri_adeline.dds" 
+				small="GFX_henri_adeline_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ trickster trait_engineer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			desc = "FRA_deluge_henri_adeline_desc"
+		}
+	}
+	FRA_deluge_georges_revers={
+		name=FRA_deluge_georges_revers_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_georges_revers.dds" 
+				small="GFX_georges_revers_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ career_officer infantry_officer skilled_staffer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			desc = "FRA_deluge_georges_revers_desc"
+		}
+	}
+	FRA_deluge_rene_prioux={
+		name=FRA_deluge_rene_prioux_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_rene_prioux.dds" 
+				small="GFX_rene_prioux_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer career_officer inflexible_strategist }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			desc = "FRA_deluge_rene_prioux_desc"
+		}
+	}
+	FRA_deluge_pierre_hering={
+		name=FRA_deluge_pierre_hering_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_pierre_hering.dds" 
+				small="GFX_pierre_hering_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ old_guard harsh_leader organizer trait_engineer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			desc = "FRA_deluge_pierre_hering_desc"
+		}
+	}
+	FRA_deluge_robert_touchon={
+		name=FRA_deluge_robert_touchon_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_robert_touchon.dds" 
+				small="GFX_robert_touchon_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ old_guard winter_specialist winter_expert }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			desc = "FRA_deluge_robert_touchon_desc"
+		}
+	}
+	FRA_deluge_andre_gaston_pretelat={
+		name=FRA_deluge_andre_gaston_pretelat_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_andre_gaston_pretelat.dds" 
+				small="GFX_andre_gaston_pretelat_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ old_guard career_officer infantry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			desc = "FRA_deluge_andre_gaston_pretelat_desc"
+		}
+	}
+	FRA_deluge_victor_bourret={
+		name=FRA_deluge_victor_bourret_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_victor_bourret.dds" 
+				small="GFX_victor_bourret_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ old_guard politically_connected }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=3
+			desc = "FRA_deluge_victor_bourret_desc"
+		}
+	}
+	FRA_deluge_marcel_garchery={
+		name=FRA_deluge_marcel_garchery_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_marcel_garchery.dds" 
+				small="GFX_marcel_garchery_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ old_guard trait_engineer fortress_buster }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+			desc = "FRA_deluge_marcel_garchery_desc"
+		}
+	}
+	FRA_deluge_robert_altmayer={
+		name=FRA_deluge_robert_altmayer_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_robert_altmayer.dds" 
+				small="GFX_robert_altmayer_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer career_officer infantry_leader }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			desc = "FRA_deluge_robert_altmayer_desc"
+		}
+	}
+	FRA_deluge_edouard_requin={
+		name=FRA_deluge_edouard_requin_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_edouard_requin.dds" 
+				small="GFX_edouard_requin_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected engineer_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			desc = "FRA_deluge_edouard_requin_desc"
+		}
+	}
+	FRA_deluge_andre_corap={
+		name=FRA_deluge_andre_corap_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_andre_corap.dds" 
+				small="GFX_andre_corap_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ war_hero infantry_officer ranger }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			desc = "FRA_deluge_andre_corap_desc"
+		}
+	}
+	FRA_deluge_jean_flavigny={
+		name=FRA_deluge_jean_flavigny_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_jean_flavigny.dds" 
+				small="GFX_jean_flavigny_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ career_officer armor_officer trait_cautious }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			desc = "FRA_deluge_jean_flavigny_desc"
+		}
+	}
+	FRA_deluge_charles_marie_conde={
+		name=FRA_deluge_charles_marie_conde_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_charles_marie_conde.dds" 
+				small="GFX_charles_marie_conde_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ old_guard }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			desc = "FRA_deluge_charles_marie_conde_desc"
+		}
+	}
+	FRA_deluge_jules_buhrer={
+		name=FRA_deluge_jules_buhrer_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_jules_buhrer.dds" 
+				small="GFX_jules_buhrer_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ old_guard desert_fox }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			desc = "FRA_deluge_jules_buhrer_desc"
+		}
+	}
+	FRA_deluge_louis_colson={
+		name=FRA_deluge_louis_colson_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_louis_colson.dds" 
+				small="GFX_louis_colson_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ old_guard harsh_leader skilled_staffer }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			desc = "FRA_deluge_louis_colson_desc"
+		}
+	}
+	FRA_deluge_henri_dentz={
+		name=FRA_deluge_henri_dentz_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_henri_dentz.dds" 
+				small="GFX_henri_dentz_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious desert_fox }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			desc = "FRA_deluge_henri_dentz_desc"
+		}
+	}
+	FRA_deluge_jean_bouffet={
+		name=FRA_deluge_jean_bouffet_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_jean_bouffet.dds" 
+				small="GFX_jean_bouffet_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless cavalry_officer cavalry_leader }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			desc = "FRA_deluge_jean_bouffet_desc"
+		}
+	}
+	FRA_deluge_emile_laure={
+		name=FRA_deluge_emile_laure_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_emile_laure.dds" 
+				small="GFX_emile_laure_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ old_guard politically_connected }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			desc = "FRA_deluge_emile_laure_desc"
+		}
+	}
+	FRA_deluge_gabriel_bougrain={
+		name=FRA_deluge_gabriel_bougrain_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_gabriel_bougrain.dds" 
+				small="GFX_gabriel_bougrain_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ armor_leader career_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			desc = "FRA_deluge_gabriel_bougrain_desc"
+		}
+	}
+	FRA_deluge_paul_vauthier={
+		name=FRA_deluge_paul_vauthier_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_paul_vauthier.dds" 
+				small="GFX_paul_vauthier_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			desc = "FRA_deluge_paul_vauthier_desc"
+		}
+	}
+	FRA_deluge_edgar_de_larminat={
+		name=FRA_deluge_edgar_de_larminat_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_edgar_de_larminat.dds" 
+				small="GFX_edgar_de_larminat_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ adaptable }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			desc = "FRA_deluge_edgar_de_larminat_desc"
+		}
+	}
+	FRA_deluge_joseph_de_goislard_de_monsabert={
+		name=FRA_deluge_joseph_de_goislard_de_monsabert_name
+		portraits={
+			army={##small and big portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_joseph_de_goislard_de_monsabert.dds" 
+				small="GFX_joseph_de_goislard_de_monsabert_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ naval_invader career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			desc = "FRA_deluge_joseph_de_goislard_de_monsabert_desc"
+		}
+	}
+	##admirals:
+	FRA_deluge_francois_darlan={
+		name=FRA_deluge_francois_darlan_name
 		portraits={
 			army={
 				large=GFX_portrait_FRA_francois_darlan
@@ -831,82 +1623,75 @@ characters={
 		}
 		advisor={
 			slot = navy_chief
-			idea_token = francois_darlan
+			idea_token = FRA_deluge_francois_darlan
 			allowed = {
 				original_tag = FRA
 			}
 			traits = {
 				navy_chief_decisive_battle_2
 			}
-			cost = 100
+			#cost = 
 			ai_will_do = {
-				factor = 1.000
-			}
-		}
-
-		navy_leader={
-			traits={ bold naval_lineage superior_tactician }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=3
-			coordination_skill=3
-			legacy_id=102
-		}
-	}
-
-	FRA_jeanmarie_charles_abrial={
-		name=FRA_jeanmarie_charles_abrial
-		portraits={
-			army={
-				large=GFX_portrait_FRA_jeanmarie_charles_abrial
-				small=GFX_portrait_FRA_jeanmarie_charles_abrial_small
+				factor = 1
 			}
 		}
 		navy_leader={
-			traits={ chief_engineer superior_tactician }
+			traits={ bold naval_lineage superior_tactician spotter navy_media_personality }
 			skill=3
 			attack_skill=2
 			defense_skill=3
 			maneuvering_skill=3
 			coordination_skill=2
-			legacy_id=0
+			desc = "FRA_deluge_francois_darlan_desc"
 		}
 	}
-
-	FRA_jeanpierre_esteva={
-		name=FRA_jeanpierre_esteva
+	FRA_deluge_jean_marie_abrial={
+		name=FRA_deluge_jean_marie_abrial_name
 		portraits={
-			army={
-				large=GFX_portrait_FRA_jeanpierre_esteva
-				small=GFX_portrait_FRA_jeanpierre_esteva_small
+			army={##small portrait to do and code
+				large=GFX_portrait_FRA_jeanmarie_charles_abrial
+				small=GFX_portrait_FRA_jeanmarie_charles_abrial_small
 			}
 		}
 		navy_leader={
-			traits={ aviation_enthusiast }
-			skill=2
+			traits={ chief_engineer fleet_protector }
+			skill=1
 			attack_skill=1
 			defense_skill=2
-			maneuvering_skill=2
-			coordination_skill=2
-			legacy_id=0
+			maneuvering_skill=1
+			coordination_skill=1
+			desc = "FRA_deluge_jean_marie_abrial"
 		}
 	}
-
-	FRA_rene_emile_godfroy={
-		name=FRA_rene_emile_godfroy
+	FRA_deluge_jean_pierre_esteva={
+		name=FRA_deluge_jean_pierre_esteva_name
+		portraits={
+			army={
+				large=GFX_portrait_FRA_jeanpierre_esteva
+				small="GFX_jean_pierre_esteva_picture_small"
+			}
+		}
+		navy_leader={
+			traits={ aviation_enthusiast navy_career_officer superior_tactician }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=2
+			desc = "FRA_deluge_jean_pierre_esteva_desc"
+		}
+	}
+	FRA_deluge_rene_emile_godfroy={
+		name=FRA_deluge_rene_emile_godfroy_name
 		portraits={
 			army={
 				large=GFX_portrait_FRA_rene_emile_godfroy
-				small=GFX_rene_emile_godfroy_picture_small
-			}
-			army={
-				small="GFX_idea_rene_emile_godfroy"
+				small="GFX_rene_emile_godfroy_picture_small"
 			}
 		}
 		advisor={
 			slot = high_command
-			idea_token = rene_emile_godfroy
+			idea_token = FRA_deluge_rene_emile_godfroy
 			ledger = navy
 			allowed = {
 				original_tag = FRA
@@ -914,12 +1699,11 @@ characters={
 			traits = {
 				navy_screen_2
 			}
-			cost = 100
+			#cost = 
 			ai_will_do = {
-				factor = 1.000
+				factor = 1
 			}
 		}
-		
 		navy_leader={
 			traits={ old_guard_navy gentlemanly battleship_adherent spotter }
 			skill=2
@@ -927,23 +1711,20 @@ characters={
 			defense_skill=1
 			maneuvering_skill=2
 			coordination_skill=2
-			legacy_id=0
+			desc = "FRA_deluge_rene_emile_godfroy_desc"
 		}
 	}
-
-	FRA_jean_de_laborde={
-		name=FRA_jean_de_laborde
+	FRA_deluge_jean_de_laborde={
+		name=FRA_deluge_jean_de_laborde_name
 		portraits={
 			navy={
 				small="GFX_jean_de_laborde_picture_small"
-			}
-			army={
 				large=GFX_portrait_FRA_jean_de_laborde
 			}
 		}
 		advisor={
 			slot = high_command
-			idea_token = jean_de_laborde
+			idea_token = FRA_deluge_jean_de_laborde
 			ledger = navy
 			allowed = {
 				original_tag = FRA
@@ -951,113 +1732,507 @@ characters={
 			traits = {
 				navy_capital_ship_1
 			}
-			cost =  50
+			#cost = 
 			ai_will_do = {
-				factor = 1.000
+				factor = 1
 			}
 		}
-		
 		navy_leader={
-			traits={ aviation_enthusiast naval_lineage }
-			skill=1
-			attack_skill=1
+			traits={ aviation_enthusiast naval_lineage superior_tactician air_controller }
+			skill=2
+			attack_skill=2
 			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=0
+			maneuvering_skill=2
+			coordination_skill=2
+			desc = "FRA_deluge_jean_de_laborde_desc"
 		}
 	}
-
-
-	### THEORISTS ###
-
-	# De Gaulle up there
-
-	# Giraud up there
-
-	FRA_victor_denain={
-		name=FRA_victor_denain
+	FRA_deluge_louis_kahn={
+		name=FRA_deluge_louis_kahn_name
 		portraits={
+			navy={
+				large="gfx/leaders/FRA/portrait_FRA_louis_kahn.dds" 
+				small="GFX_louis_kahn_picture_small"
+			}
 			army={
-				small="GFX_idea_victor_denain"
+				large="gfx/leaders/FRA/portrait_FRA_louis_kahn.dds" 
+				small="GFX_louis_kahn_picture_small"
 			}
 		}
 		advisor={
-			cost = 150
-			
-			slot = theorist
-			idea_token = victor_denain
-			ledger = air
+			slot = navy_chief
+			idea_token = FRA_deluge_louis_kahn
+			ledger = navy
 			allowed = {
 				original_tag = FRA
 			}
-			
 			traits = {
-				assault_avaition
+				navy_chief_naval_aviation_1
+			}
+			#cost = 
+			ai_will_do = {
+				factor = 1
 			}
 		}
+		navy_leader={
+			traits={ seawolf air_controller }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=2
+			desc = "FRA_deluge_louis_kahn_desc"
+		}
 	}
-
-	FRA_jean_decoux={
-		name=FRA_jean_decoux
+	FRA_deluge_marcel_gensoul={
+		name=FRA_deluge_marcel_gensoul_name
 		portraits={
+			navy={
+				large="gfx/leaders/FRA/portrait_FRA_marcel_gensoul.dds" 
+				small="GFX_marcel_gensoul_picture_small"
+			}
 			army={
-				small="GFX_idea_jean_decoux"
+				large="gfx/leaders/FRA/portrait_FRA_marcel_gensoul.dds" 
+				small="GFX_marcel_gensoul_picture_small"
 			}
 		}
 		advisor={
-			cost = 100
 			slot = theorist
-			idea_token = jean_decoux
-			ledger = navy
+			idea_token = FRA_deluge_marcel_gensoul
 			allowed = {
 				original_tag = FRA
 			}
-			traits = { naval_theorist }
-		}		
-	}
-
-	FRA_jean_marie_bergeret={
-		name=FRA_jean_marie_bergeret
-		portraits={
-			army={
-				small="GFX_idea_jean_marie_bergeret"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = jean_marie_bergeret
-			ledger = air
-			allowed = {
-				original_tag = FRA
-			}
-			traits = { air_warfare_theorist }
-		}
-	}
-
-	FRA_louis_kahn={
-		name=FRA_louis_kahn
-		portraits={
-			army={
-				small="GFX_idea_louis_kahn"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = louis_kahn
-			ledger = navy
-			allowed = {
-				original_tag = FRA
-			}
-			
 			traits = {
 				grand_fleet_proponent
 			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		navy_leader={
+			traits={ cuts_corners ironside gunnery_expert battleship_adherent }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			maneuvering_skill=2
+			coordination_skill=3
+			desc = "FRA_deluge_marcel_gensoul_desc"
+		}
+	}
+	FRA_deluge_emile_muselier={
+		name=FRA_deluge_emile_muselier_name
+		portraits={
+			navy={
+				large="gfx/leaders/FRA/portrait_FRA_emilie_muselier.dds"
+				small="GFX_emile_muselier_picture_small"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_FRA_emilie_muselier.dds"
+				small="GFX_emile_muselier_picture_small"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = FRA_deluge_emile_muselier
+			ledger = navy
+			allowed = {
+				original_tag = FRA
+			}
+			traits = {
+				navy_fleet_logistics_2
+			}
+			#cost = 
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		navy_leader={
+			traits={ aviation_enthusiast navy_media_personality }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=2
+			desc = "FRA_deluge_marcel_gensoul_desc"
+		}
+	}
+	FRA_deluge_henri_nomy={
+		name=FRA_deluge_henri_nomy_name
+		portraits={
+			navy={
+				large="gfx/leaders/FRA/portrait_FRA_henri_nomy.dds"
+				small="GFX_henri_nomy_picture_small"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_FRA_henri_nomy.dds"
+				small="GFX_henri_nomy_picture_small"
+			}
+		}
+		navy_leader={
+			traits={ aviation_enthusiast air_controller }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			desc = "FRA_deluge_henri_nomy_desc"
+		}
+	}
+	FRA_deluge_paul_ortoli={
+		name=FRA_deluge_paul_ortoli_name
+		portraits={
+			navy={
+				large="gfx/leaders/FRA/portrait_FRA_paul_ortoli.dds"
+				small="GFX_paul_ortoli_picture_small"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_FRA_paul_ortoli.dds"
+				small="GFX_paul_ortoli_picture_small"
+			}
+		}
+		navy_leader={
+			traits={ chief_engineer seawolf }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=2
+			desc = "FRA_deluge_paul_ortoli_desc"
+		}
+	}
+	FRA_deluge_raoul_castex={
+		name=FRA_deluge_raoul_castex_name
+		portraits={
+			navy={
+				large="gfx/leaders/FRA/portrait_FRA_raoul_castex.dds"
+				small="GFX_raoul_castex_picture_small"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_FRA_raoul_castex.dds"
+				small="GFX_raoul_castex_picture_small"
+			}
+		}
+		navy_leader={
+			traits={ superior_tactician gunnery_expert battleship_adherent }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=1
+			desc = "FRA_deluge_raoul_castex_desc"
+		}
+	}
+	FRA_deluge_emilie_duplat={
+		name=FRA_deluge_emilie_duplat_name
+		portraits={
+			navy={
+				large="gfx/leaders/FRA/portrait_FRA_emilie_duplat.dds"
+				small="GFX_emilie_duplat_picture_small"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_FRA_emilie_duplat.dds"
+				small="GFX_emilie_duplat_picture_small"
+			}
+		}
+		navy_leader={
+			traits={ seawolf }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			desc = "FRA_deluge_emilie_duplat_desc"
+		}
+	}
+	FRA_deluge_emilie_duplat={
+		name=FRA_deluge_emilie_duplat_name
+		portraits={
+			navy={
+				large="gfx/leaders/FRA/portrait_FRA_emilie_duplat.dds"
+				small="GFX_emilie_duplat_picture_small"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_FRA_emilie_duplat.dds"
+				small="GFX_emilie_duplat_picture_small"
+			}
+		}
+		navy_leader={
+			traits={ seawolf }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			desc = "FRA_deluge_emilie_duplat_desc"
+		}
+	}
+	FRA_deluge_andre_lemonnier={
+		name=FRA_deluge_andre_lemonnier_name
+		portraits={
+			navy={
+				large="gfx/leaders/FRA/portrait_FRA_andre_lemonnier.dds"
+				small="GFX_andre_lemonnier_picture_small"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_FRA_andre_lemonnier.dds"
+				small="GFX_andre_lemonnier_picture_small"
+			}
+		}
+		navy_leader={
+			traits={ fly_swatter cruiser_captain }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=3
+			desc = "FRA_deluge_andre_lemonnier_desc"
+		}
+	}
+	FRA_deluge_georges_thierry_d_drgenlieu={
+		name=FRA_deluge_georges_thierry_d_drgenlieu_name
+		portraits={
+			navy={
+				large="gfx/leaders/FRA/portrait_FRA_georges_thierry_d_drgenlieu.dds"
+				small="GFX_georges_thierry_d_drgenlieu_picture_small"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_FRA_georges_thierry_d_drgenlieu.dds"
+				small="GFX_georges_thierry_d_drgenlieu_picture_small"
+			}
+		}
+		navy_leader={
+			traits={ spotter gentlemanly caustic_personality }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			maneuvering_skill=2
+			coordination_skill=2
+			desc = "FRA_deluge_georges_thierry_d_drgenlieu_desc"
+		}
+	}
+	FRA_deluge_emmanuel_ollive={
+		name=FRA_deluge_emmanuel_ollive_name
+		portraits={
+			navy={
+				large="gfx/leaders/FRA/portrait_FRA_emmanuel_ollive.dds"
+				small="GFX_emmanuel_ollive_picture_small"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_FRA_emmanuel_ollive.dds"
+				small="GFX_emmanuel_ollive_picture_small"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy battleship_adherent }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			desc = "FRA_deluge_emmanuel_ollive_desc"
+		}
+	}
+	FRA_deluge_georges_robert={
+		name=FRA_deluge_georges_robert_name
+		portraits={
+			navy={
+				large="gfx/leaders/FRA/portrait_FRA_georges_robert.dds"
+				small="GFX_georges_robert_picture_small"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_FRA_georges_robert.dds"
+				small="GFX_georges_robert_picture_small"
+			}
+		}
+		navy_leader={
+			traits={ naval_lineage blue_water_expert }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=3
+			coordination_skill=1
+			desc = "FRA_deluge_georges_robert_desc"
+		}
+	}
+	FRA_deluge_philippe_auboyneau={
+		name=FRA_deluge_philippe_auboyneau_name
+		portraits={
+			navy={
+				large="gfx/leaders/FRA/portrait_FRA_philippe_auboyneau.dds"
+				small="GFX_philippe_auboyneau_picture_small"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_FRA_philippe_auboyneau.dds"
+				small="GFX_philippe_auboyneau_picture_small"
+			}
+		}
+		navy_leader={
+			traits={ fleet_protector }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=2
+			desc = "FRA_deluge_philippe_auboyneau_desc"
+		}
+	}
+	FRA_deluge_jean_decoux={
+		name=FRA_deluge_jean_decoux_name
+		portraits={
+			navy={
+				large="gfx/leaders/FRA/portrait_FRA_jean_decoux.dds"
+				small="GFX_jean_decoux_picture_small"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_FRA_jean_decoux.dds"
+				small="GFX_jean_decoux_picture_small"
+			}
+		}
+		navy_leader={
+			traits={ bold fly_swatter }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=2
+			desc = "FRA_deluge_jean_decoux_desc"
+		}
+	}
+	FRA_deluge_gabriel_auphan={
+		name=FRA_deluge_gabriel_auphan_name
+		portraits={
+			navy={
+				large="gfx/leaders/FRA/portrait_FRA_gabriel_auphan.dds"
+				small="GFX_gabriel_auphan_picture_small"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_FRA_gabriel_auphan.dds"
+				small="GFX_gabriel_auphan_picture_small"
+			}
+		}
+		navy_leader={
+			traits={ seawolf navy_media_personality }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			desc = "FRA_deluge_gabriel_auphan_desc"
+		}
+	}
+	FRA_deluge_maurice_le_luc={
+		name=FRA_deluge_maurice_le_luc_name
+		portraits={
+			navy={
+				large="gfx/leaders/FRA/portrait_FRA_maurice_le_luc.dds"
+				small="GFX_maurice_le_luc_picture_small"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_FRA_maurice_le_luc.dds"
+				small="GFX_maurice_le_luc_picture_small"
+			}
+		}
+		navy_leader={
+			traits={ cuts_corners }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			desc = "FRA_deluge_maurice_le_luc_desc"
+		}
+	}
+	FRA_deluge_georges_durand_viel={
+		name=FRA_deluge_georges_durand_viel_name
+		portraits={
+			navy={
+				large="gfx/leaders/FRA/portrait_FRA_georges_durand_viel.dds"
+				small="GFX_georges_durand_viel_picture_small"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_FRA_georges_durand_viel.dds"
+				small="GFX_georges_durand_viel_picture_small"
+			}
+		}
+		navy_leader={
+			traits={ superior_tactician old_guard_navy chief_engineer battleship_adherent }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			desc = "FRA_deluge_georges_durand_viel_desc"
+		}
+	}
+	FRA_deluge_emile_marie_lacroix={
+		name=FRA_deluge_emile_marie_lacroix_name
+		portraits={
+			navy={
+				large="gfx/leaders/FRA/portrait_FRA_emile_marie_lacroix.dds"
+				small="GFX_emile_marie_lacroix_picture_small"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_FRA_emile_marie_lacroix.dds"
+				small="GFX_emile_marie_lacroix_picture_small"
+			}
+		}
+		navy_leader={
+			traits={ fleet_protector }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=2
+			desc = "FRA_deluge_emile_marie_lacroix_desc"
+		}
+	}
+	FRA_deluge_henri_blehaut={
+		name=FRA_deluge_henri_blehaut_name
+		portraits={
+			navy={
+				large="gfx/leaders/FRA/portrait_FRA_henri_blehaut.dds"
+				small="GFX_henri_blehaut_picture_small"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_FRA_henri_blehaut.dds"
+				small="GFX_henri_blehaut_picture_small"
+			}
+		}
+		navy_leader={
+			traits={ bold navy_career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=1
+			desc = "FRA_deluge_henri_blehaut_desc"
+		}
+	}
+	FRA_deluge_lucien_lacaze={
+		name=FRA_deluge_lucien_lacaze_name
+		portraits={
+			navy={
+				large="gfx/leaders/FRA/portrait_FRA_lucien_lacaze.dds"
+				small="GFX_lucien_lacaze_picture_small"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_FRA_lucien_lacaze.dds"
+				small="GFX_lucien_lacaze_picture_small"
+			}
+		}
+		navy_leader={
+			traits={ bold navy_career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=1
+			desc = "FRA_deluge_henri_blehaut_desc"
 		}
 	}
 
+	##possible to recycle
 	FRA_frederic_irene_joliot_curie={
 		name=FRA_frederic_irene_joliot_curie
 		portraits={
@@ -1081,113 +2256,6 @@ characters={
 			}
 		}
 	}
-
-
-	### ARMY CHIEFS ###
-
-	# Gamelin up there
-
-	# Weygand up there
-
-	# Georges up there
-
-	FRA_henri_marie_auguste_bineau={
-		name=FRA_henri_marie_auguste_bineau
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_3"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = FRA_henri_marie_auguste_bineau
-			allowed = {
-				original_tag = FRA
-			}
-			traits = {
-				army_chief_offensive_1
-			}
-			cost =  50
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
-
-	FRA_pierre_alombert_goget={
-		name=FRA_pierre_alombert_goget
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_1"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = FRA_pierre_alombert_goget
-			allowed = {
-				original_tag = FRA
-			}
-			traits = {
-				army_chief_defensive_1
-			}
-			cost =  50
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-
-	### NAVY CHIEFS ###
-
-	# Darlan Up there
-
-	FRA_marcel_gensoul={
-		name=FRA_marcel_gensoul
-		portraits={
-			army={
-				small="GFX_idea_marcel_gensoul"
-			}
-		}
-		advisor={
-			slot = navy_chief
-			idea_token = marcel_gensoul
-			allowed = {
-				original_tag = FRA
-			}
-			traits = {
-				navy_chief_naval_aviation_1
-			}
-			cost =  50
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-	
-	FRA_jean_marie_abrial={
-		name=FRA_jean_marie_abrial
-		portraits={
-			army={
-				small="GFX_idea_jean_marie_abrial"
-			}
-		}
-		advisor={
-			slot = navy_chief
-			idea_token = jean_marie_abrial
-			allowed = {
-				original_tag = FRA
-			}
-			traits = {
-				navy_chief_commerce_raiding_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
 
 	### AIR CHIEFS ###
 
@@ -1307,30 +2375,6 @@ characters={
 			}
 		}
 	}
-
-	FRA_emile_muselier={
-		name=FRA_emile_muselier
-		portraits={
-			army={
-				small="GFX_idea_emile_muselier"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = emile_muselier
-			ledger = navy
-			allowed = {
-				original_tag = FRA
-			}
-			traits = {
-				navy_fleet_logistics_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
 	
 	FRA_alfred_heurtaux={
 		name=FRA_alfred_heurtaux
@@ -1352,69 +2396,6 @@ characters={
 			cost = 100
 			ai_will_do = {
 				factor = 1.000
-			}
-		}
-	}
-
-	FRA_rene_prioux={
-		name=FRA_rene_prioux
-		portraits={
-			army={
-				small="GFX_idea_rene_prioux"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = rene_prioux
-			ledger = army
-			allowed = {
-				original_tag = FRA
-			}
-			traits = {
-				army_cavalry_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-	FRA_marcel_bucard={
-		name=FRA_marcel_bucard
-		portraits={
-			army={
-				small="GFX_idea_marcel_bucard"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = marcel_bucard
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-
-				has_completed_focus  = FRA_the_brown_alliance 
-
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
-			traits  = {
-				fascist_demagogue 
-			}
-			do_effect  = {
-				not  = {
-					has_government  = fascism 
-				}
-			}
-			ai_will_do  = {
-				factor  = 0.000
 			}
 		}
 	}
@@ -1475,44 +2456,6 @@ characters={
 				factor  = 1.000
 			}
 		}
-	}
-
-	FRA_charles_maurras={
-		name=FRA_charles_maurras
-		portraits={
-			army={
-				small=GFX_charles_maurras_picture_small
-			}
-			civilian = {
-				small=GFX_charles_maurras_picture_small
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = charles_maurras
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-				has_completed_focus  = FRA_corporatist_economics
-				or  = {
-					has_government  = fascism 
-					has_government  = neutrality 
-				}
-			}
-			visible  = {
-				
-			}
-			cost  = 150
-			traits  = {
-				national_integralist 
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}		
 	}
 
 	FRA_philippe_henriot={
@@ -1617,35 +2560,6 @@ characters={
 			}
 			traits  = {
 				smooth_talking_charmer 
-			}
-			on_add  = {
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-	}
-
-	FRA_vincent_auriol={
-		name=FRA_vincent_auriol
-		portraits={
-			army={
-				small="GFX_idea_FRA_vincent_auriol"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = FRA_vincent_auriol
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-				has_completed_focus  = FRA_legalization_of_trade_unions 
-			}
-			traits  = {
-				financial_expert 
 			}
 			on_add  = {
 			}

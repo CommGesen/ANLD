@@ -18,8 +18,8 @@ ideas = {
 				neutrality_drift = -0.03
 			}
 		}
-		FRA_spirit_obsolete_army = {
-			picture = generic_victors_of_ww1
+		FRA_spirit_senussi_rebellion = {
+			picture = ARG_subdue_dissension ##maybe later change
 			allowed = {
 				original_tag = FRA
 			}
@@ -27,22 +27,24 @@ ideas = {
 				
 			}
 			cancel = {
-				
+				NOT = {
+					has_war_with = LBA
+				}
 			}
 			allowed_civil_war = {
 				
 			}
 			modifier = {
-				naval_doctrine_cost_factor = 0.85
-				land_doctrine_cost_factor = 0.85
-				air_doctrine_cost_factor = 0.85
-				experience_gain_army_factor = -0.5
-				experience_gain_navy_factor = -0.5
-				experience_gain_air_factor = -0.5
+				
+			}
+			targeted_modifier = {
+				tag = LBA
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.2
 			}
 		}
 		FRA_spirit_horrors_of_the_great_war = {
-			picture = generic_victors_of_ww1
+			picture = ENG_the_war_to_end_all_wars
 			allowed = {
 				original_tag = FRA
 			}
@@ -56,10 +58,50 @@ ideas = {
 				
 			}
 			modifier = {
-				conscription = -0.08
-				war_support_factor = -0.5
+				conscription = -0.025
+				war_support_factor = -0.25
 				generate_wargoal_tension = 0.7
 				ai_join_ally_desire_factor = -0.9
+			}
+		}
+		FRA_spirit_decadent_society = {
+			picture = spirit_decadency
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				conscription = -0.015
+				war_support_factor = -0.2
+				research_speed_factor = -0.15
+			}
+		}
+		FRA_spirit_political_instability = {
+			picture = SPR_political_violence
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				stability_factor = -0.25
+				political_power_gain = -0.8
+				drift_defence_factor = -0.3
 			}
 		}
 		FRA_spirit_le_deluge = {
@@ -82,28 +124,6 @@ ideas = {
 				conscription = 0.03
 				conscription_factor = 0.25
 				training_time_army_factor = -0.2
-			}
-		}
-		FRA_spirit_the_financial_collapse = {
-			picture = usa_great_depression_3
-			allowed = {
-				tag = FRA
-			}
-			available = {
-				
-			}
-			cancel = {
-				
-			}
-			allowed_civil_war = {
-				
-			}
-			modifier = {
-				political_power_cost = 1
-				consumer_goods_factor = 0.3
-				conscription_factor = -0.5
-				join_faction_tension = 0.20
-				local_resources_factor = -0.2
 			}
 		}
 		FRA_agricultural_protectionism = {

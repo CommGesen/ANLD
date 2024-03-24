@@ -1,0 +1,29 @@
+ideas = {
+	country = {
+		LBA_spirit_senussi_rebellion = {
+			picture = ARG_growing_nationalism_modifier ##maybe later change
+			allowed = {
+				original_tag = LBA
+			}
+			available = {
+				
+			}
+			cancel = {
+				NOT = {
+					has_war_with = FRA
+				}
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				
+			}
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
+	}
+}
