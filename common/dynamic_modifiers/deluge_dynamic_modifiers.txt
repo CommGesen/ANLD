@@ -370,6 +370,21 @@ FRA_modifier_economic_depression = {##french_depression_
 	global_building_slots_factor = french_depression_global_building_slots_factor
 	local_resources_factor = french_depression_local_resources_factor
 }
+FRA_modifier_new_french_economy = {##new_french_economy_
+	enable = { always = yes }
+	icon = GFX_idea_usa_great_depression_3 ##change later
+	consumer_goods_factor = new_french_economy_consumer_goods_factor
+	production_speed_buildings_factor = new_french_economy_production_speed_buildings_factor
+	industrial_capacity_dockyard = new_french_economy_industrial_capacity_dockyard
+	industrial_capacity_factory = new_french_economy_industrial_capacity_factory
+	production_factory_efficiency_gain_factor = new_french_economy_production_factory_efficiency_gain_factor
+	production_factory_max_efficiency_factor = new_french_economy_production_factory_max_efficiency_factor
+	production_lack_of_resource_penalty_factor = new_french_economy_production_lack_of_resource_penalty_factor
+	global_building_slots_factor = new_french_economy_global_building_slots_factor
+	local_resources_factor = new_french_economy_local_resources_factor
+	stability_factor = new_french_economy_stability_factor
+	monthly_population = new_french_economy_monthly_population
+}
 FRA_modifier_obsolete_army = {##french_bad_army_
 	enable = { always = yes }
 	icon = GFX_idea_generic_victors_of_ww1
@@ -427,11 +442,19 @@ POL_resistance_to_incorporation = {
 	state_production_speed_buildings_factor = -0.1
 	local_building_slots_factor = -0.1
 }
-
+FRA_modifier_eliminated_minorities = {
+	remove_trigger = {
+		NOT = { is_controlled_by = FRA }
+	}
+	icon = GFX_modifier_reversed_ostsiedlung ##change later
+	monthly_population = -0.2
+	state_production_speed_buildings_factor = 0.15
+	local_building_slots_factor = 0.05
+}
 TUR_minority_unrest0 = {
 	icon = GFX_modifier_resistance_ott
 	remove_trigger = {
-	  NOT = { is_controlled_by = TUR }
+		NOT = { is_controlled_by = TUR }
 	}
 	recruitable_population_factor = -0.2
 	state_production_speed_buildings_factor = -0.2
@@ -440,7 +463,7 @@ TUR_minority_unrest0 = {
 TUR_minority_unrest1 = {
 	icon = GFX_modifier_resistance_ott
 	remove_trigger = {
-	  NOT = { is_controlled_by = TUR }
+		NOT = { is_controlled_by = TUR }
 	}
 	recruitable_population_factor = -0.1
 	state_production_speed_buildings_factor = -0.1
@@ -449,7 +472,7 @@ TUR_minority_unrest1 = {
 TUR_minority_unrest2 = {
 	icon = GFX_modifier_resistance_ott2
 	remove_trigger = {
-	  NOT = { is_controlled_by = TUR }
+		NOT = { is_controlled_by = TUR }
 	}
 	recruitable_population_factor = -0.05
 	state_production_speed_buildings_factor = -0.05
@@ -458,7 +481,7 @@ TUR_minority_unrest2 = {
 TUR_minority_unrest3 = {
 	icon = GFX_modifier_resistance_ott2
 	remove_trigger = {
-	  NOT = { is_controlled_by = TUR }
+		NOT = { is_controlled_by = TUR }
 	}
 	recruitable_population_factor = 0.05
 	state_production_speed_buildings_factor = 0.05
@@ -467,7 +490,7 @@ TUR_minority_unrest3 = {
 TUR_minority_unrest4 = {
 	icon = GFX_modifier_multiculturalism2
 	remove_trigger = {
-	  NOT = { is_controlled_by = TUR }
+		NOT = { is_controlled_by = TUR }
 	}
 	recruitable_population_factor = 0.1
 	state_production_speed_buildings_factor = 0.1

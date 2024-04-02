@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		FRA_spirit_towards_republic = {
-			picture = generic_victors_of_ww1 ##later change
+			picture = spirit_french_cockade 
 			allowed = {
 				original_tag = FRA
 			}
@@ -19,7 +19,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_senussi_rebellion = {
-			picture = ARG_subdue_dissension ##maybe later change
+			picture = spirit_senussi_revolt
 			allowed = {
 				original_tag = FRA
 			}
@@ -61,7 +61,7 @@ ideas = {
 				conscription = -0.025
 				war_support_factor = -0.25
 				generate_wargoal_tension = 0.7
-				ai_join_ally_desire_factor = -0.9
+				ai_join_ally_desire_factor = -700
 			}
 		}
 		FRA_spirit_decadent_society = {
@@ -84,6 +84,26 @@ ideas = {
 				research_speed_factor = -0.15
 			}
 		}
+		FRA_spirit_decadent_society_2 = {
+			picture = spirit_decadency
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				conscription = -0.005
+				war_support_factor = -0.1
+				research_speed_factor = -0.05
+			}
+		}
 		FRA_spirit_political_instability = {
 			picture = SPR_political_violence
 			allowed = {
@@ -104,8 +124,28 @@ ideas = {
 				drift_defence_factor = -0.3
 			}
 		}
+		FRA_spirit_political_instability_2 = {
+			picture = SPR_political_violence
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.4
+				drift_defence_factor = -0.15
+			}
+		}
 		FRA_spirit_le_deluge = {
-			picture = le_deluge
+			picture = FRA_la_deluge
 			allowed = {
 				original_tag = FRA
 			}
@@ -126,6 +166,365 @@ ideas = {
 				training_time_army_factor = -0.2
 			}
 		}
+		FRA_spirit_reduced_veterans_pensions = {
+			picture = le_deluge ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				has_government = fascism
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				war_support_factor = -0.1
+				political_power_gain = -0.15
+				consumer_goods_factor = -0.15
+				fascism_drift = 0.03
+			}
+		}
+		FRA_spirit_strikes = {
+			picture = ICE_general_strike
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				consumer_goods_factor = 0.3
+				industrial_capacity_dockyard = -0.15
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.2
+			}
+		}
+		FRA_spirit_matignon_agreements = {
+			picture = spirit_universal_support ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				consumer_goods_factor = 0.15
+				stability_factor = 0.1
+				political_power_factor = 0.1
+				production_factory_max_efficiency_factor = 0.03
+			}
+		}
+		FRA_spirit_public_support = {
+			picture = generic_political_support
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				neutrality_drift = -0.02
+				political_power_factor = 0.1
+			}
+		}
+		FRA_spirit_workers_support = {
+			picture = generic_production_bonus ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				neutrality_drift = -0.02
+				industrial_capacity_dockyard = 0.03
+				industrial_capacity_factory = 0.03
+			}
+		}
+		FRA_spirit_farmers_support = {
+			picture = spirit_peasant_support
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				neutrality_drift = -0.02
+				consumer_goods_factor = -0.1
+			}
+		}
+		FRA_spirit_trade_unions_banned = {
+			picture = generic_communism_banned ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				communism_drift = -0.01
+				industrial_capacity_dockyard = -0.03
+				industrial_capacity_factory = -0.03
+				resistance_damage_to_garrison = -0.2
+			}
+		}
+		FRA_spirit_partial_reactionism = {
+			picture = generic_communism_banned ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				communism_drift = -0.03
+				democratic_drift = -0.03
+				fascism_drift = 0.02
+				neutrality_drift = 0.04
+				stability_factor = 0.1
+			}
+		}
+		FRA_spirit_improving_living_conditions = {
+			picture = generic_communism_banned ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				consumer_goods_factor = 0.3
+				monthly_population = 0.1
+				research_speed_factor = 0.03
+				political_power_factor = 0.15
+			}
+		}
+		FRA_spirit_reforming_the_old = {
+			picture = generic_communism_banned ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				political_power_factor = -0.05
+				consumer_goods_factor = -0.05
+				stability_factor = 0.1
+			}
+		}
+		FRA_spirit_emperor_napoleon = {
+			picture = spirit_napoleon_v
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				has_government = communism
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		FRA_spirit_building_absolutism = {
+			picture = generic_disjointed_gov
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				political_power_factor = -0.1
+			}
+		}
+		FRA_spirit_supermacist_propaganda = {
+			picture = generic_disjointed_gov ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = WGR
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = DDR
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.20
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = SPR
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = HOL
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.05
+			}
+		}
+		FRA_spirit_revanchist_rearmament = {
+			picture = ARG_economic_reactivation 
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.05
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		FRA_spirit_old_new_ways = {
+			picture = ARG_economic_reactivation #change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				political_power_factor = 0.1
+				consumer_goods_factor = -0.1
+				stability_factor = 0.1
+			}
+		}
+		FRA_spirit_old_new_ways_2 = {
+			picture = ARG_economic_reactivation #change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				neutrality_drift = 0.04
+				industrial_capacity_dockyard = -0.03
+				industrial_capacity_factory = -0.03
+				resistance_damage_to_garrison = -0.2
+				political_power_factor = 0.15
+				stability_factor = 0.05
+			}
+		}
+		
 		FRA_agricultural_protectionism = {
 			picture = generic_agrarian_reform
 			allowed = {

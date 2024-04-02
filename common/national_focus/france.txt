@@ -95,7 +95,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_towards_republic }
 		relative_position_id = FRA_towards_republic
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -111,7 +111,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = FRA_spirit_public_support
+				days = 250
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -131,7 +134,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_public_opinion }
 		relative_position_id = FRA_public_opinion
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -147,7 +150,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = FRA_spirit_workers_support
+				days = 200
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -157,7 +163,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
-		available_if_capitulated = yes
+		available_if_capitulated = no
 	}
 	focus = {
 		id = FRA_cooperate_with_farmers
@@ -167,7 +173,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_public_opinion }
 		relative_position_id = FRA_public_opinion
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -183,7 +189,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = FRA_spirit_farmers_support
+				days = 200
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -193,7 +202,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
-		available_if_capitulated = yes
+		available_if_capitulated = no
 	}
 	focus = {
 		id = FRA_soldiers_solidarity
@@ -203,7 +212,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_towards_republic }
 		relative_position_id = FRA_towards_republic
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -216,10 +225,18 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_army_experience > 20
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = FRA_spirit_political_instability
+				add_idea = FRA_spirit_political_instability_2
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+			army_experience = -20
 		}
 		ai_will_do = {
 			factor = 25
@@ -227,8 +244,8 @@ focus_tree = {
 		bypass = {
 			
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 		available_if_capitulated = yes
 	}
 	focus = {
@@ -239,7 +256,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_soldiers_solidarity }
 		relative_position_id = FRA_soldiers_solidarity
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -255,7 +272,15 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = FRA_spirit_decadent_society
+				add_idea = FRA_spirit_decadent_society_2
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+			add_political_power = -25
 		}
 		ai_will_do = {
 			factor = 25
@@ -265,7 +290,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
-		available_if_capitulated = yes
+		available_if_capitulated = no
 	}
 	focus = {
 		id = FRA_republic_forever
@@ -277,7 +302,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_cooperate_with_farmers }
 		relative_position_id = FRA_cooperate_with_farmers
 		search_filters = { }
-		cost = 1
+		cost = 10
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -290,7 +315,7 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			neutrality < 0.40
 		}
 		completion_reward = {
 			
@@ -2630,7 +2655,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_previous_course }
 		relative_position_id = FRA_previous_course
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -2646,7 +2671,14 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = FRA_spirit_decadent_society
+				add_idea = FRA_spirit_decadent_society_2
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -2666,7 +2698,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_nobility_loyalty }
 		relative_position_id = FRA_nobility_loyalty
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -2679,10 +2711,18 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			command_power > 10
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = FRA_spirit_political_instability
+				add_idea = FRA_spirit_political_instability_2
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_command_power = -10
 		}
 		ai_will_do = {
 			factor = 25
@@ -2690,8 +2730,8 @@ focus_tree = {
 		bypass = {
 			
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 		available_if_capitulated = yes
 	}
 	focus = {
@@ -2702,7 +2742,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_previous_course }
 		relative_position_id = FRA_previous_course
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { focus = FRA_delegalize_trade_unions }
 		allow_branch = {
 			
@@ -2718,7 +2758,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = FRA_spirit_improving_living_conditions
+				days = 250
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -2738,7 +2781,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_improve_living_conditions }
 		relative_position_id = FRA_improve_living_conditions
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -2754,7 +2797,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_spirit_reforming_the_old
 		}
 		ai_will_do = {
 			factor = 25
@@ -2774,7 +2817,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_previous_course }
 		relative_position_id = FRA_previous_course
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { focus = FRA_improve_living_conditions }
 		allow_branch = {
 			
@@ -2790,7 +2833,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_spirit_trade_unions_banned
+			add_political_power = -40
 		}
 		ai_will_do = {
 			factor = 25
@@ -2810,7 +2854,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_delegalize_trade_unions }
 		relative_position_id = FRA_delegalize_trade_unions
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -2826,7 +2870,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = FRA_spirit_partial_reactionism
+				days = 300
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -2920,7 +2967,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_the_guarantor }
 		relative_position_id = FRA_the_guarantor
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -2936,7 +2983,26 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_idea = FRA_spirit_reforming_the_old
+				}
+				swap_ideas = {
+					remove_idea = FRA_spirit_reforming_the_old
+					add_idea = FRA_spirit_old_new_ways
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_spirit_trade_unions_banned
+				}
+				swap_ideas = {
+					remove_idea = FRA_spirit_trade_unions_banned
+					add_idea = FRA_spirit_old_new_ways_2
+				}
+			}
+			add_political_power = 30
+			remove_ideas = FRA_spirit_horrors_of_the_great_war
 		}
 		ai_will_do = {
 			factor = 25
@@ -3281,7 +3347,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_soldiers_loyalty }
 		relative_position_id = FRA_soldiers_loyalty
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { focus = FRA_the_guarantor focus = FRA_the_reformer }
 		allow_branch = {
 			
@@ -3296,8 +3362,17 @@ focus_tree = {
 		available = {
 			
 		}
+		select_effect = {
+			add_ideas = FRA_spirit_building_absolutism
+		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_26
+			country_event = {
+				id = deluge_france.4
+			}
+			hidden_effect = {
+				remove_ideas = FRA_spirit_building_absolutism
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -3317,7 +3392,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_the_dictator }
 		relative_position_id = FRA_the_dictator
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { focus = FRA_boulangists_takeover }
 		allow_branch = {
 			
@@ -3330,10 +3405,16 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_country_flag = FRA_flag_absolute_emperor
 		}
 		completion_reward = {
-			
+			add_trait = {
+				character = FRA_deluge_napoleon_v
+				ideology = bonapartist_ideology
+				trait = the_dictator
+			}
+			add_stability = 0.05
+			add_political_power = 100
 		}
 		ai_will_do = {
 			factor = 25
@@ -3353,7 +3434,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_absolutist_grip focus = FRA_boulangists_takeover }
 		relative_position_id = FRA_absolutist_grip
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -3369,7 +3450,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_spirit_supermacist_propaganda
+			add_war_support = 0.03
 		}
 		ai_will_do = {
 			factor = 25
@@ -3389,7 +3471,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_supermacist_propaganda }
 		relative_position_id = FRA_supermacist_propaganda
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -3405,7 +3487,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = FRA_spirit_revanchist_rearmament
+				days = 250
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -3425,7 +3510,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_revanchist_rearmament }
 		relative_position_id = FRA_revanchist_rearmament
 		search_filters = { }
-		cost = 1
+		cost = 8
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -3438,16 +3523,65 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			controls_state = 14
+			controls_state = 806
+			controls_state = 165
+			controls_state = 158
+			controls_state = 42
+			controls_state = 28
 		}
 		completion_reward = {
-			
+			14 = {
+				add_manpower = -10000
+				add_dynamic_modifier = {
+					modifier = FRA_modifier_eliminated_minorities
+				}
+			}
+			806 = {
+				add_manpower = -10000
+				add_dynamic_modifier = {
+					modifier = FRA_modifier_eliminated_minorities
+				}
+			}
+			165 = {
+				add_manpower = -10000
+				add_dynamic_modifier = {
+					modifier = FRA_modifier_eliminated_minorities
+				}
+			}
+			158 = {
+				add_manpower = -10000
+				add_dynamic_modifier = {
+					modifier = FRA_modifier_eliminated_minorities
+				}
+			}
+			42 = {
+				add_manpower = -10000
+				add_dynamic_modifier = {
+					modifier = FRA_modifier_eliminated_minorities
+				}
+			}
+			28 = {
+				add_manpower = -10000
+				add_dynamic_modifier = {
+					modifier = FRA_modifier_eliminated_minorities
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
 		}
 		bypass = {
-			
+			NOT = {
+				OR = {
+					controls_state = 14
+					controls_state = 806
+					controls_state = 165
+					controls_state = 158
+					controls_state = 42
+					controls_state = 28
+				}
+			}
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -3461,7 +3595,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_the_dictator }
 		relative_position_id = FRA_the_dictator
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { focus = FRA_absolutist_grip }
 		allow_branch = {
 			
@@ -3474,10 +3608,12 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_country_flag = FRA_flag_boulangist_coup
 		}
 		completion_reward = {
-			
+			country_event = {
+				id = deluge_france.5
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -4075,7 +4211,7 @@ focus_tree = {
 		prerequisite = { focus =  }
 		relative_position_id = 
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -4088,10 +4224,15 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_completed_focus = FRA_may_day_results
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {french_depression_consumer_goods_factor = -0.15 }
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_1
+			add_stability = -0.05
+			add_political_power = -40
 		}
 		ai_will_do = {
 			factor = 25
@@ -4105,13 +4246,13 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_decrease_export
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_decrease_export
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_devaluate_the_franc }
 		relative_position_id = FRA_devaluate_the_franc
 		search_filters = { }
-		cost = 1
+		cost = 7
 		mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -4127,7 +4268,11 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {french_depression_industrial_capacity_dockyard = 0.1 }
+				add_to_variable = {french_depression_industrial_capacity_factory = 0.1 }
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_2
 		}
 		ai_will_do = {
 			factor = 25
@@ -4147,7 +4292,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_devaluate_the_franc }
 		relative_position_id = FRA_devaluate_the_franc
 		search_filters = { }
-		cost = 1
+		cost = 7
 		mutually_exclusive = { focus = FRA_abandon_gold_standard }
 		allow_branch = {
 			
@@ -4163,7 +4308,13 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {french_depression_consumer_goods_factor = -0.15 }
+				add_to_variable = {french_depression_production_factory_max_efficiency_factor = 0.05 }
+				add_to_variable = {french_depression_production_factory_efficiency_gain_factor = 0.05 }
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_10
+			custom_effect_tooltip = FRA_custom_effect_tooltip_11
 		}
 		ai_will_do = {
 			factor = 25
@@ -4183,7 +4334,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_devaluate_the_franc }
 		relative_position_id = FRA_devaluate_the_franc
 		search_filters = { }
-		cost = 1
+		cost = 7
 		mutually_exclusive = { focus = FRA_keep_with_gold }
 		allow_branch = {
 			
@@ -4199,7 +4350,13 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {french_depression_consumer_goods_factor = -0.15 }
+				add_to_variable = {french_depression_production_factory_max_efficiency_factor = 0.05 }
+				add_to_variable = {french_depression_production_factory_efficiency_gain_factor = 0.05 }
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_10
+			custom_effect_tooltip = FRA_custom_effect_tooltip_12
 		}
 		ai_will_do = {
 			factor = 25
@@ -4219,7 +4376,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_devaluate_the_franc }
 		relative_position_id = FRA_devaluate_the_franc
 		search_filters = { }
-		cost = 1
+		cost = 7
 		mutually_exclusive = { focus =  }
 		allow_branch = {
 			
@@ -4235,7 +4392,12 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {french_depression_production_factory_efficiency_gain_factor = 0.1 }
+				add_to_variable = {french_depression_production_factory_max_efficiency_factor = 0.1 }
+				add_to_variable = {french_depression_political_power_factor = 0.1 }
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_4
 		}
 		ai_will_do = {
 			factor = 25
@@ -4247,15 +4409,15 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 	}
-focus = {
+	focus = {
 		id = FRA_tax_reform
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_tax_reform
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_support_small_and_medium_business  }
 		relative_position_id = FRA_support_small_and_medium_business
 		search_filters = { }
-		cost = 1
+		cost = 7
 		mutually_exclusive = { focus =  }
 		allow_branch = {
 			
@@ -4271,7 +4433,12 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {french_depression_consumer_goods_factor = -0.15 }
+				add_to_variable = {french_depression_production_speed_buildings_factor = 0.2 }
+				add_to_variable = {french_depression_stability_factor = 0.1 }
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_5
 		}
 		ai_will_do = {
 			factor = 25
@@ -4285,13 +4452,13 @@ focus = {
 		}
 	focus = {
 		id = FRA_cut_jobs
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_reduce_employment
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_decrease_export }
 		relative_position_id = FRA_decrease_export
 		search_filters = { }
-		cost = 1
+		cost = 7
 		mutually_exclusive = { focus =  }
 		allow_branch = {
 			
@@ -4307,7 +4474,11 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {french_depression_consumer_goods_factor = -0.15 }
+				add_to_variable = {french_depression_production_speed_buildings_factor = 0.2 }
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_3
 		}
 		ai_will_do = {
 			factor = 25
@@ -4327,7 +4498,7 @@ focus = {
 		prerequisite = { focus = FRA_cut_jobs }
 		relative_position_id = FRA_cut_jobs
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { focus = FRA_put_down_strikes }
 		allow_branch = {
 			
@@ -4340,10 +4511,16 @@ focus = {
 		#	}
 		#}
 		available = {
-			
+			has_idea = FRA_spirit_strikes
 		}
 		completion_reward = {
-			
+			add_to_variable = {french_depression_political_power_factor = 0.05 }
+			custom_effect_tooltip = FRA_custom_effect_tooltip_16
+			remove_ideas = FRA_spirit_strikes
+			add_timed_idea = {
+				idea = FRA_spirit_matignon_agreements
+				days = 700
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -4357,13 +4534,13 @@ focus = {
 	}
 	focus = {
 		id = FRA_put_down_strikes
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_put_down_strikes_with_force
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_cut_jobs }
 		relative_position_id = FRA_cut_jobs
 		search_filters = { }
-		cost = 1
+		cost = 7
 		mutually_exclusive = { focus = FRA_matignon_agreements  }
 		allow_branch = {
 			
@@ -4376,10 +4553,15 @@ focus = {
 		#	}
 		#}
 		available = {
-			
+			has_idea = FRA_spirit_strikes
 		}
 		completion_reward = {
-			
+			add_to_variable = {french_depression_political_power_factor = 0.05 }
+			custom_effect_tooltip = FRA_custom_effect_tooltip_16
+			remove_ideas = FRA_spirit_strikes
+			add_stability = -0.1
+			add_war_support = -0.1
+			add_political_power = -75
 		}
 		ai_will_do = {
 			factor = 25
@@ -4399,7 +4581,7 @@ focus = {
 		prerequisite = { focus = FRA_keep_with_gold focus = FRA_abandon_gold_standard  }
 		relative_position_id = FRA_keep_with_gold
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { focus = FRA_manpower_from_colonies  }
 		allow_branch = {
 			
@@ -4415,7 +4597,13 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {french_depression_stability_factor = 0.05 }
+				add_to_variable = {french_depression_political_power_factor = 0.1 }
+				add_to_variable = {french_depression_war_support_factor = 0.05 }
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_13
+			custom_effect_tooltip = FRA_custom_effect_tooltip_14
 		}
 		ai_will_do = {
 			factor = 25
@@ -4435,7 +4623,7 @@ focus = {
 		prerequisite = { focus = FRA_keep_with_gold focus = FRA_abandon_gold_standard }
 		relative_position_id = FRA_abandon_gold_standard
 		search_filters = { }
-		cost = 1
+		cost = 7
 		mutually_exclusive = { focus = FRA_increase_social_welfare  }
 		allow_branch = {
 			
@@ -4448,10 +4636,21 @@ focus = {
 		#	}
 		#}
 		available = {
-			
+			any_state = {
+				is_owned_by = FRA
+				NOT = {
+					is_on_continent = europe
+				}
+			}
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {french_depression_stability_factor = 0.05 }
+				add_to_variable = {french_depression_political_power_factor = 0.1 }
+				add_to_variable = {french_depression_war_support_factor = 0.05 }
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_13
+			custom_effect_tooltip = FRA_custom_effect_tooltip_15
 		}
 		ai_will_do = {
 			factor = 25
@@ -4463,7 +4662,7 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 	}
-focus = {
+	focus = {
 		id = FRA_reform_administration
 		icon = GFX_focus_generic_improve_the_administration
 		x = -1
@@ -4471,7 +4670,7 @@ focus = {
 		prerequisite = { focus = FRA_manpower_from_colonies focus = FRA_increase_social_welfare }
 		relative_position_id = FRA_increase_social_welfare
 		search_filters = { }
-		cost = 1
+		cost = 7
 		mutually_exclusive = { focus =   }
 		allow_branch = {
 			
@@ -4487,7 +4686,11 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {french_depression_local_resources_factor = 0.2 }
+				add_to_variable = {french_depression_global_building_slots_factor = 0.2 }
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_6
 		}
 		ai_will_do = {
 			factor = 25
@@ -4499,15 +4702,15 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 	}
-focus = {
+	focus = {
 		id = FRA_reduce_veterans_pension
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_reduce_veterans_pensions
 		x = -3
 		y = 1
 		prerequisite = { focus = FRA_manpower_from_colonies focus = FRA_increase_social_welfare }
 		relative_position_id = FRA_increase_social_welfare
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { focus =   }
 		allow_branch = {
 			
@@ -4520,10 +4723,15 @@ focus = {
 		#	}
 		#}
 		available = {
-			
+			NOT = {
+				has_government = fascism
+			}
 		}
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = FRA_spirit_reduced_veterans_pensions
+				days = 400
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -4535,15 +4743,15 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 	}
-focus = {
+	focus = {
 		id = FRA_reform_central_bank
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_reform_the_central_bank
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_tax_reform }
 		relative_position_id = FRA_tax_reform
 		search_filters = { }
-		cost = 1
+		cost = 7
 		mutually_exclusive = { focus = FRA_marginalize_central_bank  }
 		allow_branch = {
 			
@@ -4559,7 +4767,13 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {french_depression_production_speed_buildings_factor = 0.2 }
+				add_to_variable = {french_depression_industrial_capacity_dockyard = 0.1 }
+				add_to_variable = {french_depression_industrial_capacity_factory = 0.1 }
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_7
+			custom_effect_tooltip = FRA_custom_effect_tooltip_9
 		}
 		ai_will_do = {
 			factor = 25
@@ -4571,15 +4785,15 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 	}
-focus = {
+	focus = {
 		id = FRA_marginalize_central_bank
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_marginalize_the_central_bank
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_tax_reform }
 		relative_position_id = FRA_tax_reform
 		search_filters = { }
-		cost = 1
+		cost = 7
 		mutually_exclusive = { focus = FRA_reform_central_bank  }
 		allow_branch = {
 			
@@ -4595,7 +4809,13 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {french_depression_production_speed_buildings_factor = 0.2 }
+				add_to_variable = {french_depression_industrial_capacity_dockyard = 0.1 }
+				add_to_variable = {french_depression_industrial_capacity_factory = 0.1 }
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_7
+			custom_effect_tooltip = FRA_custom_effect_tooltip_8
 		}
 		ai_will_do = {
 			factor = 25
@@ -4609,7 +4829,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_budget_deficit_law
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_obligations
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_matignon_agreements  focus = FRA_put_down_strikes }
@@ -4617,7 +4837,7 @@ focus = {
 		prerequisite = { focus = FRA_reform_administration }
 		relative_position_id = FRA_matignon_agreements
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { focus =   }
 		allow_branch = {
 			
@@ -4633,7 +4853,74 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {french_depression_production_lack_of_resource_penalty_factor = -0.2 }
+				add_to_variable = {french_depression_industrial_capacity_dockyard = 0.1 }
+				add_to_variable = {french_depression_industrial_capacity_factory = 0.1 }
+				add_to_variable = {french_depression_production_factory_efficiency_gain_factor = 0.05 }
+				remove_dynamic_modifier = { modifier = FRA_modifier_economic_depression }
+				add_dynamic_modifier = { modifier = FRA_modifier_new_french_economy }
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_17
+			if = {
+				limit = {
+					OR = {
+						has_completed_focus = FRA_marginalize_central_bank
+						has_completed_focus = FRA_reform_central_bank
+						has_completed_focus = FRA_abandon_gold_standard
+						has_completed_focus = FRA_keep_with_gold
+						has_completed_focus = FRA_increase_social_welfare
+						has_completed_focus = FRA_manpower_from_colonies
+					}
+				}
+				custom_effect_tooltip = FRA_custom_effect_tooltip_18
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_marginalize_central_bank
+				}
+				custom_effect_tooltip = FRA_custom_effect_tooltip_19
+				add_to_variable = {new_french_economy_production_factory_efficiency_gain_factor = 0.05 }
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_reform_central_bank
+				}
+				custom_effect_tooltip = FRA_custom_effect_tooltip_20
+				add_to_variable = {new_french_economy_production_speed_buildings_factor = 0.05 }
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_abandon_gold_standard
+				}
+				custom_effect_tooltip = FRA_custom_effect_tooltip_21
+				add_to_variable = {new_french_economy_stability_factor = -0.04 }
+				add_to_variable = {new_french_economy_consumer_goods_factor = -0.08 }
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_keep_with_gold
+				}
+				custom_effect_tooltip = FRA_custom_effect_tooltip_22
+				add_to_variable = {new_french_economy_stability_factor = 0.04 }
+				add_to_variable = {new_french_economy_consumer_goods_factor = 0.08 }
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_increase_social_welfare
+				}
+				custom_effect_tooltip = FRA_custom_effect_tooltip_23
+				add_to_variable = {new_french_economy_monthly_population = 0.05 }
+				add_to_variable = {new_french_economy_consumer_goods_factor = 0.08 }
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_manpower_from_colonies
+				}
+				custom_effect_tooltip = FRA_custom_effect_tooltip_24
+				add_to_variable = {new_french_economy_stability_factor = -0.05 }
+				add_to_variable = {new_french_economy_consumer_goods_factor = 0.08 }
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -4863,7 +5150,7 @@ focus = {
 		}
 	focus = {		
 		id = FRA_autarky
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_autarky
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_introduce_corporatism }
@@ -5301,7 +5588,7 @@ focus = {
 		prerequisite = { focus = FRA_budget_deficit_law }
 		relative_position_id = FRA_budget_deficit_law
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { }
 		allow_branch = {
 			
@@ -5317,7 +5604,20 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_25
+			add_to_variable = {new_french_economy_production_factory_max_efficiency_factor = 0.05 }
+			add_tech_bonus = {
+				name = POL_finish_four_year_plan_bonus_construction
+				bonus = 1
+				uses = 1
+				category = construction_tech
+			}
+			add_tech_bonus = {
+				name = POL_finish_four_year_plan_bonus_production
+				bonus = 1
+				uses = 1
+				category = cat_production
+			}
 		}
 		ai_will_do = {
 			factor = 25

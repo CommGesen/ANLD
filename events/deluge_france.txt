@@ -42,351 +42,72 @@ news_event = {
 		trigger = { has_government = fascism }
 	}
 }
-
-#Старые узы
-
+# Strikes in France happen after devaluation of Franc
 country_event = {
-	id = deluge_france.27
-	title = deluge_france.27.title
-	desc = deluge_france.27.desc
-	
-	picture = GFX_report_event_journalists_speech
-	
-	is_triggered_only = yes
-
-	option = {
-		name = deluge_france.27.a
-		
-		add_political_power = 25
-		
-		FROM = {
-			country_event = {
-				days = 1
-				id = deluge_france.28
-			}
-		}
-		
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 10
-				FROM = {
-					has_government = ROOT
-				}
-			}
-			modifier = {
-				factor = 0.1
-				FROM = {
-					is_enemy_ideology = yes
-				}
-			}
-		}
-	}
-	option = {
-		name = deluge_france.27.b
-		
-		add_opinion_modifier = {
-			target = FROM
-			modifier = embargo
-		}
-		
-		FROM = {
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = embargo
-			}
-			country_event = {
-				days = 1
-				id = deluge_france.29
-			}
-		}
-		ai_chance = {
-			factor = 80
-			modifier = {
-				factor = 0.5
-				has_war = yes
-			}
-			modifier = {
-				factor = 0
-				has_government = communism
-				FROM = {
-					has_government = communism
-				}
-			}
-		}
-	}
-	option = {
-		name = deluge_france.27.c
-		
-		add_stability = -0.1
-		add_war_support = -0.1
-		
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = FROM
-		}
-		
-		add_opinion_modifier = {
-			target = FROM
-			modifier = embargo
-		}
-		
-		FROM = {
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = embargo
-			}
-			country_event = {
-				days = 1
-				id = deluge_france.30
-			}
-		}
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_stability < 0.4
-			}
-			modifier = {
-				factor = 0
-				has_war_support < 0.4
-			}
-			modifier = {
-				factor = 0
-				has_war = yes
-			}
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-			modifier = {
-				factor = 0
-				has_government = communism
-				FROM = {
-					has_government = communism
-				}
-			}
-		}
-	}
-}
-
-# Event for civil war happening outside of the May Day marches
-
-country_event = {
-	id = deluge_france.24
-	title = deluge_france24title
-	desc = deluge_france24desc
-	
-	picture = GFX_deluge_paris_small
-	
+	id = deluge_france.3
+	title = deluge_france.3.t
+	desc = deluge_france.3.d
+	picture = GFX_report_event_french_workers_strikes
 	fire_only_once = yes
-
 	trigger = {
 		tag = FRA
-		OR = {
-			has_global_flag = French_intervention_in_GCW_flag
-			has_war_with = DDR
-		}
-		OR = {
-			AND = {
-				communism > 0.25
-				has_idea = deluge_great_war_horrors_idea
-			}
-			communism > 0.4
-		}
-		NOT = { has_government = communism }
-		has_war = yes
-		has_civil_war = no
-		NOT = { has_idea_with_trait = communist_revolutionary } # player does not want to become communist
-		NOT = { has_global_flag = French_Civil_War_has_happened }
-		NOT = { has_country_flag = has_had_civil_war_d_v_r }
-		NOT = { has_country_flag = has_had_civil_war_m_v_r }
-		NOT = { has_country_flag = has_had_civil_war_u_v_r }
+		has_completed_focus = FRA_devaluate_the_franc
 	}
-	
 	mean_time_to_happen = {
-		days = 1
+		days = 70
 	}
-	
-	immediate = {
-		set_global_flag = French_Civil_War_has_happened
-	}
-	
 	option = {
-		name = deluge_france24opt
-		
-		hidden_effect = {
-			country_event = { days = 1 id = deluge_france.25 }
-			if = {
-				limit = {
-					has_government = democratic
-				}
-				set_country_flag = has_had_civil_war_d_v_r
-			}
-			if = {
-				limit = {
-					has_government = neutrality
-				}
-				set_country_flag = has_had_civil_war_m_v_r
-			}
-			if = {
-				limit = {
-					has_government = fascism
-				}
-				set_country_flag = has_had_civil_war_u_v_r
-			}
-		}
-		
-		add_popularity = {
-			ideology = communism
-			popularity = 0.05
-		}
-		
+		name = deluge_france.3.a
+		add_ideas = FRA_spirit_strikes
 	}
 }
-
-# Civil war event outside of May Day
-
+# Emperor tries to gain absolute power, disbands current government, so Boulangists do a coup
 country_event = {
-	id = deluge_france.25
-	title = deluge_france25title
-	desc = deluge_france25desc
-	picture = GFX_deluge_paris_small
-	
+	id = deluge_france.4
+	title = deluge_france.4.t
+	desc = deluge_france.4.d
+	picture = GFX_report_event_maxime_weygand_and_military
+	fire_only_once = yes
 	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			remove_ideas = deluge_anti-war_sentiment_france_idea
-			add_popularity = {
-				ideology = communism
-				popularity = -1.0
-			}
-			every_state = {
-				limit = {
-					is_core_of = FRA
-				}
-				add_core_of = FRR
-			}
-			every_state = {
-				limit = {
-					is_core_of = BEL
-				}
-				add_core_of = FRR
-			}
-			FRR = {
-				transfer_state = 23
-				transfer_state = 24
-				transfer_state = 33
-				transfer_state = 25
-				transfer_state = 26
-				transfer_state = 30
-			}
-			if = {
-				limit = {
-					OR = {
-						NOT = { country_exists = DDR }
-						has_global_flag = communism_international_formed
-						DDR = {
-							NOT = { has_government = communism }
-						}
-					}
-				}
-				FRR = {
-				#	create_faction = "factionRevolutionaryBloc"
-				}
-			}
-			if = {
-				limit = {
-					FRR = {
-						is_in_faction = no
-					}
-					country_exists = DDR
-					NOT = { has_global_flag = communism_international_formed }
-					DDR = {
-						has_government = communism
-					}
-				}
-				DDR = {
-				#	create_faction = "factionRadicalInternational"
-				#	set_global_flag = communism_international_formed
-				#	add_to_faction = FRR
-				}
-			}
-			FRR = {
-				declare_war_on = {
-					target = FRA
-					type = annex_everything
-				}
-				load_oob = FRR_reinforcements
-			}			
-			set_equipment_fraction = 0.6
-			if = {
-				limit = {
-					is_ai = yes
-				}
-				load_oob = FRA_reinforcements
-			}
+	option = {##emperor gains full power
+		name = deluge_france.4.a
+		set_country_flag = FRA_flag_absolute_emperor
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48 
 		}
 	}
-	
-	option = {
-		name = deluge_france25opta
-		
-		hidden_effect = {
-			news_event = { days = 1 id = deluge_france.20 }
+	option = {##boulangists make emperor puppet
+		name = deluge_france.4.b
+		set_country_flag = FRA_flag_boulangist_coup
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48 
 		}
-		
-		ai_chance = {
-			factor = 1
-		}
-	}
-	
-	option = {
-		name = deluge_france25optb
-		
-		hidden_effect = {
-			load_oob = FRA_reinforcements
-			
-			news_event = { days = 1 id = deluge_france.20 }
-			
-			FRR = { change_tag_from = FRA }
-		}
-		
-		ai_chance = {
-			factor = 0
-		}
+		set_party_name = { ideology = fascism long_name = FRA_boulangists_party_long name = FRA_boulangists_party }
+		promote_character = FRA_deluge_louis_franchet_d_esperey
+		add_ideas = FRA_spirit_emperor_napoleon
 	}
 }
-
-# Civil war news event outside of May Day
-
-news_event = {
-	id = deluge_france.26
-	title = deluge_france26title
-	desc = deluge_france26desc
-	
-	picture = GFX_deluge_paris_large
-	
-	major = yes
-	
+# Boulangists can change leadership
+country_event = {
+	id = deluge_france.5
+	title = deluge_france.5.t
+	desc = deluge_france.5.d
+	picture = GFX_report_event_louis_franchet_d_esperey
+	fire_only_once = yes
 	is_triggered_only = yes
-	
-	option = {
-		name = deluge_france26opta
-		trigger = { has_government = communism }
+	option = {##d'esperey remains
+		name = deluge_france.5.a
+		add_political_power = 2
 	}
-	option = {
-		name = deluge_france26optb
-		trigger = { has_government = democratic }
-	}
-	option = {
-		name = deluge_france26optc
-		trigger = { has_government = neutrality }
-	}
-	option = {
-		name = deluge_france26optd
-		trigger = { has_government = fascism }
+	option = {##weygand gains power
+		name = deluge_france.5.b
+		promote_character = FRA_deluge_maxime_weygand
 	}
 }
 

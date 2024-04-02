@@ -299,7 +299,7 @@ characters={
 		country_leader = {
 			ideology = social_darwinist_ideology
 			traits = {
-				
+				resourceful_machiavellian
 			}
 			expire = "1969.1.1.1"
 			desc = "FRA_deluge_louis_franchet_d_esperey_desc"
@@ -342,7 +342,8 @@ characters={
 		country_leader = {
 			ideology = social_darwinist_ideology
 			traits = {
-				
+				friend_of_poland
+				prince_of_terror
 			}
 			expire = "1969.1.1.1"
 			desc = "FRA_deluge_maxime_weygand_desc"

@@ -156,20 +156,6 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
-		emperor_napoleon = {
-			picture = spirit_napoleon_v
-			allowed = {
-				original_tag = FRA
-			}
-			allowed_civil_war = {
-				NOT = { has_government = communism }
-			}
-			removal_cost = -1
-			
-			modifier = {
-				neutrality_drift = 0.05
-			}
-		}
 		ottoman_emperor = {
 			picture = spirit_abdulmecid_ii
 			allowed = {

@@ -1,9 +1,5 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_idea_le_deluge"
-		texturefile = "gfx/interface/ideas/spirits/le_deluge.dds"
-	}
-	spriteType = {
 		name = "GFX_idea_spirit_gustaf_v"
 		texturefile = "gfx/interface/ideas/spirits/spirit_gustaf_v.dds"
 	}
@@ -478,5 +474,17 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_modifiers_TUR_Minority"
 		texturefile = "gfx/interface/ideas/spirits/TUR_Minority.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_french_cockade"
+		texturefile = "gfx/interface/ideas/spirits/spirit_french_cockade.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_french_education_reform"
+		texturefile = "gfx/interface/ideas/spirits/spirit_french_education_reform.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_senussi_revolt"
+		texturefile = "gfx/interface/ideas/spirits/spirit_senussi_revolt.dds"
 	}
 }
