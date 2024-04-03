@@ -1,6 +1,6 @@
 NEP_KP = {
-	color = rgb { 50  200  50 }
-	color_ui = rgb { 70 220 70 }
+	color = rgb { 100  150  100 }
+	color_ui = rgb { 120 170 120 }
 }
 
 VIN_FR = {
@@ -14,23 +14,23 @@ BHU_FR = {
 }
 
 RAJ_UK = {
-	color = rgb { 250  50  50 }
-	color_ui = rgb { 255 70 70 }
+	color = rgb { 170  10  10 }
+	color_ui = rgb { 200  10  10 }
 }
 
 RAJ_GB = {
-	color = rgb { 250  50  50 }
-	color_ui = rgb { 255 70 70 }
+	color = rgb { 170  10  10 }
+	color_ui = rgb { 200  10  10 }
 }
 
 MAL_UK = {
-    color = rgb { 225 50 70 }
-    color_ui = rgb { 255 73 100 }
+    color = rgb { 201 56 93 }
+    color_ui = rgb { 255 73 121 }
 }
 
 MAL_GB = {
-    color = rgb { 225 50 70 }
-    color_ui = rgb { 255 73 100 }
+    color = rgb { 201 56 93 }
+    color_ui = rgb { 255 73 121 }
 }
 
 BUR_UK = {
@@ -219,8 +219,8 @@ POL_empire = {
 }
 
 POL_rzeczpospolita = {
-	color = rgb { 176 81 111 }
-	color_ui = rgb { 176 81 111 }
+	color = rgb { 214 102 139 }
+	color_ui = rgb { 255 120 138 }
 }
 
 POL_falanga = {
@@ -326,24 +326,4 @@ HEJ_OTT = {
 PAL_EGY = {
 	color = rgb { 230 230 70 }
 	color_ui = rgb { 230 230 70 }
-}
-
-BAL_council = {
-	color = rgb { 180 40 40 }
-	color_ui = rgb { 255 120 120 }
-}
-
-BLR_council = {
-	color = rgb { 180 40 40 }
-	color_ui = rgb { 255 120 120 }
-}
-
-UKR_council = {
-	color = rgb { 180 40 40 }
-	color_ui = rgb { 255 120 120 }
-}
-
-CAU_council = {
-	color = rgb { 180 40 40 }
-	color_ui = rgb { 255 120 120 }
 }

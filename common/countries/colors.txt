@@ -140,8 +140,8 @@ CHL = {
 	color_ui = rgb { 202 131 139 }
 }
 CHI = { 
-	color = rgb { 255  255  40 }
-	color_ui = rgb { 255 255 60 }
+	color = rgb { 237 152 18 }
+	color_ui = rgb { 224 139 5 }
 }
 CMN = {
 	color = rgb { 200 200 230 }
@@ -220,8 +220,8 @@ ELS = {
 	color_ui = rgb { 255 240 120 }
 }
 ENG = {
-	color = rgb { 230 30 45 }
-	color_ui = rgb { 255 60 70 }
+	color = rgb { 201 56 93 }
+	color_ui = rgb { 255 73 121 }
 }
 EST = {
 	color = rgb { 50 135 175 }
@@ -268,8 +268,8 @@ GEO = {
 	color_ui = rgb { 255 229 229 }
 }
 GER = {
-	color = rgb { 102  96  87 }
-	color_ui = rgb { 120  120  110 }
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 115 115 115 }
 }
 GHA = {
 	color = rgb { 220 40 20 }
@@ -296,8 +296,8 @@ HAI = {
 	color_ui = rgb { 210 190 20 }
 }
 HAW = {
-	color = rgb { 100  255  150 }
-	color_ui = rgb { 120 255 170 }
+	color = rgb { 231 181 12 }
+	color_ui = rgb { 231 181 12 }
 }
 HEJ = {
 	color = rgb { 100 80 20 }
@@ -556,8 +556,8 @@ SEN = {
 	color_ui = rgb { 255 90 100 }
 }
 SIA = {
-	color = rgb { 88 137 172 }
-	color_ui = rgb { 110 160 190 }
+	color = rgb { 171 190 152 }
+	color_ui = rgb { 222 247 198 }
 }
 SIB = {
 	color = rgb { 0 150 0 }
@@ -612,15 +612,15 @@ TEX = {
 	color_ui = rgb { 255  70  70 }
 }
 TIB = {
-	color = rgb { 120 180 210 }
-	color_ui = rgb { 140 200 230 }
+	color = rgb { 80 115 45}
+	color_ui = rgb { 222 247 198 }
 }
 TJK = {
-	color = rgb { 0  110  80 } # dark green
+	color = rgb { 0  110  80 }
 	color_ui = rgb { 20  130  100 }
 }
 TKM = {
-	color = rgb { 157 144 97 } # brown
+	color = rgb { 157 144 97 }
 	color_ui = rgb { 190 160 120 }
 }
 TNG = {
@@ -668,7 +668,7 @@ USA = { # 2121e1
 	color_ui = rgb { 60 90 200 }
 }
 UZB = {
-	color = rgb { 210  140  40 } # orange
+	color = rgb { 210  140  40 }
 	color_ui = rgb { 230  160  60 }
 }
 VEN = {
@@ -679,9 +679,9 @@ VIN = {
 	color = rgb { 136 117 90 }
 	color_ui = rgb { 160 140 110 }
 }
-WGR = { # b3eee8
-	color = rgb { 179 238 232 }
-	color_ui = rgb { 200 255 255 }
+WGR = {
+     color = rgb { 195 236 230 }
+     color_ui = rgb { 225 255 255 }
 }
 WSR = {
 	color = rgb { 175 210 220 }
