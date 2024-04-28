@@ -237,19 +237,6 @@ country_event = {
 		
 		if = {
 			limit = {
-				TAG = FRR
-			}
-			FROM = {
-				add_ai_strategy = {
-					type = alliance
-					id = "FRR"
-					value = 9999
-				}
-			}
-		}
-		
-		if = {
-			limit = {
 				TAG = DDR
 			}
 			FROM = {
@@ -310,11 +297,6 @@ country_event = {
 		
 		ai_chance = {
 			factor = 1
-			
-			modifier = {
-				add = -1
-				original_tag = FRR
-			}
 		}
 	}
 	option = {
@@ -324,11 +306,6 @@ country_event = {
 		
 		ai_chance = {
 			factor = 0
-			
-			modifier = {
-				add = 1
-				original_tag = FRR
-			}
 		}
 	}
 }

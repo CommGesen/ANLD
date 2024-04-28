@@ -18,7 +18,6 @@ country_event = {
 		tag = ITA
 		OR = {
 			has_war_with = FRA
-			has_war_with = FRR
 		}
 		OR = {
 			NOT = { 735 = { is_claimed_by = ITA } }

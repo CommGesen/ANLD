@@ -197,8 +197,8 @@ on_actions = {
 			if = {#POMERANIA to POM 
 				limit = {
 					POM = {
-							has_full_control_of_state = 85
-						}
+						has_full_control_of_state = 85
+					}
 				}
 				set_province_name = { id = 362 name = "Gduńsk" }
 				set_province_name = { id = 9263 name = "Gdiniô" }

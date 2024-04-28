@@ -67,7 +67,6 @@ country_event = {
 	title = deluge_france.4.t
 	desc = deluge_france.4.d
 	picture = GFX_report_event_maxime_weygand_and_military
-	fire_only_once = yes
 	is_triggered_only = yes
 	option = {##emperor gains full power
 		name = deluge_france.4.a
@@ -91,6 +90,13 @@ country_event = {
 		set_party_name = { ideology = fascism long_name = FRA_boulangists_party_long name = FRA_boulangists_party }
 		promote_character = FRA_deluge_louis_franchet_d_esperey
 		add_ideas = FRA_spirit_emperor_napoleon
+		set_temp_variable = { half_of_monarchism = party_popularity@neutrality }
+		multiply_temp_variable = { half_of_monarchism = 0.5 }
+		custom_effect_tooltip = FRA_custom_effect_tooltip_35
+		add_popularity = {
+			ideology = fascism
+			popularity = half_of_monarchism
+		}
 	}
 }
 # Boulangists can change leadership
@@ -99,7 +105,6 @@ country_event = {
 	title = deluge_france.5.t
 	desc = deluge_france.5.d
 	picture = GFX_report_event_louis_franchet_d_esperey
-	fire_only_once = yes
 	is_triggered_only = yes
 	option = {##d'esperey remains
 		name = deluge_france.5.a
@@ -108,6 +113,170 @@ country_event = {
 	option = {##weygand gains power
 		name = deluge_france.5.b
 		promote_character = FRA_deluge_maxime_weygand
+	}
+}
+# France proclaims republic and decides what to do with the Bonaparte family and the emperor
+country_event = {
+	id = deluge_france.6
+	title = deluge_france.6.t
+	desc = deluge_france.6.d
+	picture = GFX_report_event_french_republic
+	is_triggered_only = yes
+	option = {##exile them
+		name = deluge_france.6.a
+		
+	}
+	option = {##kill them
+		name = deluge_france.6.b
+		
+	}
+}
+# After deciding what happens to Bonaparte family one of factions gets power: radicals, democrats or ultra-nationalists
+country_event = {
+	id = deluge_france.7
+	title = deluge_france.7.t
+	desc = deluge_france.7.d
+	picture = GFX_report_event_louis_franchet_d_esperey #change later
+	is_triggered_only = yes
+	option = {##radicals
+		name = deluge_france.7.a
+		
+	}
+	option = {##democrats
+		name = deluge_france.7.b
+		
+	}
+	option = {##ultra-nationalists
+		name = deluge_france.7.c
+		
+	}
+}
+# Emperor turns France into consitutional monarchy (reformer path) and new party is elected
+country_event = {
+	id = deluge_france.8
+	title = deluge_france.8.t
+	desc = deluge_france.8.d
+	picture = GFX_report_event_louis_bonaparte
+	is_triggered_only = yes
+	option = {##radical party
+		name = deluge_france.8.a
+		set_country_flag = FRA_flag_radical_party_won
+	}
+	option = {##democratic republican alliance
+		name = deluge_france.8.b
+		set_country_flag = FRA_flag_democratic_republican_alliance_won
+	}
+	option = {##popular republican movement
+		name = deluge_france.8.c
+		set_country_flag = FRA_flag_popular_republican_movement_won
+	}
+}
+# Radical Party chooses its leader
+country_event = {
+	id = deluge_france.9
+	title = deluge_france.9.t
+	desc = deluge_france.9.d
+	picture = GFX_report_event_french_radical_party_politicians
+	is_triggered_only = yes
+	option = {##Édouard Daladier
+		name = deluge_france.9.a
+		promote_character = FRA_deluge_edouard_daladier
+		set_party_name = { ideology = democratic long_name = FRA_radical_party_name_long name = FRA_radical_party_name }
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48 
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_idea = restricted
+				}
+			}
+			add_ideas = {
+				restricted
+			}
+		}
+		set_country_flag = cant_change_voting_law
+		custom_effect_tooltip = cant_change_voting_law_tooltip
+	}
+	option = {##Albert Sarraut
+		name = deluge_france.9.b
+		promote_character = FRA_deluge_albert_sarraut
+		set_party_name = { ideology = democratic long_name = FRA_radical_party_name_long name = FRA_radical_party_name }
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48 
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_idea = restricted
+				}
+			}
+			add_ideas = {
+				restricted
+			}
+		}
+		set_country_flag = cant_change_voting_law
+		custom_effect_tooltip = cant_change_voting_law_tooltip
+	}
+}
+# Democratic Republican Alliance chooses its leader
+country_event = {
+	id = deluge_france.10
+	title = deluge_france.10.t
+	desc = deluge_france.10.d
+	picture = GFX_report_event_reynauds_cabinet
+	is_triggered_only = yes
+	option = {##Paul Reynaud
+		name = deluge_france.10.a
+		promote_character = FRA_deluge_paul_reynaud
+		set_party_name = { ideology = democratic long_name = FRA_democratic_republican_alliance_party_long name = FRA_democratic_republican_alliance_party }
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48 
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_idea = restricted
+				}
+			}
+			add_ideas = {
+				restricted
+			}
+		}
+		set_country_flag = cant_change_voting_law
+		custom_effect_tooltip = cant_change_voting_law_tooltip
+	}
+	option = {##Pierre-Étienne Flandin
+		name = deluge_france.10.b
+		promote_character = FRA_deluge_pierre_etienne_flandin
+		set_party_name = { ideology = democratic long_name = FRA_democratic_republican_alliance_party_long name = FRA_democratic_republican_alliance_party }
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48 
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_idea = restricted
+				}
+			}
+			add_ideas = {
+				restricted
+			}
+		}
+		set_country_flag = cant_change_voting_law
+		custom_effect_tooltip = cant_change_voting_law_tooltip
 	}
 }
 

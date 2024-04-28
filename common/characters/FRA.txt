@@ -70,6 +70,100 @@ characters={
 			ledger = civilian
 		}
 	}
+	##X-Crise:
+	FRA_deluge_jules_moch={
+		name=FRA_deluge_jules_moch_name
+		portraits={
+			civilian={##small portrait to do
+				small="GFX_jules_moch_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_jules_moch
+			allowed = { tag = FRA }
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_towards_republic
+						has_completed_focus = FRA_the_reformer
+						has_completed_focus = FRA_the_dictator
+					}
+				}
+			}
+			cost = 150
+			available = {
+				has_completed_focus = FRA_x_crise
+			}
+			traits = {
+				technocrat
+			}
+			ai_will_do = { factor = 1.0 }
+			ledger = civilian
+		}
+	}
+	FRA_deluge_jacques_barnaud={
+		name=FRA_deluge_jacques_barnaud_name
+		portraits={
+			civilian={##small portrait to do
+				small="GFX_jacques_barnaud_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_jacques_barnaud
+			allowed = { tag = FRA }
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_towards_republic
+						has_completed_focus = FRA_the_reformer
+						has_completed_focus = FRA_the_dictator
+					}
+				}
+			}
+			cost = 150
+			available = {
+				has_completed_focus = FRA_x_crise
+			}
+			traits = {
+				technocratic_banker
+			}
+			ai_will_do = { factor = 1.0 }
+			ledger = civilian
+		}
+	}
+	FRA_deluge_john_nicoletis={
+		name=FRA_deluge_john_nicoletis_name
+		portraits={
+			civilian={##small portrait to do
+				small="GFX_john_nicoletis_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_john_nicoletis
+			allowed = { tag = FRA }
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_towards_republic
+						has_completed_focus = FRA_the_reformer
+						has_completed_focus = FRA_the_dictator
+					}
+				}
+			}
+			cost = 150
+			available = {
+				has_completed_focus = FRA_x_crise
+			}
+			traits = {
+				technocratic_engineer
+			}
+			ai_will_do = { factor = 1.0 }
+			ledger = civilian
+		}
+	}
 	##French Section of the Workers' International (SFIO; jacobinism)
 	FRA_deluge_leon_blum={
 		name=FRA_deluge_leon_blum_name
@@ -403,6 +497,20 @@ characters={
 			desc = "FRA_deluge_edouard_daladier_desc"
 		}
 	}
+	FRA_deluge_albert_sarraut={
+		name=FRA_deluge_albert_sarraut_name
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/portrait_FRA_albert_sarraut.dds"
+			}
+		}
+		country_leader={
+			ideology=social_democratic_ideology
+			traits={ colonial_governor }
+			expire="1965.1.1.1"
+			desc = "FRA_deluge_albert_sarraut_desc"
+		}
+	}
 	##Democratic Republican Alliance:
 	FRA_deluge_paul_reynaud={
 		name=FRA_deluge_paul_reynaud_name
@@ -430,6 +538,21 @@ characters={
 			traits={ treasury_minister }
 			expire="1965.1.1.1"
 			desc = "FRA_deluge_pierre_etienne_flandin_desc"
+		}
+	}
+	##Popular Republican Movement:
+	FRA_deluge_georges_bidault={
+		name=FRA_deluge_georges_bidault_name
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/portrait_FRA_georges_bidault.dds" 
+			}
+		}
+		country_leader={
+			ideology=constitutionalist_ideology
+			traits={ }
+			expire="1965.1.1.1"
+			desc = "FRA_deluge_georges_bidault_desc"
 		}
 	}
 	##Generals and Field Marshals:
@@ -2421,97 +2544,6 @@ characters={
 			cost  = 75.000
 			traits  = {
 				hawk 
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-	}
-
-	FRA_georges_bonnet={
-		name=FRA_georges_bonnet
-		portraits={
-			army={
-				small="GFX_idea_georges_bonnet"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = georges_bonnet
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-				has_completed_focus  = FRA_league_of_nations 
-				has_government  = democratic 
-			}
-			cost  = 75.000
-			traits  = {
-				appeaser 
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-	}
-
-	FRA_philippe_henriot={
-		name=FRA_philippe_henriot
-		portraits={
-			army={
-				small="GFX_idea_FRA_philippe_henriot"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = FRA_philippe_henriot
-			allowed  = {
-				original_tag  = FRA
-			}
-			visible  = {
-				has_dlc = "La Resistance"
-			}
-			available  = {
-				has_completed_focus  = FRA_national_state 
-				has_government  = fascism 
-			}
-			cost  = 75.000
-			traits  = {
-				propaganda_expert 
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-	}
-
-	FRA_pierre_pucheu={
-		name=FRA_pierre_pucheu
-		portraits={
-			army={
-				small="GFX_idea_FRA_pierre_pucheu"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = FRA_pierre_pucheu
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-				not  = {
-					has_government  = communism 
-				}
-			}
-			cost  = 150.000
-			traits  = {
-				technocrat 
 			}
 			do_effect  = {
 			}

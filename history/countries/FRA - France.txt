@@ -796,7 +796,7 @@ starting_train_buffer = 2
 
 set_convoys = 300
 
-give_guarantee = HOL
+give_guarantee = POR
 give_guarantee = SWI
 
 add_opinion_modifier = { target = SPR modifier = historic_friendship_modifier }
@@ -999,12 +999,12 @@ recruit_character = FRA_alfred_heurtaux #
 recruit_character = FRA_deluge_rene_prioux
 recruit_character = FRA_marcel_bucard #
 recruit_character = FRA_rene_massigli #
-recruit_character = FRA_georges_bonnet #
+recruit_character = FRA_deluge_jules_moch
 recruit_character = FRA_deluge_jean_flavigny
 recruit_character = FRA_deluge_charles_marie_conde
 
-recruit_character = FRA_philippe_henriot #
-recruit_character = FRA_pierre_pucheu #
+recruit_character = FRA_deluge_jacques_barnaud
+recruit_character = FRA_deluge_john_nicoletis
 recruit_character = FRA_gaston_henry_haye #
 recruit_character = FRA_paul_baudouin #
 recruit_character = FRA_deluge_maurice_le_luc
@@ -1063,4 +1063,6 @@ recruit_character = FRA_deluge_georges_durand_viel
 recruit_character = FRA_deluge_emile_marie_lacroix
 recruit_character = FRA_deluge_henri_blehaut
 recruit_character = FRA_deluge_lucien_lacaze
+recruit_character = FRA_deluge_albert_sarraut
+recruit_character = FRA_deluge_georges_bidault
 

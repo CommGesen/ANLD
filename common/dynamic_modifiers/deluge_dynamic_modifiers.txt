@@ -387,7 +387,7 @@ FRA_modifier_new_french_economy = {##new_french_economy_
 }
 FRA_modifier_obsolete_army = {##french_bad_army_
 	enable = { always = yes }
-	icon = GFX_idea_generic_victors_of_ww1
+	icon = GFX_idea_spirit_FRA_obsolete_army
 	naval_doctrine_cost_factor = french_bad_army_naval_doctrine_cost_factor
 	land_doctrine_cost_factor = french_bad_army_land_doctrine_cost_factor
 	air_doctrine_cost_factor = french_bad_army_air_doctrine_cost_factor
@@ -398,6 +398,38 @@ FRA_modifier_obsolete_army = {##french_bad_army_
 	army_defence_factor = french_bad_army_army_defence_factor
 	army_attack_factor = french_bad_army_army_attack_factor
 	army_org_factor = french_bad_army_army_org_factor
+}
+FRA_modifier_new_napoleonic_code = {##new_napoleonic_code_
+	enable = { always = yes }
+	icon = GFX_idea_generic_constitutional_guarantee
+	consumer_goods_factor = new_napoleonic_code_consumer_goods_factor
+	political_power_factor = new_napoleonic_code_political_power_factor
+	monthly_population = new_napoleonic_code_monthly_population
+	stability_factor = new_napoleonic_code_stability_factor
+	conscription_factor = new_napoleonic_code_conscription_factor
+	research_speed_factor = new_napoleonic_code_research_speed_factor
+	global_building_slots_factor = new_napoleonic_code_global_building_slots_factor
+	improve_relations_maintain_cost_factor = new_napoleonic_code_improve_relations_maintain_cost_factor
+	non_core_manpower = new_napoleonic_code_non_core_manpower
+	resistance_damage_to_garrison = new_napoleonic_code_resistance_damage_to_garrison
+}
+FRA_modifier_democratic_reforms = {##french_democratic_reforms_
+	enable = { always = yes }
+	icon = GFX_idea_generic_democratic_drift_bonus
+	consumer_goods_factor = french_democratic_reforms_consumer_goods_factor
+	political_power_factor = french_democratic_reforms_political_power_factor
+	monthly_population = french_democratic_reforms_monthly_population
+	stability_factor = french_democratic_reforms_stability_factor
+	conscription_factor = french_democratic_reforms_conscription_factor
+	research_speed_factor = french_democratic_reforms_research_speed_factor
+	global_building_slots_factor = french_democratic_reforms_global_building_slots_factor
+	democratic_drift = french_democratic_reforms_democratic_drift
+	production_factory_max_efficiency_factor = french_democratic_reforms_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = french_democratic_reforms_production_factory_efficiency_gain_factor
+	industrial_capacity_dockyard = french_democratic_reforms_industrial_capacity_dockyard
+	industrial_capacity_factory = french_democratic_reforms_industrial_capacity_factory
+	production_speed_buildings_factor = french_democratic_reforms_production_speed_buildings_factor
+	drift_defence_factor = french_democratic_reforms_drift_defence_factor
 }
 POL_religious_sect_of_wierszalin = {
 	enable = { always = yes }

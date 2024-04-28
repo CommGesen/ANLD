@@ -1290,4 +1290,21 @@ leader_traits = {
 		justify_war_goal_time = -0.25
 		foreign_subversive_activites = -0.3
 	}
+	technocratic_banker = {
+		random = yes
+		sprite = 13
+		consumer_goods_factor = -0.15
+		research_speed_factor = 0.03
+	}
+	technocratic_engineer = {
+		random = yes
+		sprite = 14
+		research_speed_factor = 0.03
+		production_speed_buildings_factor = 0.05
+	}
+	the_guarantor = {
+		random = no
+		stability_factor = 0.05
+		political_power_factor = 0.05
+	}
 }

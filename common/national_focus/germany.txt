@@ -808,10 +808,8 @@ focus_tree = {
 				has_global_flag = german_civil_war_ended
 				has_war = no
 				has_war_with = FRA
-				has_war_with = FRR
 			}
 			NOT = { is_in_faction_with = FRA }
-			NOT = { is_in_faction_with = FRR }
 			is_subject = no
 		}
 		ai_will_do = {
@@ -821,17 +819,10 @@ focus_tree = {
 				has_war_with = FRA
 			}
 			modifier = {
-				factor = 5
-				has_war_with = FRR
-			}
-			modifier = {
 				factor = 0.1
 				has_war = yes
 				NOT = {
-					OR = {
-						has_war_with = FRA
-						has_war_with = FRR
-					}
+					has_war_with = FRA
 				}
 			}
 			modifier = {
@@ -840,7 +831,6 @@ focus_tree = {
 				NOT = {
 					OR = {
 						has_war_with = FRA
-						has_war_with = FRR
 					}
 				}
 			}
@@ -853,7 +843,6 @@ focus_tree = {
 				NOT = {
 					OR = {
 						has_war_with = FRA
-						has_war_with = FRR
 					}
 				}
 			}
@@ -913,7 +902,6 @@ focus_tree = {
 			}
 		}
 		will_lead_to_war_with = FRA
-		will_lead_to_war_with = FRR
 	}
 	
 	focus = {

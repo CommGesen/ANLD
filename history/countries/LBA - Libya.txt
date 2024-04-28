@@ -110,7 +110,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Idris Senussi"
 	desc = ""
-	picture = "gfx/leaders/LBA/Idirs.dds"
+	picture = "gfx/leaders/LBA/portrait_LBA_idris_i_of_senussi.dds"
 	ideology = reactionary_ideology
 	traits = {
 		#
@@ -136,7 +136,7 @@ create_country_leader = {
 }
 create_corps_commander = {
 	name = "Idris Senussi"
-	portrait_path = "gfx/leaders/LBA/Idirs.dds"
+	portrait_path = "gfx/leaders/LBA/portrait_LBA_idris_i_of_senussi.dds"
 	traits = { war_hero media_personality irregulars_officer }
 	skill = 2
 	attack_skill = 2
