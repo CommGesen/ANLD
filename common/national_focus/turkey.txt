@@ -1235,6 +1235,9 @@ focus_tree = {
 			factor = 10
 			
 		}
+		allow_branch = {
+			has_cosmetic_tag = TUR_ottoman
+		}
 		available = {
 			always = no
 		}

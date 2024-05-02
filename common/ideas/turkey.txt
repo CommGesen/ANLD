@@ -1,5 +1,33 @@
 ideas = {
 	country = {
+		TUR_Abdelkerim_I={
+			allowed = { always = no }
+			picture = ottoman_emperor
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		TUR_Abdullah_I={
+			allowed = { always = no }
+			picture = ottoman_emperor
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		TUR_Fuad_I={
+			allowed = { always = no }
+			picture = ottoman_emperor
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		TUR_Khazal_I={
+			allowed = { always = no }
+			picture = ottoman_emperor
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
 		TUR_angry_pashas = {
 			allowed = { always = no }
 			picture = SPR_class_war

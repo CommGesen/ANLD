@@ -256,23 +256,72 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = turkey.11.a
-		
+		create_country_leader = {
+			name = "Abdülkerim I"
+			picture = "gfx/leaders/TUR/Portrait_TUR_Abdulkarim.png"
+			ideology = reactionary_ideology
+		}
+		add_ideas = TUR_Abdelkerim_I
 	}
 	option = {
 		name = turkey.11.b
-		
+		create_country_leader = {
+			name = "Abdullah I"
+			picture = "gfx/leaders/HEJ/Portrait_HEJ_Abdullah_bin_al_Hussein.png"
+			ideology = reactionary_ideology
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = "House of Hashim"
+			name = "Hashemites"
+		}
+		set_cosmetic_tag = TUR_Hashim
+		add_ideas = TUR_Abdullah_I
 	}
 	option = {
 		name = turkey.10.c
-		
+		create_country_leader = {
+			name = "Fuad I"
+			picture = "gfx/leaders/LEB/Portrait_LEB_Fuad.png"
+			ideology = reactionary_ideology
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = "House of Shihab"
+			name = "Al Shihabi"
+		}
+		set_cosmetic_tag = TUR_Shihab
+		add_ideas = TUR_Fuad_I
 	}
 	option = {
 		name = turkey.11.e
-		
+		create_country_leader = {
+			name = "Khazal I"
+			picture = "gfx/leaders/AHZ/Portrait_AHZ_Khazal.png"
+			ideology = reactionary_ideology
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = "House of Ka'ab"
+			name = "Al Ka'abi"
+		}
+		set_cosmetic_tag = TUR_Kaab
+		add_ideas = TUR_Khazal_I
 	}
 	option = {
 		name = turkey.11.f
-		
+		create_country_leader = {
+			name = "Salih I"
+			picture = "gfx/leaders/IRQ/Portrait_IRQ_Salih_Bash_Ayan.png"
+			ideology = reactionary_ideology
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = "House of Abbasi"
+			name = "Abbasids"
+		}
+		set_cosmetic_tag = TUR_Abbasids
+		add_ideas = TUR_Khazal_I
 	}
 }
 country_event = {
