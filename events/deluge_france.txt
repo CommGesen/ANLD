@@ -136,19 +136,21 @@ country_event = {
 	id = deluge_france.7
 	title = deluge_france.7.t
 	desc = deluge_france.7.d
-	picture = GFX_report_event_louis_franchet_d_esperey #change later
+	picture = GFX_report_event_louvre
 	is_triggered_only = yes
-	option = {##radicals
+	option = {##Louvre is closed, Gamelin wins - democratic path
 		name = deluge_france.7.a
-		
+		country_event = {
+			id = deluge_france.13
+			hours = 10
+		}
 	}
-	option = {##democrats
+	option = {##Louvre is not closed - radicals and nationalists paths
 		name = deluge_france.7.b
-		
-	}
-	option = {##ultra-nationalists
-		name = deluge_france.7.c
-		
+		country_event = {
+			id = deluge_france.12
+			hours = 2
+		}
 	}
 }
 # Emperor turns France into consitutional monarchy (reformer path) and new party is elected
@@ -277,6 +279,184 @@ country_event = {
 		}
 		set_country_flag = cant_change_voting_law
 		custom_effect_tooltip = cant_change_voting_law_tooltip
+	}
+}
+# Chaos and riots in Paris
+country_event = {
+	id = deluge_france.11
+	title = deluge_france.11.t
+	desc = deluge_france.11.d
+	picture = GFX_report_event_french_police
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		has_completed_focus = FRA_towards_republic
+		neutrality < 0.50
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name = deluge_france.11.a
+		add_ideas = FRA_spirit_chaos_in_paris
+	}
+}
+# Struggle for power - second part
+country_event = {
+	id = deluge_france.12
+	title = deluge_france.12.t
+	desc = deluge_france.12.d
+	picture = GFX_report_event_place_de_la_concorde
+	is_triggered_only = yes
+	option = {##Radicals focus on Gamelin - nationalist path
+		name = deluge_france.12.a
+		country_event = {
+			id = deluge_france.14
+			hours = 6
+		}
+	}
+	option = {##Radicals focus on the right - radical path
+		name = deluge_france.12.b
+		set_country_flag = FRA_radicals_took_power
+		country_event = {
+			id = deluge_france.15
+			hours = 8
+		}
+	}
+}
+# Struggle for power - Gamelin wins
+country_event = {
+	id = deluge_france.13
+	title = deluge_france.13.t
+	desc = deluge_france.13.d
+	picture = GFX_report_event_louis_franchet_d_esperey #change later
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.13.a
+		set_country_flag = FRA_democrats_took_power
+	}
+}
+# Struggle for power - the right wins
+country_event = {
+	id = deluge_france.14
+	title = deluge_france.14.t
+	desc = deluge_france.14.d
+	picture = GFX_report_event_louis_franchet_d_esperey #change later
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.14.a
+		set_country_flag = FRA_nationalists_took_power
+	}
+}
+# Struggle for power - radicals wins
+country_event = {
+	id = deluge_france.15
+	title = deluge_france.15.t
+	desc = deluge_france.15.d
+	picture = GFX_report_event_louis_franchet_d_esperey #change later
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.15.a
+		set_country_flag = FRA_radicals_took_power
+	}
+}
+country_event = {
+	id = deluge_france_lore.1
+	title = deluge_france_lore.1.t
+	desc = deluge_france_lore.1.d
+	picture = GFX_report_event_french_army_inspection
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.1.a
+	}
+}
+country_event = {
+	id = deluge_france_lore.2
+	title = deluge_france_lore.2.t
+	desc = deluge_france_lore.2.d
+	picture = GFX_report_event_mas36
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.2.a
+	}
+}
+country_event = {
+	id = deluge_france_lore.3
+	title = deluge_france_lore.3.t
+	desc = deluge_france_lore.3.d
+	picture = GFX_report_event_mas36 ##change later
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.3.a
+	}
+}
+country_event = {
+	id = deluge_france_lore.4
+	title = deluge_france_lore.4.t
+	desc = deluge_france_lore.4.d
+	picture = GFX_report_event_mas36 ##change later
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.4.a
+	}
+}
+country_event = {
+	id = deluge_france_lore.5
+	title = deluge_france_lore.5.t
+	desc = deluge_france_lore.5.d
+	picture = GFX_report_event_maginot_line
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.5.a
+	}
+}
+country_event = {
+	id = deluge_france_lore.6
+	title = deluge_france_lore.6.t
+	desc = deluge_france_lore.6.d
+	picture = GFX_report_event_barrages_david
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.6.a
+	}
+}
+country_event = {
+	id = deluge_france_lore.7
+	title = deluge_france_lore.7.t
+	desc = deluge_france_lore.7.d
+	picture = GFX_report_event_barrages_david ##change later
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.7.a
+	}
+}
+country_event = {
+	id = deluge_france_lore.8
+	title = deluge_france_lore.8.t
+	desc = deluge_france_lore.8.d
+	picture = GFX_report_event_barrages_david ##change later
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.8.a
+	}
+}
+country_event = {
+	id = deluge_france_lore.9
+	title = deluge_france_lore.9.t
+	desc = deluge_france_lore.9.d
+	picture = GFX_report_event_barrages_david ##change later
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.9.a
 	}
 }
 
