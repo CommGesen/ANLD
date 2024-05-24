@@ -94,9 +94,19 @@ set_popularities = {
 	communism = 5
 	neutrality = 60
 }
+
 add_ideas = {
 	LBA_spirit_senussi_rebellion
 }
+
+add_equipment_to_stockpile = {
+    type = infantry_equipment_0
+    amount = 500
+    producer = LBA
+}
+
+add_manpower = 50000 #49700
+
 create_country_leader = {
 	name = "Bashir Al Sadawi"
 	desc = ""

@@ -28,7 +28,8 @@ units = {
 		location = 8069
 		division_template = "Liwa Alfursan"		
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.8
 	}
 }
 units = {
@@ -37,7 +38,8 @@ units = {
 		location = 4060
 		division_template = "Liwa Alfursan"		
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.8
 	}
 }
 units = {
@@ -46,7 +48,8 @@ units = {
 		location = 8069
 		division_template = "Liwa Alfursan"		
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.8
 	}
 }
 
@@ -56,50 +59,51 @@ units = {
 		location = 8069
 		division_template = "Liwa Al Mashuat"		
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
+		start_manpower_factor = 0.9
 	}
-}
-units = {
+
 	division = {
 		name = "2. Liwa Al Mashuat"
 		location = 10120
 		division_template = "Liwa Al Mashuat"		
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
+		start_manpower_factor = 0.9
 	}
-}
-units = {
+
 	division = {
 		name = "3. Liwa Al Mashuat"
 		location = 4057
 		division_template = "Liwa Al Mashuat"		
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
+		start_manpower_factor = 0.9
 	}
-}
-units = {
+
 	division = {
 		name = "4. Liwa Al Mashuat"
 		location = 4057
 		division_template = "Liwa Al Mashuat"		
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
+		start_manpower_factor = 0.9
 	}
-}
-units = {
+
 	division = {
 		name = "5. Liwa Al Mashuat"
 		location = 4057
 		division_template = "Liwa Al Mashuat"		
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
+		start_manpower_factor = 0.9
 	}
 }
 
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
+			type = infantry_equipment_0
 			creator = "LBA"
 		}
 		requested_factories = 1

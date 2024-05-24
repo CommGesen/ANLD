@@ -3,17 +3,18 @@
 ##### Wojska Lotnicze i Obrony Powietrzne #####
 air_wings = {
 	10 = { 
-		fighter_equipment_0 =  { owner = "POL" amount = 54 }
-		fighter_equipment_0 =  { owner = "POL" amount = 54 }
+		fighter_equipment_0 =  { owner = "POL" amount = 100 version_name = "PZL P.24" }
+		CAS_equipment_1 =  { owner = "POL" amount = 75 }
 	}
 	86 = { 
 		fighter_equipment_0 =  {
 			owner = "POL" 
-			amount = 54
+			amount = 100
+			version_name = "PZL P.24"
 		}
-		CAS_equipment_1 =  {
+		tac_bomber_equipment_0 =  {
 			owner = "POL" 
-			amount = 22
+			amount = 75
 		}
 	}
 }
@@ -25,6 +26,25 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = fighter_equipment_0
+			creator = "POL"
+			version_name = "PZL P.24"
+		}
+		requested_factories = 2
+		progress = 0.20
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_1
+			creator = "POL"
+		}
+		requested_factories = 1
+		progress = 0.20
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_0
 			creator = "POL"
 		}
 		requested_factories = 1

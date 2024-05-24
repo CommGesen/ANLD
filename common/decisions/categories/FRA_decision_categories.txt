@@ -17,8 +17,7 @@ FRA_economy_decisions = {
 	}
 	visible = {
 		OR = {
-			has_completed_focus = FRA_postroitvetvaviabaz
+			#has_completed_focus = FRA_postroitvetvaviabaz
 		}
 	}
-
 }

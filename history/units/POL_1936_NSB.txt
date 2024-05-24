@@ -78,6 +78,7 @@ division_template = {
 	
 }
 
+
 units = {
 	######## Sztab Generalny Wojska Polskiego ########
 	### Armia Pomorze ###	
@@ -557,7 +558,7 @@ units = {
 		division_template = "Dywizja Pancerna"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.9
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "POL" version_name = "TKS-B" } }
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "POL" version_name = "TKS-B" } }
 	}
 	division= {	
 		name = "Małopolska Dywizja Pancerna"
@@ -565,7 +566,7 @@ units = {
 		division_template = "Dywizja Pancerna"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.9
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "POL" version_name = "TKS-B" } }
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "POL" version_name = "TKS-B" } }
 	}
 	division= {	
 		name = "Łódzka Brygada Pancerna"
@@ -573,7 +574,7 @@ units = {
 		division_template = "Brygada Pancerna"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.9
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "POL" version_name = "TKS-B" } }
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "POL" version_name = "TKS-B" } }
 	}
 }
 
@@ -630,7 +631,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = light_tank_equipment_1
+			type = light_tank_chassis_1
 			creator = "POL"
 			version_name = "TKS-B"
 		}

@@ -1,0 +1,150 @@
+FRA_senussi_campaign_category = {
+	force_out_france = {
+		icon =  GFX_decision_generic_civil_support
+		allowed = {
+			original_tag = LBA
+		}
+		visible = {
+			has_global_flag = FRA_senussi_rebellion_ongoing
+		}
+		available = {
+			controls_state = 448
+			controls_state = 661
+			controls_state = 449
+			controls_state = 662
+			controls_state = 663
+			controls_state = 450
+			controls_state = 451
+		}
+		cost = 0
+		days_remove = 0
+		fire_only_once = yes
+		modifier = {
+			
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			country_event = {
+				id = deluge_france_foreign.1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	time_to_white_peace_france = {
+		days_mission_timeout = 300
+		icon = GFX_decision_hol_exchange_intelligence_data
+		is_good = no
+		selectable_mission = no
+		allowed = {
+			tag = LBA
+		}
+		fire_only_once = yes
+		available = {
+			NOT = {
+				has_global_flag = FRA_senussi_rebellion_ongoing
+			}
+		}
+		activation = {
+			has_global_flag = FRA_senussi_rebellion_ongoing
+		}
+		timeout_effect = {
+			set_country_flag = LBA_can_white_peace_france
+			custom_effect_tooltip = LBA_custom_effect_tooltip_1
+		}
+	}
+	time_to_libya_can_white_peace_us = {
+		days_mission_timeout = 300
+		icon = GFX_decision_hol_exchange_intelligence_data
+		is_good = no
+		selectable_mission = no
+		visible = {
+			
+		}
+		allowed = {
+			tag = FRA
+		}
+		fire_only_once = yes
+		available = {
+			NOT = {
+				has_global_flag = FRA_senussi_rebellion_ongoing
+			}
+		}
+		activation = {
+			has_global_flag = FRA_senussi_rebellion_ongoing
+		}
+		timeout_effect = {
+			custom_effect_tooltip = FRA_custom_effect_tooltip_53
+		}
+	}
+	sign_peace_with_france = {
+		icon =  GFX_decision_eng_trade_unions_support
+		allowed = {
+			original_tag = LBA
+		}
+		visible = {
+			has_global_flag = FRA_senussi_rebellion_ongoing
+		}
+		available = {
+			has_country_flag = LBA_can_white_peace_france
+		}
+		cost = 0
+		days_remove = 0
+		fire_only_once = yes
+		modifier = {
+			
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	unify_libya = {
+		icon =  GFX_decision_generic_nationalism
+		allowed = {
+			original_tag = LBA
+		}
+		visible = {
+			NOT = {
+				has_country_flag = LBA_has_unified_libya
+			}
+		}
+		available = {
+			controls_state = 448
+			controls_state = 661
+			controls_state = 662
+			controls_state = 449
+			controls_state = 450
+			controls_state = 663
+			controls_state = 451
+			NOT = {
+				has_global_flag = FRA_senussi_rebellion_ongoing
+			}
+		}
+		cost = 0
+		days_remove = 0
+		fire_only_once = yes
+		modifier = {
+			
+		}
+		complete_effect = {
+			set_country_flag = LBA_has_unified_libya
+			drop_cosmetic_tag = yes
+			custom_effect_tooltip = LBA_custom_effect_tooltip_2
+		}
+		remove_effect = {
+			
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+}

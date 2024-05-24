@@ -90,7 +90,7 @@ declare_war_on = {
 ### TECHNOLOGIES ###
 set_technology = {
 	infantry_weapons = 1
-	#infantry_weapons1 = 1
+	support_weapons = 1
 	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
@@ -925,6 +925,8 @@ add_timed_idea = {
 	idea = FRA_spirit_senussi_rebellion
 	days = 250
 }
+
+set_global_flag = FRA_senussi_rebellion_ongoing
 
 recruit_character = FRA_deluge_napoleon_v
 recruit_character = FRA_deluge_jacques_doriot

@@ -1,0 +1,18 @@
+FRA_senussi_campaign_category = {
+	icon = GFX_decision_category_border_conflicts
+	picture = GFX_decision_cat_polish_integration
+	priority = 2
+	allowed = {
+		OR = {
+			tag = FRA
+			tag = LBA
+		}
+	}
+	visible = {
+		has_global_flag = FRA_senussi_rebellion_ongoing
+		FRA = {
+			has_war_with = LBA
+		}
+	}
+	visible_when_empty = no
+}

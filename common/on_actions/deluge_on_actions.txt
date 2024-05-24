@@ -2387,4 +2387,29 @@ on_actions = {
 			}
 		}
 	}
+	on_capitulation_immediate = {
+        effect = {
+            if = {
+                limit = {
+					ROOT = {
+						tag = LBA
+					}
+					FROM = {
+						tag = FRA
+					}
+					has_global_flag = FRA_senussi_rebellion_ongoing
+                }
+				news_event = {
+					id = deluge_france_foreign.7
+				}
+				FRA = {
+					annex_country = {
+						target = LBA
+						transfer_troops = no
+					}
+				}
+				clr_global_flag = FRA_senussi_rebellion_ongoing
+            }
+        }
+    }
 }

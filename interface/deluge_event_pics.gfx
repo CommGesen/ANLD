@@ -794,4 +794,32 @@ spriteTypes = {
 		name = "GFX_report_event_richelieu_class"
 		texturefile = "gfx/event_pictures/report_event_richelieu_class.dds"
 	}
+	spriteType = {
+		name = "GFX_news_event_senussi_armistice"
+		texturefile = "gfx/event_pictures/news_event_senussi_armistice.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_senussi_rebellion_crushed"
+		texturefile = "gfx/event_pictures/news_event_senussi_rebellion_crushed.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_senussi_rebellion_succeeds"
+		texturefile = "gfx/event_pictures/news_event_senussi_rebellion_succeeds.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_senussi_armistice"
+		texturefile = "gfx/event_pictures/report_event_senussi_armistice.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_senussi_rebellion_crushed"
+		texturefile = "gfx/event_pictures/report_event_senussi_rebellion_crushed.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_senussi_rebellion_succeeds"
+		texturefile = "gfx/event_pictures/report_event_senussi_rebellion_succeeds.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_senussi_rebellion_succeeds_2"
+		texturefile = "gfx/event_pictures/report_event_senussi_rebellion_succeeds_2.dds"
+	}
 }

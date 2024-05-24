@@ -1606,6 +1606,7 @@ focus_tree = {
 				add_to_variable = { french_democratic_reforms_drift_defence_factor = -0.1}
 			}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_51
+			remove_ideas = FRA_spirit_horrors_of_the_great_war
 		}
 		ai_will_do = {
 			factor = 25
@@ -1896,6 +1897,44 @@ focus_tree = {
 				add_to_variable = { french_democratic_reforms_research_speed_factor = 0.02}
 			}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_44
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_reconciliation_of_generations
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_secular_institutions }
+		relative_position_id = FRA_secular_institutions
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			remove_ideas = FRA_spirit_horrors_of_the_great_war
+			add_political_power = 100
+			add_stability = 0.1
 		}
 		ai_will_do = {
 			factor = 25
@@ -6545,7 +6584,12 @@ focus = {
 		#	}
 		#}
 		available = {
-			
+			NOT = {
+				has_war_with = LBA
+			}
+			NOT = {
+				has_global_flag = FRA_senussi_rebellion_ongoing
+			}
 		}
 		completion_reward = {
 			
@@ -6606,6 +6650,114 @@ focus = {
 		search_filters = { }
 		cost = 5
 		mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_experience_from_german_civil_war
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 8
+		y = 1
+		prerequisite = { focus = FRA_traumas_of_the_great_war }
+		relative_position_id = FRA_traumas_of_the_great_war
+		search_filters = { }
+		cost = 5
+		mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_shuffle_high_command
+		icon = GFX_focus_SOV_ivan_plays_baseball #GFX_focus_BRA_rio_protocol
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_experience_from_german_civil_war }
+		relative_position_id = FRA_experience_from_german_civil_war
+		search_filters = { }
+		cost = 5
+		mutually_exclusive = { focus = FRA_modernize_high_command}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_modernize_high_command
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_experience_from_german_civil_war }
+		relative_position_id = FRA_experience_from_german_civil_war
+		search_filters = { }
+		cost = 5
+		mutually_exclusive = { focus = FRA_shuffle_high_command}
 		allow_branch = {
 			
 		}
@@ -6994,84 +7146,12 @@ focus = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = FRA_shuffle_high_command
-		icon = GFX_focus_BRA_rio_protocol
-		x = 1
-		y = 1
-		prerequisite = { focus = FRA_post_great_war_challenges }
-		relative_position_id = FRA_post_great_war_challenges
-		search_filters = { }
-		cost = 5
-		mutually_exclusive = { focus = FRA_modernize_high_command}
-		allow_branch = {
-			
-		}
-		#offset = {
-		#	x = 0
-		#	y = 0
-		#	trigger = {
-		#		
-		#	}
-		#}
-		available = {
-			
-		}
-		completion_reward = {
-			
-		}
-		ai_will_do = {
-			factor = 25
-		}
-		bypass = {
-			
-		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-	}
-	focus = {
-		id = FRA_modernize_high_command
-		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = -1
-		y = 1
-		prerequisite = { focus = FRA_post_great_war_challenges }
-		relative_position_id = FRA_post_great_war_challenges
-		search_filters = { }
-		cost = 5
-		mutually_exclusive = { focus = FRA_shuffle_high_command}
-		allow_branch = {
-			
-		}
-		#offset = {
-		#	x = 0
-		#	y = 0
-		#	trigger = {
-		#		
-		#	}
-		#}
-		available = {
-			
-		}
-		completion_reward = {
-			
-		}
-		ai_will_do = {
-			factor = 25
-		}
-		bypass = {
-			
-		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-	}
-	focus = {
 		id = FRA_field_the_MAS_36
 		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = -1
+		x = 0
 		y = 1
-		prerequisite = { focus = FRA_shuffle_high_command focus = FRA_modernize_high_command }
-		relative_position_id = FRA_shuffle_high_command
+		prerequisite = { focus = FRA_post_great_war_challenges }
+		relative_position_id = FRA_post_great_war_challenges
 		search_filters = { }
 		cost = 5
 		mutually_exclusive = { focus = }
@@ -7247,7 +7327,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_char_de_combat_revalorise
-		icon = GFX_focus_generic_army_tanks2
+		icon = GFX_focus_SOV_ivan_plays_baseball #GFX_focus_generic_army_tanks2
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_armored_warfare_tactics focus = FRA_agressive_recon }
@@ -7393,7 +7473,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_engin_blinde_de_reconnaissance
-		icon = GFX_focus_SWE_lynx_armored_car
+		icon = GFX_focus_SOV_ivan_plays_baseball #GFX_focus_SWE_lynx_armored_car
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_agressive_recon focus = FRA_shocktroops focus = FRA_armored_warfare_tactics }
@@ -7501,7 +7581,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_shocktroops
-		icon = GFX_focus_generic_anti_guerrilla_tactics
+		icon = GFX_focus_SOV_ivan_plays_baseball #GFX_focus_generic_anti_guerrilla_tactics
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_ballistic_vests }
@@ -7756,7 +7836,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_plans_to_counter_anglo_dominance
-		icon = GFX_focus_attack_britain
+		icon = GFX_focus_SOV_ivan_plays_baseball #GFX_focus_attack_britain
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_review_the_fleet }
@@ -7792,7 +7872,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_la_royale_fera_face
-		icon = GFX_focus_ARG_study_the_battle_of_the_river_plate
+		icon = GFX_focus_SOV_ivan_plays_baseball #GFX_focus_ARG_study_the_battle_of_the_river_plate
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_expand_naval_facilities }
@@ -8153,7 +8233,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_escort_fleet_submarines
-		icon = GFX_focus_generic_midget_submarines
+		icon = GFX_focus_SOV_ivan_plays_baseball #GFX_focus_generic_midget_submarines
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_man_the_guns focus = FRA_fleet_air_coordiantion }
@@ -8189,7 +8269,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_a_modern_fleet
-		icon = GFX_focus_generic_naval_discipline
+		icon = GFX_focus_SOV_ivan_plays_baseball #GFX_focus_generic_naval_discipline
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_blockade_tactics focus = FRA_escort_fleet_submarines }
@@ -8261,7 +8341,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_containing_the_air_threat
-		icon = GFX_focus_generic_air_defense
+		icon = GFX_focus_SOV_ivan_plays_baseball #GFX_focus_generic_air_defense
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_rethink_fleet_protection }
@@ -8730,7 +8810,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_anti_insurgency_measures
-		icon = GFX_focus_generic_cas_aircraft
+		icon = GFX_focus_SOV_ivan_plays_baseball #GFX_focus_generic_cas_aircraft
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_observation_aerienne_avancee }
@@ -8803,7 +8883,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_thinking_tomorrows_air_superiority
-		icon = GFX_focus_generic_jet_planes
+		icon = GFX_focus_SOV_ivan_plays_baseball #GFX_focus_generic_jet_planes
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_consolidate_new_doctrines }

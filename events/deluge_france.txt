@@ -329,7 +329,7 @@ country_event = {
 	id = deluge_france.13
 	title = deluge_france.13.t
 	desc = deluge_france.13.d
-	picture = GFX_report_event_louis_franchet_d_esperey #change later
+	picture = GFX_report_event_maurice_gamelin
 	is_triggered_only = yes
 	option = {
 		name = deluge_france.13.a
@@ -341,7 +341,7 @@ country_event = {
 	id = deluge_france.14
 	title = deluge_france.14.t
 	desc = deluge_france.14.d
-	picture = GFX_report_event_louis_franchet_d_esperey #change later
+	picture = GFX_report_event_french_patriots_marching
 	is_triggered_only = yes
 	option = {
 		name = deluge_france.14.a
@@ -353,7 +353,7 @@ country_event = {
 	id = deluge_france.15
 	title = deluge_france.15.t
 	desc = deluge_france.15.d
-	picture = GFX_report_event_louis_franchet_d_esperey #change later
+	picture = GFX_report_event_jacques_duclos
 	is_triggered_only = yes
 	option = {
 		name = deluge_france.15.a
@@ -460,121 +460,149 @@ country_event = {
 	}
 }
 
-news_event = {
-	id = deluge_france.27
-	title = deluge_france27title
-	desc = deluge_france27desc
-	
-	picture = GFX_deluge_paris_large
-	trigger = {
-			LBA={
-				controls_state = 448
-				has_war_with = FRA
-			}
-	}
-	fire_only_once = yes
-	
+country_event = {##Cyraneica forces France out of the Libya
+	id = deluge_france_foreign.1
+	title = deluge_france_foreign.1.t
+	desc = deluge_france_foreign.1.d
+	picture = GFX_report_event_senussi_rebellion_succeeds
+	is_triggered_only = yes
 	option = {
-		name = deluge_france27opta
-		trigger = {
-			NOT={
-				OR={
-					tag = FRA
-					tag = LBA
+		name = deluge_france_foreign.1.a
+		every_state = {
+			limit = {
+				OR = {
+					state = 449
+					state = 661
+					state = 448
+					state = 273
 				}
+				is_owned_by = FRA
+			}
+			LBA = {
+				transfer_state = PREV
+			}
+		}
+		LBA={
+			white_peace = FRA
+			drop_cosmetic_tag = yes
+			set_country_flag = LBA_has_unified_libya
+		}
+		FRA={
+			white_peace = LBA
+			country_event = {
+				id = deluge_france_foreign.2
 			}
 		}
 		hidden_effect = {
-			LBA={
-				transfer_state = 451
-				transfer_state = 450
-				transfer_state = 448
-				transfer_state = 449
-				transfer_state = 661
-				transfer_state = 662
-				transfer_state = 663
-				white_peace = FRA
-				drop_cosmetic_tag = yes
-			}
-			FRA={
-				white_peace = LBA
-				add_stability = -0.01
+			news_event = {
+				id = deluge_france_foreign.3
 			}
 		}
-	}
-	option = {
-		name = deluge_france27opta
-		trigger = {
-			tag = FRA
-		}
-		hidden_effect = {
-			LBA={
-				transfer_state = 451
-				transfer_state = 450
-				transfer_state = 448
-				transfer_state = 449
-				transfer_state = 661
-				transfer_state = 662
-				transfer_state = 663
-				white_peace = FRA
-				drop_cosmetic_tag = yes
-			}
-			FRA={
-				white_peace = LBA
-				add_stability = -0.01
-			}
-		}
-	}
-	option = {
-		name = deluge_france27opta
-		trigger = {
-			tag = LBA
-		}
-		hidden_effect = {
-			LBA={
-				transfer_state = 451
-				transfer_state = 450
-				transfer_state = 448
-				transfer_state = 449
-				transfer_state = 661
-				transfer_state = 662
-				transfer_state = 663
-				white_peace = FRA
-				drop_cosmetic_tag = yes
-			}
-			FRA={
-				white_peace = LBA
-				add_stability = -0.01
-			}
-		}
+		clr_global_flag = FRA_senussi_rebellion_ongoing
 	}
 }
-news_event = {
-	id = deluge_france.28
-	title = deluge_france28title
-	desc = deluge_france28desc
-	
-	picture = GFX_deluge_paris_large
-	trigger = {
-		FRA={
-			controls_state = 663
-		}
-	}
-	fire_only_once = yes
-	
+country_event = {##info for France that she lost
+	id = deluge_france_foreign.2
+	title = deluge_france_foreign.2.t
+	desc = deluge_france_foreign.2.d
+	picture = GFX_report_event_senussi_rebellion_succeeds_2
+	is_triggered_only = yes
 	option = {
-		name = deluge_france28opta
-		hidden_effect = {
-			FRA={
-				transfer_state = 451
-				transfer_state = 450
-				transfer_state = 448
-				transfer_state = 449
-				transfer_state = 661
-				transfer_state = 662
-				transfer_state = 663
-				transfer_state = 939
+		name = deluge_france_foreign.2.a
+	}
+}
+news_event = {##info for world that France lost in Libya
+	id = deluge_france_foreign.3
+	title = deluge_france_foreign.3.t
+	desc = deluge_france_foreign.3.d
+	picture = GFX_news_event_senussi_rebellion_succeeds
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france_foreign.3.a
+	}
+}
+country_event = {##LBA forces peace with France
+	id = deluge_france_foreign.4
+	title = deluge_france_foreign.4.t
+	desc = deluge_france_foreign.4.d
+	picture = GFX_report_event_senussi_armistice
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_foreign.4.a
+		every_state = {
+			limit = {
+				OR = {
+					state = 448
+					state = 661
+					state = 449
+					state = 662
+					state = 450
+					state = 663
+					state = 451
+				}
+				is_controlled_by = FRA
+			}
+			transfer_state_to = FRA
+		}
+		every_state = {
+			limit = {
+				OR = {
+					state = 448
+					state = 661
+					state = 449
+					state = 662
+					state = 450
+					state = 663
+					state = 451
+				}
+				is_controlled_by = LBA
+			}
+			transfer_state_to = LBA
+		}
+		FRA={
+			white_peace = LBA
+			country_event = {
+				id = deluge_france_foreign.5
 			}
 		}
+		hidden_effect = {
+			news_event = {
+				id = deluge_france_foreign.6
+			}
+		}
+		clr_global_flag = FRA_senussi_rebellion_ongoing
+	}
+}
+country_event = {##LBA forces with peace with France - info for France
+	id = deluge_france_foreign.5
+	title = deluge_france_foreign.5.t
+	desc = deluge_france_foreign.5.d
+	picture = GFX_report_event_senussi_armistice
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_foreign.5.a
+	}
+}
+news_event = {##LBA forces with peace with France - info for world
+	id = deluge_france_foreign.6
+	title = deluge_france_foreign.6.t
+	desc = deluge_france_foreign.6.d
+	picture = GFX_news_event_senussi_armistice
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france_foreign.6.a
+	}
+}
+news_event = {##senussi rebellion is defeated
+	id = deluge_france_foreign.7
+	title = deluge_france_foreign.7.t
+	desc = deluge_france_foreign.7.d
+	picture = GFX_news_event_senussi_rebellion_crushed
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france_foreign.7.a
 	}
 }
