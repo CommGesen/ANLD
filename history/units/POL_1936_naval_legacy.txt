@@ -1,21 +1,86 @@
 ﻿units = {
-
 	######## NAVAL OOB ########
 	fleet = {
 		name = "Polska Flota Niszczycieli"
-		naval_base = 6332 
-		task_force = {				
+		naval_base = 6332
+		task_force = {
 			name = "Polska Flota Niszczycieli"
 			location = 6332 # Królewiec
-			ship = { name = "ORP Burza" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POL } } }	
-			ship = { name = "ORP Wicher" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POL } } }	
-		}		
+			ship = { name = "ORP Burza" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Wicher" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POL } } }
+			
+			ship = { name = "ORP Grom" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Błyskawica" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Kujawiak" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Ślązak" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Mazur" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Krakowiak" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Kaszub" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = POL } } }
+		}
 		task_force = {
 			name = "Dywizjon Okretów Podwodnych"
 			location = 6332 # Królewiec
-			ship = { name = "ORP Ryś" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }					
-			ship = { name = "ORP Wilk" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }					
-			ship = { name = "ORP Żbik" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }			
+			ship = { name = "ORP Ryś" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }			
+			ship = { name = "ORP Wilk" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }	
+			ship = { name = "ORP Żbik" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }
+			
+			ship = { name = "ORP Orzeł" definition = submarine equipment = { submarine_2 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Sęp" definition = submarine equipment = { submarine_2 = { amount = 1 owner = POL } } }
 		}
+		task_force = {
+			name = "Polska Flota Pancerników"
+			location = 6332 # Królewiec
+			ship = { name = "ORP Komendant Piłsudski" definition = battleship equipment = { battleship_2 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Generał Haller" definition = battleship equipment = { battleship_2 = { amount = 1 owner = POL } } }
+		}
+		task_force = {
+			name = "Polska Flota Lekkich Krążowników"
+			location = 6332 # Królewiec
+			ship = { name = "ORP Mewa" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Pomorzanin" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Podhalanin" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Czajka" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Jaskółka" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Rybitwa" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = POL } } }
+			
+			ship = { name = "ORP Gryf" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Wilia" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Modlin" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = POL } } }
+		}
+		task_force = {
+			name = "Polska Flota Ciężkich Krążowników"
+			location = 6332 # Królewiec
+			ship = { name = "ORP Zawisza" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Chrobry" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = POL } } }
+			
+			ship = { name = "ORP Pułkownik Sławek" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Generał Żeligowski" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = POL } } }
+		}
+		task_force = {
+			name = "Polska Flota Krążowników Liniowych"
+			location = 6332 # Królewiec
+			ship = { name = "ORP Królewiec" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = POL } } }
+			ship = { name = "ORP Gdańsk" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = POL } } }
+		}
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = submarine_2
+			creator = "POL" 
+		}
+		requested_factories = 3
+		progress = 0.20
+		amount = 6
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_2
+			creator = "POL" 
+		}
+		requested_factories = 3
+		progress = 0.20
+		amount = 6
 	}
 }

@@ -499,6 +499,7 @@ country_event = {##Cyraneica forces France out of the Libya
 			}
 		}
 		clr_global_flag = FRA_senussi_rebellion_ongoing
+		set_global_flag = FRA_senussi_rebellion_lost
 	}
 }
 country_event = {##info for France that she lost
@@ -572,6 +573,7 @@ country_event = {##LBA forces peace with France
 			}
 		}
 		clr_global_flag = FRA_senussi_rebellion_ongoing
+		set_global_flag = FRA_senussi_rebellion_white_peace
 	}
 }
 country_event = {##LBA forces with peace with France - info for France

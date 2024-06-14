@@ -723,6 +723,143 @@ ideas = {
 				weekly_manpower = -400
 			}
 		}
+		FRA_spirit_conservative_high_command = {
+			picture = ETH_conservative_high_command ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				land_doctrine_cost_factor = 1
+				air_doctrine_cost_factor = 1
+				naval_doctrine_cost_factor = 1
+				experience_gain_army_factor = -1
+				experience_gain_navy_factor = -1
+				experience_gain_air_factor = -1
+				command_power_gain_mult = -0.8
+			}
+		}
+		FRA_production_de_masse = {
+			picture = spirit_mass_production_of_guns
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				
+			}
+			equipment_bonus = {
+				infantry_weapons = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		}
+		FRA_spirit_fortification_focus = {
+			picture = FRA_fortification_focus
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				production_speed_bunker_factor = 0.1
+			}
+		}
+		FRA_spirit_fortification_focus2 = {
+			picture = FRA_fortification_focus
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				production_speed_bunker_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.1
+			}
+		}
+		FRA_spirit_fortification_focus3 = {
+			picture = FRA_fortification_focus
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				production_speed_bunker_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.1
+				production_speed_radar_station_factor = 0.1
+			}
+		}
+		FRA_marine_de_guerre = {
+			picture = spirit_mass_production_of_guns #change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				
+			}
+			equipment_bonus = {
+				dd_tech = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ss_tech = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				cl_tech = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		}
 		
 		FRA_market_dynamism = {
 			

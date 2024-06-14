@@ -26484,7 +26484,26 @@ focus_tree = {
 		relative_position_id = POL_kor
 		cost = 8
 		available = {
-			has_tech = tech_special_forces
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				OR = {
+					has_tech = special_forces_mountaineers
+					has_tech = special_forces_marines
+					has_tech = special_forces_paratroopers
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Arms Against Tyranny"
+					}
+				}
+				OR = {
+					has_tech = tech_special_forces
+				}
+			}
 		}
 		completion_reward = {
 			add_to_variable = {POL_WPvsPOW_special_forces_cap = 0.1}
@@ -26887,7 +26906,7 @@ focus_tree = {
 					has_dlc = "Man the Guns"
 				}
 				create_equipment_variant = {
-					name = "Orzeł Class"	
+					name = "Norwid Class"	
 					type = ship_hull_submarine_3
 					name_group = POL_SS_HISTORICAL
 					parent_version = 0
@@ -26905,7 +26924,7 @@ focus_tree = {
 					}
 				}
 				create_equipment_variant = {
-					name = "Orzeł Class"
+					name = "Norwid Class"
 					type = submarine_3
 					allow_without_tech = yes
 					upgrades = {

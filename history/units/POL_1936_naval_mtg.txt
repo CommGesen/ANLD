@@ -4,18 +4,89 @@
 	fleet = {
 		name = "Polska Flota Niszczycieli"
 		naval_base = 6332 
-		task_force = {				
+		task_force = {
 			name = "Polska Flota Niszczycieli"
 			location = 6332 # Królewiec
-			ship = { name = "ORP Burza" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = POL version_name = "Wicher Class" } } }	
-			ship = { name = "ORP Wicher" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = POL version_name = "Wicher Class" } } }	
-		}		
+			ship = { name = "ORP Burza" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = POL version_name = "Wicher Class" } } }
+			ship = { name = "ORP Wicher" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = POL version_name = "Wicher Class" } } }
+			
+			ship = { name = "ORP Grom" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = POL version_name = "Grom Class"} } }
+			ship = { name = "ORP Błyskawica" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = POL version_name = "Grom Class"} } }
+			ship = { name = "ORP Kujawiak" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = POL version_name = "Grom Class"} } }
+			ship = { name = "ORP Ślązak" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = POL version_name = "Grom Class"} } }
+			ship = { name = "ORP Mazur" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = POL version_name = "Grom Class"} version_name = "Grom Class"} }
+			ship = { name = "ORP Krakowiak" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = POL version_name = "Grom Class"} } }
+			ship = { name = "ORP Kaszub" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = POL version_name = "Grom Class"} } }
+		}
 		task_force = {
 			name = "Dywizjon Okretów Podwodnych"
 			location = 6332 # Królewiec
-			ship = { name = "ORP Ryś" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = POL version_name = "Wilk Class" } } }					
-			ship = { name = "ORP Wilk" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = POL version_name = "Wilk Class" } } }					
-			ship = { name = "ORP Żbik" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = POL version_name = "Wilk Class" } } }			
+			ship = { name = "ORP Ryś" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = POL version_name = "Wilk Class"} } }			
+			ship = { name = "ORP Wilk" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = POL version_name = "Wilk Class"} } }	
+			ship = { name = "ORP Żbik" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = POL version_name = "Wilk Class"} } }
+			
+			ship = { name = "ORP Orzeł" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = POL version_name = "Orzeł Class"} } }
+			ship = { name = "ORP Sęp" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = POL version_name = "Orzeł Class"} } }
 		}
+		task_force = {
+			name = "Polska Flota Pancerników"
+			location = 6332 # Królewiec
+			ship = { name = "ORP Komendant Piłsudski" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = POL version_name = "Legionista Class"} } }
+			ship = { name = "ORP Generał Haller" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = POL version_name = "Legionista Class"} } }
+		}
+		task_force = {
+			name = "Polska Flota Lekkich Krążowników"
+			location = 6332 # Królewiec
+			ship = { name = "ORP Mewa" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = POL version_name = "Pomorzanin Class"} } }
+			ship = { name = "ORP Pomorzanin" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = POL version_name = "Pomorzanin Class"} } }
+			ship = { name = "ORP Podhalanin" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = POL version_name = "Pomorzanin Class"} } }
+			ship = { name = "ORP Czajka" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = POL version_name = "Pomorzanin Class"} } }
+			ship = { name = "ORP Jaskółka" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = POL version_name = "Pomorzanin Class"} } }
+			ship = { name = "ORP Rybitwa" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = POL version_name = "Pomorzanin Class"} } }
+			
+			ship = { name = "ORP Gryf" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POL version_name = "Gryf Class"} } }
+			ship = { name = "ORP Wilia" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POL version_name = "Gryf Class"} } }
+			ship = { name = "ORP Modlin" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POL version_name = "Gryf Class"} } }
+		}
+		task_force = {
+			name = "Polska Flota Ciężkich Krążowników"
+			location = 6332 # Królewiec
+			ship = { name = "ORP Zawisza" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = POL version_name = "Niemen Class"} } }
+			ship = { name = "ORP Chrobry" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = POL version_name = "Niemen Class"} } }
+			
+			ship = { name = "ORP Pułkownik Sławek" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POL version_name = "Zawisza Class"} } }
+			ship = { name = "ORP Generał Żeligowski" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = POL version_name = "Zawisza Class"} } }
+		}
+		
+		task_force = {
+			name = "Polska Flota Krążowników Liniowych"
+			location = 6332 # Królewiec
+			ship = { name = "ORP Królewiec" definition = battle_cruiser equipment = { ship_hull_heavy_2 = { amount = 1 owner = POL version_name = "Gdańsk Class"} } }
+			ship = { name = "ORP Gdańsk" definition = battle_cruiser equipment = { ship_hull_heavy_2 = { amount = 1 owner = POL version_name = "Gdańsk Class"} } }
+		}
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "POL" 
+			version_name = "Orzeł Class"
+		}
+		name = "ORP Kruk" 
+		requested_factories = 3
+		progress = 0.60
+		amount = 6
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "POL" 
+			version_name = "Grom Class"
+		}
+		name = "ORP Grzmot" 
+		requested_factories = 3
+		progress = 0.60
+		amount = 6
 	}
 }

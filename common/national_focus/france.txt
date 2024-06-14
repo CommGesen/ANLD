@@ -381,13 +381,49 @@ focus_tree = {
 	focus = {
 		id = FRA_fire_movement
 		icon = GFX_focus_FRA_fire_movement
-		x = -2
+		x = -3
 		y = 1
 		prerequisite = { focus = FRA_march_on_paris }
 		relative_position_id = FRA_march_on_paris
 		search_filters = { }
 		cost = 1
-		mutually_exclusive = { focus = FRA_french_popular_party focus = FRA_french_social_party}
+		mutually_exclusive = { focus = FRA_french_popular_party focus = FRA_french_social_party focus = FRA_francist_movement }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_purge_political_opponents
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_fire_movement }
+		relative_position_id = FRA_fire_movement
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -417,10 +453,119 @@ focus_tree = {
 	focus = {
 		id = FRA_abandon_western_culture
 		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = 0
+		x = -2
 		y = 1
-		prerequisite = { focus = FRA_fire_movement }
-		relative_position_id = FRA_fire_movement
+		prerequisite = { focus = FRA_purge_political_opponents }
+		relative_position_id = FRA_purge_political_opponents
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_prophet_saved
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 2
+		y = 1
+		prerequisite = { focus = FRA_purge_political_opponents }
+		relative_position_id = FRA_purge_political_opponents
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_cult_of_oriflamme
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_prophet_saved }
+		relative_position_id = FRA_prophet_saved
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_new_times_new_men_new_methods
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_cult_of_oriflamme }
+		prerequisite = { focus = FRA_fight_freemasonery }
+		relative_position_id = FRA_cult_of_oriflamme
 		search_filters = { }
 		cost = 1
 		#mutually_exclusive = { focus = }
@@ -525,9 +670,9 @@ focus_tree = {
 	focus = {
 		id = FRA_new_esoteric_organizations
 		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = 0
+		x = 2
 		y = 1
-		prerequisite = { focus = FRA_new_gnostic_religion }
+		prerequisite = { focus = FRA_new_gnostic_religion focus = FRA_new_times_new_men_new_methods}
 		relative_position_id = FRA_new_gnostic_religion
 		search_filters = { }
 		cost = 1
@@ -561,9 +706,10 @@ focus_tree = {
 	focus = {
 		id = FRA_convince_the_freemasons
 		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = -1
+		x = -2
 		y = 1
 		prerequisite = { focus = FRA_new_esoteric_organizations }
+		prerequisite = { focus = FRA_new_gnostic_religion }
 		relative_position_id = FRA_new_esoteric_organizations
 		search_filters = { }
 		cost = 1
@@ -597,10 +743,300 @@ focus_tree = {
 	focus = {
 		id = FRA_cult_of_savior
 		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = 1
+		x = 2
 		y = 1
 		prerequisite = { focus = FRA_new_esoteric_organizations }
+		prerequisite = { focus = FRA_new_times_new_men_new_methods }
 		relative_position_id = FRA_new_esoteric_organizations
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_francist_movement
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -8
+		y = 1
+		prerequisite = { focus = FRA_march_on_paris }
+		relative_position_id = FRA_march_on_paris
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_french_popular_party focus = FRA_french_social_party focus = FRA_fire_movement }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_expand_blueshirts
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_francist_movement }
+		relative_position_id = FRA_francist_movement
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_in_the_footsteps_of_the_romans
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_expand_blueshirts }
+		relative_position_id = FRA_expand_blueshirts
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_duty_and_discipline_of_monastic_orders
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_in_the_footsteps_of_the_romans }
+		relative_position_id = FRA_in_the_footsteps_of_the_romans
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_integrate_french_solidarity
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_francist_movement }
+		relative_position_id = FRA_francist_movement
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_integrate_young_patriots
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_integrate_french_solidarity }
+		relative_position_id = FRA_integrate_french_solidarity
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_new_hierarchy
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 2
+		prerequisite = { focus = FRA_integrate_young_patriots }
+		prerequisite = { focus = FRA_duty_and_discipline_of_monastic_orders }
+		relative_position_id = FRA_integrate_young_patriots
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_charlemagnes_legacy
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_new_hierarchy }
+		relative_position_id = FRA_new_hierarchy
 		search_filters = { }
 		cost = 1
 		#mutually_exclusive = { focus = }
@@ -639,7 +1075,7 @@ focus_tree = {
 		relative_position_id = FRA_march_on_paris
 		search_filters = { }
 		cost = 1
-		mutually_exclusive = { focus = FRA_fire_movement focus = FRA_french_social_party}
+		mutually_exclusive = { focus = FRA_fire_movement focus = FRA_french_social_party focus = FRA_francist_movement }
 		allow_branch = {
 			
 		}
@@ -743,7 +1179,7 @@ focus_tree = {
 		icon = GFX_focus_generic_ban_the_freemasonry
 		x = -1
 		y = 1
-		prerequisite = { focus = FRA_enforce_patriarchy }
+		prerequisite = { focus = FRA_enforce_patriarchy focus = FRA_prophet_saved}
 		relative_position_id = FRA_enforce_patriarchy
 		search_filters = { }
 		cost = 1
@@ -892,7 +1328,7 @@ focus_tree = {
 		relative_position_id = FRA_march_on_paris
 		search_filters = { }
 		cost = 1
-		mutually_exclusive = { focus = FRA_french_popular_party focus = FRA_fire_movement}
+		mutually_exclusive = { focus = FRA_french_popular_party focus = FRA_fire_movement focus = FRA_francist_movement }
 		allow_branch = {
 			
 		}
@@ -2214,7 +2650,7 @@ focus_tree = {
 	focus = {
 		id = FRA_another_revolution
 		icon = GFX_focus_focus_fra_revolution_utmost
-		x = -8
+		x = -15
 		y = 1
 		prerequisite = { focus = FRA_republic_forever }
 		relative_position_id = FRA_republic_forever
@@ -2256,7 +2692,439 @@ focus_tree = {
 		relative_position_id = FRA_another_revolution
 		search_filters = { }
 		cost = 1
-		mutually_exclusive = { focus = FRA_proudhon_circle focus = FRA_french_communist_party }
+		mutually_exclusive = { focus = FRA_proudhon_circle focus = FRA_french_communist_party focus = FRA_anarchist_communist_federation }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_anarchist_communist_federation
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -9
+		y = 1
+		prerequisite = { focus = FRA_another_revolution }
+		relative_position_id = FRA_another_revolution
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_proudhon_circle focus = FRA_french_communist_party focus = FRA_french_section_of_workers_internationale}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_from_each_according_to_his_ability
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_anarchist_communist_federation }
+		relative_position_id = FRA_anarchist_communist_federation
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_to_each_according_to_his_needs
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_from_each_according_to_his_ability }
+		relative_position_id = FRA_from_each_according_to_his_ability
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_no_gods_no_masters
+		icon = GFX_focus_spr_class_war
+		x = -3
+		y = 1
+		prerequisite = { focus = FRA_anarchist_communist_federation }
+		relative_position_id = FRA_anarchist_communist_federation
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_platofrmism
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_no_gods_no_masters }
+		relative_position_id = FRA_no_gods_no_masters
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_synthesis_anarchism}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_synthesis_anarchism
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_no_gods_no_masters }
+		relative_position_id = FRA_no_gods_no_masters
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_platofrmism}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_strengthen_the_communes
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_platofrmism focus = FRA_synthesis_anarchism}
+		relative_position_id = FRA_platofrmism
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_support_individualism}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_support_individualism
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_synthesis_anarchism focus = FRA_platofrmism }
+		relative_position_id = FRA_synthesis_anarchism
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_strengthen_the_communes}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_new_norms
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_support_individualism focus = FRA_strengthen_the_communes}
+		relative_position_id = FRA_strengthen_the_communes
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_no_norms}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_no_norms
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_support_individualism focus = FRA_strengthen_the_communes }
+		relative_position_id = FRA_support_individualism
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_new_norms}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_communal_democracy
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 2
+		y = 1
+		prerequisite = { focus = FRA_anarchist_communist_federation }
+		relative_position_id = FRA_anarchist_communist_federation
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_workers_democracy focus = FRA_anti_democracy }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_expand_anarchism_to_the_colonies
+		icon = GFX_focus_spr_anarchism_knows_no_borders
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_communal_democracy }
+		relative_position_id = FRA_communal_democracy
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_decolonisation focus = FRA_maintain_colonial_empire }
 		allow_branch = {
 			
 		}
@@ -2292,7 +3160,7 @@ focus_tree = {
 		relative_position_id = FRA_another_revolution
 		search_filters = { }
 		cost = 1
-		mutually_exclusive = { focus = FRA_proudhon_circle focus = FRA_french_section_of_workers_internationale }
+		mutually_exclusive = { focus = FRA_proudhon_circle focus = FRA_french_section_of_workers_internationale focus = FRA_anarchist_communist_federation }
 		allow_branch = {
 			
 		}
@@ -2328,7 +3196,7 @@ focus_tree = {
 		relative_position_id = FRA_french_communist_party
 		search_filters = { }
 		cost = 1
-		mutually_exclusive = { focus = FRA_workers_democracy}
+		mutually_exclusive = { focus = FRA_workers_democracy focus = FRA_communal_democracy}
 		allow_branch = {
 			
 		}
@@ -2364,7 +3232,7 @@ focus_tree = {
 		relative_position_id = FRA_french_section_of_workers_internationale
 		search_filters = { }
 		cost = 1
-		mutually_exclusive = { focus = FRA_anti_democracy}
+		mutually_exclusive = { focus = FRA_anti_democracy focus = FRA_communal_democracy}
 		allow_branch = {
 			
 		}
@@ -2400,7 +3268,7 @@ focus_tree = {
 		relative_position_id = FRA_workers_democracy
 		search_filters = { }
 		cost = 1
-		mutually_exclusive = { focus = FRA_maintain_colonial_empire }
+		mutually_exclusive = { focus = FRA_maintain_colonial_empire focus = FRA_expand_anarchism_to_the_colonies }
 		allow_branch = {
 			
 		}
@@ -2436,7 +3304,7 @@ focus_tree = {
 		relative_position_id = FRA_workers_democracy
 		search_filters = { }
 		cost = 1
-		mutually_exclusive = { focus = FRA_decolonisation}
+		mutually_exclusive = { focus = FRA_decolonisation focus = FRA_expand_anarchism_to_the_colonies }
 		allow_branch = {
 			
 		}
@@ -2468,7 +3336,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_ivan_plays_baseball
 		x = -3
 		y = 1
-		prerequisite = { focus = FRA_french_communist_party focus = FRA_french_section_of_workers_internationale }
+		prerequisite = { focus = FRA_french_communist_party focus = FRA_french_section_of_workers_internationale focus = FRA_anarchist_communist_federation }
 		relative_position_id = FRA_proudhon_circle
 		search_filters = { }
 		cost = 1
@@ -2583,7 +3451,7 @@ focus_tree = {
 		relative_position_id = FRA_another_revolution
 		search_filters = { }
 		cost = 1
-		mutually_exclusive = { focus = FRA_french_communist_party focus = FRA_french_section_of_workers_internationale }
+		mutually_exclusive = { focus = FRA_french_communist_party focus = FRA_french_section_of_workers_internationale focus = FRA_anarchist_communist_federation }
 		allow_branch = {
 			
 		}
@@ -2721,7 +3589,375 @@ focus_tree = {
 	focus = {
 		id = FRA_antitheism
 		icon = GFX_focus_generic_force_atheism
+		x = -2
+		y = 1
+		prerequisite = { focus = FRA_workers_revolution }
+		relative_position_id = FRA_workers_revolution
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_cult_of_supreme_being}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_cult_of_reason
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_antitheism }
+		relative_position_id = FRA_antitheism
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_cult_of_supreme_being
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -4
+		y = 1
+		prerequisite = { focus = FRA_workers_revolution }
+		relative_position_id = FRA_workers_revolution
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_antitheism}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			NOT = {
+				has_completed_focus = FRA_anarchist_communist_federation
+			}
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_purge_old_elites
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 2
+		prerequisite = { focus = FRA_workers_revolution }
+		relative_position_id = FRA_workers_revolution
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_equally_educate_all
+		icon = GFX_focus_SOV_ivan_plays_baseball
 		x = -1
+		y = 1
+		prerequisite = { focus = FRA_purge_old_elites }
+		relative_position_id = FRA_purge_old_elites
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_new_socialist_elites}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_new_socialist_elites
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_purge_old_elites }
+		relative_position_id = FRA_purge_old_elites
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_equally_educate_all}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			NOT = {
+				has_completed_focus = FRA_anarchist_communist_federation
+			}
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_fully_democratic_education
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_equally_educate_all focus = FRA_new_socialist_elites }
+		relative_position_id = FRA_equally_educate_all
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_socialist_core_curriculum}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_socialist_core_curriculum
+		icon = GFX_focus_NOR_moscows_education_centers
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_new_socialist_elites focus = FRA_equally_educate_all }
+		relative_position_id = FRA_new_socialist_elites
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_fully_democratic_education}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			NOT = {
+				has_completed_focus = FRA_anarchist_communist_federation
+			}
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_freedom_of_art
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_fully_democratic_education focus = FRA_socialist_core_curriculum }
+		relative_position_id = FRA_fully_democratic_education
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_socialist_realism}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_socialist_realism
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_fully_democratic_education focus = FRA_socialist_core_curriculum }
+		relative_position_id = FRA_socialist_core_curriculum
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_freedom_of_art}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			NOT = {
+				has_completed_focus = FRA_anarchist_communist_federation
+			}
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_state_of_proletariat
+		icon = GFX_focus_generic_dictatorship_of_proletariat
+		x = 2
 		y = 1
 		prerequisite = { focus = FRA_workers_revolution }
 		relative_position_id = FRA_workers_revolution
@@ -2755,12 +3991,12 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = FRA_state_of_proletariat
-		icon = GFX_focus_generic_dictatorship_of_proletariat
-		x = 1
+		id = FRA_new_sans_culottes
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
 		y = 1
-		prerequisite = { focus = FRA_workers_revolution }
-		relative_position_id = FRA_workers_revolution
+		prerequisite = { focus = FRA_state_of_proletariat }
+		relative_position_id = FRA_state_of_proletariat
 		search_filters = { }
 		cost = 1
 		#mutually_exclusive = { focus = }
@@ -4308,7 +5544,7 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = FRA_charlemagnes_legacy
+		id = FRA_new_glory 
 		icon = GFX_focus_SOV_ivan_plays_baseball
 		x = 1
 		y = 1
@@ -5432,7 +6668,7 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		}
-focus = {		
+	focus = {		
 		id = FRA_introduce_corporatism
 		icon = GFX_focus_SOV_ivan_plays_baseball
 		x = 0
@@ -5927,13 +7163,13 @@ focus = {
 			custom_effect_tooltip = FRA_custom_effect_tooltip_25
 			add_to_variable = {new_french_economy_production_factory_max_efficiency_factor = 0.05 }
 			add_tech_bonus = {
-				name = POL_finish_four_year_plan_bonus_construction
+				name = POL_lazy_research_bonus
 				bonus = 1
 				uses = 1
 				category = construction_tech
 			}
 			add_tech_bonus = {
-				name = POL_finish_four_year_plan_bonus_production
+				name = POL_lazy_research_bonus
 				bonus = 1
 				uses = 1
 				category = cat_production
@@ -6592,7 +7828,38 @@ focus = {
 			}
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_global_flag = set_global_flag = FRA_senussi_rebellion_white_peace
+				}
+				add_doctrine_cost_reduction = {
+					name = POL_lazy_research_bonus
+					cost_reduction = 0.15
+					uses = 1
+					category = land_doctrine
+				}
+				army_experience = 5
+			}
+			if = {
+				limit = {
+					has_global_flag = set_global_flag = FRA_senussi_rebellion_lost
+				}
+				army_experience = 15
+			}
+			if = {
+				limit = {
+					has_global_flag = set_global_flag = FRA_senussi_rebellion_won
+				}
+				add_doctrine_cost_reduction = {
+					name = POL_lazy_research_bonus
+					cost_reduction = 0.3
+					uses = 2
+					category = land_doctrine
+				}
+			}
+			else = {
+				custom_effect_tooltip = FRA_custom_effect_tooltip_54
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -6612,7 +7879,7 @@ focus = {
 		prerequisite = { focus = FRA_lessons_of_senussi_campaign }
 		relative_position_id = FRA_lessons_of_senussi_campaign
 		search_filters = { }
-		cost = 5
+		cost = 6
 		mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -6628,7 +7895,11 @@ focus = {
 			has_completed_focus = FRA_may_day_results
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = FRA_modifier_new_french_army }
+				add_to_variable = { new_french_army_consumer_goods_factor = 0.07}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_55
 		}
 		ai_will_do = {
 			factor = 25
@@ -6648,7 +7919,7 @@ focus = {
 		prerequisite = { focus = FRA_a_new_army_budget }
 		relative_position_id = FRA_a_new_army_budget
 		search_filters = { }
-		cost = 5
+		cost = 8
 		mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -6664,7 +7935,19 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { french_bad_army_army_attack_factor = 0.1}
+				add_to_variable = { french_bad_army_army_defence_factor = 0.1}
+				add_to_variable = { french_bad_army_army_org_factor = 0.1}
+				add_to_variable = { french_bad_army_army_morale_factor = 0.1}
+				add_to_variable = { french_bad_army_army_speed_factor = 0.1}
+				add_to_variable = { french_bad_army_breakthrough_factor = 0.1}
+				add_to_variable = { french_bad_army_experience_loss_factor = -0.1}
+				add_to_variable = { french_bad_army_land_night_attack = 0.15}
+				add_to_variable = { french_bad_army_max_dig_in_factor = 0.2}
+				add_to_variable = { french_bad_army_recon_factor = 0.15}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_56
 		}
 		ai_will_do = {
 			factor = 25
@@ -6808,7 +8091,7 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_spirit_fortification_focus
 		}
 		ai_will_do = {
 			factor = 25
@@ -6844,7 +8127,11 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = FRA_spirit_fortification_focus
+				add_idea = FRA_spirit_fortification_focus2
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_65
 		}
 		ai_will_do = {
 			factor = 25
@@ -6880,7 +8167,39 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			158 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6635
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 776
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11726
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 771
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6788
+				}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_66
 		}
 		ai_will_do = {
 			factor = 25
@@ -6917,7 +8236,17 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = FRA_spirit_fortification_focus2
+				add_idea = FRA_spirit_fortification_focus3
+			}
+			add_tech_bonus = {
+				name = POL_lazy_research_bonus
+				bonus = 0.5
+				uses = 2
+				category = radar_tech
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_67
 		}
 		ai_will_do = {
 			factor = 25
@@ -7117,7 +8446,7 @@ focus = {
 		prerequisite = { focus = FRA_traumas_of_the_great_war }
 		relative_position_id = FRA_traumas_of_the_great_war
 		search_filters = { }
-		cost = 5
+		cost = 8
 		mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -7133,7 +8462,23 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { french_bad_army_army_attack_factor = 0.1}
+				add_to_variable = { french_bad_army_army_defence_factor = 0.1}
+				add_to_variable = { french_bad_army_army_org_factor = 0.1}
+				add_to_variable = { french_bad_army_army_morale_factor = 0.1}
+				add_to_variable = { french_bad_army_army_speed_factor = 0.1}
+				add_to_variable = { french_bad_army_breakthrough_factor = 0.1}
+				add_to_variable = { french_bad_army_experience_loss_factor = -0.1}
+				add_to_variable = { french_bad_army_land_night_attack = 0.15}
+				add_to_variable = { french_bad_army_max_dig_in_factor = 0.2}
+				add_to_variable = { french_bad_army_recon_factor = 0.15}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_56
+			army_experience = 10
+			country_event = {
+				id = deluge_france_lore.1
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7153,7 +8498,7 @@ focus = {
 		prerequisite = { focus = FRA_post_great_war_challenges }
 		relative_position_id = FRA_post_great_war_challenges
 		search_filters = { }
-		cost = 5
+		cost = 8
 		mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -7169,7 +8514,36 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					NOT = {
+						has_tech = infantry_weapons1
+					}
+				}
+				hidden_effect = {
+					set_technology = {
+						infantry_weapons1 = 1
+					}
+				}
+				custom_effect_tooltip = FRA_custom_effect_tooltip_62
+			}
+			else = {
+				add_tech_bonus = {
+					name = POL_lazy_research_bonus
+					bonus = 1
+					uses = 1
+					category = infantry_weapons 
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 2000
+				producer = FRA
+			}
+			add_ideas = FRA_production_de_masse
+			country_event = {
+				id = deluge_france_lore.2
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7189,7 +8563,7 @@ focus = {
 		prerequisite = { focus = FRA_field_the_MAS_36 }
 		relative_position_id = FRA_field_the_MAS_36
 		search_filters = { }
-		cost = 5
+		cost = 8
 		mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -7205,7 +8579,25 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { french_bad_army_army_attack_factor = 0.15}
+				add_to_variable = { french_bad_army_army_defence_factor = 0.15}
+				add_to_variable = { french_bad_army_army_org_factor = 0.15}
+				add_to_variable = { french_bad_army_army_morale_factor = 0.15}
+				add_to_variable = { french_bad_army_army_speed_factor = 0.15}
+				add_to_variable = { french_bad_army_breakthrough_factor = 0.15}
+				add_to_variable = { french_bad_army_experience_loss_factor = -0.15}
+				add_to_variable = { french_bad_army_land_night_attack = 0.15}
+				add_to_variable = { french_bad_army_max_dig_in_factor = 0.2}
+				add_to_variable = { french_bad_army_recon_factor = 0.15}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_57
+			army_experience = 10
+			hidden_effect = {
+				add_to_variable = { new_french_army_army_defence_factor = 0.03}
+				add_to_variable = { new_french_army_army_attack_factor = 0.03}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_60
 		}
 		ai_will_do = {
 			factor = 25
@@ -7678,7 +9070,25 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { french_bad_army_army_attack_factor = 0.15}
+				add_to_variable = { french_bad_army_army_defence_factor = 0.15}
+				add_to_variable = { french_bad_army_army_org_factor = 0.15}
+				add_to_variable = { french_bad_army_army_morale_factor = 0.15}
+				add_to_variable = { french_bad_army_army_speed_factor = 0.15}
+				add_to_variable = { french_bad_army_breakthrough_factor = 0.15}
+				add_to_variable = { french_bad_army_experience_loss_factor = -0.15}
+				add_to_variable = { french_bad_army_land_night_attack = 0.15}
+				add_to_variable = { french_bad_army_max_dig_in_factor = 0.2}
+				add_to_variable = { french_bad_army_recon_factor = 0.15}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_57
+			add_doctrine_cost_reduction = {
+				name = POL_lazy_research_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7734,7 +9144,7 @@ focus = {
 		prerequisite = { focus = FRA_traumas_of_the_great_war }
 		relative_position_id = FRA_traumas_of_the_great_war
 		search_filters = { }
-		cost = 5
+		cost = 6
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -7750,7 +9160,24 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { french_bad_army_naval_accidents_chance = -0.05}
+				add_to_variable = { french_bad_army_convoy_raiding_efficiency_factor = 0.1}
+				add_to_variable = { french_bad_army_navy_anti_air_attack_factor = 0.1}
+				add_to_variable = { french_bad_army_naval_damage_factor = 0.05}
+				add_to_variable = { french_bad_army_naval_detection = 0.05}
+				add_to_variable = { french_bad_army_naval_coordination = 0.05}
+				add_to_variable = { french_bad_army_naval_critical_score_chance_factor = 0.05}
+				add_to_variable = { french_bad_army_naval_night_attack = 0.05}
+				add_to_variable = { french_bad_army_naval_morale_factor = 0.1}
+				add_to_variable = { french_bad_army_navy_org_factor = 0.1}
+				add_to_variable = { french_bad_army_navy_max_range_factor = 0.1}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_61
+			navy_experience = 10
+			country_event = {
+				id = deluge_france_lore.8
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7770,7 +9197,7 @@ focus = {
 		prerequisite = { focus = FRA_review_the_fleet }
 		relative_position_id = FRA_review_the_fleet
 		search_filters = { }
-		cost = 5
+		cost = 6
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -7806,7 +9233,7 @@ focus = {
 		prerequisite = { focus = FRA_expand_naval_facilities }
 		relative_position_id = FRA_expand_naval_facilities
 		search_filters = { }
-		cost = 5
+		cost = 6
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -7842,7 +9269,7 @@ focus = {
 		prerequisite = { focus = FRA_review_the_fleet }
 		relative_position_id = FRA_review_the_fleet
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -7858,7 +9285,35 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { french_bad_army_naval_invasion_penalty = -0.1}
+				add_to_variable = { french_bad_army_naval_invasion_capacity = 2}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_58
+			random_owned_controlled_state = {
+				prioritize = { 15 }
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 14 }
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7879,7 +9334,7 @@ focus = {
 		prerequisite = { focus = FRA_plans_to_counter_anglo_dominance }
 		relative_position_id = FRA_expand_naval_facilities
 		search_filters = { }
-		cost = 5
+		cost = 8
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -7895,7 +9350,22 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { french_bad_army_naval_accidents_chance = -0.1}
+				add_to_variable = { french_bad_army_convoy_raiding_efficiency_factor = 0.1}
+				add_to_variable = { french_bad_army_navy_anti_air_attack_factor = 0.1}
+				add_to_variable = { french_bad_army_naval_damage_factor = 0.05}
+				add_to_variable = { french_bad_army_naval_detection = 0.05}
+				add_to_variable = { french_bad_army_naval_coordination = 0.1}
+				add_to_variable = { french_bad_army_naval_critical_score_chance_factor = 0.1}
+				add_to_variable = { french_bad_army_naval_night_attack = 0.1}
+				add_to_variable = { french_bad_army_naval_morale_factor = 0.1}
+				add_to_variable = { french_bad_army_navy_org_factor = 0.1}
+				add_to_variable = { french_bad_army_navy_max_range_factor = 0.1}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_63
+			navy_experience = 15
+			add_ideas = FRA_marine_de_guerre
 		}
 		ai_will_do = {
 			factor = 25
@@ -8291,7 +9761,26 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { french_bad_army_naval_accidents_chance = -0.1}
+				add_to_variable = { french_bad_army_convoy_raiding_efficiency_factor = 0.1}
+				add_to_variable = { french_bad_army_navy_anti_air_attack_factor = 0.1}
+				add_to_variable = { french_bad_army_naval_damage_factor = 0.1}
+				add_to_variable = { french_bad_army_naval_detection = 0.1}
+				add_to_variable = { french_bad_army_naval_coordination = 0.1}
+				add_to_variable = { french_bad_army_naval_critical_score_chance_factor = 0.1}
+				add_to_variable = { french_bad_army_naval_night_attack = 0.1}
+				add_to_variable = { french_bad_army_naval_morale_factor = 0.1}
+				add_to_variable = { french_bad_army_navy_org_factor = 0.1}
+				add_to_variable = { french_bad_army_navy_max_range_factor = 0.1}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_64
+			add_doctrine_cost_reduction = {
+				name = POL_lazy_research_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8311,7 +9800,7 @@ focus = {
 		prerequisite = { focus = FRA_la_royale_fera_face }
 		relative_position_id = FRA_la_royale_fera_face
 		search_filters = { }
-		cost = 5
+		cost = 6
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -8327,7 +9816,37 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { french_bad_army_naval_invasion_penalty = -0.15}
+				add_to_variable = { french_bad_army_naval_invasion_capacity = 4}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_59
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				add_tech_bonus = {
+					name = POL_lazy_research_bonus
+					bonus = 0.5
+					uses = 1
+					technology = improved_ship_hull_light
+					technology = improved_ship_hull_cruiser
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Man the Guns"
+					}
+				}
+				add_tech_bonus = {
+					name = POL_lazy_research_bonus
+					bonus = 0.5
+					uses = 1
+					technology = improved_light_cruiser
+					technology = improved_destroyer
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25

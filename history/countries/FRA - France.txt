@@ -894,16 +894,41 @@ set_variable = {french_depression_war_support_factor = -0.05 }
 set_variable = {french_depression_political_power_factor = -0.25 }
 add_dynamic_modifier = { modifier = FRA_modifier_economic_depression }
 
-set_variable = {french_bad_army_naval_doctrine_cost_factor = 0.9 }
-set_variable = {french_bad_army_land_doctrine_cost_factor = 0.9 }
-set_variable = {french_bad_army_air_doctrine_cost_factor = 0.9 }
-set_variable = {french_bad_army_experience_gain_army_factor = -0.75 }
-set_variable = {french_bad_army_experience_gain_navy_factor = -0.75 }
-set_variable = {french_bad_army_experience_gain_air_factor = -0.75 }
-set_variable = {french_bad_army_command_power_gain_mult = -0.8 }
-set_variable = {french_bad_army_army_defence_factor = -0.2 }
-set_variable = {french_bad_army_army_attack_factor = -0.2 }
-set_variable = {french_bad_army_army_org_factor = -0.2 }
+set_variable = {french_bad_army_army_defence_factor = -0.5 }
+set_variable = {french_bad_army_army_attack_factor = -0.5 }
+set_variable = {french_bad_army_army_org_factor = -0.5 }
+set_variable = {french_bad_army_army_morale_factor = -0.5 }
+set_variable = {french_bad_army_army_speed_factor = -0.5 }
+set_variable = {french_bad_army_breakthrough_factor = -0.5 }
+set_variable = {french_bad_army_experience_loss_factor = 0.5 }
+set_variable = {french_bad_army_land_night_attack = -0.6 }
+set_variable = {french_bad_army_max_dig_in_factor = -0.8 }
+set_variable = {french_bad_army_recon_factor = -0.6 }
+
+set_variable = {french_bad_army_air_accidents_factor = 0.25 }
+set_variable = {french_bad_army_air_ace_generation_chance_factor = -0.25 }
+set_variable = {french_bad_army_air_agility_factor = -0.2 }
+set_variable = {french_bad_army_air_attack_factor = -0.2 }
+set_variable = {french_bad_army_air_defence_factor = -0.2 }
+set_variable = {french_bad_army_air_weather_penalty = 0.25 }
+set_variable = {french_bad_army_ground_attack_factor = -0.25 }
+set_variable = {french_bad_army_air_night_penalty = 0.25 }
+
+set_variable = {french_bad_army_naval_accidents_chance = 0.25 }
+set_variable = {french_bad_army_convoy_raiding_efficiency_factor = -0.3 }
+set_variable = {french_bad_army_navy_anti_air_attack_factor = -0.3 }
+set_variable = {french_bad_army_naval_damage_factor = -0.2 }
+set_variable = {french_bad_army_naval_detection = -0.2 }
+set_variable = {french_bad_army_naval_coordination = -0.25 }
+set_variable = {french_bad_army_naval_critical_score_chance_factor = -0.25 }
+set_variable = {french_bad_army_naval_night_attack = -0.25 }
+set_variable = {french_bad_army_naval_morale_factor = -0.3 }
+set_variable = {french_bad_army_navy_org_factor = -0.3 }
+set_variable = {french_bad_army_navy_max_range_factor = -0.3 }
+
+set_variable = {french_bad_army_naval_invasion_penalty = 0.25 }
+set_variable = {french_bad_army_naval_invasion_capacity = -6 }
+
 add_dynamic_modifier = { modifier = FRA_modifier_obsolete_army }
 
 create_faction = Continental_System
@@ -920,6 +945,7 @@ add_ideas = {
 	limited_conscription
 	FRA_spirit_horrors_of_the_great_war
 	robber_barons
+	FRA_spirit_conservative_high_command
 }
 add_timed_idea = {
 	idea = FRA_spirit_senussi_rebellion

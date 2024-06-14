@@ -8,13 +8,11 @@ POL_DD_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_light destroyer }
 
-	prefix = "OJKM "
+	prefix = "ORP "
 	fallback_name = "Niszczyciel %d"
 
 	unique = {
-		"Grom" "Błyskawica" "Piorun" "Orkan" "Kujawiak" "Ślązak" "Pomorzanin" "Krakowiak" "Góral" "Mazur" "Kaszub" "Kurp" 
-		"Burza" "Wicher" "Garland" "Ouragan" "Warszawa" "Lwów" "Wilno" "Poznan" "Kraków" "Wisla" "Gdynia" "Gdansk"
-		"Kraków" "Zadwórze" "Plowce" "Odsiecz Wiedenska" "Psków" "Raszyn" "Przemysl" "Chocim" "Kircholm" "Fuengirola"
+		"Piorun" "Orkan" "Kurp" "Garland" "Ouragan" "Warszawa" "Lwów" "Wilno" "Poznań" "Kraków" "Wisła" "Gdynia" "Gdańsk" "Kraków" "Zadwórze" "Płowce" "Odsiecz Wiedeńska" "Psków" "Raszyn" "Przemyśl" "Chocim" "Kircholm"
 	}
 }
 
@@ -27,12 +25,11 @@ POL_CL_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
 	
-	prefix = "OJKM "
+	prefix = "ORP "
 	fallback_name = "Lekki Krążownik %d"
 
 	unique = {
-		"Dragon" "Conrad" "Bałtyk" "Król Wladyslaw IV" "Lwów" "Wilno" "Poznan" "Kraków" "Wisla" "Gdynia" "Gdansk" "Warszawa"
-		"Kraków" "Zadwórze" "Plowce" "Odsiecz Wiedenska" "Psków" "Raszyn" "Przemysl" "Chocim" "Kircholm" "Fuengirola"
+		"Dragon" "Konrad" "Bałtyk" "Król Władysław IV" "Lwów" "Wilno" "Poznań" "Kraków" "Wisła" "Gdynia" "Gdańsk" "Warszawa" "Kraków" "Zadwórze" "Plowce" "Odsiecz Wiedeńska" "Psków" "Raszyn" "Przemyśl" "Chocim" "Kircholm"
 	}
 }
 
@@ -45,12 +42,11 @@ POL_CA_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
 	
-	prefix = "OJKM "
+	prefix = "ORP "
 	fallback_name = "Ciężki Krążownik %d"
 
 	unique = {
-		"Dragon" "Conrad" "Bałtyk" "Król Wladyslaw IV" "Lwów" "Wilno" "Poznan" "Kraków" "Wisla" "Gdynia" "Gdansk" "Warszawa"
-		"Kraków" "Zadwórze" "Plowce" "Odsiecz Wiedenska" "Psków" "Raszyn" "Przemysl" "Chocim" "Kircholm" "Fuengirola"
+		"Dragon" "Konrad" "Bałtyk" "Król Władysław IV" "Lwów" "Wilno" "Poznań" "Kraków" "Wisła" "Gdynia" "Gdańsk" "Warszawa" "Kraków" "Zadwórze" "Plowce" "Odsiecz Wiedeńska" "Psków" "Raszyn" "Przemyśl" "Chocim" "Kircholm"
 	}
 }
 
@@ -64,12 +60,11 @@ POL_BB_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
 	
-	prefix = "OJKM "
+	prefix = "ORP "
 	fallback_name = "Pancernik %d"
 	
 	unique = {
-		"Józef Pilsudski" "Król Wladyslaw IV" "Stefan Batory" "Jan Sobieski" "Kazimierz Wielki" "Boleslaw Chrobry" "Jan Kazimierz" "Stanislaw Koniecpolski" 
-		"Stanislaw Zólkiewski" "Jan Zamoyski" "Stanislaw Lanckoronski" "Stefan Czarniecki" "Jan Karol Chodkiewicz" 
+		"Stefan Batory" "Jan Sobieski" "Kazimierz Wielki" "Bolesław Chrobry" "Jan Kazimierz" "Stanisław Koniecpolski" "Stanisław Żółkiewski" "Jan Zamoyski" "Stanisław Lanckoronski" "Stefan Czarniecki" "Jan Karol Chodkiewicz"
 	}
 }
 
@@ -82,12 +77,11 @@ POL_BC_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
 	
-	prefix = "OJKM "
+	prefix = "ORP "
 	fallback_name = "Krążownik %d"
 	
 	unique = {
-		"Józef Pilsudski" "Król Wladyslaw IV" "Stefan Batory" "Jan Sobieski" "Kazimierz Wielki" "Boleslaw Chrobry" "Jan Kazimierz" "Stanislaw Koniecpolski" 
-		"Stanislaw Zólkiewski" "Jan Zamoyski" "Stanislaw Lanckoronski" "Stefan Czarniecki" "Jan Karol Chodkiewicz" 
+		"Stefan Batory" "Jan Sobieski" "Kazimierz Wielki" "Bolesław Chrobry" "Jan Kazimierz" "Stanisław Koniecpolski" "Stanisław Żółkiewski" "Jan Zamoyski" "Stanisław Lanckoronski" "Stefan Czarniecki" "Jan Karol Chodkiewicz"
 	}
 }
 
@@ -100,12 +94,11 @@ POL_CV_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
 	
-	prefix = "OJKM "
+	prefix = "ORP "
 	fallback_name = "Lotniskowiec %d"
 	
 	unique = {
-		"Józef Pilsudski" "Król Wladyslaw IV" "Stefan Batory" "Jan Sobieski" "Kazimierz Wielki" "Boleslaw Chrobry" "Jan Kazimierz" "Stanislaw Koniecpolski" 
-		"Stanislaw Zólkiewski" "Jan Zamoyski" "Stanislaw Lanckoronski" "Stefan Czarniecki" "Jan Karol Chodkiewicz" 
+		"Stefan Batory" "Jan Sobieski" "Kazimierz Wielki" "Bolesław Chrobry" "Jan Kazimierz" "Stanisław Koniecpolski" "Stanisław Żółkiewski" "Jan Zamoyski" "Stanisław Lanckoronski" "Stefan Czarniecki" "Jan Karol Chodkiewicz"
 	}
 }
 
@@ -118,12 +111,11 @@ POL_SS_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
 	
-	prefix = "OJKM "
+	prefix = "ORP "
 	fallback_name = "Okręt Podwodny %d"
 	
 	unique = {
-		"Orzeł" "Sęp" "Sokól" "Dzik" "Jastrząb" "Rys" "Wilk" "Zbik" "Kondor" "Bielik" 
-		"Kaszub" "Mazur" "Krakowiak" "Ślązak" "Kujawiak" "Kurp" "Kujawiak" "Kujawiak" "Kujawiak" 
+		"Sokól" "Dzik" "Jastrząb" "Kondor" "Bielik" "Kurp"
 	}
 }
 
@@ -184,7 +176,7 @@ POL_THEME_HISTORICAL_FIGURES = {
 		"Stanisław Lanckoroński"
 		"Jan Henryk Dąbrowski"
 		"Mateusz Sierpinek"
-		"Arend Dickmann"
+		"Emilia Plater"
 		"Kazimierz Pułaski"
 		"Jan Heweliusz"
 		"Mikołaj Kopernik"
@@ -193,10 +185,10 @@ POL_THEME_HISTORICAL_FIGURES = {
 		"Józef Bem"
 		"Józef Haller"
 		"Stanisław Szeptycki"
-		"Władysław Sikorski"
-		"Kazimierz Sosnkowski"
-		"Władysław Anders"
-		"Stanisław Sosabowski"
+		"Stanisław Wyspiański"
+		"Juliusz Słowacki"
+		"Adam Mickiewicz"
+		"Bolesław Prus"
 	}
 }
 
