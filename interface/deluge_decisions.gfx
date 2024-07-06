@@ -406,6 +406,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_cat_polish_cavalary.dds"
 	}
 	spriteType = {
+		name = "GFX_decision_cat_senussi_campaign"
+		texturefile = "gfx/interface/decisions/decision_cat_senussi_campaign.dds"
+	}
+	spriteType = {
 		name = "GFX_decision_cat_royal_affairs"
 		texturefile = "gfx/interface/decisions/decision_cat_royal_affairs.dds"
 	}
@@ -420,6 +424,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decision_category_arab_lands"
 		texturefile = "gfx/interface/decisions/decision_category_arab_lands.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_chateau_de_vincennes_castle"
+		texturefile = "gfx/interface/decisions/decision_cat_chateau_de_vincennes_castle.dds"
 	}
 	spriteType = {
 		name = "GFX_decision_generic_europe"

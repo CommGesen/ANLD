@@ -950,3 +950,581 @@ FRA_economy_decisions = {
 		}
 	}
 }
+FRA_dec_cat_modernize_french_army={
+	FRA_dec_convince_unit_leader1 = {#characters cannot be targets of targeted decisions so I need to make all these decisions manually :(
+		icon = GFX_decision_FIN_stop_motti_tactics
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_louis_franchet_d_esperey
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_louis_franchet_d_esperey
+				trait = old_guard
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_convince_unit_leader2 = {
+		icon = GFX_decision_FIN_stop_motti_tactics
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_maxime_weygand
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_maxime_weygand
+				trait = old_guard
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_convince_unit_leader3 = {
+		icon = GFX_decision_FIN_stop_motti_tactics
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_maurice_gamelin
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_maurice_gamelin
+				trait = old_guard
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_convince_unit_leader4 = {
+		icon = GFX_decision_FIN_stop_motti_tactics
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_alphonse_georges
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_alphonse_georges
+				trait = old_guard
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_convince_unit_leader5 = {
+		icon = GFX_decision_FIN_stop_motti_tactics
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_antoine_marie_benoit_besson
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_antoine_marie_benoit_besson
+				trait = old_guard
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_convince_unit_leader6 = {
+		icon = GFX_decision_FIN_stop_motti_tactics
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_charles_huntziger
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_charles_huntziger
+				trait = old_guard
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_convince_unit_leader7 = {
+		icon = GFX_decision_FIN_stop_motti_tactics
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_aime_doumenc
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_aime_doumenc
+				trait = old_guard
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_convince_unit_leader8 = {
+		icon = GFX_decision_FIN_stop_motti_tactics
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_henry_freydenberg
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_henry_freydenberg
+				trait = old_guard
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_convince_unit_leader9 = {
+		icon = GFX_decision_FIN_stop_motti_tactics
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_adolphe_guillaumat
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_adolphe_guillaumat
+				trait = old_guard
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_convince_unit_leader10 = {
+		icon = GFX_decision_FIN_stop_motti_tactics
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_pierre_hering
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_pierre_hering
+				trait = old_guard
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_convince_unit_leader11 = {
+		icon = GFX_decision_FIN_stop_motti_tactics
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_andre_gaston_pretelat
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_andre_gaston_pretelat
+				trait = old_guard
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_convince_unit_leader12 = {
+		icon = GFX_decision_FIN_stop_motti_tactics
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_marcel_garchery
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_marcel_garchery
+				trait = old_guard
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_convince_unit_leader13 = {
+		icon = GFX_decision_FIN_stop_motti_tactics
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_charles_marie_conde
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_charles_marie_conde
+				trait = old_guard
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_convince_unit_leader14 = {
+		icon = GFX_decision_FIN_stop_motti_tactics
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_louis_colson
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_louis_colson
+				trait = old_guard
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_convince_unit_leader15 = {
+		icon = GFX_decision_FIN_stop_motti_tactics
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_robert_touchon
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_robert_touchon
+				trait = old_guard
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_convince_unit_leader16 = {
+		icon = GFX_decision_FIN_stop_motti_tactics
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_victor_bourret
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_victor_bourret
+				trait = old_guard
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_convince_unit_leader17 = {
+		icon = GFX_decision_FIN_stop_motti_tactics
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_jules_buhrer
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_jules_buhrer
+				trait = old_guard
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_convince_unit_leader18 = {
+		icon = GFX_decision_FIN_stop_motti_tactics
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_emile_laure_name
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_emile_laure_name
+				trait = old_guard
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+}

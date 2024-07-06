@@ -452,6 +452,52 @@ characters={
 			desc = "FRA_deluge_maxime_weygand_desc"
 		}
 	}
+	FRA_deluge_eugene_deloncle={
+		name=FRA_deluge_eugene_deloncle_name
+		portraits={
+			army={
+				small="GFX_maxime_weygand_picture_small" ##change later
+				large=GFX_portrait_FRA_maxime_weygand ##change later
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_eugene_deloncle
+			allowed = {
+				original_tag = FRA
+			}
+			visible = {
+				FRA = {
+					NOT = {
+						OR = {
+							has_completed_focus = FRA_towards_republic
+							has_completed_focus = FRA_the_reformer
+							has_completed_focus = FRA_the_guarantor
+							has_completed_focus = FRA_absolutist_grip
+						}
+					}
+				}
+			}
+			available = {
+				has_completed_focus = FRA_boulangists_takeover
+			}
+			cost = 150
+			traits = {
+				leader_of_the_cowl
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		country_leader = {
+			ideology = social_darwinist_ideology
+			traits = {
+				leader_of_the_cowl_2
+			}
+			expire = "1969.1.1.1"
+			desc = "FRA_deluge_eugene_deloncle_desc"
+		}
+	}
 	##French Popular Party:
 	FRA_deluge_jacques_doriot={
 		name=FRA_deluge_jacques_doriot_name

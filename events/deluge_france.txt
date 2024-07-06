@@ -103,16 +103,50 @@ country_event = {
 country_event = {
 	id = deluge_france.5
 	title = deluge_france.5.t
-	desc = deluge_france.5.d
+	desc = {
+		text = deluge_france.5.d1
+		trigger = {
+			NOT = {
+				has_completed_focus = FRA_shuffle_high_command
+			}
+		}
+	}
+	desc = {
+		text = deluge_france.5.d2
+		trigger = {
+			has_completed_focus = FRA_shuffle_high_command
+		}
+	}
 	picture = GFX_report_event_louis_franchet_d_esperey
 	is_triggered_only = yes
 	option = {##d'esperey remains
 		name = deluge_france.5.a
+		trigger = {
+			NOT = {
+				has_completed_focus = FRA_shuffle_high_command
+			}
+		}
 		add_political_power = 2
 	}
 	option = {##weygand gains power
 		name = deluge_france.5.b
+		trigger = {
+			NOT = {
+				has_completed_focus = FRA_shuffle_high_command
+			}
+		}
 		promote_character = FRA_deluge_maxime_weygand
+	}
+	option = {##secret option - eugene deloncle gains power, because shuffle high command focus was done and 2 other candidates don't have that much power
+		name = deluge_france.5.c
+		trigger = {
+			has_completed_focus = FRA_shuffle_high_command
+		}
+		remove_advisor_role = {
+			character = "FRA_deluge_eugene_deloncle"
+			slot = political_advisor
+		}
+		promote_character = FRA_deluge_eugene_deloncle
 	}
 }
 # France proclaims republic and decides what to do with the Bonaparte family and the emperor
@@ -360,7 +394,7 @@ country_event = {
 		set_country_flag = FRA_radicals_took_power
 	}
 }
-country_event = {
+country_event = {##inspection in the army
 	id = deluge_france_lore.1
 	title = deluge_france_lore.1.t
 	desc = deluge_france_lore.1.d
@@ -371,7 +405,7 @@ country_event = {
 		name = deluge_france_lore.1.a
 	}
 }
-country_event = {
+country_event = {##MAS 1936
 	id = deluge_france_lore.2
 	title = deluge_france_lore.2.t
 	desc = deluge_france_lore.2.d
@@ -382,7 +416,7 @@ country_event = {
 		name = deluge_france_lore.2.a
 	}
 }
-country_event = {
+country_event = {##The last 300 meters
 	id = deluge_france_lore.3
 	title = deluge_france_lore.3.t
 	desc = deluge_france_lore.3.d
@@ -393,7 +427,7 @@ country_event = {
 		name = deluge_france_lore.3.a
 	}
 }
-country_event = {
+country_event = {##The Atlantic Line
 	id = deluge_france_lore.4
 	title = deluge_france_lore.4.t
 	desc = deluge_france_lore.4.d
@@ -404,7 +438,7 @@ country_event = {
 		name = deluge_france_lore.4.a
 	}
 }
-country_event = {
+country_event = {##The Maginot Line
 	id = deluge_france_lore.5
 	title = deluge_france_lore.5.t
 	desc = deluge_france_lore.5.d
@@ -415,7 +449,7 @@ country_event = {
 		name = deluge_france_lore.5.a
 	}
 }
-country_event = {
+country_event = {##Barrages David
 	id = deluge_france_lore.6
 	title = deluge_france_lore.6.t
 	desc = deluge_france_lore.6.d
@@ -426,7 +460,7 @@ country_event = {
 		name = deluge_france_lore.6.a
 	}
 }
-country_event = {
+country_event = {##French Jeep Production
 	id = deluge_france_lore.7
 	title = deluge_france_lore.7.t
 	desc = deluge_france_lore.7.d
@@ -437,7 +471,7 @@ country_event = {
 		name = deluge_france_lore.7.a
 	}
 }
-country_event = {
+country_event = {##Review the Fleet
 	id = deluge_france_lore.8
 	title = deluge_france_lore.8.t
 	desc = deluge_france_lore.8.d
@@ -448,7 +482,7 @@ country_event = {
 		name = deluge_france_lore.8.a
 	}
 }
-country_event = {
+country_event = {##Razzle Dazzle
 	id = deluge_france_lore.9
 	title = deluge_france_lore.9.t
 	desc = deluge_france_lore.9.d
@@ -457,6 +491,28 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = deluge_france_lore.9.a
+	}
+}
+country_event = {##Fighter Competitions
+	id = deluge_france_lore.10
+	title = deluge_france_lore.10.t
+	desc = deluge_france_lore.10.d
+	picture = GFX_report_event_barrages_david ##change later
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.10.a
+	}
+}
+country_event = {##Trials for Multirole Aircraft
+	id = deluge_france_lore.11
+	title = deluge_france_lore.11.t
+	desc = deluge_france_lore.11.d
+	picture = GFX_report_event_barrages_david ##change later
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.11.a
 	}
 }
 

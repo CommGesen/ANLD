@@ -7980,16 +7980,41 @@ focus = {
 		#	}
 		#}
 		available = {
-			
+			OR = {
+				GER = {
+					has_volunteers_amount_from = {
+						tag = FRA
+						count > 0
+					}
+				}
+				WGR = {
+					has_volunteers_amount_from = {
+						tag = FRA
+						count > 0
+					}
+				}
+				DDR = {
+					has_volunteers_amount_from = {
+						tag = FRA
+						count > 0
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = {
+				name = POL_lazy_research_bonus
+				cost_reduction = 0.75
+				uses = 4
+				category = land_doctrine
+			}
+			army_experience = 50
 		}
 		ai_will_do = {
 			factor = 25
 		}
 		bypass = {
-			
+			has_global_flag = german_civil_war_ended
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -8003,7 +8028,7 @@ focus = {
 		prerequisite = { focus = FRA_experience_from_german_civil_war }
 		relative_position_id = FRA_experience_from_german_civil_war
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = { focus = FRA_modernize_high_command}
 		allow_branch = {
 			
@@ -8016,10 +8041,28 @@ focus = {
 		#	}
 		#}
 		available = {
-			
+			NOT = {
+				has_completed_focus = FRA_boulangists_takeover
+			}
 		}
 		completion_reward = {
-			
+			remove_ideas = FRA_spirit_conservative_high_command
+			FRA_deluge_louis_franchet_d_esperey = {
+				remove_unit_leader_role = yes
+			}
+			FRA_deluge_maxime_weygand = {
+				remove_unit_leader_role = yes
+			}
+			FRA_deluge_maurice_gamelin = {
+				remove_unit_leader_role = yes
+			}
+			FRA_deluge_alphonse_georges = {
+				remove_unit_leader_role = yes
+			}
+			FRA_deluge_antoine_marie_benoit_besson = {
+				remove_unit_leader_role = yes
+			}
+			add_command_power = 60
 		}
 		ai_will_do = {
 			factor = 25
@@ -8039,7 +8082,7 @@ focus = {
 		prerequisite = { focus = FRA_experience_from_german_civil_war }
 		relative_position_id = FRA_experience_from_german_civil_war
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = { focus = FRA_shuffle_high_command}
 		allow_branch = {
 			
@@ -8055,7 +8098,7 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_79
 		}
 		ai_will_do = {
 			factor = 25
@@ -8132,6 +8175,9 @@ focus = {
 				add_idea = FRA_spirit_fortification_focus2
 			}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_65
+			country_event = {
+				id = deluge_france_lore.4
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8164,7 +8210,7 @@ focus = {
 		#	}
 		#}
 		available = {
-			
+			controls_state = 158
 		}
 		completion_reward = {
 			158 = {
@@ -8200,12 +8246,17 @@ focus = {
 				}
 			}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_66
+			country_event = {
+				id = deluge_france_lore.5
+			}
 		}
 		ai_will_do = {
 			factor = 25
 		}
 		bypass = {
-			
+			NOT = {
+				controls_state = 158
+			}
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -8247,6 +8298,9 @@ focus = {
 				category = radar_tech
 			}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_67
+			country_event = {
+				id = deluge_france_lore.6
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8617,7 +8671,7 @@ focus = {
 		prerequisite = { focus = FRA_le_armee_de_demain }
 		relative_position_id = FRA_le_armee_de_demain
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = { focus = FRA_gamelins_plan focus = FRA_de_lattres_plan }
 		allow_branch = {
 			
@@ -8633,7 +8687,19 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { new_french_army_motorized_defence_factor = 0.07}
+				add_to_variable = { new_french_army_motorized_attack_factor = 0.07}
+				add_to_variable = { new_french_army_mechanized_defence_factor = 0.07}
+				add_to_variable = { new_french_army_mechanized_attack_factor = 0.07}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_75
+			add_doctrine_cost_reduction = {
+				name = POL_lazy_research_bonus
+				cost_reduction = 0.5
+				uses = 3
+				category = cat_mobile_warfare
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8653,7 +8719,7 @@ focus = {
 		prerequisite = { focus = FRA_de_gaulles_plan }
 		relative_position_id = FRA_de_gaulles_plan
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -8669,7 +8735,12 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			add_ideas = POL_mass_production_of_support_equipment
+			hidden_effect = {
+				add_to_variable = { new_french_army_initiative_factor = 0.05}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_76
+			army_experience = 10
 		}
 		ai_will_do = {
 			factor = 25
@@ -8689,7 +8760,7 @@ focus = {
 		prerequisite = { focus = FRA_onboard_radios }
 		relative_position_id = FRA_onboard_radios
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -8725,7 +8796,7 @@ focus = {
 		prerequisite = { focus = FRA_armored_warfare_tactics focus = FRA_agressive_recon }
 		relative_position_id = FRA_armored_warfare_tactics
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -8743,7 +8814,18 @@ focus = {
 			}
 		}
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = POL_lazy_research_bonus
+				bonus = 0.25
+				uses = 2
+				category = armor
+			}
+			army_experience = 20
+			hidden_effect = {
+				add_to_variable = { new_french_army_army_armor_speed_factor = 0.05}
+				add_to_variable = { new_french_army_army_armor_attack_factor = 0.05}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_78
 		}
 		ai_will_do = {
 			factor = 25
@@ -8763,7 +8845,7 @@ focus = {
 		prerequisite = { focus = FRA_le_armee_de_demain }
 		relative_position_id = FRA_le_armee_de_demain
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = { focus = FRA_gamelins_plan focus = FRA_de_gaulles_plan }
 		allow_branch = {
 			
@@ -8779,7 +8861,16 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { new_french_army_army_artillery_attack_factor = 0.1}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_73
+			add_doctrine_cost_reduction = {
+				name = POL_lazy_research_bonus
+				cost_reduction = 0.5
+				uses = 3
+				category = cat_superior_firepower
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8799,7 +8890,7 @@ focus = {
 		prerequisite = { focus = FRA_de_lattres_plan }
 		relative_position_id = FRA_de_lattres_plan
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -8815,7 +8906,8 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_spirit_proximity_airdrops
+			army_experience = 10
 		}
 		ai_will_do = {
 			factor = 25
@@ -8835,7 +8927,7 @@ focus = {
 		prerequisite = { focus = FRA_proximity_airdrops }
 		relative_position_id = FRA_proximity_airdrops
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -8851,7 +8943,12 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			add_ideas = POL_mass_production_of_support_equipment
+			hidden_effect = {
+				add_to_variable = { new_french_army_recon_factor = 0.1}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_74
+			army_experience = 10
 		}
 		ai_will_do = {
 			factor = 25
@@ -8871,7 +8968,7 @@ focus = {
 		prerequisite = { focus = FRA_agressive_recon focus = FRA_shocktroops focus = FRA_armored_warfare_tactics }
 		relative_position_id = FRA_agressive_recon
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -8887,7 +8984,14 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = POL_lazy_research_bonus
+				bonus = 0.5
+				uses = 1
+				technology = armored_car_at_upgrade
+			}
+			army_experience = 20
+			add_ideas = FRA_spirit_armored_reconnaissance_vehicle
 		}
 		ai_will_do = {
 			factor = 25
@@ -8907,7 +9011,7 @@ focus = {
 		prerequisite = { focus = FRA_le_armee_de_demain }
 		relative_position_id = FRA_le_armee_de_demain
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = { focus = FRA_de_lattres_plan focus = FRA_de_gaulles_plan }
 		allow_branch = {
 			
@@ -8923,7 +9027,16 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { new_french_army_max_dig_in_factor = 0.1}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_72
+			add_doctrine_cost_reduction = {
+				name = POL_lazy_research_bonus
+				cost_reduction = 0.5
+				uses = 3
+				category = cat_grand_battle_plan
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8943,7 +9056,7 @@ focus = {
 		prerequisite = { focus = FRA_gamelins_plan }
 		relative_position_id = FRA_gamelins_plan
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -8959,7 +9072,13 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				set_technology = {
+					tech_ballistic_vests = 1
+				}
+			}
+			custom_effect_tooltip = ballistic_vests_custom_effect_tooltip
+			army_experience = 10
 		}
 		ai_will_do = {
 			factor = 25
@@ -8979,7 +9098,7 @@ focus = {
 		prerequisite = { focus = FRA_ballistic_vests }
 		relative_position_id = FRA_ballistic_vests
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -8995,7 +9114,14 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				set_technology = {
+					tech_shocktroops = 1
+				}
+			}
+			custom_effect_tooltip = shocktroops_custom_effect_tooltip
+			add_ideas = POL_mass_production_of_support_equipment
+			army_experience = 10
 		}
 		ai_will_do = {
 			factor = 25
@@ -9015,7 +9141,7 @@ focus = {
 		prerequisite = { focus = FRA_shocktroops focus = FRA_agressive_recon }
 		relative_position_id = FRA_shocktroops
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -9033,7 +9159,17 @@ focus = {
 			}
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { new_french_army_army_infantry_attack_factor = 0.05}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_77
+			add_tech_bonus = {
+				name = POL_lazy_research_bonus
+				bonus = 0.25
+				uses = 1
+				technology = advanced_infantry_weapons
+			}
+			army_experience = 20
 		}
 		ai_will_do = {
 			factor = 25
@@ -9054,7 +9190,7 @@ focus = {
 		prerequisite = { focus = FRA_les_300_derniers_metres focus = FRA_char_de_combat_revalorise }
 		relative_position_id = FRA_engin_blinde_de_reconnaissance
 		search_filters = { }
-		cost = 5
+		cost = 8
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -9210,19 +9346,65 @@ focus = {
 		#	}
 		#}
 		available = {
-			
+			OR = {
+				controls_state = 29
+				controls_state = 15
+				controls_state = 21
+			}
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					controls_state = 29
+				}
+				29 = {
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						province = 11548
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 15
+				}
+				15 = {
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						province = 6449
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 21
+				}
+				21 = {
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						province = 11834
+						instant_build = yes
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
 		}
 		bypass = {
-			
+			NOT = {
+				controls_state = 21
+				controls_state = 15
+				controls_state = 29
+			}
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 		available_if_capitulated = yes
 	}
 	focus = {
@@ -9246,10 +9428,76 @@ focus = {
 		#	}
 		#}
 		available = {
-			
+			any_country = {
+				OR = {
+					controls_state = 459
+					controls_state = 268
+					controls_state = 286
+				}
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+				}
+			}
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					any_country = {
+						controls_state = 286
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				286 = {
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						province = 4401
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						controls_state = 268
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				268 = {
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						province = 8124
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						controls_state = 459
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				459 = {
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						province = 1145
+						instant_build = yes
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -9745,7 +9993,7 @@ focus = {
 		prerequisite = { focus = FRA_blockade_tactics focus = FRA_escort_fleet_submarines }
 		relative_position_id = FRA_blockade_tactics
 		search_filters = { }
-		cost = 5
+		cost = 6
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -9866,7 +10114,7 @@ focus = {
 		prerequisite = { focus = FRA_rethink_fleet_protection }
 		relative_position_id = FRA_rethink_fleet_protection
 		search_filters = { }
-		cost = 5
+		cost = 6
 		mutually_exclusive = {focus = FRA_advanced_sonars}
 		allow_branch = {
 			
@@ -9882,7 +10130,7 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_spirit_containing_air_threat
 		}
 		ai_will_do = {
 			factor = 25
@@ -9902,7 +10150,7 @@ focus = {
 		prerequisite = { focus = FRA_rethink_fleet_protection }
 		relative_position_id = FRA_rethink_fleet_protection
 		search_filters = { }
-		cost = 5
+		cost = 6
 		mutually_exclusive = {focus = FRA_containing_the_air_threat}
 		allow_branch = {
 			
@@ -9918,7 +10166,7 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_spirit_advanced_sonars
 		}
 		ai_will_do = {
 			factor = 25
@@ -9938,7 +10186,7 @@ focus = {
 		prerequisite = { focus = FRA_containing_the_air_threat focus = FRA_advanced_sonars }
 		relative_position_id = FRA_containing_the_air_threat
 		search_filters = { }
-		cost = 5
+		cost = 6
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -9954,7 +10202,10 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_spirit_razzle_dazzle
+			country_event = {
+				id = deluge_france_lore.9
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -9974,7 +10225,7 @@ focus = {
 		prerequisite = { focus = FRA_traumas_of_the_great_war }
 		relative_position_id = FRA_traumas_of_the_great_war
 		search_filters = { }
-		cost = 5
+		cost = 6
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -9990,7 +10241,18 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { french_bad_army_air_accidents_factor = -0.05}
+				add_to_variable = { french_bad_army_air_ace_generation_chance_factor = 0.05}
+				add_to_variable = { french_bad_army_air_agility_factor = 0.05}
+				add_to_variable = { french_bad_army_air_attack_factor = 0.05}
+				add_to_variable = { french_bad_army_air_defence_factor = 0.05}
+				add_to_variable = { french_bad_army_air_weather_penalty = -0.05}
+				add_to_variable = { french_bad_army_ground_attack_factor = 0.05}
+				add_to_variable = { french_bad_army_air_night_penalty = -0.05}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_68
+			air_experience = 10
 		}
 		ai_will_do = {
 			factor = 25
@@ -10026,7 +10288,45 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			random_state = {
+				prioritize = { 19 }
+				limit = {
+					is_owned_by = FRA
+					is_controlled_by = FRA
+					is_on_continent = europe
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				prioritize = { 31 }
+				limit = {
+					is_owned_by = FRA
+					is_controlled_by = FRA
+					is_on_continent = europe
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				prioritize = { 22 }
+				limit = {
+					is_owned_by = FRA
+					is_controlled_by = FRA
+					is_on_continent = europe
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -10062,7 +10362,82 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			random_state = {
+				prioritize = { 286 }
+				limit = {
+					NOT = {
+						is_on_continent = europe
+					}
+					owner = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				prioritize = { 423 }
+				limit = {
+					NOT = {
+						is_on_continent = europe
+					}
+					owner = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				prioritize = { 448 }
+				limit = {
+					NOT = {
+						is_on_continent = europe
+					}
+					owner = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				prioritize = { 539 }
+				limit = {
+					NOT = {
+						is_on_continent = europe
+					}
+					owner = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -10083,7 +10458,7 @@ focus = {
 		prerequisite = { focus = FRA_southern_airports_expansion }
 		relative_position_id = FRA_southern_airports_expansion
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -10099,7 +10474,25 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = {
+				name = POL_lazy_research_bonus
+				cost_reduction = 0.3
+				uses = 4
+				category = air_doctrine
+			}
+			air_experience = 10
+			hidden_effect = {
+				add_to_variable = { french_bad_army_air_accidents_factor = -0.1}
+				add_to_variable = { french_bad_army_air_ace_generation_chance_factor = 0.1}
+				add_to_variable = { french_bad_army_air_agility_factor = 0.05}
+				add_to_variable = { french_bad_army_air_attack_factor = 0.05}
+				add_to_variable = { french_bad_army_air_defence_factor = 0.05}
+				add_to_variable = { french_bad_army_air_weather_penalty = -0.1}
+				add_to_variable = { french_bad_army_ground_attack_factor = 0.1}
+				add_to_variable = { french_bad_army_air_night_penalty = -0.1}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_69
+			add_ideas = FRA_spirit_aeronautique_nationale
 		}
 		ai_will_do = {
 			factor = 25
@@ -10119,8 +10512,8 @@ focus = {
 		prerequisite = { focus = FRA_la_nouvelle_armee_de_l_air }
 		relative_position_id = FRA_la_nouvelle_armee_de_l_air
 		search_filters = { }
-		cost = 5
-		mutually_exclusive = {focus = }
+		cost = 6
+		mutually_exclusive = {focus = FRA_call_for_multirole_design}
 		allow_branch = {
 			
 		}
@@ -10135,7 +10528,10 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_spirit_increase_fighter_production
+			country_event = {
+				id = deluge_france_lore.10
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -10155,7 +10551,7 @@ focus = {
 		prerequisite = { focus = FRA_organize_fighter_competition }
 		relative_position_id = FRA_organize_fighter_competition
 		search_filters = { }
-		cost = 5
+		cost = 6
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -10191,8 +10587,8 @@ focus = {
 		prerequisite = { focus = FRA_la_nouvelle_armee_de_l_air }
 		relative_position_id = FRA_la_nouvelle_armee_de_l_air
 		search_filters = { }
-		cost = 5
-		mutually_exclusive = {focus = }
+		cost = 6
+		mutually_exclusive = {focus = FRA_organize_fighter_competition}
 		allow_branch = {
 			
 		}
@@ -10207,7 +10603,10 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_spirit_increase_multirole_production
+			country_event = {
+				id = deluge_france_lore.11
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -10227,7 +10626,7 @@ focus = {
 		prerequisite = { focus = FRA_call_for_multirole_design }
 		relative_position_id = FRA_call_for_multirole_design
 		search_filters = { }
-		cost = 5
+		cost = 6
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -10263,7 +10662,7 @@ focus = {
 		prerequisite = { focus = FRA_review_the_proposals focus = FRA_prototype_demonstration }
 		relative_position_id = FRA_review_the_proposals
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -10279,7 +10678,11 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			air_experience = 10
+			swap_ideas = {
+				add_idea = FRA_spirit_aeronautique_nationale2
+				remove_idea = FRA_spirit_aeronautique_nationale
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -10299,7 +10702,7 @@ focus = {
 		prerequisite = { focus = FRA_review_the_proposals focus = FRA_prototype_demonstration }
 		relative_position_id = FRA_prototype_demonstration
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -10315,7 +10718,11 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { new_french_army_air_strategic_bomber_bombing_factor = 0.1}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_71
+			air_experience = 10
 		}
 		ai_will_do = {
 			factor = 25
@@ -10336,7 +10743,7 @@ focus = {
 		prerequisite = { focus = FRA_strategic_bombers_development }
 		relative_position_id = FRA_observation_aerienne_avancee
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -10352,7 +10759,7 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_spirit_bidons_speciaux
 		}
 		ai_will_do = {
 			factor = 25
@@ -10372,7 +10779,7 @@ focus = {
 		prerequisite = { focus = FRA_anti_insurgency_measures }
 		relative_position_id = FRA_anti_insurgency_measures
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -10388,7 +10795,23 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { french_bad_army_air_accidents_factor = -0.1}
+				add_to_variable = { french_bad_army_air_ace_generation_chance_factor = 0.1}
+				add_to_variable = { french_bad_army_air_agility_factor = 0.1}
+				add_to_variable = { french_bad_army_air_attack_factor = 0.1}
+				add_to_variable = { french_bad_army_air_defence_factor = 0.1}
+				add_to_variable = { french_bad_army_air_weather_penalty = -0.1}
+				add_to_variable = { french_bad_army_ground_attack_factor = 0.1}
+				add_to_variable = { french_bad_army_air_night_penalty = -0.1}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_70
+			add_doctrine_cost_reduction = {
+				name = POL_lazy_research_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -10421,7 +10844,7 @@ focus = {
 		#	}
 		#}
 		available = {
-			
+			has_tech = jet_engines
 		}
 		completion_reward = {
 			

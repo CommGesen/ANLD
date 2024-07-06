@@ -747,6 +747,220 @@ ideas = {
 				command_power_gain_mult = -0.8
 			}
 		}
+		FRA_spirit_conservative_high_command2 = {
+			picture = ETH_conservative_high_command ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				land_doctrine_cost_factor = 0.9
+				air_doctrine_cost_factor = 0.9
+				naval_doctrine_cost_factor = 0.9
+				experience_gain_army_factor = -0.9
+				experience_gain_navy_factor = -0.9
+				experience_gain_air_factor = -0.9
+				command_power_gain_mult = -0.7
+			}
+		}
+		FRA_spirit_conservative_high_command3 = {
+			picture = ETH_conservative_high_command ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				land_doctrine_cost_factor = 0.8
+				air_doctrine_cost_factor = 0.8
+				naval_doctrine_cost_factor = 0.8
+				experience_gain_army_factor = -0.8
+				experience_gain_navy_factor = -0.8
+				experience_gain_air_factor = -0.8
+				command_power_gain_mult = -0.6
+			}
+		}
+		FRA_spirit_conservative_high_command4 = {
+			picture = ETH_conservative_high_command ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				land_doctrine_cost_factor = 0.7
+				air_doctrine_cost_factor = 0.7
+				naval_doctrine_cost_factor = 0.7
+				experience_gain_army_factor = -0.7
+				experience_gain_navy_factor = -0.7
+				experience_gain_air_factor = -0.7
+				command_power_gain_mult = -0.5
+			}
+		}
+		FRA_spirit_conservative_high_command5 = {
+			picture = ETH_conservative_high_command ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				land_doctrine_cost_factor = 0.6
+				air_doctrine_cost_factor = 0.6
+				naval_doctrine_cost_factor = 0.6
+				experience_gain_army_factor = -0.6
+				experience_gain_navy_factor = -0.6
+				experience_gain_air_factor = -0.6
+				command_power_gain_mult = -0.4
+			}
+		}
+		FRA_spirit_conservative_high_command6 = {
+			picture = ETH_conservative_high_command ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				land_doctrine_cost_factor = 0.5
+				air_doctrine_cost_factor = 0.5
+				naval_doctrine_cost_factor = 0.5
+				experience_gain_army_factor = -0.5
+				experience_gain_navy_factor = -0.5
+				experience_gain_air_factor = -0.5
+				command_power_gain_mult = -0.3
+			}
+		}
+		FRA_spirit_conservative_high_command7 = {
+			picture = ETH_conservative_high_command ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				land_doctrine_cost_factor = 0.4
+				air_doctrine_cost_factor = 0.4
+				naval_doctrine_cost_factor = 0.4
+				experience_gain_army_factor = -0.4
+				experience_gain_navy_factor = -0.4
+				experience_gain_air_factor = -0.4
+				command_power_gain_mult = -0.2
+			}
+		}
+		FRA_spirit_conservative_high_command8 = {
+			picture = ETH_conservative_high_command ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				land_doctrine_cost_factor = 0.3
+				air_doctrine_cost_factor = 0.3
+				naval_doctrine_cost_factor = 0.3
+				experience_gain_army_factor = -0.3
+				experience_gain_navy_factor = -0.3
+				experience_gain_air_factor = -0.3
+				command_power_gain_mult = -0.1
+			}
+		}
+		FRA_spirit_conservative_high_command9 = {
+			picture = ETH_conservative_high_command ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				land_doctrine_cost_factor = 0.2
+				air_doctrine_cost_factor = 0.2
+				naval_doctrine_cost_factor = 0.2
+				experience_gain_army_factor = -0.2
+				experience_gain_navy_factor = -0.2
+				experience_gain_air_factor = -0.2
+			}
+		}
+		FRA_spirit_conservative_high_command10 = {
+			picture = ETH_conservative_high_command ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				land_doctrine_cost_factor = 0.1
+				air_doctrine_cost_factor = 0.1
+				naval_doctrine_cost_factor = 0.1
+				experience_gain_army_factor = -0.1
+				experience_gain_navy_factor = -0.1
+				experience_gain_air_factor = -0.1
+			}
+		}
 		FRA_production_de_masse = {
 			picture = spirit_mass_production_of_guns
 			allowed = {
@@ -856,6 +1070,216 @@ ideas = {
 				}
 				cl_tech = {
 					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		}
+		FRA_spirit_bidons_speciaux = {
+			picture = FRA_fortification_focus #change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				air_cas_present_factor = 0.25
+			}
+		}
+		FRA_spirit_containing_air_threat = {
+			picture = FRA_fortification_focus #change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				navy_anti_air_attack_factor = 0.1
+			}
+		}
+		FRA_spirit_advanced_sonars = {
+			picture = FRA_fortification_focus #change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				naval_detection = 0.1
+			}
+		}
+		FRA_spirit_razzle_dazzle = {
+			picture = FRA_fortification_focus #change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				navy_visibility = -0.1
+				naval_retreat_chance = 0.1
+			}
+		}
+		FRA_spirit_aeronautique_nationale = {
+			picture = FRA_fortification_focus #change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			equipment_bonus = {
+				transport_plane_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		FRA_spirit_aeronautique_nationale2 = {
+			picture = FRA_fortification_focus #change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			equipment_bonus = {
+				transport_plane_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				cat_scout_plane = {
+					air_range = 0.25
+					instant = yes
+				}
+			}
+		}
+		FRA_spirit_increase_fighter_production = {
+			picture = FRA_fortification_focus #change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			equipment_bonus = {
+				light_fighter = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		FRA_spirit_increase_multirole_production = {
+			picture = FRA_fortification_focus #change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			equipment_bonus = {
+				cat_heavy_fighter = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				cas_bomber = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		}
+		FRA_spirit_proximity_airdrops = {
+			picture = FRA_fortification_focus #change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			equipment_bonus = {
+				transport_plane_equipment = {
+					air_range = 0.3
+					air_defence = 0.1
+					instant = yes
+				}
+			}
+		}
+		FRA_spirit_armored_reconnaissance_vehicle = {
+			picture = FRA_fortification_focus #change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			equipment_bonus = {
+				cat_armored_cars = {
+					maximum_speed  = 0.05
+					reliability = 0.05
+					breakthrough = 0.05
 					instant = yes
 				}
 			}
@@ -982,24 +1406,6 @@ ideas = {
 				
 			}
 		}
-		FRA_fortification_focus = {
-		
-			allowed = {
-				original_tag = FRA
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			modifier = {
-				production_speed_bunker_factor = 0.1
-				production_speed_coastal_bunker_factor = 0.1
-			}
-		}
 		FRA_recruitment_to_the_foreign_legion = {
 			allowed = {
 				always = no
@@ -1101,23 +1507,6 @@ ideas = {
 			
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.1
-			}
-		}
-		FRA_radicalism_in_the_army = {
-			picture = generic_oppression
-			allowed = {
-				original_tag = FRA
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				fascism_drift = -0.1
 			}
 		}
 		 FRA_information_war_idea = {

@@ -1273,7 +1273,7 @@ ideas = {
 		POL_mass_production_of_support_equipment = {
 			picture = generic_supply_depot
 			allowed = {
-				tag = POL
+				#tag = POL
 			}
 			available = {
 				#empty

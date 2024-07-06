@@ -561,7 +561,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer }
+			traits = { infantry_leader politically_connected }
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -920,7 +920,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer }
+			traits = { war_hero cavalry_leader cavalry_expert politically_connected }
 			skill=4
 			attack_skill=3
 			defense_skill=4
@@ -956,7 +956,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { artillery_officer trickster expert_improviser }
+			traits = { artillery_officer infantry_leader trickster } ##maybe expert_improviser
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -1052,6 +1052,24 @@ characters={
 			}
 			ai_will_do = { factor = 1.0 }
 			ledger = army
+		}
+	}
+	POL_deluge_konstanty_rokossowski={
+		name = POL_deluge_konstanty_rokossowski_name
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_SOV_konstantin_rokossovsky.dds" ##change later
+				large="gfx/leaders/SOV/Portrait_Soviet_Konstantin_Rokossovsky.dds" ##change later
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist trait_cautious cavalry_officer panzer_leader }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+			desc = "POL_deluge_konstanty_rokossowski_desc"
 		}
 	}
 	POL_deluge_Grzmot_Skotnicki = {##Stanisław Grzmot-Skotnicki
