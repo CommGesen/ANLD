@@ -26,7 +26,62 @@ TUR_reform_increase_small = {
 		tooltip_side = TUR_Reformation
 	}
 }
-
+tur_peasent_unrest_up ={
+	add_to_variable = {
+		var = tur_peasent_unrest
+		value = -3
+		tooltip = tur_peasent_unrest_up_tt
+	}
+	add_to_variable = {
+		var = tur_feudal_loyalty
+		value = 3
+		tooltip = tur_feudal_loyalty_up_tt
+	}
+	den_calculate_feudalism = yes
+	den_calculate_peasents = yes
+	den_calculate_feudals = yes
+}
+tur_peasent_unrest_down ={
+	add_to_variable = {
+		var = tur_peasent_unrest
+		value = 3
+		tooltip = tur_peasent_unrest_down_tt
+	}
+	add_to_variable = {
+		var = tur_feudal_loyalty
+		value = -3
+		tooltip = tur_feudal_loyalty_down_tt
+	}
+	den_calculate_feudalism = yes
+	den_calculate_peasents = yes
+	den_calculate_feudals = yes
+}
+den_calculate_feudalism = {
+    clamp_variable = {
+        var = tur_peasent_unrest
+        min = 0
+        max = 100
+    }
+    clamp_variable = {
+        var = tur_feudal_loyalty
+        min = 0
+        max = 100
+    }
+}
+den_calculate_peasents = {
+    clamp_variable = {
+        var = tur_peasent_unrest
+        min = 0
+        max = 100
+    }
+}
+den_calculate_feudals = {
+    clamp_variable = {
+        var = tur_feudal_loyalty
+        min = 0
+        max = 100
+    }
+}
 TUR_minority_happy = {
 	if = {
 		limit = {

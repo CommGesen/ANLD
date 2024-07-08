@@ -1262,7 +1262,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Matters_of_Sultanate
 		completion_reward = {
-			
+			tur_peasent_unrest_up = yes
 			add_popularity = {
 				ideology = communism
 				popularity = -0.05
@@ -1393,7 +1393,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Matters_of_Sultanate
 		completion_reward = {
-			
+			tur_peasent_unrest_up = yes
 			add_political_power = -50
 			add_ideas = TUR_donations
 			if = {
@@ -1557,7 +1557,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_new_era_of_tanzim
 		completion_reward = {
-			
+			tur_peasent_unrest_down = yes
 			add_ideas = TUR_rations_for_poor
 			every_owned_state = {
 				limit = {
@@ -1845,6 +1845,7 @@ focus_tree = {
 		relative_position_id = TUR_get_rid_of_the_sultan
 		completion_reward = {
 			add_stability = -0.1
+			tur_peasent_unrest_down = yes
 			increase_debt_idea = yes
 			if = {
 				limit = {
@@ -1883,6 +1884,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_get_rid_of_the_sultan
 		completion_reward = {
+			tur_peasent_unrest_up = yes
 			reduce_debt_idea = yes 
 			add_stability = 0.1
 			if = {
@@ -2035,6 +2037,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Arabo_Ottoman_Empire
 		completion_reward = {
+			tur_peasent_unrest_up = yes
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2222,6 +2225,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Qahtaniyah_victory
 		completion_reward = {
+			tur_peasent_unrest_down = yes
 			reduce_debt_idea = yes
 			291 = {
 				add_extra_state_shared_building_slots = 1
@@ -2281,6 +2285,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Qahtaniyah_victory
 		completion_reward = {
+			tur_peasent_unrest_down = yes
 			add_ideas = TUR_state_welfare_idea
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2407,6 +2412,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_hurriyet_ve_itlaf_victory
 		completion_reward = {
+			tur_peasent_unrest_down = yes
 			reduce_debt_idea = yes
 			add_ideas = TUR_labour_reforms
 		}
@@ -2550,6 +2556,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_hurriyet_ve_itlaf_victory
 		completion_reward = {
+			tur_peasent_unrest_down = yes
 			if = {
 				limit = { 
 					any_state = {
@@ -3065,6 +3072,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Modern_Sultanate
 		completion_reward = {
+			tur_peasent_unrest_up = yes
 			add_research_slot = 1
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -3117,6 +3125,7 @@ focus_tree = {
 		}
 		relative_position_id = TUR_Modern_Sultanate
 		completion_reward = {
+			tur_peasent_unrest_up = yes
 			reduce_debt_idea = yes
 			291 = {
 				add_extra_state_shared_building_slots = 1

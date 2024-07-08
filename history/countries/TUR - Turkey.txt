@@ -16,6 +16,14 @@ set_war_support = 0.2
 add_dynamic_modifier = {
 	modifier = TUR_feudalism_dynamic_modifier
 }
+
+set_variable = {
+	tur_peasent_unrest = 15
+}
+set_variable = {
+	tur_feudal_loyalty = 75
+}
+
 set_variable = { TUR_feudalism_research_speed_factor = -0.25 }
 set_variable = { TUR_feudalism_production_speed_buildings_factor = -0.25 }
 set_variable = { TUR_feudalism_production_factory_max_efficiency_factor = -0.1 }
