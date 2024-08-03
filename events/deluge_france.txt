@@ -394,6 +394,26 @@ country_event = {
 		set_country_flag = FRA_radicals_took_power
 	}
 }
+# New democratic parliament is created!
+country_event = {
+	id = deluge_france.16
+	title = deluge_france.16.t
+	desc = deluge_france.16.d
+	picture = GFX_report_event_french_left_wing_politicians
+	is_triggered_only = yes
+	option = {##radical party
+		name = deluge_france.16.a
+		set_country_flag = FRA_flag_radical_party_won
+	}
+	option = {##democratic republican alliance
+		name = deluge_france.16.b
+		set_country_flag = FRA_flag_democratic_republican_alliance_won
+	}
+	option = {##popular republican movement
+		name = deluge_france.16.c
+		set_country_flag = FRA_flag_popular_republican_movement_won
+	}
+}
 country_event = {##inspection in the army
 	id = deluge_france_lore.1
 	title = deluge_france_lore.1.t
@@ -475,7 +495,7 @@ country_event = {##Review the Fleet
 	id = deluge_france_lore.8
 	title = deluge_france_lore.8.t
 	desc = deluge_france_lore.8.d
-	picture = GFX_report_event_barrages_david ##change later
+	picture = GFX_report_event_french_navy ##change later
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {

@@ -1527,4 +1527,1408 @@ FRA_dec_cat_modernize_french_army={
 			base = 100
 		}
 	}
+	FRA_dec_convince_unit_leader19 = {
+		icon = GFX_decision_SWE_set_navy_budget
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_georges_durand_viel
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_georges_durand_viel
+				trait = old_guard_navy
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_convince_unit_leader20 = {
+		icon = GFX_decision_SWE_set_navy_budget
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_rene_emile_godfroy
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_rene_emile_godfroy
+				trait = old_guard_navy
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_convince_unit_leader21 = {
+		icon = GFX_decision_SWE_set_navy_budget
+		fire_only_once = yes
+		days_remove = 150
+		cost = 150
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_modernize_high_command
+			}
+			has_character = FRA_deluge_emmanuel_ollive
+		}
+		available = {
+			command_power > 30
+		}
+		remove_effect = {
+			remove_trait = {
+				character = FRA_deluge_emmanuel_ollive
+				trait = old_guard_navy
+			}
+			add_command_power = -30
+			FRA_scripted_effect_decrease_army_conservatism = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_improve_maginot_line_ita = {
+		icon = GFX_decision_generic_fortification
+		fire_only_once = yes
+		days_remove = 75
+		cost = 25
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			check_variable = { maginot_level_ita < 4 }
+			FRA = {
+				has_completed_focus = FRA_build_the_maginot_line
+			}
+			158 = {
+				is_fully_controlled_by = FRA
+			}
+		}
+		available = {
+			check_variable = { maginot_level_ita < 4 }
+			num_of_available_civilian_factories > 1
+			158 = {
+				is_fully_controlled_by = FRA
+			}
+		}
+		remove_effect = {
+			158 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6635
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 776
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11726
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 771
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6788
+				}
+			}
+			add_to_variable = {
+				var = maginot_level_ita
+				value = 1
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_80
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_improve_maginot_line_swi = {
+		icon = GFX_decision_generic_fortification
+		fire_only_once = yes
+		days_remove = 75
+		cost = 25
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			check_variable = { maginot_level_swi < 4 }
+			FRA = {
+				has_completed_focus = FRA_build_the_maginot_line
+			}
+			735 = {
+				is_fully_controlled_by = FRA
+			}
+			20 = {
+				is_fully_controlled_by = FRA
+			}
+			17 = {
+				is_fully_controlled_by = FRA
+			}
+		}
+		available = {
+			check_variable = { maginot_level_swi < 4 }
+			num_of_available_civilian_factories > 1
+			735 = {
+				is_fully_controlled_by = FRA
+			}
+			20 = {
+				is_fully_controlled_by = FRA
+			}
+			17 = {
+				is_fully_controlled_by = FRA
+			}
+		}
+		remove_effect = {
+			735 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 778
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9603
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11573
+				}
+			}
+			20 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6639
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6668
+				}
+			}
+			17 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3646
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3666
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 698
+				}
+			}
+			add_to_variable = {
+				var = maginot_level_swi
+				value = 1
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_80
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_improve_maginot_line_ger = {
+		icon = GFX_decision_generic_fortification
+		fire_only_once = yes
+		days_remove = 75
+		cost = 25
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			check_variable = { maginot_level_ger < 4 }
+			FRA = {
+				has_completed_focus = FRA_build_the_maginot_line
+			}
+			28 = {
+				is_fully_controlled_by = FRA
+			}
+			42 = {
+				is_fully_controlled_by = FRA
+			}
+		}
+		available = {
+			check_variable = { maginot_level_ger < 4 }
+			num_of_available_civilian_factories > 1
+			28 = {
+				is_fully_controlled_by = FRA
+			}
+			42 = {
+				is_fully_controlled_by = FRA
+			}
+		}
+		remove_effect = {
+			28 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 678
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6529
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9503
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 549
+				}
+			}
+			42 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3558
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11560
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3423
+				}
+			}
+			add_to_variable = {
+				var = maginot_level_ger
+				value = 1
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_80
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_improve_maginot_line_bel_ger = {
+		icon = GFX_decision_generic_fortification
+		fire_only_once = yes
+		days_remove = 75
+		cost = 15
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			check_variable = { maginot_level_ger_bel < 4 }
+			FRA = {
+				has_completed_focus = FRA_build_the_maginot_line
+			}
+			OR = {
+				786 = {
+					is_fully_controlled_by = FRA
+				}
+				any_subject_country = {
+					is_subject_of = FRA
+					controls_state = 786
+				}
+			}
+		}
+		available = {
+			check_variable = { maginot_level_ger_bel < 4 }
+			num_of_available_civilian_factories > 0
+			OR = {
+				786 = {
+					is_fully_controlled_by = FRA
+				}
+				any_subject_country = {
+					is_subject_of = FRA
+					controls_state = 786
+				}
+			}
+		}
+		remove_effect = {
+			786 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11494
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3547
+				}
+			}
+			add_to_variable = {
+				var = maginot_level_ger_bel
+				value = 1
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_80
+		}
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				NOT = {
+					786 = {
+						is_fully_controlled_by = FRA
+					}
+				}
+				NOT = {
+					786 = {
+						is_fully_controlled_by = BEL
+					}
+				}
+			}			
+		}
+	}
+	FRA_dec_improve_maginot_line_hol = {
+		icon = GFX_decision_generic_fortification
+		fire_only_once = yes
+		days_remove = 75
+		cost = 25
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			check_variable = { maginot_level_hol < 4 }
+			FRA = {
+				has_completed_focus = FRA_build_the_maginot_line
+			}
+			OR = {
+				786 = {
+					is_fully_controlled_by = FRA
+				}
+				any_subject_country = {
+					is_subject_of = FRA
+					controls_state = 786
+				}
+			}
+			OR = {
+				8 = {
+					is_fully_controlled_by = FRA
+				}
+				any_subject_country = {
+					is_subject_of = FRA
+					controls_state = 8
+				}
+			}
+			OR = {
+				34 = {
+					is_fully_controlled_by = FRA
+				}
+				any_subject_country = {
+					is_subject_of = FRA
+					controls_state = 34
+				}
+			}
+			29 = {
+				is_fully_controlled_by = FRA
+			}
+		}
+		available = {
+			check_variable = { maginot_level_hol < 4 }
+			num_of_available_civilian_factories > 1
+			OR = {
+				786 = {
+					is_fully_controlled_by = FRA
+				}
+				any_subject_country = {
+					is_subject_of = FRA
+					controls_state = 786
+				}
+			}
+			OR = {
+				8 = {
+					is_fully_controlled_by = FRA
+				}
+				any_subject_country = {
+					is_subject_of = FRA
+					controls_state = 8
+				}
+			}
+			OR = {
+				34 = {
+					is_fully_controlled_by = FRA
+				}
+				any_subject_country = {
+					is_subject_of = FRA
+					controls_state = 34
+				}
+			}
+			29 = {
+				is_fully_controlled_by = FRA
+			}
+		}
+		remove_effect = {
+			786 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3488
+				}
+			}
+			8 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6537
+				}
+			}
+			34 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11519
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3516
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 516
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3576
+				}
+			}
+			29 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6446
+				}
+			}
+			add_to_variable = {
+				var = maginot_level_hol
+				value = 1
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_80
+		}
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				NOT = {
+					786 = {
+						is_fully_controlled_by = FRA
+					}
+				}
+				NOT = {
+					786 = {
+						is_fully_controlled_by = BEL
+					}
+				}
+				NOT = {
+					8 = {
+						is_fully_controlled_by = FRA
+					}
+				}
+				NOT = {
+					8 = {
+						is_fully_controlled_by = BEL
+					}
+				}
+				NOT = {
+					34 = {
+						is_fully_controlled_by = FRA
+					}
+				}
+				NOT = {
+					34 = {
+						is_fully_controlled_by = BEL
+					}
+				}
+			}			
+		}
+	}
+	FRA_dec_improve_maginot_line_bel = {
+		icon = GFX_decision_generic_fortification
+		fire_only_once = yes
+		days_remove = 75
+		cost = 25
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			check_variable = { maginot_level_bel < 4 }
+			FRA = {
+				has_completed_focus = FRA_build_the_maginot_line
+			}
+			42 = {
+				is_fully_controlled_by = FRA
+			}
+			28 = {
+				is_fully_controlled_by = FRA
+			}
+			18 = {
+				is_fully_controlled_by = FRA
+			}
+			29 = {
+				is_fully_controlled_by = FRA
+			}
+		}
+		available = {
+			check_variable = { maginot_level_bel < 4 }
+			num_of_available_civilian_factories > 1
+			42 = {
+				is_fully_controlled_by = FRA
+			}
+			28 = {
+				is_fully_controlled_by = FRA
+			}
+			18 = {
+				is_fully_controlled_by = FRA
+			}
+			29 = {
+				is_fully_controlled_by = FRA
+			}
+		}
+		remove_effect = {
+			42 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9575
+				}
+			}
+			28 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9559
+				}
+			}
+			18 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 5291
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3560
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9472
+				}
+			}
+			29 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3447
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11606
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11483
+				}
+			}
+			add_to_variable = {
+				var = maginot_level_bel
+				value = 1
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_80
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_fortify_coast_north = {
+		icon = GFX_decision_generic_coastal_fortification
+		fire_only_once = yes
+		days_remove = 75
+		cost = 25
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			check_variable = { fra_coastal_fort_level_north < 4 }
+			FRA = {
+				has_completed_focus = FRA_fortify_the_english_channel
+			}
+			29 = {
+				is_fully_controlled_by = FRA
+			}
+			15 = {
+				is_fully_controlled_by = FRA
+			}
+			14 = {
+				is_fully_controlled_by = FRA
+			}
+		}
+		available = {
+			check_variable = { fra_coastal_fort_level_north < 4 }
+			num_of_available_civilian_factories > 1
+			29 = {
+				is_fully_controlled_by = FRA
+			}
+			15 = {
+				is_fully_controlled_by = FRA
+			}
+			14 = {
+				is_fully_controlled_by = FRA
+			}
+		}
+		remove_effect = {
+			29 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 6446
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 575
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 11548
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 9500
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 11420
+				}
+			}
+			15 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 485
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 9434
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 6599
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 3579
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 6449
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 9550
+				}
+			}
+			14 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 6572
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 3552
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 542
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 6536
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 9510
+				}
+			}
+			add_to_variable = {
+				var = fra_coastal_fort_level_north
+				value = 1
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_80
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_fortify_coast_west = {
+		icon = GFX_decision_generic_coastal_fortification
+		fire_only_once = yes
+		days_remove = 75
+		cost = 25
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			check_variable = { fra_coastal_fort_level_west < 4 }
+			FRA = {
+				has_completed_focus = FRA_fortify_the_english_channel
+			}
+			30 = {
+				is_fully_controlled_by = FRA
+			}
+			23 = {
+				is_fully_controlled_by = FRA
+			}
+			19 = {
+				is_fully_controlled_by = FRA
+			}
+		}
+		available = {
+			check_variable = { fra_coastal_fort_level_west < 4 }
+			num_of_available_civilian_factories > 1
+			30 = {
+				is_fully_controlled_by = FRA
+			}
+			23 = {
+				is_fully_controlled_by = FRA
+			}
+			19 = {
+				is_fully_controlled_by = FRA
+			}
+		}
+		remove_effect = {
+			30 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 11465
+				}
+			}
+			23 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 11616
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 11600
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 6657
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 9597
+				}
+			}
+			19 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 11565
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 9737
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 6621
+				}
+			}
+			add_to_variable = {
+				var = fra_coastal_fort_level_west
+				value = 1
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_80
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_fortify_coast_south = {
+		icon = GFX_decision_generic_coastal_fortification
+		fire_only_once = yes
+		days_remove = 75
+		cost = 25
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			check_variable = { fra_coastal_fort_level_south < 4 }
+			FRA = {
+				has_completed_focus = FRA_fortify_the_english_channel
+			}
+			158 = {
+				is_fully_controlled_by = FRA
+			}
+			735 = {
+				is_fully_controlled_by = FRA
+			}
+			851 = {
+				is_fully_controlled_by = FRA
+			}
+			21 = {
+				is_fully_controlled_by = FRA
+			}
+			165 = {
+				is_fully_controlled_by = FRA
+			}
+			1 = {
+				is_fully_controlled_by = FRA
+			}
+		}
+		available = {
+			check_variable = { fra_coastal_fort_level_south < 4 }
+			num_of_available_civilian_factories > 1
+			158 = {
+				is_fully_controlled_by = FRA
+			}
+			735 = {
+				is_fully_controlled_by = FRA
+			}
+			851 = {
+				is_fully_controlled_by = FRA
+			}
+			21 = {
+				is_fully_controlled_by = FRA
+			}
+			165 = {
+				is_fully_controlled_by = FRA
+			}
+			1 = {
+				is_fully_controlled_by = FRA
+			}
+		}
+		remove_effect = {
+			158 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 6788
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 3772
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 11891
+				}
+			}
+			735 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 9909
+				}
+			}
+			851 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 3928
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 911
+				}
+			}
+			21 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 11834
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 11849
+				}
+			}
+			165 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 854
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 9764
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 6812
+				}
+			}
+			1 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 9851
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 11804
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 3838
+				}
+			}
+			add_to_variable = {
+				var = fra_coastal_fort_level_south
+				value = 1
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_80
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_radar_north = {
+		icon = GFX_decision_generic_electricity
+		fire_only_once = yes
+		days_remove = 75
+		cost = 25
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			check_variable = { fra_radar_var_north < 3 }
+			FRA = {
+				has_completed_focus = FRA_barrages_david
+			}
+			29 = {
+				is_fully_controlled_by = FRA
+			}
+			15 = {
+				is_fully_controlled_by = FRA
+			}
+			14 = {
+				is_fully_controlled_by = FRA
+			}
+		}
+		available = {
+			check_variable = { fra_radar_var_north < 3 }
+			num_of_available_civilian_factories > 1
+			29 = {
+				is_fully_controlled_by = FRA
+			}
+			15 = {
+				is_fully_controlled_by = FRA
+			}
+			14 = {
+				is_fully_controlled_by = FRA
+			}
+			if = {
+				limit = {
+					check_variable = { fra_radar_var_south < 1 }
+				}
+				has_tech = radio_detection
+			}
+			if = {
+				limit = {
+					check_variable = { fra_radar_var_south < 2 }
+					check_variable = { fra_radar_var_south > 0 }
+				}
+				has_tech = decimetric_radar
+			}
+			if = {
+				limit = {
+					check_variable = { fra_radar_var_south < 3 }
+					check_variable = { fra_radar_var_south > 1 }
+				}
+				has_tech = improved_decimetric_radar
+			}
+		}
+		remove_effect = {
+			29 = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			15 = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			14 = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_to_variable = {
+				var = fra_radar_var_north
+				value = 1
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_81
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_radar_west = {
+		icon = GFX_decision_generic_electricity
+		fire_only_once = yes
+		days_remove = 75
+		cost = 25
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			check_variable = { fra_radar_var_west < 3 }
+			FRA = {
+				has_completed_focus = FRA_barrages_david
+			}
+			23 = {
+				is_fully_controlled_by = FRA
+			}
+			19 = {
+				is_fully_controlled_by = FRA
+			}
+		}
+		available = {
+			check_variable = { fra_radar_var_west < 3 }
+			num_of_available_civilian_factories > 1
+			23 = {
+				is_fully_controlled_by = FRA
+			}
+			19 = {
+				is_fully_controlled_by = FRA
+			}
+			if = {
+				limit = {
+					check_variable = { fra_radar_var_south < 1 }
+				}
+				has_tech = radio_detection
+			}
+			if = {
+				limit = {
+					check_variable = { fra_radar_var_south < 2 }
+					check_variable = { fra_radar_var_south > 0 }
+				}
+				has_tech = decimetric_radar
+			}
+			if = {
+				limit = {
+					check_variable = { fra_radar_var_south < 3 }
+					check_variable = { fra_radar_var_south > 1 }
+				}
+				has_tech = improved_decimetric_radar
+			}
+		}
+		remove_effect = {
+			23 = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			19 = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_to_variable = {
+				var = fra_radar_var_west
+				value = 1
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_81
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_radar_south = {
+		icon = GFX_decision_generic_electricity
+		fire_only_once = yes
+		days_remove = 75
+		cost = 25
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			check_variable = { fra_radar_var_south < 3 }
+			FRA = {
+				has_completed_focus = FRA_barrages_david
+			}
+			21 = {
+				is_fully_controlled_by = FRA
+			}
+			165 = {
+				is_fully_controlled_by = FRA
+			}
+			1 = {
+				is_fully_controlled_by = FRA
+			}
+		}
+		available = {
+			check_variable = { fra_radar_var_south < 3 }
+			num_of_available_civilian_factories > 1
+			21 = {
+				is_fully_controlled_by = FRA
+			}
+			165 = {
+				is_fully_controlled_by = FRA
+			}
+			1 = {
+				is_fully_controlled_by = FRA
+			}
+			if = {
+				limit = {
+					check_variable = { fra_radar_var_south < 1 }
+				}
+				has_tech = radio_detection
+			}
+			if = {
+				limit = {
+					check_variable = { fra_radar_var_south < 2 }
+					check_variable = { fra_radar_var_south > 0 }
+				}
+				has_tech = decimetric_radar
+			}
+			if = {
+				limit = {
+					check_variable = { fra_radar_var_south < 3 }
+					check_variable = { fra_radar_var_south > 1 }
+				}
+				has_tech = improved_decimetric_radar
+			}
+		}
+		remove_effect = {
+			21 = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			165 = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			1 = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_to_variable = {
+				var = fra_radar_var_south
+				value = 1
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_81
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
 }

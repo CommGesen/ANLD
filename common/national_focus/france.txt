@@ -1559,7 +1559,9 @@ focus_tree = {
 			has_country_flag = FRA_democrats_took_power
 		}
 		completion_reward = {
-			
+			country_event = {
+				id = deluge_france.16 
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7193,7 +7195,7 @@ focus = {
 		prerequisite = { focus = FRA_new_industry_standards }
 		relative_position_id = FRA_new_industry_standards
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { }
 		allow_branch = {
 			
@@ -7209,7 +7211,9 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_90
+			add_to_variable = {new_french_economy_production_speed_rail_way_factor = 0.15 }
+			add_to_variable = {new_french_economy_production_speed_infrastructure_factor = 0.05 }
 		}
 		ai_will_do = {
 			factor = 25
@@ -7223,7 +7227,7 @@ focus = {
 	}
 	focus = {		
 		id = FRA_support_air_france
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_support_air_france
 		x = 2
 		y = 1
 		prerequisite = { focus = FRA_transport_modernization }
@@ -7265,7 +7269,7 @@ focus = {
 		prerequisite = { focus = FRA_transport_modernization }
 		relative_position_id = FRA_transport_modernization
 		search_filters = { }
-		cost = 1
+		cost = 12
 		#mutually_exclusive = { }
 		allow_branch = {
 			
@@ -7281,7 +7285,116 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				prioritize = { 735 }
+				limit = {
+					infrastructure < 4
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 851 }
+				limit = {
+					infrastructure < 4
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 32 }
+				limit = {
+					infrastructure < 4
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 22 }
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 31 }
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 165 }
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 19 }
+				limit = {
+					infrastructure < 4
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 25 }
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 26 }
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 20 }
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7301,7 +7414,7 @@ focus = {
 		prerequisite = { focus = FRA_transport_modernization }
 		relative_position_id = FRA_transport_modernization
 		search_filters = { }
-		cost = 1
+		cost = 10
 		#mutually_exclusive = { }
 		allow_branch = {
 			
@@ -7317,7 +7430,72 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				prioritize = { 29 }
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 15 }
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 14 }
+				limit = {
+					infrastructure < 4
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 30 }
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 42 }
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 28 }
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7338,7 +7516,7 @@ focus = {
 		prerequisite = { focus = FRA_develop_southern_infrastructure  }
 		relative_position_id = FRA_develop_northern_infrastructure
 		search_filters = { }
-		cost = 1
+		cost = 9
 		#mutually_exclusive = { }
 		allow_branch = {
 			
@@ -7354,7 +7532,42 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_91
+			add_to_variable = {new_french_economy_production_speed_supply_node_factor = 0.1 }
+			add_to_variable = {new_french_economy_production_speed_infrastructure_factor = 0.1 }
+			random_owned_controlled_state = {
+				prioritize = { 16 }
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 24 }
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 27 }
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7482,7 +7695,7 @@ focus = {
 		prerequisite = { focus = FRA_new_industry_standards }
 		relative_position_id = FRA_new_industry_standards
 		search_filters = { }
-		cost = 1
+		cost = 7
 		#mutually_exclusive = { }
 		allow_branch = {
 			
@@ -7498,7 +7711,9 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_87
+			add_to_variable = {new_french_economy_industrial_capacity_factory = 0.05 }
+			add_to_variable = {new_french_economy_industrial_capacity_dockyard = 0.05 }
 		}
 		ai_will_do = {
 			factor = 25
@@ -7554,7 +7769,7 @@ focus = {
 		prerequisite = { focus = FRA_reorganize_military_aviation_industry }
 		relative_position_id = FRA_reorganize_military_aviation_industry
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { }
 		allow_branch = {
 			
@@ -7570,7 +7785,30 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			random_owned_state = {
+				limit = {
+					is_controlled_by = FRA
+					is_core_of = FRA
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = FRA
+					is_core_of = FRA
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7590,7 +7828,7 @@ focus = {
 		prerequisite = { focus = FRA_start_rearnament }
 		relative_position_id = FRA_start_rearnament
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { }
 		allow_branch = {
 			
@@ -7606,7 +7844,8 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_88
+			add_to_variable = {new_french_economy_production_speed_arms_factory_factor = 0.05 }
 		}
 		ai_will_do = {
 			factor = 25
@@ -7626,7 +7865,7 @@ focus = {
 		prerequisite = { focus = FRA_expand_military_industry }
 		relative_position_id = FRA_expand_military_industry
 		search_filters = { }
-		cost = 1
+		cost = 8
 		#mutually_exclusive = { }
 		allow_branch = {
 			
@@ -7642,7 +7881,32 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_89
+			add_to_variable = {new_french_economy_production_speed_dockyard_factor = 0.05 }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = FRA
+					is_core_of = FRA
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = FRA
+					is_core_of = FRA
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7663,7 +7927,7 @@ focus = {
 		prerequisite = { focus = FRA_nationalize_military_complexes }
 		relative_position_id = FRA_expand_naval_industry
 		search_filters = { }
-		cost = 1
+		cost = 7
 		#mutually_exclusive = { }
 		allow_branch = {
 			
@@ -7679,7 +7943,29 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = POL_lazy_research_bonus
+				bonus = 1
+				uses = 1
+				category = cat_synth_rubber
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = FRA
+					is_core_of = FRA
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			modify_building_resources = {
+        	   building = synthetic_refinery
+        	   resource = rubber
+        	   amount = 2
+        	}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7699,7 +7985,7 @@ focus = {
 		prerequisite = { focus = FRA_new_industry_standards }
 		relative_position_id = FRA_new_industry_standards
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { }
 		allow_branch = {
 			
@@ -7715,7 +8001,20 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_84
+			add_to_variable = {new_french_economy_production_speed_industrial_complex_factor = 0.05 }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = FRA
+					is_core_of = FRA
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7735,7 +8034,7 @@ focus = {
 		prerequisite = { focus = FRA_expand_civilian_industry }
 		relative_position_id = FRA_expand_civilian_industry
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { }
 		allow_branch = {
 			
@@ -7751,7 +8050,42 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_85
+			add_to_variable = {new_french_economy_consumer_goods_factor = -0.1 }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = FRA
+					is_core_of = FRA
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = FRA
+					is_core_of = FRA
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = FRA
+					is_core_of = FRA
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7771,7 +8105,7 @@ focus = {
 		prerequisite = { focus = FRA_build_dams }
 		relative_position_id = FRA_build_dams
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { }
 		allow_branch = {
 			
@@ -7787,7 +8121,31 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_86
+			add_to_variable = {new_french_economy_local_resources_factor = 0.1 }
+			random_owned_state = {
+				limit = {
+					is_controlled_by = FRA
+					is_core_of = FRA
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = FRA
+					is_core_of = FRA
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8041,8 +8399,26 @@ focus = {
 		#	}
 		#}
 		available = {
+			#NOT = {
+			#	has_completed_focus = FRA_boulangists_takeover
+			#}
 			NOT = {
-				has_completed_focus = FRA_boulangists_takeover
+				has_country_leader =  {
+					character = FRA_deluge_louis_franchet_d_esperey
+					ruling_only = yes
+				}
+			}
+			NOT = {
+				has_country_leader =  {
+					character = FRA_deluge_maxime_weygand
+					ruling_only = yes
+				}
+			}
+			NOT = {
+				has_country_leader =  {
+					character = FRA_deluge_maurice_gamelin
+					ruling_only = yes
+				}
 			}
 		}
 		completion_reward = {
@@ -8178,6 +8554,18 @@ focus = {
 			country_event = {
 				id = deluge_france_lore.4
 			}
+			set_variable = {
+				var = fra_coastal_fort_level_north
+				value = 0
+			}
+			set_variable = {
+				var = fra_coastal_fort_level_south
+				value = 0
+			}
+			set_variable = {
+				var = fra_coastal_fort_level_west
+				value = 0
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8210,7 +8598,9 @@ focus = {
 		#	}
 		#}
 		available = {
-			controls_state = 158
+			158 = {
+				is_fully_controlled_by = FRA
+			}
 		}
 		completion_reward = {
 			158 = {
@@ -8246,6 +8636,30 @@ focus = {
 				}
 			}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_66
+			set_variable = {
+				var = maginot_level_ita
+				value = 1
+			}
+			set_variable = {
+				var = maginot_level_ger
+				value = 0
+			}
+			set_variable = {
+				var = maginot_level_swi
+				value = 0
+			}
+			set_variable = {
+				var = maginot_level_bel
+				value = 0
+			}
+			set_variable = {
+				var = maginot_level_hol
+				value = 0
+			}
+			set_variable = {
+				var = maginot_level_ger_bel
+				value = 0
+			}
 			country_event = {
 				id = deluge_france_lore.5
 			}
@@ -8255,7 +8669,9 @@ focus = {
 		}
 		bypass = {
 			NOT = {
-				controls_state = 158
+				158 = {
+					is_fully_controlled_by = FRA
+				}
 			}
 		}
 		cancel_if_invalid = no
@@ -8301,6 +8717,18 @@ focus = {
 			country_event = {
 				id = deluge_france_lore.6
 			}
+			set_variable = {
+				var = fra_radar_var_north
+				value = 0
+			}
+			set_variable = {
+				var = fra_radar_var_south
+				value = 0
+			}
+			set_variable = {
+				var = fra_radar_var_west
+				value = 0
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8320,7 +8748,7 @@ focus = {
 		prerequisite = { focus = FRA_traumas_of_the_great_war }
 		relative_position_id = FRA_traumas_of_the_great_war
 		search_filters = { }
-		cost = 5
+		cost = 6
 		mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -8333,10 +8761,18 @@ focus = {
 		#	}
 		#}
 		available = {
-			
+			has_intelligence_agency = yes
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				add_ideas = FRA_spirit_expand_the_counter_intelligence_lar
+			}
+			else = {
+				add_ideas = FRA_spirit_expand_the_counter_intelligence_non_lar
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8356,7 +8792,7 @@ focus = {
 		prerequisite = { focus = FRA_expand_the_counter_intelligence }
 		relative_position_id = FRA_expand_the_counter_intelligence
 		search_filters = { }
-		cost = 5
+		cost = 6
 		mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -8372,7 +8808,7 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_spirit_forces_speciales
 		}
 		ai_will_do = {
 			factor = 25
@@ -8392,7 +8828,7 @@ focus = {
 		prerequisite = { focus = FRA_organize_special_training }
 		relative_position_id = FRA_organize_special_training
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -8408,7 +8844,7 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_spirit_forces_speciales
 		}
 		ai_will_do = {
 			factor = 25
@@ -8428,7 +8864,7 @@ focus = {
 		prerequisite = { focus = FRA_organize_special_training }
 		relative_position_id = FRA_organize_special_training
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = { focus = FRA_troupes_de_marine }
 		allow_branch = {
 			
@@ -8441,10 +8877,26 @@ focus = {
 		#	}
 		#}
 		available = {
-			
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				has_tech = special_forces_paratroopers
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Arms Against Tyranny"
+					}
+				}
+				has_tech = tech_special_forces
+			}
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { new_french_army_paradrop_organization_factor = 0.3}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_82
 		}
 		ai_will_do = {
 			factor = 25
@@ -8464,7 +8916,7 @@ focus = {
 		prerequisite = { focus = FRA_organize_special_training }
 		relative_position_id = FRA_organize_special_training
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = { focus = FRA_troupes_aeroportees }
 		allow_branch = {
 			
@@ -8477,10 +8929,26 @@ focus = {
 		#	}
 		#}
 		available = {
-			
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				has_tech = special_forces_marines
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Arms Against Tyranny"
+					}
+				}
+				has_tech = tech_special_forces
+			}
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { new_french_army_paradrop_organization_factor = 48}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_83
 		}
 		ai_will_do = {
 			factor = 25
@@ -10180,7 +10648,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_disruptive_camouflages
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_razzle_dazzle
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_containing_the_air_threat focus = FRA_advanced_sonars }
