@@ -1,0 +1,388 @@
+spriteTypes = {
+
+#(GENERIC#
+    #(SUPPORT EQUIPMENT#
+    	SpriteType = {
+			name = "GFX_tech_support_medium"
+			texturefile = "gfx/interface/technologies/GGG/support_equipment.dds"
+		}
+    #)#
+#)#
+
+#(POLAND#
+    #(INFANTRY EQUIPMENT#
+		SpriteType = {
+            name = "GFX_POL_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_infantry_equipment_0.dds"
+        }
+        SpriteType = {
+            name = "GFX_POL_infantry_weapons1_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_infantry_equipment_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_POL_improved_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_infantry_equipment_2.dds"
+        }
+        SpriteType = {
+            name = "GFX_POL_advanced_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_infantry_equipment_3.dds"
+        }
+	#)#
+
+	#(MOTORIZED, MECHANIZED AND AMPHIBIOUS#
+		SpriteType = {
+            name = "GFX_POL_motorised_infantry_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_motorized_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_POL_motorized_equipment_1_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_motorized_1.dds"
+        }
+		SpriteType = {
+            name = "GFX_POL_motorized_rocket_unit_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_motorized_rocket_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_POL_mechanised_infantry_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_mechanized_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_POL_mechanised_infantry2_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_mechanized_2.dds"
+        }
+        SpriteType = {
+            name = "GFX_POL_mechanised_infantry3_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_mechanized_3.dds"
+        }
+		SpriteType = {
+		    name = "GFX_POL_amphibious_mechanized_infantry_medium"
+		    texturefile = "gfx/interface/technologies/POL/POL_amphibious_1.dds"
+	    }
+		SpriteType = {
+		    name = "GFX_POL_amphibious_mechanized_infantry_2_medium"
+		    texturefile = "gfx/interface/technologies/POL/POL_amphibious_2.dds"
+	    }	
+	#)#
+
+	#(ARMORED CARS#
+		SpriteType = {
+		    name = "GFX_POL_armored_car1_medium"
+		    texturefile = "gfx/interface/technologies/POL/POL_armored_car_1.dds"
+	    }
+	    SpriteType = {
+		    name = "GFX_POL_armored_car2_medium"
+		    texturefile = "gfx/interface/technologies/POL/POL_armored_car_2.dds"
+	    }
+	    SpriteType = {
+		    name = "GFX_POL_armored_car3_medium"
+		    texturefile = "gfx/interface/technologies/POL/POL_armored_car_3.dds"
+	    }
+	    SpriteType = {
+		    name = "GFX_POL_armored_car_at_upgrade_medium"
+		    texturefile = "gfx/interface/technologies/POL/POL_armored_car_at.dds"
+	    }		
+	#)#
+
+    #(SUPPORT EQUIPMENT#
+    	SpriteType = {
+			name = "GFX_POL_tech_support_medium"
+			texturefile = "gfx/interface/technologies/POL/POL_support_equipment.dds"
+		}
+    #)#
+
+	#(ARTILLERY#
+        SpriteType = {
+            name = "GFX_POL_gw_artillery_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_art_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_POL_artillery1_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_art_2.dds"
+        }	
+        SpriteType = {
+            name = "GFX_POL_artillery4_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_art_3.dds"
+        }	
+        SpriteType = {
+            name = "GFX_POL_interwar_antiair_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_aa_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_POL_antiair2_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_aa_2.dds"
+        }
+        SpriteType = {
+            name = "GFX_POL_antiair5_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_aa_3.dds"
+        }	
+	    SpriteType = {
+            name = "GFX_POL_interwar_antitank_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_at_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_POL_antitank2_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_at_2.dds"
+        }	
+        SpriteType = {
+            name = "GFX_POL_antitank5_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_at_3.dds"
+        }
+	#)#	
+#)#
+
+#(FRANCE#
+	#(INFANTRY EQUIPMENT#
+		SpriteType = {
+            name = "GFX_FRA_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_infantry_equipment_0.dds"
+        }
+        SpriteType = {
+            name = "GFX_FRA_infantry_weapons1_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_infantry_equipment_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_FRA_improved_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_infantry_equipment_2.dds"
+        }
+        SpriteType = {
+            name = "GFX_FRA_advanced_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_infantry_equipment_3.dds"
+        }
+	#)#
+
+	#(MOTORIZED, MECHANIZED AND AMPHIBIOUS#
+		SpriteType = {
+            name = "GFX_FRA_motorised_infantry_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_motorized_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_FRA_motorized_equipment_1_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_motorized_1.dds"
+        }
+		SpriteType = {
+            name = "GFX_FRA_motorized_rocket_unit_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_motorized_rocket_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_FRA_mechanised_infantry_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_mechanized_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_FRA_mechanised_infantry2_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_mechanized_2.dds"
+        }
+        SpriteType = {
+            name = "GFX_FRA_mechanised_infantry3_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_mechanized_3.dds"
+        }
+		SpriteType = {
+		    name = "GFX_FRA_amphibious_mechanized_infantry_medium"
+		    texturefile = "gfx/interface/technologies/FRA/FRA_amphibious_1.dds"
+	    }
+		SpriteType = {
+		    name = "GFX_FRA_amphibious_mechanized_infantry_2_medium"
+		    texturefile = "gfx/interface/technologies/FRA/FRA_amphibious_2.dds"
+	    }	
+	#)#
+
+	#(ARMORED CARS#
+		SpriteType = {
+		    name = "GFX_FRA_armored_car1_medium"
+		    texturefile = "gfx/interface/technologies/FRA/FRA_armored_car_1.dds"
+	    }
+	    SpriteType = {
+		    name = "GFX_FRA_armored_car2_medium"
+		    texturefile = "gfx/interface/technologies/FRA/FRA_armored_car_2.dds"
+	    }
+	    SpriteType = {
+		    name = "GFX_FRA_armored_car3_medium"
+		    texturefile = "gfx/interface/technologies/FRA/FRA_armored_car_3.dds"
+	    }
+	    SpriteType = {
+		    name = "GFX_FRA_armored_car_at_upgrade_medium"
+		    texturefile = "gfx/interface/technologies/FRA/FRA_armored_car_at.dds"
+	    }		
+	#)#
+
+    #(SUPPORT EQUIPMENT#
+    	SpriteType = {
+			name = "GFX_FRA_tech_support_medium"
+			texturefile = "gfx/interface/technologies/FRA/FRA_support_equipment.dds"
+		}
+    #)#
+
+	#(ARTILLERY#
+        SpriteType = {
+            name = "GFX_FRA_gw_artillery_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_art_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_FRA_artillery1_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_art_2.dds"
+        }	
+        SpriteType = {
+            name = "GFX_FRA_artillery4_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_art_3.dds"
+        }	
+        SpriteType = {
+            name = "GFX_FRA_interwar_antiair_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_aa_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_FRA_antiair2_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_aa_2.dds"
+        }
+        SpriteType = {
+            name = "GFX_FRA_antiair5_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_aa_3.dds"
+        }	
+	    SpriteType = {
+            name = "GFX_FRA_interwar_antitank_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_at_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_FRA_antitank2_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_at_2.dds"
+        }	
+        SpriteType = {
+            name = "GFX_FRA_antitank5_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_at_3.dds"
+        }
+	#)#	
+
+#)#
+
+#(FEDERAL KINGDOM OF AMERICA#
+	#(INFANTRY EQUIPMENT#
+		SpriteType = {
+            name = "GFX_USA_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_infantry_equipment_0.dds"
+        }
+        SpriteType = {
+            name = "GFX_USA_infantry_weapons1_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_infantry_equipment_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_USA_improved_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_infantry_equipment_2.dds"
+        }
+        SpriteType = {
+            name = "GFX_USA_advanced_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_infantry_equipment_3.dds"
+        }
+	#)#
+
+	#(MOTORIZED, MECHANIZED AND AMPHIBIOUS#
+		SpriteType = {
+            name = "GFX_USA_motorised_infantry_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_motorized_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_USA_motorized_equipment_1_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_motorized_1.dds"
+        }
+		SpriteType = {
+            name = "GFX_USA_motorized_rocket_unit_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_motorized_rocket_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_USA_mechanised_infantry_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_mechanized_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_USA_mechanised_infantry2_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_mechanized_2.dds"
+        }
+        SpriteType = {
+            name = "GFX_USA_mechanised_infantry3_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_mechanized_3.dds"
+        }
+	#)#
+
+	#(ARMORED CARS#
+		SpriteType = {
+		    name = "GFX_USA_armored_car1_medium"
+		    texturefile = "gfx/interface/technologies/USA/USA_armored_car_1.dds"
+	    }
+	    SpriteType = {
+		    name = "GFX_USA_armored_car2_medium"
+		    texturefile = "gfx/interface/technologies/USA/USA_armored_car_2.dds"
+	    }
+	    SpriteType = {
+		    name = "GFX_USA_armored_car3_medium"
+		    texturefile = "gfx/interface/technologies/USA/USA_armored_car_3.dds"
+	    }
+	    SpriteType = {
+		    name = "GFX_USA_armored_car_at_upgrade_medium"
+		    texturefile = "gfx/interface/technologies/USA/USA_armored_car_at.dds"
+	    }		
+	#)#
+
+    #(SUPPORT EQUIPMENT#
+    	SpriteType = {
+			name = "GFX_USA_tech_support_medium"
+			texturefile = "gfx/interface/technologies/USA/USA_support_equipment.dds"
+		}
+    #)#
+
+	#(ARTILLERY#
+        SpriteType = {
+            name = "GFX_USA_gw_artillery_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_art_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_USA_artillery1_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_art_2.dds"
+        }	
+        SpriteType = {
+            name = "GFX_USA_artillery4_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_art_3.dds"
+        }	
+        SpriteType = {
+            name = "GFX_USA_interwar_antiair_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_aa_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_USA_antiair2_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_aa_2.dds"
+        }
+        SpriteType = {
+            name = "GFX_USA_antiair5_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_aa_3.dds"
+        }	
+	    SpriteType = {
+            name = "GFX_USA_interwar_antitank_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_at_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_USA_antitank2_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_at_2.dds"
+        }	
+        SpriteType = {
+            name = "GFX_USA_antitank5_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_at_3.dds"
+        }
+        SpriteType = {
+            name = "GFX_USA_rocket_artillery_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_rocket_art_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_USA_rocket_artillery4_medium"
+            texturefile = "gfx/interface/technologies/USA/USA_rocket_art_2.dds"
+        }
+	#)#	
+
+#)#
+
+#(JAPAN#
+
+	#(SUPPORT EQUIPMENT#
+    	SpriteType = {
+			name = "GFX_JAP_tech_support_medium"
+			texturefile = "gfx/interface/technologies/JAP/JAP_support_equipment.dds"
+		}
+    #)#
+
+#)#
+
+}

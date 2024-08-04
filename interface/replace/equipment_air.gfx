@@ -1,0 +1,44 @@
+spriteTypes = {
+
+    #(POLAND#
+
+        #(TRANSPORT AIRCRAFT#
+    	    SpriteType = {
+		        name = "GFX_POL_transport_plane_equipment_medium"
+		        texturefile = "gfx/interface/technologies/POL/POL_transport_plane.dds"
+	        }
+		    SpriteType = {
+		        name = "GFX_POL_transport_plane_equipment_1_medium"
+		        texturefile = "gfx/interface/technologies/POL/POL_transport_plane.dds"
+	        }
+        #)#
+    #)#
+
+    #(FRANCE#
+
+        #(TRANSPORT AIRCRAFT#
+    	    SpriteType = {
+		        name = "GFX_FRA_transport_plane_equipment_medium"
+		        texturefile = "gfx/interface/technologies/FRA/FRA_transport_plane.dds"
+	        }
+		    SpriteType = {
+		        name = "GFX_FRA_transport_plane_equipment_1_medium"
+		        texturefile = "gfx/interface/technologies/FRA/FRA_transport_plane.dds"
+	        }
+        #)#
+    #)#
+
+    #(FEDERAL KINGDOM OF AMERICA#
+
+        #(TRANSPORT AIRCRAFT#
+            SpriteType = {
+		        name = "GFX_USA_transport_plane_equipment_medium"
+		        texturefile = "gfx/interface/technologies/USA/USA_transport_plane.dds"
+	        }
+		    SpriteType = {
+		        name = "GFX_USA_transport_plane_equipment_1_medium"
+		        texturefile = "gfx/interface/technologies/USA/USA_transport_plane.dds"
+	        }
+        #)#
+    #)#
+}
