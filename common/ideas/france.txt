@@ -1335,6 +1335,24 @@ ideas = {
 				
 			}
 			modifier = {
+				special_forces_cap = 0.3
+			}
+		}
+		FRA_spirit_french_foreign_legion = {
+			picture = generic_spy_intel ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
 				non_core_manpower = 0.035
 				resistance_decay = 0.15
 			}

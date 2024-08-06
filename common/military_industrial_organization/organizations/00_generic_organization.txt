@@ -18,7 +18,7 @@ generic_tank_organization = {
 		NOT = {
 			OR = { 
 				tag = POL 
-				#tag = FRA 
+				tag = FRA 
 			} 
 		}
 	}
@@ -2045,7 +2045,7 @@ generic_escort_ship_organization = {
 		NOT = {
 			OR = {
 				tag = POL 
-				#tag = FRA 
+				tag = FRA 
 			} 
 		}
 	}
@@ -2258,7 +2258,7 @@ generic_raider_ship_organization = {
 		NOT = { 
 			OR = { 
 				tag = POL 
-				#tag = FRA 
+				tag = FRA 
 			} 
 		}
 	}
@@ -3479,7 +3479,7 @@ generic_general_aircraft_organization = {
 		NOT = { 
 			OR = { 
 				tag = POL 
-				#tag = FRA 
+				tag = FRA 
 			} 
 		}
 	}
@@ -6203,7 +6203,7 @@ generic_artillery_organization = {
 		NOT = { 
 			OR = { 
 				tag = POL 
-				#tag = FRA 
+				tag = FRA 
 			} 
 		}
 	}
@@ -6519,7 +6519,7 @@ generic_infantry_equipment_organization = {
 		NOT = { 
 			OR = { 
 				tag = POL 
-				#tag = FRA 
+				tag = FRA 
 			} 
 		}
 	}
@@ -7079,7 +7079,7 @@ generic_motorized_mechanized_organization = {
 		NOT = { 
 			OR = { 
 				tag = POL 
-				#tag = FRA 
+				tag = FRA 
 			} 
 		}
 	}

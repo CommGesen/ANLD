@@ -407,6 +407,23 @@ characters={
 			logistics_skill=2
 			desc = "FRA_deluge_louis_franchet_d_esperey_desc"
 		}
+		advisor={
+			slot = army_chief
+			idea_token = FRA_deluge_louis_franchet_d_esperey
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			#cost = 
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 	FRA_deluge_maxime_weygand={
 		name=FRA_deluge_maxime_weygand_name
@@ -456,8 +473,8 @@ characters={
 		name=FRA_deluge_eugene_deloncle_name
 		portraits={
 			army={
-				small="GFX_maxime_weygand_picture_small" ##change later
-				large=GFX_portrait_FRA_maxime_weygand ##change later
+				small="GFX_eugene_deloncle_picture_small" ##change later
+				large=GFX_portrait_FRA_eugene_deloncle ##change later
 			}
 		}
 		advisor={
@@ -619,6 +636,23 @@ characters={
 			logistics_skill=2
 			desc = "FRA_deluge_henri_mordacq_desc"
 		}
+		advisor={
+			slot = high_command
+			idea_token = FRA_deluge_henri_mordacq
+			allowed = { tag = FRA }
+			visible = {
+				tag = FRA
+			}
+			#cost = 150
+			available = { 
+				
+			}
+			traits = {
+				army_infantry_3
+			}
+			ai_will_do = { factor = 1.0 }
+			ledger = army
+		}
 	}
 	FRA_deluge_ernest_petit={
 		name=FRA_deluge_ernest_petit_name
@@ -655,6 +689,23 @@ characters={
 			logistics_skill=4
 			desc = "FRA_deluge_jean_de_lattre_de_tassigny_desc"
 		}
+		advisor={
+			slot = army_chief
+			idea_token = FRA_deluge_jean_de_lattre_de_tassigny
+			allowed = { tag = FRA }
+			visible = {
+				tag = FRA
+			}
+			#cost = 150
+			available = { 
+				
+			}
+			traits = {
+				army_chief_planning_3
+			}
+			ai_will_do = { factor = 1.0 }
+			ledger = army
+		}
 	}
 	FRA_deluge_alphonse_juin={
 		name=FRA_deluge_alphonse_juin_name
@@ -682,23 +733,6 @@ characters={
 				large=GFX_portrait_FRA_maurice_gamelin
 			}
 		}
-		advisor={
-			slot = army_chief
-			idea_token = FRA_deluge_maurice_gamelin
-			allowed = {
-				original_tag = FRA
-			}
-			available = {
-				
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			#cost = 
-			ai_will_do = {
-				factor = 1
-			}
-		}
 		field_marshal={
 			traits={ old_guard inflexible_strategist war_hero trait_cautious }
 			skill=2
@@ -707,6 +741,23 @@ characters={
 			planning_skill=2
 			logistics_skill=1
 			desc = "FRA_deluge_maurice_gamelin_desc"
+		}
+		advisor={
+			slot = high_command
+			idea_token = FRA_deluge_maurice_gamelin
+			allowed = { tag = FRA }
+			visible = {
+				tag = FRA
+			}
+			#cost = 150
+			available = { 
+				
+			}
+			traits = {
+				army_chief_entrenchment_3
+			}
+			ai_will_do = { factor = 1.0 }
+			ledger = army
 		}
 	}
 	FRA_deluge_victor_henri_schweisguth={
@@ -779,6 +830,23 @@ characters={
 			logistics_skill=1
 			desc = "FRA_deluge_antoine_marie_benoit_besson_desc"
 		}
+		advisor={
+			slot = chief_of_staff_slot
+			idea_token = FRA_deluge_antoine_marie_benoit_besson
+			allowed = { tag = FRA }
+			visible = {
+				tag = FRA
+			}
+			#cost = 150
+			available = { 
+				
+			}
+			traits = {
+				army_chief_old_guard
+			}
+			ai_will_do = { factor = 1.0 }
+			ledger = army
+		}
 	}
 	FRA_deluge_charles_de_gaulle={
 		name=FRA_deluge_charles_de_gaulle_name
@@ -827,19 +895,18 @@ characters={
 		advisor={
 			slot = high_command
 			idea_token = FRA_deluge_philippe_leclerc
-			allowed = {
-				original_tag = FRA
+			allowed = { tag = FRA }
+			visible = {
+				tag = FRA
 			}
-			available = {
+			#cost = 150
+			available = { 
 				
 			}
 			traits = {
-				army_commando_2
+				army_armored_3
 			}
-			#cost =
-			ai_will_do = {
-				factor = 1
-			}
+			ai_will_do = { factor = 1.0 }
 			ledger = army
 		}
 		corps_commander={
@@ -971,6 +1038,23 @@ characters={
 			logistics_skill=2
 			desc = "FRA_deluge_rene_olry_desc"
 		}
+		advisor={
+			slot = high_command
+			idea_token = FRA_deluge_rene_olry
+			allowed = { tag = FRA }
+			visible = {
+				tag = FRA
+			}
+			#cost = 150
+			available = { 
+				
+			}
+			traits = {
+				army_artillery_2
+			}
+			ai_will_do = { factor = 1.0 }
+			ledger = army
+		}
 	}
 	FRA_deluge_georges_blanchard={
 		name=FRA_deluge_georges_blanchard_name
@@ -988,6 +1072,23 @@ characters={
 			planning_skill=2
 			logistics_skill=2
 			desc = "FRA_deluge_georges_blanchard_desc"
+		}
+		advisor={
+			slot = chief_of_staff_slot
+			idea_token = FRA_deluge_georges_blanchard
+			allowed = { tag = FRA }
+			visible = {
+				tag = FRA
+			}
+			#cost = 150
+			available = { 
+				
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			ai_will_do = { factor = 1.0 }
+			ledger = army
 		}
 	}
 	FRA_deluge_pierre_lelong={
@@ -1025,6 +1126,23 @@ characters={
 			logistics_skill=2
 			desc = "FRA_deluge_marie_pierre_koenig_desc"
 		}
+		advisor={
+			slot = army_chief
+			idea_token = FRA_deluge_marie_pierre_koenig
+			allowed = { tag = FRA }
+			visible = {
+				tag = FRA
+			}
+			#cost = 150
+			available = { 
+				
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			ai_will_do = { factor = 1.0 }
+			ledger = army
+		}
 	}
 	FRA_deluge_henri_rol_tanguy={
 		name=FRA_deluge_henri_rol_tanguy_name
@@ -1060,6 +1178,24 @@ characters={
 			planning_skill=1
 			logistics_skill=2
 			desc = "FRA_deluge_paul_legentilhomme_desc"
+		}
+		advisor={
+			slot = high_command
+			idea_token = FRA_deluge_paul_legentilhomme
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			traits = {
+				army_commando_1
+			}
+			#cost =
+			ai_will_do = {
+				factor = 1
+			}
+			ledger = army
 		}
 	}
 	FRA_deluge_henri_frenay={
@@ -1168,6 +1304,25 @@ characters={
 			planning_skill=2
 			logistics_skill=2
 			desc = "FRA_deluge_georges_catroux_desc"
+		}
+		advisor = {
+			slot = chief_of_staff_slot
+			idea_token = FRA_deluge_georges_catroux
+			ledger = army
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			traits = {
+				army_regrouping_2
+			}
+			#cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+			ledger = army
 		}
 	}
 	FRA_deluge_andre_boris={
@@ -1690,6 +1845,23 @@ characters={
 			planning_skill=2
 			logistics_skill=1
 			desc = "FRA_deluge_jean_bouffet_desc"
+		}
+		advisor={
+			slot = high_command
+			idea_token = FRA_deluge_jean_bouffet
+			allowed = { tag = FRA }
+			visible = {
+				tag = FRA
+			}
+			#cost = 150
+			available = {
+				
+			}
+			traits = {
+				army_cavalry_1
+			}
+			ai_will_do = { factor = 1.0 }
+			ledger = army
 		}
 	}
 	FRA_deluge_emile_laure={

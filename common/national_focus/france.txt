@@ -779,7 +779,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_francist_movement
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_francist_movement
 		x = -8
 		y = 1
 		prerequisite = { focus = FRA_march_on_paris }
@@ -8844,7 +8844,7 @@ focus = {
 			
 		}
 		completion_reward = {
-			add_ideas = FRA_spirit_forces_speciales
+			add_ideas = FRA_spirit_french_foreign_legion
 		}
 		ai_will_do = {
 			factor = 25

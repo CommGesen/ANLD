@@ -1,0 +1,184 @@
+##TANKS
+
+deluge_FRA_somua_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_somua
+	allowed = {	
+		tag = FRA
+	}
+	available = {
+		
+	}
+	#equipment_type = { mio_cat_eq_all_medium_tank }
+	#research_categories = { mio_cat_tech_medium_armor_and_modules }
+}
+
+deluge_FRA_hotchkiss_organization = {
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_designer_ksus
+	allowed = {	
+		tag = FRA
+	}
+	available = {
+		
+	}
+	#equipment_type = { mio_cat_eq_all_light_tank  }
+	#research_categories = { mio_cat_tech_light_armor_and_modules }
+}
+
+deluge_FRA_renault_organization = {
+	include = generic_tank_organization
+	icon = GFX_idea_renault
+	allowed = {	
+		tag = FRA
+	}
+	available = {
+		
+	}
+	#equipment_type = { mio_cat_eq_all_heavy_tank  }
+	#research_categories = { mio_cat_tech_heavy_armor_and_modules }
+}
+
+deluge_FRA_amx_tanks_organization = {
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_designer_ursus
+	allowed = {
+		tag = FRA
+	}
+	available = {
+		
+	}
+}
+
+##SHIPS
+
+deluge_FRA_arsenal_de_lorient_organization = {
+	icon = GFX_idea_generic_naval_manufacturer_3
+	include = generic_escort_ship_organization
+	allowed = {
+		tag = FRA
+	}
+	available = {
+		FRA = {
+			controls_province = 6536
+		}
+	}
+}
+
+deluge_FRA_arsenal_de_cherbourg_organization = {
+	icon = GFX_idea_generic_naval_manufacturer_3
+	include = generic_submarine_organization
+	allowed = {
+		tag = FRA
+	}
+	available = {
+		FRA = {
+			controls_province = 6449
+		}
+	}
+}
+
+deluge_FRA_acf_organization = {
+	icon = GFX_idea_FRA_acf
+	include = generic_raider_ship_organization
+	allowed = {
+		tag = FRA
+	}
+	available = {
+		
+	}
+}
+
+deluge_FRA_fcm_organization = {
+	icon = GFX_idea_fcm
+	include = generic_task_force_ship_organization
+	allowed = {
+		tag = FRA
+	}
+	available = {
+		
+	}
+}
+
+##PLANES
+
+deluge_FRA_sncac_organization = {
+	icon = GFX_idea_FRA_sncac
+	include = generic_general_aircraft_organization
+	allowed = {	
+		tag = FRA
+	}
+}
+
+deluge_FRA_sncam_organization = {
+	icon = GFX_idea_POL_pws
+	include = generic_light_aircraft_organization
+	allowed = {	
+		tag = FRA
+	}
+}
+
+deluge_FRA_sncaso_organization = {
+	icon = GFX_idea_POL_pzl
+	include = generic_medium_aircraft_organization
+	allowed = {	
+		tag = FRA
+	}
+}
+
+deluge_FRA_latecoere_organization = {
+	icon = GFX_idea_designer_dwl
+	include = generic_naval_aircraft_organization
+	allowed = {	
+		tag = FRA
+	}
+}
+
+deluge_FRA_sncan_organization = {
+	icon = GFX_idea_designer_lws
+	include = generic_cas_aircraft_organization
+	allowed = {	
+		tag = FRA
+	}
+}
+
+deluge_FRA_sncase_organization = {
+	icon = GFX_idea_designer_lws
+	include = generic_heavy_aircraft_organization
+	allowed = {	
+		tag = FRA
+	}
+}
+
+#include = generic_range_focused_aircraft_organization
+
+#MATERIAL
+
+deluge_FRA_mas_organization = {
+	icon = GFX_idea_mas
+	include = generic_infantry_equipment_organization
+	allowed = {
+		tag = FRA
+	}
+}
+
+deluge_FRA_schneider_organization = {
+	icon = GFX_idea_designer_h_cegielski
+	include = generic_artillery_organization
+	allowed = {
+		tag = FRA
+	}
+}
+
+deluge_FRA_panhard_organization = {
+	icon = GFX_idea_FRA_panhard
+	include = generic_armored_car_organization
+	allowed = {
+		tag = FRA
+	}
+}
+
+#include = generic_tank_refurbishment_plant_organization
+#include = generic_support_equipment_organization
+#include = generic_motorized_mechanized_organization
+
