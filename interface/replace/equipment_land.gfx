@@ -1,12 +1,132 @@
 spriteTypes = {
 
 #(GENERIC#
+    #(INFANTRY EQUIPMENT#
+		SpriteType = {
+            name = "GFX_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/GGG/infantry_equipment_0.dds"
+        }
+        SpriteType = {
+            name = "GFX_infantry_weapons1_medium"
+            texturefile = "gfx/interface/technologies/GGG/infantry_equipment_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_improved_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/GGG/infantry_equipment_2.dds"
+        }
+        SpriteType = {
+            name = "GFX_advanced_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/GGG/infantry_equipment_3.dds"
+        }
+	#)#
+
+	#(MOTORIZED, MECHANIZED AND AMPHIBIOUS#
+		SpriteType = {
+            name = "GFX_tech_trucks_medium"
+            texturefile = "gfx/interface/technologies/GGG/motorized_0.dds"
+        }
+        SpriteType = {
+            name = "GFX_motorized_equipment_0_medium"
+            texturefile = "gfx/interface/technologies/GGG/motorized_0.dds"
+        }
+        SpriteType = {
+            name = "GFX_motorised_infantry_medium"
+            texturefile = "gfx/interface/technologies/GGG/motorized_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_motorized_equipment_1_medium"
+            texturefile = "gfx/interface/technologies/GGG/motorized_1.dds"
+        }
+		SpriteType = {
+            name = "GFX_motorized_rocket_unit_medium"
+            texturefile = "gfx/interface/technologies/GGG/motorized_rocket_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_mechanised_infantry_medium"
+            texturefile = "gfx/interface/technologies/GGG/mechanized_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_mechanised_infantry2_medium"
+            texturefile = "gfx/interface/technologies/GGG/mechanized_2.dds"
+        }
+        SpriteType = {
+            name = "GFX_mechanised_infantry3_medium"
+            texturefile = "gfx/interface/technologies/GGG/mechanized_3.dds"
+        }
+	#)#
+
+	#(ARMORED CARS#
+		SpriteType = {
+		    name = "GFX_armored_car1_medium"
+		    texturefile = "gfx/interface/technologies/GGG/armored_car_1.dds"
+	    }
+	    SpriteType = {
+		    name = "GFX_armored_car2_medium"
+		    texturefile = "gfx/interface/technologies/GGG/armored_car_2.dds"
+	    }
+	    SpriteType = {
+		    name = "GFX_armored_car3_medium"
+		    texturefile = "gfx/interface/technologies/GGG/armored_car_3.dds"
+	    }
+	    SpriteType = {
+		    name = "GFX_armored_car_at_upgrade_medium"
+		    texturefile = "gfx/interface/technologies/GGG/armored_car_at.dds"
+	    }		
+	#)#
+
     #(SUPPORT EQUIPMENT#
     	SpriteType = {
 			name = "GFX_tech_support_medium"
 			texturefile = "gfx/interface/technologies/GGG/support_equipment.dds"
 		}
     #)#
+
+	#(ARTILLERY#
+        SpriteType = {
+            name = "GFX_gw_artillery_medium"
+            texturefile = "gfx/interface/technologies/GGG/art_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_artillery1_medium"
+            texturefile = "gfx/interface/technologies/GGG/art_2.dds"
+        }	
+        SpriteType = {
+            name = "GFX_artillery4_medium"
+            texturefile = "gfx/interface/technologies/GGG/art_3.dds"
+        }	
+        SpriteType = {
+            name = "GFX_interwar_antiair_medium"
+            texturefile = "gfx/interface/technologies/GGG/aa_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_antiair2_medium"
+            texturefile = "gfx/interface/technologies/GGG/aa_2.dds"
+        }
+        SpriteType = {
+            name = "GFX_antiair5_medium"
+            texturefile = "gfx/interface/technologies/GGG/aa_3.dds"
+        }	
+	    SpriteType = {
+            name = "GFX_interwar_antitank_medium"
+            texturefile = "gfx/interface/technologies/GGG/at_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_antitank2_medium"
+            texturefile = "gfx/interface/technologies/GGG/at_2.dds"
+        }	
+        SpriteType = {
+            name = "GFX_antitank5_medium"
+            texturefile = "gfx/interface/technologies/GGG/at_3.dds"
+        }
+        SpriteType = {
+            name = "GFX_rocket_artillery_medium"
+            texturefile = "gfx/interface/technologies/GGG/rocket_art_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_rocket_artillery4_medium"
+            texturefile = "gfx/interface/technologies/GGG/rocket_art_2.dds"
+        }
+	#)#	
 #)#
 
 #(POLAND#

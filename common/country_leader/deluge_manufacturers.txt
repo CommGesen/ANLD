@@ -435,7 +435,7 @@ leader_traits = {
 		production_speed_buildings_factor = 0.1
 		local_resources_factor = 0.05
 	}
-	cfp_designer_trait = {
+	cnp_designer_trait = {
 		fuel_gain_factor_from_states = 0.1
 		production_oil_factor = 0.05
 	}
@@ -453,7 +453,7 @@ leader_traits = {
 		production_factory_max_efficiency_factor = 0.05
 		industrial_capacity_factory = 0.05
 	}
-	sncf_designer_trait = {
+	alsthom_designer_trait = {
 		production_speed_infrastructure_factor = 0.1
 		production_speed_rail_way_factor = 0.1
 	}

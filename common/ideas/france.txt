@@ -2161,7 +2161,7 @@ ideas = {
 				
 			}
 		}
-		cfp = {
+		cnp = {
 			picture = designer_cnp
 			allowed = {
 				OR = {
@@ -2179,7 +2179,7 @@ ideas = {
 			research_bonus = {
 				synth_resources = 0.10
 			}
-			traits = { cfp_designer_trait }
+			traits = { cnp_designer_trait }
 			modifier = {
 				
 			}
@@ -2231,7 +2231,7 @@ ideas = {
 				
 			}
 		}
-		sncf = {
+		alsthom = {
 			picture = designer_alsthom
 			allowed = {
 				OR = {
@@ -2249,7 +2249,7 @@ ideas = {
 			research_bonus = {
 				industry = 0.05
 			}
-			traits = { sncf_designer_trait }
+			traits = { alsthom_designer_trait }
 			modifier = {
 				
 			}
