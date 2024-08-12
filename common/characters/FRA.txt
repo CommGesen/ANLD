@@ -105,7 +105,7 @@ characters={
 	FRA_deluge_jacques_barnaud={
 		name=FRA_deluge_jacques_barnaud_name
 		portraits={
-			civilian={##small portrait to do
+			civilian={
 				small="GFX_jacques_barnaud_picture_small"
 			}
 		}
@@ -364,6 +364,39 @@ characters={
 			desc = "FRA_deluge_jacques_duclos_desc"
 		}
 	}
+	FRA_deluge_benoit_frachon={
+		name=FRA_deluge_benoit_frachon_name
+		portraits={
+			civilian={##small portrait to do
+				small="GFX_benoit_frachon_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_benoit_frachon
+			allowed = { tag = FRA }
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_previous_course
+						has_completed_focus = FRA_march_on_paris
+						has_completed_focus = FRA_french_section_of_workers_internationale
+						has_completed_focus = FRA_proudhon_circle
+						has_completed_focus = FRA_creation_of_the_parliament
+					}
+				}
+			}
+			cost = 150
+			available = {
+				has_completed_focus = FRA_french_communist_party
+			}
+			traits = {
+				trades_unionist
+			}
+			ai_will_do = { factor = 1.0 }
+			ledger = civilian
+		}
+	}
 	##Proudhon Circle:
 	FRA_deluge_georges_valois={
 		name=FRA_deluge_georges_valois_name
@@ -385,7 +418,7 @@ characters={
 	FRA_deluge_louis_franchet_d_esperey={
 		name=FRA_deluge_louis_franchet_d_esperey_name
 		portraits={
-			army={##small portrait to do
+			army={
 				small="GFX_louis_franchet_d_esperey_picture_small"
 				large="gfx/leaders/FRA/portrait_FRA_louis_franchet_d_esperey.dds"
 			}
@@ -763,7 +796,7 @@ characters={
 	FRA_deluge_victor_henri_schweisguth={
 		name=FRA_deluge_victor_henri_schweisguth_name
 		portraits={
-			army={##small and big portrait to do
+			army={##big portrait to do
 				small="GFX_victor_henri_schweisguth_picture_small"
 				large="gfx/leaders/FRA/portrait_FRA_victor_henri_schweisguth.dds"
 			}
@@ -988,7 +1021,7 @@ characters={
 	FRA_deluge_gaston_henri_billotte={
 		name=FRA_deluge_gaston_henri_billotte_name
 		portraits={
-			army={##small and big portrait to do
+			army={
 				large="gfx/leaders/FRA/portrait_FRA_gaston_henri_billotte.dds"
 				small="GFX_gaston_henri_billotte_picture_small"
 			}
@@ -1006,7 +1039,7 @@ characters={
 	FRA_deluge_henry_freydenberg={
 		name=FRA_deluge_henry_freydenberg_name
 		portraits={
-			army={##small portrait to do
+			army={
 				large=GFX_portrait_FRA_henry_freydenberg
 				small="GFX_henry_freydenberg_picture_small"
 			}
@@ -1094,7 +1127,7 @@ characters={
 	FRA_deluge_pierre_lelong={
 		name=FRA_deluge_pierre_lelong_name
 		portraits={
-			army={##small portrait to do
+			army={
 				large="gfx/leaders/FRA/portrait_FRA_pierre_lelong.dds" 
 				small="GFX_pierre_lelong_picture_small"
 			}
@@ -1112,7 +1145,7 @@ characters={
 	FRA_deluge_marie_pierre_koenig={
 		name=FRA_deluge_marie_pierre_koenig_name
 		portraits={
-			army={##small portrait to do
+			army={
 				large="gfx/leaders/FRA/portrait_FRA_marie_pierre_koenig.dds" 
 				small="GFX_marie_pierre_koenig_picture_small"
 			}
@@ -1147,7 +1180,7 @@ characters={
 	FRA_deluge_henri_rol_tanguy={
 		name=FRA_deluge_henri_rol_tanguy_name
 		portraits={
-			army={##small and big portrait to do
+			army={##big portrait to do
 				large="gfx/leaders/FRA/portrait_FRA_henri_rol_tanguy.dds" 
 				small="GFX_henri_rol_tanguy_picture_small"
 			}
@@ -1165,7 +1198,7 @@ characters={
 	FRA_deluge_paul_legentilhomme={
 		name=FRA_deluge_paul_legentilhomme_name
 		portraits={
-			army={##small and big portrait to do
+			army={big portrait to do
 				large="gfx/leaders/FRA/portrait_FRA_paul_legentilhomme.dds" 
 				small="GFX_paul_legentilhomme_picture_small"
 			}
@@ -1201,7 +1234,7 @@ characters={
 	FRA_deluge_henri_frenay={
 		name=FRA_deluge_henri_frenay_name
 		portraits={
-			army={##small and big portrait to do
+			army={big portrait to do
 				large="gfx/leaders/FRA/portrait_FRA_henri_frenay.dds" 
 				small="GFX_henri_frenay_picture_small"
 			}
@@ -1219,7 +1252,7 @@ characters={
 	FRA_deluge_marcel_descour={
 		name=FRA_deluge_marcel_descour_name
 		portraits={
-			army={##small and big portrait to do
+			army={##big portrait to do
 				large="gfx/leaders/FRA/portrait_FRA_marcel_descour.dds" 
 				small="GFX_marcel_descour_picture_small"
 			}
@@ -1237,7 +1270,7 @@ characters={
 	FRA_deluge_henri_meric_de_bellefon={
 		name=FRA_deluge_henri_meric_de_bellefon_name
 		portraits={
-			army={##small and big portrait to do
+			army={##big portrait to do
 				large="gfx/leaders/FRA/portrait_FRA_henri_meric_de_bellefon.dds" 
 				small="GFX_henri_meric_de_bellefon_picture_small"
 			}
@@ -1273,7 +1306,7 @@ characters={
 	FRA_deluge_charles_nogues={
 		name=FRA_deluge_charles_nogues_name
 		portraits={
-			army={##small and big portrait to do
+			army={##big portrait to do
 				large="gfx/leaders/FRA/portrait_FRA_charles_nogues.dds" 
 				small="GFX_charles_nogues_picture_small"
 			}
@@ -1575,6 +1608,24 @@ characters={
 			planning_skill=2
 			logistics_skill=2
 			desc = "FRA_deluge_georges_revers_desc"
+		}
+	}
+	FRA_deluge_antoine_bethouart={##not recruited at the start
+		name=FRA_deluge_antoine_bethouart_name
+		portraits={
+			army={##small portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_antoine_bethouart.dds" 
+				small="GFX_antoine_bethouart_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ career_officer infantry_officer war_hero hill_fighter trait_mountaineer}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			desc = "FRA_deluge_antoine_bethouart_desc"
 		}
 	}
 	FRA_deluge_rene_prioux={

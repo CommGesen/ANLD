@@ -1929,10 +1929,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/characters/henri_meric_de_bellefon_picture_small.dds"
 	}
 	spriteType = {
-		name = "GFX_henri_meric_de_bellefon_picture_small"
-		texturefile = "gfx/interface/ideas/characters/henri_meric_de_bellefon_picture_small.dds"
-	}
-	spriteType = {
 		name = "GFX_walery_slawek_picture_small"
 		texturefile = "gfx/interface/ideas/characters/walery_slawek_picture_small.dds"
 	}
@@ -2187,5 +2183,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_eugene_deloncle_picture_small"
 		texturefile = "gfx/interface/ideas/characters/eugene_deloncle_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_benoit_frachon_picture_small"
+		texturefile = "gfx/interface/ideas/characters/benoit_frachon_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_antoine_bethouart_picture_small"
+		texturefile = "gfx/interface/ideas/characters/antoine_bethouart_picture_small.dds"
 	}
 }

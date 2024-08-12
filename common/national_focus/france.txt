@@ -923,7 +923,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_integrate_french_solidarity
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_french_solidarity
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_francist_movement }
@@ -959,7 +959,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_integrate_young_patriots
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_young_patriots
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_integrate_french_solidarity }
@@ -1212,7 +1212,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_convince_national_radicals
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_national_popular_rally
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_enforce_patriarchy }
@@ -2348,7 +2348,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_reconciliation_of_generations
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_BRA_reach_out_to_military_dem
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_secular_institutions }
@@ -2723,7 +2723,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_anarchist_communist_federation
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_anarcho_communists2
 		x = -9
 		y = 1
 		prerequisite = { focus = FRA_another_revolution }
@@ -7509,7 +7509,7 @@ focus = {
 		}
 	focus = {		
 		id = FRA_all_roads_lead_to_paris
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_eiffel_tower
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_develop_northern_infrastructure }
@@ -7566,6 +7566,17 @@ focus = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					controls_province = 9523
+				}
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 9523
 				}
 			}
 		}
@@ -8271,7 +8282,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_traumas_of_the_great_war
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_traumas_of_the_great_war
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_a_new_army_budget }
@@ -8809,6 +8820,7 @@ focus = {
 		}
 		completion_reward = {
 			add_ideas = FRA_spirit_forces_speciales
+			recruit_character = FRA_deluge_antoine_bethouart
 		}
 		ai_will_do = {
 			factor = 25
@@ -9014,7 +9026,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_field_the_MAS_36
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_field_the_mas_36
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_post_great_war_challenges }
@@ -9079,7 +9091,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_le_armee_de_demain
-		icon = GFX_focus_generic_army_mobilization
+		icon = GFX_focus_FRA_l_armee_de_demain
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_field_the_MAS_36 }
@@ -9133,7 +9145,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_de_gaulles_plan
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_de_gualles_plan #focus_FRA_de_gualles_plan_alt
 		x = -2
 		y = 1
 		prerequisite = { focus = FRA_le_armee_de_demain }
@@ -9307,7 +9319,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_de_lattres_plan
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_de_lattres_plan
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_le_armee_de_demain }
@@ -9473,7 +9485,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_gamelins_plan
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_gamelins_plan
 		x = 2
 		y = 1
 		prerequisite = { focus = FRA_le_armee_de_demain }
@@ -10131,7 +10143,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_launch_the_richelieu_class
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_richelieu_class
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_pursue_battleship_studies }
@@ -10153,7 +10165,121 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_tech = basic_ship_hull_heavy
+						}
+					}
+					hidden_effect = {
+						set_technology = {
+							basic_ship_hull_heavy = 1
+						}
+					}
+				}
+				create_equipment_variant = {
+					name = "Richelieu Class"
+					type = ship_hull_heavy_2
+					name_group = FRA_BB_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						fixed_ship_armor_slot = ship_armor_bc_2
+						front_1_custom_slot = ship_heavy_battery_2
+						mid_1_custom_slot = ship_secondaries_2
+						mid_2_custom_slot = ship_anti_air_1
+						rear_1_custom_slot = ship_airplane_launcher_1
+					}
+				}
+				add_equipment_production = {
+					equipment = {
+						name = "Richelieu"
+						type = ship_hull_heavy_2
+					}
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						fixed_ship_armor_slot = ship_armor_bc_2
+						front_1_custom_slot = ship_heavy_battery_2
+						mid_1_custom_slot = ship_secondaries_2
+						mid_2_custom_slot = ship_anti_air_1
+						rear_1_custom_slot = ship_airplane_launcher_1
+					}
+					requested_factories = 1
+					progress = 0.25
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						name = "Jean Bart"
+						type = ship_hull_heavy_2
+					}
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						fixed_ship_armor_slot = ship_armor_bc_2
+						front_1_custom_slot = ship_heavy_battery_2
+						mid_1_custom_slot = ship_secondaries_2
+						mid_2_custom_slot = ship_anti_air_1
+						rear_1_custom_slot = ship_airplane_launcher_1
+					}
+					requested_factories = 1
+					progress = 0.25
+					amount = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Man the Guns"
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_tech = basic_battleship
+						}
+					}
+					hidden_effect = {
+						set_technology = {
+							basic_battleship = 1
+						}
+					}
+				}
+				add_equipment_production = {
+					equipment = {
+						type = battleship_2
+					}
+					requested_factories = 1
+					progress = 0.25
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = battleship_2
+					}
+					requested_factories = 1
+					progress = 0.25
+					amount = 1
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -10275,7 +10401,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_launch_the_joffre_class
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_joffre_class
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_new_aircraft_carriers }
@@ -11125,10 +11251,11 @@ focus = {
 	focus = {
 		id = FRA_observation_aerienne_avancee
 		icon = GFX_focus_usa_escort_fighters
-		x = 0
+		x = 1
 		y = 1
-		prerequisite = { focus = FRA_review_the_proposals focus = FRA_prototype_demonstration }
-		relative_position_id = FRA_review_the_proposals
+		prerequisite = { focus = FRA_anti_insurgency_measures }
+		prerequisite = { focus = FRA_strategic_bombers_development }
+		relative_position_id = FRA_anti_insurgency_measures
 		search_filters = { }
 		cost = 7
 		mutually_exclusive = {focus = }
@@ -11205,11 +11332,10 @@ focus = {
 	focus = {
 		id = FRA_anti_insurgency_measures
 		icon = GFX_focus_SOV_ivan_plays_baseball #GFX_focus_generic_cas_aircraft
-		x = 1
+		x = 0
 		y = 1
-		prerequisite = { focus = FRA_observation_aerienne_avancee }
-		prerequisite = { focus = FRA_strategic_bombers_development }
-		relative_position_id = FRA_observation_aerienne_avancee
+		prerequisite = { focus = FRA_review_the_proposals focus = FRA_prototype_demonstration }
+		relative_position_id = FRA_review_the_proposals
 		search_filters = { }
 		cost = 7
 		mutually_exclusive = {focus = }
@@ -11244,8 +11370,8 @@ focus = {
 		icon = GFX_goal_generic_air_doctrine
 		x = 0
 		y = 1
-		prerequisite = { focus = FRA_anti_insurgency_measures }
-		relative_position_id = FRA_anti_insurgency_measures
+		prerequisite = { focus = FRA_observation_aerienne_avancee }
+		relative_position_id = FRA_observation_aerienne_avancee
 		search_filters = { }
 		cost = 7
 		mutually_exclusive = {focus = }
