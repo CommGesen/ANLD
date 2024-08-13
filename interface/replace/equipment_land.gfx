@@ -417,6 +417,14 @@ spriteTypes = {
             name = "GFX_USA_mechanised_infantry3_medium"
             texturefile = "gfx/interface/technologies/USA/USA_mechanized_3.dds"
         }
+        SpriteType = {
+		    name = "GFX_USA_amphibious_mechanized_infantry_medium"
+		    texturefile = "gfx/interface/technologies/USA/USA_amphibious_1.dds"
+	    }
+		SpriteType = {
+		    name = "GFX_USA_amphibious_mechanized_infantry_2_medium"
+		    texturefile = "gfx/interface/technologies/USA/USA_amphibious_2.dds"
+	    }	
 	#)#
 
 	#(ARMORED CARS#
@@ -500,6 +508,127 @@ spriteTypes = {
     	SpriteType = {
 			name = "GFX_JAP_tech_support_medium"
 			texturefile = "gfx/interface/technologies/JAP/JAP_support_equipment.dds"
+		}
+    #)#
+
+#)#
+
+#(STATE OF THE TEUTONIC ORDER#
+
+	#(SUPPORT EQUIPMENT#
+    	SpriteType = {
+			name = "GFX_GER_tech_support_medium"
+			texturefile = "gfx/interface/technologies/GER/GER_support_equipment.dds"
+		}
+    #)#
+
+#)#
+
+#(PEOPLE'S REPUBLIC OF GERMANY#
+
+	#(SUPPORT EQUIPMENT#
+    	SpriteType = {
+			name = "GFX_DDR_tech_support_medium"
+			texturefile = "gfx/interface/technologies/DDR/DDR_support_equipment.dds"
+		}
+    #)#
+
+#)#
+
+#(CONFEDERATED STATES OF THE RHINE#
+
+	#(SUPPORT EQUIPMENT#
+    	SpriteType = {
+			name = "GFX_WGR_tech_support_medium"
+			texturefile = "gfx/interface/technologies/WGR/WGR_support_equipment.dds"
+		}
+    #)#
+
+#)#
+
+#(GREAT BRITAIN#
+
+	#(SUPPORT EQUIPMENT#
+    	SpriteType = {
+			name = "GFX_ENG_tech_support_medium"
+			texturefile = "gfx/interface/technologies/ENG/ENG_support_equipment.dds"
+		}
+    #)#
+
+#)#
+
+#(AUSTRALIA#
+
+	#(SUPPORT EQUIPMENT#
+    	SpriteType = {
+			name = "GFX_ENG_tech_support_medium"
+			texturefile = "gfx/interface/technologies/ENG/ENG_support_equipment.dds"
+		}
+    #)#
+
+#)#
+
+#(MALAYA#
+
+	#(SUPPORT EQUIPMENT#
+    	SpriteType = {
+			name = "GFX_MAL_tech_support_medium"
+			texturefile = "gfx/interface/technologies/ENG/ENG_support_equipment.dds"
+		}
+    #)#
+
+#)#
+
+#(NEW ZEALAND#
+
+	#(SUPPORT EQUIPMENT#
+    	SpriteType = {
+			name = "GFX_NZL_tech_support_medium"
+			texturefile = "gfx/interface/technologies/ENG/ENG_support_equipment.dds"
+		}
+    #)#
+
+#)#
+
+#(RAJ#
+
+	#(SUPPORT EQUIPMENT#
+    	SpriteType = {
+			name = "GFX_RAJ_tech_support_medium"
+			texturefile = "gfx/interface/technologies/ENG/ENG_support_equipment.dds"
+		}
+    #)#
+
+#)#
+
+#(SOUTH AFRICA#
+
+	#(SUPPORT EQUIPMENT#
+    	SpriteType = {
+			name = "GFX_SAF_tech_support_medium"
+			texturefile = "gfx/interface/technologies/ENG/ENG_support_equipment.dds"
+		}
+    #)#
+
+#)#
+
+#(ITALY#
+
+	#(SUPPORT EQUIPMENT#
+    	SpriteType = {
+			name = "GFX_ITA_tech_support_medium"
+			texturefile = "gfx/interface/technologies/ITA/ITA_support_equipment.dds"
+		}
+    #)#
+
+#)#
+
+#(RUSSIA#
+
+	#(SUPPORT EQUIPMENT#
+    	SpriteType = {
+			name = "GFX_SOV_tech_support_medium"
+			texturefile = "gfx/interface/technologies/SOV/SOV_support_equipment.dds"
 		}
     #)#
 
