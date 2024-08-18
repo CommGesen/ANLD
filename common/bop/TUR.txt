@@ -90,7 +90,15 @@ TUR_power_balance = {
         political_power_cost = 0.25
         stability_factor = -0.05
       }
-      on_activate = {}
+      on_activate = {
+        
+        complete_national_focus = TUR_reverse_the_tanzimat
+        hidden_effect = {
+          remove_power_balance = {
+            id = TUR_power_balance
+          }
+        }
+      }
       on_deactivate = {}
     }
   }
@@ -172,7 +180,14 @@ TUR_power_balance = {
         max_command_power_mult = -0.25
         stability_factor = -0.05
       }
-      on_activate = {}
+      on_activate = { 
+        complete_national_focus = TUR_new_era_of_tanzim
+        hidden_effect = {
+          remove_power_balance = {
+            id = TUR_power_balance
+          }
+        }
+       }
       on_deactivate = {}
     }
   }

@@ -37,43 +37,91 @@
 
  turkey.4.t: "Frame the Young Turks?"
  turkey.4.d: "It appears there is a chance to frame the attack to the Young Turks as a move to eliminate their influence. While this approach may seem tempting to some, it is crucial to consider the potential consequences and ethical implications of such a decision. False accusations can exacerbate tensions and lead to further unrest. It is advisable to thoroughly assess the situation, gather evidence, and pursue a course of action that promotes justice and stability without resorting to baseless accusations."
- turkey.4.a: "Call the Arab Officers for Safety"
- turkey.4.b: "We Can do it alone"
- turkey.4.c: "Contiune Investigations"
+ turkey.4.a: "That's a great idea"
+ turkey.4.b: "No that's stupid"
 
- turkey.5.t: "Young Turks Framed"
- turkey.5.d: "We have accused the Young Turks; let's await the results."
- turkey.5.a: "Of Course"
- turkey.5.b: "Of Course"
+ turkey.5.t: "Teşkilât-i Mahsusa commits masscare"
+ turkey.5.d: "The Young Turk paramilitary secret police has committed a masscare in the Middle of Baghdad in broad daylight, protests all over the Empire demands that Bahaeddin Şakir Pasha resign from the Grand Ministry."
+ turkey.5.a: "He should"
+ turkey.5.b: "What will they do revolt?"
 
- turkey.6.t: "Arab Liberation Coup"
- turkey.6.d: "It appears that the Arab Generals we dispatched with armies to secure strongholds for a potential civil war have betrayed us. They have declared the dissolution of the Empire, and the Young Turks have proclaimed the establishment of a Republic. President Fevzi Pasha has stated that the Sultan must abdicate all of his titles and promptly depart for Paris."
- turkey.6.a: "Well We have had a good run"
+ turkey.6.t: "Revolts all across the Empire"
+ turkey.6.d: "Following the massacres committed by Teşkilât-i Mahsusa, the entire Arab population of the Empire started protesting then rioting and now revolting."
+ turkey.6.a: "Fine"
+ turkey.6.b: "Devlet-i Ebed-müddet"
 
- turkey.7.t: "The People's Revolution"
- turkey.7.d: "It appears that the Republican People's Party orchestrated the discord in our empire to spark a revolution. Due to our focus on overthrowing the Young Turks, we overlooked the activities of a few radicals. With only a few days before they reach Istanbul, immediate escape is crucial."
- turkey.7.a: "Pack your Bags Fast"
+ turkey.7.t: "Revolution in Costantinople"
+ turkey.7.d: "The Arab revolution has succeded and now it is time for the Turkish one."
+ turkey.7.a: "End of an Era"
 
- turkey.8.t: "The Prince's Coup"
- turkey.8.d: "Prince Osman Fuad, fed up with the ongoing political turmoil, took decisive action by rounding up high-ranking members of the Young Turks. In a bold and drastic move, he ordered their execution on the streets, culminating in the shooting of Fevzi Pasha at the doors of the Mejlis."
- turkey.8.a: "This pretty bloody"
- 
- turkey.9.t: "Official Investigations Launched"
- turkey.9.d: ""
- turkey.9.a: ""
+ turkey.8.t: "The Military did it!"
+ turkey.8.d: "The Parliament bombming was conducted by Ultrantionalist factions of the Military"
+ turkey.8.a: "We can deal with them"
+ turkey.8.b: "But we will the help we can get"
 
- turkey.10.t: "General Elections"
- turkey.10.d: ""
- turkey.10.a: "Qahtaniyah"
- turkey.10.b: "HVIF"
+ turkey.9.t: "Fevzi Coup"
+ turkey.9.d: "Fevzi Pasha has overpowered the forced loyal to the Sultan and has couped the government in the Sublime Porte, the Empire is no more."
+ turkey.9.a: "End of an Era"
 
-  turkey.11.t: "Royal Elections"
-  turkey.11.d: ""
-  turkey.11.a: "Şehzade Mehmed Abdülkerim"
-  turkey.11.b: "Abdullah Bin Hussien Al Hashmi"
-  turkey.11.c: "Fuad Al Shihabi"
-  turkey.11.e: "Khazal Al Ka'abi"
-  turkey.11.f: "Salih Bash-Ayan Al Abbasi"
+ turkey.10.t: "The Aristocrats demands"
+ turkey.10.d: "The Aristocrats demands are simple, stop any effort for reform and keep the system the same"
+ turkey.10.a: "Fine"
+ turkey.10.b: "How will the Empire survive"
+
+ turkey.11.t: "Who should we ally"
+ turkey.11.d: ""
+ turkey.11.a: "The democrats"
+ turkey.11.b: "The Arabs"
+
+ turkey.12.t: "The Democrats demand reform"
+ turkey.12.d: ""
+ turkey.12.a: "Sure"
+ turkey.12.b: "Hell no"
+
+ turkey.13.t: "Arabs Demand Grand Vizier"
+ turkey.13.d: ""
+ turkey.13.a: "Sure"
+ turkey.13.b: "Hell no"
+
+ turkey.14.t: "Kurds disapprove of Government"
+ turkey.14.d: ""
+ turkey.14.a: "I guess the Arabs had their time"
+ turkey.14.b: "Go away"
+
+ turkey.14.t: "Shakib proposes reform"
+ turkey.14.d: ""
+ turkey.14.a: "Sure"
+ turkey.14.b: "You overstepped"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ turkey.30.t: "General Elections"
+ turkey.30.d: ""
+ turkey.30.a: "Qahtaniyah"
+ turkey.30.b: "HVIF"
+
+  turkey.31.t: "Royal Elections"
+  turkey.31.d: ""
+  turkey.31.a: "Şehzade Mehmed Abdülkerim"
+  turkey.31.b: "Abdullah Bin Hussien Al Hashmi"
+  turkey.31.c: "Fuad Al Shihabi"
+  turkey.31.e: "Khazal Al Ka'abi"
+  turkey.31.f: "Salih Bash-Ayan Al Abbasi"
 
  TUR_Hashim: "Hashemite Caliphate"
  TUR_Hashim_DEF: "Hashemite Caliphate"
@@ -88,26 +136,45 @@
  TUR_Abbasids_DEF: "Abbasid Caliphate"
  TUR_Abbasids_ADJ: "Abbasid"
 
-  turkey.12.t: "Choose Capital"
-  turkey.12.d: ""
-  turkey.12.a: "Keep Istanbul"
-  turkey.12.b: "Izmir"
-  turkey.12.c: "Baghdad"
-  turkey.12.e: "Damascus"
+  turkey.32.t: "Choose Capital"
+  turkey.32.d: ""
+  turkey.32.a: "Keep Istanbul"
+  turkey.32.b: "Izmir"
+  turkey.32.c: "Baghdad"
+  turkey.32.e: "Damascus"
 
-  turkey.13.t: "Majlis Status"
-  turkey.13.d: ""
-  turkey.13.t: "Abolish it"
-  turkey.13.t: "Keep it"
+  turkey.33.t: "Majlis Status"
+  turkey.33.d: ""
+  turkey.33.t: "Abolish it"
+  turkey.33.t: "Keep it"
+
+ turkey.fra1.t: "The Turks ask for our Help"
+ turkey.fra1.d: ""
+ turkey.fra1.a: "no"
+ turkey.fra1.b: "sure"
  ##ideas:
+ TUR_Abdelkerim_I: "Abdelkerim I"
+ TUR_Abdullah_I: "Abdullah I"
+ TUR_Fuad_I: "Fuad I"
+ TUR_Khazal_I: "Khazal I"
+ TUR_angry_pashas: "Angry Pashas"
+ TUR_modern_land_reforms: "Modern Tabu"
  TUR_4th_Tanzimat_Era_idea: "Fourth Tanzimat Era"
+ TUR_rations_for_poor: "Rations for the Poor"
  TUR_debt: "Ottoman Debt"
  TUR_national_Revolutionaries: "Young Turk State"
+ TUR_donations: "Donations"
+ TUR_zakat_modernization: "Modern Zakat"
+ TUR_labour_reforms: "Labour Reforms"
+ TUR_rural_support_idea: "Rural Support"
+ TUR_freemason_allowed: "Freemasonry"
+ TUR_state_welfare_idea: "Welfare State"
  TUR_national_Revolutionaries_desc: "Following the revolution of 1934, the Young Turks are basically incharge."
  TUR_legacy_of_the_1800s: "The 1800s"
  TUR_legacy_of_the_1800s_desc: "Everything started to go down hell for the Empire after Napoleon's invasion of Egypt, after he left the Empire had to fight wars of independence caused by the large French invasion and later influence over the region. \nThe Russians seized Bessarabia and helped the rest of the Balkans to get independence and the Tanzimat didn't benefit the Empire as much as it hurt it and finally the Great War happened despite victory it just led to more despise against us by our people."
  TUR_investigations: "Investigations"
  TUR_Imam_Support: "Imam Support"
+ TUR_Arab_Support: "Arabs Support"
  ottoman_emperor: "Sultan Abdulmejid II"
  ottoman_emperor_desc: "Sultan Abdulmejid II Han, Sovereign of The Sublime House of Osman, Sultan us-Selatin, Hakan, Commander of the faithful and Successor of the Prophet of the Lord of the Universe, Custodian of the Holy Cities of Mecca, Medina and Kouds, Padishah of The Three Cities of Istanbul, Edirne and Bursa, etc.\n\nIs the Sultan of the Ottoman Sultanate also known as the Ottoman Empire, He was confined in 1918 to prevent a palace coup but he escaped his confinement and deposed his cousin Mehmed VI and made himself Sultan Abdulmejid II.\n\nIn the breakout of the Great War, Abdulmejid decided that victory was on the side of the French and declared war on the British, the Russians acted quickly and marched through the Caucuses, Sultan Abdulmejid II was a field marshal but he wasn't a military man he was more of an artist so he left the leadership to the three Pashas, Talat, Cemal and Enver."
  emperor_osman_faud:0 "Osman Faud"
@@ -116,6 +183,8 @@
  emperor_sehzade_omer_faruk_desc:0 "Sultan Farouk I Han, Sovereign of The Sublime House of Osman, Sultan us-Selatin, Hakan, Commander of the faithful and Successor of the Prophet of the Lord of the Universe, Custodian of the Holy Cities of Mecca, Medina and Kouds, Padishah of The Three Cities of Istanbul, Edirne and Bursa, etc.\n\nHe is the Sultan of the Ottoman Sultanate also known as the Ottoman Empire, born Prince Ömer Farouk named after Caliph Omar and his nickname The Farouk, was a very conservative islamist ambitious prince he first studied at Vinna then was transferred to Potsdam to enter the Westphalian military academy.\n\nHe later served under the ranks of the Westphalian army and was assigned to the Westphalian King's First Foot Guards Regiment, that only accepted tall Westphalian Aristocrats and German nobles, then served under the Ottoman Empire ranks and was made an Aide de camp to his father Abdulmejid II.\n\nSultan Farouk I now wants to regain the glory of the 600 years old Empire and stretch it from the Caspian sea till the Atlantic Ocean which would be his greatest dream to create a Pan Islamist caliphate and his goal is to achieve it."
  emperor_ahmed_nihad:0 "Ahmed IV Nihad"
  emperor_ahmed_nihad_desc:0 "Sultan Osman IV Han, Sovereign of The Sublime House of Osman, Sultan us-Selatin, Hakan, Commander of the faithful and Successor of the Prophet of the Lord of the Universe, Custodian of the Holy Cities of Mecca, Medina and Kouds, Padishah of The Three Cities of Istanbul, Edirne and Bursa, etc.\n\nHe is the Sultan of the Ottoman Sultanate also known as the Ottoman Empire, he is the grandson of Sultan Murad V who was deposed by Osman's Half Grand Uncle Abdul Hamid II.\n\nOsman was a warrior prince, he was educated at the Ottoman and Westphalian military academies alongside his cousins, he fought alongside the soldiers of the Empire and during the Great War, he was appointed as General Commander of the Africa Corps of the Sublime Ottoman State.\n\nSultan Osman Fuad isn't a civilian Sultan, he loves and wants war, he loves his homeland more than his own family, he's also pretty connected with several army generals such as Mustafa Kamal Pasha and Ismet Inonou. He's the son in law of Egyptian ex Khedive Abbas II."
+
+TUR_masonic_politicans_contained: "Contained Masons"
  #party names:
  deluge_turkish_democratic_1_long: "Ottoman People's Party"
  deluge_turkish_democratic_1_short: "Ottoman People's Party"

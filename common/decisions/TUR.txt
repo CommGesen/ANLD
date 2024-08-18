@@ -1,47 +1,4 @@
 TUR_power_struggle_category={
-	TUR_campaign_sultan = {
-
-		icon = GFX_decision_tur_unifying_the_country_category
-
-		cost = 10
-
-		fire_only_once = no
-
-		days_remove = 5
-
-		allowed = {
-			OR = {
-				original_tag = TUR
-			}
-		}
-		available = {
-			tag = TUR
-			NOT={
-				OR={
-					has_country_flag = TUR_reform_gameplay
-					has_country_flag = TUR_sultan_gameplay
-				}
-			}
-		}
-
-		visible = {
-			country_exists = TUR
-		}
-
-		complete_effect = {
-			set_country_flag = TUR_sultan_gameplay
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.1
-			}
-		}
-
-		remove_effect = {
-		}
-		ai_will_do = {
-			factor = 10
-		}		
-	}
 	TUR_ally_imams = {
 
 		icon = GFX_decision_faction_tur_traditionalist
@@ -169,49 +126,6 @@ TUR_power_struggle_category={
 			add_days_mission_timeout = {
 				mission = TUR_act_quickly
 				days = -10
-			}
-		}
-
-		remove_effect = {
-		}
-		ai_will_do = {
-			factor = 10
-		}		
-	}
-	TUR_campaign_reform = {
-
-		icon = GFX_decision_faction_tur_unaligned
-
-		cost = 10
-
-		fire_only_once = no
-
-		days_remove = 5
-
-		allowed = {
-			OR = {
-				original_tag = TUR
-			}
-		}
-		available = {
-			tag = TUR
-			NOT={
-				OR={
-					has_country_flag = TUR_reform_gameplay
-					has_country_flag = TUR_sultan_gameplay
-				}
-			}
-		}
-
-		visible = {
-			country_exists = TUR
-		}
-
-		complete_effect = {
-			set_country_flag = TUR_reform_gameplay
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.1
 			}
 		}
 
@@ -369,14 +283,16 @@ TUR_Act_Fast = {
 	TUR_act_quickly = {
 		icon = GFX_decision_revolt
 		is_good = no
-		days_mission_timeout = 365
+		days_mission_timeout = 500
 		activation = {
 			has_country_flag = TUR_Mejlis_explode
 		}
 		available = {
-			OR={
-				has_country_flag = TUR_sloved_problem
-				has_country_flag = TUR_No_Empire
+			TUR={
+				OR={
+					has_country_flag = TUR_solved_problem
+					has_country_flag = TUR_No_Empire
+				}
 			}
 		}
 		timeout_effect = {

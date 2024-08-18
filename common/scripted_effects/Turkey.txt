@@ -551,7 +551,6 @@ self_destruct_ott2={
 	}
 }
 self_destruct_ott={
-	set_country_flag = TUR_No_Empire
 	AHZ={
 		transfer_state = 413
 	}
@@ -584,6 +583,7 @@ self_destruct_ott={
 		transfer_state = 679
 	}
 	TUR={
+		set_country_flag = TUR_No_Empire
 		retire_character = TUR_Nuri_Said
 		retire_character = TUR_Jafar_Askari
 		retire_character = TUR_Husni_Zaim

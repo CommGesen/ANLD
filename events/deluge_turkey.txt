@@ -52,9 +52,12 @@ country_event = {
 		554={
 			TUR_minority_angry = yes
 		}
-		country_event = {
-			id = turkey.3
-			days = 5
+		hidden_effect = {
+			country_event = {
+				id = turkey.3
+				days = 5
+			}
+			
 		}
 	}
 }
@@ -71,9 +74,12 @@ country_event = {
 		291={
 			TUR_minority_angry = yes
 		}
-		country_event = {
-			id = turkey.4
-			days = 5
+		hidden_effect = {
+			country_event = {
+				id = turkey.4
+				days = 5
+			}
+			
 		}
 	}
 }
@@ -86,31 +92,22 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = turkey.4.a
-		country_event = {
-			id = turkey.5
-			days = 5
-		}
 		hidden_effect = {
-			set_country_flag = TUR_Arab_Troll
+			country_event = {
+				id = turkey.11
+				days = 7
+			}
+			
 		}
 	}
 	option = {
 		name = turkey.4.b
-		country_event = {
-			id = turkey.5
-			days = 5
-		}
-		hidden_effect = {
-			set_country_flag = TUR_Socialist_Troll
-		}
-	}
-	option = {
-		name = turkey.4.c
 		hidden_effect = {
 			country_event = {
-				id = turkey.8
-				days = 30
+				id = turkey.5
+				days = 7
 			}
+			
 		}
 	}
 }
@@ -123,24 +120,24 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = turkey.5.a
-		country_event = {
-			id = turkey.6
-			days = 30
+		hidden_effect = {
+			country_event = {
+				id = turkey.8
+				days = 7
+			}
+			
 		}
-		remove_ideas = TUR_investigations
-		trigger = {
-			has_country_flag = TUR_Arab_Troll
-		}
+		remove_ideas = TUR_Bahaeddin_Sakir
+		add_ideas = TUR_Mehmed_Cavid
 	}
 	option = {
 		name = turkey.5.b
-		country_event = {
-			id = turkey.7
-			days = 15
-		}
-		remove_ideas = TUR_investigations
-		trigger = {
-			has_country_flag = TUR_Socialist_Troll
+		hidden_effect = {
+			country_event = {
+				id = turkey.6
+				days = 30
+			}
+			
 		}
 	}
 }
@@ -148,14 +145,44 @@ country_event = {
 	id = turkey.6
 	title = turkey.6.t
 	desc = turkey.6.d
-	picture = GFX_arab_government
+	picture = GFX_young_turks
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = turkey.6.a
 		hidden_effect = {
-			self_destruct_ott2 = yes
-			drop_cosmetic_tag = yes
+			country_event = {
+				id = turkey.8
+				days = 7
+			}
+			
+		}
+		remove_ideas = TUR_Bahaeddin_Sakir
+		add_ideas = TUR_Mehmed_Cavid
+	}
+	option = {
+		name = turkey.6.b
+		hidden_effect = {
+			country_event = {
+				id = turkey.7
+				days = 60
+			}
+			
+		}
+		291={
+			set_demilitarized_zone = yes
+		}
+		554={
+			set_demilitarized_zone = yes
+		}
+		553={
+			set_demilitarized_zone = yes
+		}
+		454={
+			set_demilitarized_zone = yes
+		}
+		856={
+			set_demilitarized_zone = yes
 		}
 	}
 }
@@ -163,72 +190,278 @@ country_event = {
 	id = turkey.7
 	title = turkey.7.t
 	desc = turkey.7.d
-	picture = GFX_CHP_government
+	picture = GFX_young_turks
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = turkey.7.a
-		set_country_flag = TUR_No_Empire
 		self_destruct_ott = yes
-		drop_cosmetic_tag = yes
-		set_politics = {
-			ruling_party = communism
-			elections_allowed = yes
+		291={
+			set_demilitarized_zone = no
 		}
-		add_popularity = {
-			ideology = communism
-			popularity = 0.4
+		554={
+			set_demilitarized_zone = no
 		}
-		remove_ideas = TUR_national_Revolutionaries
-		remove_ideas = TUR_legacy_of_the_1800s
+		553={
+			set_demilitarized_zone = no
+		}
+		454={
+			set_demilitarized_zone = no
+		}
+		856={
+			set_demilitarized_zone = no
+		}
 	}
 }
 country_event = {
 	id = turkey.8
 	title = turkey.8.t
 	desc = turkey.8.d
-	picture = GFX_Osman_Fuat
+	picture = GFX_young_turks
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = turkey.8.a
-		set_power_balance = {
-			id = TUR_power_balance
-			right_side = TUR_Reformation
-			left_side = TUR_Sultan
+		hidden_effect = {
+			country_event = {
+				id = turkey.9
+				days = 30
+			}
+			
 		}
-		retire_character = TUR_fevzi_Çakmak
-		promote_character = TUR_Mustafa_Sabri
-		set_party_name = {
-			ideology = fascism
-			long_name = "Islami Firkasi"
-			name = "Islami Firkasi"
+
+	}
+	option = {
+		name = turkey.8.b
+		hidden_effect = {
+			country_event = {
+				id = turkey.10
+				days = 30
+			}
+			
 		}
-		remove_ideas = TUR_investigations
-		remove_ideas = TUR_national_Revolutionaries
 	}
 }
 country_event = {
 	id = turkey.9
 	title = turkey.9.t
 	desc = turkey.9.d
-	picture = GFX_ottoman_police
+	picture = GFX_young_turks
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = turkey.9.a
-		add_ideas = TUR_investigations
+		self_destruct_ott = yes
+
 	}
 }
 country_event = {
 	id = turkey.10
 	title = turkey.10.t
 	desc = turkey.10.d
-	picture = GFX_ottoman_election
+	picture = GFX_young_turks
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = turkey.10.a
+		set_country_flag = TUR_solved_problem
+		set_country_flag = TUR_sultan_gameplay
+		
+		remove_ideas = TUR_national_Revolutionaries
+		set_power_balance = {
+			id = TUR_power_balance
+		}
+	}
+	option = {
+		name = turkey.10.b
+		self_destruct_ott = yes
+		add_timed_idea = {
+			idea = TUR_donations
+			days = 100
+		}
+	}
+}
+country_event = {
+	id = turkey.11
+	title = turkey.11.t
+	desc = turkey.11.d
+	picture = GFX_young_turks
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.11.a
+		hidden_effect = {
+			country_event = {
+				id = turkey.12
+				days = 7
+			}
+			
+		}
+	}
+	option = {
+		name = turkey.11.b
+		hidden_effect = {
+			country_event = {
+				id = turkey.13
+				days = 7
+			}
+			
+		}
+	}
+}
+country_event = {
+	id = turkey.12
+	title = turkey.12.t
+	desc = turkey.12.d
+	picture = GFX_young_turks
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.12.a
+		set_country_flag = TUR_solved_problem
+		set_country_flag = TUR_reform_gameplay
+		remove_ideas = TUR_national_Revolutionaries
+	}
+	option = {
+		name = turkey.12.b
+		hidden_effect = {
+			country_event = {
+				id = turkey.9
+				days = 40
+			}
+			
+		}
+	}
+}
+country_event = {
+	id = turkey.13
+	title = turkey.13.t
+	desc = turkey.13.d
+	picture = GFX_young_turks
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.13.a
+		add_ideas = TUR_Shakib_Arslan
+		remove_ideas = TUR_Bahaeddin_Sakir
+		hidden_effect = {
+			country_event = {
+				id = turkey.14
+				days = 30
+			}
+			
+		}
+	}
+	option = {
+		name = turkey.13.b
+		hidden_effect = {
+			country_event = {
+				id = turkey.6
+				days = 30
+			}
+			
+		}
+	}
+}
+country_event = {
+	id = turkey.14
+	title = turkey.14.t
+	desc = turkey.14.d
+	picture = GFX_young_turks
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.14.a
+		add_ideas = TUR_Bahaeddin_Sakir
+		remove_ideas = TUR_Shakib_Arslan
+		hidden_effect = {
+			country_event = {
+				id = turkey.6
+				days = 30
+			}
+			
+		}
+	}
+	option = {
+		name = turkey.14.b
+		KUR={
+			set_province_controller = 3916
+			set_province_controller = 5014
+			set_province_controller = 10793
+			set_province_controller = 864
+			set_province_controller = 6935
+			set_province_controller = 7530
+			set_province_controller = 12387
+			set_province_controller = 1549
+			set_province_controller = 4512
+			set_province_controller = 7620
+			set_province_controller = 9912
+			set_province_controller = 1606
+			declare_war_on = {
+				target = TUR
+				type = take_core_state
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = turkey.15
+				days = 30
+			}
+			
+		}
+	}
+}
+country_event = {
+	id = turkey.15
+	title = turkey.15.t
+	desc = turkey.15.d
+	picture = GFX_young_turks
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.15.a
+		set_country_flag = TUR_solved_problem
+		set_country_flag = TUR_reform_gameplay
+		remove_ideas = TUR_national_Revolutionaries
+	}
+	option = {
+		name = turkey.15.b
+		add_ideas = TUR_Bahaeddin_Sakir
+		remove_ideas = TUR_Shakib_Arslan
+		hidden_effect = {
+			country_event = {
+				id = turkey.6
+				days = 30
+			}
+			
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+country_event = {
+	id = turkey.30
+	title = turkey.30.t
+	desc = turkey.30.d
+	picture = GFX_ottoman_election
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = turkey.30.a
 		complete_national_focus = TUR_Qahtaniyah_victory
 		set_party_name = {
 			ideology = democratic
@@ -242,20 +475,20 @@ country_event = {
 		}
 	}
 	option = {
-		name = turkey.10.b
+		name = turkey.30.b
 		complete_national_focus = TUR_hurriyet_ve_itlaf_victory
 		
 	}
 }
 country_event = {
-	id = turkey.11
-	title = turkey.11.t
-	desc = turkey.11.d
+	id = turkey.31
+	title = turkey.31.t
+	desc = turkey.31.d
 	picture = GFX_ottoman_king
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = turkey.11.a
+		name = turkey.31.a
 		create_country_leader = {
 			name = "Abdülkerim I"
 			picture = "gfx/leaders/TUR/Portrait_TUR_Abdulkarim.png"
@@ -264,7 +497,7 @@ country_event = {
 		add_ideas = TUR_Abdelkerim_I
 	}
 	option = {
-		name = turkey.11.b
+		name = turkey.31.b
 		create_country_leader = {
 			name = "Abdullah I"
 			picture = "gfx/leaders/HEJ/Portrait_HEJ_Abdullah_bin_al_Hussein.png"
@@ -279,7 +512,7 @@ country_event = {
 		add_ideas = TUR_Abdullah_I
 	}
 	option = {
-		name = turkey.10.c
+		name = turkey.30.c
 		create_country_leader = {
 			name = "Fuad I"
 			picture = "gfx/leaders/LEB/Portrait_LEB_Fuad.png"
@@ -294,7 +527,7 @@ country_event = {
 		add_ideas = TUR_Fuad_I
 	}
 	option = {
-		name = turkey.11.e
+		name = turkey.31.e
 		create_country_leader = {
 			name = "Khazal I"
 			picture = "gfx/leaders/AHZ/Portrait_AHZ_Khazal.png"
@@ -309,7 +542,7 @@ country_event = {
 		add_ideas = TUR_Khazal_I
 	}
 	option = {
-		name = turkey.11.f
+		name = turkey.31.f
 		create_country_leader = {
 			name = "Salih I"
 			picture = "gfx/leaders/IRQ/Portrait_IRQ_Salih_Bash_Ayan.png"
@@ -325,41 +558,41 @@ country_event = {
 	}
 }
 country_event = {
-	id = turkey.12
-	title = turkey.12.t
-	desc = turkey.12.d
+	id = turkey.32
+	title = turkey.32.t
+	desc = turkey.32.d
 	picture = GFX_ottoman_capital
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = turkey.12.a
+		name = turkey.32.a
 		
 	}
 	option = {
-		name = turkey.12.b
+		name = turkey.32.b
 		
 	}
 	option = {
-		name = turkey.12.c
+		name = turkey.32.c
 		
 	}
 	option = {
-		name = turkey.12.e
+		name = turkey.32.e
 		
 	}
 }
 country_event = {
-	id = turkey.13
-	title = turkey.13.t
-	desc = turkey.13.d
+	id = turkey.33
+	title = turkey.33.t
+	desc = turkey.33.d
 	picture = GFX_ottoman_police
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = turkey.13.a
+		name = turkey.33.a
 	}
 	option = {
-		name = turkey.13.b
+		name = turkey.33.b
 	}
 }
 country_event = {
