@@ -8,7 +8,7 @@ characters={
 		}
 		country_leader={
 			desc="POLITICS_PHRAYA_PHAHON_DESC"
-			ideology=constitutionalist_ideology
+			ideology=conservative_democracy_ideology
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -55,7 +55,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=marxist_ideology
+			ideology=communist_ideology
 			traits={ financial_expert }
 			expire="1953.5.1.12"
 			id=-1

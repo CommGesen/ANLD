@@ -705,7 +705,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_convince_the_freemasons
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_alliance_with_freemasons
 		x = -2
 		y = 1
 		prerequisite = { focus = FRA_new_esoteric_organizations }
@@ -851,7 +851,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_in_the_footsteps_of_the_romans
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_roman_helmet
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_expand_blueshirts }
@@ -1357,7 +1357,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_national_state
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_national_state
 		x = -2
 		y = 1
 		prerequisite = { focus = FRA_french_social_party focus = FRA_fire_movement focus = FRA_french_popular_party }
@@ -3047,7 +3047,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_no_norms
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_ARG_no_gods_no_masters
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_support_individualism focus = FRA_strengthen_the_communes }
@@ -3335,7 +3335,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_internationalism
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_CHL_union_of_hispanic_republics
 		x = -3
 		y = 1
 		prerequisite = { focus = FRA_french_communist_party focus = FRA_french_section_of_workers_internationale focus = FRA_anarchist_communist_federation }
@@ -7263,7 +7263,7 @@ focus = {
 		}
 	focus = {		
 		id = FRA_develop_southern_infrastructure
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_southern_infrastructure
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_transport_modernization }
@@ -7408,7 +7408,7 @@ focus = {
 		}
 	focus = {		
 		id = FRA_develop_northern_infrastructure
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_northern_infrastructure
 		x = -2
 		y = 1
 		prerequisite = { focus = FRA_transport_modernization }
@@ -7572,11 +7572,13 @@ focus = {
 				limit = {
 					controls_province = 9523
 				}
-				add_building_construction = {
-					type = supply_node
-					level = 1
-					instant_build = yes
-					province = 9523
+				16 = {
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						province = 9523
+						instant_build = yes
+					}
 				}
 			}
 		}
@@ -8834,7 +8836,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_expand_the_foreign_legion
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_french_foreign_legion
 		x = -3
 		y = 1
 		prerequisite = { focus = FRA_organize_special_training }
@@ -8870,7 +8872,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_troupes_aeroportees
-		icon = GFX_focus_generic_paratrooper
+		icon = GFX_focus_FRA_paratroopers
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_organize_special_training }
@@ -8909,6 +8911,7 @@ focus = {
 				add_to_variable = { new_french_army_paradrop_organization_factor = 0.3}
 			}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_82
+			recruit_character = FRA_deluge_henri_sauvagnac
 		}
 		ai_will_do = {
 			factor = 25
@@ -8922,7 +8925,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_troupes_de_marine
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_marines
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_organize_special_training }
@@ -8958,9 +8961,10 @@ focus = {
 		}
 		completion_reward = {
 			hidden_effect = {
-				add_to_variable = { new_french_army_paradrop_organization_factor = 48}
+				add_to_variable = { new_french_army_extra_marine_supply_grace = 48}
 			}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_83
+			recruit_character = FRA_deluge_joseph_de_goislard_de_monsabert
 		}
 		ai_will_do = {
 			factor = 25

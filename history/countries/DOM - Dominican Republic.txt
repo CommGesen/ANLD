@@ -102,14 +102,3 @@ create_country_leader = {
 		#
 	}
 }
-
-create_country_leader = {
-	name = "Jacinto Peynado" # Puppet president appointed by Trujillo
-	desc = "POLITICS_JACINTO_PEYNADO_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = liberal_republican_ideology
-	traits = {
-		#
-	}
-}

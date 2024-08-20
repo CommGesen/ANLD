@@ -112,7 +112,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/KOR/syngman_rhee.dds"
 	expire = "1965.1.1"
-	ideology = constitutionalist_ideology
+	ideology = conservative_democracy_ideology
 	traits = {
 		#
 	}
@@ -123,7 +123,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/KOR/kim_il-sung.dds"
 	expire = "1965.1.1"
-	ideology = marxist_ideology
+	ideology = communist_ideology
 	traits = {
 		#
 	}

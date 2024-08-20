@@ -98,17 +98,6 @@ set_popularities = {
 	communism = 20
 	neutrality = 20
 }
-	
-create_country_leader = {
-	name = "Sveinn Björnsson"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = liberal_republican_ideology
-	traits = {
-		#
-	}
-}
 
 create_country_leader = {
 	name = "Johannes Valurson"
@@ -137,7 +126,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = marxist_ideology
+	ideology = communist_ideology
 	traits = {
 		#
 	}

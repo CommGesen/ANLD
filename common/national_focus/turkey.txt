@@ -1763,7 +1763,7 @@ focus_tree = {
 			create_country_leader = {
 				name = "Abdul Karim Al Khalil" #عبدالكريم الخليل
 				picture = "gfx/leaders/SYR/Portrait_Abdul_Karim_Khalil.png"
-				ideology = constitutionalist_ideology
+				ideology = conservative_democracy_ideology
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }

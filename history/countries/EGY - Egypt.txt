@@ -93,22 +93,12 @@ set_popularities = {
 	communism = 5
 	neutrality = 50
 }
-	
-create_country_leader = {
-	name = "Muhammad Naguib"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_democratic1.dds"
-	ideology = liberal_republican_ideology
-	traits = {
-		#
-	}
-}
 
 create_country_leader = {
 	name = "Youssef Wahba Pasha"
 	desc = ""
 	picture = "gfx/leaders/EGY/youssef_wahba_pasha.dds"
-	ideology = constitutionalist_ideology
+	ideology = conservative_democracy_ideology
 	traits = {
 		#
 	}
@@ -118,7 +108,7 @@ create_country_leader = {
 	name = "Saad Zaghloul"
 	desc = ""
 	picture = "gfx/leaders/EGY/saad_zaghloul.dds"
-	ideology = constitutionalist_ideology
+	ideology = conservative_democracy_ideology
 	traits = {
 		#
 	}
@@ -158,7 +148,7 @@ create_country_leader = {
 	name = "Hosni al-Arabi"
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
-	ideology = marxist_ideology
+	ideology = communist_ideology
 	traits = {
 		#
 	}

@@ -8,7 +8,7 @@ characters={
 		}
 		country_leader={
 			desc="POLITICS_MOSES_KOTANE_DESC"
-			ideology=marxist_ideology
+			ideology=communist_ideology
 			expire="1965.1.1.1"
 		}
 	}
@@ -21,7 +21,7 @@ characters={
 		}
 		country_leader={
 			desc="POLITICS_PIXLEY_SEME_DESC"
-			ideology=marxist_ideology
+			ideology=communist_ideology
 			expire="1965.1.1.1"
 		}
 	}
@@ -84,7 +84,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=constitutionalist_ideology
+			ideology=conservative_democracy_ideology
 			expire="1965.1.1.1"
 		}
 	}

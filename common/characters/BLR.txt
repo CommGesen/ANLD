@@ -7,7 +7,19 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=marxist_ideology
+			ideology=communist_ideology
+			expire="1965.1.1.1"
+		}
+	}
+	BLR_leanard_zajac={
+		name="Leanard Zając"
+		portraits={
+			civilian={
+				large="gfx/leaders/BLR/leanard_zajac.dds"
+			}
+		}
+		country_leader={
+			ideology=social_liberal_ideology
 			expire="1965.1.1.1"
 		}
 	}
@@ -19,19 +31,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=liberal_republican_ideology
-			expire="1965.1.1.1"
-		}
-	}
-	BLR_leanard_zajac={
-		name="Leanard Zajac"
-		portraits={
-			civilian={
-				large="gfx/leaders/BLR/leanard_zajac.dds"
-			}
-		}
-		country_leader={
-			ideology=liberal_republican_ideology
+			ideology=centrist_ideology
 			expire="1965.1.1.1"
 		}
 	}

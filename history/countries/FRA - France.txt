@@ -54,11 +54,6 @@ if = {
 	}
 }
 
-declare_war_on = {
-	target = LBA
-	type = annex_everything
-}
-
 448 = {
 	start_resistance = yes
 	set_compliance = 5
@@ -827,7 +822,7 @@ set_popularities = {
 	neutrality = 61
 	communism = 13
 }
-	
+
 if = {
 	limit = {
 		has_dlc = "Together for Victory"
@@ -918,6 +913,12 @@ add_to_faction = POM
 add_to_faction = BHU
 add_to_faction = VIN
 add_to_faction = SPR
+
+declare_war_on = {
+	target = LBA
+	type = annex_everything
+}
+
 add_ideas = {
 	FRA_spirit_le_deluge
 	FRA_spirit_political_instability
@@ -1055,7 +1056,7 @@ recruit_character = FRA_deluge_gabriel_bougrain
 recruit_character = FRA_deluge_paul_vauthier
 
 recruit_character = FRA_deluge_edgar_de_larminat
-recruit_character = FRA_deluge_joseph_de_goislard_de_monsabert
+recruit_character = FRA_deluge_marcel_bucard
 recruit_character = FRA_deluge_henri_nomy
 recruit_character = FRA_deluge_paul_ortoli
 recruit_character = FRA_deluge_raoul_castex
@@ -1076,6 +1077,6 @@ recruit_character = FRA_deluge_georges_bidault
 recruit_character = FRA_deluge_eugene_deloncle
 recruit_character = FRA_deluge_benoit_frachon
 
-#recruit_character =
+recruit_character = FRA_deluge_sebastien_faure
 #recruit_character = 
 

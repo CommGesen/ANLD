@@ -44,7 +44,7 @@ characters={
 		}
 		country_leader={
 			desc="POLITICS_MATYAS_RAKOSKI_DESC"
-			ideology=marxist_ideology
+			ideology=communist_ideology
 			expire="1965.1.1.1"
 		}
 		advisor={
@@ -256,7 +256,7 @@ characters={
 		}
 		country_leader = {
 			desc = "bethlen_desc"
-			ideology = constitutionalist_ideology
+			ideology = conservative_democracy_ideology
 			traits = {
 				
 			}
@@ -289,7 +289,7 @@ characters={
 		}
 		country_leader = {
 			desc = "tildy_desc"
-			ideology = constitutionalist_ideology
+			ideology = conservative_democracy_ideology
 			traits = {
 				
 			}

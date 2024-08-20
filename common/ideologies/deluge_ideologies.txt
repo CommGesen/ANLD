@@ -4,13 +4,25 @@ ideologies = {
 
 		types = {
 			
-			liberal_republican_ideology = {
+			#liberal_republican_ideology = {
+			#}
+			
+			centrist_ideology = {
 			}
 			
-			constitutionalist_ideology = {
+			nationalist_democracy_ideology = {
+			}
+			
+			conservative_democracy_ideology = {
+			}
+			
+			market_liberal_ideology = {
 			}
 			
 			social_democratic_ideology = {
+			}
+			
+			social_liberal_ideology = {
 			}
 		}
 
@@ -68,13 +80,25 @@ ideologies = {
 
 		types = {
 		
-			marxist_ideology = {
+			communist_ideology = { ##marxist_ideology
 			}
 			
 			jacobin_ideology = {
 			}
 			
 			anarchist_ideology = {
+			}
+			
+			futurist_ideology = {
+			}
+			
+			national_socialist_ideology = {
+			}
+			
+			radical_stratoracy_ideology = {
+			}
+			
+			conservative_radicalism = {
 			}
 		}
 
@@ -126,11 +150,21 @@ ideologies = {
 			corporatist_ideology = {
 			}
 			
+			anocracy_ideology = {
+			}
+			
 			social_darwinist_ideology = {
 			}
 			
 			religious_ideology = {
 			}
+			
+			avant_garde_nationalism_ideology = {
+			}
+			
+			nationalist_stratoracy_ideology = {
+			}
+			
 		}
 
 		dynamic_faction_names = {
@@ -177,6 +211,16 @@ ideologies = {
 			}
 
 			bonapartist_ideology  = {
+			}
+			
+			national_integralism_ideology = {
+			}
+			
+			colonial_administration_ideology = {
+				can_be_randomly_selected = no
+			}
+			
+			theocracy_ideology = {
 			}
 			
 		}

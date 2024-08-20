@@ -87,7 +87,7 @@ create_country_leader = {
 	desc = "POLITICS_MILAN_GROL_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = constitutionalist_ideology
+	ideology = conservative_democracy_ideology
 	traits = {
 		#
 	}
@@ -98,7 +98,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSIP_BROZ_TITO_DESC"
 	picture = "gfx/leaders/CRO/josip_broz_tito.dds"
 	expire = "1965.1.1"
-	ideology = marxist_ideology
+	ideology = communist_ideology
 	traits = {
 		#
 	}

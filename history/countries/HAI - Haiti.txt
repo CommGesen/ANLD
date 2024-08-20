@@ -93,24 +93,13 @@ set_popularities = {
 	communism = 5
 	neutrality = 10
 }
-	
-create_country_leader = {
-	name = "Sténio Vincent"
-	desc = "POLITICS_STENIO_VINCENT_DESC"
-	picture = "GFX_portrait_haiti_stenio_vincent"
-	expire = "1965.1.1"
-	ideology = liberal_republican_ideology
-	traits = {
-		#
-	}
-}
 
 create_country_leader = {
 	name = "Jacques Roumain"
 	desc = "POLITICS_JACQUES_ROUMAIN_DESC"
 	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = marxist_ideology
+	ideology = communist_ideology
 	traits = {
 		#
 	}

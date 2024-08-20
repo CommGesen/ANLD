@@ -1069,16 +1069,7 @@ on_actions = {
 				}
 				set_cosmetic_tag = INS_HL
 				set_party_name = { ideology = democratic name = deluge_indonesia_dutch_democratic_short long_name = deluge_indonesia_dutch_democratic_long }
-				create_country_leader = {
-					name = "A. T. van Starkenborgh Stachouwer"
-					desc = ""
-					picture = "gfx/leaders/deluge/alidius_tjarda_van_starkenborgh_stachouwer.dds"
-					expire = "1953.3.1"
-					ideology = liberal_republican_ideology 
-					traits = {
-						
-					}
-				}
+				promote_character = INS_alidius_tjarda_van_starkenborgh_stachouwer
 			}
 			if = {
 				limit = {
@@ -1091,16 +1082,6 @@ on_actions = {
 				}
 				drop_cosmetic_tag = INS_HL
 				set_party_name = { ideology = democratic name = deluge_indonesia_democratic_short long_name = deluge_indonesia_democratic_long }
-				create_country_leader = {
-					name = "Sukarno"
-					desc = ""
-					picture = "gfx/leaders/deluge/sukarno.dds"
-					expire = "1953.3.1"
-					ideology = liberal_republican_ideology
-					traits = {
-						
-					}
-				}
 			}
 			if = {
 				limit = {
@@ -1111,16 +1092,7 @@ on_actions = {
 				}
 				set_cosmetic_tag = NEP_PR
 				set_party_name = { ideology = neutrality name = deluge_portuguese_india_neutrality_short long_name = deluge_portuguese_india_neutrality_long }
-				create_country_leader = {
-					name = "José Ricardo Pereira Cabral"
-					desc = ""
-					picture = "gfx/leaders/deluge/portuguese_officer.dds"
-					expire = "1965.1.1"
-					ideology = reactionary_ideology
-					traits = {
-						#
-					}
-				}
+				promote_character = INS_sukarno
 			}
 			if = {
 				limit = {
@@ -1153,16 +1125,7 @@ on_actions = {
 				}
 				set_cosmetic_tag = BHU_FR
 				set_party_name = { ideology = neutrality name = deluge_french_india_neutrality_short long_name = deluge_french_india_neutrality_long }
-				create_country_leader = {
-					name = "Louis Alexis Étienne Bonvin"
-					desc = ""
-					picture = "gfx/leaders/deluge/louis_faidherbe.dds"
-					expire = "1965.1.1"
-					ideology = reactionary_ideology
-					traits = {
-						#
-					}
-				}
+				promote_character = BHU_louis_alexis_Étienne_bonvin
 			}
 			if = {
 				limit = {
@@ -1736,17 +1699,8 @@ on_actions = {
 					}
 				}
 				set_cosmetic_tag = INS_HL
-				set_party_name = { ideology = democratic name = deluge_indonesia_dutch_democratic_short long_name = deluge_indonesia_dutch_democratic_long }
-				create_country_leader = {
-					name = "A. T. van Starkenborgh Stachouwer"
-					desc = ""
-					picture = "gfx/leaders/deluge/alidius_tjarda_van_starkenborgh_stachouwer.dds"
-					expire = "1953.3.1"
-					ideology = liberal_republican_ideology 
-					traits = {
-						
-					}
-				}
+				set_party_name = { ideology = neutrality name = deluge_indonesia_dutch_democratic_short long_name = deluge_indonesia_dutch_democratic_long }
+				promote_character = INS_alidius_tjarda_van_starkenborgh_stachouwer
 			}
 			if = {
 				limit = {
@@ -1759,16 +1713,7 @@ on_actions = {
 				}
 				drop_cosmetic_tag = INS_HL
 				set_party_name = { ideology = democratic name = deluge_indonesia_democratic_short long_name = deluge_indonesia_democratic_long }
-				create_country_leader = {
-					name = "Sukarno"
-					desc = ""
-					picture = "gfx/leaders/deluge/sukarno.dds"
-					expire = "1953.3.1"
-					ideology = liberal_republican_ideology
-					traits = {
-						
-					}
-				}
+				promote_character = INS_sukarno
 			}
 			if = {
 				limit = {
@@ -2078,16 +2023,7 @@ on_actions = {
 				}
 				drop_cosmetic_tag = INS_HL
 				set_party_name = { ideology = democratic name = deluge_indonesia_democratic_short long_name = deluge_indonesia_democratic_long }
-				create_country_leader = {
-					name = "Sukarno"
-					desc = ""
-					picture = "gfx/leaders/deluge/sukarno.dds"
-					expire = "1953.3.1"
-					ideology = liberal_republican_ideology
-					traits = {
-						
-					}
-				}
+				promote_character = INS_sukarno
 			}
 			if = {
 				limit = {

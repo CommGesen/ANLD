@@ -3387,7 +3387,7 @@ country_event = {##Sikorski brings back democracy to Poland
 			character = POL_deluge_wladyslaw_sikorski
 			promote_leader = yes
 			country_leader = {
-				ideology = constitutionalist_ideology
+				ideology = conservative_democracy_ideology
 				expire = "1965.1.1.1"
 				traits = { liberal_marshal }
 			}

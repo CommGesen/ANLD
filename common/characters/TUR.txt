@@ -3,7 +3,7 @@ characters={
 		name="Abdulmejid II"
 		portraits={
 			civilian={
-				large="gfx/leaders/TUR/ottoman_emperor.dds"
+				large="gfx/leaders/TUR/portrait_TUR_abdulmejid_ii.dds"
 			}
 		}
 		country_leader={
@@ -130,7 +130,7 @@ characters={
 		}
 		#country_leader={
 		#	desc="POLITICS_SEFIK_HUSNU_DESC"
-		#	ideology=marxist_ideology
+		#	ideology=communist_ideology
 		#	expire="1965.1.1.1"
 		#	id=-1
 		#}
@@ -144,7 +144,7 @@ characters={
 		}
 		country_leader={
 			desc="POLITICS_ALI_KEMAL_DESC"
-			ideology=constitutionalist_ideology
+			ideology=conservative_democracy_ideology
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -158,7 +158,7 @@ characters={
 		}
 		#country_leader={
 		#	desc="POLITICS_CELAL_BAYAR_DESC"
-		#	ideology=constitutionalist_ideology
+		#	ideology=conservative_democracy_ideology
 		#	expire="1965.1.1.1"
 		#	id=-1
 		#}
@@ -172,7 +172,7 @@ characters={
 		}
 		#country_leader={
 		#	desc="POLITICS_ISMET_INÖNÜ_DESC"
-		#	ideology=constitutionalist_ideology
+		#	ideology=conservative_democracy_ideology
 		#	expire="1965.1.1.1"
 		#	id=-1
 		#}

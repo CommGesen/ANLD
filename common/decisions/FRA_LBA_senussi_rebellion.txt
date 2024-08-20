@@ -98,7 +98,9 @@ FRA_senussi_campaign_category = {
 			
 		}
 		complete_effect = {
-			
+			country_event = {
+				id = deluge_france_foreign.4
+			}
 		}
 		remove_effect = {
 			

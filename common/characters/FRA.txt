@@ -340,7 +340,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=marxist_ideology
+			ideology=communist_ideology
 			expire="1965.1.1.1"
 			traits = {
 				general_secretary
@@ -356,7 +356,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=marxist_ideology
+			ideology=communist_ideology
 			expire="1965.1.1.1"
 			traits = {
 				manipulator
@@ -406,12 +406,29 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=marxist_ideology
+			ideology=communist_ideology
 			expire="1965.1.1.1"
 			traits = {
 				
 			}
 			desc = "FRA_deluge_georges_valois_desc"
+		}
+	}
+	##Anarchists:
+	FRA_deluge_sebastien_faure={
+		name=FRA_deluge_sebastien_faure_name
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/portrait_FRA_sebastien_faure.dds"
+			}
+		}
+		country_leader={
+			ideology=anarchist_ideology
+			expire="1965.1.1.1"
+			traits = {
+				
+			}
+			desc = "FRA_deluge_sebastien_faure_desc"
 		}
 	}
 	##Boulangists:
@@ -505,9 +522,9 @@ characters={
 	FRA_deluge_eugene_deloncle={
 		name=FRA_deluge_eugene_deloncle_name
 		portraits={
-			army={
-				small="GFX_eugene_deloncle_picture_small" ##change later
-				large=GFX_portrait_FRA_eugene_deloncle ##change later
+			army={##small portrait to do
+				small="GFX_eugene_deloncle_picture_small"
+				large="gfx/leaders/FRA/portrait_FRA_eugene_deloncle.dds"
 			}
 		}
 		advisor={
@@ -578,6 +595,22 @@ characters={
 			desc = "FRA_deluge_maurice_delaunay_desc"
 		}
 	}
+	##Francist Movement:
+	FRA_deluge_marcel_bucard={
+		name=FRA_deluge_marcel_bucard_name
+		portraits={
+			civilian={##small portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_marcel_bucard.dds"
+				small="GFX_marcel_bucard_picture_small"
+			}
+		}
+		country_leader={
+			ideology=social_darwinist_ideology
+			traits={  }
+			expire="1965.1.1.1"
+			desc = "FRA_deluge_marcel_bucard_desc"
+		}
+	}
 	##Radical Party:
 	FRA_deluge_edouard_daladier={
 		name=FRA_deluge_edouard_daladier_name
@@ -616,7 +649,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=liberal_republican_ideology
+			ideology=market_liberal_ideology
 			traits={ economic_liberal }
 			expire="1965.1.1.1"
 			desc = "FRA_deluge_paul_reynaud_desc"
@@ -630,7 +663,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=liberal_republican_ideology
+			ideology=market_liberal_ideology
 			traits={ treasury_minister }
 			expire="1965.1.1.1"
 			desc = "FRA_deluge_pierre_etienne_flandin_desc"
@@ -645,7 +678,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=constitutionalist_ideology
+			ideology=conservative_democracy_ideology
 			traits={ }
 			expire="1965.1.1.1"
 			desc = "FRA_deluge_georges_bidault_desc"
@@ -1628,6 +1661,42 @@ characters={
 			desc = "FRA_deluge_antoine_bethouart_desc"
 		}
 	}
+	FRA_deluge_henri_sauvagnac={##not recruited at the start
+		name=FRA_deluge_henri_sauvagnac_name
+		portraits={
+			army={##small portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_henri_sauvagnac.dds" 
+				small="GFX_henri_sauvagnac_picture_small"
+			}
+		}
+		corps_commander={
+			traits={ commando paratrooper }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			desc = "FRA_deluge_henri_sauvagnac_desc"
+		}
+	}
+	FRA_deluge_joseph_de_goislard_de_monsabert={##not recruited at the start
+		name=FRA_deluge_joseph_de_goislard_de_monsabert_name
+		portraits={
+			army={##small portrait to do
+				large="gfx/leaders/FRA/portrait_FRA_joseph_de_goislard_de_monsabert.dds" 
+				small="GFX_joseph_de_goislard_de_monsabert_picture_small"
+			}
+		}
+		corps_commander={
+			traits={career_officer infantry_officer war_hero naval_invader }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			desc = "FRA_deluge_joseph_de_goislard_de_monsabert_desc"
+		}
+	}
 	FRA_deluge_rene_prioux={
 		name=FRA_deluge_rene_prioux_name
 		portraits={
@@ -1985,24 +2054,6 @@ characters={
 			planning_skill=2
 			logistics_skill=2
 			desc = "FRA_deluge_edgar_de_larminat_desc"
-		}
-	}
-	FRA_deluge_joseph_de_goislard_de_monsabert={
-		name=FRA_deluge_joseph_de_goislard_de_monsabert_name
-		portraits={
-			army={##small and big portrait to do
-				large="gfx/leaders/FRA/portrait_FRA_joseph_de_goislard_de_monsabert.dds" 
-				small="GFX_joseph_de_goislard_de_monsabert_picture_small"
-			}
-		}
-		corps_commander={
-			traits={ naval_invader career_officer }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=1
-			desc = "FRA_deluge_joseph_de_goislard_de_monsabert_desc"
 		}
 	}
 	##admirals:

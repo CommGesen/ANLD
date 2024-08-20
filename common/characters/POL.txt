@@ -177,7 +177,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = constitutionalist_ideology
+			ideology = conservative_democracy_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				father_of_polish_democratic_nationalism
@@ -294,7 +294,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = constitutionalist_ideology
+			ideology = conservative_democracy_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				former_minister_of_justice
@@ -310,7 +310,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = constitutionalist_ideology
+			ideology = conservative_democracy_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				doctor_of_nationalist_philosophy
@@ -327,7 +327,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = constitutionalist_ideology
+			ideology = conservative_democracy_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				editor_in_chief_of_polish_thought
@@ -344,7 +344,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = constitutionalist_ideology
+			ideology = conservative_democracy_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				
@@ -1059,7 +1059,7 @@ characters={
 		portraits={
 			army={
 				small="gfx/interface/ideas/idea_SOV_konstantin_rokossovsky.dds" ##change later
-				large="gfx/leaders/SOV/Portrait_Soviet_Konstantin_Rokossovsky.dds" ##change later
+				large="gfx/leaders/POL/portrait_POL_konstanty_rokossowski.dds" ##change later
 			}
 		}
 		corps_commander={
@@ -4580,7 +4580,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = marxist_ideology
+			ideology = communist_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				hero_of_the_peasantry
@@ -4597,7 +4597,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = marxist_ideology
+			ideology = communist_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				doctor_of_laws_weaker
@@ -4643,7 +4643,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = marxist_ideology
+			ideology = communist_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				former_minister_of_justice
@@ -4689,7 +4689,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = marxist_ideology
+			ideology = communist_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				industry_reformer
@@ -4735,7 +4735,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = marxist_ideology
+			ideology = communist_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				radical_revanchist
@@ -4784,7 +4784,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = marxist_ideology
+			ideology = communist_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				headstrong
@@ -4833,7 +4833,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = marxist_ideology
+			ideology = communist_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				totalitarian_systems_analyst_weaker
@@ -4918,7 +4918,7 @@ characters={
 			ledger = civilian
 		}
 		country_leader = {
-			ideology = marxist_ideology
+			ideology = communist_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				theoretician_of_national_bolshevism_weaker
@@ -5737,7 +5737,7 @@ characters={
 			ledger = civilian
 		}
 		country_leader = {
-			ideology = marxist_ideology
+			ideology = communist_ideology
 			traits = { futuristic_communist }
 			expire = "1969.1.1.1"
 			desc = "POL_jasienski_leader_desc"

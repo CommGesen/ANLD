@@ -95,16 +95,6 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Bexhara El Khouri"
-	desc = ""
-	picture = "gfx/leaders/LEB/Portrait_Bechara_el_Khoury.dds"
-	ideology = liberal_republican_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
 	name = "Pierre Gemayel"
 	desc = ""
 	picture = "gfx/leaders/LEB/Portrait_Pierre_Gemayel.png"
@@ -124,7 +114,7 @@ create_country_leader = {
 	name = "Farajallah El Helou"
 	desc = ""
 	picture = "gfx/leaders/LEB/Portrait_Farajallah_el-Helou.dds"
-	ideology = marxist_ideology
+	ideology = communist_ideology
 	traits = {
 		#
 	}

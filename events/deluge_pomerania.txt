@@ -1036,6 +1036,12 @@ country_event = {##Kashubians do a coup in Pomerania
 		}
 		set_global_flag = POM_issue_solved
 		leave_faction = yes
+		every_country = {
+			limit = {
+				has_war_with = POM
+			}
+			white_peace = POM
+		}
 		ai_chance = {
 			base = 1
 		}

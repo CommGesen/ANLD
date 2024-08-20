@@ -33,7 +33,7 @@ characters={
 		}
 		country_leader={
 			desc="POLITICS_LOU_DE_VISSER_DESC"
-			ideology=marxist_ideology
+			ideology=communist_ideology
 			expire="1965.1.1.1"
 		}
 	}
@@ -46,7 +46,7 @@ characters={
 		}
 		country_leader={
 			desc="POLITICS_DIRK_JAN_DE_GEER_DESC"
-			ideology=liberal_republican_ideology
+			ideology=conservative_democracy_ideology
 			expire="1965.1.1.1"
 		}
 	}
@@ -96,7 +96,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=liberal_republican_ideology
+			ideology=conservative_democracy_ideology
 			expire="1965.1.1.1"
 		}
 	}

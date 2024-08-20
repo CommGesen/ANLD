@@ -1,16 +1,4 @@
 characters={
-	ARG_agustín_pedro_justo={
-		name="Agustín Pedro Justo"
-		portraits={
-			civilian={
-				large="gfx/leaders/ARG/agustin_pedro_justo_rolon.dds"
-			}
-		}
-		country_leader={
-			ideology=liberal_republican_ideology
-			expire="1965.1.1.1"
-		}
-	}
 	ARG_nimo_de_anquín={
 		name="Nimo de Anquín"
 		portraits={
@@ -85,12 +73,24 @@ characters={
 		name="Roberto María Ortiz"
 		portraits={
 			civilian={
-				large="gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+				large="gfx/leaders/ARG/portrait_ARG_roberto_maria_ortiz.dds"
 			}
 		}
 		country_leader={
 			desc="POLITICS_ROBERTO_MARIA_ORTIZ_DESC"
-			ideology=liberal_republican_ideology
+			ideology=centrist_ideology
+			expire="1965.1.1.1"
+		}
+	}
+	ARG_agustín_pedro_justo={
+		name="Agustín Pedro Justo"
+		portraits={
+			civilian={
+				large="gfx/leaders/ARG/agustin_pedro_justo_rolon.dds"
+			}
+		}
+		country_leader={
+			ideology=market_liberal_ideology
 			expire="1965.1.1.1"
 		}
 	}
@@ -116,7 +116,7 @@ characters={
 		}
 		country_leader={
 			desc="POLITICS_FANNY_JABCOVSKY_DESC"
-			ideology=marxist_ideology
+			ideology=communist_ideology
 			expire="1965.1.1.1"
 		}
 	}

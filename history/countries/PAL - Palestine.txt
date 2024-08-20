@@ -26,16 +26,6 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Raghib Al Nashashibi"
-	desc = ""
-	picture = "gfx/leaders/PAL/Portrait_PAL_Nashashibi.png"
-	ideology = liberal_republican_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
 	name = "Amin Al Husyini"
 	desc = ""
 	picture = "gfx/leaders/PAL/Portrait_PAL_The_Mufti.png"
@@ -55,7 +45,7 @@ create_country_leader = {
 	name = "Radwan El Helou"
 	desc = ""
 	picture = "gfx/leaders/PAL/Portrait_PAL_Radwan-Helou.dds"
-	ideology = marxist_ideology
+	ideology = communist_ideology
 	traits = {
 		#
 	}
