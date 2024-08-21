@@ -1032,7 +1032,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_charlemagnes_legacy
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_charlemagne
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_new_hierarchy }
@@ -3083,7 +3083,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_communal_democracy
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_hammer_and_sickle
 		x = 2
 		y = 1
 		prerequisite = { focus = FRA_anarchist_communist_federation }
@@ -3371,7 +3371,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_pacifits_revolution
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_peaceful_radicalism
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_internationalism }
@@ -3518,7 +3518,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_united_france
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_sword_and_sickle
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_nationalist_approach }
@@ -3994,7 +3994,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_new_sans_culottes
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_liberte_cap
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_state_of_proletariat }
