@@ -684,3 +684,111 @@ news_event = {##senussi rebellion is defeated
 		name = deluge_france_foreign.7.a
 	}
 }
+country_event = {##BHU has opportunity to revolt against French overlord as Indian Bourbons
+	id = deluge_france_foreign.8
+	title = deluge_france_foreign.8.t
+	desc = deluge_france_foreign.8.d
+	picture = GFX_report_event_elizabeth_de_bourbon_bhopal_may_1867
+	trigger = {
+		tag = BHU
+		BHU = {
+			is_subject_of = FRA
+		}
+		FRA = {
+			OR = {
+				AND = {
+					has_completed_focus = FRA_towards_republic
+					date > 1937.1.1
+				}
+				AND = {
+					has_completed_focus = FRA_previous_course
+					date > 1938.6.6
+				}
+				AND = {
+					NOT = {
+						has_completed_focus = FRA_towards_republic
+						has_completed_focus = FRA_previous_course
+					}
+					date > 1937.6.6
+				}
+			}
+		}
+	}
+	option = {##be loyal
+		name = deluge_france_foreign.8.a
+		add_political_power = 100
+		add_autonomy_score = {
+			value = 350
+			localization = BHU_refused_to_support_bourbon_bhopal_revolt
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {##revolt
+		name = deluge_france_foreign.8.b
+		drop_cosmetic_tag = BHU_FR
+		set_country_flag = BHU_bourbon_bhopal_revolt_started
+		set_party_name = { ideology = neutrality name = deluge_bourbon_bhopal_neutrality_short long_name = deluge_bourbon_bhopal_neutrality_long }
+		promote_character = BHU_salvador_iii_de_bourbon_bhopal
+		FRA = {
+			set_autonomy = {
+				target = BHU
+				autonomous_state = autonomy_free
+				end_wars = yes
+				end_civil_wars = no
+			}
+		}
+		leave_faction = yes
+		declare_war_on = {
+			target = FRA
+			type = independence_wargoal
+		}
+		hidden_effect = {
+			FRA = {
+				country_event = {
+					id = deluge_france_foreign.9
+				}
+			}
+			news_event = {
+				id = deluge_france_foreign.10
+				hours = 16
+			}
+		}
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+country_event = {##info for FRA that BHU is revolting
+	id = deluge_france_foreign.9
+	title = deluge_france_foreign.9.t
+	desc = deluge_france_foreign.9.d
+	picture = GFX_report_event_indian_soldiers_walking
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_foreign.9.a
+	}
+}
+news_event = {##info for world that BHU is revolting
+	id = deluge_france_foreign.10
+	title = deluge_france_foreign.10.t
+	desc = deluge_france_foreign.10.d
+	picture = GFX_news_event_indian_soldiers
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france_foreign.10.a
+	}
+}
+news_event = {##BHU gains its independence
+	id = deluge_france_foreign.11
+	title = deluge_france_foreign.11.t
+	desc = deluge_france_foreign.11.d
+	picture = GFX_news_event_indian_soldiers_smoking
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france_foreign.10.a
+	}
+}

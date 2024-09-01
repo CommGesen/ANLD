@@ -143,6 +143,12 @@ crisis = {
 					NOT = {
 						has_government = communism
 					}
+					NOT = {
+						OR = {
+							tag = FRA
+							tag = POL
+						}
+					}
 				}
 				start_civil_war = {
 					ideology = communism
@@ -153,7 +159,12 @@ crisis = {
 					has_idea = draft_dodging_3
 					has_stability < 0.21
 					has_government = communism
-					
+					NOT = {
+						OR = {
+							tag = FRA
+							tag = POL
+						}
+					}
 				}
 				start_civil_war = {
 					ideology = democratic
@@ -255,6 +266,12 @@ crisis = {
 					NOT = {
 						has_government = communism
 					}
+					NOT = {
+						OR = {
+							tag = FRA
+							tag = POL
+						}
+					}
 				}
 				start_civil_war = {
 					ideology = communism
@@ -265,7 +282,12 @@ crisis = {
 					has_idea = strikes_3
 					has_stability < 0.21
 					has_government = communism
-					
+					NOT = {
+						OR = {
+							tag = FRA
+							tag = POL
+						}
+					}
 				}
 				start_civil_war = {
 					ideology = democratic
@@ -411,6 +433,12 @@ crisis = {
 					NOT = {
 						has_government = communism
 					}
+					NOT = {
+						OR = {
+							tag = FRA
+							tag = POL
+						}
+					}
 				}
 				start_civil_war = {
 					ideology = communism
@@ -421,7 +449,12 @@ crisis = {
 					has_idea = mutiny_3
 					has_stability < 0.21
 					has_government = communism
-					
+					NOT = {
+						OR = {
+							tag = FRA
+							tag = POL
+						}
+					}
 				}
 				start_civil_war = {
 					ideology = democratic
@@ -589,6 +622,12 @@ demobilization = {
 					NOT = {
 						has_government = communism
 					}
+					NOT = {
+						OR = {
+							tag = FRA
+							tag = POL
+						}
+					}
 				}
 				start_civil_war = {
 					ideology = communism
@@ -599,7 +638,12 @@ demobilization = {
 					has_idea = strikes_3
 					has_stability < 0.21
 					has_government = communism
-					
+					NOT = {
+						OR = {
+							tag = FRA
+							tag = POL
+						}
+					}
 				}
 				start_civil_war = {
 					ideology = democratic
@@ -737,6 +781,12 @@ demobilization = {
 				limit = {
 					has_government = communism
 					has_stability < 0.2
+					NOT = {
+						OR = {
+							tag = FRA
+							tag = POL
+						}
+					}
 				}
 				start_civil_war = {
 					ideology = democratic
@@ -746,6 +796,12 @@ demobilization = {
 				limit = {
 					NOT = { has_government = communism }
 					has_stability < 0.3
+					NOT = {
+						OR = {
+							tag = FRA
+							tag = POL
+						}
+					}
 				}
 				start_civil_war = {
 					ideology = communism

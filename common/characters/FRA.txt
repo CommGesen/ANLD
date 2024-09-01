@@ -1,14 +1,14 @@
 characters={
 	##Bonapartists
-	FRA_deluge_napoleon_v={
-		name=FRA_deluge_napoleon_v_name
+	FRA_deluge_napoleon_vi={
+		name=FRA_deluge_napoleon_vi_name
 		portraits={
 			civilian={
-				large="gfx/leaders/FRA/portrait_FRA_napoleon_v.dds"
+				large="gfx/leaders/FRA/portraits_FRA_napoleon_vi.dds"
 			}
 		}
 		country_leader={
-			desc="FRA_deluge_napoleon_v_desc"
+			desc="FRA_deluge_napoleon_vi_desc"
 			ideology=bonapartist_ideology
 			expire="1965.1.1.1"
 			traits = {
@@ -406,7 +406,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=communist_ideology
+			ideology=national_socialist_ideology
 			expire="1965.1.1.1"
 			traits = {
 				
@@ -441,7 +441,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = social_darwinist_ideology
+			ideology = nationalist_stratoracy_ideology
 			traits = {
 				resourceful_machiavellian
 			}
@@ -501,7 +501,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = social_darwinist_ideology
+			ideology = nationalist_stratoracy_ideology
 			traits = {
 				friend_of_poland
 				prince_of_terror
@@ -589,7 +589,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=social_darwinist_ideology
+			ideology=avant_garde_nationalism_ideology
 			traits={ mentally_ill }
 			expire="1965.1.1.1"
 			desc = "FRA_deluge_maurice_delaunay_desc"
@@ -1073,7 +1073,7 @@ characters={
 		name=FRA_deluge_henry_freydenberg_name
 		portraits={
 			army={
-				large=GFX_portrait_FRA_henry_freydenberg
+				large="gfx/leaders/FRA/portrait_FRA_henry_freydenberg.dds"
 				small="GFX_henry_freydenberg_picture_small"
 			}
 		}

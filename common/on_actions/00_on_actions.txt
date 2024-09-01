@@ -1119,39 +1119,6 @@ on_actions = {
 			if = {
 				limit = {
 					AND = {
-						TAG = BHU
-						is_subject_of = FRA
-					}
-				}
-				set_cosmetic_tag = BHU_FR
-				set_party_name = { ideology = neutrality name = deluge_french_india_neutrality_short long_name = deluge_french_india_neutrality_long }
-				promote_character = BHU_louis_alexis_Étienne_bonvin
-			}
-			if = {
-				limit = {
-					AND = {
-						TAG = BHU
-						NOT = {
-							is_subject_of = FRA
-						}
-					}
-				}
-				drop_cosmetic_tag = BHU_FR
-				set_party_name = { ideology = neutrality name = deluge_travancore_neutrality_short long_name = deluge_travancore_neutrality_long }
-				create_country_leader = {
-					name = "Chithira Thirunal"
-					desc = ""
-					picture = "gfx/leaders/deluge/indian_princes/chithira_thirunal_balarama_varma.dds"
-					expire = "1965.1.1"
-					ideology = bonapartist_ideology
-					traits = {
-						#
-					}
-				}
-			}
-			if = {
-				limit = {
-					AND = {
 						TAG = VIN
 						is_subject_of = FRA
 					}

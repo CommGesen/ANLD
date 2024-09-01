@@ -10,7 +10,6 @@ characters={
 			desc="POLITICS_JOHN_CURTIN_DESC"
 			ideology=jacobin_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	AST_eric_campbell={
@@ -24,7 +23,6 @@ characters={
 			desc="POLITICS_ERIC_CAMPBELL_DESC"
 			ideology=social_darwinist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	AST_richard_dixon={
@@ -38,7 +36,6 @@ characters={
 			desc="POLITICS_RICHARD_DIXON_DESC"
 			ideology=communist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	AST_earle_page={
@@ -52,7 +49,6 @@ characters={
 			desc="POLITICS_EARLE_PAGE_DESC"
 			ideology=conservative_democracy_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	AST_leslie_morshead={
@@ -219,7 +215,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=bonapartist_ideology
+			ideology=colonial_administration_ideology
 			expire="1965.1.1.1"
 		}
 	}

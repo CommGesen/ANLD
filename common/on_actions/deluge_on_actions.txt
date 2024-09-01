@@ -1649,19 +1649,19 @@ on_actions = {
 						limit = {
 							has_global_flag = german_empire_by_WGR
 						}
-						add_ideas = german_emperor
+						#add_ideas = german_emperor
 					}
 					if = {
 						limit = {
 							has_global_flag = german_kingdom_by_WGR
 						}
-						add_ideas = german_king
+						#add_ideas = german_king
 					}
 					if = {
 						limit = {
 							has_global_flag = german_tyranny_by_WGR
 						}
-						add_ideas = german_tyrant
+						#add_ideas = german_tyrant
 					}
 					if = {
 						limit = {
@@ -1673,7 +1673,7 @@ on_actions = {
 								}
 							}
 						}
-						add_ideas = westphalian_king
+						#add_ideas = westphalian_king
 					}
 				}
 			}
@@ -2027,6 +2027,77 @@ on_actions = {
 				POM = {
 					set_cosmetic_tag = POM_kashubia
 				}
+			}
+		}
+	}
+	on_daily_BHU = {
+		effect = {
+			if = {
+				limit = {
+					TAG = BHU
+					is_subject_of = FRA
+				}
+				set_cosmetic_tag = BHU_FR
+				set_party_name = { ideology = neutrality name = deluge_french_india_neutrality_short long_name = deluge_french_india_neutrality_long }
+				promote_character = BHU_louis_alexis_Étienne_bonvin
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = BHU
+						NOT = {
+							is_subject_of = FRA
+						}
+					}
+				}
+				drop_cosmetic_tag = BHU_FR
+				set_party_name = { ideology = neutrality name = deluge_bourbon_bhopal_neutrality_short long_name = deluge_bourbon_bhopal_neutrality_long }
+				promote_character = BHU_salvador_iii_de_bourbon_bhopal
+			}
+			if = {
+				limit = {
+					tag = BHU
+					has_war_with = FRA
+					has_country_flag = {
+						flag = BHU_bourbon_bhopal_revolt_started
+						days > 364
+					}
+				}
+				white_peace = {
+					tag = FRA
+					message = BHU_won_against_FRA
+				}
+				every_country = {
+					limit = {
+						is_subject_of = FRA
+						has_war_with = BHU
+					}
+					white_peace = BHU
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = FRA
+						has_war_with = BHU
+					}
+					white_peace = BHU
+				}
+				hidden_effect = {
+					news_event = {
+						id = deluge_france_foreign.11
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = BHU
+					NOT = {
+						has_war_with = FRA
+					}
+					has_country_flag = {
+						flag = BHU_bourbon_bhopal_revolt_started
+					}
+				}
+				clr_country_flag = BHU_bourbon_bhopal_revolt_started
 			}
 		}
 	}

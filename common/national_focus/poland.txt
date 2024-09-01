@@ -4023,7 +4023,20 @@ focus_tree = {
 			hidden_effect = {
 				remove_ideas = freedom_of_religion_idea
 				remove_ideas = culture_not_race_national_spirit
-				add_ideas = little_light_of_democracy
+				if = {
+					limit = {
+						has_country_flag = POL_sikorski_disbanded_sanation
+					}
+					add_ideas = little_light_of_democracy_2
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = POL_sikorski_disbanded_sanation
+						}
+					}
+					add_ideas = little_light_of_democracy
+				}
 			}
 			custom_effect_tooltip = POL_custom_effect_tooltip_36
 			if = {

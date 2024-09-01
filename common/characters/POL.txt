@@ -121,7 +121,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = corporatist_ideology
+			ideology = anocracy_ideology
 			expire = "1969.1.1.1"
 			traits = { liberal_marshal}
 			desc = "POL_deluge_wladyslaw_sikorski_desc"
@@ -161,7 +161,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = social_darwinist_ideology
+			ideology = avant_garde_nationalism_ideology
 			expire = "1969.1.1.1"
 			traits = {}
 			desc = "POL_deluge_jan_stachniuk_desc"
@@ -177,7 +177,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = conservative_democracy_ideology
+			ideology = nationalist_democracy_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				father_of_polish_democratic_nationalism
@@ -262,7 +262,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = social_democratic_ideology
+			ideology = social_liberal_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				friend_of_farmers
@@ -278,7 +278,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = social_democratic_ideology
+			ideology = democratic_agrarianism_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				gifted_inter_class_negotiator
@@ -294,7 +294,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = conservative_democracy_ideology
+			ideology = nationalist_democracy_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				former_minister_of_justice
@@ -310,7 +310,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = conservative_democracy_ideology
+			ideology = nationalist_democracy_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				doctor_of_nationalist_philosophy
@@ -327,7 +327,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = conservative_democracy_ideology
+			ideology = nationalist_democracy_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				editor_in_chief_of_polish_thought
@@ -376,7 +376,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = bonapartist_ideology
+			ideology = reactionary_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				
@@ -538,7 +538,7 @@ characters={
 		name = POL_deluge_jadwiga_pilsudska_name
 		portraits = {
 			civilian = {
-				large="gfx/leaders/HUN/portrait_HUN_jadwiga_pilsudska.dds"
+				large="gfx/leaders/HUN/portrait_POL_jadwiga_pilsudska.dds"
 			}
 		}
 		country_leader = {
@@ -716,7 +716,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = social_darwinist_ideology
+			ideology = nationalist_stratoracy_ideology
 			expire = "1969.1.1.1"
 			traits = { naval_invasion_expert }
 			desc = "POL_deluge_gustaw_orlicz_dreszer_desc"
@@ -1167,7 +1167,7 @@ characters={
 			desc = "POL_deluge_sosnowski_desc"
 		}
 		country_leader = {
-			ideology = corporatist_ideology
+			ideology = nationalist_stratoracy_ideology
 			expire = "1969.1.1.1"
 			traits = { national_hero_sosnkowski }
 			desc = "POL_deluge_sosnowski_desc"
@@ -2700,7 +2700,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = social_darwinist_ideology
+			ideology = corporatist_ideology
 			expire = "1969.1.1.1"
 			traits = { ultranationalist_prime_minister }
 			desc = "POL_deluge_jozef_beck_desc"
@@ -4257,7 +4257,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = jacobin_ideology
+			ideology = communist_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				communist_with_human_face_weaker
@@ -4303,7 +4303,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = jacobin_ideology
+			ideology = communist_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				socialist_autocrat
@@ -4353,7 +4353,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = jacobin_ideology
+			ideology = communist_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				red_suffragette
@@ -4413,7 +4413,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = jacobin_ideology
+			ideology = communist_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				socialist_justice
@@ -4580,7 +4580,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = communist_ideology
+			ideology = conservative_radicalism
 			expire = "1969.1.1.1"
 			traits = {
 				hero_of_the_peasantry
@@ -4597,7 +4597,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = communist_ideology
+			ideology = conservative_radicalism
 			expire = "1969.1.1.1"
 			traits = {
 				doctor_of_laws_weaker
@@ -4643,7 +4643,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = communist_ideology
+			ideology = conservative_radicalism
 			expire = "1969.1.1.1"
 			traits = {
 				former_minister_of_justice
@@ -4689,7 +4689,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = communist_ideology
+			ideology = conservative_radicalism
 			expire = "1969.1.1.1"
 			traits = {
 				industry_reformer
@@ -4735,7 +4735,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = communist_ideology
+			ideology = national_socialist_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				radical_revanchist
@@ -4784,7 +4784,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = communist_ideology
+			ideology = national_socialist_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				headstrong
@@ -4833,7 +4833,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = communist_ideology
+			ideology = national_socialist_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				totalitarian_systems_analyst_weaker
@@ -4918,7 +4918,7 @@ characters={
 			ledger = civilian
 		}
 		country_leader = {
-			ideology = communist_ideology
+			ideology = national_socialist_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				theoretician_of_national_bolshevism_weaker
@@ -4944,7 +4944,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = jacobin_ideology
+			ideology = communist_ideology
 			expire = "1969.1.1.1"
 			traits = {
 				temporary_committee
@@ -5737,7 +5737,7 @@ characters={
 			ledger = civilian
 		}
 		country_leader = {
-			ideology = communist_ideology
+			ideology = futurist_ideology
 			traits = { futuristic_communist }
 			expire = "1969.1.1.1"
 			desc = "POL_jasienski_leader_desc"

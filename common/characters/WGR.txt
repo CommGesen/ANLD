@@ -39,18 +39,17 @@ characters={
 			id=-1
 		}
 	}
-	WGR_frederick_ii={
-		name="Frederick II"
+	WGR_deluge_ludwig_vi_bonaparte={
+		name="Ludwig VI"
 		portraits={
 			civilian={
-				large="gfx/leaders/GER/portraits_wgr_napoleon_vi.dds"
+				large="gfx/leaders/GER/portrait_WGR_louis_bonaparte.dds"
 			}
 		}
 		country_leader={
 			desc="westphalian_king_desc"
 			ideology=bonapartist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	WGR_günther_von_kluge={

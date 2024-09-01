@@ -76,7 +76,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=reactionary_ideology
+			ideology=national_integralism_ideology
 			expire="1989.1.1.1"
 		}
 	}
@@ -114,7 +114,6 @@ characters={
 		country_leader={
 			ideology=corporatist_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	BRA_luís_carlos_prestes={
@@ -127,7 +126,6 @@ characters={
 		country_leader={
 			ideology=jacobin_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 }

@@ -524,7 +524,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_cult_of_oriflamme
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_cult_of_oriflame
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_prophet_saved }
@@ -4133,7 +4133,7 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			command_power > 10
+			has_army_experience > 20
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -4144,7 +4144,7 @@ focus_tree = {
 				ideology = neutrality
 				popularity = 0.05
 			}
-			add_command_power = -10
+			army_experience = -20
 		}
 		ai_will_do = {
 			factor = 25
@@ -4379,7 +4379,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_trait = {
-				character = FRA_deluge_napoleon_v
+				character = FRA_deluge_napoleon_vi
 				ideology = bonapartist_ideology
 				trait = the_guarantor
 			}
@@ -4898,7 +4898,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_trait = {
-				character = FRA_deluge_napoleon_v
+				character = FRA_deluge_napoleon_vi
 				ideology = bonapartist_ideology
 				trait = the_dictator
 			}
@@ -7233,7 +7233,7 @@ focus = {
 		prerequisite = { focus = FRA_transport_modernization }
 		relative_position_id = FRA_transport_modernization
 		search_filters = { }
-		cost = 1
+		cost = 6
 		#mutually_exclusive = { }
 		allow_branch = {
 			
@@ -7249,7 +7249,7 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_spirit_air_france
 		}
 		ai_will_do = {
 			factor = 25
@@ -7746,7 +7746,7 @@ focus = {
 		prerequisite = { focus = FRA_start_rearnament }
 		relative_position_id = FRA_start_rearnament
 		search_filters = { }
-		cost = 1
+		cost = 7
 		#mutually_exclusive = { }
 		allow_branch = {
 			
@@ -7762,7 +7762,37 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				mio:deluge_FRA_sncac_organization = {
+					add_mio_size = 1
+				}
+				mio:deluge_FRA_sncam_organization = {
+					add_mio_size = 1
+				}
+				mio:deluge_FRA_sncaso_organization = {
+					add_mio_size = 1
+				}
+				mio:deluge_FRA_latecoere_organization = {
+					add_mio_size = 1
+				}
+				mio:deluge_FRA_sncan_organization = {
+					add_mio_size = 1
+				}
+				mio:deluge_FRA_sncase_organization = {
+					add_mio_funds = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Arms Against Tyranny"
+					}
+				}
+				
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8201,7 +8231,7 @@ focus = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_global_flag = set_global_flag = FRA_senussi_rebellion_white_peace
+					has_global_flag = FRA_senussi_rebellion_white_peace
 				}
 				add_doctrine_cost_reduction = {
 					name = POL_lazy_research_bonus
@@ -8213,13 +8243,13 @@ focus = {
 			}
 			if = {
 				limit = {
-					has_global_flag = set_global_flag = FRA_senussi_rebellion_lost
+					has_global_flag = FRA_senussi_rebellion_lost
 				}
 				army_experience = 15
 			}
 			if = {
 				limit = {
-					has_global_flag = set_global_flag = FRA_senussi_rebellion_won
+					has_global_flag = FRA_senussi_rebellion_won
 				}
 				add_doctrine_cost_reduction = {
 					name = POL_lazy_research_bonus
@@ -11143,7 +11173,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_review_the_proposals
-		icon = GFX_goal_generic_air_fighter2
+		icon = GFX_focus_FRA_bloch_and_dewoitine
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_organize_fighter_competition }
@@ -11179,7 +11209,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_call_for_multirole_design
-		icon = GFX_focus_generic_multi_role_aircraft
+		icon = GFX_focus_generic_potez_220
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_la_nouvelle_armee_de_l_air }
@@ -11218,7 +11248,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_prototype_demonstration
-		icon = GFX_focus_generic_copy_plane_designs
+		icon = GFX_focus_generic_breguet201
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_call_for_multirole_design }
@@ -11295,7 +11325,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_strategic_bombers_development
-		icon = GFX_focus_generic_long_range_aircraft
+		icon = GFX_focus_generic_MB_162
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_review_the_proposals focus = FRA_prototype_demonstration }

@@ -1,4 +1,7 @@
 ideas = {
+	hidden_ideas = {
+		
+	}
 	country = {
 		FRA_spirit_towards_republic = {
 			picture = spirit_french_cockade 
@@ -9,10 +12,12 @@ ideas = {
 				
 			}
 			cancel = {
-				
+				NOT = {
+					has_government = neutrality
+				}
 			}
 			allowed_civil_war = {
-				
+				always = yes
 			}
 			modifier = {
 				neutrality_drift = -0.03
@@ -32,7 +37,7 @@ ideas = {
 				}
 			}
 			allowed_civil_war = {
-				
+				always = yes
 			}
 			modifier = {
 				
@@ -55,7 +60,7 @@ ideas = {
 				
 			}
 			allowed_civil_war = {
-				
+				always = yes
 			}
 			modifier = {
 				conscription = -0.025
@@ -76,7 +81,7 @@ ideas = {
 				
 			}
 			allowed_civil_war = {
-				
+				always = yes
 			}
 			modifier = {
 				conscription = -0.015
@@ -96,7 +101,7 @@ ideas = {
 				
 			}
 			allowed_civil_war = {
-				
+				always = yes
 			}
 			modifier = {
 				conscription = -0.005
@@ -116,7 +121,7 @@ ideas = {
 				
 			}
 			allowed_civil_war = {
-				
+				always = yes
 			}
 			modifier = {
 				stability_factor = -0.25
@@ -136,7 +141,7 @@ ideas = {
 				
 			}
 			allowed_civil_war = {
-				
+				always = yes
 			}
 			modifier = {
 				stability_factor = -0.15
@@ -158,7 +163,7 @@ ideas = {
 				}
 			}
 			allowed_civil_war = {
-				
+				always = yes
 			}
 			modifier = {
 				conscription = 0.03
@@ -178,7 +183,7 @@ ideas = {
 				has_government = fascism
 			}
 			allowed_civil_war = {
-				
+				always = yes
 			}
 			modifier = {
 				war_support_factor = -0.1
@@ -199,7 +204,7 @@ ideas = {
 				
 			}
 			allowed_civil_war = {
-				
+				always = yes
 			}
 			modifier = {
 				consumer_goods_factor = 0.3
@@ -220,7 +225,7 @@ ideas = {
 				
 			}
 			allowed_civil_war = {
-				
+				always = no
 			}
 			modifier = {
 				consumer_goods_factor = 0.15
@@ -238,10 +243,12 @@ ideas = {
 				
 			}
 			cancel = {
-				
+				NOT = {
+					has_government = neutrality
+				}
 			}
 			allowed_civil_war = {
-				
+				always = yes
 			}
 			modifier = {
 				neutrality_drift = -0.02
@@ -723,6 +730,29 @@ ideas = {
 				weekly_manpower = -400
 			}
 		}
+		FRA_spirit_armored_reconnaissance_vehicle = {
+			picture = FRA_fortification_focus #change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			equipment_bonus = {
+				cat_armored_cars = {
+					maximum_speed  = 0.05
+					reliability = 0.05
+					breakthrough = 0.05
+					instant = yes
+				}
+			}
+		}
 		FRA_spirit_conservative_high_command = {
 			picture = ETH_conservative_high_command ##change later
 			allowed = {
@@ -741,9 +771,9 @@ ideas = {
 				land_doctrine_cost_factor = 1
 				air_doctrine_cost_factor = 1
 				naval_doctrine_cost_factor = 1
-				experience_gain_army_factor = -1
-				experience_gain_navy_factor = -1
-				experience_gain_air_factor = -1
+				experience_gain_army_unit_factor = -1
+				experience_gain_navy_unit_factor = -1
+				air_mission_xp_gain_factor = -1
 				command_power_gain_mult = -0.8
 			}
 		}
@@ -765,9 +795,9 @@ ideas = {
 				land_doctrine_cost_factor = 0.9
 				air_doctrine_cost_factor = 0.9
 				naval_doctrine_cost_factor = 0.9
-				experience_gain_army_factor = -0.9
-				experience_gain_navy_factor = -0.9
-				experience_gain_air_factor = -0.9
+				experience_gain_army_unit_factor = -0.9
+				experience_gain_navy_unit_factor = -0.9
+				air_mission_xp_gain_factor = -0.9
 				command_power_gain_mult = -0.7
 			}
 		}
@@ -789,9 +819,9 @@ ideas = {
 				land_doctrine_cost_factor = 0.8
 				air_doctrine_cost_factor = 0.8
 				naval_doctrine_cost_factor = 0.8
-				experience_gain_army_factor = -0.8
-				experience_gain_navy_factor = -0.8
-				experience_gain_air_factor = -0.8
+				experience_gain_army_unit_factor = -0.8
+				experience_gain_navy_unit_factor = -0.8
+				air_mission_xp_gain_factor = -0.8
 				command_power_gain_mult = -0.6
 			}
 		}
@@ -813,9 +843,9 @@ ideas = {
 				land_doctrine_cost_factor = 0.7
 				air_doctrine_cost_factor = 0.7
 				naval_doctrine_cost_factor = 0.7
-				experience_gain_army_factor = -0.7
-				experience_gain_navy_factor = -0.7
-				experience_gain_air_factor = -0.7
+				experience_gain_army_unit_factor = -0.7
+				experience_gain_navy_unit_factor = -0.7
+				air_mission_xp_gain_factor = -0.7
 				command_power_gain_mult = -0.5
 			}
 		}
@@ -837,9 +867,9 @@ ideas = {
 				land_doctrine_cost_factor = 0.6
 				air_doctrine_cost_factor = 0.6
 				naval_doctrine_cost_factor = 0.6
-				experience_gain_army_factor = -0.6
-				experience_gain_navy_factor = -0.6
-				experience_gain_air_factor = -0.6
+				experience_gain_army_unit_factor = -0.6
+				experience_gain_navy_unit_factor = -0.6
+				air_mission_xp_gain_factor = -0.6
 				command_power_gain_mult = -0.4
 			}
 		}
@@ -861,9 +891,9 @@ ideas = {
 				land_doctrine_cost_factor = 0.5
 				air_doctrine_cost_factor = 0.5
 				naval_doctrine_cost_factor = 0.5
-				experience_gain_army_factor = -0.5
-				experience_gain_navy_factor = -0.5
-				experience_gain_air_factor = -0.5
+				experience_gain_army_unit_factor = -0.5
+				experience_gain_navy_unit_factor = -0.5
+				air_mission_xp_gain_factor = -0.5
 				command_power_gain_mult = -0.3
 			}
 		}
@@ -885,9 +915,9 @@ ideas = {
 				land_doctrine_cost_factor = 0.4
 				air_doctrine_cost_factor = 0.4
 				naval_doctrine_cost_factor = 0.4
-				experience_gain_army_factor = -0.4
-				experience_gain_navy_factor = -0.4
-				experience_gain_air_factor = -0.4
+				experience_gain_army_unit_factor = -0.4
+				experience_gain_navy_unit_factor = -0.4
+				air_mission_xp_gain_factor = -0.4
 				command_power_gain_mult = -0.2
 			}
 		}
@@ -909,9 +939,9 @@ ideas = {
 				land_doctrine_cost_factor = 0.3
 				air_doctrine_cost_factor = 0.3
 				naval_doctrine_cost_factor = 0.3
-				experience_gain_army_factor = -0.3
-				experience_gain_navy_factor = -0.3
-				experience_gain_air_factor = -0.3
+				experience_gain_army_unit_factor = -0.3
+				experience_gain_navy_unit_factor = -0.3
+				air_mission_xp_gain_factor = -0.3
 				command_power_gain_mult = -0.1
 			}
 		}
@@ -933,9 +963,9 @@ ideas = {
 				land_doctrine_cost_factor = 0.2
 				air_doctrine_cost_factor = 0.2
 				naval_doctrine_cost_factor = 0.2
-				experience_gain_army_factor = -0.2
-				experience_gain_navy_factor = -0.2
-				experience_gain_air_factor = -0.2
+				experience_gain_army_unit_factor = -0.2
+				experience_gain_navy_unit_factor = -0.2
+				air_mission_xp_gain_factor = -0.2
 			}
 		}
 		FRA_spirit_conservative_high_command10 = {
@@ -956,9 +986,9 @@ ideas = {
 				land_doctrine_cost_factor = 0.1
 				air_doctrine_cost_factor = 0.1
 				naval_doctrine_cost_factor = 0.1
-				experience_gain_army_factor = -0.1
-				experience_gain_navy_factor = -0.1
-				experience_gain_air_factor = -0.1
+				experience_gain_army_unit_factor = -0.1
+				experience_gain_navy_unit_factor = -0.1
+				air_mission_xp_gain_factor = -0.1
 			}
 		}
 		FRA_production_de_masse = {
@@ -1147,6 +1177,26 @@ ideas = {
 				naval_retreat_chance = 0.1
 			}
 		}
+		FRA_spirit_air_france = {
+			picture = FRA_fortification_focus #change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				air_manpower_requirement_factor = -0.15
+				air_maximum_speed_factor = 0.1
+			}
+			research_bonus = { air_equipment = 0.1}
+		}
 		FRA_spirit_aeronautique_nationale = {
 			picture = FRA_fortification_focus #change later
 			allowed = {
@@ -1257,29 +1307,6 @@ ideas = {
 				transport_plane_equipment = {
 					air_range = 0.3
 					air_defence = 0.1
-					instant = yes
-				}
-			}
-		}
-		FRA_spirit_armored_reconnaissance_vehicle = {
-			picture = FRA_fortification_focus #change later
-			allowed = {
-				original_tag = FRA
-			}
-			available = {
-				
-			}
-			cancel = {
-				
-			}
-			allowed_civil_war = {
-				
-			}
-			equipment_bonus = {
-				cat_armored_cars = {
-					maximum_speed  = 0.05
-					reliability = 0.05
-					breakthrough = 0.05
 					instant = yes
 				}
 			}

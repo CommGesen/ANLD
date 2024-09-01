@@ -148,6 +148,8 @@
  FRA_spirit_forces_speciales_desc:0 "Special forces."
  FRA_spirit_french_foreign_legion:0 "French Foregin Legion"
  FRA_spirit_french_foreign_legion_desc:0 "French Foreign Legion will for sure give us many foreign talents."
+ FRA_spirit_air_france:0 "Air France"
+ FRA_spirit_air_france_desc:0 "This company helps [FRA.GetName] in case of aviation development."
  ##CHARACTERS' TRAITS
  social_reformer:0 "Social Reformer"
  defender_of_human_rights:0 "Defender of Human Rights"
@@ -167,6 +169,7 @@
  the_guarantor:0 "The Guarantor"
  leader_of_the_cowl:0 "Leader of "the Cowl""
  leader_of_the_cowl_2:0 "Leader of "the Cowl""
+ sixth_prince_d_essling:0 "6th Prince d'Essling"
  ##Tooltips
  FRA_custom_effect_tooltip_1:0 "Modify §HThe Great Depression§! by:\n§H-15%§! Consumer Good Factor!"
  FRA_custom_effect_tooltip_2:0 "Modify §HThe Great Depression§! by:\n§G+10%§! Factory Output,\n§G+10%§! Dockyard Output!"
@@ -260,8 +263,8 @@
  FRA_custom_effect_tooltip_90:0 "Modify §HNew French Economy§! by:\n§G+15%§! Railway Construction Speed\n§G+5%§! Infrastructure Construction Speed!"
  FRA_custom_effect_tooltip_91:0 "Modify §HNew French Economy§! by:\n§G+10%§! Infrastructure Construction Speed\n§G+10%§! Supply Hub Construction Speed!"
  ##CHARACTERS
- FRA_deluge_napoleon_v_name:0 "Napoleon V"
- FRA_deluge_napoleon_v_desc:0 "Napoléon V ascended to the throne on May 15th 1926 after the death of his father, Napoleon IV. He has ruled conservatively without expanding his powers at the expense of the National Assembly, continuing the dynastic trend of enlightened despotism. Nonetheless, he is a very public figure and actively seeks to increase his popular support."
+ FRA_deluge_napoleon_vi_name:0 "Napoleon VI"
+ FRA_deluge_napoleon_vi_desc:0 "He was born on January 23, 1914.\n\nLouis Bonaparte known as Napoléon VI, son of Victor Bonaparte known as Napoléon V and his wife Empress Clémentine, took the throne at the age of 12 on May 3, 1926 after the death of his father. His mother serves as regent until he comes of age. Not yet married, he is a true French patriot who wants to maintain the French Empire and lead its inhabitants to prosperity, which is what the title of Emperor of the French obliges him to do. He is well educated in military matters and promotes militarism. His previous rule was characterized by centrism and leaving many matters to the parliament. The rule of his father, as well as his mother, has left France in a bad state and it is his task to fix all its problems."
  FRA_deluge_leon_blum_name:0 "Léon Blum"
  FRA_deluge_leon_blum_desc:0 ""
  FRA_deluge_felix_gouin_name:0 "Félix Gouin"
@@ -508,6 +511,7 @@
  FRA_democrats_took_power:0 "Democrats took power!"
  FRA_radicals_took_power:0 "Radicals took power!"
  FRA_nationalists_took_power:0 "Nationalists took power!"
+ BHU_bourbon_bhopal_revolt_started:0 "Bourbon-Bhopal revolt started in India!"
  ##Parties:
  FRA_communism_party:0 "FSWI"
  FRA_communism_party_long:0 "French Section of the Workers' International"
@@ -533,6 +537,8 @@
  FRA_fire_movemenet_party_long:0 "Fire Movement"
  FRA_boulangists_party:0 "Boulangists"
  FRA_boulangists_party_long:0 "Boulangists"
+ deluge_bourbon_bhopal_neutrality_short:0 "Bourbon-Bhopal"
+ deluge_bourbon_bhopal_neutrality_long:0 "Bourbon-Bhopal Loyalists"
  ##state modifiers:
  FRA_modifier_eliminated_minorities:0 "Eliminated Minorities"
  ##hidden technologies:
@@ -609,4 +615,8 @@
  FRA_dec_radar_west_desc:0 "We must build radars on the northern coast!"
  FRA_dec_radar_south:0 "Build Radars on the Northern Coast"
  FRA_dec_radar_south_desc:0 "We must build radars on the northern coast!"
+ ##autonomy
+ BHU_refused_to_support_bourbon_bhopal_revolt:0 "[BHU.GetName] refused to support Bourbon-Bhopal revolt!"
+ ##white peace messages
+ BHU_won_against_FRA:0 "[BHU.GetName] won their independence against [FRA.GetName]!"
  

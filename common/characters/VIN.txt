@@ -25,6 +25,21 @@ characters={
 			id=-1
 		}
 	}
+	VIN_andre_massena={
+		name="André III Masséna"
+		portraits={
+			civilian={
+				large="gfx/leaders/VIN/portrait_VIN_andre_massena.dds"
+			}
+		}
+		country_leader={
+			ideology=colonial_administration_ideology
+			expire="1999.3.1.1"
+			traits = {
+				sixth_prince_d_essling
+			}
+		}
+	}
 	VIN_joseph_jules_brevie={
 		name="Joseph-Jules Brévié"
 		portraits={
@@ -33,8 +48,8 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=bonapartist_ideology
-			expire="1953.3.1.1"
+			ideology=colonial_administration_ideology
+			expire="1999.3.1.1"
 		}
 	}
 	VIN_phan_boi_châu={
