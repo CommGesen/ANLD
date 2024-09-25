@@ -533,7 +533,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_stratocratic_government = {
-			picture = ARG_economic_reactivation #change later
+			picture = spirit_stratocratic_government
 			allowed = {
 				original_tag = FRA
 			}
@@ -559,7 +559,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_stratocratic_regime = {
-			picture = ARG_economic_reactivation #change later
+			picture = spirit_stratocratic_government
 			allowed = {
 				original_tag = FRA
 			}
@@ -587,7 +587,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_agricultural_way_of_life = {
-			picture = ARG_economic_reactivation #change later
+			picture = generic_agrarian_reform
 			allowed = {
 				original_tag = FRA
 			}
@@ -710,7 +710,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_chaos_in_paris = {
-			picture = SPR_appropriate_church_riches ##change later
+			picture = spirit_eiffel_tower_burning
 			allowed = {
 				original_tag = FRA
 			}
@@ -754,7 +754,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_conservative_high_command = {
-			picture = ETH_conservative_high_command ##change later
+			picture = ETH_conservative_high_command
 			allowed = {
 				original_tag = FRA
 			}
@@ -778,7 +778,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_conservative_high_command2 = {
-			picture = ETH_conservative_high_command ##change later
+			picture = ETH_conservative_high_command
 			allowed = {
 				original_tag = FRA
 			}
@@ -802,7 +802,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_conservative_high_command3 = {
-			picture = ETH_conservative_high_command ##change later
+			picture = ETH_conservative_high_command
 			allowed = {
 				original_tag = FRA
 			}
@@ -826,7 +826,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_conservative_high_command4 = {
-			picture = ETH_conservative_high_command ##change later
+			picture = ETH_conservative_high_command
 			allowed = {
 				original_tag = FRA
 			}
@@ -850,7 +850,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_conservative_high_command5 = {
-			picture = ETH_conservative_high_command ##change later
+			picture = ETH_conservative_high_command
 			allowed = {
 				original_tag = FRA
 			}
@@ -874,7 +874,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_conservative_high_command6 = {
-			picture = ETH_conservative_high_command ##change later
+			picture = ETH_conservative_high_command
 			allowed = {
 				original_tag = FRA
 			}
@@ -898,7 +898,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_conservative_high_command7 = {
-			picture = ETH_conservative_high_command ##change later
+			picture = ETH_conservative_high_command
 			allowed = {
 				original_tag = FRA
 			}
@@ -922,7 +922,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_conservative_high_command8 = {
-			picture = ETH_conservative_high_command ##change later
+			picture = ETH_conservative_high_command
 			allowed = {
 				original_tag = FRA
 			}
@@ -946,7 +946,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_conservative_high_command9 = {
-			picture = ETH_conservative_high_command ##change later
+			picture = ETH_conservative_high_command
 			allowed = {
 				original_tag = FRA
 			}
@@ -969,7 +969,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_conservative_high_command10 = {
-			picture = ETH_conservative_high_command ##change later
+			picture = ETH_conservative_high_command
 			allowed = {
 				original_tag = FRA
 			}
@@ -1178,7 +1178,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_air_france = {
-			picture = FRA_fortification_focus #change later
+			picture = spirit_generic_MB_220
 			allowed = {
 				original_tag = FRA
 			}
@@ -1191,11 +1191,12 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			modifier = {
-				air_manpower_requirement_factor = -0.15
-				air_maximum_speed_factor = 0.1
+			equipment_bonus = {
+				transport_plane_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
 			}
-			research_bonus = { air_equipment = 0.1}
 		}
 		FRA_spirit_aeronautique_nationale = {
 			picture = FRA_fortification_focus #change later
@@ -1211,12 +1212,11 @@ ideas = {
 			allowed_civil_war = {
 				
 			}
-			equipment_bonus = {
-				transport_plane_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
+			modifier = {
+				air_manpower_requirement_factor = -0.15
+				air_maximum_speed_factor = 0.1
 			}
+			research_bonus = { air_equipment = 0.1}
 		}
 		FRA_spirit_aeronautique_nationale2 = {
 			picture = FRA_fortification_focus #change later
@@ -1232,11 +1232,12 @@ ideas = {
 			allowed_civil_war = {
 				
 			}
+			modifier = {
+				air_manpower_requirement_factor = -0.15
+				air_maximum_speed_factor = 0.1
+			}
+			research_bonus = { air_equipment = 0.1}
 			equipment_bonus = {
-				transport_plane_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
 				cat_scout_plane = {
 					air_range = 0.25
 					instant = yes
@@ -1366,7 +1367,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_french_foreign_legion = {
-			picture = generic_spy_intel ##change later
+			picture = spirit_french_foreign_legion
 			allowed = {
 				original_tag = FRA
 			}

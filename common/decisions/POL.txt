@@ -8259,8 +8259,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 10
-				controls_state = 10
+				controls_province = 3544
 			}
 		}
 		allowed = {
@@ -8270,44 +8269,34 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 50
 		remove_effect = {
 			add_victory_points = {
 				province = 3544
 				value = 20
 			}
 			10 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 2
+			}
+			add_resource = {
+				type = chromium
+				amount = 20
+				state = 10
 			}
 		}
 		ai_will_do = {
@@ -8325,8 +8314,57 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 86
-				controls_state = 86
+				controls_province = 6558
+			}
+		}
+		allowed = {
+			original_tag = POL
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 6558
+				value = 20
+			}
+			86 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_gniezno = {
+		icon = GFX_decision_generic_construction
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 86
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			POL = {
+				controls_province = 17
 			}
 		}
 		allowed = {
@@ -8339,41 +8377,66 @@ expand_cities_category = {
 		cost = 30
 		remove_effect = {
 			add_victory_points = {
-				province = 6558
+				province = 17
+				value = 9
+			}
+			86 = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			add_resource = {
+				type = tungsten
+				amount = 10
+				state = 86
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_bydgoszcz = {
+		icon = GFX_decision_generic_forestry
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 86
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			POL = {
+				controls_province = 279
+			}
+		}
+		allowed = {
+			original_tag = POL
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 279
 				value = 20
 			}
 			86 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 			}
 		}
 		ai_will_do = {
@@ -8391,8 +8454,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 87
-				controls_state = 87
+				controls_province = 9508
 			}
 		}
 		allowed = {
@@ -8402,42 +8464,27 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 40
 		remove_effect = {
 			add_victory_points = {
 				province = 9508
 				value = 20
 			}
 			87 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 2
 			}
@@ -8457,8 +8504,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 66
-				controls_state = 66
+				controls_province = 9570
 			}
 		}
 		allowed = {
@@ -8468,42 +8514,27 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 40
 		remove_effect = {
 			add_victory_points = {
 				province = 9570
 				value = 20
 			}
 			66 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 2
 			}
@@ -8523,8 +8554,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 67
-				controls_state = 67
+				controls_province = 6464
 			}
 		}
 		allowed = {
@@ -8541,37 +8571,67 @@ expand_cities_category = {
 				value = 30
 			}
 			67 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_gliwice = {
+		icon = GFX_decision_generic_construction
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 67
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			POL = {
+				controls_province = 11467
+			}
+		}
+		allowed = {
+			original_tag = POL
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 11467
+				value = 30
+			}
+			67 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			add_resource = {
+				type = oil
+				amount = 10
+				state = 67
 			}
 		}
 		ai_will_do = {
@@ -8589,8 +8649,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 88
-				controls_state = 88
+				controls_province = 9427
 			}
 		}
 		allowed = {
@@ -8600,44 +8659,124 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 40
 		remove_effect = {
 			add_victory_points = {
 				province = 9427
 				value = 30
 			}
 			88 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
-				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 2
+			}
+			add_resource = {
+				type = oil
+				amount = 15
+				state = 88
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_kielce = {
+		icon = GFX_decision_SOV_place_hq
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 90
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			POL = {
+				controls_province = 11430
+			}
+		}
+		allowed = {
+			original_tag = POL
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 11430
+				value = 20
+			}
+			90 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_radom = {
+		icon = GFX_decision_generic_construction
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 90
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			POL = {
+				controls_province = 3458
+			}
+		}
+		allowed = {
+			original_tag = POL
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 3458
+				value = 20
+			}
+			90 = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			add_resource = {
+				type = tungsten
+				amount = 10
+				state = 90
 			}
 		}
 		ai_will_do = {
@@ -8645,7 +8784,7 @@ expand_cities_category = {
 		}
 	}
 	develop_lublin = {
-		icon = GFX_decision_SOV_place_hq
+		icon = GFX_decision_generic_merge_plant_aircraft
 		fire_only_once = yes
 		highlight_states = {
 			highlight_state_targets = {
@@ -8655,8 +8794,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 92
-				controls_state = 92
+				controls_province = 11399
 			}
 		}
 		allowed = {
@@ -8666,42 +8804,27 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 40
 		remove_effect = {
 			add_victory_points = {
 				province = 11399
 				value = 30
 			}
 			92 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 2
 			}
@@ -8721,8 +8844,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 91
-				controls_state = 91
+				controls_province = 11479
 			}
 		}
 		allowed = {
@@ -8732,42 +8854,22 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 40
 		remove_effect = {
 			add_victory_points = {
 				province = 11479
 				value = 25
 			}
 			91 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
-				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 2
 			}
@@ -8776,8 +8878,53 @@ expand_cities_category = {
 			base = 100
 		}
 	}
+	develop_tarnopol = {
+		icon = GFX_decision_generic_construction
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 91
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			POL = {
+				controls_province = 3483
+			}
+		}
+		allowed = {
+			original_tag = POL
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 3483
+				value = 20
+			}
+			91 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			add_resource = {
+				type = steel
+				amount = 20
+				state = 91
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
 	develop_stanislawow = {
-		icon = GFX_decision_SOV_place_hq
+		icon = GFX_decision_generic_train
 		fire_only_once = yes
 		highlight_states = {
 			highlight_state_targets = {
@@ -8787,8 +8934,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 89
-				controls_state = 89
+				controls_province = 11411
 			}
 		}
 		allowed = {
@@ -8798,44 +8944,124 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 50
 		remove_effect = {
 			add_victory_points = {
 				province = 11411
 				value = 20
 			}
 			89 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_luck = {
+		icon = GFX_decision_SOV_place_hq
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 93
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			POL = {
+				controls_province = 572
+			}
+		}
+		allowed = {
+			original_tag = POL
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 572
+				value = 20
+			}
+			93 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_rowne = {
+		icon = GFX_decision_generic_forestry
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 93
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			POL = {
+				controls_province = 6557
+			}
+		}
+		allowed = {
+			original_tag = POL
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 6557
+				value = 20
+			}
+			93 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
 			}
 		}
 		ai_will_do = {
@@ -8853,8 +9079,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 94
-				controls_state = 94
+				controls_province = 3392
 			}
 		}
 		allowed = {
@@ -8864,42 +9089,127 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 40
 		remove_effect = {
 			add_victory_points = {
 				province = 3392
 				value = 20
 			}
 			94 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_bialystok = {
+		icon = GFX_decision_SOV_place_hq
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 97
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			POL = {
+				controls_province = 11301
+			}
+		}
+		allowed = {
+			original_tag = POL
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 11301
+				value = 20
+			}
+			97 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_plock = {
+		icon = GFX_decision_SOV_place_hq
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 98
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			POL = {
+				controls_province = 3230
+			}
+		}
+		allowed = {
+			original_tag = POL
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 3230
+				value = 20
+			}
+			98 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 2
 			}
@@ -8909,7 +9219,7 @@ expand_cities_category = {
 		}
 	}
 	develop_krolewiec = {
-		icon = GFX_decision_SOV_place_hq
+		icon = GFX_decision_generic_merge_plant_ship
 		fire_only_once = yes
 		highlight_states = {
 			highlight_state_targets = {
@@ -8919,8 +9229,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 5
-				controls_state = 5
+				controls_province = 6332
 			}
 		}
 		allowed = {
@@ -8930,42 +9239,32 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 50
 		remove_effect = {
 			add_victory_points = {
 				province = 6332
 				value = 15
 			}
 			5 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -8981,7 +9280,7 @@ expand_cities_category = {
 		}
 	}
 	develop_tri_city = {
-		icon = GFX_decision_SOV_place_hq
+		icon = GFX_decision_generic_merge_plant_ship
 		fire_only_once = yes
 		highlight_states = {
 			highlight_state_targets = {
@@ -8991,8 +9290,8 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 85
-				controls_state = 85
+				controls_province = 362
+				controls_province = 9263
 			}
 		}
 		allowed = {
@@ -9002,7 +9301,7 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 55
 		remove_effect = {
 			add_victory_points = {
 				province = 362
@@ -9013,35 +9312,25 @@ expand_cities_category = {
 				value = 20
 			}
 			85 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 2
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -9073,8 +9362,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 202
-				controls_state = 202
+				controls_province = 525
 			}
 		}
 		allowed = {
@@ -9084,42 +9372,27 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 40
 		remove_effect = {
 			add_victory_points = {
 				province = 525
 				value = 20
 			}
 			202 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 2
 			}
@@ -9139,8 +9412,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 96
-				controls_state = 96
+				controls_province = 3320
 			}
 		}
 		allowed = {
@@ -9150,42 +9422,27 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 40
 		remove_effect = {
 			add_victory_points = {
 				province = 3320
 				value = 30
 			}
 			96 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 2
 			}
@@ -9205,8 +9462,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 11
-				controls_state = 11
+				controls_province = 6296
 			}
 		}
 		allowed = {
@@ -9216,42 +9472,27 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 40
 		remove_effect = {
 			add_victory_points = {
 				province = 6296
 				value = 25
 			}
 			11 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 2
 			}
@@ -9261,7 +9502,7 @@ expand_cities_category = {
 		}
 	}
 	develop_ryga = {
-		icon = GFX_decision_SOV_place_hq
+		icon = GFX_decision_SWE_set_navy_budget
 		fire_only_once = yes
 		highlight_states = {
 			highlight_state_targets = {
@@ -9271,8 +9512,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 808
-				controls_state = 808
+				controls_province = 9340
 			}
 		}
 		allowed = {
@@ -9282,42 +9522,32 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 45
 		remove_effect = {
 			add_victory_points = {
 				province = 9340
 				value = 15
 			}
 			808 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -9343,8 +9573,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 206
-				controls_state = 206
+				controls_province = 11370
 			}
 		}
 		allowed = {
@@ -9354,42 +9583,27 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 40
 		remove_effect = {
 			add_victory_points = {
 				province = 11370
 				value = 25
 			}
 			206 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 2
 			}
@@ -9409,8 +9623,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 192
-				controls_state = 192
+				controls_province = 11670
 			}
 		}
 		allowed = {
@@ -9420,42 +9633,32 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 45
 		remove_effect = {
 			add_victory_points = {
 				province = 11670
 				value = 30
 			}
 			192 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -9481,8 +9684,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 9
-				controls_state = 9
+				controls_province = 11542
 			}
 		}
 		allowed = {
@@ -9492,42 +9694,27 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 40
 		remove_effect = {
 			add_victory_points = {
-				province = 11452
+				province = 11542
 				value = 20
 			}
 			9 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 2
 			}
@@ -9547,8 +9734,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 75
-				controls_state = 75
+				owns_state = 3569
 			}
 		}
 		allowed = {
@@ -9558,42 +9744,27 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 40
 		remove_effect = {
 			add_victory_points = {
 				province = 3569
 				value = 20
 			}
 			75 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 2
 			}
@@ -9603,7 +9774,7 @@ expand_cities_category = {
 		}
 	}
 	develop_szczecin = {
-		icon = GFX_decision_SOV_place_hq
+		icon = GFX_decision_generic_merge_plant_ship
 		fire_only_once = yes
 		highlight_states = {
 			highlight_state_targets = {
@@ -9613,8 +9784,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 62
-				controls_state = 62
+				controls_province = 6282
 			}
 		}
 		allowed = {
@@ -9624,42 +9794,27 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 40
 		remove_effect = {
 			add_victory_points = {
 				province = 6282
 				value = 20
 			}
 			62 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -9674,7 +9829,7 @@ expand_cities_category = {
 			base = 100
 		}
 	}
-	develop_drezno_and_lipsk = {
+	develop_drezno = {
 		icon = GFX_decision_SOV_place_hq
 		fire_only_once = yes
 		highlight_states = {
@@ -9685,8 +9840,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 65
-				controls_state = 65
+				controls_province = 514
 			}
 		}
 		allowed = {
@@ -9696,46 +9850,27 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 40
 		remove_effect = {
 			add_victory_points = {
 				province = 514
 				value = 25
 			}
-			add_victory_points = {
-				province = 3535
-				value = 25
-			}
 			65 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
 				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 2
 			}
@@ -9744,7 +9879,52 @@ expand_cities_category = {
 			base = 100
 		}
 	}
-	develop_branibor_and_dziewin = {
+	develop_lipsk = {
+		icon = GFX_decision_generic_construction
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 65
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			POL = {
+				controls_province = 3535
+			}
+		}
+		allowed = {
+			original_tag = POL
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 3535
+				value = 25
+			}
+			65 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			add_resource = {
+				type = aluminium
+				amount = 20
+				state = 65
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_branibor = {
 		icon = GFX_decision_SOV_place_hq
 		fire_only_once = yes
 		highlight_states = {
@@ -9755,8 +9935,7 @@ expand_cities_category = {
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			POL = {
-				owns_state = 64
-				controls_state = 64
+				controls_province = 6521
 			}
 		}
 		allowed = {
@@ -9766,48 +9945,70 @@ expand_cities_category = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		cost = 30
+		cost = 40
+		remove_effect = {
+			64 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_dziewin = {
+		icon = GFX_decision_generic_construction
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 64
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			POL = {
+				controls_province = 3522
+			}
+		}
+		allowed = {
+			original_tag = POL
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
 		remove_effect = {
 			add_victory_points = {
-				province = 6521
-				value = 10
-			}
-			add_victory_points = {
 				province = 3522
-				value = 25
+				value = 30
 			}
 			64 = {
-				if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-				if = {
-					limit = {
-						anti_air_building < 4
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
-				}
-				if = {
-					limit = {
-						radar_station < 5
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
+			}
+			add_resource = {
+				type = oil
+				amount = 20
+				state = 64
 			}
 		}
 		ai_will_do = {

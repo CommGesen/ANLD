@@ -760,196 +760,6 @@ FRA_league_of_nations = {
 	}
 	
 }
-	
-FRA_economy_decisions = {
-
-	FRA_reorganize_aviation_industry_north = {
-		available = {  }
-
-		visible = { has_completed_focus = FRA_postroitvetvaviabaz }
-
-		remove_effect = { 
-			set_country_flag = FRA_SNCAN_formed
-			random_owned_state = {
-				limit = { 
-					OR = {
-						state = 29 
-						state = 785 
-						state = 15 
-						state = 16
-					}
-					is_fully_controlled_by = ROOT 
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		days_remove = 120
-		cost = 50
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 5
-		}
-		
-	}
-	FRA_reorganize_aviation_industry_west = {
-		available = {  }
-
-		visible = { has_completed_focus = FRA_postroitvetvaviabaz }
-
-		remove_effect = { 
-			set_country_flag = FRA_SNCAO_formed
-			random_owned_state = {
-				limit = { 
-					OR = {
-						state = 30
-						state = 14
-						state = 23
-					}
-					is_fully_controlled_by = ROOT 
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		days_remove = 120
-		cost = 50
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	FRA_reorganize_aviation_industry_center = {
-		available = {  }
-
-		visible = { has_completed_focus = FRA_postroitvetvaviabaz }
-
-		remove_effect = { 
-			set_country_flag = FRA_SNCAC_formed
-			random_owned_state = {
-				limit = { 
-					OR = {
-						state = 24
-						state = 33
-						state = 27
-						state = 26
-						state = 25
-					}
-					is_fully_controlled_by = ROOT 
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		days_remove = 120
-		cost = 50
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	FRA_reorganize_aviation_industry_south_east = {
-		available = {  }
-
-		visible = { has_completed_focus = FRA_postroitvetvaviabaz }
-
-		remove_effect = { 
-			set_country_flag = FRA_SNCASE_formed
-			random_owned_state = {
-				limit = { 
-					OR = {
-						state = 735
-						state = 32
-						state = 20
-						state = 21
-					}
-					is_fully_controlled_by = ROOT 
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		days_remove = 120
-		cost = 50
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	FRA_reorganize_aviation_industry_south_west = {
-		available = {  }
-
-		visible = { has_completed_focus = FRA_postroitvetvaviabaz }
-
-		remove_effect = { 
-			set_country_flag = FRA_SNCASO_formed
-			random_owned_state = {
-				limit = { 
-					OR = {
-						state = 22
-						state = 31
-						state = 19
-						state = 25
-					}
-					is_fully_controlled_by = ROOT 
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		days_remove = 120
-		cost = 50
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 5
-		}
-	}
-}
 FRA_dec_cat_modernize_french_army={
 	FRA_dec_convince_unit_leader1 = {#characters cannot be targets of targeted decisions so I need to make all these decisions manually :(
 		icon = GFX_decision_FIN_stop_motti_tactics
@@ -1639,15 +1449,23 @@ FRA_dec_cat_modernize_french_army={
 			FRA = {
 				has_completed_focus = FRA_build_the_maginot_line
 			}
-			158 = {
-				is_fully_controlled_by = FRA
+			FRA = {
+				controls_province = 6788
+				controls_province = 771
+				controls_province = 11726
+				controls_province = 776
+				controls_province = 6635
 			}
 		}
 		available = {
 			check_variable = { maginot_level_ita < 4 }
 			num_of_available_civilian_factories > 1
-			158 = {
-				is_fully_controlled_by = FRA
+			FRA = {
+				controls_province = 6788
+				controls_province = 771
+				controls_province = 11726
+				controls_province = 776
+				controls_province = 6635
 			}
 		}
 		remove_effect = {
@@ -2926,6 +2744,794 @@ FRA_dec_cat_modernize_french_army={
 				value = 1
 			}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_81
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+}
+FRA_dec_cat_expand_urbanize_the_countryside = {
+	urbanize_state_FRA = {
+		icon = GFX_decision_hol_attract_foreign_investors
+		state_target = yes
+		#on_map_mode = map_only
+		target_array = FRA.owned_states
+		fire_only_once = no
+		days_remove = 125
+		cost = 120
+		days_re_enable = 30
+		modifier = {
+			civilian_factory_use = 8
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				is_core_of = ROOT
+				OR = {
+					has_state_category = rural
+					has_state_category = town
+					has_state_category = large_town
+					has_state_category = city
+					has_state_category = large_city
+					has_state_category = metropolis
+				}
+			}
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_urbanize_countryside
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 8
+			#ROOT = {
+			#	owns_state = FROM
+			#}
+		}
+		remove_effect = {
+			FROM = {
+				if = {
+					limit = {
+						FROM = {
+							has_state_category = wasteland
+						}
+					}
+					set_state_category = pastoral
+				}
+				if = {
+					limit = {
+						FROM = {
+							has_state_category = tiny_island
+						}
+					}
+					set_state_category = pastoral
+				}
+				if = {
+					limit = {
+						FROM = {
+							has_state_category = pastoral
+						}
+					}
+					set_state_category = rural
+				}
+				if = {
+					limit = {
+						FROM = {
+							has_state_category = tiny_island
+						}
+					}
+					set_state_category = small_island
+				}
+				if = {
+					limit = {
+						FROM = {
+							has_state_category = small_island
+						}
+					}
+					set_state_category = rural
+				}
+				if = {
+					limit = {
+						FROM = {
+							has_state_category = rural
+						}
+					}
+					set_state_category = town
+				}
+				if = {
+					limit = {
+						FROM = {
+							has_state_category = town
+						}
+					}
+					set_state_category = large_town
+				}
+				if = {
+					limit = {
+						FROM = {
+							has_state_category = large_town
+						}
+					}
+					set_state_category = city
+				}
+				if = {
+					limit = {
+						FROM = {
+							has_state_category = city
+						}
+					}
+					set_state_category = large_city
+				}
+				if = {
+					limit = {
+						FROM = {
+							has_state_category = large_city
+						}
+					}
+					set_state_category = metropolis
+				}
+				if = {
+					limit = {
+						FROM = {
+							has_state_category = metropolis
+						}
+					}
+					set_state_category = megalopolis
+				}
+			}
+		}	
+		ai_will_do = {
+			base = 100
+		}
+	}
+}
+FRA_dec_cat_subsidize_the_city_development = {
+	develop_brest = {
+		icon = GFX_decision_SOV_place_hq
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 14
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 3552
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 3552
+				value = 20
+			}
+			14 = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_nantes = {
+		icon = GFX_decision_SWE_set_navy_budget
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 30
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 11465
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 11465
+				value = 20
+			}
+			30 = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 11465
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_angers = {
+		icon = GFX_decision_SOV_place_hq
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 30
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 503
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 503
+				value = 20
+			}
+			30 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_la_rochelle = {
+		icon = GFX_decision_SWE_set_navy_budget
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 23
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 6657
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 6657
+				value = 17
+			}
+			23 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 6657
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_limoges = {
+		icon = GFX_decision_generic_construction
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 25
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 620
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 620
+				value = 25
+			}
+			25 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 30
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_bordeaux = {
+		icon = GFX_decision_generic_merge_plant_ship
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 19
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 9737
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 9737
+				value = 20
+			}
+			19 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 9737
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_toulouse = {
+		icon = GFX_decision_generic_factory
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 31
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 6766
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 6766
+				value = 20
+			}
+			31 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_barcelone = {
+		icon = GFX_decision_generic_merge_plant_ship
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 165
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 9764
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 9764
+				value = 20
+			}
+			165 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 9764
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_montpellier = {
+		icon = GFX_decision_SWE_set_navy_budget
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 22
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 9898
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 9898
+				value = 20
+			}
+			22 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 9764
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_marseille = {
+		icon = GFX_decision_generic_merge_plant_ship
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 21
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 11834
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 11834
+				value = 20
+			}
+			21 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 9764
+					level = 4
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_aix_en_provence = {
+		icon = GFX_decision_generic_factory
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 21
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 11875
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 11875
+				value = 5
+			}
+			21 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_avignon = {
+		icon = GFX_decision_generic_construction
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 21
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 958
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 958
+				value = 5
+			}
+			21 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			add_resource = {
+				type = tungesten
+				amount = 25
+				state = 21
+			}
 		}
 		ai_will_do = {
 			base = 100

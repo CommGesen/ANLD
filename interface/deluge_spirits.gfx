@@ -520,11 +520,31 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/spirits/spirit_workers_support.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_spirit_FRA_napoleonic_army"
-		texturefile = "gfx/interface/ideas/spirits/spirit_FRA_napoleonic_army.dds"
+		name = "GFX_idea_spirit_napoleonic_hat"
+		texturefile = "gfx/interface/ideas/spirits/spirit_napoleonic_hat.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_spirit_FRA_obsolete_army"
-		texturefile = "gfx/interface/ideas/spirits/spirit_FRA_obsolete_army.dds"
+		name = "GFX_idea_spirit_stratocratic_government"
+		texturefile = "gfx/interface/ideas/spirits/spirit_stratocratic_government.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_generic_MB_220"
+		texturefile = "gfx/interface/ideas/spirits/spirit_generic_MB_220.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_french_foreign_legion"
+		texturefile = "gfx/interface/ideas/spirits/spirit_french_foreign_legion.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_eiffel_tower_burning"
+		texturefile = "gfx/interface/ideas/spirits/spirit_eiffel_tower_burning.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_bank_vault"
+		texturefile = "gfx/interface/ideas/spirits/spirit_bank_vault.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_broken_napoleonic_hat"
+		texturefile = "gfx/interface/ideas/spirits/spirit_broken_napoleonic_hat.dds"
 	}
 }

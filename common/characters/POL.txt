@@ -4,11 +4,11 @@ characters={
 		name = POL_deluge_jozef_pilsudski_name
 		portraits={
 			civilian= {
-				large="gfx/leaders/POL/portrait_POL_jozef_pilsudski.dds"
+				large="GFX_portrait_POL_jozef_pilsudski"
 				small = "GFX_jozef_pilsudski_picture_small"
 			}
 			army = {
-				large="gfx/leaders/POL/portrait_POL_jozef_pilsudski.dds"
+				large="GFX_portrait_POL_jozef_pilsudski"
 				small = "GFX_jozef_pilsudski_picture_small"
 			}
 		}
@@ -35,13 +35,11 @@ characters={
 		name = POL_deluge_edward_rydz_smigly_name 
 		portraits = {
 			civilian = {
-				large="gfx/leaders/POL/portrait_POL_edward_rydz_smigly.dds"
-				#large = "GFX_portrait_POL_edward_rydz_smigly"
+				large="GFX_portrait_POL_edward_rydz_smigly_ANLD"
 				small = "GFX_edward_rydz_smigly_picture_small"
 			}
 			army = {
-				large="gfx/leaders/POL/portrait_POL_edward_rydz_smigly.dds"
-				#large = "GFX_portrait_POL_edward_rydz_smigly"
+				large="GFX_portrait_POL_edward_rydz_smigly_ANLD"
 				small = "GFX_edward_rydz_smigly_picture_small"
 			}
 		}
@@ -86,7 +84,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = social_darwinist_ideology
+			ideology = nationalist_stratoracy_ideology
 			traits = { quarreling_politicians_and_generals }
 			expire = "1969.1.1.1"
 			desc = "POL_deluge_sanation_emergency_council_desc"
@@ -110,13 +108,11 @@ characters={
 		name = POL_deluge_wladyslaw_sikorski_name
 		portraits = {
 			civilian = {
-				large="gfx/leaders/POL/portrait_POL_wladyslaw_sikorski.dds"
-				#large = "GFX_portrait_POL_wladyslaw_sikorski"
+				large="GFX_portrait_POL_wladyslaw_sikorski_ANLD"
 				small = GFX_wladyslaw_sikorski_picture_small
 			}
 			army = {
-				large="gfx/leaders/POL/portrait_POL_wladyslaw_sikorski.dds"
-				#large = "GFX_portrait_POL_wladyslaw_sikorski"
+				large="GFX_portrait_POL_wladyslaw_sikorski_ANLD"
 				small = GFX_wladyslaw_sikorski_picture_small
 			}
 		}
@@ -1714,7 +1710,7 @@ characters={
 			}
 		}
 		field_marshal = {
-			traits = { old_guard war_hero infantry_officer infantry_leader offensive_doctrine}
+			traits = { war_hero infantry_officer infantry_leader offensive_doctrine}
 			skill=2
 			attack_skill=1
 			defense_skill=3

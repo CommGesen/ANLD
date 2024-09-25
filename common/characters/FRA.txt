@@ -4,7 +4,7 @@ characters={
 		name=FRA_deluge_napoleon_vi_name
 		portraits={
 			civilian={
-				large="gfx/leaders/FRA/portraits_FRA_napoleon_vi.dds"
+				large="GFX_portrait_FRA_napoleon_vi_ANLD"
 			}
 		}
 		country_leader={
@@ -2433,16 +2433,16 @@ characters={
 			desc = "FRA_deluge_andre_lemonnier_desc"
 		}
 	}
-	FRA_deluge_georges_thierry_d_drgenlieu={
-		name=FRA_deluge_georges_thierry_d_drgenlieu_name
+	FRA_deluge_georges_thierry_d_argenlieu={
+		name=FRA_deluge_georges_thierry_d_argenlieu_name
 		portraits={
 			navy={
-				large="gfx/leaders/FRA/portrait_FRA_georges_thierry_d_drgenlieu.dds"
-				small="GFX_georges_thierry_d_drgenlieu_picture_small"
+				large="gfx/leaders/FRA/portrait_FRA_georges_thierry_d_argenlieu.dds"
+				small="GFX_georges_thierry_d_argenlieu_picture_small"
 			}
 			army={
-				large="gfx/leaders/FRA/portrait_FRA_georges_thierry_d_drgenlieu.dds"
-				small="GFX_georges_thierry_d_drgenlieu_picture_small"
+				large="gfx/leaders/FRA/portrait_FRA_georges_thierry_d_argenlieu.dds"
+				small="GFX_georges_thierry_d_argenlieu_picture_small"
 			}
 		}
 		navy_leader={
@@ -2452,7 +2452,7 @@ characters={
 			defense_skill=3
 			maneuvering_skill=2
 			coordination_skill=2
-			desc = "FRA_deluge_georges_thierry_d_drgenlieu_desc"
+			desc = "FRA_deluge_georges_thierry_d_argenlieu_desc"
 		}
 	}
 	FRA_deluge_emmanuel_ollive={

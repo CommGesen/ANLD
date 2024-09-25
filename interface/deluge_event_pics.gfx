@@ -831,8 +831,8 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_french_left_wing_politicians.dds"
 	}
 	spriteType = {
-		name = "GFX_report_event_elizabeth_de_bourbon_bhopal_may_1867"
-		texturefile = "gfx/event_pictures/report_event_elizabeth_de_bourbon_bhopal_may_1867.dds"
+		name = "GFX_report_event_salvador_iii_de_bourbon_bhopal"
+		texturefile = "gfx/event_pictures/report_event_salvador_iii_de_bourbon_bhopal.dds"
 	}
 	spriteType = {
 		name = "GFX_news_event_indian_soldiers"
@@ -845,5 +845,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_news_event_indian_soldiers_smoking"
 		texturefile = "gfx/event_pictures/news_event_indian_soldiers_smoking.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ostrowiec_swietokrzyski"
+		texturefile = "gfx/event_pictures/report_event_ostrowiec_swietokrzyski.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_healthy_jozef_pilsudski"
+		texturefile = "gfx/event_pictures/report_event_healthy_jozef_pilsudski.dds"
 	}
 }

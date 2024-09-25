@@ -2010,7 +2010,6 @@ country_event = {##New generals come and some retire
 			retire_character = POL_deluge_wieniawa_dlugoszewski
 			
 			recruit_character = POL_deluge_jung
-			recruit_character = POL_deluge_roja
 			recruit_character = POL_deluge_latinik
 			recruit_character = POL_deluge_stanislaw_haller
 			recruit_character = POL_deluge_dzierzykraj_stokalski
@@ -2046,6 +2045,7 @@ country_event = {##New generals come and some retire
 			retire_character = POL_deluge_juliusz_rummel
 			retire_character = POL_deluge_wladyslaw_sikorski
 			
+			recruit_character = POL_deluge_roja
 			recruit_character = POL_deluge_rola_zymierski
 			recruit_character = POL_deluge_zygumnt_berling
 			recruit_character = POL_deluge_poplawski
@@ -4932,6 +4932,41 @@ country_event = {##PSL-SCh coaltion is created, player can choose new leader
 			base = 1
 		}
 		promote_character = POL_deluge_jan_dabski
+	}
+}
+country_event = {##Ostrowiec Kielecki is renamed to Ostrowiec Świętokrzyski
+	id = deluge_poland.115
+	title = deluge_poland.115.t
+	desc = deluge_poland.115.d
+	picture = GFX_report_event_ostrowiec_swietokrzyski
+	trigger = {
+		tag = POL
+		date > 1937.1.1
+		POL = {
+			controls_province = 562
+		}
+	}
+	mean_time_to_happen = {
+		days = 250
+	}
+	option = {##we allow it
+		name = deluge_poland.115.a
+		ai_chance = {
+			base = 1000
+		}
+		set_country_flag = POL_ostrowiec_renamed
+		set_province_name = {
+			id = 562
+			name = VICTORY_POINTS_562_2
+		}
+	}
+	option = {##we don't allow it
+		name = deluge_poland.115.b
+		ai_chance = {
+			base = 0
+		}
+		add_stability = -0.01
+		add_political_power = -5
 	}
 }
 country_event = {##POL proposes defense pact to UK

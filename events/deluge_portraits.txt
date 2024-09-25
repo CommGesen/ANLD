@@ -1,0 +1,165 @@
+﻿add_namespace = deluge_portraits
+country_event = {##Edward Rydz-Śmigły
+	id = deluge_portraits.1
+	title = deluge_portraits.1.t
+	desc = deluge_portraits.1.d
+	picture = GFX_report_event_sanation_right_victory
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##standard
+		name = deluge_portraits.1.a
+		set_portraits = {
+			character = POL_deluge_edward_rydz_smigly
+			army = { large ="GFX_portrait_POL_edward_rydz_smigly_ANLD" }
+			civilian = { large ="GFX_portrait_POL_edward_rydz_smigly_ANLD" }
+			navy = { large ="GFX_portrait_POL_edward_rydz_smigly_ANLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##vanilla portrait
+		name = deluge_portraits.1.b
+		set_portraits = {
+			character = POL_deluge_edward_rydz_smigly
+			army = { large ="GFX_portrait_POL_edward_rydz_smigly" }
+			civilian = { large ="GFX_portrait_POL_edward_rydz_smigly" }
+			navy = { large ="GFX_portrait_POL_edward_rydz_smigly" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##Historical Poland
+		name = deluge_portraits.1.c
+		set_portraits = {
+			character = POL_deluge_edward_rydz_smigly
+			army = { large ="GFX_portrait_POL_edward_rydz_smigly_OLD" }
+			civilian = { large ="GFX_portrait_POL_edward_rydz_smigly_OLD" }
+			navy = { large ="GFX_portrait_POL_edward_rydz_smigly_OLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {##Władysław Sikorski
+	id = deluge_portraits.2
+	title = deluge_portraits.2.t
+	desc = deluge_portraits.2.d
+	picture = GFX_report_event_sikorski_with_soldiers
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##standard
+		name = deluge_portraits.2.a
+		set_portraits = {
+			character = POL_deluge_wladyslaw_sikorski
+			army = { large ="GFX_portrait_POL_wladyslaw_sikorski_ANLD" }
+			civilian = { large ="GFX_portrait_POL_wladyslaw_sikorski_ANLD" }
+			navy = { large ="GFX_portrait_POL_wladyslaw_sikorski_ANLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##vanilla portrait
+		name = deluge_portraits.2.b
+		set_portraits = {
+			character = POL_deluge_wladyslaw_sikorski
+			army = { large ="GFX_portrait_POL_wladyslaw_sikorski" }
+			civilian = { large ="GFX_portrait_POL_wladyslaw_sikorski" }
+			navy = { large ="GFX_portrait_POL_wladyslaw_sikorski" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {##Józef Piłsudski
+	id = deluge_portraits.3
+	title = deluge_portraits.3.t
+	desc = deluge_portraits.3.d
+	picture = GFX_report_event_healthy_jozef_pilsudski
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##standard
+		name = deluge_portraits.3.a
+		set_portraits = {
+			character = POL_deluge_jozef_pilsudski
+			army = { large ="GFX_portrait_POL_jozef_pilsudski" }
+			civilian = { large ="GFX_portrait_POL_jozef_pilsudski" }
+			navy = { large ="GFX_portrait_POL_jozef_pilsudski" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##alternative
+		name = deluge_portraits.3.b
+		set_portraits = {
+			character = POL_deluge_jozef_pilsudski
+			army = { large ="GFX_portrait_POL_jozef_pilsudski_ALT" }
+			civilian = { large ="GFX_portrait_POL_jozef_pilsudski_ALT" }
+			navy = { large ="GFX_portrait_POL_jozef_pilsudski_ALT" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##old
+		name = deluge_portraits.3.c
+		set_portraits = {
+			character = POL_deluge_jozef_pilsudski
+			army = { large ="GFX_portrait_POL_jozef_pilsudski_OLD" }
+			civilian = { large ="GFX_portrait_POL_jozef_pilsudski_OLD" }
+			navy = { large ="GFX_portrait_POL_jozef_pilsudski_OLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {##Napoleon VI
+	id = deluge_portraits.4
+	title = deluge_portraits.4.t
+	desc = deluge_portraits.4.d
+	picture = GFX_report_event_louis_bonaparte
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##standard
+		name = deluge_portraits.4.a
+		set_portraits = {
+			character = FRA_deluge_napoleon_vi
+			army = { large ="GFX_portrait_FRA_napoleon_vi_ANLD" }
+			civilian = { large ="GFX_portrait_FRA_napoleon_vi_ANLD" }
+			navy = { large ="GFX_portrait_FRA_napoleon_vi_ANLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##upgraded vanilla
+		name = deluge_portraits.4.b
+		set_portraits = {
+			character = FRA_deluge_napoleon_vi
+			army = { large ="GFX_portrait_FRA_napoleon_vi_OLD" }
+			civilian = { large ="GFX_portrait_FRA_napoleon_vi_OLD" }
+			navy = { large ="GFX_portrait_FRA_napoleon_vi_OLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##old vanilla
+		name = deluge_portraits.4.c
+		set_portraits = {
+			character = FRA_deluge_napoleon_vi
+			army = { large ="GFX_portraits_fra_napoleon_vi" }
+			civilian = { large ="GFX_portraits_fra_napoleon_vi" }
+			navy = { large ="GFX_portraits_fra_napoleon_vi" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

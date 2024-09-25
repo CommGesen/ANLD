@@ -557,4 +557,12 @@ spriteTypes = {
 		name = "GFX_decision_generic_windsors_emblem"
 		texturefile = "gfx/interface/decisions/decision_generic_windsors_emblem.dds"
 	}
+	spriteType = {
+		name = "GFX_decision_cat_french_countryside"
+		texturefile = "gfx/interface/decisions/decision_cat_french_countryside.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_french_city"
+		texturefile = "gfx/interface/decisions/decision_cat_french_city.dds"
+	}
 }

@@ -21,14 +21,31 @@ FRA_dec_cat_modernize_french_army = {
 	}
 	visible_when_empty = yes
 }
-FRA_economy_decisions = {
-	icon = generic_economy
+FRA_dec_cat_expand_urbanize_the_countryside = {
+	icon = GFX_decision_category_generic_economy
+	picture = GFX_decision_cat_french_countryside
+	priority = 2
 	allowed = {
 		original_tag = FRA
 	}
 	visible = {
-		OR = {
-			#has_completed_focus = FRA_postroitvetvaviabaz
+		FRA = { 
+			has_completed_focus = FRA_urbanize_countryside
 		}
 	}
+	visible_when_empty = no
+}
+FRA_dec_cat_subsidize_the_city_development = {
+	icon = GFX_decision_category_generic_industry
+	picture = GFX_decision_cat_french_city
+	priority = 2
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		FRA = { 
+			has_completed_focus = FRA_subsidize_city_devolopment
+		}
+	}
+	visible_when_empty = no
 }

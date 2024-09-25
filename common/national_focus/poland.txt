@@ -29094,22 +29094,22 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			build_railway = {
-				level = 3
-				path = { 3544 6259 9290 6375}
-			}
-			build_railway = {
-				level = 1
-				path = { 3351 6402 }
-			}
-			build_railway = {
-				level = 1
-				path = { 6558 3532 11478 444 3438 6595 }
-			}
-			build_railway = {
-				level = 1
-				path = { 3309 6280 560 }
-			}
+			#build_railway = {
+			#	level = 3
+			#	path = { 3544 6259 9290 6375}
+			#}
+			#build_railway = {
+			#	level = 1
+			#	path = { 3351 6402 }
+			#}
+			#build_railway = {
+			#	level = 1
+			#	path = { 6558 3532 11478 444 3438 6595 }
+			#}
+			#build_railway = {
+			#	level = 1
+			#	path = { 3309 6280 560 }
+			#}
 			add_to_variable = {POL_development_production_speed_infrastructure_factor = 0.1}
 			custom_effect_tooltip = POL_custom_effect_tooltip_44
 		}

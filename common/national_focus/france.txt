@@ -1908,7 +1908,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_social_chrisitan_corporatism
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_christian_corporatism
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_partial_women_emancipation }
@@ -4696,6 +4696,12 @@ focus_tree = {
 				add_to_variable = {new_napoleonic_code_conscription_factor = 0.07 }
 			}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_28
+			if = {
+				limit = {
+					has_completed_focus = FRA_absolutist_grip
+				}
+				remove_ideas = FRA_spirit_decadent_society_2
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -5305,6 +5311,7 @@ focus_tree = {
 					add_to_variable = {new_napoleonic_code_resistance_damage_to_garrison = 0.05 }
 				}
 				custom_effect_tooltip = FRA_custom_effect_tooltip_32
+				remove_ideas = FRA_spirit_horrors_of_the_great_war
 			}
 			if = {
 				limit = {
@@ -6564,7 +6571,7 @@ focus_tree = {
 		}
 	focus = {		
 		id = FRA_laiszes_faire
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_bank_vault
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_budget_deficit_law  }
@@ -6780,7 +6787,7 @@ focus = {
 		}
 	focus = {		
 		id = FRA_centralize_economy
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_DEN_heavy_regulations
 		x = 3
 		y = 1
 		prerequisite = { focus = FRA_introduce_corporatism focus = FRA_communal_property }
@@ -7592,16 +7599,16 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		}
-	focus = {		
+	focus = {
 		id = FRA_urbanize_countryside
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_improve_living_standards_in_countryside
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_all_roads_lead_to_paris }
 		relative_position_id = FRA_all_roads_lead_to_paris
 		search_filters = { }
-		cost = 1
-		#mutually_exclusive = { FRA_limit_urbanization }
+		cost = 8
+		mutually_exclusive = { focus = FRA_limit_urbanization }
 		allow_branch = {
 			
 		}
@@ -7616,7 +7623,7 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_92
 		}
 		ai_will_do = {
 			factor = 25
@@ -7627,17 +7634,17 @@ focus = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = yes
-		}
+	}
 	focus = {		
 		id = FRA_limit_urbanization
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_protect_forests
 		x = 2
 		y = 1
 		prerequisite = { focus = FRA_all_roads_lead_to_paris }
 		relative_position_id = FRA_all_roads_lead_to_paris
 		search_filters = { }
-		cost = 1
-		#mutually_exclusive = { FRA_urbanize_countryside }
+		cost = 8
+		mutually_exclusive = { focus = FRA_urbanize_countryside }
 		allow_branch = {
 			
 		}
@@ -7652,7 +7659,10 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_94
+			add_to_variable = {new_french_economy_army_core_defence_factor = 0.05 }
+			add_to_variable = {new_french_economy_supply_combat_penalties_on_core_factor = -0.1 }
+			add_to_variable = {new_french_economy_cas_damage_reduction = 0.07 }
 		}
 		ai_will_do = {
 			factor = 25
@@ -7666,13 +7676,13 @@ focus = {
 		}
 	focus = {		
 		id = FRA_subsidize_city_devolopment
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_urbanization
 		x = -2
 		y = 1
 		prerequisite = { focus = FRA_all_roads_lead_to_paris }
 		relative_position_id = FRA_all_roads_lead_to_paris
 		search_filters = { }
-		cost = 1
+		cost = 8
 		#mutually_exclusive = { }
 		allow_branch = {
 			
@@ -7688,7 +7698,7 @@ focus = {
 			
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_93
 		}
 		ai_will_do = {
 			factor = 25
@@ -8622,7 +8632,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_build_the_maginot_line
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_fortifications
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_fortifications_programs }
@@ -9697,7 +9707,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_a_modern_army
-		icon = GFX_focus_generic_additional_reservists
+		icon = GFX_focus_generic_napoleonic_hat
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_engin_blinde_de_reconnaissance }

@@ -1,0 +1,138 @@
+changing_portraits_category = {
+	portraits_edward_rydz_smigly = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+			
+		}
+		visible = {
+			has_character = POL_deluge_edward_rydz_smigly
+			OR = {
+				POL_deluge_edward_rydz_smigly = {
+					is_army_leader = yes
+				}
+				POL_deluge_edward_rydz_smigly = {
+					is_navy_leader = yes
+				}
+				POL_deluge_edward_rydz_smigly = {
+					is_country_leader = yes
+				}
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			country_event = {
+				id = deluge_portraits.1
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	portraits_wladyslaw_sikorski = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+			
+		}
+		visible = {
+			has_character = POL_deluge_wladyslaw_sikorski
+			OR = {
+				POL_deluge_wladyslaw_sikorski = {
+					is_army_leader = yes
+				}
+				POL_deluge_wladyslaw_sikorski = {
+					is_navy_leader = yes
+				}
+				POL_deluge_wladyslaw_sikorski = {
+					is_country_leader = yes
+				}
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			country_event = {
+				id = deluge_portraits.2
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	portraits_jozef_pilsudski = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+			
+		}
+		visible = {
+			has_character = POL_deluge_jozef_pilsudski
+			OR = {
+				POL_deluge_jozef_pilsudski = {
+					is_army_leader = yes
+				}
+				POL_deluge_jozef_pilsudski = {
+					is_navy_leader = yes
+				}
+				POL_deluge_jozef_pilsudski = {
+					is_country_leader = yes
+				}
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			country_event = {
+				id = deluge_portraits.3
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	portraits_napoleon_vi = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+			
+		}
+		visible = {
+			has_character = FRA_deluge_napoleon_vi
+			OR = {
+				FRA_deluge_napoleon_vi = {
+					is_army_leader = yes
+				}
+				FRA_deluge_napoleon_vi = {
+					is_navy_leader = yes
+				}
+				FRA_deluge_napoleon_vi = {
+					is_country_leader = yes
+				}
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			country_event = {
+				id = deluge_portraits.4
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+}
