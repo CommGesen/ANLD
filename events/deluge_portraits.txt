@@ -163,3 +163,79 @@ country_event = {##Napoleon VI
 		}
 	}
 }
+country_event = {##Bolesław Roja
+	id = deluge_portraits.5
+	title = deluge_portraits.5.t
+	desc = deluge_portraits.5.d
+	picture = GFX_report_event_boleslaw_roja
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##standard
+		name = deluge_portraits.5.a
+		set_portraits = {
+			character = POL_deluge_boleslaw_roja
+			army = { large ="GFX_portrait_POL_boleslaw_roja" }
+			civilian = { large ="GFX_portrait_POL_boleslaw_roja" }
+			navy = { large ="GFX_portrait_POL_boleslaw_roja" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##alternative
+		name = deluge_portraits.5.b
+		set_portraits = {
+			character = POL_deluge_boleslaw_roja
+			army = { large ="GFX_portrait_POL_boleslaw_roja_ALT" }
+			civilian = { large ="GFX_portrait_POL_boleslaw_roja_ALT" }
+			navy = { large ="GFX_portrait_POL_boleslaw_roja_ALT" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {##Otto von Habsburg
+	id = deluge_portraits.6
+	title = deluge_portraits.6.t
+	desc = deluge_portraits.6.d
+	picture = GFX_report_event_otto_von_habsburg_and_louis_franchet_d_esperey
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##upgraded vanilla
+		name = deluge_portraits.6.a
+		set_portraits = {
+			character = AUS_otto_i
+			army = { large ="GFX_portrait_AUS_otto_von_habsburg" }
+			civilian = { large ="GFX_portrait_AUS_otto_von_habsburg" }
+			navy = { large ="GFX_portrait_AUS_otto_von_habsburg" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##vanilla
+		name = deluge_portraits.6.b
+		set_portraits = {
+			character = AUS_otto_i
+			army = { large ="GFX_Portrait_hungary_otto_von_hapsburg" }
+			civilian = { large ="GFX_Portrait_hungary_otto_von_hapsburg" }
+			navy = { large ="GFX_Portrait_hungary_otto_von_hapsburg" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##alternative
+		name = deluge_portraits.6.c
+		set_portraits = {
+			character = AUS_otto_i
+			army = { large ="GFX_portrait_AUS_otto_von_habsburg_ALT" }
+			civilian = { large ="GFX_portrait_AUS_otto_von_habsburg_ALT" }
+			navy = { large ="GFX_portrait_AUS_otto_von_habsburg_ALT" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

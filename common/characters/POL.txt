@@ -668,7 +668,7 @@ characters={
 			desc = "POL_deluge_franciszek_kleeberg_desc"
 		}
 	}
-	POL_deluge_juliusz_rummel = {##Juliusz Rómmel/Rummel
+	POL_deluge_juliusz_rummel = {##Juliusz Rómmel
 		name = POL_deluge_juliusz_rummel_name
 		portraits={
 			army = {
@@ -677,12 +677,12 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { cavalry_leader cavalry_expert cavalry_officer trait_cautious }
-			skill=4
-			attack_skill=4
+			traits = { artillery_leader cavalry_expert cavalry_officer trait_cautious }
+			skill=3
+			attack_skill=3
 			defense_skill=2
 			planning_skill=2
-			logistics_skill=3
+			logistics_skill=2
 			desc = "POL_deluge_juliusz_rummel_desc"
 		}
 		advisor={
@@ -942,9 +942,8 @@ characters={
 			ledger = army
 		}
 	}
-	##here i finished starndardization
-	POL_deluge_kowalski = {##Wincenty Kowalski
-		name = POL_Character_deluge_kowalski
+	POL_deluge_wincenty_kowalski = {##Wincenty Kowalski
+		name = POL_deluge_wincenty_kowalski_name
 		portraits={
 			army = {
 				large="gfx/leaders/POL/portrait_POL_wincenty_kowalski.dds"
@@ -958,11 +957,11 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=3
-			desc = "POL_deluge_kowalski_desc"
+			desc = "POL_deluge_wincenty_kowalski_desc"
 		}
 		advisor={
 			slot = high_command
-			idea_token = POL_deluge_kowalski
+			idea_token = POL_deluge_wincenty_kowalski
 			allowed = { tag = POL }
 			visible = {
 				tag = POL
@@ -978,8 +977,8 @@ characters={
 			ledger = army
 		}
 	}
-	POL_deluge_thommee = {##Wiktor Thommee
-		name = POL_Character_deluge_thommee
+	POL_deluge_wiktor_thommee = {##Wiktor Thommee
+		name = POL_deluge_wiktor_thommee_name
 		portraits={
 			army = {
 				large="gfx/leaders/POL/portrait_POL_wiktor_thommee.dds"
@@ -993,11 +992,11 @@ characters={
 			defense_skill=4
 			planning_skill=2
 			logistics_skill=4
-			desc = "POL_deluge_thommee_desc"
+			desc = "POL_deluge_wiktor_thommee_desc"
 		}
 		advisor={
 			slot = chief_of_staff_slot
-			idea_token = POL_deluge_thommee
+			idea_token = POL_deluge_wiktor_thommee
 			allowed = { tag = POL }
 			visible = {
 				tag = POL
@@ -1013,8 +1012,8 @@ characters={
 			ledger = army
 		}
 	}
-	POL_deluge_Kapciuk = {##Józef Kapciuk
-		name = POL_Character_deluge_Kapciuk
+	POL_deluge_jozef_kapciuk = {##Józef Kapciuk
+		name = POL_deluge_jozef_kapciuk_name
 		portraits={
 			army = {
 				large="gfx/leaders/POL/portrait_POL_jozef_kapciuk.dds"
@@ -1028,11 +1027,11 @@ characters={
 			defense_skill=4
 			planning_skill=2
 			logistics_skill=4
-			desc = "POL_deluge_Kapciuk_desc"
+			desc = "POL_deluge_jozef_kapciuk_desc"
 		}
 		advisor={
 			slot = high_command
-			idea_token = POL_deluge_Kapciuk
+			idea_token = POL_deluge_jozef_kapciuk
 			allowed = { tag = POL }
 			visible = {
 				tag = POL
@@ -1068,6 +1067,7 @@ characters={
 			desc = "POL_deluge_konstanty_rokossowski_desc"
 		}
 	}
+	##here i finished standarization
 	POL_deluge_Grzmot_Skotnicki = {##Stanisław Grzmot-Skotnicki
 		name = POL_Character_deluge_Grzmot_Skotnicki
 		portraits={
@@ -1701,22 +1701,22 @@ characters={
 			desc = "POL_deluge_zygumnt_berling_desc"
 		}
 	}
-	POL_deluge_roja = {##Bolesław Roja
-		name = POL_Character_deluge_roja
+	POL_deluge_boleslaw_roja = {##Bolesław Roja
+		name = POL_deluge_boleslaw_roja_name
 		portraits = {
 			army = {
-				large="gfx/leaders/POL/portrait_POL_boleslaw_roja.dds"
+				large="GFX_portrait_POL_boleslaw_roja"
 				small = GFX_boleslaw_roja_picture_small
 			}
 		}
-		field_marshal = {
-			traits = { war_hero infantry_officer infantry_leader offensive_doctrine}
+		corps_commander = {
+			traits = { war_hero infantry_officer infantry_leader }
 			skill=2
-			attack_skill=1
-			defense_skill=3
+			attack_skill=3
+			defense_skill=1
 			planning_skill=2
-			logistics_skill=1
-			desc = "POL_deluge_roja_desc"
+			logistics_skill=2
+			desc = "POL_deluge_boleslaw_roja_desc"
 		}
 	}
 	POL_deluge_latinik = {##Franciszek Latinik
@@ -5892,6 +5892,25 @@ characters={
 			}
 			ai_will_do = { factor = 1.0 }
 			ledger = civilian
+		}
+	}
+	#retired general possible to recruit during war
+	POL_deluge_aleksander_osinski = {##Aleksander Osiński
+		name = POL_deluge_aleksander_osinski_name
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_aleksander_osinski"
+				small = GFX_aleksander_osinski_picture_small
+			}
+		}
+		corps_commander = {
+			traits = { war_hero infantry_leader infantry_expert organizer }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			desc = "POL_deluge_aleksander_osinski_desc"
 		}
 	}
 }

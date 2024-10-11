@@ -74,14 +74,13 @@ characters={
 		name="Otto I"
 		portraits={
 			civilian={
-				large="gfx/leaders/AUS/habsburg.dds"
+				large="GFX_portrait_AUS_otto_von_habsburg"
 			}
 		}
 		country_leader={
 			desc="habsburg_emperor_desc"
 			ideology=reactionary_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	AUS_rudolf_von_steinstätten={
@@ -100,7 +99,6 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=2
-			legacy_id=-1
 		}
 	}
 	AUS_viktor_von_krasnik={

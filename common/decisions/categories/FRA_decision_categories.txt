@@ -47,5 +47,40 @@ FRA_dec_cat_subsidize_the_city_development = {
 			has_completed_focus = FRA_subsidize_city_devolopment
 		}
 	}
+	on_map_area = {
+		state = 16
+		state = 1
+		state = 29
+		state = 15
+		state = 30
+		state = 14
+		state = 23
+		state = 25
+		state = 19
+		state = 31
+		state = 165
+		state = 177
+		state = 114
+		state = 22
+		state = 21
+		state = 851
+		state = 735
+		state = 158
+		state = 20
+		state = 27
+		state = 18
+		state = 17
+		state = 28
+		state = 42
+		state = 8
+		state = 34
+		state = 6
+		state = 35
+		state = 784
+		state = 51
+		state = 7
+		name = FRA_map_icon_expand_cities		
+		zoom = 75	
+	}
 	visible_when_empty = no
 }

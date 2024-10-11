@@ -2027,7 +2027,7 @@ country_event = {##New generals come and some retire
 			
 			recruit_character = POL_deluge_rola_zymierski
 			recruit_character = POL_deluge_zygumnt_berling
-			recruit_character = POL_deluge_roja
+			recruit_character = POL_deluge_boleslaw_roja
 			recruit_character = POL_deluge_stanislaw_haller
 			recruit_character = POL_deluge_skierski
 		}
@@ -2045,7 +2045,7 @@ country_event = {##New generals come and some retire
 			retire_character = POL_deluge_juliusz_rummel
 			retire_character = POL_deluge_wladyslaw_sikorski
 			
-			recruit_character = POL_deluge_roja
+			recruit_character = POL_deluge_boleslaw_roja
 			recruit_character = POL_deluge_rola_zymierski
 			recruit_character = POL_deluge_zygumnt_berling
 			recruit_character = POL_deluge_poplawski
@@ -3633,7 +3633,6 @@ country_event = {##new communist party chooses it's leader
 		name = deluge_poland.84.chmielewski
 		trigger = {
 			has_country_flag = POL_NSP_won_in_event
-			always = no
 		}
 		promote_character = POL_deluge_czeslaw_chmielewski
 		hidden_effect = {

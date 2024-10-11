@@ -135,4 +135,72 @@ changing_portraits_category = {
 			base = 0
 		}
 	}
+	portraits_boleslaw_roja = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+			
+		}
+		visible = {
+			has_character = POL_deluge_boleslaw_roja
+			OR = {
+				POL_deluge_boleslaw_roja = {
+					is_army_leader = yes
+				}
+				POL_deluge_boleslaw_roja = {
+					is_navy_leader = yes
+				}
+				POL_deluge_boleslaw_roja = {
+					is_country_leader = yes
+				}
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			country_event = {
+				id = deluge_portraits.5
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	portraits_otto_von_habsburg = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+			
+		}
+		visible = {
+			has_character = AUS_otto_i
+			OR = {
+				AUS_otto_i = {
+					is_army_leader = yes
+				}
+				AUS_otto_i = {
+					is_navy_leader = yes
+				}
+				AUS_otto_i = {
+					is_country_leader = yes
+				}
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			country_event = {
+				id = deluge_portraits.6
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
 }

@@ -394,6 +394,11 @@ FRA_modifier_new_french_economy = {##new_french_economy_
 	supply_combat_penalties_on_core_factor = new_french_economy_supply_combat_penalties_on_core_factor
 	cas_damage_reduction = new_french_economy_cas_damage_reduction
 }
+FRA_modifier_francism = {##francism_
+	enable = { always = yes }
+	icon = GFX_idea_spirit_bank_vault ##change later
+	
+}
 FRA_modifier_obsolete_army = {##french_bad_army_
 	enable = { always = yes }
 	icon = GFX_idea_spirit_broken_napoleonic_hat

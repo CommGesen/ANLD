@@ -801,7 +801,10 @@ ideas = {
 
 			allowed = {
 				NOT = {
-					original_tag = POL
+					OR = {
+						original_tag = POL
+						original_tag = FRA
+					}
 				}
 				NOT = {
 					has_available_idea_with_traits = { idea = light_aircraft_manufacturer limit = 1 }
@@ -823,7 +826,10 @@ ideas = {
 
 			allowed = {
 				NOT = {
-					original_tag = POL
+					OR = {
+						original_tag = POL
+						original_tag = FRA
+					}
 				}
 				NOT = {
 					has_available_idea_with_traits = { idea = medium_aircraft_manufacturer limit = 1 }
@@ -845,7 +851,10 @@ ideas = {
 			
 			allowed = {
 				NOT = {
-					original_tag = POL
+					OR = {
+						original_tag = POL
+						original_tag = FRA
+					}
 				}
 				NOT = {
 					has_available_idea_with_traits = { idea = heavy_aircraft_manufacturer limit = 1 }
@@ -867,7 +876,10 @@ ideas = {
 
 			allowed = {
 				NOT = {
-					original_tag = POL
+					OR = {
+						original_tag = POL
+						original_tag = FRA
+					}
 				}
 				NOT = {
 					has_available_idea_with_traits = { idea = naval_aircraft_manufacturer limit = 1 }
@@ -889,7 +901,10 @@ ideas = {
 
 			allowed = {
 				NOT = {
-					original_tag = POL
+					OR = {
+						original_tag = POL
+						original_tag = FRA
+					}
 				}
 				NOT = {
 					has_available_idea_with_traits = { idea = CAS_manufacturer limit = 1 }
@@ -916,10 +931,10 @@ ideas = {
 			allowed = {
 				NOT = {
 					OR = {
-					original_tag = POL
-					original_tag = FRA
-					original_tag = USA
-					original_tag = SWE
+						original_tag = POL
+						original_tag = FRA
+						original_tag = USA
+						original_tag = SWE
 					}					
 				}
 				NOT = {
@@ -943,10 +958,10 @@ ideas = {
 			allowed = {
 				NOT = {
 					OR = {
-					original_tag = POL
-					original_tag = FRA
-					original_tag = USA
-					original_tag = SWE
+						original_tag = POL
+						original_tag = FRA
+						original_tag = USA
+						original_tag = SWE
 					}
 				}
 				NOT = {
@@ -970,10 +985,10 @@ ideas = {
 			allowed = {
 				NOT = {
 					OR = {
-					original_tag = POL
-					original_tag = FRA
-					original_tag = USA
-					original_tag = SWE
+						original_tag = POL
+						original_tag = FRA
+						original_tag = USA
+						original_tag = SWE
 					}
 				}
 				NOT = {
@@ -999,10 +1014,10 @@ ideas = {
 			allowed = {
 				NOT = {
 					OR = {
-					original_tag = POL
-					original_tag = FRA
-					original_tag = USA
-					original_tag = SWE
+						original_tag = POL
+						original_tag = FRA
+						original_tag = USA
+						original_tag = SWE
 					}
 				}
 				NOT = {

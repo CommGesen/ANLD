@@ -547,4 +547,16 @@ spriteTypes = {
 		name = "GFX_idea_spirit_broken_napoleonic_hat"
 		texturefile = "gfx/interface/ideas/spirits/spirit_broken_napoleonic_hat.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_spirit_napoleonic_eagle"
+		texturefile = "gfx/interface/ideas/spirits/spirit_napoleonic_eagle.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_war_invalid"
+		texturefile = "gfx/interface/ideas/spirits/spirit_war_invalid.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spirit_potez_220"
+		texturefile = "gfx/interface/ideas/spirits/spirit_potez_220.dds"
+	}
 }

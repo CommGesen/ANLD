@@ -1449,23 +1449,15 @@ FRA_dec_cat_modernize_french_army={
 			FRA = {
 				has_completed_focus = FRA_build_the_maginot_line
 			}
-			FRA = {
-				controls_province = 6788
-				controls_province = 771
-				controls_province = 11726
-				controls_province = 776
-				controls_province = 6635
+			158 = {
+				is_fully_controlled_by = FRA
 			}
 		}
 		available = {
 			check_variable = { maginot_level_ita < 4 }
 			num_of_available_civilian_factories > 1
-			FRA = {
-				controls_province = 6788
-				controls_province = 771
-				controls_province = 11726
-				controls_province = 776
-				controls_province = 6635
+			158 = {
+				is_fully_controlled_by = FRA
 			}
 		}
 		remove_effect = {
@@ -3531,6 +3523,1974 @@ FRA_dec_cat_subsidize_the_city_development = {
 				type = tungesten
 				amount = 25
 				state = 21
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_toulon = {
+		icon = GFX_decision_generic_merge_plant_ship
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 851
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 911
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 911
+				value = 4
+			}
+			851 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_nice = {
+		icon = GFX_decision_SOV_place_hq
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 735
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 9909
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 9909
+				value = 4
+			}
+			735 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 9909
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_torino = {
+		icon = GFX_decision_SOV_place_hq
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 158
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 6780
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 6780
+				value = 20
+			}
+			158 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_genes = {
+		icon = GFX_decision_SWE_set_navy_budget
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 158
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 6788
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 6788
+				value = 5
+			}
+			158 = {
+				add_building_construction = {
+					type = naval_base
+					province = 6788
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_lyon = {
+		icon = GFX_decision_SOV_place_hq
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 20
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 6786
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 6786
+				value = 20
+			}
+			20 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_ajjacio = {
+		icon = GFX_decision_SWE_set_navy_budget
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 3838
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 50
+		remove_effect = {
+			add_victory_points = {
+				province = 3838
+				value = 4
+			}
+			1 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 3838
+					level = 4
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_cagliari = {
+		icon = GFX_decision_SWE_set_navy_budget
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 114
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 11773
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 50
+		remove_effect = {
+			add_victory_points = {
+				province = 11773
+				value = 7
+			}
+			114 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 11773
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_palma_de_majorque = {
+		icon = GFX_decision_SWE_set_navy_budget
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 177
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 9793
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 9793
+				value = 10
+			}
+			177 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 9793
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_geneve = {
+		icon = GFX_decision_SOV_place_hq
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 845
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 6666
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 6666
+				value = 5
+			}
+			845 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_berne = {
+		icon = GFX_decision_SOV_place_hq
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 802
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 9620
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 9620
+				value = 5
+			}
+			802 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_dijon = {
+		icon = GFX_decision_generic_factory
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 27
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 3652
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 3652
+				value = 5
+			}
+			27 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_troyes = {
+		icon = GFX_decision_generic_factory
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 27
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 9490
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 9490
+				value = 5
+			}
+			27 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_reims = {
+		icon = GFX_decision_SOV_place_hq
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 18
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 13011
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 13011
+				value = 5
+			}
+			18 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_orleans = {
+		icon = GFX_decision_generic_factory
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 24
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 512
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 512
+				value = 5
+			}
+			24 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_paris = {
+		icon = GFX_decision_generic_merge_plant_materiel
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 16
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 11506
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 11506
+				value = 20
+			}
+			16 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_versailles = {
+		icon = GFX_decision_generic_merge_plant_aircraft
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 16
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 9523
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 9523
+				value = 30
+			}
+			16 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_nancy = {
+		icon = GFX_decision_SOV_place_hq
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 17
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 11516
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 11516
+				value = 15
+			}
+			17 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_metz = {
+		icon = GFX_decision_generic_construction
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 28
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 11516
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 9559
+				value = 10
+			}
+			28 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			add_resource = {
+				type = tungesten
+				amount = 20
+				state = 28
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_strasbourg = {
+		icon = GFX_decision_generic_factory
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 28
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 9503
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 9503
+				value = 20
+			}
+			28 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_sarrebruck = {
+		icon = GFX_decision_SOV_place_hq
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 42
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 11531
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 11531
+				value = 20
+			}
+			42 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_luxembourg = {
+		icon = GFX_decision_SOV_place_hq
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 8
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 6583
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 6583
+				value = 20
+			}
+			8 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_cologne = {
+		icon = GFX_decision_SOV_place_hq
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 784
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 587
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 587
+				value = 20
+			}
+			784 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_astnide = {
+		icon = GFX_decision_gre_faction_management
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 51
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 6469
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 6469
+				value = 20
+			}
+			51 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_lille = {
+		icon = GFX_decision_generic_factory
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 29
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 11483
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 11483
+				value = 20
+			}
+			29 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_amiens = {
+		icon = GFX_decision_generic_train
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 29
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 454
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 454
+				value = 7
+			}
+			29 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = supply_node
+					province = 454
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_calais = {
+		icon = GFX_decision_generic_human_torpedo
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 29
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 11548
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 11548
+				value = 8
+			}
+			29 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 454
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_dunkerque = {
+		icon = GFX_decision_generic_naval
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 29
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 575
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 575
+				value = 7
+			}
+			29 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 575
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_rouen = {
+		icon = GFX_decision_generic_factory
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 15
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 11563
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 11563
+				value = 20
+			}
+			15 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_le_havre = {
+		icon = GFX_decision_SWE_set_navy_budget
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 15
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 9434
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 9434
+				value = 15
+			}
+			15 = {
+				add_building_construction = {
+					type = naval_base
+					province = 9434
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_cherbourg = {
+		icon = GFX_decision_SWE_set_navy_budget
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 15
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 6449
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		remove_effect = {
+			add_victory_points = {
+				province = 6449
+				value = 15
+			}
+			15 = {
+				add_building_construction = {
+					type = naval_base
+					province = 6449
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_anvers = {
+		icon = GFX_decision_SWE_set_navy_budget
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 6
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 6598
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 6598
+				value = 20
+			}
+			6 = {
+				add_building_construction = {
+					type = naval_base
+					province = 6598
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_bruxelles = {
+		icon = GFX_decision_SOV_place_hq
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 34
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 516
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 516
+				value = 20
+			}
+			34 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_liege = {
+		icon = GFX_decision_hol_engelandvaarders
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 34
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 11519
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 11519
+				value = 20
+			}
+			34 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_charleroi = {
+		icon = GFX_decision_generic_forestry
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 34
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 9536
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 9536
+				value = 20
+			}
+			34 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_eindhoven = {
+		icon = GFX_decision_generic_forestry
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 35
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 6496
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 6496
+				value = 20
+			}
+			35 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_breda = {
+		icon = GFX_decision_SOV_place_hq
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 35
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 3262
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 3262
+				value = 5
+			}
+			35 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_rotterdam = {
+		icon = GFX_decision_SWE_set_navy_budget
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 35
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 9498
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 9498
+				value = 20
+			}
+			35 = {
+				add_building_construction = {
+					type = naval_base
+					province = 9498
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_amsterdam = {
+		icon = GFX_decision_SOV_place_hq
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 7
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 391
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 391
+				value = 20
+			}
+			7 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	develop_la_haye = {
+		icon = GFX_decision_SWE_set_navy_budget
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 7
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			FRA = {
+				controls_province = 3211
+			}
+		}
+		allowed = {
+			original_tag = FRA
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 40
+		remove_effect = {
+			add_victory_points = {
+				province = 3211
+				value = 20
+			}
+			7 = {
+				add_building_construction = {
+					type = naval_base
+					province = 3211
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
 			}
 		}
 		ai_will_do = {

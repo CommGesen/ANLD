@@ -414,6 +414,30 @@ country_event = {
 		set_country_flag = FRA_flag_popular_republican_movement_won
 	}
 }
+# Nationalists took power and choose who will lead France
+country_event = {
+	id = deluge_france.17
+	title = deluge_france.17.t
+	desc = deluge_france.17.d
+	#picture = GFX_report_event_
+	is_triggered_only = yes
+	option = {##
+		name = deluge_france.17.a
+		#set_country_flag = 
+	}
+	option = {##
+		name = deluge_france.17.b
+		#set_country_flag = 
+	}
+	option = {##
+		name = deluge_france.17.c
+		#set_country_flag = 
+	}
+	option = {##
+		name = deluge_france.17.e
+		#set_country_flag = 
+	}
+}
 country_event = {##inspection in the army
 	id = deluge_france_lore.1
 	title = deluge_france_lore.1.t

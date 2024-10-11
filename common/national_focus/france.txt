@@ -350,7 +350,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_republic_forever }
 		relative_position_id = FRA_republic_forever
 		search_filters = { }
-		cost = 1
+		cost = 3
 		mutually_exclusive = { focus = FRA_another_revolution focus = FRA_creation_of_the_parliament}
 		allow_branch = {
 			
@@ -3407,7 +3407,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_revolution_by_force
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_gun_sickle_and_hammer
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_internationalism }
@@ -3482,7 +3482,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_nationalist_approach
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_nation_at_arms
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_proudhon_circle }
@@ -3554,7 +3554,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_workers_revolution
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_fists_sickle_and_hammer
 		x = -2
 		y = 1
 		prerequisite = { focus = FRA_united_france focus = FRA_pacifits_revolution focus = FRA_revolution_by_force }
@@ -3626,7 +3626,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_cult_of_reason
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_light_bulb
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_antitheism }
@@ -3700,7 +3700,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_purge_old_elites
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_conspiracy
 		x = 0
 		y = 2
 		prerequisite = { focus = FRA_workers_revolution }
@@ -3772,7 +3772,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_new_socialist_elites
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_socialist_research
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_purge_old_elites }
@@ -3920,7 +3920,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_socialist_realism
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_worker
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_fully_democratic_education focus = FRA_socialist_core_curriculum }
@@ -5372,7 +5372,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_question_of_pomerania
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_kashubian_question
 		x = 5
 		y = 1
 		prerequisite = { focus = FRA_foreign_policy }
@@ -6607,7 +6607,7 @@ focus_tree = {
 		}
 	focus = {		
 		id = FRA_militarize_economy
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_gun_and_bullets
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_third_way }
@@ -7801,7 +7801,61 @@ focus = {
 						has_dlc = "Arms Against Tyranny"
 					}
 				}
-				
+				custom_effect_tooltip = FRA_custom_effect_tooltip_95
+				if = {
+					limit = {
+						has_idea = deluge_designer_sncac
+					}
+					swap_ideas = {
+						remove_idea = deluge_designer_sncac
+						add_idea = deluge_designer_sncac_2
+					}
+				}
+				if = {
+					limit = {
+						has_idea = deluge_designer_sncan
+					}
+					swap_ideas = {
+						remove_idea = deluge_designer_sncan
+						add_idea = deluge_designer_sncan_2
+					}
+				}
+				if = {
+					limit = {
+						has_idea = deluge_designer_sncaso
+					}
+					swap_ideas = {
+						remove_idea = deluge_designer_sncaso
+						add_idea = deluge_designer_sncaso_2
+					}
+				}
+				if = {
+					limit = {
+						has_idea = deluge_designer_sncase
+					}
+					swap_ideas = {
+						remove_idea = deluge_designer_sncase
+						add_idea = deluge_designer_sncase_2
+					}
+				}
+				if = {
+					limit = {
+						has_idea = deluge_designer_avions_latecoere
+					}
+					swap_ideas = {
+						remove_idea = deluge_designer_avions_latecoere
+						add_idea = deluge_designer_avions_latecoere_2
+					}
+				}
+				if = {
+					limit = {
+						has_idea = deluge_designer_sncam
+					}
+					swap_ideas = {
+						remove_idea = deluge_designer_sncam
+						add_idea = deluge_designer_sncam_2
+					}
+				}
 			}
 		}
 		ai_will_do = {

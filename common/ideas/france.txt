@@ -172,7 +172,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_reduced_veterans_pensions = {
-			picture = le_deluge ##change later
+			picture = spirit_war_invalid
 			allowed = {
 				original_tag = FRA
 			}
@@ -649,7 +649,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_new_imperial_council = {
-			picture = spirit_french_education_reform ##change later
+			picture = spirit_napoleonic_eagle
 			allowed = {
 				original_tag = FRA
 			}
@@ -1266,7 +1266,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_increase_multirole_production = {
-			picture = FRA_fortification_focus #change later
+			picture = spirit_potez_220
 			allowed = {
 				original_tag = FRA
 			}
@@ -2040,101 +2040,283 @@ ideas = {
 	}
 	
 	aircraft_manufacturer = {
-			
 		designer = yes
-		
-		morane_saulnier = {
-			
+		deluge_designer_sncac = {
+			picture = FRA_sncac
 			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = BEL
-					original_tag = NMD
-					original_tag = BRI
-					original_tag = SAV
-					original_tag = BGD
-					original_tag = OCC
-					original_tag = ALS
-					original_tag = CAT
+				original_tag = FRA
+			}
+			visible = {
+				tag = FRA
+				NOT = {
+					has_completed_focus = FRA_reorganize_military_aviation_industry
 				}
 			}
-			
+			available = {
+				
+			}
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
-			traits = { light_aircraft_manufacturer }
+			traits = { 
+				fuel_efficient_aircraft_manufacturer
+			}
+			ai_will_do = {
+				factor = 1
+			}
 		}
-		
-		bloch = {
-						
+		deluge_designer_sncac_2 = {
+			picture = FRA_sncac
 			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = BEL
-					original_tag = NMD
-					original_tag = BRI
-					original_tag = SAV
-					original_tag = BGD
-					original_tag = OCC
-					original_tag = ALS
-					original_tag = CAT
+				original_tag = FRA
+			}
+			visible = {
+				tag = FRA
+				has_completed_focus = FRA_reorganize_military_aviation_industry
+			}
+			available = {
+				
+			}
+			research_bonus = {
+				air_equipment = 0.2
+			}
+			traits = { 
+				fuel_efficient_aircraft_manufacturer_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		deluge_designer_sncan = {
+			picture = POL_pws
+			allowed = {
+				original_tag = FRA
+			}
+			visible = {
+				tag = FRA
+				NOT = {
+					has_completed_focus = FRA_reorganize_military_aviation_industry
 				}
 			}
-						
+			available = {
+				
+			}
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
-			traits = { medium_aircraft_manufacturer }
+			traits = { 
+				light_aircraft_manufacturer
+			}
+			ai_will_do = {
+				factor = 1
+			}
 		}
-		
-		amiot = {
-						
+		deluge_designer_sncan_2 = {
+			picture = POL_pws
 			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = BEL
-					original_tag = NMD
-					original_tag = BRI
-					original_tag = SAV
-					original_tag = BGD
-					original_tag = OCC
-					original_tag = ALS
-					original_tag = CAT
+				original_tag = FRA
+			}
+			visible = {
+				tag = FRA
+				has_completed_focus = FRA_reorganize_military_aviation_industry
+			}
+			available = {
+				
+			}
+			research_bonus = {
+				air_equipment = 0.2
+			}
+			traits = { 
+				light_aircraft_manufacturer_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		deluge_designer_sncaso = {
+			picture = POL_pzl
+			allowed = {
+				original_tag = FRA
+			}
+			visible = {
+				tag = FRA
+				NOT = {
+					has_completed_focus = FRA_reorganize_military_aviation_industry
 				}
 			}
-						
+			available = {
+				
+			}
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
-			traits = { heavy_aircraft_manufacturer }
+			traits = { 
+				multi_role_aircraft_manufacturer 
+			}
+			ai_will_do = {
+				factor = 1
+			}
 		}
-		
-		levasseur = {
-						
+		deluge_designer_sncaso_2 = {
+			picture = POL_pzl
 			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = BEL
-					original_tag = NMD
-					original_tag = BRI
-					original_tag = SAV
-					original_tag = BGD
-					original_tag = OCC
-					original_tag = ALS
-					original_tag = CAT
+				original_tag = FRA
+			}
+			visible = {
+				tag = FRA
+				has_completed_focus = FRA_reorganize_military_aviation_industry
+			}
+			available = {
+				
+			}
+			research_bonus = {
+				air_equipment = 0.2
+			}
+			traits = { 
+				multi_role_aircraft_manufacturer_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		deluge_designer_sncase = {
+			picture = designer_lot
+			allowed = {
+				original_tag = FRA
+			}
+			visible = {
+				tag = FRA
+				NOT = {
+					has_completed_focus = FRA_reorganize_military_aviation_industry
 				}
 			}
-						
+			available = {
+				
+			}
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
-			traits = { naval_aircraft_manufacturer }
+			traits = { 
+				heavy_aircraft_manufacturer 
+			}
+			ai_will_do = {
+				factor = 1
+			}
 		}
-		
+		deluge_designer_sncase_2 = {
+			picture = designer_lot
+			allowed = {
+				original_tag = FRA
+			}
+			visible = {
+				tag = FRA
+				has_completed_focus = FRA_reorganize_military_aviation_industry
+			}
+			available = {
+				
+			}
+			research_bonus = {
+				air_equipment = 0.2
+			}
+			traits = { 
+				heavy_aircraft_manufacturer_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		deluge_designer_avions_latecoere = {
+			picture = designer_dwl
+			allowed = {
+				original_tag = FRA
+			}
+			visible = {
+				tag = FRA
+				NOT = {
+					has_completed_focus = FRA_reorganize_military_aviation_industry
+				}
+			}
+			available = {
+				
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			traits = { 
+				naval_aircraft_manufacturer 
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		deluge_designer_avions_latecoere_2 = {
+			picture = designer_dwl
+			allowed = {
+				original_tag = FRA
+			}
+			visible = {
+				tag = FRA
+				has_completed_focus = FRA_reorganize_military_aviation_industry
+			}
+			available = {
+				
+			}
+			research_bonus = {
+				air_equipment = 0.2
+			}
+			traits = { 
+				naval_aircraft_manufacturer_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		deluge_designer_sncam = {
+			picture = designer_lws
+			allowed = {
+				original_tag = FRA
+			}
+			visible = {
+				tag = FRA
+				NOT = {
+					has_completed_focus = FRA_reorganize_military_aviation_industry
+				}
+			}
+			available = {
+				
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			traits = {
+				CAS_manufacturer 
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		deluge_designer_sncam_2 = {
+			picture = designer_lws
+			allowed = {
+				original_tag = FRA
+			}
+			visible = {
+				tag = FRA
+				has_completed_focus = FRA_reorganize_military_aviation_industry
+			}
+			available = {
+				
+			}
+			research_bonus = {
+				air_equipment = 0.2
+			}
+			traits = { 
+				CAS_manufacturer_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 	naval_manufacturer = {
 

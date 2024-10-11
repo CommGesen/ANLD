@@ -28,6 +28,14 @@ spriteTypes = {
 		texturefile = "gfx/leaders/POL/portrait_POL_jozef_pilsudski_OLD.dds"
 	}
 	spriteType = {
+		name = "GFX_portrait_POL_boleslaw_roja"
+		texturefile = "gfx/leaders/POL/portrait_POL_boleslaw_roja.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_boleslaw_roja_ALT"
+		texturefile = "gfx/leaders/POL/portrait_POL_boleslaw_roja_ALT.dds"
+	}
+	spriteType = {
 		name = "GFX_portrait_FRA_napoleon_vi_ANLD"
 		texturefile = "gfx/leaders/FRA/portrait_FRA_napoleon_vi_ANLD.dds"
 	}
@@ -38,5 +46,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_HUN_gyula_gombos_regent"
 		texturefile = "gfx/leaders/HUN/portrait_HUN_gyula_gombos_regent.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_AUS_otto_von_habsburg"
+		texturefile = "gfx/leaders/AUS/portrait_AUS_otto_von_habsburg.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_AUS_otto_von_habsburg_ALT"
+		texturefile = "gfx/leaders/AUS/portrait_AUS_otto_von_habsburg_ALT.dds"
 	}
 }
