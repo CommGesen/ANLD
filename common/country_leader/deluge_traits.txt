@@ -296,7 +296,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-###New traits for Poland starts here
+###New traits start here
 
 	nitrogen_gas_researcher = {
 		sprite = 10
@@ -1334,5 +1334,11 @@ leader_traits = {
 		political_power_factor = 0.05
 		stability_factor = 0.03
 		compliance_growth = 0.15
+	}
+	temporary_leader = {
+		random = no
+		#sprite = 7
+		political_power_factor = -0.1
+		-stability_factor = 0.1
 	}
 }

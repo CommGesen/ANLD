@@ -158,11 +158,32 @@ country_event = {
 	is_triggered_only = yes
 	option = {##exile them
 		name = deluge_france.6.a
-		
+		every_possible_country = {
+			limit = { has_character = FRA_deluge_napoleon_vi }
+			random_character = {
+				limit = { is_character = FRA_deluge_napoleon_vi }
+				set_nationality = VIN
+			}
+		}
+		hidden_effect = {
+			country_event = { 
+				id = deluge_france.7
+				days = 1
+			}
+		}
 	}
-	option = {##kill them
+	option = {##execute them
 		name = deluge_france.6.b
-		
+		retire_character = FRA_deluge_napoleon_vi
+		add_political_power = -100
+		add_stability = -0.05
+		add_war_support = 0.15
+		hidden_effect = {
+			country_event = { 
+				id = deluge_france.7
+				days = 1
+			}
+		}
 	}
 }
 # After deciding what happens to Bonaparte family one of factions gets power: radicals, democrats or ultra-nationalists
@@ -380,6 +401,14 @@ country_event = {
 	option = {
 		name = deluge_france.14.a
 		set_country_flag = FRA_nationalists_took_power
+		promote_character = FRA_deluge_maxime_weygand
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48 
+		}
+		set_party_name = { ideology = fascism long_name = FRA_military_government_party_long name = FRA_military_government_party }
 	}
 }
 # Struggle for power - radicals wins
@@ -419,23 +448,23 @@ country_event = {
 	id = deluge_france.17
 	title = deluge_france.17.t
 	desc = deluge_france.17.d
-	#picture = GFX_report_event_
+	picture = GFX_report_event_french_nationalist_meeting
 	is_triggered_only = yes
-	option = {##
+	option = {##Marcel Bucard
 		name = deluge_france.17.a
-		#set_country_flag = 
+		set_country_flag = FRA_marcel_bucard_won
 	}
-	option = {##
+	option = {##Maurice Delaunay
 		name = deluge_france.17.b
-		#set_country_flag = 
+		#set_country_flag = FRA_maurice_delaunay_won
 	}
-	option = {##
+	option = {##Jacques Doriot
 		name = deluge_france.17.c
-		#set_country_flag = 
+		set_country_flag = FRA_jacques_doriot_won
 	}
-	option = {##
+	option = {##Francois de La Rocque
 		name = deluge_france.17.e
-		#set_country_flag = 
+		set_country_flag = FRA_francois_de_la_rocque_won
 	}
 }
 country_event = {##inspection in the army

@@ -1006,10 +1006,16 @@ country_event = {##Kashubians do a coup in Pomerania
 		tag = POM
 		is_subject_of = FRA
 		date > 1939.1.1
+		FRA = {
+			NOT = {
+				has_completed_focus = FRA_question_of_pomerania
+			}
+		}
 	}
 	mean_time_to_happen = {
 		days = 10
 	}
+	fire_only_once = yes
 	option = {
 		name = deluge_pomerania.5.a
 		FRA = {

@@ -331,6 +331,49 @@ focus_tree = {
 				last_election = "1935.12.17"
 				election_frequency = 48 
 			}
+			promote_character = FRA_deluge_maurice_gamelin
+			if = {
+				limit = {
+					BEL = {
+						is_subject_of = FRA
+						has_government = neutrality
+					}
+				}
+				set_autonomy = {
+					target = BEL
+					autonomous_state = autonomy_free
+					end_wars = yes
+					end_civil_wars = no
+				}
+			}
+			if = {
+				limit = {
+					SPR = {
+						is_subject_of = FRA
+						has_government = neutrality
+					}
+				}
+				set_autonomy = {
+					target = SPR
+					autonomous_state = autonomy_free
+					end_wars = yes
+					end_civil_wars = no
+				}
+			}
+			if = {
+				limit = {
+					VIN = {
+						is_subject_of = FRA
+						has_government = neutrality
+					}
+				}
+				set_autonomy = {
+					target = VIN
+					autonomous_state = autonomy_free
+					end_wars = yes
+					end_civil_wars = no
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -366,7 +409,9 @@ focus_tree = {
 			has_country_flag = FRA_nationalists_took_power
 		}
 		completion_reward = {
-			
+			country_event = {
+				id = deluge_france.17
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -798,10 +843,11 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_country_flag = FRA_marcel_bucard_won
 		}
 		completion_reward = {
-			
+			remove_ideas = FRA_spirit_chaos_in_paris
+			promote_character = FRA_deluge_marcel_bucard
 		}
 		ai_will_do = {
 			factor = 25
@@ -1562,6 +1608,7 @@ focus_tree = {
 			country_event = {
 				id = deluge_france.16 
 			}
+			remove_ideas = FRA_spirit_chaos_in_paris
 		}
 		ai_will_do = {
 			factor = 25
@@ -11537,6 +11584,12 @@ focus = {
 		#}
 		available = {
 			has_tech = jet_engines
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				has_tech = aa_cannon_3
+			}
 		}
 		completion_reward = {
 			

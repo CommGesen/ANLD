@@ -222,4 +222,16 @@ spriteTypes = {
 		name = "GFX_idea_designer_legrand"
 		texturefile = "gfx/interface/ideas/designers/designer_legrand.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_designer_schneider_artillery"
+		texturefile = "gfx/interface/ideas/designers/designer_schneider_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_designer_hotchkiss"
+		texturefile = "gfx/interface/ideas/designers/designer_hotchkiss.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_designer_avions_latecoere"
+		texturefile = "gfx/interface/ideas/designers/designer_avions_latecoere.dds"
+	}
 }

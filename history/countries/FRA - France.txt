@@ -847,11 +847,17 @@ if = {
 		autonomous_state = autonomy_integrated_puppet
 		freedom_level = 0.5
 	}
+	set_autonomy = {
+		target = SPR
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.8
+	}
 	else = {
 		puppet = BEL
 		puppet = POM
 		puppet = BHU
 		puppet = VIN
+		puppet = SPR
 	}
 }
 

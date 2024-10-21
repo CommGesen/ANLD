@@ -825,6 +825,14 @@ characters={
 			ai_will_do = { factor = 1.0 }
 			ledger = army
 		}
+		country_leader = {
+			ideology = social_democratic_ideology
+			traits = {
+				temporary_leader
+			}
+			expire = "1969.1.1.1"
+			desc = "FRA_deluge_maurice_gamelin_desc"
+		}
 	}
 	FRA_deluge_victor_henri_schweisguth={
 		name=FRA_deluge_victor_henri_schweisguth_name

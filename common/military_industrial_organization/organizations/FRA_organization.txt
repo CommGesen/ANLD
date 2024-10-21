@@ -9,21 +9,17 @@ deluge_FRA_somua_organization = {
 	available = {
 		
 	}
-	#equipment_type = { mio_cat_eq_all_medium_tank }
-	#research_categories = { mio_cat_tech_medium_armor_and_modules }
 }
 
 deluge_FRA_hotchkiss_organization = {
 	include = generic_infantry_tank_organization
-	icon = GFX_idea_designer_ksus
+	icon = GFX_idea_designer_hotchkiss
 	allowed = {	
 		tag = FRA
 	}
 	available = {
 		
 	}
-	#equipment_type = { mio_cat_eq_all_light_tank  }
-	#research_categories = { mio_cat_tech_light_armor_and_modules }
 }
 
 deluge_FRA_renault_organization = {
@@ -35,8 +31,6 @@ deluge_FRA_renault_organization = {
 	available = {
 		
 	}
-	#equipment_type = { mio_cat_eq_all_heavy_tank  }
-	#research_categories = { mio_cat_tech_heavy_armor_and_modules }
 }
 
 deluge_FRA_amx_tanks_organization = {
@@ -127,7 +121,7 @@ deluge_FRA_sncaso_organization = {
 }
 
 deluge_FRA_latecoere_organization = {
-	icon = GFX_idea_designer_dwl
+	icon = GFX_idea_designer_avions_latecoere
 	include = generic_naval_aircraft_organization
 	allowed = {	
 		tag = FRA
@@ -163,7 +157,7 @@ deluge_FRA_mas_organization = {
 }
 
 deluge_FRA_schneider_organization = {
-	icon = GFX_idea_designer_h_cegielski
+	icon = GFX_idea_designer_schneider_artillery
 	include = generic_artillery_organization
 	allowed = {
 		tag = FRA

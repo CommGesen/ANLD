@@ -61,7 +61,32 @@ leader_traits = {
 				reliability = 0.2
 			}
 		}
-		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	motorized_manufacturer = {
+		random = no
+		equipment_bonus = {
+			motorized_equipment = {
+				build_cost_ic = -0.1
+				reliability = 0.25
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	mechanized_manufacturer = {
+		random = no
+		equipment_bonus = {
+			mechanized_equipment = {
+				build_cost_ic = -0.1
+				reliability = 0.25
+			}
+		}
 		ai_will_do = {
 			factor = 1
 		}
