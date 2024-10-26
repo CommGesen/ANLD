@@ -207,8 +207,16 @@ spriteTypes = {
 	texturefile = "gfx/interface/technologies/GGG/iw_fighter.dds"
 	}
 	SpriteType = {
+	name = "GFX_cv_small_plane_airframe_0_medium"
+	texturefile = "gfx/interface/technologies/GGG/cv_iw_fighter.dds"
+	}
+	SpriteType = {
 	name = "GFX_light_plane_1_medium"
 	texturefile = "gfx/interface/technologies/GGG/light_plane_1.dds"
+	}
+	SpriteType = {
+	name = "GFX_cv_small_plane_airframe_1_medium"
+	texturefile = "gfx/interface/technologies/GGG/cv_fighter_1.dds"
 	}
 	SpriteType = {
 	name = "GFX_basic_small_airframe_medium"
@@ -219,12 +227,20 @@ spriteTypes = {
 	texturefile = "gfx/interface/technologies/GGG/light_plane_2.dds"
 	}
 	SpriteType = {
+	name = "GFX_cv_small_plane_airframe_2_medium"
+	texturefile = "gfx/interface/technologies/GGG/cv_fighter_2.dds"
+	}
+	SpriteType = {
 	name = "GFX_improved_small_airframe_medium"
 	texturefile = "gfx/interface/technologies/GGG/fighter_2.dds"
 	}
 	SpriteType = {
 	name = "GFX_light_plane_3_medium"
 	texturefile = "gfx/interface/technologies/GGG/light_plane_3.dds"
+	}
+	SpriteType = {
+	name = "GFX_cv_small_plane_airframe_3_medium"
+	texturefile = "gfx/interface/technologies/GGG/cv_fighter_3.dds"
 	}
 	SpriteType = {
 	name = "GFX_advanced_small_airframe_medium"
@@ -237,6 +253,10 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_cv_jet_fighter2_medium"
     texturefile = "gfx/interface/technologies/GGG/cv_jet_fighter_2.dds"
+	}
+	SpriteType = {
+	name = "GFX_cv_small_plane_airframe_4_medium"
+	texturefile = "gfx/interface/technologies/GGG/cv_jet_fighter_2.dds"
 	}
 
 	### MEDIUM AIRFRAMES ###
@@ -517,23 +537,39 @@ spriteTypes = {
 
 	### EQUIPMENT DESIGNER DLC ###
 
-	### SMALL AIRFRAMES ###
+	### SMALL AIRFRAMES ### 
 
 	SpriteType = {
 	name = "GFX_POL_iw_small_airframe_medium"
 	texturefile = "gfx/interface/technologies/POL/POL_iw_fighter.dds"
 	}
 	SpriteType = {
+	name = "GFX_POL_cv_small_plane_airframe_0_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_cv_iw_fighter.dds"
+	}
+	SpriteType = {
 	name = "GFX_POL_basic_small_airframe_medium"
 	texturefile = "gfx/interface/technologies/POL/POL_fighter_1.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_cv_small_plane_airframe_1_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_cv_fighter_1.dds"
 	}
 	SpriteType = {
 	name = "GFX_POL_improved_small_airframe_medium"
 	texturefile = "gfx/interface/technologies/POL/POL_fighter_2.dds"
 	}
 	SpriteType = {
+	name = "GFX_POL_cv_small_plane_airframe_2_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_cv_fighter_2.dds"
+	}
+	SpriteType = {
 	name = "GFX_POL_advanced_small_airframe_medium"
 	texturefile = "gfx/interface/technologies/POL/POL_fighter_3.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_cv_small_plane_airframe_3_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_cv_fighter_3.dds"
 	}
 	SpriteType = {
 	name = "GFX_POL_modern_small_airframe_medium"
@@ -542,6 +578,10 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_POL_cv_jet_fighter2_medium"
     texturefile = "gfx/interface/technologies/POL/POL_cv_jet_fighter_2-1.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_cv_small_plane_airframe_4_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_cv_jet_fighter_2-1.dds"
 	}
 	SpriteType = {
 	name = "GFX_POL_rocket_plane_1_medium"

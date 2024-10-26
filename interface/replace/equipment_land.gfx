@@ -151,6 +151,14 @@ spriteTypes = {
 
 	#(MOTORIZED, MECHANIZED AND AMPHIBIOUS#
 		SpriteType = {
+            name = "GFX_POL_tech_trucks_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_motorized_0.dds"
+        }
+        SpriteType = {
+            name = "GFX_POL_motorized_equipment_0_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_motorized_0.dds"
+        }
+        SpriteType = {
             name = "GFX_POL_motorised_infantry_medium"
             texturefile = "gfx/interface/technologies/POL/POL_motorized_1.dds"
         }

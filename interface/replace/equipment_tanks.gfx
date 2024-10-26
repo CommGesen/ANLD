@@ -1,5 +1,392 @@
 spriteTypes = {
 
+### GENERIC ###
+
+    ### NON-DLC TECH TREE ###
+
+    ### LIGHT TANKS ###
+
+    ### AMPHIBIOUS TANKS ###
+
+    ### MEDIUM TANKS ###
+   
+    ### MODERN TANKS ###
+
+    ### HEAVY TANKS ###
+
+    ### SUPER HEAVY TANKS ###
 
 
-}
+
+    ### EQUIPMENT DESIGNER DLC ###
+
+    ### LIGHT TANKS CHASSIS ###
+
+    ### AMPHIBIOUS TANKS ###
+
+    ### MEDIUM TANKS CHASSIS & FLAMETHROWER ###
+    
+    ### MODERN TANK CHASSIS ###
+
+    ### HEAVY TANK CHASSIS ###
+
+    ### SUPER HEAVY CHASSIS ###
+    
+
+
+### POLAND ###
+
+    ### NON-DLC TECH TREE ###
+
+    ### LIGHT TANKS ###
+
+    SpriteType = {
+	name = "GFX_POL_gwtank_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_gw_light_tank.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_gw_light_tank_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_gw_light_tank.dds"
+	}
+    SpriteType = {
+	name = "GFX_POL_iwtank_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_iw_light_tank.dds"
+	}
+    
+    SpriteType = {
+	name = "GFX_POL_basic_light_tank_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_basic_light_tank.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_tkw_medium"
+	texturefile = gfx/interface/technologies/POL/POL_basic_light_tank_tkw.dds
+	}
+	SpriteType = {
+	name = "GFX_POL_basic_light_spaa_medium"
+	texturefile = gfx/interface/technologies/POL/POL_basic_light_tank_spaa.dds
+	}
+	SpriteType = {
+	name = "GFX_POL_basic_light_art_medium"
+	texturefile = gfx/interface/technologies/POL/POL_basic_light_tank_art.dds
+	}
+	SpriteType = {
+	name = "GFX_POL_basic_light_td_medium"
+	texturefile = gfx/interface/technologies/POL/POL_basic_light_tank_td.dds
+	}
+
+    SpriteType = {
+	name = "GFX_POL_improved_light_tank_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_improved_light_tank.dds"
+	}
+    SpriteType = {
+	name = "GFX_POL_4tp"
+	texturefile = "gfx/interface/technologies/POL/POL_improved_light_tank_4tp.dds"
+	}	
+	SpriteType = {
+	name = "GFX_POL_9tp"
+	texturefile = "gfx/interface/technologies/POL/POL_improved_light_tank_9tp.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_improved_light_spaa_medium"
+	texturefile = gfx/interface/technologies/POL/POL_improved_light_tank_spaa.dds
+	}
+	SpriteType = {
+	name = "GFX_POL_improved_light_art_medium"
+	texturefile = gfx/interface/technologies/POL/POL_improved_light_tank_art.dds
+	}
+	SpriteType = {
+	name = "GFX_POL_improved_light_td_medium"
+	texturefile = gfx/interface/technologies/POL/POL_improved_light_tank_td.dds
+	}
+
+    SpriteType = {
+	name = "GFX_POL_advanced_light_tank_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_advanced_light_tank.dds"
+	}	
+	SpriteType = {
+	name = "GFX_POL_14tp"
+	texturefile = "gfx/interface/technologies/POL/POL_advanced_light_tank_14tp.dds"
+	}	
+	SpriteType = {
+	name = "GFX_POL_advanced_light_spaa_medium"
+	texturefile = gfx/interface/technologies/POL/POL_advanced_light_tank_spaa.dds
+	}
+	SpriteType = {
+	name = "GFX_POL_advanced_light_art_medium"
+	texturefile = gfx/interface/technologies/POL/POL_advanced_light_tank_art.dds
+	}
+	SpriteType = {
+	name = "GFX_POL_advanced_light_td_medium"
+	texturefile = gfx/interface/technologies/POL/POL_advanced_light_tank_td.dds
+	}
+
+    ### AMPHIBIOUS TANKS ###
+
+    SpriteType = {
+	name = "GFX_POL_amphibious_tank_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_amphibious_tank.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_POL_amphibious_tank_2_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_amphibious_tank_2.dds"
+	}
+
+    ### MEDIUM TANKS ###
+		
+	SpriteType = {
+	name = "GFX_POL_gw_medium_tank_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_iw_medium_tank.dds"
+	}
+    
+    SpriteType = {
+	name = "GFX_POL_basic_medium_tank_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_basic_medium_tank.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_basic_medium_spaa_medium"
+	texturefile = gfx/interface/technologies/POL/POL_basic_medium_tank_spaa.dds
+	}	
+	SpriteType = {
+	name = "GFX_POL_basic_medium_art_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_basic_medium_tank_art.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_basic_medium_td_medium"
+	texturefile = gfx/interface/technologies/POL/POL_basic_medium_tank_td.dds
+	}
+
+    SpriteType = {
+	name = "GFX_POL_improved_medium_tank_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_improved_medium.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_improved_medium_spaa_medium"
+	texturefile = gfx/interface/technologies/POL/POL_improved_medium_spaa.dds
+	}
+    SpriteType = {
+	name = "GFX_POL_improved_medium_art_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_improved_medium_art.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_improved_medium_td_medium"
+	texturefile = gfx/interface/technologies/POL/POL_improved_medium_td.dds
+	}
+	
+	SpriteType = {
+	name = "GFX_POL_advanced_medium_tank_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_advanced_medium_tank.dds"
+	}
+    SpriteType = {
+	name = "GFX_POL_advanced_medium_spaa_medium"
+	texturefile = gfx/interface/technologies/POL/POL_advanced_medium_tank_spaa.dds
+	}
+	SpriteType = {
+	name = "GFX_POL_advanced_medium_art_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_advanced_medium_tank_art.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_advanced_medium_td_medium"
+	texturefile = gfx/interface/technologies/POL/POL_advanced_medium_tank_td.dds
+	}
+
+    ### MODERN TANKS ###
+
+    SpriteType = {
+	name = "GFX_POL_main_battle_tank_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_main_battle_tank.dds"
+	}
+    SpriteType = {
+    name = "GFX_POL_modern_spaa_medium"
+    texturefile = gfx/interface/technologies/POL/POL_main_battle_tank_spaa.dds
+    }
+    SpriteType = {
+    name = "GFX_POL_modern_art_medium"
+    texturefile = gfx/interface/technologies/POL/POL_main_battle_tank_td.dds 
+    }
+    SpriteType = {
+    name = "GFX_POL_modern_td_medium"
+    texturefile = gfx/interface/technologies/POL/POL_main_battle_tank_td.dds 
+    }
+
+    ### HEAVY TANKS ###
+
+    SpriteType = {
+	name = "GFX_POL_gw_heavy_tank_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_iw_heavy_tank.dds"
+	}
+    
+    SpriteType = {
+	name = "GFX_POL_basic_heavy_tank_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_basic_heavy_tank.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_basic_heavy_spaa_medium"
+	texturefile = gfx/interface/technologies/POL/POL_basic_heavy_tank_spaa.dds
+	}	
+	SpriteType = {
+	name = "GFX_POL_basic_heavy_art_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_basic_heavy_tank_art.dds"
+	}
+    SpriteType = {
+	name = "GFX_POL_basic_heavy_td_medium"
+	texturefile = gfx/interface/technologies/POL/POL_basic_heavy_tank_td.dds
+	}
+	
+	SpriteType = {
+	name = "GFX_POL_improved_heavy_tank_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_improved_heavy_tank.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_improved_heavy_spaa_medium"
+	texturefile = gfx/interface/technologies/POL/POL_improved_heavy_tank_spaa.dds
+	}
+	SpriteType = {
+	name = "GFX_POL_improved_heavy_art_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_improved_heavy_tank_art.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_improved_heavy_td_medium"
+	texturefile = gfx/interface/technologies/POL/POL_improved_heavy_tank_td.dds
+	}
+	
+	SpriteType = {
+	name = "GFX_POL_advanced_heavy_tank_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_advanced_heavy_tank.dds"
+	}
+    SpriteType = {
+	name = "GFX_POL_advanced_heavy_spaa_medium"
+	texturefile = gfx/interface/technologies/POL/POL_advanced_heavy_tank_spaa.dds
+	}
+	SpriteType = {
+	name = "GFX_POL_advanced_heavy_art_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_advanced_heavy_tank_art.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_advanced_heavy_td_medium"
+	texturefile = gfx/interface/technologies/POL/POL_advanced_heavy_tank_td.dds
+	}
+
+    ### SUPER HEAVY TANKS ###
+
+    SpriteType = {
+	name = "GFX_POL_super_heavy_tank_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_super_heavy_tank.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_super_heavy_spaa_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_super_heavy_tank_spaa.dds"
+	}
+    SpriteType = {
+	name = "GFX_POL_super_heavy_art_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_super_heavy_tank.dds"
+	}
+    SpriteType = {
+	name = "GFX_POL_super_heavy_td_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_super_heavy_tank.dds"
+	}
+
+    ### EQUIPMENT DESIGNER DLC ###
+
+    ### LIGHT TANKS CHASSIS ###
+	
+    SpriteType = {
+	name = "GFX_POL_gwtank_chassis_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_iw_light_tank_chassis.dds"
+	}
+    SpriteType = {
+	name = "GFX_POL_light_tank_chassis_0_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_iw_light_tank_chassis.dds"
+	}
+    
+    SpriteType = {
+	name = "GFX_POL_basic_light_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_basic_light_tank_chassis.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_POL_improved_light_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_improved_light_tank_chassis.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_POL_advanced_light_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_advanced_light_tank_chassis.dds"
+	}
+
+    ### AMPHIBIOUS TANKS ###
+
+    SpriteType = {
+	name = "GFX_POL_amphibious_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_amphibious_tank_chassis.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_POL_amphibious_tank_2_medium_2"
+	texturefile = "gfx/interface/technologies/POL/POL_amphibious_tank_2-2.dds"
+	}
+
+    ### MEDIUM TANKS CHASSIS & FLAMETHROWER ###
+
+    SpriteType = {
+	name = "GFX_POL_medium_tank_chassis_0_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_iw_medium_tank_chassis.dds"
+	}
+    
+    SpriteType = {
+	name = "GFX_POL_basic_medium_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_basic_medium_tank_chassis.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_POL_improved_medium_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_improved_medium_tank_chassis.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_POL_advanced_medium_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_advanced_medium_tank_chassis.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_POL_improved_medium_fl_medium"
+	texturefile = gfx/interface/technologies/POL/POL_improved_medium_fl.dds
+	}
+
+    ### MODERN TANK CHASSIS ###
+
+    SpriteType = {
+	name = "GFX_POL_main_battle_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_main_battle_tank_chassis.dds"
+	}
+
+    ### HEAVY TANK CHASSIS ###
+
+    SpriteType = {
+	name = "GFX_POL_heavy_tank_chassis_0_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_iw_heavy_tank_chassis.dds"
+	}
+    
+    SpriteType = {
+	name = "GFX_POL_basic_heavy_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_basic_heavy_tank_chassis.dds"
+	}
+    
+    SpriteType = {
+	name = "GFX_POL_improved_heavy_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_improved_heavy_tank_chassis.dds"
+	}
+    
+    SpriteType = {
+	name = "GFX_POL_advanced_heavy_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_advanced_heavy_tank_chassis.dds"
+	}
+
+    ### SUPER HEAVY CHASSIS ###
+
+    SpriteType = {
+	name = "GFX_POL_super_heavy_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_super_heavy_tank_chassis.dds"
+	}
+
+}   
