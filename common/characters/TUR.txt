@@ -28,14 +28,14 @@ characters={
 				large="gfx/leaders/TUR/osman_faud.dds"
 			}
 		}
-		#country_leader={
-		#	desc="osman_faud_leader_desc"
-		#	ideology=reactionary_ideology
-		#	expire="1965.1.1.1"
-		#	traits = {
-		#		war_lover
-		#	}
-		#}
+		country_leader={
+			desc="osman_faud_leader_desc"
+			ideology=reactionary_ideology
+			expire="1965.1.1.1"
+			traits = {
+				war_lover
+			}
+		}
 		corps_commander={
 			traits={ war_hero }
 			skill=2
@@ -78,14 +78,14 @@ characters={
 				large="gfx/leaders/TUR/ahmed_nihad.dds"
 			}
 		}
-		#country_leader={
-		#	desc="ahmed_nihad_leader_desc"
-		#	ideology=reactionary_ideology
-		#	expire="1965.1.1.1"
-		#	traits = {
-		#		polite_sultan
-		#	}
-		#}
+		country_leader={
+			desc="ahmed_nihad_leader_desc"
+			ideology=reactionary_ideology
+			expire="1965.1.1.1"
+			traits = {
+				polite_sultan
+			}
+		}
 		corps_commander={
 			traits={ politically_connected }
 			skill=2
@@ -93,7 +93,6 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=2
-			
 		}
 	}
 	
@@ -259,6 +258,14 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/TUR/portrait_tur_ahmet_fevzi_pasha.dds"
+			}
+		}
+		country_leader={
+			desc="osman_faud_leader_desc"
+			ideology=reactionary_ideology
+			expire="1965.1.1.1"
+			traits = {
+				sultan_of_glory
 			}
 		}
 		corps_commander = {

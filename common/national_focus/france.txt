@@ -848,6 +848,12 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = FRA_spirit_chaos_in_paris
 			promote_character = FRA_deluge_marcel_bucard
+			set_party_name = { ideology = fascism long_name = FRA_francist_movemenet_party_long name = FRA_francist_movemenet_party }
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = FRA_modifier_francism }
+				add_to_variable = { francism_war_support_factor = 0.05}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_96
 		}
 		ai_will_do = {
 			factor = 25

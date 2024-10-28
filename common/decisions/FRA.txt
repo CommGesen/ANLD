@@ -5498,3 +5498,43 @@ FRA_dec_cat_subsidize_the_city_development = {
 		}
 	}
 }
+political_actions = {
+	FRA_deluge_install_marie_on_spanish_throne = {
+		icon = GFX_decision_eng_support_imperialist_coup
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			NOT = {
+				SPR = {
+					has_country_leader = {
+						character = SPR_deluge_marie_i
+						ruling_only = yes
+					}
+				}
+			}
+			has_government = neutrality
+		}
+		available = {
+			SPR = {
+				is_subject_of = FRA
+			}
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 5
+		complete_effect = {
+			SPR = {
+				promote_character = SPR_deluge_marie_i
+			}
+			hidden_effect = {
+				news_event = {
+					id = deluge_spain.20
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+}

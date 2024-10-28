@@ -1339,6 +1339,16 @@ leader_traits = {
 		random = no
 		#sprite = 7
 		political_power_factor = -0.1
-		-stability_factor = 0.1
+		stability_factor = -0.1
+	}
+	geographer = {
+		random = no
+		research_speed_factor = 0.03
+		army_speed_factor = 0.03
+	}
+	psychoanalyst = {
+		random = no
+		research_speed_factor = 0.03
+		army_morale_factor = 0.03
 	}
 }

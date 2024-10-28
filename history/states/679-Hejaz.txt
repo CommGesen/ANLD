@@ -9,8 +9,8 @@ state={
 	}
 	history={
 		owner = TUR
-		set_state_flag = arab_minor
-		set_state_flag = arab_emirate
+		#set_state_flag = arab_minor
+		#set_state_flag = arab_emirate
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -18,9 +18,11 @@ state={
 				naval_base = 5
 			}
 		}
-		add_claim_by = TUR
-		add_claim_by = SAU
+		#add_claim_by = TUR
+		#add_claim_by = SAU
 		add_core_of = HEJ
+		add_core_of = SAU
+		add_core_of = TUR
 		victory_points = {
 			7934 10
 		}

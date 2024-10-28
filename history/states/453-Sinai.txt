@@ -9,7 +9,7 @@ state={
 	
 	history = {
 		owner = TUR
-		set_state_flag = arab_minor
+		#set_state_flag = arab_minor
 		buildings = {
 			infrastructure = 1
 			4161 = {
@@ -26,7 +26,8 @@ state={
 			4161 1
 		}
 		add_core_of = EGY
-		add_claim_by = TUR
+		#add_claim_by = TUR
+		add_core_of = TUR
 	}
 
 	provinces={

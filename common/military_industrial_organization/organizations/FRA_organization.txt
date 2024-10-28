@@ -35,7 +35,18 @@ deluge_FRA_renault_organization = {
 
 deluge_FRA_amx_tanks_organization = {
 	include = generic_mobile_tank_organization
-	icon = GFX_idea_designer_ursus
+	icon = GFX_idea_designer_ateliers_amx
+	allowed = {
+		tag = FRA
+	}
+	available = {
+		
+	}
+}
+
+deluge_FRA_fcm_heavy_tanks_organization = {
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_fcm
 	allowed = {
 		tag = FRA
 	}
@@ -105,7 +116,7 @@ deluge_FRA_sncac_organization = {
 }
 
 deluge_FRA_sncam_organization = {
-	icon = GFX_idea_POL_pws
+	icon = GFX_idea_designer_sncam
 	include = generic_light_aircraft_organization
 	allowed = {	
 		tag = FRA
@@ -113,7 +124,7 @@ deluge_FRA_sncam_organization = {
 }
 
 deluge_FRA_sncaso_organization = {
-	icon = GFX_idea_POL_pzl
+	icon = GFX_idea_FRA_sncaso
 	include = generic_medium_aircraft_organization
 	allowed = {	
 		tag = FRA
@@ -129,7 +140,7 @@ deluge_FRA_latecoere_organization = {
 }
 
 deluge_FRA_sncan_organization = {
-	icon = GFX_idea_designer_lws
+	icon = GFX_idea_FRA_sncan
 	include = generic_cas_aircraft_organization
 	allowed = {	
 		tag = FRA
@@ -137,7 +148,7 @@ deluge_FRA_sncan_organization = {
 }
 
 deluge_FRA_sncase_organization = {
-	icon = GFX_idea_designer_lws
+	icon = GFX_idea_FRA_sncase
 	include = generic_heavy_aircraft_organization
 	allowed = {	
 		tag = FRA
@@ -172,6 +183,13 @@ deluge_FRA_panhard_organization = {
 	}
 }
 
+deluge_FRA_laffly_organization = {
+	icon = GFX_idea_designer_laffly
+	include = generic_motorized_mechanized_organization
+	allowed = {
+		tag = FRA
+	}
+}
 #include = generic_tank_refurbishment_plant_organization
 #include = generic_support_equipment_organization
 #include = generic_motorized_mechanized_organization

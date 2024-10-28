@@ -8,7 +8,7 @@ state={
 
 	history={
 		owner = TUR
-		set_state_flag = arab_minor
+		#set_state_flag = arab_minor
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -24,9 +24,10 @@ state={
 			1086 20
 		}
 
-		add_claim_by = TUR
+		#add_claim_by = TUR
 		add_core_of = SYR
 		add_core_of = PAL
+		add_core_of = TUR
 	}
 
 	provinces={

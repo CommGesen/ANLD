@@ -508,9 +508,7 @@ political_actions = {
 				tag = WGR
 			}
 			has_global_flag = POM_issue_solved
-			NOT = {
-				has_government = communism
-			}
+			has_government = neutrality
 			POM = {
 				NOT = {
 					has_country_leader = {

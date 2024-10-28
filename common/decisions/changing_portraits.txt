@@ -203,4 +203,38 @@ changing_portraits_category = {
 			base = 0
 		}
 	}
+	portraits_maria_bonaparte = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+			
+		}
+		visible = {
+			has_character = SPR_deluge_marie_i
+			OR = {
+				SPR_deluge_marie_i = {
+					is_army_leader = yes
+				}
+				SPR_deluge_marie_i = {
+					is_navy_leader = yes
+				}
+				SPR_deluge_marie_i = {
+					is_country_leader = yes
+				}
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			country_event = {
+				id = deluge_portraits.7
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
 }

@@ -13,10 +13,40 @@ characters={
 		}
 	}
 	SPR_deluge_ronald_i={
-		name="Ronald I"
+		name="Roland I"
 		portraits={
 			civilian={
 				large="gfx/leaders/SPR/portrait_SPR_ronald_bonaparte.dds"
+			}
+		}
+		country_leader={
+			ideology=bonapartist_ideology
+			expire="1965.1.1.1"
+			traits = {
+				Geographer
+			}
+		}
+	}
+	SPR_deluge_marie_i={
+		name="María I"
+		portraits={
+			civilian={
+				large="GFX_portrait_SPR_marie_bonaparte_with_crown"
+			}
+		}
+		country_leader={
+			ideology=bonapartist_ideology
+			expire="1965.1.1.1"
+			traits = {
+				psychoanalyst
+			}
+		}
+	}
+	SPR_sixtus_of_bourbon_parma = {
+		name="Sixto I"
+		portraits={
+			civilian={
+				large="gfx/leaders/SPR/portrait_SPR_sixtus_of_bourbon_parma.dds"
 			}
 		}
 		country_leader={
@@ -371,6 +401,13 @@ characters={
 			defense_skill=2
 			planning_skill=4
 			logistics_skill=2
+		}
+		country_leader={
+			ideology=reactionary_ideology
+			expire="1965.1.1.1"
+			traits = {
+				temporary_leader
+			}
 		}
 	}
 	SPR_juan_yague={

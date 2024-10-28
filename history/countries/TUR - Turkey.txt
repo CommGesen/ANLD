@@ -13,20 +13,20 @@ set_research_slots = 3
 set_stability = 0.4
 set_war_support = 0.2
 
-add_dynamic_modifier = {
-	modifier = TUR_feudalism_dynamic_modifier
-}
+#add_dynamic_modifier = {
+#	modifier = TUR_feudalism_dynamic_modifier
+#}
 
-set_variable = {
-	tur_peasent_unrest = 15
-}
-set_variable = {
-	tur_feudal_loyalty = 75
-}
+#set_variable = {
+#	tur_peasent_unrest = 15
+#}
+#set_variable = {
+#	tur_feudal_loyalty = 75
+#}
 
-set_variable = { TUR_feudalism_research_speed_factor = -0.25 }
-set_variable = { TUR_feudalism_production_speed_buildings_factor = -0.25 }
-set_variable = { TUR_feudalism_production_factory_max_efficiency_factor = -0.1 }
+#set_variable = { TUR_feudalism_research_speed_factor = -0.25 }
+#set_variable = { TUR_feudalism_production_speed_buildings_factor = -0.25 }
+#set_variable = { TUR_feudalism_production_factory_max_efficiency_factor = -0.1 }
 
 add_opinion_modifier = { target = FRA modifier = great_war_alliance_modifier }
 add_opinion_modifier = { target = USA modifier = great_war_friendship_modifier }
@@ -38,29 +38,29 @@ add_opinion_modifier = { target = SOV modifier = great_war_hostility_modifier }
 add_opinion_modifier = { target = SOV modifier = historic_rivalry_modifier }
 add_opinion_modifier = { target = PER modifier = historic_rivalry_modifier }
 
-set_variable = {
-	var = TUR_influence_sultanists
-	value = 60
-}
-set_variable = {
-	var = TUR_influence_republicans
-	value = 40
-}
+#set_variable = {
+#	var = TUR_influence_sultanists
+#	value = 60
+#}
+#set_variable = {
+#	var = TUR_influence_republicans
+#	value = 40
+#}
 add_ideas = {
 	limited_conscription
-	TUR_debt8
-	TUR_national_Revolutionaries
-	TUR_legacy_of_the_1800s
-	TUR_Bahaeddin_Sakir
+#	TUR_debt8
+#	TUR_national_Revolutionaries
+#	TUR_legacy_of_the_1800s
+#	TUR_Bahaeddin_Sakir
 }
-country_event = {
-	id = turkey.1
-	days = 10
-}
-country_event = {
-	id = turkey.0
-	days = 10
-}
+#country_event = {
+#	id = turkey.1
+#	days = 10
+#}
+#country_event = {
+#	id = turkey.0
+#	days = 10
+#}
 
 set_cosmetic_tag = TUR_ottoman
 
@@ -153,6 +153,7 @@ set_popularities = {
 
 set_convoys = 100
 
+recruit_character = TUR_abdulmejid_ii
 recruit_character = TUR_cemil_cahit_toydemir
 recruit_character = TUR_ahmet_fevzi_pasha
 recruit_character = TUR_refet_pasha
@@ -162,17 +163,18 @@ recruit_character = TUR_rauf_orbay
 recruit_character = TUR_fahrettin_altay
 recruit_character = TUR_sefik_hüsnü
 recruit_character = TUR_Ali_Kemal
+
 recruit_character = TUR_celâl_bayar
 recruit_character = TUR_ismet_inönü
 recruit_character = TUR_fevzi_Çakmak
 recruit_character = TUR_Mustafa_Sabri
-recruit_character = TUR_abdulmejid_ii
 recruit_character = TUR_mustafa_kemal_pasha
 recruit_character = TUR_salih_omurtak
 recruit_character = TUR_osman_faud
 recruit_character = TUR_sehzade_omer_faruk
 recruit_character = TUR_ahmed_nihad
 recruit_character = TUR_fakhri_pasha
+
 recruit_character = TUR_mehmet_nuri_yamut
 recruit_character = TUR_hayrullah_fisek
 recruit_character = TUR_mehmet_salih_omurtak
@@ -183,8 +185,9 @@ recruit_character = TUR_Bahaeddin_Sakir
 recruit_character = TUR_Mehmed_Cavid
 recruit_character = TUR_Nuri_Said
 recruit_character = TUR_Jafar_Askari
+
 recruit_character = TUR_Husni_Zaim
-recruit_character = TUR_Sultan_Atrash
+#recruit_character = TUR_Sultan_Atrash
 recruit_character = TUR_AbdulQadir_Hussieni
 recruit_character = TUR_Ajami_Saadon
 recruit_character = TUR_Shakib_Arslan
@@ -357,44 +360,43 @@ if = {
 		}
 	}
 }
-
-every_state = {
-	if = {
-		limit = {
-			is_claimed_by = TUR
-			is_owned_by = TUR
-			NOT={
-				is_core_of = TUR
-				is_core_of = KUR
-			}
-		}
-		add_dynamic_modifier = {
-			modifier = TUR_minority_unrest1
-		}
-	}
-}
-184={
-	add_dynamic_modifier = {
-		modifier = TUR_minority_unrest1
-	}
-}
-339={
-	add_dynamic_modifier = {
-		modifier = TUR_minority_unrest1
-	}
-}
-354={
-	add_dynamic_modifier = {
-		modifier = TUR_minority_unrest1
-	}
-}
-353={
-	add_dynamic_modifier = {
-		modifier = TUR_minority_unrest1
-	}
-}
-355={
-	add_dynamic_modifier = {
-		modifier = TUR_minority_unrest1
-	}
-}
+#every_state = {
+#	if = {
+#		limit = {
+#			is_claimed_by = TUR
+#			is_owned_by = TUR
+#			NOT={
+#				is_core_of = TUR
+#				is_core_of = KUR
+#			}
+#		}
+#		add_dynamic_modifier = {
+#			modifier = TUR_minority_unrest1
+#		}
+#	}
+#}
+#184={
+#	add_dynamic_modifier = {
+#		modifier = TUR_minority_unrest1
+#	}
+#}
+#339={
+#	add_dynamic_modifier = {
+#		modifier = TUR_minority_unrest1
+#	}
+#}
+#354={
+#	add_dynamic_modifier = {
+#		modifier = TUR_minority_unrest1
+#	}
+#}
+#353={
+#	add_dynamic_modifier = {
+#		modifier = TUR_minority_unrest1
+#	}
+#}
+#355={
+#	add_dynamic_modifier = {
+#		modifier = TUR_minority_unrest1
+#	}
+#}

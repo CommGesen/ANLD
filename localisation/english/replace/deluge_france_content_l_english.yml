@@ -21,8 +21,8 @@
  ##MIOS:
  deluge_FRA_sncac_organization:0 "SNCAC - Centre Aviation"
  deluge_FRA_latecoere_organization:0 "Avions Latécoère"
- deluge_FRA_sncam_organization:0 "SNCAN - Nord Aviation"
- deluge_FRA_sncan_organization:0 "SNCAM - Midi Aviation"
+ deluge_FRA_sncam_organization:0 "SNCAM - Midi Aviation"
+ deluge_FRA_sncan_organization:0 "SNCAN - Nord Aviation"
  deluge_FRA_sncaso_organization:0 "SNCASO - Sud-Ouest Aviation"
  deluge_FRA_sncase_organization:0 "SNCASE - Sud-Est Aviation"
  deluge_FRA_mas_organization:0 "Manufacture MAS"
@@ -36,6 +36,8 @@
  deluge_FRA_acf_organization:0 "ACF"
  deluge_FRA_fcm_organization:0 "FCM"
  deluge_FRA_arsenal_de_lorient_organization:0 "Arsenal de Lorient"
+ deluge_FRA_laffly_organization:0 "Laffly"
+ deluge_FRA_fcm_heavy_tanks_organization:0 "FCM - Heavy Tank Department"
  ##SPIRITS
  FRA_spirit_towards_republic:0 "Towards Republic"
  FRA_spirit_towards_republic_desc:0 "Republican ideas are becoming more popular in France."
@@ -280,6 +282,7 @@
  FRA_custom_effect_tooltip_93:0 "Unlocks §HSubsidizing City Development§! decisions!"
  FRA_custom_effect_tooltip_94:0 "Modify §HNew French Economy§! by:\n§G+5%§! Division Defence on Core Territory\n§G-10%§! Supply Combat Penalties on Core Territory\n§G+7%§! Closer Air Support Damage Reduction!"
  FRA_custom_effect_tooltip_95:0 "§HAviation Designers§! will be upgraded!"
+ FRA_custom_effect_tooltip_96:0 "Adds §HFrancism§! national spirit that gives:\n§G+5%§! War Support!"
  ##CHARACTERS
  FRA_deluge_napoleon_vi_name:0 "Napoléon VI"
  FRA_deluge_napoleon_vi_desc:0 "He was born on January 23, 1914.\n\nLouis Bonaparte known as Napoléon VI, son of Victor Bonaparte known as Napoléon V and his wife Empress Clémentine, took the throne at the age of 12 on May 3, 1926 after the death of his father. His mother served as regent until he came of age. Not yet married, he is a true French patriot who wants to maintain the French Empire and lead its inhabitants to prosperity, which is what the title of Emperor of the French obliges him to do. He is well educated in military matters and promotes militarism. His current rule is characterized by centrism and leaving many matters to the parliament. The rule of his father, as well as his mother, has left France in a bad state and it is his task to fix all its problems."
@@ -530,6 +533,7 @@
  FRA_radicals_took_power:0 "Radicals took power!"
  FRA_nationalists_took_power:0 "Nationalists took power!"
  BHU_bourbon_bhopal_revolt_started:0 "Bourbon-Bhopal revolt started in India!"
+ FRA_marcel_bucard_won:0 "Marcel Bucard"
  ##Parties:
  FRA_communism_party:0 "FSWI"
  FRA_communism_party_long:0 "French Section of the Workers' International"
@@ -553,6 +557,8 @@
  FRA_french_social_party_long:0 "French Social Party"
  FRA_fire_movemenet_party:0 "Fire Movement"
  FRA_fire_movemenet_party_long:0 "Fire Movement"
+ FRA_francist_movemenet_party:0 "Francist Movement"
+ FRA_francist_movemenet_party_long:0 "Francist Movement"
  FRA_boulangists_party:0 "Boulangists"
  FRA_boulangists_party_long:0 "Boulangists"
  deluge_bourbon_bhopal_neutrality_short:0 "Bourbon-Bhopal"

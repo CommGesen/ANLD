@@ -397,7 +397,16 @@ FRA_modifier_new_french_economy = {##new_french_economy_
 FRA_modifier_francism = {##francism_
 	enable = { always = yes }
 	icon = GFX_idea_spirit_bank_vault ##change later
-	
+	conscription = francism_conscription
+	research_speed_factor = francism_research_speed_factor
+	communism_drift = francism_communism_drift
+	fascism_drift = francism_fascism_drift
+	army_org_factor = francism_army_org_factor
+	army_attack_factor = francism_army_attack_factor
+	army_morale_factor = francism_army_morale_factor
+	monthly_population = francism_monthly_population
+	political_power_factor = francism_political_power_factor
+	war_support_factor = francism_war_support_factor
 }
 FRA_modifier_obsolete_army = {##french_bad_army_
 	enable = { always = yes }

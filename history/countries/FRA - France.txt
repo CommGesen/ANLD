@@ -850,7 +850,7 @@ if = {
 	set_autonomy = {
 		target = SPR
 		autonomous_state = autonomy_dominion
-		freedom_level = 0.8
+		freedom_level = 0.3
 	}
 	else = {
 		puppet = BEL

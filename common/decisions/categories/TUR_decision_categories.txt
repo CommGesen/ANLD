@@ -1,10 +1,16 @@
 TUR_power_struggle_category={
-	allowed = { original_tag = TUR }
+	allowed = { 
+		#original_tag = TUR
+		always = no
+	}
 	priority = 80
 	icon = GFX_decision_category_power_struggle
 }
 TUR_Act_Fast = {
-	allowed = { original_tag = TUR }
+	allowed = { 
+		#original_tag = TUR
+		always = no
+	}
 	priority = 80
 	icon = GFX_decision_category_generic_crisis
 	picture = GFX_decision_cat_baghdad_protest
@@ -13,7 +19,8 @@ TUR_Vilayets_category = {
 	icon = GFX_decision_category_ottoman_council
 	picture = GFX_decision_category_arab_lands
 	allowed = {
-		original_tag = TUR
+		#original_tag = TUR
+		always = no
 	}
 	visible = {
 	}

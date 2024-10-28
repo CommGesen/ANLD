@@ -8,7 +8,7 @@ state={
 	
 	history={
 		owner = TUR
-		set_state_flag = arab_minor
+		#set_state_flag = arab_minor
 		victory_points = {
 			12473 10
 		}
@@ -22,9 +22,9 @@ state={
 			industrial_complex = 1
 			infrastructure = 2
 		}
-
-		add_claim_by = TUR
+		#add_claim_by = TUR
 		add_core_of = SYR
+		add_core_of = TUR
 	}
 
 	provinces={

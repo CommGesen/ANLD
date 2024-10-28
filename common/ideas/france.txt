@@ -1471,8 +1471,8 @@ ideas = {
 	}
 	vehicle_manufacturer_slot = {
 		designer = yes
-		deluge_designer_faffly = {
-			#picture = 
+		deluge_designer_laffly = {
+			picture = designer_laffly 
 			allowed = {
 				OR = {
 					original_tag = FRA
@@ -1627,7 +1627,7 @@ ideas = {
 			}
 		}
 		deluge_designer_sncan = {
-			picture = POL_pws
+			picture = FRA_sncan
 			allowed = {
 				original_tag = FRA
 			}
@@ -1651,7 +1651,7 @@ ideas = {
 			}
 		}
 		deluge_designer_sncan_2 = {
-			picture = POL_pws
+			picture = FRA_sncan
 			allowed = {
 				original_tag = FRA
 			}
@@ -1673,7 +1673,7 @@ ideas = {
 			}
 		}
 		deluge_designer_sncaso = {
-			picture = POL_pzl
+			picture = FRA_sncaso
 			allowed = {
 				original_tag = FRA
 			}
@@ -1697,7 +1697,7 @@ ideas = {
 			}
 		}
 		deluge_designer_sncaso_2 = {
-			picture = POL_pzl
+			picture = FRA_sncaso
 			allowed = {
 				original_tag = FRA
 			}
@@ -1719,7 +1719,7 @@ ideas = {
 			}
 		}
 		deluge_designer_sncase = {
-			picture = designer_lot
+			picture = FRA_sncase
 			allowed = {
 				original_tag = FRA
 			}
@@ -1743,7 +1743,7 @@ ideas = {
 			}
 		}
 		deluge_designer_sncase_2 = {
-			picture = designer_lot
+			picture = FRA_sncase
 			allowed = {
 				original_tag = FRA
 			}

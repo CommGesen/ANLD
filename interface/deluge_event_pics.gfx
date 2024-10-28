@@ -135,12 +135,12 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/piasecki_in_power.dds"
 	}
 	spriteType = {
-		name = GFX_Jozef_Pilsudski_dead_global
-		texturefile = "gfx/event_pictures/Jozef_Pilsudski_dead_global.dds"
+		name = "GFX_news_event_jozef_pilsudski_dead"
+		texturefile = "gfx/event_pictures/news_event_jozef_pilsudski_dead.dds"
 	}
 	spriteType = {
-		name = GFX_jozef_pilsudski_dead_small
-		texturefile = "gfx/event_pictures/Jozef_Pilsudski_dead_country.dds"
+		name = "GFX_report_event_jozef_pilsudski_dead"
+		texturefile = "gfx/event_pictures/report_event_jozef_pilsudski_dead.dds"
 	}
 	spriteType = {
 		name = "GFX_old_foreign_policy"
@@ -191,8 +191,8 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/swedish_royal_palace_news_event.dds"
 	}
 	spriteType = {
-		name = "GFX_old_polish_king"
-		texturefile = "gfx/event_pictures/old_polish_king.dds"
+		name = "GFX_report_event_fryderyk_i_wettyn"
+		texturefile = "gfx/event_pictures/report_event_fryderyk_i_wettyn.dds"
 	}
 	spriteType = {
 		name = "GFX_soldiers_on_bicycles"
@@ -863,7 +863,107 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_french_nationalist_meeting.dds"
 	}
 	spriteType = {
-		name = "GFX_news_event_de_la_rocque_takes_power"
-		texturefile = "gfx/event_pictures/news_event_de_la_rocque_takes_power.dds"
+		name = "GFX_news_event_francois_de_la_rocque"
+		texturefile = "gfx/event_pictures/news_event_francois_de_la_rocque.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_marie_bonaparte"
+		texturefile = "gfx/event_pictures/report_event_marie_bonaparte.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_morane"
+		texturefile = "gfx/event_pictures/report_event_morane.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_french_republic"
+		texturefile = "gfx/event_pictures/news_event_french_republic.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_marcel_bucard"
+		texturefile = "gfx/event_pictures/news_event_marcel_bucard.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_jacques_doriot"
+		texturefile = "gfx/event_pictures/news_event_jacques_doriot.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_spanish_republic_proclaimed"
+		texturefile = "gfx/event_pictures/news_event_spanish_republic_proclaimed.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_marie_bonaparte"
+		texturefile = "gfx/event_pictures/news_event_marie_bonaparte.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_razzle_dazzle"
+		texturefile = "gfx/event_pictures/report_event_razzle_dazzle.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_french_jeeps"
+		texturefile = "gfx/event_pictures/report_event_french_jeeps.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_roland_bonaparte"
+		texturefile = "gfx/event_pictures/report_event_roland_bonaparte.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_sixtus_of_bourbon_parma"
+		texturefile = "gfx/event_pictures/news_event_sixtus_of_bourbon_parma.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_sixtus_of_bourbon_parma"
+		texturefile = "gfx/event_pictures/report_event_sixtus_of_bourbon_parma.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_french_airforce"
+		texturefile = "gfx/event_pictures/report_event_french_airforce.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_d520proto"
+		texturefile = "gfx/event_pictures/report_event_d520proto.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_mbproto"
+		texturefile = "gfx/event_pictures/report_event_mbproto.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_happy_spanish_soldiers"
+		texturefile = "gfx/event_pictures/news_event_happy_spanish_soldiers.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_abdulmecid_ii"
+		texturefile = "gfx/event_pictures/report_event_abdulmecid_ii.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_mariusz_zaruski"
+		texturefile = "gfx/event_pictures/report_event_mariusz_zaruski.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_roman_dmowski_dead"
+		texturefile = "gfx/event_pictures/report_event_roman_dmowski_dead.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_grunwald_swords"
+		texturefile = "gfx/event_pictures/report_event_grunwald_swords.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_roman_dmowski_dead"
+		texturefile = "gfx/event_pictures/news_event_roman_dmowski_dead.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_omer_faruk"
+		texturefile = "gfx/event_pictures/news_event_omer_faruk.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_osman_fuad"
+		texturefile = "gfx/event_pictures/news_event_osman_fuad.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_sehzade_ahmed_nihad"
+		texturefile = "gfx/event_pictures/news_event_sehzade_ahmed_nihad.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_french_intervention_in_spain"
+		texturefile = "gfx/event_pictures/news_event_french_intervention_in_spain.dds"
 	}
 }

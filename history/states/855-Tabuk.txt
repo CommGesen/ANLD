@@ -5,11 +5,13 @@ state={
 
 	history={
 		owner = TUR
-		add_claim_by = TUR
-		add_claim_by = SAU
+		#add_claim_by = TUR
+		#add_claim_by = SAU
 		add_core_of = HEJ
-		set_state_flag = arab_minor
-		set_state_flag = arab_emirate
+		add_core_of = TUR
+		add_core_of = SAU
+		#set_state_flag = arab_minor
+		#set_state_flag = arab_emirate
 	}
 
 	provinces={

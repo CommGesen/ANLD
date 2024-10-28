@@ -136,14 +136,17 @@ bookmarks = {
 			minor = yes
 			history = "TUR_DELUGE_DESC"
 			ideas = {
-				TUR_debt8
-				TUR_national_Revolutionaries
-				TUR_legacy_of_the_1800s
+				#TUR_debt8
+				#TUR_national_Revolutionaries
+				#TUR_legacy_of_the_1800s
+				deluge_aristocracy_idea
+				deluge_manorialism_idea
+				deluge_judiciary_idea
 			}
 			focuses = {
 				turkey_depose_monarch
 				turkey_call_to_arms
-				turkey_claim_egypt
+				turkey_claim_egypt		
 			}
 		}
 		"SWE"={

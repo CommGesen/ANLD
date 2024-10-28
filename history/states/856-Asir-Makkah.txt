@@ -6,11 +6,13 @@ state={
 	}
 	history = {
 		owner = TUR
-		set_state_flag = arab_minor
-		set_state_flag = arab_emirate
-		add_claim_by = TUR
-		add_claim_by = SAU
+		#set_state_flag = arab_minor
+		#set_state_flag = arab_emirate
+		#add_claim_by = TUR
+		#add_claim_by = SAU
 		add_core_of = HEJ
+		add_core_of = SAU
+		add_core_of = TUR
 		buildings = {
 			infrastructure = 1
 			12883 = {

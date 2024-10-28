@@ -239,3 +239,35 @@ country_event = {##Otto von Habsburg
 		}
 	}
 }
+country_event = {##Marie I Bonaparte of Spain
+	id = deluge_portraits.7
+	title = deluge_portraits.7.t
+	desc = deluge_portraits.7.d
+	picture = GFX_report_event_marie_bonaparte
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##with crown
+		name = deluge_portraits.7.a
+		set_portraits = {
+			character = SPR_deluge_marie_i
+			army = { large ="GFX_portrait_SPR_marie_bonaparte_with_crown" }
+			civilian = { large ="GFX_portrait_SPR_marie_bonaparte_with_crown" }
+			navy = { large ="GFX_portrait_SPR_marie_bonaparte_with_crown" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##without crown
+		name = deluge_portraits.7.b
+		set_portraits = {
+			character = SPR_deluge_marie_i
+			army = { large ="GFX_portrait_SPR_marie_bonaparte" }
+			civilian = { large ="GFX_portrait_SPR_marie_bonaparte" }
+			navy = { large ="GFX_portrait_SPR_marie_bonaparte" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

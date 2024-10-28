@@ -467,6 +467,50 @@ country_event = {
 		set_country_flag = FRA_francois_de_la_rocque_won
 	}
 }
+news_event = {##info for world that France became a republic
+	id = deluge_france.18
+	title = deluge_france.18.t
+	desc = deluge_france.18.d
+	picture = GFX_news_event_french_republic
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france_foreign.18.a
+	}
+}
+news_event = {##info for world that Marcel Bucard rules FRA
+	id = deluge_france.19
+	title = deluge_france.19.t
+	desc = deluge_france.19.d
+	picture = GFX_news_event_marcel_bucard
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france_foreign.19.a
+	}
+}
+news_event = {##info for world that Jacques Doriot rules FRA
+	id = deluge_france.20
+	title = deluge_france.20.t
+	desc = deluge_france.20.d
+	picture = GFX_news_event_jacques_doriot
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france_foreign.20.a
+	}
+}
+news_event = {##info for world that Francois de La Rocque rules FRA
+	id = deluge_france.21
+	title = deluge_france.21.t
+	desc = deluge_france.21.d
+	picture = GFX_news_event_francois_de_la_rocque
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france_foreign.21.a
+	}
+}
 country_event = {##inspection in the army
 	id = deluge_france_lore.1
 	title = deluge_france_lore.1.t
@@ -537,7 +581,7 @@ country_event = {##French Jeep Production
 	id = deluge_france_lore.7
 	title = deluge_france_lore.7.t
 	desc = deluge_france_lore.7.d
-	picture = GFX_report_event_barrages_david ##change later
+	picture = GFX_report_event_french_jeeps
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
@@ -548,7 +592,7 @@ country_event = {##Review the Fleet
 	id = deluge_france_lore.8
 	title = deluge_france_lore.8.t
 	desc = deluge_france_lore.8.d
-	picture = GFX_report_event_french_navy ##change later
+	picture = GFX_report_event_french_navy
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
@@ -559,7 +603,7 @@ country_event = {##Razzle Dazzle
 	id = deluge_france_lore.9
 	title = deluge_france_lore.9.t
 	desc = deluge_france_lore.9.d
-	picture = GFX_report_event_barrages_david ##change later
+	picture = GFX_report_event_razzle_dazzle
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
@@ -570,7 +614,7 @@ country_event = {##Fighter Competitions
 	id = deluge_france_lore.10
 	title = deluge_france_lore.10.t
 	desc = deluge_france_lore.10.d
-	picture = GFX_report_event_barrages_david ##change later
+	picture = GFX_report_event_morane
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
@@ -586,6 +630,39 @@ country_event = {##Trials for Multirole Aircraft
 	is_triggered_only = yes
 	option = {
 		name = deluge_france_lore.11.a
+	}
+}
+country_event = {##Air Force Modernization
+	id = deluge_france_lore.12
+	title = deluge_france_lore.12.t
+	desc = deluge_france_lore.12.d
+	picture = GFX_report_event_french_airforce
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.12.a
+	}
+}
+country_event = {##Dewoitine D.520
+	id = deluge_france_lore.13
+	title = deluge_france_lore.13.t
+	desc = deluge_france_lore.13.d
+	picture = GFX_report_event_d520proto
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.13.a
+	}
+}
+country_event = {##Marcel Bloch MB.152
+	id = deluge_france_lore.14
+	title = deluge_france_lore.14.t
+	desc = deluge_france_lore.14.d
+	picture = GFX_report_event_mbproto
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.14.a
 	}
 }
 
@@ -741,7 +818,7 @@ country_event = {##BHU has opportunity to revolt against French overlord as Indi
 	id = deluge_france_foreign.8
 	title = deluge_france_foreign.8.t
 	desc = deluge_france_foreign.8.d
-	#picture = GFX_report_event_salvador_iii_de_bourbon_bhopal
+	picture = GFX_report_event_salvador_iii_de_bourbon_bhopal
 	trigger = {
 		tag = BHU
 		BHU = {

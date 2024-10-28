@@ -1,0 +1,959 @@
+﻿add_namespace = deluge_spain
+country_event = {##SPR gets info that their king Roland I died
+	id = deluge_spain.1
+	title = deluge_spain.1.t
+	desc = deluge_spain.1.d
+	picture = GFX_report_event_roland_bonaparte
+	fire_only_once = yes
+	trigger = {
+		tag = SPR
+		has_character = SPR_deluge_ronald_i
+		date > 1937.6.6
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {##woman cannot be a monarch - monarchy abolished, republic established, SPR gets free
+		name = deluge_spain.1.a
+		retire_character = SPR_deluge_ronald_i
+		promote_character = SPR_deluge_marie_i
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48 
+		}
+		FRA = {
+			country_event = {
+				id = deluge_spain.5
+				days = 10
+			}
+		}
+		hidden_effect = {
+			news_event = {
+				id = deluge_spain.2
+				hours = 20
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##woman cannot be a monarch - crown bourbon-parma king from Portugal - Sixtus, POR becomes higher partner in personal union with SPR, POR needs to accept
+		name = deluge_spain.1.b
+		retire_character = SPR_deluge_ronald_i
+		promote_character = SPR_emilio_mola
+		if = {
+			limit = {
+				OR = {
+					NOT = {
+						country_exists = POR
+					}
+					NOT = {
+						POR = {
+							has_government = neutrality
+						}
+					}
+					POR = {
+						is_subject = yes
+					}
+				}
+			}
+			promote_character = SPR_sixtus_of_bourbon_parma
+			set_party_name = { ideology = neutrality long_name = FRA_bourbon_parma_loyalists_party_long name = FRA_bourbon_parma_loyalists_party_short }
+			hidden_effect = {
+				news_event = {
+					id = deluge_spain.17
+					hours = 5
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = POR
+				POR = {
+					is_subject = no
+				}
+				POR = {
+					has_government = neutrality
+				}
+			}
+			POR = {
+				country_event = {
+					id = deluge_spain.7
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					SPR = {
+						is_subject_of = FRA
+					}
+				}
+			}
+			set_country_flag = SPR_france_didnt_gave_freedom
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##woman can be king - crown Maria Bonaparte
+		name = deluge_spain.1.c
+		retire_character = SPR_deluge_ronald_i
+		promote_character = SPR_deluge_marie_i
+		hidden_effect = {
+			news_event = {
+				id = deluge_spain.4
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##force france to give us freedom for crowning queen
+		name = deluge_spain.1.e
+		trigger = {
+			SPR = {
+				is_subject_of = FRA
+			}
+		}
+		retire_character = SPR_deluge_ronald_i
+		promote_character = SPR_emilio_mola
+		FRA = {
+			country_event = {
+				id = deluge_spain.12
+				hours = 10
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+news_event = {##Spanish monarchy abolished
+	id = deluge_spain.2
+	title = deluge_spain.2.t
+	desc = deluge_spain.2.d
+	picture = GFX_news_event_spanish_republic_proclaimed
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_spain.2.a
+	}
+}
+news_event = {##Sixtus becomes king of Spain - info for the world
+	id = deluge_spain.3
+	title = deluge_spain.3.t
+	desc = deluge_spain.3.d
+	picture = GFX_news_event_sixtus_of_bourbon_parma
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_spain.3.a
+	}
+}
+news_event = {##Maria becomes queen without a problem
+	id = deluge_spain.4
+	title = deluge_spain.4.t
+	desc = deluge_spain.4.d
+	picture = GFX_news_event_marie_bonaparte
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_spain.4.a
+	}
+}
+country_event = {#FRA gets info that Spain abolished monarchy
+	id = deluge_spain.5
+	title = deluge_spain.5.t
+	desc = deluge_spain.5.d
+	picture = GFX_report_event_marie_bonaparte
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {##do nothing
+		name = deluge_spain.5.a
+		add_political_power = 100
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {##attack
+		name = deluge_spain.5.b
+		set_global_flag = FRA_attacks_SPR_independence
+		add_political_power = -100
+		add_war_support = -0.1
+		add_stability = -0.1
+		FRA = {
+			declare_war_on = {
+				target = SPR
+				type = puppet_wargoal_focus
+			}
+		}
+		hidden_effect = {
+			news_event = {
+				id = deluge_spain.6
+				hours = 5
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+}
+news_event = {##SPR became republic so FRA attacks
+	id = deluge_spain.6
+	title = deluge_spain.6.t
+	desc = deluge_spain.6.d
+	picture = GFX_news_event_french_intervention_in_spain
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_spain.6.a
+	}
+}
+country_event = {#POR has option to puppet SPR by SPR crowning sixtus, but may lead to war with France
+	id = deluge_spain.7
+	title = deluge_spain.7.t
+	desc = deluge_spain.7.d
+	picture = GFX_report_event_sixtus_of_bourbon_parma
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {##reject
+		name = deluge_spain.7.a
+		SPR = {
+			set_country_flag = SPR_portugal_didnt_let_sixtus
+			if = {
+				limit = {
+					has_country_flag = SPR_portugal_didnt_let_sixtus
+					has_country_flag = SPR_france_didnt_gave_freedom
+				}
+				country_event = {
+					id = deluge_spain.16
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = SPR_portugal_didnt_let_sixtus
+					NOT = {
+						has_country_flag = SPR_france_didnt_gave_freedom
+					}
+				}
+				country_event = {
+					id = deluge_spain.8
+				}
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {##agree
+		name = deluge_spain.7.b
+		set_autonomy = {
+			target = SPR
+			autonomous_state = autonomy_dominion
+			end_wars = yes
+			end_civil_wars = no
+		}
+		SPR = {
+			promote_character = SPR_sixtus_of_bourbon_parma
+			set_party_name = { ideology = neutrality long_name = FRA_bourbon_parma_loyalists_party_long name = FRA_bourbon_parma_loyalists_party_short }
+			country_event = {
+				id = deluge_spain.9
+			}
+		}
+		FRA = {
+			country_event = {
+				id = deluge_spain.10
+			}
+		}
+		hidden_effect = {
+			news_event = {
+				id = deluge_spain.3
+				hours = 5
+			}
+		}
+		ai_chance = {
+			factor = 1000
+		}
+	}
+}
+country_event = {#POR rejected so SPR looks at other options
+	id = deluge_spain.8
+	title = deluge_spain.8.t
+	desc = deluge_spain.8.d
+	picture = GFX_report_event_marie_bonaparte
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {##abolish monarchy
+		name = deluge_spain.8.a
+		promote_character = SPR_deluge_marie_i
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48 
+		}
+		FRA = {
+			country_event = {
+				id = deluge_spain.5
+				days = 10
+			}
+		}
+		hidden_effect = {
+			news_event = {
+				id = deluge_spain.2
+				hours = 20
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##crown Marie
+		name = deluge_spain.8.b
+		promote_character = SPR_deluge_marie_i
+		hidden_effect = {
+			news_event = {
+				id = deluge_spain.4
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##crown Marie but ask French for independence
+		name = deluge_spain.8.c
+		trigger = {
+			SPR = {
+				is_subject_of = FRA
+			}
+		}
+		FRA = {
+			country_event = {
+				id = deluge_spain.12
+				hours = 10
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {#info for SPR that POR accepted
+	id = deluge_spain.9
+	title = deluge_spain.9.t
+	desc = deluge_spain.9.d
+	picture = GFX_report_event_sixtus_of_bourbon_parma
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_spain.9.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {#FRA gets info that Spain crowned Sixtus
+	id = deluge_spain.10
+	title = deluge_spain.10.t
+	desc = deluge_spain.10.d
+	picture = GFX_report_event_sixtus_of_bourbon_parma
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {##do nothing
+		name = deluge_spain.10.a
+		add_political_power = 100
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {##attack
+		name = deluge_spain.10.b
+		set_global_flag = FRA_attacks_SPR_independence
+		add_political_power = -100
+		add_war_support = -0.1
+		add_stability = -0.1
+		FRA = {
+			declare_war_on = {
+				target = SPR
+				type = puppet_wargoal_focus
+			}
+		}
+		hidden_effect = {
+			news_event = {
+				id = deluge_spain.11
+				hours = 5
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+}
+news_event = {##SPR crowned Sixtus so FRA attacks
+	id = deluge_spain.11
+	title = deluge_spain.11.t
+	desc = deluge_spain.11.d
+	picture = GFX_news_event_french_intervention_in_spain
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_spain.11.a
+	}
+}
+country_event = {#SPR asks FRA for independence for crowning Marie Bonaparte
+	id = deluge_spain.12
+	title = deluge_spain.12.t
+	desc = deluge_spain.12.d
+	picture = GFX_report_event_marie_bonaparte
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {#agree
+		name = deluge_spain.12.a
+		set_autonomy = {
+			target = SPR
+			autonomous_state = autonomy_free
+			end_wars = yes
+			end_civil_wars = no
+		}
+		SPR = {
+			promote_character = SPR_deluge_marie_i
+			country_event = {
+				id = deluge_spain.13
+				hours = 5
+			}
+		}
+		hidden_effect = {
+			news_event = {
+				id = deluge_spain.14
+				days = 3
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {#reject
+		name = deluge_spain.12.b
+		SPR = {
+			set_country_flag = SPR_france_didnt_gave_freedom
+			if = {
+				limit = {
+					has_country_flag = SPR_portugal_didnt_let_sixtus
+					has_country_flag = SPR_france_didnt_gave_freedom
+				}
+				country_event = {
+					id = deluge_spain.16
+					hours = 5
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = SPR_france_didnt_gave_freedom
+					NOT = {
+						has_country_flag = SPR_portugal_didnt_let_sixtus
+					}
+				}
+				country_event = {
+					id = deluge_spain.15
+					hours = 5
+				}
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+}
+country_event = {#info for SPR that FRA accepted
+	id = deluge_spain.13
+	title = deluge_spain.13.t
+	desc = deluge_spain.13.d
+	picture = GFX_report_event_marie_bonaparte
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_spain.13.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+news_event = {##SPR crowned Marie but FRA gave freedom
+	id = deluge_spain.14
+	title = deluge_spain.14.t
+	desc = deluge_spain.14.d
+	picture = GFX_news_event_marie_bonaparte
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_spain.14.a
+	}
+}
+country_event = {#FRA rejected so SPR looks at other options
+	id = deluge_spain.15
+	title = deluge_spain.15.t
+	desc = deluge_spain.15.d
+	picture = GFX_report_event_marie_bonaparte
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {##abolish monarchy
+		name = deluge_spain.15.a
+		promote_character = SPR_deluge_marie_i
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48 
+		}
+		FRA = {
+			country_event = {
+				id = deluge_spain.5
+				days = 10
+			}
+		}
+		hidden_effect = {
+			news_event = {
+				id = deluge_spain.2
+				hours = 20
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##crown Marie
+		name = deluge_spain.15.b
+		promote_character = SPR_deluge_marie_i
+		hidden_effect = {
+			news_event = {
+				id = deluge_spain.4
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##ask POR for monarch
+		name = deluge_spain.15.c
+		if = {
+			limit = {
+				OR = {
+					NOT = {
+						country_exists = POR
+					}
+					NOT = {
+						POR = {
+							has_government = neutrality
+						}
+					}
+					POR = {
+						is_subject = yes
+					}
+				}
+			}
+			promote_character = SPR_sixtus_of_bourbon_parma
+			set_party_name = { ideology = neutrality long_name = FRA_bourbon_parma_loyalists_party_long name = FRA_bourbon_parma_loyalists_party_short }
+			hidden_effect = {
+				news_event = {
+					id = deluge_spain.17
+					hours = 5
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = POR
+				POR = {
+					is_subject = no
+				}
+				POR = {
+					has_government = neutrality
+				}
+			}
+			POR = {
+				country_event = {
+					id = deluge_spain.7
+				}
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {#SPR has only 2 options left
+	id = deluge_spain.16
+	title = deluge_spain.16.t
+	desc = deluge_spain.16.d
+	picture = GFX_report_event_marie_bonaparte
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {##abolish monarchy
+		name = deluge_spain.16.a
+		promote_character = SPR_deluge_marie_i
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48 
+		}
+		FRA = {
+			country_event = {
+				id = deluge_spain.5
+				days = 10
+			}
+		}
+		hidden_effect = {
+			news_event = {
+				id = deluge_spain.2
+				hours = 20
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##crown Marie
+		name = deluge_spain.16.b
+		promote_character = SPR_deluge_marie_i
+		hidden_effect = {
+			news_event = {
+				id = deluge_spain.4
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+news_event = {##Sixtus becomes king of Spain but POR doesn't exist or isn't monarchist
+	id = deluge_spain.17
+	title = deluge_spain.17.t
+	desc = deluge_spain.17.d
+	picture = GFX_news_event_sixtus_of_bourbon_parma
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_spain.17.a
+	}
+}
+country_event = {#SPR gets possibility to white peace FRA
+	id = deluge_spain.18
+	title = deluge_spain.18.t
+	desc = deluge_spain.18.d
+	picture = GFX_report_event_generic_sign_treaty2
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			AND = {
+				tag = SPR
+				has_global_flag = {
+					flag = FRA_attacks_SPR_independence
+					days > 700
+				}
+				SPR = {
+					has_war_with = FRA
+				}
+			}
+			AND = {
+				tag = POR
+				has_global_flag = {
+					flag = FRA_attacks_SPR_independence
+					days > 700
+				}
+				POR = {
+					has_war_with = FRA
+				}
+				SPR = {
+					is_subject_of = POR
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {##white peace
+		name = deluge_spain.18.a
+		white_peace = {
+			tag = FRA
+			message = SPR_won_independence_war
+		}
+		clr_global_flag = FRA_attacks_SPR_independence
+		ai_chance = {
+			factor = 100000
+		}
+	}
+	option = {#no white peace
+		name = deluge_spain.18.b
+		clr_global_flag = FRA_attacks_SPR_independence
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+news_event = {##info for world that SPR won their independence
+	id = deluge_spain.19
+	title = deluge_spain.19.t
+	desc = deluge_spain.19.d
+	picture = GFX_news_event_happy_spanish_soldiers
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_spain.19.a
+	}
+}
+news_event = {##info for world that FRA installed Marie Bonaparte on Spanish throne
+	id = deluge_spain.20
+	title = deluge_spain.20.t
+	desc = deluge_spain.20.d
+	picture = GFX_news_event_marie_bonaparte
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_spain.20.a
+	}
+}
