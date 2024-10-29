@@ -1,0 +1,15 @@
+characters = {
+	KHI_sayyid_abdullah_khan = {
+		name = KHI_sayyid_abdullah_khan_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KHI_sayyid_abdullah_khan
+			}
+		}
+		country_leader = {
+			ideology = reactionary_ideology
+			expire = "1953.3.1.1"
+			id = -1
+		}
+	}
+}

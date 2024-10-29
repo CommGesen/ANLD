@@ -7,6 +7,7 @@
  STATE_6: "Vlaanderen"
  STATE_7: "Holland"
  STATE_8: "Forêts"
+ 
  STATE_10: "Mazowsze Centralne"
  STATE_11: "Kaunas"
  STATE_12: "Vidzeme"
@@ -932,25 +933,28 @@
  STATE_932: "Isle of Man"
  STATE_933: "Shetland Islands"
  STATE_934: "Shkodër"
+ 
  STATE_970: "Basrah"
  STATE_971: "Erbil-Sulaymaniyah"
  STATE_972: "Al-Hasakah"
  STATE_973: "Central Epirus"
  STATE_974: "Western Desert"
  STATE_975: "Al-Kufra"
- STATE_976: "Northern State"
+ STATE_976: "Karachay-Cherkessia"
  STATE_977: "Al-Mafraq"
  STATE_978: "North Hadhramaut"
  STATE_979: "Zahira"
  STATE_980: "Al-Qassim"
  STATE_981: "Tehran"
- ##Czech states:
+ STATE_982: "Kungrad"
+
+ ###CZECHIA###
  STATE_9: "Mittelböhmen"
  STATE_9_POL: "Środkowe Czechy"
- STATE_9_CZE: "Strední Cechy"
- STATE_69: "Pilsner Region"
- STATE_69_POL: "Kraj Pilzneński"
- STATE_69_CZE: "Plzenský kraj"
+ STATE_9_CZE: "Strední Čechy"
+ STATE_69: "Pilsen"
+ STATE_69_POL: "Pilzno"
+ STATE_69_CZE: "Plzeň"
  STATE_72: "Südböhmen"
  STATE_72_POL: "Południowe Czechy"
  STATE_72_CZE: "Jižní Cechy"
@@ -960,5 +964,6 @@
  STATE_75: "Mähren"
  STATE_75_POL: "Morawy"
  STATE_75_CZE: "Morava"
- ##Slovakian states:
+ 
+ ###SLOVAKIA###
  STATE_73: "Marmarosch"

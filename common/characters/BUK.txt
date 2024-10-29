@@ -1,0 +1,15 @@
+characters = {
+	BUK_sayyid_mir_muhammad_alim_khan = {
+		name = BUK_sayyid_mir_muhammad_alim_khan_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_BUK_sayyid_mir_muhammad_alim_khan
+			}
+		}
+		country_leader = {
+			ideology = reactionary_ideology
+			expire = "1953.3.1.1"
+			id = -1
+		}
+	}
+}

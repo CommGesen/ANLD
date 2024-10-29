@@ -343,10 +343,6 @@ JOR = { #
 	color = rgb { 90  170  110 }
 	color_ui = rgb { 110 190 130 }
 }
-KAZ = {
-	color = rgb { 75  184  203 } # teal
-	color_ui = rgb { 95  204  223 }
-}
 KEN = {
 	color = rgb { 140 160 140 }
 	color_ui = rgb { 180 200 180 }
@@ -355,9 +351,9 @@ KOR = {
 	color = rgb { 157 144 97 }
 	color_ui = rgb { 177 164 117 }
 }
-KRG = {
-	color = rgb { 200  20  110 } # purple
-	color_ui = rgb { 220  40  130 }
+KYR = {
+	color = rgb { 153 76 0 }
+	color_ui = rgb { 153 76 0 }
 }
 KUR = {
 	color = rgb { 240  240  170 }
@@ -611,13 +607,9 @@ TIB = {
 	color = rgb { 80 115 45}
 	color_ui = rgb { 222 247 198 }
 }
-TJK = {
-	color = rgb { 0  110  80 }
-	color_ui = rgb { 20  130  100 }
-}
-TKM = {
-	color = rgb { 157 144 97 }
-	color_ui = rgb { 190 160 120 }
+TMS = {
+	color = rgb { 0 76 153 }
+	color_ui = rgb { 0 76 153 }
 }
 TNG = {
 	color = rgb { 170 200 30 }
@@ -662,10 +654,6 @@ URG = {
 USA = { # 2121e1
 	color = rgb { 40 65 170 }
 	color_ui = rgb { 60 90 200 }
-}
-UZB = {
-	color = rgb { 210  140  40 }
-	color_ui = rgb { 230  160  60 }
 }
 VEN = {
 	color = rgb { 171  190  152 }
@@ -767,4 +755,12 @@ ANZ={
 AHZ={
 	color = rgb { 140 30 30 }
 	color_ui = rgb { 140 30 30 }
+}
+BUK = {
+	color = rgb { 204 153 102 }
+	color_ui = rgb { 172 115 57 }
+}
+KHI = {
+	color = rgb { 51 204 255 }
+	color_ui = rgb { 0 134 179 }
 }

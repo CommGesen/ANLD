@@ -1,3 +1,4 @@
+
 state={
 	id=586
 	name="STATE_586"
@@ -10,7 +11,6 @@ state={
 
 	history={
 		owner = SOV
-		add_core_of = KAZ
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 3
@@ -20,14 +20,15 @@ state={
 			1591 3 
 		}
 		add_core_of = SOV
+		add_core_of = TMS
+
 	}
 
 	provinces={
-		1591 1840 4773 4845 7706 10146 10547 10603 12640 12658 
+		1591 1840 4651 4773 4845 7706 7711 7784 7795 7856 10146 10547 10550 10603 10619 10680 12529 12640 12658 12662 13149 13197 
 	}
 	manpower=2563404
 	buildings_max_level_factor=1.000
 	state_category=city
-
-	local_supplies=2.0 
+	local_supplies=2.000
 }
