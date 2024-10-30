@@ -5526,6 +5526,7 @@ political_actions = {
 		complete_effect = {
 			SPR = {
 				promote_character = SPR_deluge_marie_i
+				set_party_name = { ideology = neutrality long_name = SPR_neutrality_party_long name = SPR_neutrality_party }
 			}
 			hidden_effect = {
 				news_event = {

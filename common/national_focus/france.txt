@@ -3789,7 +3789,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_equally_educate_all
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_educate_the_poor
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_purge_old_elites }
@@ -3863,7 +3863,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_fully_democratic_education
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_democratic_education
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_equally_educate_all focus = FRA_new_socialist_elites }
@@ -3937,7 +3937,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_freedom_of_art
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_freedom_of_art
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_fully_democratic_education focus = FRA_socialist_core_curriculum }

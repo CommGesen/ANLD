@@ -279,8 +279,8 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/sanation_abolished.dds"
 	}
 	spriteType = {
-		name = "GFX_roman_dmowski_died_small"
-		texturefile = "gfx/event_pictures/roman_dmowski_died_small.dds"
+		name = "GFX_report_event_roman_dmowski_dead"
+		texturefile = "gfx/event_pictures/report_event_roman_dmowski_dead.dds"
 	}
 	spriteType = {
 		name = "GFX_pius_xii_picture_small"
@@ -289,10 +289,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_smigły_rydz_sad"
 		texturefile = "gfx/event_pictures/smigły_rydz_sad.dds"
-	}
-	spriteType = {
-		name = "GFX_rodnovery_back_color"
-		texturefile = "gfx/event_pictures/rodnovery_back_color.dds"
 	}
 	spriteType = {
 		name = "GFX_rodnovery_back_black_white"
@@ -965,5 +961,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_news_event_french_intervention_in_spain"
 		texturefile = "gfx/event_pictures/news_event_french_intervention_in_spain.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_michal_rola_zymierski"
+		texturefile = "gfx/event_pictures/report_event_michal_rola_zymierski.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_marcel_bucard"
+		texturefile = "gfx/event_pictures/report_event_marcel_bucard.dds"
 	}
 }

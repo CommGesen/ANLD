@@ -6,13 +6,15 @@
  MEX_change_surname_to_iturbide:0 "Take the Iturbide Family Name"
  MEX_change_surname_to_habsburg:0 "Take the Habsburg Family Name"
  changing_portraits_category:0 "Possible Portraits"
- portraits_edward_rydz_smigly:0 "Edward Rydz-Śmigły"
- portraits_wladyslaw_sikorski:0 "Władysław Sikorski"
- portraits_jozef_pilsudski:0 "Józef Piłsudski"
- portraits_napoleon_vi:0 "Napoléon VI"
- portraits_boleslaw_roja:0 "Bolesław Roja"
- portraits_otto_von_habsburg:0 "Otto von Habsburg"
- portraits_maria_bonaparte:0 "María I"
+ portraits_edward_rydz_smigly:0 "[POL_deluge_edward_rydz_smigly.GetName]"
+ portraits_wladyslaw_sikorski:0 "[POL_deluge_wladyslaw_sikorski.GetName]"
+ portraits_jozef_pilsudski:0 "[POL_deluge_jozef_pilsudski.GetName]"
+ portraits_napoleon_vi:0 "[FRA_deluge_napoleon_vi.GetName]"
+ portraits_boleslaw_roja:0 "[POL_deluge_boleslaw_roja.GetName]"
+ portraits_otto_von_habsburg:0 "[AUS_otto_i.GetName]"
+ portraits_maria_bonaparte:0 "[SPR_deluge_marie_i.GetName]"
+ portraits_abdulmejid_ii:0 "[TUR_abdulmejid_ii.GetName]"
+ 
  ###POLAND###
  
  integration_category:0 "Integration"

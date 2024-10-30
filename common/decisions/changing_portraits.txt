@@ -237,4 +237,38 @@ changing_portraits_category = {
 			base = 0
 		}
 	}
+	portraits_abdulmejid_ii = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+			
+		}
+		visible = {
+			has_character = TUR_abdulmejid_ii
+			OR = {
+				TUR_abdulmejid_ii = {
+					is_army_leader = yes
+				}
+				TUR_abdulmejid_ii = {
+					is_navy_leader = yes
+				}
+				TUR_abdulmejid_ii = {
+					is_country_leader = yes
+				}
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			country_event = {
+				id = deluge_portraits.8
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
 }

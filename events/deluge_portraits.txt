@@ -271,3 +271,35 @@ country_event = {##Marie I Bonaparte of Spain
 		}
 	}
 }
+country_event = {##Abdulmejid II
+	id = deluge_portraits.8
+	title = deluge_portraits.8.t
+	desc = deluge_portraits.8.d
+	picture = GFX_report_event_abdulmecid_ii
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##ANLD
+		name = deluge_portraits.8.a
+		set_portraits = {
+			character = TUR_abdulmejid_ii
+			army = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
+			civilian = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
+			navy = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##vanilla
+		name = deluge_portraits.8.b
+		set_portraits = {
+			character = TUR_abdulmejid_ii
+			army = { large ="GFX_portrait_tur_abdulmejid_ii" }
+			civilian = { large ="GFX_portrait_tur_abdulmejid_ii" }
+			navy = { large ="GFX_portrait_tur_abdulmejid_ii" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

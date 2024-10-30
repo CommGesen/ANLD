@@ -324,9 +324,6 @@ country_event = {#POL chooses leader for PSL
 	option = {##Artur Śliwiński
 		name = deluge_poland.14.b
 		promote_character = POL_deluge_artur_sliwinski
-		trigger = {
-			always = no
-		}
 		hidden_effect = {
 			news_event = {
 				id = deluge_poland.54
@@ -370,9 +367,6 @@ country_event = {#POL chooses leader for ND
 	option = {##Marian Seyda
 		name = deluge_poland.15.b
 		promote_character = POL_deluge_marian_seyda
-		trigger = {
-			always = no
-		}
 		hidden_effect = {
 			news_event = {
 				id = deluge_poland.55
@@ -445,7 +439,7 @@ country_event = {#Roman Dmowski dies
 			}
 		}
 	}
-	picture = GFX_roman_dmowski_died_small
+	picture = GFX_report_event_roman_dmowski_dead
 	trigger = {
 		tag = POL
 		date > 1940.1.1
@@ -2788,7 +2782,7 @@ news_event = {##global event that Rodnovery faith is officialy back
 	id = deluge_poland.66
 	title = deluge_poland.66.t
 	desc = deluge_poland.66.d
-	picture = GFX_rodnovery_back_color
+	picture = GFX_rodnovery_back_black_white
 	is_triggered_only = yes
 	major = yes
 	option = {

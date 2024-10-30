@@ -24,6 +24,12 @@ country_event = {##SPR gets info that their king Roland I died
 			election_frequency = 48 
 		}
 		FRA = {
+			set_autonomy = {
+				target = SPR
+				autonomous_state = autonomy_free
+				end_wars = yes
+				end_civil_wars = no
+			}
 			country_event = {
 				id = deluge_spain.5
 				days = 10
@@ -61,6 +67,18 @@ country_event = {##SPR gets info that their king Roland I died
 			}
 			promote_character = SPR_sixtus_of_bourbon_parma
 			set_party_name = { ideology = neutrality long_name = FRA_bourbon_parma_loyalists_party_long name = FRA_bourbon_parma_loyalists_party_short }
+			FRA = {
+				set_autonomy = {
+					target = SPR
+					autonomous_state = autonomy_free
+					end_wars = yes
+					end_civil_wars = no
+				}
+				country_event = {
+					id = deluge_spain.10
+					hours = 10
+				}
+			}
 			hidden_effect = {
 				news_event = {
 					id = deluge_spain.17

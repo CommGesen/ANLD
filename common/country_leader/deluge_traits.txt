@@ -1351,4 +1351,12 @@ leader_traits = {
 		research_speed_factor = 0.03
 		army_morale_factor = 0.03
 	}
+	austrian_connections = {
+		random = no
+		targeted_modifier = {
+			tag = AUS
+			defense_bonus_against = 0.05
+			trade_cost_for_target_factor = -0.5
+		}
+	}
 }
