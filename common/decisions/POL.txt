@@ -25028,6 +25028,9 @@ royal_affairs_decisions_category = {
 		icon = GFX_decision_generic_alliance
 		available = {
 			country_exists = SPR
+			SPR = {
+				is_subject = no
+			}
 			NOT = {
 				has_war_with = SPR
 			}

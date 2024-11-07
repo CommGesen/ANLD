@@ -2539,19 +2539,7 @@ country_event = {
 		
 		hidden_effect = {
 			set_cosmetic_tag = WGR_EMPIRE
-			
 			news_event = { days = 1 id = german_civil_war.31 }
-			
-			create_country_leader = {
-				name = "Frederick II"
-				desc = "german_emperor_desc"
-				picture = "gfx/leaders/deluge/germans/prince_karl_anton.dds"
-				expire = "1965.1.1"
-				ideology = bonapartist_ideology
-				traits = {
-				
-				}
-			}
 		}
 		
 		set_global_flag = flag_german_internal_politics_resolved
@@ -2559,7 +2547,6 @@ country_event = {
 		
 		ai_chance = {
 			factor = 1
-			
 			modifier = {
 				factor = 5
 				is_historical_focus_on = yes
@@ -2592,16 +2579,7 @@ country_event = {
 		}
 		
 		hidden_effect = {
-			create_country_leader = {
-				name = "Frederick II"
-				desc = "german_king_desc"
-				picture = "gfx/leaders/deluge/germans/prince_karl_anton.dds"
-				expire = "1965.1.1"
-				ideology = bonapartist_ideology
-				traits = {
-				
-				}
-			}
+			
 			
 			news_event = { days = 1 id = german_civil_war.32 }
 		}
@@ -2662,16 +2640,7 @@ country_event = {
 		}
 		
 		hidden_effect = {
-			create_country_leader = {
-				name = "Frederick II"
-				desc = "german_tyrant_desc"
-				picture = "gfx/leaders/deluge/germans/prince_karl_anton.dds"
-				expire = "1965.1.1"
-				ideology = reactionary_ideology
-				traits = {
-				
-				}
-			}
+			
 		}
 			
 		set_global_flag = flag_german_internal_politics_resolved
@@ -2722,16 +2691,7 @@ country_event = {
 		}
 		
 		hidden_effect = {
-			create_country_leader = {
-				name = "Frederick II"
-				desc = "german_tyrant_desc"
-				picture = "gfx/leaders/deluge/germans/prince_karl_anton.dds"
-				expire = "1965.1.1"
-				ideology = reactionary_ideology
-				traits = {
-				
-				}
-			}
+			
 		}
 		
 		set_global_flag = flag_german_internal_politics_resolved

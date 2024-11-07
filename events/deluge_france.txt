@@ -861,6 +861,7 @@ country_event = {##BHU has opportunity to revolt against French overlord as Indi
 		set_country_flag = BHU_bourbon_bhopal_revolt_started
 		set_party_name = { ideology = neutrality name = deluge_bourbon_bhopal_neutrality_short long_name = deluge_bourbon_bhopal_neutrality_long }
 		promote_character = BHU_salvador_iii_de_bourbon_bhopal
+		set_cosmetic_tag = BHU_bourbon
 		FRA = {
 			set_autonomy = {
 				target = BHU

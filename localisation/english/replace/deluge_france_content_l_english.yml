@@ -283,6 +283,8 @@
  FRA_custom_effect_tooltip_94:0 "Modify §HNew French Economy§! by:\n§G+5%§! Division Defence on Core Territory\n§G-10%§! Supply Combat Penalties on Core Territory\n§G+7%§! Closer Air Support Damage Reduction!"
  FRA_custom_effect_tooltip_95:0 "§HAviation Designers§! will be upgraded!"
  FRA_custom_effect_tooltip_96:0 "Adds §HFrancism§! national spirit that gives:\n§G+5%§! War Support!"
+ FRA_custom_effect_tooltip_97:0 "Modify §HFrancism§! national spirit by:\n§G+0,03§! Ultranationalism Support Daily\n§G-0,03§! Radicalism Support Daily!"
+ FRA_custom_effect_tooltip_98:0 "Create 10 divisions in [16.GetName] of §HFrench Solidarity§! militia!"
  ##Dynamic Modifiers
  FRA_modifier_economic_depression:0 "The Great Depression"
  FRA_modifier_economic_depression_desc:0 "The Great Depression of 1929 is still felt in our country."
@@ -332,8 +334,6 @@
  FRA_francist_movemenet_party_long:0 "Francist Movement"
  FRA_boulangists_party:0 "Boulangists"
  FRA_boulangists_party_long:0 "Boulangists"
- deluge_bourbon_bhopal_neutrality_short:0 "Bourbon-Bhopal"
- deluge_bourbon_bhopal_neutrality_long:0 "Bourbon-Bhopal Loyalists"
  FRA_military_government_party:0 "Military"
  FRA_military_government_party_long:0 "Temporary Military Government"
  ##state modifiers:

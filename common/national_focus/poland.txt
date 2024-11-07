@@ -137,6 +137,7 @@ focus_tree = {
 				has_completed_focus = POL_oppose_sanation
 				has_completed_focus = POL_smigly_wins
 			}
+			always = no
 		}
 		offset = {
 			x = 21
@@ -1973,7 +1974,8 @@ focus_tree = {
 	focus = {
 		id = POL_teach_about_national_myths_in_schools
 		icon = GFX_focus_generic_military_academy
-		x = -1
+		#x = -1
+		x = 0
 		y = 1
 		prerequisite = { focus = POL_enforce_patriarchy focus = POL_women_emancipation}
 		relative_position_id = POL_enforce_patriarchy

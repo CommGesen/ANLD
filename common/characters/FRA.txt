@@ -580,6 +580,21 @@ characters={
 			desc = "FRA_deluge_jacques_doriot_desc"
 		}
 	}
+	##National Popular Rally:
+	FRA_deluge_marcel_deat={
+		name=FRA_deluge_marcel_deat_name
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/portrait_FRA_marcel_deat.dds"
+			}
+		}
+		country_leader={
+			ideology=social_darwinist_ideology
+			traits={  }
+			expire="1965.1.1.1"
+			desc = "FRA_deluge_marcel_deat_desc"
+		}
+	}
 	##Fire Movement/Le Feu:
 	FRA_deluge_maurice_delaunay={
 		name=FRA_deluge_maurice_delaunay_name
@@ -2306,7 +2321,7 @@ characters={
 			defense_skill=2
 			maneuvering_skill=1
 			coordination_skill=2
-			desc = "FRA_deluge_marcel_gensoul_desc"
+			desc = "FRA_deluge_emile_muselier_desc"
 		}
 	}
 	FRA_deluge_henri_nomy={
@@ -2373,28 +2388,6 @@ characters={
 			maneuvering_skill=2
 			coordination_skill=1
 			desc = "FRA_deluge_raoul_castex_desc"
-		}
-	}
-	FRA_deluge_emilie_duplat={
-		name=FRA_deluge_emilie_duplat_name
-		portraits={
-			navy={
-				large="gfx/leaders/FRA/portrait_FRA_emilie_duplat.dds"
-				small="GFX_emilie_duplat_picture_small"
-			}
-			army={
-				large="gfx/leaders/FRA/portrait_FRA_emilie_duplat.dds"
-				small="GFX_emilie_duplat_picture_small"
-			}
-		}
-		navy_leader={
-			traits={ seawolf }
-			skill=1
-			attack_skill=1
-			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
-			desc = "FRA_deluge_emilie_duplat_desc"
 		}
 	}
 	FRA_deluge_emilie_duplat={

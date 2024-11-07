@@ -57,21 +57,6 @@ characters={
 			}
 		}
 	}
-	SPR_alfonso_xiii={
-		name="Alfonso XIII"
-		portraits={
-			civilian={
-				large="gfx/leaders/SPR/alfonso_xiii.dds"
-			}
-		}
-		country_leader={
-			ideology=reactionary_ideology
-			expire="1965.1.1.1"
-			traits = {
-				disgraced_monarch
-			}
-		}
-	}
 	SPR_manuel_azana={
 		name="Manuel Azana"
 		portraits={

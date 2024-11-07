@@ -5507,9 +5507,19 @@ political_actions = {
 		visible = {
 			NOT = {
 				SPR = {
-					has_country_leader = {
-						character = SPR_deluge_marie_i
-						ruling_only = yes
+					OR = {
+						has_country_leader = {
+							character = SPR_deluge_marie_i
+							ruling_only = yes
+						}
+						has_country_leader = {
+							character = SPR_deluge_ronald_i
+							ruling_only = yes
+						}
+						has_country_leader = {
+							character = SPR_emilio_mola
+							ruling_only = yes
+						}
 					}
 				}
 			}

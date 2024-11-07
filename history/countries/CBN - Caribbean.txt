@@ -81,20 +81,24 @@ if = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1932.6.5"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 
 set_popularities = {
-	democratic = 40
-	fascism = 20
-	communism = 10
-	neutrality = 30
+	democratic = 5
+	fascism = 5
+	communism = 20
+	neutrality = 70
 }
 
+recruit_character = CBN_infante_alfonso_carlos
+recruit_character = CBN_alfonso_xiii
+recruit_character = CBN_jaime_iv
+
 add_ideas = {
-	deluge_native_independence_idea
+	
 }

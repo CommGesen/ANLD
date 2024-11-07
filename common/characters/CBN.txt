@@ -1,0 +1,47 @@
+characters={
+	CBN_infante_alfonso_carlos={
+		name="Alfonso Carlos I"
+		portraits={
+			civilian={
+				large="gfx/leaders/CBN/portrait_CBN_infante_alfonso_carlos.dds"
+			}
+		}
+		country_leader={
+			ideology=reactionary_ideology
+			expire="1965.1.1.1"
+			traits = {
+				
+			}
+		}
+	}
+	CBN_alfonso_xiii={
+		name="Alfonso XIII"
+		portraits={
+			civilian={
+				large="gfx/leaders/CBN/portrait_CBN_alfonso_xiii.dds"
+			}
+		}
+		country_leader={
+			ideology=reactionary_ideology
+			expire="1965.1.1.1"
+			traits = {
+				disgraced_monarch
+			}
+		}
+	}
+	CBN_jaime_iv={
+		name="Jaime IV"
+		portraits={
+			civilian={
+				large="gfx/leaders/CBN/portrait_CBN_infante_jaime.dds"
+			}
+		}
+		country_leader={
+			ideology=reactionary_ideology
+			expire="1965.1.1.1"
+			traits = {
+				disgraced_monarch
+			}
+		}
+	}
+}

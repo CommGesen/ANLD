@@ -1,0 +1,60 @@
+﻿add_namespace = deluge_french_india
+country_event = {##BHU asks to join LOU
+	id = deluge_french_india.1
+	title = deluge_french_india.1.t
+	desc = deluge_french_india.1.d
+	picture = GFX_report_event_salvador_iii_de_bourbon_bhopal
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##accept
+		name = deluge_french_india.1.a
+		hidden_effect = {
+			news_event = {
+				id = deluge_french_india.2
+				hours = 6
+			}
+		}
+		ai_chance = {
+			factor = 1000
+		}
+	}
+	option = {##reject
+		name = deluge_french_india.1.b
+		hidden_effect = {
+			BHU = {
+				country_event = {
+					id = deluge_french_india.3
+					hours = 24
+				}
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+news_event = {##BHU joins LOU's faction
+	id = deluge_french_india.2
+	title = deluge_french_india.2.t
+	desc = deluge_french_india.2.d
+	picture = GFX_news_event_indian_soldiers_smoking
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_french_india.2.a
+	}
+}
+country_event = {#BHU gets info that it was rejected
+	id = deluge_french_india.3
+	title = deluge_french_india.3.t
+	desc = deluge_french_india.3.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_french_india.3.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}

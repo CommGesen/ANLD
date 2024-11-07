@@ -981,7 +981,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_francist_movement }
 		relative_position_id = FRA_francist_movement
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -997,7 +997,14 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_manpower = 80000
+			hidden_effect = {
+				add_to_variable = { francism_communism_drift = -0.03}
+				add_to_variable = { francism_fascism_drift = 0.03}
+				load_oob = "FRA_french_solidarity_militia"
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_97
+			custom_effect_tooltip = FRA_custom_effect_tooltip_98
 		}
 		ai_will_do = {
 			factor = 25

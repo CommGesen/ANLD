@@ -42,6 +42,18 @@ country_event = {##Edward Rydz-Śmigły
 			factor = 1
 		}
 	}
+	option = {##military uniform
+		name = deluge_portraits.1.e
+		set_portraits = {
+			character = POL_deluge_edward_rydz_smigly
+			army = { large ="GFX_portrait_POL_edward_rydz_smigly_uniform" }
+			civilian = { large ="GFX_portrait_POL_edward_rydz_smigly_uniform" }
+			navy = { large ="GFX_portrait_POL_edward_rydz_smigly_uniform" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
 }
 country_event = {##Władysław Sikorski
 	id = deluge_portraits.2
@@ -69,6 +81,18 @@ country_event = {##Władysław Sikorski
 			army = { large ="GFX_portrait_POL_wladyslaw_sikorski" }
 			civilian = { large ="GFX_portrait_POL_wladyslaw_sikorski" }
 			navy = { large ="GFX_portrait_POL_wladyslaw_sikorski" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##military uniform
+		name = deluge_portraits.2.c
+		set_portraits = {
+			character = POL_deluge_wladyslaw_sikorski
+			army = { large ="GFX_portrait_POL_wladyslaw_sikorski_uniform" }
+			civilian = { large ="GFX_portrait_POL_wladyslaw_sikorski_uniform" }
+			navy = { large ="GFX_portrait_POL_wladyslaw_sikorski_uniform" }
 		}
 		ai_chance = {
 			factor = 1

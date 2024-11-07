@@ -13,7 +13,7 @@ state=
 	}
 	history=
 	{
-		owner = LOU
+		owner = CBN
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -24,6 +24,7 @@ state=
 			}
 		}
 		add_core_of = HAI
+		add_core_of = CBN
 		victory_points = {
 			4641 5 
 		}

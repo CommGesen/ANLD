@@ -1,0 +1,38 @@
+political_actions = {
+	BHU_join_louisiana = {
+		icon = GFX_decision_generic_monarchy
+		allowed = {
+			original_tag = BHU
+		}
+		visible = {
+			
+		}
+		available = {
+			ROOT = {
+				has_war = no
+				has_country_leader =  {
+					character = BHU_salvador_iii_de_bourbon_bhopal
+					ruling_only = yes
+				}
+				is_subject = no
+			}
+			LOU = {
+				is_faction_leader = yes
+			}
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 1
+		complete_effect = {
+			LOU = {
+				country_event = {
+					id = deluge_french_india.1
+					hours = 24
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+}

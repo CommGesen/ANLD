@@ -961,27 +961,36 @@ focus_tree = {
 				}
 				news_event = deluge_italy.5
 			}
-			
 			add_named_threat = { threat = 1 name = italy_claims_croatia }
-			
 			add_state_claim = 103
 			add_state_claim = 104
 			add_state_claim = 109
-			
-			if = { limit = { NOT = { owns_state = 109 } }
-				random_country = {
-					limit = { owns_state = 109 }
+			if = { 
+				limit = { 
+					NOT = {
+						owns_state = 109
+						owns_state = 103
+						owns_state = 104
+					} 
+				}
+				every_country = {
+					limit = {
+						OR ={
+							owns_state = 109
+							owns_state = 103
+							owns_state = 104
+						}
+					}
 					ROOT = {
 						create_wargoal = {
-							type = take_claimed_state
+							type = annex_everything #take_claimed_state
 							target = PREV
-							generator = { 109 103 104 }
+							#generator = { 109 103 104 805 934 }
 						}
 					}
 				}
 			}
 		}
-		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1076,16 +1085,34 @@ focus_tree = {
 			
 			add_state_claim = 44
 			add_state_claim = 105
-			add_state_claim = 185
-			
-			if = { limit = { NOT = { owns_state = 44 } }
-				random_country = {
-					limit = { owns_state = 44 }
+			add_state_claim = 973
+			add_state_claim = 805
+			add_state_claim = 934
+			if = { 
+				limit = { 
+					NOT = {
+						owns_state = 44
+						owns_state = 105
+						owns_state = 973
+						owns_state = 805
+						owns_state = 934
+					} 
+				}
+				every_country = {
+					limit = {
+						OR ={
+							owns_state = 44
+							owns_state = 105
+							owns_state = 973
+							owns_state = 805
+							owns_state = 934
+						}
+					}
 					ROOT = {
 						create_wargoal = {
-							type = take_claimed_state
+							type = annex_everything #take_claimed_state
 							target = PREV
-							generator = { 44 105 185 }
+							#generator = { 44 105 973 805 934 }
 						}
 					}
 				}
@@ -1149,22 +1176,37 @@ focus_tree = {
 				}
 				news_event = deluge_italy.7
 			}
-			
 			add_named_threat = { threat = 1 name = italy_claims_greece }
-			
+			add_state_claim = 185
 			add_state_claim = 47
 			add_state_claim = 186
 			add_state_claim = 731
 			add_state_claim = 182
-			
-			if = { limit = { NOT = { owns_state = 47 } }
-				random_country = {
-					limit = { owns_state = 47 }
+			if = { 
+				limit = { 
+					NOT = {
+						owns_state = 47
+						owns_state = 185
+						owns_state = 186
+						owns_state = 731
+						owns_state = 182
+					} 
+				}
+				every_country = {
+					limit = {
+						OR ={
+							owns_state = 47
+							owns_state = 185
+							owns_state = 186
+							owns_state = 731
+							owns_state = 182
+						}
+					}
 					ROOT = {
 						create_wargoal = {
-							type = take_claimed_state
+							type = annex_everything #take_claimed_state
 							target = PREV
-							generator = { 47 186 731 182 }
+							#generator = { 47 186 731 182 185 }
 						}
 					}
 				}
@@ -1343,11 +1385,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			AUS = { country_event = { id = deluge_italy.15 } }
-			
 			add_named_threat = { threat = 3 name = italy_claims_austria }
-			
+			add_state_claim = 853
 			add_state_claim = 153
 			add_state_claim = 102
+			add_state_claim = 848
 		}
 		will_lead_to_war_with = AUS
 	}
@@ -1425,6 +1467,7 @@ focus_tree = {
 			add_state_claim = 735
 			add_state_claim = 32
 			add_state_claim = 21
+			add_state_claim = 851
 		}
 		will_lead_to_war_with = FRA
 	}

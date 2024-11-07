@@ -12,8 +12,16 @@ spriteTypes = {
 		texturefile = "gfx/leaders/POL/portrait_POL_edward_rydz_smigly_ANLD.dds"
 	}
 	spriteType = {
+		name = "GFX_portrait_POL_edward_rydz_smigly_uniform"
+		texturefile = "gfx/leaders/POL/portrait_POL_edward_rydz_smigly_uniform.dds"
+	}
+	spriteType = {
 		name = "GFX_portrait_POL_wladyslaw_sikorski_ANLD"
 		texturefile = "gfx/leaders/POL/portrait_POL_wladyslaw_sikorski_ANLD.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_wladyslaw_sikorski_uniform"
+		texturefile = "gfx/leaders/POL/portrait_POL_wladyslaw_sikorski_uniform.dds"
 	}
 	spriteType = {
 		name = "GFX_portrait_POL_jozef_pilsudski"

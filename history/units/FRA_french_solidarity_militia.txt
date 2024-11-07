@@ -1,0 +1,98 @@
+﻿division_template = {
+	name = "French Solidarity Militia"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 0
+	template_counter = 42
+}
+
+units = {	
+	division= {
+		name = "1. Unit of FS"
+		location = 11506
+		division_template = "French Solidarity Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division= {
+		name = "2. Unit of FS"
+		location = 11506
+		division_template = "French Solidarity Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division= {
+		name = "3. Unit of FS"
+		location = 11506
+		division_template = "French Solidarity Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division= {
+		name = "4. Unit of FS"
+		location = 9523
+		division_template = "French Solidarity Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division= {
+		name = "5. Unit of FS"
+		location = 9523
+		division_template = "French Solidarity Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division= {
+		name = "6. Unit of FS"
+		location = 9523
+		division_template = "French Solidarity Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division= {
+		name = "7. Unit of FS"
+		location = 11518
+		division_template = "French Solidarity Militia"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "8. Unit of FS"
+		location = 11518
+		division_template = "French Solidarity Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division= {
+		name = "9. Unit of FS"
+		location = 11518
+		division_template = "French Solidarity Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division= {
+		name = "10. Unit of FS"
+		location = 9534
+		division_template = "French Solidarity Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+}

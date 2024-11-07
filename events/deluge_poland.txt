@@ -3401,7 +3401,7 @@ country_event = {##Sikorski brings back democracy to Poland
 			country_leader = {
 				ideology = market_liberal_ideology
 				expire = "1965.1.1.1"
-				traits = { liberal_marshal }
+				traits = { military_defender_of_democracy }
 			}
 		}
 		promote_character = POL_deluge_wladyslaw_sikorski
@@ -12052,7 +12052,7 @@ country_event = {##POL proposes SPR an alliance
 		POL = { add_to_faction = ROOT }
 		hidden_effect = {
 			news_event = {
-				deluge_poland_foreign.118
+				id = deluge_poland_foreign.118
 			}
 		}
 		ai_chance = {
@@ -12099,8 +12099,8 @@ country_event = {##POL proposes SPR an alliance
 			}
 		}
 	}
-	option = {#disagreeagree for alliance
-		name = deluge_poland_foreign.117.a
+	option = {#disagree for alliance
+		name = deluge_poland_foreign.117.b
 		hidden_effect = {
 			POL = {
 				country_event = {
@@ -12162,6 +12162,9 @@ news_event = {#Polish-Spanish alliance formed
 	is_triggered_only = yes
 	option = {
 		name = deluge_poland_foreign.118.a
+		ai_chance = {
+			base = 30
+		}
 	}
 }
 country_event = {##POL gets info that SPR rejected idea of alliance
@@ -12198,7 +12201,6 @@ country_event = {##lore event about sarmatians
 	is_triggered_only = yes
 	option = {
 		name = deluge_poland.2.a
-		add_political_power = 5
 		ai_chance = {
 			base = 1
 		}
@@ -12212,7 +12214,6 @@ country_event = {##lore event about śmigus-dyngus
 	is_triggered_only = yes
 	option = {
 		name = deluge_poland_lore.3.a
-		add_political_power = 10
 		ai_chance = {
 			base = 1
 		}
@@ -12293,7 +12294,6 @@ country_event = {##lore event about Andrzej Bobola
 		ai_chance = {
 			base = 1
 		}
-		add_political_power = 15
 	}
 }
 country_event = {##event about history of Tadeusz Kościuszko
@@ -12311,7 +12311,6 @@ country_event = {##event about history of Tadeusz Kościuszko
 	}
 	option = {
 		name = deluge_poland_lore.8.a
-		add_political_power = 5
 		ai_chance = {
 			base = 1
 		}
@@ -12332,7 +12331,6 @@ country_event = {##event about history of Maria Curie-Skłodowska
 	}
 	option = {
 		name = deluge_poland_lore.9.a
-		add_political_power = 5
 		ai_chance = {
 			base = 1
 		}
@@ -12353,7 +12351,6 @@ country_event = {##event about history of Adam Mickiewicz
 	}
 	option = {
 		name = deluge_poland_lore.10.a
-		add_political_power = 5
 		ai_chance = {
 			base = 1
 		}
@@ -12374,7 +12371,6 @@ country_event = {##event about history of Emilia Plater
 	}
 	option = {
 		name = deluge_poland_lore.11.a
-		add_political_power = 5
 		ai_chance = {
 			base = 1
 		}
@@ -12395,7 +12391,6 @@ country_event = {##event about history of Wojciech Głowacki
 	}
 	option = {
 		name = deluge_poland_lore.12.a
-		add_political_power = 5
 		ai_chance = {
 			base = 1
 		}
@@ -12416,7 +12411,6 @@ country_event = {##event about history of Józef Poniatowski
 	}
 	option = {
 		name = deluge_poland_lore.13.a
-		add_political_power = 5
 		ai_chance = {
 			base = 1
 		}

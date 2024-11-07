@@ -12,8 +12,11 @@ ideas = {
 				
 			}
 			cancel = {
-				NOT = {
-					has_government = neutrality
+				OR = {
+					NOT = {
+						has_government = neutrality
+					}
+					is_subject = yes
 				}
 			}
 			allowed_civil_war = {
@@ -158,8 +161,11 @@ ideas = {
 				
 			}
 			cancel = {
-				NOT = {
-					has_government = neutrality
+				OR = {
+					NOT = {
+						has_government = neutrality
+					}
+					is_subject = yes
 				}
 			}
 			allowed_civil_war = {
@@ -180,7 +186,10 @@ ideas = {
 				
 			}
 			cancel = {
-				has_government = fascism
+				OR = {
+					has_government = fascism
+					is_subject = yes
+				}
 			}
 			allowed_civil_war = {
 				always = yes
@@ -243,8 +252,11 @@ ideas = {
 				
 			}
 			cancel = {
-				NOT = {
-					has_government = neutrality
+				OR = {
+					NOT = {
+						has_government = neutrality
+					}
+					is_subject = yes
 				}
 			}
 			allowed_civil_war = {
@@ -264,7 +276,12 @@ ideas = {
 				
 			}
 			cancel = {
-				
+				OR = {
+					NOT = {
+						has_government = neutrality
+					}
+					is_subject = yes
+				}
 			}
 			allowed_civil_war = {
 				
@@ -284,7 +301,12 @@ ideas = {
 				
 			}
 			cancel = {
-				
+				OR = {
+					NOT = {
+						has_government = neutrality
+					}
+					is_subject = yes
+				}
 			}
 			allowed_civil_war = {
 				
@@ -303,7 +325,10 @@ ideas = {
 				
 			}
 			cancel = {
-				
+				OR = {
+					has_government = communism
+					is_subject = yes
+				}
 			}
 			allowed_civil_war = {
 				
@@ -324,7 +349,11 @@ ideas = {
 				
 			}
 			cancel = {
-				
+				OR = {
+					is_subject = yes
+					has_government = communism
+					has_government = democratic
+				}
 			}
 			allowed_civil_war = {
 				
@@ -387,7 +416,10 @@ ideas = {
 				
 			}
 			cancel = {
-				has_government = communism
+				OR = {
+					has_government = communism
+					is_subject = yes
+				}
 			}
 			allowed_civil_war = {
 				
@@ -518,7 +550,12 @@ ideas = {
 				
 			}
 			cancel = {
-				
+				OR = {
+					NOT = {
+						has_government = neutrality
+					}
+					is_subject = yes
+				}
 			}
 			allowed_civil_war = {
 				
@@ -616,7 +653,12 @@ ideas = {
 				
 			}
 			cancel = {
-				
+				OR = {
+					is_subject = yes
+					NOT = {
+						has_government = neutrality
+					}
+				}
 			}
 			allowed_civil_war = {
 				
@@ -657,7 +699,12 @@ ideas = {
 				
 			}
 			cancel = {
-				
+				OR = {
+					is_subject = yes
+					NOT = {
+						has_government = neutrality
+					}
+				}
 			}
 			allowed_civil_war = {
 				
@@ -1105,7 +1152,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_bidons_speciaux = {
-			picture = FRA_fortification_focus #change later
+			picture = spirit_french_napalm_bullet
 			allowed = {
 				original_tag = FRA
 			}

@@ -23,6 +23,9 @@ country_event = {
 			NOT = { 735 = { is_claimed_by = ITA } }
 			NOT = { 32 = { is_claimed_by = ITA } }
 			NOT = { 21 = { is_claimed_by = ITA } }
+			NOT = { 1 = { is_claimed_by = ITA } }
+			NOT = { 158 = { is_claimed_by = ITA } }
+			NOT = { 851 = { is_claimed_by = ITA } }
 		}
 	}
 	
@@ -36,6 +39,9 @@ country_event = {
 		add_state_claim = 735
 		add_state_claim = 32
 		add_state_claim = 21
+		add_state_claim = 158
+		add_state_claim = 851
+		add_state_claim = 1
 	}
 }
 
@@ -56,6 +62,12 @@ country_event = {
 		OR = {
 			NOT = { 153 = { is_claimed_by = ITA } }
 			NOT = { 102 = { is_claimed_by = ITA } }
+			NOT = { 850 = { is_claimed_by = ITA } }
+			NOT = { 39 = { is_claimed_by = ITA } }
+			NOT = { 848 = { is_claimed_by = ITA } }
+			NOT = { 853 = { is_claimed_by = ITA } }
+			NOT = { 736 = { is_claimed_by = ITA } }
+			NOT = { 852 = { is_claimed_by = ITA } }
 		}
 	}
 	
@@ -65,9 +77,14 @@ country_event = {
 	
 	option = {
 		name = deluge_italy2opt
-
+		add_state_claim = 850
 		add_state_claim = 153
 		add_state_claim = 102
+		add_state_claim = 39
+		add_state_claim = 848
+		add_state_claim = 853
+		add_state_claim = 736
+		add_state_claim = 852
 	}
 }
 
@@ -94,7 +111,6 @@ country_event = {
 	
 	option = {
 		name = deluge_italy3opt
-
 		add_state_claim = 103
 	}
 }
@@ -116,6 +132,9 @@ country_event = {
 		OR = {
 			NOT = { 44 = { is_claimed_by = ITA } }
 			NOT = { 105 = { is_claimed_by = ITA } }
+			NOT = { 973 = { is_claimed_by = ITA } }
+			NOT = { 805 = { is_claimed_by = ITA } }
+			NOT = { 934 = { is_claimed_by = ITA } }
 		}
 	}
 	
@@ -125,9 +144,11 @@ country_event = {
 	
 	option = {
 		name = deluge_italy4opt
-
+		add_state_claim = 973
 		add_state_claim = 44
 		add_state_claim = 105
+		add_state_claim = 805
+		add_state_claim = 934
 	}
 }
 
@@ -642,30 +663,48 @@ country_event = {
 			}
 			ITA = { transfer_state = 102 }
 		}
-		
+		if = {
+			limit = {
+				owns_state = 850
+			}
+			ITA = { transfer_state = 850 }
+		}
+		if = {
+			limit = {
+				owns_state = 848
+			}
+			ITA = { transfer_state = 848 }
+		}
+		if = {
+			limit = {
+				owns_state = 852
+			}
+			ITA = { transfer_state = 852 }
+		}
+		if = {
+			limit = {
+				owns_state = 853
+			}
+			ITA = { transfer_state = 853 }
+		}
 		ai_chance = {
 			factor = 1
-			
 			modifier = {
 				factor = 2
 				is_in_faction = no
 			}
-			
 			modifier = {
 				factor = 2
 				has_government = democratic
 			}
-			
 			modifier = {
 				factor = 0.5
 				is_in_faction_with = POL
 			}
-			
 			modifier = {
 				factor = 0.5
 				is_in_faction_with = FRA
 			}
-			
 			modifier = {
 				factor = 0.1
 				ITA = {
@@ -677,20 +716,17 @@ country_event = {
 						}
 					}
 				}
-			}
-						
+			}	
 			modifier = {
 				factor = 2
 				has_war = yes
 			}
-			
 			modifier = {
 				factor = 5
 				any_enemy_country = {
 					is_major = yes
 				}
 			}
-			
 			modifier = {
 				factor = 0.1
 				is_historical_focus_on = yes
@@ -702,11 +738,13 @@ country_event = {
 		
 		trigger = {
 			owns_state = 39
+			owns_state = 850
 		}
 		
 		ITA = {
 			country_event = deluge_italy.18
 			transfer_state = 39
+			transfer_state = 850
 		}
 		
 		add_named_threat = { threat = -1 name = deluge_appeasement_threat }
@@ -840,38 +878,26 @@ country_event = {
 }
 
 # Austria has capitulated to the Italian demands
-
 country_event = {
 	id = deluge_italy.16
 	title = deluge_italy16title
 	desc = deluge_italy16desc
-	
 	picture = GFX_report_event_generic_sign_treaty1
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = deluge_italy16opt
-	
 		add_political_power = 75
-		
 		news_event = deluge_italy.17
 	}
 }
-
 # News event for the transfer of southern Austria to Italy
-
 news_event = {
 	id = deluge_italy.17
 	title = deluge_italy17title
 	desc = deluge_italy17desc
-	
 	picture = GFX_news_event_009
-	
 	major = yes
-	
 	is_triggered_only = yes
-	
 	option = {
 		name = deluge_italy17opta
 		trigger = {
@@ -1065,22 +1091,36 @@ country_event = {
 	option = {
 		name = deluge_italy20opt
 			
-		if = { limit = { NOT = { owns_state = 153 } }
+		if = {
+			limit = {
+				NOT = {
+					owns_state = 153
+					owns_state = 848
+					owns_state = 853
+					owns_state = 102
+				}
+			}
 			create_wargoal = {
 				type = take_claimed_state
 				target = FROM
-				generator = { 153 102 }
+				generator = { 153 102 853 848 }
 			}
 		}
-		
-		if = { limit = { NOT = { owns_state = 736 } }
+		if = {
+			limit = {
+				NOT = {
+					owns_state = 736
+					owns_state = 852
+					owns_state = 850
+					owns_state = 39
+				}
+			}
 			create_wargoal = {
 				type = take_core_state
 				target = FROM
-				generator = { 39 736 }
+				generator = { 39 736 850 852 }
 			}
-		}
-				
+		}	
 		news_event = deluge_italy.21
 	}
 }
@@ -1881,6 +1921,12 @@ country_event = {
 			}
 			ITA = { transfer_state = 32 }
 		}
+		if = {
+			limit = {
+				owns_state = 851
+			}
+			ITA = { transfer_state = 851 }
+		}
 		
 		ai_chance = {
 			factor = 1
@@ -2203,7 +2249,7 @@ country_event = {
 			create_wargoal = {
 				type = take_claimed_state
 				target = FROM
-				generator = { 735 21 32 }
+				generator = { 735 21 32 851 }
 			}
 		}
 		

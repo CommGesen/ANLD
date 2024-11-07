@@ -35,11 +35,13 @@ characters={
 		name = POL_deluge_edward_rydz_smigly_name 
 		portraits = {
 			civilian = {
-				large="GFX_portrait_POL_edward_rydz_smigly_ANLD"
+				#large="GFX_portrait_POL_edward_rydz_smigly_ANLD"
+				large="GFX_portrait_POL_edward_rydz_smigly_uniform"
 				small = "GFX_edward_rydz_smigly_picture_small"
 			}
 			army = {
-				large="GFX_portrait_POL_edward_rydz_smigly_ANLD"
+				#large="GFX_portrait_POL_edward_rydz_smigly_ANLD"
+				large="GFX_portrait_POL_edward_rydz_smigly_uniform"
 				small = "GFX_edward_rydz_smigly_picture_small"
 			}
 		}
@@ -108,18 +110,20 @@ characters={
 		name = POL_deluge_wladyslaw_sikorski_name
 		portraits = {
 			civilian = {
-				large="GFX_portrait_POL_wladyslaw_sikorski_ANLD"
+				#large="GFX_portrait_POL_wladyslaw_sikorski_ANLD"
+				large="GFX_portrait_POL_wladyslaw_sikorski_uniform"
 				small = GFX_wladyslaw_sikorski_picture_small
 			}
 			army = {
-				large="GFX_portrait_POL_wladyslaw_sikorski_ANLD"
+				#large="GFX_portrait_POL_wladyslaw_sikorski_ANLD"
+				large="GFX_portrait_POL_wladyslaw_sikorski_uniform"
 				small = GFX_wladyslaw_sikorski_picture_small
 			}
 		}
 		country_leader = {
 			ideology = anocracy_ideology
 			expire = "1969.1.1.1"
-			traits = { liberal_marshal}
+			traits = { wallenrodist_intentions }
 			desc = "POL_deluge_wladyslaw_sikorski_desc"
 		}
 		field_marshal = {
@@ -187,6 +191,14 @@ characters={
 		portraits={
 			civilian={
 				large = "gfx/leaders/POL/portrait_POL_wlodzimierz_marszewski.dds"
+			}
+		}
+	}
+	POL_deluge_waclaw_krzeptowski = {##Wacław Krzeptowski
+		name = POL_deluge_waclaw_krzeptowski_name
+		portraits={
+			civilian={
+				large = "gfx/leaders/POL/portrait_POL_waclaw_krzeptowski.dds"
 			}
 		}
 	}
@@ -552,17 +564,16 @@ characters={
 		portraits = {
 			army = {
 				large="GFX_portrait_POL_marian_kukiel"
-				#large="gfx/leaders/POL/kukiel.dds"
 				small = GFX_marian_kukiel_picture_small
 			}
 		}
 		corps_commander = {
 			traits = { infantry_leader politically_connected }
-			skill=4
-			attack_skill=4
-			defense_skill=3
+			skill=3
+			attack_skill=2
+			defense_skill=2
 			planning_skill=2
-			logistics_skill=4
+			logistics_skill=2
 			desc = "POL_deluge_marian_kukiel_desc"
 		}
 		advisor={
@@ -1053,8 +1064,8 @@ characters={
 		name = POL_deluge_konstanty_rokossowski_name
 		portraits={
 			army={
-				small="gfx/interface/ideas/idea_SOV_konstantin_rokossovsky.dds" ##change later
-				large="gfx/leaders/POL/portrait_POL_konstanty_rokossowski.dds" ##change later
+				small=GFX_konstanty_rokossowski_picture_small
+				large="gfx/leaders/POL/portrait_POL_konstanty_rokossowski.dds"
 			}
 		}
 		corps_commander={
@@ -1190,7 +1201,7 @@ characters={
 		name = POL_deluge_leopold_lis_kula_name
 		portraits={
 			army = {
-				large="gfx/leaders/POL/portrait_POL_leopold_lis_kula.dds" 
+				large="gfx/leaders/POL/portrait_POL_leopold_lis_kula.dds"
 				small = GFX_leopold_lis_kula_picture_small
 			}
 		}
@@ -1202,6 +1213,24 @@ characters={
 			planning_skill=3
 			logistics_skill=3
 			desc = "POL_deluge_leopold_lis_kula_desc"
+		}
+	}
+	POL_deluge_leopold_okulicki = {##Leopold Okulicki
+		name = POL_deluge_leopold_okulicki_name
+		portraits = {
+			army = {
+				large="gfx/leaders/POL/portrait_POL_leopold_okulicki.dds"
+				small = GFX_leopold_okulicki_picture_small
+			}
+		}
+		corps_commander = {
+			traits = { war_hero infantry_leader infantry_expert organizer brilliant_strategist }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			desc = "POL_deluge_leopold_okulicki_desc"
 		}
 	}
 	POL_deluge_szylling = {##Antoni Szylling
@@ -5899,17 +5928,17 @@ characters={
 		name = POL_deluge_aleksander_osinski_name
 		portraits = {
 			army = {
-				large="GFX_portrait_POL_aleksander_osinski"
+				large="gfx/leaders/POL/portrait_POL_aleksander_osinski.dds"
 				small = GFX_aleksander_osinski_picture_small
 			}
 		}
 		corps_commander = {
-			traits = { war_hero infantry_leader infantry_expert organizer }
-			skill=2
+			traits = { war_hero infantry_officer infantry_leader organizer }
+			skill=4
 			attack_skill=3
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
 			desc = "POL_deluge_aleksander_osinski_desc"
 		}
 	}
