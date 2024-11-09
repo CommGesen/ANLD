@@ -8,6 +8,7 @@ country_event = {##BHU asks to join LOU
 	is_triggered_only = yes
 	option = {##accept
 		name = deluge_french_india.1.a
+		LOU = { add_to_faction = BHU }	
 		hidden_effect = {
 			news_event = {
 				id = deluge_french_india.2

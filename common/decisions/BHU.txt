@@ -5,7 +5,9 @@ political_actions = {
 			original_tag = BHU
 		}
 		visible = {
-			
+			NOT = {
+				is_in_faction_with = LOU
+			}
 		}
 		available = {
 			ROOT = {
@@ -29,6 +31,65 @@ political_actions = {
 					id = deluge_french_india.1
 					hours = 24
 				}
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	BHU_core_india = {
+		icon = GFX_decision_generic_form_nation
+		allowed = {
+			original_tag = BHU
+		}
+		visible = {
+			
+		}
+		available = {
+			OR = {
+				has_country_flag = BHU_refused_to_support_bourbon_bhopal_revolt_flag
+				is_subject = no
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 320
+						state = 423
+						state = 425
+						state = 321
+						state = 424
+						state = 320
+						state = 426
+						state = 429
+						state = 436
+						state = 437
+						state = 428
+						state = 443
+						state = 444
+						state = 445
+						state = 440
+						state = 439
+						state = 765
+						state = 438
+						state = 435
+						state = 431
+						state = 430
+						state = 432
+						state = 434
+						state = 288
+						state = 640
+						state = 733
+						state = 422
+						state = 281
+						state = 433
+						state = 427
+					}
+				}
+				add_core_of = BHU
 			}
 		}
 		ai_will_do = {

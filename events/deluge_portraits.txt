@@ -327,3 +327,99 @@ country_event = {##Abdulmejid II
 		}
 	}
 }
+country_event = {##Jacques Doriot
+	id = deluge_portraits.9
+	title = deluge_portraits.9.t
+	desc = deluge_portraits.9.d
+	picture = GFX_report_event_jacques_doriot
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##ANLD
+		name = deluge_portraits.9.a
+		set_portraits = {
+			character = FRA_deluge_jacques_doriot
+			army = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
+			civilian = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
+			navy = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##vanilla
+		name = deluge_portraits.9.b
+		set_portraits = {
+			character = FRA_deluge_jacques_doriot
+			army = { large ="GFX_portrait_tur_abdulmejid_ii" }
+			civilian = { large ="GFX_portrait_tur_abdulmejid_ii" }
+			navy = { large ="GFX_portrait_tur_abdulmejid_ii" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {##Francois de La Rocque
+	id = deluge_portraits.10
+	title = deluge_portraits.10.t
+	desc = deluge_portraits.10.d
+	picture = GFX_report_event_francois_de_la_rocque
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##ANLD
+		name = deluge_portraits.10.a
+		set_portraits = {
+			character = FRA_deluge_francois_de_la_rocque
+			army = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
+			civilian = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
+			navy = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##vanilla
+		name = deluge_portraits.10.b
+		set_portraits = {
+			character = FRA_deluge_francois_de_la_rocque
+			army = { large ="GFX_portrait_tur_abdulmejid_ii" }
+			civilian = { large ="GFX_portrait_tur_abdulmejid_ii" }
+			navy = { large ="GFX_portrait_tur_abdulmejid_ii" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {##Marcel Bucard
+	id = deluge_portraits.11
+	title = deluge_portraits.11.t
+	desc = deluge_portraits.11.d
+	picture = GFX_report_event_marcel_bucard
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##suit
+		name = deluge_portraits.11.a
+		set_portraits = {
+			character = FRA_deluge_marcel_bucard
+			army = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
+			civilian = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
+			navy = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##military uniform
+		name = deluge_portraits.11.b
+		set_portraits = {
+			character = FRA_deluge_marcel_bucard
+			army = { large ="GFX_portrait_tur_abdulmejid_ii" }
+			civilian = { large ="GFX_portrait_tur_abdulmejid_ii" }
+			navy = { large ="GFX_portrait_tur_abdulmejid_ii" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

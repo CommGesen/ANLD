@@ -68,8 +68,9 @@ units = {
 		name = "7. Unit of FS"
 		location = 11518
 		division_template = "French Solidarity Militia"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {
 		name = "8. Unit of FS"

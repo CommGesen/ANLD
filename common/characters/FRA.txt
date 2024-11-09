@@ -16,6 +16,31 @@ characters={
 			}
 		}
 	}
+	FRA_deluge_alexandre_berthier={
+		name=FRA_deluge_alexandre_berthier_name
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/portrait_FRA_alexandre_berthier.dds"
+			}
+		}
+		country_leader={
+			desc="FRA_deluge_alexandre_berthier_desc"
+			ideology=bonapartist_ideology
+			expire="1965.1.1.1"
+			traits = {
+				
+			}
+		}
+		corps_commander={
+			traits={ war_hero politically_connected infantry_leader trait_reckless }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			desc = "FRA_deluge_alexandre_berthier_desc"
+		}
+	}
 	FRA_deluge_paul_de_cassagnac={
 		name=FRA_deluge_paul_de_cassagnac_name
 		portraits={
@@ -590,7 +615,7 @@ characters={
 		}
 		country_leader={
 			ideology=social_darwinist_ideology
-			traits={  }
+			traits={ pan_european_revolutionary }
 			expire="1965.1.1.1"
 			desc = "FRA_deluge_marcel_deat_desc"
 		}
@@ -605,7 +630,7 @@ characters={
 		}
 		country_leader={
 			ideology=avant_garde_nationalism_ideology
-			traits={ mentally_ill }
+			traits={ mentally_ill paranoid }
 			expire="1965.1.1.1"
 			desc = "FRA_deluge_maurice_delaunay_desc"
 		}
@@ -624,6 +649,21 @@ characters={
 			traits={  }
 			expire="1965.1.1.1"
 			desc = "FRA_deluge_marcel_bucard_desc"
+		}
+	}
+	##French Social Party:
+	FRA_deluge_francois_de_la_rocque={
+		name=FRA_deluge_francois_de_la_rocque_name
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/portrait_FRA_francois_de_la_rocque.dds"
+			}
+		}
+		country_leader={
+			ideology=anocracy_ideology
+			traits={  }
+			expire="1965.1.1.1"
+			desc = "FRA_deluge_francois_de_la_rocque_desc"
 		}
 	}
 	##Radical Party:

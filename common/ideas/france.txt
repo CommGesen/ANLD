@@ -1431,7 +1431,133 @@ ideas = {
 				non_core_manpower = 0.035
 				resistance_decay = 0.15
 			}
-		}	
+		}
+		FRA_spirit_force_atheism = {
+			picture = ARG_state_atheism
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				compliance_growth = 0.07
+				stability_factor = -0.05
+				political_power_factor = 0.1
+			}
+		}
+		FRA_spirit_alliance_with_national_popular_rally = {
+			picture = ARG_state_atheism #change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				conscription = 0.01
+				conscription_factor = 0.1
+				political_power_factor = 0.05
+				communism_acceptance = 60
+			}
+		}
+		FRA_spirit_total_control = {
+			picture = chi_forced_conscription
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				NOT = {
+					FRA_deluge_jacques_doriot = {
+						is_country_leader = yes
+					}
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				compliance_growth = 0.07
+				conscription_factor = 0.1
+				communism_acceptance = 20
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				political_power_factor = 0.15
+			}
+		}
+		FRA_spirit_french_revolutionary_state = {
+			picture = MEX_revolutionary_army
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				compliance_growth = 0.07
+				conscription_factor = 0.1
+				communism_acceptance = 20
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				political_power_factor = 0.2
+			}
+		}
+		FRA_spirit_ultimate_sacrifice = {
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				conscription_factor = 0.2
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				production_speed_bunker_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.1
+				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
 	}
 	tank_manufacturer = {
 		designer = yes

@@ -426,7 +426,7 @@ focus_tree = {
 	focus = {
 		id = FRA_fire_movement
 		icon = GFX_focus_FRA_fire_movement
-		x = -3
+		x = -4
 		y = 1
 		prerequisite = { focus = FRA_march_on_paris }
 		relative_position_id = FRA_march_on_paris
@@ -444,10 +444,13 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_country_flag = FRA_maurice_delaunay_won
 		}
 		completion_reward = {
-			
+			promote_character = FRA_deluge_maurice_delaunay
+			remove_ideas = FRA_spirit_chaos_in_paris
+			set_party_name = { ideology = fascism long_name = FRA_fire_movemenet_party_long name = FRA_fire_movemenet_party }
+			set_cosmetic_tag = FRA_holy_state
 		}
 		ai_will_do = {
 			factor = 25
@@ -461,7 +464,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_purge_political_opponents
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_political_arrests
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_fire_movement }
@@ -825,7 +828,7 @@ focus_tree = {
 	focus = {
 		id = FRA_francist_movement
 		icon = GFX_focus_FRA_francist_movement
-		x = -8
+		x = -9
 		y = 1
 		prerequisite = { focus = FRA_march_on_paris }
 		relative_position_id = FRA_march_on_paris
@@ -848,6 +851,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = FRA_spirit_chaos_in_paris
 			promote_character = FRA_deluge_marcel_bucard
+			set_cosmetic_tag = FRA_francism
 			set_party_name = { ideology = fascism long_name = FRA_francist_movemenet_party_long name = FRA_francist_movemenet_party }
 			hidden_effect = {
 				add_dynamic_modifier = { modifier = FRA_modifier_francism }
@@ -873,7 +877,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_francist_movement }
 		relative_position_id = FRA_francist_movement
 		search_filters = { }
-		cost = 1
+		cost = 6
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -889,7 +893,12 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_manpower = 100000
+			hidden_effect = {
+				add_to_variable = { francism_conscription = 0.02}
+				add_to_variable = { francism_fascism_drift = 0.03}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_99
 		}
 		ai_will_do = {
 			factor = 25
@@ -909,7 +918,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_expand_blueshirts }
 		relative_position_id = FRA_expand_blueshirts
 		search_filters = { }
-		cost = 1
+		cost = 6
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -925,7 +934,11 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { francism_army_attack_factor = 0.05}
+				add_to_variable = { francism_conscription = 0.01}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_102
 		}
 		ai_will_do = {
 			factor = 25
@@ -945,7 +958,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_in_the_footsteps_of_the_romans }
 		relative_position_id = FRA_in_the_footsteps_of_the_romans
 		search_filters = { }
-		cost = 1
+		cost = 6
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -961,7 +974,26 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { francism_army_morale_factor = 0.05}
+				add_to_variable = { francism_army_org_factor = 0.05}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_103
+			add_field_marshal_role = {
+				character = FRA_deluge_marcel_bucard
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+				traits = {
+					politically_connected trait_reckless
+				}
+				desc = "FRA_deluge_marcel_bucard_desc"
+			}
+			set_rule = {
+				can_use_kamikaze_pilots = yes
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -981,7 +1013,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_francist_movement }
 		relative_position_id = FRA_francist_movement
 		search_filters = { }
-		cost = 5
+		cost = 6
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -1000,7 +1032,7 @@ focus_tree = {
 			add_manpower = 80000
 			hidden_effect = {
 				add_to_variable = { francism_communism_drift = -0.03}
-				add_to_variable = { francism_fascism_drift = 0.03}
+				add_to_variable = { francism_conscription = 0.01}
 				load_oob = "FRA_french_solidarity_militia"
 			}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_97
@@ -1024,7 +1056,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_integrate_french_solidarity }
 		relative_position_id = FRA_integrate_french_solidarity
 		search_filters = { }
-		cost = 1
+		cost = 6
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -1040,7 +1072,13 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { francism_conscription = 0.01}
+				add_to_variable = { francism_research_speed_factor = 0.03}
+				load_oob = "FRA_young_patriots_militia"
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_100
+			custom_effect_tooltip = FRA_custom_effect_tooltip_101
 		}
 		ai_will_do = {
 			factor = 25
@@ -1054,14 +1092,14 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_new_hierarchy
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_repression
 		x = 1
 		y = 2
 		prerequisite = { focus = FRA_integrate_young_patriots }
 		prerequisite = { focus = FRA_duty_and_discipline_of_monastic_orders }
 		relative_position_id = FRA_integrate_young_patriots
 		search_filters = { }
-		cost = 1
+		cost = 7
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -1077,7 +1115,11 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { francism_monthly_population = -0.1}
+				add_to_variable = { francism_army_org_factor = 0.05}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_104
 		}
 		ai_will_do = {
 			factor = 25
@@ -1097,7 +1139,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_new_hierarchy }
 		relative_position_id = FRA_new_hierarchy
 		search_filters = { }
-		cost = 1
+		cost = 7
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -1113,7 +1155,11 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { francism_political_power_factor = 0.1}
+				add_to_variable = { francism_war_support_factor = 0.05}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_105
 		}
 		ai_will_do = {
 			factor = 25
@@ -1128,7 +1174,7 @@ focus_tree = {
 	focus = {
 		id = FRA_french_popular_party
 		icon = GFX_focus_FRA_french_popular_party
-		x = 1
+		x = 0
 		y = 1
 		prerequisite = { focus = FRA_march_on_paris }
 		relative_position_id = FRA_march_on_paris
@@ -1146,10 +1192,13 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_country_flag = FRA_jacques_doriot_won
 		}
 		completion_reward = {
-			
+			promote_character = FRA_deluge_jacques_doriot
+			remove_ideas = FRA_spirit_chaos_in_paris
+			set_party_name = { ideology = fascism long_name = FRA_fascism_party_long name = FRA_fascism_party}
+			set_cosmetic_tag = FRA_social_state
 		}
 		ai_will_do = {
 			factor = 25
@@ -1169,7 +1218,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_french_popular_party }
 		relative_position_id = FRA_french_popular_party
 		search_filters = { }
-		cost = 1
+		cost = 6
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -1185,7 +1234,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_spirit_force_atheism
 		}
 		ai_will_do = {
 			factor = 25
@@ -1199,13 +1248,13 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_enforce_patriarchy
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_continue_patriarchy
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_force_atheism }
 		relative_position_id = FRA_force_atheism
 		search_filters = { }
-		cost = 1
+		cost = 6
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -1221,7 +1270,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_ideas = POL_enforce_patriarchy_idea
 		}
 		ai_will_do = {
 			factor = 25
@@ -1241,7 +1290,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_enforce_patriarchy focus = FRA_prophet_saved}
 		relative_position_id = FRA_enforce_patriarchy
 		search_filters = { }
-		cost = 1
+		cost = 6
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -1257,7 +1306,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_political_power = -50
+			add_ideas = secret_societies_disbanded
 		}
 		ai_will_do = {
 			factor = 25
@@ -1270,14 +1320,14 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = FRA_convince_national_radicals
+		id = FRA_alliance_with_national_popular_rally
 		icon = GFX_focus_FRA_national_popular_rally
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_enforce_patriarchy }
 		relative_position_id = FRA_enforce_patriarchy
 		search_filters = { }
-		cost = 1
+		cost = 6
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -1293,7 +1343,63 @@ focus_tree = {
 			
 		}
 		completion_reward = {
+			add_manpower = 100000
+			add_ideas = FRA_spirit_alliance_with_national_popular_rally
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
 			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_deats_takeover
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_alliance_with_national_popular_rally }
+		relative_position_id = FRA_alliance_with_national_popular_rally
+		search_filters = { }
+		cost = 10
+		mutually_exclusive = { focus = FRA_total_control}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			retire_character = FRA_deluge_jacques_doriot
+			retire_character = FRA_deluge_maurice_delaunay
+			retire_character = FRA_deluge_marcel_bucard
+			retire_character = FRA_deluge_francois_de_la_rocque
+			promote_character = FRA_deluge_marcel_deat
+			set_party_name = { ideology = fascism long_name = FRA_national_popular_rally_long name = FRA_national_popular_rally_short }
+			set_cosmetic_tag = FRA_revolutionary_state
+			hidden_effect = {
+				add_ideas = FRA_spirit_french_revolutionary_state
+				remove_ideas = {
+					FRA_spirit_alliance_with_national_popular_rally
+					secret_societies_disbanded
+					POL_enforce_patriarchy_idea
+					FRA_spirit_force_atheism
+				}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_107
+			set_rule = {
+				can_generate_female_aces = yes
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -1310,12 +1416,12 @@ focus_tree = {
 		icon = GFX_focus_SOV_ivan_plays_baseball
 		x = -1
 		y = 1
-		prerequisite = { focus = FRA_convince_national_radicals }
+		prerequisite = { focus = FRA_alliance_with_national_popular_rally }
 		prerequisite = { focus = FRA_fight_freemasonery }
-		relative_position_id = FRA_convince_national_radicals
+		relative_position_id = FRA_alliance_with_national_popular_rally
 		search_filters = { }
-		cost = 1
-		#mutually_exclusive = { focus = }
+		cost = 10
+		mutually_exclusive = { focus = FRA_deats_takeover}
 		allow_branch = {
 			
 		}
@@ -1330,7 +1436,37 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			retire_character = FRA_deluge_marcel_deat
+			retire_character = FRA_deluge_maurice_delaunay
+			retire_character = FRA_deluge_marcel_bucard
+			retire_character = FRA_deluge_francois_de_la_rocque
+			hidden_effect = {
+				add_ideas = FRA_spirit_total_control
+				remove_ideas = {
+					FRA_spirit_alliance_with_national_popular_rally
+					secret_societies_disbanded
+					POL_enforce_patriarchy_idea
+					FRA_spirit_force_atheism
+				}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_106
+			add_trait = {
+				character = FRA_deluge_jacques_doriot
+				ideology = social_darwinist_ideology
+				trait = great_dictator
+			}
+			add_field_marshal_role = {
+				character = FRA_deluge_jacques_doriot
+				skill = 2
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
+				traits = {
+					politically_connected trait_cautious
+				}
+				desc = "FRA_deluge_jacques_doriot_desc"
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -1345,12 +1481,12 @@ focus_tree = {
 	focus = {
 		id = FRA_ultimate_sacrifice
 		icon = GFX_focus_generic_total_war
-		x = 0
+		x = 1
 		y = 1
-		prerequisite = { focus = FRA_total_control }
+		prerequisite = { focus = FRA_total_control focus = FRA_deats_takeover }
 		relative_position_id = FRA_total_control
 		search_filters = { }
-		cost = 1
+		cost = 10
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -1366,7 +1502,22 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			set_rule = {
+				can_use_kamikaze_pilots = yes
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = tot_economic_mobilisation
+					}
+				}
+				add_ideas = {
+					tot_economic_mobilisation
+				}
+			}
+			set_country_flag = cant_change_economy_law
+			custom_effect_tooltip = cant_change_economy_law_tooltip
+			add_ideas = FRA_spirit_ultimate_sacrifice
 		}
 		ai_will_do = {
 			factor = 25
@@ -1399,10 +1550,12 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_country_flag = FRA_francois_de_la_rocque_won
 		}
 		completion_reward = {
-			
+			promote_character = FRA_deluge_francois_de_la_rocque
+			remove_ideas = FRA_spirit_chaos_in_paris
+			set_party_name = { ideology = fascism long_name = FRA_french_social_party_long name = FRA_french_social_party_short }
 		}
 		ai_will_do = {
 			factor = 25
@@ -2712,7 +2865,7 @@ focus_tree = {
 	focus = {
 		id = FRA_another_revolution
 		icon = GFX_focus_focus_fra_revolution_utmost
-		x = -15
+		x = -16
 		y = 1
 		prerequisite = { focus = FRA_republic_forever }
 		relative_position_id = FRA_republic_forever
@@ -7171,7 +7324,7 @@ focus = {
 		}
 	focus = {		
 		id = FRA_promote_investments_in_the_stockmarket
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_monetary_advantage
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_faciliating_trade }
