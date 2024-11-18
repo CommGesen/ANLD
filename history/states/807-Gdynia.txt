@@ -4,26 +4,20 @@ state={
 	name="STATE_807"
 
 	history={
-		owner = ROM
-		victory_points = {
-			3295 5 
-		}
+		owner = CAU
 		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 1
-			air_base = 2
-			9263 = {
-				naval_base = 1
-
+			infrastructure = 2
+			3667 = {
+				bunker = 1
 			}
-
 		}
-		add_core_of = ROM
+		add_core_of = SOV
+		add_core_of = CAU
+		add_core_of = CHE
 	}
 
 	provinces={
-		657 687 3076 9635 
+		670 3667 
 	}
 	manpower=713370
 	buildings_max_level_factor=1.000

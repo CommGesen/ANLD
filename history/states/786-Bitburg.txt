@@ -25,13 +25,14 @@ state={
 			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 1
+			3488 = { dam = 1 } # Gileppe Dam
 		}
 
 		add_core_of = BEL
 	}
 
 	provinces={
-		3488 3547 11435 11470 11494
+		3488 3547 11435 11470 11494 
 	}
 	
 }
