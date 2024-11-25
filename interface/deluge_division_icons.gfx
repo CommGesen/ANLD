@@ -1,0 +1,30 @@
+spriteTypes = {
+	###############################
+	### Division Icons          ###
+
+	# sprite numbers need to be continuous, no blank!
+	# base game uses    0 -  89
+	# ANLD uses 		90 - TBD
+
+	###########################################
+	### Large images for DIVISION TEMPLATES ###
+	spriteType = { name = "GFX_div_templ_90_large"										textureFile = "gfx/interface/counters/division_templates_large/90_helmet.dds" }
+	spriteType = { name = "GFX_div_templ_91_large"										textureFile = "gfx/interface/counters/division_templates_large/91_helmet_french.dds" }
+	spriteType = { name = "GFX_div_templ_92_large"										textureFile = "gfx/interface/counters/division_templates_large/92_helmet_german.dds" }
+	spriteType = { name = "GFX_div_templ_93_large"										textureFile = "gfx/interface/counters/division_templates_large/93_helmet_british.dds" }
+	spriteType = { name = "GFX_div_templ_94_large"										textureFile = "gfx/interface/counters/division_templates_large/94_helmet_swiss.dds" }
+	spriteType = { name = "GFX_div_templ_95_large"										textureFile = "gfx/interface/counters/division_templates_large/95_helmet_japanese.dds" }
+    #spriteType = { name = "GFX_div_templ__large"										textureFile = "gfx/interface/counters/division_templates_large/.dds" }
+
+    ###########################################
+	### Small images for DIVISION TEMPLATES ###
+	
+    spriteType = { name = "GFX_div_templ_90_small"										textureFile = "gfx/interface/counters/division_templates_small/90_helmet_small.dds" }
+	spriteType = { name = "GFX_div_templ_91_small"										textureFile = "gfx/interface/counters/division_templates_small/91_helmet_french_small.dds" }
+	spriteType = { name = "GFX_div_templ_92_small"										textureFile = "gfx/interface/counters/division_templates_small/92_helmet_german_small.dds" }
+	spriteType = { name = "GFX_div_templ_93_small"										textureFile = "gfx/interface/counters/division_templates_small/93_helmet_british_small.dds" }
+	spriteType = { name = "GFX_div_templ_94_small"										textureFile = "gfx/interface/counters/division_templates_small/94_helmet_swiss_small.dds" }
+	spriteType = { name = "GFX_div_templ_95_small"										textureFile = "gfx/interface/counters/division_templates_small/95_helmet_japanese_small.dds" }
+	#spriteType = { name = "GFX_div_templ__small"										textureFile = "gfx/interface/counters/division_templates_small/_small.dds" }
+
+}
