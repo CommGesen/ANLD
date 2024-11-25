@@ -1,0 +1,21 @@
+spriteTypes = {
+	spriteType = { # Main Menu HoI4 Logo
+		name = "GFX_anld_mainmenu_game_logo"
+		textureFile = "gfx//interface//customguis//mainmenu//hoi4_logo.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = { # Main Menu Mod Logo
+		name = "GFX_anld_mainmenu_mod_logo"
+		textureFile = "gfx//interface//customguis//mainmenu//anld_logo.dds"
+	}
+}
+
+
+spriteTypes = {
+	spriteType = { # Hyena Bust
+		name = "GFX_anld_hyena_bust_logo"
+		textureFile = "gfx//interface//customguis//mainmenu//hyena_bust.dds"
+	}
+}
