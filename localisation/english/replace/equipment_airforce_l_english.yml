@@ -1,9 +1,19 @@
 ﻿l_english: 
  #GENERIC
-
+ transport_plane_equipment_1:0 "Inter-War Airliner"
+ transport_plane_equipment_1_short:0 "Airliner"
+ transport_plane_equipment_2:0 "Transport Plane"
+ transport_plane_equipment_2_short:0 "Transport Plane"
+ transport_plane_equipment_3:0 "Improved Transport Plane"
+ transport_plane_equipment_3_short:0 "Improved Transport Plane"
 
  #POLAND
- POL_transport_plane_equipment_1:0 "PZL P.44"
+ POL_transport_plane_equipment_1:0 "PZL P.30"
+ POL_transport_plane_equipment_1_short:0 "P.30"
+ POL_transport_plane_equipment_2:0 "PZL P.44"
+ POL_transport_plane_equipment_2_short:0 "P.44"
+ POL_transport_plane_equipment_3:0 "Centralne Studium Samolotów C.S.S-15"
+ POL_transport_plane_equipment_3_short:0 "C.S.S-15"
 
  POL_fighter_equipment_0:0 "PZL P.11"
  POL_fighter_equipment_0_short:0 "P.11"
@@ -93,6 +103,16 @@
 
  #FRANCE
  FRA_transport_plane_equipment_1:0 "Bloch MB.220"
+ FRA_transport_plane_equipment_1_short:0 "MB.220"
+ FRA_transport_plane_equipment_2:0 "Bloch MB.160"
+ FRA_transport_plane_equipment_2_short:0 "MB.160"
+ FRA_transport_plane_equipment_3:0 "SNCASE SE.161"
+ FRA_transport_plane_equipment_3_short:0 "SE.161"
 
  #FEDERAL KINGDOM OF AMERICA
- USA_transport_plane_equipment_1:0 "Curtiss C-46"
+ USA_transport_plane_equipment_1:0 "Douglas DC-3"
+ USA_transport_plane_equipment_1_short:0 "DC-3"
+ USA_transport_plane_equipment_2:0 "Douglas DC-5"
+ USA_transport_plane_equipment_2_short:0 "DC-5"
+ USA_transport_plane_equipment_3:0 "Consolidated C-87"
+ USA_transport_plane_equipment_3_short:0 "C-87"
