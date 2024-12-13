@@ -711,7 +711,6 @@ ideas = {
 			}
 			modifier = {
 				neutrality_drift = 0.02
-				fascism_drift = -0.02
 				drift_defence_factor = 0.15
 				justify_war_goal_time = -0.25
 			}
@@ -1499,6 +1498,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
+				consumer_goods_factor = -0.07
 				compliance_growth = 0.07
 				conscription_factor = 0.1
 				communism_acceptance = 20
@@ -1506,6 +1506,7 @@ ideas = {
 				industrial_capacity_dockyard = 0.05
 				production_factory_max_efficiency_factor = 0.1
 				political_power_factor = 0.15
+				war_support_factor = 0.1
 			}
 		}
 		FRA_spirit_french_revolutionary_state = {
@@ -1525,9 +1526,10 @@ ideas = {
 				always = yes
 			}
 			modifier = {
+				stability_factor = -0.05
 				compliance_growth = 0.07
 				conscription_factor = 0.1
-				communism_acceptance = 20
+				communism_acceptance = 60
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 				production_factory_max_efficiency_factor = 0.05
@@ -1556,6 +1558,28 @@ ideas = {
 				production_speed_coastal_bunker_factor = 0.1
 				industrial_capacity_dockyard = 0.1
 				industrial_capacity_factory = 0.1
+			}
+		}
+		FRA_spirit_remnants_of_the_bonapartes_empire = {
+			picture = spirit_FRA_remnants_of_bonapartes
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				neutrality_drift = 0.02
+				political_power_factor = -0.1
+				stability_factor = -0.1
+				conscription = -0.02
+				war_support_factor = -0.1
 			}
 		}
 	}
@@ -1754,7 +1778,7 @@ ideas = {
 	aircraft_manufacturer = {
 		designer = yes
 		deluge_designer_sncac = {
-			picture = FRA_sncac
+			picture = designer_sncac
 			allowed = {
 				original_tag = FRA
 			}
@@ -1778,7 +1802,7 @@ ideas = {
 			}
 		}
 		deluge_designer_sncac_2 = {
-			picture = FRA_sncac
+			picture = designer_sncac
 			allowed = {
 				original_tag = FRA
 			}

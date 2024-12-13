@@ -408,6 +408,24 @@ FRA_modifier_francism = {##francism_
 	political_power_factor = francism_political_power_factor
 	war_support_factor = francism_war_support_factor
 }
+FRA_modifier_social_first = {##social_first_
+	enable = { always = yes }
+	icon = GFX_idea_spirit_bank_vault ##change later
+	industrial_capacity_dockyard = social_first_industrial_capacity_dockyard
+	industrial_capacity_factory = social_first_industrial_capacity_factory
+	production_factory_max_efficiency_factor = social_first_production_factory_max_efficiency_factor
+	war_support_factor = social_first_war_support_factor
+	weekly_casualties_war_support = social_first_weekly_casualties_war_support
+	weekly_bombing_war_support = social_first_weekly_bombing_war_support
+	non_core_manpower = social_first_non_core_manpower
+	political_power_factor = social_first_political_power_factor
+	stability_factor = social_first_stability_factor
+	consumer_goods_factor = social_first_consumer_goods_factor
+	production_factory_efficiency_gain_factor = social_first_production_factory_efficiency_gain_factor
+	monthly_population = social_first_monthly_population
+	research_speed_factor = social_first_research_speed_factor
+	compliance_growth = social_first_compliance_growth
+}
 FRA_modifier_obsolete_army = {##french_bad_army_
 	enable = { always = yes }
 	icon = GFX_idea_spirit_broken_napoleonic_hat

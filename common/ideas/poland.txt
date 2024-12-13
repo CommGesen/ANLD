@@ -1409,6 +1409,7 @@ ideas = {
 			modifier = {
 				conscription = -0.01
 				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 				production_factory_max_efficiency_factor = 0.05
 			}
 		}
@@ -3319,7 +3320,7 @@ ideas = {
 			}
 		}
 		POL_spirit_of_nomadic_steppe_cavalary_idea = {
-			picture = = ETH_national_studs
+			picture = ETH_national_studs
 			allowed = {
 				tag = POL
 			}

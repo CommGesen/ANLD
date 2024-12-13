@@ -111,8 +111,8 @@ spriteTypes = {
 	}
 ###POLAND HAPPENS
 	spriteType = {
-		name = GFX_smigly_in_power
-		texturefile = "gfx/event_pictures/smigly_in_power.dds"
+		name = "GFX_news_event_edward_rydz_smigly_speech"
+		texturefile = "gfx/event_pictures/news_event_edward_rydz_smigly_speech.dds"
 	}
 	spriteType = {
 		name = "GFX_smigly_declares"
@@ -193,6 +193,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_fryderyk_i_wettyn"
 		texturefile = "gfx/event_pictures/report_event_fryderyk_i_wettyn.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_fryderyk_i_wettyn_alt"
+		texturefile = "gfx/event_pictures/report_event_fryderyk_i_wettyn_alt.dds"
 	}
 	spriteType = {
 		name = "GFX_soldiers_on_bicycles"
@@ -291,8 +295,16 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/smigły_rydz_sad.dds"
 	}
 	spriteType = {
-		name = "GFX_rodnovery_back_black_white"
-		texturefile = "gfx/event_pictures/rodnovery_back_black_white.dds"
+		name = "GFX_news_event_return_of_rodnovery_faith"
+		texturefile = "gfx/event_pictures/news_event_return_of_rodnovery_faith.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_return_of_rodnovery_faith_2"
+		texturefile = "gfx/event_pictures/news_event_return_of_rodnovery_faith_2.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_return_of_rodnovery_faith_3"
+		texturefile = "gfx/event_pictures/news_event_return_of_rodnovery_faith_3.dds"
 	}
 	spriteType = {
 		name = "GFX_balloon_competition"
@@ -303,8 +315,8 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/slavic_union.dds"
 	}
 	spriteType = {
-		name = "GFX_zapadoslavia_formed"
-		texturefile = "gfx/event_pictures/zapadoslavia_formed.dds"
+		name = "GFX_news_event_western_slavs_map"
+		texturefile = "gfx/event_pictures/news_event_western_slavs_map.dds"
 	}
 	spriteType = {
 		name = "GFX_piasecki_proclaims"
@@ -985,5 +997,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_jacques_doriot"
 		texturefile = "gfx/event_pictures/report_event_jacques_doriot.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_guillotine_in_crowd"
+		texturefile = "gfx/event_pictures/news_event_guillotine_in_crowd.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_angkor_wat"
+		texturefile = "gfx/event_pictures/news_event_angkor_wat.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_french_workers"
+		texturefile = "gfx/event_pictures/report_event_french_workers.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_jacques_duclos_alt"
+		texturefile = "gfx/event_pictures/report_event_jacques_duclos_alt.dds"
 	}
 }

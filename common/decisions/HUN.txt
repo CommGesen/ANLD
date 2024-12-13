@@ -3,17 +3,21 @@ political_actions = {
 		icon = GFX_decision_generic_nationalism
 		fire_only_once = yes
 		available = {
-			owns_state = 70
 			controls_state = 70
-			owns_state = 664
 			controls_state = 664
-			owns_state = 71
 			controls_state = 71
-			owns_state = 73
 			controls_state = 73
 		}
 		allowed = {
-			original_tag = HUN
+			tag = HUN
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 70
+				state = 664
+				state = 71
+				state = 73
+			}
 		}
 		days_remove = 150
 		ai_will_do = {
@@ -54,15 +58,19 @@ political_actions = {
 		icon = GFX_decision_generic_nationalism
 		fire_only_once = yes
 		available = {
-			owns_state = 109
 			controls_state = 109
-			owns_state = 103
 			controls_state = 103
-			owns_state = 104
 			controls_state = 104
 		}
 		allowed = {
-			original_tag = HUN
+			tag = HUN
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 109
+				state = 103
+				state = 104
+			}
 		}
 		days_remove = 150
 		ai_will_do = {
@@ -103,13 +111,17 @@ political_actions = {
 		icon = GFX_decision_generic_nationalism
 		fire_only_once = yes
 		available = {
-			owns_state = 102
 			controls_state = 102
-			owns_state = 853
 			controls_state = 853
 		}
 		allowed = {
-			original_tag = HUN
+			tag = HUN
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 102
+				state = 853
+			}
 		}
 		days_remove = 75
 		ai_will_do = {
@@ -134,6 +146,107 @@ political_actions = {
 			}
 		}
 	}
+	integrate_istria_peninsula = {
+		icon = GFX_decision_generic_nationalism
+		fire_only_once = yes
+		available = {
+			controls_state = 736
+			controls_state = 852
+		}
+		allowed = {
+			tag = HUN
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 736
+				state = 852
+			}
+		}
+		days_remove = 75
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+			
+		}
+		cost = 50
+		remove_effect = {
+			if = {
+				limit = {
+					736 = {NOT = {is_core_of = HUN}}
+				}
+				736 = {add_core_of = HUN}
+			}
+			if = {
+				limit = {
+					852 = {NOT = {is_core_of = HUN}}
+				}
+				852 = {add_core_of = HUN}
+			}
+		}
+	}
+	integrate_syrmia = {
+		icon = GFX_decision_generic_nationalism
+		fire_only_once = yes
+		available = {
+			controls_state = 151
+		}
+		allowed = {
+			tag = HUN
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 151
+			}
+		}
+		days_remove = 75
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+			
+		}
+		cost = 50
+		remove_effect = {
+			if = {
+				limit = {
+					151 = {NOT = {is_core_of = HUN}}
+				}
+				151 = {add_core_of = HUN}
+			}
+		}
+	}
+	integrate_burgenland = {
+		icon = GFX_decision_generic_nationalism
+		fire_only_once = yes
+		available = {
+			controls_state = 975
+		}
+		allowed = {
+			tag = HUN
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 975
+			}
+		}
+		days_remove = 75
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+			
+		}
+		cost = 50
+		remove_effect = {
+			if = {
+				limit = {
+					975 = {NOT = {is_core_of = HUN}}
+				}
+				975 = {add_core_of = HUN}
+			}
+		}
+	}
 	install_puppet_monarchy_in_albania = {
 		icon = GFX_decision_generic_monarchy
 		fire_only_once = yes
@@ -143,7 +256,7 @@ political_actions = {
 			}
 		}
 		allowed = {
-			original_tag = HUN
+			tag = HUN
 		}
 		ai_will_do = {
 			factor = 5

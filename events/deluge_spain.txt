@@ -66,7 +66,7 @@ country_event = {##SPR gets info that their king Roland I died
 				}
 			}
 			promote_character = SPR_sixtus_of_bourbon_parma
-			set_party_name = { ideology = neutrality long_name = FRA_bourbon_parma_loyalists_party_long name = FRA_bourbon_parma_loyalists_party_short }
+			set_party_name = { ideology = neutrality long_name = SPR_bourbon_parma_loyalists_party_long name = SPR_bourbon_parma_loyalists_party_short }
 			FRA = {
 				set_autonomy = {
 					target = SPR
@@ -356,7 +356,7 @@ country_event = {#POR has option to puppet SPR by SPR crowning sixtus, but may l
 		}
 		SPR = {
 			promote_character = SPR_sixtus_of_bourbon_parma
-			set_party_name = { ideology = neutrality long_name = FRA_bourbon_parma_loyalists_party_long name = FRA_bourbon_parma_loyalists_party_short }
+			set_party_name = { ideology = neutrality long_name = SPR_bourbon_parma_loyalists_party_long name = SPR_bourbon_parma_loyalists_party_short }
 			country_event = {
 				id = deluge_spain.9
 			}

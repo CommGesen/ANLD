@@ -520,20 +520,19 @@ integration_category = {
 		available = {
 			has_manpower > 2000
 			has_equipment = { infantry_equipment > 1999 }
-			owns_state = 79
 			controls_state = 79
-			owns_state = 78
 			controls_state = 78
-			owns_state = 80
+			controls_state = 766
 			controls_state = 80
 		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
 			OR = {
-				79 = { NOT = { is_core_of = POL } } 
-				78 = { NOT = { is_core_of = POL } } 
-				80 = { NOT = { is_core_of = POL } } 
+				79 = { NOT = { is_core_of = POL } }
+				78 = { NOT = { is_core_of = POL } }
+				80 = { NOT = { is_core_of = POL } }
+				766 = { NOT = { is_core_of = POL } }
 			}
 		}
 		cost = 100
@@ -547,9 +546,10 @@ integration_category = {
 			    type = infantry_equipment
 			    amount = -2000
 			}
-			80 = { add_core_of = POL } 
-			79 = { add_core_of = POL } 
-			78 = { add_core_of = POL } 
+			80 = { add_core_of = POL }
+			79 = { add_core_of = POL }
+			78 = { add_core_of = POL }
+			766 = { add_core_of = POL }
 		}
 		ai_will_do = {
 			factor = 100
@@ -1001,21 +1001,20 @@ integration_category = {
 			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 78
 			controls_state = 78
-			owns_state = 79
 			controls_state = 79
-			owns_state = 80
 			controls_state = 80
+			controls_state = 766
 		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
 			has_completed_focus = POL_lechitic_legacy
 			OR = {
-				78 = { NOT = { is_core_of = POL } } 
-				79 = { NOT = { is_core_of = POL } } 
-				80 = { NOT = { is_core_of = POL } } 
+				78 = { NOT = { is_core_of = POL } }
+				79 = { NOT = { is_core_of = POL } }
+				80 = { NOT = { is_core_of = POL } }
+				766 = { NOT = { is_core_of = POL } }
 			}
 		}
 		cost = 100
@@ -1029,9 +1028,10 @@ integration_category = {
 			    type = infantry_equipment
 			    amount = -1000
 			}
-			78 = { add_core_of = POL } 
-			79 = { add_core_of = POL } 
-			80 = { add_core_of = POL } 
+			78 = { add_core_of = POL }
+			79 = { add_core_of = POL }
+			80 = { add_core_of = POL }
+			766 = { add_core_of = POL }
 		}
 		ai_will_do = {
 			factor = 100
@@ -1043,21 +1043,22 @@ integration_category = {
 			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 155
 			controls_state = 155
-			owns_state = 43
 			controls_state = 43
-			owns_state = 154
+			controls_state = 973
 			controls_state = 154
+			controls_state = 974
 		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
 			has_completed_focus = POL_lechitic_legacy
 			OR = {
-				155 = { NOT = { is_core_of = POL } } 
-				43 = { NOT = { is_core_of = POL } } 
-				154 = { NOT = { is_core_of = POL } } 
+				155 = { NOT = { is_core_of = POL } }
+				43 = { NOT = { is_core_of = POL } }
+				154 = { NOT = { is_core_of = POL } }
+				974 = { NOT = { is_core_of = POL } }
+				973 = { NOT = { is_core_of = POL } }
 			}
 		}
 		cost = 100
@@ -1071,9 +1072,11 @@ integration_category = {
 			    type = infantry_equipment
 			    amount = -1000
 			}
-			155 = { add_core_of = POL } 
-			43 = { add_core_of = POL } 
-			154 = { add_core_of = POL } 
+			155 = { add_core_of = POL }
+			43 = { add_core_of = POL }
+			154 = { add_core_of = POL }
+			974 = { add_core_of = POL }
+			973 = { add_core_of = POL }
 		}
 		ai_will_do = {
 			factor = 100
@@ -1085,13 +1088,9 @@ integration_category = {
 			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 76
 			controls_state = 76
-			owns_state = 84
 			controls_state = 84
-			owns_state = 83
 			controls_state = 83
-			owns_state = 82
 			controls_state = 82
 		}
 		fire_only_once = no
@@ -1335,21 +1334,17 @@ integration_category = {
 			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 805
 			controls_state = 805
-			owns_state = 185
 			controls_state = 185
-			owns_state = 731
 			controls_state = 731
-			owns_state = 184
-			controls_state = 184
+			controls_state = 985
 		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
 			has_completed_focus = POL_lechitic_legacy
 			OR = {
-				184 = { NOT = { is_core_of = POL } } 
+				985 = { NOT = { is_core_of = POL } } 
 				731 = { NOT = { is_core_of = POL } } 
 				185 = { NOT = { is_core_of = POL } } 
 				805 = { NOT = { is_core_of = POL } } 
@@ -1369,7 +1364,7 @@ integration_category = {
 			805 = { add_core_of = POL } 
 			185 = { add_core_of = POL } 
 			731 = { add_core_of = POL } 
-			184 = { add_core_of = POL } 
+			985 = { add_core_of = POL } 
 		}
 		ai_will_do = {
 			factor = 100
@@ -1381,24 +1376,18 @@ integration_category = {
 			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 47
 			controls_state = 47
-			owns_state = 186
 			controls_state = 186
-			owns_state = 182
 			controls_state = 182
-			owns_state = 187
-			controls_state = 187
 		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
 			has_completed_focus = POL_lechitic_legacy
 			OR = {
-				187 = { NOT = { is_core_of = POL } } 
-				182 = { NOT = { is_core_of = POL } } 
-				186 = { NOT = { is_core_of = POL } } 
-				47 = { NOT = { is_core_of = POL } } 
+				182 = { NOT = { is_core_of = POL } }
+				186 = { NOT = { is_core_of = POL } }
+				47 = { NOT = { is_core_of = POL } }
 			}
 		}
 		cost = 100
@@ -1412,10 +1401,9 @@ integration_category = {
 			    type = infantry_equipment
 			    amount = -1000
 			}
-			47 = { add_core_of = POL } 
-			186 = { add_core_of = POL } 
-			182 = { add_core_of = POL } 
-			187 = { add_core_of = POL } 
+			47 = { add_core_of = POL }
+			186 = { add_core_of = POL }
+			182 = { add_core_of = POL }
 		}
 		ai_will_do = {
 			factor = 100
@@ -1427,24 +1415,30 @@ integration_category = {
 			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 341
 			controls_state = 341
-			owns_state = 340
 			controls_state = 340
-			owns_state = 339
 			controls_state = 339
-			owns_state = 347
 			controls_state = 347
+			controls_state = 164
+			controls_state = 184
+			controls_state = 187
+			controls_state = 342
+			controls_state = 343
 		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
 			has_completed_focus = POL_lechitic_legacy
 			OR = {
-				347 = { NOT = { is_core_of = POL } } 
-				339 = { NOT = { is_core_of = POL } } 
-				340 = { NOT = { is_core_of = POL } } 
-				341 = { NOT = { is_core_of = POL } } 
+				347 = { NOT = { is_core_of = POL } }
+				339 = { NOT = { is_core_of = POL } }
+				340 = { NOT = { is_core_of = POL } }
+				341 = { NOT = { is_core_of = POL } }
+				164 = { NOT = { is_core_of = POL } }
+				184 = { NOT = { is_core_of = POL } }
+				187 = { NOT = { is_core_of = POL } }
+				342 = { NOT = { is_core_of = POL } }
+				343 = { NOT = { is_core_of = POL } }
 			}
 		}
 		cost = 100
@@ -1458,10 +1452,15 @@ integration_category = {
 			    type = infantry_equipment
 			    amount = -1000
 			}
-			341 = { add_core_of = POL } 
-			340 = { add_core_of = POL } 
-			339 = { add_core_of = POL } 
-			347 = { add_core_of = POL } 
+			341 = { add_core_of = POL }
+			340 = { add_core_of = POL }
+			339 = { add_core_of = POL }
+			347 = { add_core_of = POL }
+			164 = { add_core_of = POL }
+			184 = { add_core_of = POL }
+			342 = { add_core_of = POL }
+			342 = { add_core_of = POL }
+			187 = { add_core_of = POL }
 		}
 		ai_will_do = {
 			factor = 100
@@ -1663,20 +1662,15 @@ integration_category = {
 			has_global_flag = POL_formed_slavic_union
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 155
 			controls_state = 155
-			owns_state = 43
 			controls_state = 43
-			owns_state = 154
 			controls_state = 154
-			owns_state = 83
 			controls_state = 83
-			owns_state = 76
 			controls_state = 76
-			owns_state = 84
 			controls_state = 84
-			owns_state = 82
 			controls_state = 82
+			controls_state = 974
+			controls_state = 973
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -1686,13 +1680,15 @@ integration_category = {
 					has_completed_focus = POL_torch_for_all_slavs
 				}
 				OR = {
-					155 = { NOT = { is_core_of = POL } } 
-					43 = { NOT = { is_core_of = POL } } 
-					154 = { NOT = { is_core_of = POL } } 
-					83 = { NOT = { is_core_of = POL } } 
-					76 = { NOT = { is_core_of = POL } } 
-					84 = { NOT = { is_core_of = POL } } 
-					82 = { NOT = { is_core_of = POL } } 
+					155 = { NOT = { is_core_of = POL } }
+					43 = { NOT = { is_core_of = POL } }
+					154 = { NOT = { is_core_of = POL } }
+					83 = { NOT = { is_core_of = POL } }
+					76 = { NOT = { is_core_of = POL } }
+					84 = { NOT = { is_core_of = POL } }
+					82 = { NOT = { is_core_of = POL } }
+					974 = { NOT = { is_core_of = POL } }
+					973 = { NOT = { is_core_of = POL } }
 				}
 			}
 		}
@@ -1707,13 +1703,15 @@ integration_category = {
 			    type = infantry_equipment
 			    amount = -1000
 			}
-			155 = { add_core_of = POL } 
-			43 = { add_core_of = POL } 
-			154 = { add_core_of = POL } 
-			83 = { add_core_of = POL } 
-			76 = { add_core_of = POL } 
-			84 = { add_core_of = POL } 
-			82 = { add_core_of = POL } 
+			155 = { add_core_of = POL }
+			43 = { add_core_of = POL }
+			154 = { add_core_of = POL }
+			83 = { add_core_of = POL }
+			76 = { add_core_of = POL }
+			84 = { add_core_of = POL }
+			82 = { add_core_of = POL }
+			974 = { add_core_of = POL }
+			973 = { add_core_of = POL }
 		}
 		ai_will_do = {
 			factor = 100
@@ -1725,15 +1723,11 @@ integration_category = {
 			has_global_flag = POL_formed_slavic_union
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 80
 			controls_state = 80
-			owns_state = 79
 			controls_state = 79
-			owns_state = 78
 			controls_state = 78
-			owns_state = 46
+			controls_state = 766
 			controls_state = 46
-			owns_state = 81
 			controls_state = 81
 		}
 		fire_only_once = no
@@ -1744,11 +1738,12 @@ integration_category = {
 					has_completed_focus = POL_torch_for_all_slavs
 				}
 				OR = {
-					80 = { NOT = { is_core_of = POL } } 
-					79 = { NOT = { is_core_of = POL } } 
-					78 = { NOT = { is_core_of = POL } } 
-					46 = { NOT = { is_core_of = POL } } 
-					81 = { NOT = { is_core_of = POL } } 
+					80 = { NOT = { is_core_of = POL } }
+					79 = { NOT = { is_core_of = POL } }
+					78 = { NOT = { is_core_of = POL } }
+					766 = { NOT = { is_core_of = POL } }
+					46 = { NOT = { is_core_of = POL } }
+					81 = { NOT = { is_core_of = POL } }
 				}
 			}
 		}
@@ -1763,11 +1758,12 @@ integration_category = {
 			    type = infantry_equipment
 			    amount = -1000
 			}
-			80 = { add_core_of = POL } 
-			79 = { add_core_of = POL } 
-			78 = { add_core_of = POL } 
-			46 = { add_core_of = POL } 
-			81 = { add_core_of = POL } 
+			80 = { add_core_of = POL }
+			79 = { add_core_of = POL }
+			78 = { add_core_of = POL }
+			46 = { add_core_of = POL }
+			81 = { add_core_of = POL }
+			766 = { add_core_of = POL }
 		}
 		ai_will_do = {
 			factor = 100
@@ -1780,25 +1776,17 @@ integration_category = {
 			has_global_flag = POL_formed_slavic_union
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 311
 			controls_state = 311
-			owns_state = 827
+			controls_state = 988
 			controls_state = 827
-			owns_state = 828
 			controls_state = 828
-			owns_state = 821
+			controls_state = 807
 			controls_state = 821
-			owns_state = 269
 			controls_state = 269
-			owns_state = 229
 			controls_state = 229
-			owns_state = 230
 			controls_state = 230
-			owns_state = 231
 			controls_state = 231
-			owns_state = 233
 			controls_state = 233
-			owns_state = 826
 			controls_state = 826
 		}
 		fire_only_once = no
@@ -1809,16 +1797,18 @@ integration_category = {
 					has_completed_focus = POL_torch_for_all_slavs
 				}
 				OR = {
-					311 = { NOT = { is_core_of = POL } } 
-					827 = { NOT = { is_core_of = POL } } 
-					828 = { NOT = { is_core_of = POL } } 
-					821 = { NOT = { is_core_of = POL } } 
-					269 = { NOT = { is_core_of = POL } } 
-					229 = { NOT = { is_core_of = POL } } 
-					230 = { NOT = { is_core_of = POL } } 
-					231 = { NOT = { is_core_of = POL } } 
-					233 = { NOT = { is_core_of = POL } } 
-					826 = { NOT = { is_core_of = POL } } 
+					311 = { NOT = { is_core_of = POL } }
+					827 = { NOT = { is_core_of = POL } }
+					828 = { NOT = { is_core_of = POL } }
+					807 = { NOT = { is_core_of = POL } }
+					821 = { NOT = { is_core_of = POL } }
+					269 = { NOT = { is_core_of = POL } }
+					229 = { NOT = { is_core_of = POL } }
+					230 = { NOT = { is_core_of = POL } }
+					231 = { NOT = { is_core_of = POL } }
+					233 = { NOT = { is_core_of = POL } }
+					826 = { NOT = { is_core_of = POL } }
+					988 = { NOT = { is_core_of = POL } }
 				}
 			}
 		}
@@ -1833,16 +1823,18 @@ integration_category = {
 			    type = infantry_equipment
 			    amount = -1000
 			}
-			311 = { add_core_of = POL } 
-			827 = { add_core_of = POL } 
-			828 = { add_core_of = POL } 
-			821 = { add_core_of = POL } 
-			269 = { add_core_of = POL } 
-			229 = { add_core_of = POL } 
-			230 = { add_core_of = POL } 
-			231 = { add_core_of = POL } 
-			233 = { add_core_of = POL } 
-			826 = { add_core_of = POL } 
+			311 = { add_core_of = POL }
+			827 = { add_core_of = POL }
+			828 = { add_core_of = POL }
+			807 = { add_core_of = POL }
+			821 = { add_core_of = POL }
+			269 = { add_core_of = POL }
+			229 = { add_core_of = POL }
+			230 = { add_core_of = POL }
+			231 = { add_core_of = POL }
+			233 = { add_core_of = POL }
+			826 = { add_core_of = POL }
+			988 = { add_core_of = POL } 
 		}
 		ai_will_do = {
 			factor = 100
@@ -1855,17 +1847,11 @@ integration_category = {
 			has_global_flag = POL_formed_slavic_union
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 341
 			controls_state = 341
-			owns_state = 184
 			controls_state = 184
-			owns_state = 731
 			controls_state = 731
-			owns_state = 44
 			controls_state = 44
-			owns_state = 805
 			controls_state = 805
-			owns_state = 185
 			controls_state = 185
 		}
 		fire_only_once = no
@@ -1876,12 +1862,12 @@ integration_category = {
 					has_completed_focus = POL_torch_for_all_slavs
 				}
 				OR = {
-					341 = { NOT = { is_core_of = POL } } 
-					184 = { NOT = { is_core_of = POL } } 
-					731 = { NOT = { is_core_of = POL } } 
-					44 = { NOT = { is_core_of = POL } } 
-					805 = { NOT = { is_core_of = POL } } 
-					185 = { NOT = { is_core_of = POL } } 
+					341 = { NOT = { is_core_of = POL } }
+					184 = { NOT = { is_core_of = POL } }
+					731 = { NOT = { is_core_of = POL } }
+					44 = { NOT = { is_core_of = POL } }
+					805 = { NOT = { is_core_of = POL } }
+					185 = { NOT = { is_core_of = POL } }
 				}
 			}
 		}
@@ -1914,41 +1900,24 @@ integration_category = {
 			has_global_flag = POL_formed_slavic_union
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 407
 			controls_state = 407
-			owns_state = 406
 			controls_state = 406
-			owns_state = 402
 			controls_state = 402
-			owns_state = 583
 			controls_state = 583
-			owns_state = 590
 			controls_state = 590
-			owns_state = 588
 			controls_state = 588
-			owns_state = 589
 			controls_state = 589
-			owns_state = 404
 			controls_state = 404
-			owns_state = 587
 			controls_state = 587
-			owns_state = 831
+			controls_state = 994
 			controls_state = 831
-			owns_state = 823
 			controls_state = 823
-			owns_state = 584
 			controls_state = 584
-			owns_state = 830
 			controls_state = 830
-			owns_state = 405
 			controls_state = 405
-			owns_state = 585
 			controls_state = 585
-			owns_state = 732
 			controls_state = 732
-			owns_state = 742
 			controls_state = 742
-			owns_state = 586
 			controls_state = 586
 		}
 		fire_only_once = no
@@ -1959,24 +1928,25 @@ integration_category = {
 					has_completed_focus = POL_torch_for_all_slavs
 				}
 				OR = {
-					407 = { NOT = { is_core_of = POL } } 
-					406 = { NOT = { is_core_of = POL } } 
-					402 = { NOT = { is_core_of = POL } } 
-					583 = { NOT = { is_core_of = POL } } 
-					590 = { NOT = { is_core_of = POL } } 
-					588 = { NOT = { is_core_of = POL } } 
-					589 = { NOT = { is_core_of = POL } } 
-					404 = { NOT = { is_core_of = POL } } 
-					587 = { NOT = { is_core_of = POL } } 
-					831 = { NOT = { is_core_of = POL } } 
-					823 = { NOT = { is_core_of = POL } } 
-					584 = { NOT = { is_core_of = POL } } 
-					830 = { NOT = { is_core_of = POL } } 
-					405 = { NOT = { is_core_of = POL } } 
-					585 = { NOT = { is_core_of = POL } } 
-					732 = { NOT = { is_core_of = POL } } 
-					742 = { NOT = { is_core_of = POL } } 
-					586 = { NOT = { is_core_of = POL } } 
+					407 = { NOT = { is_core_of = POL } }
+					406 = { NOT = { is_core_of = POL } }
+					402 = { NOT = { is_core_of = POL } }
+					583 = { NOT = { is_core_of = POL } }
+					590 = { NOT = { is_core_of = POL } }
+					588 = { NOT = { is_core_of = POL } }
+					589 = { NOT = { is_core_of = POL } }
+					404 = { NOT = { is_core_of = POL } }
+					587 = { NOT = { is_core_of = POL } }
+					831 = { NOT = { is_core_of = POL } }
+					823 = { NOT = { is_core_of = POL } }
+					584 = { NOT = { is_core_of = POL } }
+					830 = { NOT = { is_core_of = POL } }
+					405 = { NOT = { is_core_of = POL } }
+					585 = { NOT = { is_core_of = POL } }
+					732 = { NOT = { is_core_of = POL } }
+					742 = { NOT = { is_core_of = POL } }
+					586 = { NOT = { is_core_of = POL } }
+					994 = { NOT = { is_core_of = POL } }
 				}
 			}
 		}
@@ -1991,24 +1961,25 @@ integration_category = {
 			    type = infantry_equipment
 			    amount = -1000
 			}
-			407 = { add_core_of = POL } 
-			406 = { add_core_of = POL } 
-			402 = { add_core_of = POL } 
-			583 = { add_core_of = POL } 
-			590 = { add_core_of = POL } 
-			588 = { add_core_of = POL } 
-			589 = { add_core_of = POL } 
-			404 = { add_core_of = POL } 
-			587 = { add_core_of = POL } 
-			831 = { add_core_of = POL } 
-			823 = { add_core_of = POL } 
-			584 = { add_core_of = POL } 
-			830 = { add_core_of = POL } 
-			405 = { add_core_of = POL } 
-			585 = { add_core_of = POL } 
-			732 = { add_core_of = POL } 
-			742 = { add_core_of = POL } 
-			586 = { add_core_of = POL } 
+			407 = { add_core_of = POL }
+			406 = { add_core_of = POL }
+			402 = { add_core_of = POL }
+			583 = { add_core_of = POL }
+			590 = { add_core_of = POL }
+			588 = { add_core_of = POL }
+			589 = { add_core_of = POL }
+			404 = { add_core_of = POL }
+			587 = { add_core_of = POL }
+			831 = { add_core_of = POL }
+			823 = { add_core_of = POL }
+			584 = { add_core_of = POL }
+			830 = { add_core_of = POL }
+			405 = { add_core_of = POL }
+			585 = { add_core_of = POL }
+			732 = { add_core_of = POL }
+			742 = { add_core_of = POL }
+			586 = { add_core_of = POL }
+			994 = { add_core_of = POL }
 		}
 		ai_will_do = {
 			factor = 100
@@ -2986,12 +2957,14 @@ seek_enemies_category = {
 					NOT = {owns_state = 80}
 					NOT = {owns_state = 79}
 					NOT = {owns_state = 78}
+					NOT = {owns_state = 766}
 				}
 			} 
 			OR = {
 				80 = { owner = { NOT = { is_in_faction_with = POL } } }
 				79 = { owner = { NOT = { is_in_faction_with = POL } } }
 				78 = { owner = { NOT = { is_in_faction_with = POL } } }
+				766 = { owner = { NOT = { is_in_faction_with = POL } } }
 			}
 		}
 		cost = 50
@@ -2999,17 +2972,22 @@ seek_enemies_category = {
 		fire_only_once = no
 		days_re_enable = 5
 		complete_effect = {
-			if = { limit = { NOT = { 
-					owns_state = 78
-					owns_state = 79
-					owns_state = 80
-				} }
+			if = { 
+				limit = {
+					NOT = { 
+						owns_state = 78
+						owns_state = 79
+						owns_state = 80
+						owns_state = 766
+					} 	
+				}
 				every_country = {
 					limit = { 
 						OR = {
 							owns_state = 80
 							owns_state = 79
 							owns_state = 78
+							owns_state = 766
 						}
 					}
 					country_event = {
@@ -3020,26 +2998,36 @@ seek_enemies_category = {
 			set_country_flag = AI_making_wargoal
 		}
 		remove_effect = {
-			if = { limit = { NOT = {
-				80 = { is_claimed_by = POL }
-				79 = { is_claimed_by = POL }
-				78 = { is_claimed_by = POL }
-				} }
+			if = { 
+				limit = { 
+					NOT = {
+						80 = { is_claimed_by = POL }
+						79 = { is_claimed_by = POL }
+						78 = { is_claimed_by = POL }
+						766 = { is_claimed_by = POL }
+					} 
+				}
 				add_state_claim = 78
 				add_state_claim = 79
 				add_state_claim = 80
+				add_state_claim = 766
 			} 
-			if = { limit = { NOT = { 
-					owns_state = 78
-					owns_state = 79
-					owns_state = 80
-				} }
+			if = { 
+				limit = {
+					NOT = { 
+						owns_state = 78
+						owns_state = 79
+						owns_state = 80
+						owns_state = 766
+					}
+				}
 				every_country = {
 					limit = { 
 						OR = {
 							owns_state = 80
 							owns_state = 79
 							owns_state = 78
+							owns_state = 766
 						}
 					}
 					ROOT = {
@@ -3047,7 +3035,7 @@ seek_enemies_category = {
 							type = take_claimed_state
 							target = PREV
 							generator = {
-								80 79 78
+								80 79 78 766
 							}
 						}
 					}
@@ -3063,6 +3051,7 @@ seek_enemies_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 					}
 					strength_ratio = { tag = POL ratio < 1.7 }
 				}
@@ -3074,6 +3063,7 @@ seek_enemies_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 					}
 					strength_ratio = { tag = POL ratio > 1.7 }
 				}
@@ -3085,6 +3075,7 @@ seek_enemies_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 					}
 					is_in_faction = no
 				}
@@ -3096,6 +3087,7 @@ seek_enemies_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 					}
 					is_in_faction = yes
 				}
@@ -3107,6 +3099,7 @@ seek_enemies_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 					}
 					num_of_factories > ROOT.num_of_factories
 				}
@@ -3118,6 +3111,7 @@ seek_enemies_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 					}
 					num_of_factories < ROOT.num_of_factories
 				}
@@ -3130,6 +3124,7 @@ seek_enemies_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 					}
 					OR = {
 						is_guaranteed_by = FRA
@@ -3158,6 +3153,7 @@ seek_enemies_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 					}
 					NOT = {
 						OR = {
@@ -3186,6 +3182,7 @@ seek_enemies_category = {
 					OR = {
 						owns_state = 80
 						owns_state = 79
+						owns_state = 766
 						owns_state = 78
 					}
 					NOT = {
@@ -3222,6 +3219,7 @@ seek_enemies_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 					}
 					ROOT = {
 						has_wargoal_against = PREV
@@ -3235,6 +3233,7 @@ seek_enemies_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 					}
 					has_war_with = ROOT
 				}
@@ -6061,13 +6060,14 @@ seek_empire_category = {
 				controls_state = 46
 				controls_state = 81
 				controls_state = 77
-				controls_state = 807
+				controls_state = 971
 			}
 			custom_trigger_tooltip = {##Moldavia
 				tooltip = POL_custom_trigger_tooltip_15
 				controls_state = 78
 				controls_state = 79
 				controls_state = 80
+				controls_state = 766
 			}
 			custom_trigger_tooltip = {##Transylvania
 				tooltip = POL_custom_trigger_tooltip_16
@@ -6081,6 +6081,8 @@ seek_empire_category = {
 				controls_state = 154
 				controls_state = 43
 				controls_state = 155
+				controls_state = 974
+				controls_state = 973
 			}
 			custom_trigger_tooltip = {##Bavaria
 				tooltip = POL_custom_trigger_tooltip_18
@@ -13086,11 +13088,12 @@ new_revolution_category = {
 				controls_state = 46
 				controls_state = 81
 				controls_state = 77
-				controls_state = 807
+				controls_state = 971
 			}
 			custom_trigger_tooltip = {##Moldavia
 				tooltip = POL_custom_trigger_tooltip_15
 				controls_state = 78
+				controls_state = 766
 				controls_state = 79
 				controls_state = 80
 			}
@@ -13106,6 +13109,8 @@ new_revolution_category = {
 				controls_state = 154
 				controls_state = 43
 				controls_state = 155
+				controls_state = 974
+				controls_state = 973
 			}
 			custom_trigger_tooltip = {##Lithuania
 				tooltip = POL_custom_trigger_tooltip_20
@@ -13182,6 +13187,7 @@ new_revolution_category = {
 				controls_state = 341
 				controls_state = 187
 				controls_state = 164
+				controls_state = 985
 			}
 			custom_trigger_tooltip = {##Holland
 				tooltip = POL_custom_trigger_tooltip_35
@@ -13406,8 +13412,9 @@ new_revolution_category = {
 						state = 46
 						state = 81
 						state = 77
-						state = 807
+						state = 971
 						state = 78
+						state = 766
 						state = 79
 						state = 80
 						state = 76
@@ -13416,7 +13423,9 @@ new_revolution_category = {
 						state = 83
 						state = 154
 						state = 43
+						state = 973
 						state = 155
+						state = 974
 						state = 11
 						state = 814
 						state = 189
@@ -17906,17 +17915,17 @@ sarmatia_decisions_category = {
 					}
 				}
 				NOT = {
+					993 = {
+						is_core_of = POL
+					}
+				}
+				NOT = {
 					418 = {
 						is_core_of = POL
 					}
 				}
 				NOT = {
 					411 = {
-						is_core_of = POL
-					}
-				}
-				NOT = {
-					413 = {
 						is_core_of = POL
 					}
 				}
@@ -17946,10 +17955,10 @@ sarmatia_decisions_category = {
 				controls_state = 266
 				controls_state = 418
 				controls_state = 411
-				controls_state = 413
 				controls_state = 412
 				controls_state = 414
 				controls_state = 416
+				controls_state = 993
 			}
 		}
 		cost = 100
@@ -17972,13 +17981,13 @@ sarmatia_decisions_category = {
 			266 = {
 				add_core_of = POL
 			}
+			993 = {
+				add_core_of = POL
+			}
 			418 = {
 				add_core_of = POL
 			}
 			411 = {
-				add_core_of = POL
-			}
-			413 = {
 				add_core_of = POL
 			}
 			412 = {
@@ -18020,7 +18029,9 @@ sarmatia_decisions_category = {
 						owns_state = 664
 						owns_state = 74
 						owns_state = 155
+						owns_state = 974
 						owns_state = 43
+						owns_state = 973
 						owns_state = 154
 						owns_state = 76
 						owns_state = 83
@@ -18030,6 +18041,7 @@ sarmatia_decisions_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 						owns_state = 847
 					}
 				}
@@ -18045,7 +18057,9 @@ sarmatia_decisions_category = {
 				add_state_claim = 664
 				add_state_claim = 74
 				add_state_claim = 155
+				add_state_claim = 974
 				add_state_claim = 43
+				add_state_claim = 973
 				add_state_claim = 154
 				add_state_claim = 76
 				add_state_claim = 83
@@ -18055,6 +18069,7 @@ sarmatia_decisions_category = {
 				add_state_claim = 80
 				add_state_claim = 79
 				add_state_claim = 78
+				add_state_claim = 766
 				add_state_claim = 847
 			}
 			set_country_flag = AI_making_wargoal
@@ -18070,7 +18085,9 @@ sarmatia_decisions_category = {
 						owns_state = 664
 						owns_state = 74
 						owns_state = 155
+						owns_state = 974
 						owns_state = 43
+						owns_state = 973
 						owns_state = 154
 						owns_state = 76
 						owns_state = 83
@@ -18080,6 +18097,7 @@ sarmatia_decisions_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 						owns_state = 847
 					}
 				}
@@ -18088,7 +18106,7 @@ sarmatia_decisions_category = {
 						type = take_claimed_state
 						target = PREV
 						generator = {
-							74 71 70 73 664 74 155 43 154 76 83 84 82 45 80 79 78 847
+							74 71 70 73 664 74 155 43 154 76 83 84 82 45 80 79 78 847 974 973 766
 						}
 					}
 				}
@@ -18112,7 +18130,9 @@ sarmatia_decisions_category = {
 						owns_state = 664
 						owns_state = 74
 						owns_state = 155
+						owns_state = 974
 						owns_state = 43
+						owns_state = 973
 						owns_state = 154
 						owns_state = 76
 						owns_state = 83
@@ -18122,6 +18142,7 @@ sarmatia_decisions_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 						owns_state = 847
 					}
 					strength_ratio = {
@@ -18141,7 +18162,9 @@ sarmatia_decisions_category = {
 						owns_state = 664
 						owns_state = 74
 						owns_state = 155
+						owns_state = 974
 						owns_state = 43
+						owns_state = 973
 						owns_state = 154
 						owns_state = 76
 						owns_state = 83
@@ -18151,6 +18174,7 @@ sarmatia_decisions_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 						owns_state = 847
 					}
 					strength_ratio = {
@@ -18169,7 +18193,9 @@ sarmatia_decisions_category = {
 						owns_state = 664
 						owns_state = 74
 						owns_state = 155
+						owns_state = 974
 						owns_state = 43
+						owns_state = 973
 						owns_state = 154
 						owns_state = 76
 						owns_state = 83
@@ -18179,6 +18205,7 @@ sarmatia_decisions_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 						owns_state = 847
 					}
 					is_in_faction = no
@@ -18195,7 +18222,9 @@ sarmatia_decisions_category = {
 						owns_state = 664
 						owns_state = 74
 						owns_state = 155
+						owns_state = 974
 						owns_state = 43
+						owns_state = 973
 						owns_state = 154
 						owns_state = 76
 						owns_state = 83
@@ -18205,6 +18234,7 @@ sarmatia_decisions_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 						owns_state = 847
 					}
 					is_in_faction = yes
@@ -18221,7 +18251,9 @@ sarmatia_decisions_category = {
 						owns_state = 664
 						owns_state = 74
 						owns_state = 155
+						owns_state = 974
 						owns_state = 43
+						owns_state = 973
 						owns_state = 154
 						owns_state = 76
 						owns_state = 83
@@ -18231,6 +18263,7 @@ sarmatia_decisions_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 						owns_state = 847
 					}
 					num_of_factories > ROOT.num_of_factories
@@ -18247,7 +18280,9 @@ sarmatia_decisions_category = {
 						owns_state = 664
 						owns_state = 74
 						owns_state = 155
+						owns_state = 974
 						owns_state = 43
+						owns_state = 973
 						owns_state = 154
 						owns_state = 76
 						owns_state = 83
@@ -18257,6 +18292,7 @@ sarmatia_decisions_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 						owns_state = 847
 					}
 					num_of_factories < ROOT.num_of_factories
@@ -18274,7 +18310,9 @@ sarmatia_decisions_category = {
 						owns_state = 664
 						owns_state = 74
 						owns_state = 155
+						owns_state = 974
 						owns_state = 43
+						owns_state = 973
 						owns_state = 154
 						owns_state = 76
 						owns_state = 83
@@ -18284,6 +18322,7 @@ sarmatia_decisions_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 						owns_state = 847
 					}
 					OR = {
@@ -18317,7 +18356,9 @@ sarmatia_decisions_category = {
 						owns_state = 664
 						owns_state = 74
 						owns_state = 155
+						owns_state = 974
 						owns_state = 43
+						owns_state = 973
 						owns_state = 154
 						owns_state = 76
 						owns_state = 83
@@ -18327,6 +18368,7 @@ sarmatia_decisions_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 						owns_state = 847
 					}
 					NOT = {
@@ -18374,7 +18416,9 @@ sarmatia_decisions_category = {
 						owns_state = 664
 						owns_state = 74
 						owns_state = 155
+						owns_state = 974
 						owns_state = 43
+						owns_state = 973
 						owns_state = 154
 						owns_state = 76
 						owns_state = 83
@@ -18384,6 +18428,7 @@ sarmatia_decisions_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 						owns_state = 847
 					}
 					ROOT = {
@@ -18402,7 +18447,9 @@ sarmatia_decisions_category = {
 						owns_state = 664
 						owns_state = 74
 						owns_state = 155
+						owns_state = 974
 						owns_state = 43
+						owns_state = 973
 						owns_state = 154
 						owns_state = 76
 						owns_state = 83
@@ -18412,6 +18459,7 @@ sarmatia_decisions_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 						owns_state = 847
 					}
 					has_war_with = ROOT
@@ -18427,7 +18475,9 @@ sarmatia_decisions_category = {
 						owns_state = 664
 						owns_state = 74
 						owns_state = 155
+						owns_state = 974
 						owns_state = 43
+						owns_state = 973
 						owns_state = 154
 						owns_state = 76
 						owns_state = 83
@@ -18437,6 +18487,7 @@ sarmatia_decisions_category = {
 						owns_state = 80
 						owns_state = 79
 						owns_state = 78
+						owns_state = 766
 						owns_state = 847
 					}
 					NOT = {
@@ -19332,6 +19383,8 @@ sarmatia_decisions_category = {
 						owns_state = 269
 						owns_state = 821
 						owns_state = 828
+						owns_state = 807
+						owns_state = 807
 						owns_state = 827
 						owns_state = 311
 						owns_state = 826
@@ -19339,6 +19392,7 @@ sarmatia_decisions_category = {
 						owns_state = 233
 						owns_state = 230
 						owns_state = 229
+						owns_state = 988
 					}
 				}
 				country_event = {
@@ -19355,8 +19409,10 @@ sarmatia_decisions_category = {
 				add_state_claim = 269
 				add_state_claim = 821
 				add_state_claim = 828
+				add_state_claim = 807
 				add_state_claim = 827
 				add_state_claim = 311
+				add_state_claim = 988
 				add_state_claim = 826
 				add_state_claim = 231
 				add_state_claim = 233
@@ -19378,8 +19434,10 @@ sarmatia_decisions_category = {
 						owns_state = 269
 						owns_state = 821
 						owns_state = 828
+						owns_state = 807
 						owns_state = 827
 						owns_state = 311
+						owns_state = 988
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19391,7 +19449,7 @@ sarmatia_decisions_category = {
 					type = take_claimed_state
 					target = PREV
 					generator = {
-						234 238 235 237 236 232 269 821 828 827 311 826 231 233 230 229
+						234 238 235 237 236 232 269 821 828 827 311 826 231 233 230 229 988 807
 					}
 				}
 			}
@@ -19416,8 +19474,10 @@ sarmatia_decisions_category = {
 						owns_state = 269
 						owns_state = 821
 						owns_state = 828
+						owns_state = 807
 						owns_state = 827
 						owns_state = 311
+						owns_state = 988
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19443,8 +19503,10 @@ sarmatia_decisions_category = {
 						owns_state = 269
 						owns_state = 821
 						owns_state = 828
+						owns_state = 807
 						owns_state = 827
 						owns_state = 311
+						owns_state = 988
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19469,8 +19531,10 @@ sarmatia_decisions_category = {
 						owns_state = 269
 						owns_state = 821
 						owns_state = 828
+						owns_state = 807
 						owns_state = 827
 						owns_state = 311
+						owns_state = 988
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19493,8 +19557,10 @@ sarmatia_decisions_category = {
 						owns_state = 269
 						owns_state = 821
 						owns_state = 828
+						owns_state = 807
 						owns_state = 827
 						owns_state = 311
+						owns_state = 988
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19517,8 +19583,10 @@ sarmatia_decisions_category = {
 						owns_state = 269
 						owns_state = 821
 						owns_state = 828
+						owns_state = 807
 						owns_state = 827
 						owns_state = 311
+						owns_state = 988
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19541,8 +19609,10 @@ sarmatia_decisions_category = {
 						owns_state = 269
 						owns_state = 821
 						owns_state = 828
+						owns_state = 807
 						owns_state = 827
 						owns_state = 311
+						owns_state = 988
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19566,8 +19636,10 @@ sarmatia_decisions_category = {
 						owns_state = 269
 						owns_state = 821
 						owns_state = 828
+						owns_state = 807
 						owns_state = 827
 						owns_state = 311
+						owns_state = 988
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19607,8 +19679,10 @@ sarmatia_decisions_category = {
 						owns_state = 269
 						owns_state = 821
 						owns_state = 828
+						owns_state = 807
 						owns_state = 827
 						owns_state = 311
+						owns_state = 988
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19662,8 +19736,10 @@ sarmatia_decisions_category = {
 						owns_state = 269
 						owns_state = 821
 						owns_state = 828
+						owns_state = 807
 						owns_state = 827
 						owns_state = 311
+						owns_state = 988
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19688,8 +19764,10 @@ sarmatia_decisions_category = {
 						owns_state = 269
 						owns_state = 821
 						owns_state = 828
+						owns_state = 807
 						owns_state = 827
 						owns_state = 311
+						owns_state = 988
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19711,8 +19789,10 @@ sarmatia_decisions_category = {
 						owns_state = 269
 						owns_state = 821
 						owns_state = 828
+						owns_state = 807
 						owns_state = 827
 						owns_state = 311
+						owns_state = 988
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19763,6 +19843,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
+						owns_state = 994
 					}
 				}
 				country_event = {
@@ -19788,6 +19869,7 @@ sarmatia_decisions_category = {
 				add_state_claim = 586
 				add_state_claim = 589
 				add_state_claim = 588
+				add_state_claim = 994
 			}
 			set_country_flag = AI_making_wargoal
 		}
@@ -19813,6 +19895,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
+						owns_state = 994
 					}
 				}
 				POL = {
@@ -19820,7 +19903,7 @@ sarmatia_decisions_category = {
 						type = take_claimed_state
 						target = PREV
 						generator = {
-							407 406 402 881 404 585 830 823 831 587 584 832 742 732 405 586 589 588
+							407 406 402 881 404 585 830 823 831 587 584 832 742 732 405 586 589 588 994
 						}
 					}
 				}
@@ -19851,6 +19934,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
+						owns_state = 994
 					}
 					strength_ratio = {
 						tag = POL 
@@ -19884,6 +19968,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
+						owns_state = 994
 					}
 					strength_ratio = {
 						tag = POL 
@@ -19912,6 +19997,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
+						owns_state = 994
 					}
 					is_in_faction = no
 				}
@@ -19938,6 +20024,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
+						owns_state = 994
 					}
 					is_in_faction = yes
 				}
@@ -19964,6 +20051,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
+						owns_state = 994
 					}
 					num_of_factories > ROOT.num_of_factories
 				}
@@ -19990,6 +20078,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
+						owns_state = 994
 					}
 					num_of_factories < ROOT.num_of_factories
 				}
@@ -20017,6 +20106,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
+						owns_state = 994
 					}
 					OR = {
 						is_guaranteed_by = FRA
@@ -20060,6 +20150,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
+						owns_state = 994
 					}
 					NOT = {
 						OR = {
@@ -20117,6 +20208,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
+						owns_state = 994
 					}
 					ROOT = {
 						has_wargoal_against = PREV
@@ -20145,6 +20237,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
+						owns_state = 994
 					}
 					has_war_with = ROOT
 				}
@@ -20170,6 +20263,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
+						owns_state = 994
 					}
 					NOT = {
 						is_neighbor_of = ROOT
@@ -21178,6 +21272,7 @@ sarmatia_decisions_category = {
 					is_core_of = POL
 				}
 				OR = {
+					state = 994
 					state = 199
 					state = 198
 					state = 201
@@ -21199,6 +21294,7 @@ sarmatia_decisions_category = {
 					state = 80
 					state = 79
 					state = 78
+					state = 766
 					state = 194
 					state = 241
 					state = 76
@@ -21208,7 +21304,9 @@ sarmatia_decisions_category = {
 					state = 241
 					state = 154
 					state = 43
+					state = 973
 					state = 155
+					state = 974
 					state = 45
 					state = 664
 					state = 241
@@ -21238,7 +21336,9 @@ sarmatia_decisions_category = {
 					state = 237
 					state = 232
 					state = 311
+					state = 988
 					state = 828
+					state = 807
 					state = 827
 					state = 821
 					state = 269
@@ -21364,6 +21464,7 @@ sarmatia_decisions_category = {
 					has_state_flag = POL_sarmatia_developed
 				}
 				OR = {
+					state = 994
 					state = 199
 					state = 198
 					state = 201
@@ -21385,6 +21486,7 @@ sarmatia_decisions_category = {
 					state = 80
 					state = 79
 					state = 78
+					state = 766
 					state = 194
 					state = 241
 					state = 76
@@ -21394,7 +21496,9 @@ sarmatia_decisions_category = {
 					state = 241
 					state = 154
 					state = 43
+					state = 973
 					state = 155
+					state = 974
 					state = 45
 					state = 664
 					state = 241
@@ -21424,7 +21528,9 @@ sarmatia_decisions_category = {
 					state = 237
 					state = 232
 					state = 311
+					state = 988
 					state = 828
+					state = 807
 					state = 827
 					state = 821
 					state = 269

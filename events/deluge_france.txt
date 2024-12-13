@@ -168,9 +168,12 @@ country_event = {
 		promote_character = FRA_deluge_alexandre_berthier
 		set_party_name = { ideology = neutrality long_name = FRA_berthier_party_long name = FRA_berthier_party_short }
 		hidden_effect = {
-			country_event = { 
+			country_event = {
 				id = deluge_france.7
 				days = 1
+			}
+			news_event = {
+				id = deluge_france.25
 			}
 		}
 	}
@@ -183,9 +186,12 @@ country_event = {
 		promote_character = FRA_deluge_alexandre_berthier
 		set_party_name = { ideology = neutrality long_name = FRA_berthier_party_long name = FRA_berthier_party_short }
 		hidden_effect = {
-			country_event = { 
+			country_event = {
 				id = deluge_france.7
 				days = 1
+			}
+			news_event = {
+				id = deluge_france.24
 			}
 		}
 	}
@@ -252,11 +258,11 @@ country_event = {
 		if = {
 			limit = {
 				NOT = {
-					has_idea = restricted
+					has_idea = universal
 				}
 			}
 			add_ideas = {
-				restricted
+				universal
 			}
 		}
 		set_country_flag = cant_change_voting_law
@@ -275,11 +281,11 @@ country_event = {
 		if = {
 			limit = {
 				NOT = {
-					has_idea = restricted
+					has_idea = universal
 				}
 			}
 			add_ideas = {
-				restricted
+				universal
 			}
 		}
 		set_country_flag = cant_change_voting_law
@@ -306,11 +312,11 @@ country_event = {
 		if = {
 			limit = {
 				NOT = {
-					has_idea = restricted
+					has_idea = universal
 				}
 			}
 			add_ideas = {
-				restricted
+				universal
 			}
 		}
 		set_country_flag = cant_change_voting_law
@@ -329,11 +335,11 @@ country_event = {
 		if = {
 			limit = {
 				NOT = {
-					has_idea = restricted
+					has_idea = universal
 				}
 			}
 			add_ideas = {
-				restricted
+				universal
 			}
 		}
 		set_country_flag = cant_change_voting_law
@@ -535,6 +541,90 @@ news_event = {##info for world that Marcel Deat rules FRA
 	major = yes
 	option = {
 		name = deluge_france.23.a
+	}
+}
+news_event = {##info for world that Bonapartes are executed
+	id = deluge_france.24
+	title = deluge_france.24.t
+	desc = deluge_france.24.d
+	picture = GFX_news_event_guillotine_in_crowd
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france.24.a
+	}
+}
+news_event = {##info for world that Bonapartes are exiled to Indochina
+	id = deluge_france.25
+	title = deluge_france.25.t
+	desc = deluge_france.25.d
+	picture = GFX_news_event_angkor_wat
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france.25.a
+	}
+}
+country_event = {##directions of social order of centrist democrats
+	id = deluge_france.26
+	title = deluge_france.26.t
+	desc = deluge_france.26.d
+	picture = GFX_report_event_french_workers
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.26.a
+		if = {
+			limit = {
+				NOT = {
+					has_idea = welfare_state
+				}
+			}
+			add_ideas = {
+				welfare_state
+			}
+		}
+		set_country_flag = cant_change_social_order
+		custom_effect_tooltip = cant_change_social_order_tooltip
+	}
+	option = {
+		name = deluge_france.26.b
+		if = {
+			limit = {
+				NOT = {
+					has_idea = robber_barons
+				}
+			}
+			add_ideas = {
+				robber_barons
+			}
+		}
+		set_country_flag = cant_change_social_order
+		custom_effect_tooltip = cant_change_social_order_tooltip
+	}
+}
+country_event = {##elections for radicals
+	id = deluge_france.27
+	title = deluge_france.27.t
+	desc = deluge_france.27.d
+	picture = GFX_report_event_jacques_duclos_alt
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {#French Section of Workers' Internationale
+		name = deluge_france.27.a
+		set_country_flag = FRA_SFIO_won
+	}
+	option = {#Anarchists
+		name = deluge_france.27.b
+		set_country_flag = FRA_anarchists_won
+	}
+	option = {#Communist Party
+		name = deluge_france.27.c
+		set_country_flag = FRA_communists_won
+	}
+	option = {#Proudhon Circle
+		name = deluge_france.27.e
+		set_country_flag = FRA_proudhon_circle_won
 	}
 }
 country_event = {##inspection in the army

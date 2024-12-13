@@ -49,7 +49,7 @@ ideas = {
 			}
 			
 			modifier = {
-				communism_drift = 0.02
+				neutrality_drift = -0.02
 				stability_factor = 0.1
 			}
 			
@@ -100,7 +100,7 @@ ideas = {
 			}
 			
 			modifier = {
-				democratic_drift = 0.02
+				fascism_drift = -0.02
 				stability_factor = 0.05
 				political_power_factor = 0.1
 			}
@@ -144,7 +144,7 @@ ideas = {
 			}
 			
 			modifier = {
-				neutrality_drift = 0.02
+				communism_drift = -0.02
 				war_support_factor = 0.05
 				political_power_factor = 0.1
 			}
@@ -191,7 +191,7 @@ ideas = {
 			}
 			
 			modifier = {
-				fascism_drift = 0.02
+				democratic_drift = -0.02
 				war_support_factor = 0.1
 			}
 			

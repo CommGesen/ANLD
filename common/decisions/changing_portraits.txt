@@ -6,8 +6,6 @@ changing_portraits_category = {
 		}
 		visible = {
 			has_character = POL_deluge_edward_rydz_smigly
-		}
-		available = {
 			OR = {
 				POL_deluge_edward_rydz_smigly = {
 					is_army_leader = yes
@@ -19,6 +17,9 @@ changing_portraits_category = {
 					is_country_leader = yes
 				}
 			}
+		}
+		available = {
+			
 		}
 		cost = 0
 		fire_only_once = no
@@ -39,8 +40,6 @@ changing_portraits_category = {
 		}
 		visible = {
 			has_character = POL_deluge_wladyslaw_sikorski
-		}
-		available = {
 			OR = {
 				POL_deluge_wladyslaw_sikorski = {
 					is_army_leader = yes
@@ -52,6 +51,9 @@ changing_portraits_category = {
 					is_country_leader = yes
 				}
 			}
+		}
+		available = {
+			
 		}
 		cost = 0
 		fire_only_once = no
@@ -72,8 +74,6 @@ changing_portraits_category = {
 		}
 		visible = {
 			has_character = POL_deluge_jozef_pilsudski
-		}
-		available = {
 			OR = {
 				POL_deluge_jozef_pilsudski = {
 					is_army_leader = yes
@@ -85,6 +85,9 @@ changing_portraits_category = {
 					is_country_leader = yes
 				}
 			}
+		}
+		available = {
+			
 		}
 		cost = 0
 		fire_only_once = no
@@ -105,8 +108,6 @@ changing_portraits_category = {
 		}
 		visible = {
 			has_character = FRA_deluge_napoleon_vi
-		}
-		available = {
 			OR = {
 				FRA_deluge_napoleon_vi = {
 					is_army_leader = yes
@@ -118,6 +119,9 @@ changing_portraits_category = {
 					is_country_leader = yes
 				}
 			}
+		}
+		available = {
+			
 		}
 		cost = 0
 		fire_only_once = no
@@ -138,8 +142,6 @@ changing_portraits_category = {
 		}
 		visible = {
 			has_character = POL_deluge_boleslaw_roja
-		}
-		available = {
 			OR = {
 				POL_deluge_boleslaw_roja = {
 					is_army_leader = yes
@@ -151,6 +153,9 @@ changing_portraits_category = {
 					is_country_leader = yes
 				}
 			}
+		}
+		available = {
+			
 		}
 		cost = 0
 		fire_only_once = no
@@ -171,8 +176,6 @@ changing_portraits_category = {
 		}
 		visible = {
 			has_character = AUS_otto_i
-		}
-		available = {
 			OR = {
 				AUS_otto_i = {
 					is_army_leader = yes
@@ -184,6 +187,9 @@ changing_portraits_category = {
 					is_country_leader = yes
 				}
 			}
+		}
+		available = {
+			
 		}
 		cost = 0
 		fire_only_once = no
@@ -204,8 +210,6 @@ changing_portraits_category = {
 		}
 		visible = {
 			has_character = SPR_deluge_marie_i
-		}
-		available = {
 			OR = {
 				SPR_deluge_marie_i = {
 					is_army_leader = yes
@@ -217,6 +221,9 @@ changing_portraits_category = {
 					is_country_leader = yes
 				}
 			}
+		}
+		available = {
+			
 		}
 		cost = 0
 		fire_only_once = no
@@ -237,8 +244,6 @@ changing_portraits_category = {
 		}
 		visible = {
 			has_character = TUR_abdulmejid_ii
-		}
-		available = {
 			OR = {
 				TUR_abdulmejid_ii = {
 					is_army_leader = yes
@@ -250,6 +255,9 @@ changing_portraits_category = {
 					is_country_leader = yes
 				}
 			}
+		}
+		available = {
+			
 		}
 		cost = 0
 		fire_only_once = no
@@ -270,8 +278,6 @@ changing_portraits_category = {
 		}
 		visible = {
 			has_character = FRA_deluge_jacques_doriot
-		}
-		available = {
 			OR = {
 				FRA_deluge_jacques_doriot = {
 					is_army_leader = yes
@@ -283,6 +289,9 @@ changing_portraits_category = {
 					is_country_leader = yes
 				}
 			}
+		}
+		available = {
+			
 		}
 		cost = 0
 		fire_only_once = no
@@ -303,8 +312,6 @@ changing_portraits_category = {
 		}
 		visible = {
 			has_character = FRA_deluge_francois_de_la_rocque
-		}
-		available = {
 			OR = {
 				FRA_deluge_francois_de_la_rocque = {
 					is_army_leader = yes
@@ -316,6 +323,9 @@ changing_portraits_category = {
 					is_country_leader = yes
 				}
 			}
+		}
+		available = {
+			
 		}
 		cost = 0
 		fire_only_once = no
@@ -336,8 +346,6 @@ changing_portraits_category = {
 		}
 		visible = {
 			has_character = FRA_deluge_marcel_bucard
-		}
-		available = {
 			OR = {
 				FRA_deluge_marcel_bucard = {
 					is_army_leader = yes
@@ -349,6 +357,9 @@ changing_portraits_category = {
 					is_country_leader = yes
 				}
 			}
+		}
+		available = {
+			
 		}
 		cost = 0
 		fire_only_once = no
