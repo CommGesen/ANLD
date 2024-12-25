@@ -7,13 +7,11 @@ leader_traits = {
 		theorist_cost_factor = -0.75 
 		high_command_cost_factor = -0.75 
 	}
-
 	turkish_nationalist = {
 		random = no
 		sprite = 13
 		communism_drift = 0.1
 	}
-	
 	bunker_fanatic = {
 		random = no
 		sprite = 9 # Shield
@@ -22,7 +20,6 @@ leader_traits = {
 		production_speed_coastal_bunker_factor = 0.2
 		production_speed_anti_air_building_factor = 0.2
 	}
-	
 	black_monk = {
 		random = no
 		sprite = 13 # Facade
@@ -30,7 +27,6 @@ leader_traits = {
 		political_power_factor = -0.1
 		stability_factor = -0.05
 	}
-	
 	black_hundredist = {
 		random = no
 		sprite = 13 # Facade
@@ -39,7 +35,6 @@ leader_traits = {
 		conscription = 0.005
 		war_support_factor = 0.05
 	}
-	
 	bomber_harris = {
 		random = no
 		sprite = 2 # Iron bomb
@@ -51,7 +46,6 @@ leader_traits = {
 			}
 		}
 	}
-	
 	fighting_king = {
 		random = no
 		sprite = 1 # Aircraft
@@ -63,88 +57,75 @@ leader_traits = {
 			}
 		}
 	}
-	
 	great_dictator = {
 		random = no
 		sprite = 13 # Facade
 		fascism_drift = 0.05
 		war_support_factor = 0.1
 	}
-	
 	revanchist_marshal = {
 		random = no
 		sprite = 13 # Facade
 		fascism_drift = 0.05
 		war_support_factor = 0.1
 	}
-	
 	monarchist_statesman = {
 		random = no
 		sprite = 13 # Facade
 		neutrality_drift = 0.05
 		stability_factor = 0.05
 	}
-	
 	trades_unionist = {
 		random = no
 		sprite = 10 # Factory
 		communism_drift = 0.05
 		line_change_production_efficiency_factor = 0.15
 	}
-	
 	innovative_capitalist = {
 		random = no
 		sprite = 14 # Gears
 		democratic_drift = 0.05
 		production_factory_efficiency_gain_factor = 0.1
 	}
-
 	landed_gentleman = {
 		random = no
 		sprite = 13 # Facade
 		neutrality_drift = 0.05
 		local_resources_factor = 0.1
 	}
-	
 	great_war_hero_deluge = {
 		random = no
 		sprite = 12 # Star
 		fascism_drift = 0.05
 		army_core_attack_factor = 0.05
 	}
-	
 	chief_of_propaganda = {
 		random = no
 		sprite = 13 # Facade
 		stability_factor = 0.05
 		war_support_factor = 0.05
 	}
-	
 	colonial_governor = {
 		random = no
 		sprite = 13 # Facade
 		subjects_autonomy_gain = -0.5
 	}
-	
 	international_secretary = {
 		random = no
 		sprite = 13 # Facade
 		subjects_autonomy_gain = -0.5
 	}
-	
 	independence_fighter = {
 		random = no
 		sprite = 13 # Facade
 		autonomy_gain = 0.5
 	}
-	
 	supernatural_mystic = {
 		random = no
 		sprite = 13 # Facade
 		political_power_factor = 0.05
 		research_speed_factor = 0.02
 	}
-	
 	guerilla_theorist = {
 		sprite = 5
 		
@@ -161,7 +142,6 @@ leader_traits = {
 			}
 		}
 	}
-	
 	coast_guard = {
 		sprite = 3
 		
@@ -197,7 +177,6 @@ leader_traits = {
 			}
 		}
 	}
-	
 	paramilitary_chief = {
 		sprite = 7
 		
@@ -218,8 +197,7 @@ leader_traits = {
 				has_government = communism
 			}
 		}
-	}
-		
+	}	
 	national_guard = {
 		sprite = 5
 		
@@ -250,7 +228,6 @@ leader_traits = {
 			}
 		}
 	}
-	
 	spy_master = {
 		sprite = 13
 		
@@ -1113,17 +1090,6 @@ leader_traits = {
 	party_pluralism = {
 		political_power_factor = 0.1
 	}
-	central_planner_of_reality = {
-		monthly_population = 0.05
-		consumer_goods_factor = -0.1
-		fascism_drift = 0.05
-		communism_drift = 0.1
-		war_support_weekly = 0.01
-		conscription_factor = 0.04
-		industrial_capacity_factory = 0.01
-		industrial_capacity_dockyard = 0.01
-		production_speed_buildings_factor = 0.02
-	}
 	minister_of_public_works = {
 		random = yes
 		sprite = 10
@@ -1208,7 +1174,7 @@ leader_traits = {
 		sprite = 13
 		political_power_factor = 0.05
 		monthly_population = 0.05
-		stability_factor = 0.03
+		party_popularity_stability_factor = 0.15
 	}
 	defender_of_human_rights = {
 		random = no
@@ -1221,7 +1187,7 @@ leader_traits = {
 		random = yes
 		sprite = 12
 		political_power_factor = 0.1
-		stability_factor = 0.05
+		drift_defence_factor = 0.3
 	}
 	businessman = {
 		random = yes
@@ -1234,7 +1200,7 @@ leader_traits = {
 		sprite = 12
 		stability_factor = 0.1
 		war_support_factor = -0.1
-		political_power_factor = 0.1
+		political_power_factor = 0.15
 	}
 	minister_of_agriculture = {
 		sprite = 13
@@ -1378,5 +1344,28 @@ leader_traits = {
 		stability_factor = -0.05
 		communism_acceptance = 80
 		political_power_factor = 0.05
+	}
+	deluge_trait_minister_of_aviatation = {
+		random = yes
+		experience_gain_air_factor = 0.05
+		experience_gain_air = 0.03
+		air_doctrine_cost_factor = -0.05
+	}
+	deluge_trait_minister_of_merchant_marine = {
+		random = yes
+		equipment_bonus = {
+			convoy = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+		}
+		production_speed_dockyard_factor = 0.1
+	}
+	deluge_trait_agricultural_socialist = {
+		random = no
+		monthly_population = 0.05
+		communism_drift = 0.03
+		global_building_slots_factor = 0.1
+		out_of_supply_factor = -0.05
 	}
 }
