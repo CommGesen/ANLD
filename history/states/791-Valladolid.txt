@@ -12,10 +12,11 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-
+			4024 = {
+				land_facility = 1
+			}
 		}
 		add_core_of = SPR
-
 	}
 
 	provinces={

@@ -939,6 +939,44 @@ add_timed_idea = {
 	days = 250
 }
 
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = "Jeannie Rousseau"
+		GFX = GFX_portrait_jennie_rousseau
+		traits = { operative_linguist }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { FRA }
+	}
+	create_operative_leader = {
+		name = "Odette Samson"
+		GFX = GFX_portrait_odette_samson
+		traits = { operative_tough }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { FRA }
+	}
+	create_operative_leader = {
+		name = "René Joyeuse"
+		GFX = GFX_portrait_rene_joyeuse
+		traits = { operative_infiltrator operative_commando }
+		bypass_recruitment = no
+		available_to_spy_master = no
+		nationalities = { FRA QUE }
+	}
+	create_operative_leader = {
+		name = "Gilbert Renault"
+		GFX = GFX_portrait_gilbert_renault
+		traits = { }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { FRA }
+	}
+}
+
 set_global_flag = FRA_senussi_rebellion_ongoing
 
 recruit_character = FRA_deluge_napoleon_vi
@@ -979,7 +1017,7 @@ recruit_character = FRA_deluge_jean_pierre_esteva
 recruit_character = FRA_deluge_jean_de_laborde
 #recruit_character = FRA_deluge_charles_nogues ##reason: too many generals
 recruit_character = FRA_deluge_edouard_daladier
-recruit_character = FRA_jean_marie_bergeret ##
+recruit_character = FRA_deluge_emile_rimailho
 #recruit_character = FRA_deluge_louis_kahn ##reason: too many generals
 recruit_character = FRA_deluge_adolphe_guillaumat
 recruit_character = FRA_deluge_georges_catroux
@@ -990,29 +1028,29 @@ recruit_character = FRA_deluge_gaston_henri_billotte
 recruit_character = FRA_deluge_henry_freydenberg
 recruit_character = FRA_deluge_rene_olry
 recruit_character = FRA_deluge_francois_darlan
-recruit_character = FRA_victor_denain ##
+recruit_character = FRA_deluge_lucien_midol
 #recruit_character = FRA_deluge_louis_bouisson ##reason: too many generals
 #recruit_character = FRA_deluge_jean_edouard_verneau ##reason: too many generals
 #recruit_character = FRA_deluge_charles_delestraint ##reason: too many generals
 recruit_character = FRA_deluge_aime_doumenc
 
 #recruit_character = FRA_deluge_jean_decoux ##reason: too many generals
-recruit_character = FRA_frederic_irene_joliot_curie ##
-#recruit_character = FRA_henri_marie_auguste_bineau
-#recruit_character = FRA_pierre_alombert_goget
+recruit_character = FRA_deluge_joseph_bethenod
+recruit_character = FRA_deluge_henri_edmond_fouche
+recruit_character = FRA_deluge_eugene_schneider_ii
 recruit_character = FRA_deluge_marcel_gensoul
 recruit_character = FRA_deluge_jean_marie_abrial
-recruit_character = FRA_joseph_vuillemin #
-recruit_character = FRA_robert_odic #
-recruit_character = FRA_philippe_fequant #
+recruit_character = FRA_deluge_joseph_vuillemin
+recruit_character = FRA_deluge_robert_odic
+recruit_character = FRA_deluge_philippe_fequant
 recruit_character = FRA_deluge_andre_corap
 
-recruit_character = FRA_martial_valin #
-recruit_character = FRA_jean_francois_jannekeyn #
+recruit_character = FRA_deluge_martial_valin
+recruit_character = FRA_deluge_jean_francois_jannekeyn
 recruit_character = FRA_deluge_emile_muselier
-recruit_character = FRA_alfred_heurtaux #
+recruit_character = FRA_deluge_alfred_heurtaux
 #recruit_character = FRA_deluge_rene_prioux ##reason: too many generals
-#recruit_character = #free slot
+recruit_character = FRA_deluge_jean_marie_bergeret
 recruit_character = FRA_deluge_rene_massigli
 recruit_character = FRA_deluge_jules_moch
 recruit_character = FRA_deluge_jean_flavigny
@@ -1097,4 +1135,8 @@ recruit_character = FRA_deluge_alexandre_millerand
 recruit_character = FRA_deluge_joseph_capus
 recruit_character = FRA_deluge_jacques_rueff
 recruit_character = FRA_deluge_louis_maurin
+recruit_character = FRA_deluge_louis_renault
+recruit_character = FRA_deluge_francois_hussenot
+recruit_character = FRA_deluge_frederic_joliot_curie
+recruit_character = FRA_deluge_irene_joliot_curie
 

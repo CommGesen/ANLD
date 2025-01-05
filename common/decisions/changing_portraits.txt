@@ -373,4 +373,38 @@ changing_portraits_category = {
 			base = 0
 		}
 	}
+	portraits_marcel_deat = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+			
+		}
+		visible = {
+			has_character = FRA_deluge_marcel_deat
+			OR = {
+				FRA_deluge_marcel_deat = {
+					is_army_leader = yes
+				}
+				FRA_deluge_marcel_deat = {
+					is_navy_leader = yes
+				}
+				FRA_deluge_marcel_deat = {
+					is_country_leader = yes
+				}
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			country_event = {
+				id = deluge_portraits.12
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
 }

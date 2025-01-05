@@ -509,6 +509,41 @@ characters={
 			ledger = civilian
 		}
 	}
+	FRA_deluge_lucien_midol={##Lucien Midol
+		name=FRA_deluge_lucien_midol_name
+		portraits={
+			army={
+				small="GFX_lucien_midol_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_lucien_midol
+			allowed = { tag = FRA }
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_previous_course
+						has_completed_focus = FRA_march_on_paris
+						has_completed_focus = FRA_french_section_of_workers_internationale
+						has_completed_focus = FRA_proudhon_circle
+						has_completed_focus = FRA_creation_of_the_parliament
+					}
+				}
+			}
+			cost = 150
+			available = {
+				has_completed_focus = FRA_french_communist_party
+			}
+			traits  = {
+				communist_orator
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+			ledger = civilian
+		}
+	}
 	##Proudhon Circle:
 	FRA_deluge_georges_valois={
 		name=FRA_deluge_georges_valois_name
@@ -697,7 +732,7 @@ characters={
 		name=FRA_deluge_marcel_deat_name
 		portraits={
 			civilian={
-				large="gfx/leaders/FRA/portrait_FRA_marcel_deat.dds"
+				large="GFX_portrait_FRA_marcel_deat_ANLD"
 			}
 		}
 		country_leader={
@@ -727,7 +762,7 @@ characters={
 		name=FRA_deluge_marcel_bucard_name
 		portraits={
 			civilian={##small portrait to do
-				large="gfx/leaders/FRA/portrait_FRA_marcel_bucard.dds"
+				large="GFX_portrait_FRA_marcel_bucard_ANLD"
 				small="GFX_marcel_bucard_picture_small"
 			}
 		}
@@ -830,7 +865,7 @@ characters={
 	FRA_deluge_andre_maginot={
 		name=FRA_deluge_andre_maginot_name
 		portraits={
-			army={##small portrait to do
+			civilian={##small portrait to do
 				small="GFX_andre_maginot_picture_small"
 			}
 		}
@@ -859,7 +894,7 @@ characters={
 	FRA_deluge_gaston_henry_haye={
 		name=FRA_deluge_gaston_henry_haye_name
 		portraits={
-			army={##small portrait to do
+			civilian={##small portrait to do
 				small="GFX_gaston_henry_haye_picture_small"
 			}
 		}
@@ -888,7 +923,7 @@ characters={
 	FRA_deluge_rene_massigli={
 		name=FRA_deluge_rene_massigli_name
 		portraits={
-			army={##small portrait to do
+			civilian={##small portrait to do
 				small="GFX_rene_massigli_picture_small"
 			}
 		}
@@ -914,37 +949,10 @@ characters={
 			ledger = civilian
 		}
 	}
-	FRA_deluge_louis_baril={
-		name=FRA_deluge_louis_baril_name
-		portraits={
-			army={##small portrait to do
-				small="GFX_louis_baril_picture_small"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = FRA_deluge_louis_baril
-			allowed  = {
-				original_tag  = FRA
-				has_dlc = "La Resistance"
-			}
-			available  = {
-				has_intelligence_agency  = yes 
-			}
-			visible = {
-				
-			}
-			cost = 150
-			traits  = {
-				head_of_intelligence 
-			}
-			ledger = civilian
-		}
-	}
 	FRA_deluge_guy_la_chambre={
 		name=FRA_deluge_guy_la_chambre_name
 		portraits={
-			army={##small portrait to do
+			civilian={##small portrait to do
 				small="GFX_guy_la_chambre_picture_small"
 			}
 		}
@@ -973,7 +981,7 @@ characters={
 	FRA_deluge_yves_le_trocquer={
 		name=FRA_deluge_yves_le_trocquer_name
 		portraits={
-			army={##small portrait to do
+			civilian={##small portrait to do
 				small="GFX_yves_le_trocquer_picture_small"
 			}
 		}
@@ -1002,7 +1010,7 @@ characters={
 	FRA_deluge_frederic_francois_marsal={##Frédéric François-Marsal
 		name=FRA_deluge_frederic_francois_marsal_name
 		portraits={
-			army={##small portrait to do
+			civilian={##small portrait to do
 				small="GFX_frederic_francois_marsal_picture_small"
 			}
 		}
@@ -1031,7 +1039,7 @@ characters={
 	FRA_deluge_jean_fabry={##Jean Fabry
 		name=FRA_deluge_jean_fabry_name
 		portraits={
-			army={##small portrait to do
+			civilian={##small portrait to do
 				small="GFX_jean_fabry_picture_small"
 			}
 		}
@@ -1060,7 +1068,7 @@ characters={
 	FRA_deluge_joseph_athanase_doumer={##Joseph Athanase Doumer
 		name=FRA_deluge_joseph_athanase_doumer_name
 		portraits={
-			army={##small portrait to do
+			v={##small portrait to do
 				small="GFX_joseph_athanase_doumer_picture_small"
 			}
 		}
@@ -1089,7 +1097,7 @@ characters={
 	FRA_deluge_paul_jourdain={##Paul Jourdain
 		name=FRA_deluge_paul_jourdain_name
 		portraits={
-			army={##small portrait to do
+			civilian={##small portrait to do
 				small="GFX_paul_jourdain_picture_small"
 			}
 		}
@@ -1118,7 +1126,7 @@ characters={
 	FRA_deluge_alexandre_millerand={##Alexandre Millerand
 		name=FRA_deluge_alexandre_millerand_name
 		portraits={
-			army={##small portrait to do
+			civilian={##small portrait to do
 				small="GFX_alexandre_millerand_picture_small"
 			}
 		}
@@ -1147,7 +1155,7 @@ characters={
 	FRA_deluge_joseph_capus={##Joseph Capus
 		name=FRA_deluge_joseph_capus_name
 		portraits={
-			army={##small portrait to do
+			civilian={##small portrait to do
 				small="GFX_joseph_capus_picture_small"
 			}
 		}
@@ -1176,7 +1184,7 @@ characters={
 	FRA_deluge_jacques_rueff={##Jacques Rueff
 		name=FRA_deluge_jacques_rueff_name
 		portraits={
-			army={##small portrait to do
+			civilian={##small portrait to do
 				small="GFX_jacques_rueff_picture_small"
 			}
 		}
@@ -1205,7 +1213,7 @@ characters={
 	FRA_deluge_louis_maurin={##Louis Maurin
 		name=FRA_deluge_louis_maurin_name
 		portraits={
-			army={##small portrait to do
+			civilian={##small portrait to do
 				small="GFX_louis_maurin_picture_small"
 			}
 		}
@@ -1229,6 +1237,65 @@ characters={
 				factor = 1.000
 			}
 			ledger = civilian
+		}
+	}
+	##other slots:
+	FRA_deluge_louis_baril={
+		name=FRA_deluge_louis_baril_name
+		portraits={
+			civilian={##small portrait to do
+				small="GFX_louis_baril_picture_small"
+			}
+		}
+		instance = {
+			allowed = {
+				has_dlc = "La Resistance"
+			}
+			advisor={
+				slot = intelligence_chief_slot
+				idea_token = FRA_deluge_louis_baril
+				allowed = { 
+					tag = FRA
+				}
+				visible = {
+					
+				}
+				cost = 150
+				available = { 
+					has_intelligence_agency  = yes
+				}
+				traits = {
+					head_of_intelligence
+				}
+				ai_will_do = { factor = 1.0 }
+				ledger = civilian
+			}
+		}
+		instance = {
+			allowed = {
+				NOT = {
+					has_dlc = "La Resistance"
+				}
+			}
+			advisor={
+				slot = intelligence_chief_slot
+				idea_token = FRA_deluge_louis_baril
+				allowed = { 
+					tag = FRA
+				}
+				visible = {
+					
+				}
+				cost = 150
+				available = { 
+					
+				}
+				traits = {
+					disinformation_expert
+				}
+				ai_will_do = { factor = 1.0 }
+				ledger = civilian
+			}
 		}
 	}
 	##Generals and Field Marshals:
@@ -3208,171 +3275,373 @@ characters={
 			desc = "FRA_deluge_henri_blehaut_desc"
 		}
 	}
-
-	##possible to recycle
-	FRA_frederic_irene_joliot_curie={
-		name=FRA_frederic_irene_joliot_curie
-		portraits={
+	##theorists:
+	FRA_deluge_jean_marie_bergeret={
+		name=FRA_deluge_jean_marie_bergeret_name
+		portraits={#small portrait to do!
 			army={
-				small="GFX_idea_frederic_irene_joliot_curie"
+				small="GFX_jean_marie_bergeret_picture_small"
+			}
+			civilian={
+				small="GFX_jean_marie_bergeret_picture_small"
 			}
 		}
 		advisor={
-			cost = 100
 			slot = theorist
-			idea_token = frederic_irene_joliot_curie
-			ledger = army
+			idea_token = FRA_deluge_jean_marie_bergeret
 			allowed = {
-				original_tag = FRA
+				tag = FRA
 			}
-			research_bonus = {
-				nuclear = 0.150
+			visible = {
+				
 			}
-			traits = {
-				nuclear_scientist
+			available = {
+				
 			}
-		}
-	}
-
-	### AIR CHIEFS ###
-
-	FRA_joseph_vuillemin={
-		name=FRA_joseph_vuillemin
-		portraits={
-			army={
-				small="GFX_idea_joseph_vuillemin"
-			}
-		}
-		advisor={
-			slot = air_chief
-			idea_token = joseph_vuillemin
-			allowed = {
-				original_tag = FRA
-			}
-			traits = {
-				air_chief_ground_support_1
-			}
-			cost =  50
+			traits = { air_warfare_theorist }
+			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
+			ledger = air
 		}
 	}
-
-	FRA_robert_odic={
-		name=FRA_robert_odic
-		portraits={
+	##air chiefs:
+	FRA_deluge_joseph_vuillemin={
+		name=FRA_deluge_joseph_vuillemin_name
+		portraits={#small portrait to do!
 			army={
-				small="GFX_idea_robert_odic"
+				small="GFX_joseph_vuillemin_picture_small"
+			}
+			civilian={
+				small="GFX_joseph_vuillemin_picture_small"
 			}
 		}
 		advisor={
 			slot = air_chief
-			idea_token = robert_odic
+			idea_token = FRA_deluge_joseph_vuillemin
 			allowed = {
-				original_tag = FRA
+				tag = FRA
+			}
+			visible = {
+				
+			}
+			available = {
+				
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			#cost = 
+			ai_will_do = {
+				factor = 1.000
+			}
+			ledger = air
+		}
+	}
+	FRA_deluge_robert_odic={
+		name=FRA_deluge_robert_odic_name
+		portraits={#small portrait to do!
+			army={
+				small="GFX_robert_odic_picture_small"
+			}
+			civilian={
+				small="GFX_robert_odic_picture_small"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = FRA_deluge_robert_odic
+			allowed = {
+				tag = FRA
+			}
+			visible = {
+				
+			}
+			available = {
+				
 			}
 			traits = {
 				air_chief_all_weather_1
 			}
-			cost =  50
+			#cost = 
 			ai_will_do = {
 				factor = 1.000
 			}
+			ledger = air
 		}
 	}
-
-	FRA_philippe_fequant={
-		name=FRA_philippe_fequant
-		portraits={
+	FRA_deluge_philippe_fequant={
+		name=FRA_deluge_philippe_fequant_name
+		portraits={#small portrait to do!
 			army={
-				small="GFX_idea_philippe_fequant"
+				small="GFX_philippe_fequant_picture_small"
+			}
+			civilian={
+				small="GFX_philippe_fequant_picture_small"
 			}
 		}
 		advisor={
 			slot = air_chief
-			idea_token = philippe_fequant
+			idea_token = FRA_deluge_philippe_fequant
 			allowed = {
-				original_tag = FRA
+				tag = FRA
+			}
+			visible = {
+				
+			}
+			available = {
+				
 			}
 			traits = {
 				air_chief_reform_2
 			}
-			cost = 100
+			#cost = 
 			ai_will_do = {
 				factor = 1.000
 			}
+			ledger = air
 		}
 	}
 
-	FRA_martial_valin={
-		name=FRA_martial_valin
-		portraits={
+	FRA_deluge_martial_valin={
+		name=FRA_deluge_martial_valin_name
+		portraits={##big and small portrait to do!
 			army={
-				small="GFX_idea_martial_valin"
+				small="GFX_martial_valin_picture_small"
+				large="gfx/leaders/FRA/portrait_FRA_martial_valin.dds"
+			}
+			civilian={
+				small="GFX_martial_valin_picture_small"
+				large="gfx/leaders/FRA/portrait_FRA_martial_valin.dds"
 			}
 		}
 		advisor={
 			slot = high_command
-			idea_token = martial_valin
-			ledger = air
+			idea_token = FRA_deluge_martial_valin
 			allowed = {
-				original_tag = FRA
+				tag = FRA
+			}
+			visible = {
+				
+			}
+			available = {
+				
 			}
 			traits = {
 				air_air_superiority_2
 			}
-			cost = 100
+			#cost = 
 			ai_will_do = {
 				factor = 1.000
 			}
+			ledger = air
+		}
+		corps_commander={
+			traits={ war_hero cavalry_leader desert_fox trait_mountaineer }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			desc = "FRA_deluge_martial_valin_desc"
 		}		
 	}
-	
-	FRA_jean_francois_jannekeyn={
-		name=FRA_jean_francois_jannekeyn
+	FRA_deluge_jean_francois_jannekeyn={
+		name=FRA_deluge_jean_francois_jannekeyn_name
 		portraits={
 			army={
-				small="GFX_idea_jean_francois_jannekeyn"
+				small="GFX_jean_francois_jannekeyn_picture_small"
+			}
+			civilian={
+				small="GFX_jean_francois_jannekeyn_picture_small"
 			}
 		}
 		advisor={
 			slot = high_command
-			idea_token = jean_francois_jannekeyn
-			ledger = air
+			idea_token = FRA_deluge_jean_francois_jannekeyn
 			allowed = {
-				original_tag = FRA
+				tag = FRA
+			}
+			visible = {
+				
+			}
+			available = {	
+				
 			}
 			traits = {
 				air_tactical_bombing_2
 			}
-			cost = 100
+			#cost = 
 			ai_will_do = {
 				factor = 1.000
 			}
+			ledger = air
 		}
 	}
-	
-	FRA_alfred_heurtaux={
-		name=FRA_alfred_heurtaux
+	FRA_deluge_alfred_heurtaux={
+		name=FRA_deluge_alfred_heurtaux_name
 		portraits={
 			army={
-				small="GFX_idea_alfred_heurtaux"
+				small="GFX_alfred_heurtaux_picture_small"
+			}
+			civilian={
+				small="GFX_alfred_heurtaux_picture_small"
 			}
 		}
 		advisor={
 			slot = high_command
-			idea_token = alfred_heurtaux
-			ledger = air
+			idea_token = FRA_deluge_alfred_heurtaux
 			allowed = {
 				original_tag = FRA
+			}
+			visible = {
+				
+			}
+			available = {
+				
 			}
 			traits = {
 				air_air_combat_training_2
 			}
-			cost = 100
+			#cost = 
 			ai_will_do = {
 				factor = 1.000
+			}
+			ledger = air
+		}
+	}
+	##scientists:
+	FRA_deluge_irene_joliot_curie = {
+		name = FRA_deluge_irene_joliot_curie_name
+		portraits = {
+			army = {
+				large = GFX_portrait_FRA_irene_joliot_curie
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_nuclear_specialist scientist_trait_bright }
+			skills = {
+				specialization_nuclear = 2
+			}
+		}
+	}
+	FRA_deluge_frederic_joliot_curie = {
+		name = FRA_deluge_frederic_joliot_curie_name
+		portraits = {
+			army = {
+				large = GFX_portrait_FRA_frederic_joliot_curie
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_nuclear_power_expert }
+			skills = {
+				specialization_nuclear = 2
+			}
+		}
+	}
+	FRA_deluge_francois_hussenot = {
+		name = FRA_deluge_francois_hussenot_name
+		portraits = {
+			army = {
+				large = GFX_portrait_FRA_francois_hussenot
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_aircraft_specialist }
+			skills = {
+				specialization_air = 2
+			}
+		}
+	}
+	FRA_deluge_louis_renault = {
+		name = FRA_deluge_louis_renault_name
+		portraits = {
+			army = {
+				large = GFX_portrait_FRA_louis_renault
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_armored_specialist }
+			skills = {
+				specialization_land = 2
+			}
+		}
+	}
+	FRA_deluge_emile_rimailho = {
+		name = FRA_deluge_emile_rimailho_name
+		portraits = {
+			army = {
+				large = GFX_portrait_FRA_emile_rimailho
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_artillery_specialist scientist_trait_fast_learner }
+			skills = {
+				specialization_land = 2
+			}
+		}
+	}
+	FRA_deluge_eugene_schneider_ii = {
+		name = FRA_deluge_eugene_schneider_ii_name
+		portraits = {
+			army = {
+				large = GFX_portrait_FRA_eugene_schneider_ii
+				small = "GFX_eugene_schneider_ii_picture_small"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_artillery_specialist scientist_trait_resourceful }
+			skills = {
+				specialization_land = 2
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_eugene_schneider_ii
+			allowed = { tag = FRA }
+			visible = {
+				NOT = {
+					has_completed_focus = FRA_towards_republic
+				}
+			}
+			cost = 150
+			available = {
+				has_completed_focus = FRA_previous_course
+			}
+			traits = {
+				##to do trait
+			}
+			ai_will_do = { factor = 1.0 }
+			ledger = civilian
+		}
+	}
+	FRA_deluge_henri_edmond_fouche = {
+		name = FRA_deluge_henri_edmond_fouche_name
+		portraits = {
+			army = {
+				large = GFX_portrait_FRA_henri_edmond_fouche
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_surface_ship_specialist }
+			skills = {
+				specialization_naval = 2
+			}
+		}
+	}
+	FRA_deluge_joseph_bethenod = {
+		name = FRA_deluge_joseph_bethenod_name
+		portraits = {
+			army = {
+				large = GFX_portrait_FRA_joseph_bethenod
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_electronics_specialist }
+			skills = {
+				specialization_air = 2
 			}
 		}
 	}

@@ -1,4 +1,98 @@
 spriteTypes = {
+	##big:
+	spriteType = {
+		name = "GFX_portrait_POL_jan_stachniuk_44"
+		texturefile = "gfx/leaders/POL/portrait_POL_jan_stachniuk_44.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_edward_rydz_smigly_OLD"
+		texturefile = "gfx/leaders/POL/portrait_POL_edward_rydz_smigly_OLD.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_edward_rydz_smigly_ANLD"
+		texturefile = "gfx/leaders/POL/portrait_POL_edward_rydz_smigly_ANLD.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_edward_rydz_smigly_uniform"
+		texturefile = "gfx/leaders/POL/portrait_POL_edward_rydz_smigly_uniform.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_wladyslaw_sikorski_ANLD"
+		texturefile = "gfx/leaders/POL/portrait_POL_wladyslaw_sikorski_ANLD.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_wladyslaw_sikorski_uniform"
+		texturefile = "gfx/leaders/POL/portrait_POL_wladyslaw_sikorski_uniform.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_jozef_pilsudski"
+		texturefile = "gfx/leaders/POL/portrait_POL_jozef_pilsudski.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_jozef_pilsudski_ALT"
+		texturefile = "gfx/leaders/POL/portrait_POL_jozef_pilsudski_ALT.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_jozef_pilsudski_OLD"
+		texturefile = "gfx/leaders/POL/portrait_POL_jozef_pilsudski_OLD.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_boleslaw_roja"
+		texturefile = "gfx/leaders/POL/portrait_POL_boleslaw_roja.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_boleslaw_roja_ALT"
+		texturefile = "gfx/leaders/POL/portrait_POL_boleslaw_roja_ALT.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_napoleon_vi_ANLD"
+		texturefile = "gfx/leaders/FRA/portrait_FRA_napoleon_vi_ANLD.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_napoleon_vi_OLD"
+		texturefile = "gfx/leaders/FRA/portrait_FRA_napoleon_vi_OLD.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_marcel_deat_ANLD"
+		texturefile = "gfx/leaders/FRA/portrait_FRA_marcel_deat_ANLD.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_marcel_bucard_ANLD"
+		texturefile = "gfx/leaders/FRA/portrait_FRA_marcel_bucard_ANLD.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_HUN_gyula_gombos_regent"
+		texturefile = "gfx/leaders/HUN/portrait_HUN_gyula_gombos_regent.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_AUS_otto_von_habsburg"
+		texturefile = "gfx/leaders/AUS/portrait_AUS_otto_von_habsburg.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_AUS_otto_von_habsburg_ALT"
+		texturefile = "gfx/leaders/AUS/portrait_AUS_otto_von_habsburg_ALT.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SPR_marie_bonaparte"
+		texturefile = "gfx/leaders/SPR/portrait_SPR_marie_bonaparte.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SPR_marie_bonaparte_with_crown"
+		texturefile = "gfx/leaders/SPR/portrait_SPR_marie_bonaparte_with_crown.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_KHI_sayyid_abdullah_khan"
+		texturefile = "gfx/leaders/KHI/portrait_KHI_sayyid_abdullah_khan.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_BUK_sayyid_mir_muhammad_alim_khan"
+		texturefile = "gfx/leaders/BUK/portrait_BUK_sayyid_mir_muhammad_alim_khan.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_TUR_abdulmejid_ii_ANLD"
+		texturefile = "gfx/leaders/TUR/portrait_TUR_abdulmejid_ii_ANLD.dds"
+	}
+	##small:
 	spriteType = {
 		name = "GFX_idea_generic_colonial_governor_western_european_2d"
 		texturefile = "gfx/interface/ideas/characters/idea_talleyrand.dds"
@@ -2259,5 +2353,65 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_louis_maurin_picture_small"
 		texturefile = "gfx/interface/ideas/characters/louis_maurin_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_joseph_vuillemin_picture_small"
+		texturefile = "gfx/interface/ideas/characters/joseph_vuillemin_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_robert_odic_picture_small"
+		texturefile = "gfx/interface/ideas/characters/robert_odic_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_philippe_fequant_picture_small"
+		texturefile = "gfx/interface/ideas/characters/philippe_fequant_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_martial_valin_picture_small"
+		texturefile = "gfx/interface/ideas/characters/martial_valin_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_jean_francois_jannekeyn_picture_small"
+		texturefile = "gfx/interface/ideas/characters/jean_francois_jannekeyn_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_alfred_heurtaux_picture_small"
+		texturefile = "gfx/interface/ideas/characters/alfred_heurtaux_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_jean_marie_bergeret_picture_small"
+		texturefile = "gfx/interface/ideas/characters/jean_marie_bergeret_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_czeslaw_mlot_fijalkowski_picture_small"
+		texturefile = "gfx/interface/ideas/characters/czeslaw_mlot_fijalkowski_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_edmund_knoll_kownacki_picture_small"
+		texturefile = "gfx/interface/ideas/characters/edmund_knoll_kownacki_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_franciszek_alter_picture_small"
+		texturefile = "gfx/interface/ideas/characters/franciszek_alter_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_franciszek_wlad_picture_small"
+		texturefile = "gfx/interface/ideas/characters/franciszek_wlad_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_kazimierz_dzierzanowski_picture_small"
+		texturefile = "gfx/interface/ideas/characters/kazimierz_dzierzanowski_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_mieczyslaw_boruta_spiechowicz_picture_small"
+		texturefile = "gfx/interface/ideas/characters/mieczyslaw_boruta_spiechowicz_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_walerian_czuma_picture_small"
+		texturefile = "gfx/interface/ideas/characters/walerian_czuma_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_wladyslaw_langner_picture_small"
+		texturefile = "gfx/interface/ideas/characters/wladyslaw_langner_picture_small.dds"
 	}
 }

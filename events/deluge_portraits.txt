@@ -398,25 +398,57 @@ country_event = {##Marcel Bucard
 	picture = GFX_report_event_marcel_bucard
 	fire_only_once = no
 	is_triggered_only = yes
-	option = {##suit
+	option = {##ANLD
 		name = deluge_portraits.11.a
 		set_portraits = {
 			character = FRA_deluge_marcel_bucard
-			army = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
-			civilian = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
-			navy = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
+			army = { large ="GFX_portrait_FRA_marcel_bucard_ANLD" }
+			civilian = { large ="GFX_portrait_FRA_marcel_bucard_ANLD" }
+			navy = { large ="GFX_portrait_FRA_marcel_bucard_ANLD" }
 		}
 		ai_chance = {
 			factor = 1
 		}
 	}
-	option = {##military uniform
+	option = {##vanilla
 		name = deluge_portraits.11.b
 		set_portraits = {
 			character = FRA_deluge_marcel_bucard
-			army = { large ="GFX_portrait_tur_abdulmejid_ii" }
-			civilian = { large ="GFX_portrait_tur_abdulmejid_ii" }
-			navy = { large ="GFX_portrait_tur_abdulmejid_ii" }
+			army = { large ="GFX_portrait_FRA_marcel_bucard" }
+			civilian = { large ="GFX_portrait_FRA_marcel_bucard" }
+			navy = { large ="GFX_portrait_FRA_marcel_bucard" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {##Marcel Déat
+	id = deluge_portraits.12
+	title = deluge_portraits.12.t
+	desc = deluge_portraits.12.d
+	picture = GFX_report_event_marcel_deat
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##ANLD
+		name = deluge_portraits.12.a
+		set_portraits = {
+			character = FRA_deluge_marcel_deat
+			army = { large ="GFX_portrait_FRA_marcel_deat_ANLD" }
+			civilian = { large ="GFX_portrait_FRA_marcel_deat_ANLD" }
+			navy = { large ="GFX_portrait_FRA_marcel_deat_ANLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##vanilla
+		name = deluge_portraits.12.b
+		set_portraits = {
+			character = FRA_deluge_marcel_deat
+			army = { large ="GFX_portrait_FRA_marcel_deat" }
+			civilian = { large ="GFX_portrait_FRA_marcel_deat" }
+			navy = { large ="GFX_portrait_FRA_marcel_deat" }
 		}
 		ai_chance = {
 			factor = 1

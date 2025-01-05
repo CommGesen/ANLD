@@ -3,7 +3,7 @@ characters={
 		name="Jean I d’Orléans"
 		portraits={
 			civilian={
-				large="gfx/leaders/LOU/jean_i_orlean.dds"
+				large="gfx/leaders/LOU/portrait_LOU_jean_i_orlean.dds"
 			}
 		}
 		country_leader={
@@ -16,12 +16,25 @@ characters={
 		name="Henri I d’Orléans"
 		portraits={
 			civilian={
-				large="gfx/leaders/LOU/henry_i_orlean.dds"
+				large="gfx/leaders/LOU/portrait_LOU_henry_i_orlean.dds"
 			}
 		}
 		country_leader={
 			#desc="bourbon_king_desc"
 			ideology=national_integralism_ideology
+			expire="1965.1.1.1"
+		}
+	}
+	LOU_deluge_charles_maurras={
+		name="Charles Maurras"
+		portraits={
+			civilian={
+				large="gfx/leaders/LOU/portrait_LOU_charles_maurras.dds"
+			}
+		}
+		country_leader={
+			#desc=""
+			ideology=social_darwinist_ideology
 			expire="1965.1.1.1"
 		}
 	}

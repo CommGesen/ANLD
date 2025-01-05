@@ -1023,43 +1023,6 @@ characters={
 			ledger = army
 		}
 	}
-	POL_deluge_jozef_kapciuk = {##Józef Kapciuk
-		name = POL_deluge_jozef_kapciuk_name
-		portraits={
-			army = {
-				large="gfx/leaders/POL/portrait_POL_jozef_kapciuk.dds"
-				small = GFX_jozef_kapciuk_picture_small
-			}
-		}
-		corps_commander = {
-			traits = { artillery_officer panzer_leader panzer_expert}
-			skill=4
-			attack_skill=3
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=4
-			desc = "POL_deluge_jozef_kapciuk_desc"
-		}
-		advisor={
-			slot = high_command
-			idea_token = POL_deluge_jozef_kapciuk
-			allowed = { tag = POL }
-			visible = {
-				tag = POL
-			}
-			#cost = 150
-			available = { 
-				POL = {
-					has_completed_focus = POL_superiority_of_mobility
-				}
-			}
-			traits = {
-				army_armored_3
-			}
-			ai_will_do = { factor = 1.0 }
-			ledger = army
-		}
-	}
 	POL_deluge_konstanty_rokossowski={
 		name = POL_deluge_konstanty_rokossowski_name
 		portraits={
@@ -1076,6 +1039,25 @@ characters={
 			planning_skill=4
 			logistics_skill=3
 			desc = "POL_deluge_konstanty_rokossowski_desc"
+		}
+		advisor={
+			slot = high_command
+			idea_token = POL_deluge_konstanty_rokossowski
+			allowed = { tag = POL }
+			visible = {
+				tag = POL
+			}
+			#cost = 150
+			available = { 
+				POL = {
+					has_completed_focus = POL_superiority_of_mobility
+				}
+			}
+			traits = {
+				army_armored_3
+			}
+			ai_will_do = { factor = 1.0 }
+			ledger = army
 		}
 	}
 	##here i finished standarization
@@ -1444,9 +1426,9 @@ characters={
 	POL_deluge_czuma = {##Walerian Czuma
 		name = POL_Character_deluge_czuma
 		portraits = {
-			army = {##wrong small picture
+			army = {
 				large="gfx/leaders/POL/portrait_POL_walerian_czuma.dds"
-				small = GFX_marian_kukiel_picture_small
+				small="GFX_walerian_czuma_picture_small"
 			}
 		}
 		corps_commander = {
@@ -1464,7 +1446,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_czeslaw_mlot_fijalkowski.dds"
-				small = GFX_marian_kukiel_picture_small
+				small="GFX_czeslaw_mlot_fijalkowski_picture_small"
 			}
 		}
 		corps_commander = {
@@ -1482,7 +1464,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_wladyslaw_langner.dds"
-				small = GFX_marian_kukiel_picture_small
+				small="GFX_wladyslaw_langner_picture_small"
 			}
 		}
 		corps_commander = {
@@ -1500,7 +1482,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_franciszek_wlad.dds"
-				small = GFX_marian_kukiel_picture_small
+				small="GFX_franciszek_wlad_picture_small"
 			}
 		}
 		corps_commander = {
@@ -1518,7 +1500,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_mieczyslaw_boruta_spiechowicz.dds"
-				small = GFX_marian_kukiel_picture_small
+				small="GFX_mieczyslaw_boruta_spiechowicz_picture_small"
 			}
 		}
 		corps_commander = {
@@ -1536,7 +1518,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_edmund_knoll_kownacki.dds"
-				small = GFX_marian_kukiel_picture_small
+				small="GFX_edmund_knoll_kownacki_picture_small"
 			}
 		}
 		corps_commander = {
@@ -1608,7 +1590,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_franciszek_alter.dds"
-				small = GFX_marian_kukiel_picture_small
+				small="GFX_franciszek_alter_picture_small"
 			}
 		}
 		corps_commander = {
@@ -1879,7 +1861,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_kazimierz_dzierzanowski.dds"
-				small = GFX_marian_kukiel_picture_small
+				small"="GFX_kazimierz_dzierzanowski_picture_small"
 			}
 		}
 		corps_commander = {
@@ -2529,40 +2511,6 @@ characters={
 				has_country_flag = POL_supported_lviv_uni
 			}
 			traits = {nitrogen_gas_researcher}
-			ai_will_do = { factor = 1.0 }
-			ledger = civilian
-		}
-	}
-	POL_deluge_ulam = {##Stanisław Ulam
-		name = POL_Character_deluge_ulam
-		portraits={
-			civilian={
-				small="GFX_stanislaw_ulam_picture_small"
-			}
-		}
-		advisor={
-			slot = theorist
-			idea_token = POL_deluge_ulam
-			allowed = { tag = POL }
-			visible = {
-				tag = POL
-				NOT = {
-					OR = {
-						has_country_flag = POL_supported_krakow_uni
-						has_country_flag = POL_supported_warsaw_uni
-					}
-				}
-			}
-			cost = 150
-			available = { 
-				has_country_flag = POL_supported_lviv_uni
-			}
-			traits = {
-				deluge_nuclear_scientist
-			}
-			research_bonus = {
-				nuclear = 0.15
-			}
 			ai_will_do = { factor = 1.0 }
 			ledger = civilian
 		}
@@ -3369,48 +3317,6 @@ characters={
 			}
 			ai_will_do = { factor = 1.0 }
 			ledger = civilian
-		}
-	}
-	POL_deluge_tanski = {##Tadeusz Tański
-		name = POL_Character_deluge_tanski
-		portraits={
-			civilian={
-				small="GFX_tadeusz_tanski_picture_small"
-			}
-		}
-		advisor={
-			slot = theorist
-			idea_token = POL_deluge_tanski
-			allowed = { tag = POL }
-			visible = {
-				tag = POL
-				NOT = {
-					OR = {
-						has_completed_focus = POL_invite_ND_to_government
-						has_completed_focus = POL_ND_wins
-						has_completed_focus = POL_piasecki_wins
-						has_completed_focus = POL_smigly_wins
-						has_completed_focus = POL_stachniuk_wins
-						has_completed_focus = POL_radicals_takeover
-						has_completed_focus = POL_monarchists_take_power
-					}
-				}
-			}
-			cost = 150
-			available = { 
-				OR = {
-					has_completed_focus = POL_invite_PSL_to_government
-					has_completed_focus = POL_PSL_wins
-				}
-			}
-			traits = {
-				car_engineer
-			}
-			research_bonus = {
-				motorized_equipment = 0.1
-			}
-			ai_will_do = { factor = 1.0 }
-			ledger = army
 		}
 	}
 	POL_deluge_michalowicz = {##Mieczysław Michałowicz
@@ -5409,23 +5315,53 @@ characters={
 				small=GFX_henryk_zygalski_picture_small
 			}
 		}
-		advisor={
-			slot = intelligence_chief_slot
-			idea_token = POL_deluge_zygalski
-			allowed = { tag = POL }
-			visible = {
-				tag = POL
+		instance = {
+			allowed = {
+				has_dlc = "La Resistance"
 			}
-			cost = 150
-			available = { 
-				
+			advisor={
+				slot = intelligence_chief_slot
+				idea_token = POL_deluge_zygalski
+				allowed = { tag = POL }
+				visible = {
+					
+				}
+				cost = 150
+				available = { 
+					
+				}
+				traits = {
+					genius_cryptologist
+				}
+				ai_will_do = { factor = 1.0 }
+				ledger = civilian
 			}
-			traits = {
-				genius_cryptologist
-			}
-			ai_will_do = { factor = 1.0 }
-			ledger = civilian
 		}
+		instance = {
+			allowed = {
+				NOT = {
+					has_dlc = "La Resistance"
+				}
+			}
+			advisor={
+				slot = intelligence_chief_slot
+				idea_token = POL_deluge_zygalski
+				allowed = { tag = POL }
+				visible = {
+					
+				}
+				cost = 150
+				available = { 
+					
+				}
+				traits = {
+					infiltration_expert
+				}
+				ai_will_do = { factor = 1.0 }
+				ledger = civilian
+			}
+		}
+		
 	}
 	POL_deluge_rutkowski = {##Jerzy Rutkowski
 		name = POL_Character_deluge_rutkowski
@@ -5464,26 +5400,55 @@ characters={
 				small=GFX_jan_kowalewski_picture_small
 			}
 		}
-		advisor={
-			slot = intelligence_chief_slot
-			idea_token = POL_deluge_kowalewski
-			allowed = { 
-				tag = POL 
+		instance = {
+			allowed = {
 				has_dlc = "La Resistance"
 			}
-			visible = {
-				tag = POL
-				has_dlc = "La Resistance"
+			advisor={
+				slot = intelligence_chief_slot
+				idea_token = POL_deluge_kowalewski
+				allowed = { 
+					tag = POL
+				}
+				visible = {
+					
+				}
+				cost = 150
+				available = { 
+					has_intelligence_agency  = yes
+				}
+				traits = {
+					head_of_intelligence
+				}
+				ai_will_do = { factor = 1.0 }
+				ledger = civilian
 			}
-			cost = 150
-			available = { 
-				
+		}
+		instance = {
+			allowed = {
+				NOT = {
+					has_dlc = "La Resistance"
+				}
 			}
-			traits = {
-				head_of_intelligence
+			advisor={
+				slot = intelligence_chief_slot
+				idea_token = POL_deluge_kowalewski
+				allowed = { 
+					tag = POL
+				}
+				visible = {
+					
+				}
+				cost = 150
+				available = { 
+					
+				}
+				traits = {
+					disinformation_expert
+				}
+				ai_will_do = { factor = 1.0 }
+				ledger = civilian
 			}
-			ai_will_do = { factor = 1.0 }
-			ledger = civilian
 		}
 	}
 	POL_deluge_ujejski = {##Stanisław Ujejski
@@ -5940,6 +5905,190 @@ characters={
 			planning_skill=4
 			logistics_skill=4
 			desc = "POL_deluge_aleksander_osinski_desc"
+		}
+	}
+	##scientists:
+	POL_deluge_jozef_kapciuk = {##Józef Kapciuk
+		name = POL_deluge_jozef_kapciuk_name
+		portraits={
+			army = {
+				large="gfx/leaders/POL/portrait_POL_jozef_kapciuk.dds"
+				small = GFX_jozef_kapciuk_picture_small
+			}
+		}
+		corps_commander = {
+			traits = { artillery_officer panzer_leader panzer_expert}
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=4
+			desc = "POL_deluge_jozef_kapciuk_desc"
+		}
+		scientist = {
+			traits = { scientist_trait_artillery_specialist scientist_trait_armored_specialist scientist_trait_gifted_engineer }
+			skills = {
+				specialization_land = 2
+			}
+		}
+	}
+	POL_deluge_stanislaw_ulam = {##Stanisław Ulam
+		name = POL_deluge_stanislaw_ulam_name
+		portraits={
+			civilian={
+				small="GFX_stanislaw_ulam_picture_small"
+				large="gfx/leaders/POL/portrait_POL_stanislaw_ulam.dds"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_brilliant_theorist scientist_trait_nuclear_specialist }
+			skills = {
+				specialization_nuclear = 1
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = POL_deluge_stanislaw_ulam
+			allowed = { tag = POL }
+			visible = {
+				NOT = {
+					OR = {
+						has_country_flag = POL_supported_krakow_uni
+						has_country_flag = POL_supported_warsaw_uni
+					}
+				}
+			}
+			cost = 150
+			available = { 
+				has_country_flag = POL_supported_lviv_uni
+			}
+			traits = {
+				deluge_nuclear_scientist
+			}
+			research_bonus = {
+				nuclear = 0.15
+			}
+			ai_will_do = { factor = 1.0 }
+			ledger = civilian
+		}
+	}
+	POL_deluge_tadeusz_tanski = {##Tadeusz Tański
+		name = POL_deluge_tadeusz_tanski_name
+		portraits={
+			civilian={
+				small="GFX_tadeusz_tanski_picture_small"
+				large="gfx/leaders/POL/portrait_POL_tadeusz_tanski.dds"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_fast_learner }
+			skills = {
+				specialization_land = 1
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = POL_deluge_tadeusz_tanski
+			allowed = { tag = POL }
+			visible = {
+				
+			}
+			cost = 150
+			available = { 
+				
+			}
+			traits = {
+				car_engineer
+			}
+			research_bonus = {
+				motorized_equipment = 0.1
+			}
+			ai_will_do = { factor = 1.0 }
+			ledger = army
+		}
+	}
+	POL_deluge_edward_habich = {##Edward Habich
+		name = POL_deluge_edward_habich_name
+		portraits={
+			civilian={
+				large="gfx/leaders/POL/portrait_POL_edward_habich.dds"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_fast_learner }
+			skills = {
+				specialization_land = 1
+			}
+		}
+	}
+	POL_deluge_edward_habich = {##Edward Habich
+		name = POL_deluge_edward_habich_name
+		portraits={
+			civilian={
+				large="gfx/leaders/POL/portrait_POL_edward_habich.dds"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_bright scientist_trait_armored_specialist }
+			skills = {
+				specialization_land = 1
+			}
+		}
+	}
+	POL_deluge_edward_habich = {##Edward Habich
+		name = POL_deluge_edward_habich_name
+		portraits={
+			civilian={
+				large="gfx/leaders/POL/portrait_POL_edward_habich.dds"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_bright scientist_trait_armored_specialist }
+			skills = {
+				specialization_land = 1
+			}
+		}
+	}
+	POL_deluge_jerzy_dabrowski = {##Jerzy Dąbrowski
+		name = POL_deluge_jerzy_dabrowski_name
+		portraits={
+			civilian={
+				large="gfx/leaders/POL/portrait_POL_jerzy_dabrowski.dds"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_gifted_engineer scientist_trait_bombs_expert }
+			skills = {
+				specialization_air = 1
+			}
+		}
+	}
+	POL_deluge_stanislaw_prauss = {##Stanisław Prauss
+		name = POL_deluge_stanislaw_prauss_name
+		portraits={
+			civilian={
+				large="gfx/leaders/POL/portrait_POL_stanislaw_prauss.dds"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_gifted_engineer scientist_trait_helicopter_expert }
+			skills = {
+				specialization_air = 1
+			}
+		}
+	}
+	POL_deluge_wsiewolod_jakimiuk = {##Wsiewołod Jakimiuk
+		name = POL_deluge_wsiewolod_jakimiuk_name
+		portraits={
+			civilian={
+				large="gfx/leaders/POL/portrait_POL_wsiewolod_jakimiuk.dds"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_gifted_engineer scientist_trait_jet_expert }
+			skills = {
+				specialization_air = 1
+			}
 		}
 	}
 }

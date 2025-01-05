@@ -18,10 +18,11 @@ state={
 			arms_factory = 2
 			industrial_complex = 2
 			air_base = 6
-
+			3845 = {
+				air_facility = 1
+			}
 		}
 		add_core_of = SPR
-
 	}
 
 	provinces={

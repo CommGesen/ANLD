@@ -165,6 +165,9 @@ country_event = {
 				set_nationality = VIN
 			}
 		}
+		FRA_deluge_alexandre_berthier = {
+			remove_unit_leader_role = yes
+		}
 		promote_character = FRA_deluge_alexandre_berthier
 		set_party_name = { ideology = neutrality long_name = FRA_berthier_party_long name = FRA_berthier_party_short }
 		hidden_effect = {
@@ -183,6 +186,9 @@ country_event = {
 		add_political_power = -100
 		add_stability = -0.05
 		add_war_support = 0.15
+		FRA_deluge_alexandre_berthier = {
+			remove_unit_leader_role = yes
+		}
 		promote_character = FRA_deluge_alexandre_berthier
 		set_party_name = { ideology = neutrality long_name = FRA_berthier_party_long name = FRA_berthier_party_short }
 		hidden_effect = {
