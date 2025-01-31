@@ -67,6 +67,7 @@
  STATE_66: "Dolny Śląsk"
  STATE_67: "Górny Śląsk"
  STATE_68: "Neumark"
+ STATE_72: "Mazwosze Zachodnie"
  STATE_76: "Észak-Erdély"
  STATE_77: "Southern Dobruja"
  STATE_78: "Bessarabia"
@@ -931,9 +932,9 @@
  STATE_933: "Shetland Islands"
  STATE_934: "Shkodër"
  
- STATE_970: "Debar"
- ALB_STATE_970: "Dibër"
- TUR_STATE_970: "Debre"
+ STATE_970: "Herzegovina"
+ ALB_STATE_970: "Hercegovina"
+ TUR_STATE_970: "Hersek"
  STATE_971: "Dobroudja du Nord"
  STATE_972: "Sudètes méridionales"
  GER_STATE_972: "Böhmerwaldgau"
@@ -968,7 +969,7 @@
  STATE_992: "Al-Qassim"
  STATE_993: "Tehran"
  STATE_994: "Kungrad"
-
+ 
  STATE_9: "Mittelböhmen"
  POL_STATE_9: "Środkowe Czechy"
  CZE_STATE_9: "Strední Čechy"
@@ -979,11 +980,7 @@
  CZE_STATE_69: "Plzeňský Kraj"
  SLO_STATE_69: "Plzenský kraj"
  HUN_STATE_69: "Plzeňi kerület"
- STATE_72: "Südböhmen"
- POL_STATE_72: "Południowe Czechy"
- CZE_STATE_72: "Jižní Cechy"
- SLO_STATE_72: "Južné Čechy"
- HUN_STATE_72: "Dél-Csehország"
+ 
  STATE_74: "Sudetenschlesien"
  POL_STATE_74: "Śląsk Sudecki"
  CZE_STATE_74: "České Slezsko"
@@ -994,7 +991,7 @@
  CZE_STATE_75: "Morava"
  SLO_STATE_75: "Morava"
  HUN_STATE_75: "Morvaország"
-
+ 
  STATE_70: "Westslowakei"
  POL_STATE_70: "Słowacja Zachodnia"
  CZE_STATE_70: "Západní Slovensko"
