@@ -6433,7 +6433,7 @@ country_event = {##POL sends ultimatum to AUS for CZE and SLO
 		name = deluge_poland_foreign.30.a
 		74 = {transfer_state_to = POL}
 		75 = {transfer_state_to = POL}
-		72 = {transfer_state_to = POL}
+		972 = {transfer_state_to = POL}
 		9 = {transfer_state_to = POL}
 		69 = {transfer_state_to = POL}
 		664 = {transfer_state_to = HUN}
@@ -6711,7 +6711,7 @@ country_event = {##POL gets informed that AUS refused
 		name = deluge_poland_foreign.32.a
 		set_global_flag = POL_sent_ultimatum_to_aus_and_refused
 		POL = {declare_war_on = {
-			target = AUS type = take_claimed_state generator = { 74 75 72 9 69 }
+			target = AUS type = take_claimed_state generator = { 74 75 972 9 69 }
 		}}
 		clr_global_flag = POL_invites_someone
 		ai_chance = {
@@ -6747,7 +6747,7 @@ country_event = {##AUS gets info that FRA give territoires to POL and HUN
 		name = deluge_poland_foreign.33.a
 		74 = {transfer_state_to = POL}
 		75 = {transfer_state_to = POL}
-		72 = {transfer_state_to = POL}
+		972 = {transfer_state_to = POL}
 		9 = {transfer_state_to = POL}
 		69 = {transfer_state_to = POL}
 		664 = {transfer_state_to = HUN}
@@ -6808,7 +6808,7 @@ country_event = {##AUS gets info that FRA doesn't give a sh*t about this problem
 		name = deluge_poland_foreign.35.a
 		74 = {transfer_state_to = POL}
 		75 = {transfer_state_to = POL}
-		72 = {transfer_state_to = POL}
+		972 = {transfer_state_to = POL}
 		9 = {transfer_state_to = POL}
 		69 = {transfer_state_to = POL}
 		664 = {transfer_state_to = HUN}
@@ -7138,7 +7138,7 @@ country_event = {## AUS gets info that POL didn't agree on arbitrage
 		name = deluge_poland_foreign.44.b
 		74 = {transfer_state_to = POL}
 		75 = {transfer_state_to = POL}
-		72 = {transfer_state_to = POL}
+		972 = {transfer_state_to = POL}
 		9 = {transfer_state_to = POL}
 		69 = {transfer_state_to = POL}
 		664 = {transfer_state_to = HUN}
@@ -11585,10 +11585,10 @@ country_event = {##Wettin POL demands from every country that owns Czechia to gi
 		if = {
 			limit = {
 				ROOT = {
-					owns_state = 72
+					owns_state = 972
 				}
 			}
-			72 = {
+			972 = {
 				transfer_state_to = POL
 			}
 		}
@@ -11779,7 +11779,7 @@ country_event = {##wettin POL gets info that doesn't get Czechia
 		create_wargoal = {
 			type = take_claimed_state
 			target = FROM
-			generator = { 9 69 72 75 74 }
+			generator = { 9 69 972 75 74 }
 		}
 		add_stability = 0.02
 		add_war_support = -0.05
@@ -11833,7 +11833,7 @@ country_event = {##wettin POL gets info that doesn't get Czechia
 			declare_war_on = {
 				type = take_claimed_state
 				target = FROM
-				generator = { 9 69 72 75 74 }
+				generator = { 9 69 972 75 74 }
 			}
 		}
 		ai_chance = {

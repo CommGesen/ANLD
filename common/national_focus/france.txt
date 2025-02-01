@@ -562,7 +562,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_prophet_saved
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_delaunay_survived
 		x = 2
 		y = 1
 		prerequisite = { focus = FRA_purge_political_opponents }
@@ -816,7 +816,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_cult_of_savior
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_cult_of_delaunay
 		x = 2
 		y = 1
 		prerequisite = { focus = FRA_new_esoteric_organizations }
@@ -915,7 +915,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_expand_blueshirts
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_expand_blueshirts
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_francist_movement }
@@ -996,7 +996,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_duty_and_discipline_of_monastic_orders
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_military_order
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_in_the_footsteps_of_the_romans }
@@ -1432,7 +1432,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_deats_takeover
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_marcel_deat
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_alliance_with_national_popular_rally }
@@ -1489,7 +1489,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_total_control
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_jacques_doriot
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_alliance_with_national_popular_rally }
@@ -1797,7 +1797,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_enforce_cultural_unity
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_opress_minorities
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_national_state }
@@ -2347,7 +2347,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_nationalist_propaganda
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_nationalist_painting
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_social_chrisitan_corporatism }
@@ -2388,7 +2388,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_new_french_identity
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_french_flag
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_nationalist_propaganda }
@@ -4087,7 +4087,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_cult_of_supreme_being
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_robespierre
 		x = -4
 		y = 1
 		prerequisite = { focus = FRA_workers_revolution }
@@ -5763,7 +5763,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_foreign_policy
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_table_and_map
 		x = 22
 		y = 0
 		#prerequisite = { focus = }
@@ -8618,6 +8618,52 @@ focus = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_112
+			if = {
+				limit = {
+					controls_state = 32
+				}
+				32 = {
+					add_building_construction = {
+						type = dam
+						level = 1
+						instant_build = yes
+						province = {
+							id = 3768
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 28
+				}
+				28 = {
+					add_building_construction = {
+						type = dam
+						level = 1
+						instant_build = yes
+						province = {
+							id = 9503
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 26
+				}
+				26 = {
+					add_building_construction = {
+						type = dam
+						level = 1
+						instant_build = yes
+						province = {
+							id = 6789
+						}
+					}
 				}
 			}
 		}

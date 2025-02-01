@@ -432,7 +432,7 @@ leader_traits = {
 		stability_factor = 0.05
 		war_support_factor = 0.05
 		improve_relations_maintain_cost_factor = -0.5
-		terrain_penalty_reduction  = 0.07
+		terrain_penalty_reduction = 0.07
 	}
 	emergency_cabinet_trait = {
 		random = no
@@ -1304,17 +1304,19 @@ leader_traits = {
 	}
 	temporary_leader = {
 		random = no
-		#sprite = 7
+		sprite = 12
 		political_power_factor = -0.1
 		stability_factor = -0.1
 	}
 	geographer = {
 		random = no
+		sprite = 12
 		research_speed_factor = 0.03
 		army_speed_factor = 0.03
 	}
 	psychoanalyst = {
 		random = no
+		sprite = 18
 		research_speed_factor = 0.03
 		army_morale_factor = 0.03
 	}
@@ -1347,12 +1349,14 @@ leader_traits = {
 	}
 	deluge_trait_minister_of_aviatation = {
 		random = yes
+		sprite = 1
 		experience_gain_air_factor = 0.05
 		experience_gain_air = 0.03
 		air_doctrine_cost_factor = -0.05
 	}
 	deluge_trait_minister_of_merchant_marine = {
 		random = yes
+		sprite = 3
 		equipment_bonus = {
 			convoy = {
 				build_cost_ic = -0.1
@@ -1363,9 +1367,16 @@ leader_traits = {
 	}
 	deluge_trait_agricultural_socialist = {
 		random = no
+		sprite = 12
 		monthly_population = 0.05
 		communism_drift = 0.03
 		global_building_slots_factor = 0.1
 		out_of_supply_factor = -0.05
+	}
+	deluge_trait_steel_magnate = {
+		random = yes
+		sprite = 10
+		local_resources_factor = 0.15
+		country_resource_steel = 75
 	}
 }

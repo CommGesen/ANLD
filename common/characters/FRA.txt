@@ -21,6 +21,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/FRA/portrait_FRA_alexandre_berthier.dds"
+				small="GFX_alexandre_berthier_picture_small"
 			}
 		}
 		country_leader={
@@ -55,6 +56,40 @@ characters={
 			}
 			traits = {
 				landed_gentleman
+			}
+			ai_will_do = { factor = 1.0 }
+			ledger = civilian
+		}
+	}
+	FRA_deluge_eugene_schneider_ii = {
+		name = FRA_deluge_eugene_schneider_ii_name
+		portraits = {
+			army = {
+				large = GFX_portrait_FRA_eugene_schneider_ii
+				small = "GFX_eugene_schneider_ii_picture_small"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_artillery_specialist scientist_trait_resourceful }
+			skills = {
+				specialization_land = 2
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_eugene_schneider_ii
+			allowed = { tag = FRA }
+			visible = {
+				NOT = {
+					has_completed_focus = FRA_towards_republic
+				}
+			}
+			cost = 150
+			available = {
+				has_completed_focus = FRA_previous_course
+			}
+			traits = {
+				deluge_trait_steel_magnate
 			}
 			ai_will_do = { factor = 1.0 }
 			ledger = civilian
@@ -331,7 +366,7 @@ characters={
 				has_completed_focus = FRA_french_section_of_workers_internationale
 			}
 			traits = {
-				financial_expert
+				minister_of_justice
 			}
 			ai_will_do = { factor = 1.0 }
 			ledger = civilian
@@ -536,7 +571,7 @@ characters={
 				has_completed_focus = FRA_french_communist_party
 			}
 			traits  = {
-				communist_orator
+				red_count
 			}
 			ai_will_do  = {
 				factor  = 1.000
@@ -3583,40 +3618,7 @@ characters={
 			}
 		}
 	}
-	FRA_deluge_eugene_schneider_ii = {
-		name = FRA_deluge_eugene_schneider_ii_name
-		portraits = {
-			army = {
-				large = GFX_portrait_FRA_eugene_schneider_ii
-				small = "GFX_eugene_schneider_ii_picture_small"
-			}
-		}
-		scientist = {
-			traits = { scientist_trait_artillery_specialist scientist_trait_resourceful }
-			skills = {
-				specialization_land = 2
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = FRA_deluge_eugene_schneider_ii
-			allowed = { tag = FRA }
-			visible = {
-				NOT = {
-					has_completed_focus = FRA_towards_republic
-				}
-			}
-			cost = 150
-			available = {
-				has_completed_focus = FRA_previous_course
-			}
-			traits = {
-				##to do trait
-			}
-			ai_will_do = { factor = 1.0 }
-			ledger = civilian
-		}
-	}
+	#Eugene Schneider II is in bonapartists
 	FRA_deluge_henri_edmond_fouche = {
 		name = FRA_deluge_henri_edmond_fouche_name
 		portraits = {

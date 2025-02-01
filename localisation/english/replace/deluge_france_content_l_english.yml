@@ -203,6 +203,7 @@
  deluge_trait_minister_of_aviatation:0 "Minister of Aviation"
  deluge_trait_minister_of_merchant_marine:0 "Minister of Merchant Marine"
  deluge_trait_agricultural_socialist:0 "Agricultural Socialist"
+ deluge_trait_steel_magnate:0 "Steel Magnate"
  ##Tooltips
  FRA_custom_effect_tooltip_1:0 "Modify §HThe Great Depression§! by:\n§H-15%§! Consumer Good Factor!"
  FRA_custom_effect_tooltip_2:0 "Modify §HThe Great Depression§! by:\n§G+10%§! Factory Output,\n§G+10%§! Dockyard Output!"
@@ -315,6 +316,7 @@
  FRA_custom_effect_tooltip_109:0 "Modify §HSocial d'abord!§! national spirit by:\n§G+4%§! Factory Output,\n§G+4%§! Dockyard Output,\n§G+3%§! Production Efficiency Cap!"
  FRA_custom_effect_tooltip_110:0 "Modify §HSocial d'abord!§! national spirit by:\n§G+10%§! War Support,\n§G+0.30%§! Weekly War Support (Combat Casualities),\n§G+0.30%§! Weekly War Support (Enemy Bombing)!"
  FRA_custom_effect_tooltip_111:0 "Modify §HSocial d'abord!§! national spirit by:\n§G+5%§! Stability,\n§G+5%§! Political Power Daily Gain,\n§G+5%§! Compliance Growth Speed!"
+ FRA_custom_effect_tooltip_112:0 "If given states are controlled then dams will be build in given provinces:\n[32.GetName] - in Grenoble,\n[28.GetName] - in Strasbourg,\n[26.GetName] - in the mountains west to the Clermont-Ferrand."
  ##Dynamic Modifiers
  FRA_modifier_economic_depression:0 "The Great Depression"
  FRA_modifier_economic_depression_desc:0 "The Great Depression of 1929 is still felt in our country."

@@ -546,7 +546,7 @@ characters={
 		name = POL_deluge_jadwiga_pilsudska_name
 		portraits = {
 			civilian = {
-				large="gfx/leaders/HUN/portrait_POL_jadwiga_pilsudska.dds"
+				large="gfx/leaders/POL/portrait_POL_jadwiga_pilsudska.dds"
 			}
 		}
 		country_leader = {
@@ -1410,7 +1410,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_michal_tokarzewski_karaszewicz.dds"
-				small = GFX_michal_tokarzewski_karaszewicz_picture_small
+				small="GFX_michal_tokarzewski_karaszewicz_picture_small"
 			}
 		}
 		corps_commander = {
@@ -1536,7 +1536,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_kazimierz_fabrycy.dds"
-				small = GFX_kazimierz_fabrycy_picture_small
+				small="GFX_kazimierz_fabrycy_picture_small"
 			}
 		}
 		corps_commander = {
@@ -1554,7 +1554,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_stefan_dab_biernacki.dds"
-				small = GFX_stefan_dab_biernacki_picture_small
+				small="GFX_stefan_dab_biernacki_picture_small"
 			}
 		}
 		corps_commander = {
@@ -1572,7 +1572,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_rudolf_dreszer.dds"
-				small = GFX_rudolf_dreszer_picture_small
+				small="GFX_rudolf_dreszer_picture_small"
 			}
 		}
 		corps_commander = {
@@ -1608,7 +1608,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_stefan_rowecki.dds"
-				small = GFX_stefan_rowecki_picture_small
+				small="GFX_stefan_rowecki_picture_small"
 			}
 		}
 		corps_commander = {
@@ -1626,7 +1626,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_waclaw_jan_przezdziecki.dds"
-				small = GFX_waclaw_przezdziecki_picture_small
+				small="GFX_waclaw_przezdziecki_picture_small"
 			}
 		}
 		corps_commander = {
@@ -1644,7 +1644,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_mikolaj_boltuc.dds"
-				small = GFX_mikolaj_boltuc_picture_small
+				small="GFX_mikolaj_boltuc_picture_small"
 			}
 		}
 		corps_commander = {
@@ -1662,7 +1662,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_bronislaw_prugar_ketling.dds"
-				small = GFX_bronislaw_prugar_ketling_picture_small
+				small="GFX_bronislaw_prugar_ketling_picture_small"
 			}
 		}
 		corps_commander = {
@@ -1861,7 +1861,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_kazimierz_dzierzanowski.dds"
-				small"="GFX_kazimierz_dzierzanowski_picture_small"
+				small="GFX_kazimierz_dzierzanowski_picture_small"
 			}
 		}
 		corps_commander = {
@@ -5894,7 +5894,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_aleksander_osinski.dds"
-				small = GFX_aleksander_osinski_picture_small
+				small="GFX_aleksander_osinski_picture_small"
 			}
 		}
 		corps_commander = {
@@ -5913,11 +5913,11 @@ characters={
 		portraits={
 			army = {
 				large="gfx/leaders/POL/portrait_POL_jozef_kapciuk.dds"
-				small = GFX_jozef_kapciuk_picture_small
+				small="GFX_jozef_kapciuk_picture_small"
 			}
 		}
 		corps_commander = {
-			traits = { artillery_officer panzer_leader panzer_expert}
+			traits = { artillery_officer panzer_leader panzer_expert }
 			skill=4
 			attack_skill=3
 			defense_skill=4

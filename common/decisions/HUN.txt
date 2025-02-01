@@ -61,6 +61,7 @@ political_actions = {
 			controls_state = 109
 			controls_state = 103
 			controls_state = 104
+			controls_state = 970
 		}
 		allowed = {
 			tag = HUN
@@ -70,6 +71,7 @@ political_actions = {
 				state = 109
 				state = 103
 				state = 104
+				state = 970
 			}
 		}
 		days_remove = 150
@@ -86,6 +88,12 @@ political_actions = {
 					109 = {NOT = {is_core_of = HUN}}
 				}
 				109 = {add_core_of = HUN}
+			}
+			if = {
+				limit = {
+					970 = {NOT = {is_core_of = HUN}}
+				}
+				970 = {add_core_of = HUN}
 			}
 			if = {
 				limit = {

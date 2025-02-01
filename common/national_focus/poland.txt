@@ -10610,7 +10610,7 @@ focus_tree = {
 					OR = {
 						owns_state = 9
 						owns_state = 69
-						owns_state = 72
+						owns_state = 972
 						owns_state = 75
 						owns_state = 74
 					}
@@ -10625,7 +10625,7 @@ focus_tree = {
 			POL = {
 				add_state_claim = 9
 				add_state_claim = 69
-				add_state_claim = 72
+				add_state_claim = 972
 				add_state_claim = 75
 				add_state_claim = 74
 			}
@@ -10636,7 +10636,7 @@ focus_tree = {
 					OR = {
 						owns_state = 9
 						owns_state = 69
-						owns_state = 72
+						owns_state = 972
 						owns_state = 75
 						owns_state = 74
 					}
@@ -10656,7 +10656,7 @@ focus_tree = {
 			POL = {
 				owns_state = 9
 				owns_state = 69
-				owns_state = 72
+				owns_state = 972
 				owns_state = 75
 				owns_state = 74
 			}
@@ -10788,15 +10788,10 @@ focus_tree = {
 		prerequisite = { focus = POL_demand_czechia}
 		relative_position_id = POL_demand_czechia
 		available = {
-			owns_state = 9
 			controls_state = 9
-			owns_state = 69
 			controls_state = 69
-			owns_state = 72
-			controls_state = 72
-			owns_state = 75
+			controls_state = 972
 			controls_state = 75
-			owns_state = 74
 			controls_state = 74
 		}
 		completion_reward = {
@@ -10833,7 +10828,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			72 = {
+			972 = {
 				add_core_of = POL
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -12917,7 +12912,6 @@ focus_tree = {
 					controls_state = 240
 					controls_state = 220
 					controls_state = 224
-					controls_state = 74
 					controls_state = 222
 					controls_state = 205
 					controls_state = 260
@@ -13008,6 +13002,7 @@ focus_tree = {
 					controls_state = 444
 					controls_state = 89
 					controls_state = 91
+					controls_state = 72
 					controls_state = 92
 					controls_state = 93
 					controls_state = 94
@@ -26843,6 +26838,20 @@ focus_tree = {
 				category = naval_doctrine
 			}
 			navy_experience = 20
+			custom_effect_tooltip = POL_custom_effect_tooltip_273
+			if = {
+				limit = {
+					controls_province = 6402
+				}
+				5 = {
+					add_building_construction = {
+						type = naval_facility
+						level = 1
+						instant_build = yes
+						province = 6402
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 20
@@ -27367,6 +27376,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = POL_mielec_air_factory_spirit
+			add_victory_points = {
+				province = 6499
+				value = 1
+			}
 		}
 		ai_will_do = {
 			factor = 20
@@ -27841,7 +27854,6 @@ focus_tree = {
 		#mutually_exclusive = {focus = POL_expand_factories_in_stalowa_wola}
 		cost = 8
 		available = {
-			owns_state = 10
 			controls_state = 10
 		}
 		completion_reward = {
@@ -27867,7 +27879,7 @@ focus_tree = {
 		}
 		bypass = {
 			NOT = {
-				owns_state = 10
+				controls_state = 10
 			}
 		}
 		cancel_if_invalid = yes		
@@ -27918,9 +27930,7 @@ focus_tree = {
 		#mutually_exclusive = {focus = POL_establish_state_owned_arms_factories}
 		cost = 8
 		available = {
-			owns_state = 88
 			controls_state = 88
-			owns_state = 92
 			controls_state = 92
 		}
 		completion_reward = {
@@ -27945,6 +27955,18 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+			}
+			add_victory_points = {
+				province = 9494
+				value = 1
+			}
+			add_victory_points = {
+				province = 11507
+				value = 1
+			}
+			add_victory_points = {
+				province = 6522
+				value = 1
 			}
 			add_to_variable = {POL_development_consumer_goods_factor = -0.08}
 			custom_effect_tooltip = POL_custom_effect_tooltip_52
@@ -28006,11 +28028,8 @@ focus_tree = {
 		cost = 8
 		available = {
 			POL = {
-				owns_state = 88
 				controls_state = 88
-				owns_state = 92
 				controls_state = 92
-				owns_state = 90
 				controls_state = 90
 			}
 		}
@@ -28026,9 +28045,9 @@ focus_tree = {
 		}
 		bypass = {
 			NOT = {
-				owns_state = 88
-				owns_state = 92
-				owns_state = 90
+				controls_state = 88
+				controls_state = 92
+				controls_state = 90
 			}
 		}
 		cancel_if_invalid = yes		
@@ -28046,7 +28065,6 @@ focus_tree = {
 		cost = 9
 		available = {
 			POL = {
-				owns_state = 90
 				controls_state = 90
 			}
 			custom_trigger_tooltip = {
@@ -28078,7 +28096,7 @@ focus_tree = {
 		}
 		bypass = {
 			NOT = {
-				owns_state = 90
+				controls_state = 90
 			}
 		}
 		cancel_if_invalid = yes		
@@ -28096,7 +28114,6 @@ focus_tree = {
 		cost = 9
 		available = {
 			POL = {
-				owns_state = 88
 				controls_state = 88
 			}
 			custom_trigger_tooltip = {
@@ -28120,6 +28137,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_victory_points = {
+				province = 9494
+				value = 1
+			}
 			add_to_variable = {POL_development_production_speed_buildings_factor = 0.03}
 			custom_effect_tooltip = POL_custom_effect_tooltip_54
 		}
@@ -28128,7 +28149,7 @@ focus_tree = {
 		}
 		bypass = {
 			NOT = {
-				owns_state = 88
+				controls_state = 88
 			}
 		}
 		cancel_if_invalid = yes		
@@ -28146,8 +28167,8 @@ focus_tree = {
 		cost = 9
 		available = {
 			POL = {
-				owns_state = 92
 				controls_state = 92
+				controls_state = 88
 			}
 			custom_trigger_tooltip = {
 				tooltip = POL_custom_trigger_tooltip_3
@@ -28170,6 +28191,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_victory_points = {
+				province = 11507
+				value = 1
+			}
 			add_to_variable = {POL_development_production_speed_buildings_factor = 0.03}
 			custom_effect_tooltip = POL_custom_effect_tooltip_54
 		}
@@ -28178,7 +28203,8 @@ focus_tree = {
 		}
 		bypass = {
 			NOT = {
-				owns_state = 92
+				controls_state = 92
+				controls_state = 88
 			}
 		}
 		cancel_if_invalid = yes		
@@ -28198,11 +28224,8 @@ focus_tree = {
 		cost = 10
 		available = {
 			POL = {
-				owns_state = 92
 				controls_state = 92
-				owns_state = 88
 				controls_state = 88
-				owns_state = 90
 				controls_state = 90
 			}
 			custom_trigger_tooltip = {
@@ -28266,9 +28289,9 @@ focus_tree = {
 		}
 		bypass = {
 			NOT = {
-				owns_state = 88
-				owns_state = 92
-				owns_state = 90
+				controls_state = 88
+				controls_state = 92
+				controls_state = 90
 			}
 		}
 		cancel_if_invalid = yes		
@@ -28690,21 +28713,13 @@ focus_tree = {
 		cost = 8
 		available = {
 			POL = {
-				owns_state = 202
 				controls_state = 202
-				owns_state = 203
 				controls_state = 203
-				owns_state = 198
 				controls_state = 198
-				owns_state = 201
 				controls_state = 201
-				owns_state = 199
 				controls_state = 199
-				owns_state = 93
 				controls_state = 93
-				owns_state = 91
 				controls_state = 91
-				owns_state = 92
 				controls_state = 92
 			}
 		}
@@ -28735,17 +28750,11 @@ focus_tree = {
 		cost = 8
 		available = {
 			POL = {
-				owns_state = 94
 				controls_state = 94
-				owns_state = 194
 				controls_state = 194
-				owns_state = 97
 				controls_state = 97
-				owns_state = 95
 				controls_state = 95
-				owns_state = 204
 				controls_state = 204
-				owns_state = 206
 				controls_state = 206
 			}
 		}
@@ -29189,22 +29198,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			#build_railway = {
-			#	level = 3
-			#	path = { 3544 6259 9290 6375}
-			#}
-			#build_railway = {
-			#	level = 1
-			#	path = { 3351 6402 }
-			#}
-			#build_railway = {
-			#	level = 1
-			#	path = { 6558 3532 11478 444 3438 6595 }
-			#}
-			#build_railway = {
-			#	level = 1
-			#	path = { 3309 6280 560 }
-			#}
 			add_to_variable = {POL_development_production_speed_infrastructure_factor = 0.1}
 			custom_effect_tooltip = POL_custom_effect_tooltip_44
 		}

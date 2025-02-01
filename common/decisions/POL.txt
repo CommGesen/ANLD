@@ -115,15 +115,10 @@ integration_category = {
 		available = {
 			has_manpower > 2500
 			has_equipment = { infantry_equipment > 2499 }
-			owns_state = 74
 			controls_state = 74
-			owns_state = 75
 			controls_state = 75
-			owns_state = 72
-			controls_state = 72
-			owns_state = 9
+			controls_state = 972
 			controls_state = 9
-			owns_state = 69
 			controls_state = 69
 		}
 		fire_only_once = no
@@ -132,7 +127,7 @@ integration_category = {
 			OR = {
 				74 = { NOT = { is_core_of = POL } } 
 				75 = { NOT = { is_core_of = POL } } 
-				72 = { NOT = { is_core_of = POL } } 
+				972 = { NOT = { is_core_of = POL } } 
 				9 = { NOT = { is_core_of = POL } } 
 				69 = { NOT = { is_core_of = POL } } 
 			}
@@ -150,7 +145,7 @@ integration_category = {
 			}
 			74 = { add_core_of = POL } 
 			75 = { add_core_of = POL } 
-			72 = { add_core_of = POL } 
+			972 = { add_core_of = POL } 
 			9 = { add_core_of = POL } 
 			69 = { add_core_of = POL }  
 		}
@@ -163,13 +158,9 @@ integration_category = {
 		available = {
 			has_manpower > 3000
 			has_equipment = { infantry_equipment > 2999 }
-			owns_state = 834
 			controls_state = 834
-			owns_state = 197
 			controls_state = 197
-			owns_state = 192
 			controls_state = 192
-			owns_state = 203
 			controls_state = 203
 		}
 		fire_only_once = no
@@ -2205,7 +2196,7 @@ seek_enemies_category = {
 		available = {
 			AUS = {owns_state = 74}
 			AUS = {owns_state = 75}
-			AUS = {owns_state = 72}
+			AUS = {owns_state = 972}
 			AUS = {owns_state = 9}
 			AUS = {owns_state = 69}
 			AUS = {owns_state = 664}
@@ -2224,7 +2215,7 @@ seek_enemies_category = {
 				add_state_claim = 69
 				add_state_claim = 75
 				add_state_claim = 74
-				add_state_claim = 72
+				add_state_claim = 972
 			}
 			HUN = {
 				add_state_claim = 70
@@ -2359,7 +2350,7 @@ seek_enemies_category = {
 				OR = {
 					NOT = {owns_state = 74}
 					NOT = {owns_state = 75}
-					NOT = {owns_state = 72}
+					NOT = {owns_state = 972}
 					NOT = {owns_state = 9}
 					NOT = {owns_state = 69}
 				}
@@ -2367,7 +2358,7 @@ seek_enemies_category = {
 			OR = {
 				74 = { owner = { NOT = { is_in_faction_with = POL } } }
 				75 = { owner = { NOT = { is_in_faction_with = POL } } }
-				72 = { owner = { NOT = { is_in_faction_with = POL } } }
+				972 = { owner = { NOT = { is_in_faction_with = POL } } }
 				9 = { owner = { NOT = { is_in_faction_with = POL } } }
 				69 = { owner = { NOT = { is_in_faction_with = POL } } }
 			}
@@ -2375,7 +2366,7 @@ seek_enemies_category = {
 				limit = {
 					AUS = {owns_state = 74}
 					AUS = {owns_state = 75}
-					AUS = {owns_state = 72}
+					AUS = {owns_state = 972}
 					AUS = {owns_state = 9}
 					AUS = {owns_state = 69}
 					AUS = {NOT = { is_in_faction_with = POL }}
@@ -2390,8 +2381,8 @@ seek_enemies_category = {
 		complete_effect = {
 			if = { limit = { NOT = { 
 					owns_state = 74 
-					owns_state = 72
-					owns_state = 72
+					owns_state = 972
+					owns_state = 75
 					owns_state = 9
 					owns_state = 69
 				} }
@@ -2399,8 +2390,8 @@ seek_enemies_category = {
 					limit = { 
 						OR = {
 							owns_state = 74 
-							owns_state = 72
-							owns_state = 72
+							owns_state = 972
+							owns_state = 75
 							owns_state = 9
 							owns_state = 69
 						}
@@ -2418,21 +2409,21 @@ seek_enemies_category = {
 					NOT = {
 						74 = { is_claimed_by = POL }
 						75 = { is_claimed_by = POL }
-						72 = { is_claimed_by = POL }
+						972 = { is_claimed_by = POL }
 						9 = { is_claimed_by = POL }
 						69 = { is_claimed_by = POL }
 					} 
 				}
 				add_state_claim = 74
 				add_state_claim = 75
-				add_state_claim = 72
+				add_state_claim = 972
 				add_state_claim = 9
 				add_state_claim = 69
 			} 
 			if = { limit = { NOT = { 
 					owns_state = 74 
-					owns_state = 72
-					owns_state = 72
+					owns_state = 972
+					owns_state = 75
 					owns_state = 9
 					owns_state = 69
 				} }
@@ -2440,8 +2431,8 @@ seek_enemies_category = {
 					limit = {
 						OR = {
 							owns_state = 74 
-							owns_state = 72
-							owns_state = 72
+							owns_state = 972
+							owns_state = 75
 							owns_state = 9
 							owns_state = 69
 						}
@@ -2451,7 +2442,7 @@ seek_enemies_category = {
 							type = take_claimed_state
 							target = PREV
 							generator = {
-								74 75 72 9 69 
+								74 75 972 9 69 
 							}
 						}
 					}
@@ -2465,8 +2456,8 @@ seek_enemies_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -2478,8 +2469,8 @@ seek_enemies_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -2491,8 +2482,8 @@ seek_enemies_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -2504,8 +2495,8 @@ seek_enemies_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -2517,8 +2508,8 @@ seek_enemies_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -2530,8 +2521,8 @@ seek_enemies_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -2544,8 +2535,8 @@ seek_enemies_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -2574,8 +2565,8 @@ seek_enemies_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -2605,8 +2596,8 @@ seek_enemies_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -2642,8 +2633,8 @@ seek_enemies_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -2657,8 +2648,8 @@ seek_enemies_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -5978,6 +5969,7 @@ seek_empire_category = {
 				controls_state = 66
 				controls_state = 86
 				controls_state = 92
+				controls_state = 72
 				controls_state = 97
 				controls_state = 94
 				controls_state = 93
@@ -6002,7 +5994,7 @@ seek_empire_category = {
 				tooltip = POL_custom_trigger_tooltip_6
 				controls_state = 9
 				controls_state = 69
-				controls_state = 72
+				controls_state = 972
 				controls_state = 75
 				controls_state = 74
 			}
@@ -6213,6 +6205,7 @@ seek_empire_category = {
 				controls_state = 66
 				controls_state = 86
 				controls_state = 92
+				controls_state = 72
 				controls_state = 97
 				controls_state = 94
 				controls_state = 93
@@ -6230,7 +6223,7 @@ seek_empire_category = {
 				tooltip = POL_custom_trigger_tooltip_6
 				controls_state = 9
 				controls_state = 69
-				controls_state = 72
+				controls_state = 972
 				controls_state = 75
 				controls_state = 74
 			}
@@ -6554,6 +6547,7 @@ seek_empire_category = {
 				controls_state = 66
 				controls_state = 86
 				controls_state = 92
+				controls_state = 72
 				controls_state = 97
 				controls_state = 94
 				controls_state = 93
@@ -6571,7 +6565,7 @@ seek_empire_category = {
 				tooltip = POL_custom_trigger_tooltip_6
 				controls_state = 9
 				controls_state = 69
-				controls_state = 72
+				controls_state = 972
 				controls_state = 75
 				controls_state = 74
 			}
@@ -6622,7 +6616,7 @@ seek_empire_category = {
 				tooltip = POL_custom_trigger_tooltip_6
 				controls_state = 9
 				controls_state = 69
-				controls_state = 72
+				controls_state = 972
 				controls_state = 75
 				controls_state = 74
 			}
@@ -12991,7 +12985,8 @@ new_revolution_category = {
 				controls_state = 67 
 				controls_state = 66 
 				controls_state = 86 
-				controls_state = 92 
+				controls_state = 92
+				controls_state = 72
 				controls_state = 97 
 				controls_state = 94 
 				controls_state = 93 
@@ -13026,7 +13021,7 @@ new_revolution_category = {
 				tooltip = POL_custom_trigger_tooltip_6
 				controls_state = 9
 				controls_state = 69
-				controls_state = 72
+				controls_state = 972
 				controls_state = 75
 				controls_state = 74
 			}
@@ -13348,7 +13343,8 @@ new_revolution_category = {
 						state = 67 
 						state = 66 
 						state = 86 
-						state = 92 
+						state = 92
+						state = 72
 						state = 97 
 						state = 94 
 						state = 93 
@@ -13374,7 +13370,7 @@ new_revolution_category = {
 						state = 53
 						state = 9
 						state = 69
-						state = 72
+						state = 972
 						state = 75
 						state = 74
 						state = 70
@@ -21408,6 +21404,7 @@ sarmatia_decisions_category = {
 					state = 89
 					state = 91
 					state = 92
+					state = 72
 					state = 93
 					state = 94
 					state = 97
@@ -21751,9 +21748,9 @@ wettins_foreign_policy_decisions_category = {
 					}
 				}
 				OR = {
-					controls_state = 72
+					controls_state = 972
 					AND = {
-						72 = {
+						972 = {
 							controller = {
 								is_subject_of = POL
 							}
@@ -22384,7 +22381,7 @@ wettins_foreign_policy_decisions_category = {
 				NOT = {
 					owns_state = 75
 					owns_state = 74
-					owns_state = 72
+					owns_state = 972
 					owns_state = 9
 					owns_state = 69
 				}
@@ -22394,7 +22391,7 @@ wettins_foreign_policy_decisions_category = {
 			OR = {
 				74 = { owner = { NOT = { is_in_faction_with = POL } } }
 				75 = { owner = { NOT = { is_in_faction_with = POL } } }
-				72 = { owner = { NOT = { is_in_faction_with = POL } } }
+				972 = { owner = { NOT = { is_in_faction_with = POL } } }
 				9 = { owner = { NOT = { is_in_faction_with = POL } } }
 				69 = { owner = { NOT = { is_in_faction_with = POL } } }
 			}
@@ -22409,8 +22406,8 @@ wettins_foreign_policy_decisions_category = {
 				limit = { 
 					NOT = { 
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 972
+						owns_state = 75
 						owns_state = 9
 						owns_state = 69
 					} 
@@ -22419,8 +22416,8 @@ wettins_foreign_policy_decisions_category = {
 					limit = {
 						OR = {
 							owns_state = 74 
-							owns_state = 72
-							owns_state = 72
+							owns_state = 75
+							owns_state = 972
 							owns_state = 9
 							owns_state = 69
 						}
@@ -22438,14 +22435,14 @@ wettins_foreign_policy_decisions_category = {
 					NOT = {
 						74 = { is_claimed_by = POL }
 						75 = { is_claimed_by = POL }
-						72 = { is_claimed_by = POL }
+						972 = { is_claimed_by = POL }
 						9 = { is_claimed_by = POL }
 						69 = { is_claimed_by = POL }
 					} 
 				}
 				add_state_claim = 74
 				add_state_claim = 75
-				add_state_claim = 72
+				add_state_claim = 972
 				add_state_claim = 9
 				add_state_claim = 69
 			} 
@@ -22453,8 +22450,8 @@ wettins_foreign_policy_decisions_category = {
 				limit = { 
 					NOT = { 
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					} 
@@ -22463,8 +22460,8 @@ wettins_foreign_policy_decisions_category = {
 					limit = {
 						OR = {
 							owns_state = 74 
-							owns_state = 72
-							owns_state = 72
+							owns_state = 75
+							owns_state = 972
 							owns_state = 9
 							owns_state = 69
 						}
@@ -22474,7 +22471,7 @@ wettins_foreign_policy_decisions_category = {
 							type = take_claimed_state
 							target = PREV
 							generator = {
-								74 75 72 9 69 
+								74 75 972 9 69 
 							}
 						}
 					}
@@ -22488,8 +22485,8 @@ wettins_foreign_policy_decisions_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -22501,8 +22498,8 @@ wettins_foreign_policy_decisions_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -22514,8 +22511,8 @@ wettins_foreign_policy_decisions_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -22527,8 +22524,8 @@ wettins_foreign_policy_decisions_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -22540,8 +22537,8 @@ wettins_foreign_policy_decisions_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -22553,8 +22550,8 @@ wettins_foreign_policy_decisions_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -22567,8 +22564,8 @@ wettins_foreign_policy_decisions_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -22597,8 +22594,8 @@ wettins_foreign_policy_decisions_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -22641,8 +22638,8 @@ wettins_foreign_policy_decisions_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -22656,8 +22653,8 @@ wettins_foreign_policy_decisions_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 9725
 						owns_state = 9
 						owns_state = 69
 					}
@@ -22672,8 +22669,8 @@ wettins_foreign_policy_decisions_category = {
 				any_country = {
 					OR = {
 						owns_state = 74 
-						owns_state = 72
-						owns_state = 72
+						owns_state = 75
+						owns_state = 972
 						owns_state = 9
 						owns_state = 69
 					}
@@ -23998,21 +23995,13 @@ wettins_foreign_policy_decisions_category = {
 		available = {
 			has_manpower > 1500
 			has_equipment = { infantry_equipment > 1499 }
-			owns_state = 202
 			controls_state = 202
-			owns_state = 201
 			controls_state = 201
-			owns_state = 199
 			controls_state = 199
-			owns_state = 198
 			controls_state = 198
-			owns_state = 203
 			controls_state = 203
-			owns_state = 192
 			controls_state = 192
-			owns_state = 197
 			controls_state = 197
-			owns_state = 834
 			controls_state = 834
 		}
 		fire_only_once = no
