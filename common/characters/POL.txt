@@ -5309,15 +5309,15 @@ characters={
 		}
 	}
 	POL_deluge_zygalski = {##Henryk Zygalski
-		name = POL_Character_deluge_zygalski
-		portraits={
-			civilian={
-				small=GFX_henryk_zygalski_picture_small
-			}
-		}
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
+			}
+			name = POL_Character_deluge_zygalski
+			portraits={
+				civilian={
+					small=GFX_henryk_zygalski_picture_small
+				}
 			}
 			advisor={
 				slot = intelligence_chief_slot
@@ -5328,7 +5328,7 @@ characters={
 				}
 				cost = 150
 				available = { 
-					
+					has_completed_focus = POL_cipher_bureau
 				}
 				traits = {
 					genius_cryptologist
@@ -5343,6 +5343,12 @@ characters={
 					has_dlc = "La Resistance"
 				}
 			}
+			name = POL_Character_deluge_zygalski
+			portraits={
+				civilian={
+					small=GFX_henryk_zygalski_picture_small
+				}
+			}
 			advisor={
 				slot = intelligence_chief_slot
 				idea_token = POL_deluge_zygalski
@@ -5352,7 +5358,7 @@ characters={
 				}
 				cost = 150
 				available = { 
-					
+					has_completed_focus = POL_cipher_bureau
 				}
 				traits = {
 					infiltration_expert
@@ -5361,7 +5367,6 @@ characters={
 				ledger = civilian
 			}
 		}
-		
 	}
 	POL_deluge_rutkowski = {##Jerzy Rutkowski
 		name = POL_Character_deluge_rutkowski
@@ -5394,15 +5399,15 @@ characters={
 		}
 	}
 	POL_deluge_kowalewski = {##Jan Kowalewski
-		name = POL_Character_deluge_kowalewski
-		portraits={
-			civilian={
-				small=GFX_jan_kowalewski_picture_small
-			}
-		}
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
+			}
+			name = POL_Character_deluge_kowalewski
+			portraits={
+				civilian={
+					small=GFX_jan_kowalewski_picture_small
+				}
 			}
 			advisor={
 				slot = intelligence_chief_slot
@@ -5415,7 +5420,8 @@ characters={
 				}
 				cost = 150
 				available = { 
-					has_intelligence_agency  = yes
+					has_intelligence_agency = yes
+					has_completed_focus = POL_modernize_2nd_department_of_general_staff
 				}
 				traits = {
 					head_of_intelligence
@@ -5423,11 +5429,17 @@ characters={
 				ai_will_do = { factor = 1.0 }
 				ledger = civilian
 			}
-		}
+		}	
 		instance = {
 			allowed = {
 				NOT = {
 					has_dlc = "La Resistance"
+				}
+			}
+			name = POL_Character_deluge_kowalewski
+			portraits={
+				civilian={
+					small=GFX_jan_kowalewski_picture_small
 				}
 			}
 			advisor={
@@ -5441,7 +5453,7 @@ characters={
 				}
 				cost = 150
 				available = { 
-					
+					has_completed_focus = POL_modernize_2nd_department_of_general_staff
 				}
 				traits = {
 					disinformation_expert

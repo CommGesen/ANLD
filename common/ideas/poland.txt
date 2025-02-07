@@ -3411,6 +3411,357 @@ ideas = {
 				communism_acceptance = -45
 			}
 		}
+		deluge_spirit_dwojka_modernized_lar = {
+			picture = generic_spy_intel
+			allowed = {
+				tag = POL
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				operative_slot = 1
+				agency_upgrade_time = -0.2
+			}
+		}
+		deluge_spirit_dwojka_modernized_2_lar = {
+			picture = generic_spy_intel
+			allowed = {
+				tag = POL
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				operative_slot = 1
+				agency_upgrade_time = -0.2
+				intelligence_agency_defense = -0.3
+			}
+		}
+		deluge_spirit_dwojka_modernized_3_lar = {
+			picture = generic_spy_intel
+			allowed = {
+				tag = POL
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				operative_slot = 1
+				agency_upgrade_time = -0.2
+				intelligence_agency_defense = -0.3
+				intel_network_gain_factor = -0.2
+				navy_intel_factor = -0.2
+				army_intel_factor = -0.2
+				airforce_intel_factor = -0.2
+			}
+		}
+		deluge_spirit_dwojka_modernized_non_lar = {
+			picture = generic_spy_intel
+			allowed = {
+				tag = POL
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				decryption_factor = 0.15
+				encryption_factor = 0.15
+			}
+		}
+		deluge_spirit_dwojka_modernized_2_non_lar = {
+			picture = generic_spy_intel
+			allowed = {
+				tag = POL
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				decryption_factor = 0.25
+				encryption_factor = 0.15
+			}
+		}
+		deluge_spirit_dwojka_modernized_3_non_lar = {
+			picture = generic_spy_intel
+			allowed = {
+				tag = POL
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				decryption_factor = 0.25
+				encryption_factor = 0.25
+				navy_intel_factor = -0.2
+				army_intel_factor = -0.2
+				airforce_intel_factor = -0.2
+			}
+		}
+		deluge_spirit_sepewe = {
+			picture = generic_radar #change later
+			allowed = {
+				tag = POL
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				lend_lease_tension = -0.3
+				ai_license_acceptance = 200
+				license_purchase_cost = -0.3
+			}
+		}
+		deluge_spirit_cipher_bureau_lar = {
+			picture = generic_radar
+			allowed = {
+				tag = POL
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				crypto_strength = 2
+			}
+		}
+		deluge_spirit_cipher_bureau_2_lar = {
+			picture = generic_radar
+			allowed = {
+				tag = POL
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				crypto_strength = 2
+				decryption_power = 25
+			}
+		}
+		deluge_spirit_cipher_bureau_3_lar = {
+			picture = generic_radar
+			allowed = {
+				tag = POL
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				crypto_strength = 2
+				decryption_power = 50
+			}
+		}
+		deluge_spirit_cipher_bureau_4_lar = {
+			picture = generic_radar
+			allowed = {
+				tag = POL
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				crypto_strength = 2
+				decryption_power = 75
+			}
+		}
+		deluge_spirit_cipher_bureau_5_lar = {
+			picture = generic_radar
+			allowed = {
+				tag = POL
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				crypto_strength = 2
+				decryption_power = 100
+			}
+		}
+		deluge_spirit_cipher_bureau_non_lar = {
+			picture = generic_radar
+			allowed = {
+				tag = POL
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				encryption_factor = 0.25
+			}
+		}
+		deluge_spirit_cipher_bureau_2_non_lar = {
+			picture = generic_radar
+			allowed = {
+				tag = POL
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				decryption_factor = 0.10
+				encryption_factor = 0.25
+			}
+		}
+		deluge_spirit_cipher_bureau_3_non_lar = {
+			picture = generic_radar
+			allowed = {
+				tag = POL
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				decryption_factor = 0.20
+				encryption_factor = 0.25
+			}
+		}
+		deluge_spirit_cipher_bureau_4_non_lar = {
+			picture = generic_radar
+			allowed = {
+				tag = POL
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				decryption_factor = 0.30
+				encryption_factor = 0.25
+			}
+		}
+		deluge_spirit_cipher_bureau_5_non_lar = {
+			picture = generic_radar
+			allowed = {
+				tag = POL
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				decryption_factor = 0.40
+				encryption_factor = 0.25
+			}
+		}
+		deluge_spirit_polish_trade_intelligence_agency = {
+			picture = generic_improved_industries
+			allowed = {
+				tag = POL
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				civilian_intel_factor = 0.4
+				civilian_intel_to_others = -20
+				civilian_intel_decryption_bonus = 25
+			}
+		}
 	}
 	tank_manufacturer = {
 		designer = yes
@@ -3672,24 +4023,6 @@ ideas = {
 			}
 			traits = { 
 				fb_designer_trait 
-			}
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		sepewe = {
-			picture = designer_sepewe
-			allowed = {
-				original_tag = POL
-			}
-			available = {
-				
-			}
-			research_bonus = {
-				
-			}
-			traits = { 
-				sepewe_designer_trait 
 			}
 			ai_will_do = {
 				factor = 1

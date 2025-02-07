@@ -238,8 +238,20 @@ country_event = {##Otto von Habsburg
 			factor = 1
 		}
 	}
-	option = {##vanilla
+	option = {##vanilla with crown
 		name = deluge_portraits.6.b
+		set_portraits = {
+			character = AUS_otto_i
+			army = { large ="GFX_portrait_AUS_otto_von_habsburg_with_crown" }
+			civilian = { large ="GFX_portrait_AUS_otto_von_habsburg_with_crown" }
+			navy = { large ="GFX_portrait_AUS_otto_von_habsburg_with_crown" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##vanilla
+		name = deluge_portraits.6.c
 		set_portraits = {
 			character = AUS_otto_i
 			army = { large ="GFX_Portrait_hungary_otto_von_hapsburg" }
@@ -251,7 +263,7 @@ country_event = {##Otto von Habsburg
 		}
 	}
 	option = {##alternative
-		name = deluge_portraits.6.c
+		name = deluge_portraits.6.e
 		set_portraits = {
 			character = AUS_otto_i
 			army = { large ="GFX_portrait_AUS_otto_von_habsburg_ALT" }

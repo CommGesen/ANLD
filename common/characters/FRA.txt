@@ -1276,15 +1276,15 @@ characters={
 	}
 	##other slots:
 	FRA_deluge_louis_baril={
-		name=FRA_deluge_louis_baril_name
-		portraits={
-			civilian={##small portrait to do
-				small="GFX_louis_baril_picture_small"
-			}
-		}
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
+			}
+			name=FRA_deluge_louis_baril_name
+			portraits={
+				civilian={##small portrait to do
+					small="GFX_louis_baril_picture_small"
+				}
 			}
 			advisor={
 				slot = intelligence_chief_slot
@@ -1310,6 +1310,12 @@ characters={
 			allowed = {
 				NOT = {
 					has_dlc = "La Resistance"
+				}
+			}
+			name=FRA_deluge_louis_baril_name
+			portraits={
+				civilian={##small portrait to do
+					small="GFX_louis_baril_picture_small"
 				}
 			}
 			advisor={

@@ -26445,7 +26445,7 @@ focus_tree = {
 	focus = {
 		id = POL_kor
 		icon = GFX_focus_ETH_re-convene_the_parliament
-		x = 8
+		x = 10
 		y = 1
 		search_filters = {FOCUS_FILTER_LAND_ARMY FOCUS_FILTER_NAVY FOCUS_FILTER_AVITATION}
 		prerequisite = { focus = POL_land_army_reform}
@@ -27250,7 +27250,7 @@ focus_tree = {
 	focus = {
 		id = POL_air_reform
 		icon = GFX_goal_generic_build_airforce
-		x = 16
+		x = 18
 		y = 1
 		search_filters = {FOCUS_FILTER_AVITATION}
 		prerequisite = { focus = POL_start_army_reform }
@@ -27616,9 +27616,409 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
+		id = POL_modernize_2nd_department_of_general_staff
+		icon = GFX_focus_POL_expand_polish_intelligence
+		x = 24
+		y = 1
+		search_filters = {}
+		prerequisite = { focus = POL_start_army_reform }
+		relative_position_id = POL_start_army_reform
+		cost = 5
+		available = {
+			has_country_flag = POL_army_problem_solved
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				if = {
+					limit = {
+						has_intelligence_agency = no
+					}
+					create_intelligence_agency = {
+						name = "Dwójka"
+						icon = agency_logo_pol
+					}
+				}
+				add_ideas = deluge_spirit_dwojka_modernized_lar
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "La Resistance"
+					}
+				}
+				add_ideas = deluge_spirit_dwojka_modernized_non_lar
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_cipher_bureau
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		search_filters = {}
+		prerequisite = { focus = POL_modernize_2nd_department_of_general_staff }
+		relative_position_id = POL_modernize_2nd_department_of_general_staff
+		cost = 5
+		available = {
+			
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				upgrade_intelligence_agency = upgrade_form_department
+				add_ideas = deluge_spirit_cipher_bureau_lar
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "La Resistance"
+					}
+				}
+				add_ideas = deluge_spirit_cipher_bureau_non_lar
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_the_grill_method
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		search_filters = {}
+		prerequisite = { focus = POL_cipher_bureau }
+		relative_position_id = POL_cipher_bureau
+		cost = 5
+		available = {
+			
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				swap_ideas = {
+					add_idea = deluge_spirit_cipher_bureau_2_lar
+					remove_idea = deluge_spirit_cipher_bureau_lar
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "La Resistance"
+					}
+				}
+				swap_ideas = {
+					add_idea = deluge_spirit_cipher_bureau_2_non_lar
+					remove_idea = deluge_spirit_cipher_bureau_non_lar
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_cyclometer
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		search_filters = {}
+		prerequisite = { focus = POL_the_grill_method }
+		relative_position_id = POL_the_grill_method
+		cost = 5
+		available = {
+			
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				swap_ideas = {
+					add_idea = deluge_spirit_cipher_bureau_3_lar
+					remove_idea = deluge_spirit_cipher_bureau_2_lar
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "La Resistance"
+					}
+				}
+				swap_ideas = {
+					add_idea = deluge_spirit_cipher_bureau_3_non_lar
+					remove_idea = deluge_spirit_cipher_bureau_2_non_lar
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_cryptologic_bomb
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		search_filters = {}
+		prerequisite = { focus = POL_cyclometer }
+		relative_position_id = POL_cyclometer
+		cost = 5
+		available = {
+			
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				swap_ideas = {
+					add_idea = deluge_spirit_cipher_bureau_4_lar
+					remove_idea = deluge_spirit_cipher_bureau_3_lar
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "La Resistance"
+					}
+				}
+				swap_ideas = {
+					add_idea = deluge_spirit_cipher_bureau_4_non_lar
+					remove_idea = deluge_spirit_cipher_bureau_3_non_lar
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_zygalskis_sheets
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		search_filters = {}
+		prerequisite = { focus = POL_cryptologic_bomb }
+		relative_position_id = POL_cryptologic_bomb
+		cost = 5
+		available = {
+			
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				swap_ideas = {
+					add_idea = deluge_spirit_cipher_bureau_5_lar
+					remove_idea = deluge_spirit_cipher_bureau_4_lar
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "La Resistance"
+					}
+				}
+				swap_ideas = {
+					add_idea = deluge_spirit_cipher_bureau_5_non_lar
+					remove_idea = deluge_spirit_cipher_bureau_4_non_lar
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_independent_information_reports
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 2
+		y = 1
+		search_filters = {}
+		prerequisite = { focus = POL_modernize_2nd_department_of_general_staff }
+		relative_position_id = POL_modernize_2nd_department_of_general_staff
+		cost = 5
+		available = {
+			
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				swap_ideas = {
+					add_idea = deluge_spirit_dwojka_modernized_lar
+					remove_idea = deluge_spirit_dwojka_modernized_2_lar
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "La Resistance"
+					}
+				}
+				swap_ideas = {
+					add_idea = deluge_spirit_dwojka_modernized_non_lar
+					remove_idea = deluge_spirit_dwojka_modernized_2_non_lar
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_independent_situation_reports
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		search_filters = {}
+		prerequisite = { focus = POL_independent_information_reports }
+		relative_position_id = POL_independent_information_reports
+		cost = 5
+		available = {
+			
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				swap_ideas = {
+					add_idea = deluge_spirit_dwojka_modernized_2_lar
+					remove_idea = deluge_spirit_dwojka_modernized_3_lar
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "La Resistance"
+					}
+				}
+				swap_ideas = {
+					add_idea = deluge_spirit_dwojka_modernized_2_non_lar
+					remove_idea = deluge_spirit_dwojka_modernized_3_non_lar
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_polish_trade_intelligence_agency
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		search_filters = {}
+		prerequisite = { focus = POL_independent_information_reports }
+		relative_position_id = POL_independent_information_reports
+		cost = 5
+		available = {
+			
+		}
+		completion_reward = {
+			add_ideas = deluge_spirit_polish_trade_intelligence_agency
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_sepewe
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 4
+		y = 1
+		search_filters = {}
+		prerequisite = { focus = POL_modernize_2nd_department_of_general_staff }
+		relative_position_id = POL_modernize_2nd_department_of_general_staff
+		cost = 5
+		available = {
+			
+		}
+		completion_reward = {
+			add_ideas = deluge_spirit_sepewe
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
 		id = POL_hire_economists
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 215
+		x = 225
 		y = 0
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
 		cost = 5
@@ -29170,6 +29570,124 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
+		id = POL_reactor_ewa
+		icon = GFX_focus_generic_nuclear_development
+		x = -1
+		y = 1
+		search_filters = {}
+		prerequisite = { focus = POL_choose_university}
+		relative_position_id = POL_choose_university
+		cost = 6
+		available = {
+			
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = POL_lazy_research_bonus
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
+			custom_effect_tooltip = POL_custom_effect_tooltip_274
+			if = {
+				limit = {
+					controls_province = 12562
+				}
+				72 = {
+					add_building_construction = {
+						type = nuclear_facility
+						level = 1
+						instant_build = yes
+						province = 12562
+					}
+				}
+				add_victory_points = {
+					province = 12562
+					value = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_reactor_maria
+		icon = GFX_focus_GER_wunderwaffe_inner_circle
+		x = 0
+		y = 1
+		search_filters = {}
+		prerequisite = { focus = POL_reactor_ewa}
+		relative_position_id = POL_reactor_ewa
+		cost = 8
+		available = {
+			has_tech = nuclear_reactor
+		}
+		completion_reward = {
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 0.5
+			}
+			72 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = nuclear_reactor
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_meteor_rocket
+		icon = GFX_focus_rocketry
+		x = 1
+		y = 1
+		search_filters = {}
+		prerequisite = { focus = POL_choose_university}
+		relative_position_id = POL_choose_university
+		cost = 6
+		available = {
+			
+		}
+		completion_reward = {
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.5
+			}
+			add_tech_bonus = {
+				name = POL_lazy_research_bonus
+				bonus = 1.0
+				uses = 2
+				category = rocketry
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
 		id = POL_warsaw_central_railway_station
 		icon = GFX_focus_POL_warsaw_main_station
 		x = 0
@@ -29480,7 +29998,7 @@ focus_tree = {
 		id = POL_introudce_polish_zloty
 		icon = GFX_focus_POL_polish_zloty
 		x = 0
-		y = 3
+		y = 5
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY}
 		prerequisite = { focus = POL_help_debica_tire_company }
 		prerequisite = { focus = POL_support_krolewiec focus = POL_support_gdansk}
