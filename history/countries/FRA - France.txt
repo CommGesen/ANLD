@@ -258,7 +258,7 @@ if = {
 			engine_type_slot = engine_1_1x
 			special_type_slot_1 = lmg_defense_turret
 		}
-		icon = "GFX_FRA_CAS1_medium"
+		icon = "GFX_FRA_CAS0_medium"
 		obsolete = yes
 	}
 	create_equipment_variant = {
@@ -269,6 +269,7 @@ if = {
 			engine_type_slot = engine_1_1x
 			special_type_slot_1 = empty
 		}
+		icon = "GFX_FRA_iw_small_airframe_medium"
 		obsolete = yes
 	}
 	create_equipment_variant = {
@@ -279,7 +280,7 @@ if = {
 			engine_type_slot = engine_1_1x
 			special_type_slot_1 = empty
 		}
-		icon = "GFX_FRA_light_plane_2_medium"
+		icon = "GFX_FRA_iw_small_airframe_medium_2"
 		obsolete = yes
 	}
 	create_equipment_variant = {
@@ -290,7 +291,7 @@ if = {
 			engine_type_slot = engine_1_1x
 			special_type_slot_1 = empty
 		}
-		icon = "GFX_FRA_light_plane_2_medium"
+		icon = "GFX_FRA_cv_early_fighter_medium"
 		obsolete = yes
 	}
 	create_equipment_variant = {
@@ -301,7 +302,7 @@ if = {
 			engine_type_slot = engine_1_1x
 			special_type_slot_1 = lmg_defense_turret
 		}
-		icon = "GFX_FRA_naval_bomber1_medium"
+		icon = "GFX_FRA_cv_naval_bomber1_medium"
 		obsolete = yes
 	}
 	create_equipment_variant = {
@@ -313,7 +314,7 @@ if = {
 			engine_type_slot = engine_2_1x
 			special_type_slot_1 = empty
 		}
-		icon = "GFX_FRA_light_plane_2_medium"
+		icon = "GFX_FRA_iw_small_airframe_medium_2"
 	}
 	create_equipment_variant = {
 		name = "Latécoère 296" #
@@ -334,10 +335,10 @@ if = {
 			engine_type_slot = engine_2_2x
 			special_type_slot_1 = lmg_defense_turret
 		}
-		icon = "GFX_FRA_early_bomber_medium"
+		icon = "GFX_FRA_early_bomber_medium_2"
 	}
 	create_equipment_variant = {
-		name = "F.222" #
+		name = "F.221" #
 		type = large_plane_airframe_0
 		modules = {
 			fixed_main_weapon_slot = large_bomb_bay
@@ -345,7 +346,7 @@ if = {
 			engine_type_slot = engine_2_4x
 			special_type_slot_1 = lmg_defense_turret
 		}
-		icon = "GFX_FRA_strategic_bomber1_medium"
+		icon = "GFX_FRA_iw_large_airframe_medium"
 	}
 	create_equipment_variant = {
 		name = "M.B. 200" #
@@ -357,6 +358,7 @@ if = {
 			special_type_slot_1 = lmg_defense_turret
 		}
 		obsolete = yes
+		icon = "GFX_FRA_iw_large_airframe_medium"
 	}
 }
 if = {
@@ -450,7 +452,7 @@ if = {
 			tank_nsb_engine_upgrade = 4
 			tank_nsb_armor_upgrade = 5
 		}
-		icon = "GFX_FRA_improved_medium_tank_medium"
+		icon = "GFX_FRA_basic_medium_tank_medium"
 	}
 }
 if = {

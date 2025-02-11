@@ -13,7 +13,7 @@ guiTypes = {
 		{
 			name ="frontend_game_logo"
 			spriteType = "GFX_anld_mainmenu_game_logo"
-			position = { x= -30 y = -10 }
+			position = { x= 0 y = 0 }
 		}
 		
 	}
@@ -41,7 +41,7 @@ guiTypes = {
 			name ="frontend_anld_logo"
 			spriteType = "GFX_anld_mainmenu_mod_logo"
 			pdx_tooltip = "ANLD_mainmenu_tooltip"
-			position = { x = -515 y = 10 } #Edit the position of the logo here!
+			position = { x = -420 y = 30 } #Edit the position of the logo here!
 		}
 
 		iconType = 
