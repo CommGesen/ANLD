@@ -18,16 +18,22 @@ state={
 			dockyard = 2
 			1136 = {
 				naval_base = 6
-
 			}
 			7072 = {
 				naval_base = 3
-
 			}
-
+			11960 = {
+				land_facility = 1
+			}
 		}
 		victory_points = {
 			7072 40
+		}
+		victory_points = {
+			11960 25
+		}
+		victory_points = {
+			1136 1
 		}
 		1939.1.1 = {
 			buildings = {

@@ -21,21 +21,15 @@ state={
 			dockyard = 2
 			9998 = {
 				naval_base = 6
-
+				air_facility = 1
 			}
-
 		}
 		victory_points = {
 			1182 50 
 		}
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 4
-				dockyard = 4
-				industrial_complex = 6
-			}
+		victory_points = {
+			9998 20 
 		}
-
 	}
 
 	provinces={

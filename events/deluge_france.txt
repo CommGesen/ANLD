@@ -87,7 +87,7 @@ country_event = {
 			last_election = "1935.12.17"
 			election_frequency = 48 
 		}
-		set_party_name = { ideology = fascism long_name = FRA_boulangists_party_long name = FRA_boulangists_party }
+		set_party_name = { ideology = fascism long_name = deluge_party_boulangists_party_long name = deluge_party_boulangists_party }
 		promote_character = FRA_deluge_louis_franchet_d_esperey
 		add_ideas = FRA_spirit_emperor_napoleon
 		set_temp_variable = { half_of_monarchism = party_popularity@neutrality }
@@ -169,7 +169,6 @@ country_event = {
 			remove_unit_leader_role = yes
 		}
 		promote_character = FRA_deluge_alexandre_berthier
-		set_party_name = { ideology = neutrality long_name = FRA_berthier_party_long name = FRA_berthier_party_short }
 		hidden_effect = {
 			country_event = {
 				id = deluge_france.7
@@ -190,7 +189,6 @@ country_event = {
 			remove_unit_leader_role = yes
 		}
 		promote_character = FRA_deluge_alexandre_berthier
-		set_party_name = { ideology = neutrality long_name = FRA_berthier_party_long name = FRA_berthier_party_short }
 		hidden_effect = {
 			country_event = {
 				id = deluge_france.7
@@ -254,7 +252,7 @@ country_event = {
 	option = {##Édouard Daladier
 		name = deluge_france.9.a
 		promote_character = FRA_deluge_edouard_daladier
-		set_party_name = { ideology = democratic long_name = FRA_radical_party_name_long name = FRA_radical_party_name }
+		set_party_name = { ideology = democratic long_name = deluge_party_radical_party_name_long name = deluge_party_radical_party_name }
 		set_politics = {
 			ruling_party = democratic
 			elections_allowed = yes
@@ -277,7 +275,7 @@ country_event = {
 	option = {##Albert Sarraut
 		name = deluge_france.9.b
 		promote_character = FRA_deluge_albert_sarraut
-		set_party_name = { ideology = democratic long_name = FRA_radical_party_name_long name = FRA_radical_party_name }
+		set_party_name = { ideology = democratic long_name = deluge_party_radical_party_name_long name = deluge_party_radical_party_name }
 		set_politics = {
 			ruling_party = democratic
 			elections_allowed = yes
@@ -308,7 +306,7 @@ country_event = {
 	option = {##Paul Reynaud
 		name = deluge_france.10.a
 		promote_character = FRA_deluge_paul_reynaud
-		set_party_name = { ideology = democratic long_name = FRA_democratic_republican_alliance_party_long name = FRA_democratic_republican_alliance_party }
+		set_party_name = { ideology = democratic long_name = deluge_party_democratic_republican_alliance_long name = deluge_party_democratic_republican_alliance }
 		set_politics = {
 			ruling_party = democratic
 			elections_allowed = yes
@@ -331,7 +329,7 @@ country_event = {
 	option = {##Pierre-Étienne Flandin
 		name = deluge_france.10.b
 		promote_character = FRA_deluge_pierre_etienne_flandin
-		set_party_name = { ideology = democratic long_name = FRA_democratic_republican_alliance_party_long name = FRA_democratic_republican_alliance_party }
+		set_party_name = { ideology = democratic long_name = deluge_party_democratic_republican_alliance_long name = deluge_party_democratic_republican_alliance }
 		set_politics = {
 			ruling_party = democratic
 			elections_allowed = yes
@@ -633,6 +631,21 @@ country_event = {##elections for radicals
 		set_country_flag = FRA_proudhon_circle_won
 	}
 }
+country_event = {##Maurice Delaunay assassination attempt
+	id = deluge_france.28
+	title = deluge_france.28.t
+	desc = deluge_france.28.d
+	picture = GFX_report_event_maurice_delaunay
+	is_triggered_only = yes
+	option = {#he dies
+		name = deluge_france.28.a
+		
+	}
+	option = {#he lives
+		name = deluge_france.28.b
+		
+	}
+}
 country_event = {##inspection in the army
 	id = deluge_france_lore.1
 	title = deluge_france_lore.1.t
@@ -659,7 +672,7 @@ country_event = {##The last 300 meters
 	id = deluge_france_lore.3
 	title = deluge_france_lore.3.t
 	desc = deluge_france_lore.3.d
-	picture = GFX_report_event_mas36 ##change later
+	picture = GFX_report_event_french_soldiers_running
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
@@ -670,7 +683,7 @@ country_event = {##The Atlantic Line
 	id = deluge_france_lore.4
 	title = deluge_france_lore.4.t
 	desc = deluge_france_lore.4.d
-	picture = GFX_report_event_mas36 ##change later
+	picture = GFX_report_event_french_atlantic_line
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {

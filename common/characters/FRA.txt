@@ -29,7 +29,7 @@ characters={
 			ideology=bonapartist_ideology
 			expire="1965.1.1.1"
 			traits = {
-				
+				great_war_hero
 			}
 		}
 		corps_commander={
@@ -790,6 +790,20 @@ characters={
 			traits={ mentally_ill paranoid }
 			expire="1965.1.1.1"
 			desc = "FRA_deluge_maurice_delaunay_desc"
+		}
+	}
+	FRA_deluge_dumesnil_de_gramont={
+		name=FRA_deluge_dumesnil_de_gramont_name
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/portrait_FRA_dumesnil_de_gramont.dds"
+			}
+		}
+		country_leader={
+			ideology=jacobin_ideology
+			traits={ leftist_freemanson }
+			expire="1965.1.1.1"
+			desc = "FRA_deluge_dumesnil_de_gramont_desc"
 		}
 	}
 	##Francist Movement:
@@ -3007,6 +3021,12 @@ characters={
 			coordination_skill=2
 			desc = "FRA_deluge_paul_ortoli_desc"
 		}
+		scientist = {
+			traits = { }
+			skills = {
+				specialization_naval = 1
+			}
+		}
 	}
 	FRA_deluge_raoul_castex={
 		name=FRA_deluge_raoul_castex_name
@@ -3639,6 +3659,7 @@ characters={
 			}
 		}
 	}
+	#Paul Ortoli is higher, in admirals
 	FRA_deluge_joseph_bethenod = {
 		name = FRA_deluge_joseph_bethenod_name
 		portraits = {
