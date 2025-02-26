@@ -231,3 +231,59 @@ lar_local_recruitment = {
 		}
 	}
 }
+fascism_on_the_rise = {
+	icon = generic_fascism
+	allowed = {
+		NOT = {
+			OR = {
+				tag = POL
+				tag = FRA
+			}
+		}
+	}
+	visible = {
+		
+	}
+}
+democratic_on_the_rise = {
+	icon = generic_democracy
+	allowed = {
+		NOT = {
+			OR = {
+				tag = POL
+				tag = FRA
+			}
+		}
+	}
+	visible = {
+		
+	}
+}
+communism_on_the_rise = {
+	icon = generic_communism
+	allowed = {
+		NOT = {
+			OR = {
+				tag = POL
+				tag = FRA
+			}
+		}
+	}
+	visible = {
+		
+	}
+}
+monarchism_on_the_rise = {
+	icon = generic_monarchism
+	allowed = {
+		NOT = {
+			OR = {
+				tag = POL
+				tag = FRA
+			}
+		}
+	}
+	visible = {
+		
+	}
+}

@@ -3447,7 +3447,7 @@ ideas = {
 			modifier = {
 				operative_slot = 1
 				agency_upgrade_time = -0.2
-				intelligence_agency_defense = -0.3
+				intelligence_agency_defense = 0.3
 			}
 		}
 		deluge_spirit_dwojka_modernized_3_lar = {
@@ -3467,7 +3467,7 @@ ideas = {
 			modifier = {
 				operative_slot = 1
 				agency_upgrade_time = -0.2
-				intelligence_agency_defense = -0.3
+				intelligence_agency_defense = 0.3
 				intel_network_gain_factor = -0.2
 				navy_intel_factor = -0.2
 				army_intel_factor = -0.2

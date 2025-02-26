@@ -755,6 +755,26 @@ ideas = {
 				monthly_population = 0.04
 			}
 		}
+		FRA_spirit_church_purged = {
+			picture = SOV_a_church_of_the_catacombs
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.1
+				monthly_population = -0.30
+			}
+		}
 		FRA_spirit_chaos_in_paris = {
 			picture = spirit_eiffel_tower_burning
 			allowed = {

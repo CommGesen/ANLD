@@ -1,0 +1,129 @@
+﻿add_namespace = deluge_switching_ideologies
+country_event = {##democratic referendum
+	id = deluge_switching_ideologies.1
+	title = deluge_switching_ideologies.1.t
+	desc = deluge_switching_ideologies.1.d
+	picture = GFX_report_event_election_vote
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = deluge_switching_ideologies.1.a
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		add_stability = -0.05
+		ai_chance = {
+			factor = 1000
+		}
+	}
+}
+country_event = {##ultranationalist referendum
+	id = deluge_switching_ideologies.2
+	title = deluge_switching_ideologies.2.t
+	desc = deluge_switching_ideologies.2.d
+	picture = GFX_report_event_election_vote
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = deluge_switching_ideologies.2.a
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		add_stability = -0.05
+		ai_chance = {
+			factor = 1000
+		}
+	}
+}
+country_event = {##radical referendum
+	id = deluge_switching_ideologies.3
+	title = deluge_switching_ideologies.3.t
+	desc = deluge_switching_ideologies.3.d
+	picture = GFX_report_event_election_vote
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = deluge_switching_ideologies.3.a
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		add_stability = -0.05
+		ai_chance = {
+			factor = 1000
+		}
+	}
+}
+country_event = {##monarchist referendum
+	id = deluge_switching_ideologies.4
+	title = deluge_switching_ideologies.4.t
+	desc = deluge_switching_ideologies.4.d
+	picture = GFX_report_event_election_vote
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = deluge_switching_ideologies.4.a
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		add_stability = -0.05
+		ai_chance = {
+			factor = 1000
+		}
+	}
+}
+news_event = {##info for world about democratic referendum
+	id = deluge_switching_ideologies.5
+	title = deluge_switching_ideologies.5.t
+	desc = deluge_switching_ideologies.5.d
+	picture = GFX_news_event_canada_treaty
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_switching_ideologies.5.a
+	}
+}
+news_event = {##info for world about radical referendum
+	id = deluge_switching_ideologies.6
+	title = deluge_switching_ideologies.6.t
+	desc = deluge_switching_ideologies.6.d
+	picture = GFX_news_event_HUN_leninist_gathering
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_switching_ideologies.6.a
+	}
+}
+news_event = {##info for world about ultranationalist referendum
+	id = deluge_switching_ideologies.7
+	title = deluge_switching_ideologies.7.t
+	desc = deluge_switching_ideologies.7.d
+	picture = GFX_news_event_the_megali_idea_fails
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_switching_ideologies.7.a
+	}
+}
+news_event = {##info for world about monarchist referendum
+	id = deluge_switching_ideologies.8
+	title = deluge_switching_ideologies.8.t
+	desc = deluge_switching_ideologies.8.d
+	picture = GFX_news_event_the_mediterranean_alliance
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_switching_ideologies.8.a
+	}
+}

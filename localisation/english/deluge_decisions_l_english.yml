@@ -6,7 +6,21 @@
  recruit_norwegian_generals:0 "Recruit Norwegian Generals"
  MEX_change_surname_to_iturbide:0 "Take the Iturbide Family Name"
  MEX_change_surname_to_habsburg:0 "Take the Habsburg Family Name"
- 
+ ban_neutrality_party:0 "Ban Monarchist Parties"
+ anti_monarchist_raids:0 "Anti-Monarchist Raids"
+ monarchism_on_the_rise:0 "Monarchism on the Rise"
+ prepare_for_monarchist_civil_war:0 "Prepare for Civil War"
+ expand_civil_monarchist_support:0 "Expand Civil Support"
+ army_support_for_monarchist_civil_war:0 "Expand Military Support"
+ ensure_general_loyalty_for_monarchist_civil_war:0 "Ensure Lower Army Command Loyalty"
+ ensure_marshal_loyalty_for_monarchist_civil_war:0 "Ensure Higher Army Command Loyalty"
+ siphon_equipment_stockpiles_for_monarchist_civil_war:0 "Siphone Equipment Stockpiles"
+ formulate_surprise_attack_plan_for_monarchist_civil_war:0 "Formulate Surprise Attack Plan"
+ ignite_the_monarchist_civil_war:0 "Ignite the Civil War"
+ rebuild_the_nation_monarchism:0 "Rebuild the Nation"
+ open_up_political_discourse_monarchist:0 "Open Up Political Discourse"
+ discredit_government_monarchist:0 "Discredit the Government"
+ hold_the_monarchist_national_referendum:0 "Hold the National Referendum"
  ##portraits
  changing_portraits_category:0 "Possible Portraits"
  portraits_edward_rydz_smigly:0 "[POL_deluge_edward_rydz_smigly.GetName]"
@@ -21,7 +35,11 @@
  portraits_francois_de_la_rocque:0 "[FRA_deluge_francois_de_la_rocque.GetName]"
  portraits_marcel_bucard:0 "[FRA_deluge_marcel_bucard.GetName]"
  portraits_marcel_deat:0 "[FRA_deluge_marcel_deat.GetName]"
- 
+ portraits_maria_josepha_sophia_de_iturbide:0 "[MEX_maria_josepha_sophia_de_iturbide.GetName]"
+ portraits_rene_olry:0 "[FRA_deluge_rene_olry.GetName]"
+ portraits_aubert_frere:0 "[FRA_deluge_aubert_frere.GetName]"
+ portraits_aime_doumenc:0 "[FRA_deluge_aime_doumenc.GetName]"
+ portraits_antoine_marie_benoit_besson:0 "[FRA_deluge_antoine_marie_benoit_besson.GetName]"
  ###POLAND###
  
  integration_category:0 "Integration"

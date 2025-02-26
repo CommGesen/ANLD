@@ -1771,7 +1771,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_stanislaw_haller.dds"
-				small = GFX_marian_kukiel_picture_small
+				small = GFX_stanislaw_haller_picture_small
 			}
 		}
 		corps_commander = {
@@ -1789,7 +1789,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_radoslaw_dzierzykraj_stokalski.dds"
-				small = GFX_marian_kukiel_picture_small
+				small = GFX_radoslaw_dzierzykraj_stokalski_portrait_small
 			}
 		}
 		field_marshal = {
@@ -1879,7 +1879,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_tadeusz_piskor.dds"
-				small = GFX_marian_kukiel_picture_small
+				small = GFX_tadeusz_piskor_picture_small
 			}
 		}
 		corps_commander = {
@@ -1897,7 +1897,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_juliusz_zulauf.dds"
-				small = GFX_marian_kukiel_picture_small
+				small = GFX_juliusz_zulauf_picture_small
 			}
 		}
 		corps_commander = {
@@ -1915,7 +1915,7 @@ characters={
 		portraits = {
 			army = {
 				large="gfx/leaders/POL/portrait_POL_rudolf_prich.dds"
-				small = GFX_marian_kukiel_picture_small
+				small = GFX_rudolf_prich_picture_small
 			}
 		}
 		corps_commander = {
@@ -2077,6 +2077,12 @@ characters={
 			coordination_skill = 3
 			desc = "POL_deluge_jozef_unrug_desc"
 		}
+		scientist = {
+			traits = { scientist_trait_submarine_specialist }
+			skills = {
+				specialization_naval = 1
+			}
+		}
 	}
 	POL_deluge_adam_mohuczy = {
 		name=POL_Character_deluge_adam_mohuczy
@@ -2202,6 +2208,12 @@ characters={
 			maneuvering_skill = 3
 			coordination_skill = 2
 			desc = "POL_deluge_wlodzimierz_steyer_desc"
+		}
+		scientist = {
+			traits = { scientist_trait_surface_ship_specialist }
+			skills = {
+				specialization_naval = 1
+			}
 		}
 	}
 	##ADVISORS:

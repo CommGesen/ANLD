@@ -61,6 +61,46 @@ spriteTypes = {
 		texturefile = "gfx/leaders/FRA/portrait_FRA_marcel_bucard_ANLD.dds"
 	}
 	spriteType = {
+		name = "GFX_portrait_FRA_francois_de_la_rocque_ANLD"
+		texturefile = "gfx/leaders/FRA/portrait_FRA_francois_de_la_rocque_ANLD.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_aubert_frere"
+		texturefile = "gfx/leaders/FRA/portrait_FRA_aubert_frere.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_aubert_frere_OLD"
+		texturefile = "gfx/leaders/FRA/portrait_FRA_aubert_frere_OLD.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_rene_olry"
+		texturefile = "gfx/leaders/FRA/portrait_FRA_rene_olry.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_rene_olry_OLD"
+		texturefile = "gfx/leaders/FRA/portrait_FRA_rene_olry_OLD.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_aime_doumenc"
+		texturefile = "gfx/leaders/FRA/portrait_FRA_aime_doumenc.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_aime_doumenc_OLD"
+		texturefile = "gfx/leaders/FRA/portrait_FRA_aime_doumenc_OLD.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_antoine_marie_benoit_besson_ANLD"
+		texturefile = "gfx/leaders/FRA/portrait_FRA_antoine_marie_benoit_besson_ANLD.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_jacques_doriot_ANLD"
+		texturefile = "gfx/leaders/FRA/portrait_FRA_jacques_doriot_ANLD.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_charles_hueber"
+		texturefile = "gfx/leaders/FRA/portrait_FRA_charles_hueber.dds"
+	}
+	spriteType = {
 		name = "GFX_portrait_HUN_gyula_gombos_regent"
 		texturefile = "gfx/leaders/HUN/portrait_HUN_gyula_gombos_regent.dds"
 	}
@@ -77,12 +117,24 @@ spriteTypes = {
 		texturefile = "gfx/leaders/AUS/portrait_AUS_otto_von_habsburg_ALT.dds"
 	}
 	spriteType = {
+		name = "GFX_portrait_AUS_otto_von_habsburg_military"
+		texturefile = "gfx/leaders/AUS/portrait_AUS_otto_von_habsburg_military.dds"
+	}
+	spriteType = {
 		name = "GFX_portrait_SPR_marie_bonaparte"
 		texturefile = "gfx/leaders/SPR/portrait_SPR_marie_bonaparte.dds"
 	}
 	spriteType = {
 		name = "GFX_portrait_SPR_marie_bonaparte_with_crown"
 		texturefile = "gfx/leaders/SPR/portrait_SPR_marie_bonaparte_with_crown.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_MEX_maria_de_iturbide_ANLD"
+		texturefile = "gfx/leaders/MEX/portrait_MEX_maria_de_iturbide_ANLD.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_MEX_maria_de_iturbide"
+		texturefile = "gfx/leaders/MEX/portrait_MEX_maria_de_iturbide.dds"
 	}
 	spriteType = {
 		name = "GFX_portrait_KHI_sayyid_abdullah_khan"
@@ -2425,5 +2477,41 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_eugene_schneider_ii_picture_small"
 		texturefile = "gfx/interface/ideas/characters/eugene_schneider_ii_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_stanislaw_haller_picture_small"
+		texturefile = "gfx/interface/ideas/characters/stanislaw_haller_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_tadeusz_piskor_picture_small"
+		texturefile = "gfx/interface/ideas/characters/tadeusz_piskor_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_rudolf_prich_picture_small"
+		texturefile = "gfx/interface/ideas/characters/rudolf_prich_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_juliusz_zulauf_picture_small"
+		texturefile = "gfx/interface/ideas/characters/juliusz_zulauf_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_radoslaw_dzierzykraj_stokalski_portrait_small"
+		texturefile = "gfx/interface/ideas/characters/radoslaw_dzierzykraj_stokalski_portrait_small.dds"
+	}
+	spriteType = {
+		name = "GFX_georges_bonnet_picture_small"
+		texturefile = "gfx/interface/ideas/characters/georges_bonnet_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_robert_schuman_picture_small"
+		texturefile = "gfx/interface/ideas/characters/robert_schuman_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_joseph_darnand_picture_small"
+		texturefile = "gfx/interface/ideas/characters/joseph_darnand_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_robert_brasillach_picture_small"
+		texturefile = "gfx/interface/ideas/characters/robert_brasillach_picture_small.dds"
 	}
 }

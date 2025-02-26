@@ -407,4 +407,174 @@ changing_portraits_category = {
 			base = 0
 		}
 	}
+	portraits_maria_josepha_sophia_de_iturbide = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+			
+		}
+		visible = {
+			has_character = MEX_maria_josepha_sophia_de_iturbide
+			OR = {
+				MEX_maria_josepha_sophia_de_iturbide = {
+					is_army_leader = yes
+				}
+				MEX_maria_josepha_sophia_de_iturbide = {
+					is_navy_leader = yes
+				}
+				MEX_maria_josepha_sophia_de_iturbide = {
+					is_country_leader = yes
+				}
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			country_event = {
+				id = deluge_portraits.14
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	portraits_rene_olry = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+			
+		}
+		visible = {
+			has_character = FRA_deluge_rene_olry
+			OR = {
+				FRA_deluge_rene_olry = {
+					is_army_leader = yes
+				}
+				FRA_deluge_rene_olry = {
+					is_navy_leader = yes
+				}
+				FRA_deluge_rene_olry = {
+					is_country_leader = yes
+				}
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			country_event = {
+				id = deluge_portraits.15
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	portraits_aubert_frere = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+			
+		}
+		visible = {
+			has_character = FRA_deluge_aubert_frere
+			OR = {
+				FRA_deluge_aubert_frere = {
+					is_army_leader = yes
+				}
+				FRA_deluge_aubert_frere = {
+					is_navy_leader = yes
+				}
+				FRA_deluge_aubert_frere = {
+					is_country_leader = yes
+				}
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			country_event = {
+				id = deluge_portraits.16
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	portraits_aime_doumenc = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+			
+		}
+		visible = {
+			has_character = FRA_deluge_aime_doumenc
+			OR = {
+				FRA_deluge_aime_doumenc = {
+					is_army_leader = yes
+				}
+				FRA_deluge_aime_doumenc = {
+					is_navy_leader = yes
+				}
+				FRA_deluge_aime_doumenc = {
+					is_country_leader = yes
+				}
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			country_event = {
+				id = deluge_portraits.17
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	portraits_antoine_marie_benoit_besson = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+			
+		}
+		visible = {
+			has_character = FRA_deluge_antoine_marie_benoit_besson
+			OR = {
+				FRA_deluge_antoine_marie_benoit_besson = {
+					is_army_leader = yes
+				}
+				FRA_deluge_antoine_marie_benoit_besson = {
+					is_navy_leader = yes
+				}
+				FRA_deluge_antoine_marie_benoit_besson = {
+					is_country_leader = yes
+				}
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			country_event = {
+				id = deluge_portraits.18
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
 }

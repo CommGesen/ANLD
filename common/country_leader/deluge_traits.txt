@@ -890,6 +890,13 @@ leader_traits = {
 		political_power_factor = 0.1
 		opinion_gain_monthly_factor = 0.25
 	}
+	deluge_trait_ambitious_negotiator_democracy = {
+		random = no
+		sprite = 13
+		democratic_drift = 0.05
+		political_power_factor = 0.1
+		opinion_gain_monthly_factor = 0.25
+	}
 	trait_beck_tooltip = {
 		custom_modifier_tooltip = trait_beck_tooltip_content
 	}
@@ -1340,6 +1347,12 @@ leader_traits = {
 		stability_factor = -0.2
 		political_power_factor = -0.1
 	}
+	deluge_trait_paranoid_2 = {
+		random = no
+		stability_weekly = -0.02
+		stability_factor = -0.3
+		political_power_factor = -0.15
+	}
 	pan_european_revolutionary = {
 		random = no
 		war_support_factor = 0.05
@@ -1374,9 +1387,43 @@ leader_traits = {
 		out_of_supply_factor = -0.05
 	}
 	deluge_trait_steel_magnate = {
-		random = yes
+		random = no
 		sprite = 10
 		local_resources_factor = 0.15
 		country_resource_steel = 75
+	}
+	deluge_trait_paramilitarist = {
+		random = yes
+		sprite = 7
+		minimum_training_level = -0.1
+		conscription = 0.003
+	}
+	deluge_trait_offensive_metallurgist = {#Offensive Metallurgist
+		random = yes
+		sprite = 10
+		equipment_bonus = {
+			motorized = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+		equipment_bonus = {
+			mechanized = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+		equipment_bonus = {
+			artillery = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
 	}
 }

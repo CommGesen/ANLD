@@ -458,7 +458,7 @@ focus_tree = {
 		completion_reward = {
 			promote_character = FRA_deluge_maurice_delaunay
 			remove_ideas = FRA_spirit_chaos_in_paris
-			set_party_name = { ideology = fascism long_name = deluge_party_fire_movemenet_party_long name = deluge_party_fire_movemenet_party }
+			set_party_name = { ideology = fascism long_name = deluge_party_fire_movemenet_long name = deluge_party_fire_movemenet }
 			set_cosmetic_tag = FRA_holy_state
 			hidden_effect = {
 				news_event = {
@@ -496,7 +496,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_fire_movement }
 		relative_position_id = FRA_fire_movement
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -511,8 +511,16 @@ focus_tree = {
 		available = {
 			
 		}
+		select_effect = {
+			hidden_effect = {
+				country_event = {
+					id = deluge_france.33
+					days = 5
+				}
+			}
+		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_121
 		}
 		ai_will_do = {
 			factor = 25
@@ -532,7 +540,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_purge_political_opponents }
 		relative_position_id = FRA_purge_political_opponents
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -545,7 +553,7 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_country_flag = FRA_flag_final_counter_coup_has_occured
 		}
 		completion_reward = {
 			
@@ -568,7 +576,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_purge_political_opponents }
 		relative_position_id = FRA_purge_political_opponents
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -581,7 +589,7 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_country_flag = FRA_flag_prophet_survived
 		}
 		completion_reward = {
 			
@@ -879,7 +887,7 @@ focus_tree = {
 			remove_ideas = FRA_spirit_chaos_in_paris
 			promote_character = FRA_deluge_marcel_bucard
 			set_cosmetic_tag = FRA_francism
-			set_party_name = { ideology = fascism long_name = deluge_party_francist_movemenet_party_long name = deluge_party_francist_movemenet_party }
+			set_party_name = { ideology = fascism long_name = deluge_party_francist_movemenet_long name = deluge_party_francist_movemenet }
 			hidden_effect = {
 				add_dynamic_modifier = { modifier = FRA_modifier_francism }
 				add_to_variable = { francism_war_support_factor = 0.05}
@@ -1254,7 +1262,7 @@ focus_tree = {
 		completion_reward = {
 			promote_character = FRA_deluge_jacques_doriot
 			remove_ideas = FRA_spirit_chaos_in_paris
-			set_party_name = { ideology = fascism long_name = deluge_party_french_popular_party_long name = deluge_party_french_popular_party}
+			set_party_name = { ideology = fascism long_name = deluge_party_french_social_party_long name = deluge_party_french_social_party}
 			set_cosmetic_tag = FRA_social_state
 			hidden_effect = {
 				news_event = {
@@ -3688,7 +3696,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_decolonisation
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_decolonisation
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_workers_democracy focus = FRA_anti_democracy }
@@ -4570,6 +4578,16 @@ focus_tree = {
 				popularity = 0.05
 			}
 			army_experience = -20
+			add_corps_commander_role = {
+				Character = FRA_deluge_napoleon_vi
+				traits={ career_officer politically_connected }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+				desc = "FRA_deluge_napoleon_vi_desc"
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -6926,7 +6944,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_third_way
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_third_way
 		x = -12
 		y = 1
 		prerequisite = { focus = FRA_budget_deficit_law  }
@@ -6967,7 +6985,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_economic_nihilism
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_burning_money
 		x = -10
 		y = 1
 		prerequisite = { focus = FRA_budget_deficit_law  }
@@ -7115,7 +7133,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_market_socialism
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_market_socialism
 		x = -4
 		y = 1
 		prerequisite = { focus = FRA_budget_deficit_law  }
@@ -7232,7 +7250,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_budget_deficit_law  }
 		relative_position_id = FRA_budget_deficit_law
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { focus = FRA_third_way focus = FRA_FRA_centrally_planned_economy focus = FRA_economic_nihilism focus = FRA_market_socialism}
 		allow_branch = {
 			
@@ -7255,7 +7273,11 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {new_french_economy_trade_opinion_factor = 0.3 }
+				add_to_variable = {new_french_economy_improve_relations_maintain_cost_factor = -0.2 }
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_115
 		}
 		ai_will_do = {
 			factor = 25
@@ -7714,7 +7736,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_laiszes_faire }
 		relative_position_id = FRA_laiszes_faire
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { }
 		allow_branch = {
 			
@@ -7730,7 +7752,11 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {new_french_economy_consumer_goods_factor = -0.1 }
+				add_to_variable = {new_french_economy_political_power_factor = 0.05 }
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_116
 		}
 		ai_will_do = {
 			factor = 25
@@ -7750,7 +7776,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_promote_consumption focus = FRA_free_competition  }
 		relative_position_id = FRA_promote_consumption
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { }
 		allow_branch = {
 			
@@ -7766,7 +7792,11 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {new_french_economy_trade_opinion_factor = 0.3 }
+				add_to_variable = {new_french_economy_license_purchase_cost = -0.3 }
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_117
 		}
 		ai_will_do = {
 			factor = 25
@@ -7786,7 +7816,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_faciliating_trade }
 		relative_position_id = FRA_faciliating_trade
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { }
 		allow_branch = {
 			
@@ -7802,7 +7832,11 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {new_french_economy_trade_opinion_factor = 0.2 }
+				add_to_variable = {new_french_economy_consumer_goods_factor = -0.1 }
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_118
 		}
 		ai_will_do = {
 			factor = 25
@@ -7838,7 +7872,11 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {new_french_economy_production_speed_buildings_factor = 0.1 }
+				add_to_variable = {new_french_economy_consumer_goods_factor = -0.15 }
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_119
 		}
 		ai_will_do = {
 			factor = 25
@@ -9177,7 +9215,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_experience_from_german_civil_war
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_german_civil_war
 		x = 8
 		y = 1
 		prerequisite = { focus = FRA_traumas_of_the_great_war }
@@ -9667,7 +9705,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = FRA_spirit_forces_speciales
-			recruit_character = FRA_deluge_antoine_bethouart
+			add_corps_commander_role = {
+				Character = FRA_deluge_antoine_bethouart
+				traits={ career_officer infantry_officer war_hero hill_fighter trait_mountaineer}
+				skill=3
+				attack_skill=3
+				defense_skill=3
+				planning_skill=2
+				logistics_skill=3
+				desc = "FRA_deluge_antoine_bethouart_desc"
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -9756,7 +9803,16 @@ focus_tree = {
 				add_to_variable = { new_french_army_paradrop_organization_factor = 0.3}
 			}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_82
-			recruit_character = FRA_deluge_henri_sauvagnac
+			add_corps_commander_role = {
+				Character = FRA_deluge_henri_sauvagnac
+				traits={ commando paratrooper }
+				skill=2
+				attack_skill=1
+				defense_skill=1
+				planning_skill=2
+				logistics_skill=1
+				desc = "FRA_deluge_henri_sauvagnac_desc"
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -9809,7 +9865,16 @@ focus_tree = {
 				add_to_variable = { new_french_army_extra_marine_supply_grace = 48}
 			}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_83
-			recruit_character = FRA_deluge_joseph_de_goislard_de_monsabert
+			add_corps_commander_role = {
+				Character = FRA_deluge_joseph_de_goislard_de_monsabert
+				traits={career_officer infantry_officer war_hero naval_invader }
+				skill=2
+				attack_skill=2
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=1
+				desc = "FRA_deluge_joseph_de_goislard_de_monsabert_desc"
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -11723,7 +11788,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_southern_airports_expansion
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_air_bases
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_air_force_modernization }
@@ -11797,7 +11862,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_colonial_air_groups
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_air_bases_2
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_air_force_modernization }

@@ -1,4 +1,16 @@
 characters={
+	URC_augusto_cesar_sandino={
+		name="Augusto César Sandino"
+		portraits={
+			civilian={
+				large="gfx/leaders/URC/portrait_URC_augusto_cesar_sandino.dds"
+			}
+		}
+		country_leader={
+			ideology=anarchist_ideology
+			expire="1965.1.1.1"
+		}
+	}
 	URC_anastasio_somoza_garcía={
 		name="Anastasio Somoza García"
 		portraits={

@@ -219,7 +219,7 @@ country_event = {##Bolesław Roja
 		}
 	}
 }
-country_event = {##Otto von Habsburg
+country_event = {##Otto von Habsburg - part 1
 	id = deluge_portraits.6
 	title = deluge_portraits.6.t
 	desc = deluge_portraits.6.d
@@ -262,13 +262,51 @@ country_event = {##Otto von Habsburg
 			factor = 1
 		}
 	}
-	option = {##alternative
+	option = {##next options
 		name = deluge_portraits.6.e
+		country_event = {
+			id = deluge_portraits.13
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {##Otto von Habsburg - part 2
+	id = deluge_portraits.13
+	title = deluge_portraits.13.t
+	desc = deluge_portraits.13.d
+	picture = GFX_report_event_otto_von_habsburg_and_louis_franchet_d_esperey
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##previous options
+		name = deluge_portraits.13.a
+		country_event = {
+			id = deluge_portraits.6
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##alternative
+		name = deluge_portraits.13.b
 		set_portraits = {
 			character = AUS_otto_i
 			army = { large ="GFX_portrait_AUS_otto_von_habsburg_ALT" }
 			civilian = { large ="GFX_portrait_AUS_otto_von_habsburg_ALT" }
 			navy = { large ="GFX_portrait_AUS_otto_von_habsburg_ALT" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##military
+		name = deluge_portraits.13.c
+		set_portraits = {
+			character = AUS_otto_i
+			army = { large ="GFX_portrait_AUS_otto_von_habsburg_military" }
+			civilian = { large ="GFX_portrait_AUS_otto_von_habsburg_military" }
+			navy = { large ="GFX_portrait_AUS_otto_von_habsburg_military" }
 		}
 		ai_chance = {
 			factor = 1
@@ -350,9 +388,9 @@ country_event = {##Jacques Doriot
 		name = deluge_portraits.9.a
 		set_portraits = {
 			character = FRA_deluge_jacques_doriot
-			army = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
-			civilian = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
-			navy = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
+			army = { large ="GFX_portrait_FRA_jacques_doriot_ANLD" }
+			civilian = { large ="GFX_portrait_FRA_jacques_doriot_ANLD" }
+			navy = { large ="GFX_portrait_FRA_jacques_doriot_ANLD" }
 		}
 		ai_chance = {
 			factor = 1
@@ -362,9 +400,9 @@ country_event = {##Jacques Doriot
 		name = deluge_portraits.9.b
 		set_portraits = {
 			character = FRA_deluge_jacques_doriot
-			army = { large ="GFX_portrait_tur_abdulmejid_ii" }
-			civilian = { large ="GFX_portrait_tur_abdulmejid_ii" }
-			navy = { large ="GFX_portrait_tur_abdulmejid_ii" }
+			army = { large ="GFX_portrait_fra_jacques_doriot" }
+			civilian = { large ="GFX_portrait_fra_jacques_doriot" }
+			navy = { large ="GFX_portrait_fra_jacques_doriot" }
 		}
 		ai_chance = {
 			factor = 1
@@ -382,9 +420,9 @@ country_event = {##Francois de La Rocque
 		name = deluge_portraits.10.a
 		set_portraits = {
 			character = FRA_deluge_francois_de_la_rocque
-			army = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
-			civilian = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
-			navy = { large ="GFX_portrait_TUR_abdulmejid_ii_ANLD" }
+			army = { large ="GFX_portrait_FRA_francois_de_la_rocque_ANLD" }
+			civilian = { large ="GFX_portrait_FRA_francois_de_la_rocque_ANLD" }
+			navy = { large ="GFX_portrait_FRA_francois_de_la_rocque_ANLD" }
 		}
 		ai_chance = {
 			factor = 1
@@ -394,9 +432,9 @@ country_event = {##Francois de La Rocque
 		name = deluge_portraits.10.b
 		set_portraits = {
 			character = FRA_deluge_francois_de_la_rocque
-			army = { large ="GFX_portrait_tur_abdulmejid_ii" }
-			civilian = { large ="GFX_portrait_tur_abdulmejid_ii" }
-			navy = { large ="GFX_portrait_tur_abdulmejid_ii" }
+			army = { large ="GFX_portrait_fra_francois_de_la_rocque" }
+			civilian = { large ="GFX_portrait_fra_francois_de_la_rocque" }
+			navy = { large ="GFX_portrait_fra_francois_de_la_rocque" }
 		}
 		ai_chance = {
 			factor = 1
@@ -461,6 +499,167 @@ country_event = {##Marcel Déat
 			army = { large ="GFX_portrait_FRA_marcel_deat" }
 			civilian = { large ="GFX_portrait_FRA_marcel_deat" }
 			navy = { large ="GFX_portrait_FRA_marcel_deat" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+##13 is another for Otto von Habsburg, it is below deluge_portraits.6
+country_event = {##María Josepha Sophia de Iturbide
+	id = deluge_portraits.14
+	title = deluge_portraits.14.t
+	desc = deluge_portraits.14.d
+	picture = GFX_report_event_maria_de_iturbide
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##ANLD
+		name = deluge_portraits.14.a
+		set_portraits = {
+			character = MEX_maria_josepha_sophia_de_iturbide
+			army = { large ="GFX_portrait_MEX_maria_de_iturbide_ANLD" }
+			civilian = { large ="GFX_portrait_MEX_maria_de_iturbide_ANLD" }
+			navy = { large ="GFX_portrait_MEX_maria_de_iturbide_ANLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##vanilla
+		name = deluge_portraits.14.b
+		set_portraits = {
+			character = MEX_maria_josepha_sophia_de_iturbide
+			army = { large ="GFX_portrait_MEX_maria_de_iturbide" }
+			civilian = { large ="GFX_portrait_MEX_maria_de_iturbide" }
+			navy = { large ="GFX_portrait_MEX_maria_de_iturbide" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {##René Olry
+	id = deluge_portraits.15
+	title = deluge_portraits.15.t
+	desc = deluge_portraits.15.d
+	picture = GFX_report_event_rene_orly
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##normal
+		name = deluge_portraits.15.a
+		set_portraits = {
+			character = FRA_deluge_rene_olry
+			army = { large ="GFX_portrait_FRA_rene_olry" }
+			civilian = { large ="GFX_portrait_FRA_rene_olry" }
+			navy = { large ="GFX_portrait_FRA_rene_olry" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##old
+		name = deluge_portraits.15.b
+		set_portraits = {
+			character = FRA_deluge_rene_olry
+			army = { large ="GFX_portrait_FRA_rene_olry_OLD" }
+			civilian = { large ="GFX_portrait_FRA_rene_olry_OLD" }
+			navy = { large ="GFX_portrait_FRA_rene_olry_OLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {##Aubert Frère
+	id = deluge_portraits.16
+	title = deluge_portraits.16.t
+	desc = deluge_portraits.16.d
+	picture = GFX_report_event_aubert_frere
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##normal
+		name = deluge_portraits.16.a
+		set_portraits = {
+			character = FRA_deluge_aubert_frere
+			army = { large ="GFX_portrait_FRA_aubert_frere" }
+			civilian = { large ="GFX_portrait_FRA_aubert_frere" }
+			navy = { large ="GFX_portrait_FRA_aubert_frere" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##old
+		name = deluge_portraits.16.b
+		set_portraits = {
+			character = FRA_deluge_aubert_frere
+			army = { large ="GFX_portrait_FRA_aubert_frere_OLD" }
+			civilian = { large ="GFX_portrait_FRA_aubert_frere_OLD" }
+			navy = { large ="GFX_portrait_FRA_aubert_frere_OLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {##Aimé Doumenc
+	id = deluge_portraits.17
+	title = deluge_portraits.17.t
+	desc = deluge_portraits.17.d
+	picture = GFX_report_event_aime_doumenc
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##normal
+		name = deluge_portraits.17.a
+		set_portraits = {
+			character = FRA_deluge_aime_doumenc
+			army = { large ="GFX_portrait_FRA_aime_doumenc" }
+			civilian = { large ="GFX_portrait_FRA_aime_doumenc" }
+			navy = { large ="GFX_portrait_FRA_aime_doumenc" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##old
+		name = deluge_portraits.17.b
+		set_portraits = {
+			character = FRA_deluge_aime_doumenc
+			army = { large ="GFX_portrait_FRA_aime_doumenc_OLD" }
+			civilian = { large ="GFX_portrait_FRA_aime_doumenc_OLD" }
+			navy = { large ="GFX_portrait_FRA_aime_doumenc_OLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {##Antoine-Marie-Benoît Besson
+	id = deluge_portraits.18
+	title = deluge_portraits.18.t
+	desc = deluge_portraits.18.d
+	picture = GFX_report_event_antoine_marie_benoit_besson_at_ceremony
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##ANLD
+		name = deluge_portraits.18.a
+		set_portraits = {
+			character = FRA_deluge_antoine_marie_benoit_besson
+			army = { large ="GFX_portrait_FRA_antoine_marie_benoit_besson_ANLD" }
+			civilian = { large ="GFX_portrait_FRA_antoine_marie_benoit_besson_ANLD" }
+			navy = { large ="GFX_portrait_FRA_antoine_marie_benoit_besson_ANLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##Vanilla
+		name = deluge_portraits.18.b
+		set_portraits = {
+			character = FRA_deluge_antoine_marie_benoit_besson
+			army = { large ="GFX_portrait_FRA_antoinemariebenoit_besson" }
+			civilian = { large ="GFX_portrait_FRA_antoinemariebenoit_besson" }
+			navy = { large ="GFX_portrait_FRA_antoinemariebenoit_besson" }
 		}
 		ai_chance = {
 			factor = 1

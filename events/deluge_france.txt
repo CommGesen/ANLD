@@ -87,7 +87,7 @@ country_event = {
 			last_election = "1935.12.17"
 			election_frequency = 48 
 		}
-		set_party_name = { ideology = fascism long_name = deluge_party_boulangists_party_long name = deluge_party_boulangists_party }
+		set_party_name = { ideology = fascism long_name = deluge_party_boulangists_long name = deluge_party_boulangists }
 		promote_character = FRA_deluge_louis_franchet_d_esperey
 		add_ideas = FRA_spirit_emperor_napoleon
 		set_temp_variable = { half_of_monarchism = party_popularity@neutrality }
@@ -422,7 +422,13 @@ country_event = {
 			last_election = "1935.12.17"
 			election_frequency = 48 
 		}
-		set_party_name = { ideology = fascism long_name = FRA_military_government_party_long name = FRA_military_government_party }
+		set_party_name = { ideology = fascism long_name = deluge_party_temporary_military_government_long name = deluge_party_temporary_military_government }
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.37
+				days = 20
+			}
+		}
 	}
 }
 # Struggle for power - radicals wins
@@ -639,11 +645,331 @@ country_event = {##Maurice Delaunay assassination attempt
 	is_triggered_only = yes
 	option = {#he dies
 		name = deluge_france.28.a
-		
+		add_stability = -0.2
+		country_event = {
+			id = deluge_france.29
+		}
 	}
 	option = {#he lives
 		name = deluge_france.28.b
-		
+		add_stability = -0.05
+		FRA_deluge_maurice_delaunay = {
+			swap_country_leader_traits = {
+				remove = paranoid
+				add = deluge_trait_paranoid_2
+				ideology = avant_garde_nationalism_ideology
+			}
+		}
+		set_country_flag = FRA_flag_prophet_survived
+	}
+}
+country_event = {##left-wing freemasons coup
+	id = deluge_france.29
+	title = deluge_france.29.t
+	desc = deluge_france.29.d
+	picture = GFX_report_event_michel_dumesnil_de_gramont
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.29.a
+		retire_character = FRA_deluge_maurice_delaunay
+		remove_advisor_role = {
+			character = FRA_deluge_pierre_laval
+			slot = political_advisor
+		}
+		promote_character = FRA_deluge_dumesnil_de_gramont
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48 
+		}
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.30.t
+				days = 10
+			}
+		}
+	}
+}
+country_event = {##anti-freemason coup
+	id = deluge_france.30
+	title = deluge_france.30.t
+	desc = deluge_france.30.d
+	picture = GFX_report_event_papus
+	is_triggered_only = yes
+	option = {#Rene Guenon
+		name = deluge_france.30.a
+		retire_character = FRA_deluge_dumesnil_de_gramont
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48 
+		}
+		promote_character = FRA_deluge_rene_guenon
+		set_country_flag = FRA_flag_final_counter_coup_has_occured
+	}
+	option = {#Papus
+		name = deluge_france.30.b
+		retire_character = FRA_deluge_dumesnil_de_gramont
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48 
+		}
+		promote_character = FRA_deluge_gerard_encausse
+		set_country_flag = FRA_flag_final_counter_coup_has_occured
+	}
+}
+country_event = {##Francois de La Rocque gains "politically connected" as general if leader
+	id = deluge_france.31
+	title = deluge_france.31.t
+	desc = deluge_france.31.d
+	picture = GFX_report_event_francois_de_la_rocque
+	trigger = {
+		has_character = FRA_deluge_francois_de_la_rocque
+		has_country_leader = {
+			character = FRA_deluge_francois_de_la_rocque
+			ruling_only = yes
+		}
+		FRA_deluge_francois_de_la_rocque = {
+			is_army_leader = yes
+		}
+		NOT = {
+			FRA_deluge_francois_de_la_rocque = {
+				has_character_flag = FRA_flag_has_politically_connected_trait
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = deluge_france.31.a
+		add_trait = {
+			character = FRA_deluge_francois_de_la_rocque
+			trait = politically_connected
+		}
+		FRA_deluge_francois_de_la_rocque = {
+			set_character_flag = FRA_flag_has_politically_connected_trait
+		}
+	}
+}
+country_event = {##Francois de La Rocque loses "politically connected" as general if not leader
+	id = deluge_france.32
+	title = deluge_france.32.t
+	desc = deluge_france.32.d
+	picture = GFX_report_event_francois_de_la_rocque
+	trigger = {
+		has_character = FRA_deluge_francois_de_la_rocque
+		NOT = {
+			has_country_leader = {
+				character = FRA_deluge_francois_de_la_rocque
+				ruling_only = yes
+			}
+		}
+		FRA_deluge_francois_de_la_rocque = {
+			is_army_leader = yes
+		}
+		FRA_deluge_francois_de_la_rocque = {
+			has_character_flag = FRA_flag_has_politically_connected_trait
+		}
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = deluge_france.32.a
+		remove_trait = {
+			character = FRA_deluge_francois_de_la_rocque
+			trait = politically_connected
+		}
+		FRA_deluge_francois_de_la_rocque = {
+			clr_character_flag = FRA_flag_has_politically_connected_trait
+		}
+	}
+}
+country_event = {##Maurice Delaunay purges church
+	id = deluge_france.33
+	title = deluge_france.33.t
+	desc = deluge_france.33.d
+	picture = GFX_report_event_destroyed_church
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = { id = deluge_france.34 days = 10 }
+		}
+	}
+	option = {
+		name = deluge_france.33.a
+		add_political_power = -50
+		add_timed_idea = {
+			idea = FRA_spirit_church_purged
+			days = 150
+		}
+	}
+}
+country_event = {##Maurice Delaunay purges left-wing underground
+	id = deluge_france.34
+	title = deluge_france.34.t
+	desc = deluge_france.34.d
+	picture = GFX_report_event_jacques_duclos_alt
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = { id = deluge_france.35 days = 5 }
+		}
+	}
+	option = {
+		name = deluge_france.34.a
+		add_political_power = 30
+		add_stability = 0.03
+		add_popularity = {
+			ideology = communism
+			popularity = -0.3
+		}
+		add_manpower = -100000
+		if = {
+			limit = {
+				has_character = FRA_deluge_jacques_duclos
+			}
+			retire_character = FRA_deluge_jacques_duclos
+		}
+		if = {
+			limit = {
+				has_character = FRA_deluge_maurice_thorez
+			}
+			retire_character = FRA_deluge_maurice_thorez
+		}
+		if = {
+			limit = {
+				has_character = FRA_deluge_leon_blum
+			}
+			retire_character = FRA_deluge_leon_blum
+		}
+		if = {
+			limit = {
+				has_character = FRA_deluge_felix_gouin
+			}
+			retire_character = FRA_deluge_felix_gouin
+		}
+		custom_effect_tooltip = FRA_custom_effect_tooltip_120
+		set_country_flag = FRA_flag_Delaunay_purged_left_wing_underground
+	}
+}
+country_event = {##Maurice Delaunay nationalist opposition
+	id = deluge_france.35
+	title = deluge_france.35.t
+	desc = deluge_france.35.d
+	picture = GFX_report_event_jacques_doriot
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = { id = deluge_france.36 days = 10 }
+		}
+	}
+	option = {
+		name = deluge_france.35.a
+		add_political_power = -50
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
+		if = {
+			limit = {
+				has_character = FRA_deluge_francois_de_la_rocque
+			}
+			retire_character = FRA_deluge_francois_de_la_rocque
+		}
+		if = {
+			limit = {
+				has_character = FRA_deluge_jacques_doriot
+			}
+			retire_character = FRA_deluge_jacques_doriot
+		}
+		if = {
+			limit = {
+				has_character = FRA_deluge_marcel_deat
+			}
+			retire_character = FRA_deluge_marcel_deat
+		}
+		if = {
+			limit = {
+				has_character = FRA_deluge_marcel_bucard
+			}
+			retire_character = FRA_deluge_marcel_bucard
+		}
+		if = {
+			limit = {
+				has_character = FRA_deluge_eugene_deloncle
+			}
+			retire_character = FRA_deluge_eugene_deloncle
+		}
+	}
+}
+country_event = {##Maurice Delaunay purges army
+	id = deluge_france.36
+	title = deluge_france.36.t
+	desc = deluge_france.36.d
+	picture = GFX_report_event_louis_franchet_d_esperey
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = { id = deluge_france.28 days = 10 }
+		}
+	}
+	option = {
+		name = deluge_france.36.a
+		army_experience = -30
+		add_war_support = -0.05
+		if = {
+			limit = {
+				has_character = FRA_deluge_louis_franchet_d_esperey
+			}
+			retire_character = FRA_deluge_louis_franchet_d_esperey
+		}
+		if = {
+			limit = {
+				has_character = FRA_deluge_maxime_weygand
+			}
+			retire_character = FRA_deluge_maxime_weygand
+		}
+		if = {
+			limit = {
+				has_character = FRA_deluge_victor_henri_schweisguth
+			}
+			retire_character = FRA_deluge_victor_henri_schweisguth
+		}
+		if = {
+			limit = {
+				has_character = FRA_deluge_pierre_lelong
+			}
+			retire_character = FRA_deluge_pierre_lelong
+		}
+		if = {
+			limit = {
+				has_character = FRA_deluge_ernest_petit
+			}
+			retire_character = FRA_deluge_ernest_petit
+		}
+	}
+}
+country_event = {##trial of Maurice Gamelin (nationalists)
+	id = deluge_france.37
+	title = deluge_france.37.t
+	desc = deluge_france.37.d
+	picture = GFX_report_event_maurice_gamelin
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.37.a
+		add_political_power = 5
+		if = {
+			limit = {
+				has_character = FRA_deluge_maurice_gamelin
+			}
+			retire_character = FRA_deluge_maurice_gamelin
+		}
 	}
 }
 country_event = {##inspection in the army
@@ -754,6 +1080,35 @@ country_event = {##Fighter Competitions
 	is_triggered_only = yes
 	option = {
 		name = deluge_france_lore.10.a
+		country_event = {
+			id = deluge_france_lore.13
+		}
+		create_equipment_variant = {
+			name = "D.520"
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = aircraft_cannon_1_1x
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+				engine_type_slot = engine_1_1x
+			}
+			icon = "GFX_FRA_fighter2_medium_2"
+		}
+	}
+	option = {
+		name = deluge_france_lore.10.b
+		country_event = {
+			id = deluge_france_lore.14
+		}
+		create_equipment_variant = {
+			name = "MB.152"
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = aircraft_cannon_1_2x
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_1_1x
+			}
+			icon = "GFX_FRA_fighter2_medium"
+		}
 	}
 }
 country_event = {##Trials for Multirole Aircraft
