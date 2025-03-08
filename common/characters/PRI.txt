@@ -1,0 +1,66 @@
+characters={
+	PRI_deluge_jean_paul_sartre={
+		name="Jean-Paul Sartre"
+		portraits={
+			civilian={
+				large="gfx/leaders/PRI/portrait_PRI_jean_paul_sartre.dds"
+			}
+		}
+		country_leader={
+			#desc=
+			ideology=communist_ideology
+			expire="1965.1.1.1"
+			traits = {
+				
+			}
+		}
+	}
+	PRI_deluge_louis_lepine={
+		name="Louis Lépine"
+		portraits={
+			civilian={
+				large="gfx/leaders/PRI/portrait_PRI_louis_lepine.dds"
+			}
+		}
+		country_leader={
+			#desc=
+			ideology=centrist_ideology
+			expire="1965.1.1.1"
+			traits = {
+				
+			}
+		}
+	}
+	PRI_deluge_maurice_papon={
+		name="Maurice Papon"
+		portraits={
+			civilian={
+				large="gfx/leaders/PRI/portrait_PRI_maurice_papon.dds"
+			}
+		}
+		country_leader={
+			#desc=
+			ideology=social_darwinist_ideology
+			expire="1965.1.1.1"
+			traits = {
+				
+			}
+		}
+	}
+	PRI_deluge_emile_marie_laurent={
+		name="Émile Marie Laurent"
+		portraits={
+			civilian={
+				large="gfx/leaders/PRI/portrait_PRI_emile_marie_laurent.dds"
+			}
+		}
+		country_leader={
+			#desc=
+			ideology=reactionary_ideology
+			expire="1965.1.1.1"
+			traits = {
+				
+			}
+		}
+	}
+}

@@ -55,7 +55,7 @@ deluge_POL_ursus_tanks_organization = {
 ##SHIPS
 
 deluge_POL_stocznia_krolewiec_organization = {
-	icon = GFX_idea_generic_naval_manufacturer_3
+	icon = GFX_idea_designer_krolewiec_dockyard
 	include = generic_escort_ship_organization
 	allowed = {
 		tag = POL

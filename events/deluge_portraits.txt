@@ -666,3 +666,35 @@ country_event = {##Antoine-Marie-Benoît Besson
 		}
 	}
 }
+country_event = {##Henri Giraud
+	id = deluge_portraits.19
+	title = deluge_portraits.19.t
+	desc = deluge_portraits.19.d
+	picture = GFX_report_event_henri_giraud
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##ANLD
+		name = deluge_portraits.19.a
+		set_portraits = {
+			character = FRA_deluge_henri_giraud
+			army = { large ="GFX_portrait_FRA_henri_giraud_ANLD" }
+			civilian = { large ="GFX_portrait_FRA_henri_giraud_ANLD" }
+			navy = { large ="GFX_portrait_FRA_henri_giraud_ANLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##Vanilla
+		name = deluge_portraits.19.b
+		set_portraits = {
+			character = FRA_deluge_henri_giraud
+			army = { large ="GFX_portrait_FRA_henri_giraud" }
+			civilian = { large ="GFX_portrait_FRA_henri_giraud" }
+			navy = { large ="GFX_portrait_FRA_henri_giraud" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

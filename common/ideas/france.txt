@@ -1602,6 +1602,48 @@ ideas = {
 				war_support_factor = -0.1
 			}
 		}
+		FRA_spirit_cult_of_oriflamme = {
+			picture = spirit_FRA_remnants_of_bonapartes ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				fascism_drift = 0.02
+				weekly_manpower = 5000
+				war_support_factor = 0.05
+				political_power_factor = 0.1
+			}
+		}
+		FRA_spirit_new_time_new_men_new_methods = {
+			picture = spirit_FRA_remnants_of_bonapartes ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				fascism_drift = 0.02
+				army_org_factor = 0.05
+				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
 	}
 	tank_manufacturer = {
 		designer = yes

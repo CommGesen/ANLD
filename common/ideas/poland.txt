@@ -3468,10 +3468,10 @@ ideas = {
 				operative_slot = 1
 				agency_upgrade_time = -0.2
 				intelligence_agency_defense = 0.3
-				intel_network_gain_factor = -0.2
-				navy_intel_factor = -0.2
-				army_intel_factor = -0.2
-				airforce_intel_factor = -0.2
+				intel_network_gain_factor = 0.2
+				navy_intel_factor = 0.2
+				army_intel_factor = 0.2
+				airforce_intel_factor = 0.2
 			}
 		}
 		deluge_spirit_dwojka_modernized_non_lar = {
@@ -3529,9 +3529,9 @@ ideas = {
 			modifier = {
 				decryption_factor = 0.25
 				encryption_factor = 0.25
-				navy_intel_factor = -0.2
-				army_intel_factor = -0.2
-				airforce_intel_factor = -0.2
+				navy_intel_factor = 0.2
+				army_intel_factor = 0.2
+				airforce_intel_factor = 0.2
 			}
 		}
 		deluge_spirit_sepewe = {
@@ -4068,7 +4068,7 @@ ideas = {
 			}
 		}
 		krolewiec_dockyard = {
-			picture = generic_naval_manufacturer_3
+			picture = designer_krolewiec_dockyard
 			allowed = {
 				original_tag = POL
 			}

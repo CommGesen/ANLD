@@ -1140,7 +1140,6 @@ leader_traits = {
 		random = no
 		political_power_factor = -0.03
 		stability_factor = -0.05
-		#war_support_factor = -0.1
 	}
 	excluded_from_the_line_of_succession = {
 		random = no
@@ -1425,5 +1424,23 @@ leader_traits = {
 				instant = yes
 			}
 		}
+	}
+	deluge_trait_fighter_against_corruption = {
+		random = yes
+		political_power_factor = 0.15
+		consumer_goods_factor = -0.2
+	}
+	deluge_trait_history_teacher = {
+		random = yes
+		justify_war_goal_time = 0.2
+		political_power_factor = 0.1
+		conscription_factor = 0.03
+	}
+	deluge_trait_master_of_fire = {
+		random = no
+		political_power_factor = 0.1
+		justify_war_goal_time = -0.4
+		war_support_factor = 0.1
+		army_attack_factor = 0.05
 	}
 }

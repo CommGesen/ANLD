@@ -972,6 +972,60 @@ country_event = {##trial of Maurice Gamelin (nationalists)
 		}
 	}
 }
+# Popular Republican Movement chooses its leader
+country_event = {
+	id = deluge_france.38
+	title = deluge_france.38.t
+	desc = deluge_france.38.d
+	picture = GFX_report_event_popular_republican_movement_campaign
+	is_triggered_only = yes
+	option = {##Georges Bidault
+		name = deluge_france.38.a
+		promote_character = FRA_deluge_georges_bidault
+		set_party_name = { ideology = democratic long_name = deluge_party_popular_republican_movement_long name = deluge_party_popular_republican_movement }
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48 
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_idea = restricted
+				}
+			}
+			add_ideas = {
+				restricted
+			}
+		}
+		set_country_flag = cant_change_voting_law
+		custom_effect_tooltip = cant_change_voting_law_tooltip
+	}
+	option = {##Robert Schuman
+		name = deluge_france.38.b
+		promote_character = FRA_deluge_robert_schuman
+		set_party_name = { ideology = democratic long_name = deluge_party_popular_republican_movement_long name = deluge_party_popular_republican_movement }
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48 
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_idea = restricted
+				}
+			}
+			add_ideas = {
+				restricted
+			}
+		}
+		set_country_flag = cant_change_voting_law
+		custom_effect_tooltip = cant_change_voting_law_tooltip
+	}
+}
 country_event = {##inspection in the army
 	id = deluge_france_lore.1
 	title = deluge_france_lore.1.t

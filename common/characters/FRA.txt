@@ -42,6 +42,7 @@ characters={
 					has_completed_focus = FRA_the_dictator
 					has_completed_focus = FRA_march_on_paris
 				}
+				is_country_leader = no
 			}
 			traits = {
 				deluge_trait_offensive_metallurgist
@@ -817,7 +818,7 @@ characters={
 		name=FRA_deluge_jacques_doriot_name
 		portraits={
 			civilian={
-				large="GFX_portrait_fra_jacques_doriot"
+				large="GFX_portrait_FRA_jacques_doriot_ANLD"
 			}
 		}
 		country_leader={
@@ -1083,7 +1084,7 @@ characters={
 		}
 		country_leader={
 			ideology=conservative_democracy_ideology
-			traits={ }
+			traits={ deluge_trait_history_teacher }
 			expire="1999.1.1.1"
 			desc = "FRA_deluge_georges_bidault_desc"
 		}
@@ -1098,7 +1099,7 @@ characters={
 		}
 		country_leader={
 			ideology=conservative_democracy_ideology
-			traits={ }
+			traits={ deluge_trait_fighter_against_corruption }
 			expire="1999.1.1.1"
 			desc = "FRA_deluge_robert_schuman_desc"
 		}
@@ -1391,7 +1392,7 @@ characters={
 	FRA_deluge_joseph_athanase_doumer={##Joseph Athanase Doumer
 		name=FRA_deluge_joseph_athanase_doumer_name
 		portraits={
-			v={##small portrait to do
+			civilian={
 				small="GFX_joseph_athanase_doumer_picture_small"
 			}
 		}

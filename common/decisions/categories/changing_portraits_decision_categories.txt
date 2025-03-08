@@ -6,7 +6,9 @@ changing_portraits_category = {
 		
 	}
 	visible = {
-		
+		NOT = {
+			has_country_flag = portraits_decisions_hidden
+		}
 	}
 	visible_when_empty = no
 }

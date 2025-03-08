@@ -577,4 +577,62 @@ changing_portraits_category = {
 			base = 0
 		}
 	}
+	portraits_henri_giraud = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+			
+		}
+		visible = {
+			has_character = FRA_deluge_henri_giraud
+			OR = {
+				FRA_deluge_henri_giraud = {
+					is_army_leader = yes
+				}
+				FRA_deluge_henri_giraud = {
+					is_navy_leader = yes
+				}
+				FRA_deluge_henri_giraud = {
+					is_country_leader = yes
+				}
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			country_event = {
+				id = deluge_portraits.19
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	hide_portraits_decision = {
+		icon = GFX_decision_SWI_dismiss_council
+		allowed = {
+			
+		}
+		visible = {
+			NOT = {
+				has_country_flag = portraits_decisions_hidden
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			set_country_flag = portraits_decisions_hidden
+			custom_effect_tooltip = generic_hide_portraits_decisions_tooltip
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
 }
