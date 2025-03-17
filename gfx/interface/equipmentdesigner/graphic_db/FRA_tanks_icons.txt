@@ -1,6 +1,6 @@
 ### designer tank ###
 
-default = {
+FRA = {
 
 ### light tank 0 ###
 
@@ -19,6 +19,8 @@ default = {
 		pool = {
 			weight = 2
 			icons = { 
+			GFX_FRA_basic_light_tank_medium_3
+			GFX_FRA_basic_light_tank_medium_2
 			GFX_FRA_basic_light_tank_medium
 			}
 		}
@@ -56,7 +58,9 @@ default = {
 	light_tank_chassis_2 = { 
 		pool = {
 			weight = 2
-			icons = { 
+			icons = {
+			GFX_FRA_improved_light_tank_medium_3
+			GFX_FRA_improved_light_tank_medium_2
 			GFX_FRA_improved_light_tank_medium
 			}
 		}
@@ -125,7 +129,18 @@ default = {
             GFX_FRA_advanced_light_art_medium
 			}
 		}
-	}	
+	}
+
+### flamethrower light tanks ###
+
+	light_tank_flame_chassis = { 
+		pool = {
+			weight = 2
+			icons = {
+                GFX_FRA_improved_light_fl_medium
+			}
+		}
+	}
 	
 ### amphibious light tank ###
 
@@ -196,11 +211,12 @@ default = {
 		pool = {
 			weight = 2
 			icons = { 
+			GFX_FRA_improved_medium_tank_medium_2
             GFX_FRA_improved_medium_tank_medium
 			}
 		}
 	}
-	
+
 	medium_tank_amphibious_chassis_2 = { 
 		pool = {
 			weight = 2
@@ -242,7 +258,12 @@ default = {
 	medium_tank_chassis_3 = { 
 		pool = {
 			weight = 2
-			icons = { 
+			icons = {
+			GFX_FRA_advanced_medium_tank_medium_6
+			GFX_FRA_advanced_medium_tank_medium_5
+			GFX_FRA_advanced_medium_tank_medium_4
+			GFX_FRA_advanced_medium_tank_medium_3
+			GFX_FRA_advanced_medium_tank_medium_2
             GFX_FRA_advanced_medium_tank_medium
 			}
 		}
@@ -274,13 +295,26 @@ default = {
 			}
 		}
 	}	
-	
+
+### flamethrower medium tanks ###
+
+	medium_tank_flame_chassis = { 
+		pool = {
+			weight = 2
+			icons = {
+                GFX_FRA_improved_medium_fl_medium
+			}
+		}
+	}
+
 ### MODERN TANK ###
 	
 	modern_tank_chassis_1 = {
 		pool = {
 			weight = 2
 			icons = { 
+			GFX_FRA_main_battle_tank_medium_3
+			GFX_FRA_main_battle_tank_medium_2
 			GFX_FRA_main_battle_tank_medium
 			}
 		}
@@ -298,7 +332,8 @@ default = {
 	modern_tank_destroyer_chassis_1 = {
 		pool = {
 			weight = 2
-			icons = { 
+			icons = {
+				GFX_FRA_modern_td_medium_2
 				GFX_FRA_modern_td_medium
 			}
 		}
@@ -381,8 +416,12 @@ default = {
 	heavy_tank_chassis_2 = { 
 		pool = {
 			weight = 2
-			icons = { 
-                GFX_FRA_improved_heavy_tank_medium
+			icons = {
+				GFX_FRA_improved_heavy_tank_medium_5
+				GFX_FRA_improved_heavy_tank_medium_4
+				GFX_FRA_improved_heavy_tank_medium_3
+                GFX_FRA_improved_heavy_tank_medium_2
+				GFX_FRA_improved_heavy_tank_medium
 			}
 		}
 	}	
@@ -419,7 +458,10 @@ default = {
 	heavy_tank_chassis_3 = { 
 		pool = {
 			weight = 2
-			icons = { 
+			icons = {
+				GFX_FRA_advanced_heavy_tank_medium_4
+				GFX_FRA_advanced_heavy_tank_medium_3
+				GFX_FRA_advanced_heavy_tank_medium_2
                 GFX_FRA_advanced_heavy_tank_medium
 			}
 		}
@@ -447,18 +489,31 @@ default = {
 		pool = {
 			weight = 2
 			icons = {
+				GFX_FRA_advanced_heavy_spaa_medium_2
 				GFX_FRA_advanced_heavy_spaa_medium
 			}
 		}
-	}	
+	}
+
+### flamethrower heavy tank ###
+
+	heavy_tank_flame_chassis = { 
+		pool = {
+			weight = 2
+			icons = {
+				GFX_FRA_improved_heavy_fl_medium
+			}
+		}
+	}
 
 ### super heavy tank ###
 
     super_heavy_tank_chassis = {
 		pool = {
 			weight = 2
-			icons = { 
-				GFX_FRA_super_heavy_tank_medium
+			icons = {
+				GFX_FRA_super_heavy_tank_medium_2
+				GFX_FRA_super_heavy_tank_medium	
 			}
 		}
 	}

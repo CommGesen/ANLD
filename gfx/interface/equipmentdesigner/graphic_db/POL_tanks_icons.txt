@@ -17,8 +17,6 @@ POL = {
 		}
 	}
 
-
-
 ### light tank 1 ###
 	
 	light_tank_chassis_1 = { 
@@ -70,15 +68,15 @@ POL = {
 		}
 	}
 
-	
 ### light tank 2 ###
 	
 	light_tank_chassis_2 = { 
 		pool = {
 			weight = 2
 			icons = { 
-			GFX_POL_4tp
 			GFX_POL_9tp
+			GFX_POL_4tp
+			GFX_POL_improved_light_tank_medium_2
 			GFX_POL_improved_light_tank_medium
 			}
             models = {
@@ -205,8 +203,8 @@ POL = {
 		pool = {
 			weight = 2
 			icons = { 
+				GFX_POL_basic_medium_tank_medium
                 GFX_POL_basic_medium_art_medium
-                GFX_POL_basic_medium_tank_medium
 			}
 		}
 	}
@@ -244,16 +242,8 @@ POL = {
 		pool = {
 			weight = 2
 			icons = { 
+				GFX_POL_improved_medium_tank_medium_2
                 GFX_POL_improved_medium_tank_medium
-			}
-		}
-	}
-	
-	medium_tank_flame_chassis_2 = { 
-		pool = {
-			weight = 2
-			icons = { 
-                GFX_POL_improved_medium_fl_medium
 			}
 		}
 	}
@@ -262,8 +252,8 @@ POL = {
 		pool = {
 			weight = 2
 			icons = { 
-			GFX_POL_amphibious_tank_2_medium
 			GFX_POL_amphibious_tank_2_medium_2
+			GFX_POL_amphibious_tank_2_medium
 			}
 		}
 	}
@@ -333,7 +323,18 @@ POL = {
 				GFX_POL_advanced_medium_spaa_medium
 			}
 		}
-	}	
+	}
+
+### flamethrower medium tanks ###
+
+	medium_tank_flame_chassis = { 
+		pool = {
+			weight = 2
+			icons = { 
+                GFX_POL_improved_medium_fl_medium
+			}
+		}
+	}
 	
 ### MODERN TANK ###
 	

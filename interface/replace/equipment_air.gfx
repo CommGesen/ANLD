@@ -352,6 +352,13 @@ spriteTypes = {
 
 	### VARIANTS ###
 
+	### SPECIAL PROJECTS ###
+	
+	SpriteType = {
+	name = "GFX_helicopter_equipment_medium"
+	texturefile = "gfx/interface/technologies/GGG/helicopter.dds"
+	}
+
 ### POLAND ###
 
 	### TRANSPORTS ###
@@ -707,6 +714,13 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_POL_tactical_bomber3_medium_3"
 	texturefile = "gfx/interface/technologies/POL/POL_tactical_bomber_3-3.dds"
+	}
+
+	### SPECIAL PROJECTS ###
+
+	SpriteType = {
+	name = "GFX_POL_helicopter_equipment_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_helicopter.dds"
 	}
 
 
@@ -1129,7 +1143,6 @@ spriteTypes = {
 	texturefile = "gfx/interface/technologies/FRA/FRA_jet_tactical_bomber_2-2.dds"
 	}
 
-
 	SpriteType = {
 	name = "GFX_FRA_strategic_bomber1_medium_2"
 	texturefile = "gfx/interface/technologies/FRA/FRA_strategic_bomber_1-2.dds"
@@ -1154,7 +1167,14 @@ spriteTypes = {
 	name = "GFX_FRA_strategic_bomber3_medium_2"
 	texturefile = "gfx/interface/technologies/FRA/FRA_strategic_bomber_3-2.dds"
 	}
+
+	### SPECIAL PROJECTS ###
 	
+	SpriteType = {
+	name = "GFX_FRA_helicopter_equipment_medium"
+	texturefile = "gfx/interface/technologies/FRA/FRA_helicopter.dds"
+	}
+
 
 ### FEDERAL KINGDOM OF AMERICA ###
 
@@ -1166,5 +1186,12 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_USA_transport_plane_equipment_1_medium"
 	texturefile = "gfx/interface/technologies/USA/USA_transport_plane.dds"
+	}
+
+	### SPECIAL PROJECTS ###
+	
+	SpriteType = {
+	name = "GFX_USA_helicopter_equipment_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_helicopter.dds"
 	}
 }

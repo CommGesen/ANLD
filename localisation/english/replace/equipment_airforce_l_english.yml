@@ -101,6 +101,9 @@
  POL_jet_strat_bomber_equipment_1:0 "PZL.101"
  POL_jet_strat_bomber_equipment_1_short:0 "PZL.101"
 
+ POL_helicopter_equipment_1: "GIL BŻ-4"
+ POL_helicopter_equipment_1_short: "BŻ-4"
+
  #FRANCE
  FRA_transport_plane_equipment_1:0 "Dewoitine D.338"
  FRA_transport_plane_equipment_1_short:0 "D.338"
@@ -130,6 +133,9 @@
  FRA_jet_fighter_equipment_1_short:0 "SO.6020"
  FRA_jet_fighter_equipment_2:0 "Bloch MB.450"
  FRA_jet_fighter_equipment_2_short:0 "MB.450"
+
+ FRA_supersonic_fighter1: "Marcel Bloch Super Mystère B2"
+ FRA_supersonic_fighter_equipment_1: "Super Mystère B2"
  
  FRA_CAS_equipment_1:0 "Roussel R-30"
  FRA_CAS_equipment_1_short:0 "R-30"
@@ -195,6 +201,14 @@
  FRA_jet_strat_bomber_equipment_1:0 "SNCASO SO.4000"
  FRA_jet_strat_bomber_equipment_1_short:0 "SO.4000"
 
+ FRA_strat_bomber_intercontinental_equipment_1: "Bréguet Br.780"
+ FRA_strat_bomber_intercontinental_equipment_1_short: "Br.780"
+ FRA_mothership_equipment_0: "SNCASE SE.161"
+ FRA_mothership_equipment_0_short: "SE.161"
+
+ FRA_helicopter_equipment_1: "SNCAC NC.2001"
+ FRA_helicopter_equipment_1_short: "NC.2001"
+
  #FEDERAL KINGDOM OF AMERICA
  USA_transport_plane_equipment_1:0 "Douglas DC-3"
  USA_transport_plane_equipment_1_short:0 "DC-3"
@@ -202,3 +216,14 @@
  USA_transport_plane_equipment_2_short:0 "DC-5"
  USA_transport_plane_equipment_3:0 "Consolidated C-87"
  USA_transport_plane_equipment_3_short:0 "C-87"
+
+ USA_supersonic_fighter1: "North American F-100"
+ USA_supersonic_fighter_equipment_1: "F-100"
+
+ USA_strat_bomber_intercontinental_equipment_1: "Consolidated B-36"
+ USA_strat_bomber_intercontinental_equipment_1_short: "B-36"
+ USA_mothership_equipment_0: "Boeing B-29 FICON"
+ USA_mothership_equipment_0_short: "B-29 FICON"
+
+ USA_helicopter_equipment_1: "Sikorsky H-19"
+ USA_helicopter_equipment_1_short: "H-19"

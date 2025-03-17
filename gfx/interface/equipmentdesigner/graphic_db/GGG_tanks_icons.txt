@@ -273,7 +273,18 @@ default = {
 				GFX_advanced_medium_spaa_medium
 			}
 		}
-	}	
+	}
+
+### flamethrower medium tanks ###
+
+	medium_tank_flame_chassis = { 
+		pool = {
+			weight = 2
+			icons = { 
+                GFX_improved_medium_fl_medium
+			}
+		}
+	}
 	
 ### MODERN TANK ###
 	
