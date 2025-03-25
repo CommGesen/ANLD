@@ -2,6 +2,9 @@
 
  ###CANADA###
  
+ ASK:0 "Alaska"
+ ASK_DEF:0 "Alaska"
+ ASK_ADJ:0 "Alaskan"
  ASK_communism:0 "Alaskan Socialist Council Republic"
  ASK_communism_DEF:0 "the Alaskan Socialist Council Republic"
  ASK_communism_ADJ:0 "Alaskan"
@@ -15,6 +18,9 @@
  ASK_fascism_DEF:0 "Alaska"
  ASK_fascism_ADJ:0 "Alaskan"
  
+ AQN:0 "Algonquin"
+ AQN_DEF:0 "Algonquin"
+ AQN_ADJ:0 "Algonquian"
  AQN_communism:0 "Algonquian Socialist Republic"
  AQN_communism_DEF:0 "the Algonquian Socialist Republic"
  AQN_communism_ADJ:0 "Algonquian"
@@ -28,6 +34,9 @@
  AQN_fascism_DEF:0 "the Algonquian Federation"
  AQN_fascism_ADJ:0 "Algonquian"
  
+ CAN:0 "Quebec"
+ CAN_DEF:0 "Quebec"
+ CAN_ADJ:0 "Quebecois"
  CAN_communism:0 "Socialist Republic of Quebec"
  CAN_communism_DEF:0 "the Socialist Republic of Quebec"
  CAN_communism_ADJ:0 "Quebecois"
@@ -43,6 +52,9 @@
  
  ###UNITED STATES###
  
+ DES:0 "Deseret"
+ DES_DEF:0 "Deseret"
+ DES_ADJ:0 "Deseret"
  DES_communism:0 "People's Democratic Republic of Deseret"
  DES_communism_DEF:0 "the People's Democratic Republic of Deseret"
  DES_communism_ADJ:0 "Deseret"
@@ -56,6 +68,9 @@
  DES_fascism_DEF:0 "the Christian Republic of Deseret"
  DES_fascism_ADJ:0 "Deseret"
  
+ LOU:0 "Louisiana"
+ LOU_DEF:0 "Louisiana"
+ LOU_ADJ:0 "Louisianan"
  LOU_communism:0 "Сouncil Republic of Louisiana"
  LOU_communism_DEF:0 "the Сouncil Republic of Louisiana"
  LOU_communism_ADJ:0 "Louisianan"
@@ -69,6 +84,9 @@
  LOU_fascism_DEF:0 "the Kingdom of Louisiana"
  LOU_fascism_ADJ:0 "Louisianan"
  
+ USA:0 "America"
+ USA_DEF:0 "America"
+ USA_ADJ:0 "American"
  USA_communism:0 "Federal States of America"
  USA_communism_DEF:0 "the Federal States of America"
  USA_communism_ADJ:0 "American"
@@ -82,6 +100,9 @@
  USA_fascism_DEF:0 "the Federal Kingdom of America"
  USA_fascism_ADJ:0 "American"
  
+ CSA:0 "America"
+ CSA_DEF:0 "America"
+ CSA_ADJ:0 "American"
  CSA_communism:0 "Confederate States of America"
  CSA_communism_DEF:0 "the Confederate States of America"
  CSA_communism_ADJ:0 "American"
@@ -95,19 +116,25 @@
  CSA_fascism_DEF:0 "the Confederate States of America"
  CSA_fascism_ADJ:0 "American"
  
+ MAR:0 "New Britain"
+ MAR_DEF:0 "the New Britain"
+ MAR_ADJ:0 "New British"
  MAR_communism:0 "New Britain Federation"
  MAR_communism_DEF:0 "the New Britain Federation"
- MAR_communism_ADJ:0 "Maritimes"
+ MAR_communism_ADJ:0 "New British"
  MAR_democratic:0 "New Britain Federation"
  MAR_democratic_DEF:0 "the New Britain Federation"
- MAR_democratic_ADJ:0 "Maritimes"
+ MAR_democratic_ADJ:0 "New British"
  MAR_neutrality:0 "New Britain Confederation"
  MAR_neutrality_DEF:0 "the New Britain Confederation"
- MAR_neutrality_ADJ:0 "Maritimes"
+ MAR_neutrality_ADJ:0 "New British"
  MAR_fascism:0 "New Britain Confederation"
  MAR_fascism_DEF:0 "the New Britain Confederation"
- MAR_fascism_ADJ:0 "Maritimes"
+ MAR_fascism_ADJ:0 "New British"
  
+ LAK:0 "Great Lakes"
+ LAK_DEF:0 "the Great Lakes"
+ LAK_ADJ:0 "Great Lakes"
  LAK_communism:0 "Great Lakes of North America"
  LAK_communism_DEF:0 "the Great Lakes of North America"
  LAK_communism_ADJ:0 "Great Lakes"
@@ -123,6 +150,9 @@
  
  ###MEXICO###
  
+ CAL:0 "California"
+ CAL_DEF:0 "California"
+ CAL_ADJ:0 "Californian"
  CAL_communism:0 "People's Republic of California"
  CAL_communism_DEF:0 "the People's Republic of California"
  CAL_communism_ADJ:0 "Californian"
@@ -136,6 +166,9 @@
  CAL_fascism_DEF:0 "the California Republic"
  CAL_fascism_ADJ:0 "Californian"
  
+ TEX:0 "Texas"
+ TEX_DEF:0 "Texas"
+ TEX_ADJ:0 "Texan"
  TEX_communism:0 "People's Republic of Texas"
  TEX_communism_DEF:0 "the People's Republic of Texas"
  TEX_communism_ADJ:0 "Texan"
@@ -149,6 +182,9 @@
  TEX_fascism_DEF:0 "the Republic of Texas"
  TEX_fascism_ADJ:0 "Texan"
  
+ MEX:0 "Mexico"
+ MEX_DEF:0 "Mexico"
+ MEX_ADJ:0 "Mexican"
  MEX_communism:0 "United Mexican States"
  MEX_communism_DEF:0 "the United Mexican States"
  MEX_communism_ADJ:0 "Mexican"
@@ -162,6 +198,9 @@
  MEX_fascism_DEF:0 "the Empire of Mexico"
  MEX_fascism_ADJ:0 "Mexican"
  
+ CSC:0 "Maya"
+ CSC_DEF:0 "Maya"
+ CSC_ADJ:0 "Mayan"
  CSC_communism:0 "Mayan Socialist Republic"
  CSC_communism_DEF:0 "the Mayan Socialist Republic"
  CSC_communism_ADJ:0 "Mayan"
@@ -177,6 +216,9 @@
  
  ###CENTRAL AMERICA###
  
+ URC:0 "Central America"
+ URC_DEF:0 "Central America"
+ URC_ADJ:0 "Centroamerican"
  URC_communism:0 "Federal Republic of Central America"
  URC_communism_DEF:0 "the Federal Republic of Central America"
  URC_communism_ADJ:0 "Centroamerican"
@@ -190,6 +232,9 @@
  URC_fascism_DEF:0 "the Federal Republic of Central America"
  URC_fascism_ADJ:0 "Centroamerican"
  
+ GUA:0 "Guatamala"
+ GUA_DEF:0 "Guatamala"
+ GUA_ADJ:0 "Guatamalan"
  GUA_communism:0 "Republic of Guatamala"
  GUA_communism_DEF:0 "the Republic of Guatamala"
  GUA_communism_ADJ:0 "Guatamalan"
@@ -203,6 +248,9 @@
  GUA_fascism_DEF:0 "the State of Guatamala"
  GUA_fascism_ADJ:0 "Guatamalan"
  
+ ELS:0 "El Salvador"
+ ELS_DEF:0 "El Salvador"
+ ELS_ADJ:0 "Salvadoran"
  ELS_communism:0 "Republic of El Salvador"
  ELS_communism_DEF:0 "the Republic of El Salvador"
  ELS_communism_ADJ:0 "Salvadoran"
@@ -216,6 +264,9 @@
  ELS_fascism_DEF:0 "the State of El Salvador"
  ELS_fascism_ADJ:0 "Salvadoran"
  
+ HON:0 "Honduras"
+ HON_DEF:0 "Honduras"
+ HON_ADJ:0 "Honduran"
  HON_communism:0 "Republic of Honduras"
  HON_communism_DEF:0 "the Republic of Honduras"
  HON_communism_ADJ:0 "Honduran"
@@ -229,6 +280,9 @@
  HON_fascism_DEF:0 "the State of Honduras"
  HON_fascism_ADJ:0 "Honduran"
  
+ NIC:0 "Nicaragua"
+ NIC_DEF:0 "Nicaragua"
+ NIC_ADJ:0 "Nicaraguan"
  NIC_communism:0 "Republic of Nicaragua"
  NIC_communism_DEF:0 "the Republic of Nicaragua"
  NIC_communism_ADJ:0 "Nicaraguan"
@@ -242,6 +296,9 @@
  NIC_fascism_DEF:0 "the State of Nicaragua"
  NIC_fascism_ADJ:0 "Nicaraguan"
  
+ COS:0 "Costa Rica"
+ COS_DEF:0 "Costa Rica"
+ COS_ADJ:0 "Costa Rican"
  COS_communism:0 "Republic of Costa Rica"
  COS_communism_DEF:0 "the Republic of Costa Rica"
  COS_communism_ADJ:0 "Costa Rican"
@@ -255,6 +312,9 @@
  COS_fascism_DEF:0 "the State of Costa Rica"
  COS_fascism_ADJ:0 "Costa Rican"
  
+ PAN:0 "Panama"
+ PAN_DEF:0 "Panama"
+ PAN_ADJ:0 "Panamanian"
  PAN_communism:0 "Republic of Panama"
  PAN_communism_DEF:0 "the Republic of Panama"
  PAN_communism_ADJ:0 "Panamanian"
@@ -270,6 +330,9 @@
  
  ###CARIBBEAN###
  
+ CBN:0 "Caribs"
+ CBN_DEF:0 "the Caribs"
+ CBN_ADJ:0 "Caribbean"
  CBN_communism:0 "Union of Caribbean Socialist Republics"
  CBN_communism_DEF:0 "the Union of Caribbean Socialist Republics"
  CBN_communism_ADJ:0 "Caribbean"
@@ -283,6 +346,9 @@
  CBN_fascism_DEF:0 "the Caribbean Confederation"
  CBN_fascism_ADJ:0 "Caribbean"
  
+ CUB:0 "Cuba"
+ CUB_DEF:0 "Cuba"
+ CUB_ADJ:0 "Cuban"
  CUB_communism:0 "Republic of Cuba"
  CUB_communism_DEF:0 "the Republic of Cuba"
  CUB_communism_ADJ:0 "Cuban"
@@ -296,6 +362,9 @@
  CUB_fascism_DEF:0 "the Kingdom of Cuba"
  CUB_fascism_ADJ:0 "Cuban"
  
+ HAI:0 "Haiti"
+ HAI_DEF:0 "Haiti"
+ HAI_ADJ:0 "Haitian"
  HAI_communism:0 "Republic of Haiti"
  HAI_communism_DEF:0 "the Republic of Haiti"
  HAI_communism_ADJ:0 "Haitian"
@@ -309,6 +378,9 @@
  HAI_fascism_DEF:0 "the Empire of Haiti"
  HAI_fascism_ADJ:0 "Haitian"
  
+ DOM:0 "Dominicana"
+ DOM_DEF:0 "Dominicana"
+ DOM_ADJ:0 "Dominican"
  DOM_communism:0 "Dominican Socialist Republic"
  DOM_communism_DEF:0 "the Dominican Socialist Republic"
  DOM_communism_ADJ:0 "Dominican"
@@ -324,6 +396,9 @@
  
  ###SOUTH AMERICA###
  
+ GCB:0 "Colombia"
+ GCB_DEF:0 "Colombia"
+ GCB_ADJ:0 "Colombian"
  GCB_communism:0 "Socialist Workers' Republic of Colombia"
  GCB_communism_DEF:0 "the Socialist Workers' Republic of Colombia"
  GCB_communism_ADJ:0 "Colombian"
@@ -337,6 +412,9 @@
  GCB_fascism_DEF:0 "Gran Colombia"
  GCB_fascism_ADJ:0 "Colombian"
  
+ ECU:0 "Ecuador"
+ ECU_DEF:0 "Ecuador"
+ ECU_ADJ:0 "Ecuadorian"
  ECU_communism:0 "Republic of Ecuador"
  ECU_communism_DEF:0 "the Republic of Ecuador"
  ECU_communism_ADJ:0 "Ecuadorian"
@@ -350,6 +428,9 @@
  ECU_fascism_DEF:0 "the State Ecuador"
  ECU_fascism_ADJ:0 "Ecuadorian"
  
+ COL:0 "Colombia"
+ COL_DEF:0 "Colombia"
+ COL_ADJ:0 "Colombian"
  COL_communism:0 "Republic of Colombia"
  COL_communism_DEF:0 "the Republic of Colombia"
  COL_communism_ADJ:0 "Colombian"
@@ -363,6 +444,9 @@
  COL_fascism_DEF:0 "the State Colombia"
  COL_fascism_ADJ:0 "Colombian"
  
+ VEN:0 "Venezuela"
+ VEN_DEF:0 "Venezuela"
+ VEN_ADJ:0 "Venezuelan"
  VEN_communism:0 "Republic of Venezuela"
  VEN_communism_DEF:0 "the Republic of Venezuela"
  VEN_communism_ADJ:0 "Venezuelan"
@@ -376,6 +460,9 @@
  VEN_fascism_DEF:0 "the State of Venezuela"
  VEN_fascism_ADJ:0 "Venezuelan"
  
+ CUR:0 "Curaçao"
+ CUR_DEF:0 "Curaçao"
+ CUR_ADJ:0 "Curaçaoan"
  CUR_communism:0 "Country of Curaçao"
  CUR_communism_DEF:0 "the Country of Curaçao"
  CUR_communism_ADJ:0 "Curaçaoan"
@@ -389,6 +476,9 @@
  CUR_fascism_DEF:0 "the Country of Curaçao"
  CUR_fascism_ADJ:0 "Curaçaoan"
  
+ SUR:0 "Suriname"
+ SUR_DEF:0 "Suriname"
+ SUR_ADJ:0 "Surinamese"
  SUR_communism:0 "Republic of Suriname"
  SUR_communism_DEF:0 "the Republic of Suriname"
  SUR_communism_ADJ:0 "Surinamese"
@@ -402,6 +492,9 @@
  SUR_fascism_DEF:0 "the State of Suriname"
  SUR_fascism_ADJ:0 "Surinamese"
  
+ FRG:0 "Guiana"
+ FRG_DEF:0 "Guiana"
+ FRG_ADJ:0 "Guianan"
  FRG_communism:0 "Republic of Guiana"
  FRG_communism_DEF:0 "the Republic of Guiana"
  FRG_communism_ADJ:0 "Guianan"
@@ -415,6 +508,9 @@
  FRG_fascism_DEF:0 "the State of Guiana"
  FRG_fascism_ADJ:0 "Guianan"
  
+ BRA:0 "Brazil"
+ BRA_DEF:0 "Brazil"
+ BRA_ADJ:0 "Brazilian"
  BRA_communism:0 "Republic of the United States of Brazil"
  BRA_communism_DEF:0 "the Republic of the United States of Brazil"
  BRA_communism_ADJ:0 "Brazilian"
@@ -428,6 +524,9 @@
  BRA_fascism_DEF:0 "the United States of Brazil"
  BRA_fascism_ADJ:0 "Brazilian"
  
+ PRU:0 "Peru"
+ PRU_DEF:0 "Peru"
+ PRU_ADJ:0 "Peruvian"
  PRU_communism:0 "Republic of Peru"
  PRU_communism_DEF:0 "the Republic of Peru"
  PRU_communism_ADJ:0 "Peruvian"
@@ -441,6 +540,9 @@
  PRU_fascism_DEF:0 "the State Peru"
  PRU_fascism_ADJ:0 "Peruvian"
  
+ BOL:0 "Bolivia"
+ BOL_DEF:0 "Bolivia"
+ BOL_ADJ:0 "Bolivian"
  BOL_communism:0 "Plurinational State of Bolivia"
  BOL_communism_DEF:0 "the Plurinational State of Bolivia"
  BOL_communism_ADJ:0 "Bolivian"
@@ -454,6 +556,9 @@
  BOL_fascism_DEF:0 "the Plurinational State of Bolivia"
  BOL_fascism_ADJ:0 "Bolivian"
  
+ CHL:0 "Chile"
+ CHL_DEF:0 "Chile"
+ CHL_ADJ:0 "Chilean"
  CHL_communism:0 "Republic of Chile"
  CHL_communism_DEF:0 "the Republic of Chile"
  CHL_communism_ADJ:0 "Chilean"
@@ -467,6 +572,9 @@
  CHL_fascism_DEF:0 "the State of Chile"
  CHL_fascism_ADJ:0 "Chilean"
  
+ PAR:0 "Paraguay"
+ PAR_DEF:0 "Paraguay"
+ PAR_ADJ:0 "Paraguayan"
  PAR_communism:0 "Republic of Paraguay"
  PAR_communism_DEF:0 "the Republic of Paraguay"
  PAR_communism_ADJ:0 "Paraguayan"
@@ -480,6 +588,9 @@
  PAR_fascism_DEF:0 "the State of Paraguay"
  PAR_fascism_ADJ:0 "Paraguayan"
  
+ ARG:0 "Río de la Plata"
+ ARG_DEF:0 "Río de la Plata"
+ ARG_ADJ:0 "Platan"
  ARG_communism:0 "United Provinces of the Río de la Plata"
  ARG_communism_DEF:0 "the United Provinces of the Río de la Plata"
  ARG_communism_ADJ:0 "Platan"
@@ -493,6 +604,9 @@
  ARG_fascism_DEF:0 "the United Provinces of the Río de la Plata"
  ARG_fascism_ADJ:0 "Platan"
  
+ URG:0 "Uruguay"
+ URG_DEF:0 "Uruguay"
+ URG_ADJ:0 "Uruguayan"
  URG_communism:0 "Oriental Republic of Uruguay"
  URG_communism_DEF:0 "the Oriental Republic of Uruguay"
  URG_communism_ADJ:0 "Uruguayan"
@@ -508,6 +622,9 @@
  
  ###SCANDINAVIA###
  
+ SWE:0 "Sweden"
+ SWE_DEF:0 "Sweden"
+ SWE_ADJ:0 "Swedish"
  SWE_communism:0 "Swedish Socialist Workers' Republic"
  SWE_communism_DEF:0 "the Swedish Socialist Workers' Republic"
  SWE_communism_ADJ:0 "Swedish"
@@ -521,6 +638,9 @@
  SWE_fascism_DEF:0 "the Kingdom of Sweden"
  SWE_fascism_ADJ:0 "Swedish"
  
+ GRN:0 "Greenland"
+ GRN_DEF:0 "Greenland"
+ GRN_ADJ:0 "Greenlandic"
  GRN_communism:0 "Greenlandic Socialist Workers' Republic"
  GRN_communism_DEF:0 "the Greenlandic Socialist Workers' Republic"
  GRN_communism_ADJ:0 "Greenlandic"
@@ -534,6 +654,9 @@
  GRN_fascism_DEF:0 "the Kingdom of Greenland"
  GRN_fascism_ADJ:0 "Greenlandic"
  
+ ICE:0 "Iceland"
+ ICE_DEF:0 "Iceland"
+ ICE_ADJ:0 "Icelandic"
  ICE_communism:0 "Icelandic Socialist Workers' Republic"
  ICE_communism_DEF:0 "the Icelandic Socialist Workers' Republic"
  ICE_communism_ADJ:0 "Icelandic"
@@ -547,6 +670,9 @@
  ICE_fascism_DEF:0 "the Kingdom of Iceland"
  ICE_fascism_ADJ:0 "Icelandic"
  
+ FAR:0 "Faroes"
+ FAR_DEF:0 "the Faroes"
+ FAR_ADJ:0 "Faroese"
  FAR_communism:0 "Faroese Socialist Workers' Republic"
  FAR_communism_DEF:0 "the Faroese Socialist Workers' Republic"
  FAR_communism_ADJ:0 "Faroese"
@@ -560,6 +686,9 @@
  FAR_fascism_DEF:0 "the Kingdom of the Faroe Islands"
  FAR_fascism_ADJ:0 "Faroese"
  
+ NOR:0 "Norway"
+ NOR_DEF:0 "Norway"
+ NOR_ADJ:0 "Norwegian"
  NOR_communism:0 "Norwegian Socialist Workers' Republic"
  NOR_communism_DEF:0 "the Norwegian Socialist Workers' Republic"
  NOR_communism_ADJ:0 "Norwegian"
@@ -573,6 +702,9 @@
  NOR_fascism_DEF:0 "the Kingdom of Norway"
  NOR_fascism_ADJ:0 "Norwegian"
  
+ DEN:0 "Denmark"
+ DEN_DEF:0 "Denmark"
+ DEN_ADJ:0 "Danish"
  DEN_communism:0 "Danish Socialist Workers' Republic"
  DEN_communism_DEF:0 "the Danish Socialist Workers' Republic"
  DEN_communism_ADJ:0 "Danish"
@@ -586,6 +718,9 @@
  DEN_fascism_DEF:0 "the Kingdom of Denmark"
  DEN_fascism_ADJ:0 "Danish"
  
+ SWD:0 "Sweden"
+ SWD_DEF:0 "Sweden"
+ SWD_ADJ:0 "Swedish"
  SWD_communism:0 "Swedish Socialist Workers' Republic"
  SWD_communism_DEF:0 "the Swedish Socialist Workers' Republic"
  SWD_communism_ADJ:0 "Swedish"
@@ -599,6 +734,9 @@
  SWD_fascism_DEF:0 "the Kingdom of Sweden"
  SWD_fascism_ADJ:0 "Swedish"
  
+ FIN:0 "Finland"
+ FIN_DEF:0 "Finland"
+ FIN_ADJ:0 "Finnish"
  FIN_communism:0 "Finnish Socialist Workers' Republic"
  FIN_communism_DEF:0 "the Finnish Socialist Workers' Republic"
  FIN_communism_ADJ:0 "Finnish"
@@ -614,6 +752,9 @@
  
  ###BRITAIN###
  
+ ENG:0 "Great Britain"
+ ENG_DEF:0 "Great Britain"
+ ENG_ADJ:0 "British"
  ENG_communism:0 "British Republic"
  ENG_communism_DEF:0 "the British Republic"
  ENG_communism_ADJ:0 "British"
@@ -627,6 +768,9 @@
  ENG_fascism_DEF:0 "the United Kingdom of Great Britain"
  ENG_fascism_ADJ:0 "British"
  
+ IRE:0 "Ireland"
+ IRE_DEF:0 "Ireland"
+ IRE_ADJ:0 "Irish"
  IRE_communism:0 "Irish People's Republic"
  IRE_communism_DEF:0 "the Irish People's Republic"
  IRE_communism_ADJ:0 "Irish"
@@ -642,6 +786,9 @@
  
  ###IBERIA###
  
+ POR:0 "Portugal"
+ POR_DEF:0 "Portugal"
+ POR_ADJ:0 "Portuguese"
  POR_communism:0 "Portuguese Republic"
  POR_communism_DEF:0 "the Portuguese Republic"
  POR_communism_ADJ:0 "Portuguese"
@@ -655,6 +802,9 @@
  POR_fascism_DEF:0 "the Kingdom of Portugal"
  POR_fascism_ADJ:0 "Portuguese"
  
+ SPR:0 "Spain"
+ SPR_DEF:0 "Spain"
+ SPR_ADJ:0 "Spanish"
  SPR_communism:0 "Spanish Republic"
  SPR_communism_DEF:0 "the Spanish Republic"
  SPR_communism_ADJ:0 "Spanish"
@@ -668,6 +818,9 @@
  SPR_fascism_DEF:0 "the Spanish State"
  SPR_fascism_ADJ:0 "Spanish"
  
+ ARA:0 "Aragon"
+ ARA_DEF:0 "Aragon"
+ ARA_ADJ:0 "Aragonese"
  ARA_communism:0 "People's Republic of Aragon"
  ARA_communism_DEF:0 "the People's Republic of Aragon"
  ARA_communism_ADJ:0 "Aragonese"
@@ -681,6 +834,9 @@
  ARA_fascism_DEF:0 "the Aragonese State"
  ARA_fascism_ADJ:0 "Aragonese"
  
+ CAT:0 "Catalonia"
+ CAT_DEF:0 "Catalonia"
+ CAT_ADJ:0 "Catalan"
  CAT_communism:0 "People's Republic of Catalonia"
  CAT_communism_DEF:0 "the People's Republic of Catalonia"
  CAT_communism_ADJ:0 "Catalan"
@@ -696,6 +852,9 @@
  
  ###FRANCE###
  
+ FRA:0 "France"
+ FRA_DEF:0 "France"
+ FRA_ADJ:0 "French"
  FRA_communism:0 "French Socialist Republic"
  FRA_communism_DEF:0 "the French Socialist Republic"
  FRA_communism_ADJ:0 "French"
@@ -709,6 +868,9 @@
  FRA_fascism_DEF:0 "the French Republic"
  FRA_fascism_ADJ:0 "French"
  
+ BRI:0 "Brittany"
+ BRI_DEF:0 "Brittany"
+ BRI_ADJ:0 "Breton"
  BRI_communism:0 "People's Republic of Brittany"
  BRI_communism_DEF:0 "the People's Republic of Brittany"
  BRI_communism_ADJ:0 "Breton"
@@ -722,6 +884,9 @@
  BRI_fascism_DEF:0 "the Breton State"
  BRI_fascism_ADJ:0 "Breton"
  
+ NMD:0 "Normandy"
+ NMD_DEF:0 "Normandy"
+ NMD_ADJ:0 "Norman"
  NMD_communism:0 "People's Republic of Normandy"
  NMD_communism_DEF:0 "the People's Republic of Normandy"
  NMD_communism_ADJ:0 "Norman"
@@ -735,6 +900,25 @@
  NMD_fascism_DEF:0 "the Norman State"
  NMD_fascism_ADJ:0 "Norman"
  
+ PRI:0 "Paris"
+ PRI_DEF:0 "Paris"
+ PRI_ADJ:0 "Parisian"
+ PRI_communism:0 "Paris Commune"
+ PRI_communism_DEF:0 "the Paris Commune"
+ PRI_communism_ADJ:0 "Parisian"
+ PRI_democratic:0 "Republic of Paris"
+ PRI_democratic_DEF:0 "the Republic of Paris"
+ PRI_democratic_ADJ:0 "Parisian"
+ PRI_neutrality:0 "Grand Duchy of Paris"
+ PRI_neutrality_DEF:0 "the Grand Duchy of Paris"
+ PRI_neutrality_ADJ:0 "Parisian"
+ PRI_fascism:0 "Parisii State"
+ PRI_fascism_DEF:0 "the Parisii State"
+ PRI_fascism_ADJ:0 "Parisii"
+ 
+ BGD:0 "Burgundy"
+ BGD_DEF:0 "Burgundy"
+ BGD_ADJ:0 "Burgundian"
  BGD_communism:0 "People's Republic of Burgundy"
  BGD_communism_DEF:0 "the People's Republic of Burgundy"
  BGD_communism_ADJ:0 "Burgundian"
@@ -748,22 +932,9 @@
  BGD_fascism_DEF:0 "the Burgundian State"
  BGD_fascism_ADJ:0 "Burgundian"
  
- PRI_communism:0 "Paris Commune"
- PRI_communism_DEF:0 "the Paris Commune"
- PRI_communism_ADJ:0 "Parisian"
- PRI_democratic:0 "Republic of Paris"
- PRI_democratic_DEF:0 "the Republic of Paris"
- PRI_democratic_ADJ:0 "Parisian"
- PRI_neutrality:0 "Grand Duchy of Paris"
- PRI_neutrality_DEF:0 "the Grand Duchy of Paris"
- PRI_neutrality_ADJ:0 "Parisian"
- PRI_fascism:0 "Parisii Tribe"
- PRI_fascism_DEF:0 "the Parisii Tribe"
- PRI_fascism_ADJ:0 "Parisii"
- PRI:0 "Paris"
- PRI_DEF:0 "Paris"
- PRI_ADJ:0 "Parisian"
- 
+ ALS:0 "Alsace-Lorraine"
+ ALS_DEF:0 "Alsace-Lorraine"
+ ALS_ADJ:0 "Alsatian"
  ALS_communism:0 "People's Republic of Alsace-Lorraine"
  ALS_communism_DEF:0 "the People's Republic of Alsace-Lorraine"
  ALS_communism_ADJ:0 "Alsatian"
@@ -773,10 +944,13 @@
  ALS_neutrality:0 "Principality of Alsace-Lorraine"
  ALS_neutrality_DEF:0 "the Principality of Alsace-Lorraine"
  ALS_neutrality_ADJ:0 "Alsatian"
- ALS_fascism:0 "Alsatian State"
- ALS_fascism_DEF:0 "the Alsatian State"
+ ALS_fascism:0 "Alsace-Lorraine State"
+ ALS_fascism_DEF:0 "the Alsace-Lorraine State"
  ALS_fascism_ADJ:0 "Alsatian"
  
+ OCC:0 "Occitania"
+ OCC_DEF:0 "Occitania"
+ OCC_ADJ:0 "Occitan"
  OCC_communism:0 "People's Republic of Occitania"
  OCC_communism_DEF:0 "the People's Republic of Occitania"
  OCC_communism_ADJ:0 "Occitan"
@@ -792,6 +966,9 @@
  
  ###BENELUX###
  
+ HOL:0 "Netherlands"
+ HOL_DEF:0 "the Netherlands"
+ HOL_ADJ:0 "Dutch"
  HOL_communism:0 "Republic of the United Netherlands"
  HOL_communism_DEF:0 "the Republic of the United Netherlands"
  HOL_communism_ADJ:0 "Dutch"
@@ -805,6 +982,9 @@
  HOL_fascism_DEF:0 "the Kingdom of the Netherlands"
  HOL_fascism_ADJ:0 "Dutch"
  
+ BEL:0 "Luxembourg"
+ BEL_DEF:0 "Luxembourg"
+ BEL_ADJ:0 "Luxembourgish"
  BEL_communism:0 "Socialist Republic of Luxembourg"
  BEL_communism_DEF:0 "the Socialist Republic of Luxembourg"
  BEL_communism_ADJ:0 "Luxembourgish"
@@ -820,6 +1000,9 @@
  
  ###GERMANY###
  
+ DDR:0 "Germany"
+ DDR_DEF:0 "Germany"
+ DDR_ADJ:0 "German"
  DDR_communism:0 "People's Republic of Germany"
  DDR_communism_DEF:0 "the People's Republic of Germany"
  DDR_communism_ADJ:0 "German"
@@ -833,6 +1016,9 @@
  DDR_fascism_DEF:0 "the German State"
  DDR_fascism_ADJ:0 "German"
  
+ GER:0 "Germany"
+ GER_DEF:0 "Germany"
+ GER_ADJ:0 "German"
  GER_communism:0 "German Democratic Republic"
  GER_communism_DEF:0 "the German Democratic Republic"
  GER_communism_ADJ:0 "German"
@@ -846,21 +1032,43 @@
  GER_fascism_DEF:0 "the State of the Teutonic Order"
  GER_fascism_ADJ:0 "German"
  
+ POM:0 "Pomerania"
+ POM_DEF:0 "Pomerania"
+ POM_ADJ:0 "Pomeranian"
+ POM_communism:0 "Pomeranian Council Republic"
+ POM_communism_DEF:0 "the Pomeranian Council Republic"
+ POM_communism_ADJ:0 "Pomeranian"
+ POM_democratic:0 "Pomerania"
+ POM_democratic_DEF:0 "Pomerania"
+ POM_democratic_ADJ:0 "Pomeranian"
+ POM_neutrality:0 "Duchy of Pomerania"
+ POM_neutrality_DEF:0 "the Duchy of Pomerania"
+ POM_neutrality_ADJ:0 "Pomeranian"
+ POM_fascism:0 "Duchy of Pomerania"
+ POM_fascism_DEF:0 "the Duchy of Pomerania"
+ POM_fascism_ADJ:0 "Pomeranian"
+ 
+ WGR:0 "Rhine"
+ WGR_DEF:0 "the Rhine"
+ WGR_ADJ:0 "Rhenish"
  WGR_communism:0 "Confederated States of the Rhine"
  WGR_communism_DEF:0 "the Confederated States of the Rhine"
- WGR_communism_ADJ:0 "German"
+ WGR_communism_ADJ:0 "Rhenish"
  WGR_democratic:0 "Confederated States of the Rhine"
  WGR_democratic_DEF:0 "the Confederated States of the Rhine"
- WGR_democratic_ADJ:0 "German"
+ WGR_democratic_ADJ:0 "Rhenish"
  WGR_neutrality:0 "Confederated States of the Rhine"
  WGR_neutrality_DEF:0 "the Confederated States of the Rhine"
- WGR_neutrality_ADJ:0 "German"
+ WGR_neutrality_ADJ:0 "Rhenish"
  WGR_fascism:0 "Confederated States of the Rhine"
  WGR_fascism_DEF:0 "the Confederated States of the Rhine"
- WGR_fascism_ADJ:0 "German"
+ WGR_fascism_ADJ:0 "Rhenish"
  
  ###ALPS###
  
+ SWI:0 "Switzerland"
+ SWI_DEF:0 "Switzerland"
+ SWI_ADJ:0 "Swiss"
  SWI_communism:0 "Swiss Confederation"
  SWI_communism_DEF:0 "the Swiss Confederation"
  SWI_communism_ADJ:0 "Swiss"
@@ -874,6 +1082,9 @@
  SWI_fascism_DEF:0 "the Swiss Confederation"
  SWI_fascism_ADJ:0 "Swiss"
  
+ AUS:0 "Austria"
+ AUS_DEF:0 "Austria"
+ AUS_ADJ:0 "Austrian"
  AUS_communism:0 "Austrian Socialist Republic"
  AUS_communism_DEF:0 "the Austrian Socialist Republic"
  AUS_communism_ADJ:0 "Austrian"
@@ -887,6 +1098,9 @@
  AUS_fascism_DEF:0 "the Federal State of Austria"
  AUS_fascism_ADJ:0 "Austrian"
  
+ SAV:0 "Savoy"
+ SAV_DEF:0 "Savoy"
+ SAV_ADJ:0 "Savoyard"
  SAV_communism:0 "People's Republic of Savoy"
  SAV_communism_DEF:0 "the People's Republic of Savoy"
  SAV_communism_ADJ:0 "Savoyard"
@@ -900,6 +1114,9 @@
  SAV_fascism_DEF:0 "the Savoyard State"
  SAV_fascism_ADJ:0 "Savoyard"
  
+ ITA:0 "Italy"
+ ITA_DEF:0 "Italy"
+ ITA_ADJ:0 "Italian"
  ITA_communism:0 "Italian Socialist Republic"
  ITA_communism_DEF:0 "the Italian Socialist Republic"
  ITA_communism_ADJ:0 "Italian"
@@ -915,6 +1132,9 @@
  
  ###BALTIC###
 
+ BAL:0 "Baltia"
+ BAL_DEF:0 "Baltia"
+ BAL_ADJ:0 "Baltic"
  BAL_communism:0 "Baltic Socialist Council Republic"
  BAL_communism_DEF:0 "the Baltic Socialist Council Republic"
  BAL_communism_ADJ:0 "Baltic"
@@ -928,6 +1148,9 @@
  BAL_fascism_DEF:0 "the Baltic Order"
  BAL_fascism_ADJ:0 "Baltic"
  
+ EST:0 "Estonia"
+ EST_DEF:0 "Estonia"
+ EST_ADJ:0 "Estonian"
  EST_communism:0 "Estonian Socialist Council Republic"
  EST_communism_DEF:0 "the Estonian Socialist Council Republic"
  EST_communism_ADJ:0 "Estonian"
@@ -941,6 +1164,9 @@
  EST_fascism_DEF:0 "the Kingdom of Estonia"
  EST_fascism_ADJ:0 "Estonian"
  
+ LAT:0 "Latvia"
+ LAT_DEF:0 "Latvia"
+ LAT_ADJ:0 "Latvian"
  LAT_communism:0 "Latvian Socialist Council Republic"
  LAT_communism_DEF:0 "the Latvian Socialist Council Republic"
  LAT_communism_ADJ:0 "Latvian"
@@ -954,6 +1180,9 @@
  LAT_fascism_DEF:0 "the Kingdom of Latvia"
  LAT_fascism_ADJ:0 "Latvian"
  
+ LIT:0 "Lithuania"
+ LIT_DEF:0 "Lithuania"
+ LIT_ADJ:0 "Lithuanian"
  LIT_communism:0 "Lithuanian Socialist Council Republic"
  LIT_communism_DEF:0 "the Lithuanian Socialist Council Republic"
  LIT_communism_ADJ:0 "Lithuanian"
@@ -969,6 +1198,9 @@
  
  ###EASTERN EUROPE###
  
+ POL:0 "Poland"
+ POL_DEF:0 "Poland"
+ POL_ADJ:0 "Polish"
  POL_communism:0 "Polish Republic"
  POL_communism_DEF:0 "the Polish Republic"
  POL_communism_ADJ:0 "Polish"
@@ -982,6 +1214,9 @@
  POL_fascism_DEF:0 "the Kingdom of Poland"
  POL_fascism_ADJ:0 "Polish"
  
+ CZE:0 "Czechia"
+ CZE_DEF:0 "Czechia"
+ CZE_ADJ:0 "Czech"
  CZE_communism:0 "Czech Socialist Republic"
  CZE_communism_DEF:0 "the Czech Socialist Republic"
  CZE_communism_ADJ:0 "Czech"
@@ -995,6 +1230,9 @@
  CZE_fascism_DEF:0 "Bohemia and Moravia"
  CZE_fascism_ADJ:0 "Czech"
  
+ SLO:0 "Slovakia"
+ SLO_DEF:0 "Slovakia"
+ SLO_ADJ:0 "Slovak"
  SLO_communism:0 "Slovak Socialist Republic"
  SLO_communism_DEF:0 "the Slovak Socialist Republic"
  SLO_communism_ADJ:0 "Slovak"
@@ -1008,6 +1246,9 @@
  SLO_fascism_DEF:0 "the Slovak Republic"
  SLO_fascism_ADJ:0 "Moravian"
  
+ HUN:0 "Hungary"
+ HUN_DEF:0 "Hungary"
+ HUN_ADJ:0 "Hungarian"
  HUN_communism:0 "Hungarian People's Republic"
  HUN_communism_DEF:0 "the Hungarian People's Republic"
  HUN_communism_ADJ:0 "Hungarian"
@@ -1021,6 +1262,9 @@
  HUN_fascism_DEF:0 "the Kingdom of Hungary"
  HUN_fascism_ADJ:0 "Hungarian"
  
+ TRN:0 "Transylvania"
+ TRN_DEF:0 "Transylvania"
+ TRN_ADJ:0 "Transylvanian"
  TRN_communism:0 "Transylvanian People's Republic"
  TRN_communism_DEF:0 "the Transylvanian People's Republic"
  TRN_communism_ADJ:0 "Transylvanian"
@@ -1034,6 +1278,9 @@
  TRN_fascism_DEF:0 "the Kingdom of Transylvania"
  TRN_fascism_ADJ:0 "Transylvanian"
  
+ ROM:0 "Romania"
+ ROM_DEF:0 "Romania"
+ ROM_ADJ:0 "Romanian"
  ROM_communism:0 "Romanian People's Republic"
  ROM_communism_DEF:0 "the Romanian People's Republic"
  ROM_communism_ADJ:0 "Romanian"
@@ -1047,6 +1294,9 @@
  ROM_fascism_DEF:0 "the Kingdom of Romania"
  ROM_fascism_ADJ:0 "Romanian"
  
+ BLR:0 "Belarus"
+ BLR_DEF:0 "Belarus"
+ BLR_ADJ:0 "Belarusian"
  BLR_communism:0 "Belarusian Socialist Council Republic"
  BLR_communism_DEF:0 "the Belarusian Socialist Council Republic"
  BLR_communism_ADJ:0 "Belarusian"
@@ -1060,6 +1310,9 @@
  BLR_fascism_DEF:0 "Belarus"
  BLR_fascism_ADJ:0 "Belarusian"
  
+ UKR:0 "Ukraine"
+ UKR_DEF:0 "Ukraine"
+ UKR_ADJ:0 "Ukrainian"
  UKR_communism:0 "Ukrainian Socialist Council Republic"
  UKR_communism_DEF:0 "the Ukrainian Socialist Council Republic"
  UKR_communism_ADJ:0 "Ukrainian"
@@ -1075,6 +1328,9 @@
  
  ###BALKANS###
  
+ YUG:0 "Yugoslavia"
+ YUG_DEF:0 "Yugoslavia"
+ YUG_ADJ:0 "Yugoslavian"
  YUG_communism:0 "Democratic Federal Yugoslavia"
  YUG_communism_DEF:0 "Democratic Federal Yugoslavia"
  YUG_communism_ADJ:0 "Yugoslavian"
@@ -1088,6 +1344,9 @@
  YUG_fascism_DEF:0 "the Kingdom of Yugoslavia"
  YUG_fascism_ADJ:0 "Yugoslavian"
  
+ CRO:0 "Croatia"
+ CRO_DEF:0 "Croatia"
+ CRO_ADJ:0 "Croatian"
  CRO_communism:0 "People's Republic of Croatia"
  CRO_communism_DEF:0 "the People's Republic of Croatia"
  CRO_communism_ADJ:0 "Croatian"
@@ -1101,6 +1360,9 @@
  CRO_fascism_DEF:0 "the Independent State of Croatia"
  CRO_fascism_ADJ:0 "Croatian"
  
+ SER:0 "Serbia"
+ SER_DEF:0 "Serbia"
+ SER_ADJ:0 "Serbian"
  SER_communism:0 "People's Republic of Serbia"
  SER_communism_DEF:0 "the People's Republic of Serbia"
  SER_communism_ADJ:0 "Serbian"
@@ -1114,6 +1376,9 @@
  SER_fascism_DEF:0 "the Kingdom of Serbia"
  SER_fascism_ADJ:0 "Serbian"
  
+ ALB:0 "Albania"
+ ALB_DEF:0 "Albania"
+ ALB_ADJ:0 "Albanian"
  ALB_communism:0 "People's Republic of Albania"
  ALB_communism_DEF:0 "the People's Republic of Albania"
  ALB_communism_ADJ:0 "Albanian"
@@ -1127,6 +1392,9 @@
  ALB_fascism_DEF:0 "the Greater Albania"
  ALB_fascism_ADJ:0 "Albanian"
  
+ GRE:0 "Greece"
+ GRE_DEF:0 "Greece"
+ GRE_ADJ:0 "Greek"
  GRE_communism:0 "Hellenic Republic"
  GRE_communism_DEF:0 "the Hellenic Republic"
  GRE_communism_ADJ:0 "Greek"
@@ -1140,6 +1408,9 @@
  GRE_fascism_DEF:0 "the Hellenic State"
  GRE_fascism_ADJ:0 "Greek"
  
+ BUL:0 "Bulgaria"
+ BUL_DEF:0 "Bulgaria"
+ BUL_ADJ:0 "Bulgarian"
  BUL_communism:0 "People's Republic of Bulgaria"
  BUL_communism_DEF:0 "the People's Republic of Bulgaria"
  BUL_communism_ADJ:0 "Bulgarian"
@@ -1155,6 +1426,9 @@
  
  ###RUSSIA###
  
+ SOV:0 "Russia"
+ SOV_DEF:0 "Russia"
+ SOV_ADJ:0 "Russian"
  SOV_communism:0 "Russian Socialist Federative Сouncil Republic"
  SOV_communism_DEF:0 "the Russian Socialist Federative Сouncil Republic"
  SOV_communism_ADJ:0 "Russian"
@@ -1168,6 +1442,9 @@
  SOV_fascism_DEF:0 "the Russian Empire"
  SOV_fascism_ADJ:0 "Russian"
  
+ WSR:0 "White Sea"
+ WSR_DEF:0 "White Sea"
+ WSR_ADJ:0 "White Sea"
  WSR_communism:0 "White Sea Socialist Council Republic"
  WSR_communism_DEF:0 "the White Sea Socialist Council Republic"
  WSR_communism_ADJ:0 "White Sea"
@@ -1179,8 +1456,11 @@
  WSR_neutrality_ADJ:0 "White Sea"
  WSR_fascism:0 "White Sea"
  WSR_fascism_DEF:0 "White Sea"
- WSR_fascism_ADJ:0 "White Sea Cossack"
+ WSR_fascism_ADJ:0 "White Sea"
  
+ STP:0 "Petrograd"
+ STP_DEF:0 "Petrograd"
+ STP_ADJ:0 "Petrograd"
  STP_communism:0 "Petrograd Socialist Council Republic"
  STP_communism_DEF:0 "the Petrograd Socialist Council Republic"
  STP_communism_ADJ:0 "Petrograd"
@@ -1194,6 +1474,9 @@
  STP_fascism_DEF:0 "Saint Petersburg"
  STP_fascism_ADJ:0 "Petersburger"
  
+ MOS:0 "Moscow"
+ MOS_DEF:0 "Moscow"
+ MOS_ADJ:0 "Muscovite"
  MOS_communism:0 "Moscow Socialist Council Republic"
  MOS_communism_DEF:0 "the Moscow Socialist Council Republic"
  MOS_communism_ADJ:0 "Muscovite"
@@ -1207,6 +1490,9 @@
  MOS_fascism_DEF:0 "Moscow"
  MOS_fascism_ADJ:0 "Muscovite"
  
+ TSR:0 "Don"
+ TSR_DEF:0 "Don"
+ TSR_ADJ:0 "Don"
  TSR_communism:0 "Don Socialist Council Republic"
  TSR_communism_DEF:0 "the Don Socialist Council Republic"
  TSR_communism_ADJ:0 "Don"
@@ -1220,6 +1506,9 @@
  TSR_fascism_DEF:0 "the Almighty Don Host"
  TSR_fascism_ADJ:0 "Don"
  
+ CRI:0 "Crimea"
+ CRI_DEF:0 "Crimea"
+ CRI_ADJ:0 "Crimean"
  CRI_communism:0 "Crimean Socialist Council Republic"
  CRI_communism_DEF:0 "the Crimean Socialist Council Republic"
  CRI_communism_ADJ:0 "Crimean"
@@ -1233,6 +1522,9 @@
  CRI_fascism_DEF:0 "the Crimean Khanate"
  CRI_fascism_ADJ:0 "Crimean"
  
+ SIB:0 "Siberia"
+ SIB_DEF:0 "Siberia"
+ SIB_ADJ:0 "Siberian"
  SIB_communism:0 "Siberian Socialist Council Republic"
  SIB_communism_DEF:0 "the Siberian Socialist Council Republic"
  SIB_communism_ADJ:0 "Siberian"
@@ -1248,6 +1540,9 @@
  
  ###CENTRAL ASIA###
  
+ KAZ:0 "Kazakhstan"
+ KAZ_DEF:0 "Kazakhstan"
+ KAZ_ADJ:0 "Kazakh"
  KAZ_communism:0 "Kazakh Socialist Council Republic"
  KAZ_communism_DEF:0 "the "Kazakh Socialist Council Republic"
  KAZ_communism_ADJ:0 "Kazakh"
@@ -1261,6 +1556,9 @@
  KAZ_fascism_DEF:0 "the Kazakh State"
  KAZ_fascism_ADJ:0 "Kazakh"
  
+ UZB:0 "Uzbekistan"
+ UZB_DEF:0 "Uzbekistan"
+ UZB_ADJ:0 "Uzbek"
  UZB_communism:0 "Uzbek Socialist Council Republic"
  UZB_communism_DEF:0 "the Uzbek Socialist Council Republic"
  UZB_communism_ADJ:0 "Uzbek"
@@ -1274,6 +1572,9 @@
  UZB_fascism_DEF:0 "the Uzbek State"
  UZB_fascism_ADJ:0 "Uzbek"
  
+ KYR:0 "Alash Orda"
+ KYR_DEF:0 "Alash Orda"
+ KYR_ADJ:0 "Alash"
  KYR_communism:0 "Kyrgyz Socialist Council Republic"
  KYR_communism_DEF:0 "the Kyrgyz Socialist Council Republic"
  KYR_communism_ADJ:0 "Kyrgyz"
@@ -1287,6 +1588,9 @@
  KYR_fascism_DEF:0 "Alash Orda"
  KYR_fascism_ADJ:0 "Alash"
  
+ TAJ:0 "Tajikistan"
+ TAJ_DEF:0 "Tajikistan"
+ TAJ_ADJ:0 "Tajik"
  TAJ_communism:0 "Tajik Socialist Council Republic"
  TAJ_communism_DEF:0 "the Tajik Socialist Council Republic"
  TAJ_communism_ADJ:0 "Tajik"
@@ -1300,6 +1604,9 @@
  TAJ_fascism_DEF:0 "the Tajik State"
  TAJ_fascism_ADJ:0 "Tajik"
  
+ TMS:0 "Turkestan"
+ TMS_DEF:0 "Turkestan"
+ TMS_ADJ:0 "Turkic"
  TMS_communism:0 "Turkestan Socialist Council Republic"
  TMS_communism_DEF:0 "the Turkestan Socialist Council Republic"
  TMS_communism_ADJ:0 "Turkic"
@@ -1313,6 +1620,9 @@
  TMS_fascism_DEF:0 "the Turkestan State"
  TMS_fascism_ADJ:0 "Turkic"
  
+ KHI:0 "Khorezm"
+ KHI_DEF:0 "Khorezm"
+ KHI_ADJ:0 "Khorezm"
  KHI_communism:0 "Khorezm Socialist Council Republic"
  KHI_communism_DEF:0 "the Khorezm Socialist Council Republic"
  KHI_communism_ADJ:0 "Khorezm"
@@ -1326,6 +1636,9 @@
  KHI_fascism_DEF:0 "the Khanate of Khiva"
  KHI_fascism_ADJ:0 "Khivan"
  
+ BUK:0 "Bukhara"
+ BUK_DEF:0 "Bukhara"
+ BUK_ADJ:0 "Bukharan"
  BUK_communism:0 "Bukharan Socialist Council Republic"
  BUK_communism_DEF:0 "the Bukharan Socialist Council Republic"
  BUK_communism_ADJ:0 "Bukharan"
@@ -1341,6 +1654,9 @@
  
  ###CAUCASUS###
  
+ CAU:0 "Caucasus"
+ CAU_DEF:0 "Caucasus"
+ CAU_ADJ:0 "Caucasian"
  CAU_communism:0 "Caucasian Socialist Federative Council Republic"
  CAU_communism_DEF:0 "the Caucasian Socialist Federative Council Republic"
  CAU_communism_ADJ:0 "Caucasian"
@@ -1354,6 +1670,9 @@
  CAU_fascism_DEF:0 "the Caucasian Federation"
  CAU_fascism_ADJ:0 "Caucasian"
  
+ ABK:0 "Abkhazia"
+ ABK_DEF:0 "Abkhazia"
+ ABK_ADJ:0 "Abkhazian"
  ABK_communism:0 "Abkhaz Socialist Сouncil Republic"
  ABK_communism_DEF:0 "the Abkhaz Socialist Сouncil Republic"
  ABK_communism_ADJ:0 "Abkhazian"
@@ -1367,6 +1686,9 @@
  ABK_fascism_DEF:0 "the State Abkhazia"
  ABK_fascism_ADJ:0 "Abkhazian"
  
+ OSS:0 "Ossetia"
+ OSS_DEF:0 "Ossetia"
+ OSS_ADJ:0 "Ossetian"
  OSS_communism:0 "Ossetian Socialist Сouncil Republic"
  OSS_communism_DEF:0 "the Ossetian Socialist Сouncil Republic"
  OSS_communism_ADJ:0 "Ossetian"
@@ -1380,6 +1702,9 @@
  OSS_fascism_DEF:0 "the State Ossetia"
  OSS_fascism_ADJ:0 "Ossetian"
  
+ CHE:0 "Checheno-Ingushetia"
+ CHE_DEF:0 "Checheno-Ingushetia"
+ CHE_ADJ:0 "Checheno-Ingush"
  CHE_communism:0 "Checheno-Ingush Socialist Сouncil Republic"
  CHE_communism_DEF:0 "the Checheno-Ingush Socialist Сouncil Republic"
  CHE_communism_ADJ:0 "Checheno-Ingush"
@@ -1393,6 +1718,9 @@
  CHE_fascism_DEF:0 "the North Caucasian Emirate"
  CHE_fascism_ADJ:0 "North Caucasian"
  
+ DAG:0 "Dagestana"
+ DAG_DEF:0 "Dagestan"
+ DAG_ADJ:0 "Dagestani"
  DAG_communism:0 "Dagestan Socialist Сouncil Republic"
  DAG_communism_DEF:0 "the Dagestan Socialist Сouncil Republic"
  DAG_communism_ADJ:0 "Dagestani"
@@ -1406,6 +1734,9 @@
  DAG_fascism_DEF:0 "the State of Dagestan"
  DAG_fascism_ADJ:0 "Dagestani"
  
+ GEO:0 "Georgia"
+ GEO_DEF:0 "Georgia"
+ GEO_ADJ:0 "Georgian"
  GEO_communism:0 "Georgian Socialist Сouncil Republic"
  GEO_communism_DEF:0 "the Georgian Socialist Сouncil Republic"
  GEO_communism_ADJ:0 "Georgian"
@@ -1419,6 +1750,9 @@
  GEO_fascism_DEF:0 "the State of Georgia"
  GEO_fascism_ADJ:0 "Georgian"
  
+ ARM:0 "Armenia"
+ ARM_DEF:0 "Armenia"
+ ARM_ADJ:0 "Armenian"
  ARM_communism:0 "Armenian Socialist Сouncil Republic"
  ARM_communism_DEF:0 "the Armenian Socialist Сouncil Republic"
  ARM_communism_ADJ:0 "Armenian"
@@ -1432,21 +1766,27 @@
  ARM_fascism_DEF:0 "the State of Armenia"
  ARM_fascism_ADJ:0 "Armenian"
  
- AZR_communism:0 "Azerbaijan Socialist Сouncil Republic"
- AZR_communism_DEF:0 "the Azerbaijan Socialist Сouncil Republic"
- AZR_communism_ADJ:0 "Azeri"
+ AZR:0 "Azerbaijan"
+ AZR_DEF:0 "Azerbaijan"
+ AZR_ADJ:0 "Azerbaijani"
+ AZR_communism:0 "Azerbaijani Socialist Сouncil Republic"
+ AZR_communism_DEF:0 "the Azerbaijani Socialist Сouncil Republic"
+ AZR_communism_ADJ:0 "Azerbaijani"
  AZR_democratic:0 "Republic of Azerbaijan"
  AZR_democratic_DEF:0 "the Republic of Azerbaijan"
- AZR_democratic_ADJ:0 "Azeri"
+ AZR_democratic_ADJ:0 "Azerbaijani"
  AZR_neutrality:0 "Kingdom of Azerbaijan"
  AZR_neutrality_DEF:0 "the Kingdom of Azerbaijan"
- AZR_neutrality_ADJ:0 "Azeri"
+ AZR_neutrality_ADJ:0 "Azerbaijani"
  AZR_fascism:0 "State of Azerbaijan"
  AZR_fascism_DEF:0 "the State of Azerbaijan"
- AZR_fascism_ADJ:0 "Azeri"
+ AZR_fascism_ADJ:0 "Azerbaijani"
  
  ###ASIA###
  
+ TAN:0 "Tuva"
+ TAN_DEF:0 "Tuva"
+ TAN_ADJ:0 "Tuvan"
  TAN_communism:0 "Tuvan People's Republic"
  TAN_communism_DEF:0 "the Tuvan People's Republic"
  TAN_communism_ADJ:0 "Tuvan"
@@ -1460,6 +1800,9 @@
  TAN_fascism_DEF:0 "Tannu Uriankhai"
  TAN_fascism_ADJ:0 "Tuvan"
  
+ CHI:0 "China"
+ CHI_DEF:0 "China"
+ CHI_ADJ:0 "Chinese"
  CHI_communism:0 "Republic of China"
  CHI_communism_DEF:0 "the Republic of China"
  CHI_communism_ADJ:0 "Chinese"
@@ -1473,6 +1816,9 @@
  CHI_fascism_DEF:0 "the Great Qing"
  CHI_fascism_ADJ:0 "Chinese"
  
+ KOR:0 "Korea"
+ KOR_DEF:0 "Korea"
+ KOR_ADJ:0 "Korean"
  KOR_communism:0 "Democratic People's Republic of Korea"
  KOR_communism_DEF:0 "the Democratic People's Republic of Korea"
  KOR_communism_ADJ:0 "Korean"
@@ -1486,6 +1832,9 @@
  KOR_fascism_DEF:0 "the Great Joseon"
  KOR_fascism_ADJ:0 "Joseon"
  
+ JAP:0 "Japan"
+ JAP_DEF:0 "Japan"
+ JAP_ADJ:0 "Japanese"
  JAP_communism:0 "Republic of Japan"
  JAP_communism_DEF:0 "the Republic of Japan"
  JAP_communism_ADJ:0 "Japanese"
@@ -1499,6 +1848,9 @@
  JAP_fascism_DEF:0 "the Empire of Japan"
  JAP_fascism_ADJ:0 "Japanese"
  
+ PRC:0 "Taiping"
+ PRC_DEF:0 "Taiping"
+ PRC_ADJ:0 "Taiping"
  PRC_communism:0 "Taiping Сouncil Republic"
  PRC_communism_DEF:0 "the Taiping Сouncil Republic"
  PRC_communism_ADJ:0 "Taiping"
@@ -1512,6 +1864,9 @@
  PRC_fascism_DEF:0 "the Taiping Heavenly Kingdom"
  PRC_fascism_ADJ:0 "Taiping"
  
+ TIB:0 "Tibet"
+ TIB_DEF:0 "Tibet"
+ TIB_ADJ:0 "Tibetan"
  TIB_communism:0 "Tibetan People's Republic"
  TIB_communism_DEF:0 "the Tibetan People's Republic"
  TIB_communism_ADJ:0 "Tibetan"
@@ -1525,6 +1880,9 @@
  TIB_fascism_DEF:0 "Tibet"
  TIB_fascism_ADJ:0 "Tibetan"
  
+ BUR:0 "Burma"
+ BUR_DEF:0 "Burma"
+ BUR_ADJ:0 "Burmese"
  BUR_communism:0 "Socialist Republic of the Union of Burma"
  BUR_communism_DEF:0 "the Socialist Republic of the Union of Burma"
  BUR_communism_ADJ:0 "Burmese"
@@ -1538,6 +1896,9 @@
  BUR_fascism_DEF:0 "the State of Burma"
  BUR_fascism_ADJ:0 "Burmese"
  
+ SIA:0 "Siam"
+ SIA_DEF:0 "Siam"
+ SIA_ADJ:0 "Siamese"
  SIA_communism:0 "Republic of Thailand"
  SIA_communism_DEF:0 "the Republic of Thailand"
  SIA_communism_ADJ:0 "Thai"
@@ -1551,6 +1912,9 @@
  SIA_fascism_DEF:0 "Siam"
  SIA_fascism_ADJ:0 "Siamese"
  
+ LAO:0 "Laos"
+ LAO_DEF:0 "Laos"
+ LAO_ADJ:0 "Laotian"
  LAO_communism:0 "Lao People's Democratic Republic"
  LAO_communism_DEF:0 "the Lao People's Democratic Republic"
  LAO_communism_ADJ:0 "Laotian"
@@ -1564,6 +1928,9 @@
  LAO_fascism_DEF:0 "the Kingdom of Laos"
  LAO_fascism_ADJ:0 "Laotian"
  
+ CAM:0 "Cambodia"
+ CAM_DEF:0 "Cambodia"
+ CAM_ADJ:0 "Cambodian"
  CAM_communism:0 "Democratic Kampuchea"
  CAM_communism_DEF:0 "Democratic Kampuchea"
  CAM_communism_ADJ:0 "Kampuchean"
@@ -1577,6 +1944,9 @@
  CAM_fascism_DEF:0 "the State of Cambodia"
  CAM_fascism_ADJ:0 "Cambodian"
  
+ VIN:0 "Vietnam"
+ VIN_DEF:0 "Vietnam"
+ VIN_ADJ:0 "Vietnamese"
  VIN_communism:0 "Democratic Republic of Vietnam"
  VIN_communism_DEF:0 "the Democratic Republic of Vietnam"
  VIN_communism_ADJ:0 "Vietnamese"
@@ -1590,6 +1960,9 @@
  VIN_fascism_DEF:0 "the Empire of Vietnam"
  VIN_fascism_ADJ:0 "Vietnamese"
  
+ MAL:0 "Malaysia"
+ MAL_DEF:0 "Malaysia"
+ MAL_ADJ:0 "Malaysian"
  MAL_communism:0 "Malayan Union"
  MAL_communism_DEF:0 "the Malayan Union"
  MAL_communism_ADJ:0 "Malayan"
@@ -1605,6 +1978,9 @@
  
  ###NEAR EAST###
  
+ TUR:0 "Turkey"
+ TUR_DEF:0 "Turkey"
+ TUR_ADJ:0 "Turkish"
  TUR_communism:0 "Republic of Turkey"
  TUR_communism_DEF:0 "the Republic of Turkey"
  TUR_communism_ADJ:0 "Turkish"
@@ -1618,6 +1994,9 @@
  TUR_fascism_DEF:0 "the Turkish State"
  TUR_fascism_ADJ:0 "Turkish"
  
+ KUR:0 "Kurdistan"
+ KUR_DEF:0 "Kurdistan"
+ KUR_ADJ:0 "Kurdish"
  KUR_communism:0 "People's Republic of Kurdistan"
  KUR_communism_DEF:0 "the People's Republic of Kurdistan"
  KUR_communism_ADJ:0 "Kurdish"
@@ -1631,6 +2010,9 @@
  KUR_fascism_DEF:0 "the Emirate of Kurdistan"
  KUR_fascism_ADJ:0 "Kurdish"
  
+ IRQ:0 "Iraq"
+ IRQ_DEF:0 "Iraq"
+ IRQ_ADJ:0 "Iraqi"
  IRQ_communism:0 "Iraqi Republic"
  IRQ_communism_DEF:0 "the Iraqi Republic"
  IRQ_communism_ADJ:0 "Iraqi"
@@ -1644,6 +2026,9 @@
  IRQ_fascism_DEF:0 "the State of Iraq"
  IRQ_fascism_ADJ:0 "Iraqi"
  
+ KUW:0 "Kuwait"
+ KUW_DEF:0 "Kuwait"
+ KUW_ADJ:0 "Kuwaiti"
  KUW_communism:0 "Republic of Kuwait"
  KUW_communism_DEF:0 "the Republic of Kuwait"
  KUW_communism_ADJ:0 "Kuwaiti"
@@ -1657,6 +2042,9 @@
  KUW_fascism_DEF:0 "the State of Kuwait"
  KUW_fascism_ADJ:0 "Kuwaiti"
  
+ SYR:0 "Syria"
+ SYR_DEF:0 "Syria"
+ SYR_ADJ:0 "Syrian"
  SYR_communism:0 "Syrian Republic"
  SYR_communism_DEF:0 "the Syrian Republic"
  SYR_communism_ADJ:0 "Syrian"
@@ -1670,6 +2058,9 @@
  SYR_fascism_DEF:0 "the State of Syria"
  SYR_fascism_ADJ:0 "Syrian"
  
+ LEB:0 "Lebanon"
+ LEB_DEF:0 "Lebanon"
+ LEB_ADJ:0 "Lebanese"
  LEB_communism:0 "Lebanese Republic"
  LEB_communism_DEF:0 "the Lebanese Republic"
  LEB_communism_ADJ:0 "Lebanese"
@@ -1683,6 +2074,9 @@
  LEB_fascism_DEF:0 "the State of Lebanon"
  LEB_fascism_ADJ:0 "Lebanese"
  
+ PAL:0 "Palestine"
+ PAL_DEF:0 "Palestine"
+ PAL_ADJ:0 "Palestinian"
  PAL_communism:0 "Palestinian Republic"
  PAL_communism_DEF:0 "Palestinian Republic"
  PAL_communism_ADJ:0 "Palestinian"
@@ -1696,6 +2090,9 @@
  PAL_fascism_DEF:0 "the State of Palestine"
  PAL_fascism_ADJ:0 "Palestinian"
  
+ JOR:0 "Jordanian"
+ JOR_DEF:0 "Jordanian"
+ JOR_ADJ:0 "Jordanian"
  JOR_communism:0 "Jordanian Republic"
  JOR_communism_DEF:0 "the Jordanian Republic"
  JOR_communism_ADJ:0 "Jordanian"
@@ -1709,6 +2106,9 @@
  JOR_fascism_DEF:0 "the State of Jordan"
  JOR_fascism_ADJ:0 "Jordanian"
  
+ ANZ:0 "Anizah"
+ ANZ_DEF:0 "Anizah"
+ ANZ_ADJ:0 "Anezi"
  ANZ_communism:0 "Republic of Anizah"
  ANZ_communism_DEF:0 "the Republic of Anizah"
  ANZ_communism_ADJ:0 "Anezi"
@@ -1722,6 +2122,9 @@
  ANZ_fascism_DEF:0 "the Emirate of Anizah"
  ANZ_fascism_ADJ:0 "Anezi"
  
+ HEJ:0 "Mecca"
+ HEJ_DEF:0 "Mecca"
+ HEJ_ADJ:0 "Meccan"
  HEJ_communism:0 "Republic of Mecca"
  HEJ_communism_DEF:0 "the Republic of Mecca"
  HEJ_communism_ADJ:0 "Meccan"
@@ -1735,6 +2138,9 @@
  HEJ_fascism_DEF:0 "the Sharifate of Mecca"
  HEJ_fascism_ADJ:0 "Meccan"
  
+ SAU:0 "Arabia"
+ SAU_DEF:0 "Arabia"
+ SAU_ADJ:0 "Arabian"
  SAU_communism:0 "Republic of Central Arabia"
  SAU_communism_DEF:0 "the Republic of Central Arabia"
  SAU_communism_ADJ:0 "Arabian"
@@ -1748,6 +2154,9 @@
  SAU_fascism_DEF:0 "the Kingdom of Saudi Arabia"
  SAU_fascism_ADJ:0 "Arabian"
  
+ QAT:0 "Qatar"
+ QAT_DEF:0 "Qatar"
+ QAT_ADJ:0 "Qatari"
  QAT_communism:0 "Republic of Qatar"
  QAT_communism_DEF:0 "the Republic of Qatar"
  QAT_communism_ADJ:0 "Qatari"
@@ -1761,6 +2170,9 @@
  QAT_fascism_DEF:0 "the State of Qatar"
  QAT_fascism_ADJ:0 "Qatari"
  
+ ABU:0 "Arabia"
+ ABU_DEF:0 "Arabia"
+ ABU_ADJ:0 "Arabian"
  ABU_communism:0 "United Arab Republics"
  ABU_communism_DEF:0 "the United Arab Republics"
  ABU_communism_ADJ:0 "Arabian"
@@ -1774,6 +2186,9 @@
  ABU_fascism_DEF:0 "the United Arab Emirates"
  ABU_fascism_ADJ:0 "Arabian"
  
+ YEM:0 "Yemen"
+ YEM_DEF:0 "Yemen"
+ YEM_ADJ:0 "Yemeni"
  YEM_communism:0 "Republic of Yemen"
  YEM_communism_DEF:0 "the Republic of Yemen"
  YEM_communism_ADJ:0 "Yemeni"
@@ -1787,6 +2202,9 @@
  YEM_fascism_DEF:0 "the Mutawakkilite Kingdom of Yemen"
  YEM_fascism_ADJ:0 "Yemeni"
  
+ OMA:0 "Oman"
+ OMA_DEF:0 "Oman"
+ OMA_ADJ:0 "Omani"
  OMA_communism:0 "Republic of Oman"
  OMA_communism_DEF:0 "the Republic of Oman"
  OMA_communism_ADJ:0 "Omani"
@@ -1802,6 +2220,9 @@
  
  ###PERSIA###
  
+ AHZ:0 "Ahvaz"
+ AHZ_DEF:0 "Ahvaz"
+ AHZ_ADJ:0 "Ahvazi"
  AHZ_communism:0 "Republic of Ahvaz"
  AHZ_communism_DEF:0 "the Republic of Ahvaz"
  AHZ_communism_ADJ:0 "Ahvazi"
@@ -1815,6 +2236,9 @@
  AHZ_fascism_DEF:0 "the Emirate of Ahvaz"
  AHZ_fascism_ADJ:0 "Ahvazi"
  
+ PER:0 "Iran"
+ PER_DEF:0 "Iran"
+ PER_ADJ:0 "Iranian"
  PER_communism:0 "Republic of Iran"
  PER_communism_DEF:0 "the Republic of Iran"
  PER_communism_ADJ:0 "Iranian"
@@ -1828,6 +2252,9 @@
  PER_fascism_DEF:0 "the Sublime State of Iran"
  PER_fascism_ADJ:0 "Iranian"
  
+ AFG:0 "Afghanistan"
+ AFG_DEF:0 "Afghanistan"
+ AFG_ADJ:0 "Afghan"
  AFG_communism:0 "Democratic Republic of Afghanistan"
  AFG_communism_DEF:0 "the Democratic Republic of Afghanistan"
  AFG_communism_ADJ:0 "Afghan"
@@ -1841,6 +2268,9 @@
  AFG_fascism_DEF:0 "the Emirate of Afghanistan"
  AFG_fascism_ADJ:0 "Afghan"
  
+ PAK:0 "Pakistan"
+ PAK_DEF:0 "Pakistan"
+ PAK_ADJ:0 "Pakistani"
  PAK_communism:0 "Republic of Pakistan"
  PAK_communism_DEF:0 "the Republic of Pakistan"
  PAK_communism_ADJ:0 "Pakistani"
@@ -1856,6 +2286,9 @@
  
  ###HINDUSTAN###
  
+ RAJ:0 "India"
+ RAJ_DEF:0 "India"
+ RAJ_ADJ:0 "Indian"
  RAJ_communism:0 "Republic of India"
  RAJ_communism_DEF:0 "the Republic of India"
  RAJ_communism_ADJ:0 "Indian"
@@ -1869,6 +2302,9 @@
  RAJ_fascism_DEF:0 "the Indian Empire"
  RAJ_fascism_ADJ:0 "Indian"
  
+ BHU:0 "Travancore"
+ BHU_DEF:0 "Travancore"
+ BHU_ADJ:0 "Travancore"
  BHU_communism:0 "Republic of Travancore"
  BHU_communism_DEF:0 "the Republic of Travancore"
  BHU_communism_ADJ:0 "Travancore"
@@ -1882,6 +2318,9 @@
  BHU_fascism_DEF:0 "the Kingdom of Travancore"
  BHU_fascism_ADJ:0 "Travancore"
  
+ NEP:0 "Mysore"
+ NEP_DEF:0 "Mysore"
+ NEP_ADJ:0 "Mysore"
  NEP_communism:0 "Republic of Mysore"
  NEP_communism_DEF:0 "the Republic of Mysore"
  NEP_communism_ADJ:0 "Mysore"
@@ -1897,6 +2336,9 @@
  
  ###NORTHERN AFRICA###
  
+ MOR:0 "Morocco"
+ MOR_DEF:0 "Morocco"
+ MOR_ADJ:0 "Moroccan"
  MOR_communism:0 "Republic of Morocco"
  MOR_communism_DEF:0 "the Republic of Morocco"
  MOR_communism_ADJ:0 "Moroccan"
@@ -1910,6 +2352,9 @@
  MOR_fascism_DEF:0 "the State of Morocco"
  MOR_fascism_ADJ:0 "Moroccan"
  
+ ALG:0 "Algeria"
+ ALG_DEF:0 "Algeria"
+ ALG_ADJ:0 "Algerian"
  ALG_communism:0 "People's Democratic Republic of Algeria"
  ALG_communism_DEF:0 "the People's Democratic Republic of Algeria"
  ALG_communism_ADJ:0 "Algerian"
@@ -1923,6 +2368,9 @@
  ALG_fascism_DEF:0 "the State of Algeria"
  ALG_fascism_ADJ:0 "Algerian"
  
+ TUN:0 "Tunisia"
+ TUN_DEF:0 "Tunisia"
+ TUN_ADJ:0 "Tunisian"
  TUN_communism:0 "Republic of Tunisia"
  TUN_communism_DEF:0 "the Republic of Tunisia"
  TUN_communism_ADJ:0 "Tunisian"
@@ -1936,6 +2384,9 @@
  TUN_fascism_DEF:0 "the State of Tunisia"
  TUN_fascism_ADJ:0 "Tunisian"
  
+ LBA:0 "Libya"
+ LBA_DEF:0 "Libya"
+ LBA_ADJ:0 "Libyan"
  LBA_communism:0 "Libyan Arab Republic"
  LBA_communism_DEF:0 "the Libyan Arab Republic"
  LBA_communism_ADJ:0 "Libyan"
@@ -1949,6 +2400,9 @@
  LBA_fascism_DEF:0 "the State of Libya"
  LBA_fascism_ADJ:0 "Libyan"
  
+ EGY:0 "Egypt"
+ EGY_DEF:0 "Egypt"
+ EGY_ADJ:0 "Egyptian"
  EGY_communism:0 "Arab Republic of Egypt"
  EGY_communism_DEF:0 "the Arab Republic of Egypt"
  EGY_communism_ADJ:0 "Egyptian"
@@ -1962,6 +2416,9 @@
  EGY_fascism_DEF:0 "the Sultanate of Egypt"
  EGY_fascism_ADJ:0 "Egyptian"
  
+ SUD:0 "Sudan"
+ SUD_DEF:0 "Sudan"
+ SUD_ADJ:0 "Sudanese"
  SUD_communism:0 "Democratic Republic of the Sudan"
  SUD_communism_DEF:0 "the Democratic Republic of the Sudan"
  SUD_communism_ADJ:0 "Sudanese"
@@ -1977,6 +2434,9 @@
  
  ###WESTERN AFRICA###
  
+ MAU:0 "Mauritania"
+ MAU_DEF:0 "Mauritania"
+ MAU_ADJ:0 "Mauritanian"
  MAU_communism:0 "Republic of Mauritania"
  MAU_communism_DEF:0 "the Republic of Mauritania"
  MAU_communism_ADJ:0 "Mauritanian"
@@ -1990,6 +2450,9 @@
  MAU_fascism_DEF:0 "the State of Mauritania"
  MAU_fascism_ADJ:0 "Mauritanian"
  
+ SEN:0 "Senegal"
+ SEN_DEF:0 "Senegal"
+ SEN_ADJ:0 "Senegalese"
  SEN_communism:0 "Republic of Senegal"
  SEN_communism_DEF:0 "the Republic of Senegal"
  SEN_communism_ADJ:0 "Senegalese"
@@ -2003,6 +2466,9 @@
  SEN_fascism_DEF:0 "the State Senegal"
  SEN_fascism_ADJ:0 "Senegalese"
  
+ GAM:0 "Gambia"
+ GAM_DEF:0 "Gambia"
+ GAM_ADJ:0 "Gambian"
  GAM_communism:0 "Republic of the Gambia"
  GAM_communism_DEF:0 "the Republic of the Gambia"
  GAM_communism_ADJ:0 "Gambian"
@@ -2016,6 +2482,9 @@
  GAM_fascism_DEF:0 "the State Gambia"
  GAM_fascism_ADJ:0 "Gambian"
  
+ MLI:0 "Mali"
+ MLI_DEF:0 "Mali"
+ MLI_ADJ:0 "Malian"
  MLI_communism:0 "Republic of Mali"
  MLI_communism_DEF:0 "the Republic of Mali"
  MLI_communism_ADJ:0 "Malian"
@@ -2029,6 +2498,9 @@
  MLI_fascism_DEF:0 "the Mali Empire"
  MLI_fascism_ADJ:0 "Malian"
  
+ NGR:0 "Niger"
+ NGR_DEF:0 "Niger"
+ NGR_ADJ:0 "Nigerian"
  NGR_communism:0 "Republic of the Niger"
  NGR_communism_DEF:0 "the Republic of the Niger"
  NGR_communism_ADJ:0 "Nigerian"
@@ -2042,6 +2514,9 @@
  NGR_fascism_DEF:0 "the State of the Niger"
  NGR_fascism_ADJ:0 "Nigerian"
  
+ GUI:0 "Guinea"
+ GUI_DEF:0 "Guinea"
+ GUI_ADJ:0 "Guinean"
  GUI_communism:0 "Republic of Guinea"
  GUI_communism_DEF:0 "the Republic of Guinea"
  GUI_communism_ADJ:0 "Guinean"
@@ -2055,6 +2530,9 @@
  GUI_fascism_DEF:0 "the Kingdom of Guinea"
  GUI_fascism_ADJ:0 "Guinean"
  
+ LIB:0 "Liberia"
+ LIB_DEF:0 "Liberia"
+ LIB_ADJ:0 "Liberian"
  LIB_communism:0 "People's Republic of Liberia"
  LIB_communism_DEF:0 "the People's Republic of Liberia"
  LIB_communism_ADJ:0 "Liberian"
@@ -2068,6 +2546,9 @@
  LIB_fascism_DEF:0 "the Kingdom of Liberia"
  LIB_fascism_ADJ:0 "Liberian"
  
+ IVE:0 "Ivory Coast"
+ IVE_DEF:0 "Ivory Coast"
+ IVE_ADJ:0 "Ivorian"
  IVE_communism:0 "Republic of Ivory Coast"
  IVE_communism_DEF:0 "the Republic of Ivory Coast"
  IVE_communism_ADJ:0 "Ivorian"
@@ -2081,6 +2562,9 @@
  IVE_fascism_DEF:0 "the State of Ivory Coast"
  IVE_fascism_ADJ:0 "Ivorian"
  
+ BKF:0 "Burkina Faso"
+ BKF_DEF:0 "Burkina Faso"
+ BKF_ADJ:0 "Burkinabe"
  BKF_communism:0 "Burkina Faso"
  BKF_communism_DEF:0 "Burkina Faso"
  BKF_communism_ADJ:0 "Burkinabe"
@@ -2094,6 +2578,9 @@
  BKF_fascism_DEF:0 "Burkina Faso"
  BKF_fascism_ADJ:0 "Burkinabe"
  
+ GHA:0 "Ghana"
+ GHA_DEF:0 "Ghana"
+ GHA_ADJ:0 "Ghanan"
  GHA_communism:0 "Republic of Ghana"
  GHA_communism_DEF:0 "the Republic of Ghana"
  GHA_communism_ADJ:0 "Ghanan"
@@ -2107,6 +2594,9 @@
  GHA_fascism_DEF:0 "the Kingdom Ghana"
  GHA_fascism_ADJ:0 "Ghanan"
  
+ TOG:0 "Togo"
+ TOG_DEF:0 "Togo"
+ TOG_ADJ:0 "Togolese"
  TOG_communism:0 "Togolese Republic"
  TOG_communism_DEF:0 "the Togolese Republic"
  TOG_communism_ADJ:0 "Togolese"
@@ -2120,6 +2610,9 @@
  TOG_fascism_DEF:0 "the State Togo"
  TOG_fascism_ADJ:0 "Togolese"
  
+ NGA:0 "Nigeria"
+ NGA_DEF:0 "Nigeria"
+ NGA_ADJ:0 "Nigerian"
  NGA_communism:0 "Federal Republic of Nigeria"
  NGA_communism_DEF:0 "the Federal Republic of Nigeria"
  NGA_communism_ADJ:0 "Nigerian"
@@ -2135,6 +2628,9 @@
  
  ###CENTRAL AFRICA###
  
+ CHD:0 "Chad"
+ CHD_DEF:0 "Chad"
+ CHD_ADJ:0 "Chadian"
  CHD_communism:0 "Republic of Chad"
  CHD_communism_DEF:0 "the Republic of Chad"
  CHD_communism_ADJ:0 "Chadian"
@@ -2148,6 +2644,9 @@
  CHD_fascism_DEF:0 "the State of Chad"
  CHD_fascism_ADJ:0 "Chadian"
  
+ CMN:0 "Cameroon"
+ CMN_DEF:0 "Cameroon"
+ CMN_ADJ:0 "Cameroonian"
  CMN_communism:0 "Republic of Cameroon"
  CMN_communism_DEF:0 "the Republic of Cameroon"
  CMN_communism_ADJ:0 "Cameroonian"
@@ -2161,6 +2660,9 @@
  CMN_fascism_DEF:0 "the State of Cameroon"
  CMN_fascism_ADJ:0 "Cameroonian"
  
+ CAR:0 "Central Africa"
+ CAR_DEF:0 "Central Africa"
+ CAR_ADJ:0 "Centroafrican"
  CAR_communism:0 "Central African Republic"
  CAR_communism_DEF:0 "the Central African Republic"
  CAR_communism_ADJ:0 "Centroafrican"
@@ -2174,6 +2676,9 @@
  CAR_fascism_DEF:0 "the Central African Empire"
  CAR_fascism_ADJ:0 "Centroafrican"
  
+ GAB:0 "Gabon"
+ GAB_DEF:0 "Gabon"
+ GAB_ADJ:0 "Gabonaise"
  GAB_communism:0 "Gabonese Republic"
  GAB_communism_DEF:0 "the Gabonese Republic"
  GAB_communism_ADJ:0 "Gabonaise"
@@ -2187,6 +2692,9 @@
  GAB_fascism_DEF:0 "the Gabonese Kingdom"
  GAB_fascism_ADJ:0 "Gabonaise"
  
+ COG:0 "Congo"
+ COG_DEF:0 "Congo"
+ COG_ADJ:0 "Congolese"
  COG_communism:0 "Democratic Republic of the Congo"
  COG_communism_DEF:0 "the Democratic Republic of the Congo"
  COG_communism_ADJ:0 "Congolese"
@@ -2202,6 +2710,9 @@
  
  ###EASTEARN AFRICA###
  
+ ETH:0 "Ethiopia"
+ ETH_DEF:0 "Ethiopia"
+ ETH_ADJ:0 "Ethiopian"
  ETH_communism:0 "People's Democratic Republic of Ethiopia"
  ETH_communism_DEF:0 "the People's Democratic Republic of Ethiopia"
  ETH_communism_ADJ:0 "Ethiopian"
@@ -2215,6 +2726,9 @@
  ETH_fascism_DEF:0 "the Empire of Ethiopia"
  ETH_fascism_ADJ:0 "Ethiopian"
  
+ KEN:0 "Kenya"
+ KEN_DEF:0 "Kenya"
+ KEN_ADJ:0 "Kenyan"
  KEN_communism:0 "Republic of Kenya"
  KEN_communism_DEF:0 "the Republic of Kenya"
  KEN_communism_ADJ:0 "Kenyan"
@@ -2228,6 +2742,9 @@
  KEN_fascism_DEF:0 "the Kingdom of Kenya"
  KEN_fascism_ADJ:0 "Kenyan"
  
+ UGA:0 "Uganda"
+ UGA_DEF:0 "Uganda"
+ UGA_ADJ:0 "Ugandan"
  UGA_communism:0 "Republic of Uganda"
  UGA_communism_DEF:0 "the Republic of Uganda"
  UGA_communism_ADJ:0 "Ugandan"
@@ -2241,6 +2758,9 @@
  UGA_fascism_DEF:0 "the Kingdom Uganda"
  UGA_fascism_ADJ:0 "Ugandan"
  
+ TNG:0 "Tanganyika and Zanzibar"
+ TNG_DEF:0 "Tanganyika and Zanzibar"
+ TNG_ADJ:0 "Tanganyika-Zanzibari"
  TNG_communism:0 "United Republic of Tanganyika and Zanzibar"
  TNG_communism_DEF:0 "the United Republic of Tanganyika and Zanzibar"
  TNG_communism_ADJ:0 "Tanganyika-Zanzibari"
@@ -2256,6 +2776,9 @@
  
  ###SOUTHERN AFRICA###
  
+ ANG:0 "Angola"
+ ANG_DEF:0 "Angola"
+ ANG_ADJ:0 "Angolan"
  ANG_communism:0 "People's Republic of Angola"
  ANG_communism_DEF:0 "the People's Republic of Angola"
  ANG_communism_ADJ:0 "Angolan"
@@ -2269,6 +2792,9 @@
  ANG_fascism_DEF:0 "the Kingdom of Angola"
  ANG_fascism_ADJ:0 "Angolan"
  
+ ZIM:0 "Rhodesia-Nyasaland"
+ ZIM_DEF:0 "Rhodesia-Nyasaland"
+ ZIM_ADJ:0 "Rhodesian-Nyasaland"
  ZIM_communism:0 "Central African Federation"
  ZIM_communism_DEF:0 "the Central African Federation"
  ZIM_communism_ADJ:0 "Rhodesian-Nyasaland"
@@ -2282,6 +2808,9 @@
  ZIM_fascism_DEF:0 "the Central African Federation"
  ZIM_fascism_ADJ:0 "Rhodesian-Nyasaland"
  
+ MZB:0 "Mozambique"
+ MZB_DEF:0 "Mozambique"
+ MZB_ADJ:0 "Mozambican"
  MZB_communism:0 "People's Republic of Mozambique"
  MZB_communism_DEF:0 "the People's Republic of Mozambique"
  MZB_communism_ADJ:0 "Mozambican"
@@ -2295,6 +2824,9 @@
  MZB_fascism_DEF:0 "the Kingdom of Mozambique"
  MZB_fascism_ADJ:0 "Mozambican"
  
+ MAD:0 "Madagascar"
+ MAD_DEF:0 "Madagascar"
+ MAD_ADJ:0 "Malagasy"
  MAD_communism:0 "Democratic Republic of Madagascar"
  MAD_communism_DEF:0 "the Democratic Republic of Madagascar"
  MAD_communism_ADJ:0 "Malagasy"
@@ -2308,6 +2840,9 @@
  MAD_fascism_DEF:0 "the Kingdom of Madagascar"
  MAD_fascism_ADJ:0 "Malagasy"
  
+ NAM:0 "Namibia"
+ NAM_DEF:0 "Namibia"
+ NAM_ADJ:0 "Namibian"
  NAM_communism:0 "Republic of Namibia"
  NAM_communism_DEF:0 "the Republic of Namibia"
  NAM_communism_ADJ:0 "Namibian"
@@ -2321,6 +2856,9 @@
  NAM_fascism_DEF:0 "the State of Namibia"
  NAM_fascism_ADJ:0 "Namibian"
  
+ SAF:0 "South Africa"
+ SAF_DEF:0 "South Africa"
+ SAF_ADJ:0 "South African"
  SAF_communism:0 "Republic of South Africa"
  SAF_communism_DEF:0 "the Republic of South Africa"
  SAF_communism_ADJ:0 "South African"
@@ -2336,6 +2874,9 @@
  
  ###OCEANIA###
  
+ PHI:0 "Philippines"
+ PHI_DEF:0 "the Philippines"
+ PHI_ADJ:0 "Philippine"
  PHI_communism:0 "People's Republic of the Philippines"
  PHI_communism_DEF:0 "the People's Republic of the Philippines"
  PHI_communism_ADJ:0 "Philippine"
@@ -2349,6 +2890,9 @@
  PHI_fascism_DEF:0 "the Republic of the Philippines"
  PHI_fascism_ADJ:0 "Philippine"
  
+ INS:0 "Indonesia"
+ INS_DEF:0 "Indonesia"
+ INS_ADJ:0 "Indonesia"
  INS_communism:0 "Republic of Indonesia"
  INS_communism_DEF:0 "the Republic of Indonesia"
  INS_communism_ADJ:0 "Indonesian"
@@ -2362,6 +2906,9 @@
  INS_fascism_DEF:0 "the Majapahit Empire"
  INS_fascism_ADJ:0 "Indonesian"
  
+ HAW:0 "Hawaii"
+ HAW_DEF:0 "Hawaii"
+ HAW_ADJ:0 "Hawaiian"
  HAW_communism:0 "Republic of Hawaii"
  HAW_communism_DEF:0 "the Republic of Hawaii"
  HAW_communism_ADJ:0 "Hawaiian"
@@ -2375,6 +2922,9 @@
  HAW_fascism_DEF:0 "the Kingdom of the Hawaiian Islands"
  HAW_fascism_ADJ:0 "Hawaiian"
  
+ AST:0 "Australia"
+ AST_DEF:0 "Australia"
+ AST_ADJ:0 "Australian"
  AST_communism:0 "Australian Union"
  AST_communism_DEF:0 "the Australian Union"
  AST_communism_ADJ:0 "Australian"
@@ -2388,6 +2938,9 @@
  AST_fascism_DEF:0 "the Australian Union"
  AST_fascism_ADJ:0 "Australian"
  
+ NZL:0 "New Zealand"
+ NZL_DEF:0 "New Zealand"
+ NZL_ADJ:0 "New Zealander"
  NZL_communism:0 "Republic of New Zealand"
  NZL_communism_DEF:0 "the Republic of New Zealand"
  NZL_communism_ADJ:0 "New Zealander"
@@ -2400,3 +2953,4 @@
  NZL_fascism:0 "New Zealand"
  NZL_fascism_DEF:0 "New Zealand"
  NZL_fascism_ADJ:0 "New Zealander"
+ 

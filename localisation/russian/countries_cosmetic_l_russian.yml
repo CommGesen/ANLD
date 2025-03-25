@@ -1,5 +1,8 @@
 ﻿l_russian:
  
+ EUR_UNIFIED:0 "Европа"
+ EUR_UNIFIED_DEF:0 "Европа"
+ EUR_UNIFIED_ADJ:0 "Европейск."
  EUR_UNIFIED_communism:0 "Федеративные государства Европы"
  EUR_UNIFIED_communism_DEF:0 "Федеративные государства Европы"
  EUR_UNIFIED_communism_ADJ:0 "Европейск."
@@ -13,6 +16,9 @@
  EUR_UNIFIED_fascism_DEF:0 "Федеративные государства Европы"
  EUR_UNIFIED_fascism_ADJ:0 "Европейск."
  
+ ENG_REPUB:0 "Великобритания"
+ ENG_REPUB_DEF:0 "Великобритания"
+ ENG_REPUB_ADJ:0 "Британск."
  ENG_REPUB_neutrality:0 "Королевство Великобритания"
  ENG_REPUB_neutrality_DEF:0 "Королевство Великобритания"
  ENG_REPUB_neutrality_ADJ:0 "Британск."
@@ -25,9 +31,13 @@
  ENG_REPUB_fascism:0 "Великобританская Империя"
  ENG_REPUB_fascism_DEF:0 "Великобританская Империя"
  ENG_REPUB_fascism_ADJ:0 "Британск."
+ 
+ LOU_FRENCH:0 "Франция"
+ LOU_FRENCH_DEF:0 "Франция"
+ LOU_FRENCH_ADJ:0 "Французск."
  LOU_FRENCH_neutrality:0 "Королевство Франция"
  LOU_FRENCH_neutrality_DEF:0 "Королевство Франция"
- LOU_FRENCH_neutrality_ADJ:0 "Бурбонск."
+ LOU_FRENCH_neutrality_ADJ:0 "Французск."
  LOU_FRENCH_democratic:0 "Королевство Франция"
  LOU_FRENCH_democratic_DEF:0 "Королевство Франция"
  LOU_FRENCH_democratic_ADJ:0 "Французск."
@@ -36,10 +46,13 @@
  LOU_FRENCH_communism_ADJ:0 "Французск."
  LOU_FRENCH_fascism:0 "Империя Бурбонов"
  LOU_FRENCH_fascism_DEF:0 "Империя Бурбонов"
- LOU_FRENCH_fascism_ADJ:0 "Бурбонск."
+ LOU_FRENCH_fascism_ADJ:0 "Французск."
  
  ###ВЕЛИКОБРИТАНИЯ###
  
+ CAN_GB:0 "Канада"
+ CAN_GB_DEF:0 "Канада"
+ CAN_GB_ADJ:0 "Канадск."
  CAN_GB_communism:0 "Социалистическая Республика Канада"
  CAN_GB_communism_DEF:0 "Социалистическая Республика Канада"
  CAN_GB_communism_ADJ:0 "Канадск."
@@ -53,19 +66,25 @@
  CAN_GB_fascism_DEF:0 "Доминион Канада"
  CAN_GB_fascism_ADJ:0 "Канадск."
  
+ SAF_GB:0 "Южная Африка"
+ SAF_GB_DEF:0 "Южная Африка"
+ SAF_GB_ADJ:0 "Южно-африканск."
  SAF_GB_communism:0 "Южно-Африканская Республика"
  SAF_GB_communism_DEF:0 "Южно-Африканская Республика"
- SAF_GB_communism_ADJ:0 "Южно-афиканск."
+ SAF_GB_communism_ADJ:0 "Южно-африканск."
  SAF_GB_democratic:0 "Южно-Африканский Союз"
  SAF_GB_democratic_DEF:0 "Южно-Африканский Союз"
- SAF_GB_democratic_ADJ:0 "Южно-афиканск."
+ SAF_GB_democratic_ADJ:0 "Южно-африканск."
  SAF_GB_neutrality:0 "Южно-Африканский Союз"
  SAF_GB_neutrality_DEF:0 "Южно-Африканский Союз"
- SAF_GB_neutrality_ADJ:0 "Южно-афиканск."
+ SAF_GB_neutrality_ADJ:0 "Южно-африканск."
  SAF_GB_fascism:0 "Южно-Африканский Союз"
  SAF_GB_fascism_DEF:0 "Южно-Африканский Союз"
- SAF_GB_fascism_ADJ:0 "Южно-афиканск."
+ SAF_GB_fascism_ADJ:0 "Южно-африканск."
  
+ RAJ_GB:0 "Индия"
+ RAJ_GB_DEF:0 "Индия"
+ RAJ_GB_ADJ:0 "Индийск."
  RAJ_GB_communism:0 "Республика Индия"
  RAJ_GB_communism_DEF:0 "Республика Индия"
  RAJ_GB_communism_ADJ:0 "Индийск."
@@ -79,6 +98,9 @@
  RAJ_GB_fascism_DEF:0 "Правление короны в Индии"
  RAJ_GB_fascism_ADJ:0 "Индийск."
  
+ BUR_GB:0 "Бирма"
+ BUR_GB_DEF:0 "Бирма"
+ BUR_GB_ADJ:0 "Бирманск."
  BUR_GB_communism:0 "Социалистическая Республика Союз Бирма"
  BUR_GB_communism_DEF:0 "Социалистическая Республика Союз Бирма"
  BUR_GB_communism_ADJ:0 "Бирманск."
@@ -92,6 +114,9 @@
  BUR_GB_fascism_DEF:0 "Колония Бирма"
  BUR_GB_fascism_ADJ:0 "Бирманск."
  
+ MAL_GB:0 "Малайя"
+ MAL_GB_DEF:0 "Малайя"
+ MAL_GB_ADJ:0 "Малайск."
  MAL_GB_communism:0 "Малайский Союз"
  MAL_GB_communism_DEF:0 "Малайский Союз"
  MAL_GB_communism_ADJ:0 "Малайск."
@@ -105,6 +130,9 @@
  MAL_GB_fascism_DEF:0 "Колония Малайя"
  MAL_GB_fascism_ADJ:0 "Малайск."
  
+ HAW_GB:0 "Гавайи"
+ HAW_GB_DEF:0 "Гавайи"
+ HAW_GB_ADJ:0 "Гавайск."
  HAW_GB_communism:0 "Республика Гавайи"
  HAW_GB_communism_DEF:0 "Республика Гавайи"
  HAW_GB_communism_ADJ:0 "Гавайск."
@@ -118,6 +146,9 @@
  HAW_GB_fascism_DEF:0 "Королевство Гавайских островов"
  HAW_GB_fascism_ADJ:0 "Гавайск."
  
+ AST_GB:0 "Австралия"
+ AST_GB_DEF:0 "Австралия"
+ AST_GB_ADJ:0 "Австралийск."
  AST_GB_communism:0 "Содружество Австралии"
  AST_GB_communism_DEF:0 "Содружество Австралии"
  AST_GB_communism_ADJ:0 "Австралийск."
@@ -131,6 +162,9 @@
  AST_GB_fascism_DEF:0 "Содружество Австралии"
  AST_GB_fascism_ADJ:0 "Австралийск."
  
+ NZL_GB:0 "Новая Зеландия"
+ NZL_GB_DEF:0 "Новая Зеландия"
+ NZL_GB_ADJ:0 "Ново-Зеландск."
  NZL_GB_communism:0 "Республика Новая Зеландия"
  NZL_GB_communism_DEF:0 "Республика Новая Зеландия"
  NZL_GB_communism_ADJ:0 "Ново-Зеландск."
@@ -146,6 +180,9 @@
  
  ###СОЕДИНЁННОЕ КОРОЛЕВСТВО###
  
+ ENG_UK:0 "Великобритания"
+ ENG_UK_DEF:0 "Великобритания"
+ ENG_UK_ADJ:0 "Британск."
  ENG_UK_communism:0 "Британская Республика"
  ENG_UK_communism_DEF:0 "Британская Республика"
  ENG_UK_communism_ADJ:0 "Британск."
@@ -159,6 +196,9 @@
  ENG_UK_fascism_DEF:0 "Соединённое Королевство Великобритании и Ирландии"
  ENG_UK_fascism_ADJ:0 "Британск."
  
+ CAN_UK:0 "Канада"
+ CAN_UK_DEF:0 "Канада"
+ CAN_UK_ADJ:0 "Канадск."
  CAN_UK_communism:0 "Социалистическая Республика Канада"
  CAN_UK_communism_DEF:0 "Социалистическая Республика Канада"
  CAN_UK_communism_ADJ:0 "Канадск."
@@ -172,6 +212,10 @@
  CAN_UK_fascism_DEF:0 "Доминион Канада"
  CAN_UK_fascism_ADJ:0 "Канадск."
  
+ 
+ SAF_UK:0 "Южная Африка"
+ SAF_UK_DEF:0 "Южная Африка"
+ SAF_UK_ADJ:0 "Южно-афиканск."
  SAF_UK_communism:0 "Южно-Африканская Республика"
  SAF_UK_communism_DEF:0 "Южно-Африканская Республика"
  SAF_UK_communism_ADJ:0 "Южно-афиканск."
@@ -185,6 +229,9 @@
  SAF_UK_fascism_DEF:0 "Южно-Африканский Союз"
  SAF_UK_fascism_ADJ:0 "Южно-афиканск."
  
+ RAJ_UK:0 "Индия"
+ RAJ_UK_DEF:0 "Индия"
+ RAJ_UK_ADJ:0 "Индийск."
  RAJ_UK_communism:0 "Республика Индия"
  RAJ_UK_communism_DEF:0 "Республика Индия"
  RAJ_UK_communism_ADJ:0 "Индийск."
@@ -198,6 +245,9 @@
  RAJ_UK_fascism_DEF:0 "Правление короны в Индии"
  RAJ_UK_fascism_ADJ:0 "Индийск."
  
+ BUR_UK:0 "Бирма"
+ BUR_UK_DEF:0 "Бирма"
+ BUR_UK_ADJ:0 "Бирманск."
  BUR_UK_communism:0 "Социалистическая Республика Союз Бирма"
  BUR_UK_communism_DEF:0 "Социалистическая Республика Союз Бирма"
  BUR_UK_communism_ADJ:0 "Бирманск."
@@ -211,6 +261,9 @@
  BUR_UK_fascism_DEF:0 "Колония Бирма"
  BUR_UK_fascism_ADJ:0 "Бирманск."
  
+ MAL_UK:0 "Малайя"
+ MAL_UK_DEF:0 "Малайя"
+ MAL_UK_ADJ:0 "Малайск."
  MAL_UK_communism:0 "Малайский Союз"
  MAL_UK_communism_DEF:0 "Малайский Союз"
  MAL_UK_communism_ADJ:0 "Малайск."
@@ -224,6 +277,9 @@
  MAL_UK_fascism_DEF:0 "Колония Малайя"
  MAL_UK_fascism_ADJ:0 "Малайск."
  
+ HAW_UK:0 "Гавайи"
+ HAW_UK_DEF:0 "Гавайи"
+ HAW_UK_ADJ:0 "Гавайск."
  HAW_UK_communism:0 "Республика Гавайи"
  HAW_UK_communism_DEF:0 "Республика Гавайи"
  HAW_UK_communism_ADJ:0 "Гавайск."
@@ -237,6 +293,9 @@
  HAW_UK_fascism_DEF:0 "Королевство Гавайских островов"
  HAW_UK_fascism_ADJ:0 "Гавайск."
  
+ AST_UK:0 "Австралия"
+ AST_UK_DEF:0 "Австралия"
+ AST_UK_ADJ:0 "Австралийск."
  AST_UK_communism:0 "Содружество Австралии"
  AST_UK_communism_DEF:0 "Содружество Австралии"
  AST_UK_communism_ADJ:0 "Австралийск."
@@ -250,6 +309,9 @@
  AST_UK_fascism_DEF:0 "Содружество Австралии"
  AST_UK_fascism_ADJ:0 "Австралийск."
  
+ NZL_UK:0 "Новая Зеландия"
+ NZL_UK_DEF:0 "Новая Зеландия"
+ NZL_UK_ADJ:0 "Ново-Зеландск."
  NZL_UK_communism:0 "Республика Новая Зеландия"
  NZL_UK_communism_DEF:0 "Республика Новая Зеландия"
  NZL_UK_communism_ADJ:0 "Ново-Зеландск."
@@ -265,6 +327,9 @@
  
  ###ПОЛЬША###
  
+ POL_empire:0 "Польша"
+ POL_empire_DEF:0 "Польша"
+ POL_empire_ADJ:0 "Польск."
  POL_empire_communism:0 "Польская Социалистическая Советская Республика"
  POL_empire_communism_DEF:0 "Польская Социалистическая Советская Республика"
  POL_empire_communism_ADJ:0 "Польск."
@@ -278,6 +343,9 @@
  POL_empire_fascism_DEF:0 "Великая Польская империя"
  POL_empire_fascism_ADJ:0 "Польск."
  
+ POL_rzeczpospolita:0 "Польша"
+ POL_rzeczpospolita_DEF:0 "Польша"
+ POL_rzeczpospolita_ADJ:0 "Польск."
  POL_rzeczpospolita_communism:0 "Польская Народная Республика"
  POL_rzeczpospolita_communism_DEF:0 "Польская Народная Республика"
  POL_rzeczpospolita_communism_ADJ:0 "Польск."
@@ -291,6 +359,9 @@
  POL_rzeczpospolita_fascism_DEF:0 "Польская Республика"
  POL_rzeczpospolita_fascism_ADJ:0 "Польск."
  
+ POL_falanga:0 "Польша"
+ POL_falanga_DEF:0 "Польша"
+ POL_falanga_ADJ:0 "Польск."
  POL_falanga_communism:0 "Польская Социалистическая Республика"
  POL_falanga_communism_DEF:0 "Польская Социалистическая Республика"
  POL_falanga_communism_ADJ:0 "Польск."
@@ -304,6 +375,9 @@
  POL_falanga_fascism_DEF:0 "Польское государство"
  POL_falanga_fascism_ADJ:0 "Польск."
  
+ POL_pagan:0 "Польша"
+ POL_pagan_DEF:0 "Польша"
+ POL_pagan_ADJ:0 "Польск."
  POL_pagan_communism:0 "Польская Социалистическая Республика"
  POL_pagan_communism_DEF:0 "Польская Социалистическая Республика"
  POL_pagan_communism_ADJ:0 "Польск."
@@ -317,6 +391,9 @@
  POL_pagan_fascism_DEF:0 "Польское государство"
  POL_pagan_fascism_ADJ:0 "Польск."
  
+ POL_lechitic:0 "Лехия"
+ POL_lechitic_DEF:0 "Лехия"
+ POL_lechitic_ADJ:0 "Лехитск."
  POL_lechitic_communism:0 "Лехитский Союз"
  POL_lechitic_communism_DEF:0 "Лехитский Союз"
  POL_lechitic_communism_ADJ:0 "Лехитск."
@@ -330,6 +407,9 @@
  POL_lechitic_fascism_DEF:0 "Лехитская империя"
  POL_lechitic_fascism_ADJ:0 "Лехитск."
  
+ POL_zapadoslavia:0 "Западославия"
+ POL_zapadoslavia_DEF:0 "Западославия"
+ POL_zapadoslavia_ADJ:0 "Западославск."
  POL_zapadoslavia_communism:0 "Социалистическая Федеративная Республика Западославия"
  POL_zapadoslavia_communism_DEF:0 "Социалистическая Федеративная Республика Западославия"
  POL_zapadoslavia_communism_ADJ:0 "Западославск."
@@ -343,6 +423,9 @@
  POL_zapadoslavia_fascism_DEF:0 "Королевство Западославия"
  POL_zapadoslavia_fascism_ADJ:0 "Западославск."
  
+ POL_slavic:0 "Славия"
+ POL_slavic_DEF:0 "Славия"
+ POL_slavic_ADJ:0 "Славянск."
  POL_slavic_communism:0 "Союз славянских государств"
  POL_slavic_communism_DEF:0 "Союз славянских государств"
  POL_slavic_communism_ADJ:0 "Славянск."
@@ -356,6 +439,9 @@
  POL_slavic_fascism_DEF:0 "Славянская империя"
  POL_slavic_fascism_ADJ:0 "Славянск."
  
+ POL_hungary:0 "Польша-Венгрия"
+ POL_hungary_DEF:0 "Польша-Венгрия"
+ POL_hungary_ADJ:0 "Польск.-венгерск."
  POL_hungary_communism:0 "Польско-венгерское содружество"
  POL_hungary_communism_DEF:0 "Польско-венгерское содружество"
  POL_hungary_communism_ADJ:0 "Польск.-венгерск."
@@ -369,6 +455,9 @@
  POL_hungary_fascism_DEF:0 "Польско-венгерское содружество"
  POL_hungary_fascism_ADJ:0 "Польск.-венгерск."
  
+ POL_commonwealth:0 "Польша-Литва"
+ POL_commonwealth_DEF:0 "Польша-Литва"
+ POL_commonwealth_ADJ:0 "Польск.-литовск."
  POL_commonwealth_communism:0 "Польско-литовское содружество"
  POL_commonwealth_communism_DEF:0 "Польско-литовское содружество"
  POL_commonwealth_communism_ADJ:0 "Польск.-литовск."
@@ -382,6 +471,9 @@
  POL_commonwealth_fascism_DEF:0 "Польско-литовское содружество"
  POL_commonwealth_fascism_ADJ:0 "Польск.-литовск."
  
+ POL_ruthenia:0 "Содружество Трёх Народов"
+ POL_ruthenia_DEF:0 "Содружество Трёх Народов"
+ POL_ruthenia_ADJ:0 "Польск.-литовск.-рутенск."
  POL_ruthenia_communism:0 "Содружество Трёх Народов"
  POL_ruthenia_communism_DEF:0 "Содружество Трёх Народов"
  POL_ruthenia_communism_ADJ:0 "Польск.-литовск.-рутенск."
@@ -395,6 +487,9 @@
  POL_ruthenia_fascism_DEF:0 "Речь Посполитая Трёх Народов"
  POL_ruthenia_fascism_ADJ:0 "Польск.-литовск.-рутенск."
  
+ POL_livonia:0 "Содружество Четырёх Народов"
+ POL_livonia_DEF:0 "Содружество Четырёх Народов"
+ POL_livonia_ADJ:0 "Польск.-литовск.-рутенск.-ливонск."
  POL_livonia_communism:0 "Содружество Четырёх Народов"
  POL_livonia_communism_DEF:0 "Содружество Четырёх Народов"
  POL_livonia_communism_ADJ:0 "Польск.-литовск.-рутенск.-ливонск."
@@ -408,6 +503,9 @@
  POL_livonia_fascism_DEF:0 "Речь Посполитая Четырёх Народов"
  POL_livonia_fascism_ADJ:0 "Польск.-литовск.-рутенск.-ливонск."
  
+ PAL_POL:0 "Палестина"
+ PAL_POL_DEF:0 "Палестина"
+ PAL_POL_ADJ:0 "Палестинск."
  PAL_POL_communism:0 "Палестинская Республика"
  PAL_POL_communism_DEF:0 "Палестинская Республика"
  PAL_POL_communism_ADJ:0 "Палестинск."
@@ -421,6 +519,9 @@
  PAL_POL_fascism_DEF:0 "Польское Государство Палестина"
  PAL_POL_fascism_ADJ:0 "Палестинск."
  
+ PAL_papal:0 "Иерусалим"
+ PAL_papal_DEF:0 "Иерусалим"
+ PAL_papal_ADJ:0 "Иерусалимск."
  PAL_papal_communism:0 "Иерусалимская Республика"
  PAL_papal_communism_DEF:0 "Иерусалимская Республика"
  PAL_papal_communism_ADJ:0 "Иерусалимск."
@@ -434,6 +535,9 @@
  PAL_papal_fascism_DEF:0 "Иерусалимское королевство"
  PAL_papal_fascism_ADJ:0 "Иерусалимск."
  
+ LIT_duchy:0 "Литва"
+ LIT_duchy_DEF:0 "Литва"
+ LIT_duchy_ADJ:0 "Литовск."
  LIT_duchy_communism:0 "Социалистическая Федеративная Республика Литва"
  LIT_duchy_communism_DEF:0 "Социалистическая Федеративная Республика Литва"
  LIT_duchy_communism_ADJ:0 "Литовск."
@@ -447,6 +551,9 @@
  LIT_duchy_fascism_DEF:0 "Великое княжество Литовское"
  LIT_duchy_fascism_ADJ:0 "Литовск."
  
+ UKR_duchy:0 "Рутения"
+ UKR_duchy_DEF:0 "Рутения"
+ UKR_duchy_ADJ:0 "Рутенск."
  UKR_duchy_communism:0 "Социалистическая Федеративная Республика Рутения"
  UKR_duchy_communism_DEF:0 "Социалистическая Федеративная Республика Рутения"
  UKR_duchy_communism_ADJ:0 "Рутенск."
@@ -460,6 +567,9 @@
  UKR_duchy_fascism_DEF:0 "Великое княжество Рутенское"
  UKR_duchy_fascism_ADJ:0 "Рутенск."
  
+ BAL_duchy:0 "Ливония"
+ BAL_duchy_DEF:0 "Ливония"
+ BAL_duchy_ADJ:0 "Ливонск."
  BAL_duchy_communism:0 "Социалистическая Федеративная Республика Ливония"
  BAL_duchy_communism_DEF:0 "Социалистическая Федеративная Республика Ливония"
  BAL_duchy_communism_ADJ:0 "Ливонск."
@@ -473,6 +583,9 @@
  BAL_duchy_fascism_DEF:0 "Великое княжество Ливонское"
  BAL_duchy_fascism_ADJ:0 "Ливонск."
  
+ POL_sarmatia:0 "Сарматия"
+ POL_sarmatia_DEF:0 "Сарматия"
+ POL_sarmatia_ADJ:0 "Сарматск."
  POL_sarmatia_communism:0 "Сарматия"
  POL_sarmatia_communism_DEF:0 "Сарматия"
  POL_sarmatia_communism_ADJ:0 "Сарматск."

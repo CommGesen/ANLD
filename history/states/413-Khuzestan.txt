@@ -4,19 +4,16 @@ state={
 	name="STATE_413"
 	manpower = 797356
 	resources={
-		oil=28
+		oil=28 # was: 42
 	}
 	
 	state_category = rural
 	
+
 	history={
 		owner = TUR
-		#set_state_flag = arab_minor
-		#set_state_flag = arab_emirate
 		buildings = {
-			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 1
+			infrastructure = 3 #was: 5
 			5005 = {
 				naval_base = 1
 			}
@@ -24,15 +21,13 @@ state={
 		victory_points = {
 			7953 1 
 		}
-		add_core_of = IRQ
-		add_core_of = AHZ
-		#add_claim_by = TUR
 		add_core_of = TUR
-		#add_claim_by = PER
 		add_core_of = PER
 	}
 
 	provinces={
-	   5005 7953 
+		5005 7953 
 	}
+
+	local_supplies=0.0 
 }

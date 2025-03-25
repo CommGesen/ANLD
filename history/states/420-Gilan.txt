@@ -6,11 +6,14 @@ state={
 	
 	state_category = rural
 
-	resources={
-		steel=1
-	}
 	history={
 		owner = PER
+		victory_points = {
+			7969 5
+		}
+		victory_points = {
+			4901 3
+		}
 		buildings = {
 			infrastructure = 2
 		}
@@ -19,6 +22,8 @@ state={
 	}
 
 	provinces={
-		4609 4637 4901 
+		4553 4609 4637 4901 7969 10454 10523 
 	}
+
+	local_supplies=3.0 
 }

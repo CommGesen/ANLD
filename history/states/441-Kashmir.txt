@@ -2,7 +2,7 @@
 state={
 	id=441
 	name="STATE_441"
-	manpower = 3539500
+	manpower = 2598027
 	
 	state_category = rural
 
@@ -11,11 +11,16 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-
 		add_core_of = TIB
+
+		victory_points = {
+			12754 1
+		}
 	}
 
 	provinces={
-		1910 2041 5042 7273 7316 8005 10821 10905 12754 12884 
+		5042 7273 7316 8005 10905 12754 12884 
 	}
+
+	local_supplies=0.0 
 }

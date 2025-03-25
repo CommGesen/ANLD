@@ -2,6 +2,9 @@
 
  ###КАНАДА###
  
+ ASK:0 "Аляска"
+ ASK_DEF:0 "Аляска"
+ ASK_ADJ:0 "Аляскинск."
  ASK_communism:0 "Аляскинская Социалистическая Советская Республика"
  ASK_communism_DEF:0 "Аляскинская Социалистическая Советская Республика"
  ASK_communism_ADJ:0 "Аляскинск."
@@ -15,6 +18,9 @@
  ASK_fascism_DEF:0 "Аляска"
  ASK_fascism_ADJ:0 "Аляскинск."
  
+ AQN:0 "Алгонкин"
+ AQN_DEF:0 "Алгонкин"
+ AQN_ADJ:0 "Алгонкинск."
  AQN_communism:0 "Алгонкинская Социалистическая Республика"
  AQN_communism_DEF:0 "Алгонкинская Социалистическая Республика"
  AQN_communism_ADJ:0 "Алгонкинск."
@@ -28,6 +34,9 @@
  AQN_fascism_DEF:0 "Алгонкинская Федерация"
  AQN_fascism_ADJ:0 "Алгонкинск."
  
+ CAN:0 "Квебек"
+ CAN_DEF:0 "Квебек"
+ CAN_ADJ:0 "Квебекск."
  CAN_communism:0 "Социалистическая Республика Квебек"
  CAN_communism_DEF:0 "Социалистическая Республика Квебек"
  CAN_communism_ADJ:0 "Квебекск."
@@ -43,6 +52,9 @@
  
  ###СОЕДИНЁННЫЕ ШТАТЫ###
  
+ DES:0 "Дезерет"
+ DES_DEF:0 "Дезерет"
+ DES_ADJ:0 "Дезеретск."
  DES_communism:0 "Народная Демократическая Республика Дезерет"
  DES_communism_DEF:0 "Народная Демократическая Республика Дезерет"
  DES_communism_ADJ:0 "Дезеретск."
@@ -56,6 +68,9 @@
  DES_fascism_DEF:0 "Христианская Республика Дезерет"
  DES_fascism_ADJ:0 "Дезеретск."
  
+ LOU:0 "Луизиана"
+ LOU_DEF:0 "Луизиана"
+ LOU_ADJ:0 "Луизианск."
  LOU_communism:0 "Советская Республика Луизиана"
  LOU_communism_DEF:0 "Советская Республика Луизиана"
  LOU_communism_ADJ:0 "Луизианск."
@@ -69,6 +84,9 @@
  LOU_fascism_DEF:0 "Королевство Луизиана"
  LOU_fascism_ADJ:0 "Луизианск."
  
+ USA:0 "Америка"
+ USA_DEF:0 "Америка"
+ USA_ADJ:0 "Американск."
  USA_communism:0 "Федеративные Штаты Америки"
  USA_communism_DEF:0 "Федеративные Штаты Америки"
  USA_communism_ADJ:0 "Американск."
@@ -82,6 +100,9 @@
  USA_fascism_DEF:0 "Федеративное Королевство Америки"
  USA_fascism_ADJ:0 "Американск."
  
+ CSA:0 "Америка"
+ CSA_DEF:0 "Америка"
+ CSA_ADJ:0 "Американск."
  CSA_communism:0 "Конфедеративные Штаты Америки"
  CSA_communism_DEF:0 "Конфедеративные Штаты Америки"
  CSA_communism_ADJ:0 "Американск."
@@ -95,19 +116,25 @@
  CSA_fascism_DEF:0 "Конфедеративные Штаты Америки"
  CSA_fascism_ADJ:0 "Американск."
  
+ MAR:0 "Новая Британия"
+ MAR_DEF:0 "Новая Британия"
+ MAR_ADJ:0 "Новобританск."
  MAR_communism:0 "Федерация Новой Британии"
  MAR_communism_DEF:0 "Федерация Новой Британии"
- MAR_communism_ADJ:0 "Приморск."
+ MAR_communism_ADJ:0 "Новобританск."
  MAR_democratic:0 "Федерация Новой Британии"
  MAR_democratic_DEF:0 "Федерация Новой Британии"
- MAR_democratic_ADJ:0 "Приморск."
+ MAR_democratic_ADJ:0 "Новобританск."
  MAR_neutrality:0 "Конфедерация Новой Британии"
  MAR_neutrality_DEF:0 "Конфедерация Новой Британии"
- MAR_neutrality_ADJ:0 "Приморск."
+ MAR_neutrality_ADJ:0 "Новобританск."
  MAR_fascism:0 "Конфедерация Новой Британии"
  MAR_fascism_DEF:0 "Конфедерация Новой Британии"
- MAR_fascism_ADJ:0 "Приморск."
+ MAR_fascism_ADJ:0 "Новобританск."
  
+ LAK:0 "Великие озёра"
+ LAK_DEF:0 "Великие озёра"
+ LAK_ADJ:0 "Великоозёрск."
  LAK_communism:0 "Великие североамериканские озёра"
  LAK_communism_DEF:0 "Великие североамериканские озёра"
  LAK_communism_ADJ:0 "Великоозёрск."
@@ -123,6 +150,9 @@
  
  ###МЕКСИКА###
  
+ CAL:0 "Калифорния"
+ CAL_DEF:0 "Калифорния"
+ CAL_ADJ:0 "Калифорнийск."
  CAL_communism:0 "Калифорнийская Коммуна"
  CAL_communism_DEF:0 "Калифорнийская Коммуна"
  CAL_communism_ADJ:0 "Калифорнийск."
@@ -136,6 +166,9 @@
  CAL_fascism_DEF:0 "Штат Калифорния"
  CAL_fascism_ADJ:0 "Калифорнийск."
  
+ TEX:0 "Техас"
+ TEX_DEF:0 "Техас"
+ TEX_ADJ:0 "Техасск."
  TEX_communism:0 "Народная Республика Техас"
  TEX_communism_DEF:0 "Народная Республика Техас"
  TEX_communism_ADJ:0 "Техасск."
@@ -149,6 +182,9 @@
  TEX_fascism_DEF:0 "Республика Техас"
  TEX_fascism_ADJ:0 "Техасск."
  
+ MEX:0 "Мексика"
+ MEX_DEF:0 "Мексика"
+ MEX_ADJ:0 "Мексиканск."
  MEX_communism:0 "Соединённые Мексиканские Штаты"
  MEX_communism_DEF:0 "Соединённые Мексиканские Штаты"
  MEX_communism_ADJ:0 "Мексиканск."
@@ -162,6 +198,9 @@
  MEX_fascism_DEF:0 "Мексиканская империя"
  MEX_fascism_ADJ:0 "Мексиканск."
  
+ CSC:0 "Майя"
+ CSC_DEF:0 "Майя"
+ CSC_ADJ:0 "Майск."
  CSC_communism:0 "Социалистическая Республика Майя"
  CSC_communism_DEF:0 "Социалистическая Республика Майя"
  CSC_communism_ADJ:0 "Майск."
@@ -177,6 +216,9 @@
  
  ###ЦЕНТРАЛЬНАЯ АМЕРИКА###
  
+ URC:0 "Центральная Америка"
+ URC_DEF:0 "Центральная Америка"
+ URC_ADJ:0 "Центро-американск."
  URC_communism:0 "Федеративная Республика Центральной Америки"
  URC_communism_DEF:0 "Федеративная Республика Центральной Америки"
  URC_communism_ADJ:0 "Центро-американск."
@@ -190,6 +232,9 @@
  URC_fascism_DEF:0 "Федеративная Республика Центральной Америки"
  URC_fascism_ADJ:0 "Центро-американск."
  
+ GUA:0 "Гватемала"
+ GUA_DEF:0 "Гватемала"
+ GUA_ADJ:0 "Гватемальск."
  GUA_communism:0 "Республика Гватемала"
  GUA_communism_DEF:0 "Республика Гватемала"
  GUA_communism_ADJ:0 "Гватемальск."
@@ -203,6 +248,9 @@
  GUA_fascism_DEF:0 "Государство Гватемала"
  GUA_fascism_ADJ:0 "Гватемальск."
  
+ ELS:0 "Эль-Сальвадор"
+ ELS_DEF:0 "Эль-Сальвадор"
+ ELS_ADJ:0 "Сальвадорск."
  ELS_communism:0 "Республика Эль-Сальвадор"
  ELS_communism_DEF:0 "Республика Эль-Сальвадор"
  ELS_communism_ADJ:0 "Сальвадорск."
@@ -216,6 +264,9 @@
  ELS_fascism_DEF:0 "Государство Сальвадор"
  ELS_fascism_ADJ:0 "Сальвадорск."
  
+ HON:0 "Гондурас"
+ HON_DEF:0 "Гондурас"
+ HON_ADJ:0 "Гондурасск."
  HON_communism:0 "Республика Гондурас"
  HON_communism_DEF:0 "Республика Гондурас"
  HON_communism_ADJ:0 "Гондурасск."
@@ -229,6 +280,9 @@
  HON_fascism_DEF:0 "Государство Гондурас"
  HON_fascism_ADJ:0 "Гондурасск."
  
+ NIC:0 "Никарагуа"
+ NIC_DEF:0 "Никарагуа"
+ NIC_ADJ:0 "Никарагуанск."
  NIC_communism:0 "Республика Никарагуа"
  NIC_communism_DEF:0 "Республика Никарагуа"
  NIC_communism_ADJ:0 "Никарагуанск."
@@ -242,6 +296,9 @@
  NIC_fascism_DEF:0 "Государство Никарагуа"
  NIC_fascism_ADJ:0 "Никарагуанск."
  
+ COS:0 "Коста-Рика"
+ COS_DEF:0 "Коста-Рика"
+ COS_ADJ:0 "Коста-Риканск."
  COS_communism:0 "Республика Коста-Рика"
  COS_communism_DEF:0 "Республика Коста-Рика"
  COS_communism_ADJ:0 "Коста-Риканск."
@@ -255,6 +312,9 @@
  COS_fascism_DEF:0 "Государство Коста-Рика"
  COS_fascism_ADJ:0 "Коста-Риканск."
  
+ PAN:0 "Панама"
+ PAN_DEF:0 "Панама"
+ PAN_ADJ:0 "Панамск."
  PAN_communism:0 "Республика Панама"
  PAN_communism_DEF:0 "Республика Панама"
  PAN_communism_ADJ:0 "Панамск."
@@ -270,6 +330,9 @@
  
  ###КАРИБСКИЙ БАССЕЙН###
  
+ CBN:0 "Карибы"
+ CBN_DEF:0 "Карибы"
+ CBN_ADJ:0 "Карибск."
  CBN_communism:0 "Союз Карибских Социалистических Республик"
  CBN_communism_DEF:0 "Союз Карибских Социалистических Республик"
  CBN_communism_ADJ:0 "Карибск."
@@ -283,6 +346,9 @@
  CBN_fascism_DEF:0 "Карибская Федерация"
  CBN_fascism_ADJ:0 "Карибск."
  
+ CUB:0 "Куба"
+ CUB_DEF:0 "Куба"
+ CUB_ADJ:0 "Кубинск."
  CUB_communism:0 "Республика Куба"
  CUB_communism_DEF:0 "Республика Куба"
  CUB_communism_ADJ:0 "Кубинск."
@@ -296,6 +362,9 @@
  CUB_fascism_DEF:0 "Королевство Куба"
  CUB_fascism_ADJ:0 "Кубинск."
  
+ HAI:0 "Гаити"
+ HAI_DEF:0 "Гаити"
+ HAI_ADJ:0 "Гаитянск."
  HAI_communism:0 "Республика Гаити"
  HAI_communism_DEF:0 "Республика Гаити"
  HAI_communism_ADJ:0 "Гаитянск."
@@ -309,6 +378,9 @@
  HAI_fascism_DEF:0 "Империя Гаити"
  HAI_fascism_ADJ:0 "Гаитянск."
  
+ DOM:0 "Доминикана"
+ DOM_DEF:0 "Доминикана"
+ DOM_ADJ:0 "Доминиканск."
  DOM_communism:0 "Доминиканская Социалистическая Республика"
  DOM_communism_DEF:0 "Доминиканская Социалистическая Республика"
  DOM_communism_ADJ:0 "Доминиканск."
@@ -324,6 +396,9 @@
  
  ###ЮЖНАЯ АМЕРИКА###
  
+ GCB:0 "Колумбия"
+ GCB_DEF:0 "Колумбия"
+ GCB_ADJ:0 "Колумбийск."
  GCB_communism:0 "Социалистическая Рабочая Республика Колумбия"
  GCB_communism_DEF:0 "Социалистическая Рабочая Республика Колумбия"
  GCB_communism_ADJ:0 "Колумбийск."
@@ -337,6 +412,9 @@
  GCB_fascism_DEF:0 "Великая Колумбия"
  GCB_fascism_ADJ:0 "Колумбийск."
  
+ ECU:0 "Эквадор"
+ ECU_DEF:0 "Эквадор"
+ ECU_ADJ:0 "Эквадорск."
  ECU_communism:0 "Республика Эквадор"
  ECU_communism_DEF:0 "Республика Эквадор"
  ECU_communism_ADJ:0 "Эквадорск."
@@ -350,6 +428,9 @@
  ECU_fascism_DEF:0 "Государство Эквадор"
  ECU_fascism_ADJ:0 "Эквадорск."
  
+ COL:0 "Колумбия"
+ COL_DEF:0 "Колумбия"
+ COL_ADJ:0 "Колумбийск."
  COL_communism:0 "Народная Республика Колумбия"
  COL_communism_DEF:0 "Народная Республика Колумбия"
  COL_communism_ADJ:0 "Колумбийск."
@@ -363,6 +444,9 @@
  COL_fascism_DEF:0 "Государство Колумбия"
  COL_fascism_ADJ:0 "Колумбийск."
  
+ VEN:0 "Венесуэла"
+ VEN_DEF:0 "Венесуэла"
+ VEN_ADJ:0 "Венесуэльск."
  VEN_communism:0 "Республика Венесуэла"
  VEN_communism_DEF:0 "Республика Венесуэла"
  VEN_communism_ADJ:0 "Венесуэльск."
@@ -376,6 +460,9 @@
  VEN_fascism_DEF:0 "Государство Венесуэла"
  VEN_fascism_ADJ:0 "Венесуэльск."
  
+ CUR:0 "Кюрасао"
+ CUR_DEF:0 "Кюрасао"
+ CUR_ADJ:0 "Кюрасаоск."
  CUR_communism:0 "Страна Кюрасао"
  CUR_communism_DEF:0 "Страна Кюрасао"
  CUR_communism_ADJ:0 "Кюрасаоск."
@@ -389,6 +476,9 @@
  CUR_fascism_DEF:0 "Страна Кюрасао"
  CUR_fascism_ADJ:0 "Кюрасаоск."
  
+ SUR:0 "Суринам"
+ SUR_DEF:0 "Суринам"
+ SUR_ADJ:0 "Суринамск."
  SUR_communism:0 "Республика Суринам"
  SUR_communism_DEF:0 "Республика Суринам"
  SUR_communism_ADJ:0 "Суринамск."
@@ -402,6 +492,9 @@
  SUR_fascism_DEF:0 "Государство Суринам"
  SUR_fascism_ADJ:0 "Суринамск."
  
+ FRG:0 "Гвиана"
+ FRG_DEF:0 "Гвиана"
+ FRG_ADJ:0 "Гвианск."
  FRG_communism:0 "Республика Гвиана"
  FRG_communism_DEF:0 "Республика Гвиана"
  FRG_communism_ADJ:0 "Гвианск."
@@ -415,6 +508,9 @@
  FRG_fascism_DEF:0 "Государство Гвиана"
  FRG_fascism_ADJ:0 "Гвианск."
  
+ BRA:0 "Бразилия"
+ BRA_DEF:0 "Бразилия"
+ BRA_ADJ:0 "Бразильск"
  BRA_communism:0 "Республика соединённых штатов Бразилии"
  BRA_communism_DEF:0 "Республика соединённых штатов Бразилии"
  BRA_communism_ADJ:0 "Бразильск."
@@ -428,6 +524,9 @@
  BRA_fascism_DEF:0 "Соединённые штаты Бразилии"
  BRA_fascism_ADJ:0 "Бразильск."
  
+ PRU:0 "Перу"
+ PRU_DEF:0 "Перу"
+ PRU_ADJ:0 "Перуанск."
  PRU_communism:0 "Республика Перу"
  PRU_communism_DEF:0 "Республика Перу"
  PRU_communism_ADJ:0 "Перуанск."
@@ -441,6 +540,9 @@
  PRU_fascism_DEF:0 "Государство Перу"
  PRU_fascism_ADJ:0 "Перуанск."
  
+ BOL:0 "Боливия"
+ BOL_DEF:0 "Боливия"
+ BOL_ADJ:0 "Боливийск."
  BOL_communism:0 "Многонациональное Государство Боливия"
  BOL_communism_DEF:0 "Многонациональное Государство Боливия"
  BOL_communism_ADJ:0 "Боливийск."
@@ -454,6 +556,9 @@
  BOL_fascism_DEF:0 "Многонациональное Государство Боливия"
  BOL_fascism_ADJ:0 "Боливийск."
  
+ CHL:0 "Чили"
+ CHL_DEF:0 "Чили"
+ CHL_ADJ:0 "Чилийск."
  CHL_communism:0 "Республика Чили"
  CHL_communism_DEF:0 "Республика Чили"
  CHL_communism_ADJ:0 "Чилийск."
@@ -467,6 +572,9 @@
  CHL_fascism_DEF:0 "Государство Чили"
  CHL_fascism_ADJ:0 "Чилийск."
  
+ PAR:0 "Парагвай"
+ PAR_DEF:0 "Парагвай"
+ PAR_ADJ:0 "Парагвайск."
  PAR_communism:0 "Республика Парагвай"
  PAR_communism_DEF:0 "Республика Парагвай"
  PAR_communism_ADJ:0 "Парагвайск."
@@ -480,6 +588,9 @@
  PAR_fascism_DEF:0 "Государство Парагвай"
  PAR_fascism_ADJ:0 "Парагвайск."
  
+ ARG:0 "Рио-де-ла-Плата"
+ ARG_DEF:0 "Рио-де-ла-Плата"
+ ARG_ADJ:0 "Ла-Платаск."
  ARG_communism:0 "Соединённые провинции Рио-де-ла-Плата"
  ARG_communism_DEF:0 "Соединённые провинции Рио-де-ла-Плата"
  ARG_communism_ADJ:0 "Ла-Платаск."
@@ -493,6 +604,9 @@
  ARG_fascism_DEF:0 "Соединённые провинции Рио-де-ла-Плата"
  ARG_fascism_ADJ:0 "Ла-Платаск."
  
+ URG:0 "Уругвай"
+ URG_DEF:0 "Уругвай"
+ URG_ADJ:0 "Уругвайск."
  URG_communism:0 "Восточная Республика Уругвай"
  URG_communism_DEF:0 "Восточная Республика Уругвай"
  URG_communism_ADJ:0 "Уругвайск."
@@ -508,6 +622,9 @@
  
  ###СКАНДИНАВИЯ###
  
+ SWE:0 "Швеция"
+ SWE_DEF:0 "Швеция"
+ SWE_ADJ:0 "Шведск."
  SWE_communism:0 "Шведская Социалистическая Рабочая Республикa"
  SWE_communism_DEF:0 "Шведская Социалистическая Рабочая Республикa"
  SWE_communism_ADJ:0 "Шведск."
@@ -521,6 +638,9 @@
  SWE_fascism_DEF:0 "Королевство Швеция"
  SWE_fascism_ADJ:0 "Шведск."
  
+ GRN:0 "Гренландия"
+ GRN_DEF:0 "Гренландия"
+ GRN_ADJ:0 "Гренландск."
  GRN_communism:0 "Гренландская Социалистическая Рабочая Республикa"
  GRN_communism_DEF:0 "Гренландская Социалистическая Рабочая Республикa"
  GRN_communism_ADJ:0 "Гренландск."
@@ -534,6 +654,9 @@
  GRN_fascism_DEF:0 "Королевство Гренландия"
  GRN_fascism_ADJ:0 "Гренландск."
  
+ ICE:0 "Исландия"
+ ICE_DEF:0 "Исландия"
+ ICE_ADJ:0 "Исландск."
  ICE_communism:0 "Исландская Социалистическая Рабочая Республикa"
  ICE_communism_DEF:0 "Исландская Социалистическая Рабочая Республикa"
  ICE_communism_ADJ:0 "Исландск."
@@ -547,6 +670,9 @@
  ICE_fascism_DEF:0 "Королевство Исландия"
  ICE_fascism_ADJ:0 "Исландск."
  
+ FAR:0 "Фареры"
+ FAR_DEF:0 "Фареры"
+ FAR_ADJ:0 "Фарерск."
  FAR_communism:0 "Фарерская Социалистическая Рабочая Республикa"
  FAR_communism_DEF:0 "Фарерская Социалистическая Рабочая Республикa"
  FAR_communism_ADJ:0 "Фарерск."
@@ -560,6 +686,9 @@
  FAR_fascism_DEF:0 "Королевство Фарерских островов"
  FAR_fascism_ADJ:0 "Фарерск."
  
+ NOR:0 "Норвегия"
+ NOR_DEF:0 "Норвегия"
+ NOR_ADJ:0 "Норвежск."
  NOR_communism:0 "Норвежская Социалистическая Рабочая Республикa"
  NOR_communism_DEF:0 "Норвежская Социалистическая Рабочая Республикa"
  NOR_communism_ADJ:0 "Норвежск."
@@ -573,6 +702,9 @@
  NOR_fascism_DEF:0 "Королевство Норвегия"
  NOR_fascism_ADJ:0 "Норвежск."
  
+ DEN:0 "Дания"
+ DEN_DEF:0 "Дания"
+ DEN_ADJ:0 "Датск."
  DEN_communism:0 "Датская Социалистическая Рабочая Республикa"
  DEN_communism_DEF:0 "Датская Социалистическая Рабочая Республикa"
  DEN_communism_ADJ:0 "Датск."
@@ -586,6 +718,9 @@
  DEN_fascism_DEF:0 "Королевство Дания"
  DEN_fascism_ADJ:0 "Датск."
  
+ SWD:0 "Швеция"
+ SWD_DEF:0 "Швеция"
+ SWD_ADJ:0 "Шведск."
  SWD_communism:0 "Шведская Социалистическая Рабочая Республикa"
  SWD_communism_DEF:0 "Шведская Социалистическая Рабочая Республикa"
  SWD_communism_ADJ:0 "Шведск."
@@ -599,6 +734,9 @@
  SWD_fascism_DEF:0 "Королевство Швеция"
  SWD_fascism_ADJ:0 "Шведск."
  
+ FIN:0 "Финляндия"
+ FIN_DEF:0 "Финляндия"
+ FIN_ADJ:0 "Финск."
  FIN_communism:0 "Финляндская Социалистическая Рабочая Республикa"
  FIN_communism_DEF:0 "Финляндская Социалистическая Рабочая Республикa"
  FIN_communism_ADJ:0 "Финск."
@@ -614,6 +752,9 @@
  
  ###БРИТАНИЯ###
  
+ ENG:0 "Великобритания"
+ ENG_DEF:0 "Великобритания"
+ ENG_ADJ:0 "Британск."
  ENG_communism:0 "Британская Республика"
  ENG_communism_DEF:0 "Британская Республика"
  ENG_communism_ADJ:0 "Британск."
@@ -627,6 +768,9 @@
  ENG_fascism_DEF:0 "Соединённое Королевство Великобритании"
  ENG_fascism_ADJ:0 "Британск."
  
+ IRE:0 "Ирландия"
+ IRE_DEF:0 "Ирландия"
+ IRE_ADJ:0 "Ирландск."
  IRE_communism:0 "Ирландская Народная Республика"
  IRE_communism_DEF:0 "Ирландская Народная Республика"
  IRE_communism_ADJ:0 "Ирландск."
@@ -642,6 +786,9 @@
  
  ###ИБЕРИЯ###
  
+ POR:0 "Португалия"
+ POR_DEF:0 "Португалия"
+ POR_ADJ:0 "Португальск."
  POR_communism:0 "Португальская Республика"
  POR_communism_DEF:0 "Португальская Республика"
  POR_communism_ADJ:0 "Португальск."
@@ -655,6 +802,9 @@
  POR_fascism_DEF:0 "Королевство Португалия"
  POR_fascism_ADJ:0 "Португальск."
  
+ SPR:0 "Испания"
+ SPR_DEF:0 "Испания"
+ SPR_ADJ:0 "Испанск."
  SPR_communism:0 "Испанская Республика"
  SPR_communism_DEF:0 "Испанская Республика"
  SPR_communism_ADJ:0 "Испанск."
@@ -668,6 +818,9 @@
  SPR_fascism_DEF:0 "Испанское государство"
  SPR_fascism_ADJ:0 "Испанск."
  
+ ARA:0 "Арагон"
+ ARA_DEF:0 "Арагон"
+ ARA_ADJ:0 "Арагонск."
  ARA_communism:0 "Народная Республика Арагон"
  ARA_communism_DEF:0 "Народная Республика Арагон"
  ARA_communism_ADJ:0 "Арагонск."
@@ -681,21 +834,27 @@
  ARA_fascism_DEF:0 "Арагонское государство"
  ARA_fascism_ADJ:0 "Арагонск."
  
+ CAT:0 "Каталония"
+ CAT_DEF:0 "Каталония"
+ CAT_ADJ:0 "Каталанск."
  CAT_communism:0 "Народная Республика Каталония"
  CAT_communism_DEF:0 "Народная Республика Каталония"
- CAT_communism_ADJ:0 "Каталонск."
+ CAT_communism_ADJ:0 "Каталанск."
  CAT_democratic:0 "Республика Каталония"
  CAT_democratic_DEF:0 "Республика Каталония"
- CAT_democratic_ADJ:0 "Каталонск."
+ CAT_democratic_ADJ:0 "Каталанск."
  CAT_neutrality:0 "Княжество Каталония"
  CAT_neutrality_DEF:0 "Княжество Каталония"
- CAT_neutrality_ADJ:0 "Каталонск."
+ CAT_neutrality_ADJ:0 "Каталанск."
  CAT_fascism:0 "Каталонское государство"
  CAT_fascism_DEF:0 "Каталонское государство"
- CAT_fascism_ADJ:0 "Каталонск."
+ CAT_fascism_ADJ:0 "Каталанск."
  
  ###ФРАНЦИЯ###
  
+ FRA:0 "Франция"
+ FRA_DEF:0 "Франция"
+ FRA_ADJ:0 "Французск."
  FRA_communism:0 "Французская Социалистическая Республика"
  FRA_communism_DEF:0 "Французская Социалистическая Республика"
  FRA_communism_ADJ:0 "Французск."
@@ -709,6 +868,9 @@
  FRA_fascism_DEF:0 "Французская Республика"
  FRA_fascism_ADJ:0 "Французск."
  
+ BRI:0 "Бретань"
+ BRI_DEF:0 "Бретань"
+ BRI_ADJ:0 "Бретонск."
  BRI_communism:0 "Народная Республика Бретань"
  BRI_communism_DEF:0 "Народная Республика Бретань"
  BRI_communism_ADJ:0 "Бретонск."
@@ -722,6 +884,9 @@
  BRI_fascism_DEF:0 "Бретонское государство"
  BRI_fascism_ADJ:0 "Бретонск."
  
+ NMD:0 "Нормандия"
+ NMD_DEF:0 "Нормандия"
+ NMD_ADJ:0 "Нормандск."
  NMD_communism:0 "Народная Республика Нормандия"
  NMD_communism_DEF:0 "Народная Республика Нормандия"
  NMD_communism_ADJ:0 "Нормандск."
@@ -735,6 +900,25 @@
  NMD_fascism_DEF:0 "Нормандское государство"
  NMD_fascism_ADJ:0 "Нормандск."
  
+ PRI:0 "Париж"
+ PRI_DEF:0 "Париж"
+ PRI_ADJ:0 "Парижск."
+ PRI_communism:0 "Парижская коммуна"
+ PRI_communism_DEF:0 "Парижская коммуна"
+ PRI_communism_ADJ:0 "Парижск."
+ PRI_democratic:0 "Республика Париж"
+ PRI_democratic_DEF:0 "Республика Париж"
+ PRI_democratic_ADJ:0 "Парижск."
+ PRI_neutrality:0 "Великое Герцогство Парижское"
+ PRI_neutrality_DEF:0 "Великое Герцогство Парижское"
+ PRI_neutrality_ADJ:0 "Парижск."
+ PRI_fascism:0 "Паризийское государство"
+ PRI_fascism_DEF:0 "Паризийское государство"
+ PRI_fascism_ADJ:0 "Паризийск."
+ 
+ BGD:0 "Бургундия"
+ BGD_DEF:0 "Бургундия"
+ BGD_ADJ:0 "Бургундск."
  BGD_communism:0 "Народная Республика Бургундия"
  BGD_communism_DEF:0 "Народная Республика Бургундия"
  BGD_communism_ADJ:0 "Бургундск."
@@ -748,19 +932,25 @@
  BGD_fascism_DEF:0 "Бургундское государство"
  BGD_fascism_ADJ:0 "Бургундск."
  
+ ALS:0 "Эльзас-Лотарингия"
+ ALS_DEF:0 "Эльзас-Лотарингия"
+ ALS_ADJ:0 "Эльзасск."
  ALS_communism:0 "Народная Республика Эльзас-Лотарингия"
  ALS_communism_DEF:0 "Народная Республика Эльзас-Лотарингия"
  ALS_communism_ADJ:0 "Эльзасск."
  ALS_democratic:0 "Республика Эльзас-Лотарингия"
  ALS_democratic_DEF:0 "Республика Эльзас-Лотарингия"
  ALS_democratic_ADJ:0 "Эльзасск."
- ALS_neutrality:0 "Княжество Эльзас-Лотарингия"
- ALS_neutrality_DEF:0 "Княжество Эльзас-Лотарингия"
+ ALS_neutrality:0 "Княжество Эльзас-Лотарингское"
+ ALS_neutrality_DEF:0 "Княжество Эльзас-Лотарингское"
  ALS_neutrality_ADJ:0 "Эльзасск."
- ALS_fascism:0 "Эльзасское государство"
- ALS_fascism_DEF:0 "Эльзасское государство"
+ ALS_fascism:0 "Эльзас-Лотарингское государство"
+ ALS_fascism_DEF:0 "Эльзас-Лотарингское государство"
  ALS_fascism_ADJ:0 "Эльзасск."
  
+ OCC:0 "Окситания"
+ OCC_DEF:0 "Окситания"
+ OCC_ADJ:0 "Окситанск."
  OCC_communism:0 "Народная Республика Окситания"
  OCC_communism_DEF:0 "Народная Республика Окситания"
  OCC_communism_ADJ:0 "Окситанск."
@@ -776,6 +966,9 @@
  
  ###БЕНИЛЮКС###
  
+ HOL:0 "Нидерланды"
+ HOL_DEF:0 "Нидерланды"
+ HOL_ADJ:0 "Голландск."
  HOL_communism:0 "Республика Объединённых Нидерландов"
  HOL_communism_DEF:0 "Республика Объединённых Нидерландов"
  HOL_communism_ADJ:0 "Голландск."
@@ -789,6 +982,9 @@
  HOL_fascism_DEF:0 "Королевство Нидерландов"
  HOL_fascism_ADJ:0 "Голландск."
  
+ BEL:0 "Люксембург"
+ BEL_DEF:0 "Люксембург"
+ BEL_ADJ:0 "Люксембургск."
  BEL_communism:0 "Социалистическая Республика Люксембург"
  BEL_communism_DEF:0 "Социалистическая Республика Люксембург"
  BEL_communism_ADJ:0 "Люксембургск."
@@ -804,6 +1000,9 @@
  
  ###ГЕРМАНИЯ###
  
+ DDR:0 "Германия"
+ DDR_DEF:0 "Германия"
+ DDR_ADJ:0 "Германск."
  DDR_communism:0 "Народная Республика Германия"
  DDR_communism_DEF:0 "Народная Республика Германия"
  DDR_communism_ADJ:0 "Германск."
@@ -817,6 +1016,9 @@
  DDR_fascism_DEF:0 "Германское государство"
  DDR_fascism_ADJ:0 "Германск."
  
+ GER:0 "Германия"
+ GER_DEF:0 "Германия"
+ GER_ADJ:0 "Германск."
  GER_communism:0 "Германская Демократическая Республика"
  GER_communism_DEF:0 "Германская Демократическая Республика"
  GER_communism_ADJ:0 "Германск."
@@ -830,6 +1032,9 @@
  GER_fascism_DEF:0 "Государство Тевтонского ордена"
  GER_fascism_ADJ:0 "Германск."
  
+ POM:0 "Померания"
+ POM_DEF:0 "Померания"
+ POM_ADJ:0 "Померанск."
  POM_communism:0 "Померанская Советская Республика"
  POM_communism_DEF:0 "Померанская Советская Республика"
  POM_communism_ADJ:0 "Померанск."
@@ -843,21 +1048,27 @@
  POM_fascism_DEF:0 "Герцогство Померания"
  POM_fascism_ADJ:0 "Померанск."
  
+ WGR:0 "Рейн"
+ WGR_DEF:0 "Рейн"
+ WGR_ADJ:0 "Рейнск."
  WGR_communism:0 "Конфедеративные государства Рейна"
  WGR_communism_DEF:0 "Конфедеративные государства Рейна"
- WGR_communism_ADJ:0 "Германск."
+ WGR_communism_ADJ:0 "Рейнск."
  WGR_democratic:0 "Конфедеративные государства Рейна"
  WGR_democratic_DEF:0 "Конфедеративные государства Рейна"
- WGR_democratic_ADJ:0 "Германск."
+ WGR_democratic_ADJ:0 "Рейнск."
  WGR_neutrality:0 "Конфедеративные государства Рейна"
  WGR_neutrality_DEF:0 "Конфедеративные государства Рейна"
- WGR_neutrality_ADJ:0 "Германск."
+ WGR_neutrality_ADJ:0 "Рейнск."
  WGR_fascism:0 "Конфедеративные государства Рейна"
  WGR_fascism_DEF:0 "Конфедеративные государства Рейна"
- WGR_fascism_ADJ:0 "Германск."
+ WGR_fascism_ADJ:0 "Рейнск."
  
  ###АЛЬПЫ###
  
+ SWI:0 "Швейцария"
+ SWI_DEF:0 "Швейцария"
+ SWI_ADJ:0 "Швейцарск."
  SWI_communism:0 "Швейцарская Конфедерация"
  SWI_communism_DEF:0 "Швейцарская Конфедерация"
  SWI_communism_ADJ:0 "Швейцарск."
@@ -871,6 +1082,9 @@
  SWI_fascism_DEF:0 "Швейцарская Конфедерация"
  SWI_fascism_ADJ:0 "Швейцарск."
  
+ AUS:0 "Австрия"
+ AUS_DEF:0 "Австрия"
+ AUS_ADJ:0 "Австрийск."
  AUS_communism:0 "Австрийская Социалистическая Республика"
  AUS_communism_DEF:0 "Австрийская Социалистическая Республика"
  AUS_communism_ADJ:0 "Австрийск."
@@ -884,6 +1098,9 @@
  AUS_fascism_DEF:0 "Федеративное государство Австрия"
  AUS_fascism_ADJ:0 "Австрийск."
  
+ SAV:0 "Савойя"
+ SAV_DEF:0 "Савойя"
+ SAV_ADJ:0 "Савойск."
  SAV_communism:0 "Народная Республика Савойя"
  SAV_communism_DEF:0 "Народная Республика Савойя"
  SAV_communism_ADJ:0 "Савойск."
@@ -897,6 +1114,9 @@
  SAV_fascism_DEF:0 "Савойское государство"
  SAV_fascism_ADJ:0 "Савойск."
  
+ ITA:0 "Италия"
+ ITA_DEF:0 "Италия"
+ ITA_ADJ:0 "Итальянск."
  ITA_communism:0 "Итальянская Социалистическая Республика"
  ITA_communism_DEF:0 "Итальянская Социалистическая Республика"
  ITA_communism_ADJ:0 "Итальянск."
@@ -912,6 +1132,9 @@
  
  ###БАЛТИЯ###
  
+ BAL:0 "Балтия"
+ BAL_DEF:0 "Балтия"
+ BAL_ADJ:0 "Балтийск."
  BAL_communism:0 "Балтийская Социалистическая Советская Республика"
  BAL_communism_DEF:0 "Балтийская Социалистическая Советская Республика"
  BAL_communism_ADJ:0 "Балтийск."
@@ -925,6 +1148,9 @@
  BAL_fascism_DEF:0 "Балтийский орден"
  BAL_fascism_ADJ:0 "Балтийск."
  
+ EST:0 "Эстония"
+ EST_DEF:0 "Эстония"
+ EST_ADJ:0 "Эстонск."
  EST_communism:0 "Эстонская Социалистическая Советская Республика"
  EST_communism_DEF:0 "Эстонская Социалистическая Советская Республика"
  EST_communism_ADJ:0 "Эстонск."
@@ -938,6 +1164,9 @@
  EST_fascism_DEF:0 "Королевство Эстония"
  EST_fascism_ADJ:0 "Эстонск."
  
+ LAT:0 "Латвия"
+ LAT_DEF:0 "Латвия"
+ LAT_ADJ:0 "Латвийск."
  LAT_communism:0 "Латвийская Социалистическая Советская Республика"
  LAT_communism_DEF:0 "Латвийская Социалистическая Советская Республика"
  LAT_communism_ADJ:0 "Латвийск."
@@ -951,6 +1180,9 @@
  LAT_fascism_DEF:0 "Королевство Латвия"
  LAT_fascism_ADJ:0 "Латвийск."
  
+ LIT:0 "Литва"
+ LIT_DEF:0 "Литва"
+ LIT_ADJ:0 "Литовск."
  LIT_communism:0 "Литовская Социалистическая Советская Республика"
  LIT_communism_DEF:0 "Литовская Социалистическая Советская Республика"
  LIT_communism_ADJ:0 "Литовск."
@@ -966,6 +1198,9 @@
  
  ###ВОСТОЧНАЯ ЕВРОПА###
  
+ POL:0 "Польша"
+ POL_DEF:0 "Польша"
+ POL_ADJ:0 "Польск."
  POL_communism:0 "Польская Республика"
  POL_communism_DEF:0 "Польская Республика"
  POL_communism_ADJ:0 "Польск."
@@ -979,6 +1214,9 @@
  POL_fascism_DEF:0 "Королевство Польское"
  POL_fascism_ADJ:0 "Польск."
  
+ CZE:0 "Чехия"
+ CZE_DEF:0 "Чехия"
+ CZE_ADJ:0 "Чешск."
  CZE_communism:0 "Чешская Социалистическая Республика"
  CZE_communism_DEF:0 "Чешская Социалистическая Республика"
  CZE_communism_ADJ:0 "Чешск."
@@ -992,6 +1230,9 @@
  CZE_fascism_DEF:0 "Богемия и Моравия"
  CZE_fascism_ADJ:0 "Чешск."
  
+ SLO:0 "Словакия"
+ SLO_DEF:0 "Словакия"
+ SLO_ADJ:0 "Словакск."
  SLO_communism:0 "Словацкая Социалистическая Республика"
  SLO_communism_DEF:0 "Словацкая Социалистическая Республика"
  SLO_communism_ADJ:0 "Словакск."
@@ -1005,6 +1246,9 @@
  SLO_fascism_DEF:0 "Словацкая Республика"
  SLO_fascism_ADJ:0 "Словакск."
  
+ HUN:0 "Венгрия"
+ HUN_DEF:0 "Венгрия"
+ HUN_ADJ:0 "Венгерск."
  HUN_communism:0 "Венгерская Народная Республика"
  HUN_communism_DEF:0 "Венгерская Народная Республика"
  HUN_communism_ADJ:0 "Венгерск."
@@ -1018,6 +1262,9 @@
  HUN_fascism_DEF:0 "Королевство Венгрия"
  HUN_fascism_ADJ:0 "Венгерск."
  
+ TRN:0 "Трансильвания"
+ TRN_DEF:0 "Трансильвания"
+ TRN_ADJ:0 "Трансильванск."
  TRN_communism:0 "Трансильванская Народная Республика"
  TRN_communism_DEF:0 "Трансильванская Народная Республика"
  TRN_communism_ADJ:0 "Трансильванск."
@@ -1031,6 +1278,9 @@
  TRN_fascism_DEF:0 "Королевство Трансильвания"
  TRN_fascism_ADJ:0 "Трансильванск."
  
+ ROM:0 "Румыния"
+ ROM_DEF:0 "Румыния"
+ ROM_ADJ:0 "Румынск."
  ROM_communism:0 "Румынская Народная Республика"
  ROM_communism_DEF:0 "Румынская Народная Республика"
  ROM_communism_ADJ:0 "Румынск."
@@ -1044,6 +1294,9 @@
  ROM_fascism_DEF:0 "Королевство Румыния"
  ROM_fascism_ADJ:0 "Румынск."
  
+ BLR:0 "Беларусь"
+ BLR_DEF:0 "Беларусь"
+ BLR_ADJ:0 "Белорусск."
  BLR_communism:0 "Белорусская Социалистическая Советская Республика"
  BLR_communism_DEF:0 "Белорусская Социалистическая Советская Республика"
  BLR_communism_ADJ:0 "Белорусск."
@@ -1057,6 +1310,9 @@
  BLR_fascism_DEF:0 "Беларусь"
  BLR_fascism_ADJ:0 "Белорусск."
  
+ UKR:0 "Украина"
+ UKR_DEF:0 "Украина"
+ UKR_ADJ:0 "Украинск."
  UKR_communism:0 "Украинская Социалистическая Советская Республика"
  UKR_communism_DEF:0 "Украинская Социалистическая Советская Республика"
  UKR_communism_ADJ:0 "Украинск."
@@ -1072,6 +1328,9 @@
  
  ###БАЛКАНЫ###
  
+ YUG:0 "Югославия"
+ YUG_DEF:0 "Югославия"
+ YUG_ADJ:0 "Югославск."
  YUG_communism:0 "Демократическая Федеративная Югославия"
  YUG_communism_DEF:0 "Демократическая Федеративная Югославия"
  YUG_communism_ADJ:0 "Югославск."
@@ -1085,6 +1344,9 @@
  YUG_fascism_DEF:0 "Королевство Югославия"
  YUG_fascism_ADJ:0 "Югославск."
  
+ CRO:0 "Хорватия"
+ CRO_DEF:0 "Хорватия"
+ CRO_ADJ:0 "Хорватск."
  CRO_communism:0 "Народная Республика Хорватия"
  CRO_communism_DEF:0 "Народная Республика Хорватия"
  CRO_communism_ADJ:0 "Хорватск."
@@ -1098,6 +1360,9 @@
  CRO_fascism_DEF:0 "Независимое государство Хорватия"
  CRO_fascism_ADJ:0 "Хорватск."
  
+ SER:0 "Сербия"
+ SER_DEF:0 "Сербия"
+ SER_ADJ:0 "Сербск."
  SER_communism:0 "Народная Республика Сербия"
  SER_communism_DEF:0 "Народная Республика Сербия"
  SER_communism_ADJ:0 "Сербск."
@@ -1111,6 +1376,9 @@
  SER_fascism_DEF:0 "Королевство Сербия"
  SER_fascism_ADJ:0 "Сербск."
  
+ ALB:0 "Албания"
+ ALB_DEF:0 "Албания"
+ ALB_ADJ:0 "Албанск."
  ALB_communism:0 "Народная Республика Албания"
  ALB_communism_DEF:0 "Народная Республика Албания"
  ALB_communism_ADJ:0 "Албанск."
@@ -1124,6 +1392,9 @@
  ALB_fascism_DEF:0 "Великая Албания"
  ALB_fascism_ADJ:0 "Албанск."
  
+ GRE:0 "Греция"
+ GRE_DEF:0 "Греция"
+ GRE_ADJ:0 "Греческ."
  GRE_communism:0 "Греческая Республика"
  GRE_communism_DEF:0 "Греческая Республика"
  GRE_communism_ADJ:0 "Греческ."
@@ -1137,6 +1408,9 @@
  GRE_fascism_DEF:0 "Греческое государство"
  GRE_fascism_ADJ:0 "Греческ."
  
+ BUL:0 "Болгария"
+ BUL_DEF:0 "Болгария"
+ BUL_ADJ:0 "Болгарск."
  BUL_communism:0 "Народная Республика Болгария"
  BUL_communism_DEF:0 "Народная Республика Болгария"
  BUL_communism_ADJ:0 "Болгарск."
@@ -1152,6 +1426,9 @@
  
  ###РОССИЯ###
  
+ SOV:0 "Россия"
+ SOV_DEF:0 "Россия"
+ SOV_ADJ:0 "Российск."
  SOV_communism:0 "Российская Социалистическая Федеративная Советская Республика"
  SOV_communism_DEF:0 "Российская Социалистическая Федеративная Советская Республика"
  SOV_communism_ADJ:0 "Российск."
@@ -1165,6 +1442,9 @@
  SOV_fascism_DEF:0 "Российская империя"
  SOV_fascism_ADJ:0 "Российск."
  
+ WSR:0 "Беломорье"
+ WSR_DEF:0 "Беломорье"
+ WSR_ADJ:0 "Беломорск."
  WSR_communism:0 "Беломорская Социалистическая Советская Республика"
  WSR_communism_DEF:0 "Беломорская Социалистическая Советская Республика"
  WSR_communism_ADJ:0 "Беломорск."
@@ -1178,6 +1458,9 @@
  WSR_fascism_DEF:0 "Беломорье"
  WSR_fascism_ADJ:0 "Беломорск."
  
+ STP:0 "Петроград"
+ STP_DEF:0 "Петроград"
+ STP_ADJ:0 "Петроградск."
  STP_communism:0 "Петроградская Социалистическая Советская Республика"
  STP_communism_DEF:0 "Петроградская Социалистическая Советская Республика"
  STP_communism_ADJ:0 "Петроградск."
@@ -1191,6 +1474,9 @@
  STP_fascism_DEF:0 "Санкт-Петербург"
  STP_fascism_ADJ:0 "Петербургск."
  
+ MOS:0 "Москва"
+ MOS_DEF:0 "Москва"
+ MOS_ADJ:0 "Московск."
  MOS_communism:0 "Московская Социалистическая Советская Республика"
  MOS_communism_DEF:0 "Московская Социалистическая Советская Республика"
  MOS_communism_ADJ:0 "Московск."
@@ -1204,6 +1490,9 @@
  MOS_fascism_DEF:0 "Москва"
  MOS_fascism_ADJ:0 "Московск."
  
+ TSR:0 "Дон"
+ TSR_DEF:0 "Дон"
+ TSR_ADJ:0 "Донск."
  TSR_communism:0 "Донская Социалистическая Советская Республика"
  TSR_communism_DEF:0 "Донская Социалистическая Советская Республика"
  TSR_communism_ADJ:0 "Донск."
@@ -1217,6 +1506,9 @@
  TSR_fascism_DEF:0 "Всевеликое войско Донское"
  TSR_fascism_ADJ:0 "Донск."
  
+ CRI:0 "Крым"
+ CRI_DEF:0 "Крым"
+ CRI_ADJ:0 "Крымск."
  CRI_communism:0 "Крымская Социалистическая Советская Республика"
  CRI_communism_DEF:0 "Крымская Социалистическая Советская Республика"
  CRI_communism_ADJ:0 "Крымск."
@@ -1230,6 +1522,9 @@
  CRI_fascism_DEF:0 "Крымское ханство"
  CRI_fascism_ADJ:0 "Крымск."
  
+ SIB:0 "Сибирь"
+ SIB_DEF:0 "Сибирь"
+ SIB_ADJ:0 "Сибирск."
  SIB_communism:0 "Сибирская Социалистическая Советская Республика"
  SIB_communism_DEF:0 "Сибирская Социалистическая Советская Республика"
  SIB_communism_ADJ:0 "Сибирск."
@@ -1245,6 +1540,9 @@
  
  ###СРЕДНЯЯ АЗИЯ###
  
+ KAZ:0 "Казахстан"
+ KAZ_DEF:0 "Казахстан"
+ KAZ_ADJ:0 "Казахск."
  KAZ_communism:0 "Казахская Социалистическая Советская Республика"
  KAZ_communism_DEF:0 "Казахская Социалистическая Советская Республика"
  KAZ_communism_ADJ:0 "Казахск."
@@ -1258,6 +1556,9 @@
  KAZ_fascism_DEF:0 "Республика Казахстан"
  KAZ_fascism_ADJ:0 "Казахск."
  
+ UZB:0 "Узбекистан"
+ UZB_DEF:0 "Узбекистан"
+ UZB_ADJ:0 "Узбекск."
  UZB_communism:0 "Узбекская Социалистическая Советская Республика"
  UZB_communism_DEF:0 "Узбекская Социалистическая Советская Республика"
  UZB_communism_ADJ:0 "Узбекск."
@@ -1271,6 +1572,9 @@
  UZB_fascism_DEF:0 "Узбекское государство"
  UZB_fascism_ADJ:0 "Узбекск."
  
+ KYR:0 "Алаш-Орда"
+ KYR_DEF:0 "Алаш-Орда"
+ KYR_ADJ:0 "Алашск."
  KYR_communism:0 "Киргизская Социалистическая Советская Республика"
  KYR_communism_DEF:0 "Киргизская Социалистическая Советская Республика"
  KYR_communism_ADJ:0 "Киргизск."
@@ -1284,6 +1588,9 @@
  KYR_fascism_DEF:0 "Алаш-Орда"
  KYR_fascism_ADJ:0 "Алашск."
  
+ TAJ:0 "Таджикистан"
+ TAJ_DEF:0 "Таджикистан"
+ TAJ_ADJ:0 "Таджикск."
  TAJ_communism:0 "Таджикская Социалистическая Советская Республика"
  TAJ_communism_DEF:0 "Таджикская Социалистическая Советская Республика"
  TAJ_communism_ADJ:0 "Таджикск."
@@ -1297,6 +1604,9 @@
  TAJ_fascism_DEF:0 "Таджикское государство"
  TAJ_fascism_ADJ:0 "Таджикск."
  
+ TMS:0 "Туркестан"
+ TMS_DEF:0 "Туркестан"
+ TMS_ADJ:0 "Туркск."
  TMS_communism:0 "Туркестанская Социалистическая Советская Республика"
  TMS_communism_DEF:0 "Туркестанская Социалистическая Советская Республика"
  TMS_communism_ADJ:0 "Туркск."
@@ -1310,6 +1620,9 @@
  TMS_fascism_DEF:0 "Туркестанское государство"
  TMS_fascism_ADJ:0 "Туркск."
  
+ KHI:0 "Хорезм"
+ KHI_DEF:0 "Хорезм"
+ KHI_ADJ:0 "Хорезмск."
  KHI_communism:0 "Хорезмская Социалистическая Советская Республика"
  KHI_communism_DEF:0 "Хорезмская Социалистическая Советская Республика"
  KHI_communism_ADJ:0 "Хорезмск."
@@ -1323,6 +1636,9 @@
  KHI_fascism_DEF:0 "Хивинское ханство"
  KHI_fascism_ADJ:0 "Хивинск."
  
+ BUK:0 "Бухара"
+ BUK_DEF:0 "Бухара"
+ BUK_ADJ:0 "Бухарск."
  BUK_communism:0 "Бухарская Социалистическая Советская Республика"
  BUK_communism_DEF:0 "Бухарская Социалистическая Советская Республика"
  BUK_communism_ADJ:0 "Бухарск."
@@ -1338,6 +1654,9 @@
  
  ###КАВКАЗ###
  
+ CAU:0 "Кавказ"
+ CAU_DEF:0 "Кавказ"
+ CAU_ADJ:0 "Кавказск."
  CAU_communism:0 "Кавказская Социалистическая Федеративная Советская Республика"
  CAU_communism_DEF:0 "Кавказская Социалистическая Федеративная Советская Республика"
  CAU_communism_ADJ:0 "Кавказск."
@@ -1351,6 +1670,9 @@
  CAU_fascism_DEF:0 "Кавказская Федерация"
  CAU_fascism_ADJ:0 "Кавказск."
  
+ ABK:0 "Абхазия"
+ ABK_DEF:0 "Абхазия"
+ ABK_ADJ:0 "Абхазск."
  ABK_communism:0 "Абхазская Социалистическая Советская Республика"
  ABK_communism_DEF:0 "Абхазская Социалистическая Советская Республика"
  ABK_communism_ADJ:0 "Абхазск."
@@ -1364,6 +1686,9 @@
  ABK_fascism_DEF:0 "Государство Абхазия"
  ABK_fascism_ADJ:0 "Абхазск."
  
+ OSS:0 "Осетия"
+ OSS_DEF:0 "Осетия"
+ OSS_ADJ:0 "Осетинск."
  OSS_communism:0 "Осетинская Социалистическая Советская Республика"
  OSS_communism_DEF:0 "Осетинская Социалистическая Советская Республика"
  OSS_communism_ADJ:0 "Осетинск."
@@ -1377,6 +1702,9 @@
  OSS_fascism_DEF:0 "Государство Осетия"
  OSS_fascism_ADJ:0 "Осетинск."
  
+ CHE:0 "Чечено-Ингушетия"
+ CHE_DEF:0 "Чечено-Ингушетия"
+ CHE_ADJ:0 "Чечено-Ингушск."
  CHE_communism:0 "Чечено-Ингушская Социалистическая Советская Республика"
  CHE_communism_DEF:0 "Чечено-Ингушская Социалистическая Советская Республика"
  CHE_communism_ADJ:0 "Чечено-Ингушск."
@@ -1390,6 +1718,9 @@
  CHE_fascism_DEF:0 "Северо-Кавказский эмират"
  CHE_fascism_ADJ:0 "Северо-Кавказск."
  
+ DAG:0 "Дагестан"
+ DAG_DEF:0 "Дагестан"
+ DAG_ADJ:0 "Дагестанск."
  DAG_communism:0 "Дагестанская Социалистическая Советская Республика"
  DAG_communism_DEF:0 "Дагестанская Социалистическая Советская Республика"
  DAG_communism_ADJ:0 "Дагестанск."
@@ -1403,6 +1734,9 @@
  DAG_fascism_DEF:0 "Государство Дагестан"
  DAG_fascism_ADJ:0 "Дагестанск."
  
+ GEO:0 "Грузия"
+ GEO_DEF:0 "Грузия"
+ GEO_ADJ:0 "Грузинск."
  GEO_communism:0 "Грузинская Социалистическая Советская Республика"
  GEO_communism_DEF:0 "Грузинская Социалистическая Советская Республика"
  GEO_communism_ADJ:0 "Грузинск."
@@ -1416,6 +1750,9 @@
  GEO_fascism_DEF:0 "Грузинское царство"
  GEO_fascism_ADJ:0 "Грузинск."
  
+ ARM:0 "Армения"
+ ARM_DEF:0 "Армения"
+ ARM_ADJ:0 "Армянск."
  ARM_communism:0 "Армянская Социалистическая Советская Республика"
  ARM_communism_DEF:0 "Армянская Социалистическая Советская Республика"
  ARM_communism_ADJ:0 "Армянск."
@@ -1429,6 +1766,9 @@
  ARM_fascism_DEF:0 "Королевство Армения"
  ARM_fascism_ADJ:0 "Армянск."
  
+ AZR:0 "Азербайджан"
+ AZR_DEF:0 "Азербайджан"
+ AZR_ADJ:0 "Азербайджанск."
  AZR_communism:0 "Азербайджанская Социалистическая Советская Республика"
  AZR_communism_DEF:0 "Азербайджанская Социалистическая Советская Республика"
  AZR_communism_ADJ:0 "Азербайджанск."
@@ -1444,12 +1784,15 @@
  
  ###АЗИЯ###
  
+ TAN:0 "Тыва"
+ TAN_DEF:0 "Тыва"
+ TAN_ADJ:0 "Тывинск."
  TAN_communism:0 "Тувинская Народная Республика"
  TAN_communism_DEF:0 "Тувинская Народная Республика"
  TAN_communism_ADJ:0 "Тувинск."
  TAN_democratic:0 "Республика Тыва"
  TAN_democratic_DEF:0 "Республика Тыва"
- TAN_democratic_ADJ:0 "Тувинск."
+ TAN_democratic_ADJ:0 "Тывинск."
  TAN_neutrality:0 "Танну-Урянхай"
  TAN_neutrality_DEF:0 "Танну-Урянхай"
  TAN_neutrality_ADJ:0 "Тувинск."
@@ -1457,6 +1800,9 @@
  TAN_fascism_DEF:0 "Танну-Урянхай"
  TAN_fascism_ADJ:0 "Тувинск."
  
+ CHI:0 "Китай"
+ CHI_DEF:0 "Китай"
+ CHI_ADJ:0 "Китайск."
  CHI_communism:0 "Китайская Республика"
  CHI_communism_DEF:0 "Китайская Республика"
  CHI_communism_ADJ:0 "Китайск."
@@ -1470,6 +1816,9 @@
  CHI_fascism_DEF:0 "Государство Великая Цин"
  CHI_fascism_ADJ:0 "Китайск."
  
+ KOR:0 "Корея"
+ KOR_DEF:0 "Корея"
+ KOR_ADJ:0 "Корейск."
  KOR_communism:0 "Корейская Народно-Демократическая Республика"
  KOR_communism_DEF:0 "Корейская Народно-Демократическая Республика"
  KOR_communism_ADJ:0 "Корейск."
@@ -1483,6 +1832,9 @@
  KOR_fascism_DEF:0 "Великий Чосон"
  KOR_fascism_ADJ:0 "Чосонск."
  
+ JAP:0 "Япония"
+ JAP_DEF:0 "Япония"
+ JAP_ADJ:0 "Японск."
  JAP_communism:0 "Республика Япония"
  JAP_communism_DEF:0 "Республика Япония"
  JAP_communism_ADJ:0 "Японск."
@@ -1496,6 +1848,9 @@
  JAP_fascism_DEF:0 "Японская империя"
  JAP_fascism_ADJ:0 "Японск."
  
+ PRC:0 "Тайпин"
+ PRC_DEF:0 "Тайпин"
+ PRC_ADJ:0 "Тайпинск."
  PRC_communism:0 "Тайпинская Советская Республика"
  PRC_communism_DEF:0 "Тайпинская Советская Республика"
  PRC_communism_ADJ:0 "Тайпинск."
@@ -1509,6 +1864,9 @@
  PRC_fascism_DEF:0 "Тайпинское Небесное Царство"
  PRC_fascism_ADJ:0 "Тайпинск."
  
+ TIB:0 "Тибет"
+ TIB_DEF:0 "Тибет"
+ TIB_ADJ:0 "Тибетск."
  TIB_communism:0 "Тибетская Народная Республика"
  TIB_communism_DEF:0 "Тибетская Народная Республика"
  TIB_communism_ADJ:0 "Тибетск."
@@ -1522,6 +1880,9 @@
  TIB_fascism_DEF:0 "Тибет"
  TIB_fascism_ADJ:0 "Тибетск."
  
+ BUR:0 "Бирма"
+ BUR_DEF:0 "Бирма"
+ BUR_ADJ:0 "Бирманск."
  BUR_communism:0 "Социалистическая Республика Союз Бирма"
  BUR_communism_DEF:0 "Социалистическая Республика Союз Бирма"
  BUR_communism_ADJ:0 "Бирманск."
@@ -1535,6 +1896,9 @@
  BUR_fascism_DEF:0 "Государство Бирма"
  BUR_fascism_ADJ:0 "Бирманск."
  
+ SIA:0 "Сиам"
+ SIA_DEF:0 "Сиам"
+ SIA_ADJ:0 "Сиамск."
  SIA_communism:0 "Республика Таиланд"
  SIA_communism_DEF:0 "Республика Таиланд"
  SIA_communism_ADJ:0 "Тайск."
@@ -1548,6 +1912,9 @@
  SIA_fascism_DEF:0 "Сиам"
  SIA_fascism_ADJ:0 "Сиамск."
  
+ LAO:0 "Лаос"
+ LAO_DEF:0 "Лаос"
+ LAO_ADJ:0 "Лаоск."
  LAO_communism:0 "Лаосская Народно-Демократическая Республика"
  LAO_communism_DEF:0 "Лаосская Народно-Демократическая Республика"
  LAO_communism_ADJ:0 "Лаоск."
@@ -1561,6 +1928,9 @@
  LAO_fascism_DEF:0 "Королевство Лаос"
  LAO_fascism_ADJ:0 "Лаоск."
  
+ CAM:0 "Камбоджа"
+ CAM_DEF:0 "Камбоджа"
+ CAM_ADJ:0 "Камбоджийск."
  CAM_communism:0 "Демократическая Кампучия"
  CAM_communism_DEF:0 "Демократическая Кампучия"
  CAM_communism_ADJ:0 "Кампучийск."
@@ -1574,6 +1944,9 @@
  CAM_fascism_DEF:0 "Государство Камбоджа"
  CAM_fascism_ADJ:0 "Камбоджийск."
  
+ VIN:0 "Вьетнам"
+ VIN_DEF:0 "Вьетнам"
+ VIN_ADJ:0 "Вьетнамск."
  VIN_communism:0 "Демократическая Республика Вьетнам"
  VIN_communism_DEF:0 "Демократическая Республика Вьетнам"
  VIN_communism_ADJ:0 "Вьетнамск."
@@ -1587,6 +1960,9 @@
  VIN_fascism_DEF:0 "Вьетнамская империя"
  VIN_fascism_ADJ:0 "Вьетнамск."
  
+ MAL:0 "Малайзия"
+ MAL_DEF:0 "Малайзия"
+ MAL_ADJ:0 "Малайзийск."
  MAL_communism:0 "Малайский Союз"
  MAL_communism_DEF:0 "Малайский Союз"
  MAL_communism_ADJ:0 "Малайск."
@@ -1602,9 +1978,12 @@
  
  ###БЛИЖНИЙ ВОСТОК###
  
+ TUR:0 "Турция"
+ TUR_DEF:0 "Турция"
+ TUR_ADJ:0 "Турецк."
  TUR_communism:0 "Турецкая Республика"
  TUR_communism_DEF:0 "Турецкая Республика"
- TUR_communism_ADJ:0 "Турецкск."
+ TUR_communism_ADJ:0 "Турецк."
  TUR_democratic:0 "Турецкая Республика"
  TUR_democratic_DEF:0 "Турецкая Республика"
  TUR_democratic_ADJ:0 "Османск."
@@ -1615,6 +1994,9 @@
  TUR_fascism_DEF:0 "Верховное Османское государство"
  TUR_fascism_ADJ:0 "Османск."
  
+ KUR:0 "Курдистан"
+ KUR_DEF:0 "Курдистан"
+ KUR_ADJ:0 "Курдск."
  KUR_communism:0 "Народная Республика Курдистан"
  KUR_communism_DEF:0 "Народная Республика Курдистан"
  KUR_communism_ADJ:0 "Курдск."
@@ -1628,6 +2010,9 @@
  KUR_fascism_DEF:0 "Эмират Курдистан"
  KUR_fascism_ADJ:0 "Курдск."
  
+ IRQ:0 "Ирак"
+ IRQ_DEF:0 "Ирак"
+ IRQ_ADJ:0 "Иракск."
  IRQ_communism:0 "Иракская Республика"
  IRQ_communism_DEF:0 "Иракская Республика"
  IRQ_communism_ADJ:0 "Иракск."
@@ -1641,6 +2026,9 @@
  IRQ_fascism_DEF:0 "Государство Ирак"
  IRQ_fascism_ADJ:0 "Иракск."
  
+ KUW:0 "Кувейт"
+ KUW_DEF:0 "Кувейт"
+ KUW_ADJ:0 "Кувейтск."
  KUW_communism:0 "Республика Кувейт"
  KUW_communism_DEF:0 "Республика Кувейт"
  KUW_communism_ADJ:0 "Кувейтск."
@@ -1654,6 +2042,9 @@
  KUW_fascism_DEF:0 "Государство Кувейт"
  KUW_fascism_ADJ:0 "Кувейтск."
  
+ SYR:0 "Сирия"
+ SYR_DEF:0 "Сирия"
+ SYR_ADJ:0 "Сирийск."
  SYR_communism:0 "Сирийская Республика"
  SYR_communism_DEF:0 "Сирийская Республика"
  SYR_communism_ADJ:0 "Сирийск."
@@ -1667,6 +2058,9 @@
  SYR_fascism_DEF:0 "Государство Сирия"
  SYR_fascism_ADJ:0 "Сирийск."
  
+ LEB:0 "Ливан"
+ LEB_DEF:0 "Ливан"
+ LEB_ADJ:0 "Ливанск."
  LEB_communism:0 "Ливанская Республика"
  LEB_communism_DEF:0 "Ливанская Республика"
  LEB_communism_ADJ:0 "Ливанск."
@@ -1680,6 +2074,9 @@
  LEB_fascism_DEF:0 "Государство Ливан"
  LEB_fascism_ADJ:0 "Ливанск."
  
+ PAL:0 "Палестина"
+ PAL_DEF:0 "Палестина"
+ PAL_ADJ:0 "Палестинск."
  PAL_communism:0 "Палестинская Республика"
  PAL_communism_DEF:0 "Палестинская Республика"
  PAL_communism_ADJ:0 "Палестинск."
@@ -1693,6 +2090,9 @@
  PAL_fascism_DEF:0 "Государство Палестина"
  PAL_fascism_ADJ:0 "Палестинск."
  
+ JOR:0 "Иордания"
+ JOR_DEF:0 "Иордания"
+ JOR_ADJ:0 "Иорданск."
  JOR_communism:0 "Иорданская Республика"
  JOR_communism_DEF:0 "Иорданская Республика"
  JOR_communism_ADJ:0 "Иорданск."
@@ -1706,6 +2106,9 @@
  JOR_fascism_DEF:0 "Государство Иордания"
  JOR_fascism_ADJ:0 "Иорданск."
  
+ ANZ:0 "Аназа"
+ ANZ_DEF:0 "Аназа"
+ ANZ_ADJ:0 "Анезинск."
  ANZ_communism:0 "Анезинская Республика"
  ANZ_communism_DEF:0 "Анезинская Республика"
  ANZ_communism_ADJ:0 "Анезинск."
@@ -1719,6 +2122,9 @@
  ANZ_fascism_DEF:0 "Эмират Аназа"
  ANZ_fascism_ADJ:0 "Анезинск."
  
+ HEJ:0 "Мекка"
+ HEJ_DEF:0 "Мекка"
+ HEJ_ADJ:0 "Мекканск."
  HEJ_communism:0 "Мекканская Республика"
  HEJ_communism_DEF:0 "Мекканская Республика"
  HEJ_communism_ADJ:0 "Мекканск."
@@ -1732,6 +2138,9 @@
  HEJ_fascism_DEF:0 "Шерифат Мекки"
  HEJ_fascism_ADJ:0 "Мекканск."
  
+ SAU:0 "Аравия"
+ SAU_DEF:0 "Аравия"
+ SAU_ADJ:0 "Аравийск."
  SAU_communism:0 "Республика Центральная Аравия"
  SAU_communism_DEF:0 "Республика Центральная Аравия"
  SAU_communism_ADJ:0 "Аравийск."
@@ -1745,6 +2154,9 @@
  SAU_fascism_DEF:0 "Королевство Саудовская Аравия"
  SAU_fascism_ADJ:0 "Аравийск."
  
+ QAT:0 "Катар"
+ QAT_DEF:0 "Катар"
+ QAT_ADJ:0 "Катарск."
  QAT_communism:0 "Катарская Республика"
  QAT_communism_DEF:0 "Катарская Республика"
  QAT_communism_ADJ:0 "Катарск."
@@ -1758,6 +2170,9 @@
  QAT_fascism_DEF:0 "Государство Катар"
  QAT_fascism_ADJ:0 "Катарск."
  
+ ABU:0 "Аравия"
+ ABU_DEF:0 "Аравия"
+ ABU_ADJ:0 "Арабск."
  ABU_communism:0 "Объединённые Арабские Республики"
  ABU_communism_DEF:0 "Объединённые Арабские Республики"
  ABU_communism_ADJ:0 "Арабск."
@@ -1771,6 +2186,9 @@
  ABU_fascism_DEF:0 "Объединённые Арабские Эмираты"
  ABU_fascism_ADJ:0 "Арабск."
  
+ YEM:0 "Йемен"
+ YEM_DEF:0 "Йемен"
+ YEM_ADJ:0 "Йеменск."
  YEM_communism:0 "Йеменская Республика"
  YEM_communism_DEF:0 "Йеменская Республика"
  YEM_communism_ADJ:0 "Йеменск."
@@ -1784,6 +2202,9 @@
  YEM_fascism_DEF:0 "Йеменское Мутаваккилийское королевство"
  YEM_fascism_ADJ:0 "Йеменск."
  
+ OMA:0 "Оман"
+ OMA_DEF:0 "Оман"
+ OMA_ADJ:0 "Оманск."
  OMA_communism:0 "Оманская Республика"
  OMA_communism_DEF:0 "Оманская Республика"
  OMA_communism_ADJ:0 "Оманск."
@@ -1799,6 +2220,9 @@
  
  ###ПЕРСИЯ###
  
+ AHZ:0 "Ахваз"
+ AHZ_DEF:0 "Ахваз"
+ AHZ_ADJ:0 "Ахвазск."
  AHZ_communism:0 "Ахвазская Республика"
  AHZ_communism_DEF:0 "Ахвазская Республика"
  AHZ_communism_ADJ:0 "Ахвазск."
@@ -1812,6 +2236,9 @@
  AHZ_fascism_DEF:0 "Эмират Ахваз"
  AHZ_fascism_ADJ:0 "Ахвазск."
  
+ PER:0 "Иран"
+ PER_DEF:0 "Иран"
+ PER_ADJ:0 "Иранск."
  PER_communism:0 "Иранская Республика"
  PER_communism_DEF:0 "Иранская Республика"
  PER_communism_ADJ:0 "Иранск."
@@ -1825,6 +2252,9 @@
  PER_fascism_DEF:0 "Возвышенное Государство Иран"
  PER_fascism_ADJ:0 "Иранск."
  
+ AFG:0 "Афганистан"
+ AFG_DEF:0 "Афганистан"
+ AFG_ADJ:0 "Афганск."
  AFG_communism:0 "Демократическая Республика Афганистан"
  AFG_communism_DEF:0 "Демократическая Республика Афганистан"
  AFG_communism_ADJ:0 "Афганск."
@@ -1838,6 +2268,9 @@
  AFG_fascism_DEF:0 "Эмират Афганистан"
  AFG_fascism_ADJ:0 "Афганск."
  
+ PAK:0 "Пакистан"
+ PAK_DEF:0 "Пакистан"
+ PAK_ADJ:0 "Пакистанск."
  PAK_communism:0 "Республика Пакистан"
  PAK_communism_DEF:0 "Республика Пакистан"
  PAK_communism_ADJ:0 "Пакистанск."
@@ -1853,6 +2286,9 @@
  
  ###ИНДОСТАН###
  
+ RAJ:0 "Индия"
+ RAJ_DEF:0 "Индия"
+ RAJ_ADJ:0 "Индийск."
  RAJ_communism:0 "Республика Индия"
  RAJ_communism_DEF:0 "Республика Индия"
  RAJ_communism_ADJ:0 "Индийск."
@@ -1866,6 +2302,9 @@
  RAJ_fascism_DEF:0 "Индийская империя"
  RAJ_fascism_ADJ:0 "Индийск."
  
+ BHU:0 "Траванкор"
+ BHU_DEF:0 "Траванкор"
+ BHU_ADJ:0 "Траванкорск."
  BHU_communism:0 "Республика Траванкор"
  BHU_communism_DEF:0 "Республика Траванкор"
  BHU_communism_ADJ:0 "Траванкорск."
@@ -1879,6 +2318,9 @@
  BHU_fascism_DEF:0 "Королевство Траванкор"
  BHU_fascism_ADJ:0 "Траванкорск."
  
+ NEP:0 "Майсур"
+ NEP_DEF:0 "Майсур"
+ NEP_ADJ:0 "Майсурск."
  NEP_communism:0 "Республика Майсур"
  NEP_communism_DEF:0 "Республика Майсур"
  NEP_communism_ADJ:0 "Майсурск."
@@ -1894,6 +2336,9 @@
  
  ###СЕВЕРНАЯ АФРИКА###
  
+ MOR:0 "Марокко"
+ MOR_DEF:0 "Марокко"
+ MOR_ADJ:0 "Марокканск."
  MOR_communism:0 "Республика Марокко"
  MOR_communism_DEF:0 "Республика Марокко"
  MOR_communism_ADJ:0 "Марокканск."
@@ -1907,6 +2352,9 @@
  MOR_fascism_DEF:0 "Государство Марокко"
  MOR_fascism_ADJ:0 "Марокканск."
  
+ ALG:0 "Алжир"
+ ALG_DEF:0 "Алжир"
+ ALG_ADJ:0 "Алжирск."
  ALG_communism:0 "Алжирская Народная Демократическая Республика"
  ALG_communism_DEF:0 "Алжирская Народная Демократическая Республика"
  ALG_communism_ADJ:0 "Алжирск."
@@ -1920,6 +2368,9 @@
  ALG_fascism_DEF:0 "Государство Алжир"
  ALG_fascism_ADJ:0 "Алжирск."
  
+ TUN:0 "Тунис"
+ TUN_DEF:0 "Тунис"
+ TUN_ADJ:0 "Тунисск."
  TUN_communism:0 "Тунисская Республика"
  TUN_communism_DEF:0 "Тунисская Республика"
  TUN_communism_ADJ:0 "Тунисск."
@@ -1933,6 +2384,9 @@
  TUN_fascism_DEF:0 "Государство Тунис"
  TUN_fascism_ADJ:0 "Тунисск."
  
+ LBA:0 "Ливия"
+ LBA_DEF:0 "Ливия"
+ LBA_ADJ:0 "Ливийск."
  LBA_communism:0 "Ливийская Арабская Республика"
  LBA_communism_DEF:0 "Ливийская Арабская Республика"
  LBA_communism_ADJ:0 "Ливийск."
@@ -1946,6 +2400,9 @@
  LBA_fascism_DEF:0 "Государство Ливия"
  LBA_fascism_ADJ:0 "Ливийск."
  
+ EGY:0 "Египет"
+ EGY_DEF:0 "Египет"
+ EGY_ADJ:0 "Египетск."
  EGY_communism:0 "Арабская Республика Египет"
  EGY_communism_DEF:0 "Арабская Республика Египет"
  EGY_communism_ADJ:0 "Египетск."
@@ -1959,6 +2416,9 @@
  EGY_fascism_DEF:0 "Султанат Египет"
  EGY_fascism_ADJ:0 "Египетск."
  
+ SUD:0 "Судан"
+ SUD_DEF:0 "Судан"
+ SUD_ADJ:0 "Суданск."
  SUD_communism:0 "Демократическая Республика Судан"
  SUD_communism_DEF:0 "Демократическая Республика Судан"
  SUD_communism_ADJ:0 "Суданск."
@@ -1974,6 +2434,9 @@
  
  ###ЗАПАДНАЯ АФРИКА###
  
+ MAU:0 "Мавритания"
+ MAU_DEF:0 "Мавритания"
+ MAU_ADJ:0 "Мавританск."
  MAU_communism:0 "Республика Мавритания"
  MAU_communism_DEF:0 "Республика Мавритания"
  MAU_communism_ADJ:0 "Мавританск."
@@ -1987,6 +2450,9 @@
  MAU_fascism_DEF:0 "Государство Мавритания"
  MAU_fascism_ADJ:0 "Мавританск."
  
+ SEN:0 "Сенегал"
+ SEN_DEF:0 "Сенегал"
+ SEN_ADJ:0 "Сенегальск"
  SEN_communism:0 "Республика Сенегал"
  SEN_communism_DEF:0 "Республика Сенегал"
  SEN_communism_ADJ:0 "Сенегальск."
@@ -2000,6 +2466,9 @@
  SEN_fascism_DEF:0 "Государство Сенегал"
  SEN_fascism_ADJ:0 "Сенегальск."
  
+ GAM:0 "Гамбия"
+ GAM_DEF:0 "Гамбия"
+ GAM_ADJ:0 "Гамбийск."
  GAM_communism:0 "Республика Гамбия"
  GAM_communism_DEF:0 "Республика Гамбия"
  GAM_communism_ADJ:0 "Гамбийск."
@@ -2013,6 +2482,9 @@
  GAM_fascism_DEF:0 "Государство Гамбия"
  GAM_fascism_ADJ:0 "Гамбийск."
  
+ MLI:0 "Мали"
+ MLI_DEF:0 "Мали"
+ MLI_ADJ:0 "Малийск."
  MLI_communism:0 "Республика Мали"
  MLI_communism_DEF:0 "Республика Мали"
  MLI_communism_ADJ:0 "Малийск."
@@ -2026,6 +2498,9 @@
  MLI_fascism_DEF:0 "Империя Мали"
  MLI_fascism_ADJ:0 "Малийск."
  
+ NGR:0 "Нигер"
+ NGR_DEF:0 "Нигер"
+ NGR_ADJ:0 "Нигерск."
  NGR_communism:0 "Республика Нигер"
  NGR_communism_DEF:0 "Республика Нигер"
  NGR_communism_ADJ:0 "Нигерск."
@@ -2039,6 +2514,9 @@
  NGR_fascism_DEF:0 "Государство Нигер"
  NGR_fascism_ADJ:0 "Нигерск."
  
+ GUI:0 "Гвинея"
+ GUI_DEF:0 "Гвинея"
+ GUI_ADJ:0 "Гвинейск."
  GUI_communism:0 "Гвинейская Республика"
  GUI_communism_DEF:0 "Гвинейская Республика"
  GUI_communism_ADJ:0 "Гвинейск."
@@ -2052,6 +2530,9 @@
  GUI_fascism_DEF:0 "Гвинейское Королевство"
  GUI_fascism_ADJ:0 "Гвинейск."
  
+ LIB:0 "Либерия"
+ LIB_DEF:0 "Либерия"
+ LIB_ADJ:0 "Либерск."
  LIB_communism:0 "Народная Республика Либерия"
  LIB_communism_DEF:0 "Народная Республика Либерия"
  LIB_communism_ADJ:0 "Либерск."
@@ -2065,9 +2546,12 @@
  LIB_fascism_DEF:0 "Королевство Либерия"
  LIB_fascism_ADJ:0 "Либерск."
  
+ IVE:0 "Кот-д'Ивуар"
+ IVE_DEF:0 "Кот-д'Ивуар"
+ IVE_ADJ:0 "Кот-д'Ивуарск."
  IVE_communism:0 "Республика Кот-д'Ивуар"
  IVE_communism_DEF:0 "Республика Кот-д'Ивуар"
- IVE_communism_ADJ:0 "Кот-д'Ивуар"
+ IVE_communism_ADJ:0 "Кот-д'Ивуарск."
  IVE_democratic:0 "Республика Кот-д'Ивуар"
  IVE_democratic_DEF:0 "Республика Кот-д'Ивуар"
  IVE_democratic_ADJ:0 "Кот-д'Ивуарск."
@@ -2078,6 +2562,9 @@
  IVE_fascism_DEF:0 "Государство Кот-д'Ивуар"
  IVE_fascism_ADJ:0 "Кот-д'Ивуарск."
  
+ BKF:0 "Буркина-Фасо"
+ BKF_DEF:0 "Буркина-Фасо"
+ BKF_ADJ:0 "Буркинск."
  BKF_communism:0 "Буркина-Фасо"
  BKF_communism_DEF:0 "Буркина-Фасо"
  BKF_communism_ADJ:0 "Буркинск."
@@ -2091,6 +2578,9 @@
  BKF_fascism_DEF:0 "Буркина-Фасо"
  BKF_fascism_ADJ:0 "Буркинск."
  
+ GHA:0 "Гана"
+ GHA_DEF:0 "Гана"
+ GHA_ADJ:0 "Ганск."
  GHA_communism:0 "Республика Гана"
  GHA_communism_DEF:0 "Республика Гана"
  GHA_communism_ADJ:0 "Ганск."
@@ -2104,6 +2594,9 @@
  GHA_fascism_DEF:0 "Королевство Гана"
  GHA_fascism_ADJ:0 "Ганск."
  
+ TOG:0 "Того"
+ TOG_DEF:0 "Того"
+ TOG_ADJ:0 "Тоголезск."
  TOG_communism:0 "Тоголезская Республика"
  TOG_communism_DEF:0 "Тоголезская Республика"
  TOG_communism_ADJ:0 "Тоголезск."
@@ -2117,6 +2610,9 @@
  TOG_fascism_DEF:0 "Государство Того"
  TOG_fascism_ADJ:0 "Тоголезск."
  
+ NGA:0 "Нигерия"
+ NGA_DEF:0 "Нигерия"
+ NGA_ADJ:0 "Нигерийск."
  NGA_communism:0 "Федеративная Республика Нигерия"
  NGA_communism_DEF:0 "Федеративная Республика Нигерия"
  NGA_communism_ADJ:0 "Нигерийск."
@@ -2132,6 +2628,9 @@
  
  ###ЦЕНТРАЛЬНАЯ АФРИКА###
  
+ CHD:0 "Чад"
+ CHD_DEF:0 "Чад"
+ CHD_ADJ:0 "Чадск."
  CHD_communism:0 "Республика Чад"
  CHD_communism_DEF:0 "Республика Чад"
  CHD_communism_ADJ:0 "Чадск."
@@ -2145,6 +2644,9 @@
  CHD_fascism_DEF:0 "Государство Чад"
  CHD_fascism_ADJ:0 "Чадск."
  
+ CMN:0 "Камерун"
+ CMN_DEF:0 "Камерун"
+ CMN_ADJ:0 "Камерунск."
  CMN_communism:0 "Республика Камерун"
  CMN_communism_DEF:0 "Республика Камерун"
  CMN_communism_ADJ:0 "Камерунск."
@@ -2158,6 +2660,9 @@
  CMN_fascism_DEF:0 "Государство Камерун"
  CMN_fascism_ADJ:0 "Камерунск."
  
+ CAR:0 "Центральная Африка"
+ CAR_DEF:0 "Центральная Африка"
+ CAR_ADJ:0 "Центральноафриканск."
  CAR_communism:0 "Центральноафриканская Республика"
  CAR_communism_DEF:0 "Центральноафриканская Республика"
  CAR_communism_ADJ:0 "Центральноафриканск."
@@ -2171,6 +2676,9 @@
  CAR_fascism_DEF:0 "Центральноафриканская империя"
  CAR_fascism_ADJ:0 "Центральноафриканск."
  
+ GAB:0 "Габон"
+ GAB_DEF:0 "Габон"
+ GAB_ADJ:0 "Габонск."
  GAB_communism:0 "Габонская Республика"
  GAB_communism_DEF:0 "Габонская Республика"
  GAB_communism_ADJ:0 "Габонск."
@@ -2184,6 +2692,9 @@
  GAB_fascism_DEF:0 "Габонское Королевство"
  GAB_fascism_ADJ:0 "Габонск."
  
+ COG:0 "Конго"
+ COG_DEF:0 "Конго"
+ COG_ADJ:0 "Конголезск."
  COG_communism:0 "Демократическая Республика Конго"
  COG_communism_DEF:0 "Демократическая Республика Конго"
  COG_communism_ADJ:0 "Конголезск."
@@ -2199,6 +2710,9 @@
  
  ###ВОСТОЧНАЯ АФРИКА###
  
+ ETH:0 "Эфиопия"
+ ETH_DEF:0 "Эфиопия"
+ ETH_ADJ:0 "Эфиопск."
  ETH_communism:0 "Народно-Демократическая Республика Эфиопия"
  ETH_communism_DEF:0 "Народно-Демократическая Республика Эфиопия"
  ETH_communism_ADJ:0 "Эфиопск."
@@ -2212,6 +2726,9 @@
  ETH_fascism_DEF:0 "Эфиопская империя"
  ETH_fascism_ADJ:0 "Эфиопск."
  
+ KEN:0 "Кения"
+ KEN_DEF:0 "Кения"
+ KEN_ADJ:0 "Кенийск."
  KEN_communism:0 "Республика Кения"
  KEN_communism_DEF:0 "Республика Кения"
  KEN_communism_ADJ:0 "Кенийск."
@@ -2225,6 +2742,9 @@
  KEN_fascism_DEF:0 "Королевство Кения"
  KEN_fascism_ADJ:0 "Кенийск."
  
+ UGA:0 "Уганда"
+ UGA_DEF:0 "Уганда"
+ UGA_ADJ:0 "Угандск."
  UGA_communism:0 "Республика Уганда"
  UGA_communism_DEF:0 "Республика Уганда"
  UGA_communism_ADJ:0 "Угандск."
@@ -2238,6 +2758,9 @@
  UGA_fascism_DEF:0 "Королевство Уганда"
  UGA_fascism_ADJ:0 "Угандск."
  
+ TNG:0 "Танганьика и Занзибар"
+ TNG_DEF:0 "Танганьика и Занзибар"
+ TNG_ADJ:0 "Танганьикск. занзибарск."
  TNG_communism:0 "Объединённая Республика Танганьики и Занзибара"
  TNG_communism_DEF:0 "Объединённая Республика Танганьики и Занзибара"
  TNG_communism_ADJ:0 "Танганьикск. занзибарск."
@@ -2253,6 +2776,9 @@
  
  ###ЮЖНАЯ АФРИКА###
  
+ ANG:0 "Ангола"
+ ANG_DEF:0 "Ангола"
+ ANG_ADJ:0 "Ангольск."
  ANG_communism:0 "Народная Республика Ангола"
  ANG_communism_DEF:0 "Народная Республика Ангола"
  ANG_communism_ADJ:0 "Ангольск."
@@ -2266,6 +2792,9 @@
  ANG_fascism_DEF:0 "Королевство Ангола"
  ANG_fascism_ADJ:0 "Ангольск."
  
+ ZIM:0 "Родезия и Ньясаленд"
+ ZIM_DEF:0 "Родезия и Ньясаленд"
+ ZIM_ADJ:0 "Родезийск. ньясалендск."
  ZIM_communism:0 "Центрально-Африканская Федерация"
  ZIM_communism_DEF:0 "Центрально-Африканская Федерация"
  ZIM_communism_ADJ:0 "Родезийск. ньясалендск."
@@ -2279,6 +2808,9 @@
  ZIM_fascism_DEF:0 "Центрально-Африканская Федерация"
  ZIM_fascism_ADJ:0 "Родезийск. ньясалендск."
  
+ MZB:0 "Мозамбик"
+ MZB_DEF:0 "Мозамбик"
+ MZB_ADJ:0 "Мозамбикск."
  MZB_communism:0 "Народная Республика Мозамбик"
  MZB_communism_DEF:0 "Народная Республика Мозамбик"
  MZB_communism_ADJ:0 "Мозамбикск."
@@ -2292,6 +2824,9 @@
  MZB_fascism_DEF:0 "Королевство Мозамбик"
  MZB_fascism_ADJ:0 "Мозамбикск."
  
+ MAD:0 "Мадагаскар"
+ MAD_DEF:0 "Мадагаскар"
+ MAD_ADJ:0 "Малагасийск."
  MAD_communism:0 "Демократическая Республика Мадагаскар"
  MAD_communism_DEF:0 "Демократическая Республика Мадагаскар"
  MAD_communism_ADJ:0 "Малагасийск."
@@ -2305,6 +2840,9 @@
  MAD_fascism_DEF:0 "Малагасийское королевство"
  MAD_fascism_ADJ:0 "Малагасийск."
  
+ NAM:0 "Намибия"
+ NAM_DEF:0 "Намибия"
+ NAM_ADJ:0 "Намибийск."
  NAM_communism:0 "Республика Намибия"
  NAM_communism_DEF:0 "Республика Намибия"
  NAM_communism_ADJ:0 "Намибийск."
@@ -2318,21 +2856,27 @@
  NAM_fascism_DEF:0 "Государство Намибия"
  NAM_fascism_ADJ:0 "Намибийск."
  
+ SAF:0 "Южная Африка"
+ SAF_DEF:0 "Южная Африка"
+ SAF_ADJ:0 "Южно-африканск."
  SAF_communism:0 "Южно-Африканская Республика"
  SAF_communism_DEF:0 "Южно-Африканская Республика"
- SAF_communism_ADJ:0 "Южно-афиканск."
+ SAF_communism_ADJ:0 "Южно-африканск."
  SAF_democratic:0 "Южно-Африканская Республика"
  SAF_democratic_DEF:0 "Южно-Африканская Республика"
- SAF_democratic_ADJ:0 "Южно-афиканск."
+ SAF_democratic_ADJ:0 "Южно-африканск."
  SAF_neutrality:0 "Южно-Африканское Королевство"
  SAF_neutrality_DEF:0 "Южно-Африканское Королевство"
- SAF_neutrality_ADJ:0 "Южно-афиканск."
+ SAF_neutrality_ADJ:0 "Южно-африканск."
  SAF_fascism:0 "Южно-Африканская Республика"
  SAF_fascism_DEF:0 "Южно-Африканская Республика"
- SAF_fascism_ADJ:0 "Южно-афиканск."
+ SAF_fascism_ADJ:0 "Южно-африканск."
  
  ###ОКЕАНИЯ###
  
+ PHI:0 "Филиппины"
+ PHI_DEF:0 "Филиппины"
+ PHI_ADJ:0 "Филиппинск."
  PHI_communism:0 "Народная Республика Филиппины"
  PHI_communism_DEF:0 "Народная Республика Филиппины"
  PHI_communism_ADJ:0 "Филиппинск."
@@ -2346,6 +2890,9 @@
  PHI_fascism_DEF:0 "Республика Филиппины"
  PHI_fascism_ADJ:0 "Филиппинск."
  
+ INS:0 "Индонезия"
+ INS_DEF:0 "Индонезия"
+ INS_ADJ:0 "Индонезийск."
  INS_communism:0 "Республика Индонезия"
  INS_communism_DEF:0 "Республика Индонезия"
  INS_communism_ADJ:0 "Индонезийск."
@@ -2359,6 +2906,9 @@
  INS_fascism_DEF:0 "Империя Маджапахит"
  INS_fascism_ADJ:0 "Индонезийск."
  
+ HAW:0 "Гавайи"
+ HAW_DEF:0 "Гавайи"
+ HAW_ADJ:0 "Гавайск."
  HAW_communism:0 "Республика Гавайи"
  HAW_communism_DEF:0 "Республика Гавайи"
  HAW_communism_ADJ:0 "Гавайск."
@@ -2372,6 +2922,9 @@
  HAW_fascism_DEF:0 "Королевство Гавайских островов"
  HAW_fascism_ADJ:0 "Гавайск."
  
+ AST:0 "Австралия"
+ AST_DEF:0 "Австралия"
+ AST_ADJ:0 "Австралийск."
  AST_communism:0 "Австралийский Союз"
  AST_communism_DEF:0 "Австралийский Союз"
  AST_communism_ADJ:0 "Австралийск."
@@ -2385,6 +2938,9 @@
  AST_fascism_DEF:0 "Австралийский Союз"
  AST_fascism_ADJ:0 "Австралийск."
  
+ NZL:0 "Новая Зеландия"
+ NZL_DEF:0 "Новая Зеландия"
+ NZL_ADJ:0 "Ново-Зеландск."
  NZL_communism:0 "Республика Новая Зеландия"
  NZL_communism_DEF:0 "Республика Новая Зеландия"
  NZL_communism_ADJ:0 "Ново-Зеландск."
@@ -2397,3 +2953,4 @@
  NZL_fascism:0 "Новая Зеландия"
  NZL_fascism_DEF:0 "Новая Зеландия"
  NZL_fascism_ADJ:0 "Ново-Зеландск."
+ 
