@@ -8,6 +8,9 @@ focus_tree = {
 			tag = FRA
 		}
 	}
+	initial_show_position = {
+		focus = FRA_may_day_results
+	}
 	focus = {
 		id = FRA_may_day_results
 		icon = GFX_focus_FRA_may_day_results
@@ -70,7 +73,7 @@ focus_tree = {
 			}
 		}
 		available = {
-			
+			has_completed_focus = FRA_establish_lon
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -653,7 +656,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_new_times_new_men_new_methods
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_le_feu_followers
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_cult_of_oriflamme }
@@ -3317,7 +3320,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_platofrmism
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_nestor_machno
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_no_gods_no_masters }
@@ -3353,7 +3356,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_synthesis_anarchism
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_sebastien_faure
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_no_gods_no_masters }
@@ -3735,7 +3738,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -4501,7 +4504,7 @@ focus_tree = {
 			}
 		}
 		available = {
-			
+			has_completed_focus = FRA_establish_lon
 		}
 		completion_reward = {
 			add_popularity = {
@@ -5800,15 +5803,123 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = FRA_foreign_policy
-		icon = GFX_focus_generic_table_and_map
-		x = 22
+		id = FRA_establish_lon
+		icon = GFX_league_of_nations_treaty
+		x = 25
 		y = 0
 		#prerequisite = { focus = }
 		#relative_position_id = 
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			has_completed_focus = FRA_may_day_results
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_foreign_policy
+		icon = GFX_focus_generic_table_and_map
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_establish_lon}
+		relative_position_id = FRA_establish_lon
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_continental_system_focus
+		icon = GFX_focus_fra_le_deluge
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_foreign_policy }
+		relative_position_id = FRA_foreign_policy
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_reorganize_our_sphere }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_reorganize_our_sphere
+		icon = GFX_focus_generic_breaking_the_treaty
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_foreign_policy }
+		relative_position_id = FRA_foreign_policy
+		search_filters = { }
+		cost = 1
+		mutually_exclusive = { focus = FRA_continental_system_focus }
 		allow_branch = {
 			
 		}
@@ -5838,10 +5949,10 @@ focus_tree = {
 	focus = {
 		id = FRA_question_of_pomerania
 		icon = GFX_focus_generic_kashubian_question
-		x = 5
+		x = 2
 		y = 1
-		prerequisite = { focus = FRA_foreign_policy }
-		relative_position_id = FRA_foreign_policy
+		prerequisite = { focus = FRA_reorganize_our_sphere focus = FRA_continental_system_focus }
+		relative_position_id = FRA_reorganize_our_sphere
 		search_filters = { }
 		cost = 5
 		#mutually_exclusive = { focus = }
@@ -5857,6 +5968,13 @@ focus_tree = {
 		#}
 		available = {
 			date < 1939.1.1
+			NOT = {
+				has_global_flag = POM_issue_solved
+			}
+			country_exists = POM
+			POM = {
+				is_subject_of = FRA
+			}
 		}
 		completion_reward = {
 			country_event = {
@@ -5874,15 +5992,15 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = FRA_continental_system_focus
-		icon = GFX_focus_fra_le_deluge
+		id = FRA_duchy_of_luxembourg_integration
+		icon = GFX_focus_generic_duchy_of_luxembourg
 		x = 0
 		y = 1
-		prerequisite = { focus = FRA_foreign_policy }
-		relative_position_id = FRA_foreign_policy
+		prerequisite = { focus = FRA_reorganize_our_sphere focus = FRA_continental_system_focus }
+		relative_position_id = FRA_reorganize_our_sphere
 		search_filters = { }
-		cost = 1
-		mutually_exclusive = { focus = FRA_new_french_sphere focus = FRA_revolutionary_approach focus = FRA_european_union}
+		cost = 5
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -5894,7 +6012,14 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			if = {
+				limit = {
+					country_exists = BEL
+				}
+				NOT = {
+					has_war_with = BEL
+				}
+			}
 		}
 		completion_reward = {
 			
@@ -5905,125 +6030,338 @@ focus_tree = {
 		bypass = {
 			
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = FRA_new_french_sphere
-		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = 3
-		y = 1
-		prerequisite = { focus = FRA_foreign_policy }
-		relative_position_id = FRA_foreign_policy
-		search_filters = { }
-		cost = 1
-		mutually_exclusive = { focus = FRA_continental_system_focus focus = FRA_revolutionary_approach focus = FRA_european_union}
-		allow_branch = {
-			
-		}
-		#offset = {
-		#	x = 0
-		#	y = 0
-		#	trigger = {
-		#		
-		#	}
-		#}
-		available = {
-			
-		}
-		completion_reward = {
-			
-		}
-		ai_will_do = {
-			factor = 25
-		}
-		bypass = {
-			
-		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-	}
-	focus = {
-		id = FRA_revolutionary_approach
-		icon = GFX_focus_ICE_embrace_the_workers_revolution
-		x = -2
-		y = 1
-		prerequisite = { focus = FRA_foreign_policy }
-		relative_position_id = FRA_foreign_policy
-		search_filters = { }
-		cost = 1
-		mutually_exclusive = { focus = FRA_continental_system_focus focus = FRA_new_french_sphere focus = FRA_european_union}
-		allow_branch = {
-			
-		}
-		#offset = {
-		#	x = 0
-		#	y = 0
-		#	trigger = {
-		#		
-		#	}
-		#}
-		available = {
-			
-		}
-		completion_reward = {
-			
-		}
-		ai_will_do = {
-			factor = 25
-		}
-		bypass = {
-			
-		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-	}
-	focus = {
-		id = FRA_european_union
-		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = -4
-		y = 1
-		prerequisite = { focus = FRA_foreign_policy }
-		relative_position_id = FRA_foreign_policy
-		search_filters = { }
-		cost = 1
-		mutually_exclusive = { focus = FRA_continental_system_focus focus = FRA_new_french_sphere focus = FRA_revolutionary_approach}
-		allow_branch = {
-			
-		}
-		#offset = {
-		#	x = 0
-		#	y = 0
-		#	trigger = {
-		#		
-		#	}
-		#}
-		available = {
-			
-		}
-		completion_reward = {
-			
-		}
-		ai_will_do = {
-			factor = 25
-		}
-		bypass = {
-			
-		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-	}
-	focus = {
-		id = FRA_new_glory 
+		id = FRA_watchman_of_global_security
 		icon = GFX_focus_SOV_ivan_plays_baseball
 		x = 1
 		y = 1
-		prerequisite = { focus = FRA_new_french_sphere }
-		relative_position_id = FRA_new_french_sphere
+		prerequisite = { focus = FRA_duchy_of_luxembourg_integration }
+		prerequisite = { focus = FRA_question_of_pomerania }
+		relative_position_id = FRA_duchy_of_luxembourg_integration
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_closer_relations_with_portugal
+		icon = GFX_focus_generic_befriend_monarchist_portugal
+		x = -2
+		y = 1
+		prerequisite = { focus = FRA_watchman_of_global_security }
+		relative_position_id = FRA_watchman_of_global_security
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			country_exists = POR
+			POR = {
+				NOT = {
+					has_war_with = FRA
+				}
+			}
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_demand_portugese_colonies
+		icon = GFX_focus_por_the_pink_map
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_closer_relations_with_portugal }
+		relative_position_id = FRA_closer_relations_with_portugal
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_restore_dominion_over_portugal
+		icon = GFX_focus_generic_subjugate_monarchist_portugal
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_closer_relations_with_portugal }
+		relative_position_id = FRA_closer_relations_with_portugal
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			is_subject = no
+			country_exists = POR
+			POR = {
+				is_subject = no
+				NOT = {
+					has_war_with = FRA
+				}
+			}
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_closer_relations_with_ireland
+		icon = GFX_focus_generic_befriend_ireland
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_watchman_of_global_security }
+		relative_position_id = FRA_watchman_of_global_security
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			is_subject = no
+			country_exists = IRE
+			IRE = {
+				NOT = {
+					has_war_with = FRA
+				}
+			}
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	}
+	focus = {
+		id = FRA_dominion_over_ireland
+		icon = GFX_focus_generic_subjugate_ireland
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_closer_relations_with_ireland }
+		relative_position_id = FRA_closer_relations_with_ireland
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			is_subject = no
+			country_exists = IRE
+			IRE = {
+				is_subject = no
+				NOT = {
+					has_war_with = FRA
+				}
+			}
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_demand_netherlands_submission
+		icon = GFX_focus_generic_subjugate_the_netherlands
+		x = 3
+		y = 1
+		prerequisite = { focus = FRA_watchman_of_global_security }
+		relative_position_id = FRA_watchman_of_global_security
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			is_subject = no
+			country_exists = HOL
+			HOL = {
+				is_subject = no
+				NOT = {
+					has_war_with = FRA
+				}
+			}
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_integration_of_the_netherlands
+		icon = GFX_focus_generic_netherlands
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_demand_netherlands_submission }
+		relative_position_id = FRA_demand_netherlands_submission
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_shared_scientific_projects
+		icon = GFX_goal_generic_scientific_exchange
+		x = 0
+		y = 3
+		prerequisite = { focus = FRA_watchman_of_global_security }
+		relative_position_id = FRA_watchman_of_global_security
 		search_filters = { }
 		cost = 1
 		#mutually_exclusive = { focus = }
@@ -6056,10 +6394,10 @@ focus_tree = {
 	focus = {
 		id = FRA_irredentism
 		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = -1
+		x = 1
 		y = 1
-		prerequisite = { focus = FRA_new_french_sphere focus = FRA_continental_system_focus }
-		relative_position_id = FRA_new_french_sphere
+		prerequisite = { focus = FRA_shared_scientific_projects }
+		relative_position_id = FRA_shared_scientific_projects
 		search_filters = { }
 		cost = 1
 		mutually_exclusive = { focus = FRA_expand_european_cooperation}
@@ -6091,14 +6429,14 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_expand_european_cooperation
-		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = 0
+		icon = GFX_focus_GER_european_confederation
+		x = -1
 		y = 1
-		prerequisite = { focus = FRA_continental_system_focus focus = FRA_european_union focus = FRA_revolutionary_approach}
-		relative_position_id = FRA_continental_system_focus
+		prerequisite = { focus = FRA_shared_scientific_projects }
+		relative_position_id = FRA_shared_scientific_projects
 		search_filters = { }
 		cost = 1
-		mutually_exclusive = { focus = FRA_irredentism focus = FRA_watchman_of_global_security }
+		mutually_exclusive = { focus = FRA_irredentism }
 		allow_branch = {
 			
 		}
@@ -6126,15 +6464,15 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = FRA_prepare_unification
-		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = -1
+		id = FRA_military_european_treaty
+		icon = GFX_goal_generic_military_deal
+		x = 0
 		y = 1
-		prerequisite = { focus = FRA_expand_european_cooperation}
+		prerequisite = { focus = FRA_expand_european_cooperation }
 		relative_position_id = FRA_expand_european_cooperation
 		search_filters = { }
 		cost = 1
-		mutually_exclusive = { focus = FRA_further_cooperation}
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -6163,14 +6501,14 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_further_cooperation
-		icon = GFX_goal_generic_national_unity
-		x = 1
+		icon = GFX_focus_generic_blue_red_handshake
+		x = 0
 		y = 1
-		prerequisite = { focus = FRA_expand_european_cooperation}
-		relative_position_id = FRA_expand_european_cooperation
+		prerequisite = { focus = FRA_military_european_treaty }
+		relative_position_id = FRA_military_european_treaty
 		search_filters = { }
 		cost = 1
-		mutually_exclusive = { focus = FRA_prepare_unification}
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -6198,15 +6536,2010 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = FRA_watchman_of_global_security
+		id = FRA_european_unification
+		icon = GFX_focus_generic_the_council_of_europe
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_further_cooperation }
+		relative_position_id = FRA_further_cooperation
+		search_filters = { }
+		cost = 1
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_renovate_ministry_of_colonies
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 50
+		y = 0
+		#prerequisite = { focus = }
+		#relative_position_id = 
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			NOT = {
+				has_completed_focus = FRA_decolonisation
+			}
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			has_completed_focus = FRA_may_day_results
+			has_completed_focus = FRA_establish_lon
+			OR = {
+				has_completed_focus = FRA_previous_course
+				has_completed_focus = FRA_creation_of_the_parliament
+				has_completed_focus = FRA_maintain_colonial_empire
+				has_completed_focus = FRA_march_on_paris
+				has_completed_focus = FRA_expand_anarchism_to_the_colonies
+			}
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_african_department
+		icon = GFX_focus_generic_africa_naval
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_renovate_ministry_of_colonies }
+		relative_position_id = FRA_renovate_ministry_of_colonies
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_european_possessions
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -18
+		y = 1
+		prerequisite = { focus = FRA_renovate_ministry_of_colonies }
+		relative_position_id = FRA_renovate_ministry_of_colonies
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_fortify_giblartar
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_european_possessions }
+		relative_position_id = FRA_european_possessions
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_develop_corsica
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_european_possessions }
+		relative_position_id = FRA_european_possessions
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_fortify_malta
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_develop_corsica }
+		prerequisite = { focus = FRA_fortify_giblartar }
+		relative_position_id = FRA_fortify_giblartar
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_notre_mer
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 6
+		prerequisite = { focus = FRA_fortify_malta }
+		prerequisite = { focus = FRA_irredentism }
+		relative_position_id = FRA_fortify_malta
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_asian_department
+		icon = GFX_focus_usa_focus_on_asia
+		x = 14
+		y = 1
+		prerequisite = { focus = FRA_renovate_ministry_of_colonies }
+		relative_position_id = FRA_renovate_ministry_of_colonies
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_develop_india
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_asian_department }
+		relative_position_id = FRA_asian_department
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_subjugate_all_of_india
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_develop_india }
+		relative_position_id = FRA_develop_india
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_vassalize_arabian_tribes
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -4
+		y = 1
+		prerequisite = { focus = FRA_asian_department }
+		relative_position_id = FRA_asian_department
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_vassalize_iran
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_vassalize_arabian_tribes }
+		relative_position_id = FRA_vassalize_arabian_tribes
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_conquer_graveyard_of_empires
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_vassalize_iran }
+		prerequisite = { focus = FRA_subjugate_all_of_india }
+		relative_position_id = FRA_vassalize_iran
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_dismantle_ottoman_empire
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_vassalize_arabian_tribes }
+		prerequisite = { focus = FRA_fortify_suez_canal }
+		relative_position_id = FRA_vassalize_arabian_tribes
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_develop_ceylon
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_develop_india }
+		relative_position_id = FRA_develop_india
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_francizie_ceylon
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_develop_ceylon }
+		relative_position_id = FRA_develop_ceylon
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_develop_maledives
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 3
+		y = 1
+		prerequisite = { focus = FRA_develop_india }
+		relative_position_id = FRA_develop_india
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_francizie_maledives
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_develop_maledives }
+		relative_position_id = FRA_develop_maledives
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_vassalize_burma
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 5
+		y = 1
+		prerequisite = { focus = FRA_develop_india }
+		relative_position_id = FRA_develop_india
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_vassalize_siam
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_vassalize_burma }
+		relative_position_id = FRA_vassalize_burma
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_subjugate_insulindia
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 7
+		y = 1
+		prerequisite = { focus = FRA_asian_department }
+		relative_position_id = FRA_asian_department
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_subjugate_oceania
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_subjugate_insulindia }
+		relative_position_id = FRA_subjugate_insulindia
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_fortify_our_cities_in_china
+		icon = GFX_goal_generic_fortify_city
+		x = 10
+		y = 1
+		prerequisite = { focus = FRA_asian_department }
+		relative_position_id = FRA_asian_department
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_conquer_china
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_fortify_our_cities_in_china }
+		relative_position_id = FRA_fortify_our_cities_in_china
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_shoot_down_the_rising_sun
+		icon = GFX_focus_attack_japan
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_fortify_our_cities_in_china }
+		relative_position_id = FRA_fortify_our_cities_in_china
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_reestablish_the_american_departments
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 27
+		y = 1
+		prerequisite = { focus = FRA_renovate_ministry_of_colonies }
+		relative_position_id = FRA_renovate_ministry_of_colonies
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_prepare_west_africas_infrastructure
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_reestablish_the_american_departments }
+		relative_position_id = FRA_reestablish_the_american_departments
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_operation_cartier
+		icon = GFX_focus_generic_naval_invasion_tank
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_prepare_west_africas_infrastructure }
+		relative_position_id = FRA_prepare_west_africas_infrastructure
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_railways_in_western_africa
 		icon = GFX_focus_SOV_ivan_plays_baseball
 		x = -3
 		y = 1
-		prerequisite = { focus = FRA_continental_system_focus focus = FRA_european_union focus = FRA_revolutionary_approach}
-		relative_position_id = FRA_continental_system_focus
+		prerequisite = { focus = FRA_african_department }
+		relative_position_id = FRA_african_department
 		search_filters = { }
-		cost = 1
-		mutually_exclusive = { focus = FRA_expand_european_cooperation}
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_fight_western_african_warlords
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_railways_in_western_africa }
+		relative_position_id = FRA_railways_in_western_africa
+		search_filters = { }
+		cost = 5
+		mutually_exclusive = { focus = FRA_french_western_african_confederation}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_french_western_african_confederation
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_railways_in_western_africa }
+		relative_position_id = FRA_railways_in_western_africa
+		search_filters = { }
+		cost = 5
+		mutually_exclusive = { focus = FRA_fight_western_african_warlords}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_west_african_aluminium
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_french_western_african_confederation focus = FRA_fight_western_african_warlords}
+		relative_position_id = FRA_french_western_african_confederation
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_railways_in_equatorial_africa
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -7
+		y = 1
+		prerequisite = { focus = FRA_african_department }
+		relative_position_id = FRA_african_department
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_fight_equatorial_african_warlords
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_railways_in_equatorial_africa }
+		relative_position_id = FRA_railways_in_equatorial_africa
+		search_filters = { }
+		cost = 5
+		mutually_exclusive = { focus = FRA_french_equatorial_african_confederation}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_french_equatorial_african_confederation
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_railways_in_equatorial_africa }
+		relative_position_id = FRA_railways_in_equatorial_africa
+		search_filters = { }
+		cost = 5
+		mutually_exclusive = { focus = FRA_fight_equatorial_african_warlords}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_equatorial_african_rubber
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_french_equatorial_african_confederation focus = FRA_fight_equatorial_african_warlords}
+		relative_position_id = FRA_french_equatorial_african_confederation
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_railways_in_eastern_africa
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -11
+		y = 1
+		prerequisite = { focus = FRA_african_department }
+		relative_position_id = FRA_african_department
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_fight_eastern_african_warlords
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_railways_in_eastern_africa }
+		relative_position_id = FRA_railways_in_eastern_africa
+		search_filters = { }
+		cost = 5
+		mutually_exclusive = { focus = FRA_french_eastern_african_confederation}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_french_eastern_african_confederation
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_railways_in_eastern_africa }
+		relative_position_id = FRA_railways_in_eastern_africa
+		search_filters = { }
+		cost = 5
+		mutually_exclusive = { focus = FRA_fight_eastern_african_warlords}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_east_african_steel
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_french_eastern_african_confederation focus = FRA_fight_eastern_african_warlords}
+		relative_position_id = FRA_french_eastern_african_confederation
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_claim_south_africa
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -15
+		y = 1
+		prerequisite = { focus = FRA_african_department }
+		relative_position_id = FRA_african_department
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_fight_south_african_warlords
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_claim_south_africa }
+		relative_position_id = FRA_claim_south_africa
+		search_filters = { }
+		cost = 5
+		mutually_exclusive = { focus = FRA_french_southern_african_confederation}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_french_southern_african_confederation
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_claim_south_africa }
+		relative_position_id = FRA_claim_south_africa
+		search_filters = { }
+		cost = 5
+		mutually_exclusive = { focus = FRA_fight_south_african_warlords}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_develop_madagascar
+		icon = GFX_focus_generic_develop_madagascar
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_african_department }
+		relative_position_id = FRA_african_department
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_francizie_madagascar
+		icon = GFX_focus_FRA_integrate_madagascar
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_develop_madagascar }
+		relative_position_id = FRA_develop_madagascar
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_develop_algeria
+		icon = GFX_focus_generic_develop_algeria
+		x = 2
+		y = 1
+		prerequisite = { focus = FRA_african_department }
+		relative_position_id = FRA_african_department
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_integrate_algeria
+		icon = GFX_focus_FRA_integrate_algeria
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_develop_algeria }
+		relative_position_id = FRA_develop_algeria
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_demand_morocco
+		icon = GFX_focus_generic_demand_morocco
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_integrate_algeria }
+		relative_position_id = FRA_integrate_algeria
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_develop_morocco
+		icon = GFX_focus_generic_develop_morocco
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_demand_morocco }
+		relative_position_id = FRA_demand_morocco
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_develop_tunisia
+		icon = GFX_focus_generic_develop_tunisia
+		x = 4
+		y = 1
+		prerequisite = { focus = FRA_african_department }
+		relative_position_id = FRA_african_department
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_integrate_tunisia
+		icon = GFX_focus_FRA_integrate_tunisia
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_develop_tunisia }
+		relative_position_id = FRA_develop_tunisia
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_full_control_over_libya
+		icon = GFX_focus_generic_look_after_libya
+		x = 6
+		y = 1
+		prerequisite = { focus = FRA_african_department }
+		relative_position_id = FRA_african_department
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_fortify_suez_canal
+		icon = GFX_focus_generic_the_suez
+		x = 8
+		y = 1
+		prerequisite = { focus = FRA_african_department focus = FRA_asian_department }
+		relative_position_id = FRA_african_department
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_demand_egyptian_subjugation
+		icon = GFX_focus_generic_subjugate_egypt
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_fortify_suez_canal }
+		prerequisite = { focus = FRA_full_control_over_libya }
+		relative_position_id = FRA_full_control_over_libya
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_reorganized_north_africa
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_demand_egyptian_subjugation }
+		relative_position_id = FRA_demand_egyptian_subjugation
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -6236,7 +8569,7 @@ focus_tree = {
 	focus = {
 		id = FRA_devaluate_the_franc
 		icon = GFX_focus_fra_devalue_the_franc
-		x = 45
+		x = 85
 		y = 0
 		prerequisite = { focus =  }
 		relative_position_id = 
@@ -6255,6 +8588,7 @@ focus_tree = {
 		#}
 		available = {
 			has_completed_focus = FRA_may_day_results
+			has_completed_focus = FRA_establish_lon
 		}
 		completion_reward = {
 			hidden_effect = {
@@ -9530,8 +11864,8 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_lessons_of_senussi_campaign
-		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = 70
+		icon = GFX_focus_generic_senussi_planning
+		x = 110
 		y = 0
 		prerequisite = { focus =  }
 		relative_position_id = 
@@ -9622,6 +11956,7 @@ focus_tree = {
 		#}
 		available = {
 			has_completed_focus = FRA_may_day_results
+			has_completed_focus = FRA_establish_lon
 		}
 		completion_reward = {
 			hidden_effect = {
@@ -9691,7 +12026,7 @@ focus_tree = {
 	focus = {
 		id = FRA_experience_from_german_civil_war
 		icon = GFX_focus_generic_german_civil_war
-		x = 8
+		x = 6
 		y = 1
 		prerequisite = { focus = FRA_traumas_of_the_great_war }
 		relative_position_id = FRA_traumas_of_the_great_war
@@ -10361,7 +12696,7 @@ focus_tree = {
 	focus = {
 		id = FRA_post_great_war_challenges
 		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = -8
+		x = 3
 		y = 1
 		prerequisite = { focus = FRA_traumas_of_the_great_war }
 		relative_position_id = FRA_traumas_of_the_great_war
@@ -11141,7 +13476,7 @@ focus_tree = {
 	focus = {
 		id = FRA_review_the_fleet
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 4
+		x = 10
 		y = 1
 		prerequisite = { focus = FRA_traumas_of_the_great_war }
 		relative_position_id = FRA_traumas_of_the_great_war
@@ -12200,7 +14535,7 @@ focus_tree = {
 	focus = {
 		id = FRA_air_force_modernization
 		icon = GFX_goal_generic_build_airforce
-		x = 12
+		x = -8
 		y = 1
 		prerequisite = { focus = FRA_traumas_of_the_great_war }
 		relative_position_id = FRA_traumas_of_the_great_war
@@ -12260,7 +14595,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_southern_airports_expansion
-		icon = GFX_focus_generic_air_bases
+		icon = GFX_focus_generic_air_bases_3
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_air_force_modernization }
@@ -12334,7 +14669,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_colonial_air_groups
-		icon = GFX_focus_generic_air_bases_2
+		icon = GFX_focus_generic_air_bases_4
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_air_force_modernization }
@@ -12745,7 +15080,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_anti_insurgency_measures
-		icon = GFX_focus_SOV_ivan_plays_baseball #GFX_focus_generic_cas_aircraft
+		icon = GFX_focus_generic_plane_and_flames #GFX_focus_generic_cas_aircraft
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_review_the_proposals focus = FRA_prototype_demonstration }

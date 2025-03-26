@@ -1,0 +1,22 @@
+
+state={
+	id=991
+	name="STATE_991"
+	impassable = yes
+	history={
+		owner = OMA
+		buildings = {
+			infrastructure = 0
+		}
+		add_claim_by = SAU
+		add_core_of = OMA
+	}
+
+	provinces={
+		2059 2018 5049
+	}
+	manpower=19539
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

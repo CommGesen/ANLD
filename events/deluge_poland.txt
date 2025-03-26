@@ -12172,6 +12172,308 @@ country_event = {##POL gets info that SPR rejected idea of alliance
 		}
 	}
 }
+country_event = {##POL in Sarmatian path demands 413 - Ahwaz - Ottoman part of Iran
+	id = deluge_poland_foreign.120
+	title = deluge_poland_foreign.120.t
+	desc = deluge_poland_foreign.120.d
+	picture = GFX_report_event_grain_building_in_ahwaz
+	is_triggered_only = yes
+	option = {##give it
+		name = deluge_poland_foreign.120.a
+		hidden_effect = {
+			news_event = {
+				id = deluge_poland_foreign.121
+			}
+			POL = {
+				add_named_threat = {
+					threat = 4
+					name = POL_ahwaz_ultimatum
+				}
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					owns_state = 413
+				}
+			}
+			413 = {
+				transfer_state_to = POL
+			}
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {##don't give it
+		name = deluge_poland_foreign.120.b
+		hidden_effect = {
+			POL = {
+				country_event = {
+					id = deluge_poland_foreign.122
+				}
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+}
+news_event = {##POL gets 413 - Ahwaz
+	id = deluge_poland_foreign.121
+	title = deluge_poland_foreign.121.t
+	desc = deluge_poland_foreign.121.d
+	picture = GFX_news_event_grain_building_in_ahwaz
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_poland_foreign.121.a
+		ai_chance = {
+			base = 30
+		}
+	}
+}
+country_event = {##POL doesn't get 413 - Ahwaz
+	id = deluge_poland_foreign.122
+	title = deluge_poland_foreign.122.t
+	desc = deluge_poland_foreign.122.d
+	picture = GFX_report_event_grain_building_in_ahwaz
+	is_triggered_only = yes
+	option = {##war
+		name = deluge_poland_foreign.122.a
+		POL = {
+			declare_war_on = {
+				target = FROM
+				type = take_claimed_state
+				generator = {413}
+			}
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {##create wargoal
+		name = deluge_poland_foreign.122.b
+		create_wargoal = {
+			type = take_claimed_state
+			generator = {413}
+			target = FROM
+		}
+		add_stability = 0.02
+		add_war_support = -0.05
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.2
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.2 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+	option = {##not even wargoal
+		name = deluge_poland_foreign.122.c
+		add_war_support = -0.05
+		add_political_power = 10
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+}
 country_event = {##event about lore of Polish Hyperborea
 	id = deluge_poland_lore.1
 	title = deluge_poland_lore.1.t

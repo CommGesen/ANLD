@@ -2,7 +2,7 @@
  
  artillery_ratio_over_80:0 "Artillery ratio > §H80%§!"
  ban_neutrality_party_tt:0 "Change in popularity of Monarchism: §G-§![?.Root.party_popularity@neutrality|%0G].\n"
- generic_hide_portraits_decisions_tooltip:0 "This is §Rirreversible!§!"
+ generic_hide_portraits_decisions_tooltip:0 "This will hide decisions about portraits for this country §Rforever!§! It is §RIrreversible!§!"
  ###POLAND###
  
  trait_beck_tooltip_content:0 "Hiring this adviser will increase the chances of success in almost all events related to diplomacy."
@@ -282,6 +282,10 @@
  POL_custom_effect_tooltip_273:0 "If §HElbląg§! is controlled then creates §Hnaval facility§! there."
  POL_custom_effect_tooltip_274:0 "If §HOtwock§! - province west to the Warsaw in [72.GetName] is controlled then creates §Hnuclear facility§! there."
  POL_custom_effect_tooltip_275:0 "Depending whether you research §HNuclear Reactor§! or §HHeavy Water Nuclear Reactor§! the one you researched will be created in §H[72.GetName]§!."
+ POL_custom_effect_tooltip_276:0 "On-map decisions for coring will disappear. This is reversible. Process might take a while, please be patient!"
+ POL_custom_effect_tooltip_277:0 "On-map decisions for coring will reappear. Process might take a while, please be patient!"
+ POL_custom_effect_tooltip_278:0 "On-map decisions for development will disappear. This is reversible. Process might take a while, please be patient!"
+ POL_custom_effect_tooltip_279:0 "On-map decisions for development will reappear. Process might take a while, please be patient!"
  POL_custom_trigger_tooltip_POL:0 "All of Poland is controlled!"
  POL_custom_trigger_tooltip_1:0 "The §8Polish Military§! has at least 30 points and more than the §5Polish Military Organisation§!."
  POL_custom_trigger_tooltip_2:0 "The §5Polish Military Organisation§! has at least 30 points and more than the §8Polish Military§!."

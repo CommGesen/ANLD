@@ -1078,4 +1078,16 @@ spriteTypes = {
 		name = "GFX_report_event_popular_republican_movement_campaign"
 		texturefile = "gfx/event_pictures/report_event_popular_republican_movement_campaign.dds"
 	}
+	spriteType = {
+		name = "GFX_report_event_polish_soldiers"
+		texturefile = "gfx/event_pictures/report_event_polish_soldiers.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_grain_building_in_ahwaz"
+		texturefile = "gfx/event_pictures/report_event_grain_building_in_ahwaz.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_grain_building_in_ahwaz"
+		texturefile = "gfx/event_pictures/news_event_grain_building_in_ahwaz.dds"
+	}
 }

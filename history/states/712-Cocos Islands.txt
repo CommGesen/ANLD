@@ -4,8 +4,7 @@ state={
 	manpower=42	
 	state_category = tiny_island
 	
-	history=
-	{
+	history={
 		owner = AST
 		buildings = {
 			infrastructure = 2
@@ -13,6 +12,7 @@ state={
 				naval_base = 1
 			}
 		}
+		add_core_of = AST
 	}
 	
 	provinces={

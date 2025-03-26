@@ -17819,6 +17819,7 @@ sarmatia_decisions_category = {
 		available = {
 			PER = {
 				is_in_faction_with = POL
+				is_subject = no
 				NOT = {
 					has_war_with = POL
 				}
@@ -17911,11 +17912,6 @@ sarmatia_decisions_category = {
 					}
 				}
 				NOT = {
-					993 = {
-						is_core_of = POL
-					}
-				}
-				NOT = {
 					418 = {
 						is_core_of = POL
 					}
@@ -17954,7 +17950,32 @@ sarmatia_decisions_category = {
 				controls_state = 412
 				controls_state = 414
 				controls_state = 416
-				controls_state = 993
+				controls_state = 1000
+				controls_state = 1001
+				controls_state = 1004
+				controls_state = 1002
+				controls_state = 1003
+				controls_state = 410
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 419
+				state = 420
+				state = 421
+				state = 417
+				state = 266
+				state = 418
+				state = 411
+				state = 412
+				state = 414
+				state = 416
+				state = 1000
+				state = 1001
+				state = 1004
+				state = 1002
+				state = 1003
+				state = 410
 			}
 		}
 		cost = 100
@@ -17977,9 +17998,6 @@ sarmatia_decisions_category = {
 			266 = {
 				add_core_of = POL
 			}
-			993 = {
-				add_core_of = POL
-			}
 			418 = {
 				add_core_of = POL
 			}
@@ -17993,6 +18011,24 @@ sarmatia_decisions_category = {
 				add_core_of = POL
 			}	
 			416 = {
+				add_core_of = POL
+			}
+			1000 = {
+				add_core_of = POL
+			}
+			1001 = {
+				add_core_of = POL
+			}
+			1004 = {
+				add_core_of = POL
+			}
+			1002 = {
+				add_core_of = POL
+			}
+			1003 = {
+				add_core_of = POL
+			}
+			410 = {
 				add_core_of = POL
 			}
 		}
@@ -18014,6 +18050,30 @@ sarmatia_decisions_category = {
 		days_remove = 50
 		fire_only_once = no
 		days_re_enable = 10
+		highlight_states = {
+			highlight_state_targets = {
+				state = 74
+				state = 71
+				state = 70
+				state = 73
+				state = 664
+				state = 155
+				state = 974
+				state = 43
+				state = 973
+				state = 154
+				state = 76
+				state = 83
+				state = 84
+				state = 82
+				state = 45
+				state = 80
+				state = 79
+				state = 78
+				state = 766
+				state = 847
+			}
+		}
 		complete_effect = {
 			every_country = {
 				limit = {
@@ -18023,7 +18083,6 @@ sarmatia_decisions_category = {
 						owns_state = 70
 						owns_state = 73
 						owns_state = 664
-						owns_state = 74
 						owns_state = 155
 						owns_state = 974
 						owns_state = 43
@@ -18508,6 +18567,57 @@ sarmatia_decisions_category = {
 		days_remove = 50
 		fire_only_once = no
 		days_re_enable = 10
+		highlight_states = {
+			highlight_state_targets = {
+				state = 199
+				state = 198
+				state = 192
+				state = 834
+				state = 197
+				state = 203
+				state = 201
+				state = 202
+				state = 194
+				state = 241
+				state = 193
+				state = 225
+				state = 259
+				state = 226
+				state = 221
+				state = 196
+				state = 137
+				state = 200
+				state = 227
+				state = 228
+				state = 218
+				state = 245
+				state = 217
+				state = 829
+				state = 239
+				state = 255
+				state = 257
+				state = 260
+				state = 240
+				state = 220
+				state = 222
+				state = 224
+				state = 205
+				state = 223
+				state = 265
+				state = 258
+				state = 254
+				state = 401
+				state = 251
+				state = 250
+				state = 252
+				state = 256
+				state = 833
+				state = 249
+				state = 399
+				state = 652
+				state = 651
+			}
+		}
 		complete_effect = {
 			every_country = {
 				limit = {
@@ -19366,6 +19476,29 @@ sarmatia_decisions_category = {
 		days_remove = 50
 		fire_only_once = no
 		days_re_enable = 10
+		highlight_states = {
+			highlight_state_targets = {
+				state = 234
+				state = 238
+				state = 235
+				state = 237
+				state = 236
+				state = 232
+				state = 269
+				state = 821
+				state = 828
+				state = 807
+				state = 807
+				state = 827
+				state = 311
+				state = 826
+				state = 231
+				state = 233
+				state = 230
+				state = 229
+				state = 1023
+			}
+		}
 		complete_effect = {
 			every_country = {
 				limit = {
@@ -19388,7 +19521,7 @@ sarmatia_decisions_category = {
 						owns_state = 233
 						owns_state = 230
 						owns_state = 229
-						owns_state = 988
+						owns_state = 1023
 					}
 				}
 				country_event = {
@@ -19408,7 +19541,7 @@ sarmatia_decisions_category = {
 				add_state_claim = 807
 				add_state_claim = 827
 				add_state_claim = 311
-				add_state_claim = 988
+				add_state_claim = 1023
 				add_state_claim = 826
 				add_state_claim = 231
 				add_state_claim = 233
@@ -19433,7 +19566,7 @@ sarmatia_decisions_category = {
 						owns_state = 807
 						owns_state = 827
 						owns_state = 311
-						owns_state = 988
+						owns_state = 1023
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19445,7 +19578,7 @@ sarmatia_decisions_category = {
 					type = take_claimed_state
 					target = PREV
 					generator = {
-						234 238 235 237 236 232 269 821 828 827 311 826 231 233 230 229 988 807
+						234 238 235 237 236 232 269 821 828 827 311 826 231 233 230 229 1023 807
 					}
 				}
 			}
@@ -19473,7 +19606,7 @@ sarmatia_decisions_category = {
 						owns_state = 807
 						owns_state = 827
 						owns_state = 311
-						owns_state = 988
+						owns_state = 1023
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19502,7 +19635,7 @@ sarmatia_decisions_category = {
 						owns_state = 807
 						owns_state = 827
 						owns_state = 311
-						owns_state = 988
+						owns_state = 1023
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19530,7 +19663,7 @@ sarmatia_decisions_category = {
 						owns_state = 807
 						owns_state = 827
 						owns_state = 311
-						owns_state = 988
+						owns_state = 1023
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19556,7 +19689,7 @@ sarmatia_decisions_category = {
 						owns_state = 807
 						owns_state = 827
 						owns_state = 311
-						owns_state = 988
+						owns_state = 1023
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19582,7 +19715,7 @@ sarmatia_decisions_category = {
 						owns_state = 807
 						owns_state = 827
 						owns_state = 311
-						owns_state = 988
+						owns_state = 1023
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19608,7 +19741,7 @@ sarmatia_decisions_category = {
 						owns_state = 807
 						owns_state = 827
 						owns_state = 311
-						owns_state = 988
+						owns_state = 1023
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19635,7 +19768,7 @@ sarmatia_decisions_category = {
 						owns_state = 807
 						owns_state = 827
 						owns_state = 311
-						owns_state = 988
+						owns_state = 1023
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19678,7 +19811,7 @@ sarmatia_decisions_category = {
 						owns_state = 807
 						owns_state = 827
 						owns_state = 311
-						owns_state = 988
+						owns_state = 1023
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19735,7 +19868,7 @@ sarmatia_decisions_category = {
 						owns_state = 807
 						owns_state = 827
 						owns_state = 311
-						owns_state = 988
+						owns_state = 1023
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19763,7 +19896,7 @@ sarmatia_decisions_category = {
 						owns_state = 807
 						owns_state = 827
 						owns_state = 311
-						owns_state = 988
+						owns_state = 1023
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19788,7 +19921,7 @@ sarmatia_decisions_category = {
 						owns_state = 807
 						owns_state = 827
 						owns_state = 311
-						owns_state = 988
+						owns_state = 1023
 						owns_state = 826
 						owns_state = 231
 						owns_state = 233
@@ -19817,6 +19950,29 @@ sarmatia_decisions_category = {
 		days_remove = 50
 		fire_only_once = no
 		days_re_enable = 10
+		highlight_states = {
+			highlight_state_targets = {
+				state = 407
+				state = 406
+				state = 402
+				state = 881
+				state = 404
+				state = 585
+				state = 830
+				state = 823
+				state = 831
+				state = 587
+				state = 584
+				state = 832
+				state = 742
+				state = 732
+				state = 405
+				state = 586
+				state = 589
+				state = 588
+				state = 1017
+			}
+		}
 		complete_effect = {
 			every_country = {
 				limit = {
@@ -19839,7 +19995,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
-						owns_state = 994
+						owns_state = 1017
 					}
 				}
 				country_event = {
@@ -19865,7 +20021,7 @@ sarmatia_decisions_category = {
 				add_state_claim = 586
 				add_state_claim = 589
 				add_state_claim = 588
-				add_state_claim = 994
+				add_state_claim = 1017
 			}
 			set_country_flag = AI_making_wargoal
 		}
@@ -19891,7 +20047,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
-						owns_state = 994
+						owns_state = 1017
 					}
 				}
 				POL = {
@@ -19899,7 +20055,7 @@ sarmatia_decisions_category = {
 						type = take_claimed_state
 						target = PREV
 						generator = {
-							407 406 402 881 404 585 830 823 831 587 584 832 742 732 405 586 589 588 994
+							407 406 402 881 404 585 830 823 831 587 584 832 742 732 405 586 589 588 1017
 						}
 					}
 				}
@@ -19930,7 +20086,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
-						owns_state = 994
+						owns_state = 1017
 					}
 					strength_ratio = {
 						tag = POL 
@@ -19964,7 +20120,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
-						owns_state = 994
+						owns_state = 1017
 					}
 					strength_ratio = {
 						tag = POL 
@@ -19993,7 +20149,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
-						owns_state = 994
+						owns_state = 1017
 					}
 					is_in_faction = no
 				}
@@ -20020,7 +20176,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
-						owns_state = 994
+						owns_state = 1017
 					}
 					is_in_faction = yes
 				}
@@ -20047,7 +20203,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
-						owns_state = 994
+						owns_state = 1017
 					}
 					num_of_factories > ROOT.num_of_factories
 				}
@@ -20074,7 +20230,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
-						owns_state = 994
+						owns_state = 1017
 					}
 					num_of_factories < ROOT.num_of_factories
 				}
@@ -20102,7 +20258,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
-						owns_state = 994
+						owns_state = 1017
 					}
 					OR = {
 						is_guaranteed_by = FRA
@@ -20146,7 +20302,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
-						owns_state = 994
+						owns_state = 1017
 					}
 					NOT = {
 						OR = {
@@ -20204,7 +20360,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
-						owns_state = 994
+						owns_state = 1017
 					}
 					ROOT = {
 						has_wargoal_against = PREV
@@ -20233,7 +20389,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
-						owns_state = 994
+						owns_state = 1017
 					}
 					has_war_with = ROOT
 				}
@@ -20259,7 +20415,7 @@ sarmatia_decisions_category = {
 						owns_state = 586
 						owns_state = 589
 						owns_state = 588
-						owns_state = 994
+						owns_state = 1017
 					}
 					NOT = {
 						is_neighbor_of = ROOT
@@ -20283,6 +20439,22 @@ sarmatia_decisions_category = {
 		days_remove = 50
 		fire_only_once = no
 		days_re_enable = 10
+		highlight_states = {
+			highlight_state_targets = {
+				state = 582
+				state = 573
+				state = 572
+				state = 653
+				state = 583
+				state = 590
+				state = 882
+				state = 40
+				state = 654
+				state = 570
+				state = 571
+				state = 403
+			}
+		}
 		complete_effect = {
 			every_country = {
 				limit = {
@@ -20651,6 +20823,29 @@ sarmatia_decisions_category = {
 		days_remove = 50
 		fire_only_once = no
 		days_re_enable = 10
+		highlight_states = {
+			highlight_state_targets = {
+				state = 267
+				state = 415
+				state = 442
+				state = 445
+				state = 444
+				state = 443
+				state = 440
+				state = 441
+				state = 989
+				state = 986
+				state = 787
+				state = 1005
+				state = 1007
+				state = 987
+				state = 1006
+				state = 1012
+				state = 988
+				state = 1008
+				state = 1009
+			}
+		}
 		complete_effect = {
 			every_country = {
 				limit = {
@@ -20663,6 +20858,17 @@ sarmatia_decisions_category = {
 						owns_state = 443
 						owns_state = 440
 						owns_state = 441
+						owns_state = 989
+						owns_state = 986
+						owns_state = 787
+						owns_state = 1005
+						owns_state = 1007
+						owns_state = 987
+						owns_state = 1006
+						owns_state = 1012
+						owns_state = 988
+						owns_state = 1008
+						owns_state = 1009
 					}
 				}
 				country_event = {
@@ -20678,6 +20884,17 @@ sarmatia_decisions_category = {
 				add_state_claim = 443
 				add_state_claim = 440
 				add_state_claim = 441
+				add_state_claim = 989
+				add_state_claim = 986
+				add_state_claim = 787
+				add_state_claim = 1005
+				add_state_claim = 1007
+				add_state_claim = 987
+				add_state_claim = 1006
+				add_state_claim = 1012
+				add_state_claim = 988
+				add_state_claim = 1008
+				add_state_claim = 1009
 			}
 			set_country_flag = AI_making_wargoal
 		}
@@ -20693,6 +20910,17 @@ sarmatia_decisions_category = {
 						owns_state = 443
 						owns_state = 440
 						owns_state = 441
+						owns_state = 989
+						owns_state = 986
+						owns_state = 787
+						owns_state = 1005
+						owns_state = 1007
+						owns_state = 987
+						owns_state = 1006
+						owns_state = 1012
+						owns_state = 988
+						owns_state = 1008
+						owns_state = 1009
 					}
 				}
 				POL = {
@@ -20700,7 +20928,7 @@ sarmatia_decisions_category = {
 						type = take_claimed_state
 						target = PREV
 						generator = {
-							267 415 442 445 444 443 440 441
+							267 415 442 445 444 443 440 441 989 986 787 1005 1007 987 1006 1012 988 1008 1009 
 						}
 					}
 				}
@@ -20721,6 +20949,17 @@ sarmatia_decisions_category = {
 						owns_state = 443
 						owns_state = 440
 						owns_state = 441
+						owns_state = 989
+						owns_state = 986
+						owns_state = 787
+						owns_state = 1005
+						owns_state = 1007
+						owns_state = 987
+						owns_state = 1006
+						owns_state = 1012
+						owns_state = 988
+						owns_state = 1008
+						owns_state = 1009
 					}
 					strength_ratio = {
 						tag = POL 
@@ -20740,6 +20979,17 @@ sarmatia_decisions_category = {
 						owns_state = 443
 						owns_state = 440
 						owns_state = 441
+						owns_state = 989
+						owns_state = 986
+						owns_state = 787
+						owns_state = 1005
+						owns_state = 1007
+						owns_state = 987
+						owns_state = 1006
+						owns_state = 1012
+						owns_state = 988
+						owns_state = 1008
+						owns_state = 1009
 					}
 					strength_ratio = {
 						tag = POL 
@@ -20758,6 +21008,17 @@ sarmatia_decisions_category = {
 						owns_state = 443
 						owns_state = 440
 						owns_state = 441
+						owns_state = 989
+						owns_state = 986
+						owns_state = 787
+						owns_state = 1005
+						owns_state = 1007
+						owns_state = 987
+						owns_state = 1006
+						owns_state = 1012
+						owns_state = 988
+						owns_state = 1008
+						owns_state = 1009
 					}
 					is_in_faction = no
 				}
@@ -20774,6 +21035,17 @@ sarmatia_decisions_category = {
 						owns_state = 443
 						owns_state = 440
 						owns_state = 441
+						owns_state = 989
+						owns_state = 986
+						owns_state = 787
+						owns_state = 1005
+						owns_state = 1007
+						owns_state = 987
+						owns_state = 1006
+						owns_state = 1012
+						owns_state = 988
+						owns_state = 1008
+						owns_state = 1009
 					}
 					is_in_faction = yes
 				}
@@ -20794,6 +21066,17 @@ sarmatia_decisions_category = {
 						owns_state = 443
 						owns_state = 440
 						owns_state = 441
+						owns_state = 989
+						owns_state = 986
+						owns_state = 787
+						owns_state = 1005
+						owns_state = 1007
+						owns_state = 987
+						owns_state = 1006
+						owns_state = 1012
+						owns_state = 988
+						owns_state = 1008
+						owns_state = 1009
 					}
 					num_of_factories > ROOT.num_of_factories
 				}
@@ -20810,6 +21093,17 @@ sarmatia_decisions_category = {
 						owns_state = 443
 						owns_state = 440
 						owns_state = 441
+						owns_state = 989
+						owns_state = 986
+						owns_state = 787
+						owns_state = 1005
+						owns_state = 1007
+						owns_state = 987
+						owns_state = 1006
+						owns_state = 1012
+						owns_state = 988
+						owns_state = 1008
+						owns_state = 1009
 					}
 					num_of_factories < ROOT.num_of_factories
 				}
@@ -20827,6 +21121,17 @@ sarmatia_decisions_category = {
 						owns_state = 443
 						owns_state = 440
 						owns_state = 441
+						owns_state = 989
+						owns_state = 986
+						owns_state = 787
+						owns_state = 1005
+						owns_state = 1007
+						owns_state = 987
+						owns_state = 1006
+						owns_state = 1012
+						owns_state = 988
+						owns_state = 1008
+						owns_state = 1009
 					}
 					OR = {
 						is_guaranteed_by = FRA
@@ -20860,6 +21165,17 @@ sarmatia_decisions_category = {
 						owns_state = 443
 						owns_state = 440
 						owns_state = 441
+						owns_state = 989
+						owns_state = 986
+						owns_state = 787
+						owns_state = 1005
+						owns_state = 1007
+						owns_state = 987
+						owns_state = 1006
+						owns_state = 1012
+						owns_state = 988
+						owns_state = 1008
+						owns_state = 1009
 					}
 					NOT = {
 						OR = {
@@ -20907,6 +21223,17 @@ sarmatia_decisions_category = {
 						owns_state = 443
 						owns_state = 440
 						owns_state = 441
+						owns_state = 989
+						owns_state = 986
+						owns_state = 787
+						owns_state = 1005
+						owns_state = 1007
+						owns_state = 987
+						owns_state = 1006
+						owns_state = 1012
+						owns_state = 988
+						owns_state = 1008
+						owns_state = 1009
 					}
 					ROOT = {
 						has_wargoal_against = PREV
@@ -20925,6 +21252,17 @@ sarmatia_decisions_category = {
 						owns_state = 443
 						owns_state = 440
 						owns_state = 441
+						owns_state = 989
+						owns_state = 986
+						owns_state = 787
+						owns_state = 1005
+						owns_state = 1007
+						owns_state = 987
+						owns_state = 1006
+						owns_state = 1012
+						owns_state = 988
+						owns_state = 1008
+						owns_state = 1009
 					}
 					has_war_with = ROOT
 				}
@@ -20940,6 +21278,17 @@ sarmatia_decisions_category = {
 						owns_state = 443
 						owns_state = 440
 						owns_state = 441
+						owns_state = 989
+						owns_state = 986
+						owns_state = 787
+						owns_state = 1005
+						owns_state = 1007
+						owns_state = 987
+						owns_state = 1006
+						owns_state = 1012
+						owns_state = 988
+						owns_state = 1008
+						owns_state = 1009
 					}
 					NOT = {
 						is_neighbor_of = ROOT
@@ -20963,6 +21312,17 @@ sarmatia_decisions_category = {
 		days_remove = 50
 		fire_only_once = no
 		days_re_enable = 10
+		highlight_states = {
+			highlight_state_targets = {
+				state = 619
+				state = 287
+				state = 759
+				state = 617
+				state = 618
+				state = 760
+				state = 818
+			}
+		}
 		complete_effect = {
 			every_country = {
 				limit = {
@@ -21247,6 +21607,318 @@ sarmatia_decisions_category = {
 			}
 		}
 	}
+	deluge_dec_pol_sarmatia_demand_ahwaz = {
+		icon = GFX_decision_generic_protection
+		visible = {
+			POL = {
+				is_subject = no
+			}
+			any_country = {
+				owns_state = 413
+				NOT = {
+					tag = POL
+				}
+				OR = {
+					any_state = {
+						is_coastal = yes
+						is_owned_by = POL
+					}
+					AND = {
+						is_neighbor_of = PREV
+					}
+				}
+			}
+		}
+		available = {
+			
+		}
+		cost = 20
+		days_remove = 60
+		fire_only_once = no
+		days_re_enable = 10
+		highlight_states = {
+			highlight_state_targets = {
+				state = 413
+			}
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 413
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+			POL = {
+				add_state_claim = 413
+			}
+			set_country_flag = AI_making_wargoal
+		}
+		remove_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 413
+					}
+				}
+				country_event = {
+					id = deluge_poland_foreign.120
+				}
+			}
+			clr_country_flag = AI_making_wargoal
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				add = 50
+				any_country = {
+					OR = {
+						owns_state = 413
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				any_country = {
+					OR = {
+						owns_state = 413
+					}
+					strength_ratio = {
+						tag = POL 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = AI_making_wargoal
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 413
+					}
+					is_in_faction = no
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 413
+					}
+					is_in_faction = yes
+				}
+				add = -100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 413
+					}
+					num_of_factories > ROOT.num_of_factories
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 413
+					}
+					num_of_factories < ROOT.num_of_factories
+				}
+				add = -100
+			}
+			modifier = {
+				add = -100
+				any_country = {
+					OR = {
+						owns_state = 413
+					}
+					OR = {
+						is_guaranteed_by = FRA
+						is_guaranteed_by = USA
+						is_guaranteed_by = SOV
+						is_guaranteed_by = ENG
+						is_guaranteed_by = DEN
+						is_guaranteed_by = SWE
+						is_guaranteed_by = GER
+						is_guaranteed_by = WGR
+						is_guaranteed_by = DDR
+						is_guaranteed_by = ITA
+						is_guaranteed_by = TUR
+						is_guaranteed_by = JAP
+						is_guaranteed_by = CHI
+						is_guaranteed_by = PRC
+						is_guaranteed_by = MEX
+						is_guaranteed_by = AUS
+					}
+				}
+			}
+			modifier = {
+				add = 100
+				any_country = {
+					OR = {
+						owns_state = 413
+					}
+					NOT = {
+						OR = {
+							is_guaranteed_by = FRA
+							is_guaranteed_by = USA
+							is_guaranteed_by = SOV
+							is_guaranteed_by = ENG
+							is_guaranteed_by = DEN
+							is_guaranteed_by = SWE
+							is_guaranteed_by = GER
+							is_guaranteed_by = WGR
+							is_guaranteed_by = DDR
+							is_guaranteed_by = ITA
+							is_guaranteed_by = TUR
+							is_guaranteed_by = JAP
+							is_guaranteed_by = CHI
+							is_guaranteed_by = PRC
+							is_guaranteed_by = MEX
+							is_guaranteed_by = AUS
+						}
+					}
+				}
+			}
+			modifier = {
+				has_war = no
+				add = 100
+			}
+			modifier = {
+				has_war = yes
+				add = -200
+			}
+			modifier = {
+				factor = 0
+				has_capitulated = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 413
+					}
+					ROOT = {
+						has_wargoal_against = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					OR = {
+						owns_state = 413
+					}
+					has_war_with = ROOT
+				}
+			}
+			modifier = {
+				any_country = {
+					OR = {
+						owns_state = 413
+					}
+					NOT = {
+						is_neighbor_of = ROOT
+					}
+				}
+				factor = 0
+			}
+		}
+	}
+	deluge_dec_pol_sarmatia_disable_coring_decisions = {
+		icon = GFX_decision_eng_trade_unions_demand
+		visible = {
+			NOT = {
+				has_country_flag = deluge_flag_pol_sarmatia_decisions_disabled
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		days_remove = 0
+		fire_only_once = no
+		days_re_enable = 0
+		remove_effect = {
+			set_country_flag = deluge_flag_pol_sarmatia_decisions_disabled
+			custom_effect_tooltip = POL_custom_effect_tooltip_276
+		}
+		ai_will_do = {
+			base = -1000
+		}
+	}
+	deluge_dec_pol_sarmatia_enable_coring_decisions = {
+		icon = GFX_decision_eng_trade_unions_demand
+		visible = {
+			has_country_flag = deluge_flag_pol_sarmatia_decisions_disabled
+		}
+		available = {
+			
+		}
+		cost = 0
+		days_remove = 0
+		fire_only_once = no
+		days_re_enable = 0
+		remove_effect = {
+			clr_country_flag = deluge_flag_pol_sarmatia_decisions_disabled
+			custom_effect_tooltip = POL_custom_effect_tooltip_277
+		}
+		ai_will_do = {
+			base = -1000
+		}
+	}
+	deluge_dec_pol_sarmatia_disable_development_decisions = {
+		icon = GFX_decision_eng_trade_unions_demand
+		visible = {
+			NOT = {
+				has_country_flag = deluge_dec_pol_sarmatia_disable_development_decisions
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		days_remove = 0
+		fire_only_once = no
+		days_re_enable = 0
+		remove_effect = {
+			set_country_flag = deluge_dec_pol_sarmatia_disable_development_decisions
+			custom_effect_tooltip = POL_custom_effect_tooltip_278
+		}
+		ai_will_do = {
+			base = -1000
+		}
+	}
+	deluge_dec_pol_sarmatia_enable_development_decisions = {
+		icon = GFX_decision_eng_trade_unions_demand
+		visible = {
+			has_country_flag = deluge_dec_pol_sarmatia_disable_development_decisions
+		}
+		available = {
+			
+		}
+		cost = 0
+		days_remove = 0
+		fire_only_once = no
+		days_re_enable = 0
+		remove_effect = {
+			clr_country_flag = deluge_dec_pol_sarmatia_disable_development_decisions
+			custom_effect_tooltip = POL_custom_effect_tooltip_279
+		}
+		ai_will_do = {
+			base = -1000
+		}
+	}
 	core_state_sarmatian = {
 		icon = GFX_decision_generic_form_nation
 		state_target = yes
@@ -21260,6 +21932,9 @@ sarmatia_decisions_category = {
 			}
 			POL = {
 				has_completed_focus = POL_prepare_for_conquest
+				NOT = {
+					has_country_flag = deluge_flag_pol_sarmatia_decisions_disabled
+				}
 			}
 		}
 		target_trigger = {
@@ -21268,7 +21943,8 @@ sarmatia_decisions_category = {
 					is_core_of = POL
 				}
 				OR = {
-					state = 994
+					state = 413
+					state = 1012
 					state = 199
 					state = 198
 					state = 201
@@ -21419,6 +22095,18 @@ sarmatia_decisions_category = {
 					state = 66
 					state = 86
 					state = 847
+					state = 986
+					state = 989
+					state = 787
+					state = 1012
+					state = 987
+					state = 1005
+					state = 1007
+					state = 1006
+					state = 1008
+					state = 1009
+					state = 1017
+					state = 1023
 				}
 			}
 		}
@@ -21453,6 +22141,9 @@ sarmatia_decisions_category = {
 			}
 			POL = {
 				has_completed_focus = POL_develop_sarmatian_lands
+				NOT = {
+					has_country_flag = deluge_dec_pol_sarmatia_disable_development_decisions
+				}
 			}
 		}
 		target_trigger = {
@@ -21461,7 +22152,6 @@ sarmatia_decisions_category = {
 					has_state_flag = POL_sarmatia_developed
 				}
 				OR = {
-					state = 994
 					state = 199
 					state = 198
 					state = 201
@@ -21595,6 +22285,34 @@ sarmatia_decisions_category = {
 					state = 445
 					state = 444
 					state = 847
+					state = 986
+					state = 989
+					state = 787
+					state = 987
+					state = 1005
+					state = 1007
+					state = 1006
+					state = 1008
+					state = 1009
+					state = 1003
+					state = 1002
+					state = 1004
+					state = 1001
+					state = 1000
+					state = 1017
+					state = 1023
+					state = 1012
+					state = 421
+					state = 413
+					state = 411
+					state = 417
+					state = 266
+					state = 420
+					state = 418
+					state = 416
+					state = 412
+					state = 414
+					state = 410
 				}
 			}
 		}

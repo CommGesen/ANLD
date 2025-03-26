@@ -292,16 +292,6 @@ units = {
 		start_experience_factor = 0.15
 		start_equipment_factor = 0.6
 	}
-	
-	division = {
-		name = "Malta Garrison"
-		location = 12003
-		division_template = "Garrison Division"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	
 	division= {	
 		name = "Hong Kong Garrison"
 		location = 10062

@@ -1,15 +1,14 @@
 characters={
 	ABU_shakhbut_bin_sultan={
-		name="Shakhbut bin Sultan"
+		name="Shakhbut bin Sultan Al Nahyan"
 		portraits={
 			civilian={
-				large="gfx/leaders/SAU/Portrait_Arabia_Generic_land_3.dds"
+				large="gfx/leaders/ABU/portrait_ABU_shakhbut_bin_sultan_al_nahyan.dds"
 			}
 		}
 		country_leader={
 			ideology=reactionary_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	ABU_abd_alqadir_ibm_kamil={
