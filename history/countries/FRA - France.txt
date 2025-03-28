@@ -805,43 +805,33 @@ set_popularities = {
 	communism = 13
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = BHU
-		autonomous_state = autonomy_colony
-		freedom_level = 0.1
-	}
-	set_autonomy = {
-		target = VIN
-		autonomous_state = autonomy_colony
-		freedom_level = 0.1
-	}
-	set_autonomy = {
-		target = BEL
-		autonomous_state = autonomy_puppet
-		freedom_level = 0.1
-	}
-	set_autonomy = {
-		target = POM
-		autonomous_state = autonomy_integrated_puppet
-		freedom_level = 0.5
-	}
-	set_autonomy = {
-		target = SPR
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.3
-	}
-	else = {
-		puppet = BEL
-		puppet = POM
-		puppet = BHU
-		puppet = VIN
-		puppet = SPR
-	}
+set_autonomy = {
+	target = BHU
+	autonomous_state = autonomy_colony
+	freedom_level = 0.1
 }
+set_autonomy = {
+	target = VIN
+	autonomous_state = autonomy_colony
+	freedom_level = 0.1
+}
+set_autonomy = {
+	target = BEL
+	autonomous_state = autonomy_puppet
+	freedom_level = 0.1
+}
+set_autonomy = {
+	target = POM
+	autonomous_state = autonomy_integrated_puppet
+	freedom_level = 0.5
+}
+set_autonomy = {
+	target = SPR
+	autonomous_state = autonomy_dominion
+	freedom_level = 0.3
+}
+
+load_oob = FRA_may_day_focus_oob
 
 set_variable = {french_depression_consumer_goods_factor = 0.6 }
 set_variable = {french_depression_production_speed_buildings_factor = -0.6 }
@@ -1134,7 +1124,7 @@ recruit_character = FRA_deluge_georges_bonnet
 recruit_character = FRA_deluge_robert_schuman
 recruit_character = FRA_deluge_joseph_darnand
 recruit_character = FRA_deluge_robert_brasillach
-recruit_character = 
+recruit_character = FRA_deluge_jacques_stern
 
-recruit_character = 
+recruit_character = FRA_deluge_jacques_sadoul
 

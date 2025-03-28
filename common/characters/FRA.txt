@@ -1186,6 +1186,68 @@ characters={
 		}
 	}
 	##advisors for all:
+	FRA_deluge_jacques_stern={
+		name=FRA_deluge_jacques_stern_name
+		portraits={
+			civilian={##small picture to do
+				small="GFX_jacques_stern_picture_small"
+			}
+		}
+		advisor={
+			slot = security_chief_slot
+			idea_token = FRA_deluge_jacques_stern
+			allowed = {
+				tag = FRA
+			}
+			visible = {
+				NOT = {
+					has_completed_focus = FRA_decolonisation
+				}
+			}
+			available = {
+				has_completed_focus = FRA_renovate_ministry_of_colonies
+			}
+			cost = 150
+			traits = {
+				prince_of_terror
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			ledger = civilian
+		}
+	}
+	FRA_deluge_jacques_sadoul={
+		name=FRA_deluge_jacques_sadoul_name
+		portraits={
+			civilian={##small picture to do
+				small="GFX_jacques_sadoul_picture_small"
+			}
+		}
+		advisor={
+			slot = security_chief_slot
+			idea_token = FRA_deluge_jacques_sadoul
+			allowed = {
+				tag = FRA
+			}
+			visible = {
+				NOT = {
+					has_completed_focus = FRA_renovate_ministry_of_colonies
+				}
+			}
+			available = {
+				has_completed_focus = FRA_decolonisation
+			}
+			cost = 150
+			traits = {
+				prince_of_terror
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			ledger = civilian
+		}
+	}
 	FRA_deluge_andre_maginot={
 		name=FRA_deluge_andre_maginot_name
 		portraits={
@@ -1197,7 +1259,7 @@ characters={
 			slot = political_advisor
 			idea_token = FRA_deluge_andre_maginot
 			allowed = {
-				original_tag = FRA
+				tag = FRA
 			}
 			visible = {
 				
