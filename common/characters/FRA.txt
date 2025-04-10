@@ -214,7 +214,7 @@ characters={
 	FRA_deluge_jules_moch={
 		name=FRA_deluge_jules_moch_name
 		portraits={
-			civilian={##small portrait to do
+			civilian={
 				small="GFX_jules_moch_picture_small"
 			}
 		}
@@ -276,7 +276,7 @@ characters={
 	FRA_deluge_john_nicoletis={
 		name=FRA_deluge_john_nicoletis_name
 		portraits={
-			civilian={##small portrait to do
+			civilian={
 				small="GFX_john_nicoletis_picture_small"
 			}
 		}
@@ -728,7 +728,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_maxime_weygand_picture_small"
-				large=GFX_portrait_FRA_maxime_weygand
+				large=GFX_portrait_FRA_maxime_weygand_ANLD
 			}
 		}
 		advisor={
@@ -1007,44 +1007,6 @@ characters={
 			ledger = civilian
 		}
 	}
-	FRA_deluge_georges_bonnet={
-		name=FRA_deluge_georges_bonnet_name
-		portraits={
-			civilian={
-				small="GFX_georges_bonnet_picture_small"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = FRA_deluge_georges_bonnet
-			allowed = {
-				original_tag = FRA
-			}
-			visible = {
-				NOT = {
-					OR = {
-						has_completed_focus = FRA_the_dictator
-						has_completed_focus = FRA_the_guarantor
-						has_completed_focus = FRA_democratic_republican_alliance
-						has_completed_focus = FRA_popular_republican_movemenet
-						has_completed_focus = FRA_march_on_paris
-						has_completed_focus = FRA_another_revolution
-					}
-				}
-			}
-			available = {
-				has_completed_focus = FRA_radical_party
-			}
-			cost = 150
-			traits = {
-				deluge_trait_ambitious_negotiator_democracy
-			}
-			ai_will_do = {
-				factor = 1.000
-			}
-			ledger = civilian
-		}
-	}
 	##Democratic Republican Alliance:
 	FRA_deluge_paul_reynaud={
 		name=FRA_deluge_paul_reynaud_name
@@ -1280,7 +1242,7 @@ characters={
 	FRA_deluge_gaston_henry_haye={
 		name=FRA_deluge_gaston_henry_haye_name
 		portraits={
-			civilian={##small portrait to do
+			civilian={
 				small="GFX_gaston_henry_haye_picture_small"
 			}
 		}
@@ -1309,7 +1271,7 @@ characters={
 	FRA_deluge_rene_massigli={
 		name=FRA_deluge_rene_massigli_name
 		portraits={
-			civilian={##small portrait to do
+			civilian={
 				small="GFX_rene_massigli_picture_small"
 			}
 		}
@@ -1338,7 +1300,7 @@ characters={
 	FRA_deluge_guy_la_chambre={
 		name=FRA_deluge_guy_la_chambre_name
 		portraits={
-			civilian={##small portrait to do
+			civilian={
 				small="GFX_guy_la_chambre_picture_small"
 			}
 		}
@@ -1735,7 +1697,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer infantry_officer politically_connected }
+			traits={ career_officer infantry_officer war_hero }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -1802,7 +1764,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_maurice_gamelin_picture_small"
-				large=GFX_portrait_FRA_maurice_gamelin
+				large=GFX_portrait_FRA_maurice_gamelin_ANLD
 			}
 		}
 		field_marshal={
@@ -2480,7 +2442,7 @@ characters={
 	FRA_deluge_aime_doumenc={
 		name=FRA_deluge_aime_doumenc_name
 		portraits={
-			army={##small and big portrait to do
+			army={
 				large="GFX_portrait_FRA_aime_doumenc" 
 				small="GFX_aime_doumenc_picture_small"
 			}
@@ -2516,7 +2478,7 @@ characters={
 	FRA_deluge_jean_touzet_du_vigier={
 		name=FRA_deluge_jean_touzet_du_vigier_name
 		portraits={
-			army={##small and big portrait to do
+			army={
 				large="gfx/leaders/FRA/portrait_FRA_jean_touzet_du_vigier.dds" 
 				small="GFX_jean_touzet_du_vigier_picture_small"
 			}
@@ -2534,7 +2496,7 @@ characters={
 	FRA_deluge_aubert_frere={
 		name=FRA_deluge_aubert_frere_name
 		portraits={
-			army={##small portrait to do
+			army={
 				large="GFX_portrait_FRA_aubert_frere" 
 				small="GFX_aubert_frere_picture_small"
 			}

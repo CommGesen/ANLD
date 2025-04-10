@@ -15,11 +15,11 @@ characters={
 		name="Philippe Pétain"
 		portraits={
 			civilian={
-				large=GFX_portrait_FRA_philippe_petain
+				large=GFX_portrait_POM_philippe_petain_ANLD
 				small="GFX_philippe_petain_picture_small"
 			}
 			army={
-				large=GFX_portrait_FRA_philippe_petain
+				large=GFX_portrait_POM_philippe_petain_ANLD
 				small="GFX_philippe_petain_picture_small"
 			}
 		}
@@ -27,14 +27,6 @@ characters={
 			ideology=colonial_administration_ideology
 			expire="1965.1.1.1"
 			#desc = ""
-		}
-		field_marshal={
-			traits={ old_guard }
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=2
 		}
 	}
 	POM_karl_jesko_von_puttkamer={

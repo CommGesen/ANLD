@@ -611,6 +611,108 @@ changing_portraits_category = {
 			base = 0
 		}
 	}
+	portraits_maxime_weygand = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+			
+		}
+		visible = {
+			has_character = FRA_deluge_maxime_weygand
+			OR = {
+				FRA_deluge_maxime_weygand = {
+					is_army_leader = yes
+				}
+				FRA_deluge_maxime_weygand = {
+					is_navy_leader = yes
+				}
+				FRA_deluge_maxime_weygand = {
+					is_country_leader = yes
+				}
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			country_event = {
+				id = deluge_portraits.20
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	portraits_maurice_gamelin = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+			
+		}
+		visible = {
+			has_character = FRA_deluge_maurice_gamelin
+			OR = {
+				FRA_deluge_maurice_gamelin = {
+					is_army_leader = yes
+				}
+				FRA_deluge_maurice_gamelin = {
+					is_navy_leader = yes
+				}
+				FRA_deluge_maurice_gamelin = {
+					is_country_leader = yes
+				}
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			country_event = {
+				id = deluge_portraits.21
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	portraits_philippe_petain = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+			
+		}
+		visible = {
+			has_character = POM_philippe_petain
+			OR = {
+				POM_philippe_petain = {
+					is_army_leader = yes
+				}
+				POM_philippe_petain = {
+					is_navy_leader = yes
+				}
+				POM_philippe_petain = {
+					is_country_leader = yes
+				}
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			country_event = {
+				id = deluge_portraits.22
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
 	hide_portraits_decision = {
 		icon = GFX_decision_SWI_dismiss_council
 		allowed = {

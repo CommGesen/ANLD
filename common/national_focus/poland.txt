@@ -5215,25 +5215,46 @@ focus_tree = {
 			}
 			add_to_variable = { POL_zadruga_non_core_manpower = 0.05}
 			custom_effect_tooltip = POL_custom_effect_tooltip_79
-			every_country = {
-				limit = {
-					OR = {
-						tag = TUR
-						tag = CAU
-						tag = ARM
-						tag = AZR
-						tag = GEO
-						tag = ABK
-						tag = OSS
-						tag = CHE
-						tag = DAG
-						tag = CRI
-						tag = TSR
-						tag = GRE
-						tag = KUR
-						tag = SOV
-					}
-				}
+			TUR = {
+				add_opinion_modifier = { target = POL modifier = appreciated_the_beauty_of_the_east }
+			}
+			CAU = {
+				add_opinion_modifier = { target = POL modifier = appreciated_the_beauty_of_the_east }
+			}
+			ARM = {
+				add_opinion_modifier = { target = POL modifier = appreciated_the_beauty_of_the_east }
+			}
+			AZR = {
+				add_opinion_modifier = { target = POL modifier = appreciated_the_beauty_of_the_east }
+			}
+			GEO = {
+				add_opinion_modifier = { target = POL modifier = appreciated_the_beauty_of_the_east }
+			}
+			ABK = {
+				add_opinion_modifier = { target = POL modifier = appreciated_the_beauty_of_the_east }
+			}
+			OSS = {
+				add_opinion_modifier = { target = POL modifier = appreciated_the_beauty_of_the_east }
+			}
+			CHE = {
+				add_opinion_modifier = { target = POL modifier = appreciated_the_beauty_of_the_east }
+			}
+			DAG = {
+				add_opinion_modifier = { target = POL modifier = appreciated_the_beauty_of_the_east }
+			}
+			CRI = {
+				add_opinion_modifier = { target = POL modifier = appreciated_the_beauty_of_the_east }
+			}
+			TSR = {
+				add_opinion_modifier = { target = POL modifier = appreciated_the_beauty_of_the_east }
+			}
+			GRE = {
+				add_opinion_modifier = { target = POL modifier = appreciated_the_beauty_of_the_east }
+			}
+			KUR = {
+				add_opinion_modifier = { target = POL modifier = appreciated_the_beauty_of_the_east }
+			}
+			SOV = {
 				add_opinion_modifier = { target = POL modifier = appreciated_the_beauty_of_the_east }
 			}
 		}
@@ -12890,6 +12911,8 @@ focus_tree = {
 					controls_state = 227
 					controls_state = 80
 					controls_state = 79
+					controls_state = 78
+					controls_state = 766
 					controls_state = 194
 					controls_state = 241
 					controls_state = 76
@@ -12900,8 +12923,8 @@ focus_tree = {
 					controls_state = 154
 					controls_state = 43
 					controls_state = 973
-					controls_state = 974
 					controls_state = 155
+					controls_state = 974
 					controls_state = 45
 					controls_state = 664
 					controls_state = 241
@@ -12912,6 +12935,7 @@ focus_tree = {
 					controls_state = 240
 					controls_state = 220
 					controls_state = 224
+					controls_state = 74
 					controls_state = 222
 					controls_state = 205
 					controls_state = 260
@@ -12961,7 +12985,7 @@ focus_tree = {
 					controls_state = 582
 					controls_state = 402
 					controls_state = 587
-					controls_state = 994
+					controls_state = 413
 					controls_state = 584
 					controls_state = 831
 					controls_state = 823
@@ -13002,8 +13026,8 @@ focus_tree = {
 					controls_state = 444
 					controls_state = 89
 					controls_state = 91
-					controls_state = 72
 					controls_state = 92
+					controls_state = 72
 					controls_state = 93
 					controls_state = 94
 					controls_state = 97
@@ -13018,18 +13042,34 @@ focus_tree = {
 					controls_state = 66
 					controls_state = 86
 					controls_state = 847
-					controls_state = 419
 					controls_state = 420
+					controls_state = 419
 					controls_state = 421
 					controls_state = 417
-					controls_state = 413
+					controls_state = 266
 					controls_state = 411
 					controls_state = 412
-					controls_state = 266
-					controls_state = 418
-					controls_state = 416
 					controls_state = 414
 					controls_state = 410
+					controls_state = 416
+					controls_state = 418
+					controls_state = 986
+					controls_state = 989
+					controls_state = 787
+					controls_state = 1012
+					controls_state = 987
+					controls_state = 1005
+					controls_state = 1007
+					controls_state = 1006
+					controls_state = 1008
+					controls_state = 1009
+					controls_state = 1003
+					controls_state = 1002
+					controls_state = 1004
+					controls_state = 1001
+					controls_state = 1000
+					controls_state = 1017
+					controls_state = 1023
 				}
 			}
 		}
@@ -13462,119 +13502,74 @@ focus_tree = {
 				}
 				AND = {
 					OR = {
-						AND = {
-							owns_state = 154
-							controls_state = 154
-						}
-						AND = {
-							154 = {
-								owner = {
-									is_subject_of = POL
-								}
+						controls_state = 154
+						154 = {
+							controller = {
+								is_subject_of = POL
 							}
 						}
 					}
 					OR = {
-						AND = {
-							owns_state = 82
-							controls_state = 82
-						}
-						AND = {
-							82 = {
-								owner = {
-									is_subject_of = POL
-								}
+						controls_state = 82
+						82 = {
+							controller = {
+								is_subject_of = POL
 							}
 						}
 					}
 					OR = {
-						AND = {
-							owns_state = 83
-							controls_state = 83
-						}
-						AND = {
-							83 = {
-								owner = {
-									is_subject_of = POL
-								}
+						controls_state = 83
+						83 = {
+							controller = {
+								is_subject_of = POL
 							}
 						}
 					}
 					OR = {
-						AND = {
-							owns_state = 84
-							controls_state = 84
-						}
-						AND = {
-							84 = {
-								owner = {
-									is_subject_of = POL
-								}
+						controls_state = 84
+						84 = {
+							controller = {
+								is_subject_of = POL
 							}
 						}
 					}
 					OR = {
-						AND = {
-							owns_state = 76
-							controls_state = 76
-						}
-						AND = {
-							76 = {
-								owner = {
-									is_subject_of = POL
-								}
+						controls_state = 76
+						76 = {
+							controller = {
+								is_subject_of = POL
 							}
 						}
 					}
 					OR = {
-						AND = {
-							owns_state = 43
-							controls_state = 43
-						}
-						AND = {
-							43 = {
-								owner = {
-									is_subject_of = POL
-								}
+						controls_state = 43
+						43 = {
+							controller = {
+								is_subject_of = POL
 							}
 						}
 					}
 					OR = {
-						AND = {
-							owns_state = 973
-							controls_state = 973
-						}
-						AND = {
-							973 = {
-								owner = {
-									is_subject_of = POL
-								}
+						controls_state = 973
+						973 = {
+							controller = {
+								is_subject_of = POL
 							}
 						}
 					}
 					OR = {
-						AND = {
-							owns_state = 974
-							controls_state = 974
-						}
-						AND = {
-							974 = {
-								owner = {
-									is_subject_of = POL
-								}
+						controls_state = 974
+						974 = {
+							controller = {
+								is_subject_of = POL
 							}
 						}
 					}
 					OR = {
-						AND = {
-							owns_state = 155
-							controls_state = 155
-						}
-						AND = {
-							155 = {
-								owner = {
-									is_subject_of = POL
-								}
+						controls_state = 155
+						155 = {
+							controller = {
+								is_subject_of = POL
 							}
 						}
 					}
@@ -13769,7 +13764,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 76
+							controls_state = 76
 						}
 					}
 					HUN = {
@@ -13779,7 +13774,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 84
+							controls_state = 84
 						}
 					}
 					HUN = {
@@ -13789,7 +13784,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 83
+							controls_state = 83
 						}
 					}
 					HUN = {
@@ -13799,7 +13794,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 82
+							controls_state = 82
 						}
 					}
 					HUN = {
@@ -13809,7 +13804,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 155
+							controls_state = 155
 						}
 					}
 					HUN = {
@@ -13819,7 +13814,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 154
+							controls_state = 154
 						}
 					}
 					HUN = {
@@ -13829,7 +13824,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 43
+							controls_state = 43
 						}
 					}
 					HUN = {
@@ -13839,7 +13834,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 973
+							controls_state = 973
 						}
 					}
 					HUN = {
@@ -13849,7 +13844,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 974
+							controls_state = 974
 						}
 					}
 					HUN = {
@@ -13859,7 +13854,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 45
+							controls_state = 45
 						}
 					}
 					HUN = {
@@ -13869,7 +13864,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 151
+							controls_state = 151
 						}
 					}
 					HUN = {
@@ -13879,7 +13874,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 109
+							controls_state = 109
 						}
 					}
 					HUN = {
@@ -13889,7 +13884,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 103
+							controls_state = 103
 						}
 					}
 					HUN = {
@@ -13899,7 +13894,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 104
+							controls_state = 104
 						}
 					}
 					HUN = {
@@ -13909,7 +13904,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 102
+							controls_state = 102
 						}
 					}
 					HUN = {
@@ -13919,7 +13914,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 853
+							controls_state = 853
 						}
 					}
 					HUN = {
@@ -13929,7 +13924,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 736
+							controls_state = 736
 						}
 					}
 					HUN = {
@@ -13939,7 +13934,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 852
+							controls_state = 852
 						}
 					}
 					HUN = {
@@ -13949,7 +13944,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 664
+							controls_state = 664
 						}
 					}
 					HUN = {
@@ -13959,7 +13954,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 73
+							controls_state = 73
 						}
 					}
 					HUN = {
@@ -13969,7 +13964,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 71
+							controls_state = 71
 						}
 					}
 					HUN = {
@@ -13979,7 +13974,7 @@ focus_tree = {
 				if = {
 					limit = {
 						POL = {
-							owns_state = 70
+							controls_state = 70
 						}
 					}
 					HUN = {
@@ -17731,54 +17726,34 @@ focus_tree = {
 		relative_position_id = POL_retake_moldova
 		available = {
 			OR = {
-				AND = {
-					owns_state = 80
-					controls_state = 80
-				}
-				AND = {
-					80 = {
-						owner = {
-							is_subject_of = POL
-						}
+				controls_state = 80
+				80 = {
+					controller = {
+						is_subject_of = POL
 					}
 				}
 			}
 			OR = {
-				AND = {
-					owns_state = 79
-					controls_state = 79
-				}
-				AND = {
-					79 = {
-						owner = {
-							is_subject_of = POL
-						}
+				controls_state = 79
+				79 = {
+					controller = {
+						is_subject_of = POL
 					}
 				}
 			}
 			OR = {
-				AND = {
-					owns_state = 78
-					controls_state = 78
-				}
-				AND = {
-					78 = {
-						owner = {
-							is_subject_of = POL
-						}
+				controls_state = 78
+				78 = {
+					controller = {
+						is_subject_of = POL
 					}
 				}
 			}
 			OR = {
-				AND = {
-					owns_state = 766
-					controls_state = 766
-				}
-				AND = {
-					766 = {
-						owner = {
-							is_subject_of = POL
-						}
+				controls_state = 766
+				766 = {
+					controller = {
+						is_subject_of = POL
 					}
 				}
 			}
@@ -29619,7 +29594,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_reactor_maria
-		icon = GFX_focus_GER_wunderwaffe_inner_circle
+		icon = GFX_focus_generic_nuclear_reactor
 		x = 0
 		y = 1
 		search_filters = {}
@@ -29674,7 +29649,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_meteor_rocket
-		icon = GFX_focus_rocketry
+		icon = GFX_focus_generic_rockets
 		x = 1
 		y = 1
 		search_filters = {}

@@ -4,30 +4,32 @@ integration_category = {
 		available = {
 			has_manpower > 2000
 			has_equipment = { infantry_equipment > 1999 }
-			owns_state = 814
 			controls_state = 814
-			owns_state = 11
 			controls_state = 11
-			owns_state = 815
 			controls_state = 815
-			owns_state = 189
 			controls_state = 189
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 814
+				state = 11
+				state = 815
+				state = 189
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
-			AND = {
-				NOT = {
-					POL = {
-						has_completed_focus = POL_torch_for_all_slavs
-					}
+			NOT = {
+				POL = {
+					has_completed_focus = POL_torch_for_all_slavs
 				}
-				OR = {
-					814 = { NOT = { is_core_of = POL } } 
-					11 = { NOT = { is_core_of = POL } } 
-					815 = { NOT = { is_core_of = POL } } 
-					189 = { NOT = { is_core_of = POL } } 
-				}
+			}
+			OR = {
+				814 = { NOT = { is_core_of = POL } } 
+				11 = { NOT = { is_core_of = POL } } 
+				815 = { NOT = { is_core_of = POL } } 
+				189 = { NOT = { is_core_of = POL } } 
 			}
 		}
 		cost = 100
@@ -45,7 +47,6 @@ integration_category = {
 			11 = { add_core_of = POL } 
 			815 = { add_core_of = POL } 
 			189 = { add_core_of = POL }  
-			#set_province_name = { id = 9499 name = "Kłajpeda" }#doesnt work for some reason, says that id is invalid or no city there despite it exists
 		}
 		ai_will_do = {
 			factor = 100
@@ -56,33 +57,35 @@ integration_category = {
 		available = {
 			has_manpower > 2000
 			has_equipment = { infantry_equipment > 1999 }
-			owns_state = 12
 			controls_state = 12
-			owns_state = 810
 			controls_state = 810
-			owns_state = 808
 			controls_state = 808
-			owns_state = 809
 			controls_state = 809
-			owns_state = 190
 			controls_state = 190
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 12
+				state = 810
+				state = 808
+				state = 809
+				state = 190
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
-			AND = {
-				NOT = {
-					POL = {
-						has_completed_focus = POL_torch_for_all_slavs
-					}
+			NOT = {
+				POL = {
+					has_completed_focus = POL_torch_for_all_slavs
 				}
-				OR = {
-					12 = { NOT = { is_core_of = POL } } 
-					810 = { NOT = { is_core_of = POL } } 
-					808 = { NOT = { is_core_of = POL } } 
-					809 = { NOT = { is_core_of = POL } } 
-					190 = { NOT = { is_core_of = POL } } 
-				}
+			}
+			OR = {
+				12 = { NOT = { is_core_of = POL } } 
+				810 = { NOT = { is_core_of = POL } } 
+				808 = { NOT = { is_core_of = POL } } 
+				809 = { NOT = { is_core_of = POL } } 
+				190 = { NOT = { is_core_of = POL } } 
 			}
 		}
 		cost = 100
@@ -110,6 +113,63 @@ integration_category = {
 			factor = 100
 		}
 	}
+	integrate_est = {
+		icon = GFX_decision_generic_integration
+		available = {
+			has_manpower > 1000
+			has_equipment = { infantry_equipment > 999 }
+			controls_state = 191
+			controls_state = 813
+			controls_state = 13
+			controls_state = 812
+			controls_state = 811
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 191
+				state = 813
+				state = 13
+				state = 812
+				state = 811
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			NOT = {
+				POL = {
+					has_completed_focus = POL_torch_for_all_slavs
+				}
+			}
+			OR = {
+				191 = { NOT = { is_core_of = POL } } 
+				13 = { NOT = { is_core_of = POL } } 
+				813 = { NOT = { is_core_of = POL } } 
+				812 = { NOT = { is_core_of = POL } } 
+				811 = { NOT = { is_core_of = POL } } 
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -1000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -1000
+			}
+			811 = { add_core_of = POL } 
+			812 = { add_core_of = POL } 
+			813 = { add_core_of = POL } 
+			191 = { add_core_of = POL } 
+			13 = { add_core_of = POL } 
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
 	integrate_cze = {
 		icon = GFX_decision_generic_integration
 		available = {
@@ -120,6 +180,15 @@ integration_category = {
 			controls_state = 972
 			controls_state = 9
 			controls_state = 69
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 74
+				state = 75
+				state = 972
+				state = 9
+				state = 69
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -163,6 +232,14 @@ integration_category = {
 			controls_state = 192
 			controls_state = 203
 		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 834
+				state = 197
+				state = 192
+				state = 203
+			}
+		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
@@ -198,14 +275,18 @@ integration_category = {
 		available = {
 			has_manpower > 3000
 			has_equipment = { infantry_equipment > 2999 }
-			owns_state = 202
 			controls_state = 202
-			owns_state = 201
 			controls_state = 201
-			owns_state = 199
 			controls_state = 199
-			owns_state = 198
 			controls_state = 198
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 202
+				state = 201
+				state = 199
+				state = 198
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -242,16 +323,20 @@ integration_category = {
 		available = {
 			has_manpower > 3000
 			has_equipment = { infantry_equipment > 2999 }
-			owns_state = 193
 			controls_state = 193
-			owns_state = 225
 			controls_state = 225
-			owns_state = 259
 			controls_state = 259
-			owns_state = 221
 			controls_state = 221
-			owns_state = 226
 			controls_state = 226
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 193
+				state = 225
+				state = 259
+				state = 221
+				state = 226
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -290,14 +375,18 @@ integration_category = {
 		available = {
 			has_manpower > 3000
 			has_equipment = { infantry_equipment > 2999 }
-			owns_state = 137
 			controls_state = 137
-			owns_state = 196
 			controls_state = 196
-			owns_state = 200
 			controls_state = 200
-			owns_state = 227
 			controls_state = 227
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 137
+				state = 196
+				state = 200
+				state = 227
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -339,12 +428,16 @@ integration_category = {
 		available = {
 			has_manpower > 2000
 			has_equipment = { infantry_equipment > 1999 }
-			owns_state = 85
 			controls_state = 85
-			owns_state = 63
 			controls_state = 63
-			owns_state = 62
 			controls_state = 62
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 85
+				state = 63
+				state = 62
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -379,14 +472,18 @@ integration_category = {
 		available = {
 			has_manpower > 3000
 			has_equipment = { infantry_equipment > 2999 }
-			owns_state = 68
 			controls_state = 68
-			owns_state = 65
 			controls_state = 65
-			owns_state = 64
 			controls_state = 64
-			owns_state = 61
 			controls_state = 61
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 68
+				state = 65
+				state = 64
+				state = 61
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -423,14 +520,18 @@ integration_category = {
 		available = {
 			has_manpower > 2000
 			has_equipment = { infantry_equipment > 1999 }
-			owns_state = 96
 			controls_state = 96
-			owns_state = 95
 			controls_state = 95
-			owns_state = 204
 			controls_state = 204
-			owns_state = 194
 			controls_state = 194
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 96
+				state = 95
+				state = 204
+				state = 194
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -467,14 +568,18 @@ integration_category = {
 		available = {
 			has_manpower > 2000
 			has_equipment = { infantry_equipment > 1999 }
-			owns_state = 241
 			controls_state = 241
-			owns_state = 764
 			controls_state = 764
-			owns_state = 207
 			controls_state = 207
-			owns_state = 206
 			controls_state = 206
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 241
+				state = 764
+				state = 207
+				state = 206
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -516,6 +621,14 @@ integration_category = {
 			controls_state = 766
 			controls_state = 80
 		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 79
+				state = 78
+				state = 766
+				state = 80
+			}
+		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
@@ -549,24 +662,30 @@ integration_category = {
 	integrate_slovenia_lech = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 102
 			controls_state = 102
-			owns_state = 736
 			controls_state = 736
-			owns_state = 853
 			controls_state = 853
+			controls_state = 852
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 102
+				state = 736
+				state = 853
+				state = 852
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
 			has_completed_focus = POL_lechitic_legacy
 			OR = {
-				102 = { NOT = { is_core_of = POL } } 
-				736 = { NOT = { is_core_of = POL } } 
-				853 = { NOT = { is_core_of = POL } } 
+				102 = { NOT = { is_core_of = POL } }
+				736 = { NOT = { is_core_of = POL } }
+				853 = { NOT = { is_core_of = POL } }
+				852 = { NOT = { is_core_of = POL } }
 			}
 		}
 		cost = 100
@@ -580,9 +699,10 @@ integration_category = {
 			    type = infantry_equipment
 			    amount = -1000
 			}
-			102 = { add_core_of = POL } 
-			736 = { add_core_of = POL } 
-			853 = { add_core_of = POL } 
+			102 = { add_core_of = POL }
+			736 = { add_core_of = POL }
+			853 = { add_core_of = POL }
+			852 = { add_core_of = POL }
 		}
 		ai_will_do = {
 			factor = 100
@@ -591,15 +711,18 @@ integration_category = {
 	integrate_west_ger_lech = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 58
 			controls_state = 58
-			owns_state = 59
 			controls_state = 59
-			owns_state = 60
 			controls_state = 60
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 58
+				state = 59
+				state = 60
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -633,15 +756,18 @@ integration_category = {
 	integrate_bav_lech = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 54
 			controls_state = 54
-			owns_state = 53
 			controls_state = 53
-			owns_state = 52
 			controls_state = 52
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 54
+				state = 53
+				state = 52
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -675,27 +801,36 @@ integration_category = {
 	integrate_aus_lech = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 4
 			controls_state = 4
-			owns_state = 152
 			controls_state = 152
-			owns_state = 153
 			controls_state = 153
-			owns_state = 848
 			controls_state = 848
+			controls_state = 976
+			controls_state = 975
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 4
+				state = 152
+				state = 153
+				state = 848
+				state = 976
+				state = 975
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
 			has_completed_focus = POL_lechitic_legacy
 			OR = {
-				152 = { NOT = { is_core_of = POL } } 
-				153 = { NOT = { is_core_of = POL } } 
-				4 = { NOT = { is_core_of = POL } } 
-				849 = { NOT = { is_core_of = POL } } 
+				152 = { NOT = { is_core_of = POL } }
+				153 = { NOT = { is_core_of = POL } }
+				4 = { NOT = { is_core_of = POL } }
+				849 = { NOT = { is_core_of = POL } }
+				976 = { NOT = { is_core_of = POL } }
+				975 = { NOT = { is_core_of = POL } }
 			}
 		}
 		cost = 100
@@ -709,10 +844,12 @@ integration_category = {
 			    type = infantry_equipment
 			    amount = -1000
 			}
-			4 = { add_core_of = POL } 
-			152 = { add_core_of = POL } 
-			153 = { add_core_of = POL } 
-			848 = { add_core_of = POL } 
+			4 = { add_core_of = POL }
+			152 = { add_core_of = POL }
+			153 = { add_core_of = POL }
+			848 = { add_core_of = POL }
+			976 = { add_core_of = POL }
+			975 = { add_core_of = POL }
 		}
 		ai_will_do = {
 			factor = 100
@@ -721,17 +858,18 @@ integration_category = {
 	integrate_north_ita_lech = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 160
 			controls_state = 160
-			owns_state = 159
-			controls_state = 159
-			owns_state = 39
 			controls_state = 39
-			owns_state = 850
 			controls_state = 850
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 160
+				state = 39
+				state = 850
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -739,7 +877,6 @@ integration_category = {
 			has_completed_focus = POL_lechitic_legacy
 			OR = {
 				39 = { NOT = { is_core_of = POL } } 
-				159 = { NOT = { is_core_of = POL } } 
 				160 = { NOT = { is_core_of = POL } } 
 				850 = { NOT = { is_core_of = POL } } 
 			}
@@ -755,8 +892,7 @@ integration_category = {
 			    type = infantry_equipment
 			    amount = -1000
 			}
-			160 = { add_core_of = POL } 
-			159 = { add_core_of = POL } 
+			160 = { add_core_of = POL }  
 			39 = { add_core_of = POL } 
 			850 = { add_core_of = POL } 
 		}
@@ -767,30 +903,30 @@ integration_category = {
 	integrate_cro_lech = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 109
 			controls_state = 109
-			owns_state = 103
 			controls_state = 103
-			owns_state = 104
 			controls_state = 104
-			owns_state = 852
-			controls_state = 852
-			owns_state = 151
-			controls_state = 151
+			controls_state = 970
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 109
+				state = 103
+				state = 104
+				state = 970
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
 			has_completed_focus = POL_lechitic_legacy
 			OR = {
-				103 = { NOT = { is_core_of = POL } } 
-				109 = { NOT = { is_core_of = POL } } 
-				104 = { NOT = { is_core_of = POL } } 
-				852 = { NOT = { is_core_of = POL } } 
-				151 = { NOT = { is_core_of = POL } } 
+				103 = { NOT = { is_core_of = POL } }
+				109 = { NOT = { is_core_of = POL } }
+				104 = { NOT = { is_core_of = POL } }
+				970 = { NOT = { is_core_of = POL } }
 			}
 		}
 		cost = 100
@@ -804,11 +940,10 @@ integration_category = {
 			    type = infantry_equipment
 			    amount = -1000
 			}
-			109 = { add_core_of = POL } 
-			104 = { add_core_of = POL } 
-			103 = { add_core_of = POL } 
-			852 = { add_core_of = POL } 
-			151 = { add_core_of = POL } 
+			109 = { add_core_of = POL }
+			104 = { add_core_of = POL }
+			103 = { add_core_of = POL }
+			970 = { add_core_of = POL }
 		}
 		ai_will_do = {
 			factor = 100
@@ -817,24 +952,33 @@ integration_category = {
 	integrate_ser_lech = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 45
 			controls_state = 45
-			owns_state = 107
 			controls_state = 107
-			owns_state = 108
 			controls_state = 108
+			controls_state = 151
+			controls_state = 847
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 45
+				state = 107
+				state = 108
+				state = 151
+				state = 847
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
 			has_completed_focus = POL_lechitic_legacy
 			OR = {
-				108 = { NOT = { is_core_of = POL } } 
-				107 = { NOT = { is_core_of = POL } } 
-				45 = { NOT = { is_core_of = POL } } 
+				108 = { NOT = { is_core_of = POL } }
+				107 = { NOT = { is_core_of = POL } }
+				45 = { NOT = { is_core_of = POL } }
+				151 = { NOT = { is_core_of = POL } }
+				847 = { NOT = { is_core_of = POL } }
 			}
 		}
 		cost = 100
@@ -848,9 +992,11 @@ integration_category = {
 			    type = infantry_equipment
 			    amount = -1000
 			}
-			45 = { add_core_of = POL } 
-			107 = { add_core_of = POL } 
-			108 = { add_core_of = POL } 
+			45 = { add_core_of = POL }
+			107 = { add_core_of = POL }
+			108 = { add_core_of = POL }
+			151 = { add_core_of = POL }
+			847 = { add_core_of = POL }
 		}
 		ai_will_do = {
 			factor = 100
@@ -859,24 +1005,30 @@ integration_category = {
 	integrate_north_alb_lech = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 801
 			controls_state = 801
-			owns_state = 105
 			controls_state = 105
-			owns_state = 44
 			controls_state = 44
+			controls_state = 934
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 801
+				state = 105
+				state = 44
+				state = 934
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
 			has_completed_focus = POL_lechitic_legacy
 			OR = {
-				44 = { NOT = { is_core_of = POL } } 
-				105 = { NOT = { is_core_of = POL } } 
-				801 = { NOT = { is_core_of = POL } } 
+				44 = { NOT = { is_core_of = POL } }
+				105 = { NOT = { is_core_of = POL } }
+				801 = { NOT = { is_core_of = POL } }
+				934 = { NOT = { is_core_of = POL } }
 			}
 		}
 		cost = 100
@@ -890,9 +1042,10 @@ integration_category = {
 			    type = infantry_equipment
 			    amount = -1000
 			}
-			801 = { add_core_of = POL } 
-			105 = { add_core_of = POL } 
-			44 = { add_core_of = POL } 
+			801 = { add_core_of = POL }
+			105 = { add_core_of = POL }
+			44 = { add_core_of = POL }
+			934 = { add_core_of = POL }
 		}
 		ai_will_do = {
 			factor = 100
@@ -901,17 +1054,20 @@ integration_category = {
 	integrate_bul_lech = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 106
 			controls_state = 106
-			owns_state = 48
 			controls_state = 48
-			owns_state = 212
 			controls_state = 212
-			owns_state = 211
 			controls_state = 211
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 106
+				state = 48
+				state = 212
+				state = 211
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -935,10 +1091,10 @@ integration_category = {
 			    type = infantry_equipment
 			    amount = -1000
 			}
-			106 = { add_core_of = POL } 
-			48 = { add_core_of = POL } 
-			211 = { add_core_of = POL } 
-			212 = { add_core_of = POL } 
+			106 = { add_core_of = POL }
+			48 = { add_core_of = POL }
+			211 = { add_core_of = POL }
+			212 = { add_core_of = POL }
 		}
 		ai_will_do = {
 			factor = 100
@@ -947,24 +1103,30 @@ integration_category = {
 	integrate_wal_lech = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 77
 			controls_state = 77
-			owns_state = 46
 			controls_state = 46
-			owns_state = 81
 			controls_state = 81
+			controls_state = 971
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 77
+				state = 46
+				state = 81
+				state = 971
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
 			has_completed_focus = POL_lechitic_legacy
 			OR = {
-				81 = { NOT = { is_core_of = POL } } 
-				46 = { NOT = { is_core_of = POL } } 
-				77 = { NOT = { is_core_of = POL } } 
+				81 = { NOT = { is_core_of = POL } }
+				46 = { NOT = { is_core_of = POL } }
+				77 = { NOT = { is_core_of = POL } }
+				971 = { NOT = { is_core_of = POL } }
 			}
 		}
 		cost = 100
@@ -978,51 +1140,10 @@ integration_category = {
 			    type = infantry_equipment
 			    amount = -1000
 			}
-			77 = { add_core_of = POL } 
-			46 = { add_core_of = POL } 
-			81 = { add_core_of = POL } 
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	integrate_mol_lech = {
-		icon = GFX_decision_generic_integration
-		available = {
-			has_country_flag = POL_created_lechia
-			has_manpower > 1000
-			has_equipment = { infantry_equipment > 999 }
-			controls_state = 78
-			controls_state = 79
-			controls_state = 80
-			controls_state = 766
-		}
-		fire_only_once = no
-		days_re_enable = 10
-		visible = {
-			has_completed_focus = POL_lechitic_legacy
-			OR = {
-				78 = { NOT = { is_core_of = POL } }
-				79 = { NOT = { is_core_of = POL } }
-				80 = { NOT = { is_core_of = POL } }
-				766 = { NOT = { is_core_of = POL } }
-			}
-		}
-		cost = 100
-		days_remove = 100
-		modifier = {
-			
-		}
-		remove_effect = {
-			add_manpower = -1000
-			add_equipment_to_stockpile = {
-			    type = infantry_equipment
-			    amount = -1000
-			}
-			78 = { add_core_of = POL }
-			79 = { add_core_of = POL }
-			80 = { add_core_of = POL }
-			766 = { add_core_of = POL }
+			77 = { add_core_of = POL }
+			46 = { add_core_of = POL }
+			81 = { add_core_of = POL }
+			971 = { add_core_of = POL }
 		}
 		ai_will_do = {
 			factor = 100
@@ -1031,7 +1152,6 @@ integration_category = {
 	integrate_hun_lech = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
 			controls_state = 155
@@ -1039,6 +1159,15 @@ integration_category = {
 			controls_state = 973
 			controls_state = 154
 			controls_state = 974
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 155
+				state = 43
+				state = 973
+				state = 154
+				state = 974
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -1073,16 +1202,74 @@ integration_category = {
 			factor = 100
 		}
 	}
+	integrate_slovakia_lech = {
+		icon = GFX_decision_generic_integration
+		available = {
+			has_manpower > 1000
+			has_equipment = { infantry_equipment > 999 }
+			controls_state = 70
+			controls_state = 664
+			controls_state = 71
+			controls_state = 73
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 70
+				state = 664
+				state = 71
+				state = 73
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			POL = {
+				has_completed_focus = POL_lechitic_legacy
+			}
+			OR = {
+				73 = { NOT = { is_core_of = POL } } 
+				71 = { NOT = { is_core_of = POL } } 
+				664 = { NOT = { is_core_of = POL } } 
+				70 = { NOT = { is_core_of = POL } } 
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -1000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -1000
+			}
+			73 = { add_core_of = POL } 
+			71 = { add_core_of = POL } 
+			664 = { add_core_of = POL } 
+			70 = { add_core_of = POL } 
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
 	integrate_trans_lech = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
 			controls_state = 76
 			controls_state = 84
 			controls_state = 83
 			controls_state = 82
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 76
+				state = 84
+				state = 83
+				state = 82
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -1118,21 +1305,24 @@ integration_category = {
 	integrate_novo_lech = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 195
 			controls_state = 195
-			owns_state = 244
 			controls_state = 244
-			owns_state = 263
 			controls_state = 263
-			owns_state = 210
 			controls_state = 210
-			owns_state = 209
 			controls_state = 209
-			owns_state = 208
 			controls_state = 208
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 195
+				state = 244
+				state = 263
+				state = 210
+				state = 209
+				state = 208
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -1172,19 +1362,22 @@ integration_category = {
 	integrate_south_rus_lech = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 228
 			controls_state = 228
-			owns_state = 240
 			controls_state = 240
-			owns_state = 220
 			controls_state = 220
-			owns_state = 222
 			controls_state = 222
-			owns_state = 224
 			controls_state = 224
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 228
+				state = 240
+				state = 220
+				state = 222
+				state = 224
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -1222,19 +1415,22 @@ integration_category = {
 	integrate_mid_rus_lech = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 223
 			controls_state = 223
-			owns_state = 205
 			controls_state = 205
-			owns_state = 243
 			controls_state = 243
-			owns_state = 242
 			controls_state = 242
-			owns_state = 246
 			controls_state = 246
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 223
+				state = 205
+				state = 243
+				state = 242
+				state = 246
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -1269,73 +1465,30 @@ integration_category = {
 			factor = 100
 		}
 	}
-	integrate_est_lech = {
-		icon = GFX_decision_generic_integration
-		available = {
-			has_country_flag = POL_created_lechia
-			has_manpower > 1000
-			has_equipment = { infantry_equipment > 999 }
-			owns_state = 191
-			controls_state = 191
-			owns_state = 813
-			controls_state = 813
-			owns_state = 13
-			controls_state = 13
-			owns_state = 812
-			controls_state = 812
-			owns_state = 811
-			controls_state = 811
-		}
-		fire_only_once = no
-		days_re_enable = 10
-		visible = {
-			has_completed_focus = POL_lechitic_legacy
-			OR = {
-				191 = { NOT = { is_core_of = POL } } 
-				13 = { NOT = { is_core_of = POL } } 
-				813 = { NOT = { is_core_of = POL } } 
-				812 = { NOT = { is_core_of = POL } } 
-				811 = { NOT = { is_core_of = POL } } 
-			}
-		}
-		cost = 100
-		days_remove = 100
-		modifier = {
-			
-		}
-		remove_effect = {
-			add_manpower = -1000
-			add_equipment_to_stockpile = {
-			    type = infantry_equipment
-			    amount = -1000
-			}
-			811 = { add_core_of = POL } 
-			812 = { add_core_of = POL } 
-			813 = { add_core_of = POL } 
-			191 = { add_core_of = POL } 
-			13 = { add_core_of = POL } 
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
 	integrate_north_gre_lech = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
 			controls_state = 805
 			controls_state = 185
 			controls_state = 731
-			controls_state = 985
+			controls_state = 1020
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 805
+				state = 185
+				state = 731
+				state = 1020
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
 			has_completed_focus = POL_lechitic_legacy
 			OR = {
-				985 = { NOT = { is_core_of = POL } } 
+				1020 = { NOT = { is_core_of = POL } } 
 				731 = { NOT = { is_core_of = POL } } 
 				185 = { NOT = { is_core_of = POL } } 
 				805 = { NOT = { is_core_of = POL } } 
@@ -1355,7 +1508,7 @@ integration_category = {
 			805 = { add_core_of = POL } 
 			185 = { add_core_of = POL } 
 			731 = { add_core_of = POL } 
-			985 = { add_core_of = POL } 
+			1020 = { add_core_of = POL } 
 		}
 		ai_will_do = {
 			factor = 100
@@ -1364,12 +1517,18 @@ integration_category = {
 	integrate_south_gre_lech = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
 			controls_state = 47
 			controls_state = 186
 			controls_state = 182
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 47
+				state = 186
+				state = 182
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -1403,25 +1562,34 @@ integration_category = {
 	integrate_east_tur_lech = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_country_flag = POL_created_lechia
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
 			controls_state = 341
 			controls_state = 340
 			controls_state = 339
-			controls_state = 347
 			controls_state = 164
 			controls_state = 184
 			controls_state = 187
 			controls_state = 342
 			controls_state = 343
 		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 341
+				state = 340
+				state = 339
+				state = 164
+				state = 184
+				state = 187
+				state = 342
+				state = 343
+			}
+		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
 			has_completed_focus = POL_lechitic_legacy
 			OR = {
-				347 = { NOT = { is_core_of = POL } }
 				339 = { NOT = { is_core_of = POL } }
 				340 = { NOT = { is_core_of = POL } }
 				341 = { NOT = { is_core_of = POL } }
@@ -1446,7 +1614,6 @@ integration_category = {
 			341 = { add_core_of = POL }
 			340 = { add_core_of = POL }
 			339 = { add_core_of = POL }
-			347 = { add_core_of = POL }
 			164 = { add_core_of = POL }
 			184 = { add_core_of = POL }
 			342 = { add_core_of = POL }
@@ -1460,30 +1627,51 @@ integration_category = {
 	integrate_fin_slav = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_global_flag = POL_formed_slavic_union
-			has_manpower > 1000
-			has_equipment = { infantry_equipment > 999 }
-			owns_state = 111
+			has_manpower > 4000
+			has_equipment = { infantry_equipment > 3999 }
 			controls_state = 111
-			owns_state = 149
 			controls_state = 149
-			owns_state = 150
 			controls_state = 150
-			owns_state = 146
 			controls_state = 146
-			owns_state = 148
 			controls_state = 148
+			controls_state = 928
+			controls_state = 930
+			controls_state = 926
+			controls_state = 927
+			controls_state = 929
+			controls_state = 147
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 111
+				state = 149
+				state = 150
+				state = 146
+				state = 148
+				state = 928
+				state = 930
+				state = 926
+				state = 927
+				state = 929
+				state = 147
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
 			has_completed_focus = POL_torch_for_all_slavs
 			OR = {
-				148 = { NOT = { is_core_of = POL } } 
-				146 = { NOT = { is_core_of = POL } } 
-				150 = { NOT = { is_core_of = POL } } 
-				149 = { NOT = { is_core_of = POL } } 
-				111 = { NOT = { is_core_of = POL } } 
+				148 = { NOT = { is_core_of = POL } }
+				146 = { NOT = { is_core_of = POL } }
+				150 = { NOT = { is_core_of = POL } }
+				149 = { NOT = { is_core_of = POL } }
+				111 = { NOT = { is_core_of = POL } }
+				928 = { NOT = { is_core_of = POL } }
+				930 = { NOT = { is_core_of = POL } }
+				926 = { NOT = { is_core_of = POL } }
+				927 = { NOT = { is_core_of = POL } }
+				929 = { NOT = { is_core_of = POL } }
+				147 = { NOT = { is_core_of = POL } }
 			}
 		}
 		cost = 100
@@ -1492,16 +1680,22 @@ integration_category = {
 			
 		}
 		remove_effect = {
-			add_manpower = -1000
+			add_manpower = -4000
 			add_equipment_to_stockpile = {
 			    type = infantry_equipment
-			    amount = -1000
+			    amount = -4000
 			}
-			111 = { add_core_of = POL } 
-			149 = { add_core_of = POL } 
-			150 = { add_core_of = POL } 
-			146 = { add_core_of = POL } 
-			148 = { add_core_of = POL } 
+			111 = { add_core_of = POL }
+			149 = { add_core_of = POL }
+			150 = { add_core_of = POL }
+			146 = { add_core_of = POL }
+			148 = { add_core_of = POL }
+			928 = { add_core_of = POL }
+			930 = { add_core_of = POL }
+			926 = { add_core_of = POL }
+			927 = { add_core_of = POL }
+			929 = { add_core_of = POL }
+			147 = { add_core_of = POL }
 		}
 		ai_will_do = {
 			factor = 100
@@ -1511,37 +1705,40 @@ integration_category = {
 		icon = GFX_decision_generic_integration
 		available = {
 			has_completed_focus = POL_keep_friends_from_above_baltic
-			has_global_flag = POL_formed_slavic_union
-			has_manpower > 1000
-			has_equipment = { infantry_equipment > 999 }
-			owns_state = 814
+			has_manpower > 4000
+			has_equipment = { infantry_equipment > 3999 }
 			controls_state = 814
-			owns_state = 11
 			controls_state = 11
-			owns_state = 189
 			controls_state = 189
-			owns_state = 815
 			controls_state = 815
-			owns_state = 809
 			controls_state = 809
-			owns_state = 190
 			controls_state = 190
-			owns_state = 808
 			controls_state = 808
-			owns_state = 12
 			controls_state = 12
-			owns_state = 810
 			controls_state = 810
-			owns_state = 191
 			controls_state = 191
-			owns_state = 13
 			controls_state = 13
-			owns_state = 813
 			controls_state = 813
-			owns_state = 812
 			controls_state = 812
-			owns_state = 811
 			controls_state = 811
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 814
+				state = 11
+				state = 189
+				state = 815
+				state = 809
+				state = 190
+				state = 808
+				state = 12
+				state = 810
+				state = 191
+				state = 13
+				state = 813
+				state = 812
+				state = 811
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -1570,10 +1767,10 @@ integration_category = {
 			
 		}
 		remove_effect = {
-			add_manpower = -1000
+			add_manpower = -4000
 			add_equipment_to_stockpile = {
 			    type = infantry_equipment
-			    amount = -1000
+			    amount = -4000
 			}
 			814 = { add_core_of = POL } 
 			11 = { add_core_of = POL } 
@@ -1597,20 +1794,20 @@ integration_category = {
 	integrate_slovakia_slavia = {
 		icon = GFX_decision_generic_integration
 		available = {
-			OR = {
-				has_global_flag = POL_formed_slavic_union
-				has_global_flag = POL_zapadoslavia_created
-			}
 			has_manpower > 1000
 			has_equipment = { infantry_equipment > 999 }
-			owns_state = 70
 			controls_state = 70
-			owns_state = 664
 			controls_state = 664
-			owns_state = 71
 			controls_state = 71
-			owns_state = 73
 			controls_state = 73
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 70
+				state = 664
+				state = 71
+				state = 73
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -1650,9 +1847,8 @@ integration_category = {
 	integrate_hungary_slavia = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_global_flag = POL_formed_slavic_union
-			has_manpower > 1000
-			has_equipment = { infantry_equipment > 999 }
+			has_manpower > 4000
+			has_equipment = { infantry_equipment > 3999 }
 			controls_state = 155
 			controls_state = 43
 			controls_state = 154
@@ -1662,6 +1858,19 @@ integration_category = {
 			controls_state = 82
 			controls_state = 974
 			controls_state = 973
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 155
+				state = 43
+				state = 154
+				state = 83
+				state = 84
+				state = 82
+				state = 974
+				state = 973
+				state = 76
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -1689,10 +1898,10 @@ integration_category = {
 			
 		}
 		remove_effect = {
-			add_manpower = -1000
+			add_manpower = -4000
 			add_equipment_to_stockpile = {
 			    type = infantry_equipment
-			    amount = -1000
+			    amount = -4000
 			}
 			155 = { add_core_of = POL }
 			43 = { add_core_of = POL }
@@ -1708,18 +1917,23 @@ integration_category = {
 			factor = 100
 		}
 	}
-	integrate_romania_slavia = {
+	integrate_wallachia_slavia = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_global_flag = POL_formed_slavic_union
-			has_manpower > 1000
-			has_equipment = { infantry_equipment > 999 }
-			controls_state = 80
-			controls_state = 79
-			controls_state = 78
-			controls_state = 766
-			controls_state = 46
+			has_manpower > 2000
+			has_equipment = { infantry_equipment > 1999 }
 			controls_state = 81
+			controls_state = 46
+			controls_state = 77
+			controls_state = 971
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 81
+				state = 46
+				state = 77
+				state = 971
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -1729,12 +1943,10 @@ integration_category = {
 					has_completed_focus = POL_torch_for_all_slavs
 				}
 				OR = {
-					80 = { NOT = { is_core_of = POL } }
-					79 = { NOT = { is_core_of = POL } }
-					78 = { NOT = { is_core_of = POL } }
-					766 = { NOT = { is_core_of = POL } }
-					46 = { NOT = { is_core_of = POL } }
 					81 = { NOT = { is_core_of = POL } }
+					46 = { NOT = { is_core_of = POL } }
+					77 = { NOT = { is_core_of = POL } }
+					971 = { NOT = { is_core_of = POL } }
 				}
 			}
 		}
@@ -1744,17 +1956,15 @@ integration_category = {
 			
 		}
 		remove_effect = {
-			add_manpower = -1000
+			add_manpower = -2000
 			add_equipment_to_stockpile = {
 			    type = infantry_equipment
-			    amount = -1000
+			    amount = -2000
 			}
-			80 = { add_core_of = POL }
-			79 = { add_core_of = POL }
-			78 = { add_core_of = POL }
-			46 = { add_core_of = POL }
 			81 = { add_core_of = POL }
-			766 = { add_core_of = POL }
+			46 = { add_core_of = POL }
+			77 = { add_core_of = POL }
+			971 = { add_core_of = POL }
 		}
 		ai_will_do = {
 			factor = 100
@@ -1764,11 +1974,10 @@ integration_category = {
 		icon = GFX_decision_generic_integration
 		available = {
 			has_completed_focus = POL_incorporate_beauty_of_east
-			has_global_flag = POL_formed_slavic_union
-			has_manpower > 1000
-			has_equipment = { infantry_equipment > 999 }
+			has_manpower > 5000
+			has_equipment = { infantry_equipment > 4999 }
 			controls_state = 311
-			controls_state = 988
+			controls_state = 1023
 			controls_state = 827
 			controls_state = 828
 			controls_state = 807
@@ -1779,6 +1988,22 @@ integration_category = {
 			controls_state = 231
 			controls_state = 233
 			controls_state = 826
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 311
+				state = 1023
+				state = 827
+				state = 828
+				state = 807
+				state = 821
+				state = 269
+				state = 229
+				state = 230
+				state = 231
+				state = 233
+				state = 826
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -1799,7 +2024,7 @@ integration_category = {
 					231 = { NOT = { is_core_of = POL } }
 					233 = { NOT = { is_core_of = POL } }
 					826 = { NOT = { is_core_of = POL } }
-					988 = { NOT = { is_core_of = POL } }
+					1023 = { NOT = { is_core_of = POL } }
 				}
 			}
 		}
@@ -1809,10 +2034,10 @@ integration_category = {
 			
 		}
 		remove_effect = {
-			add_manpower = -1000
+			add_manpower = -5000
 			add_equipment_to_stockpile = {
 			    type = infantry_equipment
-			    amount = -1000
+			    amount = -5000
 			}
 			311 = { add_core_of = POL }
 			827 = { add_core_of = POL }
@@ -1825,41 +2050,88 @@ integration_category = {
 			231 = { add_core_of = POL }
 			233 = { add_core_of = POL }
 			826 = { add_core_of = POL }
-			988 = { add_core_of = POL } 
+			1023 = { add_core_of = POL } 
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	}
-	integrate_south_balkans_slavia = {
+	integrate_bulgaria_slavia = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_completed_focus = POL_incorporate_beauty_of_east
-			has_global_flag = POL_formed_slavic_union
-			has_manpower > 1000
-			has_equipment = { infantry_equipment > 999 }
-			controls_state = 341
-			controls_state = 184
-			controls_state = 731
+			has_manpower > 3000
+			has_equipment = { infantry_equipment > 2999 }
+			controls_state = 211
+			controls_state = 212
+			controls_state = 48
+			controls_state = 106
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 211
+				state = 212
+				state = 48
+				state = 106
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			has_completed_focus = POL_torch_for_all_slavs
+			OR = {
+				211 = { NOT = { is_core_of = POL } }
+				212 = { NOT = { is_core_of = POL } }
+				48 = { NOT = { is_core_of = POL } }
+				106 = { NOT = { is_core_of = POL } }
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -3000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -3000
+			}
+			211 = { add_core_of = POL }
+			212 = { add_core_of = POL }
+			48 = { add_core_of = POL }
+			106 = { add_core_of = POL }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	integrate_albania_slavia = {
+		icon = GFX_decision_generic_integration
+		available = {
+			has_manpower > 3000
+			has_equipment = { infantry_equipment > 2999 }
 			controls_state = 44
-			controls_state = 805
-			controls_state = 185
+			controls_state = 934
+			controls_state = 801
+			controls_state = 105
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 44
+				state = 934
+				state = 801
+				state = 105
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
-			AND = {
-				POL = {
-					has_completed_focus = POL_torch_for_all_slavs
-				}
-				OR = {
-					341 = { NOT = { is_core_of = POL } }
-					184 = { NOT = { is_core_of = POL } }
-					731 = { NOT = { is_core_of = POL } }
-					44 = { NOT = { is_core_of = POL } }
-					805 = { NOT = { is_core_of = POL } }
-					185 = { NOT = { is_core_of = POL } }
-				}
+			has_completed_focus = POL_torch_for_all_slavs
+			OR = {
+				44 = { NOT = { is_core_of = POL } }
+				934 = { NOT = { is_core_of = POL } }
+				801 = { NOT = { is_core_of = POL } }
+				105 = { NOT = { is_core_of = POL } }
 			}
 		}
 		cost = 100
@@ -1868,77 +2140,50 @@ integration_category = {
 			
 		}
 		remove_effect = {
-			add_manpower = -1000
+			add_manpower = -3000
 			add_equipment_to_stockpile = {
 			    type = infantry_equipment
-			    amount = -1000
+			    amount = -3000
 			}
-			341 = { add_core_of = POL } 
-			184 = { add_core_of = POL } 
-			731 = { add_core_of = POL } 
-			44 = { add_core_of = POL } 
-			805 = { add_core_of = POL } 
-			185 = { add_core_of = POL } 
+			44 = { add_core_of = POL }
+			934 = { add_core_of = POL }
+			801 = { add_core_of = POL }
+			105 = { add_core_of = POL }
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	}
-	integrate_khanates_slavia = {
+	integrate_serbia_slavia = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_completed_focus = POL_incorporate_beauty_of_east
-			has_global_flag = POL_formed_slavic_union
-			has_manpower > 1000
-			has_equipment = { infantry_equipment > 999 }
-			controls_state = 407
-			controls_state = 406
-			controls_state = 402
-			controls_state = 583
-			controls_state = 590
-			controls_state = 588
-			controls_state = 589
-			controls_state = 404
-			controls_state = 587
-			controls_state = 994
-			controls_state = 831
-			controls_state = 823
-			controls_state = 584
-			controls_state = 830
-			controls_state = 405
-			controls_state = 585
-			controls_state = 732
-			controls_state = 742
-			controls_state = 586
+			has_manpower > 3000
+			has_equipment = { infantry_equipment > 2999 }
+			controls_state = 108
+			controls_state = 107
+			controls_state = 847
+			controls_state = 151
+			controls_state = 45
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 108
+				state = 107
+				state = 847
+				state = 151
+				state = 45
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
-			AND = {
-				POL = {
-					has_completed_focus = POL_torch_for_all_slavs
-				}
-				OR = {
-					407 = { NOT = { is_core_of = POL } }
-					406 = { NOT = { is_core_of = POL } }
-					402 = { NOT = { is_core_of = POL } }
-					583 = { NOT = { is_core_of = POL } }
-					590 = { NOT = { is_core_of = POL } }
-					588 = { NOT = { is_core_of = POL } }
-					589 = { NOT = { is_core_of = POL } }
-					404 = { NOT = { is_core_of = POL } }
-					587 = { NOT = { is_core_of = POL } }
-					831 = { NOT = { is_core_of = POL } }
-					823 = { NOT = { is_core_of = POL } }
-					584 = { NOT = { is_core_of = POL } }
-					830 = { NOT = { is_core_of = POL } }
-					405 = { NOT = { is_core_of = POL } }
-					585 = { NOT = { is_core_of = POL } }
-					732 = { NOT = { is_core_of = POL } }
-					742 = { NOT = { is_core_of = POL } }
-					586 = { NOT = { is_core_of = POL } }
-					994 = { NOT = { is_core_of = POL } }
-				}
+			has_completed_focus = POL_torch_for_all_slavs
+			OR = {
+				108 = { NOT = { is_core_of = POL } }
+				107 = { NOT = { is_core_of = POL } }
+				847 = { NOT = { is_core_of = POL } }
+				151 = { NOT = { is_core_of = POL } }
+				45 = { NOT = { is_core_of = POL } }
 			}
 		}
 		cost = 100
@@ -1947,88 +2192,48 @@ integration_category = {
 			
 		}
 		remove_effect = {
-			add_manpower = -1000
+			add_manpower = -3000
 			add_equipment_to_stockpile = {
 			    type = infantry_equipment
-			    amount = -1000
+			    amount = -3000
 			}
-			407 = { add_core_of = POL }
-			406 = { add_core_of = POL }
-			402 = { add_core_of = POL }
-			583 = { add_core_of = POL }
-			590 = { add_core_of = POL }
-			588 = { add_core_of = POL }
-			589 = { add_core_of = POL }
-			404 = { add_core_of = POL }
-			587 = { add_core_of = POL }
-			831 = { add_core_of = POL }
-			823 = { add_core_of = POL }
-			584 = { add_core_of = POL }
-			830 = { add_core_of = POL }
-			405 = { add_core_of = POL }
-			585 = { add_core_of = POL }
-			732 = { add_core_of = POL }
-			742 = { add_core_of = POL }
-			586 = { add_core_of = POL }
-			994 = { add_core_of = POL }
+			108 = { add_core_of = POL }
+			107 = { add_core_of = POL }
+			847 = { add_core_of = POL }
+			151 = { add_core_of = POL }
+			45 = { add_core_of = POL }
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	}
-	integrate_mongols_slavia = {
+	integrate_croatia_slavia = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_completed_focus = POL_incorporate_beauty_of_east
-			has_global_flag = POL_formed_slavic_union
-			has_manpower > 1000
-			has_equipment = { infantry_equipment > 999 }
-			owns_state = 329
-			controls_state = 329
-			owns_state = 818
-			controls_state = 818
-			owns_state = 820
-			controls_state = 820
-			owns_state = 330
-			controls_state = 330
-			owns_state = 817
-			controls_state = 817
-			owns_state = 819
-			controls_state = 819
-			owns_state = 618
-			controls_state = 618
-			owns_state = 617
-			controls_state = 617
-			owns_state = 287
-			controls_state = 287
-			owns_state = 619
-			controls_state = 619
-			owns_state = 759
-			controls_state = 759
-			owns_state = 760
-			controls_state = 760
+			has_manpower > 3000
+			has_equipment = { infantry_equipment > 2999 }
+			controls_state = 104
+			controls_state = 970
+			controls_state = 103
+			controls_state = 109
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 104
+				state = 970
+				state = 103
+				state = 109
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
 		visible = {
-			AND = {
-				POL = {
-					has_completed_focus = POL_torch_for_all_slavs
-				}
-				OR = {
-					329 = { NOT = { is_core_of = POL } } 
-					818 = { NOT = { is_core_of = POL } } 
-					820 = { NOT = { is_core_of = POL } } 
-					330 = { NOT = { is_core_of = POL } } 
-					817 = { NOT = { is_core_of = POL } } 
-					819 = { NOT = { is_core_of = POL } } 
-					618 = { NOT = { is_core_of = POL } } 
-					617 = { NOT = { is_core_of = POL } } 
-					287 = { NOT = { is_core_of = POL } } 
-					619 = { NOT = { is_core_of = POL } } 
-					759 = { NOT = { is_core_of = POL } } 
-					760 = { NOT = { is_core_of = POL } } 
-				}
+			has_completed_focus = POL_torch_for_all_slavs
+			OR = {
+				104 = { NOT = { is_core_of = POL } }
+				970 = { NOT = { is_core_of = POL } }
+				103 = { NOT = { is_core_of = POL } }
+				109 = { NOT = { is_core_of = POL } }
 			}
 		}
 		cost = 100
@@ -2037,61 +2242,153 @@ integration_category = {
 			
 		}
 		remove_effect = {
-			add_manpower = -1000
+			add_manpower = -3000
 			add_equipment_to_stockpile = {
 			    type = infantry_equipment
-			    amount = -1000
+			    amount = -3000
 			}
-			329 = { add_core_of = POL } 
-			818 = { add_core_of = POL } 
-			820 = { add_core_of = POL } 
-			330 = { add_core_of = POL } 
-			817 = { add_core_of = POL } 
-			819 = { add_core_of = POL } 
-			618 = { add_core_of = POL } 
-			617 = { add_core_of = POL } 
-			287 = { add_core_of = POL } 
-			619 = { add_core_of = POL } 
-			759 = { add_core_of = POL } 
-			760 = { add_core_of = POL } 
+			104 = { add_core_of = POL }
+			970 = { add_core_of = POL }
+			103 = { add_core_of = POL }
+			109 = { add_core_of = POL }
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	}
-	integrate_far_east_slavia = {
+	integrate_slovenia_slavia = {
 		icon = GFX_decision_generic_integration
 		available = {
-			has_completed_focus = POL_incorporate_beauty_of_east
-			has_global_flag = POL_formed_slavic_union
-			has_manpower > 1000
-			has_equipment = { infantry_equipment > 999 }
-			owns_state = 561
-			controls_state = 561
-			owns_state = 657
-			controls_state = 657
-			owns_state = 560
-			controls_state = 560
-			owns_state = 409
-			controls_state = 409
-			owns_state = 408
-			controls_state = 408
-			owns_state = 537
-			controls_state = 537
-			owns_state = 555
-			controls_state = 555
-			owns_state = 612
-			controls_state = 612
-			owns_state = 715
-			controls_state = 715
-			owns_state = 328
-			controls_state = 328
-			owns_state = 717
-			controls_state = 717
-			owns_state = 714
-			controls_state = 714
-			owns_state = 761
-			controls_state = 761
+			has_manpower > 3000
+			has_equipment = { infantry_equipment > 2999 }
+			controls_state = 102
+			controls_state = 853
+			controls_state = 736
+			controls_state = 852
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 102
+				state = 853
+				state = 736
+				state = 852
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			has_completed_focus = POL_torch_for_all_slavs
+			OR = {
+				102 = { NOT = { is_core_of = POL } }
+				853 = { NOT = { is_core_of = POL } }
+				736 = { NOT = { is_core_of = POL } }
+				852 = { NOT = { is_core_of = POL } }
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -3000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -3000
+			}
+			102 = { add_core_of = POL }
+			853 = { add_core_of = POL }
+			736 = { add_core_of = POL }
+			852 = { add_core_of = POL }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	integrate_austria_slavia = {
+		icon = GFX_decision_generic_integration
+		available = {
+			has_manpower > 4000
+			has_equipment = { infantry_equipment > 3999 }
+			controls_state = 975
+			controls_state = 4
+			controls_state = 152
+			controls_state = 976
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 975
+				state = 4
+				state = 152
+				state = 976
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			has_completed_focus = POL_torch_for_all_slavs
+			OR = {
+				975 = { NOT = { is_core_of = POL } }
+				4 = { NOT = { is_core_of = POL } }
+				152 = { NOT = { is_core_of = POL } }
+				976 = { NOT = { is_core_of = POL } }
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -4000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -4000
+			}
+			975 = { add_core_of = POL }
+			4 = { add_core_of = POL }
+			152 = { add_core_of = POL }
+			976 = { add_core_of = POL }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	integrate_south_russia_slavia = {
+		icon = GFX_decision_generic_integration
+		available = {
+			has_manpower > 6000
+			has_equipment = { infantry_equipment > 5999 }
+			controls_state = 137
+			controls_state = 196
+			controls_state = 200
+			controls_state = 227
+			controls_state = 218
+			controls_state = 228
+			controls_state = 245
+			controls_state = 217
+			controls_state = 237
+			controls_state = 238
+			controls_state = 234
+			controls_state = 235
+			controls_state = 232
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 137
+				state = 196
+				state = 200
+				state = 227
+				state = 218
+				state = 228
+				state = 245
+				state = 217
+				state = 237
+				state = 238
+				state = 234
+				state = 235
+				state = 232
+			}
 		}
 		fire_only_once = no
 		days_re_enable = 10
@@ -2123,10 +2420,995 @@ integration_category = {
 			
 		}
 		remove_effect = {
+			add_manpower = -6000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -6000
+			}
+			561 = { add_core_of = POL } 
+			657 = { add_core_of = POL } 
+			560 = { add_core_of = POL } 
+			409 = { add_core_of = POL } 
+			408 = { add_core_of = POL } 
+			537 = { add_core_of = POL } 
+			555 = { add_core_of = POL } 
+			612 = { add_core_of = POL } 
+			715 = { add_core_of = POL } 
+			328 = { add_core_of = POL } 
+			717 = { add_core_of = POL } 
+			714 = { add_core_of = POL } 
+			761 = { add_core_of = POL } 
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	integrate_central_russia_slavia = {
+		icon = GFX_decision_generic_integration
+		available = {
+			has_manpower > 6000
+			has_equipment = { infantry_equipment > 5999 }
+			controls_state = 829
+			controls_state = 265
+			controls_state = 260
+			controls_state = 240
+			controls_state = 220
+			controls_state = 224
+			controls_state = 243
+			controls_state = 242
+			controls_state = 205
+			controls_state = 222
+			controls_state = 223
+			controls_state = 258
+			controls_state = 257
+			controls_state = 239
+			controls_state = 250
+			controls_state = 255
+			controls_state = 256
+			controls_state = 833
+			controls_state = 252
+			controls_state = 254
+			controls_state = 253
+			controls_state = 219
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 829
+				state = 265
+				state = 260
+				state = 240
+				state = 220
+				state = 224
+				state = 243
+				state = 242
+				state = 205
+				state = 222
+				state = 223
+				state = 258
+				state = 257
+				state = 239
+				state = 250
+				state = 255
+				state = 256
+				state = 833
+				state = 252
+				state = 254
+				state = 253
+				state = 219
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			AND = {
+				POL = {
+					has_completed_focus = POL_torch_for_all_slavs
+				}
+				OR = {	
+					829 = { NOT = { is_core_of = POL } }
+					265 = { NOT = { is_core_of = POL } }
+					260 = { NOT = { is_core_of = POL } }
+					240 = { NOT = { is_core_of = POL } }
+					220 = { NOT = { is_core_of = POL } }
+					224 = { NOT = { is_core_of = POL } }
+					243 = { NOT = { is_core_of = POL } }
+					242 = { NOT = { is_core_of = POL } }
+					205 = { NOT = { is_core_of = POL } }
+					222 = { NOT = { is_core_of = POL } }
+					223 = { NOT = { is_core_of = POL } }
+					258 = { NOT = { is_core_of = POL } }
+					257 = { NOT = { is_core_of = POL } }
+					239 = { NOT = { is_core_of = POL } }
+					250 = { NOT = { is_core_of = POL } }
+					255 = { NOT = { is_core_of = POL } }
+					256 = { NOT = { is_core_of = POL } }
+					833 = { NOT = { is_core_of = POL } }
+					252 = { NOT = { is_core_of = POL } }
+					254 = { NOT = { is_core_of = POL } }
+					253 = { NOT = { is_core_of = POL } }
+					219 = { NOT = { is_core_of = POL } }
+				}
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -6000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -6000
+			}
+			829 = { add_core_of = POL }
+			265 = { add_core_of = POL }
+			260 = { add_core_of = POL }
+			240 = { add_core_of = POL }
+			220 = { add_core_of = POL }
+			224 = { add_core_of = POL }
+			243 = { add_core_of = POL }
+			242 = { add_core_of = POL }
+			205 = { add_core_of = POL }
+			222 = { add_core_of = POL }
+			223 = { add_core_of = POL }
+			258 = { add_core_of = POL }
+			257 = { add_core_of = POL }
+			239 = { add_core_of = POL }
+			250 = { add_core_of = POL }
+			255 = { add_core_of = POL }
+			256 = { add_core_of = POL }
+			833 = { add_core_of = POL }
+			252 = { add_core_of = POL }
+			254 = { add_core_of = POL }
+			253 = { add_core_of = POL }
+			219 = { add_core_of = POL }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	integrate_northern_russia_slavia = {
+		icon = GFX_decision_generic_integration
+		available = {
+			has_manpower > 6000
+			has_equipment = { infantry_equipment > 5999 }
+			controls_state = 210
+			controls_state = 209
+			controls_state = 263
+			controls_state = 208
+			controls_state = 244
+			controls_state = 195
+			controls_state = 246
+			controls_state = 247
+			controls_state = 264
+			controls_state = 248
+			controls_state = 351
+			controls_state = 216
+			controls_state = 215
+			controls_state = 213
+			controls_state = 722
+			controls_state = 879
+			controls_state = 214
+			controls_state = 880
+			controls_state = 400
+			controls_state = 397
+			controls_state = 262
+			controls_state = 825
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 210
+				state = 209
+				state = 263
+				state = 208
+				state = 244
+				state = 195
+				state = 246
+				state = 247
+				state = 264
+				state = 248
+				state = 351
+				state = 216
+				state = 215
+				state = 213
+				state = 722
+				state = 879
+				state = 214
+				state = 880
+				state = 400
+				state = 397
+				state = 262
+				state = 825
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			AND = {
+				POL = {
+					has_completed_focus = POL_torch_for_all_slavs
+				}
+				OR = {
+					210 = { NOT = { is_core_of = POL } }
+					209 = { NOT = { is_core_of = POL } }
+					263 = { NOT = { is_core_of = POL } }
+					208 = { NOT = { is_core_of = POL } }
+					244 = { NOT = { is_core_of = POL } }
+					195 = { NOT = { is_core_of = POL } }
+					246 = { NOT = { is_core_of = POL } }
+					247 = { NOT = { is_core_of = POL } }
+					264 = { NOT = { is_core_of = POL } }
+					248 = { NOT = { is_core_of = POL } }
+					351 = { NOT = { is_core_of = POL } }
+					216 = { NOT = { is_core_of = POL } }
+					215 = { NOT = { is_core_of = POL } }
+					213 = { NOT = { is_core_of = POL } }
+					722 = { NOT = { is_core_of = POL } }
+					879 = { NOT = { is_core_of = POL } }
+					214 = { NOT = { is_core_of = POL } }
+					880 = { NOT = { is_core_of = POL } }
+					400 = { NOT = { is_core_of = POL } }
+					397 = { NOT = { is_core_of = POL } }
+					262 = { NOT = { is_core_of = POL } }
+					825 = { NOT = { is_core_of = POL } }
+				}
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -6000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -6000
+			}	
+			210 = { add_core_of = POL }
+			209 = { add_core_of = POL }
+			263 = { add_core_of = POL }
+			208 = { add_core_of = POL }
+			244 = { add_core_of = POL }
+			195 = { add_core_of = POL }
+			246 = { add_core_of = POL }
+			247 = { add_core_of = POL }
+			264 = { add_core_of = POL }
+			248 = { add_core_of = POL }
+			351 = { add_core_of = POL }
+			216 = { add_core_of = POL }
+			215 = { add_core_of = POL }
+			213 = { add_core_of = POL }
+			722 = { add_core_of = POL }
+			879 = { add_core_of = POL }
+			214 = { add_core_of = POL }
+			880 = { add_core_of = POL }
+			400 = { add_core_of = POL }
+			397 = { add_core_of = POL }
+			262 = { add_core_of = POL }
+			825 = { add_core_of = POL }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	integrate_eastern_russia_slavia = {
+		icon = GFX_decision_generic_integration
+		available = {
+			has_manpower > 6000
+			has_equipment = { infantry_equipment > 5999 }
+			controls_state = 581
+			controls_state = 398
+			controls_state = 573
+			controls_state = 582
+			controls_state = 249
+			controls_state = 399
+			controls_state = 652
+			controls_state = 251
+			controls_state = 401
+			controls_state = 651
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 581
+				state = 398
+				state = 573
+				state = 582
+				state = 249
+				state = 399
+				state = 652
+				state = 251
+				state = 401
+				state = 651
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			AND = {
+				POL = {
+					has_completed_focus = POL_torch_for_all_slavs
+				}
+				OR = {
+					581 = { NOT = { is_core_of = POL } }
+					398 = { NOT = { is_core_of = POL } }
+					573 = { NOT = { is_core_of = POL } }
+					582 = { NOT = { is_core_of = POL } }
+					249 = { NOT = { is_core_of = POL } }
+					399 = { NOT = { is_core_of = POL } }
+					652 = { NOT = { is_core_of = POL } }
+					251 = { NOT = { is_core_of = POL } }
+					401 = { NOT = { is_core_of = POL } }
+					651 = { NOT = { is_core_of = POL } }
+				}
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -6000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -6000
+			}	
+			581 = { add_core_of = POL }
+			398 = { add_core_of = POL }
+			573 = { add_core_of = POL }
+			582 = { add_core_of = POL }
+			249 = { add_core_of = POL }
+			399 = { add_core_of = POL }
+			652 = { add_core_of = POL }
+			251 = { add_core_of = POL }
+			401 = { add_core_of = POL }
+			651 = { add_core_of = POL }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	integrate_western_siberia_slavia = {
+		icon = GFX_decision_generic_integration
+		available = {
+			has_completed_focus = POL_incorporate_beauty_of_east
+			has_manpower > 6000
+			has_equipment = { infantry_equipment > 5999 }
+			controls_state = 653
+			controls_state = 572
+			controls_state = 580
+			controls_state = 579
+			controls_state = 403
+			controls_state = 577
+			controls_state = 824
+			controls_state = 578
+			controls_state = 570
+			controls_state = 571
+			controls_state = 882
+			controls_state = 40
+			controls_state = 654
+			controls_state = 569
+			controls_state = 568
+			controls_state = 576
+			controls_state = 516
+			controls_state = 878
+			controls_state = 567
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 653
+				state = 572
+				state = 580
+				state = 579
+				state = 403
+				state = 577
+				state = 824
+				state = 578
+				state = 570
+				state = 571
+				state = 882
+				state = 40
+				state = 654
+				state = 569
+				state = 568
+				state = 576
+				state = 516
+				state = 878
+				state = 567
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			AND = {
+				POL = {
+					has_completed_focus = POL_torch_for_all_slavs
+				}
+				OR = {
+					653 = { NOT = { is_core_of = POL } }
+					572 = { NOT = { is_core_of = POL } }
+					580 = { NOT = { is_core_of = POL } }
+					579 = { NOT = { is_core_of = POL } }
+					403 = { NOT = { is_core_of = POL } }
+					577 = { NOT = { is_core_of = POL } }
+					824 = { NOT = { is_core_of = POL } }
+					578 = { NOT = { is_core_of = POL } }
+					570 = { NOT = { is_core_of = POL } }
+					571 = { NOT = { is_core_of = POL } }
+					882 = { NOT = { is_core_of = POL } }
+					40 = { NOT = { is_core_of = POL } }
+					654 = { NOT = { is_core_of = POL } }
+					569 = { NOT = { is_core_of = POL } }
+					568 = { NOT = { is_core_of = POL } }
+					576 = { NOT = { is_core_of = POL } }
+					516 = { NOT = { is_core_of = POL } }
+					878 = { NOT = { is_core_of = POL } }
+					567 = { NOT = { is_core_of = POL } }
+				}
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -6000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -6000
+			}	
+			653 = { add_core_of = POL }
+			572 = { add_core_of = POL }
+			580 = { add_core_of = POL }
+			579 = { add_core_of = POL }
+			403 = { add_core_of = POL }
+			577 = { add_core_of = POL }
+			824 = { add_core_of = POL }
+			578 = { add_core_of = POL }
+			570 = { add_core_of = POL }
+			571 = { add_core_of = POL }
+			882 = { add_core_of = POL }
+			40 = { add_core_of = POL }
+			654 = { add_core_of = POL }
+			569 = { add_core_of = POL }
+			568 = { add_core_of = POL }
+			576 = { add_core_of = POL }
+			516 = { add_core_of = POL }
+			878 = { add_core_of = POL }
+			567 = { add_core_of = POL }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	integrate_eastern_siberia_slavia = {
+		icon = GFX_decision_generic_integration
+		available = {
+			has_completed_focus = POL_incorporate_beauty_of_east
+			has_manpower > 3000
+			has_equipment = { infantry_equipment > 2999 }
+			controls_state = 575
+			controls_state = 876
+			controls_state = 566
+			controls_state = 564
+			controls_state = 563
+			controls_state = 565
+			controls_state = 574
+			controls_state = 877
+			controls_state = 562
+			controls_state = 874
+			controls_state = 644
+			controls_state = 822
+			controls_state = 637
+			controls_state = 569
+			controls_state = 568
+			controls_state = 576
+			controls_state = 516
+			controls_state = 878
+			controls_state = 567
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 575
+				state = 876
+				state = 566
+				state = 564
+				state = 563
+				state = 565
+				state = 574
+				state = 877
+				state = 562
+				state = 874
+				state = 644
+				state = 822
+				state = 637
+				state = 569
+				state = 568
+				state = 576
+				state = 516
+				state = 878
+				state = 567
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			AND = {
+				POL = {
+					has_completed_focus = POL_torch_for_all_slavs
+				}
+				OR = {
+					575 = { NOT = { is_core_of = POL } }
+					876 = { NOT = { is_core_of = POL } }
+					566 = { NOT = { is_core_of = POL } }
+					564 = { NOT = { is_core_of = POL } }
+					563 = { NOT = { is_core_of = POL } }
+					565 = { NOT = { is_core_of = POL } }
+					574 = { NOT = { is_core_of = POL } }
+					877 = { NOT = { is_core_of = POL } }
+					562 = { NOT = { is_core_of = POL } }
+					874 = { NOT = { is_core_of = POL } }
+					644 = { NOT = { is_core_of = POL } }
+					822 = { NOT = { is_core_of = POL } }
+					637 = { NOT = { is_core_of = POL } }
+					569 = { NOT = { is_core_of = POL } }
+					568 = { NOT = { is_core_of = POL } }
+					576 = { NOT = { is_core_of = POL } }
+					516 = { NOT = { is_core_of = POL } }
+					878 = { NOT = { is_core_of = POL } }
+					567 = { NOT = { is_core_of = POL } }
+				}
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -3000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -3000
+			}	
+			575 = { add_core_of = POL }
+			876 = { add_core_of = POL }
+			566 = { add_core_of = POL }
+			564 = { add_core_of = POL }
+			563 = { add_core_of = POL }
+			565 = { add_core_of = POL }
+			574 = { add_core_of = POL }
+			877 = { add_core_of = POL }
+			562 = { add_core_of = POL }
+			874 = { add_core_of = POL }
+			644 = { add_core_of = POL }
+			822 = { add_core_of = POL }
+			637 = { add_core_of = POL }
+			569 = { add_core_of = POL }
+			568 = { add_core_of = POL }
+			576 = { add_core_of = POL }
+			516 = { add_core_of = POL }
+			878 = { add_core_of = POL }
+			567 = { add_core_of = POL }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	integrate_russian_america_slavia = {
+		icon = GFX_decision_generic_integration
+		available = {
+			has_completed_focus = POL_incorporate_beauty_of_east
+			has_manpower > 1000
+			has_equipment = { infantry_equipment > 999 }
+			controls_state = 650
+			controls_state = 875
+			controls_state = 463
+			controls_state = 864
+			controls_state = 471
+			controls_state = 739
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 650
+				state = 875
+				state = 463
+				state = 864
+				state = 471
+				state = 739
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			AND = {
+				POL = {
+					has_completed_focus = POL_torch_for_all_slavs
+				}
+				OR = {
+					650 = { NOT = { is_core_of = POL } }
+					875 = { NOT = { is_core_of = POL } }
+					463 = { NOT = { is_core_of = POL } }
+					864 = { NOT = { is_core_of = POL } }
+					471 = { NOT = { is_core_of = POL } }
+					739 = { NOT = { is_core_of = POL } }
+				}
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
 			add_manpower = -1000
 			add_equipment_to_stockpile = {
 			    type = infantry_equipment
 			    amount = -1000
+			}
+			650 = { add_core_of = POL }
+			875 = { add_core_of = POL }
+			463 = { add_core_of = POL }
+			864 = { add_core_of = POL }
+			471 = { add_core_of = POL }
+			739 = { add_core_of = POL }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	integrate_south_balkans_slavia = {
+		icon = GFX_decision_generic_integration
+		available = {
+			has_completed_focus = POL_incorporate_beauty_of_east
+			has_manpower > 5000
+			has_equipment = { infantry_equipment > 4999 }
+			controls_state = 341
+			controls_state = 184
+			controls_state = 731
+			controls_state = 1020
+			controls_state = 805
+			controls_state = 185
+			controls_state = 47
+			controls_state = 186
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 341
+				state = 184
+				state = 731
+				state = 1020
+				state = 805
+				state = 185
+				state = 47
+				state = 186
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			has_completed_focus = POL_torch_for_all_slavs
+			OR = {
+				341 = { NOT = { is_core_of = POL } }
+				184 = { NOT = { is_core_of = POL } }
+				731 = { NOT = { is_core_of = POL } }
+				1020 = { NOT = { is_core_of = POL } }
+				805 = { NOT = { is_core_of = POL } }
+				185 = { NOT = { is_core_of = POL } }
+				47 = { NOT = { is_core_of = POL } }
+				186 = { NOT = { is_core_of = POL } }
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -5000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -5000
+			}
+			341 = { add_core_of = POL }
+			184 = { add_core_of = POL }
+			731 = { add_core_of = POL }
+			1020 = { add_core_of = POL }
+			805 = { add_core_of = POL }
+			185 = { add_core_of = POL }
+			47 = { add_core_of = POL }
+			186 = { add_core_of = POL }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	integrate_khanates_slavia = {
+		icon = GFX_decision_generic_integration
+		available = {
+			has_completed_focus = POL_incorporate_beauty_of_east
+			has_manpower > 5000
+			has_equipment = { infantry_equipment > 4999 }
+			controls_state = 407
+			controls_state = 406
+			controls_state = 402
+			controls_state = 583
+			controls_state = 590
+			controls_state = 588
+			controls_state = 589
+			controls_state = 404
+			controls_state = 587
+			controls_state = 881
+			controls_state = 831
+			controls_state = 823
+			controls_state = 584
+			controls_state = 830
+			controls_state = 405
+			controls_state = 585
+			controls_state = 732
+			controls_state = 742
+			controls_state = 586
+			controls_state = 1017
+			controls_state = 832
+			controls_state = 236
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 407
+				state = 406
+				state = 402
+				state = 583
+				state = 590
+				state = 588
+				state = 589
+				state = 404
+				state = 587
+				state = 881
+				state = 831
+				state = 823
+				state = 584
+				state = 830
+				state = 405
+				state = 585
+				state = 732
+				state = 742
+				state = 586
+				state = 1017
+				state = 832
+				state = 236
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			AND = {
+				POL = {
+					has_completed_focus = POL_torch_for_all_slavs
+				}
+				OR = {
+					407 = { NOT = { is_core_of = POL } }
+					406 = { NOT = { is_core_of = POL } }
+					402 = { NOT = { is_core_of = POL } }
+					583 = { NOT = { is_core_of = POL } }
+					590 = { NOT = { is_core_of = POL } }
+					588 = { NOT = { is_core_of = POL } }
+					589 = { NOT = { is_core_of = POL } }
+					404 = { NOT = { is_core_of = POL } }
+					587 = { NOT = { is_core_of = POL } }
+					831 = { NOT = { is_core_of = POL } }
+					823 = { NOT = { is_core_of = POL } }
+					584 = { NOT = { is_core_of = POL } }
+					830 = { NOT = { is_core_of = POL } }
+					405 = { NOT = { is_core_of = POL } }
+					585 = { NOT = { is_core_of = POL } }
+					732 = { NOT = { is_core_of = POL } }
+					742 = { NOT = { is_core_of = POL } }
+					586 = { NOT = { is_core_of = POL } }
+					881 = { NOT = { is_core_of = POL } }
+					1017 = { NOT = { is_core_of = POL } }
+					832 = { NOT = { is_core_of = POL } }
+					236 = { NOT = { is_core_of = POL } }
+				}
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -5000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -5000
+			}
+			407 = { add_core_of = POL }
+			406 = { add_core_of = POL }
+			402 = { add_core_of = POL }
+			583 = { add_core_of = POL }
+			590 = { add_core_of = POL }
+			588 = { add_core_of = POL }
+			589 = { add_core_of = POL }
+			404 = { add_core_of = POL }
+			587 = { add_core_of = POL }
+			831 = { add_core_of = POL }
+			823 = { add_core_of = POL }
+			584 = { add_core_of = POL }
+			830 = { add_core_of = POL }
+			405 = { add_core_of = POL }
+			585 = { add_core_of = POL }
+			732 = { add_core_of = POL }
+			742 = { add_core_of = POL }
+			586 = { add_core_of = POL }
+			881 = { add_core_of = POL }
+			1017 = { add_core_of = POL }
+			832 = { add_core_of = POL }
+			236 = { add_core_of = POL }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	integrate_mongols_slavia = {
+		icon = GFX_decision_generic_integration
+		available = {
+			has_completed_focus = POL_incorporate_beauty_of_east
+			has_manpower > 5000
+			has_equipment = { infantry_equipment > 4999 }
+			controls_state = 329
+			controls_state = 818
+			controls_state = 820
+			controls_state = 330
+			controls_state = 817
+			controls_state = 819
+			controls_state = 618
+			controls_state = 617
+			controls_state = 287
+			controls_state = 619
+			controls_state = 759
+			controls_state = 760
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 329
+				state = 818
+				state = 820
+				state = 330
+				state = 817
+				state = 819
+				state = 618
+				state = 617
+				state = 287
+				state = 619
+				state = 759
+				state = 760
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			AND = {
+				POL = {
+					has_completed_focus = POL_torch_for_all_slavs
+				}
+				OR = {
+					329 = { NOT = { is_core_of = POL } } 
+					818 = { NOT = { is_core_of = POL } } 
+					820 = { NOT = { is_core_of = POL } } 
+					330 = { NOT = { is_core_of = POL } } 
+					817 = { NOT = { is_core_of = POL } } 
+					819 = { NOT = { is_core_of = POL } } 
+					618 = { NOT = { is_core_of = POL } } 
+					617 = { NOT = { is_core_of = POL } } 
+					287 = { NOT = { is_core_of = POL } } 
+					619 = { NOT = { is_core_of = POL } } 
+					759 = { NOT = { is_core_of = POL } } 
+					760 = { NOT = { is_core_of = POL } } 
+				}
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -5000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -5000
+			}
+			329 = { add_core_of = POL } 
+			818 = { add_core_of = POL } 
+			820 = { add_core_of = POL } 
+			330 = { add_core_of = POL } 
+			817 = { add_core_of = POL } 
+			819 = { add_core_of = POL } 
+			618 = { add_core_of = POL } 
+			617 = { add_core_of = POL } 
+			287 = { add_core_of = POL } 
+			619 = { add_core_of = POL } 
+			759 = { add_core_of = POL } 
+			760 = { add_core_of = POL } 
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	integrate_far_east_slavia = {
+		icon = GFX_decision_generic_integration
+		available = {
+			has_completed_focus = POL_incorporate_beauty_of_east
+			has_manpower > 6000
+			has_equipment = { infantry_equipment > 5999 }
+			controls_state = 561
+			controls_state = 657
+			controls_state = 560
+			controls_state = 409
+			controls_state = 408
+			controls_state = 537
+			controls_state = 555
+			controls_state = 612
+			controls_state = 715
+			controls_state = 328
+			controls_state = 717
+			controls_state = 714
+			controls_state = 761
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 561
+				state = 657
+				state = 560
+				state = 409
+				state = 408
+				state = 537
+				state = 555
+				state = 612
+				state = 715
+				state = 328
+				state = 717
+				state = 714
+				state = 761
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			AND = {
+				POL = {
+					has_completed_focus = POL_torch_for_all_slavs
+				}
+				OR = {
+					561 = { NOT = { is_core_of = POL } } 
+					657 = { NOT = { is_core_of = POL } } 
+					560 = { NOT = { is_core_of = POL } } 
+					409 = { NOT = { is_core_of = POL } } 
+					408 = { NOT = { is_core_of = POL } } 
+					537 = { NOT = { is_core_of = POL } } 
+					555 = { NOT = { is_core_of = POL } } 
+					612 = { NOT = { is_core_of = POL } } 
+					715 = { NOT = { is_core_of = POL } } 
+					328 = { NOT = { is_core_of = POL } } 
+					717 = { NOT = { is_core_of = POL } } 
+					714 = { NOT = { is_core_of = POL } } 
+					761 = { NOT = { is_core_of = POL } } 
+				}
+			}
+		}
+		cost = 100
+		days_remove = 100
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_manpower = -6000
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -6000
 			}
 			561 = { add_core_of = POL } 
 			657 = { add_core_of = POL } 
@@ -5947,648 +7229,6 @@ seek_empire_category = {
 			base = 1000
 		}
 	}
-	create_empire_lechia = {
-		fire_only_once = yes
-		icon = GFX_decision_slavic_sun
-		visible = {
-			has_completed_focus = POL_lechitic_legacy
-		}
-		available = {
-			POL = {is_faction_leader = yes}
-			POL = {is_major = yes}
-			POL = {is_subject = no}
-			custom_trigger_tooltip = {##Poland
-				tooltip = POL_custom_trigger_tooltip_POL
-				controls_state = 5
-				controls_state = 98
-				controls_state = 87
-				controls_state = 10
-				controls_state = 90
-				controls_state = 88
-				controls_state = 67
-				controls_state = 66
-				controls_state = 86
-				controls_state = 92
-				controls_state = 72
-				controls_state = 97
-				controls_state = 94
-				controls_state = 93
-				controls_state = 91
-				controls_state = 89
-				controls_state = 762
-			}
-			custom_trigger_tooltip = {##Pomerania
-				tooltip = POL_custom_trigger_tooltip_4
-				controls_state = 85 
-				controls_state = 63 
-				controls_state = 62 
-			}
-			custom_trigger_tooltip = {##Eastern Germany
-				tooltip = POL_custom_trigger_tooltip_5
-				controls_state = 61
-				controls_state = 64
-				controls_state = 68
-				controls_state = 65
-			}
-			custom_trigger_tooltip = {##Czechia
-				tooltip = POL_custom_trigger_tooltip_6
-				controls_state = 9
-				controls_state = 69
-				controls_state = 972
-				controls_state = 75
-				controls_state = 74
-			}
-			custom_trigger_tooltip = {###Slovakia
-				tooltip = POL_custom_trigger_tooltip_7
-				controls_state = 70
-				controls_state = 71
-				controls_state = 73
-				controls_state = 664
-			}
-			custom_trigger_tooltip = {###Austria
-				tooltip = POL_custom_trigger_tooltip_8
-				controls_state = 4
-				controls_state = 152
-				controls_state = 153 
-				controls_state = 848 
-			}
-			custom_trigger_tooltip = {##Slovenia
-				tooltip = POL_custom_trigger_tooltip_9
-				controls_state = 102
-				controls_state = 736
-				controls_state = 853
-				controls_state = 852
-			}
-			custom_trigger_tooltip = {##Croatia
-				tooltip = POL_custom_trigger_tooltip_10
-				controls_state = 109
-				controls_state = 103
-				controls_state = 104
-				controls_state = 151
-			}
-			custom_trigger_tooltip = {##Serbia
-				tooltip = POL_custom_trigger_tooltip_11
-				controls_state = 45
-				controls_state = 107
-				controls_state = 108
-				controls_state = 847
-			}
-			custom_trigger_tooltip = {##Albania
-				tooltip = POL_custom_trigger_tooltip_12
-				controls_state = 44
-				controls_state = 105
-				controls_state = 801
-				controls_state = 934
-			}
-			custom_trigger_tooltip = {##Bulgaria
-				tooltip = POL_custom_trigger_tooltip_13
-				controls_state = 106
-				controls_state = 48
-				controls_state = 212
-				controls_state = 211
-			}
-			custom_trigger_tooltip = {##Wallachia
-				tooltip = POL_custom_trigger_tooltip_14
-				controls_state = 46
-				controls_state = 81
-				controls_state = 77
-				controls_state = 971
-			}
-			custom_trigger_tooltip = {##Moldavia
-				tooltip = POL_custom_trigger_tooltip_15
-				controls_state = 78
-				controls_state = 79
-				controls_state = 80
-				controls_state = 766
-			}
-			custom_trigger_tooltip = {##Transylvania
-				tooltip = POL_custom_trigger_tooltip_16
-				controls_state = 76
-				controls_state = 84
-				controls_state = 82
-				controls_state = 83
-			}
-			custom_trigger_tooltip = {##Hungary 
-				tooltip = POL_custom_trigger_tooltip_17
-				controls_state = 154
-				controls_state = 43
-				controls_state = 155
-				controls_state = 974
-				controls_state = 973
-			}
-			custom_trigger_tooltip = {##Bavaria
-				tooltip = POL_custom_trigger_tooltip_18
-				controls_state = 54
-				controls_state = 53
-				controls_state = 52
-			}
-			custom_trigger_tooltip = {##Thuringen, Hannover, Holstein
-				tooltip = POL_custom_trigger_tooltip_19
-				controls_state = 60
-				controls_state = 59
-				controls_state = 58
-			}
-			custom_trigger_tooltip = {##Lithuania
-				tooltip = POL_custom_trigger_tooltip_20
-				controls_state = 11
-				controls_state = 814
-				controls_state = 189
-				controls_state = 815
-			}
-			custom_trigger_tooltip = {##Latvia
-				tooltip = POL_custom_trigger_tooltip_21
-				controls_state = 190
-				controls_state = 809
-				controls_state = 810
-				controls_state = 808
-				controls_state = 12
-			}
-			custom_trigger_tooltip = {##Estonia
-				tooltip = POL_custom_trigger_tooltip_22
-				controls_state = 191
-				controls_state = 813
-				controls_state = 13
-				controls_state = 812
-				controls_state = 811
-			}
-			custom_trigger_tooltip = {##Belarus
-				tooltip = POL_custom_trigger_tooltip_23
-				controls_state = 96
-				controls_state = 95
-				controls_state = 194
-				controls_state = 204
-				controls_state = 206
-				controls_state = 241
-				controls_state = 764
-				controls_state = 207
-			}
-			custom_trigger_tooltip = {##Ukraine
-				tooltip = POL_custom_trigger_tooltip_24
-				controls_state = 199
-				controls_state = 201
-				controls_state = 198
-				controls_state = 202
-				controls_state = 203
-				controls_state = 834
-				controls_state = 192
-				controls_state = 197
-				controls_state = 226
-				controls_state = 221
-				controls_state = 259
-				controls_state = 225
-				controls_state = 193
-			}
-			custom_trigger_tooltip = {##Crimea and Donetsk
-				tooltip = POL_custom_trigger_tooltip_25
-				controls_state = 137
-				controls_state = 196
-				controls_state = 200
-				controls_state = 227
-			}
-			custom_trigger_tooltip = {##Petersburg and rest
-				tooltip = POL_custom_trigger_tooltip_26
-				controls_state = 195
-				controls_state = 208
-				controls_state = 209
-				controls_state = 210
-				controls_state = 263
-				controls_state = 244
-			}
-			custom_trigger_tooltip = {##southern Russia
-				tooltip = POL_custom_trigger_tooltip_27
-				controls_state = 228
-				controls_state = 240
-				controls_state = 220
-				controls_state = 222
-				controls_state = 224
-			}
-			custom_trigger_tooltip = {##middle Russia
-				tooltip = POL_custom_trigger_tooltip_28
-				controls_state = 205
-				controls_state = 243
-				controls_state = 242
-				controls_state = 246
-				controls_state = 223
-			}
-		}
-		complete_effect = {
-			set_cosmetic_tag = POL_lechitic
-			add_ideas = glory_restored
-			set_country_flag = POL_created_lechia
-			hidden_effect = {
-				news_event = { id = deluge_poland.27 hours = 6 } 
-			}
-		}
-		ai_will_do = {
-			base = 1000
-		}
-	}
-	create_empire_slavia = {
-		fire_only_once = yes
-		icon = GFX_decision_POL_create_a_supernation
-		visible = {
-			has_completed_focus = POL_torch_for_all_slavs
-		}
-		available = {
-			POL = {is_faction_leader = yes}
-			POL = {is_major = yes}
-			POL = {is_subject = no}
-			custom_trigger_tooltip = {##Poland
-				tooltip = POL_custom_trigger_tooltip_POL
-				controls_state = 5
-				controls_state = 98
-				controls_state = 87
-				controls_state = 10
-				controls_state = 90
-				controls_state = 88
-				controls_state = 67
-				controls_state = 66
-				controls_state = 86
-				controls_state = 92
-				controls_state = 72
-				controls_state = 97
-				controls_state = 94
-				controls_state = 93
-				controls_state = 91
-				controls_state = 89
-				controls_state = 762
-			}
-			custom_trigger_tooltip = {##Pomerania
-				tooltip = POL_custom_trigger_tooltip_4
-				controls_state = 85
-				controls_state = 63
-				controls_state = 62
-			}
-			custom_trigger_tooltip = {##Czechia
-				tooltip = POL_custom_trigger_tooltip_6
-				controls_state = 9
-				controls_state = 69
-				controls_state = 972
-				controls_state = 75
-				controls_state = 74
-			}
-			custom_trigger_tooltip = {###Slovakia
-				tooltip = POL_custom_trigger_tooltip_7
-				controls_state = 70
-				controls_state = 71
-				controls_state = 73
-				controls_state = 664
-			}
-			custom_trigger_tooltip = {##Slovenia
-				tooltip = POL_custom_trigger_tooltip_9
-				controls_state = 102
-				controls_state = 736
-				controls_state = 853
-				controls_state = 852
-			}
-			custom_trigger_tooltip = {##Croatia
-				tooltip = POL_custom_trigger_tooltip_10
-				controls_state = 109
-				controls_state = 103
-				controls_state = 104
-				controls_state = 151
-			}
-			custom_trigger_tooltip = {##Serbia
-				tooltip = POL_custom_trigger_tooltip_11
-				controls_state = 45
-				controls_state = 107
-				controls_state = 108
-				controls_state = 847
-			}
-			custom_trigger_tooltip = {##Bulgaria
-				tooltip = POL_custom_trigger_tooltip_13
-				controls_state = 106
-				controls_state = 48
-				controls_state = 212
-				controls_state = 211
-			}
-			custom_trigger_tooltip = {##Belarus
-				tooltip = POL_custom_trigger_tooltip_23
-				controls_state = 96
-				controls_state = 95
-				controls_state = 194
-				controls_state = 204
-				controls_state = 206
-				controls_state = 241
-				controls_state = 764
-				controls_state = 207
-			}
-			custom_trigger_tooltip = {##Ukraine
-				tooltip = POL_custom_trigger_tooltip_24
-				controls_state = 199
-				controls_state = 201
-				controls_state = 198
-				controls_state = 202
-				controls_state = 203
-				controls_state = 834
-				controls_state = 192
-				controls_state = 197
-				controls_state = 226
-				controls_state = 221
-				controls_state = 259
-				controls_state = 225
-				controls_state = 193
-			}
-			controls_state = 105
-			controls_state = 801
-			custom_trigger_tooltip = {##Russia
-				tooltip = POL_custom_trigger_tooltip_29
-				controls_state = 137
-				controls_state = 196
-				controls_state = 200
-				controls_state = 227
-				controls_state = 228
-				controls_state = 218
-				controls_state = 234
-				controls_state = 235
-				controls_state = 237
-				controls_state = 232
-				controls_state = 238
-				controls_state = 245
-				controls_state = 829
-				controls_state = 217
-				controls_state = 236
-				controls_state = 401
-				controls_state = 652
-				controls_state = 251
-				controls_state = 265
-				controls_state = 239
-				controls_state = 260
-				controls_state = 240
-				controls_state = 220
-				controls_state = 224
-				controls_state = 222
-				controls_state = 223
-				controls_state = 258
-				controls_state = 257
-				controls_state = 255
-				controls_state = 250
-				controls_state = 252
-				controls_state = 254
-				controls_state = 253
-				controls_state = 219
-				controls_state = 205 
-				controls_state = 242
-				controls_state = 243
-				controls_state = 246
-				controls_state = 210
-				controls_state = 263
-				controls_state = 208
-				controls_state = 209
-				controls_state = 244
-				controls_state = 195
-				controls_state = 264
-				controls_state = 247
-				controls_state = 248
-				controls_state = 351
-				controls_state = 214
-				controls_state = 216
-				controls_state = 215
-				controls_state = 213
-				controls_state = 147
-				controls_state = 722
-				controls_state = 825
-				controls_state = 262
-				controls_state = 581
-				controls_state = 397
-				controls_state = 400
-				controls_state = 249
-				controls_state = 256
-				controls_state = 833
-				controls_state = 399
-				controls_state = 398
-				controls_state = 573
-				controls_state = 651
-				controls_state = 582
-				controls_state = 572
-				controls_state = 653
-				controls_state = 580
-				controls_state = 579
-				controls_state = 403
-				controls_state = 571 
-				controls_state = 654
-				controls_state = 40
-				controls_state = 570
-				controls_state = 578
-				controls_state = 577
-				controls_state = 576
-				controls_state = 824
-				controls_state = 516
-				controls_state = 568
-				controls_state = 569
-				controls_state = 567
-				controls_state = 564
-				controls_state = 566
-				controls_state = 575
-				controls_state = 565
-				controls_state = 563
-				controls_state = 574
-				controls_state = 644
-				controls_state = 562
-				controls_state = 822
-				controls_state = 637
-				controls_state = 650
-				controls_state = 463
-				controls_state = 471
-				controls_state = 739
-			}
-		}
-		complete_effect = {
-			hidden_effect = {
-				137 = { add_core_of = POL }
-				196 = { add_core_of = POL }
-				200 = { add_core_of = POL }
-				227 = { add_core_of = POL }
-				228 = { add_core_of = POL }
-				218 = { add_core_of = POL }
-				234 = { add_core_of = POL }
-				235 = { add_core_of = POL }
-				237 = { add_core_of = POL }
-				232 = { add_core_of = POL }
-				238 = { add_core_of = POL }
-				245 = { add_core_of = POL }
-				829 = { add_core_of = POL }
-				217 = { add_core_of = POL }
-				236 = { add_core_of = POL }
-				401 = { add_core_of = POL }
-				652 = { add_core_of = POL }
-				251 = { add_core_of = POL }
-				265 = { add_core_of = POL }
-				239 = { add_core_of = POL }
-				260 = { add_core_of = POL }
-				240 = { add_core_of = POL }
-				220 = { add_core_of = POL }
-				224 = { add_core_of = POL }
-				222 = { add_core_of = POL }
-				223 = { add_core_of = POL }
-				258 = { add_core_of = POL }
-				257 = { add_core_of = POL }
-				255 = { add_core_of = POL }
-				250 = { add_core_of = POL }
-				252 = { add_core_of = POL }
-				254 = { add_core_of = POL }
-				253 = { add_core_of = POL }
-				219 = { add_core_of = POL }
-				205 = { add_core_of = POL }
-				242 = { add_core_of = POL }
-				243 = { add_core_of = POL }
-				246 = { add_core_of = POL }
-				210 = { add_core_of = POL }
-				263 = { add_core_of = POL }
-				208 = { add_core_of = POL }
-				209 = { add_core_of = POL }
-				244 = { add_core_of = POL }
-				195 = { add_core_of = POL }
-				264 = { add_core_of = POL }
-				247 = { add_core_of = POL }
-				248 = { add_core_of = POL }
-				351 = { add_core_of = POL }
-				214 = { add_core_of = POL }
-				216 = { add_core_of = POL }
-				215 = { add_core_of = POL }
-				213 = { add_core_of = POL }
-				147 = { add_core_of = POL }
-				722 = { add_core_of = POL }
-				825 = { add_core_of = POL }
-				262 = { add_core_of = POL }
-				581 = { add_core_of = POL }
-				397 = { add_core_of = POL }
-				400 = { add_core_of = POL }
-				249 = { add_core_of = POL }
-				256 = { add_core_of = POL }
-				833 = { add_core_of = POL }
-				399 = { add_core_of = POL }
-				398 = { add_core_of = POL }
-				573 = { add_core_of = POL }
-				651 = { add_core_of = POL }
-				582 = { add_core_of = POL }
-				572 = { add_core_of = POL }
-				653 = { add_core_of = POL }
-				580 = { add_core_of = POL }
-				579 = { add_core_of = POL }
-				403 = { add_core_of = POL }
-				571 = { add_core_of = POL }
-				654 = { add_core_of = POL }
-				40 = { add_core_of = POL }
-				570 = { add_core_of = POL }
-				578 = { add_core_of = POL } 
-				577 = { add_core_of = POL }
-				576 = { add_core_of = POL }
-				824 = { add_core_of = POL }
-				516 = { add_core_of = POL }
-				568 = { add_core_of = POL }
-				569 = { add_core_of = POL }
-				567 = { add_core_of = POL }
-				564 = { add_core_of = POL }
-				566 = { add_core_of = POL }
-				575 = { add_core_of = POL }
-				565 = { add_core_of = POL }
-				563 = { add_core_of = POL }
-				574 = { add_core_of = POL }
-				644 = { add_core_of = POL }
-				562 = { add_core_of = POL }
-				822 = { add_core_of = POL }
-				637 = { add_core_of = POL }
-				650 = { add_core_of = POL }
-				463 = { add_core_of = POL }
-				471 = { add_core_of = POL }
-				739 = { add_core_of = POL }
-				736 = { add_core_of = POL }
-				736 = { add_core_of = POL }
-				102 = { add_core_of = POL }
-				103 = { add_core_of = POL }
-				104 = { add_core_of = POL }
-				109 = { add_core_of = POL }
-				45 = { add_core_of = POL }
-				107 = { add_core_of = POL }
-				108 = { add_core_of = POL }
-				801 = { add_core_of = POL }
-				105 = { add_core_of = POL }
-				106 = { add_core_of = POL }
-				48 = { add_core_of = POL }
-				212 = { add_core_of = POL }
-				211 = { add_core_of = POL }
-				77 = { add_core_of = POL }
-				85 = { add_core_of = POL }
-				63 = { add_core_of = POL }
-				62 = { add_core_of = POL }
-			}
-			custom_effect_tooltip = POL_custom_effect_tooltip_82
-			set_cosmetic_tag = POL_slavic
-			add_ideas = glory_restored
-			set_global_flag = POL_formed_slavic_union
-			hidden_effect = {
-				news_event = { id = deluge_poland.29 hours = 6 } 
-			}
-		}
-		ai_will_do = {
-			base = 1000
-		}
-	}
-	create_empire_zapadoslavia = {
-		fire_only_once = yes
-		icon = GFX_decision_generic_unite_the_western_slavs
-		visible = {
-			has_completed_focus = POL_torch_for_all_slavs
-		}
-		available = {
-			POL = {is_faction_leader = yes}
-			POL = {is_major = yes}
-			POL = {is_subject = no}
-			custom_trigger_tooltip = {##Poland
-				tooltip = POL_custom_trigger_tooltip_POL
-				controls_state = 5
-				controls_state = 98
-				controls_state = 87
-				controls_state = 10
-				controls_state = 90
-				controls_state = 88
-				controls_state = 67
-				controls_state = 66
-				controls_state = 86
-				controls_state = 92
-				controls_state = 72
-				controls_state = 97
-				controls_state = 94
-				controls_state = 93
-				controls_state = 91
-				controls_state = 89
-				controls_state = 762
-			}
-			custom_trigger_tooltip = {##Pomerania
-				tooltip = POL_custom_trigger_tooltip_4
-				controls_state = 85
-				controls_state = 63
-				controls_state = 62
-			}
-			custom_trigger_tooltip = {##Czechia
-				tooltip = POL_custom_trigger_tooltip_6
-				controls_state = 9
-				controls_state = 69
-				controls_state = 972
-				controls_state = 75
-				controls_state = 74
-			}
-			custom_trigger_tooltip = {###Slovakia
-				tooltip = POL_custom_trigger_tooltip_7
-				controls_state = 70
-				controls_state = 71
-				controls_state = 73
-				controls_state = 664
-			}
-		}
-		complete_effect = {
-			set_cosmetic_tag = POL_zapadoslavia
-			set_global_flag = POL_zapadoslavia_created
-			add_ideas = western_slavs_united_idea
-			hidden_effect = {
-				news_event = { id = deluge_poland.28 hours = 6 } 
-			}
-		}
-		ai_will_do = {
-			base = 1000
-		}
-	}
 	create_empire_pias = {
 		fire_only_once = yes
 		icon = GFX_decision_eng_trade_unions_support
@@ -6736,6 +7376,938 @@ seek_empire_category = {
 			#hidden_effect = {
 			#	news_event = { id = deluge_poland.83 hours = 6 } 
 			#}
+		}
+		ai_will_do = {
+			base = 1000
+		}
+	}
+}
+torch_for_all_of_slavs_category = {
+	create_empire_slavia = {
+		fire_only_once = yes
+		icon = GFX_decision_POL_create_a_supernation
+		visible = {
+			has_completed_focus = POL_torch_for_all_slavs
+		}
+		available = {
+			POL = {is_faction_leader = yes}
+			POL = {is_major = yes}
+			POL = {is_subject = no}
+			custom_trigger_tooltip = {##Poland
+				tooltip = POL_custom_trigger_tooltip_POL
+				controls_state = 5
+				controls_state = 98
+				controls_state = 87
+				controls_state = 10
+				controls_state = 90
+				controls_state = 88
+				controls_state = 67
+				controls_state = 66
+				controls_state = 86
+				controls_state = 92
+				controls_state = 72
+				controls_state = 97
+				controls_state = 94
+				controls_state = 93
+				controls_state = 91
+				controls_state = 89
+				controls_state = 762
+			}
+			custom_trigger_tooltip = {##Pomerania
+				tooltip = POL_custom_trigger_tooltip_4
+				controls_state = 85
+				controls_state = 63
+				controls_state = 62
+			}
+			custom_trigger_tooltip = {##Czechia
+				tooltip = POL_custom_trigger_tooltip_6
+				controls_state = 9
+				controls_state = 69
+				controls_state = 972
+				controls_state = 75
+				controls_state = 74
+			}
+			custom_trigger_tooltip = {###Slovakia
+				tooltip = POL_custom_trigger_tooltip_7
+				controls_state = 70
+				controls_state = 71
+				controls_state = 73
+				controls_state = 664
+			}
+			custom_trigger_tooltip = {##Slovenia
+				tooltip = POL_custom_trigger_tooltip_9
+				controls_state = 102
+				controls_state = 736
+				controls_state = 853
+				controls_state = 852
+			}
+			custom_trigger_tooltip = {##Croatia
+				tooltip = POL_custom_trigger_tooltip_10
+				controls_state = 109
+				controls_state = 103
+				controls_state = 104
+				controls_state = 970
+			}
+			custom_trigger_tooltip = {##Serbia
+				tooltip = POL_custom_trigger_tooltip_11
+				controls_state = 45
+				controls_state = 107
+				controls_state = 108
+				controls_state = 847
+				controls_state = 151
+			}
+			custom_trigger_tooltip = {##Bulgaria
+				tooltip = POL_custom_trigger_tooltip_13
+				controls_state = 106
+				controls_state = 48
+				controls_state = 212
+				controls_state = 211
+			}
+			custom_trigger_tooltip = {##Belarus
+				tooltip = POL_custom_trigger_tooltip_23
+				controls_state = 96
+				controls_state = 95
+				controls_state = 194
+				controls_state = 204
+				controls_state = 206
+				controls_state = 241
+				controls_state = 764
+				controls_state = 207
+			}
+			custom_trigger_tooltip = {##Ukraine
+				tooltip = POL_custom_trigger_tooltip_24
+				controls_state = 199
+				controls_state = 201
+				controls_state = 198
+				controls_state = 202
+				controls_state = 203
+				controls_state = 834
+				controls_state = 192
+				controls_state = 197
+				controls_state = 226
+				controls_state = 221
+				controls_state = 259
+				controls_state = 225
+				controls_state = 193
+			}
+			controls_state = 105
+			controls_state = 801
+			custom_trigger_tooltip = {##Russia
+				tooltip = POL_custom_trigger_tooltip_29
+				controls_state = 137
+				controls_state = 196
+				controls_state = 200
+				controls_state = 227
+				controls_state = 228
+				controls_state = 218
+				controls_state = 234
+				controls_state = 235
+				controls_state = 237
+				controls_state = 232
+				controls_state = 238
+				controls_state = 245
+				controls_state = 829
+				controls_state = 217
+				controls_state = 236
+				controls_state = 401
+				controls_state = 652
+				controls_state = 251
+				controls_state = 265
+				controls_state = 239
+				controls_state = 260
+				controls_state = 240
+				controls_state = 220
+				controls_state = 224
+				controls_state = 222
+				controls_state = 223
+				controls_state = 258
+				controls_state = 257
+				controls_state = 255
+				controls_state = 250
+				controls_state = 252
+				controls_state = 254
+				controls_state = 253
+				controls_state = 219
+				controls_state = 205 
+				controls_state = 242
+				controls_state = 243
+				controls_state = 246
+				controls_state = 210
+				controls_state = 263
+				controls_state = 208
+				controls_state = 209
+				controls_state = 244
+				controls_state = 195
+				controls_state = 264
+				controls_state = 247
+				controls_state = 248
+				controls_state = 351
+				controls_state = 214
+				controls_state = 216
+				controls_state = 215
+				controls_state = 213
+				controls_state = 722
+				controls_state = 825
+				controls_state = 262
+				controls_state = 581
+				controls_state = 397
+				controls_state = 400
+				controls_state = 249
+				controls_state = 256
+				controls_state = 833
+				controls_state = 399
+				controls_state = 398
+				controls_state = 573
+				controls_state = 651
+				controls_state = 582
+				controls_state = 572
+				controls_state = 653
+				controls_state = 580
+				controls_state = 579
+				controls_state = 403
+				controls_state = 571 
+				controls_state = 654
+				controls_state = 40
+				controls_state = 570
+				controls_state = 578
+				controls_state = 577
+				controls_state = 576
+				controls_state = 824
+				controls_state = 516
+				controls_state = 568
+				controls_state = 569
+				controls_state = 567
+				controls_state = 564
+				controls_state = 566
+				controls_state = 575
+				controls_state = 565
+				controls_state = 563
+				controls_state = 574
+				controls_state = 644
+				controls_state = 562
+				controls_state = 822
+				controls_state = 637
+				controls_state = 650
+				controls_state = 463
+				controls_state = 471
+				controls_state = 739
+				controls_state = 879
+				controls_state = 880
+				controls_state = 878
+				controls_state = 876
+				controls_state = 877
+				controls_state = 874
+				controls_state = 875
+				controls_state = 864
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				##other
+				state = 105
+				state = 801
+				##Russia
+				state = 137
+				state = 196
+				state = 200
+				state = 227
+				state = 228
+				state = 218
+				state = 234
+				state = 235
+				state = 237
+				state = 232
+				state = 238
+				state = 245
+				state = 829
+				state = 217
+				state = 236
+				state = 401
+				state = 652
+				state = 251
+				state = 265
+				state = 239
+				state = 260
+				state = 240
+				state = 220
+				state = 224
+				state = 222
+				state = 223
+				state = 258
+				state = 257
+				state = 255
+				state = 250
+				state = 252
+				state = 254
+				state = 253
+				state = 219
+				state = 205 
+				state = 242
+				state = 243
+				state = 246
+				state = 210
+				state = 263
+				state = 208
+				state = 209
+				state = 244
+				state = 195
+				state = 264
+				state = 247
+				state = 248
+				state = 351
+				state = 214
+				state = 216
+				state = 215
+				state = 213
+				state = 722
+				state = 825
+				state = 262
+				state = 581
+				state = 397
+				state = 400
+				state = 249
+				state = 256
+				state = 833
+				state = 399
+				state = 398
+				state = 573
+				state = 651
+				state = 582
+				state = 572
+				state = 653
+				state = 580
+				state = 579
+				state = 403
+				state = 571 
+				state = 654
+				state = 40
+				state = 570
+				state = 578
+				state = 577
+				state = 576
+				state = 824
+				state = 516
+				state = 568
+				state = 569
+				state = 567
+				state = 564
+				state = 566
+				state = 575
+				state = 565
+				state = 563
+				state = 574
+				state = 644
+				state = 562
+				state = 822
+				state = 637
+				state = 650
+				state = 463
+				state = 471
+				state = 739
+				state = 879
+				state = 880
+				state = 878
+				state = 876
+				state = 877
+				state = 874
+				state = 875
+				state = 864
+				##Belarus
+				state = 96
+				state = 95
+				state = 194
+				state = 204
+				state = 206
+				state = 241
+				state = 764
+				state = 207
+				##Bulgaria
+				state = 106
+				state = 48
+				state = 212
+				state = 211
+				#Ukraine
+				state = 199
+				state = 201
+				state = 198
+				state = 202
+				state = 203
+				state = 834
+				state = 192
+				state = 197
+				state = 226
+				state = 221
+				state = 259
+				state = 225
+				state = 193
+				##Serbia
+				state = 45
+				state = 107
+				state = 108
+				state = 847
+				state = 151
+				##Croatia
+				state = 109
+				state = 103
+				state = 104
+				state = 970
+				##Slovakia
+				state = 70
+				state = 71
+				state = 73
+				state = 664
+				##Slovenia
+				state = 102
+				state = 736
+				state = 853
+				state = 852
+				##Czechia
+				state = 9
+				state = 69
+				state = 972
+				state = 75
+				state = 74
+				##Pomerania
+				state = 85
+				state = 63
+				state = 62
+				##Poland
+				state = 5
+				state = 98
+				state = 87
+				state = 10
+				state = 90
+				state = 88
+				state = 67
+				state = 66
+				state = 86
+				state = 92
+				state = 72
+				state = 97
+				state = 94
+				state = 93
+				state = 91
+				state = 89
+				state = 762
+			}
+		}
+		complete_effect = {
+			set_cosmetic_tag = POL_slavic
+			add_ideas = glory_restored
+			set_global_flag = POL_formed_slavic_union
+			hidden_effect = {
+				news_event = { id = deluge_poland.29 hours = 6 }
+			}
+		}
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	create_empire_zapadoslavia = {
+		fire_only_once = yes
+		icon = GFX_decision_generic_unite_the_western_slavs
+		visible = {
+			has_completed_focus = POL_torch_for_all_slavs
+		}
+		available = {
+			POL = {is_faction_leader = yes}
+			POL = {is_major = yes}
+			POL = {is_subject = no}
+			custom_trigger_tooltip = {##Poland
+				tooltip = POL_custom_trigger_tooltip_POL
+				controls_state = 5
+				controls_state = 98
+				controls_state = 87
+				controls_state = 10
+				controls_state = 90
+				controls_state = 88
+				controls_state = 67
+				controls_state = 66
+				controls_state = 86
+				controls_state = 92
+				controls_state = 72
+				controls_state = 97
+				controls_state = 94
+				controls_state = 93
+				controls_state = 91
+				controls_state = 89
+				controls_state = 762
+			}
+			custom_trigger_tooltip = {##Pomerania
+				tooltip = POL_custom_trigger_tooltip_4
+				controls_state = 85
+				controls_state = 63
+				controls_state = 62
+			}
+			custom_trigger_tooltip = {##Czechia
+				tooltip = POL_custom_trigger_tooltip_6
+				controls_state = 9
+				controls_state = 69
+				controls_state = 972
+				controls_state = 75
+				controls_state = 74
+			}
+			custom_trigger_tooltip = {###Slovakia
+				tooltip = POL_custom_trigger_tooltip_7
+				controls_state = 70
+				controls_state = 71
+				controls_state = 73
+				controls_state = 664
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				##Slovakia
+				state = 70
+				state = 71
+				state = 73
+				state = 664
+				##Czechia
+				state = 9
+				state = 69
+				state = 972
+				state = 75
+				state = 74
+				##Pomerania
+				state = 85
+				state = 63
+				state = 62
+				##Poland
+				state = 5
+				state = 98
+				state = 87
+				state = 10
+				state = 90
+				state = 88
+				state = 67
+				state = 66
+				state = 86
+				state = 92
+				state = 72
+				state = 97
+				state = 94
+				state = 93
+				state = 91
+				state = 89
+				state = 762
+			}
+		}
+		complete_effect = {
+			set_cosmetic_tag = POL_zapadoslavia
+			set_global_flag = POL_zapadoslavia_created
+			add_ideas = western_slavs_united_idea
+			hidden_effect = {
+				news_event = { id = deluge_poland.28 hours = 6 } 
+			}
+		}
+		ai_will_do = {
+			base = 1000
+		}
+	}
+}
+lechitic_legacy_category = {
+	create_empire_lechia = {
+		fire_only_once = yes
+		icon = GFX_decision_slavic_sun
+		visible = {
+			has_completed_focus = POL_lechitic_legacy
+		}
+		available = {
+			POL = {is_faction_leader = yes}
+			POL = {is_major = yes}
+			POL = {is_subject = no}
+			custom_trigger_tooltip = {##Poland
+				tooltip = POL_custom_trigger_tooltip_POL
+				controls_state = 5
+				controls_state = 98
+				controls_state = 87
+				controls_state = 10
+				controls_state = 90
+				controls_state = 88
+				controls_state = 67
+				controls_state = 66
+				controls_state = 86
+				controls_state = 92
+				controls_state = 72
+				controls_state = 97
+				controls_state = 94
+				controls_state = 93
+				controls_state = 91
+				controls_state = 89
+				controls_state = 762
+			}
+			custom_trigger_tooltip = {##Pomerania
+				tooltip = POL_custom_trigger_tooltip_4
+				controls_state = 85 
+				controls_state = 63 
+				controls_state = 62 
+			}
+			custom_trigger_tooltip = {##Eastern Germany
+				tooltip = POL_custom_trigger_tooltip_5
+				controls_state = 61
+				controls_state = 64
+				controls_state = 68
+				controls_state = 65
+			}
+			custom_trigger_tooltip = {##Czechia
+				tooltip = POL_custom_trigger_tooltip_6
+				controls_state = 9
+				controls_state = 69
+				controls_state = 972
+				controls_state = 75
+				controls_state = 74
+			}
+			custom_trigger_tooltip = {###Slovakia
+				tooltip = POL_custom_trigger_tooltip_7
+				controls_state = 70
+				controls_state = 71
+				controls_state = 73
+				controls_state = 664
+			}
+			custom_trigger_tooltip = {###Austria
+				tooltip = POL_custom_trigger_tooltip_8
+				controls_state = 4
+				controls_state = 152
+				controls_state = 153
+				controls_state = 848
+				controls_state = 975
+				controls_state = 976
+			}
+			custom_trigger_tooltip = {##Slovenia
+				tooltip = POL_custom_trigger_tooltip_9
+				controls_state = 102
+				controls_state = 736
+				controls_state = 853
+				controls_state = 852
+			}
+			custom_trigger_tooltip = {##Croatia
+				tooltip = POL_custom_trigger_tooltip_10
+				controls_state = 109
+				controls_state = 103
+				controls_state = 104
+				controls_state = 970
+			}
+			custom_trigger_tooltip = {##Serbia
+				tooltip = POL_custom_trigger_tooltip_11
+				controls_state = 45
+				controls_state = 107
+				controls_state = 108
+				controls_state = 847
+				controls_state = 151
+			}
+			custom_trigger_tooltip = {##Albania
+				tooltip = POL_custom_trigger_tooltip_12
+				controls_state = 44
+				controls_state = 105
+				controls_state = 801
+				controls_state = 934
+			}
+			custom_trigger_tooltip = {##Bulgaria
+				tooltip = POL_custom_trigger_tooltip_13
+				controls_state = 106
+				controls_state = 48
+				controls_state = 212
+				controls_state = 211
+			}
+			custom_trigger_tooltip = {##Wallachia
+				tooltip = POL_custom_trigger_tooltip_14
+				controls_state = 46
+				controls_state = 81
+				controls_state = 77
+				controls_state = 971
+			}
+			custom_trigger_tooltip = {##Moldova
+				tooltip = POL_custom_trigger_tooltip_15
+				controls_state = 78
+				controls_state = 79
+				controls_state = 80
+				controls_state = 766
+			}
+			custom_trigger_tooltip = {##Transylvania
+				tooltip = POL_custom_trigger_tooltip_16
+				controls_state = 76
+				controls_state = 84
+				controls_state = 82
+				controls_state = 83
+			}
+			custom_trigger_tooltip = {##Hungary 
+				tooltip = POL_custom_trigger_tooltip_17
+				controls_state = 154
+				controls_state = 43
+				controls_state = 155
+				controls_state = 974
+				controls_state = 973
+			}
+			custom_trigger_tooltip = {##Bavaria
+				tooltip = POL_custom_trigger_tooltip_18
+				controls_state = 54
+				controls_state = 53
+				controls_state = 52
+			}
+			custom_trigger_tooltip = {##Thuringen, Hannover, Holstein
+				tooltip = POL_custom_trigger_tooltip_19
+				controls_state = 60
+				controls_state = 59
+				controls_state = 58
+			}
+			custom_trigger_tooltip = {##Lithuania
+				tooltip = POL_custom_trigger_tooltip_20
+				controls_state = 11
+				controls_state = 814
+				controls_state = 189
+				controls_state = 815
+			}
+			custom_trigger_tooltip = {##Latvia
+				tooltip = POL_custom_trigger_tooltip_21
+				controls_state = 190
+				controls_state = 809
+				controls_state = 810
+				controls_state = 808
+				controls_state = 12
+			}
+			custom_trigger_tooltip = {##Estonia
+				tooltip = POL_custom_trigger_tooltip_22
+				controls_state = 191
+				controls_state = 813
+				controls_state = 13
+				controls_state = 812
+				controls_state = 811
+			}
+			custom_trigger_tooltip = {##Belarus
+				tooltip = POL_custom_trigger_tooltip_23
+				controls_state = 96
+				controls_state = 95
+				controls_state = 194
+				controls_state = 204
+				controls_state = 206
+				controls_state = 241
+				controls_state = 764
+				controls_state = 207
+			}
+			custom_trigger_tooltip = {##Ukraine
+				tooltip = POL_custom_trigger_tooltip_24
+				controls_state = 199
+				controls_state = 201
+				controls_state = 198
+				controls_state = 202
+				controls_state = 203
+				controls_state = 834
+				controls_state = 192
+				controls_state = 197
+				controls_state = 226
+				controls_state = 221
+				controls_state = 259
+				controls_state = 225
+				controls_state = 193
+			}
+			custom_trigger_tooltip = {##Crimea and Donetsk
+				tooltip = POL_custom_trigger_tooltip_25
+				controls_state = 137
+				controls_state = 196
+				controls_state = 200
+				controls_state = 227
+			}
+			custom_trigger_tooltip = {##Petersburg and rest
+				tooltip = POL_custom_trigger_tooltip_26
+				controls_state = 195
+				controls_state = 208
+				controls_state = 209
+				controls_state = 210
+				controls_state = 263
+				controls_state = 244
+			}
+			custom_trigger_tooltip = {##southern Russia
+				tooltip = POL_custom_trigger_tooltip_27
+				controls_state = 228
+				controls_state = 240
+				controls_state = 220
+				controls_state = 222
+				controls_state = 224
+			}
+			custom_trigger_tooltip = {##middle Russia
+				tooltip = POL_custom_trigger_tooltip_28
+				controls_state = 205
+				controls_state = 243
+				controls_state = 242
+				controls_state = 246
+				controls_state = 223
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				##Slovakia
+				state = 70
+				state = 71
+				state = 73
+				state = 664
+				##Czechia
+				state = 9
+				state = 69
+				state = 972
+				state = 75
+				state = 74
+				##Pomerania
+				state = 85
+				state = 63
+				state = 62
+				##Poland
+				state = 5
+				state = 98
+				state = 87
+				state = 10
+				state = 90
+				state = 88
+				state = 67
+				state = 66
+				state = 86
+				state = 92
+				state = 72
+				state = 97
+				state = 94
+				state = 93
+				state = 91
+				state = 89
+				state = 762
+				##Eastern Germany
+				state = 61
+				state = 64
+				state = 68
+				state = 65
+				##Austria
+				state = 4
+				state = 152
+				state = 153 
+				state = 848
+				state = 975
+				state = 976
+				##Slovenia
+				state = 102
+				state = 736
+				state = 853
+				state = 852
+				##Croatia
+				state = 109
+				state = 103
+				state = 104
+				state = 970
+				##Serbia
+				state = 45
+				state = 107
+				state = 108
+				state = 847
+				state = 151
+				##Albania
+				state = 44
+				state = 105
+				state = 801
+				state = 934
+				##Hungary
+				state = 154
+				state = 43
+				state = 155
+				state = 974
+				state = 973
+				##Bulgaria
+				state = 106
+				state = 48
+				state = 212
+				state = 211
+				##Wallachia
+				state = 46
+				state = 81
+				state = 77
+				state = 971
+				##Moldova
+				state = 78
+				state = 79
+				state = 80
+				state = 766
+				##Transylvania
+				state = 76
+				state = 84
+				state = 82
+				state = 83
+				##Bavaria
+				state = 54
+				state = 53
+				state = 52
+				##Thuringen, Hannover, Holstein
+				state = 60
+				state = 59
+				state = 58
+				##Lithuania
+				state = 11
+				state = 814
+				state = 189
+				state = 815
+				##Latvia
+				state = 190
+				state = 809
+				state = 810
+				state = 808
+				state = 12
+				##Estonia
+				state = 191
+				state = 813
+				state = 13
+				state = 812
+				state = 811
+				##Belarus
+				state = 96
+				state = 95
+				state = 194
+				state = 204
+				state = 206
+				state = 241
+				state = 764
+				state = 207
+				##Ukraine
+				state = 199
+				state = 201
+				state = 198
+				state = 202
+				state = 203
+				state = 834
+				state = 192
+				state = 197
+				state = 226
+				state = 221
+				state = 259
+				state = 225
+				state = 193
+				##Crimea and Donetsk
+				state = 137
+				state = 196
+				state = 200
+				state = 227
+				##Petersburg and rest
+				state = 195
+				state = 208
+				state = 209
+				state = 210
+				state = 263
+				state = 244
+				##southern Russia
+				state = 228
+				state = 240
+				state = 220
+				state = 222
+				state = 224
+				##middle Russia
+				state = 205
+				state = 243
+				state = 242
+				state = 246
+				state = 223
+			}
+		}
+		complete_effect = {
+			set_cosmetic_tag = POL_lechitic
+			add_ideas = glory_restored
+			set_country_flag = POL_created_lechia
+			hidden_effect = {
+				news_event = { id = deluge_poland.27 hours = 6 } 
+			}
 		}
 		ai_will_do = {
 			base = 1000

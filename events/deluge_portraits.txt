@@ -698,3 +698,99 @@ country_event = {##Henri Giraud
 		}
 	}
 }
+country_event = {##Maxime Weygand
+	id = deluge_portraits.20
+	title = deluge_portraits.20.t
+	desc = deluge_portraits.20.d
+	picture = GFX_report_event_maxime_weygand_and_military
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##ANLD
+		name = deluge_portraits.20.a
+		set_portraits = {
+			character = FRA_deluge_maxime_weygand
+			army = { large ="GFX_portrait_FRA_maxime_weygand_ANLD" }
+			civilian = { large ="GFX_portrait_FRA_maxime_weygand_ANLD" }
+			navy = { large ="GFX_portrait_FRA_maxime_weygand_ANLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##Vanilla
+		name = deluge_portraits.20.b
+		set_portraits = {
+			character = FRA_deluge_maxime_weygand
+			army = { large ="GFX_portrait_FRA_maxime_weygand" }
+			civilian = { large ="GFX_portrait_FRA_maxime_weygand" }
+			navy = { large ="GFX_portrait_FRA_maxime_weygand" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {##Maurice Gamelin
+	id = deluge_portraits.21
+	title = deluge_portraits.21.t
+	desc = deluge_portraits.21.d
+	picture = GFX_report_event_maurice_gamelin
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##ANLD
+		name = deluge_portraits.21.a
+		set_portraits = {
+			character = FRA_deluge_maurice_gamelin
+			army = { large ="GFX_portrait_FRA_maurice_gamelin_ANLD" }
+			civilian = { large ="GFX_portrait_FRA_maurice_gamelin_ANLD" }
+			navy = { large ="GFX_portrait_FRA_maurice_gamelin_ANLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##Vanilla
+		name = deluge_portraits.21.b
+		set_portraits = {
+			character = FRA_deluge_maurice_gamelin
+			army = { large ="GFX_portrait_FRA_maurice_gamelin" }
+			civilian = { large ="GFX_portrait_FRA_maurice_gamelin" }
+			navy = { large ="GFX_portrait_FRA_maurice_gamelin" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {##Philippe Pétain
+	id = deluge_portraits.22
+	title = deluge_portraits.22.t
+	desc = deluge_portraits.22.d
+	picture = GFX_report_event_philippe_petain
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##ANLD
+		name = deluge_portraits.22.a
+		set_portraits = {
+			character = POM_philippe_petain
+			army = { large ="GFX_portrait_POM_philippe_petain_ANLD" }
+			civilian = { large ="GFX_portrait_POM_philippe_petain_ANLD" }
+			navy = { large ="GFX_portrait_POM_philippe_petain_ANLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##Vanilla
+		name = deluge_portraits.22.b
+		set_portraits = {
+			character = POM_philippe_petain
+			army = { large ="GFX_portrait_FRA_philippe_petain" }
+			civilian = { large ="GFX_portrait_FRA_philippe_petain" }
+			navy = { large ="GFX_portrait_FRA_philippe_petain" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

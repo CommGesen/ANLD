@@ -101,8 +101,16 @@ spriteTypes = {
 		texturefile = "gfx/leaders/FRA/portrait_FRA_charles_hueber.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_FRA_henri_giraud_ANLD"
-		texturefile = "gfx/leaders/FRA/portrait_FRA_henri_giraud_ANLD.dds"
+		name = "GFX_portrait_FRA_maxime_weygand_ANLD"
+		texturefile = "gfx/leaders/FRA/portrait_FRA_maxime_weygand_ANLD.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_maurice_gamelin_ANLD"
+		texturefile = "gfx/leaders/FRA/portrait_FRA_maurice_gamelin_ANLD.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POM_philippe_petain_ANLD"
+		texturefile = "gfx/leaders/POM/portrait_POM_philippe_petain_ANLD.dds"
 	}
 	spriteType = {
 		name = "GFX_portrait_HUN_gyula_gombos_regent"

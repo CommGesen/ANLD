@@ -20,7 +20,7 @@ ideologies = {
 			}
 			
 			social_democratic_ideology = {
-				color = { 255 0 163 }
+				#color = { 255 0 163 }
 			}
 			
 			social_liberal_ideology = {
@@ -147,8 +147,7 @@ ideologies = {
 			army_intel_to_others = 7.5
 			navy_intel_to_others = 12.5
 			airforce_intel_to_others = 7.5
-			embargo_threshold_factor = 0.5
-			lend_lease_tension = 0.50
+			embargo_threshold_factor = 0.05
 		}
 
 		faction_modifiers = {
@@ -218,8 +217,6 @@ ideologies = {
 			army_intel_to_others = 10.0
 			navy_intel_to_others = 10.0
 			airforce_intel_to_others = 10.0
-			embargo_cost_factor = 1
-			lend_lease_tension = 0.50
 		}
 
 		ai_fascist = yes # uses the fascist AI behaviour

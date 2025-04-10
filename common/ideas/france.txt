@@ -1171,7 +1171,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_bidons_speciaux = {
-			picture = spirit_french_napalm_bullet
+			picture = spirit_french_napalm_bullet ##spirit_burning_plane
 			allowed = {
 				original_tag = FRA
 			}
@@ -1189,7 +1189,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_containing_air_threat = {
-			picture = FRA_fortification_focus #change later
+			picture = spirit_burning_plane
 			allowed = {
 				original_tag = FRA
 			}
@@ -1207,7 +1207,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_advanced_sonars = {
-			picture = FRA_fortification_focus #change later
+			picture = spirit_sonar
 			allowed = {
 				original_tag = FRA
 			}
@@ -1225,7 +1225,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_razzle_dazzle = {
-			picture = FRA_fortification_focus #change later
+			picture = spirit_razzle_dazzle
 			allowed = {
 				original_tag = FRA
 			}

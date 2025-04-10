@@ -565,4 +565,16 @@ spriteTypes = {
 		name = "GFX_decision_cat_french_city"
 		texturefile = "gfx/interface/decisions/decision_cat_french_city.dds"
 	}
+	spriteType = {
+		name = "GFX_decision_category_icon_slavic_sun"
+		texturefile = "gfx/interface/decisions/decision_category_icon_slavic_sun.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_slavs_2"
+		texturefile = "gfx/interface/decisions/decision_cat_slavs_2.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_slavs"
+		texturefile = "gfx/interface/decisions/decision_cat_slavs.dds"
+	}
 }

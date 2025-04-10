@@ -1070,7 +1070,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { career_officer cavalry_leader cavalry_expert war_hero skirmisher}
+			traits = { career_officer cavalry_leader cavalry_expert war_hero trickster }
 			skill=4
 			attack_skill=5
 			defense_skill=3
@@ -2710,6 +2710,15 @@ characters={
 			}
 			ai_will_do = { factor = 1.0 }
 			ledger = civilian
+		}
+		corps_commander = {
+			traits = { artillery_officer artillery_leader cavalry_leader politically_connected war_hero }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			desc = "POL_deluge_wanda_wasilewska_desc"
 		}
 	}
 	POL_deluge_switalski = {##Kazimierz Świtalski
@@ -6040,34 +6049,6 @@ characters={
 		}
 		scientist = {
 			traits = { scientist_trait_fast_learner }
-			skills = {
-				specialization_land = 1
-			}
-		}
-	}
-	POL_deluge_edward_habich = {##Edward Habich
-		name = POL_deluge_edward_habich_name
-		portraits={
-			civilian={
-				large="gfx/leaders/POL/portrait_POL_edward_habich.dds"
-			}
-		}
-		scientist = {
-			traits = { scientist_trait_bright scientist_trait_armored_specialist }
-			skills = {
-				specialization_land = 1
-			}
-		}
-	}
-	POL_deluge_edward_habich = {##Edward Habich
-		name = POL_deluge_edward_habich_name
-		portraits={
-			civilian={
-				large="gfx/leaders/POL/portrait_POL_edward_habich.dds"
-			}
-		}
-		scientist = {
-			traits = { scientist_trait_bright scientist_trait_armored_specialist }
 			skills = {
 				specialization_land = 1
 			}

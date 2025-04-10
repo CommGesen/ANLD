@@ -1031,6 +1031,86 @@ country_event = {
 		custom_effect_tooltip = cant_change_voting_law_tooltip
 	}
 }
+country_event = {##possible retirement of d'Esperey
+	id = deluge_france.39
+	title = deluge_france.39.t
+	desc = deluge_france.39.d
+	picture = GFX_report_event_louis_franchet_d_esperey
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		has_character = FRA_deluge_louis_franchet_d_esperey
+		date > 1936.11.15
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name = deluge_france.39.a
+		add_political_power = -25
+		add_command_power = -50
+	}
+	option = {
+		name = deluge_france.39.b
+		FRA_deluge_louis_franchet_d_esperey = {
+			remove_unit_leader_role = yes
+		}
+	}
+}
+country_event = {##death of d'Esperey - not leader
+	id = deluge_france.40
+	title = deluge_france.40.t
+	desc = deluge_france.40.d
+	picture = GFX_report_event_louis_franchet_d_esperey
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		has_character = FRA_deluge_louis_franchet_d_esperey
+		FRA_deluge_louis_franchet_d_esperey = {
+			is_country_leader = no
+		}
+		date > 1942.7.5
+	}
+	mean_time_to_happen = {
+		days = 6
+	}
+	option = {
+		name = deluge_france.40.a
+		retire_character = FRA_deluge_louis_franchet_d_esperey
+	}
+}
+country_event = {##death of d'Esperey - leader
+	id = deluge_france.41
+	title = deluge_france.41.t
+	desc = deluge_france.41.d
+	picture = GFX_report_event_louis_franchet_d_esperey
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		has_character = FRA_deluge_louis_franchet_d_esperey
+		FRA_deluge_louis_franchet_d_esperey = {
+			is_country_leader = yes
+		}
+		date > 1942.7.5
+	}
+	mean_time_to_happen = {
+		days = 6
+	}
+	option = {##weygand is next leader
+		name = deluge_france.41.a
+		retire_character = FRA_deluge_louis_franchet_d_esperey
+		promote_character = FRA_deluge_maxime_weygand
+	}
+	option = {##deloncle is next leader
+		name = deluge_france.41.b
+		remove_advisor_role = {
+			character = "FRA_deluge_eugene_deloncle"
+			slot = political_advisor
+		}
+		retire_character = FRA_deluge_louis_franchet_d_esperey
+		promote_character = FRA_deluge_eugene_deloncle
+	}
+}
 country_event = {##inspection in the army
 	id = deluge_france_lore.1
 	title = deluge_france_lore.1.t
@@ -1471,5 +1551,356 @@ news_event = {##BHU gains its independence
 	major = yes
 	option = {
 		name = deluge_france_foreign.10.a
+	}
+}
+country_event = {##FRA demands from every country except BEL states of 8, 786, 980, 34
+	id = deluge_france_foreign.12
+	title = deluge_france_foreign.12.t
+	desc = deluge_france_foreign.12.d
+	picture = GFX_report_event_luxembourgish_grand_ducal_palace
+	is_triggered_only = yes
+	option = {##accept
+		name = deluge_france_foreign.12.a
+		hidden_effect = {
+			POL = {
+				country_event = {
+					id = deluge_france_foreign.14
+				}
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					owns_state = 8
+				}
+			}
+			8 = {
+				transfer_state_to = FRA
+			}
+			FRA = {
+				add_named_threat = {
+					threat = 2
+					name = FRA_demanded_luxebourg
+				}
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					owns_state = 786
+				}
+			}
+			786 = {
+				transfer_state_to = FRA
+			}
+			FRA = {
+				add_named_threat = {
+					threat = 2
+					name = FRA_demanded_luxebourgish_rhineland
+				}
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					owns_state = 980
+				}
+			}
+			980 = {
+				transfer_state_to = FRA
+			}
+			FRA = {
+				add_named_threat = {
+					threat = 2
+					name = FRA_demanded_ardennes
+				}
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					owns_state = 34
+				}
+			}
+			34 = {
+				transfer_state_to = FRA
+			}
+			FRA = {
+				add_named_threat = {
+					threat = 2
+					name = FRA_demanded_wallonia
+				}
+			}
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {##reject
+		name = deluge_france_foreign.12.b
+		hidden_effect = {
+			FRA = {
+				country_event = {
+					id = deluge_france_foreign.13
+				}
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+}
+country_event = {##FRA sees that demands from previous event (deluge_france_foreign.12) were rejected
+	id = deluge_france_foreign.13
+	title = deluge_france_foreign.13.t
+	desc = deluge_france_foreign.13.d
+	picture = GFX_report_event_luxembourgish_grand_ducal_palace
+	is_triggered_only = yes
+	option = {##do nothing
+		name = deluge_france_foreign.13.a
+		add_war_support = -0.05
+		add_political_power = 10
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {##create wargoal
+		name = deluge_france_foreign.13.b
+		create_wargoal = {
+			type = take_claimed_state
+			generator = {786 8 980 34}
+			target = FROM
+		}
+		add_stability = 0.02
+		add_war_support = -0.05
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.2
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.2 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+	option = {##attack owner now now
+		name = deluge_france_foreign.13.c
+		POL = {
+			declare_war_on = {
+				target = FROM
+				type = take_claimed_state
+				generator = {786 8 980 34}
+			}
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+}
+news_event = {##news event that FRA gets Luxembourgish lands
+	id = deluge_france_foreign.14
+	title = deluge_france_foreign.14.t
+	desc = deluge_france_foreign.14.d
+	picture = GFX_news_event_luxembourgish_grand_ducal_palace
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_foreign.14.a
+		ai_chance = {
+			base = 100
+		}
 	}
 }

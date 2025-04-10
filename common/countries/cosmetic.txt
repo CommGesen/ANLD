@@ -234,8 +234,8 @@ POL_pagan = {
 }
 
 POL_lechitic = {
-	color = rgb { 12 122 19 }
-	color_ui = rgb { 12 122 19 }
+	color = rgb { 255 153 0 }
+	color_ui = rgb { 255 153 0 }
 }
 
 POL_zapadoslavia = {
@@ -336,8 +336,8 @@ FRA_francism = {
 	color_ui = rgb { 4 18 55 }
 }
 FRA_social_state = {
-	color = rgb { 43 15 121 }
-	color_ui = rgb { 43 15 121 }
+	color = rgb { 139 39 49 }
+	color_ui = rgb { 139 39 49 }
 }
 FRA_holy_state = {
 	color = rgb { 179 121 5 }
@@ -346,4 +346,20 @@ FRA_holy_state = {
 FRA_revolutionary_state = {
 	color = rgb { 146 16 16 }
 	color_ui = rgb { 146 16 16 }
+}
+FRA_sultanate = {
+	color = rgb { 3 100 23 }
+	color_ui = rgb { 0 153 51 }
+}
+FRA_caliphate = {
+	color = rgb { 15 71 26 }
+	color_ui = rgb { 15 71 26 }
+}
+FRA_frankish = {
+	color = rgb { 55 0 102 }
+	color_ui = rgb { 55 0 102 }
+}
+FRA_greater_social_state = {
+	color = rgb { 87 6 44 }
+	color_ui = rgb { 87 6 44 }
 }
