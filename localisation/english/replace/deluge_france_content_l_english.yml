@@ -360,6 +360,12 @@
  FRA_custom_effect_tooltip_140:0 "You lose one §HAIP§!!"
  FRA_custom_effect_tooltip_141:0 "Builds §Gone level§! of §Hport§! in §HTananarive§!!"
  FRA_custom_effect_tooltip_142:0 "If you have 4 §HAIP§!:\n[460.GetName]:\n§G+1§! §Hcivillian factoriy§!,\n§G+1§! §Hbuilding slot§!,\n§G+2§! §Hinfrastructure§!,\n§G+100 000§! §Hpeople§!.\n[459.GetName]:\n§G+1§! §Hcivillian factory§!,\n§G+1§! §Hbuilding slot§!,\n§G+2§! §Hinfrastructure§!,\n§G+100 000§! §Hpeople§!.\n[513.GetName]:\n§G+1§! §Hcivillian factory§!,\n§G+1§! §Hbuilding slot§!,\n§G+2§! §Hinfrastructure§!,\n§G+50 000§! §Hpeople§!.\nIf you have 3 §HAIP§!:\n[460.GetName]:\n§G+1§! §Hcivillian factoriy§!,\n§G+1§! §Hbuilding slot§!,\n§G+2§! §Hinfrastructure§!,\n§G+100 000§! §Hpeople§!.\n[459.GetName]:\n§G+1§! §Hcivillian factory§!,\n§G+1§! §Hbuilding slot§!,\n§G+2§! §Hinfrastructure§!,\n§G+100 000§! §Hpeople§!.\n[513.GetName]:\n§G+1§! §Hinfrastructure§!,\n§G+50 000§! §Hpeople§!.\nIf you have 2 §HAIP§!:\n[460.GetName]:\n§G+1§! §Hcivillian factoriy§!,\n§G+1§! §Hbuilding slot§!,\n§G+2§! §Hinfrastructure§!,\n§G+100 000§! §Hpeople§!.\n[459.GetName]:\n§G+1§! §Hinfrastructure§!,\n§G+100 000§! §Hpeople§!.\n[513.GetName]:\n§G+1§! §Hinfrastructure§!,\n§G+50 000§! §Hpeople§!.\nIf you have 1 §HAIP§!:\n[460.GetName]:\n§G+1§! §Hinfrastructure§!,\n§G+100 000§! §Hpeople§!.\n[459.GetName]:\n§G+1§! §Hinfrastructure§!,\n§G+100 000§! §Hpeople§!.\n[513.GetName]:\n§G+1§! §Hinfrastructure§!,\n§G+50 000§! §Hpeople§!.\n"
+ league_of_nations_custom_effect_tooltip_1:0 "Modify §HLeague of Nations§! spirit by:\n§G+100%§! justify war goal time on us,\n§R+100%§! justify war goal time!"
+ league_of_nations_custom_effect_tooltip_2:0 "Modify §HLeague of Nations§! spirit by:\n§H+5%§! Consumer Goods Factor,\n§G+30%§! Industry Reparir Speed!"
+ league_of_nations_custom_effect_tooltip_3:0 "Modify §HLeague of Nations§! spirit by:\n§R+10%§! Doctrine Cost,\n§G-10%§! Experience Loss!"
+ league_of_nations_custom_effect_tooltip_4:0 "Modify §HLeague of Nations§! spirit by:\n§R+25%§! New Military Leader Cost,\n§G-10%§! Encirclement Penalty!"
+ league_of_nations_custom_effect_tooltip_5:0 "Modify §HLeague of Nations§! spirit by:\n§H+25%§! Trade Opinion Factor,\n§R-10%§! Convoy Raiding Efficiency!"
+ league_of_nations_custom_effect_tooltip_6:0 "Remove §HLeague of Nations§! spirit!"
  generic_custom_effect_tooltip_1:0 "Current effect:\n"
  ##Dynamic Modifiers
  FRA_modifier_economic_depression:0 "The Great Depression"
@@ -516,5 +522,13 @@
  ##autonomy
  BHU_refused_to_support_bourbon_bhopal_revolt:0 "[BHU.GetName] refused to support Bourbon-Bhopal revolt!"
  ##white peace messages
- BHU_won_against_FRA:0 "[BHU.GetName] won their independence against [FRA.GetName]!"
+ BHU_won_against_FRA:0 "French India won their independence against France!"
+ LBA_won_against_FRA:0 "Senussi Order pushed France out of Libya!"
+ LBA_white_peaced_FRA:0 "Senussi Order and France signed white peace!"
+ ##world tension
+ FRA_demanded_ardennes:0 "[FRA.GetName] demanded [980.GetName]"
+ FRA_demanded_luxebourg:0 "[FRA.GetName] demanded [8.GetName]"
+ FRA_demanded_luxebourgish_rhineland:0 "[FRA.GetName] demanded [786.GetName]"
+ FRA_demanded_wallonia:0 "[FRA.GetName] demanded [34.GetName]"
+ FRA_annexed_luxembourg:0 "[FRA.GetName] annexed [BEL.GetName]"
  

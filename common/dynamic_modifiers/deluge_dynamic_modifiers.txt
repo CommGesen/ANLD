@@ -430,6 +430,20 @@ FRA_modifier_social_first = {##social_first_
 	research_speed_factor = social_first_research_speed_factor
 	compliance_growth = social_first_compliance_growth
 }
+FRA_modifier_lon = {##_lon
+	enable = { always = yes }
+	icon = GFX_idea_league_of_nations
+	enemy_justify_war_goal_time = enemy_justify_war_goal_time_lon
+	justify_war_goal_time = justify_war_goal_time_lon
+	consumer_goods_factor = consumer_goods_factor_lon
+	industry_repair_factor = industry_repair_factor_lon
+	experience_loss_factor = experience_loss_factor_lon
+	land_doctrine_cost_factor = land_doctrine_cost_factor_lon
+	military_leader_cost_factor = military_leader_cost_factor_lon
+	pocket_penalty = pocket_penalty_lon
+	convoy_raiding_efficiency_factor = convoy_raiding_efficiency_factor_lon
+	trade_opinion_factor = trade_opinion_factor_lon
+}
 FRA_modifier_obsolete_army = {##french_bad_army_
 	enable = { always = yes }
 	icon = GFX_idea_spirit_broken_napoleonic_hat

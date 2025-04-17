@@ -733,7 +733,27 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_new_gnostic_religion
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		dynamic = yes
+		icon = {
+			trigger = {
+				NOT = {
+					has_country_leader = {
+						character = FRA_deluge_rene_guenon
+						ruling_only = yes
+					}
+				}
+			}
+			value = GFX_focus_FRA_gnostic_church
+		}
+		icon = {
+			trigger = {
+				has_country_leader = {
+					character = FRA_deluge_rene_guenon
+					ruling_only = yes
+				}
+			}
+			value = GFX_focus_FRA_caliphate
+		}
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_unite_occultist_organizations }
@@ -769,7 +789,42 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_new_esoteric_organizations
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		dynamic = yes
+		icon = {
+			trigger = {
+				NOT = {
+					has_country_leader = {
+						character = FRA_deluge_rene_guenon
+						ruling_only = yes
+					}
+				}
+				NOT = {
+					has_country_leader = {
+						character = FRA_deluge_gerard_encausse
+						ruling_only = yes
+					}
+				}
+			}
+			value = GFX_focus_generic_inverted_pentagram
+		}
+		icon = {
+			trigger = {
+				has_country_leader = {
+					character = FRA_deluge_gerard_encausse
+					ruling_only = yes
+				}
+			}
+			value = GFX_focus_SOV_ivan_plays_baseball
+		}
+		icon = {
+			trigger = {
+				has_country_leader = {
+					character = FRA_deluge_rene_guenon
+					ruling_only = yes
+				}
+			}
+			value = GFX_focus_SOV_ivan_plays_baseball
+		}
 		x = 2
 		y = 1
 		prerequisite = { focus = FRA_new_gnostic_religion focus = FRA_new_times_new_men_new_methods}
@@ -5833,7 +5888,133 @@ focus_tree = {
 			add_political_power = 0
 		}
 		completion_reward = {
-			
+			set_variable = {
+				var = court_of_justice_yes
+				value = 0
+			}
+			set_variable = {
+				var = court_of_justice_no
+				value = 0
+			}
+			set_variable = {
+				var = relief_union_yes
+				value = 0
+			}
+			set_variable = {
+				var = relief_union_no
+				value = 0
+			}
+			set_variable = {
+				var = gas_prohibition_yes
+				value = 0
+			}
+			set_variable = {
+				var = gas_prohibition_no
+				value = 0
+			}
+			set_variable = {
+				var = pow_convention_yes
+				value = 0
+			}
+			set_variable = {
+				var = pow_convention_no
+				value = 0
+			}
+			set_variable = {
+				var = maritime_protections_yes
+				value = 0
+			}
+			set_variable = {
+				var = maritime_protections_no
+				value = 0
+			}
+			every_country = {
+				limit = {
+					NOT = {
+						has_war = yes
+					}
+					is_subject = no
+				}
+				country_event = {
+					id = deluge_league.2
+					days = 1
+				}
+			}
+			hidden_effect = {
+				news_event = {
+					id = deluge_league.1
+				}
+				country_event = {
+					id = deluge_league.4
+					days = 8
+				}
+				country_event = {
+					id = deluge_league.9
+					days = 15
+				}
+				country_event = {
+					id = deluge_league.14
+					days = 22
+				}
+				country_event = {
+					id = deluge_league.19
+					days = 29
+				}
+				country_event = {
+					id = deluge_league.24
+					days = 36
+				}
+				country_event = {
+					id = deluge_league.5
+					days = 14
+				}
+				country_event = {
+					id = deluge_league.10
+					days = 21
+				}
+				country_event = {
+					id = deluge_league.15
+					days = 28
+				}
+				country_event = {
+					id = deluge_league.20
+					days = 35
+				}
+				country_event = {
+					id = deluge_league.25
+					days = 42
+				}
+				news_event = {
+					id = 32
+					days = 45
+				}
+				add_dynamic_modifier = { modifier = FRA_modifier_lon }
+				every_country = {
+					limit = {
+						has_idea = deluge_league_of_nations_prospective_member
+					}
+					country_event = {
+						id = deluge_league.4
+						days = 8
+					}
+					country_event = {
+						id = deluge_league.9
+						days = 15
+					}
+					country_event = {
+						id = deluge_league.14
+						days = 22
+					}
+					country_event = {
+						id = deluge_league.19
+						days = 29
+					}
+					country_event = {
+						id = deluge_league.24
+						days = 36
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -6114,7 +6295,7 @@ focus_tree = {
 					}
 				}
 				country_event = {
-					id = generic.26
+					id = deluge_france_foreign.15
 				}
 			}
 		}
@@ -8318,6 +8499,42 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
+		id = FRA_french_southern_african_infrastructure
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_french_southern_african_confederation focus = FRA_fight_south_african_warlords }
+		relative_position_id = FRA_french_southern_african_confederation
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
 		id = FRA_develop_madagascar
 		icon = GFX_focus_generic_develop_madagascar
 		x = 0
@@ -8462,7 +8679,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_develop_madagascar }
 		relative_position_id = FRA_develop_madagascar
 		search_filters = { }
-		cost = 6
+		cost = 10
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -8476,6 +8693,24 @@ focus_tree = {
 		#}
 		available = {
 			543 = {
+				is_fully_controlled_by = FRA
+			}
+			713 = {
+				is_fully_controlled_by = FRA
+			}
+			706 = {
+				is_fully_controlled_by = FRA
+			}
+			707 = {
+				is_fully_controlled_by = FRA
+			}
+			708 = {
+				is_fully_controlled_by = FRA
+			}
+			709 = {
+				is_fully_controlled_by = FRA
+			}
+			710 = {
 				is_fully_controlled_by = FRA
 			}
 		}
@@ -8496,6 +8731,60 @@ focus_tree = {
 			add_victory_points = {
 				province = 5128
 				value = 4
+			}
+			713 = {
+				add_core_of = FRA
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 5128
+				}
+			}
+			706 = {
+				add_core_of = FRA
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 5128
+				}
+			}
+			707 = {
+				add_core_of = FRA
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 5128
+				}
+			}
+			708 = {
+				add_core_of = FRA
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 5128
+				}
+			}
+			709 = {
+				add_core_of = FRA
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 5128
+				}
+			}
+			710 = {
+				add_core_of = FRA
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 5128
+				}
 			}
 		}
 		ai_will_do = {
@@ -14504,6 +14793,11 @@ focus_tree = {
 					amount = 1
 				}
 			}
+			hidden_effect = {
+				country_event = {
+					id = deluge_france_lore.15
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -14647,7 +14941,11 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				country_event = {
+					id = deluge_france_lore.16
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25

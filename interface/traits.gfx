@@ -11,4 +11,57 @@ spriteTypes = {
 		name = "GFX_trait_artillery_officer"
 		texturefile = "gfx/interface/traits/trait_artillery_officer.dds"
 	}
+	##personal unit leader traits
+	spriteType = {
+		name = "GFX_trait_bonaparte_loyalist"
+		texturefile = "gfx/interface/traits/personal/trait_bonaparte_loyalist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_boulangist"
+		texturefile = "gfx/interface/traits/personal/trait_boulangist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_french_republican"
+		texturefile = "gfx/interface/traits/personal/trait_french_republican.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_polish_falangist"
+		texturefile = "gfx/interface/traits/personal/trait_polish_falangist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_polish_national_democrat"
+		texturefile = "gfx/interface/traits/personal/trait_polish_national_democrat.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_de_la_rocques_follower"
+		texturefile = "gfx/interface/traits/personal/trait_skull.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_war_criminal"
+		texturefile = "gfx/interface/traits/personal/trait_skull.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_slaweks_supporter"
+		texturefile = "gfx/interface/traits/personal/trait_slaweks_supporter.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_zadrugist"
+		texturefile = "gfx/interface/traits/personal/trait_zadrugist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_social_democrat"
+		texturefile = "gfx/interface/traits/personal/trait_social_democrat.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_noble"
+		texturefile = "gfx/interface/traits/personal/trait_crown.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_rydz_smigly_supporter"
+		texturefile = "gfx/interface/traits/personal/trait_rydz_smigly_supporter.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_radicalism_sympathizer"
+		texturefile = "gfx/interface/traits/personal/trait_communist_sympathizer.dds"
+	}
 }

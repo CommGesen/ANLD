@@ -26,11 +26,11 @@ characters={
 			id=-1
 		}
 	}
-	SIA_rama_vii={
-		name="Rama VII"
+	SIA_ananda_mahidol={
+		name="Rama VIII"
 		portraits={
 			civilian={
-				large="gfx/leaders/SIA/king_rama_vii.dds"
+				large="gfx/leaders/SIA/portrait_SIA_ananda_mahidol.dds"
 			}
 		}
 		field_marshal={
@@ -39,12 +39,10 @@ characters={
 			defense_skill=2
 			planning_skill=1
 			logistics_skill=2
-			legacy_id=-1
 		}
 		country_leader={
 			ideology=reactionary_ideology
 			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	SIA_phya_phonphayuhasena={

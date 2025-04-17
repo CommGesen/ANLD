@@ -1551,12 +1551,6 @@ focus_tree = {
 				has_idea = deluge_league_of_nations_prospective_member
 				has_idea = deluge_league_of_nations_lapsing_member
 			}
-			has_war = no
-			has_global_flag = flag_league_international_court_vote_concluded
-			has_global_flag = flag_league_relief_union_vote_concluded
-			has_global_flag = flag_league_prohibit_poison_gas_vote_concluded
-			has_global_flag = flag_league_prisoners_of_war_vote_concluded
-			has_global_flag = flag_league_maritime_protections_vote_concluded
 			NOT = { has_global_flag = flag_league_of_nations_disbanded }
 		}
 		x = 9
@@ -1565,14 +1559,13 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			add_political_power = 80
-			
+			set_country_flag = League_flag_joined_league
 			if = {
 				limit = {
 					is_major = yes
 				}
 				add_named_threat = { threat = -3 name = deluge_ratified_league_of_nations_threat }
 			}
-			
 			if = {
 				limit = {
 					is_major = no
@@ -1580,591 +1573,93 @@ focus_tree = {
 				}
 				add_named_threat = { threat = -1 name = deluge_ratified_league_of_nations_threat }
 			}
-			
 			hidden_effect = {
 				news_event = deluge_league.28
 			}
-			
-			# bitmask is used to determine final attributes of the idea
-			# flags are supposedly initialised at 0
-			# 1 = court of justice
-			# 2 = disaster relief
-			# 4 = gas warfare ban
-			# 8 = convention on pows
-			# 16 = convention on convoys
-			# total of 32 variations (including if none of the conventions pass)
-			
 			if = {
 				limit = {
 					has_idea = deluge_league_of_nations_prospective_member
 				}
 				remove_ideas = deluge_league_of_nations_prospective_member
 			}
-			
 			if = {
 				limit = {
 					has_idea = deluge_league_of_nations_lapsing_member
 				}
 				remove_ideas = deluge_league_of_nations_lapsing_member
 			}
-			
 			add_to_tech_sharing_group = deluge_league_of_nations_tech_group
-
 			custom_effect_tooltip = tooltip_league_final_effects_depend_on_votes
-			
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = FRA_modifier_lon }
+			}
+			custom_effect_tooltip = generic_custom_effect_tooltip_1
 			if = {
 				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 0
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 1
-						}
-					}
+					has_global_flag = league_flag_court_of_justice_passed
 				}
-				add_ideas = deluge_league_of_nations_member_0
+				custom_effect_tooltip = league_of_nations_custom_effect_tooltip_1
+				add_to_variable = {enemy_justify_war_goal_time_lon = 1 }
+				add_to_variable = {justify_war_goal_time_lon = 1 }
 			}
 			if = {
 				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 1
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 2
-						}
-					}
+					has_global_flag = league_flag_relief_union_passed
 				}
-				add_ideas = deluge_league_of_nations_member_1
+				custom_effect_tooltip = league_of_nations_custom_effect_tooltip_2
+				add_to_variable = {consumer_goods_factor_lon = 0.05 }
+				add_to_variable = {industry_repair_factor_lon = 0.3 }
 			}
 			if = {
 				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 2
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 3
-						}
-					}
+					has_global_flag = league_flag_gas_prohibition_passed
 				}
-				add_ideas = deluge_league_of_nations_member_2
+				custom_effect_tooltip = league_of_nations_custom_effect_tooltip_3
+				add_to_variable = {land_doctrine_cost_factor_lon = 0.1 }
+				add_to_variable = {experience_loss_factor_lon = -0.1 }
 			}
 			if = {
 				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 3
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 4
-						}
-					}
+					has_global_flag = league_flag_pow_convention_passed
 				}
-				add_ideas = deluge_league_of_nations_member_3
+				custom_effect_tooltip = league_of_nations_custom_effect_tooltip_4
+				add_to_variable = {military_leader_cost_factor_lon = 0.25 }
+				add_to_variable = {pocket_penalty_lon = -0.1 }
 			}
 			if = {
 				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 4
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 5
-						}
-					}
+					has_global_flag = league_flag_maritime_protections_passed
 				}
-				add_ideas = deluge_league_of_nations_member_4
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 5
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 6
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_5
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 6
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 7
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_6
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 7
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 8
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_7
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 8
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 9
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_8
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 9
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 10
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_9
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 10
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 11
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_10
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 11
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 12
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_11
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 12
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 13
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_12
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 13
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 14
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_13
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 14
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 15
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_14
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 15
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 16
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_15
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 16
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 17
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_16
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 17
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 18
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_17
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 18
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 19
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_18
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 19
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 20
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_19
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 20
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 21
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_20
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 21
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 22
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_21
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 22
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 23
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_22
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 23
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 24
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_23
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 24
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 25
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_24
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 25
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 26
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_25
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 26
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 27
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_26
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 27
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 28
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_27
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 28
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 29
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_28
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 29
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 30
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_29
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 30
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_league_of_nations_bitmask
-							value > 31
-						}
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_30
-			}
-			if = {
-				limit = {
-					has_global_flag = {
-						flag = flag_league_of_nations_bitmask
-						value > 31
-					}
-				}
-				add_ideas = deluge_league_of_nations_member_31
+				custom_effect_tooltip = league_of_nations_custom_effect_tooltip_5
+				add_to_variable = {convoy_raiding_efficiency_factor_lon = -0.1 }
+				add_to_variable = {trade_opinion_factor_lon = 0.25 }
 			}
 		}
 		ai_will_do = {
 			factor = 1
-
 			modifier = {
 				factor = 0.75
 				date < 1937.1.1
 			}
-			
 			modifier = {
 				factor = 0.75
 				date < 1938.1.1
 			}
-			
 			modifier = {
 				factor = 0.75
 				date < 1939.1.1
 			}
-			
 			modifier = {
 				factor = 0.75
 				threat > 25
 			}
-			
 			modifier = {
 				factor = 0.75
 				threat > 50
 			}
-			
 			modifier = {
 				factor = 0.5
 				is_subject = yes
-			}
-			
-			modifier = {
-				factor = 0
-				is_subject = yes
-				any_country = {
-					ROOT = {
-						is_subject_of = PREV
-					}
-					NOT = {
-						OR = {
-							has_idea = deluge_league_of_nations_prospective_member
-							has_idea = deluge_league_of_nations_lapsing_member
-							has_idea = deluge_league_of_nations_member_1
-							has_idea = deluge_league_of_nations_member_2
-							has_idea = deluge_league_of_nations_member_3
-							has_idea = deluge_league_of_nations_member_4
-							has_idea = deluge_league_of_nations_member_5
-							has_idea = deluge_league_of_nations_member_6
-							has_idea = deluge_league_of_nations_member_7
-							has_idea = deluge_league_of_nations_member_8
-							has_idea = deluge_league_of_nations_member_9
-							has_idea = deluge_league_of_nations_member_10
-							has_idea = deluge_league_of_nations_member_11
-							has_idea = deluge_league_of_nations_member_12
-							has_idea = deluge_league_of_nations_member_13
-							has_idea = deluge_league_of_nations_member_14
-							has_idea = deluge_league_of_nations_member_15
-							has_idea = deluge_league_of_nations_member_16
-							has_idea = deluge_league_of_nations_member_17
-							has_idea = deluge_league_of_nations_member_18
-							has_idea = deluge_league_of_nations_member_19
-							has_idea = deluge_league_of_nations_member_20
-							has_idea = deluge_league_of_nations_member_21
-							has_idea = deluge_league_of_nations_member_22
-							has_idea = deluge_league_of_nations_member_23
-							has_idea = deluge_league_of_nations_member_24
-							has_idea = deluge_league_of_nations_member_25
-							has_idea = deluge_league_of_nations_member_26
-							has_idea = deluge_league_of_nations_member_27
-							has_idea = deluge_league_of_nations_member_28
-							has_idea = deluge_league_of_nations_member_29
-							has_idea = deluge_league_of_nations_member_30
-							has_idea = deluge_league_of_nations_member_31
-						}
-					}
-				}
 			}
 			modifier = {
 				factor = 0.5
@@ -2198,58 +1693,21 @@ focus_tree = {
 		available_if_capitulated = yes
 		cost = 5
 		completion_reward = {
-			add_political_power = 80
-			
 			if = {
 				limit = {
 					is_major = yes
 				}
 				add_named_threat = { threat = 1 name = deluge_left_league_of_nations_threat }
 			}
-		
 			remove_from_tech_sharing_group = deluge_league_of_nations_tech_group
-			
-			remove_ideas = deluge_league_of_nations_member_0
-			
+			custom_effect_tooltip = league_of_nations_custom_effect_tooltip_6
 			hidden_effect = {
 				news_event = deluge_league.29
-				remove_ideas = deluge_league_of_nations_prospective_member
-				remove_ideas = deluge_league_of_nations_member_1
-				remove_ideas = deluge_league_of_nations_member_2
-				remove_ideas = deluge_league_of_nations_member_3
-				remove_ideas = deluge_league_of_nations_member_4
-				remove_ideas = deluge_league_of_nations_member_5
-				remove_ideas = deluge_league_of_nations_member_6
-				remove_ideas = deluge_league_of_nations_member_7
-				remove_ideas = deluge_league_of_nations_member_8
-				remove_ideas = deluge_league_of_nations_member_9
-				remove_ideas = deluge_league_of_nations_member_10
-				remove_ideas = deluge_league_of_nations_member_11
-				remove_ideas = deluge_league_of_nations_member_12
-				remove_ideas = deluge_league_of_nations_member_13
-				remove_ideas = deluge_league_of_nations_member_14
-				remove_ideas = deluge_league_of_nations_member_15
-				remove_ideas = deluge_league_of_nations_member_16
-				remove_ideas = deluge_league_of_nations_member_17
-				remove_ideas = deluge_league_of_nations_member_18
-				remove_ideas = deluge_league_of_nations_member_19
-				remove_ideas = deluge_league_of_nations_member_20
-				remove_ideas = deluge_league_of_nations_member_21
-				remove_ideas = deluge_league_of_nations_member_22
-				remove_ideas = deluge_league_of_nations_member_23
-				remove_ideas = deluge_league_of_nations_member_24
-				remove_ideas = deluge_league_of_nations_member_25
-				remove_ideas = deluge_league_of_nations_member_26
-				remove_ideas = deluge_league_of_nations_member_27
-				remove_ideas = deluge_league_of_nations_member_28
-				remove_ideas = deluge_league_of_nations_member_29
-				remove_ideas = deluge_league_of_nations_member_30
-				remove_ideas = deluge_league_of_nations_member_31
+				remove_dynamic_modifier = { modifier = FRA_modifier_lon }
 			}
 		}
 		ai_will_do = {
 			factor = 1
-			
 			modifier = {
 				factor = 0
 				is_in_faction_with = FRA

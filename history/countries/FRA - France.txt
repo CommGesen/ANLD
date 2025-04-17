@@ -768,9 +768,6 @@ set_convoys = 300
 give_guarantee = POR
 give_guarantee = SWI
 
-add_opinion_modifier = { target = SPR modifier = historic_friendship_modifier }
-add_opinion_modifier = { target = HOL modifier = historic_friendship_modifier }
-
 add_opinion_modifier = { target = AUS modifier = great_war_alliance_modifier }
 add_opinion_modifier = { target = SOV modifier = great_war_hostility_modifier }
 add_opinion_modifier = { target = SOV modifier = historic_rivalry_modifier }
@@ -937,7 +934,7 @@ if = {
 		traits = { operative_infiltrator operative_commando }
 		bypass_recruitment = no
 		available_to_spy_master = no
-		nationalities = { FRA QUE }
+		nationalities = { FRA }
 	}
 	create_operative_leader = {
 		name = "Gilbert Renault"
@@ -1109,12 +1106,11 @@ recruit_character = FRA_deluge_jacques_rueff
 recruit_character = FRA_deluge_louis_maurin
 recruit_character = FRA_deluge_louis_renault
 recruit_character = FRA_deluge_francois_hussenot
-recruit_character = FRA_deluge_frederic_joliot_curie
-recruit_character = FRA_deluge_irene_joliot_curie
+
 recruit_character = FRA_deluge_dumesnil_de_gramont
 recruit_character = FRA_deluge_antoine_bethouart
 recruit_character = FRA_deluge_joseph_de_goislard_de_monsabert
-
+recruit_character = FRA_deluge_robert_esnault_pelterie
 recruit_character = FRA_deluge_henri_sauvagnac
 recruit_character = FRA_deluge_rene_guenon
 recruit_character = FRA_deluge_gerard_encausse
@@ -1127,4 +1123,11 @@ recruit_character = FRA_deluge_robert_brasillach
 recruit_character = FRA_deluge_jacques_stern
 
 recruit_character = FRA_deluge_jacques_sadoul
+recruit_character = FRA_deluge_joliot_curie_couple
+recruit_character = FRA_deluge_marcel_bloch
+recruit_character = FRA_deluge_emile_dewoitine
+recruit_character = FRA_deluge_francis_perrin
+
+#recruit_character = FRA_deluge_frederic_joliot_curie
+#recruit_character = FRA_deluge_irene_joliot_curie
 

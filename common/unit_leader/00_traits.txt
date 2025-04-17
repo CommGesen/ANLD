@@ -55,23 +55,16 @@
 #	enable_ability = ability_key
 #}
 leader_traits = {
-
-	
-##################################
-# Common Traits
-##################################
+#Common Traits
 	old_guard = { 
 		type = land
 		trait_type = personality_trait
-		
 		modifier = {
 			max_dig_in = 1
 		}
-		
 		non_shared_modifier = {
 			experience_gain_factor = -0.25
 		}
-
 		new_commander_weight = {
 			factor = 1
 
@@ -90,21 +83,15 @@ leader_traits = {
 		}
 		
 	}
-	
-	
 	brilliant_strategist = { 
 		type = land
 		trait_type = personality_trait
-		
 		attack_skill = 1
 		planning_skill = 1
-		
 		attack_skill_factor = 1
 		planning_skill_factor = 1
-
 		new_commander_weight = {
 			factor = 1
-
 			modifier = {
 				FROM = { has_idea = best_of_the_best_spirit }
 				factor = 0
@@ -120,21 +107,15 @@ leader_traits = {
 		}
 		
 	}
-	
-	
 	inflexible_strategist = { 
 		type = land
 		trait_type = personality_trait
-		
 		defense_skill = 1
 		logistics_skill = 1
-		
 		defense_skill_factor = 1
 		logistics_skill_factor = 1
-
 		new_commander_weight = {
 			factor = 1
-
 			modifier = {
 				is_army_leader = yes
 				FROM = { has_idea = best_of_the_best_spirit }
@@ -150,19 +131,15 @@ leader_traits = {
 			}
 		}
 	}
-	
 	politically_connected = { 
 		type = land
 		trait_type = personality_trait
-		
 		non_shared_modifier = {
 			experience_gain_factor = -0.1
 			promote_cost_factor = -0.5
 		}
-
 		new_commander_weight = {
 			factor = 1  
-			
 			modifier = {
 				is_army_leader = yes
 				FROM = { has_idea = best_of_the_best_spirit }
@@ -182,38 +159,31 @@ leader_traits = {
 				factor = 0
 			}
 		}
-		
 		planning_skill_factor = 1
 		logistics_skill_factor = 1
 	}
-	
 	war_hero = { 
 		type = { land navy }
 		trait_type = personality_trait
-		
-		non_shared_modifier = { # WARNING! Changing the value of these modifiers requires changing them also in the tooltip ITA_heroes_of_the_nation_general_traits_tt
+		non_shared_modifier = {
+			#WARNING! Changing the value of these modifiers requires changing them also in the tooltip ITA_heroes_of_the_nation_general_traits_tt
 			promote_cost_factor = -0.5
 			reassignment_duration_factor = 0.5   # +50% cost to replace leader
 		}
-		
 		new_commander_weight = {
 			factor = 0  # Scripted starting leaders only
 		}
 		attack_skill_factor = 1
 		planning_skill_factor = 1
 	}
-	
 	career_officer = { 
 		type = land
 		trait_type = personality_trait
-		
 		non_shared_modifier = {
 			promote_cost_factor = -0.25
 		}
-
 		new_commander_weight = {
 			factor = 1
-
 			modifier = {
 				FROM = { has_idea = best_of_the_best_spirit }
 				factor = 0
@@ -227,21 +197,16 @@ leader_traits = {
 				factor = 0
 			}
 		}
-		
 		planning_skill_factor = 1
 		logistics_skill_factor = 1
 	}
-
 	trait_cautious = { 
 		type = land
 		trait_type = personality_trait
-		
 		modifier = {
 			planning_speed = -0.20
 			wounded_chance_factor = -0.5
 		}
-		
-		
 		new_commander_weight = {
 			factor = 1
 			
@@ -262,24 +227,18 @@ leader_traits = {
 				factor = 0
 			}
 		}
-		
-		
 		defense_skill_factor = 1
 		logistics_skill_factor = 1
 	}
-
 	trait_reckless = { 
 		type = land
 		trait_type = personality_trait
-		
 		modifier = {
 			planning_speed = 0.20
 			wounded_chance_factor = 0.5  # +50% chance to get wounded
 		}
-		
 		new_commander_weight = {
 			factor = 1
-			
 			modifier = {
 				has_trait = trait_cautious
 				factor = 0 
@@ -297,26 +256,20 @@ leader_traits = {
 				factor = 0
 			}
 		}
-		
 		attack_skill_factor = 1
 		defense_skill_factor = -1
 		planning_skill_factor = 1
 	}
-
 	media_personality = { 
 		type = land
 		trait_type = personality_trait
-		
 		non_shared_modifier = {
 			reassignment_duration_factor = 1   # +100% cost to replace leader
 		}
-		
 		attack_skill_factor = 1
 		defense_skill_factor = 1
-
 		new_commander_weight = {
 			factor = 1
-
 			modifier = {
 				FROM = { has_idea = best_of_the_best_spirit }
 				factor = 0
@@ -331,20 +284,15 @@ leader_traits = {
 			}
 		}
 	}
-
 	harsh_leader = { 
 		type = land
 		trait_type = personality_trait
-		
 		attack_skill = 1
-
 		modifier = {
 			army_morale_factor = -0.10
 		}
-
 		new_commander_weight = {
 			factor = 1
-
 			modifier = {
 				FROM = { has_idea = best_of_the_best_spirit }
 				factor = 0
@@ -358,29 +306,113 @@ leader_traits = {
 				factor = 0
 			}
 		}
-		
 		attack_skill_factor = 1
 		logistics_skill_factor = 1
 	}
-
-	bearer_of_artillery = { # Reserved for Wojtek  
-		type = corps_commander
-		
+	noble = { 
+		type = land
 		trait_type = personality_trait
-		
-		modifier = {
-			army_artillery_attack_factor = 0.15
-		}
-		
 		new_commander_weight = {
 			factor = 0
 		}
 	}
-	
+	rydz_smigly_follower = { 
+		type = land
+		trait_type = personality_trait
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	zadrugist = { 
+		type = land
+		trait_type = personality_trait
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	french_republican = { 
+		type = land
+		trait_type = personality_trait
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	polish_falangist = { 
+		type = land
+		trait_type = personality_trait
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	polish_national_democrat = { 
+		type = land
+		trait_type = personality_trait
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	slaweks_supporter = { 
+		type = land
+		trait_type = personality_trait
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	social_democrat = { 
+		type = land
+		trait_type = personality_trait
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	bonaparte_loyalist = { 
+		type = land
+		trait_type = personality_trait
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	boulangist = { 
+		type = land
+		trait_type = personality_trait
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	de_la_rocques_follower = { 
+		type = land
+		trait_type = personality_trait
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	war_criminal = {
+		type = land
+		trait_type = personality_trait
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	radicalism_sympathizer = {
+		type = land
+		trait_type = personality_trait
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	bearer_of_artillery = {#Reserved for Wojtek  
+		type = corps_commander
+		trait_type = personality_trait
+		modifier = {
+			army_artillery_attack_factor = 0.15
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
 	infantry_officer = { 
 		type = land
 		trait_type = personality_trait 
-		
 		unit_trigger = {
 			OR = {
 				division_has_majority_template = infantry
@@ -389,7 +421,6 @@ leader_traits = {
 				division_has_majority_template = mountaineers
 				division_has_majority_template = paratrooper
 				division_has_majority_template = penal_battalion
-				
 				owner = {
 					has_idea = mass_assault_academy_spirit
 				}
@@ -404,21 +435,17 @@ leader_traits = {
 				}
 			}
 		}
-		
 		trait_xp_factor = {
 			infantry_leader = 1     #+100%
 		}
-		
 		new_commander_weight = {
 			factor = 1
-			
 			modifier = {
 				FROM = { 
 					has_idea = mass_assault_academy_spirit
 				}
 				factor = 2
 			}
-			
 			modifier = {
 				FROM = { has_idea = best_of_the_best_spirit }
 				factor = 0
@@ -431,9 +458,8 @@ leader_traits = {
 				FROM = { has_idea = SOV_purged_junior_army_officers_3 }
 				factor = 0
 			}
-			
 			modifier = {
-				FROM = { 
+				FROM = {
 					has_dlc = "By Blood Alone"
 				}
 				factor = 0

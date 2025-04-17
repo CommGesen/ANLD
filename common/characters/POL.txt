@@ -891,7 +891,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { old_guard infantry_officer }
+			traits = { old_guard infantry_officer war_criminal war_hero }
 			skill=4
 			attack_skill=2
 			defense_skill=4
@@ -927,7 +927,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { war_hero cavalry_leader cavalry_expert politically_connected }
+			traits = { war_hero cavalry_leader cavalry_expert politically_connected war_criminal rydz_smigly_follower }
 			skill=4
 			attack_skill=3
 			defense_skill=4

@@ -1696,15 +1696,7 @@ characters={
 				large="gfx/leaders/FRA/portrait_FRA_ernest_petit.dds"
 			}
 		}
-		corps_commander={
-			traits={ career_officer infantry_officer war_hero }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
-			desc = "FRA_deluge_ernest_petit_desc"
-		}
+		##role of corps commander will be added via an event
 	}
 	FRA_deluge_jean_de_lattre_de_tassigny={
 		name=FRA_deluge_jean_de_lattre_de_tassigny_name
@@ -3881,6 +3873,76 @@ characters={
 			traits = { scientist_trait_nuclear_power_expert }
 			skills = {
 				specialization_nuclear = 2
+			}
+		}
+	}
+	FRA_deluge_joliot_curie_couple = {
+		name = FRA_deluge_joliot_curie_couple_name
+		portraits = {
+			army = {
+				large = "gfx/leaders/FRA/portrait_FRA_joliot_curie_couple.dds"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_nuclear_specialist scientist_trait_bright scientist_trait_nuclear_power_expert }
+			skills = {
+				specialization_nuclear = 2
+			}
+		}
+	}
+	FRA_deluge_francis_perrin = {
+		name = FRA_deluge_francis_perrin_name
+		portraits = {
+			army = {
+				large = "gfx/leaders/FRA/portrait_FRA_francis_perrin.dds"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_nuclear_specialist }
+			skills = {
+				specialization_nuclear = 1
+			}
+		}
+	}
+	FRA_deluge_robert_esnault_pelterie = {
+		name = FRA_deluge_robert_esnault_pelterie_name
+		portraits = {
+			army = {
+				large = "gfx/leaders/FRA/portrait_FRA_robert_esnault_pelterie.dds"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_rocketry_specialist scientist_trait_brilliant_theorist }
+			skills = {
+				specialization_air = 2
+			}
+		}
+	}
+	FRA_deluge_marcel_bloch = {
+		name = FRA_deluge_marcel_bloch_name
+		portraits = {
+			army = {
+				large = "gfx/leaders/FRA/portrait_FRA_marcel_bloch.dds"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_aircraft_specialist }
+			skills = {
+				specialization_air = 2
+			}
+		}
+	}
+	FRA_deluge_emile_dewoitine = {
+		name = FRA_deluge_emile_dewoitine_name
+		portraits = {
+			army = {
+				large = "gfx/leaders/FRA/portrait_FRA_emile_dewoitine.dds"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_aircraft_specialist }
+			skills = {
+				specialization_air = 2
 			}
 		}
 	}
