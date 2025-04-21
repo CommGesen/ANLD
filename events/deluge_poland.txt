@@ -380,9 +380,6 @@ country_event = {#POL chooses leader for ND
 	option = {##Jan Mosdorf
 		name = deluge_poland.15.c
 		promote_character = POL_deluge_jan_mosdorf
-		trigger = {
-			always = no
-		}
 		hidden_effect = {
 			news_event = {
 				id = deluge_poland.55

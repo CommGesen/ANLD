@@ -200,22 +200,48 @@ news_event = {
 	is_triggered_only = yes
 	option = {
 		name = deluge_league.6.a
-		trigger = { has_government = communism }
+		trigger = {
+			has_government = communism
+			NOT = {
+				tag = FRA
+			}
+		}
 	}
 	option = {
 		name = deluge_league.6.b
-		trigger = { has_government = democratic }
+		trigger = {
+			NOT = {
+				tag = FRA
+			}
+			has_government = democratic
+		}
 	}
 	option = {
 		name = deluge_league.6.c
-		trigger = { has_government = neutrality }
+		trigger = {
+			has_government = neutrality
+			NOT = {
+				tag = FRA
+			}
+		}
 	}
 	option = {
 		name = deluge_league.6.e
-		trigger = { has_government = fascism }
+		trigger = {
+			has_government = fascism
+			NOT = {
+				tag = FRA
+			}
+		}
+	}
+	option = {
+		name = deluge_happy_leader
+		trigger = {
+			tag = FRA
+		}
 	}
 }
-# News event for the International Court failing
+#News event for the International Court failing
 news_event = {
 	id = deluge_league.7
 	title = deluge_league.7.t
@@ -225,19 +251,45 @@ news_event = {
 	is_triggered_only = yes
 	option = {
 		name = deluge_league.7.a
-		trigger = { has_government = communism }
+		trigger = {
+			has_government = communism
+			NOT = {
+				tag = FRA
+			}
+		}
 	}
 	option = {
 		name = deluge_league.7.b
-		trigger = { has_government = democratic }
+		trigger = {
+			NOT = {
+				tag = FRA
+			}
+			has_government = democratic
+		}
 	}
 	option = {
 		name = deluge_league.7.c
-		trigger = { has_government = neutrality }
+		trigger = {
+			has_government = neutrality
+			NOT = {
+				tag = FRA
+			}
+		}
 	}
 	option = {
 		name = deluge_league.7.e
-		trigger = { has_government = fascism }
+		trigger = {
+			has_government = fascism
+			NOT = {
+				tag = FRA
+			}
+		}
+	}
+	option = {
+		name = deluge_sad_leader
+		trigger = {
+			tag = FRA
+		}
 	}
 }
 # France proposes an International Relief Union
@@ -382,19 +434,45 @@ news_event = {
 	is_triggered_only = yes
 	option = {
 		name = deluge_league.11.a
-		trigger = { has_government = communism }
+		trigger = {
+			has_government = communism
+			NOT = {
+				tag = FRA
+			}
+		}
 	}
 	option = {
 		name = deluge_league.11.b
-		trigger = { has_government = democratic }
+		trigger = {
+			NOT = {
+				tag = FRA
+			}
+			has_government = democratic
+		}
 	}
 	option = {
 		name = deluge_league.11.c
-		trigger = { has_government = neutrality }
+		trigger = {
+			has_government = neutrality
+			NOT = {
+				tag = FRA
+			}
+		}
 	}
 	option = {
 		name = deluge_league.11.e
-		trigger = { has_government = fascism }
+		trigger = {
+			has_government = fascism
+			NOT = {
+				tag = FRA
+			}
+		}
+	}
+	option = {
+		name = deluge_happy_leader
+		trigger = {
+			tag = FRA
+		}
 	}
 }
 #News event for the International Relief Union failing
@@ -407,19 +485,45 @@ news_event = {
 	is_triggered_only = yes
 	option = {
 		name = deluge_league.12.a
-		trigger = { has_government = communism }
+		trigger = {
+			has_government = communism
+			NOT = {
+				tag = FRA
+			}
+		}
 	}
 	option = {
 		name = deluge_league.12.b
-		trigger = { has_government = democratic }
+		trigger = {
+			NOT = {
+				tag = FRA
+			}
+			has_government = democratic
+		}
 	}
 	option = {
 		name = deluge_league.12.c
-		trigger = { has_government = neutrality }
+		trigger = {
+			has_government = neutrality
+			NOT = {
+				tag = FRA
+			}
+		}
 	}
 	option = {
 		name = deluge_league.12.e
-		trigger = { has_government = fascism }
+		trigger = {
+			has_government = fascism
+			NOT = {
+				tag = FRA
+			}
+		}
+	}
+	option = {
+		name = deluge_sad_leader
+		trigger = {
+			tag = FRA
+		}
 	}
 }
 # France proposes a Prohibition on Poison Gas
@@ -564,19 +668,45 @@ news_event = {
 	is_triggered_only = yes
 	option = {
 		name = deluge_league.16.a
-		trigger = { has_government = communism }
+		trigger = {
+			has_government = communism
+			NOT = {
+				tag = FRA
+			}
+		}
 	}
 	option = {
 		name = deluge_league.16.b
-		trigger = { has_government = democratic }
+		trigger = {
+			NOT = {
+				tag = FRA
+			}
+			has_government = democratic
+		}
 	}
 	option = {
 		name = deluge_league.16.c
-		trigger = { has_government = neutrality }
+		trigger = {
+			has_government = neutrality
+			NOT = {
+				tag = FRA
+			}
+		}
 	}
 	option = {
 		name = deluge_league.16.e
-		trigger = { has_government = fascism }
+		trigger = {
+			has_government = fascism
+			NOT = {
+				tag = FRA
+			}
+		}
+	}
+	option = {
+		name = deluge_happy_leader
+		trigger = {
+			tag = FRA
+		}
 	}
 }
 # News event for the Prohibition on Poison Gas failing
@@ -589,19 +719,45 @@ news_event = {
 	is_triggered_only = yes
 	option = {
 		name = deluge_league.17.a
-		trigger = { has_government = communism }
+		trigger = {
+			has_government = communism
+			NOT = {
+				tag = FRA
+			}
+		}
 	}
 	option = {
 		name = deluge_league.17.b
-		trigger = { has_government = democratic }
+		trigger = {
+			NOT = {
+				tag = FRA
+			}
+			has_government = democratic
+		}
 	}
 	option = {
 		name = deluge_league.17.c
-		trigger = { has_government = neutrality }
+		trigger = {
+			has_government = neutrality
+			NOT = {
+				tag = FRA
+			}
+		}
 	}
 	option = {
 		name = deluge_league.17.e
-		trigger = { has_government = fascism }
+		trigger = {
+			has_government = fascism
+			NOT = {
+				tag = FRA
+			}
+		}
+	}
+	option = {
+		name = deluge_sad_leader
+		trigger = {
+			tag = FRA
+		}
 	}
 }
 # France proposes a Convention on Prisoners of War
@@ -745,19 +901,45 @@ news_event = {
 	is_triggered_only = yes
 	option = {
 		name = deluge_league.21.a
-		trigger = { has_government = communism }
+		trigger = {
+			has_government = communism
+			NOT = {
+				tag = FRA
+			}
+		}
 	}
 	option = {
 		name = deluge_league.21.b
-		trigger = { has_government = democratic }
+		trigger = {
+			NOT = {
+				tag = FRA
+			}
+			has_government = democratic
+		}
 	}
 	option = {
 		name = deluge_league.21.c
-		trigger = { has_government = neutrality }
+		trigger = {
+			has_government = neutrality
+			NOT = {
+				tag = FRA
+			}
+		}
 	}
 	option = {
 		name = deluge_league.21.e
-		trigger = { has_government = fascism }
+		trigger = {
+			has_government = fascism
+			NOT = {
+				tag = FRA
+			}
+		}
+	}
+	option = {
+		name = deluge_happy_leader
+		trigger = {
+			tag = FRA
+		}
 	}
 }
 # News event for the Convention on Prisoners of War failing
@@ -770,19 +952,45 @@ news_event = {
 	is_triggered_only = yes
 	option = {
 		name = deluge_league.22.a
-		trigger = { has_government = communism }
+		trigger = {
+			has_government = communism
+			NOT = {
+				tag = FRA
+			}
+		}
 	}
 	option = {
 		name = deluge_league.22.b
-		trigger = { has_government = democratic }
+		trigger = {
+			NOT = {
+				tag = FRA
+			}
+			has_government = democratic
+		}
 	}
 	option = {
 		name = deluge_league.22.c
-		trigger = { has_government = neutrality }
+		trigger = {
+			has_government = neutrality
+			NOT = {
+				tag = FRA
+			}
+		}
 	}
 	option = {
 		name = deluge_league.22.e
-		trigger = { has_government = fascism }
+		trigger = {
+			has_government = fascism
+			NOT = {
+				tag = FRA
+			}
+		}
+	}
+	option = {
+		name = deluge_sad_leader
+		trigger = {
+			tag = FRA
+		}
 	}
 }
 # France proposes a Maritime Protections Convention
@@ -928,19 +1136,45 @@ news_event = {
 	is_triggered_only = yes
 	option = {
 		name = deluge_league.26.a
-		trigger = { has_government = communism }
+		trigger = {
+			has_government = communism
+			NOT = {
+				tag = FRA
+			}
+		}
 	}
 	option = {
 		name = deluge_league.26.b
-		trigger = { has_government = democratic }
+		trigger = {
+			NOT = {
+				tag = FRA
+			}
+			has_government = democratic
+		}
 	}
 	option = {
 		name = deluge_league.26.c
-		trigger = { has_government = neutrality }
+		trigger = {
+			has_government = neutrality
+			NOT = {
+				tag = FRA
+			}
+		}
 	}
 	option = {
 		name = deluge_league.26.e
-		trigger = { has_government = fascism }
+		trigger = {
+			has_government = fascism
+			NOT = {
+				tag = FRA
+			}
+		}
+	}
+	option = {
+		name = deluge_happy_leader
+		trigger = {
+			tag = FRA
+		}
 	}
 }
 # News event for the Maritime Protections Convention failing
@@ -953,19 +1187,45 @@ news_event = {
 	is_triggered_only = yes
 	option = {
 		name = deluge_league.27.a
-		trigger = { has_government = communism }
+		trigger = {
+			has_government = communism
+			NOT = {
+				tag = FRA
+			}
+		}
 	}
 	option = {
 		name = deluge_league.27.b
-		trigger = { has_government = democratic }
+		trigger = {
+			NOT = {
+				tag = FRA
+			}
+			has_government = democratic
+		}
 	}
 	option = {
 		name = deluge_league.27.c
-		trigger = { has_government = neutrality }
+		trigger = {
+			has_government = neutrality
+			NOT = {
+				tag = FRA
+			}
+		}
 	}
 	option = {
 		name = deluge_league.27.e
-		trigger = { has_government = fascism }
+		trigger = {
+			has_government = fascism
+			NOT = {
+				tag = FRA
+			}
+		}
+	}
+	option = {
+		name = deluge_happy_leader
+		trigger = {
+			tag = FRA
+		}
 	}
 }
 # News event for a nation ratifying the League conventions
@@ -980,7 +1240,8 @@ news_event = {
 		name = deluge_league.28.a
 		trigger = {
 			OR = {
-				original_tag = FROM
+				tag = FRA
+				tag = FROM
 				is_in_faction_with = FROM
 			}
 			has_war = no
@@ -991,7 +1252,7 @@ news_event = {
 		trigger = {
 			NOT = {
 				OR = {
-					original_tag = FROM
+					tag = FROM
 					is_in_faction_with = FROM
 					has_war = yes
 				}
@@ -1017,7 +1278,8 @@ news_event = {
 		name = deluge_league.29.a
 		trigger = {
 			OR = {
-				original_tag = FROM
+				tag = FROM
+				tag = FRA
 				is_in_faction_with = FROM
 			}
 			has_war = no
@@ -1028,7 +1290,7 @@ news_event = {
 		trigger = {
 			NOT = {
 				OR = {
-					original_tag = FROM
+					tag = FROM
 					is_in_faction_with = FROM
 					has_war = yes
 				}
