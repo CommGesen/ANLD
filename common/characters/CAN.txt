@@ -55,63 +55,6 @@ characters={
 			expire="1965.1.1.1"
 		}
 	}
-	CAN_felix_tremblay={
-		name="Felix Tremblay"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_SOV_nikolai_berzarin.dds"
-			}
-			army={
-				large="gfx/leaders/SOV/Portrait_Soviet_Nikolai_Berzarin.dds"
-			}
-		}
-		corps_commander={
-			traits={ infantry_officer }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-		}
-	}
-	CAN_edouard_gagnon={
-		name="Edouard Gagnon"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_SOV_kuzma_galitsky.dds"
-			}
-			army={
-				large="gfx/leaders/SOV/Portrait_Soviet_Kuzma_Galitsky.dds"
-			}
-		}
-		corps_commander={
-			traits={ infantry_officer commando }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-		}
-	}
-	CAN_antoine_gauthier={
-		name="Antoine Gauthier"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_SOV_alexander_gorbatov.dds"
-			}
-			army={
-				large="gfx/leaders/SOV/Portrait_Soviet_Alexander_Gorbatov.dds"
-			}
-		}
-		corps_commander={
-			traits={ infantry_officer trickster }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-		}
-	}
 	CAN_mathéo_ney_delchingen={
 		name="Mathéo Ney d'Elchingen"
 		portraits={

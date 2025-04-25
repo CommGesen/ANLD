@@ -224,26 +224,6 @@ characters={
 			legacy_id=-1
 		}
 	}
-	CAU_vasily_chuikov={
-		name="Vasily Chuikov"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_SOV_vasily_chuikov.dds"
-			}
-			army={
-				large="gfx/leaders/SOV/Portrait_Soviet_Vasily_Chuikov.dds"
-			}
-		}
-		corps_commander={
-			traits={ brilliant_strategist career_officer }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-1
-		}
-	}
 	CAU_sergey_gorshkov={
 		name="Sergey Gorshkov"
 		portraits={

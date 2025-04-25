@@ -305,26 +305,6 @@ characters={
 			legacy_id=-1
 		}
 	}
-	UKR_alexander_gorbatov={
-		name="Alexander Gorbatov"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_SOV_alexander_gorbatov.dds"
-			}
-			army={
-				large="gfx/leaders/SOV/Portrait_Soviet_Alexander_Gorbatov.dds"
-			}
-		}
-		corps_commander={
-			traits={ career_officer cavalry_officer }
-			skill=3
-			attack_skill=2
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=-1
-		}
-	}
 	UKR_kirill_moskalenko={
 		name="Kirill Moskalenko"
 		portraits={
@@ -379,26 +359,6 @@ characters={
 			skill=2
 			attack_skill=2
 			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-1
-		}
-	}
-	UKR_nikolai_berzarin={
-		name="Nikolai Berzarin"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_SOV_nikolai_berzarin.dds"
-			}
-			army={
-				large="gfx/leaders/SOV/Portrait_Soviet_Nikolai_Berzarin.dds"
-			}
-		}
-		corps_commander={
-			traits={ infantry_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=3
 			planning_skill=2
 			logistics_skill=2
 			legacy_id=-1

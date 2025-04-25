@@ -95,47 +95,5 @@ set_popularities = {
 	neutrality = 10
 }
 
-create_country_leader = {
-	name = "Fedir Scherbyna"
-	desc = ""
-	picture = "gfx/leaders/SOV/fedir_scherbyna.dds"
-	expire = "1953.3.1"
-	ideology = liberal_republican_ideology
-	traits = {
-		
-	}
-}
 
-create_country_leader = {
-	name = "Sakhib-Garey Said-Galiyev"
-	desc = ""
-	picture = "gfx/leaders/SOV/Sakhib-Garey_Said-Galiyev.dds"
-	expire = "1953.3.1"
-	ideology = communist_ideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Pyotr Krasnov"
-	desc = ""
-	picture = "gfx/leaders/SOV/petr_krasnov.dds"
-	expire = "1953.3.1"
-	ideology = reactionary_ideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Andrei Shkuro"
-	desc = ""
-	picture = "gfx/leaders/SOV/andrei_shkuro2.dds"
-	expire = "1953.3.1"
-	ideology = corporatist_ideology
-	traits = {
-		
-	}
-}
 
