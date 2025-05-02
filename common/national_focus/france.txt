@@ -544,7 +544,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_abandon_western_culture
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_abandon_western_culture
 		x = -2
 		y = 1
 		prerequisite = { focus = FRA_purge_political_opponents }
@@ -697,7 +697,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_unite_occultist_organizations
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_unite_occultist_organizations
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_abandon_western_culture }
@@ -1047,7 +1047,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_in_the_footsteps_of_the_romans
-		icon = GFX_focus_FRA_roman_helmet
+		icon = GFX_focus_generic_roman_salute
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_expand_blueshirts }
@@ -3271,7 +3271,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_from_each_according_to_his_ability
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_anarchist_worker
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_anarchist_communist_federation }
@@ -7298,7 +7298,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_vassalize_arabian_tribes
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_FRA_focus_vassalize_arab_tribes
 		x = -4
 		y = 1
 		prerequisite = { focus = FRA_asian_department }
@@ -7804,7 +7804,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_shoot_down_the_rising_sun
-		icon = GFX_focus_attack_japan
+		icon = GFX_focus_generic_downed_rising_sun
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_fortify_our_cities_in_china }
@@ -7924,7 +7924,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_operation_cartier
-		icon = GFX_focus_generic_naval_invasion_tank
+		icon = GFX_focus_generic_amphibious_landing2
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_prepare_west_africas_infrastructure }
@@ -7960,7 +7960,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_railways_in_western_africa
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_FRA_focus_railways_in_west_africa
 		x = -3
 		y = 1
 		prerequisite = { focus = FRA_african_department }
@@ -7996,7 +7996,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_fight_western_african_warlords
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_FRA_focus_fight_west_african_warlords
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_railways_in_western_africa }
@@ -8032,7 +8032,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_french_western_african_confederation
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_FRA_focus_federation_of_french_west_africa
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_railways_in_western_africa }
@@ -8068,7 +8068,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_west_african_aluminium
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_FRA_focus_west_african_aluminium
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_french_western_african_confederation focus = FRA_fight_western_african_warlords}
@@ -8104,7 +8104,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_railways_in_equatorial_africa
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_FRA_focus_railways_in_equatorial_africa
 		x = -7
 		y = 1
 		prerequisite = { focus = FRA_african_department }
@@ -8140,7 +8140,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_fight_equatorial_african_warlords
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_FRA_focus_fight_equatorial_african_warlords
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_railways_in_equatorial_africa }
@@ -8176,7 +8176,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_french_equatorial_african_confederation
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_FRA_focus_federation_of_french_equatorial_africa
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_railways_in_equatorial_africa }
@@ -8212,7 +8212,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_equatorial_african_rubber
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_FRA_focus_equatorial_african_rubber
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_french_equatorial_african_confederation focus = FRA_fight_equatorial_african_warlords}
@@ -13281,7 +13281,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_organize_special_training
-		icon = GFX_focus_SMB_special_forces_option_3
+		icon = GFX_focus_FRA_training_soldiers
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_expand_the_counter_intelligence }
@@ -13487,7 +13487,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_post_great_war_challenges
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_goal_generic_allies_build_infantry
 		x = 3
 		y = 1
 		prerequisite = { focus = FRA_traumas_of_the_great_war }
@@ -13604,7 +13604,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_le_armee_de_demain
-		icon = GFX_focus_FRA_training_soldiers #GFX_focus_FRA_l_armee_de_demain
+		icon = GFX_focus_FRA_new_french_army
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_field_the_MAS_36 }
@@ -13658,7 +13658,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_de_gaulles_plan
-		icon = GFX_focus_FRA_de_gualles_plan #focus_FRA_de_gualles_plan_alt
+		icon = GFX_focus_FRA_plan_de_gaulle
 		x = -2
 		y = 1
 		prerequisite = { focus = FRA_le_armee_de_demain }
@@ -13783,7 +13783,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_char_de_combat_revalorise
-		icon = GFX_focus_generic_tank #GFX_focus_generic_army_tanks2
+		icon = GFX_focus_FRA_char_g
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_armored_warfare_tactics focus = FRA_agressive_recon }
@@ -13832,7 +13832,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_de_lattres_plan
-		icon = GFX_focus_FRA_de_lattres_plan
+		icon = GFX_focus_FRA_plan_de_lattre
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_le_armee_de_demain }
@@ -13998,7 +13998,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_gamelins_plan
-		icon = GFX_focus_FRA_gamelins_plan
+		icon = GFX_focus_FRA_plan_gamelin
 		x = 2
 		y = 1
 		prerequisite = { focus = FRA_le_armee_de_demain }
@@ -14043,7 +14043,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_ballistic_vests
-		icon = GFX_focus_generic_ballistic_vests_2
+		icon = GFX_focus_generic_ballistic_vests
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_gamelins_plan }
@@ -14085,7 +14085,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_shocktroops
-		icon = GFX_focus_generic_flamethrower_2 #GFX_focus_generic_anti_guerrilla_tactics
+		icon = GFX_focus_generic_flamethrower
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_ballistic_vests }
@@ -14176,7 +14176,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_a_modern_army
-		icon = GFX_focus_generic_camouflaged_helmet #GFX_focus_generic_napoleonic_hat
+		icon = GFX_focus_FRA_leopard_helmet
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_engin_blinde_de_reconnaissance }
@@ -14231,7 +14231,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_une_famille_redoutable
-		icon = GFX_focus_FRA_tank
+		icon = GFX_focus_FRA_amx50
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_a_modern_army }
@@ -14267,7 +14267,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_review_the_fleet
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_goal_generic_build_navy
 		x = 10
 		y = 1
 		prerequisite = { focus = FRA_traumas_of_the_great_war }
@@ -14656,7 +14656,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_launch_the_richelieu_class
-		icon = GFX_focus_FRA_richelieu_class_2
+		icon = GFX_focus_FRA_richelieu_class
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_pursue_battleship_studies }
@@ -14847,7 +14847,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_man_the_guns
-		icon = GFX_focus_generic_navy_battleship2
+		icon = GFX_focus_ARG_study_the_battle_of_the_river_plate
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_renew_maritime_patrol_avitation }
@@ -14919,7 +14919,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_launch_the_joffre_class
-		icon = GFX_focus_FRA_joffre_class_2
+		icon = GFX_focus_FRA_joffre_class
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_new_aircraft_carriers }
@@ -15067,7 +15067,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_escort_fleet_submarines
-		icon = GFX_focus_SOV_ivan_plays_baseball #GFX_focus_generic_midget_submarines
+		icon = GFX_focus_generic_midget_submarines
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_man_the_guns focus = FRA_fleet_air_coordiantion }
@@ -15396,7 +15396,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_southern_airports_expansion
-		icon = GFX_focus_generic_air_bases_3
+		icon = GFX_focus_FRA_air_bases_south
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_air_force_modernization }
@@ -15470,7 +15470,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_colonial_air_groups
-		icon = GFX_focus_generic_air_bases_4
+		icon = GFX_focus_FRA_air_bases_desert
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_air_force_modernization }
@@ -15581,7 +15581,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_la_nouvelle_armee_de_l_air
-		icon = GFX_focus_FRA_air_hat
+		icon = GFX_focus_FRA_new_french_airforce
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_colonial_air_groups }
@@ -15650,7 +15650,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_organize_fighter_competition
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_focus_generic_fighter_blueprint
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_la_nouvelle_armee_de_l_air }
@@ -15725,7 +15725,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_call_for_multirole_design
-		icon = GFX_focus_generic_potez_220
+		icon = GFX_focus_generic_bomber_blueprint
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_la_nouvelle_armee_de_l_air }
@@ -15764,7 +15764,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_prototype_demonstration
-		icon = GFX_focus_generic_breguet201
+		icon = GFX_focus_FRA_breguet_medium
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_call_for_multirole_design }
@@ -15840,7 +15840,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_strategic_bombers_development
-		icon = GFX_focus_generic_MB_162
+		icon = GFX_focus_generic_heavy_bomber_blueprint
 		x = -1
 		y = 1
 		prerequisite = {focus = FRA_anti_insurgency_measures}
@@ -15881,7 +15881,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_anti_insurgency_measures
-		icon = GFX_focus_generic_plane_and_flames #GFX_focus_generic_cas_aircraft
+		icon = GFX_focus_FRA_anti-insurgency_measures
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_review_the_proposals focus = FRA_prototype_demonstration }

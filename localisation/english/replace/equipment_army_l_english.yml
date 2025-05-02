@@ -121,7 +121,12 @@
  POL_anti_tank_equipment_2:0 "47mm armata przeciwpancerna wz.1939A"
  POL_anti_tank_equipment_2_short:0 "Armata ppanc wz.39A" 
  POL_anti_tank_equipment_3:0 "47mm armata przeciwpancerna wz.1939B"
- POL_anti_tank_equipment_3_short:0 "Armata ppanc wz.39B" 
+ POL_anti_tank_equipment_3_short:0 "Armata ppanc wz.39B"
+
+ ###POLAND ARMY SPECIAL PROJECTS###
+
+    POL_armored_support_vehicle_1: "40TP-T „Trałowiec”"
+    POL_armored_support_vehicle_1_short: "40TP-T"
 
  ###FRANCE###
  FRA_infantry_equipment_0:0 "Fusil Berthier Mle 1907/15"
@@ -188,14 +193,16 @@
  FRA_anti_air_equipment_3:0 "Canon antiaérien 75 mm Modèle 40"
  FRA_anti_air_equipment_3_short:0 "CA 75 mm Mle 40"
 
- FRA_armored_support_vehicle_1: "Renault B1 bis démineur"
- FRA_armored_support_vehicle_1_short: "B1 bis démineur"
+    ###FRENCH ARMY SPECIAL PROJECTS###
 
- FRA_super_heavy_artillery_equipment_1: "Mortier Schneider de 280 mm"
- FRA_super_heavy_artillery_equipment_1_short: "Schneider 280 mm"
+    FRA_armored_support_vehicle_1: "Renault B1 bis démineur"
+    FRA_armored_support_vehicle_1_short: "B1 bis démineur"
 
- FRA_self_propelled_super_heavy_artillery_equipment_1: "Canon automouvant de 194 mm Grande Puissance Filloux"
- FRA_self_propelled_super_heavy_artillery_equipment_1_short: "Canon automouvant 194 mm GPF"
+    FRA_super_heavy_artillery_equipment_1: "Mortier Schneider de 280 mm"
+    FRA_super_heavy_artillery_equipment_1_short: "Schneider 280 mm"
+
+    FRA_self_propelled_super_heavy_artillery_equipment_1: "Canon automouvant de 194 mm Grande Puissance Filloux"
+    FRA_self_propelled_super_heavy_artillery_equipment_1_short: "Canon automouvant 194 mm GPF"
 
  ###FEDERAL KINGDOM OF AMERICA###
  USA_infantry_equipment_0:0 "Springfield M1903A1 rifle"
@@ -268,14 +275,16 @@
  USA_anti_tank_equipment_3:0 "3-inch Gun M5"
  USA_anti_tank_equipment_3_short:0 "3-inch M5"
 
- USA_armored_support_vehicle_1: "Army Ordnance M4 Crab"
- USA_armored_support_vehicle_1_short: "M4 Crab"
+    ###AMERICAN ARMY SPECIAL PROJECTS###
 
- USA_super_heavy_artillery_equipment_1: "203 mm howitzer M115"
- USA_super_heavy_artillery_equipment_1_short: "203 mm M115"
+    USA_armored_support_vehicle_1: "Army Ordnance M4 Crab"
+    USA_armored_support_vehicle_1_short: "M4 Crab"
 
- USA_self_propelled_super_heavy_artillery_equipment_1: "240 mm Howitzer Motor Carriage T92"
- USA_self_propelled_super_heavy_artillery_equipment_1_short: "T92 HMC"
+    USA_super_heavy_artillery_equipment_1: "203 mm howitzer M115"
+    USA_super_heavy_artillery_equipment_1_short: "203 mm M115"
+
+    USA_self_propelled_super_heavy_artillery_equipment_1: "240 mm Howitzer Motor Carriage T92"
+    USA_self_propelled_super_heavy_artillery_equipment_1_short: "T92 HMC"
 
  ###COUNTRIES EQUIPMENT VERSIONS###
 

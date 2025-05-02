@@ -134,9 +134,6 @@
  FRA_jet_fighter_equipment_2:0 "Bloch MB.450"
  FRA_jet_fighter_equipment_2_short:0 "MB.450"
 
- FRA_supersonic_fighter1: "Marcel Bloch Super Mystère B2"
- FRA_supersonic_fighter_equipment_1: "Super Mystère B2"
- 
  FRA_CAS_equipment_1:0 "Roussel R-30"
  FRA_CAS_equipment_1_short:0 "R-30"
  FRA_cv_CAS_equipment_1:0 "Nieuport Ni.140"
@@ -197,17 +194,31 @@
  FRA_strat_bomber_equipment_2_short:0 "MB.162"
  FRA_strat_bomber_equipment_3:0 "SNCASE SE.1010"
  FRA_strat_bomber_equipment_3_short:0 "SE.1010"
- 
+
  FRA_jet_strat_bomber_equipment_1:0 "SNCASO SO.4000"
  FRA_jet_strat_bomber_equipment_1_short:0 "SO.4000"
 
- FRA_strat_bomber_intercontinental_equipment_1: "Bréguet Br.780"
- FRA_strat_bomber_intercontinental_equipment_1_short: "Br.780"
- FRA_mothership_equipment_0: "SNCASE SE.161"
- FRA_mothership_equipment_0_short: "SE.161"
+    ### FRENCH AIRFORCE SPECIAL PROJECTS###
 
- FRA_helicopter_equipment_1: "SNCAC NC.2001"
- FRA_helicopter_equipment_1_short: "NC.2001"
+    FRA_supersonic_fighter1: "Marcel Bloch Super Mystère B2"
+    FRA_supersonic_fighter_equipment_1: "Super Mystère B2"
+    
+    FRA_strat_bomber_intercontinental_equipment_1: "Bréguet Br.780"
+    FRA_strat_bomber_intercontinental_equipment_1_short: "Br.780"
+    
+    FRA_mothership_equipment_0: "SNCASE SE.161"
+    FRA_mothership_equipment_0_short: "SE.161"
+
+    FRA_helicopter_equipment_1: "SNCAC NC.2001"
+    FRA_helicopter_equipment_1_short: "NC.2001"
+
+    FRA_ballistic_missile_equipment_1: "SNCASE SE.4200"
+    FRA_ballistic_missile_equipment_1_short: "SE.4200"
+    FRA_ballistic_missile_equipment_2: "Medium Range Ballistic Missile"
+    FRA_ballistic_missile_equipment_2_short: "MRBM"
+
+    FRA_sam_missile_equipment_1: "Matra R-422"
+    FRA_sam_missile_equipment_1_short: "R-422"
 
  #FEDERAL KINGDOM OF AMERICA
  USA_transport_plane_equipment_1:0 "Douglas DC-3"

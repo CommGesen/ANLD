@@ -79,6 +79,10 @@ spriteTypes = {
 			name = "GFX_tech_support_medium"
 			texturefile = "gfx/interface/technologies/GGG/support_equipment.dds"
 		}
+        SpriteType = {
+			name = "GFX_armored_support_vehicle_medium"
+			texturefile = "gfx/interface/technologies/GGG/engineering_vehicle.dds"
+		}
     #)#
 
 	#(ARTILLERY#
@@ -216,6 +220,10 @@ spriteTypes = {
 			name = "GFX_POL_tech_support_medium"
 			texturefile = "gfx/interface/technologies/POL/POL_support_equipment.dds"
 		}
+        SpriteType = {
+			name = "GFX_POL_armored_support_vehicle_medium"
+			texturefile = "gfx/interface/technologies/POL/POL_engineering_vehicle.dds"
+		}
     #)#
 
 	#(ARTILLERY#
@@ -336,6 +344,10 @@ spriteTypes = {
     	SpriteType = {
 			name = "GFX_FRA_tech_support_medium"
 			texturefile = "gfx/interface/technologies/FRA/FRA_support_equipment.dds"
+		}
+        SpriteType = {
+			name = "GFX_FRA_armored_support_vehicle_medium"
+			texturefile = "gfx/interface/technologies/FRA/FRA_engineering_vehicle.dds"
 		}
     #)#
 

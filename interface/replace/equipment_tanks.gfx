@@ -293,9 +293,19 @@ spriteTypes = {
 	texturefile = "gfx/interface/technologies/GGG/advanced_medium_tank_chassis.dds"
 	}
 
+	SpriteType = {
+	name = "GFX_improved_light_fl_medium"
+	texturefile = gfx/interface/technologies/GGG/improved_light_flame.dds
+	}
+
     SpriteType = {
 	name = "GFX_improved_medium_fl_medium"
 	texturefile = gfx/interface/technologies/GGG/improved_medium_flame.dds
+	}
+
+	SpriteType = {
+	name = "GFX_improved_medium_fl_medium"
+	texturefile = gfx/interface/technologies/GGG/improved_heavy_flame.dds
 	}
 
     ### MODERN TANK CHASSIS ###
@@ -655,9 +665,19 @@ spriteTypes = {
 	texturefile = "gfx/interface/technologies/POL/POL_advanced_medium_tank_chassis.dds"
 	}
 
+	SpriteType = {
+	name = "GFX_POL_improved_light_fl_medium"
+	texturefile = gfx/interface/technologies/POL/POL_improved_light_flame.dds
+	}
+
     SpriteType = {
 	name = "GFX_POL_improved_medium_fl_medium"
 	texturefile = gfx/interface/technologies/POL/POL_improved_medium_flame.dds
+	}
+
+	SpriteType = {
+	name = "GFX_POL_improved_heavy_fl_medium"
+	texturefile = gfx/interface/technologies/POL/POL_improved_heavy_flame.dds
 	}
 
     ### MODERN TANK CHASSIS ###
@@ -1113,7 +1133,7 @@ spriteTypes = {
 	texturefile = "gfx/interface/technologies/FRA/FRA_main_battle_tank-2.dds"
 	}
 	SpriteType = {
-	name = "GFX_FRA_main_battle_tank_medium_3"
+	name = "GFX_FRA_main_battle_tank_medium_3
 	texturefile = "gfx/interface/technologies/FRA/FRA_main_battle_tank-3.dds"
 	}
 	SpriteType = {

@@ -168,7 +168,18 @@ POL = {
             }
 		}
 	}
-	
+
+### flamethrower light tanks ###
+
+	light_tank_flame_chassis = { 
+		pool = {
+			weight = 2
+			icons = {
+                GFX_POL_improved_light_fl_medium
+			}
+		}
+	}	
+
 ### amphibious light tank ###
 
 	light_tank_amphibious_chassis = { 
@@ -505,6 +516,17 @@ POL = {
 			weight = 2
 			icons = {
 				GFX_POL_advanced_heavy_spaa_medium
+			}
+		}
+	}
+
+### flamethrower heavy tank ###
+
+	heavy_tank_flame_chassis = { 
+		pool = {
+			weight = 2
+			icons = {
+				GFX_POL_improved_heavy_fl_medium
 			}
 		}
 	}
