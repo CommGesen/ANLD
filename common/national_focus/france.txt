@@ -6070,7 +6070,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_foreign_policy }
 		relative_position_id = FRA_foreign_policy
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { focus = FRA_reorganize_our_sphere }
 		allow_branch = {
 			
@@ -6086,7 +6086,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_political_power = 50
+			add_stability = 0.1
 		}
 		ai_will_do = {
 			factor = 25
@@ -6106,7 +6107,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_foreign_policy }
 		relative_position_id = FRA_foreign_policy
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { focus = FRA_continental_system_focus }
 		allow_branch = {
 			
@@ -6295,7 +6296,7 @@ focus_tree = {
 					}
 				}
 				country_event = {
-					id = deluge_france_foreign.15
+					id = generic.26
 				}
 			}
 		}
@@ -6335,7 +6336,7 @@ focus_tree = {
 				}
 				BEL = {
 					country_event = {
-						id = generic.26
+						id = deluge_france_foreign.15
 					}
 				}
 			}
@@ -6380,7 +6381,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_question_of_pomerania }
 		relative_position_id = FRA_duchy_of_luxembourg_integration
 		search_filters = { }
-		cost = 1
+		cost = 10
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -6396,7 +6397,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_143
+			add_political_power = 25
 		}
 		ai_will_do = {
 			factor = 25
@@ -6416,7 +6418,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_watchman_of_global_security }
 		relative_position_id = FRA_watchman_of_global_security
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -6437,7 +6439,19 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			
+			add_opinion_modifier = {
+				target = POR
+				modifier = opinion_modifier_former_overlord
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_144
+			POR = {
+				country_event = {
+					id = deluge_france_foreign.18
+				}
+			}
+			country_event = {
+				id = deluge_france_lore.17
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7407,7 +7421,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_dismantle_ottoman_empire
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_attack_turkey
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_vassalize_arabian_tribes }
@@ -7966,7 +7980,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_african_department }
 		relative_position_id = FRA_african_department
 		search_filters = { }
-		cost = 5
+		cost = 7
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -7979,10 +7993,128 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			NOT = {
+				has_idea = FRA_spirit_developing_railways
+			}
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_146
+			add_timed_idea = {
+				idea = FRA_spirit_developing_railways
+				days = 60
+			}
+			random_state = {
+				limit = {
+					OR = {
+						is_controlled_by = FRA
+						any_country = {
+							is_subject_of = FRA
+							controls_state = THIS
+						}
+					}
+					infrastructure < 4
+					OR = {
+						state = 768
+						state = 272
+						state = 556
+						state = 296
+						state = 899
+						state = 770
+						state = 898
+						state = 700
+						state = 298
+						state = 771
+						state = 773
+						state = 274
+						state = 774
+						state = 772
+						state = 558
+						state = 902
+						state = 900
+						state = 901
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					OR = {
+						is_controlled_by = FRA
+						any_country = {
+							is_subject_of = FRA
+							controls_state = THIS
+						}
+					}
+					infrastructure < 4
+					OR = {
+						state = 768
+						state = 272
+						state = 556
+						state = 296
+						state = 899
+						state = 770
+						state = 898
+						state = 700
+						state = 298
+						state = 771
+						state = 773
+						state = 274
+						state = 774
+						state = 772
+						state = 558
+						state = 902
+						state = 900
+						state = 901
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					OR = {
+						is_controlled_by = FRA
+						any_country = {
+							is_subject_of = FRA
+							controls_state = THIS
+						}
+					}
+					infrastructure < 4
+					OR = {
+						state = 768
+						state = 272
+						state = 556
+						state = 296
+						state = 899
+						state = 770
+						state = 898
+						state = 700
+						state = 298
+						state = 771
+						state = 773
+						state = 274
+						state = 774
+						state = 772
+						state = 558
+						state = 902
+						state = 900
+						state = 901
+						state = 702
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7990,8 +8122,8 @@ focus_tree = {
 		bypass = {
 			
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 		available_if_capitulated = yes
 	}
 	focus = {
@@ -8002,7 +8134,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_railways_in_western_africa }
 		relative_position_id = FRA_railways_in_western_africa
 		search_filters = { }
-		cost = 5
+		cost = 10
 		mutually_exclusive = { focus = FRA_french_western_african_confederation}
 		allow_branch = {
 			
@@ -8015,10 +8147,183 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			OR = {
+				AND = {
+					owns_state = 768
+					768 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					owns_state = 272
+					272 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					owns_state = 556
+					556 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					owns_state = 296
+					296 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					owns_state = 770
+					770 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					owns_state = 899
+					899 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					owns_state = 298
+					298 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					owns_state = 771
+					771 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					owns_state = 773
+					773 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					owns_state = 274
+					274 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					owns_state = 774
+					774 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					owns_state = 772
+					772 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					owns_state = 558
+					558 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					owns_state = 902
+					902 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					owns_state = 900
+					900 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					owns_state = 901
+					901 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					owns_state = 702
+					702 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			every_state = {
+				limit = {
+					OR = {
+						is_controlled_by = FRA
+						any_country = {
+							is_subject_of = FRA
+							controls_state = THIS
+						}
+					}
+					NOT = {
+						is_core_of = FRA
+					}
+					OR = {
+						state = 768
+						state = 272
+						state = 556
+						state = 296
+						state = 899
+						state = 770
+						state = 898
+						state = 700
+						state = 298
+						state = 771
+						state = 773
+						state = 274
+						state = 774
+						state = 772
+						state = 558
+						state = 902
+						state = 900
+						state = 901
+						state = 702
+					}
+				}
+				add_resistance = -15
+				add_compliance = 30
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8090,7 +8395,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_147
+			add_political_power = 50
 		}
 		ai_will_do = {
 			factor = 25
@@ -8123,10 +8429,16 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			NOT = {
+				has_idea = FRA_spirit_developing_railways
+			}
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_146
+			add_timed_idea = {
+				idea = FRA_spirit_developing_railways
+				days = 60
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8267,10 +8579,16 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			NOT = {
+				has_idea = FRA_spirit_developing_railways
+			}
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_146
+			add_timed_idea = {
+				idea = FRA_spirit_developing_railways
+				days = 60
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8519,10 +8837,16 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			NOT = {
+				has_idea = FRA_spirit_developing_railways
+			}
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_146
+			add_timed_idea = {
+				idea = FRA_spirit_developing_railways
+				days = 60
+			}
 		}
 		ai_will_do = {
 			factor = 25

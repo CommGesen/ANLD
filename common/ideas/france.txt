@@ -1188,6 +1188,26 @@ ideas = {
 				air_cas_present_factor = 0.25
 			}
 		}
+		FRA_spirit_developing_railways = {
+			picture = ARG_invest_in_railways
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
 		FRA_spirit_containing_air_threat = {
 			picture = spirit_burning_plane
 			allowed = {

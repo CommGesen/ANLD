@@ -3,22 +3,23 @@ state={
 	name="STATE_899"
 	manpower = 1163674
 	state_category = pastoral
-
 	history={
 		owner = FRA
 		add_core_of = MLI
-		
+		victory_points = {
+			2012 2
+		}
+		victory_points = {
+			12751 3
+		}
 		buildings = {
 			infrastructure = 2
 
 		}
-
 	}
-
 	provinces={
 		2012 10812 10829 10915 12751 12838 
 	}
-	
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

@@ -1427,6 +1427,20 @@ country_event = {##Joffre Class
 		name = deluge_france_lore.16.a
 	}
 }
+country_event = {##French-Portugese history since start of 19th century
+	id = deluge_france_lore.17
+	title = deluge_france_lore.17.t
+	desc = deluge_france_lore.17.d
+	picture = GFX_report_event_french_invasion_of_lisbon_1807
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.17.a
+	}
+	option = {
+		name = deluge_france_lore.17.b
+	}
+}
 country_event = {##Cyraneica forces France out of the Libya
 	id = deluge_france_foreign.1
 	title = deluge_france_foreign.1.t
@@ -2052,6 +2066,19 @@ country_event = {##FRA demands annexation of BEL
 				id = deluge_france_foreign.17
 			}
 		}
+		every_country = {
+			limit = {
+				is_subject_of = BEL
+			}
+			FRA = {
+				set_autonomy = {
+					target = THIS
+					autonomous_state = autonomy_puppet
+					end_wars = yes
+					end_civil_wars = no
+				}
+			}
+		}
 		FRA = {
 			annex_country = {
 				target = BEL
@@ -2328,5 +2355,17 @@ news_event = {##news event that FRA annexes luxembourg
 		ai_chance = {
 			base = 100
 		}
+	}
+}
+country_event = {##FRA increases relations with POR
+	id = deluge_france_foreign.18
+	title = deluge_france_foreign.18.t
+	desc = deluge_france_foreign.18.d
+	picture = GFX_report_event_french_invasion_of_lisbon_1807
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_foreign.18.a
+		add_political_power = 100
+		custom_effect_tooltip = FRA_custom_effect_tooltip_145
 	}
 }
