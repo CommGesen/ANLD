@@ -574,39 +574,28 @@ leader_traits = {
 				FROM = { has_idea = academy_scholarships_spirit }
 				factor = 0
 			}
-			modifier = { #Purged Junior Army Officers
-				FROM = { has_idea = SOV_purged_junior_army_officers_3 }
-				factor = 0
-			}
-			
 			modifier = {
 				FROM = { 
 					has_dlc = "By Blood Alone"
 				}
 				factor = 0
 			}
-			
 		}
-		
 		attack_skill_factor = 1
 		logistics_skill_factor = 1
 	}
-	
 	armor_officer = { 
 		type = land
 		trait_type = personality_trait
-		
 		trait_xp_factor = {
 			panzer_leader = 1     #+100%
 		}
-		
 		unit_trigger = {
 			OR = {
 				division_has_majority_template = light_armor
 				division_has_majority_template = medium_armor
 				division_has_majority_template = heavy_armor
 				division_has_majority_template = super_heavy_armor
-				
 				owner = {
 					has_idea = mobile_warfare_academy_spirit
 				}
@@ -617,22 +606,18 @@ leader_traits = {
 					OR = {
 						has_idea = best_of_the_best_spirit
 						has_idea = academy_scholarships_spirit
-						has_idea = SOV_purged_junior_army_officers_3
 					}
 				}
 			}
 		}
-		
 		new_commander_weight = {
 			factor = 1
-			
 			modifier = {
 				FROM = { 
 					has_idea = mobile_warfare_academy_spirit
 				}
 				factor = 2
 			}
-			
 			modifier = {
 				FROM = { has_idea = best_of_the_best_spirit }
 				factor = 0
@@ -641,23 +626,16 @@ leader_traits = {
 				FROM = { has_idea = academy_scholarships_spirit }
 				factor = 0
 			}
-			modifier = { #Purged Junior Army Officers
-				FROM = { has_idea = SOV_purged_junior_army_officers_3 }
-				factor = 0
-			}
-			
 			modifier = {
 				FROM = { 
 					has_dlc = "By Blood Alone"
 				}
 				factor = 0
 			}
-			
 		}
 		attack_skill_factor = 1
 		planning_skill_factor = 1
 	}
-
 	engineer_officer = { 
 		type = land
 		trait_type = personality_trait
@@ -1013,7 +991,7 @@ leader_traits = {
 
 	}
 
-	defensive_doctrine = { 
+	defensive_doctrine = {
 		type = field_marshal
 		gain_xp = {
 			always = no # not gainable

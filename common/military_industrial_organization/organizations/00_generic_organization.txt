@@ -17,8 +17,9 @@ generic_tank_organization = {
 	allowed = {
 		NOT = {
 			OR = { 
-				tag = POL 
-				tag = FRA 
+				tag = POL
+				tag = FRA
+				tag = JAP
 			} 
 		}
 	}
@@ -2044,8 +2045,9 @@ generic_escort_ship_organization = {
 	allowed = {
 		NOT = {
 			OR = {
-				tag = POL 
-				tag = FRA 
+				tag = POL
+				tag = FRA
+				tag = JAP
 			} 
 		}
 	}
@@ -2257,8 +2259,9 @@ generic_raider_ship_organization = {
 	allowed = {
 		NOT = { 
 			OR = { 
-				tag = POL 
-				tag = FRA 
+				tag = POL
+				tag = FRA
+				tag = JAP
 			} 
 		}
 	}
@@ -3478,8 +3481,9 @@ generic_general_aircraft_organization = {
 	allowed = {
 		NOT = { 
 			OR = { 
-				tag = POL 
-				tag = FRA 
+				tag = POL
+				tag = FRA
+				tag = JAP
 			} 
 		}
 	}
@@ -6202,8 +6206,9 @@ generic_artillery_organization = {
 	allowed = {
 		NOT = { 
 			OR = { 
-				tag = POL 
-				tag = FRA 
+				tag = POL
+				tag = FRA
+				tag = JAP
 			} 
 		}
 	}
@@ -6518,8 +6523,9 @@ generic_infantry_equipment_organization = {
 	allowed = {
 		NOT = { 
 			OR = { 
-				tag = POL 
-				tag = FRA 
+				tag = POL
+				tag = FRA
+				tag = JAP
 			} 
 		}
 	}
@@ -7078,8 +7084,9 @@ generic_motorized_mechanized_organization = {
 	allowed = {
 		NOT = { 
 			OR = { 
-				tag = POL 
-				tag = FRA 
+				tag = POL
+				tag = FRA
+				tag = JAP
 			} 
 		}
 	}

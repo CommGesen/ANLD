@@ -2538,4 +2538,16 @@ spriteTypes = {
 		name = "GFX_miklos_horthy_picture_small"
 		texturefile = "gfx/interface/ideas/characters/miklos_horthy_picture_small.dds"
 	}
+	spriteType = {
+		name = "GFX_rasputin_picture_small"
+		texturefile = "gfx/interface/ideas/characters/rasputin_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_rasputin_mirrored_picture_small"
+		texturefile = "gfx/interface/ideas/characters/rasputin_mirrored_picture_small.dds"
+	}
+	spriteType = {
+		name = "GFX_ivan_vostrogov_picture_small"
+		texturefile = "gfx/interface/ideas/characters/ivan_vostrogov_picture_small.dds"
+	}
 }

@@ -45,7 +45,7 @@ if = {
 		mtg_transport = 1
 		basic_torpedo = 1
 		basic_battery = 1
-		basic_secondary_battery = 1
+		#here basic_secondary_battery was purged automatically by notepad because it was invalid
 		basic_depth_charges = 1
 	}
 }

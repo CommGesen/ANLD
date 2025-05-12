@@ -87,7 +87,7 @@ characters={
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/SOV/rasputin.dds"
-				small = "gfx/interface/ideas/rasputin_small_page.dds"
+				small = GFX_rasputin_picture_small
 			}
 		}
 		country_leader={
@@ -110,12 +110,6 @@ characters={
 			traits = {
 				black_monk
 			}
-			allowed_to_remove = {
-				OR = {
-					has_government = communism
-					has_government = democratic
-				}
-			}
 			ai_will_do = { factor = 1.0 }
 			ledger = civilian
 		}
@@ -124,7 +118,7 @@ characters={
 		name = "Ivan Vostrogov"
 		portraits={
 			civilian={
-				small="gfx/interface/ideas/russian_priest_small.dds"
+				small=GFX_ivan_vostrogov_picture_small
 			}
 		}
 		advisor={

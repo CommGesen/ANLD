@@ -811,7 +811,7 @@ ideas = {
 				
 			}
 			equipment_bonus = {
-				cat_armored_cars = {
+				armored_car_equipment = {
 					maximum_speed  = 0.05
 					reliability = 0.05
 					breakthrough = 0.05
@@ -1075,7 +1075,7 @@ ideas = {
 				
 			}
 			equipment_bonus = {
-				infantry_weapons = {
+				infantry_equipment = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
@@ -1156,15 +1156,15 @@ ideas = {
 				
 			}
 			equipment_bonus = {
-				dd_tech = {
+				ship_hull_light = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
-				ss_tech = {
+				ship_hull_submarine = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
-				cl_tech = {
+				ship_hull_cruiser = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
@@ -1324,7 +1324,7 @@ ideas = {
 			}
 			research_bonus = { air_equipment = 0.1}
 			equipment_bonus = {
-				cat_scout_plane = {
+				scout_plane = {
 					air_range = 0.25
 					instant = yes
 				}
@@ -1345,7 +1345,7 @@ ideas = {
 				
 			}
 			equipment_bonus = {
-				light_fighter = {
+				small_plane_airframe = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
@@ -1366,11 +1366,11 @@ ideas = {
 				
 			}
 			equipment_bonus = {
-				cat_heavy_fighter = {
+				heavy_fighter = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
-				cas_bomber = {
+				cas = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
@@ -1786,7 +1786,7 @@ ideas = {
 				}
 			}
 			research_bonus = {
-				cat_armored_cars = 0.15
+				armored_car_equipment = 0.15
 			}
 			traits = { armored_car_manufacturer }
 		}
@@ -1829,7 +1829,7 @@ ideas = {
 				}
 			}	
 			research_bonus = {
-				infantry_weapons = 0.15
+				infantry_equipment = 0.15
 			}
 			traits = { mass_producer_manufacturer }
 		}
