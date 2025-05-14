@@ -611,37 +611,7 @@ units = {
 		start_equipment_factor = 0.75
 	}
 }
-
-
-air_wings = {
-	608 = { 
-		fighter_equipment_0 = { owner = "CHI" amount = 45 }
-		fighter_equipment_0 = { owner = "CHI" amount = 45 }
-		tac_bomber_equipment_0 =  { owner = "CHI" amount = 45 }
-	}
-}
-
-
-
 instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_0
-			creator = "CHI"
-		}
-		requested_factories = 2
-		progress = 0.55
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = tac_bomber_equipment_0
-			creator = "CHI" 
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 100
-	}
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0

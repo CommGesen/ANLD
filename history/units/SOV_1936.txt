@@ -1405,233 +1405,9 @@ units = {
 		division_template = "Pekhotnaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.4
-	}
-	
-	##### NAVAL UNITS #####
-	### Northern Fleet -- Murmansk
-	navy = {	
-		name = "Severnyy Flot"
-		base = 3134
-		location = 3134 # Murmansk
-		# 1ya Flotiliya Esmintsev
-		ship = { name = "Fidonisi" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Gadzhibei" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Kaliakria" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Kerch" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
-		# 2ya Flotiliya Esmintsev
-		ship = { name = "Korfu" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Tserigo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Levkas" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Zante" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
-	}	
-	
-	### Baltic Fleet -- Leningrad
-	navy = {	
-		name = "Baltiyskiy Flot"
-		base = 3151
-		location = 3151 # Leningrad
-		ship = { name = "Imperator Aleksander III" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SOV version_name = "Imperatritsa Mariya Class" } } }
-		ship = { name = "Imperatritsa Ekaterina Velikaya" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SOV version_name = "Imperatritsa Mariya Class" } } }
-		ship = { name = "Petropavlovsk" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Gangut" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Admiral Nakhimov" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Admiral Kornilov" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Svetlana" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Bogatyr" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Oleg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Vityaz" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Pamiat Merkuria" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }
-		# 3ya Flotiliya Esmintsev
-		ship = { name = "Izyaslav" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV version_name = "Izyaslav Class" } } }
-		ship = { name = "Desna" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV version_name = "Izyaslav Class" } } }
-		ship = { name = "Azard" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV version_name = "Izyaslav Class" } } }
-		ship = { name = "Pobiditel" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV version_name = "Izyaslav Class" } } }
-		ship = { name = "Gnevny" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Bystry" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
-		# 4ya Flotiliya Esmintsev
-		ship = { name = "Pospeshny" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
-		ship = { name = "Pylki" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
-		ship = { name = "Gromki" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
-		ship = { name = "Derzky" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
-	}	
-	navy = {
-		name = "1iy Podvodnaya Lodka Flot"
-		base = 3686
-		location = 3686
-		ship = { name = "PL-001" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-002" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-003" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-004" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-005" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-006" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-007" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-008" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-009" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-010" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-011" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-012" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-013" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-014" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-015" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-016" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-017" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-018" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-019" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-020" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-	}
-	navy = {
-		name = "2iy Podvodnaya Lodka Flot"
-		base = 3151
-		location = 3151 # Leningrad
-		ship = { name = "PL-021" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series II" } } }			
-		ship = { name = "PL-022" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series II" } } }			
-		ship = { name = "PL-023" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series II" } } }			
-		ship = { name = "PL-024" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series II" } } }			
-		ship = { name = "PL-025" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series II" } } }			
-		ship = { name = "PL-026" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series II" } } }			
-		ship = { name = "PL-027" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series II" } } }			
-		ship = { name = "PL-028" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series II" } } }			
-		ship = { name = "PL-029" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series II" } } }			
-		ship = { name = "PL-030" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series II" } } }			
-		ship = { name = "PL-031" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series II" } } }			
-		ship = { name = "PL-032" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series II" } } }			
-		ship = { name = "PL-033" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series II" } } }			
-		ship = { name = "PL-034" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series II" } } }			
-		ship = { name = "PL-035" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series II" } } }			
-		ship = { name = "PL-036" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series II" } } }			
-		ship = { name = "PL-037" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series II" } } }			
-		ship = { name = "PL-038" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series II" } } }			
-		ship = { name = "PL-039" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series II" } } }			
-		ship = { name = "PL-040" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series II" } } }			
-	}
-	navy = {	
-		name = "3iy Podvodnaya Lodka Flot"
-		base = 3134
-		location = 3134
-		ship = { name = "PL-041" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series III" } } }			
-		ship = { name = "PL-042" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series III" } } }			
-		ship = { name = "PL-043" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series III" } } }			
-		ship = { name = "PL-044" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series III" } } }			
-		ship = { name = "PL-045" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series III" } } }			
-		ship = { name = "PL-046" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series III" } } }			
-		ship = { name = "PL-047" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series III" } } }			
-		ship = { name = "PL-048" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series III" } } }			
-		ship = { name = "PL-049" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series III" } } }			
-		ship = { name = "PL-050" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series III" } } }			
-		ship = { name = "PL-051" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series III" } } }			
-		ship = { name = "PL-052" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series III" } } }			
-		ship = { name = "PL-053" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series III" } } }			
-		ship = { name = "PL-054" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series III" } } }			
-		ship = { name = "PL-055" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series III" } } }			
-		ship = { name = "PL-056" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series III" } } }			
-		ship = { name = "PL-057" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series III" } } }			
-		ship = { name = "PL-058" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series III" } } }			
-		ship = { name = "PL-059" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series III" } } }			
-		ship = { name = "PL-060" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV version_name = "Series III" } } }			
-	}
-
-	navy = {
-		name = "4iy Podvodnaya Lodka Flot"
-		base = 12683
-		location = 12683
-		ship = { name = "PL-061" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-062" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-063" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-064" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-065" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-066" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-067" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-068" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-069" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-070" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-071" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-072" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-073" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-074" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-075" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-076" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-077" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-078" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-079" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }			
-		ship = { name = "PL-080" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }			
-	}
-	
-	### Black Sea Fleet -- Sevastopol
-	navy = {	
-		name = "Chernomorskiy Flot"
-		base = 3686
-		location = 3686 # Sevastopopl
-		ship = { name = "Poltava" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Imperatritsa Mariya" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SOV version_name = "Imperatritsa Mariya Class" } } }
-		ship = { name = "Admiral Lazarev" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Admiral Istomin" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Novik" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Avtroil" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Prymyslav" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
-		ship = { name = "Bryachislav" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
 	}	
 }					
-
-air_wings = {
-	219 = {
-		fighter_equipment_0 = {
-			owner = "SOV" 
-			amount = 350
-		}
-		tac_bomber_equipment_0 =  {
-			owner = "SOV" 
-			amount = 200
-		}
-	}
-}
-
-
-		
-	#########################
-	## STARTING PRODUCTION ##
-	#########################
 instant_effect = {
-
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_0
-			creator = "SOV" 
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = tac_bomber_equipment_0
-			creator = "SOV" 
-		}
-		requested_factories = 1
-		progress = 0.2
-		efficiency = 50
-	}
-	
-	add_equipment_production = {
-		equipment = {
-			type = heavy_tank_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 2
-		progress = 0.4
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 2
-		progress = 0.4
-		efficiency = 50
-	}
-
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
@@ -1641,7 +1417,6 @@ instant_effect = {
 		progress = 0.4
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
@@ -1651,7 +1426,6 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 	}
-	
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -1661,7 +1435,6 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 	}
-	
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
@@ -1671,27 +1444,4 @@ instant_effect = {
 		progress = 0.1
 		efficiency = 50
 	}
-
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_1
-			creator = "SOV"
-			version_name = "Izyaslav Class"
-		}
-		requested_factories = 2
-		progress = 0.70
-		amount = 2
-	}
-	
-	add_equipment_production = {
-		equipment = {
-			type = submarine_2
-			creator = "SOV"
-			version_name = "Series V"
-		}
-		requested_factories = 3
-		progress = 0.80
-		amount = 20
-	}
 }
-	#####################

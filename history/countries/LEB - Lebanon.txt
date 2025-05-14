@@ -93,29 +93,3 @@ set_popularities = {
 	communism = 5
 	neutrality = 80
 }
-
-create_country_leader = {
-	name = "Pierre Gemayel"
-	desc = ""
-	picture = "gfx/leaders/LEB/Portrait_Pierre_Gemayel.png"
-	ideology = corporatist_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Shakib Arslan"
-	picture = "gfx/leaders/SYR/Portrait_OTT_Shakib_Arslan.png"
-	ideology = reactionary_ideology
-}
-
-create_country_leader = {
-	name = "Farajallah El Helou"
-	desc = ""
-	picture = "gfx/leaders/LEB/Portrait_Farajallah_el-Helou.dds"
-	ideology = communist_ideology
-	traits = {
-		#
-	}
-}

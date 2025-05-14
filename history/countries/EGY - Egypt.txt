@@ -79,14 +79,12 @@ if = {
 		}
 	}
 }
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-
 set_popularities = {
 	democratic = 40
 	fascism = 5
@@ -94,85 +92,4 @@ set_popularities = {
 	neutrality = 50
 }
 
-create_country_leader = {
-	name = "Youssef Wahba Pasha"
-	desc = ""
-	picture = "gfx/leaders/EGY/youssef_wahba_pasha.dds"
-	ideology = conservative_democracy_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Saad Zaghloul"
-	desc = ""
-	picture = "gfx/leaders/EGY/saad_zaghloul.dds"
-	ideology = conservative_democracy_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Ahmed Husayn"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
-	ideology = corporatist_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Shaykh Abd al-Majid Salim"
-	desc = ""
-	picture = "gfx/leaders/EGY/caucasian_imam.dds"
-	ideology = religious_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Abbas II"
-	desc = ""
-	picture = "gfx/leaders/EGY/Abbas_II.dds"
-	ideology = reactionary_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Hosni al-Arabi"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
-	ideology = communist_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Gamal Abdel Nasser"
-	desc = ""
-	picture = "gfx/leaders/EGY/nasser_time_magazine.dds"
-	ideology = jacobin_ideology
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "Gamal Abdel Nasser"
-	portrait_path = "gfx/leaders/EGY/nasser_time_magazine.dds"
-	traits = { }
-	skill = 2
-    attack_skill = 2
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 2
-}
-
-
+recruit_character = EGY_abbas_ii

@@ -1,0 +1,14 @@
+characters={
+	EGY_abbas_ii={
+		name="Abbas II"
+		portraits={
+			civilian={
+				large="gfx/leaders/EGY/Abbas_II.dds"
+			}
+		}
+		country_leader={
+			ideology=reactionary_ideology
+			expire="1965.1.1.1"
+		}
+	}
+}
