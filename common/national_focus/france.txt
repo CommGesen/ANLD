@@ -12983,8 +12983,8 @@ focus_tree = {
 		icon = GFX_focus_generic_senussi_planning
 		x = 110
 		y = 0
-		prerequisite = { focus =  }
-		relative_position_id = 
+		#prerequisite = { focus =  }
+		#relative_position_id = 
 		search_filters = { }
 		cost = 5
 		mutually_exclusive = { focus = }

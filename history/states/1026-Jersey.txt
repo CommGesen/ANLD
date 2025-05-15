@@ -1,0 +1,25 @@
+state={
+	id=1026
+	name="STATE_1026"
+	history={
+		owner = FRA
+		victory_points = {
+			13367 1 
+		}
+		buildings = {
+			#anti_air_building = 1
+			13367 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = FRA
+		add_core_of = NMD
+	}
+	provinces={
+		13367
+	}
+	manpower=6500
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}

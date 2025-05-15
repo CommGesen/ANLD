@@ -799,51 +799,6 @@ focus_tree = {
 				add_to_variable = {trade_opinion_factor_lon = 0.25 }
 			}
 		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.75
-				date < 1937.1.1
-			}
-			modifier = {
-				factor = 0.75
-				date < 1938.1.1
-			}
-			modifier = {
-				factor = 0.75
-				date < 1939.1.1
-			}
-			modifier = {
-				factor = 0.75
-				threat > 25
-			}
-			modifier = {
-				factor = 0.75
-				threat > 50
-			}
-			modifier = {
-				factor = 0.5
-				is_subject = yes
-			}
-			modifier = {
-				factor = 0.5
-				is_in_faction = yes
-				NOT = { is_in_faction_with = FRA }
-			}
-			modifier = {
-				factor = 2
-				is_in_faction_with = FRA
-			}
-			modifier = {
-				factor = 2
-				has_government = democratic
-			}
-			modifier = {
-				factor = 0.5
-				has_government = fascism
-			}
-		}
-		}
 	}
 	
 	focus = {

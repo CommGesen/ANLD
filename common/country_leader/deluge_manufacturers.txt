@@ -681,9 +681,9 @@ leader_traits = {
 				instant = yes
 				build_cost_ic = -0.05
 			}
+		}
 	}
-	}
-	sj_designer_trait {
+	sj_designer_trait = {
 		production_speed_infrastructure_factor = 0.05
 		production_speed_rail_way_factor = 0.05
     }

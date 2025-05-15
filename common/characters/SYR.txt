@@ -3,7 +3,7 @@ characters={
 		name="Husni Pasha Al Zaim"
 		portraits={
 			army={
-				large="gfx/leaders/SYR/Portrait_SYR_Husni_al_Zaim.png"
+				#large="gfx/leaders/SYR/Portrait_SYR_Husni_al_Zaim.png"
 				small=GFX_portrait_SYR_Husni_Zaim
 			}
 		}
@@ -20,8 +20,8 @@ characters={
 		name="Sultan Pasha Al Atrash"
 		portraits={
 			army={
-				large="gfx/leaders/SYR/portrait_syria_sultan_atrash.dds"
-				small=GFX_portrait_SYR_Sultan_Atrash
+				#large="gfx/leaders/SYR/portrait_syria_sultan_atrash.dds"
+				#small=GFX_portrait_SYR_Sultan_Atrash
 			}
 		}
 		corps_commander={
@@ -37,7 +37,7 @@ characters={
 		name="Khalid Bakdash"
 		portraits={
 			army={
-				large="gfx/leaders/SYR/Portrait_SYR_Khalid_Bakdash.dds"
+				#large="gfx/leaders/SYR/Portrait_SYR_Khalid_Bakdash.dds"
 				small=GFX_portrait_SYR_Husni_Zaim
 			}
 		}
@@ -60,7 +60,7 @@ characters={
 		name="Antoun Saadeh"
 		portraits={
 			army={
-				large="gfx/leaders/IRQ/Portrait_SYR_Antoun_Sadeh.dds"
+				#large="gfx/leaders/IRQ/Portrait_SYR_Antoun_Sadeh.dds"
 			}
 		}
 		country_leader = {
@@ -71,7 +71,7 @@ characters={
 		name="Hashim Al Atassi"
 		portraits={
 			army={
-				large="gfx/leaders/IRQ/Portrait_SYR_Hashim.dds"
+				#large="gfx/leaders/IRQ/Portrait_SYR_Hashim.dds"
 			}
 		}
 		country_leader = {

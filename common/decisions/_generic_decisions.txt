@@ -318,7 +318,7 @@ propaganda_efforts = {
 		}
 
 		visible = {
-			has_war_with_non_exiled_country = yes
+			has_war = yes
 		}
 
 		fire_only_once = no
@@ -386,7 +386,7 @@ propaganda_efforts = {
 		}
 
 		visible = {
-			has_war_with_non_exiled_country = yes
+			has_war = yes
 		}
 
 		fire_only_once = no
@@ -433,7 +433,7 @@ propaganda_efforts = {
 		}
 
 		visible = {
-			has_war_with_non_exiled_country = yes
+			has_war = yes
 		}
 
 		fire_only_once = no
@@ -535,7 +535,7 @@ propaganda_efforts = {
 		icon = GFX_decision_generic_utilize_film_industry
 
 		available = { 
-			has_war_with_non_exiled_country = yes
+			has_war = yes
 			OR = {
 				is_major = yes
 				any_allied_country = {

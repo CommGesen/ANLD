@@ -1622,7 +1622,6 @@ democratic_on_the_rise = {
 				has_idea_with_trait = democratic_reformer
 			}
 			NOT = { has_government = democratic }
-			check_has_focus_tree_to_switch_to_democratic = yes
 		}
 		
 		remove_trigger = {
@@ -1659,7 +1658,6 @@ democratic_on_the_rise = {
 		visible = {
 			has_country_flag = open_up_political_discourse_democratic
 			NOT = { has_government = democratic }
-			check_has_focus_tree_to_switch_to_democratic = yes
 		}
 		
 		remove_trigger = {

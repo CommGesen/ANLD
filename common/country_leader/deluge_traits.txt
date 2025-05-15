@@ -40,7 +40,7 @@ leader_traits = {
 		sprite = 2 # Iron bomb
 		
 		equipment_bonus = {
-			strat_bomber_equipment = {
+			large_plane_airframe = {
 				instant = yes
 				air_bombing = 0.10
 			}
@@ -51,7 +51,11 @@ leader_traits = {
 		sprite = 1 # Aircraft
 		
 		equipment_bonus = {
-			fighter_equipment = {
+			small_plane_airframe = {
+				instant = yes
+				air_agility = 0.10
+			}
+			cv_small_plane_airframe = {
 				instant = yes
 				air_agility = 0.10
 			}

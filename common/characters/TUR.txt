@@ -103,7 +103,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/TUR/ataturk_large.dds"
-				small="gfx/interface/ideas/TUR_mustafa_kemal_pasha.dds"
+				#small="gfx/interface/ideas/TUR_mustafa_kemal_pasha.dds"
 			}
 		}
 		country_leader={
@@ -600,7 +600,7 @@ characters={
 		name="Ajami Pasha Al Saadon"
 		portraits={
 			army={
-				large="gfx/leaders/IRQ/Portrait_IRQ_Ajami_al_Saadun.png"
+				#large="gfx/leaders/IRQ/Portrait_IRQ_Ajami_al_Saadun.png"
 				small=GFX_portrait_IRQ_Ajami_al_Saadun
 			}
 		}
@@ -617,7 +617,7 @@ characters={
 		name="Husni Pasha Al Zaim"
 		portraits={
 			army={
-				large="gfx/leaders/SYR/Portrait_SYR_Husni_al_Zaim.png"
+				#large="gfx/leaders/SYR/Portrait_SYR_Husni_al_Zaim.png"
 				small=GFX_portrait_SYR_Husni_Zaim
 			}
 		}
@@ -634,7 +634,7 @@ characters={
 		name="Sultan Pasha Al Atrash"
 		portraits={
 			army={
-				large="gfx/leaders/SYR/portrait_SYR_Sultan_Atrash.dds"
+				#large="gfx/leaders/SYR/portrait_SYR_Sultan_Atrash.dds"
 				small=GFX_portrait_SYR_Sultan_Atrash
 			}
 		}
@@ -651,7 +651,7 @@ characters={
 		name="Abdul Qadir Bey Al Hussieni"
 		portraits={
 			army={
-				large="gfx/leaders/PAL/Portrait_PAL_al_Husayni.png"
+				#large="gfx/leaders/PAL/Portrait_PAL_al_Husayni.png"
 				small=GFX_portrait_PAL_AbdulQadir_Hussieni
 			}
 		}

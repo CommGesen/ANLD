@@ -2,29 +2,18 @@ state = {
 	id = 1015
 	name = "STATE_1015"
 	manpower = 129000
-	
 	state_category = pastoral
-	
 	impassable = yes
-	
 	resources = {
 		oil = 2
 	}
-
 	history = {
-
 		owner = OMA
 		add_core_of = SAU
 		add_core_of = OMA
-
 		buildings = {
 			infrastructure = 1
 		}
-
-		victory_points = {
-			5049 1 # Nizwa
-		}
-		
 	}
 
 	provinces = {

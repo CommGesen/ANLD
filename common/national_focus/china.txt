@@ -1685,51 +1685,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0.75
-				date < 1937.1.1
-			}
-			modifier = {
-				factor = 0.75
-				date < 1938.1.1
-			}
-			modifier = {
-				factor = 0.75
-				date < 1939.1.1
-			}
-			modifier = {
-				factor = 0.75
-				threat > 25
-			}
-			modifier = {
-				factor = 0.75
-				threat > 50
-			}
-			modifier = {
-				factor = 0.5
-				is_subject = yes
-			}
-			modifier = {
-				factor = 0.5
-				is_in_faction = yes
-				NOT = { is_in_faction_with = FRA }
-			}
-			modifier = {
-				factor = 2
-				is_in_faction_with = FRA
-			}
-			modifier = {
-				factor = 2
-				has_government = democratic
-			}
-			modifier = {
-				factor = 0.5
-				has_government = fascism
-			}
-		}
-		}
-		ai_will_do = {
-			factor = 1
 
 			modifier = {
 				factor = 0.75
@@ -1772,37 +1727,6 @@ focus_tree = {
 						OR = {
 							has_idea = deluge_league_of_nations_prospective_member
 							has_idea = deluge_league_of_nations_lapsing_member
-							has_idea = deluge_league_of_nations_member_1
-							has_idea = deluge_league_of_nations_member_2
-							has_idea = deluge_league_of_nations_member_3
-							has_idea = deluge_league_of_nations_member_4
-							has_idea = deluge_league_of_nations_member_5
-							has_idea = deluge_league_of_nations_member_6
-							has_idea = deluge_league_of_nations_member_7
-							has_idea = deluge_league_of_nations_member_8
-							has_idea = deluge_league_of_nations_member_9
-							has_idea = deluge_league_of_nations_member_10
-							has_idea = deluge_league_of_nations_member_11
-							has_idea = deluge_league_of_nations_member_12
-							has_idea = deluge_league_of_nations_member_13
-							has_idea = deluge_league_of_nations_member_14
-							has_idea = deluge_league_of_nations_member_15
-							has_idea = deluge_league_of_nations_member_16
-							has_idea = deluge_league_of_nations_member_17
-							has_idea = deluge_league_of_nations_member_18
-							has_idea = deluge_league_of_nations_member_19
-							has_idea = deluge_league_of_nations_member_20
-							has_idea = deluge_league_of_nations_member_21
-							has_idea = deluge_league_of_nations_member_22
-							has_idea = deluge_league_of_nations_member_23
-							has_idea = deluge_league_of_nations_member_24
-							has_idea = deluge_league_of_nations_member_25
-							has_idea = deluge_league_of_nations_member_26
-							has_idea = deluge_league_of_nations_member_27
-							has_idea = deluge_league_of_nations_member_28
-							has_idea = deluge_league_of_nations_member_29
-							has_idea = deluge_league_of_nations_member_30
-							has_idea = deluge_league_of_nations_member_31
 						}
 					}
 				}
@@ -1826,7 +1750,6 @@ focus_tree = {
 			}
 		}
 	}
-	
 	focus = {
 		id = china_league_leave
 		icon = GFX_focus_generic_league_of_nations
@@ -1848,7 +1771,9 @@ focus_tree = {
 			remove_from_tech_sharing_group = deluge_league_of_nations_tech_group
 			custom_effect_tooltip = league_of_nations_custom_effect_tooltip_6
 			hidden_effect = {
-				news_event = deluge_league.29
+				news_event = {
+					id = deluge_league.29
+				}
 				remove_dynamic_modifier = { modifier = FRA_modifier_lon }
 			}
 		}
