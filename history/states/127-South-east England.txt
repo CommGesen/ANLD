@@ -1,8 +1,6 @@
-
 state={
 	id=127
 	name="STATE_127"
-
 	history={
 		owner = ENG
 		victory_points = {
@@ -24,22 +22,17 @@ state={
 			air_base = 10
 			3501 = {
 				naval_base = 6
-
 			}
 			9458 = {
 				naval_base = 10
-
 			}
-
 		}
 		add_core_of = ENG
-
 	}
-
 	provinces={
 		507 3501 6489 9458 11333 11446 13070 
 	}
-	manpower=3193383
+	manpower=3109996
 	buildings_max_level_factor=1.000
 	state_category=large_city
 	local_supplies=0.000
