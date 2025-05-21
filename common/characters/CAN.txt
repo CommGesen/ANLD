@@ -14,22 +14,6 @@ characters={
 			}
 		}
 	}
-	CAN_andré_verrier={
-		name="André Verrier"
-		portraits={
-			civilian={
-				large="gfx/leaders/SOV/soviet_policeman.dds"
-			}
-		}
-		field_marshal={
-			traits={ harsh_leader defensive_doctrine }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-		}
-	}
 	CAN_guillaume_i={
 		name="Guillaume I"
 		portraits={
@@ -41,18 +25,6 @@ characters={
 			ideology=reactionary_ideology
 			expire="1965.1.1.1"
 			id=-1
-		}
-	}
-	CAN_bishop_alphonselouis_du_st_maurice={
-		name="Bishop Alphonse-Louis du St Maurice"
-		portraits={
-			civilian={
-				large="gfx/leaders/CAN/cardinal_newman.dds"
-			}
-		}
-		country_leader={
-			ideology=religious_ideology
-			expire="1965.1.1.1"
 		}
 	}
 	CAN_mathéo_ney_delchingen={

@@ -566,7 +566,9 @@ focus_tree = {
 			has_country_flag = FRA_flag_final_counter_coup_has_occured
 		}
 		completion_reward = {
-			
+			#country_event = {
+				#id = 
+			#}
 		}
 		ai_will_do = {
 			factor = 25

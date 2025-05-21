@@ -15,18 +15,6 @@ characters={
 			}
 		}
 	}
-	CSC_juan_josé_arévalo_bermejo={
-		name="Juan José Arévalo Bermejo"
-		portraits={
-			civilian={
-				large="gfx/leaders/CSC/juan_arevalo.dds"
-			}
-		}
-		country_leader={
-			ideology=social_liberal_ideology
-			expire="1965.1.1.1"
-		}
-	}
 	CSC_emiliano_zapata={
 		name="Emiliano Zapata"
 		portraits={
@@ -48,18 +36,6 @@ characters={
 		}
 		country_leader={
 			ideology=corporatist_ideology
-			expire="1965.1.1.1"
-		}
-	}
-	CSC_atanasio_ix={
-		name="Atanasio IX"
-		portraits={
-			civilian={
-				large="gfx/leaders/CSC/regulo_patino.dds"
-			}
-		}
-		country_leader={
-			ideology=bonapartist_ideology
 			expire="1965.1.1.1"
 		}
 	}

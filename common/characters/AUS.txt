@@ -38,25 +38,6 @@ characters={
 			id=-1
 		}
 	}
-	AUS_ernst_kaltenbrunner={
-		name="Ernst Kaltenbrunner"
-		portraits={
-			army={
-				small=""
-			}
-			army={
-				large="gfx/leaders/AUS/ernst_kaltenbrunner.dds"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-1
-		}
-	}
 	AUS_engelbert_dollfuss={
 		name="Engelbert Dollfuss"
 		portraits={
@@ -147,25 +128,6 @@ characters={
 			}
 			army={
 				large="gfx/leaders/AUS/general_von_herberstein.dds"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-1
-		}
-	}
-	AUS_franz_von_feldsturm={
-		name="Franz von Feldsturm"
-		portraits={
-			army={
-				small=""
-			}
-			army={
-				large="gfx/leaders/AUS/general_von_feldsturm.dds"
 			}
 		}
 		corps_commander={

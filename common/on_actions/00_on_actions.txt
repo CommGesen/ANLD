@@ -618,117 +618,14 @@ on_actions = {
 			if = {
 				limit = {
 					AND = {
-						TAG = CAN
-						is_subject_of = ENG
-					}
-				}
-				if = {
-					limit = {
-						has_global_flag = flag_united_kingdom_formed
-					}
-					set_cosmetic_tag = CAN_UK
-				}
-				if = {
-					limit = {
-						NOT = {
-							OR = {
-								has_global_flag = flag_united_kingdom_formed
-								has_global_flag = flag_british_republic
-							}
-						}
-					}
-					set_cosmetic_tag = CAN_GB
-				}
-				set_party_name = { ideology = democratic name = deluge_canadian_democratic_short long_name = deluge_canadian_democratic_long }
-				set_party_name = { ideology = fascism name = deluge_canadian_ultranat_short long_name = deluge_canadian_ultranat_long }
-				set_party_name = { ideology = neutrality name = deluge_canadian_neutrality_short long_name = deluge_canadian_neutrality_long }
-				create_country_leader = {
-					name = "Lord Belmont"
-					desc = ""
-					picture = "gfx/leaders/deluge/earl_of_strafford.dds"
-					expire = "1965.1.1"
-					ideology = bonapartist_ideology
-					traits = {
-					}
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						TAG = CAN
-						NOT = {
-							is_subject_of = ENG
-						}
-					}
-				}
-				drop_cosmetic_tag = CAN_GB
-				drop_cosmetic_tag = CAN_UK
-				set_party_name = { ideology = democratic name = deluge_quebec_democratic_short long_name = deluge_quebec_democratic_long }
-				set_party_name = { ideology = fascism name = deluge_quebec_ultranat_short long_name = deluge_quebec_ultranat_long }
-				set_party_name = { ideology = neutrality name = deluge_quebec_neutrality_short long_name = deluge_quebec_neutrality_long }
-				create_country_leader = {
-					name = "Guillaume I"
-					desc = ""
-					picture = "gfx/leaders/deluge/marquess_of_londonderry.dds"
-					expire = "1965.1.1"
-					ideology = reactionary_ideology
-					traits = {
-						#
-					}
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						TAG = BUR
-						is_subject_of = ENG
-					}
-				}
-				if = {
-					limit = {
-						has_global_flag = flag_united_kingdom_formed
-					}
-					set_cosmetic_tag = BUR_UK
-				}
-				if = {
-					limit = {
-						NOT = {
-							OR = {
-								has_global_flag = flag_united_kingdom_formed
-								has_global_flag = flag_british_republic
-							}
-						}
-					}
-					set_cosmetic_tag = BUR_GB
-				}
-				
-				set_party_name = { ideology = neutrality name = deluge_burma_uk_neutrality_short long_name = deluge_burma_uk_neutrality_long }
-				
-				create_country_leader = {
-					name = "Viscount Gough"
-					desc = ""
-					picture = "gfx/leaders/deluge/viscount_gough.dds"
-					expire = "1953.3.1"
-					ideology = reactionary_ideology
-					traits = {
-						
-					}
-				}
-			}
-			if = {
-				limit = {
-					AND = {
 						TAG = BUR
 						NOT = {
 							is_subject_of = ENG
 						}
 					}
 				}
-				drop_cosmetic_tag = BUR_GB
-				drop_cosmetic_tag = BUR_UK
-				
+				drop_cosmetic_tag = yes
 				set_party_name = { ideology = neutrality name = deluge_burma_neutrality_short long_name = deluge_burma_neutrality_long }
-				
 				create_country_leader = {
 					name = "Taw Phaya"
 					desc = ""
@@ -774,7 +671,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = IRE_GB
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -810,8 +707,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = SAF_GB
-				drop_cosmetic_tag = SAF_UK
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -847,8 +743,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = AST_GB
-				drop_cosmetic_tag = AST_UK
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -884,8 +779,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = NZL_GB
-				drop_cosmetic_tag = NZL_UK
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -921,8 +815,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = USA_GB
-				drop_cosmetic_tag = USA_UK
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -971,11 +864,8 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = RAJ_GB
-				drop_cosmetic_tag = RAJ_UK
-				
+				drop_cosmetic_tag = yes
 				set_party_name = { ideology = neutrality name = deluge_india_neutrality_short long_name = deluge_india_neutrality_long }
-
 				create_country_leader = {
 					name = "Sayajirao III"
 					desc = ""
@@ -1020,8 +910,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = MAL_GB
-				drop_cosmetic_tag = MAL_UK
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -1057,8 +946,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = ZIM_GB
-				drop_cosmetic_tag = ZIM_UK
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -1080,7 +968,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = INS_HL
+				drop_cosmetic_tag = yes
 				set_party_name = { ideology = democratic name = deluge_indonesia_democratic_short long_name = deluge_indonesia_democratic_long }
 			}
 			if = {
@@ -1103,7 +991,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = NEP_PR
+				drop_cosmetic_tag = yes
 				set_party_name = { ideology = neutrality name = deluge_mysore_neutrality_short long_name = deluge_mysore_neutrality_long }
 				create_country_leader = {
 					name = "Krishna Raja Wadiyar IV"
@@ -1147,10 +1035,8 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = VIN_FR
-				
+				drop_cosmetic_tag = yes
 				set_party_name = { ideology = neutrality name = deluge_vietnam_neutrality_short long_name = deluge_vietnam_neutrality_long }
-				
 				create_country_leader = {
 					name = "Bao Đai"
 					desc = ""
@@ -1258,8 +1144,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = CAN_GB
-				drop_cosmetic_tag = CAN_UK
+				drop_cosmetic_tag = yes
 				set_party_name = { ideology = democratic name = deluge_quebec_democratic_short long_name = deluge_quebec_democratic_long }
 				set_party_name = { ideology = fascism name = deluge_quebec_ultranat_short long_name = deluge_quebec_ultranat_long }
 				set_party_name = { ideology = neutrality name = deluge_quebec_neutrality_short long_name = deluge_quebec_neutrality_long }
@@ -1298,19 +1183,8 @@ on_actions = {
 					}
 					set_cosmetic_tag = BUR_GB
 				}
-				
 				set_party_name = { ideology = neutrality name = deluge_burma_uk_neutrality_short long_name = deluge_burma_uk_neutrality_long }
-				
-				create_country_leader = {
-					name = "Viscount Gough"
-					desc = ""
-					picture = "gfx/leaders/deluge/viscount_gough.dds"
-					expire = "1953.3.1"
-					ideology = reactionary_ideology
-					traits = {
-						
-					}
-				}
+				promote_character = BUR_sir_archibald_douglas_cochrane
 			}
 			if = {
 				limit = {
@@ -1321,11 +1195,8 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = BUR_GB
-				drop_cosmetic_tag = BUR_UK
-				
+				drop_cosmetic_tag = yes
 				set_party_name = { ideology = neutrality name = deluge_burma_neutrality_short long_name = deluge_burma_neutrality_long }
-				
 				create_country_leader = {
 					name = "Taw Phaya"
 					desc = ""
@@ -1371,8 +1242,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = IRE_GB
-				drop_cosmetic_tag = IRE_UK
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -1408,8 +1278,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = SAF_GB
-				drop_cosmetic_tag = SAF_UK
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -1445,8 +1314,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = AST_GB
-				drop_cosmetic_tag = AST_UK
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -1482,8 +1350,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = NZL_GB
-				drop_cosmetic_tag = NZL_UK
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -1519,8 +1386,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = USA_GB
-				drop_cosmetic_tag = USA_UK
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -1569,11 +1435,8 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = RAJ_GB
-				drop_cosmetic_tag = RAJ_UK
-				
+				drop_cosmetic_tag = yes
 				set_party_name = { ideology = neutrality name = deluge_india_neutrality_short long_name = deluge_india_neutrality_long }
-
 				create_country_leader = {
 					name = "Sayajirao III"
 					desc = ""
@@ -1618,8 +1481,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = MAL_GB
-				drop_cosmetic_tag = MAL_UK
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -1655,8 +1517,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = ZIM_GB
-				drop_cosmetic_tag = ZIM_UK
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -1678,7 +1539,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = INS_HL
+				drop_cosmetic_tag = yes
 				set_party_name = { ideology = democratic name = deluge_indonesia_democratic_short long_name = deluge_indonesia_democratic_long }
 				promote_character = INS_sukarno
 			}
@@ -1711,7 +1572,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = NEP_PR
+				drop_cosmetic_tag = yes
 				set_party_name = { ideology = neutrality name = deluge_mysore_neutrality_short long_name = deluge_mysore_neutrality_long }
 				create_country_leader = {
 					name = "Krishna Raja Wadiyar IV"
@@ -1753,7 +1614,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = BHU_FR
+				drop_cosmetic_tag = yes
 				set_party_name = { ideology = neutrality name = deluge_travancore_neutrality_short long_name = deluge_travancore_neutrality_long }
 				create_country_leader = {
 					name = "Chithira Thirunal"
@@ -1797,10 +1658,8 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = VIN_FR
-				
+				drop_cosmetic_tag = yes
 				set_party_name = { ideology = neutrality name = deluge_vietnam_neutrality_short long_name = deluge_vietnam_neutrality_long }
-				
 				create_country_leader = {
 					name = "Bao Đai"
 					desc = ""
@@ -1830,8 +1689,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = CAN_GB
-				drop_cosmetic_tag = CAN_UK
+				drop_cosmetic_tag = yes
 				set_party_name = { ideology = democratic name = deluge_quebec_democratic_short long_name = deluge_quebec_democratic_long }
 				set_party_name = { ideology = fascism name = deluge_quebec_ultranat_short long_name = deluge_quebec_ultranat_long }
 				set_party_name = { ideology = neutrality name = deluge_quebec_neutrality_short long_name = deluge_quebec_neutrality_long }
@@ -1855,11 +1713,8 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = BUR_GB
-				drop_cosmetic_tag = BUR_UK
-				
+				drop_cosmetic_tag = yes
 				set_party_name = { ideology = neutrality name = deluge_burma_neutrality_short long_name = deluge_burma_neutrality_long }
-				
 				create_country_leader = {
 					name = "Taw Phaya"
 					desc = ""
@@ -1880,8 +1735,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = IRE_GB
-				drop_cosmetic_tag = IRE_UK
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -1892,8 +1746,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = SAF_GB
-				drop_cosmetic_tag = SAF_UK
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -1904,8 +1757,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = AST_GB
-				drop_cosmetic_tag = AST_UK
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -1916,8 +1768,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = NZL_GB
-				drop_cosmetic_tag = NZL_UK
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -1928,8 +1779,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = USA_GB
-				drop_cosmetic_tag = USA_UK
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -1940,11 +1790,8 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = RAJ_GB
-				drop_cosmetic_tag = RAJ_UK
-				
+				drop_cosmetic_tag = yes
 				set_party_name = { ideology = neutrality name = deluge_india_neutrality_short long_name = deluge_india_neutrality_long }
-
 				create_country_leader = {
 					name = "Sayajirao III"
 					desc = ""
@@ -1964,8 +1811,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = MAL_GB
-				drop_cosmetic_tag = MAL_UK
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -1976,8 +1822,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = ZIM_GB
-				drop_cosmetic_tag = ZIM_UK
+				drop_cosmetic_tag = yes
 			}
 			if = {
 				limit = {
@@ -1988,7 +1833,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = INS_HL
+				drop_cosmetic_tag = yes
 				set_party_name = { ideology = democratic name = deluge_indonesia_democratic_short long_name = deluge_indonesia_democratic_long }
 				promote_character = INS_sukarno
 			}
@@ -2001,7 +1846,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = NEP_PR
+				drop_cosmetic_tag = yes
 				set_party_name = { ideology = neutrality name = deluge_mysore_neutrality_short long_name = deluge_mysore_neutrality_long }
 				create_country_leader = {
 					name = "Krishna Raja Wadiyar IV"
@@ -2023,7 +1868,7 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = BHU_FR
+				drop_cosmetic_tag = yes
 				set_party_name = { ideology = neutrality name = deluge_travancore_neutrality_short long_name = deluge_travancore_neutrality_long }
 				create_country_leader = {
 					name = "Chithira Thirunal"
@@ -2045,10 +1890,8 @@ on_actions = {
 						}
 					}
 				}
-				drop_cosmetic_tag = VIN_FR
-				
+				drop_cosmetic_tag = yes
 				set_party_name = { ideology = neutrality name = deluge_vietnam_neutrality_short long_name = deluge_vietnam_neutrality_long }
-				
 				create_country_leader = {
 					name = "Bao Đai"
 					desc = ""

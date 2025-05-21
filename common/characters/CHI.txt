@@ -205,25 +205,6 @@ characters={
 			logistics_skill=2
 		}
 	}
-	CHI_zhang_xueliang={
-		name="Zhang Xueliang"
-		portraits={
-			army={
-				small=""
-			}
-			army={
-				large="gfx/leaders/CHI/young_marshall.dds"
-			}
-		}
-		field_marshal={
-			traits={ defensive_doctrine }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-		}
-	}
 	CHI_soong_chingling={
 		name="Soong Ching-Ling"
 		portraits={
