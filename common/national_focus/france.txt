@@ -7242,7 +7242,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_develop_india
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_FRA_focus_develop_india
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_asian_department }
@@ -7278,7 +7278,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_subjugate_all_of_india
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_FRA_focus_subjugate_all_of_india
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_develop_india }
@@ -15622,7 +15622,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_disruptive_camouflages
-		icon = GFX_focus_FRA_razzle_dazzle_2
+		icon = GFX_focus_generic_disruptive_camouflages
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_containing_the_air_threat focus = FRA_advanced_sonars }
@@ -15976,7 +15976,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_organize_fighter_competition
-		icon = GFX_focus_generic_fighter_blueprint
+		icon = GFX_focus_generic_blueprint_fighter
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_la_nouvelle_armee_de_l_air }
@@ -16051,7 +16051,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_call_for_multirole_design
-		icon = GFX_focus_generic_bomber_blueprint
+		icon = GFX_focus_generic_blueprint_medium_bomber
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_la_nouvelle_armee_de_l_air }
@@ -16166,7 +16166,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_strategic_bombers_development
-		icon = GFX_focus_generic_heavy_bomber_blueprint
+		icon = GFX_focus_generic_blueprint_heavy_bomber
 		x = -1
 		y = 1
 		prerequisite = {focus = FRA_anti_insurgency_measures}

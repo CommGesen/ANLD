@@ -196,7 +196,7 @@ if = {
 			tank_nsb_engine_upgrade = 1
 		}
 		obsolete = yes
-		icon = "GFX_POL_basic_light_tank"
+		icon = "GFX_POL_basic_light_tank_medium"
 	}
 	create_equipment_variant = {
 		name = "7TP dw"
@@ -215,7 +215,7 @@ if = {
 			tank_nsb_engine_upgrade = 2
 		}
 		obsolete = yes
-		icon = "GFX_POL_imp_light_tank"
+		icon = "GFX_POL_improved_light_tank_medium"
 	}
 	create_equipment_variant = {
 		name = "7TP jw"

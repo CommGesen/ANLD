@@ -101,8 +101,20 @@
  POL_jet_strat_bomber_equipment_1:0 "PZL.101"
  POL_jet_strat_bomber_equipment_1_short:0 "PZL.101"
 
- POL_helicopter_equipment_1: "GIL BŻ-4"
- POL_helicopter_equipment_1_short: "BŻ-4"
+   ### POLISH AIRFORCE SPECIAL PROJECTS###
+
+    POL_supersonic_fighter1: "PZL TS-16 „Grot”"
+    POL_supersonic_fighter_equipment_1: "PZL TS-16 „Grot”"
+    POL_supersonic_fighter_equipment_1_short: "TS-16 „Grot”"
+    
+    POL_strat_bomber_intercontinental_equipment_1: "PZL.77 „Gryf”"
+    POL_strat_bomber_intercontinental_equipment_1_short: "PZL.77 „Gryf”"
+    
+    POL_mothership_equipment_0: "PZL.62-H „Hydra”"
+    POL_mothership_equipment_0_short: "PZL.62-H „Hydra”"
+
+    POL_helicopter_equipment_1: "GIL BŻ-4"
+    POL_helicopter_equipment_1_short: "BŻ-4"
 
  #FRANCE
  FRA_transport_plane_equipment_1:0 "Dewoitine D.338"
@@ -201,7 +213,8 @@
     ### FRENCH AIRFORCE SPECIAL PROJECTS###
 
     FRA_supersonic_fighter1: "Marcel Bloch Super Mystère B2"
-    FRA_supersonic_fighter_equipment_1: "Super Mystère B2"
+    FRA_supersonic_fighter_equipment_1: "Marcel Bloch Super Mystère B2"
+    FRA_supersonic_fighter_equipment_1_short: "Super Mystère B2"
     
     FRA_strat_bomber_intercontinental_equipment_1: "Bréguet Br.780"
     FRA_strat_bomber_intercontinental_equipment_1_short: "Br.780"
@@ -227,14 +240,6 @@
  USA_transport_plane_equipment_2_short:0 "DC-5"
  USA_transport_plane_equipment_3:0 "Consolidated C-87"
  USA_transport_plane_equipment_3_short:0 "C-87"
-
- USA_supersonic_fighter1: "North American F-100"
- USA_supersonic_fighter_equipment_1: "F-100"
-
- USA_strat_bomber_intercontinental_equipment_1: "Consolidated B-36"
- USA_strat_bomber_intercontinental_equipment_1_short: "B-36"
- USA_mothership_equipment_0: "Boeing B-29 FICON"
- USA_mothership_equipment_0_short: "B-29 FICON"
 
  USA_helicopter_equipment_1: "Sikorsky H-19"
  USA_helicopter_equipment_1_short: "H-19"

@@ -350,14 +350,30 @@ spriteTypes = {
 	texturefile = "gfx/interface/technologies/GGG/jet_strategic_bomber.dds"
 	}
 
-	### VARIANTS ###
-
 	### SPECIAL PROJECTS ###
 	
 	SpriteType = {
 	name = "GFX_helicopter_equipment_medium"
 	texturefile = "gfx/interface/technologies/GGG/helicopter.dds"
 	}
+	SpriteType = {
+	name = "GFX_mothership_equipment_medium"
+	texturefile = "gfx/interface/technologies/GGG/mothership.dds"
+	}
+	SpriteType = {
+	name = "GFX_strat_bomber_intercontinental_equipment_medium"
+	texturefile = "gfx/interface/technologies/GGG/strat_bomber_intercontinental.dds"
+	}
+	SpriteType = {
+	name = "GFX_small_plane_airframe_5_medium"
+	texturefile = "gfx/interface/technologies/GGG/supersonic_fighter.dds"
+	}
+	SpriteType = {
+	name = "GFX_supersonic_fighter1_medium"
+	texturefile = "gfx/interface/technologies/GGG/supersonic_fighter.dds"
+	}
+	
+	### VARIANTS ###
 
 ### POLAND ###
 
@@ -697,6 +713,29 @@ spriteTypes = {
 	texturefile = "gfx/interface/technologies/POL/POL_jet_strategic_bomber.dds"
 	}
 
+	### SPECIAL PROJECTS ###
+
+	SpriteType = {
+	name = "GFX_POL_helicopter_equipment_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_helicopter.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_mothership_equipment_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_mothership.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_strat_bomber_intercontinental_equipment_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_strat_bomber_intercontinental.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_small_plane_airframe_5_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_supersonic_fighter.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_supersonic_fighter1_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_supersonic_fighter.dds"
+	}
+
 	### VARIANTS ###
 
 	SpriteType = {
@@ -714,13 +753,6 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_POL_tactical_bomber3_medium_3"
 	texturefile = "gfx/interface/technologies/POL/POL_tactical_bomber_3-3.dds"
-	}
-
-	### SPECIAL PROJECTS ###
-
-	SpriteType = {
-	name = "GFX_POL_helicopter_equipment_medium"
-	texturefile = "gfx/interface/technologies/POL/POL_helicopter.dds"
 	}
 
 
@@ -1066,6 +1098,29 @@ spriteTypes = {
 	texturefile = "gfx/interface/technologies/FRA/FRA_jet_strategic_bomber.dds"
 	}
 
+	### SPECIAL PROJECTS ###
+	
+	SpriteType = {
+	name = "GFX_FRA_helicopter_equipment_medium"
+	texturefile = "gfx/interface/technologies/FRA/FRA_helicopter.dds"
+	}
+	SpriteType = {
+	name = "GFX_FRA_mothership_equipment_medium"
+	texturefile = "gfx/interface/technologies/FRA/FRA_mothership.dds"
+	}
+	SpriteType = {
+	name = "GFX_FRA_strat_bomber_intercontinental_equipment_medium"
+	texturefile = "gfx/interface/technologies/FRA/FRA_strat_bomber_intercontinental.dds"
+	}
+	SpriteType = {
+	name = "GFX_FRA_small_plane_airframe_5_medium"
+	texturefile = "gfx/interface/technologies/FRA/FRA_supersonic_fighter.dds"
+	}
+	SpriteType = {
+	name = "GFX_FRA_supersonic_fighter1_medium"
+	texturefile = "gfx/interface/technologies/FRA/FRA_supersonic_fighter.dds"
+	}
+
 	### VARIANTS ###
 	SpriteType = {
 	name = "GFX_FRA_early_fighter_medium_2"
@@ -1167,29 +1222,29 @@ spriteTypes = {
 	name = "GFX_FRA_strategic_bomber3_medium_2"
 	texturefile = "gfx/interface/technologies/FRA/FRA_strategic_bomber_3-2.dds"
 	}
-
-	### SPECIAL PROJECTS ###
-	
 	SpriteType = {
-	name = "GFX_FRA_helicopter_equipment_medium"
-	texturefile = "gfx/interface/technologies/FRA/FRA_helicopter.dds"
+	name = "GFX_FRA_strategic_bomber3_medium_3"
+	texturefile = "gfx/interface/technologies/FRA/FRA_strategic_bomber_3-3.dds"
 	}
 
 
 ### FEDERAL KINGDOM OF AMERICA ###
 
-	### NON-DLC TECH TREE ###
+	### TRANSPORTS ###
     SpriteType = {
 	name = "GFX_USA_transport_plane_equipment_medium"
-	texturefile = "gfx/interface/technologies/USA/USA_transport_plane.dds"
+	texturefile = "gfx/interface/technologies/USA/USA_transport_plane_1.dds"
 	}
 	SpriteType = {
 	name = "GFX_USA_transport_plane_equipment_1_medium"
-	texturefile = "gfx/interface/technologies/USA/USA_transport_plane.dds"
+	texturefile = "gfx/interface/technologies/USA/USA_transport_plane_1.dds"
 	}
-
+	SpriteType = {
+    name = "GFX_USA_early_transport_plane_medium"
+    texturefile = "gfx/interface/technologies/USA/USA_transport_plane_1.dds"
+    }
 	### SPECIAL PROJECTS ###
-	
+
 	SpriteType = {
 	name = "GFX_USA_helicopter_equipment_medium"
 	texturefile = "gfx/interface/technologies/USA/USA_helicopter.dds"

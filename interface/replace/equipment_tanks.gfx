@@ -8,15 +8,15 @@ spriteTypes = {
 
     SpriteType = {
 	name = "GFX_gwtank_medium"
-	texturefile = "gfx/interface/technologies/GGG/gw_light_tank.dds"
+	texturefile = "gfx/interface/technologies/GGG/iw_light_tank.dds"
 	}
 	SpriteType = {
 	name = "GFX_gw_light_tank_medium"
-	texturefile = "gfx/interface/technologies/GGG/gw_light_tank.dds"
+	texturefile = "gfx/interface/technologies/GGG/iw_light_tank.dds"
 	}
     SpriteType = {
 	name = "GFX_iwtank_medium"
-	texturefile = "gfx/interface/technologies/GGG/gw_light_tank.dds"
+	texturefile = "gfx/interface/technologies/GGG/iw_light_tank.dds"
 	}
     
     SpriteType = {
@@ -736,11 +736,11 @@ spriteTypes = {
 
     SpriteType = {
 	name = "GFX_FRA_gwtank_medium"
-	texturefile = "gfx/interface/technologies/FRA/FRA_gw_light_tank.dds"
+	texturefile = "gfx/interface/technologies/FRA/FRA_iw_light_tank.dds"
 	}
 	SpriteType = {
 	name = "GFX_FRA_gw_light_tank_medium"
-	texturefile = "gfx/interface/technologies/FRA/FRA_gw_light_tank.dds"
+	texturefile = "gfx/interface/technologies/FRA/FRA_iw_light_tank.dds"
 	}
     SpriteType = {
 	name = "GFX_FRA_iw_tank_medium"
@@ -970,11 +970,11 @@ spriteTypes = {
 	
     SpriteType = {
 	name = "GFX_FRA_gwtank_chassis_medium"
-	texturefile = "gfx/interface/technologies/FRA/FRA_gw_light_tank_chassis.dds"
+	texturefile = "gfx/interface/technologies/FRA/FRA_iw_light_tank_chassis.dds"
 	}
     SpriteType = {
 	name = "GFX_FRA_light_tank_chassis_0_medium"
-	texturefile = "gfx/interface/technologies/FRA/FRA_gw_light_tank_chassis.dds"
+	texturefile = "gfx/interface/technologies/FRA/FRA_iw_light_tank_chassis.dds"
 	}
     
     SpriteType = {

@@ -79,10 +79,6 @@ spriteTypes = {
 			name = "GFX_tech_support_medium"
 			texturefile = "gfx/interface/technologies/GGG/support_equipment.dds"
 		}
-        SpriteType = {
-			name = "GFX_armored_support_vehicle_medium"
-			texturefile = "gfx/interface/technologies/GGG/engineering_vehicle.dds"
-		}
     #)#
 
 	#(ARTILLERY#
@@ -220,10 +216,6 @@ spriteTypes = {
 			name = "GFX_POL_tech_support_medium"
 			texturefile = "gfx/interface/technologies/POL/POL_support_equipment.dds"
 		}
-        SpriteType = {
-			name = "GFX_POL_armored_support_vehicle_medium"
-			texturefile = "gfx/interface/technologies/POL/POL_engineering_vehicle.dds"
-		}
     #)#
 
 	#(ARTILLERY#
@@ -263,7 +255,27 @@ spriteTypes = {
             name = "GFX_POL_antitank5_medium"
             texturefile = "gfx/interface/technologies/POL/POL_at_3.dds"
         }
+        SpriteType = {
+            name = "GFX_POL_rocket_artillery_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_rocket_art_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_POL_rocket_artillery4_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_rocket_art_2.dds"
+        }
 	#)#	
+
+    #(SPECIAL PROJECTS#
+        SpriteType = {
+			name = "GFX_POL_armored_support_vehicle_medium"
+			texturefile = "gfx/interface/technologies/POL/POL_engineering_vehicle.dds"
+		}
+        SpriteType = {
+            name = "GFX_POL_super_heavy_artillery_equipment_medium"
+            texturefile = "gfx/interface/technologies/POL/POL_super_heavy_artillery.dds"
+        }
+	#)#	
+
 #)#
 
 #(FRANCE#
@@ -345,10 +357,6 @@ spriteTypes = {
 			name = "GFX_FRA_tech_support_medium"
 			texturefile = "gfx/interface/technologies/FRA/FRA_support_equipment.dds"
 		}
-        SpriteType = {
-			name = "GFX_FRA_armored_support_vehicle_medium"
-			texturefile = "gfx/interface/technologies/FRA/FRA_engineering_vehicle.dds"
-		}
     #)#
 
 	#(ARTILLERY#
@@ -387,6 +395,29 @@ spriteTypes = {
         SpriteType = {
             name = "GFX_FRA_antitank5_medium"
             texturefile = "gfx/interface/technologies/FRA/FRA_at_3.dds"
+        }
+        SpriteType = {
+            name = "GFX_FRA_rocket_artillery_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_rocket_art_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_FRA_rocket_artillery4_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_rocket_art_2.dds"
+        }
+	#)#
+
+    #(SPECIAL PROJECTS#
+        SpriteType = {
+			name = "GFX_FRA_armored_support_vehicle_medium"
+			texturefile = "gfx/interface/technologies/FRA/FRA_engineering_vehicle.dds"
+		}
+        SpriteType = {
+            name = "GFX_FRA_super_heavy_artillery_equipment_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_super_heavy_artillery.dds"
+        }
+        SpriteType = {
+            name = "GFX_FRA_self_propelled_super_heavy_artillery_equipment_medium"
+            texturefile = "gfx/interface/technologies/FRA/FRA_self_propelled_super_heavy_artillery.dds"
         }
 	#)#	
 

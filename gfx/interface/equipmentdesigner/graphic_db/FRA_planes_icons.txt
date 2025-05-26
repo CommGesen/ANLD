@@ -51,6 +51,14 @@ FRA = {
 				}
 		}
 	}
+
+	small_plane_airframe_5 = {
+		pool = {
+			icons = {
+				GFX_FRA_supersonic_fighter1_medium
+				}
+		}
+	}
 	
 ### CAS ###
 
@@ -378,6 +386,7 @@ FRA = {
 		pool = {
 			weight = 1.1
 			icons = {
+				GFX_FRA_strategic_bomber3_medium_3
 				GFX_FRA_strategic_bomber3_medium_2
 				GFX_FRA_strategic_bomber3_medium
 			}
