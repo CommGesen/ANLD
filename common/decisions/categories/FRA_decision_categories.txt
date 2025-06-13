@@ -97,3 +97,15 @@ FRA_dec_cat_subsidize_the_city_development = {
 	}
 	visible_when_empty = no
 }
+FRA_dec_cat_empire_of_the_golden_flame = {
+	icon = GFX_decision_category_gre_investment_decisions #change later
+	#picture = GFX_decision_cat_picture_soviet_comecon
+	priority = 2
+	allowed = {
+		tag = FRA
+	}
+	visible = {
+		has_completed_focus = FRA_prophet_saved
+	}
+	visible_when_empty = no
+}

@@ -1138,6 +1138,27 @@ ideas = {
 				production_speed_radar_station_factor = 0.1
 			}
 		}
+		FRA_spirit_satanists_allied = {
+			picture = FRA_fortification_focus ##change later
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				weekly_manpower = 1000
+				conscription_factor = 0.05
+				monthly_population = 0.1
+				resistance_damage_to_garrison = 0.15
+			}
+		}
 		FRA_marine_de_guerre = {
 			picture = spirit_mass_production_of_guns #change later
 			allowed = {

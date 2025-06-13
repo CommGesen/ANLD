@@ -1189,7 +1189,7 @@ country_event = {##beast was killed
 		add_manpower = 478
 	}
 }
-country_event = {##Livestocks attacks in the Vosges
+country_event = {##Ernest Petit becomes a general
 	id = deluge_france.46
 	title = deluge_france.46.t
 	desc = deluge_france.46.d
@@ -1439,6 +1439,28 @@ country_event = {##French-Portugese history since start of 19th century
 	}
 	option = {
 		name = deluge_france_lore.17.b
+	}
+}
+country_event = {##Delaunay allies satanists
+	id = deluge_france_lore.18
+	title = deluge_france_lore.18.t
+	desc = deluge_france_lore.18.d
+	picture = GFX_report_event_statue_of_lucifer
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.18.a
+	}
+}
+news_event = {##Delaunay allies satanists - info for the world
+	id = deluge_france_lore.19
+	title = deluge_france_lore.19.t
+	desc = deluge_france_lore.19.d
+	picture = GFX_news_event_statue_of_lucifer
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.19.a
 	}
 }
 country_event = {##Cyraneica forces France out of the Libya

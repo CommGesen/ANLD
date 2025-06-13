@@ -832,7 +832,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_new_gnostic_religion focus = FRA_new_times_new_men_new_methods}
 		relative_position_id = FRA_new_gnostic_religion
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -845,10 +845,56 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			OR = {
+				has_country_leader = {
+					character = FRA_deluge_maurice_delaunay
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = FRA_deluge_rene_guenon
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = FRA_deluge_gerard_encausse
+					ruling_only = yes
+				}
+			}
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_country_leader = {
+						character = FRA_deluge_rene_guenon
+						ruling_only = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_leader = {
+						character = FRA_deluge_gerard_encausse
+						ruling_only = yes
+					}
+				}
+			}
+			else = {
+				hidden_effect = {
+					country_event = {
+						id = deluge_france_lore.18
+						hours = 5
+					}
+					news_event = {
+						id = deluge_france_lore.19
+						hours = 10
+					}
+				}
+				add_ideas = FRA_spirit_satanists_allied
+				add_trait = {
+					character = FRA_deluge_maurice_delaunay
+					ideology = avant_garde_nationalism_ideology
+					trait = deluge_trait_incarnation_of_lucifer
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -856,8 +902,8 @@ focus_tree = {
 		bypass = {
 			
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 		available_if_capitulated = yes
 	}
 	focus = {
@@ -919,13 +965,17 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_country_leader = {
+				character = FRA_deluge_maurice_delaunay
+				ruling_only = yes
+			}
 		}
 		completion_reward = {
 			set_country_leader_name = {
 				ideology = fascism
 				name = FRA_deluge_maurice_delaunay_name2
 			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_148
 			FRA_deluge_maurice_delaunay = {
 				swap_country_leader_traits = {
 					remove = mentally_ill
@@ -940,8 +990,8 @@ focus_tree = {
 		bypass = {
 			
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 		available_if_capitulated = yes
 	}
 	focus = {
@@ -1163,7 +1213,7 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_full_control_of_state = 16
 		}
 		completion_reward = {
 			add_manpower = 80000
@@ -1181,8 +1231,7 @@ focus_tree = {
 		bypass = {
 			
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
+		cancel_if_invalid = yes
 		available_if_capitulated = yes
 	}
 	focus = {
@@ -1206,7 +1255,7 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_full_control_of_state = 16
 		}
 		completion_reward = {
 			hidden_effect = {
@@ -1223,8 +1272,7 @@ focus_tree = {
 		bypass = {
 			
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
+		cancel_if_invalid = yes
 		available_if_capitulated = yes
 	}
 	focus = {
