@@ -414,9 +414,7 @@ ideas = {
 			}
 		}
 	}
-
-
-		industrial_concern = {
+	industrial_concern = {
 		vattenfall_ab = {
 		picture = SWE_vattenfall
 			allowed = {
@@ -457,95 +455,62 @@ ideas = {
 			}
 		}
 	}
-
-
-	guns_manufacturer_slot = {
-		
+	#guns_manufacturer_slot = {
+	materiel_manufacturer = {
 		designer = yes
-	
 		bofors = {
-			
 			picture = generic_artillery_manufacturer_2
-
-			
 			allowed = {
 				OR = {
 					original_tag = SWE
-					original_tag = SWD
 				}
 			}
-			
 			research_bonus = {
 				artillery = 0.15
 			}
-			
 			traits = { steelworks_manufacturer }
-			
 			equipment_bonus = {
-
 			}
 		}
 		
-	}
-	
-	small_arms_manufacturer_slot = {
-		
-		designer = yes
-	
+	#}
+	#small_arms_manufacturer_slot = {
+		#designer = yes
 		husqvarna = {
-			
 			picture = generic_infantry_equipment_manufacturer_1
-
-			
 			allowed = {
 				OR = {
 					original_tag = SWE
-					original_tag = SWD
 				}
 			}
-			
 			research_bonus = {
 				infantry_weapons = 0.15
 			}
-			
 			equipment_bonus = {
 				# rifles and pistols
 			}
-			
 			traits = { civilian_firearms_manufacturer }
-			
 			modifier = {
 			}
 		}
 		
-	}
-		
-	vehicle_manufacturer_slot = {
-		
-		designer = yes
-	
-
+	#}	
+	#vehicle_manufacturer_slot = {
+		#designer = yes
 		scania = {
-			
-
-			
 			allowed = {
 				OR = {
 					original_tag = SWE
 					original_tag = SWD
 				}
 			}
-			
 			research_bonus = {
 				motorized_equipment = 0.15
 			}
-			
 			traits = { tankette_manufacturer }
-			
 			modifier = {
 				# more info
 			}
 		}
-		
 	}
 }

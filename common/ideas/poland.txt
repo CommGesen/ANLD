@@ -3870,7 +3870,8 @@ ideas = {
 			}
 		}
 	}
-	vehicle_manufacturer_slot = {
+	#vehicle_manufacturer_slot = {
+	materiel_manufacturer = {
 		designer = yes
 		ursus_vehicles = {
 			picture = designer_ursus
@@ -3928,9 +3929,9 @@ ideas = {
 				factor = 1
 			}
 		}
-	}
-	guns_manufacturer_slot = {
-		designer = yes
+	#}
+	#guns_manufacturer_slot = {
+		#designer = yes
 		smpa = {
 			picture = POL_smpa
 			allowed = {
@@ -4021,9 +4022,9 @@ ideas = {
 				factor = 1
 			}
 		}
-	}
-	small_arms_manufacturer_slot = {
-		designer = yes
+	#}
+	#small_arms_manufacturer_slot = {
+		#designer = yes
 		ursus_guns = {
 			picture = designer_ursus
 			allowed = {
@@ -4301,10 +4302,12 @@ ideas = {
 						}
 					}
 					has_idea = ursus_tanks
-					has_idea = ursus_vehicles
-					has_idea = ursus_artilery
-					has_idea = ursus_guns
 					has_idea = ursus_ships
+					OR = {
+						has_idea = ursus_artilery
+						has_idea = ursus_guns
+						has_idea = ursus_vehicles
+					}
 				}
 				has_completed_focus = POL_support_ursus
 			}

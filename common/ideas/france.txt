@@ -3,6 +3,80 @@ ideas = {
 		
 	}
 	country = {
+		FRA_spirit_les_grandes_programmes = {
+			picture = ARG_construction_guilds 
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.15
+				war_support_factor = 0.05
+			}
+		}
+		FRA_spirit_spirit_of_the_east = {
+			picture = PER_islamic_traditions_ns 
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				
+			}
+		}
+		FRA_spirit_spirit_of_the_east_2 = {
+			picture = PER_islamic_traditions_ns 
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.03
+			}
+		}
+		FRA_spirit_spirit_of_the_east_3 = {
+			picture = PER_islamic_traditions_ns 
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.03
+				stability_factor = 0.03
+			}
+		}
 		FRA_spirit_towards_republic = {
 			picture = spirit_french_cockade 
 			allowed = {
@@ -1749,7 +1823,7 @@ ideas = {
 			traits = { medium_tank_manufacturer }
 		}
 		deluge_designer_amx = {
-			picture = somua #change later
+			picture = designer_ateliers_amx
 			allowed = {
 				OR = {
 					original_tag = FRA
@@ -1769,7 +1843,8 @@ ideas = {
 			traits = { fast_tank_manufacturer }
 		}
 	}
-	vehicle_manufacturer_slot = {
+	#vehicle_manufacturer_slot = {
+	materiel_manufacturer = {
 		designer = yes
 		deluge_designer_laffly = {
 			picture = designer_laffly 
@@ -1831,9 +1906,9 @@ ideas = {
 			}
 			traits = { mechanized_manufacturer }
 		}
-	}	
-	small_arms_manufacturer_slot = {	
-		designer = yes
+	#}	
+	#small_arms_manufacturer_slot = {	
+		#designer = yes
 		deluge_designer_mas = {
 			picture = mas			
 			allowed = {
@@ -1854,9 +1929,9 @@ ideas = {
 			}
 			traits = { mass_producer_manufacturer }
 		}
-	}
-	guns_manufacturer_slot = {
-		designer = yes
+	#}
+	#guns_manufacturer_slot = {
+		#designer = yes
 		deluge_designer_schneider = {
 			picture = designer_schneider_artillery			
 			allowed = {
@@ -2159,19 +2234,11 @@ ideas = {
 	}
 	naval_manufacturer = {
 		designer = yes
-		fcm = {
-			#picture = 			
+		deluge_designer_fcm = {
+			picture = fcm
 			allowed = {
 				OR = {
-					original_tag = FRA
-					original_tag = BEL
-					original_tag = NMD
-					original_tag = BRI
-					original_tag = SAV
-					original_tag = BGD
-					original_tag = OCC
-					original_tag = ALS
-					original_tag = CAT
+					tag = FRA
 				}
 			}	
 			research_bonus = {
@@ -2179,21 +2246,58 @@ ideas = {
 			}
 			traits = { atlantic_fleet_naval_manufacturer }
 		}
+		deluge_designer_arsenal_de_lorient = {
+			picture = designer_arsenal_de_lorient
+			allowed = {
+				OR = {
+					tag = FRA
+				}
+			}
+			available = {
+				controls_province = 6536
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			traits = { convoy_escort_naval_manufacturer }
+		}
+		deluge_designer_arsenal_de_cherbourg = {
+			picture = generic_naval_manufacturer_3 ##change later
+			allowed = {
+				OR = {
+					tag = FRA
+				}
+			}
+			available = {
+				controls_province = 6449
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			traits = { submarine_manufacturer }
+		}
+		deluge_designer_acf = {
+			picture = FRA_acf
+			allowed = {
+				OR = {
+					tag = FRA
+				}
+			}
+			available = {
+				
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			traits = { raiding_fleet_naval_manufacturer }
+		}
 	}
 	industrial_concern = {
 		deluge_designer_pechiney = {
 			picture = designer_pechiney
 			allowed = {
 				OR = {
-					original_tag = FRA
-					original_tag = BEL
-					original_tag = NMD
-					original_tag = BRI
-					original_tag = SAV
-					original_tag = BGD
-					original_tag = OCC
-					original_tag = ALS
-					original_tag = CAT
+					tag = FRA
 				}
 			}
 			research_bonus = {
@@ -2209,15 +2313,7 @@ ideas = {
 			picture = designer_cnp
 			allowed = {
 				OR = {
-					original_tag = FRA
-					original_tag = BEL
-					original_tag = NMD
-					original_tag = BRI
-					original_tag = SAV
-					original_tag = BGD
-					original_tag = OCC
-					original_tag = ALS
-					original_tag = CAT
+					tag = FRA
 				}
 			}
 			research_bonus = {
@@ -2232,15 +2328,7 @@ ideas = {
 			picture = designer_schneider
 			allowed = {
 				OR = {
-					original_tag = FRA
-					original_tag = BEL
-					original_tag = NMD
-					original_tag = BRI
-					original_tag = SAV
-					original_tag = BGD
-					original_tag = OCC
-					original_tag = ALS
-					original_tag = CAT
+					tag = FRA
 				}
 			}
 			research_bonus = {
@@ -2256,15 +2344,7 @@ ideas = {
 			picture = designer_legrand
 			allowed = {
 				OR = {
-					original_tag = FRA
-					original_tag = BEL
-					original_tag = NMD
-					original_tag = BRI
-					original_tag = SAV
-					original_tag = BGD
-					original_tag = OCC
-					original_tag = ALS
-					original_tag = CAT
+					tag = FRA
 				}
 			}
 			research_bonus = {
@@ -2279,16 +2359,11 @@ ideas = {
 			picture = designer_alsthom
 			allowed = {
 				OR = {
-					original_tag = FRA
-					original_tag = BEL
-					original_tag = NMD
-					original_tag = BRI
-					original_tag = SAV
-					original_tag = BGD
-					original_tag = OCC
-					original_tag = ALS
-					original_tag = CAT
+					tag = FRA
 				}
+			}
+			available = {
+				has_completed_focus = FRA_transport_modernization
 			}
 			research_bonus = {
 				industry = 0.05

@@ -278,141 +278,82 @@ ideas = {
 			}
 		}		
 	}
-	
-	
-	small_arms_manufacturer_slot = {
-			
+	#small_arms_manufacturer_slot = {
+	materiel_manufacturer = {
 		designer = yes
-		
 		colt = {
-			
-			
 			allowed = {
 				original_tag = USA
 			}
-			
-
-			
 			research_bonus = {
 				infantry_weapons = 0.15
 			}
-			
 			traits = { civilian_firearms_manufacturer }
-			
 			modifier = {
 			}
 		}
-		
 		rock_island_arsenal = {
-			
-			
 			allowed = {
 				original_tag = USA
 			}
-			
-
-			
 			research_bonus = {
 				infantry_weapons = 0.15
 			}
-			
 			traits = { military_ordnance_manufacturer }
-			
 			modifier = {
 			}
 		}
-		
 		springfield_armory = {
-			
-			
 			allowed = {
 				original_tag = USA
 			}
-			
-
-			
 			research_bonus = {
 				infantry_weapons = 0.15
 			}
-			
 			traits = { mass_producer_manufacturer }
-			
 			modifier = {
 			}
 		}
-	
-	}
-		
-	vehicle_manufacturer_slot = {
-			
-		designer = yes
-		
+	#}
+	#vehicle_manufacturer_slot = {	
+		#designer = yes
 		ford_motor_company = {
-			
-			
 			allowed = {
 				original_tag = USA
 			}
-			
-
-			
 			research_bonus = {
 				motorized_equipment = 0.15
 			}
-			
 			traits = { truck_manufacturer }
-			
 			modifier = {
 			}
 		}
-	
-	}
-		
-	guns_manufacturer_slot = {
-			
-		designer = yes
-		
+	#}	
+	#guns_manufacturer_slot = {
+		#designer = yes
 		bethlehem_steel = {
-			
-			
 			allowed = {
 				original_tag = USA
 			}
-			
-
-			
 			research_bonus = {
 				artillery = 0.15
 			}
-			
 			traits = { steelworks_manufacturer }
-			
 			modifier = {
 			}
 		}
-		
 		argus = {
-			
 			allowed = {
 				original_tag = USA
 			}
-			
 			cost = 150
-			
 			research_bonus = {
 				artillery = 0.15
 			}
-			
 			traits = { rangefinder_manufacturer }
 		}
-
-		
 	}
-	
-
-	
-	industrial_concern = {
-					
+	industrial_concern = {	
 		carnegiesteel = {
 			picture = carnegie
 			allowed = {

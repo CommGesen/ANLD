@@ -513,94 +513,56 @@ ideas = {
 			}
 		}
 	}
-	
-	
 	tank_manufacturer = {
-	
 		designer = yes
-	
 		fiat = {
-			
-			
 			allowed = {
 				original_tag = ITA
 			}
-			
-			
 			research_bonus = {
 				armor = 0.15
 			}
-			
 			traits = { medium_tank_manufacturer }
 		}
 	}
-	
-	
-	
-	small_arms_manufacturer_slot = {
-			
+	#small_arms_manufacturer_slot = {
+	materiel_manufacturer = {
 		designer = yes
-		
 		beretta = {
-			
-			
 			allowed = {
 				original_tag = ITA
 			}
-			
-
-			
 			research_bonus = {
 				infantry_weapons = 0.15
 			}
-			
 			traits = { civilian_firearms_manufacturer }
 		}
 		
-	}
-		
-	vehicle_manufacturer_slot = {
-			
-		designer = yes
-		
+	#}
+	#vehicle_manufacturer_slot = {
+		#designer = yes
 		lancia = {
-			
 			allowed = {
 				original_tag = ITA
 			}
-			
-			
 			research_bonus = {
 				motorized_equipment = 0.15
 			}
-			
 			traits = { truck_manufacturer }
 		}
-		
-	}
-		
-	guns_manufacturer_slot = {
-			
-		designer = yes
-		
+	#}
+	#guns_manufacturer_slot = {
+		#designer = yes
 		breda = {
-			
-			
 			allowed = {
 				original_tag = ITA
 			}
-			
-
-			
 			research_bonus = {
 				artillery = 0.15
 			}
-			
 			traits = { steelworks_manufacturer }
 		}
 	}
-	
-	
 	aircraft_manufacturer = {	
 		
 		designer = yes

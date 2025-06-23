@@ -100,114 +100,74 @@ ideas = {
 			}
 		}
 	}
-	
-	
-	vehicle_manufacturer_slot = {
-		
+	#vehicle_manufacturer_slot = {
+	materiel_manufacturer = {
 		designer = yes
-
 		HOL_DAF_trucks = {
-			
 			picture = generic_motorized_equipment_manufacturer_2
-
 			allowed = {
 				tag = HOL
 			}
-			
 			cost = 150
-			
 			research_bonus = {
 				motorized_equipment = 0.15
 			}
-			
 			traits = { truck_manufacturer }
-		}
-		
-	}
-		
-	guns_manufacturer_slot = {
-		
-		designer = yes
-
+		}	
+	#}
+	#guns_manufacturer_slot = {
+		#designer = yes
 		artillerie_inrichtingen = {
-			
 			picture = generic_artillery_manufacturer_2
-
-			
 			allowed = {
 				original_tag = HOL
 			}
-			
 			research_bonus = {
 				artillery = 0.15
 			}
-			
 			equipment_bonus = {
 				# more research needed
 			}
-			
 			traits = { steelworks_manufacturer }
-			
 			modifier = {
 			}
 		}
 		
-	}
-	
-	small_arms_manufacturer_slot = {
-		
-		designer = yes
-
+	#}
+	#small_arms_manufacturer_slot = {
+		#designer = yes
 		hih_siderius = {
-		
 			picture = generic_infantry_equipment_manufacturer_3
-		
-			
 			allowed = {
 				original_tag = HOL
 			}
-			
 			research_bonus = {
 				infantry_weapons = 0.15
 			}
-			
 			traits = { military_ordnance_manufacturer }
-			
 			modifier = {
 			}
 		}
 	}
-
 	industrial_concern = {
-	
 		HOL_royal_dutch_shell = {
-			
 			allowed = {
 				original_tag = HOL
 			}
-
 			picture = generic_industrial_concern_1
-			
 			research_bonus = {
 				industry = 0.15
-				
 			}
-			
 			traits = { industrial_concern }
 		}
-
 		HOL_philips = {
-			
 			allowed = {
 				original_tag = HOL
 			}
-
 			picture = generic_electronics_concern_1
-			
 			research_bonus = {
 				electronics = 0.10
 			}
-			
 			traits = { electronics_concern }
 		}		
 	}

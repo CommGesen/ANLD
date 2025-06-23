@@ -1,14 +1,12 @@
 ﻿l_english:
-
  ###POLAND###
- 
  wsabp:0 "Warsawian Joint-Stock Company for Construction of Steam Locomotives"
- ursus_artilery:0 "Ursus, Artillery Department"
- ursus_guns:0 "Ursus, Armaments Department"
+ ursus_artilery:0 "Ursus - Artillery Department"
+ ursus_guns:0 "Ursus - Armaments Department"
  sepewe:0 "Arms Industry Export Syndicate"
  pkp:0 "Polish State Railways"
  ava:0 "AVA"
- ursus_industry:0 "Ursus, Industry Department"
+ ursus_industry:0 "Ursus - Industry Department"
  hsw:0 "Stalowa Wola Metallurgical Plant"
  pws:0 "PWS"
  pzl:0 "PZL"
@@ -23,9 +21,10 @@
  ksus:0 "KSUS"
  ursus_tanks:0 "Ursus - Tanks Department"
  bbt_br_panc:0 "B.B.T.Br.Panc"
- 
+ ursus_vehicles: "Ursus - Vehicles Department"
+ cegielski_artillery_factory:0 "Cegielski Artillery Factory"
+ starachowice_works: "Starachowice Works"
  ###FRANCE###
-
  deluge_designer_pechiney:0 "Pechiney"
  deluge_designer_pechiney_desc:0 "A major industrial group exploiting various resources deposits and owning many factories contributing to numerous construction projects, in France and its colonies."
  deluge_designer_cnp:0 "CNP"
@@ -36,9 +35,32 @@
  deluge_designer_legrand_cie_desc:0 "A major industrial group focused on the manufacture of electrical equipment, tooling and industrial machinery. Its headquarters are located in Limoges."
  deluge_designer_alsthom:0 "Alsthom"
  deluge_designer_alsthom_desc:0 "A national railway company, in charge of the construction and management of railroads in the French territories."
- 
+ deluge_designer_schneider: "Canons Schneider"
+ deluge_designer_lorraine_dietrich:0 "Lorraine-Dietrich"
+ deluge_designer_mas:0 "MAS"
+ deluge_designer_laffly:0 "Laffly"
+ deluge_designer_panhard:0 "Panhard"
+ deluge_designer_sncac:0 "SNCAC - Centre Aviation"
+ deluge_designer_sncam:0 "SNCAN - Nord Aviation"
+ deluge_designer_sncan:0 "SNCAM - Midi Aviation"
+ deluge_designer_sncaso:0 "SNCASO - Sud-Ouest Aviation"
+ deluge_designer_sncase:0 "SNCASE - Sud-Est Aviation"
+ deluge_designer_avions_latecoere:0 "Avions Latécoère"
+ deluge_designer_sncac_2:0 "SNCAC - Centre Aviation"
+ deluge_designer_sncam_2:0 "SNCAN - Nord Aviation"
+ deluge_designer_sncan_2:0 "SNCAM - Midi Aviation"
+ deluge_designer_sncaso_2:0 "SNCASO - Sud-Ouest Aviation"
+ deluge_designer_sncase_2:0 "SNCASE - Sud-Est Aviation"
+ deluge_designer_avions_latecoere_2:0 "Avions Latécoère"
+ deluge_designer_hotchkiss:0 "Hotchkiss"
+ deluge_designer_renault:0 "Renault"
+ deluge_designer_somua:0 "SOMUA"
+ deluge_designer_amx:0 "AMX"
+ deluge_designer_fcm:0 "FCM"
+ deluge_designer_arsenal_de_lorient:0 "Arsenal de Lorient"
+ deluge_designer_arsenal_de_cherbourg:0 "Arsenal de Cherbourg"
+ deluge_designer_acf:0 "ACF"
  ###FEDERAL KINGDOM OF AMERICA###
- 
  carnegiesteel:0 "Carnegie Steel"
  carnegiesteel_desc:0 "A major industrial group specializing in metallurgy. Very active in construction in general, but also a supplier of armor plates to dockyards. Some of its workshops are also in contact with the Army for tank development."
  standard_oil:0 "Standard Oil"
@@ -49,9 +71,7 @@
  general_electric_desc:0 "A national company managing the federal power grid. The group made many research breakthroughs in radar development lately, something the army is keeping a close eye on."
  frails:0 "FRA"
  frails_desc:0 "A federal administration is in charge of the management, the maintenance and of course the expansion of the federal rail network since many years."
- 
  ###SWEDEN###
- 
  vattenfall_ab:0 "Vattenfall AB"
  vattenfall_ab_desc:0 "A public industrial group responsible for energy production and management of the Swedish electricity grid."
  ericsson:0 "Ericsson"

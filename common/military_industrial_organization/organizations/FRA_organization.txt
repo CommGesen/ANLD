@@ -71,7 +71,7 @@ deluge_FRA_arsenal_de_lorient_organization = {
 }
 
 deluge_FRA_arsenal_de_cherbourg_organization = {
-	icon = GFX_idea_generic_naval_manufacturer_3
+	icon = GFX_idea_generic_naval_manufacturer_3 ##change later
 	include = generic_submarine_organization
 	allowed = {
 		tag = FRA

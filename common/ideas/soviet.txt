@@ -160,348 +160,97 @@ ideas = {
 			}
 		}
 	}	
-	
-	
 	industrial_concern = {
-					
 		prodamet = {
-		
 			picture = generic_industrial_concern_1
-
 			allowed = {
 				original_tag = SOV
 			}
-			
 			research_bonus = {
 				industry = 0.15
 			}
-			
 			traits = { industrial_concern }
-			
 			modifier = {
 			}
 		}
-		
 		leningrad_polytechnical_institute = {
-			
-			
 			allowed = {
 				original_tag = SOV
 			}
-			
-
-			
 			research_bonus = {
 				electronics = 0.10
 			}
-			
 			traits = { electronics_concern }
-			
 			modifier = {
 			}
 		}
 	}
-	
-	guns_manufacturer_slot = {
-			
+	#guns_manufacturer_slot = {
+	materiel_manufacturer = {
 		designer = yes
-		
 		grabin_design_bureau = {
-			
-			
 			allowed = {
 				original_tag = SOV
 			}
-			
-
-			
 			research_bonus = {
 				artillery = 0.15
 			}
-			
 			traits = { steelworks_manufacturer }
-			
 			modifier = {
 			}
 		}	
-		
-	}
-		
-	small_arms_manufacturer_slot = {
-			
-		designer = yes
-		
+	#}
+	#small_arms_manufacturer_slot = {
+		#designer = yes
 		tula_arms_plant = {
-			
-			
 			allowed = {
 				original_tag = SOV
 			}
-			
-
-			
 			research_bonus = {
 				infantry_weapons = 0.15
 			}
-			
 			traits = { mass_producer_manufacturer }
-			
 			modifier = {
 			}
 		}
 		
-	}
-	
-	vehicle_manufacturer_slot = {
-			
-		designer = yes
-		
+	#}
+	#vehicle_manufacturer_slot = {
+		#designer = yes
 		stalingrad_tractor_factory = {
-		
-			
 			allowed = {
 				original_tag = SOV
 			}
-			
-
 			research_bonus = {
 				motorized_equipment = 0.15
 			}
-			
 			traits = { tractor_manufacturer }
 		}
-
-		
 		gaz = {
-			
-			
 			allowed = {
 				original_tag = SOV
 			}
-			
-
-			
 			research_bonus = {
 				motorized_equipment = 0.15
 				mot_rockets = 0.50
 			}
-			
 			traits = { truck_manufacturer }
-			
 			modifier = {
 			}
 		}
 	}
-	
 	naval_manufacturer = {
-	
 		designer = yes
-		
 		nevskoye_design_bureau = {
-			
-			
 			allowed = {
 				original_tag = SOV
 			}
-			
-
-			
 			research_bonus = {
 				naval_equipment = 0.15
 			}
-			
 			traits = { atlantic_fleet_naval_manufacturer }
-			
 			modifier = {
 			}
 		}
 	}
-	
-	theorist = {	
-	
-			
-		mikhail_tukhachevsky = {
-			
-			
-			allowed = {
-				original_tag = BAL
-
-			}
-
-			cost = 250
-			
-			research_bonus = {
-				cat_mass_assault = 0.15
-			}
-			
-			traits = { mass_assault_expert }
-		}
-		
-		boris_shaposhnikov = {
-			
-			
-			allowed = {
-				original_tag = CAU
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_mass_assault = 0.15
-			}
-			
-			traits = { mass_assault_expert }
-		}
-		
-		georgy_zhukov = {
-			
-			
-			allowed = {
-				original_tag = UKR
-
-			}
-
-			cost = 250
-			
-			research_bonus = {
-				cat_mass_assault = 0.15
-			}
-			
-			traits = { mass_assault_expert }
-		}
-		
-		sergey_gorshkov = {
-			
-			
-			allowed = {
-				original_tag = CAU
-
-			}
-
-			cost = 250
-			
-			research_bonus = {
-				cat_trade_interdiction = 0.15
-			}
-			
-			traits = { submarine_specialist }
-		}
-		
-		vladimir_tributs = {
-			
-			
-			allowed = {
-				original_tag = BAL
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_trade_interdiction = 0.15
-			}
-			
-			traits = { submarine_specialist }
-		}
-		
-		sergei_rudenko = {
-			
-			
-			allowed = {
-				original_tag = UKR
-
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_battlefield_support = 0.15
-			}
-			
-			traits = { close_air_support_proponent }
-		}
-		
-		alexander_golovanov = {
-			
-			
-			allowed = {
-				original_tag = BAL
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_battlefield_support = 0.15
-			}
-			
-			traits = { close_air_support_proponent }
-		}
-		
-		igor_kurchatov = {
-			
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
-
-			
-			research_bonus = {
-				nuclear = 0.15
-			}
-			
-			traits = { nuclear_scientist }
-			
-			ai_will_do = {
-				factor = 1
-				
-				modifier = {
-					factor = 0
-					date < 1938.1.1
-				}
-				modifier = {
-					factor = 0.5
-					date < 1940.1.1
-				}
-				modifier = {
-					factor = 2
-					date > 1942.1.1
-				}
-			}
-
-		}
-		
-		sergei_korolev = {
-			
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
-			research_bonus = {
-				rocketry = 0.15
-			}
-
-			
-			traits = { rocket_scientist }
-			
-			ai_will_do = {
-				factor = 1
-				
-				modifier = {
-					factor = 0
-					date < 1938.1.1
-				}
-				modifier = {
-					factor = 0.5
-					date < 1940.1.1
-				}
-				modifier = {
-					factor = 2
-					date > 1942.1.1
-				}
-			}
-
-		}
-	}
-	
 }

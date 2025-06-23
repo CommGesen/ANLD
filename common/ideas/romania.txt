@@ -129,112 +129,69 @@ ideas = {
 			}
 		}
 	}
-
-	small_arms_manufacturer_slot = {
-		
+	#small_arms_manufacturer_slot = {
+	materiel_manufacturer = {
 		designer = yes
-		
 		ROM_cugir = {
-			
 			picture = idea_ROM_cugir #used with permission from Turning Point mod
-
-
 			allowed = {
 				original_TAG = ROM
 			}
-			
 			research_bonus = {
 				infantry_weapons = 0.15
 			}
-			
 			traits = { mass_producer_manufacturer }
-			
 		}
-	}
-
-	guns_manufacturer_slot = {
-		
-		designer = yes
-		
+	#}
+	#guns_manufacturer_slot = {
+		#designer = yes
 		ROM_resita = {
-			
 			picture = generic_artillery_manufacturer_1
-
-
 			allowed = {
 				original_TAG = ROM
 			}
-			
 			research_bonus = {
 				artillery = 0.15
 			}
-			
 			traits = { steelworks_manufacturer }
-			
 		}
-		
-	}
-	
-	vehicle_manufacturer_slot = {
-		
-		designer = yes
-		
+	#}
+	#vehicle_manufacturer_slot = {
+		#designer = yes
 		ROM_vauxhall = {
-			
 			picture = vauxhall
-
 			allowed = {
 				original_TAG = ROM
 			}
-
 			research_bonus = {
 				motorized_equipment = 0.15
 			}
-			
 			traits = { tankette_manufacturer }
-			
 		}
-
-
 		ROM_malaxa = {
-			
 			picture = generic_motorized_equipment_manufacturer_1
-
-
 			allowed = {
 				original_TAG = ROM
 			}
-			
 			research_bonus = {
 				motorized_equipment = 0.15
 			}
-			
 			traits = { tractor_manufacturer }
-			
 		}
-		
 		ROM_opel = {
-			
 			picture = opel
-
 			cost = 75
-
 			allowed = {
 				original_tag = ROM
 			}
-
 			research_bonus = {
 				motorized_equipment = 0.15
 			}
-			
 			traits = { truck_manufacturer }
 		}
 	}
-	
 	aircraft_manufacturer = { 		
-			
 		designer = yes
-		
 		iar = {
 			
 			picture = generic_air_manufacturer_2

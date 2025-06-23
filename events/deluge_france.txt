@@ -1222,6 +1222,111 @@ country_event = {##Ernest Petit becomes a general
 		}
 	}
 }
+country_event = {##first event from Guenon content
+	id = deluge_france.47
+	title = deluge_france.47.t
+	desc = deluge_france.47.d
+	picture = GFX_report_event_rene_guenon
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.47.a
+		add_political_power = 100
+		add_stability = 0.15
+		add_war_support = 0.05
+		add_ideas = FRA_spirit_spirit_of_the_east
+	}
+}
+country_event = {##first french nuclear test
+	id = deluge_france.48
+	title = deluge_france.48.t
+	desc = deluge_france.48.d
+	picture = GFX_report_event_ernest_petit_2 ##change later
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.48.a
+		add_breakthrough_progress = {
+			specialization = specialization_nuclear
+			value = 0.5
+		}
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.49
+				days = 7
+			}
+		}
+	}
+}
+country_event = {##second french nuclear test
+	id = deluge_france.49
+	title = deluge_france.49.t
+	desc = deluge_france.49.d
+	picture = GFX_report_event_ernest_petit_2 ##change later
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.49.a
+		add_breakthrough_progress = {
+			specialization = specialization_nuclear
+			value = 0.5
+		}
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.50
+				days = 7
+			}
+		}
+	}
+}
+country_event = {##third french nuclear test
+	id = deluge_france.50
+	title = deluge_france.50.t
+	desc = deluge_france.50.d
+	picture = GFX_report_event_ernest_petit_2 ##change later
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.50.a
+		add_breakthrough_progress = {
+			specialization = specialization_nuclear
+			value = 0.5
+		}
+	}
+}
+country_event = {##second guenon event - about celtic and nordic paganism
+	id = deluge_france.51
+	title = deluge_france.51.t
+	desc = deluge_france.51.d
+	picture = GFX_report_event_pagan_runes
+	is_triggered_only = yes
+	timeout_days = 2
+	option = {
+		name = deluge_france.51.a
+		swap_ideas = {
+			remove_idea = FRA_spirit_spirit_of_the_east
+			add_idea = FRA_spirit_spirit_of_the_east_2
+		}
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.52
+				days = 2
+			}
+		}
+	}
+}
+country_event = {##third guenon event - about freemasons
+	id = deluge_france.52
+	title = deluge_france.52.t
+	desc = deluge_france.52.d
+	picture = GFX_report_event_grande_loge_de_france
+	is_triggered_only = yes
+	timeout_days = 2
+	option = {
+		name = deluge_france.52.a
+		add_manpower = -10000
+		swap_ideas = {
+			remove_idea = FRA_spirit_spirit_of_the_east_2
+			add_idea = FRA_spirit_spirit_of_the_east_3
+		}
+	}
+}
 country_event = {##inspection in the army
 	id = deluge_france_lore.1
 	title = deluge_france_lore.1.t
@@ -1461,6 +1566,72 @@ news_event = {##Delaunay allies satanists - info for the world
 	is_triggered_only = yes
 	option = {
 		name = deluge_france_lore.19.a
+	}
+}
+country_event = {##EDF lore event
+	id = deluge_france_lore.20
+	title = deluge_france_lore.20.t
+	desc = deluge_france_lore.20.d
+	picture = GFX_report_event_statue_of_lucifer ##change later
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.20.a
+	}
+}
+country_event = {##CNRS lore event
+	id = deluge_france_lore.21
+	title = deluge_france_lore.21.t
+	desc = deluge_france_lore.21.d
+	picture = GFX_report_event_statue_of_lucifer ##change later
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.21.a
+	}
+}
+country_event = {##CEA lore event
+	id = deluge_france_lore.22
+	title = deluge_france_lore.22.t
+	desc = deluge_france_lore.22.d
+	picture = GFX_report_event_statue_of_lucifer ##change later
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.22.a
+	}
+}
+country_event = {##G1 Reactor lore event
+	id = deluge_france_lore.23
+	title = deluge_france_lore.23.t
+	desc = deluge_france_lore.23.d
+	picture = GFX_report_event_statue_of_lucifer ##change later
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.23.a
+	}
+}
+country_event = {##LRB lore event
+	id = deluge_france_lore.24
+	title = deluge_france_lore.24.t
+	desc = deluge_france_lore.24.d
+	picture = GFX_report_event_statue_of_lucifer ##change later
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.24.a
+	}
+}
+country_event = {##Alpes rocket facility lore event
+	id = deluge_france_lore.25
+	title = deluge_france_lore.25.t
+	desc = deluge_france_lore.25.d
+	picture = GFX_report_event_statue_of_lucifer ##change later
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_lore.25.a
 	}
 }
 country_event = {##Cyraneica forces France out of the Libya
