@@ -9761,11 +9761,11 @@ focus_tree = {
 		icon = GFX_focus_fra_devalue_the_franc
 		x = 85
 		y = 0
-		prerequisite = { focus =  }
+		#prerequisite = { focus =  }
 		#relative_position_id = 
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -13989,16 +13989,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			hidden_effect = {
-				add_to_variable = { french_bad_army_army_attack_factor = 0.1}
-				add_to_variable = { french_bad_army_army_defence_factor = 0.1}
-				add_to_variable = { french_bad_army_army_org_factor = 0.1}
-				add_to_variable = { french_bad_army_army_morale_factor = 0.1}
-				add_to_variable = { french_bad_army_army_speed_factor = 0.1}
-				add_to_variable = { french_bad_army_breakthrough_factor = 0.1}
-				add_to_variable = { french_bad_army_experience_loss_factor = -0.1}
-				add_to_variable = { french_bad_army_land_night_attack = 0.15}
-				add_to_variable = { french_bad_army_max_dig_in_factor = 0.2}
-				add_to_variable = { french_bad_army_recon_factor = 0.15}
+				add_to_variable = { french_bad_army_army_attack_factor = 0.05}
+				add_to_variable = { french_bad_army_army_defence_factor = 0.05}
+				add_to_variable = { french_bad_army_army_org_factor = 0.05}
+				add_to_variable = { french_bad_army_army_morale_factor = 0.05}
+				add_to_variable = { french_bad_army_army_speed_factor = 0.05}
+				add_to_variable = { french_bad_army_breakthrough_factor = 0.05}
+				add_to_variable = { french_bad_army_experience_loss_factor = -0.05}
+				add_to_variable = { french_bad_army_land_night_attack = 0.05}
+				add_to_variable = { french_bad_army_max_dig_in_factor = 0.1}
+				add_to_variable = { french_bad_army_recon_factor = 0.1}
 			}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_56
 		}
@@ -14453,16 +14453,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			hidden_effect = {
-				add_to_variable = { french_bad_army_army_attack_factor = 0.1}
-				add_to_variable = { french_bad_army_army_defence_factor = 0.1}
-				add_to_variable = { french_bad_army_army_org_factor = 0.1}
-				add_to_variable = { french_bad_army_army_morale_factor = 0.1}
-				add_to_variable = { french_bad_army_army_speed_factor = 0.1}
-				add_to_variable = { french_bad_army_breakthrough_factor = 0.1}
-				add_to_variable = { french_bad_army_experience_loss_factor = -0.1}
-				add_to_variable = { french_bad_army_land_night_attack = 0.15}
-				add_to_variable = { french_bad_army_max_dig_in_factor = 0.2}
-				add_to_variable = { french_bad_army_recon_factor = 0.15}
+				add_to_variable = { french_bad_army_army_attack_factor = 0.05}
+				add_to_variable = { french_bad_army_army_defence_factor = 0.05}
+				add_to_variable = { french_bad_army_army_org_factor = 0.05}
+				add_to_variable = { french_bad_army_army_morale_factor = 0.05}
+				add_to_variable = { french_bad_army_army_speed_factor = 0.05}
+				add_to_variable = { french_bad_army_breakthrough_factor = 0.05}
+				add_to_variable = { french_bad_army_experience_loss_factor = -0.05}
+				add_to_variable = { french_bad_army_land_night_attack = 0.05}
+				add_to_variable = { french_bad_army_max_dig_in_factor = 0.1}
+				add_to_variable = { french_bad_army_recon_factor = 0.1}
 			}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_56
 			army_experience = 10
@@ -14570,18 +14570,18 @@ focus_tree = {
 		}
 		completion_reward = {
 			hidden_effect = {
-				add_to_variable = { french_bad_army_army_attack_factor = 0.15}
-				add_to_variable = { french_bad_army_army_defence_factor = 0.15}
-				add_to_variable = { french_bad_army_army_org_factor = 0.15}
-				add_to_variable = { french_bad_army_army_morale_factor = 0.15}
-				add_to_variable = { french_bad_army_army_speed_factor = 0.15}
-				add_to_variable = { french_bad_army_breakthrough_factor = 0.15}
-				add_to_variable = { french_bad_army_experience_loss_factor = -0.15}
-				add_to_variable = { french_bad_army_land_night_attack = 0.15}
-				add_to_variable = { french_bad_army_max_dig_in_factor = 0.2}
-				add_to_variable = { french_bad_army_recon_factor = 0.15}
+				add_to_variable = { french_bad_army_army_attack_factor = 0.05}
+				add_to_variable = { french_bad_army_army_defence_factor = 0.05}
+				add_to_variable = { french_bad_army_army_org_factor = 0.05}
+				add_to_variable = { french_bad_army_army_morale_factor = 0.05}
+				add_to_variable = { french_bad_army_army_speed_factor = 0.05}
+				add_to_variable = { french_bad_army_breakthrough_factor = 0.05}
+				add_to_variable = { french_bad_army_experience_loss_factor = -0.05}
+				add_to_variable = { french_bad_army_land_night_attack = 0.05}
+				add_to_variable = { french_bad_army_max_dig_in_factor = 0.1}
+				add_to_variable = { french_bad_army_recon_factor = 0.1}
 			}
-			custom_effect_tooltip = FRA_custom_effect_tooltip_57
+			custom_effect_tooltip = FRA_custom_effect_tooltip_56
 			army_experience = 10
 			hidden_effect = {
 				add_to_variable = { new_french_army_army_defence_factor = 0.03}
@@ -15143,18 +15143,18 @@ focus_tree = {
 		}
 		completion_reward = {
 			hidden_effect = {
-				add_to_variable = { french_bad_army_army_attack_factor = 0.15}
-				add_to_variable = { french_bad_army_army_defence_factor = 0.15}
-				add_to_variable = { french_bad_army_army_org_factor = 0.15}
-				add_to_variable = { french_bad_army_army_morale_factor = 0.15}
-				add_to_variable = { french_bad_army_army_speed_factor = 0.15}
-				add_to_variable = { french_bad_army_breakthrough_factor = 0.15}
-				add_to_variable = { french_bad_army_experience_loss_factor = -0.15}
-				add_to_variable = { french_bad_army_land_night_attack = 0.15}
-				add_to_variable = { french_bad_army_max_dig_in_factor = 0.2}
-				add_to_variable = { french_bad_army_recon_factor = 0.15}
+				add_to_variable = { french_bad_army_army_attack_factor = 0.05}
+				add_to_variable = { french_bad_army_army_defence_factor = 0.05}
+				add_to_variable = { french_bad_army_army_org_factor = 0.05}
+				add_to_variable = { french_bad_army_army_morale_factor = 0.05}
+				add_to_variable = { french_bad_army_army_speed_factor = 0.05}
+				add_to_variable = { french_bad_army_breakthrough_factor = 0.05}
+				add_to_variable = { french_bad_army_experience_loss_factor = -0.05}
+				add_to_variable = { french_bad_army_land_night_attack = 0.05}
+				add_to_variable = { french_bad_army_max_dig_in_factor = 0.1}
+				add_to_variable = { french_bad_army_recon_factor = 0.1}
 			}
-			custom_effect_tooltip = FRA_custom_effect_tooltip_57
+			custom_effect_tooltip = FRA_custom_effect_tooltip_56
 			add_doctrine_cost_reduction = {
 				name = POL_lazy_research_bonus
 				cost_reduction = 0.5

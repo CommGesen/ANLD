@@ -6496,7 +6496,7 @@ focus_tree = {
 				limit = {
 					has_idea = POL_member_of_crusade_2
 				}
-				country = { id = deluge_poland_foreign.12 hours = 1 } 
+				country_event = { id = deluge_poland_foreign.12 hours = 1 } 
 			}
 			454 = {
 				owner = {
@@ -8383,6 +8383,38 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
+		id = POL_send_support_to_catholic_church
+		icon = GFX_focus_spa_save_the_alcazar
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}
+		cost = 8
+		prerequisite = { focus = POL_fight_jewish_influence }
+		relative_position_id = POL_formalize_youth_organisations
+		available = {
+			
+		}
+		completion_reward = {
+			add_political_power = -50
+			add_timed_idea = {
+				idea = POL_sent_support_to_church
+				days = 200
+			}
+			add_stability = 0.05
+			add_war_support = 0.05
+			custom_effect_tooltip = POL_custom_effect_tooltip_advisors
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
 		id = POL_come_back_to_traditional_values
 		icon = GFX_focus_generic_population_growth
 		x = 0
@@ -8474,38 +8506,6 @@ focus_tree = {
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
 		available_if_capitulated = no
-	}
-	focus = {
-		id = POL_send_support_to_catholic_church
-		icon = GFX_focus_spa_save_the_alcazar
-		x = -1
-		y = 1
-		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}
-		cost = 8
-		prerequisite = { focus = POL_fight_jewish_influence }
-		relative_position_id = POL_formalize_youth_organisations
-		available = {
-			
-		}
-		completion_reward = {
-			add_political_power = -50
-			add_timed_idea = {
-				idea = POL_sent_support_to_church
-				days = 200
-			}
-			add_stability = 0.05
-			add_war_support = 0.05
-			custom_effect_tooltip = POL_custom_effect_tooltip_advisors
-		}
-		ai_will_do = {
-			factor = 40
-		}
-		bypass = {
-			
-		}
-		cancel_if_invalid = yes		
-		continue_if_invalid = no		
-		available_if_capitulated = yes
 	}
 	focus = {
 		id = POL_only_catholic_politicians_allowed
@@ -14031,8 +14031,10 @@ focus_tree = {
 				add_idea = POL_HUN_cooperation2
 			}
 			HUN = {
-				remove_idea = POL_HUN_cooperation
-				add_idea = POL_HUN_cooperation2
+				swap_ideas = {
+					remove_idea = POL_HUN_cooperation
+					add_idea = POL_HUN_cooperation2
+				}
 			}
 			custom_effect_tooltip = POL_custom_effect_tooltip_259
 		}
@@ -22428,6 +22430,36 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
+		id = POL_NSP_wins
+		icon = GFX_nsp_logo
+		x = 8
+		y = 1
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		cost = 5
+		prerequisite = { focus = POL_the_new_system }
+		relative_position_id = POL_the_new_system
+		mutually_exclusive = {focus = POL_PPS_wins focus = POL_KPP_wins focus = POL_NSPR_wins focus = POL_PKWN_wins}
+		available = {
+			has_country_flag = POL_NSP_won_in_event
+		}
+		completion_reward = {
+			set_party_name = { ideology = communism long_name = POL_NSP_name_long name = POL_NSP_name_short}
+			country_event = {
+				id = deluge_poland.84
+			}
+			set_cosmetic_tag = POL_rzeczpospolita
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
 		id = POL_KPP_wins
 		icon = GFX_focus_POL_communist_party_of_poland
 		x = -7
@@ -23179,162 +23211,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_country_leader_trait = the_most_equal_of_equals
-		}
-		ai_will_do = {
-			factor = 40
-		}
-		bypass = {
-			
-		}
-		cancel_if_invalid = yes		
-		continue_if_invalid = no		
-		available_if_capitulated = yes
-	}
-	focus = {
-		id = POL_centrally_planned_economy
-		icon = GFX_focus_generic_energy
-		x = 0
-		y = 1
-		search_filters = {}
-		cost = 15
-		prerequisite = { focus = POL_cult_of_the_wodz }
-		relative_position_id = POL_cult_of_the_wodz
-		allow_branch = {
-			always = no
-		}
-		available = {
-			
-		}
-		completion_reward = {
-			add_ideas = POL_centrally_planned_economy_idea
-		}
-		ai_will_do = {
-			factor = 40
-		}
-		bypass = {
-			
-		}
-		cancel_if_invalid = yes		
-		continue_if_invalid = no		
-		available_if_capitulated = yes
-	}
-	focus = {
-		id = POL_centrally_planned_selection
-		icon = GFX_focus_generic_population_growth
-		x = 1
-		y = 1
-		search_filters = {}
-		cost = 20
-		prerequisite = { focus = POL_centrally_planned_economy }
-		relative_position_id = POL_centrally_planned_economy
-		available = {
-			
-		}
-		completion_reward = {
-			add_ideas = POL_centrally_planned_selection_idea
-		}
-		ai_will_do = {
-			factor = 40
-		}
-		bypass = {
-			
-		}
-		cancel_if_invalid = yes		
-		continue_if_invalid = no		
-		available_if_capitulated = yes
-	}
-	focus = {
-		id = POL_centrally_planned_society
-		icon = GFX_focus_spr_crush_the_revolution
-		x = 0
-		y = 1
-		search_filters = {}
-		cost = 20
-		prerequisite = { focus = POL_centrally_planned_selection }
-		relative_position_id = POL_centrally_planned_selection
-		available = {
-			
-		}
-		completion_reward = {
-			add_ideas = POL_centrally_planned_society_idea
-		}
-		ai_will_do = {
-			factor = 40
-		}
-		bypass = {
-			
-		}
-		cancel_if_invalid = yes		
-		continue_if_invalid = no		
-		available_if_capitulated = yes
-	}
-	focus = {
-		id = POL_centrally_planned_art
-		icon = GFX_focus_generic_annex_country
-		x = -1
-		y = 1
-		search_filters = {}
-		cost = 20
-		prerequisite = { focus = POL_centrally_planned_economy }
-		relative_position_id = POL_centrally_planned_economy
-		available = {
-			
-		}
-		completion_reward = {
-			add_ideas = POL_centrally_planned_art_idea
-		}
-		ai_will_do = {
-			factor = 40
-		}
-		bypass = {
-			
-		}
-		cancel_if_invalid = yes		
-		continue_if_invalid = no		
-		available_if_capitulated = yes
-	}
-	focus = {
-		id = POL_centrally_planned_man
-		icon = GFX_focus_generic_military_mission
-		x = 0
-		y = 1
-		search_filters = {}
-		cost = 5
-		prerequisite = { focus = POL_centrally_planned_art }
-		relative_position_id = POL_centrally_planned_art
-		available = {
-			
-		}
-		completion_reward = {
-			add_ideas = POL_centrally_planned_man_idea
-		}
-		ai_will_do = {
-			factor = 40
-		}
-		bypass = {
-			
-		}
-		cancel_if_invalid = yes		
-		continue_if_invalid = no		
-		available_if_capitulated = yes
-	}
-	focus = {
-		id = POL_centrally_planned_reality
-		icon = GFX_focus_ITA_il_sol_dell_avvenire
-		x = 1
-		y = 1
-		search_filters = {}
-		cost = 20
-		prerequisite = { focus = POL_centrally_planned_man }
-		prerequisite = { focus = POL_centrally_planned_society }
-		relative_position_id = POL_centrally_planned_man
-		available = {
-			
-		}
-		completion_reward = {
-			country_event = {
-				id = deluge_poland.90
-			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -24387,36 +24263,6 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = POL_NSP_wins
-		icon = GFX_nsp_logo
-		x = 8
-		y = 1
-		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		cost = 5
-		prerequisite = { focus = POL_the_new_system }
-		relative_position_id = POL_the_new_system
-		mutually_exclusive = {focus = POL_PPS_wins focus = POL_KPP_wins focus = POL_NSPR_wins focus = POL_PKWN_wins}
-		available = {
-			has_country_flag = POL_NSP_won_in_event
-		}
-		completion_reward = {
-			set_party_name = { ideology = communism long_name = POL_NSP_name_long name = POL_NSP_name_short}
-			country_event = {
-				id = deluge_poland.84
-			}
-			set_cosmetic_tag = POL_rzeczpospolita
-		}
-		ai_will_do = {
-			factor = 40
-		}
-		bypass = {
-			
-		}
-		cancel_if_invalid = yes		
-		continue_if_invalid = no		
-		available_if_capitulated = yes
-	}
-	focus = {
 		id = POL_encourage_class_war
 		icon = GFX_focus_spr_class_war
 		x = 10
@@ -25083,6 +24929,34 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
+		id = POL_kor
+		icon = GFX_focus_ETH_re-convene_the_parliament
+		x = 10
+		y = 1
+		search_filters = {FOCUS_FILTER_LAND_ARMY FOCUS_FILTER_NAVY FOCUS_FILTER_AVITATION}
+		prerequisite = { focus = POL_land_army_reform}
+		relative_position_id = POL_land_army_reform
+		cost = 10
+		available = {
+			
+		}
+		completion_reward = {
+			add_to_variable = {POL_WPvsPOW_experience_gain_army = 0.03}
+			add_to_variable = {POL_WPvsPOW_experience_gain_air = 0.02}
+			add_to_variable = {POL_WPvsPOW_experience_gain_navy = 0.02}
+			custom_effect_tooltip = POL_custom_effect_tooltip_26
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
 		id = POL_superiority_of_firepower
 		icon = GFX_goal_generic_army_artillery2
 		x = -6
@@ -25716,7 +25590,7 @@ focus_tree = {
 				}
 				create_equipment_variant = {
 					name = "14TP"
-					type = improved_medium_tank
+					type = medium_tank_chassis_2
 					parent_version = 0
 					upgrades = {
 						tank_gun_upgrade = 4
@@ -25920,34 +25794,6 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = POL_kor
-		icon = GFX_focus_ETH_re-convene_the_parliament
-		x = 10
-		y = 1
-		search_filters = {FOCUS_FILTER_LAND_ARMY FOCUS_FILTER_NAVY FOCUS_FILTER_AVITATION}
-		prerequisite = { focus = POL_land_army_reform}
-		relative_position_id = POL_land_army_reform
-		cost = 10
-		available = {
-			
-		}
-		completion_reward = {
-			add_to_variable = {POL_WPvsPOW_experience_gain_army = 0.03}
-			add_to_variable = {POL_WPvsPOW_experience_gain_air = 0.02}
-			add_to_variable = {POL_WPvsPOW_experience_gain_navy = 0.02}
-			custom_effect_tooltip = POL_custom_effect_tooltip_26
-		}
-		ai_will_do = {
-			factor = 20
-		}
-		bypass = {
-			
-		}
-		cancel_if_invalid = yes		
-		continue_if_invalid = no		
-		available_if_capitulated = yes
-	}
-	focus = {
 		id = POL_first_great_wave_of_promotions
 		icon = GFX_focus_generic_officer_promotions_1
 		x = -3
@@ -25960,11 +25806,56 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			recruit_character = POL_deluge_tokarzewski_karaszewicz
-			recruit_character = POL_deluge_czuma
-			recruit_character = POL_deluge_mlot_fijalkowski
-			recruit_character = POL_deluge_langner
-			recruit_character = POL_deluge_wlad
+			add_corps_commander_role = {
+				character = POL_deluge_tokarzewski_karaszewicz
+				traits = { infantry_expert guerilla_fighter }
+				skill=2
+				attack_skill=2
+				defense_skill=1
+				planning_skill=3
+				logistics_skill=1
+				desc = "POL_deluge_tokarzewski_karaszewicz_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_czuma
+				traits = { urban_assault_specialist }
+				skill=2
+				attack_skill=1
+				defense_skill=1
+				planning_skill=3
+				logistics_skill=2
+				desc = "POL_deluge_czuma_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_mlot_fijalkowski
+				traits = { inflexible_strategist skirmisher }
+				skill=2
+				attack_skill=2
+				defense_skill=1
+				planning_skill=2
+				logistics_skill=2
+				desc = "POL_deluge_mlot_fijalkowski_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_langner
+				traits = { infantry_officer inflexible_strategist harsh_leader }
+				skill=2
+				attack_skill=1
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
+				desc = "POL_deluge_langner_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_wlad
+				traits = { ambusher }
+				skill=2
+				attack_skill=2
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=1
+				desc = "POL_deluge_wlad_desc"
+			}
 		}
 		ai_will_do = {
 			factor = 20

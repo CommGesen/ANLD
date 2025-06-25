@@ -956,6 +956,20 @@ country_event = {#SPR gets possibility to white peace FRA
 	}
 	option = {##white peace
 		name = deluge_spain.18.a
+		if = {
+			limit = {
+				165 = {
+					OR = {
+						is_controlled_by = SPR
+						is_controlled_by = ENG
+						is_controlled_by = POR
+					}
+				}
+			}
+			165 = {
+				transfer_state_to = SPR
+			}
+		}
 		white_peace = {
 			tag = FRA
 			message = SPR_won_independence_war

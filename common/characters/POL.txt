@@ -1405,15 +1405,7 @@ characters={
 				small="GFX_michal_tokarzewski_karaszewicz_picture_small"
 			}
 		}
-		corps_commander = {
-			traits = { infantry_expert guerilla_fighter }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=3
-			logistics_skill=1
-			desc = "POL_deluge_tokarzewski_karaszewicz_desc"
-		}
+		#becomes general later via focus
 	}
 	POL_deluge_czuma = {##Walerian Czuma
 		name = POL_Character_deluge_czuma
@@ -1423,15 +1415,7 @@ characters={
 				small="GFX_walerian_czuma_picture_small"
 			}
 		}
-		corps_commander = {
-			traits = { urban_assault_specialist }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=3
-			logistics_skill=2
-			desc = "POL_deluge_czuma_desc"
-		}
+		#becomes general later via focus
 	}
 	POL_deluge_mlot_fijalkowski = {##Czesław Młot-Fijałkowski
 		name = POL_Character_deluge_mlot_fijalkowski
@@ -1441,15 +1425,7 @@ characters={
 				small="GFX_czeslaw_mlot_fijalkowski_picture_small"
 			}
 		}
-		corps_commander = {
-			traits = { inflexible_strategist skirmisher }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
-			desc = "POL_deluge_mlot_fijalkowski_desc"
-		}
+		#becomes general later via focus
 	}
 	POL_deluge_langner = {##Władysław Langner
 		name = POL_Character_deluge_langner
@@ -1459,15 +1435,7 @@ characters={
 				small="GFX_wladyslaw_langner_picture_small"
 			}
 		}
-		corps_commander = {
-			traits = { infantry_officer inflexible_strategist harsh_leader }
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			desc = "POL_deluge_langner_desc"
-		}
+		#becomes general later via focus
 	}
 	POL_deluge_wlad = {##Franciszek Wład
 		name = POL_Character_deluge_wlad
@@ -1477,15 +1445,7 @@ characters={
 				small="GFX_franciszek_wlad_picture_small"
 			}
 		}
-		corps_commander = {
-			traits = { ambusher }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=1
-			desc = "POL_deluge_wlad_desc"
-		}
+		#becomes general later via focus
 	}
 	POL_deluge_boruta_spiechowicz = {##Mieczyław Boruta-Spiechowicz
 		name = POL_Character_deluge_boruta_spiechowicz

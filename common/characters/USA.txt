@@ -5,15 +5,15 @@ characters={
 			slot = theorist
 			idea_token = omar_bradley
 			allowed  = {
-					original_tag  = USA
-				}
-				cost  = 250.000
-				research_bonus  = {
-					cat_superior_firepower  = 0.150
-				}
-				traits  = {
-					superior_firepower_expert 
-				}
+				original_tag  = USA
+			}
+			cost = 250.000
+			research_bonus = {
+				cat_superior_firepower = 0.150
+			}
+			traits = {
+				superior_firepower_expert 
+			}
 		}
 		portraits={
 			army={
@@ -30,7 +30,6 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=-1
 		}
 	}
 	USA_mark_clark={
@@ -50,7 +49,6 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=2
-			legacy_id=-1
 		}
 	}
 	USA_douglas_macarthur={

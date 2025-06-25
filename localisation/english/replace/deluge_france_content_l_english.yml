@@ -250,8 +250,7 @@
  FRA_custom_effect_tooltip_53:0 "[LBA.GetName] will be able to force us into white peace!"
  FRA_custom_effect_tooltip_54:0 "Effects will depend on the outcome of the campaign!"
  FRA_custom_effect_tooltip_55:0 "Add new national spirit §HNew French Army§! that gives:\n§H+7%§! Consumer Goods Factor!"
- FRA_custom_effect_tooltip_56:0 "Modify §HObsolete Army§! national spirit by:\n§G+10%§! Division Attack\n§G+10%§! Division Defence\n§G+10%§! Division Organization\n§G+10%§! Division Recovery Rate\n§G+10%§! Division Speed\n§G+10%§! Division Breakthrough\n§G-10%§! Experienced Soldier Losses\n§G+15%§! Land Night Attack\n§G+15%§! Division Reconnaissnce\n§G+20%§! Max Entrenchement!"
- FRA_custom_effect_tooltip_57:0 "Modify §HObsolete Army§! national spirit by:\n§G+15%§! Division Attack\n§G+15%§! Division Defence\n§G+15%§! Division Organization\n§G+15%§! Division Recovery Rate\n§G+15%§! Division Speed\n§G+15%§! Division Breakthrough\n§G-15%§! Experienced Soldier Losses\n§G+15%§! Land Night Attack\n§G+15%§! Division Reconnaissnce\n§G+20%§! Max Entrenchement!"
+ FRA_custom_effect_tooltip_56:0 "Modify §HObsolete Army§! national spirit by:\n§G+10%§! Division Attack\n§G+5%§! Division Defence\n§G+5%§! Division Organization\n§G+5%§! Division Recovery Rate\n§G+5%§! Division Speed\n§G+5%§! Division Breakthrough\n§G-5%§! Experienced Soldier Losses\n§G+5%§! Land Night Attack\n§G+10%§! Division Reconnaissnce\n§G+10%§! Max Entrenchement!"
  FRA_custom_effect_tooltip_58:0 "Modify §HObsolete Army§! national spirit by:\n§G-10%§! Naval Invasion Penalty\n§G+2%§! Naval Invasion Capacity!"
  FRA_custom_effect_tooltip_59:0 "Modify §HObsolete Army§! national spirit by:\n§G-15%§! Naval Invasion Penalty\n§G+4%§! Naval Invasion Capacity!"
  FRA_custom_effect_tooltip_60:0 "Modify §HNew French Army§! national spirit by:\n§G+3%§! Division Attack\n§G+3%§! Division Defence!"
@@ -347,6 +346,11 @@
  FRA_custom_effect_tooltip_150:0 "Depending whether you research §HNuclear Reactor§! or §HHeavy Water Nuclear Reactor§! the one you researched will be created in §H[20.GetName]§!."
  FRA_custom_effect_tooltip_151:0 "If §Hprovince laying under Versailles§! is controlled and none of experimental facilities were built in [16.GetName] then §HNuclear Research Facility§! will be build there!"
  FRA_custom_effect_tooltip_152:0 "If §Hprovince laying under Rouen§! is controlled and none of experimental facilities were built in [15.GetName] then §HAreodynamic and Avionics Research Facility§! will be build there!"
+ 
+ ##FREE TOOLTIP
+ FRA_custom_effect_tooltip_57:0 ""
+ 
+ 
  league_of_nations_custom_effect_tooltip_1:0 "Modify §HLeague of Nations§! spirit by:\n§G+100%§! justify war goal time on us,\n§R+100%§! justify war goal time!"
  league_of_nations_custom_effect_tooltip_2:0 "Modify §HLeague of Nations§! spirit by:\n§H+5%§! Consumer Goods Factor,\n§G+30%§! Industry Reparir Speed!"
  league_of_nations_custom_effect_tooltip_3:0 "Modify §HLeague of Nations§! spirit by:\n§R+10%§! Doctrine Cost,\n§G-10%§! Experience Loss!"
@@ -357,6 +361,8 @@
  ##Opinion Modifiers
  opinion_modifier_former_overlord:0 "Former Overlord"
  ##Dynamic Modifiers
+ FRA_modifier_lon:0 "League of Nations"
+ FRA_modifier_lon_desc:0 "The League of Nations is an international organization based in Turin that aims to maintain world peace and promote the well-being of all people and their rights."
  FRA_modifier_economic_depression:0 "The Great Depression"
  FRA_modifier_economic_depression_desc:0 "The Great Depression of 1929 is still felt in our country."
  FRA_modifier_obsolete_army:0 "Obsolete Army"
