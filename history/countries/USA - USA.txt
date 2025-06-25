@@ -132,16 +132,16 @@ create_import = {
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1935.3.5"
+	last_election = "1934.11.5"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 35
-	fascism = 15
-	communism = 10
-	neutrality = 40
+	democratic = 35 #Jeffersonian Republican Party + Democratic Party
+	fascism = 25 #America First Party
+	communism = 7 #Radical Party of America
+	neutrality = 33 #Hamiltonian Federalist Party
 }
 
 if = {
@@ -161,7 +161,6 @@ if = {
 give_military_access = LIB
 
 add_ideas = {
-	#american_king
 	free_trade
 	limited_conscription
 	restricted
@@ -170,6 +169,7 @@ add_ideas = {
 	deluge_great_war_horrors_idea
 }
 
+recruit_character = USA_alexander_vi
 recruit_character = USA_omar_bradley
 recruit_character = USA_douglas_macarthur
 recruit_character = USA_walter_krueger
@@ -183,7 +183,6 @@ recruit_character = USA_joseph_stilwell
 recruit_character = USA_ernest_king
 recruit_character = USA_frank_jack_fletcher
 recruit_character = USA_arleigh_burke
-recruit_character = USA_john_ii
 recruit_character = USA_robert_f._wagner
 recruit_character = USA_huey_long
 recruit_character = USA_smedley_butler

@@ -396,9 +396,9 @@ characters={
 	GER_kurt_fricke={
 		name="Kurt Fricke"
 		portraits={
-			army={
-				small=""
-			}
+			#army={
+			#	small=""
+			#}
 			army={
 				large="gfx/leaders/GER/kurt_fricke.dds"
 			}

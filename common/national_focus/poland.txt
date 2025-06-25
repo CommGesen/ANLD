@@ -3523,6 +3523,120 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
+		id = POL_culture_not_race
+		icon = GFX_focus_race_relations
+		x = -2
+		y = 1
+		prerequisite = { focus = POL_sikorski_wins }
+		relative_position_id = POL_sikorski_wins
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
+		cost = 10
+		available = {
+			
+		}
+		completion_reward = {
+			add_ideas = culture_not_race_national_spirit
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_start_cultural_integration
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_culture_not_race }
+		relative_position_id = POL_culture_not_race
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		cost = 10
+		available = {
+		
+		}
+		completion_reward = {
+			custom_effect_tooltip = POL_custom_effect_tooltip_1
+			POL = {
+				add_political_power = 100
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = POL_partly_free_elections
+		icon = GFX_focus_usa_voter_registration_act
+		x = 1
+		y = 2
+		prerequisite = { focus = POL_start_cultural_integration focus = POL_equality_of_man_and_woman }
+		relative_position_id = POL_start_cultural_integration
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT }
+		cost = 10
+		available = {
+			has_idea = freedom_of_religion_idea
+			has_idea = culture_not_race_national_spirit
+		}
+		completion_reward = {
+			hidden_effect = {
+				remove_ideas = freedom_of_religion_idea
+				remove_ideas = culture_not_race_national_spirit
+				if = {
+					limit = {
+						has_country_flag = POL_sikorski_disbanded_sanation
+					}
+					add_ideas = little_light_of_democracy_2
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = POL_sikorski_disbanded_sanation
+						}
+					}
+					add_ideas = little_light_of_democracy
+				}
+			}
+			custom_effect_tooltip = POL_custom_effect_tooltip_36
+			if = {
+				limit = {
+					NOT = {
+						has_idea = restricted
+					}
+				}
+				add_ideas = {
+					restricted
+				}
+			}
+			set_country_flag = cant_change_voting_law
+			custom_effect_tooltip = cant_change_voting_law_tooltip
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			NOT = {
+				has_idea = freedom_of_religion_idea
+				has_idea = culture_not_race_national_spirit
+			}
+			has_completed_focus = POL_culture_not_race
+			has_completed_focus = POL_freedom_of_religion
+		}		
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
 		id = POL_promote_political_activness
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		x = 0
@@ -3721,31 +3835,6 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = POL_culture_not_race
-		icon = GFX_focus_race_relations
-		x = -2
-		y = 1
-		prerequisite = { focus = POL_sikorski_wins }
-		relative_position_id = POL_sikorski_wins
-		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
-		cost = 10
-		available = {
-			
-		}
-		completion_reward = {
-			add_ideas = culture_not_race_national_spirit
-		}
-		ai_will_do = {
-			factor = 20
-		}
-		bypass = {
-			
-		}		
-		cancel_if_invalid = yes		
-		continue_if_invalid = no		
-		available_if_capitulated = yes
-	}
-	focus = {
 		id = POL_make_deal_with_king
 		icon = GFX_focus_POL_deal_with_fryderyk
 		x = 9
@@ -3772,34 +3861,6 @@ focus_tree = {
 				has_idea = old_wettyn_king
 				has_idea = new_wettyn_king_sikorski
 			}
-		}		
-		cancel_if_invalid = yes		
-		continue_if_invalid = no		
-		available_if_capitulated = yes
-	}
-	focus = {
-		id = POL_start_cultural_integration
-		icon = GFX_focus_generic_strike_at_democracy1
-		x = 0
-		y = 1
-		prerequisite = { focus = POL_culture_not_race }
-		relative_position_id = POL_culture_not_race
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		cost = 10
-		available = {
-		
-		}
-		completion_reward = {
-			custom_effect_tooltip = POL_custom_effect_tooltip_1
-			POL = {
-				add_political_power = 100
-			}
-		}
-		ai_will_do = {
-			factor = 20
-		}
-		bypass = {
-			
 		}		
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
@@ -4003,67 +4064,6 @@ focus_tree = {
 				has_idea = equality_of_man_and_woman
 			}
 			has_completed_focus = POL_equality_of_man_and_woman
-		}		
-		cancel_if_invalid = yes		
-		continue_if_invalid = no		
-		available_if_capitulated = yes
-	}
-	focus = {
-		id = POL_partly_free_elections
-		icon = GFX_focus_usa_voter_registration_act
-		x = 1
-		y = 2
-		prerequisite = { focus = POL_start_cultural_integration focus = POL_equality_of_man_and_woman }
-		relative_position_id = POL_start_cultural_integration
-		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT }
-		cost = 10
-		available = {
-			has_idea = freedom_of_religion_idea
-			has_idea = culture_not_race_national_spirit
-		}
-		completion_reward = {
-			hidden_effect = {
-				remove_ideas = freedom_of_religion_idea
-				remove_ideas = culture_not_race_national_spirit
-				if = {
-					limit = {
-						has_country_flag = POL_sikorski_disbanded_sanation
-					}
-					add_ideas = little_light_of_democracy_2
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_country_flag = POL_sikorski_disbanded_sanation
-						}
-					}
-					add_ideas = little_light_of_democracy
-				}
-			}
-			custom_effect_tooltip = POL_custom_effect_tooltip_36
-			if = {
-				limit = {
-					NOT = {
-						has_idea = restricted
-					}
-				}
-				add_ideas = {
-					restricted
-				}
-			}
-			set_country_flag = cant_change_voting_law
-			custom_effect_tooltip = cant_change_voting_law_tooltip
-		}
-		ai_will_do = {
-			factor = 20
-		}
-		bypass = {
-			NOT = {
-				has_idea = freedom_of_religion_idea
-				has_idea = culture_not_race_national_spirit
-			}
-			has_completed_focus = POL_culture_not_race
-			has_completed_focus = POL_freedom_of_religion
 		}		
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
@@ -5159,6 +5159,34 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
+		id = POL_revengeance_on_enemy_with_god_and_even_in_spite_of_god
+		icon = GFX_slavic_revenge_on_the_enemy
+		x = 0
+		y = 1
+		prerequisite = { focus = POL_remember_niklots_sacriface }
+		relative_position_id = POL_remember_niklots_sacriface
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_LAND_ARMY}
+		cost = 8
+		available = {
+			
+		}
+		completion_reward = {
+			set_rule = {
+				can_use_kamikaze_pilots = yes
+			}
+			add_ideas = POL_revengeance_idea
+		}
+		ai_will_do = {
+			base = 75
+		}
+		bypass = {
+			
+		}		
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = yes
+	}
+	focus = {
 		id = POL_eliminate_przechrztowie
 		icon = GFX_focus_generic_purge_citizens
 		x = -1
@@ -5360,34 +5388,6 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = POL_revengeance_on_enemy_with_god_and_even_in_spite_of_god
-		icon = GFX_slavic_revenge_on_the_enemy
-		x = 0
-		y = 1
-		prerequisite = { focus = POL_remember_niklots_sacriface }
-		relative_position_id = POL_remember_niklots_sacriface
-		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_LAND_ARMY}
-		cost = 8
-		available = {
-			
-		}
-		completion_reward = {
-			set_rule = {
-				can_use_kamikaze_pilots = yes
-			}
-			add_ideas = POL_revengeance_idea
-		}
-		ai_will_do = {
-			base = 75
-		}
-		bypass = {
-			
-		}		
-		cancel_if_invalid = yes		
-		continue_if_invalid = no		
-		available_if_capitulated = yes
-	}
-	focus = {
 		id = POL_seek_support_from_catholic_church
 		icon = GFX_focus_por_concordat
 		x = 1
@@ -5480,8 +5480,26 @@ focus_tree = {
 				add_dynamic_modifier = { modifier = POL_falanga_dynamic_modifier }
 			}
 			custom_effect_tooltip = POL_custom_effect_tooltip_121
-			recruit_character = POL_deluge_jung
-			recruit_character = POL_deluge_dzierzykraj_stokalski
+			add_field_marshal_role = {
+				character = POL_deluge_jung
+				traits = { old_guard thorough_planner logistics_wizard}
+				skill=2
+				attack_skill=2
+				defense_skill=1
+				planning_skill=3
+				logistics_skill=3
+				desc = "POL_deluge_jung_desc"
+			}
+			add_field_marshal_role = {
+				character = POL_deluge_dzierzykraj_stokalski
+				traits = { old_guard career_officer organisational_leader defensive_doctrine}
+				skill=2
+				attack_skill=1
+				defense_skill=2
+				planning_skill=3
+				logistics_skill=2
+				desc = "POL_deluge_dzierzykraj_stokalski_desc"
+			}
 		}
 		ai_will_do = {
 			factor = 30
@@ -9624,7 +9642,16 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.05
 			add_political_power = 100
-			recruit_character = POL_deluge_ernest_henryk_wettyn
+			add_corps_commander_role = {
+				Character = POL_deluge_ernest_henryk_wettyn
+				traits = { infantry_officer infantry_expert infantry_leader }
+				skill=3
+				attack_skill=2
+				defense_skill=3
+				planning_skill=2
+				logistics_skill=2
+				desc = "POL_deluge_ernest_henryk_wettyn_desc"
+			}
 			add_corps_commander_role = {
 				Character = POL_deluge_christian_wettin
 				skill = 2
@@ -9632,6 +9659,10 @@ focus_tree = {
 				defense_skill = 2
 				planning_skill = 2
 				logistics_skill = 2
+				traits = {
+					politically_connected
+				}
+				desc = "POL_deluge_christian_wettin_desc"
 			}
 		}
 		ai_will_do = {
@@ -22354,10 +22385,18 @@ focus_tree = {
 						has_character = POL_deluge_augustus_wettin
 					}
 				}
-				#retire_character = POL_deluge_augustus_wettin
+				retire_character = POL_deluge_augustus_wettin
 			}
-			#retire_character = POL_deluge_christian_wettin
-			recruit_character = POL_deluge_wanda_wasilewska
+			add_corps_commander_role = {
+				character = POL_deluge_wanda_wasilewska
+				traits = { infantry_officer infantry_expert infantry_leader }
+				skill=2
+				attack_skill=2
+				defense_skill=2
+				planning_skill=3
+				logistics_skill=3
+				desc = "POL_deluge_wanda_wasilewska_desc"
+			}
 			POL = {country_event = {id = deluge_poland.68 hours = 3}}
 			hidden_effect = {
 				add_dynamic_modifier = {

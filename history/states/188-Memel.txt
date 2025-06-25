@@ -4,18 +4,9 @@ state={
 	name="STATE_188"
 
 	history={
-		victory_points = {
-			3288 3 
-		}
 		owner = SWE
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
-			3288 = {
-				naval_base = 1
-
-			}
-
 		}
 		add_core_of = SWE
 	}
@@ -23,7 +14,7 @@ state={
 	provinces={
 		211 
 	}
-	manpower=150000
+	manpower=25000
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

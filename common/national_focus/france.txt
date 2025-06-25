@@ -3922,10 +3922,10 @@ focus_tree = {
 	focus = {
 		id = FRA_internationalism
 		icon = GFX_focus_CHL_union_of_hispanic_republics
-		x = -3
+		x = 2
 		y = 1
 		prerequisite = { focus = FRA_french_communist_party focus = FRA_french_section_of_workers_internationale focus = FRA_anarchist_communist_federation }
-		relative_position_id = FRA_proudhon_circle
+		relative_position_id = FRA_french_communist_party
 		search_filters = { }
 		cost = 1
 		#mutually_exclusive = { focus = }
@@ -9762,7 +9762,7 @@ focus_tree = {
 		x = 85
 		y = 0
 		prerequisite = { focus =  }
-		relative_position_id = 
+		#relative_position_id = 
 		search_filters = { }
 		cost = 5
 		mutually_exclusive = { focus = }
@@ -11326,10 +11326,10 @@ focus_tree = {
 	focus = {		
 		id = FRA_decentralize_economy
 		icon = GFX_focus_DEN_no_regulations
-		x = -2
+		x = 1
 		y = 1
 		prerequisite = { focus = FRA_communal_property focus = FRA_mutualism }
-		relative_position_id = FRA_communal_property
+		relative_position_id = FRA_mutualism
 		search_filters = { }
 		cost = 1
 		mutually_exclusive = { focus = FRA_centralize_economy }
@@ -13261,7 +13261,9 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 				if = {
 					limit = {
-						has_tech = nuclear_reactor
+						FRA = {
+							has_tech = nuclear_reactor
+						}
 					}
 					add_building_construction = {
 						type = nuclear_reactor
@@ -13271,7 +13273,9 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_tech = nuclear_reactor_heavy_water
+						FRA = {
+							has_tech = nuclear_reactor_heavy_water
+						}
 					}
 					add_building_construction = {
 						type = nuclear_reactor_heavy_water
@@ -15653,8 +15657,8 @@ focus_tree = {
 					}
 				}
 				add_equipment_production = {
+					name = "Richelieu"
 					equipment = {
-						name = "Richelieu"
 						type = ship_hull_heavy_2
 					}
 					modules = {
@@ -15675,8 +15679,8 @@ focus_tree = {
 					amount = 1
 				}
 				add_equipment_production = {
+					name = "Jean Bart"
 					equipment = {
-						name = "Jean Bart"
 						type = ship_hull_heavy_2
 					}
 					modules = {

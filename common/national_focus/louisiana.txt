@@ -913,7 +913,9 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					exists = CAN
+					CAN = {
+						exists = yes
+					}
 				}
             	create_wargoal = {
                     type = annex_everything
@@ -1015,7 +1017,9 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					exists = DES
+					DES = {
+						exists = yes
+					}
 				}
             	create_wargoal = {
                     type = annex_everything
@@ -1381,7 +1385,7 @@ focus_tree = {
 			}
 			
 			create_wargoal = {
-				type = deluge_annex
+				type = annex_everything
 				target = FRA
 			}
 		}

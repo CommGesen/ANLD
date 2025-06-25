@@ -2,18 +2,18 @@
 state={
 	id=113
 	name="STATE_113" # Leinster
-	manpower = 1607600
+	manpower = 5102000
 	resources={
 		aluminium=2
 		steel=3
 	}
 	
-	state_category = city
+	state_category = metropolis
 	
 	history={
 		owner = IRE
 		victory_points = {
-			11293 20
+			11293 30
 		}
 		victory_points = {
 			285 5
@@ -23,8 +23,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 4
-			arms_factory = 1
-			industrial_complex = 5
+			arms_factory = 3
+			industrial_complex = 7
 			air_base = 3
 			11293 = {
 				naval_base = 6

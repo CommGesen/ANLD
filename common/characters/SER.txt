@@ -72,9 +72,9 @@ characters={
 	SER_petar_bojović={
 		name="Petar Bojović"
 		portraits={
-			army={
-				small=""
-			}
+			#army={
+			#	small=""
+			#}
 			army={
 				large="gfx/leaders/SER/petar_bojovic.dds"
 			}
@@ -90,9 +90,9 @@ characters={
 	SER_stepa_stepanović={
 		name="Stepa Stepanović"
 		portraits={
-			army={
-				small=""
-			}
+			#army={
+			#	small=""
+			#}
 			army={
 				large="gfx/leaders/SER/stepa_stepanovic.dds"
 			}
@@ -108,9 +108,9 @@ characters={
 	SER_Živojin_mišić={
 		name="Živojin Mišić"
 		portraits={
-			army={
-				small=""
-			}
+			#army={
+			#	small=""
+			#}
 			army={
 				large="gfx/leaders/SER/zivojin_misic.dds"
 			}

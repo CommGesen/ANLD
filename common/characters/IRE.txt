@@ -107,9 +107,9 @@ characters={
 	IRE_michael_collins={
 		name="Michael Collins"
 		portraits={
-			army={
-				small=""
-			}
+			#army={
+			#	small=""
+			#}
 			army={
 				large="gfx/leaders/IRE/michael_collins.dds"
 			}

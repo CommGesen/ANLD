@@ -434,15 +434,7 @@ characters={
 				large="gfx/leaders/POL/portrait_POL_ernst_heinrich_wettin.dds"
 			}
 		}
-		corps_commander = {
-			traits = { infantry_officer infantry_expert infantry_leader }
-			skill=3
-			attack_skill=2
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
-			desc = "POL_deluge_ernest_henryk_wettyn_desc"
-		}
+		#becomes general via focus
 	}
 	POL_deluge_izabella_roza_radziwillowna = {##Izabella Róża Radziwiłłówna
 		name = POL_deluge_izabella_roza_radziwillowna_name
@@ -1756,15 +1748,7 @@ characters={
 				small = GFX_wladyslaw_jung_picture_small
 			}
 		}
-		field_marshal = {
-			traits = { old_guard thorough_planner logistics_wizard}
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=3
-			logistics_skill=3
-			desc = "POL_deluge_jung_desc"
-		}
+		##later becomes field marshal via focus or event
 	}
 	POL_deluge_stanislaw_haller = {##Stanisław Haller
 		name = POL_Character_deluge_stanislaw_haller
@@ -1792,15 +1776,7 @@ characters={
 				small = GFX_radoslaw_dzierzykraj_stokalski_portrait_small
 			}
 		}
-		field_marshal = {
-			traits = { old_guard career_officer organisational_leader defensive_doctrine}
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			desc = "POL_deluge_dzierzykraj_stokalski_desc"
-		}
+		#later becomes general via focus or event
 	}
 	POL_deluge_poplawski = {##Stanisław Popławski
 		name = POL_Character_deluge_poplawski
@@ -2718,7 +2694,7 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-			desc = "POL_deluge_wanda_wasilewska_desc"
+			desc = "POL_deluge_jozef_beck_desc"
 		}
 	}
 	POL_deluge_switalski = {##Kazimierz Świtalski
@@ -4342,15 +4318,7 @@ characters={
 			ai_will_do = { factor = 1.0 }
 			ledger = civilian
 		}
-		corps_commander = {
-			traits = { infantry_officer infantry_expert infantry_leader }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=3
-			desc = "POL_deluge_wanda_wasilewska_desc"
-		}
+		#later becomes general via focus
 	}
 	POL_deluge_karol_radek = {##Karol Radek/Karol Sobelsohn
 		name = POL_Character_deluge_karol_radek

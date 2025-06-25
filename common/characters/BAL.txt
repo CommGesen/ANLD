@@ -299,9 +299,9 @@ characters={
 	BAL_arseniy_golovko={
 		name="Arseniy Golovko"
 		portraits={
-			army={
-				small=""
-			}
+			#army={
+			#	small=""
+			#}
 			army={
 				large="gfx/leaders/SOV/Portrait_Soviet_Arseniy_Golovko.dds"
 			}

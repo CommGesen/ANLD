@@ -415,9 +415,9 @@ characters={
 	WGR_friedrich_guggenberger={
 		name="Friedrich Guggenberger"
 		portraits={
-			army={
-				small=""
-			}
+			#army={
+			#	small=""
+			#}
 			army={
 				large="gfx/leaders/GER/friedrich_guggenberger.dds"
 			}

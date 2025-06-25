@@ -398,6 +398,12 @@ country_event = {#POR rejected so SPR looks at other options
 				id = deluge_spain.5
 				days = 10
 			}
+			set_autonomy = {
+				target = SPR
+				autonomous_state = autonomy_free
+				end_wars = yes
+				end_civil_wars = no
+			}
 		}
 		hidden_effect = {
 			news_event = {
@@ -590,11 +596,13 @@ country_event = {#SPR asks FRA for independence for crowning Marie Bonaparte
 	is_triggered_only = yes
 	option = {#agree
 		name = deluge_spain.12.a
-		set_autonomy = {
-			target = SPR
-			autonomous_state = autonomy_free
-			end_wars = yes
-			end_civil_wars = no
+		FRA = {
+			set_autonomy = {
+				target = SPR
+				autonomous_state = autonomy_free
+				end_wars = yes
+				end_civil_wars = no
+			}
 		}
 		SPR = {
 			promote_character = SPR_deluge_marie_i
@@ -771,6 +779,12 @@ country_event = {#FRA rejected so SPR looks at other options
 				id = deluge_spain.5
 				days = 10
 			}
+			set_autonomy = {
+				target = SPR
+				autonomous_state = autonomy_free
+				end_wars = yes
+				end_civil_wars = no
+			}
 		}
 		hidden_effect = {
 			news_event = {
@@ -862,6 +876,12 @@ country_event = {#SPR has only 2 options left
 			country_event = {
 				id = deluge_spain.5
 				days = 10
+			}
+			set_autonomy = {
+				target = SPR
+				autonomous_state = autonomy_free
+				end_wars = yes
+				end_civil_wars = no
 			}
 		}
 		hidden_effect = {

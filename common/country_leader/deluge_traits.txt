@@ -1452,4 +1452,9 @@ leader_traits = {
 		compliance_growth = -0.05
 		resistance_growth = -0.1
 	}
+	hamiltonian_king = {
+        random = no
+        neutrality_drift = 0.05
+        consumer_goods_factor = -0.1
+    }
 }

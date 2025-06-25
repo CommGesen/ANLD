@@ -350,16 +350,19 @@ characters={
 			legacy_id=-1
 		}
 	}
-	USA_john_ii={
-		name="John II"
+	USA_alexander_vi={
+		name="Alexander VI"
 		portraits={
 			civilian={
-				large="gfx/leaders/USA/john_iii.dds"
+				large="gfx/leaders/USA/portrait_USA_alexander_vi_hamilton.png"
 			}
 		}
 		country_leader={
-			desc="american_king_desc"
+			desc="USA_alexander_vi_desc"
 			ideology=bonapartist_ideology
+			traits = {
+				hamiltonian_king
+			}
 			expire="1965.1.1.1"
 			id=-1
 		}

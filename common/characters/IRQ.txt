@@ -3,8 +3,8 @@ characters={
 		name="Nuri Pasha Al Said"
 		portraits={
 			army={
-				large="gfx/leaders/IRQ/Portrait_Nuri_al_Said.dds"
-				small=GFX_portrait_IRQ_Nuri_Said
+				#large="gfx/leaders/IRQ/Portrait_Nuri_al_Said.dds"
+				#small=GFX_portrait_IRQ_Nuri_Said
 			}
 		}
 		corps_commander={
@@ -20,8 +20,8 @@ characters={
 		name="Jafar Pasha Al Askari"
 		portraits={
 			army={
-				large="gfx/leaders/IRQ/Portrait_Jafar_al_Askari.dds"
-				small=GFX_portrait_IRQ_Jafar_Askari
+				#large="gfx/leaders/IRQ/Portrait_Jafar_al_Askari.dds"
+				#small=GFX_portrait_IRQ_Jafar_Askari
 			}
 		}
 		corps_commander={
@@ -37,8 +37,8 @@ characters={
 		name="Ajami Pasha Al Saadon"
 		portraits={
 			army={
-				large="gfx/leaders/IRQ/Portrait_IRQ_Ajami_al_Saadun.png"
-				small=GFX_portrait_IRQ_Ajami_al_Saadun
+				#large="gfx/leaders/IRQ/Portrait_IRQ_Ajami_al_Saadun.png"
+				#small=GFX_portrait_IRQ_Ajami_al_Saadun
 			}
 		}
 		corps_commander={
@@ -87,7 +87,7 @@ characters={
 		name="Kamil Al Chaderchi"
 		portraits={
 			army={
-				large="gfx/leaders/IRQ/Portrait_IRQ_Kamil_Chadirchi.dds"
+				#large="gfx/leaders/IRQ/Portrait_IRQ_Kamil_Chadirchi.dds"
 			}
 		}
 		country_leader = {

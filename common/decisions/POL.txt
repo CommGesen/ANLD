@@ -13695,11 +13695,15 @@ european_cooperation_category = {
 			}
 			if = {
 				limit = {
-					68 = {
-						OR = {
-							owner = GER
-							owner = DDR
-							owner = WGR
+					OR = {
+						GER = {
+							owns_state = 68
+						}
+						DDR = {
+							owns_state = 68
+						}
+						WGR = {
+							owns_state = 68
 						}
 					}
 				}
