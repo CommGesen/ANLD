@@ -139,20 +139,6 @@ units = {
 	}
 }
 
-air_wings = {
-	439 = { 
-		tac_bomber_equipment_0 = {
-			owner = "RAJ" 
-			amount = 40
-		}
-		fighter_equipment_0 = {
-			owner = "RAJ" 
-			amount = 40
-		}
-	}
-}
-
-
 ##### Starting Production #####
 instant_effect = {
 	add_equipment_production = {

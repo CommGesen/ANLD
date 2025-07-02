@@ -461,25 +461,9 @@ units = {
 		start_experience_factor = 0.2
 	}
 }
-
-air_wings = {
-	57 = {
-		fighter_equipment_0 =  {
-			owner = "DDR" 
-			amount = 15
-		}
-		tac_bomber_equipment_0 =  {
-			owner = "DDR" 
-			amount = 6
-		}
-	}
-}
-
-
 #########################
 ## STARTING PRODUCTION ##
 #########################
-
 instant_effect = {
 
 	add_equipment_production = {

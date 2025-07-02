@@ -327,44 +327,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 }
-
-air_wings = {
-	371 = {
-		fighter_equipment_0 = {
-			owner = "LOU" 
-			amount = 120
-		}
-	}
-
-	371 = {
-		tac_bomber_equipment_0 = {
-			owner = "LOU" 
-			amount = 120
-		}
-	}
-
-}
-
 instant_effect = {
-
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_0
-			creator = "LOU" 
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
-	}
-	add_equipment_production = {
-		equipment = {
-			type = tac_bomber_equipment_0
-			creator = "LOU" 
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
-	}
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1

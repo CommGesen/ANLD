@@ -694,7 +694,7 @@ characters={
 			traits = {
 				resourceful_machiavellian
 			}
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			desc = "FRA_deluge_louis_franchet_d_esperey_desc"
 		}
 		field_marshal={
@@ -718,7 +718,7 @@ characters={
 			traits = {
 				army_chief_offensive_2
 			}
-			#cost = 
+			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
@@ -741,7 +741,7 @@ characters={
 			available = {
 				
 			}
-			#cost = 
+			cost = 100
 			traits = {
 				army_chief_defensive_2
 			}
@@ -755,7 +755,7 @@ characters={
 				friend_of_poland
 				prince_of_terror
 			}
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			desc = "FRA_deluge_maxime_weygand_desc"
 		}
 		field_marshal={
@@ -810,7 +810,7 @@ characters={
 			traits = {
 				leader_of_the_cowl_2
 			}
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			desc = "FRA_deluge_eugene_deloncle_desc"
 		}
 	}
@@ -1678,7 +1678,7 @@ characters={
 			visible = {
 				tag = FRA
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -1723,7 +1723,7 @@ characters={
 			visible = {
 				tag = FRA
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -1776,7 +1776,7 @@ characters={
 			visible = {
 				tag = FRA
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -1791,7 +1791,7 @@ characters={
 			traits = {
 				temporary_leader
 			}
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			desc = "FRA_deluge_maurice_gamelin_desc"
 		}
 	}
@@ -1833,7 +1833,7 @@ characters={
 			traits = {
 				army_chief_maneuver_1
 			}
-			#cost = 
+			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
@@ -1872,7 +1872,7 @@ characters={
 			visible = {
 				tag = FRA
 			}
-			#cost = 150
+			cost = 50
 			available = { 
 				
 			}
@@ -1934,7 +1934,7 @@ characters={
 			visible = {
 				tag = FRA
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -2005,7 +2005,7 @@ characters={
 			traits = {
 				army_logistics_1
 			}
-			#cost = 
+			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
@@ -2080,7 +2080,7 @@ characters={
 			visible = {
 				tag = FRA
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -2115,7 +2115,7 @@ characters={
 			visible = {
 				tag = FRA
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -2168,7 +2168,7 @@ characters={
 			visible = {
 				tag = FRA
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -2226,7 +2226,7 @@ characters={
 			traits = {
 				army_commando_1
 			}
-			#cost =
+			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
@@ -2353,7 +2353,7 @@ characters={
 			traits = {
 				army_regrouping_2
 			}
-			#cost = 150
+			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
@@ -2484,6 +2484,23 @@ characters={
 			planning_skill=4
 			logistics_skill=3
 			desc = "FRA_deluge_jean_touzet_du_vigier_desc"
+		}
+		advisor={
+			slot = high_command
+			idea_token = FRA_deluge_jean_touzet_du_vigier
+			allowed = { tag = FRA }
+			visible = {
+				tag = FRA
+			}
+			cost = 100
+			available = { 
+				
+			}
+			traits = {
+				army_CombinedArms_2
+			}
+			ai_will_do = { factor = 1.0 }
+			ledger = army
 		}
 	}
 	FRA_deluge_aubert_frere={
@@ -2926,7 +2943,7 @@ characters={
 			visible = {
 				tag = FRA
 			}
-			#cost = 150
+			cost = 100
 			available = {
 				
 			}
@@ -3027,7 +3044,7 @@ characters={
 			traits = {
 				navy_chief_decisive_battle_2
 			}
-			#cost = 
+			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
@@ -3041,6 +3058,7 @@ characters={
 			coordination_skill=2
 			desc = "FRA_deluge_francois_darlan_desc"
 		}
+		##becomes collaborationist country leader when France is nationalist puppet
 	}
 	FRA_deluge_jean_marie_abrial={
 		name=FRA_deluge_jean_marie_abrial_name
@@ -3129,7 +3147,7 @@ characters={
 			traits = {
 				navy_capital_ship_1
 			}
-			#cost = 
+			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
@@ -3239,7 +3257,7 @@ characters={
 			traits = {
 				navy_fleet_logistics_2
 			}
-			#cost = 
+			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
@@ -3287,6 +3305,10 @@ characters={
 				large="gfx/leaders/FRA/portrait_FRA_paul_ortoli.dds"
 				small="GFX_paul_ortoli_picture_small"
 			}
+			civilian={
+				large="gfx/leaders/FRA/portrait_FRA_paul_ortoli.dds"
+				small="GFX_paul_ortoli_picture_small"
+			}
 		}
 		navy_leader={
 			traits={ chief_engineer seawolf }
@@ -3296,6 +3318,20 @@ characters={
 			maneuvering_skill=2
 			coordination_skill=2
 			desc = "FRA_deluge_paul_ortoli_desc"
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = FRA_deluge_paul_ortoli
+			allowed = {
+				original_tag = FRA
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
 		}
 		scientist = {
 			traits = { }
@@ -3670,7 +3706,7 @@ characters={
 			traits = {
 				air_chief_ground_support_2
 			}
-			#cost = 
+			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -3702,7 +3738,7 @@ characters={
 			traits = {
 				air_chief_all_weather_1
 			}
-			#cost = 
+			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -3734,14 +3770,13 @@ characters={
 			traits = {
 				air_chief_reform_2
 			}
-			#cost = 
+			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
 			ledger = air
 		}
 	}
-
 	FRA_deluge_martial_valin={
 		name=FRA_deluge_martial_valin_name
 		portraits={##big and small portrait to do!
@@ -3769,7 +3804,7 @@ characters={
 			traits = {
 				air_air_superiority_2
 			}
-			#cost = 
+			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -3810,7 +3845,7 @@ characters={
 			traits = {
 				air_tactical_bombing_2
 			}
-			#cost = 
+			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -3842,7 +3877,7 @@ characters={
 			traits = {
 				air_air_combat_training_2
 			}
-			#cost = 
+			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}

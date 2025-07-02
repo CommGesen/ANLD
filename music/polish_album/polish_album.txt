@@ -1,19 +1,21 @@
 music_station = "polish_album"
 
 music = {
+	song = "song_of_the_polish_legions_in_italy"
+
+	chance = {
+		factor = 1
+	}
+}
+music = {
 	song = "the_song_of_warsaw_1831"
 
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 3
-			original_tag = POL
+			factor = 2
+			tag = POL
 			has_war = no
-		}
-		modifier = {
-			factor = 0
-			original_tag = POL
-			has_war = yes
 		}
 	}
 }
@@ -23,13 +25,8 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 3
-			original_tag = POL
-			has_war = no
-		}
-		modifier = {
-			factor = 0
-			original_tag = POL
+			factor = 2
+			tag = POL
 			has_war = yes
 		}
 	}
@@ -40,13 +37,8 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 3
-			original_tag = POL
-			has_war = no
-		}
-		modifier = {
-			factor = 0
-			original_tag = POL
+			factor = 2
+			tag = POL
 			has_war = yes
 		}
 	}
@@ -58,13 +50,8 @@ music = {
 		factor = 1
 		modifier = {
 			factor = 3
-			original_tag = POL
+			tag = POL
 			has_war = no
-		}
-		modifier = {
-			factor = 0
-			original_tag = POL
-			has_war = yes
 		}
 	}
 }
@@ -74,13 +61,8 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 3
-			original_tag = POL
-			has_war = no
-		}
-		modifier = {
-			factor = 0
-			original_tag = POL
+			factor = 2
+			tag = POL
 			has_war = yes
 		}
 	}
@@ -91,16 +73,8 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 3
-			original_tag = POL
-			NOT = {
-				has_government = communism
-			}
-			has_war = no
-		}
-		modifier = {
-			factor = 0
-			original_tag = POL
+			factor = 2
+			tag = POL
 			has_war = yes
 		}
 	}
@@ -110,19 +84,6 @@ music = {
 
 	chance = {
 		factor = 1
-		modifier = {
-			factor = 3
-			original_tag = POL
-			NOT = {
-				has_government = communism
-			}
-			has_war = no
-		}
-		modifier = {
-			factor = 0
-			original_tag = POL
-			has_war = yes
-		}
 	}
 }
 music = {
@@ -131,17 +92,19 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 3
-			original_tag = POL
-			NOT = {
-				has_government = communism
-			}
-			has_war = no
+			factor = 0.5
+			tag = POL
+			has_government = communism
 		}
 		modifier = {
-			factor = 0
-			original_tag = POL
+			factor = 2
+			tag = POL
 			has_war = yes
+		}
+		modifier = {
+			factor = 2
+			tag = POL
+			has_capitulated = yes
 		}
 	}
 }
@@ -151,16 +114,8 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 3
-			original_tag = POL
-			NOT = {
-				has_government = communism
-			}
-			has_war = no
-		}
-		modifier = {
-			factor = 0
-			original_tag = POL
+			factor = 2
+			tag = POL
 			has_war = yes
 		}
 	}
@@ -171,17 +126,21 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 3
-			original_tag = POL
-			NOT = {
+			factor = 0
+			tag = POL
+			OR = {
 				has_government = communism
+				has_completed_focus = POL_stachniuk_wins
 			}
-			has_war = no
 		}
 		modifier = {
-			factor = 0
-			original_tag = POL
-			has_war = yes
+			factor = 3
+			tag = POL
+			OR = {
+				has_government = neutrality
+				has_completed_focus = POL_ONR_takes_over
+				has_completed_focus = POL_ND_wins
+			}
 		}
 	}
 }
@@ -191,17 +150,19 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 3
-			original_tag = POL
-			NOT = {
-				has_government = communism
-			}
-			has_war = no
+			factor = 0
+			tag = POL
+			has_government = communism
 		}
 		modifier = {
-			factor = 0
+			factor = 2
 			original_tag = POL
 			has_war = yes
+		}
+		modifier = {
+			factor = 2
+			original_tag = POL
+			has_capitulated = yes
 		}
 	}
 }
@@ -211,15 +172,8 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 0
-			original_tag = POL
-		}
-		modifier = {
-			factor = 3
-			original_tag = POL
-			NOT = {
-				has_government = communism
-			}
+			factor = 2
+			tag = POL
 			has_war = yes
 		}
 	}
@@ -230,15 +184,8 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 0
-			original_tag = POL
-		}
-		modifier = {
-			factor = 3
-			original_tag = POL
-			NOT = {
-				has_government = communism
-			}
+			factor = 2
+			tag = POL
 			has_war = yes
 		}
 	}
@@ -249,14 +196,15 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 0
-			original_tag = POL
+			factor = 1.2
+			tag = POL
+			has_war = yes
 		}
 		modifier = {
-			factor = 3
-			original_tag = POL
+			factor = 2
+			owns_state = 10
 			NOT = {
-				has_government = communism
+				controls_state = 10
 			}
 			has_war = yes
 		}
@@ -268,15 +216,8 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 0
-			original_tag = POL
-		}
-		modifier = {
-			factor = 3
-			original_tag = POL
-			NOT = {
-				has_government = communism
-			}
+			factor = 2
+			tag = POL
 			has_war = yes
 		}
 	}
@@ -287,15 +228,8 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 0
-			original_tag = POL
-		}
-		modifier = {
-			factor = 3
-			original_tag = POL
-			NOT = {
-				has_government = communism
-			}
+			factor = 2
+			tag = POL
 			has_war = yes
 		}
 	}
@@ -306,15 +240,8 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 0
-			original_tag = POL
-		}
-		modifier = {
-			factor = 3
-			original_tag = POL
-			NOT = {
-				has_government = communism
-			}
+			factor = 2
+			tag = POL
 			has_war = yes
 		}
 	}
@@ -325,17 +252,29 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 0
-			original_tag = POL
-		}
-		modifier = {
-			factor = 3
-			original_tag = POL
-			NOT = {
-				has_government = communism
-			}
+			factor = 2
+			tag = POL
 			has_war = yes
 		}
+	}
+}
+music = {
+	song = "the_buds_of_white_roses_are_blooming"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			tag = POL
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "dad_had_four_daughters"
+
+	chance = {
+		factor = 1
 	}
 }
 music = {
@@ -345,13 +284,130 @@ music = {
 		factor = 1
 		modifier = {
 			factor = 0
-			original_tag = POL
+			tag = POL
 			has_war = no
 		}
 		modifier = {
 			factor = 3
-			original_tag = POL
-			has_war = yes
+			tag = POL
+			OR = {
+				has_war_with = ITA
+				AND = {
+					is_in_faction_with = ITA
+					has_war = yes
+				}
+			}
+		}
+	}
+}
+music = {
+	song = "lets_go_lets_beat_the_muscovites"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			tag = POL
+			is_in_faction_with = SOV
+			NOT = {
+				SOV = {
+					is_subject_of = POL
+				}
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = POL
+			has_war_with = SOV
+		}
+	}
+}
+music = {
+	song = "song_of_revenge"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			tag = POL
+			is_in_faction_with = SOV
+			NOT = {
+				SOV = {
+					is_subject_of = POL
+				}
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = POL
+			has_war_with = SOV
+		}
+	}
+}
+music = {
+	song = "a_letter_to_the_tsar"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			tag = POL
+			is_in_faction_with = SOV
+			NOT = {
+				SOV = {
+					is_subject_of = POL
+				}
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = POL
+			has_war_with = SOV
+		}
+	}
+}
+music = {
+	song = "triumphal_march_of_john_iii_sobieski"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			tag = POL
+			is_in_faction_with = TUR
+			NOT = {
+				TUR = {
+					is_subject_of = POL
+				}
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = POL
+			has_war_with = TUR
+		}
+	}
+}
+music = {
+	song = "anthem_to_the_baltic_sea"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			tag = POL
+			any_state = {
+				is_controlled_by = POL
+				is_coastal = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = POL
+			any_state = {
+				is_controlled_by = POL
+				is_coastal = yes
+			}
 		}
 	}
 }
@@ -361,12 +417,8 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 0
-			original_tag = POL
-		}
-		modifier = {
-			factor = 3
-			original_tag = POL
+			factor = 2
+			tag = POL
 			has_war = yes
 		}
 	}
@@ -377,12 +429,8 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 0
-			original_tag = POL
-		}
-		modifier = {
-			factor = 3
-			original_tag = POL
+			factor = 2
+			tag = POL
 			has_war = yes
 		}
 	}
@@ -425,12 +473,8 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 0
-			original_tag = POL
-		}
-		modifier = {
-			factor = 3
-			original_tag = POL
+			factor = 2
+			tag = POL
 			has_war = yes
 		}
 	}
@@ -441,12 +485,188 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 0
-			original_tag = POL
+			factor = 2
+			tag = POL
+			has_war = yes
 		}
+	}
+}
+music = {
+	song = "adam_kowalski_my_rifle"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			tag = POL
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "as_long_as_in_our_hearts"
+
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "legions_in_heaven"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			tag = POL
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "song_of_the_warriors"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			tag = POL
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "kalina_malina"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			tag = POL
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "in_the_medicine_of_our_times"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			tag = POL
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "at_polands_gates"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			tag = POL
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "sentinels_vision"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			tag = POL
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "generals_march"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			tag = POL
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "weeping_willows"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			tag = POL
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "fathers_sabre"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			tag = POL
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "whose_name_is_that"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			tag = POL
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "foresters_are_coming"
+
+	chance = {
+		factor = 1
 		modifier = {
 			factor = 3
-			original_tag = POL
+			tag = POL
+			has_capitulated = yes
+		}
+		modifier = {
+			factor = 2
+			tag = POL
+			surrender_progress > 0.2
+		}
+	}
+}
+music = {
+	song = "hey_misses_listen"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			tag = POL
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "song_of_the_first_womens_volunteer_legion"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			tag = POL
 			has_war = yes
 		}
 	}
@@ -457,22 +677,16 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 3
-			original_tag = POL
-			has_government = communism
-		}
-		modifier = {
 			factor = 0
-			original_tag = POL
+			tag = POL
 			NOT = {
 				has_government = communism
 			}
-			has_war = no
 		}
 		modifier = {
-			factor = 0
-			original_tag = POL
-			has_war = yes
+			factor = 2
+			tag = POL
+			has_government = communism
 		}
 	}
 }
@@ -482,21 +696,20 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 3
-			original_tag = POL
-			has_government = communism
-		}
-		modifier = {
 			factor = 0
-			original_tag = POL
+			tag = POL
 			NOT = {
 				has_government = communism
 			}
-			has_war = no
 		}
 		modifier = {
-			factor = 0
-			original_tag = POL
+			factor = 2
+			tag = POL
+			has_government = communism
+		}
+		modifier = {
+			factor = 2
+			tag = POL
 			has_war = yes
 		}
 	}
@@ -507,22 +720,16 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 3
-			original_tag = POL
+			factor = 2
+			tag = POL
 			has_government = communism
 		}
 		modifier = {
 			factor = 0
-			original_tag = POL
+			tag = POL
 			NOT = {
 				has_government = communism
 			}
-			has_war = no
-		}
-		modifier = {
-			factor = 0
-			original_tag = POL
-			has_war = yes
 		}
 	}
 }
@@ -532,22 +739,16 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 3
-			original_tag = POL
+			factor = 2
+			tag = POL
 			has_government = communism
 		}
 		modifier = {
 			factor = 0
-			original_tag = POL
+			tag = POL
 			NOT = {
 				has_government = communism
 			}
-			has_war = no
-		}
-		modifier = {
-			factor = 0
-			original_tag = POL
-			has_war = yes
 		}
 	}
 }
@@ -557,32 +758,23 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 3
-			original_tag = POL
-			has_government = communism
-		}
-		modifier = {
 			factor = 0
-			original_tag = POL
+			tag = POL
 			NOT = {
 				has_government = communism
 			}
 		}
-	}
-}
-music = {
-	song = "weeping_willows"
-
-	chance = {
-		factor = 1
 		modifier = {
-			factor = 0
-			original_tag = POL
+			factor = 2
+			tag = POL
+			has_government = communism
 		}
 		modifier = {
-			factor = 3
-			original_tag = POL
-			has_government = communism
+			factor = 2
+			owns_state = 10
+			NOT = {
+				controls_state = 10
+			}
 			has_war = yes
 		}
 	}
@@ -593,13 +785,8 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 0
-			original_tag = POL
-		}
-		modifier = {
-			factor = 3
-			original_tag = POL
-			has_government = communism
+			factor = 2
+			tag = POL
 			has_war = yes
 		}
 	}
@@ -611,13 +798,15 @@ music = {
 		factor = 1
 		modifier = {
 			factor = 0
-			original_tag = POL
+			tag = POL
+			NOT = {
+				has_government = communism
+			}
 		}
 		modifier = {
-			factor = 3
-			original_tag = POL
+			factor = 2
+			tag = POL
 			has_government = communism
-			has_war = yes
 		}
 	}
 }
@@ -628,13 +817,15 @@ music = {
 		factor = 1
 		modifier = {
 			factor = 0
-			original_tag = POL
+			tag = POL
+			NOT = {
+				has_government = communism
+			}
 		}
 		modifier = {
-			factor = 3
-			original_tag = POL
+			factor = 2
+			tag = POL
 			has_government = communism
-			has_war = yes
 		}
 	}
 }
@@ -645,13 +836,423 @@ music = {
 		factor = 1
 		modifier = {
 			factor = 0
-			original_tag = POL
+			tag = POL
+			NOT = {
+				has_government = communism
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = POL
+			has_government = communism
+		}
+	}
+}
+music = {
+	song = "song_of_the_six_year_plan"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			tag = POL
+			NOT = {
+				has_government = communism
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = POL
+			has_government = communism
+		}
+	}
+}
+music = {
+	song = "knightly_pride"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			tag = POL
+			has_government = communism
+		}
+		modifier = {
+			factor = 2
+			tag = POL
+			has_government = neutrality
+		}
+	}
+}
+music = {
+	song = "she_who_gave_birth_to_god"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			tag = POL
+			has_government = communism
+		}
+		modifier = {
+			factor = 2
+			tag = POL
+			has_government = neutrality
+		}
+	}
+}
+music = {
+	song = "in_my_garden"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 3
+			tag = POL
+			has_country_leader =  {
+				character = POL_deluge_jan_stachniuk
+				ruling_only = yes
+			}
+		}
+	}
+}
+music = {
+	song = "song_of_bar_confederates"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			tag = POL
+			has_government = communism
+		}
+		modifier = {
+			factor = 0.5
+			tag = POL
+			has_government = neutrality
 		}
 		modifier = {
 			factor = 3
-			original_tag = POL
-			has_government = communism
+			tag = POL
+			has_country_leader =  {
+				character = POL_deluge_boleslaw_piasecki
+				ruling_only = yes
+			}
+		}
+	}
+}
+music = {
+	song = "song_about_dear_leader"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			tag = POL
+			NOT = {
+				OR = {
+					has_country_leader =  {
+						character = POL_deluge_edward_rydz_smigly
+						ruling_only = yes
+					}
+					has_country_leader =  {
+						character = POL_deluge_walery_slawek
+						ruling_only = yes
+					}
+					has_country_leader =  {
+						character = POL_deluge_jozef_pilsudski
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = POL
+			OR = {
+				has_country_leader =  {
+					character = POL_deluge_edward_rydz_smigly
+					ruling_only = yes
+				}
+				has_country_leader =  {
+					character = POL_deluge_walery_slawek
+					ruling_only = yes
+				}
+				has_country_leader =  {
+					character = POL_deluge_jozef_pilsudski
+					ruling_only = yes
+				}
+			}
+		}
+	}
+}
+music = {
+	song = "guns_growl"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			tag = POL
+			NOT = {
+				OR = {
+					has_country_leader =  {
+						character = POL_deluge_edward_rydz_smigly
+						ruling_only = yes
+					}
+					has_country_leader =  {
+						character = POL_deluge_walery_slawek
+						ruling_only = yes
+					}
+					has_country_leader =  {
+						character = POL_deluge_jozef_pilsudski
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = POL
+			OR = {
+				has_country_leader =  {
+					character = POL_deluge_edward_rydz_smigly
+					ruling_only = yes
+				}
+				has_country_leader =  {
+					character = POL_deluge_walery_slawek
+					ruling_only = yes
+				}
+				has_country_leader =  {
+					character = POL_deluge_jozef_pilsudski
+					ruling_only = yes
+				}
+			}
+		}
+	}
+}
+music = {
+	song = "march_of_haller"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			tag = POL
+			NOT = {
+				OR = {
+					has_country_leader =  {
+						character = POL_deluge_edward_rydz_smigly
+						ruling_only = yes
+					}
+					has_country_leader =  {
+						character = POL_deluge_jozef_haller
+						ruling_only = yes
+					}
+					has_country_leader =  {
+						character = POL_deluge_jozef_pilsudski
+						ruling_only = yes
+					}
+					has_country_leader =  {
+						character = POL_deluge_marian_januszajtis_zegota
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = POL
+			OR = {
+				has_country_leader =  {
+					character = POL_deluge_edward_rydz_smigly
+					ruling_only = yes
+				}
+				has_country_leader =  {
+					character = POL_deluge_jozef_haller
+					ruling_only = yes
+				}
+				has_country_leader =  {
+					character = POL_deluge_jozef_pilsudski
+					ruling_only = yes
+				}
+				has_country_leader =  {
+					character = POL_deluge_marian_januszajtis_zegota
+					ruling_only = yes
+				}
+			}
+		}
+	}
+}
+music = {
+	song = "hallerian_oath"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			tag = POL
+			NOT = {
+				OR = {
+					has_country_leader =  {
+						character = POL_deluge_edward_rydz_smigly
+						ruling_only = yes
+					}
+					has_country_leader =  {
+						character = POL_deluge_jozef_haller
+						ruling_only = yes
+					}
+					has_country_leader =  {
+						character = POL_deluge_jozef_pilsudski
+						ruling_only = yes
+					}
+					has_country_leader =  {
+						character = POL_deluge_marian_januszajtis_zegota
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = POL
+			OR = {
+				has_country_leader =  {
+					character = POL_deluge_edward_rydz_smigly
+					ruling_only = yes
+				}
+				has_country_leader =  {
+					character = POL_deluge_jozef_haller
+					ruling_only = yes
+				}
+				has_country_leader =  {
+					character = POL_deluge_jozef_pilsudski
+					ruling_only = yes
+				}
+				has_country_leader =  {
+					character = POL_deluge_marian_januszajtis_zegota
+					ruling_only = yes
+				}
+			}
+		}
+	}
+}
+music = {
+	song = "marshal_smigly_rydz"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			tag = POL
+			NOT = {
+				has_country_leader =  {
+					character = POL_deluge_edward_rydz_smigly
+					ruling_only = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = POL
+			has_country_leader =  {
+				character = POL_deluge_edward_rydz_smigly
+				ruling_only = yes
+			}
+		}
+	}
+}
+music = {
+	song = "song_about_the_president_of_the_republic_of_poland"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			tag = POL
+			NOT = {
+				has_government = democratic
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = POL
+			has_government = democratic
+		}
+	}
+}
+music = {
+	song = "eugeniusz_bodo_i_made_a_date_with_her_at_nine"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
 			has_war = yes
+		}
+		modifier = {
+			factor = 3
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "mieczyslaw_fogg_i_m_such_a_cold_bastard"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 3
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "hanka_ordonowna_love_will_forgive_you_everything"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 3
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "adam_aston_oh_how_nice"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 3
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "mieczyslaw_fogg_i_couldnt_care_less"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 3
+			has_war = no
 		}
 	}
 }

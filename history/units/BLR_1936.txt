@@ -420,15 +420,6 @@ units = {
 		start_manpower_factor = 1
 	}
 }
-air_wings = {
-	206	= {
-		fighter_equipment_0 =  {
-			owner = "BLR" 
-			amount = 12
-		}
-	}
-}
-
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

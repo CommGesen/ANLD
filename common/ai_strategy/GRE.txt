@@ -1,6 +1,6 @@
 GRE_AI_hating_albania = {
 	allowed = { 
-		original_tag = GRE
+		tag = GRE
 	}
 	enable = {
 		ALB = {
@@ -75,7 +75,7 @@ GRE_AI_greek_serbian_friendship = {
 
 GRE_AI_hating_ottomans = {
 	allowed = { 
-		original_tag = GRE
+		tag = GRE
 	}
 	enable = {
 		any_state = {
@@ -83,7 +83,7 @@ GRE_AI_hating_ottomans = {
 				is_core_of = GRE
 				is_claimed_by = GRE
 			}
-			controller = TUR
+			is_controlled_by = TUR
 		}
 	}
 	abort = {
@@ -93,7 +93,7 @@ GRE_AI_hating_ottomans = {
 					is_core_of = GRE
 					is_claimed_by = GRE
 				}
-				controller = TUR
+				is_controlled_by = TUR
 			}
 		}
 	}
@@ -124,7 +124,7 @@ GRE_AI_not_trusting_bulgaria = {
 				is_core_of = GRE
 				is_claimed_by = GRE
 			}
-			controller = BUL
+			is_controlled_by = BUL
 		}
 	}
 	abort = {
@@ -134,7 +134,7 @@ GRE_AI_not_trusting_bulgaria = {
 					is_core_of = GRE
 					is_claimed_by = GRE
 				}
-				controller = BUL
+				is_controlled_by = BUL
 			}
 		}
 	}

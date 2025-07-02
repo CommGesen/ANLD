@@ -27,7 +27,7 @@ characters={
 				revanchist_marshal 
 				dislikes_russia
 			}
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			desc = "POL_deluge_jozef_pilsudski_desc"
 		}
 	}
@@ -47,7 +47,7 @@ characters={
 		}
 		country_leader = {
 			ideology = social_darwinist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = { marshal_of_sky_and_soil pilsudskis_left_hand }
 			desc = "POL_deluge_edward_rydz_smigly_desc"
 		}
@@ -67,7 +67,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -88,7 +88,7 @@ characters={
 		country_leader = {
 			ideology = nationalist_stratoracy_ideology
 			traits = { quarreling_politicians_and_generals }
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			desc = "POL_deluge_sanation_emergency_council_desc"
 		}
 	}
@@ -102,7 +102,7 @@ characters={
 		country_leader = {
 			ideology = religious_ideology
 			traits = { }
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			desc = "POL_deluge_boleslaw_piasecki_desc"
 		}
 	}
@@ -122,7 +122,7 @@ characters={
 		}
 		country_leader = {
 			ideology = anocracy_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = { wallenrodist_intentions }
 			desc = "POL_deluge_wladyslaw_sikorski_desc"
 		}
@@ -142,7 +142,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -162,7 +162,7 @@ characters={
 		}
 		country_leader = {
 			ideology = avant_garde_nationalism_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {}
 			desc = "POL_deluge_jan_stachniuk_desc"
 		}
@@ -178,7 +178,7 @@ characters={
 		}
 		country_leader = {
 			ideology = nationalist_democracy_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				father_of_polish_democratic_nationalism
 				dislikes_germany_deluge
@@ -222,7 +222,7 @@ characters={
 		}
 		country_leader = {
 			ideology = corporatist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				pilsudskis_right_hand
 			}
@@ -239,7 +239,7 @@ characters={
 		}
 		country_leader = {
 			ideology = social_democratic_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				leftist_freemanson
 			}
@@ -255,7 +255,7 @@ characters={
 		}
 		country_leader = {
 			ideology = social_democratic_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				famous_politician_and_journalist
 			}
@@ -271,7 +271,7 @@ characters={
 		}
 		country_leader = {
 			ideology = social_liberal_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				friend_of_farmers
 			}
@@ -287,7 +287,7 @@ characters={
 		}
 		country_leader = {
 			ideology = democratic_agrarianism_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				gifted_inter_class_negotiator
 			}
@@ -303,7 +303,7 @@ characters={
 		}
 		country_leader = {
 			ideology = nationalist_democracy_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				former_minister_of_justice
 			}
@@ -319,7 +319,7 @@ characters={
 		}
 		country_leader = {
 			ideology = nationalist_democracy_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				doctor_of_nationalist_philosophy
 				leader_of_nationalist_academic_organizations
@@ -336,7 +336,7 @@ characters={
 		}
 		country_leader = {
 			ideology = nationalist_democracy_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				editor_in_chief_of_polish_thought
 				founder_of_camp_of_great_poland
@@ -353,7 +353,7 @@ characters={
 		}
 		country_leader = {
 			ideology = conservative_democracy_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				
 			}
@@ -369,7 +369,7 @@ characters={
 		}
 		country_leader = {
 			ideology = bonapartist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				
 			}
@@ -385,7 +385,7 @@ characters={
 		}
 		country_leader = {
 			ideology = reactionary_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				
 			}
@@ -401,7 +401,7 @@ characters={
 		}
 		country_leader = {
 			ideology = reactionary_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				szlachta_supermacy
 			}
@@ -417,7 +417,7 @@ characters={
 		}
 		country_leader = {
 			ideology = bonapartist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				
 			}
@@ -445,7 +445,7 @@ characters={
 		}
 		country_leader = {
 			ideology = bonapartist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				overwhelming_decadency
 				weak_claim
@@ -463,7 +463,7 @@ characters={
 		}
 		country_leader = {
 			ideology = bonapartist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				
 			}
@@ -479,7 +479,7 @@ characters={
 		}
 		country_leader = {
 			ideology = bonapartist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				
 			}
@@ -495,7 +495,7 @@ characters={
 		}
 		country_leader = {
 			ideology = bonapartist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				weak_claim
 			}
@@ -511,7 +511,7 @@ characters={
 		}
 		country_leader = {
 			ideology = bonapartist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				
 			}
@@ -575,7 +575,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -596,7 +596,7 @@ characters={
 		}
 		country_leader = {
 			ideology = social_darwinist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = { national_hero_haller }
 			desc = "POL_deluge_jozef_haller_desc"
 		}
@@ -622,7 +622,7 @@ characters={
 			traits = {
 				army_regrouping_3
 			}
-			#cost = 150
+			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
@@ -639,7 +639,7 @@ characters={
 		}
 		country_leader = {
 			ideology = social_darwinist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {  }
 			desc = "POL_deluge_marian_januszajtis_zegota_desc"
 		}
@@ -695,7 +695,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -716,7 +716,7 @@ characters={
 		}
 		country_leader = {
 			ideology = nationalist_stratoracy_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = { naval_invasion_expert }
 			desc = "POL_deluge_gustaw_orlicz_dreszer_desc"
 		}
@@ -755,7 +755,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -827,7 +827,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -898,7 +898,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			#cost = 150
+			cost = 50
 			available = { 
 				
 			}
@@ -969,7 +969,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -1004,7 +1004,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -1039,7 +1039,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				POL = {
 					has_completed_focus = POL_superiority_of_mobility
@@ -1100,7 +1100,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -1149,7 +1149,7 @@ characters={
 		}
 		country_leader = {
 			ideology = nationalist_stratoracy_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = { national_hero_sosnkowski }
 			desc = "POL_deluge_sosnowski_desc"
 		}
@@ -1160,7 +1160,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -1291,7 +1291,7 @@ characters={
 			traits = {
 				army_logistics_2
 			}
-			#cost = 150
+			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
@@ -1309,7 +1309,7 @@ characters={
 		}
 		country_leader = {
 			ideology = social_darwinist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = { famous_womanizer legionary }
 			desc = "POL_deluge_wieniawa_dlugoszewski_desc"
 		}
@@ -1367,7 +1367,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -1455,15 +1455,7 @@ characters={
 				small="GFX_mieczyslaw_boruta_spiechowicz_picture_small"
 			}
 		}
-		corps_commander = {
-			traits = { trait_mountaineer }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			desc = "POL_deluge_boruta_spiechowicz_desc"
-		}
+		#becomes general later via focus
 	}
 	POL_deluge_knoll_kownacki = {##Edmund Knoll-Kownacki
 		name = POL_Character_deluge_knoll_kownacki
@@ -1473,15 +1465,7 @@ characters={
 				small="GFX_edmund_knoll_kownacki_picture_small"
 			}
 		}
-		corps_commander = {
-			traits = { trait_cautious artillery_officer artillery_leader }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=2
-			desc = "POL_deluge_knoll_kownacki_desc"
-		}
+		##gets commander role in Polish focus tree
 	}
 	POL_deluge_fabrycy = {##Kazimierz Fabrycy
 		name = POL_Character_deluge_fabrycy
@@ -1491,15 +1475,7 @@ characters={
 				small="GFX_kazimierz_fabrycy_picture_small"
 			}
 		}
-		corps_commander = {
-			traits = { politically_connected }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			desc = "POL_deluge_fabrycy_desc"
-		}
+		##gets commander role in Polish focus tree
 	}
 	POL_deluge_dab_biernacki = {##Stefan Dąb Biernacki
 		name = POL_Character_deluge_dab_biernacki
@@ -1509,15 +1485,7 @@ characters={
 				small="GFX_stefan_dab_biernacki_picture_small"
 			}
 		}
-		corps_commander = {
-			traits = { old_guard politically_connected harsh_leader substance_abuser }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			desc = "POL_deluge_dab_biernacki_desc"
-		}
+		##gets commander role in Polish focus tree
 	}
 	POL_deluge_rudolf_dreszer = {##Rudolf Dreszer
 		name = POL_Character_deluge_rudolf_dreszer
@@ -1527,15 +1495,7 @@ characters={
 				small="GFX_rudolf_dreszer_picture_small"
 			}
 		}
-		corps_commander = {
-			traits = { harsh_leader infantry_officer winter_specialist }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=2
-			desc = "POL_deluge_rudolf_dreszer_desc"
-		}
+		##gets commander role in Polish focus tree
 	}
 	POL_deluge_alter = {##Franciszek Alter
 		name = POL_Character_deluge_alter
@@ -1545,15 +1505,7 @@ characters={
 				small="GFX_franciszek_alter_picture_small"
 			}
 		}
-		corps_commander = {
-			traits = { infantry_officer }
-			skill=1
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			desc = "POL_deluge_alter_desc"
-		}
+		##gets commander role in Polish focus tree
 	}
 	POL_deluge_rowecki = {##Stefan Rowecki
 		name = POL_Character_deluge_rowecki
@@ -1563,15 +1515,7 @@ characters={
 				small="GFX_stefan_rowecki_picture_small"
 			}
 		}
-		corps_commander = {
-			traits = { infantry_officer panzer_leader guerilla_fighter }
-			skill=2
-			attack_skill=3
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=1
-			desc = "POL_deluge_rowecki_desc"
-		}
+		##gets commander role in Polish focus tree
 	}
 	POL_deluge_przezdziecki = {##Wacław Przeździecki
 		name = POL_Character_deluge_przezdziecki
@@ -1581,15 +1525,7 @@ characters={
 				small="GFX_waclaw_przezdziecki_picture_small"
 			}
 		}
-		corps_commander = {
-			traits = { old_guard politically_connected organizer cavalry_leader }
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
-			desc = "POL_deluge_przezdziecki_desc"
-		}
+		##gets commander role in Polish focus tree
 	}
 	POL_deluge_boltuc = {##Mikołaj Bołtuć
 		name = POL_Character_deluge_boltuc
@@ -1599,15 +1535,7 @@ characters={
 				small="GFX_mikolaj_boltuc_picture_small"
 			}
 		}
-		corps_commander = {
-			traits = { trait_reckless ranger }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=2
-			desc = "POL_deluge_boltuc_desc"
-		}
+		#becomes general later via focus
 	}
 	POL_deluge_prugar_ketling = {##Bronisław Prugar-Ketling
 		name = POL_Character_deluge_prugar_ketling
@@ -1617,15 +1545,7 @@ characters={
 				small="GFX_bronislaw_prugar_ketling_picture_small"
 			}
 		}
-		corps_commander = {
-			traits = { ranger camouflage_expert }
-			skill=3
-			attack_skill=3
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=2
-			desc = "POL_deluge_prugar_ketling_desc"
-		}
+		#becomes general later via focus
 	}
 	##GENERALS Not Avavaile from the start
 	POL_deluge_rola_zymierski = {##Michał Rola-Żymierski
@@ -1895,7 +1815,7 @@ characters={
 			traits = {
 				navy_chief_old_guard 
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -1961,6 +1881,27 @@ characters={
 				large=GFX_portrait_POL_karol_korytowski
 			}
 		}
+		advisor = {
+			slot = navy_chief
+			idea_token = POL_deluge_karol_korytowski
+			allowed = {
+				tag = POL
+			}
+			visible = {
+				
+			}
+			available = {
+				
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			ledger = navy
+		}
 		navy_leader = {
 			traits = { navy_career_officer superior_tactician }
 			skill=4
@@ -1998,7 +1939,7 @@ characters={
 			traits = {
 				navy_chief_maneuver_2
 			}
-			#cost = 150
+			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -2045,9 +1986,9 @@ characters={
 				
 			}
 			traits = {
-				navy_chief_decisive_battle_1
+				navy_chief_commerce_raiding_1
 			}
-			#cost = 150
+			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -2130,7 +2071,7 @@ characters={
 			traits = {
 				navy_amphibious_assault_1
 			}
-			#cost = 150
+			cost = 100
 			ai_will_do = {
 				factor = 1
 			}
@@ -2622,7 +2563,7 @@ characters={
 		}
 		country_leader = {
 			ideology = corporatist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = { ultranationalist_prime_minister }
 			desc = "POL_deluge_jozef_beck_desc"
 		}
@@ -3961,7 +3902,7 @@ characters={
 		}
 		country_leader = {
 			ideology = jacobin_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				marxist_academic
 			}
@@ -4007,7 +3948,7 @@ characters={
 		}
 		country_leader = {
 			ideology = jacobin_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				veteran_communist
 			}
@@ -4053,7 +3994,7 @@ characters={
 		}
 		country_leader = {
 			ideology = jacobin_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				patriotic_socialist
 			}
@@ -4100,7 +4041,7 @@ characters={
 		gender = female 
 		country_leader = {
 			ideology = jacobin_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				red_feminist_weaker
 			}
@@ -4146,7 +4087,7 @@ characters={
 		}
 		country_leader = {
 			ideology = communist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				communist_with_human_face_weaker
 			}
@@ -4192,7 +4133,7 @@ characters={
 		}
 		country_leader = {
 			ideology = communist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				socialist_autocrat
 			}
@@ -4242,7 +4183,7 @@ characters={
 		}
 		country_leader = {
 			ideology = communist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				red_suffragette
 			}
@@ -4294,7 +4235,7 @@ characters={
 		}
 		country_leader = {
 			ideology = communist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				socialist_justice
 			}
@@ -4461,7 +4402,7 @@ characters={
 		}
 		country_leader = {
 			ideology = conservative_radicalism
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				hero_of_the_peasantry
 			}
@@ -4478,7 +4419,7 @@ characters={
 		}
 		country_leader = {
 			ideology = conservative_radicalism
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				doctor_of_laws_weaker
 			}
@@ -4524,7 +4465,7 @@ characters={
 		}
 		country_leader = {
 			ideology = conservative_radicalism
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				former_minister_of_justice
 			}
@@ -4570,7 +4511,7 @@ characters={
 		}
 		country_leader = {
 			ideology = conservative_radicalism
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				industry_reformer
 			}
@@ -4616,7 +4557,7 @@ characters={
 		}
 		country_leader = {
 			ideology = national_socialist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				radical_revanchist
 			}
@@ -4665,7 +4606,7 @@ characters={
 		}
 		country_leader = {
 			ideology = national_socialist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				headstrong
 			}
@@ -4714,7 +4655,7 @@ characters={
 		}
 		country_leader = {
 			ideology = national_socialist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				totalitarian_systems_analyst_weaker
 			}
@@ -4799,7 +4740,7 @@ characters={
 		}
 		country_leader = {
 			ideology = national_socialist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				theoretician_of_national_bolshevism_weaker
 			}
@@ -4825,7 +4766,7 @@ characters={
 		}
 		country_leader = {
 			ideology = communist_ideology
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			traits = {
 				temporary_committee
 			}
@@ -5429,7 +5370,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -5457,7 +5398,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -5485,7 +5426,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -5513,7 +5454,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -5541,7 +5482,7 @@ characters={
 			visible = {
 				tag = POL
 			}
-			#cost = 150
+			cost = 100
 			available = { 
 				
 			}
@@ -5690,7 +5631,7 @@ characters={
 		country_leader = {
 			ideology = futurist_ideology
 			traits = { futuristic_communist }
-			expire = "1969.1.1.1"
+			expire = "1999.1.1.1"
 			desc = "POL_jasienski_leader_desc"
 		}
 	}

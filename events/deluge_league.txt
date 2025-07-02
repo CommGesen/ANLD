@@ -159,16 +159,9 @@ country_event = {
 		custom_effect_tooltip = league_of_nations_custom_effect_tooltip_1
 		set_global_flag = league_flag_court_of_justice_passed
 		hidden_effect = {
-			FRA = {
-				add_to_variable = {enemy_justify_war_goal_time_lon = 1 }
-				add_to_variable = {justify_war_goal_time_lon = 1 }
-			}
 			every_country = {
 				limit = {
-					#has_idea = deluge_league_of_nations_prospective_member
-					NOT = {
-						tag = FRA
-					}
+					
 				}
 				add_to_variable = {enemy_justify_war_goal_time_lon = 1 }
 				add_to_variable = {justify_war_goal_time_lon = 1 }
@@ -188,7 +181,7 @@ country_event = {
 		name = deluge_league.5.b
 		hidden_effect = {
 			news_event = {
-				id = deluge_league.6
+				id = deluge_league.7
 			}
 		}
 	}
@@ -396,16 +389,9 @@ country_event = {#France checks the results of voting
 		set_global_flag = league_flag_relief_union_passed
 		custom_effect_tooltip = league_of_nations_custom_effect_tooltip_2
 		hidden_effect = {
-			FRA = {
-				add_to_variable = {consumer_goods_factor_lon = 0.05 }
-				add_to_variable = {industry_repair_factor_lon = 0.3 }
-			}
 			every_country = {
 				limit = {
-					#has_idea = deluge_league_of_nations_prospective_member
-					NOT = {
-						tag = FRA
-					}
+					
 				}
 				add_to_variable = {consumer_goods_factor_lon = 0.05 }
 				add_to_variable = {industry_repair_factor_lon = 0.3 }
@@ -633,16 +619,9 @@ country_event = {
 		set_global_flag = league_flag_gas_prohibition_passed
 		custom_effect_tooltip = league_of_nations_custom_effect_tooltip_3
 		hidden_effect = {
-			FRA = {
-				add_to_variable = {land_doctrine_cost_factor_lon = 0.1 }
-				add_to_variable = {experience_loss_factor_lon = -0.1 }
-			}
 			every_country = {
 				limit = {
-					#has_idea = deluge_league_of_nations_prospective_member
-					NOT = {
-						tag = FRA
-					}
+					
 				}
 				add_to_variable = {land_doctrine_cost_factor_lon = 0.1 }
 				add_to_variable = {experience_loss_factor_lon = -0.1 }
@@ -774,7 +753,7 @@ news_event = {
 	id = deluge_league.18
 	title = deluge_league.18.t
 	desc = deluge_league.18.d
-	picture = GFX_news_event_priosner_of_war_3
+	picture = GFX_news_event_prisoner_of_war_3
 	major = yes
 	is_triggered_only = yes
 	option = {
@@ -869,16 +848,9 @@ country_event = {
 		set_global_flag = league_flag_pow_convention_passed
 		custom_effect_tooltip = league_of_nations_custom_effect_tooltip_4
 		hidden_effect = {
-			FRA = {
-				add_to_variable = {military_leader_cost_factor_lon = 0.25 }
-				add_to_variable = {pocket_penalty_lon = -0.1 }
-			}
 			every_country = {
 				limit = {
-					#has_idea = deluge_league_of_nations_prospective_member
-					NOT = {
-						tag = FRA
-					}
+					
 				}
 				add_to_variable = {military_leader_cost_factor_lon = 0.25 }
 				add_to_variable = {pocket_penalty_lon = -0.1 }
@@ -1107,16 +1079,9 @@ country_event = {
 		custom_effect_tooltip = league_of_nations_custom_effect_tooltip_5
 		set_global_flag = league_flag_maritime_protections_passed
 		hidden_effect = {
-			FRA = {
-				add_to_variable = {convoy_raiding_efficiency_factor_lon = -0.1 }
-				add_to_variable = {trade_opinion_factor_lon = 0.25 }
-			}
 			every_country = {
 				limit = {
-					#has_idea = deluge_league_of_nations_prospective_member
-					NOT = {
-						tag = FRA
-					}
+					
 				}
 				add_to_variable = {convoy_raiding_efficiency_factor_lon = -0.1 }
 				add_to_variable = {trade_opinion_factor_lon = 0.25 }
@@ -1484,6 +1449,46 @@ news_event = {
 		name = deluge_league.32.a
 	}
 }
+country_event = {##hidden help event
+	id = deluge_league.33
+	title = deluge_league.33.t
+	desc = deluge_league.33.d
+	picture = GFX_report_event_turin_in_ruins
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	timeout_days = 1
+	immediate = {
+		every_country = {
+			limit = {
+				has_idea = deluge_league_of_nations_prospective_member
+			}
+			country_event = {
+				id = deluge_league.4
+				days = 3
+			}
+			country_event = {
+				id = deluge_league.9
+				days = 10
+			}
+			country_event = {
+				id = deluge_league.14
+				days = 17
+			}
+			country_event = {
+				id = deluge_league.19
+				days = 24
+			}
+			country_event = {
+				id = deluge_league.24
+				days = 31
+			}
+		}
+	}
+	option = {
+		name = deluge_league.33.a
+	}
+}
 # With ratification possible, country with voting rights in the League is told to piss or get off the pot
 country_event = {
 	id = deluge_league.34
@@ -1652,4 +1657,3 @@ country_event = {
 		}
 	}
 }
-

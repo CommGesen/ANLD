@@ -270,10 +270,7 @@ news_event = {
 	picture = GFX_balloon_competition
 	fire_only_once = yes
 	trigger = {
-		date > 1936.9.15
-	}
-	mean_time_to_happen = {
-		days = 30
+		date = 1936.9.15
 	}
 	major = yes
 	option = {
@@ -287,10 +284,7 @@ news_event = {
 	picture = GFX_news_event_olympics_1936
 	fire_only_once = yes
 	trigger = {
-		date > 1936.8.16
-	}
-	mean_time_to_happen = {
-		days = 30
+		date = 1936.8.16
 	}
 	major = yes
 	option = {
@@ -304,10 +298,7 @@ news_event = {
 	picture = GFX_news_event_hungarian_grand_prix_1936
 	fire_only_once = yes
 	trigger = {
-		date > 1936.6.21
-	}
-	mean_time_to_happen = {
-		days = 30
+		date = 1936.6.21
 	}
 	major = yes
 	option = {
@@ -321,16 +312,10 @@ news_event = {
 	picture = GFX_news_event_worlds_fair_1937
 	fire_only_once = yes
 	trigger = {
-		date > 1937.11.1
-	}
-	mean_time_to_happen = {
-		days = 30
+		date = 1937.11.1
 	}
 	major = yes
 	option = {
 		name = deluge_world.10.a
 	}
 }
-
-
-

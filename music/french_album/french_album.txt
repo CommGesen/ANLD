@@ -1,0 +1,20 @@
+music_station = "french_album"
+
+music = {
+	song = "coronation_of_napoleon_i"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				has_government = communism
+				has_completed_focus = FRA_towards_republic
+			}
+		}
+		modifier = {
+			factor = 2
+			has_government = neutrality
+		}
+	}
+}

@@ -6063,30 +6063,9 @@ focus_tree = {
 					days = 45
 				}
 				add_dynamic_modifier = { modifier = FRA_modifier_lon }
-				every_country = {
-					limit = {
-						has_idea = deluge_league_of_nations_prospective_member
-					}
-					country_event = {
-						id = deluge_league.4
-						days = 8
-					}
-					country_event = {
-						id = deluge_league.9
-						days = 15
-					}
-					country_event = {
-						id = deluge_league.14
-						days = 22
-					}
-					country_event = {
-						id = deluge_league.19
-						days = 29
-					}
-					country_event = {
-						id = deluge_league.24
-						days = 36
-					}
+				country_event = {
+					id = deluge_league.33
+					days = 5
 				}
 			}
 		}
@@ -9807,7 +9786,7 @@ focus_tree = {
 		relative_position_id = FRA_devaluate_the_franc
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -9931,7 +9910,7 @@ focus_tree = {
 		relative_position_id = FRA_devaluate_the_franc
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 		allow_branch = {
 			
 		}
@@ -9972,7 +9951,7 @@ focus_tree = {
 		relative_position_id = FRA_support_small_and_medium_business
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 		allow_branch = {
 			
 		}
@@ -10013,7 +9992,7 @@ focus_tree = {
 		relative_position_id = FRA_decrease_export
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 		allow_branch = {
 			
 		}
@@ -10225,7 +10204,7 @@ focus_tree = {
 		relative_position_id = FRA_increase_social_welfare
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = { focus =   }
+		#mutually_exclusive = { focus =   }
 		allow_branch = {
 			
 		}
@@ -10265,7 +10244,7 @@ focus_tree = {
 		relative_position_id = FRA_increase_social_welfare
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = { focus =   }
+		#mutually_exclusive = { focus =   }
 		allow_branch = {
 			
 		}
@@ -10392,7 +10371,7 @@ focus_tree = {
 		relative_position_id = FRA_matignon_agreements
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = { focus =   }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -10967,7 +10946,7 @@ focus_tree = {
 		relative_position_id = FRA_budget_deficit_law
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = { focus = FRA_third_way focus = FRA_FRA_centrally_planned_economy focus = FRA_economic_nihilism focus = FRA_market_socialism}
+		mutually_exclusive = { focus = FRA_third_way focus = FRA_centrally_planned_economy focus = FRA_economic_nihilism focus = FRA_market_socialism}
 		allow_branch = {
 			NOT = {
 				OR = {
@@ -12833,7 +12812,7 @@ focus_tree = {
 		relative_position_id = FRA_nationalize_military_complexes
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -12869,7 +12848,7 @@ focus_tree = {
 		relative_position_id = FRA_fortifications_programs
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -12924,7 +12903,7 @@ focus_tree = {
 		relative_position_id = FRA_fortifications_programs
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -13074,7 +13053,7 @@ focus_tree = {
 		relative_position_id = FRA_cnrs
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -13141,7 +13120,7 @@ focus_tree = {
 		relative_position_id = FRA_cnrs
 		search_filters = { }
 		cost = 8
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -13193,7 +13172,7 @@ focus_tree = {
 		relative_position_id = FRA_commisariat_a_l_energie_atomique
 		search_filters = { }
 		cost = 2
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -13234,7 +13213,7 @@ focus_tree = {
 		relative_position_id = FRA_pile_zoe
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -13307,7 +13286,7 @@ focus_tree = {
 		relative_position_id = FRA_pile_zoe
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -13352,7 +13331,7 @@ focus_tree = {
 		relative_position_id = FRA_cnrs
 		search_filters = { }
 		cost = 3
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -13397,7 +13376,7 @@ focus_tree = {
 		relative_position_id = FRA_seek_for_rocketry_specialist
 		search_filters = { }
 		cost = 3
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -13860,7 +13839,7 @@ focus_tree = {
 		#relative_position_id = 
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -13932,7 +13911,7 @@ focus_tree = {
 		relative_position_id = FRA_lessons_of_senussi_campaign
 		search_filters = { }
 		cost = 6
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -13973,7 +13952,7 @@ focus_tree = {
 		relative_position_id = FRA_a_new_army_budget
 		search_filters = { }
 		cost = 8
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -14021,7 +14000,7 @@ focus_tree = {
 		relative_position_id = FRA_traumas_of_the_great_war
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -14187,7 +14166,7 @@ focus_tree = {
 		relative_position_id = FRA_traumas_of_the_great_war
 		search_filters = { }
 		cost = 6
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -14231,7 +14210,7 @@ focus_tree = {
 		relative_position_id = FRA_expand_the_counter_intelligence
 		search_filters = { }
 		cost = 6
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -14277,7 +14256,7 @@ focus_tree = {
 		relative_position_id = FRA_organize_special_training
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -14437,7 +14416,7 @@ focus_tree = {
 		relative_position_id = FRA_traumas_of_the_great_war
 		search_filters = { }
 		cost = 8
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -14489,7 +14468,7 @@ focus_tree = {
 		relative_position_id = FRA_post_great_war_challenges
 		search_filters = { }
 		cost = 8
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -14554,7 +14533,7 @@ focus_tree = {
 		relative_position_id = FRA_field_the_MAS_36
 		search_filters = { }
 		cost = 8
-		mutually_exclusive = { focus = }
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -14656,7 +14635,7 @@ focus_tree = {
 		relative_position_id = FRA_de_gaulles_plan
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -14697,7 +14676,7 @@ focus_tree = {
 		relative_position_id = FRA_onboard_radios
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -14733,7 +14712,7 @@ focus_tree = {
 		relative_position_id = FRA_armored_warfare_tactics
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -14827,7 +14806,7 @@ focus_tree = {
 		relative_position_id = FRA_de_lattres_plan
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -14864,7 +14843,7 @@ focus_tree = {
 		relative_position_id = FRA_proximity_airdrops
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -14905,7 +14884,7 @@ focus_tree = {
 		relative_position_id = FRA_agressive_recon
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -14993,7 +14972,7 @@ focus_tree = {
 		relative_position_id = FRA_gamelins_plan
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -15035,7 +15014,7 @@ focus_tree = {
 		relative_position_id = FRA_ballistic_vests
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -15078,7 +15057,7 @@ focus_tree = {
 		relative_position_id = FRA_shocktroops
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -15127,7 +15106,7 @@ focus_tree = {
 		relative_position_id = FRA_engin_blinde_de_reconnaissance
 		search_filters = { }
 		cost = 8
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -15181,7 +15160,7 @@ focus_tree = {
 		relative_position_id = FRA_a_modern_army
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -15217,7 +15196,7 @@ focus_tree = {
 		relative_position_id = FRA_traumas_of_the_great_war
 		search_filters = { }
 		cost = 6
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -15270,7 +15249,7 @@ focus_tree = {
 		relative_position_id = FRA_review_the_fleet
 		search_filters = { }
 		cost = 6
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -15352,7 +15331,7 @@ focus_tree = {
 		relative_position_id = FRA_expand_naval_facilities
 		search_filters = { }
 		cost = 6
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -15454,7 +15433,7 @@ focus_tree = {
 		relative_position_id = FRA_review_the_fleet
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -15519,7 +15498,7 @@ focus_tree = {
 		relative_position_id = FRA_expand_naval_facilities
 		search_filters = { }
 		cost = 8
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -15606,7 +15585,7 @@ focus_tree = {
 		relative_position_id = FRA_pursue_battleship_studies
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -15761,7 +15740,7 @@ focus_tree = {
 		relative_position_id = FRA_launch_the_richelieu_class
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -15797,7 +15776,7 @@ focus_tree = {
 		relative_position_id = FRA_renew_maritime_patrol_avitation
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -15869,7 +15848,7 @@ focus_tree = {
 		relative_position_id = FRA_new_aircraft_carriers
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -15909,7 +15888,7 @@ focus_tree = {
 		relative_position_id = FRA_launch_the_joffre_class
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -15945,7 +15924,7 @@ focus_tree = {
 		relative_position_id = FRA_develop_naval_avitation
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -16053,7 +16032,7 @@ focus_tree = {
 		relative_position_id = FRA_blockade_tactics
 		search_filters = { }
 		cost = 6
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -16108,7 +16087,7 @@ focus_tree = {
 		relative_position_id = FRA_la_royale_fera_face
 		search_filters = { }
 		cost = 6
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -16246,7 +16225,7 @@ focus_tree = {
 		relative_position_id = FRA_containing_the_air_threat
 		search_filters = { }
 		cost = 6
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -16285,7 +16264,7 @@ focus_tree = {
 		relative_position_id = FRA_traumas_of_the_great_war
 		search_filters = { }
 		cost = 6
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -16346,7 +16325,7 @@ focus_tree = {
 		relative_position_id = FRA_air_force_modernization
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -16420,7 +16399,7 @@ focus_tree = {
 		relative_position_id = FRA_air_force_modernization
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -16532,7 +16511,7 @@ focus_tree = {
 		relative_position_id = FRA_southern_airports_expansion
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -16580,6 +16559,7 @@ focus_tree = {
 					}
 				}
 			}
+			custom_effect_tooltip = GER_unlocks_big_ben_raid_tt
 		}
 		ai_will_do = {
 			factor = 25
@@ -16639,7 +16619,7 @@ focus_tree = {
 		relative_position_id = FRA_organize_fighter_competition
 		search_filters = { }
 		cost = 6
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -16714,7 +16694,7 @@ focus_tree = {
 		relative_position_id = FRA_call_for_multirole_design
 		search_filters = { }
 		cost = 6
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -16750,7 +16730,7 @@ focus_tree = {
 		relative_position_id = FRA_prototype_demonstration
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -16791,7 +16771,7 @@ focus_tree = {
 		relative_position_id = FRA_observation_aerienne_avancee
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -16831,7 +16811,7 @@ focus_tree = {
 		relative_position_id = FRA_review_the_proposals
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -16867,7 +16847,7 @@ focus_tree = {
 		relative_position_id = FRA_strategic_bombers_development
 		search_filters = { }
 		cost = 7
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}
@@ -16919,7 +16899,7 @@ focus_tree = {
 		relative_position_id = FRA_consolidate_new_doctrines
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = {focus = }
+		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
 		}

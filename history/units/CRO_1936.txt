@@ -88,17 +88,6 @@ units = {
 
 	}
 }
-
-air_wings = {
-	104 = {
-		fighter_equipment_0 = {
-			owner = "CRO" 
-				amount = 72
-		}
-
-	}
-}
-
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

@@ -344,18 +344,6 @@ units = {
 		start_manpower_factor = 1
 	}				
 }
-
-air_wings = {
-	### Latvijas Gaisa Speki
-	12 = {
-		# Aviacijas Pulka -- Bristol Bulldogs
-		fighter_equipment_0 =  {
-			owner = "BAL" 
-			amount = 12
-		}
-	}
-}
-
 ### Starting Production ###
 instant_effect = {
 	add_equipment_production = {

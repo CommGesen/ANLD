@@ -178,7 +178,9 @@ FRA_area_priority = {
 	enable = {
 		original_tag = FRA
 	}
-
+	abort = {
+		always = no
+	}
 	ai_strategy = {
 		type = area_priority
 		id = europe

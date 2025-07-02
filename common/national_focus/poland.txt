@@ -7247,40 +7247,30 @@ focus_tree = {
 					has_global_flag = league_flag_court_of_justice_passed
 				}
 				custom_effect_tooltip = league_of_nations_custom_effect_tooltip_1
-				add_to_variable = {enemy_justify_war_goal_time_lon = 1 }
-				add_to_variable = {justify_war_goal_time_lon = 1 }
 			}
 			if = {
 				limit = {
 					has_global_flag = league_flag_relief_union_passed
 				}
 				custom_effect_tooltip = league_of_nations_custom_effect_tooltip_2
-				add_to_variable = {consumer_goods_factor_lon = 0.05 }
-				add_to_variable = {industry_repair_factor_lon = 0.3 }
 			}
 			if = {
 				limit = {
 					has_global_flag = league_flag_gas_prohibition_passed
 				}
 				custom_effect_tooltip = league_of_nations_custom_effect_tooltip_3
-				add_to_variable = {land_doctrine_cost_factor_lon = 0.1 }
-				add_to_variable = {experience_loss_factor_lon = -0.1 }
 			}
 			if = {
 				limit = {
 					has_global_flag = league_flag_pow_convention_passed
 				}
 				custom_effect_tooltip = league_of_nations_custom_effect_tooltip_4
-				add_to_variable = {military_leader_cost_factor_lon = 0.25 }
-				add_to_variable = {pocket_penalty_lon = -0.1 }
 			}
 			if = {
 				limit = {
 					has_global_flag = league_flag_maritime_protections_passed
 				}
 				custom_effect_tooltip = league_of_nations_custom_effect_tooltip_5
-				add_to_variable = {convoy_raiding_efficiency_factor_lon = -0.1 }
-				add_to_variable = {trade_opinion_factor_lon = 0.25 }
 			}
 		}
 		ai_will_do = {
@@ -10953,9 +10943,6 @@ focus_tree = {
 		cost = 6
 		prerequisite = { focus = POL_exclude_nobility_from_obligatory_army_service }
 		relative_position_id = POL_exclude_nobility_from_obligatory_army_service
-		mutually_exclusive = {
-			focus = POL_profesional_army
-		}
 		available = {
 			OR = {
 				power_balance_value = {
@@ -25877,24 +25864,62 @@ focus_tree = {
 		relative_position_id = POL_first_great_wave_of_promotions
 		cost = 5
 		available = {
-			#custom_trigger_tooltip = {
-			#	tooltip = POL_custom_trigger_tooltip_30
-			#	has_country_flag = {
-			#		flag = POL_first_promotions_happened
-			#		days > 500
-			#	}
-			#}
 			has_country_flag = {
 				flag = POL_first_promotions_happened
 				days > 500
 			}
 		}
 		completion_reward = {
-			recruit_character = POL_deluge_knoll_kownacki
-			recruit_character = POL_deluge_fabrycy
-			recruit_character = POL_deluge_dab_biernacki
-			recruit_character = POL_deluge_rudolf_dreszer
-			recruit_character = POL_deluge_alter
+			add_corps_commander_role = {
+				character = POL_deluge_knoll_kownacki
+				traits = { trait_cautious artillery_officer artillery_leader }
+				skill=2
+				attack_skill=2
+				defense_skill=2
+				planning_skill=1
+				logistics_skill=2
+				desc = "POL_deluge_knoll_kownacki_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_fabrycy
+				traits = { politically_connected }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+				desc = "POL_deluge_fabrycy_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_dab_biernacki
+				traits = { old_guard politically_connected harsh_leader substance_abuser }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+				desc = "POL_deluge_dab_biernacki_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_rudolf_dreszer
+				traits = { harsh_leader infantry_officer winter_specialist }
+				skill=2
+				attack_skill=2
+				defense_skill=2
+				planning_skill=1
+				logistics_skill=2
+				desc = "POL_deluge_rudolf_dreszer_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_alter
+				traits = { infantry_officer }
+				skill=1
+				attack_skill=1
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
+				desc = "POL_deluge_alter_desc"
+			}
 		}
 		ai_will_do = {
 			factor = 20
@@ -25916,24 +25941,62 @@ focus_tree = {
 		relative_position_id = POL_second_great_wave_of_promotions
 		cost = 5
 		available = {
-			#custom_trigger_tooltip = {
-			#	tooltip = POL_custom_trigger_tooltip_31
-			#	has_country_flag = {
-			#		flag = POL_second_promotions_happened
-			#		days > 500
-			#	}
-			#}
 			has_country_flag = {
 				flag = POL_second_promotions_happened
 				days > 500
 			}
 		}
 		completion_reward = {
-			recruit_character = POL_deluge_przezdziecki
-			recruit_character = POL_deluge_boltuc
-			recruit_character = POL_deluge_prugar_ketling
-			recruit_character = POL_deluge_rowecki
-			recruit_character = POL_deluge_boruta_spiechowicz
+			add_corps_commander_role = {
+				character = POL_deluge_rowecki
+				traits = { infantry_officer panzer_leader guerilla_fighter }
+				skill=2
+				attack_skill=3
+				defense_skill=1
+				planning_skill=2
+				logistics_skill=1
+				desc = "POL_deluge_rowecki_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_przezdziecki
+				traits = { old_guard politically_connected organizer cavalry_leader }
+				skill=2
+				attack_skill=2
+				defense_skill=3
+				planning_skill=2
+				logistics_skill=2
+				desc = "POL_deluge_przezdziecki_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_boltuc
+				traits = { trait_reckless ranger }
+				skill=3
+				attack_skill=3
+				defense_skill=3
+				planning_skill=3
+				logistics_skill=2
+				desc = "POL_deluge_boltuc_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_prugar_ketling
+				traits = { ranger camouflage_expert }
+				skill=3
+				attack_skill=3
+				defense_skill=4
+				planning_skill=2
+				logistics_skill=2
+				desc = "POL_deluge_prugar_ketling_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_boruta_spiechowicz
+				traits = { trait_mountaineer }
+				skill=2
+				attack_skill=2
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
+				desc = "POL_deluge_boruta_spiechowicz_desc"
+			}
 		}
 		ai_will_do = {
 			factor = 20
@@ -26774,6 +26837,7 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = {POL_WPvsPOW_air_strategic_bomber_bombing_factor = 0.1}
 			custom_effect_tooltip = POL_custom_effect_tooltip_174
+			custom_effect_tooltip = GER_unlocks_big_ben_raid_tt
 		}
 		ai_will_do = {
 			factor = 20
@@ -28908,6 +28972,51 @@ focus_tree = {
 		available_if_capitulated = no
 	}
 	focus = {
+		id = POL_warsaw_central_railway_station
+		icon = GFX_focus_POL_warsaw_main_station
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+		prerequisite = { focus = POL_national_defense_found }
+		relative_position_id = POL_national_defense_found
+		cost = 5
+		available = {
+			POL = {
+				owns_state = 10
+				controls_state = 10
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = POL_warsaw_central_railway_station_bonus
+				bonus = 1
+				uses = 1
+				category = train_tech
+			}
+			10 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_to_variable = {POL_development_production_speed_infrastructure_factor = 0.1}
+			custom_effect_tooltip = POL_custom_effect_tooltip_44
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			NOT = {
+				owns_state = 10
+				controls_state = 10
+			}
+		}
+		cancel_if_invalid = yes		
+		continue_if_invalid = no		
+		available_if_capitulated = no
+	}
+	focus = {
 		id = POL_choose_university
 		icon = GFX_focus_research
 		x = 0
@@ -29010,7 +29119,9 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 				if = {
 					limit = {
-						has_tech = nuclear_reactor
+						ROOT = {
+							has_tech = nuclear_reactor
+						}
 					}
 					add_building_construction = {
 						type = nuclear_reactor
@@ -29020,7 +29131,9 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_tech = nuclear_reactor_heavy_water
+						ROOT = {
+							has_tech = nuclear_reactor_heavy_water
+						}
 					}
 					add_building_construction = {
 						type = nuclear_reactor_heavy_water
@@ -29073,51 +29186,6 @@ focus_tree = {
 		cancel_if_invalid = yes		
 		continue_if_invalid = no		
 		available_if_capitulated = yes
-	}
-	focus = {
-		id = POL_warsaw_central_railway_station
-		icon = GFX_focus_POL_warsaw_main_station
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
-		prerequisite = { focus = POL_national_defense_found }
-		relative_position_id = POL_national_defense_found
-		cost = 5
-		available = {
-			POL = {
-				owns_state = 10
-				controls_state = 10
-			}
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = POL_warsaw_central_railway_station_bonus
-				bonus = 1
-				uses = 1
-				category = train_tech
-			}
-			10 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			add_to_variable = {POL_development_production_speed_infrastructure_factor = 0.1}
-			custom_effect_tooltip = POL_custom_effect_tooltip_44
-		}
-		ai_will_do = {
-			factor = 20
-		}
-		bypass = {
-			NOT = {
-				owns_state = 10
-				controls_state = 10
-			}
-		}
-		cancel_if_invalid = yes		
-		continue_if_invalid = no		
-		available_if_capitulated = no
 	}
 	focus = {
 		id = POL_support_krolewiec

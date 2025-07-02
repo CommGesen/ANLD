@@ -235,11 +235,12 @@ ENG_template_design_1 = {
 
 ENG_template_design_2 = {
 	enable = {
-	
-		original_tag = ENG
+		tag = ENG
 		date > 1940.1.1				
 	}
-	
+	abort = {
+		always = no
+	}
 	ai_strategy = {
 		type = template_prio
 		id = infantry

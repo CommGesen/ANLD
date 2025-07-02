@@ -1662,40 +1662,30 @@ focus_tree = {
 					has_global_flag = league_flag_court_of_justice_passed
 				}
 				custom_effect_tooltip = league_of_nations_custom_effect_tooltip_1
-				add_to_variable = {enemy_justify_war_goal_time_lon = 1 }
-				add_to_variable = {justify_war_goal_time_lon = 1 }
 			}
 			if = {
 				limit = {
 					has_global_flag = league_flag_relief_union_passed
 				}
 				custom_effect_tooltip = league_of_nations_custom_effect_tooltip_2
-				add_to_variable = {consumer_goods_factor_lon = 0.05 }
-				add_to_variable = {industry_repair_factor_lon = 0.3 }
 			}
 			if = {
 				limit = {
 					has_global_flag = league_flag_gas_prohibition_passed
 				}
 				custom_effect_tooltip = league_of_nations_custom_effect_tooltip_3
-				add_to_variable = {land_doctrine_cost_factor_lon = 0.1 }
-				add_to_variable = {experience_loss_factor_lon = -0.1 }
 			}
 			if = {
 				limit = {
 					has_global_flag = league_flag_pow_convention_passed
 				}
 				custom_effect_tooltip = league_of_nations_custom_effect_tooltip_4
-				add_to_variable = {military_leader_cost_factor_lon = 0.25 }
-				add_to_variable = {pocket_penalty_lon = -0.1 }
 			}
 			if = {
 				limit = {
 					has_global_flag = league_flag_maritime_protections_passed
 				}
 				custom_effect_tooltip = league_of_nations_custom_effect_tooltip_5
-				add_to_variable = {convoy_raiding_efficiency_factor_lon = -0.1 }
-				add_to_variable = {trade_opinion_factor_lon = 0.25 }
 			}
 		}
 		ai_will_do = {

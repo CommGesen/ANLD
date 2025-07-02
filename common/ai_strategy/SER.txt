@@ -85,7 +85,7 @@ SER_AI_disliking_bulgaria = {
 				is_core_of = SER
 				is_claimed_by = SER
 			}
-			controller = BUL
+			is_controlled_by = BUL
 		}
 	}
 	abort = {
@@ -95,7 +95,7 @@ SER_AI_disliking_bulgaria = {
 					is_core_of = SER
 					is_claimed_by = SER
 				}
-				controller = BUL
+				is_controlled_by = BUL
 			}
 		}
 	}
@@ -126,7 +126,7 @@ SER_AI_disliking_croatia = {
 				is_core_of = SER
 				is_claimed_by = SER
 			}
-			controller = CRO
+			is_controlled_by = CRO
 		}
 	}
 	abort = {
@@ -136,7 +136,7 @@ SER_AI_disliking_croatia = {
 					is_core_of = SER
 					is_claimed_by = SER
 				}
-				controller = CRO
+				is_controlled_by = CRO
 			}
 		}
 	}

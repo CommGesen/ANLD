@@ -1,17 +1,106 @@
-#	Example:
-# 
-#	example_trigger = {
-#		tag = GER
-#		is_ai = no
-#	}
-#
-#
-#	In a script file:
-#
-#	trigger = {
-#		exampel_trigger = yes
-#	}
-#
+is_unlikely_country_tag = {
+	OR = {
+	    tag = BRI
+	    tag = CAT
+	    tag = NAV
+	    tag = GLC
+	    tag = ADU
+	    tag = BRI
+	    tag = OCC
+	    tag = COR
+	    tag = DNZ
+	    tag = KSH
+	    tag = CKK
+	    tag = FER
+	    tag = YAK
+	    tag = VLA
+	    tag = KKP
+	    tag = YAM
+	    tag = TAY
+	    tag = OVO
+	    tag = NEN
+	    tag = KOM
+	    tag = CHU
+	    tag = MEL
+	    tag = RIF
+	    tag = HAR
+	    tag = TIG
+	    tag = AFA
+	    tag = BEG
+	    tag = GBA
+	    tag = SID
+	    tag = ORO
+	    tag = QEM
+	    tag = LBV
+	    tag = PAP
+	    tag = TOS
+	    tag = SPM
+	    tag = TTS
+		tag = BSK
+		tag = TAT
+		tag = UDM
+		tag = KHA
+		tag = VGE
+		tag = KAL
+		tag = KAR
+		tag = SIL
+		tag = KSH
+		tag = ALT
+		tag = BUK
+		tag = KHI
+		tag = SMI
+		tag = QUE
+		tag = YUC
+		tag = RIG
+		tag = WLA
+		tag = GRN
+		tag = EVE
+		tag = SHL
+		tag = MEK
+		tag = HAN
+		tag = SAX
+		tag = PRE
+		tag = BAY
+		tag = WUR
+		tag = THU
+		tag = HES
+		tag = RHI
+	}
+}
+ITA_is_italian_tag_for_music = {
+	OR = {
+		tag = ITA
+	}
+}
+is_literally_china = {
+	OR = {
+		tag = CHI
+		tag = PRC
+	}
+}
+has_same_ideology = {
+	custom_trigger_tooltip = {
+		tooltip = has_same_ideology_tt
+		OR = {
+			AND = {
+				has_government = democratic
+				ROOT = { has_government = democratic }
+			}
+			AND = {
+				has_government = fascism
+				ROOT = { has_government = fascism }
+			}
+			AND = {
+				has_government = communism
+				ROOT = { has_government = communism }
+			}
+			AND = {
+				has_government = neutrality
+				ROOT = { has_government = neutrality }
+			}
+		}
+	}
+}
 can_ROOT_get_wargoal_on_THIS = {
 	exists = yes
 	NOT = { is_in_faction_with = ROOT }

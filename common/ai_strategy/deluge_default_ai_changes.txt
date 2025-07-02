@@ -99,7 +99,9 @@ relations_are_a_waste_of_pp = {
 	enable = {
 		always = yes
 	}
-	
+	abort = {
+		always = yes
+	}
 	ai_strategy = {
 		type = pp_spend_priority
 		id = relation
