@@ -7314,7 +7314,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_develop_india
-		icon = GFX_FRA_focus_develop_india
+		icon = GFX_focus_develop_india
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_asian_department }
@@ -7350,7 +7350,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_subjugate_all_of_india
-		icon = GFX_FRA_focus_subjugate_all_of_india
+		icon = GFX_focus_subjugate_all_of_india
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_develop_india }
@@ -7386,7 +7386,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_vassalize_arabian_tribes
-		icon = GFX_FRA_focus_vassalize_arab_tribes
+		icon = GFX_focus_vassalize_arab_tribes
 		x = -4
 		y = 1
 		prerequisite = { focus = FRA_asian_department }
@@ -7422,7 +7422,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_vassalize_iran
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_vassalize_iran
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_vassalize_arabian_tribes }
@@ -7531,8 +7531,8 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = FRA_develop_ceylon
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		id = FRA_develop_ceylan
+		icon = GFX_focus_develop_ceylan
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_develop_india }
@@ -7567,12 +7567,12 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = FRA_francizie_ceylon
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		id = FRA_francify_ceylan
+		icon = GFX_focus_FRA_francify_ceylan
 		x = 0
 		y = 1
-		prerequisite = { focus = FRA_develop_ceylon }
-		relative_position_id = FRA_develop_ceylon
+		prerequisite = { focus = FRA_develop_ceylan }
+		relative_position_id = FRA_develop_ceylan
 		search_filters = { }
 		cost = 5
 		#mutually_exclusive = { focus = }
@@ -7603,8 +7603,8 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = FRA_develop_maledives
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		id = FRA_develop_maldives
+		icon = GFX_focus_develop_maldives
 		x = 3
 		y = 1
 		prerequisite = { focus = FRA_develop_india }
@@ -7639,12 +7639,12 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = FRA_francizie_maledives
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		id = FRA_francify_maldives
+		icon = GFX_focus_FRA_francify_maldives
 		x = 0
 		y = 1
-		prerequisite = { focus = FRA_develop_maledives }
-		relative_position_id = FRA_develop_maledives
+		prerequisite = { focus = FRA_develop_maldives }
+		relative_position_id = FRA_develop_maldives
 		search_filters = { }
 		cost = 5
 		#mutually_exclusive = { focus = }
@@ -7676,7 +7676,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_vassalize_burma
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_vassalize_burma
 		x = 5
 		y = 1
 		prerequisite = { focus = FRA_develop_india }
@@ -7712,7 +7712,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_vassalize_siam
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_vassalize_siam
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_vassalize_burma }
@@ -8048,7 +8048,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_railways_in_western_africa
-		icon = GFX_FRA_focus_railways_in_west_africa
+		icon = GFX_focus_railways_in_west_africa
 		x = -3
 		y = 1
 		prerequisite = { focus = FRA_african_department }
@@ -8202,7 +8202,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_fight_western_african_warlords
-		icon = GFX_FRA_focus_fight_west_african_warlords
+		icon = GFX_focus_fight_west_african_warlords
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_railways_in_western_africa }
@@ -8447,7 +8447,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_west_african_aluminium
-		icon = GFX_FRA_focus_west_african_aluminium
+		icon = GFX_focus_west_african_aluminium
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_french_western_african_confederation focus = FRA_fight_western_african_warlords}
@@ -8484,7 +8484,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_railways_in_equatorial_africa
-		icon = GFX_FRA_focus_railways_in_equatorial_africa
+		icon = GFX_focus_railways_in_equatorial_africa
 		x = -7
 		y = 1
 		prerequisite = { focus = FRA_african_department }
@@ -8526,7 +8526,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_fight_equatorial_african_warlords
-		icon = GFX_FRA_focus_fight_equatorial_african_warlords
+		icon = GFX_focus_fight_equatorial_african_warlords
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_railways_in_equatorial_africa }
@@ -8598,7 +8598,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_equatorial_african_rubber
-		icon = GFX_FRA_focus_equatorial_african_rubber
+		icon = GFX_focus_equatorial_african_rubber
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_french_equatorial_african_confederation focus = FRA_fight_equatorial_african_warlords}
@@ -9070,7 +9070,7 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = FRA_francizie_madagascar
+		id = FRA_francify_madagascar
 		icon = GFX_focus_FRA_integrate_madagascar
 		x = 0
 		y = 1
@@ -11888,8 +11888,8 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {		
-		id = FRA_les_grandes_programmes
-		icon = GFX_focus_SWI_issue_war_bonds
+		id = FRA_les_grands_programmes
+		icon = GFX_focus_generic_industrial_projects
 		x = 11
 		y = 1
 		prerequisite = { focus = FRA_budget_deficit_law }
@@ -11913,7 +11913,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				days = 330
-				idea = FRA_spirit_les_grandes_programmes
+				idea = FRA_spirit_les_grands_programmes
 			}
 		}
 		ai_will_do = {
@@ -11931,8 +11931,8 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_3
 		x = 0
 		y = 1
-		prerequisite = { focus = FRA_les_grandes_programmes }
-		relative_position_id = FRA_les_grandes_programmes
+		prerequisite = { focus = FRA_les_grands_programmes }
+		relative_position_id = FRA_les_grands_programmes
 		search_filters = { }
 		cost = 5
 		#mutually_exclusive = { }
@@ -13018,7 +13018,7 @@ focus_tree = {
 	}
 	focus = {		
 		id = FRA_cnrs
-		icon = GFX_focus_SOV_ivan_plays_baseball #GFX_research_and_developement
+		icon = GFX_focus_FRA_cnrs
 		x = 8
 		y = 1
 		prerequisite = { focus = FRA_new_industry_standards }
@@ -13134,7 +13134,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_commisariat_a_l_energie_atomique
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_cea
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_cnrs }
@@ -13186,7 +13186,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_pile_zoe
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_pile_zoe
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_commisariat_a_l_energie_atomique }
@@ -13227,7 +13227,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_reacteur_g1
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_nuclear_reactor
 		x = -2
 		y = 1
 		prerequisite = { focus = FRA_pile_zoe }
@@ -13300,7 +13300,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_gerboise_bleue
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_nuclear_development
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_pile_zoe }
@@ -13345,7 +13345,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_seek_for_rocketry_specialist
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_rocket_specialist
 		x = 2
 		y = 1
 		prerequisite = { focus = FRA_cnrs }
@@ -13389,8 +13389,8 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = FRA_funds_for_the_french_ballistic_program
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		id = FRA_founding_the_ballistic_program
+		icon = GFX_focus_FRA_ballistic_program
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_seek_for_rocketry_specialist }
@@ -13442,11 +13442,11 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_pursue_studies_in_rocketry
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_rockets
 		x = 0
 		y = 1
-		prerequisite = { focus = FRA_funds_for_the_french_ballistic_program }
-		relative_position_id = FRA_funds_for_the_french_ballistic_program
+		prerequisite = { focus = FRA_founding_the_ballistic_program }
+		relative_position_id = FRA_founding_the_ballistic_program
 		search_filters = { }
 		cost = 2
 		#mutually_exclusive = { focus = }
@@ -13483,7 +13483,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_plateau_d_albion
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_plateau_albion
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_gerboise_bleue }
@@ -13638,7 +13638,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_electricite_de_france
-		icon = GFX_focus_generic_electrification
+		icon = GFX_focus_FRA_electricite_de_france
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_expand_civilian_industry }

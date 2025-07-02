@@ -16411,15 +16411,15 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_FRA_focus_vassalize_arab_tribes"
-		texturefile = "gfx/interface/goals/FRA_focus_vassalize_arab_tribes.dds"
+		name = "GFX_focus_vassalize_arab_tribes"
+		texturefile = "gfx/interface/goals/focus_generic_vassalize_arab_tribes.dds"
 	}
 	SpriteType = { 
-		name = "GFX_FRA_focus_vassalize_arab_tribes_shine"
-		texturefile = "gfx/interface/goals/FRA_focus_vassalize_arab_tribes.dds"
+		name = "GFX_focus_vassalize_arab_tribes_shine"
+		texturefile = "gfx/interface/goals/focus_generic_vassalize_arab_tribes.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_vassalize_arab_tribes.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_vassalize_arab_tribes.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -16431,7 +16431,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_vassalize_arab_tribes.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_vassalize_arab_tribes.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -16446,15 +16446,15 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_FRA_focus_railways_in_west_africa"
-		texturefile = "gfx/interface/goals/FRA_focus_railways_in_west_africa.dds"
+		name = "GFX_focus_railways_in_west_africa"
+		texturefile = "gfx/interface/goals/focus_generic_railways_in_west_africa.dds"
 	}
 	SpriteType = { 
-		name = "GFX_FRA_focus_railways_in_west_africa_shine"
-		texturefile = "gfx/interface/goals/FRA_focus_railways_in_west_africa.dds"
+		name = "GFX_focus_railways_in_west_africa_shine"
+		texturefile = "gfx/interface/goals/focus_generic_railways_in_west_africa.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_railways_in_west_africa.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_railways_in_west_africa.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -16466,7 +16466,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_railways_in_west_africa.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_railways_in_west_africa.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -16482,14 +16482,14 @@ spriteTypes = {
 
 	SpriteType = { 
 		name = "GFX_FRA_focus_federation_of_french_west_africa"
-		texturefile = "gfx/interface/goals/FRA_focus_federation_of_french_west_africa.dds"
+		texturefile = "gfx/interface/goals/focus_FRA_federation_of_french_west_africa.dds"
 	}
 	SpriteType = { 
 		name = "GFX_FRA_focus_federation_of_french_west_africa_shine"
-		texturefile = "gfx/interface/goals/FRA_focus_federation_of_french_west_africa.dds"
+		texturefile = "gfx/interface/goals/focus_FRA_federation_of_french_west_africa.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_federation_of_french_west_africa.dds"
+			animationmaskfile = "gfx/interface/goals/focus_FRA_federation_of_french_west_africa.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -16501,7 +16501,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_federation_of_french_west_africa.dds"
+			animationmaskfile = "gfx/interface/goals/focus_FRA_federation_of_french_west_africa.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -16516,15 +16516,15 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_FRA_focus_fight_west_african_warlords"
-		texturefile = "gfx/interface/goals/FRA_focus_fight_west_african_warlords.dds"
+		name = "GFX_focus_fight_west_african_warlords"
+		texturefile = "gfx/interface/goals/focus_generic_fight_west_african_warlords.dds"
 	}
 	SpriteType = { 
-		name = "GFX_FRA_focus_fight_west_african_warlords_shine"
-		texturefile = "gfx/interface/goals/FRA_focus_fight_west_african_warlords.dds"
+		name = "GFX_focus_fight_west_african_warlords_shine"
+		texturefile = "gfx/interface/goals/focus_generic_fight_west_african_warlords.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_fight_west_african_warlords.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_fight_west_african_warlords.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -16536,7 +16536,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_fight_west_african_warlords.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_fight_west_african_warlords.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -16551,15 +16551,15 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_FRA_focus_west_african_aluminium"
-		texturefile = "gfx/interface/goals/FRA_focus_west_african_aluminium.dds"
+		name = "GFX_focus_west_african_aluminium"
+		texturefile = "gfx/interface/goals/focus_generic_west_african_aluminium.dds"
 	}
 	SpriteType = { 
-		name = "GFX_FRA_focus_west_african_aluminium_shine"
-		texturefile = "gfx/interface/goals/FRA_focus_west_african_aluminium.dds"
+		name = "GFX_focus_west_african_aluminium_shine"
+		texturefile = "gfx/interface/goals/focus_generic_west_african_aluminium.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_west_african_aluminium.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_west_african_aluminium.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -16571,7 +16571,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_west_african_aluminium.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_west_african_aluminium.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -16586,15 +16586,15 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_FRA_focus_railways_in_equatorial_africa"
-		texturefile = "gfx/interface/goals/FRA_focus_railways_in_equatorial_africa.dds"
+		name = "GFX_focus_railways_in_equatorial_africa"
+		texturefile = "gfx/interface/goals/focus_generic_railways_in_equatorial_africa.dds"
 	}
 	SpriteType = { 
-		name = "GFX_FRA_focus_railways_in_equatorial_africa_shine"
-		texturefile = "gfx/interface/goals/FRA_focus_railways_in_equatorial_africa.dds"
+		name = "GFX_focus_railways_in_equatorial_africa_shine"
+		texturefile = "gfx/interface/goals/focus_generic_railways_in_equatorial_africa.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_railways_in_equatorial_africa.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_railways_in_equatorial_africa.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -16606,7 +16606,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_railways_in_equatorial_africa.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_railways_in_equatorial_africa.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -16622,14 +16622,14 @@ spriteTypes = {
 
 	SpriteType = { 
 		name = "GFX_FRA_focus_federation_of_french_equatorial_africa"
-		texturefile = "gfx/interface/goals/FRA_focus_federation_of_french_equatorial_africa.dds"
+		texturefile = "gfx/interface/goals/focus_FRA_federation_of_french_equatorial_africa.dds"
 	}
 	SpriteType = { 
 		name = "GFX_FRA_focus_federation_of_french_equatorial_africa_shine"
-		texturefile = "gfx/interface/goals/FRA_focus_federation_of_french_equatorial_africa.dds"
+		texturefile = "gfx/interface/goals/focus_FRA_federation_of_french_equatorial_africa.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_federation_of_french_equatorial_africa.dds"
+			animationmaskfile = "gfx/interface/goals/focus_FRA_federation_of_french_equatorial_africa.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -16641,7 +16641,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_federation_of_french_equatorial_africa.dds"
+			animationmaskfile = "gfx/interface/goals/focus_FRA_federation_of_french_equatorial_africa.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -16656,15 +16656,15 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_FRA_focus_fight_equatorial_african_warlords"
-		texturefile = "gfx/interface/goals/FRA_focus_fight_equatorial_african_warlords.dds"
+		name = "GFX_focus_fight_equatorial_african_warlords"
+		texturefile = "gfx/interface/goals/focus_generic_fight_equatorial_african_warlords.dds"
 	}
 	SpriteType = { 
-		name = "GFX_FRA_focus_fight_equatorial_african_warlords_shine"
-		texturefile = "gfx/interface/goals/FRA_focus_fight_equatorial_african_warlords.dds"
+		name = "GFX_focus_fight_equatorial_african_warlords_shine"
+		texturefile = "gfx/interface/goals/focus_generic_fight_equatorial_african_warlords.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_fight_equatorial_african_warlords.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_fight_equatorial_african_warlords.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -16676,7 +16676,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_fight_equatorial_african_warlords.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_fight_equatorial_african_warlords.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -16691,15 +16691,15 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_FRA_focus_equatorial_african_rubber"
-		texturefile = "gfx/interface/goals/FRA_focus_equatorial_african_rubber.dds"
+		name = "GFX_focus_equatorial_african_rubber"
+		texturefile = "gfx/interface/goals/focus_generic_equatorial_african_rubber.dds"
 	}
 	SpriteType = { 
-		name = "GFX_FRA_focus_equatorial_african_rubber_shine"
-		texturefile = "gfx/interface/goals/FRA_focus_equatorial_african_rubber.dds"
+		name = "GFX_focus_equatorial_african_rubber_shine"
+		texturefile = "gfx/interface/goals/focus_generic_equatorial_african_rubber.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_equatorial_african_rubber.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_equatorial_african_rubber.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -16711,7 +16711,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_equatorial_african_rubber.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_equatorial_african_rubber.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -16726,15 +16726,15 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_FRA_focus_develop_india"
-		texturefile = "gfx/interface/goals/FRA_focus_develop_india.dds"
+		name = "GFX_focus_develop_india"
+		texturefile = "gfx/interface/goals/focus_generic_develop_india.dds.dds"
 	}
 	SpriteType = { 
-		name = "GFX_FRA_focus_develop_india_shine"
-		texturefile = "gfx/interface/goals/FRA_focus_develop_india.dds"
+		name = "GFX_focus_develop_india_shine"
+		texturefile = "gfx/interface/goals/focus_generic_develop_india.dds.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_develop_india.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_develop_india.dds.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -16746,7 +16746,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_develop_india.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_develop_india.dds.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -16761,15 +16761,15 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_FRA_focus_subjugate_all_of_india"
-		texturefile = "gfx/interface/goals/FRA_focus_subjugate_all_of_india.dds"
+		name = "GFX_focus_subjugate_all_of_india"
+		texturefile = "gfx/interface/goals/focus_generic_subjugate_all_of_india.dds"
 	}
 	SpriteType = { 
-		name = "GFX_FRA_focus_subjugate_all_of_india_shine"
-		texturefile = "gfx/interface/goals/FRA_focus_subjugate_all_of_india.dds"
+		name = "GFX_focus_subjugate_all_of_india_shine"
+		texturefile = "gfx/interface/goals/focus_generic_subjugate_all_of_india.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_subjugate_all_of_india.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_subjugate_all_of_india.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -16781,7 +16781,252 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA_focus_subjugate_all_of_india.dds"
+			animationmaskfile = "gfx/interface/goals/focus_generic_subjugate_all_of_india.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_vassalize_iran"
+		texturefile = "gfx/interface/goals/focus_generic_vassalize_iran.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_vassalize_iran_shine"
+		texturefile = "gfx/interface/goals/focus_generic_vassalize_iran.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_generic_vassalize_iran.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_generic_vassalize_iran.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_develop_ceylan"
+		texturefile = "gfx/interface/goals/focus_generic_develop_ceylan.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_develop_ceylan_shine"
+		texturefile = "gfx/interface/goals/focus_generic_develop_ceylan.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_generic_develop_ceylan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_generic_develop_ceylan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_FRA_francify_ceylan"
+		texturefile = "gfx/interface/goals/focus_FRA_francify_ceylan.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_FRA_francify_ceylan_shine"
+		texturefile = "gfx/interface/goals/focus_FRA_francify_ceylan.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_FRA_francify_ceylan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_FRA_francify_ceylan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_develop_maldives"
+		texturefile = "gfx/interface/goals/focus_generic_develop_maldives.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_develop_maldives_shine"
+		texturefile = "gfx/interface/goals/focus_generic_develop_maldives.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_generic_develop_maldives.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_generic_develop_maldives.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_FRA_francify_maldives"
+		texturefile = "gfx/interface/goals/focus_FRA_francify_maldives.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_FRA_francify_maldives_shine"
+		texturefile = "gfx/interface/goals/focus_FRA_francify_maldives.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_FRA_francify_maldives.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_FRA_francify_maldives.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_vassalize_burma"
+		texturefile = "gfx/interface/goals/focus_generic_vassalize_burma.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_vassalize_burma_shine"
+		texturefile = "gfx/interface/goals/focus_generic_vassalize_burma.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_generic_vassalize_burma.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_generic_vassalize_burma.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_vassalize_siam"
+		texturefile = "gfx/interface/goals/focus_generic_vassalize_siam.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_vassalize_siam_shine"
+		texturefile = "gfx/interface/goals/focus_generic_vassalize_siam.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_generic_vassalize_siam.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_generic_vassalize_siam.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -16817,6 +17062,356 @@ spriteTypes = {
 		}
 		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_FRA_new_french_airforce.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_generic_industrial_projects"
+		texturefile = "gfx/interface/goals/focus_generic_rockets_road_nuclear_sign.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_generic_industrial_projects_shine"
+		texturefile = "gfx/interface/goals/focus_generic_rockets_road_nuclear_sign.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_generic_rockets_road_nuclear_sign.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_generic_rockets_road_nuclear_sign.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_FRA_electricite_de_france"
+		texturefile = "gfx/interface/goals/focus_FRA_edf.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_FRA_electricite_de_france_shine"
+		texturefile = "gfx/interface/goals/focus_FRA_edf.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_FRA_edf.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_FRA_edf.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_FRA_cnrs"
+		texturefile = "gfx/interface/goals/focus_FRA_cnrs.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_FRA_cnrs_shine"
+		texturefile = "gfx/interface/goals/focus_FRA_cnrs.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_FRA_cnrs.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_FRA_cnrs.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_FRA_cea"
+		texturefile = "gfx/interface/goals/focus_FRA_cea.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_FRA_cea_shine"
+		texturefile = "gfx/interface/goals/focus_FRA_cea.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_FRA_cea.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_FRA_cea.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_FRA_pile_zoe"
+		texturefile = "gfx/interface/goals/focus_FRA_pile_zoe.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_FRA_pile_zoe_shine"
+		texturefile = "gfx/interface/goals/focus_FRA_pile_zoe.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_FRA_pile_zoe.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_FRA_pile_zoe.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_generic_nuclear_reactor"
+		texturefile = "gfx/interface/goals/focus_generic_nuclear_reactor.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_generic_nuclear_reactor_shine"
+		texturefile = "gfx/interface/goals/focus_generic_nuclear_reactor.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_generic_nuclear_reactor.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_generic_nuclear_reactor.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_generic_rocket_specialist"
+		texturefile = "gfx/interface/goals/focus_generic_rocket_specialist.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_generic_rocket_specialist_shine"
+		texturefile = "gfx/interface/goals/focus_generic_rocket_specialist.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_generic_rocket_specialist.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_generic_rocket_specialist.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_FRA_ballistic_program"
+		texturefile = "gfx/interface/goals/focus_FRA_ballistic_program.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_FRA_ballistic_program_shine"
+		texturefile = "gfx/interface/goals/focus_FRA_ballistic_program.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_FRA_ballistic_program.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_FRA_ballistic_program.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_generic_rockets"
+		texturefile = "gfx/interface/goals/focus_generic_rockets.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_generic_rockets_shine"
+		texturefile = "gfx/interface/goals/focus_generic_rockets.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_generic_rockets.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_generic_rockets.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_FRA_plateau_albion"
+		texturefile = "gfx/interface/goals/focus_FRA_plateau_albion.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_FRA_plateau_albion_shine"
+		texturefile = "gfx/interface/goals/focus_FRA_plateau_albion.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_FRA_plateau_albion.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_FRA_plateau_albion.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
