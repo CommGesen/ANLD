@@ -14,7 +14,577 @@ music = {
 		}
 		modifier = {
 			factor = 2
+			tag = FRA
 			has_government = neutrality
+		}
+	}
+}
+music = {
+	song = "ensure_the_empires_salvation"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				has_government = communism
+				has_completed_focus = FRA_towards_republic
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = FRA
+			has_government = neutrality
+		}
+	}
+}
+music = {
+	song = "song_of_departure"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				has_government = communism
+				has_completed_focus = FRA_towards_republic
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = FRA
+			has_government = neutrality
+		}
+	}
+}
+music = {
+	song = "march_of_the_consular_guard_and_victory_is_ours"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				has_government = communism
+				has_completed_focus = FRA_towards_republic
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = FRA
+			has_government = neutrality
+		}
+	}
+}
+music = {
+	song = "song_of_the_onion"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				has_government = communism
+				has_completed_focus = FRA_towards_republic
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = FRA
+			has_government = neutrality
+		}
+	}
+}
+music = {
+	song = "the_song_of_loyalty"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				has_government = communism
+				has_completed_focus = louisiana_depose_monarch
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = LOU
+			has_government = neutrality
+		}
+	}
+}
+music = {
+	song = "long_live_henri_iv"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				has_government = communism
+				has_completed_focus = louisiana_depose_monarch
+			}
+		}
+		modifier = {
+			factor = 0
+			tag = FRA
+			has_government = neutrality
+			has_completed_focus = FRA_previous_course
+		}
+		modifier = {
+			factor = 2
+			tag = LOU
+			has_government = neutrality
+		}
+	}
+}
+music = {
+	song = "song_to_saint_joan_of_arc"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				has_government = communism
+				has_completed_focus = louisiana_depose_monarch
+			}
+		}
+		modifier = {
+			factor = 0
+			tag = FRA
+			has_government = neutrality
+			has_completed_focus = FRA_previous_course
+		}
+		modifier = {
+			factor = 2
+			tag = LOU
+			has_government = neutrality
+		}
+	}
+}
+music = {
+	song = "the_king_louis"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				has_government = communism
+				has_completed_focus = louisiana_depose_monarch
+			}
+		}
+		modifier = {
+			factor = 0
+			tag = FRA
+			has_government = neutrality
+			has_completed_focus = FRA_previous_course
+		}
+		modifier = {
+			factor = 2
+			tag = LOU
+			has_government = neutrality
+		}
+	}
+}
+music = {
+	song = "carmagnole"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			tag = LOU
+			OR = {
+				has_government = communism
+				has_completed_focus = louisiana_depose_monarch
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = FRA
+			OR = {
+				has_government = communism
+				has_completed_focus = FRA_towards_republic
+			}
+		}
+		modifier = {
+			factor = 0
+			tag = LOU
+			has_government = neutrality
+		}
+		modifier = {
+			factor = 0
+			tag = FRA
+			has_government = neutrality
+		}
+	}
+}
+music = {
+	song = "the_permanent_guillotine"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			tag = LOU
+			OR = {
+				has_government = communism
+				has_completed_focus = louisiana_depose_monarch
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = FRA
+			OR = {
+				has_government = communism
+				has_completed_focus = FRA_towards_republic
+			}
+		}
+		modifier = {
+			factor = 0
+			tag = LOU
+			has_government = neutrality
+		}
+		modifier = {
+			factor = 0
+			tag = FRA
+			has_government = neutrality
+		}
+	}
+}
+music = {
+	song = "song_of_the_girondists"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			tag = LOU
+			OR = {
+				has_government = communism
+				has_completed_focus = louisiana_depose_monarch
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = FRA
+			OR = {
+				has_government = communism
+				has_completed_focus = FRA_towards_republic
+			}
+		}
+		modifier = {
+			factor = 0
+			tag = LOU
+			has_government = neutrality
+		}
+		modifier = {
+			factor = 0
+			tag = FRA
+			has_government = neutrality
+		}
+	}
+}
+music = {
+	song = "la_marseillaise"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			tag = LOU
+			OR = {
+				has_government = communism
+				has_completed_focus = louisiana_depose_monarch
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = FRA
+			OR = {
+				has_government = communism
+				has_completed_focus = FRA_towards_republic
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			has_government = neutrality
+		}
+	}
+}
+music = {
+	song = "ma_tonkinoise"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			has_war = yes
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "the_white_ermine"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			has_war = yes
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "the_partisans_song"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			has_war = yes
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			has_capitulated = yes
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			surrender_progress > 0.2
+		}
+	}
+}
+music = {
+	song = "i_love_you_oh_motherland"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "opium"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			has_war = yes
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			OR = {
+				has_war_with = CHI
+				has_war_with = PRC
+				has_war_with = VIN
+				has_war_with = SIA
+				has_war_with = LAO
+				has_war_with = CAM
+			}
+		}
+	}
+}
+music = {
+	song = "la_strasbourgeoise"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			has_war = yes
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			OR = {
+				has_war_with = WGR
+				has_war_with = DDR
+				has_war_with = GER
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			NOT = {
+				controls_state = 28
+			}
+			owns_state = 28
+		}
+	}
+}
+music = {
+	song = "get_up_paratroopers"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "verdun_we_shall_not_pass"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			has_war = yes
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			NOT = {
+				controls_state = 18
+			}
+			owns_state = 18
+		}
+	}
+}
+music = {
+	song = "farewell_old_europe"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "we_are_all_volunteers"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "you_will_not_get_alsace_and_lorraine"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			has_war = yes
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			OR = {
+				has_war_with = WGR
+				has_war_with = DDR
+				has_war_with = GER
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				tag = LOU
+				tag = FRA
+			}
+			NOT = {
+				controls_state = 28
+			}
+			owns_state = 28
 		}
 	}
 }

@@ -335,7 +335,7 @@ country_event = {##FRA decides what is gonna happen to POM
 		}
 		set_global_flag = POM_issue_solved
 		hidden_effect = {
-			news_event = {id = }##news event about what happened
+			news_event = {id = deluge_pomerania.11 }##news event about what happened
 			every_possible_country = {
 				limit = { has_character = POM_marie_clotilde_bonaparte }
 				random_character = {

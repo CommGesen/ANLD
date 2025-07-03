@@ -268,10 +268,7 @@ news_event = {
 	title = deluge_world.7.t
 	desc = deluge_world.7.d
 	picture = GFX_balloon_competition
-	fire_only_once = yes
-	trigger = {
-		date = 1936.9.15
-	}
+	is_triggered_only = yes
 	major = yes
 	option = {
 		name = deluge_world.7.a
@@ -282,10 +279,7 @@ news_event = {
 	title = deluge_world.8.t
 	desc = deluge_world.8.d
 	picture = GFX_news_event_olympics_1936
-	fire_only_once = yes
-	trigger = {
-		date = 1936.8.16
-	}
+	is_triggered_only = yes
 	major = yes
 	option = {
 		name = deluge_world.8.a
@@ -296,10 +290,7 @@ news_event = {
 	title = deluge_world.9.t
 	desc = deluge_world.9.d
 	picture = GFX_news_event_hungarian_grand_prix_1936
-	fire_only_once = yes
-	trigger = {
-		date = 1936.6.21
-	}
+	is_triggered_only = yes
 	major = yes
 	option = {
 		name = deluge_world.9.a
@@ -310,10 +301,7 @@ news_event = {
 	title = deluge_world.10.t
 	desc = deluge_world.10.d
 	picture = GFX_news_event_worlds_fair_1937
-	fire_only_once = yes
-	trigger = {
-		date = 1937.11.1
-	}
+	is_triggered_only = yes
 	major = yes
 	option = {
 		name = deluge_world.10.a

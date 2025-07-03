@@ -2284,6 +2284,22 @@ on_actions = {
 	}
 	on_startup = {
 		effect = {
+			news_event = {
+				id = deluge_world.7
+				days = 126
+			}
+			news_event = {
+				id = deluge_world.8
+				days = 96
+			}
+			news_event = {
+				id = deluge_world.9
+				days = 40
+			}
+			news_event = {
+				id = deluge_world.10
+				days = 538
+			}
 			POL = {
 				set_variable = {
 					var = POL_independence_day_aniversary

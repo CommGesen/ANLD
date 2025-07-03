@@ -190,7 +190,6 @@ has_not_initiated_border_incident_with_ROOT = {
 		}
 	}
 }
-
 #State scope
 has_ROOT_at_least_1_div_in_current_state_scope = {
 	custom_trigger_tooltip = {
@@ -198,7 +197,6 @@ has_ROOT_at_least_1_div_in_current_state_scope = {
 		ROOT = { divisions_in_state = { state = PREV size > 0 } }
 	}
 }
-
 #State scope
 is_controlled_by_ROOT_or_subject = {
 	custom_trigger_tooltip = {
@@ -211,7 +209,6 @@ is_controlled_by_ROOT_or_subject = {
 		}
 	}
 }
-
 #Country scope
 is_free_or_subject_of_root = {
 	OR = {
@@ -219,7 +216,6 @@ is_free_or_subject_of_root = {
 		is_subject_of = ROOT
 	}
 }
-
 #State scope
 is_controlled_by_ROOT_or_ally = {
 	custom_trigger_tooltip = {
@@ -233,7 +229,6 @@ is_controlled_by_ROOT_or_ally = {
 		}
 	}
 }
-
 ai_air_doctrine_tier_1_trigger = {
 	OR = {
 		has_tech = naval_strike_tactics
@@ -241,7 +236,6 @@ ai_air_doctrine_tier_1_trigger = {
 		has_tech = low_echelon_support
 	}
 }
-
 ai_air_doctrine_tier_2_trigger = {
 	OR = {
 		has_tech = multialtitude_flying
@@ -256,7 +250,6 @@ ai_air_doctrine_tier_3_trigger = {
 		has_tech = infiltration_bombing
 	}
 }
-
 ai_land_doctrine_tier_1_trigger = {
 	OR = {
 		has_tech = elastic_defence
@@ -265,7 +258,6 @@ ai_land_doctrine_tier_1_trigger = {
 		has_tech = defence_in_depth
 	}
 }
-
 ai_land_doctrine_tier_2_trigger = {
 	OR = {
 		has_tech = kampfgruppe
@@ -274,6 +266,8 @@ ai_land_doctrine_tier_2_trigger = {
 		has_tech = infiltration_assault
 		has_tech = vast_offensives
 		has_tech = large_front_offensive
+	}
+}
 anti_submarine_strategy_required_trigger = {
 	OR = {
 		AND = {
@@ -288,9 +282,6 @@ anti_submarine_strategy_required_trigger = {
 		convoy_threat > 0.3
 	}
 }
-	}
-}
-
 enemy_has_equal_or_better_radar_tech_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = enemy_has_equal_or_better_radar_tech_trigger_tt
@@ -299,37 +290,37 @@ enemy_has_equal_or_better_radar_tech_trigger = {
 				ROOT = { 
 					has_tech = radio_detection 
 					NOT = {
-						has_tech = decimetric_radar
+						has_tech = cavity_magnatron
 					}
 				} 
 			}
 			FROM = { 
 				OR = {
 					has_tech = radio_detection 
-					has_tech = decimetric_radar
+					has_tech = cavity_magnatron
 				}
 			}
 		}
 		else_if = {
 			limit = {
 				ROOT = { 
-					has_tech = decimetric_radar 
+					has_tech = cavity_magnatron 
 					NOT = {
-						has_tech = improved_decimetric_radar
+						has_tech = cavity_magnatron
 					}
 				} 
 			}
 			FROM = { 
 				OR = {
-					has_tech = decimetric_radar 
-					has_tech = improved_decimetric_radar
+					has_tech = cavity_magnatron 
+					has_tech = cavity_magnatron
 				}
 			}
 		}
 		else_if = {
 			limit = {
 				ROOT = { 
-					has_tech = improved_decimetric_radar 
+					has_tech = cavity_magnatron 
 					NOT = {
 						has_tech = centimetric_radar
 					}
@@ -337,7 +328,7 @@ enemy_has_equal_or_better_radar_tech_trigger = {
 			}
 			FROM = { 
 				OR = {
-					has_tech = improved_decimetric_radar 
+					has_tech = cavity_magnatron 
 					has_tech = centimetric_radar
 				}
 			}
@@ -347,42 +338,41 @@ enemy_has_equal_or_better_radar_tech_trigger = {
 				ROOT = { 
 					has_tech = centimetric_radar 
 					NOT = {
-						has_tech = improved_centimetric_radar
+						has_tech = centimetric_radar
 					}
 				} 
 			}
 			FROM = { 
 				OR = {
 					has_tech = centimetric_radar 
-					has_tech = improved_centimetric_radar
+					has_tech = centimetric_radar
 				}
 			}
 		}
 		else_if = {
 			limit = {
 				ROOT = { 
-					has_tech = improved_centimetric_radar 
+					has_tech = centimetric_radar 
 					NOT = {
-						has_tech = advanced_centimetric_radar
+						has_tech = centimetric_radar
 					}
 				} 
 			}
 			FROM = { 
 				OR = {
-					has_tech = improved_centimetric_radar 
-					has_tech = advanced_centimetric_radar
+					has_tech = centimetric_radar 
+					has_tech = centimetric_radar
 				}
 			}
 		}
 		#no more steps needed because end of research tree is reached
 	}
 }
-
-is_available_to_collaboration_government = { # occupied_countries.1 should be updated along with this
+is_available_to_collaboration_government = {
 	NOT = {
 		any_country_with_original_tag = {
 			original_tag_to_check = FROM
-			is_puppet_of = PREV # if already created one do not create another
+			is_puppet_of = PREV
 			has_autonomy_state = autonomy_collaboration_government
 		}
 	}

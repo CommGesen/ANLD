@@ -76,10 +76,6 @@ on_actions = {
 	# triggered daily, so make sure there is a sink somewhere not firing events
 	# country, FROM = target nation
 	on_justifying_wargoal_pulse = {
-
-		random_events = {
-			100 = polish_expansion.5 # Create Republican International
-		}
 		
 		random_events = {
 			100 = russia_expansion.14 # Create Republican International

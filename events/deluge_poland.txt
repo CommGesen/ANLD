@@ -3351,11 +3351,11 @@ country_event = {##Sikorski brings back democracy to Poland
 		OR = {
 			AND = {
 				has_completed_focus = POL_sikorski_wins
-				democracy > 0.65
+				democratic > 0.65
 			}
 			AND = {
 				has_completed_focus = POL_partly_free_elections
-				democracy > 0.4
+				democratic > 0.4
 			}
 		}
 	}
@@ -3724,8 +3724,8 @@ country_event = {##Prophet Ilja becames famous
 		tag = POL
 		date > 1939.6.6
 		97 = {
-			owner = POL
-			controller = POL
+			is_owned_by = POL
+			is_controlled_by = POL
 		}
 	}
 	mean_time_to_happen = {
@@ -8700,69 +8700,109 @@ country_event = {##HUN gets ultimatum to be in personal union with Poland
 		}
 		ai_chance = {
 			base = 30
-			if = {
-				limit = {
+			modifier = {
+				HUN = {
+					HUN_deluge_andrassy_sandor = {
+						is_country_leader = yes
+					}
+				}
+				factor = 1000
+			}
+			modifier = {
+				NOT = {
 					HUN = {
 						HUN_deluge_andrassy_sandor = {
 							is_country_leader = yes
 						}
 					}
 				}
-				modifier = {
-					factor = 1000
-					always = yes
+				ROOT = {
+					strength_ratio = {
+						tag = FROM
+						ratio < 1.2
+					}
 				}
+				add = 50
 			}
-			if = {
-				limit = {
-					NOT = {
-						HUN = {
-							HUN_deluge_andrassy_sandor = {
-								is_country_leader = yes
-							}
+			modifier = {
+				NOT = {
+					HUN = {
+						HUN_deluge_andrassy_sandor = {
+							is_country_leader = yes
 						}
 					}
 				}
-				modifier = {
-					add = 50
-					ROOT = {
-						strength_ratio = {
-							tag = FROM
-							ratio < 1.2
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.2
+					}
+				}
+				add = -50
+			}
+			modifier = {
+				NOT = {
+					HUN = {
+						HUN_deluge_andrassy_sandor = {
+							is_country_leader = yes
 						}
 					}
 				}
-				modifier = {
-					add = -50
-					ROOT = {
-						strength_ratio = {
-							tag = FROM 
-							ratio > 1.2
+				has_opinion = {
+					target = FROM
+					value > 30
+				}
+				add = 20
+			}
+			modifier = {
+				NOT = {
+					HUN = {
+						HUN_deluge_andrassy_sandor = {
+							is_country_leader = yes
 						}
 					}
 				}
-				modifier = {
-					add = 20
-					has_opinion = {
-						target = FROM
-						value > 30
+				has_opinion = {
+					target = FROM
+					value < 30
+				}
+				add = -20
+			}
+			modifier = {
+				NOT = {
+					HUN = {
+						HUN_deluge_andrassy_sandor = {
+							is_country_leader = yes
+						}
 					}
 				}
-				modifier = {
-					add = -20
-					has_opinion = {
-						target = FROM
-						value < 30
+				has_opinion = {
+					target = FROM
+					value < 30
+				}
+				add = -20
+			}
+			modifier = {
+				NOT = {
+					HUN = {
+						HUN_deluge_andrassy_sandor = {
+							is_country_leader = yes
+						}
 					}
 				}
-				modifier = {
-					check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
-					add = 40
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				NOT = {
+					HUN = {
+						HUN_deluge_andrassy_sandor = {
+							is_country_leader = yes
+						}
+					}
 				}
-				modifier = {
-					check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
-					add = -40
-				}
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
 			}
 		}
 	}
@@ -8792,69 +8832,95 @@ country_event = {##HUN gets ultimatum to be in personal union with Poland
 		}
 		ai_chance = {
 			base = 30
-			if = {
-				limit = {
+			modifier = {
+				factor = 0
+				HUN = {
+					HUN_deluge_andrassy_sandor = {
+						is_country_leader = yes
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				NOT = {
 					HUN = {
 						HUN_deluge_andrassy_sandor = {
 							is_country_leader = yes
 						}
 					}
 				}
-				modifier = {
-					factor = 0
-					always = yes
+				ROOT = {
+					strength_ratio = {
+						tag = FROM
+						ratio < 0.9
+					}
 				}
 			}
-			if = {
-				limit = {
-					NOT = {
-						HUN = {
-							HUN_deluge_andrassy_sandor = {
-								is_country_leader = yes
-							}
+			modifier = {
+				add = -50
+				NOT = {
+					HUN = {
+						HUN_deluge_andrassy_sandor = {
+							is_country_leader = yes
+						}
+				}
+				}
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 0.9
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				NOT = {
+					HUN = {
+						HUN_deluge_andrassy_sandor = {
+							is_country_leader = yes
 						}
 					}
 				}
-				modifier = {
-					add = 50
-					ROOT = {
-						strength_ratio = {
-							tag = FROM
-							ratio < 0.9
+				has_opinion = {
+					target = FROM
+					value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				NOT = {
+					HUN = {
+						HUN_deluge_andrassy_sandor = {
+							is_country_leader = yes
 						}
 					}
 				}
-				modifier = {
-					add = -50
-					ROOT = {
-						strength_ratio = {
-							tag = FROM 
-							ratio > 0.9
+				has_opinion = {
+					target = FROM
+					value < 30
+				}
+			}
+			modifier = {
+				NOT = {
+					HUN = {
+						HUN_deluge_andrassy_sandor = {
+							is_country_leader = yes
 						}
 					}
 				}
-				modifier = {
-					add = 20
-					has_opinion = {
-						target = FROM
-						value > 30
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				NOT = {
+					HUN = {
+						HUN_deluge_andrassy_sandor = {
+							is_country_leader = yes
+						}
 					}
 				}
-				modifier = {
-					add = -20
-					has_opinion = {
-						target = FROM
-						value < 30
-					}
-				}
-				modifier = {
-					check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
-					add = 40
-				}
-				modifier = {
-					check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
-					add = -40
-				}
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
 			}
 		}
 	}
@@ -8869,69 +8935,95 @@ country_event = {##HUN gets ultimatum to be in personal union with Poland
 		}
 		ai_chance = {
 			base = 10
-			if = {
-				limit = {
+			modifier = {
+				HUN = {
+					HUN_deluge_andrassy_sandor = {
+						is_country_leader = yes
+					}
+				}
+				factor = 0
+			}
+			modifier = {
+				add = -50
+				NOT = {
 					HUN = {
 						HUN_deluge_andrassy_sandor = {
 							is_country_leader = yes
 						}
 					}
 				}
-				modifier = {
-					factor = 0
-					always = yes
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.2
+					}
 				}
 			}
-			if = {
-				limit = {
-					NOT = {
-						HUN = {
-							HUN_deluge_andrassy_sandor = {
-								is_country_leader = yes
-							}
+			modifier = {
+				add = 50
+				NOT = {
+					HUN = {
+						HUN_deluge_andrassy_sandor = {
+							is_country_leader = yes
 						}
 					}
 				}
-				modifier = {
-					add = -50
-					ROOT = {
-						strength_ratio = {
-							tag = FROM 
-							ratio < 1.2
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.2
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				NOT = {
+					HUN = {
+						HUN_deluge_andrassy_sandor = {
+							is_country_leader = yes
 						}
 					}
 				}
-				modifier = {
-					add = 50
-					ROOT = {
-						strength_ratio = {
-							tag = FROM 
-							ratio > 1.2
+				has_opinion = {
+					target = FROM
+					value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				NOT = {
+					HUN = {
+						HUN_deluge_andrassy_sandor = {
+							is_country_leader = yes
 						}
 					}
 				}
-				modifier = {
-					add = -20
-					has_opinion = {
-						target = FROM
-						value > 30
+				has_opinion = {
+					target = FROM
+					value < 30
+				}
+			}
+			modifier = {
+				NOT = {
+					HUN = {
+						HUN_deluge_andrassy_sandor = {
+							is_country_leader = yes
+						}
 					}
 				}
-				modifier = {
-					add = 20
-					has_opinion = {
-						target = FROM
-						value < 30
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				NOT = {
+					HUN = {
+						HUN_deluge_andrassy_sandor = {
+							is_country_leader = yes
+						}
 					}
 				}
-				modifier = {
-					check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
-					add = -40
-				}
-				modifier = {
-					check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
-					add = 40
-				}
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
 			}
 		}
 	}

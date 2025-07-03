@@ -2996,14 +2996,14 @@ FRA_dec_cat_modernize_french_army={
 					check_variable = { fra_radar_var_south < 2 }
 					check_variable = { fra_radar_var_south > 0 }
 				}
-				has_tech = decimetric_radar
+				has_tech = cavity_magnatron
 			}
 			if = {
 				limit = {
 					check_variable = { fra_radar_var_south < 3 }
 					check_variable = { fra_radar_var_south > 1 }
 				}
-				has_tech = improved_decimetric_radar
+				has_tech = cavity_magnatron
 			}
 		}
 		remove_effect = {
@@ -3081,14 +3081,14 @@ FRA_dec_cat_modernize_french_army={
 					check_variable = { fra_radar_var_south < 2 }
 					check_variable = { fra_radar_var_south > 0 }
 				}
-				has_tech = decimetric_radar
+				has_tech = cavity_magnatron
 			}
 			if = {
 				limit = {
 					check_variable = { fra_radar_var_south < 3 }
 					check_variable = { fra_radar_var_south > 1 }
 				}
-				has_tech = improved_decimetric_radar
+				has_tech = cavity_magnatron
 			}
 		}
 		remove_effect = {
@@ -3165,14 +3165,14 @@ FRA_dec_cat_modernize_french_army={
 					check_variable = { fra_radar_var_south < 2 }
 					check_variable = { fra_radar_var_south > 0 }
 				}
-				has_tech = decimetric_radar
+				has_tech = cavity_magnatron
 			}
 			if = {
 				limit = {
 					check_variable = { fra_radar_var_south < 3 }
 					check_variable = { fra_radar_var_south > 1 }
 				}
-				has_tech = improved_decimetric_radar
+				has_tech = cavity_magnatron
 			}
 		}
 		remove_effect = {
