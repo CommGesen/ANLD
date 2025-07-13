@@ -1,7 +1,7 @@
 ﻿add_namespace = deluge_france
 add_namespace = deluge_france_foreign
 add_namespace = deluge_france_lore
-# France gets exposition and triggers news about May Day
+#France gets exposition and triggers news about May Day
 country_event = {
 	id = deluge_france.1
 	title = deluge_france.1.t
@@ -1324,6 +1324,30 @@ country_event = {##third guenon event - about freemasons
 		swap_ideas = {
 			remove_idea = FRA_spirit_spirit_of_the_east_2
 			add_idea = FRA_spirit_spirit_of_the_east_3
+		}
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.53
+				days = 2
+			}
+		}
+	}
+}
+country_event = {##fourth guenon event - about freemasons
+	id = deluge_france.53
+	title = deluge_france.53.t
+	desc = deluge_france.53.d
+	picture = GFX_report_event_taoism
+	is_triggered_only = yes
+	timeout_days = 2
+	option = {
+		name = deluge_france.53.a
+		add_stability = 0.03
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.54
+				days = 2
+			}
 		}
 	}
 }
