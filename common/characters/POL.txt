@@ -1387,15 +1387,7 @@ characters={
 				small = GFX_idea_POL_wojtek
 			}
 		}
-		corps_commander = {
-			traits = { artillery_officer bearer_of_artillery }
-			skill=1
-			attack_skill=2
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=2
-			desc = "POL_deluge_wojtek_desc"
-		}
+		##corps commander role later added via event
 	}
 	POL_deluge_tokarzewski_karaszewicz = {##Michał Tokarzewski-Karaszewicz
 		name = POL_Character_deluge_tokarzewski_karaszewicz
@@ -1556,15 +1548,7 @@ characters={
 				small = GFX_michal_rola_zymierski_picture_small
 			}
 		}
-		field_marshal = {
-			traits = { politically_connected career_officer logistics_wizard aggressive_assaulter }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			desc = "POL_deluge_rola_zymierski_desc"
-		}
+		##later becomes general via focus
 	}
 	POL_deluge_zygumnt_berling = {##Zygmunt Berling
 		name = POL_Character_deluge_zygumnt_berling
@@ -1574,15 +1558,7 @@ characters={
 				small = GFX_zygmunt_berling_picutre_small
 			}
 		}
-		corps_commander = {
-			traits = { politically_connected career_officer infantry_officer inflexible_strategist}
-			skill=1
-			attack_skill=2
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			desc = "POL_deluge_zygumnt_berling_desc"
-		}
+		##later becomes general via focus
 	}
 	POL_deluge_boleslaw_roja = {##Bolesław Roja
 		name = POL_deluge_boleslaw_roja_name
@@ -1592,15 +1568,7 @@ characters={
 				small = GFX_boleslaw_roja_picture_small
 			}
 		}
-		corps_commander = {
-			traits = { war_hero infantry_officer infantry_leader }
-			skill=2
-			attack_skill=3
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
-			desc = "POL_deluge_boleslaw_roja_desc"
-		}
+		#becomes general later via focus
 	}
 	POL_deluge_latinik = {##Franciszek Latinik
 		name = POL_Character_deluge_latinik
@@ -1610,15 +1578,7 @@ characters={
 				small = GFX_franciszek_latinik_picutre_small
 			}
 		}
-		field_marshal = {
-			traits = { old_guard harsh_leader trait_reckless unyielding_defender defensive_doctrine}
-			skill=2
-			attack_skill=1
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=1
-			desc = "POL_deluge_latinik_desc"
-		}
+		##later becomes field marshal via focus or event
 	}
 	POL_deluge_jung = {##Władysław Jung
 		name = POL_Character_deluge_jung
@@ -1638,15 +1598,7 @@ characters={
 				small = GFX_stanislaw_haller_picture_small
 			}
 		}
-		corps_commander = {
-			traits = { old_guard career_officer organizer}
-			skill=3
-			attack_skill=1
-			defense_skill=1
-			planning_skill=5
-			logistics_skill=4
-			desc = "POL_deluge_stanislaw_haller_desc"
-		}
+		##later becomes corps commander via focus or event
 	}
 	POL_deluge_dzierzykraj_stokalski = {##Radosław Dzierżykraj-Stokalski
 		name = POL_Character_deluge_dzierzykraj_stokalski
@@ -1666,15 +1618,7 @@ characters={
 				small = GFX_stanislaw_poplawski_picture_small
 			}
 		}
-		corps_commander = {
-			traits = { trait_reckless harsh_leader skilled_staffer}
-			skill=3
-			attack_skill=4
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			desc = "POL_deluge_poplawski_desc"
-		}
+		#later becomes general via focus or event
 	}
 	POL_deluge_swierczewski = {##Karol Świerczewski
 		name = POL_Character_deluge_swierczewski
@@ -1684,15 +1628,7 @@ characters={
 				small = GFX_karol_swierczewski_picture_small
 			}
 		}
-		corps_commander = {
-			traits = { substance_abuser harsh_leader}
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			desc = "POL_deluge_swierczewski_desc"
-		}
+		#later becomes general via focus or event
 	}
 	POL_deluge_skierski = {##Leonard Skierski
 		name = POL_Character_deluge_skierski
@@ -1702,15 +1638,7 @@ characters={
 				small = GFX_leonard_skierski_picture_small
 			}
 		}
-		field_marshal = {
-			traits = { old_guard war_hero artillery_officer aggressive_assaulter}
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
-			desc = "POL_deluge_skierski_desc"
-		}
+		#becomes general later via focus
 	}
 	POL_deluge_dzierzanowski = {##Kazimierz Dzierżanowski
 		name = POL_Character_deluge_dzierzanowski
@@ -1720,15 +1648,7 @@ characters={
 				small="GFX_kazimierz_dzierzanowski_picture_small"
 			}
 		}
-		corps_commander = {
-			traits = { artillery_officer }
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
-			desc = "POL_deluge_dzierzanowski_desc"
-		}
+		#becomes general later via focus
 	}
 	POL_deluge_piskor = {##Tadeusz Piskor
 		name = POL_Character_deluge_piskor
@@ -1738,15 +1658,7 @@ characters={
 				small = GFX_tadeusz_piskor_picture_small
 			}
 		}
-		corps_commander = {
-			traits = { organizer }
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=3
-			desc = "POL_deluge_piskor_desc"
-		}
+		#becomes general later via focus
 	}
 	POL_deluge_zulauf = {##Juliusz Zulauf
 		name = POL_Character_deluge_zulauf
@@ -1756,15 +1668,7 @@ characters={
 				small = GFX_juliusz_zulauf_picture_small
 			}
 		}
-		corps_commander = {
-			traits = { politically_connected }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			desc = "POL_deluge_zulauf_desc"
-		}
+		#becomes general later via focus
 	}
 	POL_deluge_prich = {##Rudolf Prich
 		name = POL_Character_deluge_prich
@@ -1774,15 +1678,7 @@ characters={
 				small = GFX_rudolf_prich_picture_small
 			}
 		}
-		corps_commander = {
-			traits = { inflexible_strategist }
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			desc = "POL_deluge_prich_desc"
-		}
+		#becomes general later via focus
 	}
 	##ADMIRALS:
 	POL_deluge_xawery_czernicki = {

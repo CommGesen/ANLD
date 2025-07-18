@@ -1,22 +1,52 @@
 add_namespace = deluge_cities_fall
-news_event = {#POL: Fall of Berlin
+news_event = {#POL: Fall of Berlin from Germans
 	id = deluge_cities_fall.1
 	title = deluge_cities_fall.1.t
 	desc = deluge_cities_fall.1.d
 	picture = GFX_news_event_poland_captures_berlin
 	major = yes
-	is_triggered_only = yes
+	trigger = {
+		64 = { is_controlled_by = POL }
+		OR = {
+			64 = { is_owned_by = GER }
+			64 = { is_owned_by = WGR }
+			64 = { is_owned_by = DDR }
+		}
+		OR = {
+			POL = { has_war_with = GER }
+			POL = { has_war_with = WGR }
+			POL = { has_war_with = DDR }
+		}
+		NOT = { has_global_flag = fall_of_berlin_pol }
+	}
+	immediate = {
+		set_global_flag = fall_of_berlin_pol
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
 	option = {
 		name = deluge_cities_fall.1.a
 	}
 }
-news_event = {#POL: Fall of Instanbul
+news_event = {#POL: Fall of Instanbul from Ottomans/Turkey
 	id = deluge_cities_fall.2
 	title = deluge_cities_fall.2.t
 	desc = deluge_cities_fall.2.d
 	picture = GFX_news_event_istanbul_falls
 	major = yes
-	is_triggered_only = yes
+	trigger = {
+		341 = { is_controlled_by = POL }
+		341 = { is_owned_by = TUR }
+		POL = { has_war_with = TUR }
+		NOT = { has_global_flag = fall_of_istanbul_pol }
+	}
+	immediate = {
+		set_global_flag = fall_of_istanbul_pol
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
 	option = {
 		name = deluge_cities_fall.2.a
 	}
@@ -27,7 +57,18 @@ news_event = {#POL: Fall of Vienna
 	desc = deluge_cities_fall.3.d
 	picture = GFX_news_event_fall_of_vienna
 	major = yes
-	is_triggered_only = yes
+	trigger = {
+		4 = { is_controlled_by = POL }
+		4 = { is_owned_by = AUS }
+		POL = { has_war_with = AUS }
+		NOT = { has_global_flag = fall_of_vienna_pol }
+	}
+	immediate = {
+		set_global_flag = fall_of_vienna_pol
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
 	option = {
 		name = deluge_cities_fall.3.a
 	}
@@ -38,7 +79,18 @@ news_event = {#POL: Fall of Moscow
 	desc = deluge_cities_fall.4.d
 	picture = GFX_news_event_fall_of_moscow
 	major = yes
-	is_triggered_only = yes
+	trigger = {
+		219 = { is_controlled_by = POL }
+		219 = { is_owned_by = SOV }
+		POL = { has_war_with = SOV }
+		NOT = { has_global_flag = fall_of_moscow_pol }
+	}
+	immediate = {
+		set_global_flag = fall_of_moscow_pol
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
 	option = {
 		name = deluge_poland_cities.4.a
 	}
@@ -49,7 +101,18 @@ news_event = {#POL: Fall of Paris
 	desc = deluge_cities_fall.5.d
 	picture = GFX_news_event_fall_of_paris
 	major = yes
-	is_triggered_only = yes
+	trigger = {
+		16 = { is_controlled_by = POL }
+		16 = { is_owned_by = FRA }
+		POL = { has_war_with = FRA }
+		NOT = { has_global_flag = fall_of_paris_pol }
+	}
+	immediate = {
+		set_global_flag = fall_of_paris_pol
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
 	option = {
 		name = deluge_cities_fall.5.a
 	}
@@ -60,8 +123,95 @@ news_event = {#GER/DDR/WGR: Fall of Paris
 	desc = deluge_cities_fall.6.d
 	picture = GFX_news_event_germany_captures_paris
 	major = yes
-	is_triggered_only = yes
+	trigger = {
+		OR = {
+			16 = { is_controlled_by = WGR }
+			16 = { is_controlled_by = GER }
+			16 = { is_controlled_by = DDR }
+		}
+		16 = { is_owned_by = FRA }
+		OR = {
+			GER = { has_war_with = FRA }
+			WGR = { has_war_with = FRA }
+			DDR = { has_war_with = FRA }
+		}
+		NOT = { has_global_flag = fall_of_paris_ger }
+	}
+	immediate = {
+		set_global_flag = fall_of_paris_ger
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
 	option = {
 		name = deluge_cities_fall.6.a
 	}
 }
+news_event = {#Spain: Fall of Barcelona
+	id = deluge_cities_fall.7
+	title = deluge_cities_fall.7.t
+	desc = deluge_cities_fall.7.d
+	picture = GFX_news_event_spain_captures_barcelona
+	major = yes
+	trigger = {
+		165 = { is_controlled_by = SPR }
+		165 = { is_owned_by = FRA }
+		SPR = { has_war_with = FRA }
+		NOT = { has_global_flag = fall_of_barcelona_spr }
+	}
+	immediate = {
+		set_global_flag = fall_of_barcelona_spr
+		set_global_flag = barcelona_has_fallen_from_french
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = deluge_cities_fall.7.a
+	}
+}
+news_event = {#Spain: Fall of Lisbon
+	id = deluge_cities_fall.8
+	title = deluge_cities_fall.8.t
+	desc = deluge_cities_fall.8.d
+	picture = GFX_news_event_spain_captures_lisbon
+	major = yes
+	trigger = {
+		112 = { is_controlled_by = SPR }
+		112 = { is_owned_by = POR }
+		SPR = { has_war_with = POR }
+		NOT = { has_global_flag = fall_of_lisbon_spr }
+	}
+	immediate = {
+		set_global_flag = fall_of_lisbon_spr
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = deluge_cities_fall.8.a
+	}
+}
+news_event = {#Portugal: Fall of Madrid
+	id = deluge_cities_fall.9
+	title = deluge_cities_fall.9.t
+	desc = deluge_cities_fall.9.d
+	picture = GFX_news_event_portugal_captures_madrid
+	major = yes
+	trigger = {
+		41 = { is_controlled_by = POR }
+		41 = { is_owned_by = SPR }
+		SPR = { has_war_with = POR }
+		NOT = { has_global_flag = fall_of_madrid_por }
+	}
+	immediate = {
+		set_global_flag = fall_of_madrid_por
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = deluge_cities_fall.9.a
+	}
+}
+##barcelona - 165, madrid - 41, lisbona - 112, rome - 2, istanbul - 341, london - 126

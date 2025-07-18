@@ -92,26 +92,3 @@ set_popularities = {
 	communism = 5
 	neutrality = 40
 }
-
-create_country_leader = {
-	name = "Gaafar Nimeiry"
-	desc = ""
-	picture = "gfx/leaders/deluge/gaafar_nimeiry2.dds"
-	ideology = jacobin_ideology
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "Gaafar Nimeiry"
-	portrait_path = "gfx/leaders/deluge/gaafar_nimeiry2.dds"
-	traits = { }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-

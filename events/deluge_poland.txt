@@ -1805,7 +1805,16 @@ country_event = {##training in PER is finished
 	is_triggered_only = yes
 	option = {
 		name = deluge_poland.36.a
-		recruit_character = POL_deluge_wojtek
+		add_corps_commander_role = {
+			character = POL_deluge_wojtek
+			traits = { artillery_officer bearer_of_artillery }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			desc = "POL_deluge_wojtek_desc"
+		}
 		custom_effect_tooltip = POL_custom_effect_tooltip_110
 		add_to_variable = {POL_WPvsPOW_acclimatization_hot_climate_gain_factor = 0.15}
 	}
@@ -2000,10 +2009,46 @@ country_event = {##New generals come and some retire
 			retire_character = POL_deluge_Grzmot_Skotnicki
 			retire_character = POL_deluge_wieniawa_dlugoszewski
 			
-			recruit_character = POL_deluge_jung
-			recruit_character = POL_deluge_latinik
-			recruit_character = POL_deluge_stanislaw_haller
-			recruit_character = POL_deluge_dzierzykraj_stokalski
+			add_field_marshal_role = {
+				character = POL_deluge_jung
+				traits = { old_guard thorough_planner logistics_wizard}
+				skill=2
+				attack_skill=2
+				defense_skill=1
+				planning_skill=3
+				logistics_skill=3
+				desc = "POL_deluge_jung_desc"
+			}
+			add_field_marshal_role = {
+				character = POL_deluge_dzierzykraj_stokalski
+				traits = { old_guard career_officer organisational_leader defensive_doctrine}
+				skill=2
+				attack_skill=1
+				defense_skill=2
+				planning_skill=3
+				logistics_skill=2
+				desc = "POL_deluge_dzierzykraj_stokalski_desc"
+			}
+			add_field_marshal_role = {
+				character = POL_deluge_latinik
+				traits = { old_guard harsh_leader trait_reckless unyielding_defender defensive_doctrine}
+				skill=2
+				attack_skill=1
+				defense_skill=4
+				planning_skill=2
+				logistics_skill=1
+				desc = "POL_deluge_latinik_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_stanislaw_haller
+				traits = { old_guard career_officer organizer}
+				skill=3
+				attack_skill=1
+				defense_skill=1
+				planning_skill=5
+				logistics_skill=4
+				desc = "POL_deluge_stanislaw_haller_desc"
+			}
 		}
 		if = {
 			limit = {
@@ -2016,11 +2061,56 @@ country_event = {##New generals come and some retire
 			retire_character = POL_deluge_sosnowski
 			retire_character = POL_deluge_wieniawa_dlugoszewski
 			
-			recruit_character = POL_deluge_rola_zymierski
-			recruit_character = POL_deluge_zygumnt_berling
-			recruit_character = POL_deluge_boleslaw_roja
-			recruit_character = POL_deluge_stanislaw_haller
-			recruit_character = POL_deluge_skierski
+			add_field_marshal_role = {
+				character = POL_deluge_rola_zymierski
+				traits = { politically_connected career_officer logistics_wizard aggressive_assaulter }
+				skill=3
+				attack_skill=3
+				defense_skill=2
+				planning_skill=3
+				logistics_skill=2
+				desc = "POL_deluge_rola_zymierski_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_zygumnt_berling
+				traits = { politically_connected career_officer infantry_officer inflexible_strategist}
+				skill=1
+				attack_skill=2
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+				desc = "POL_deluge_zygumnt_berling_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_boleslaw_roja
+				traits = { war_hero infantry_officer infantry_leader }
+				skill=2
+				attack_skill=3
+				defense_skill=1
+				planning_skill=2
+				logistics_skill=2
+				desc = "POL_deluge_boleslaw_roja_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_stanislaw_haller
+				traits = { old_guard career_officer organizer}
+				skill=3
+				attack_skill=1
+				defense_skill=1
+				planning_skill=5
+				logistics_skill=4
+				desc = "POL_deluge_stanislaw_haller_desc"
+			}
+			add_field_marshal_role = {
+				character = POL_deluge_skierski
+				traits = { old_guard war_hero artillery_officer aggressive_assaulter}
+				skill=2
+				attack_skill=2
+				defense_skill=3
+				planning_skill=2
+				logistics_skill=2
+				desc = "POL_deluge_skierski_desc"
+			}
 		}
 		if = {
 			limit = {
@@ -2036,11 +2126,56 @@ country_event = {##New generals come and some retire
 			retire_character = POL_deluge_juliusz_rummel
 			retire_character = POL_deluge_wladyslaw_sikorski
 			
-			recruit_character = POL_deluge_boleslaw_roja
-			recruit_character = POL_deluge_rola_zymierski
-			recruit_character = POL_deluge_zygumnt_berling
-			recruit_character = POL_deluge_poplawski
-			recruit_character = POL_deluge_swierczewski
+			add_corps_commander_role = {
+				character = POL_deluge_boleslaw_roja
+				traits = { war_hero infantry_officer infantry_leader }
+				skill=2
+				attack_skill=3
+				defense_skill=1
+				planning_skill=2
+				logistics_skill=2
+				desc = "POL_deluge_boleslaw_roja_desc"
+			}
+			add_field_marshal_role = {
+				character = POL_deluge_rola_zymierski
+				traits = { politically_connected career_officer logistics_wizard aggressive_assaulter }
+				skill=3
+				attack_skill=3
+				defense_skill=2
+				planning_skill=3
+				logistics_skill=2
+				desc = "POL_deluge_rola_zymierski_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_zygumnt_berling
+				traits = { politically_connected career_officer infantry_officer inflexible_strategist}
+				skill=1
+				attack_skill=2
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+				desc = "POL_deluge_zygumnt_berling_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_poplawski
+				traits = { trait_reckless harsh_leader skilled_staffer}
+				skill=3
+				attack_skill=4
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
+				desc = "POL_deluge_poplawski_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_swierczewski
+				traits = { substance_abuser harsh_leader}
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+				desc = "POL_deluge_swierczewski_desc"
+			}
 		}
 		if = {
 			limit = {
@@ -2050,10 +2185,46 @@ country_event = {##New generals come and some retire
 			retire_character = POL_deluge_lucjan_zeligowski
 			retire_character = POL_deluge_Grzmot_Skotnicki
 			
-			recruit_character = POL_deluge_dzierzanowski
-			recruit_character = POL_deluge_piskor
-			recruit_character = POL_deluge_zulauf
-			recruit_character = POL_deluge_prich
+			add_corps_commander_role = {
+				character = POL_deluge_dzierzanowski
+				traits = { artillery_officer }
+				skill=2
+				attack_skill=2
+				defense_skill=3
+				planning_skill=2
+				logistics_skill=2
+				desc = "POL_deluge_dzierzanowski_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_piskor
+				traits = { organizer }
+				skill=2
+				attack_skill=1
+				defense_skill=2
+				planning_skill=1
+				logistics_skill=3
+				desc = "POL_deluge_piskor_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_zulauf
+				traits = { politically_connected }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+				desc = "POL_deluge_zulauf_desc"
+			}
+			add_corps_commander_role = {
+				character = POL_deluge_prich
+				traits = { inflexible_strategist }
+				skill=2
+				attack_skill=1
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
+				desc = "POL_deluge_prich_desc"
+			}
 		}
 	}
 }

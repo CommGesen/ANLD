@@ -24,29 +24,3 @@ set_popularities = {
 	communism = 10
 	neutrality = 20
 }
-
-create_country_leader = {
-	name = "Amin Al Husyini"
-	desc = ""
-	picture = "gfx/leaders/PAL/Portrait_PAL_The_Mufti.png"
-	ideology = religious_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Abdul Qadir Al Husyini"
-	picture = "gfx/leaders/PAL/Portrait_PAL_al_Husayni.png"
-	ideology = reactionary_ideology
-}
-
-create_country_leader = {
-	name = "Radwan El Helou"
-	desc = ""
-	picture = "gfx/leaders/PAL/Portrait_PAL_Radwan-Helou.dds"
-	ideology = communist_ideology
-	traits = {
-		#
-	}
-}

@@ -389,11 +389,11 @@ LOU = { # FRA
 		names = { Anne Marie }
 	}
 	surnames = {
-		Anthoine "Baraguey d'Hilliers" Bazaine Billot Bosquet "Boué de Lapeyrère" Bouët-Willaumez Boulanger Bourbaki
-		Bugeaud Caillard Canrobert Courbet Cousin-Mountauban Davout "de Castellane" "de Castelnau" 
-		"de Langle de Cary" "de MacMahon" "de Montaignac" "de Saint Arnaud" d'Orleans Dubail Dubois Duchêne Dupetit-Thouars Exelmans
-		Foch Forey "Franchet d'Espèrey" Gallieni Gouraud Guillaumat Hamelin Harispe Hoche Humbert
-		Jaurès Joffre Lebouef Lyautey Murat "Ney d'Elchingen" Nivelle Péllissier Petain Vaillant
+		Anthoine "Baraguey d'Hilliers" Bazaine Billot Bosquet "Boué de Lapeyrère" Bouët-Willaumez Bourbaki
+		Bugeaud Caillard Canrobert Courbet Cousin-Mountauban "de Castellane" "de Castelnau" 
+		"de Langle de Cary" "de MacMahon" "de Montaignac" "de Saint Arnaud" Dubail Duchêne Dupetit-Thouars Exelmans
+		Forey Gallieni Gouraud Guillaumat Hamelin Harispe Hoche Humbert
+		Jaurès Joffre Lebouef Lyautey "Ney d'Elchingen" Nivelle Péllissier
 		
 		Tremblay Gagnon Roy Cote Gauthier Morin Belanger Bouchard Pelletier Gagne Lavoie Fortin
 		Levesque Boucher Bergeron Simard Caron Girard Ouellet Leblanc Fournier Lefebvre Cloutier
@@ -401,6 +401,92 @@ LOU = { # FRA
 		Grenier Landry Lapointe Hebert Demers Richard Desjardins
 	}
 	callsigns = { "Draco" "Fast" "Tiger" "Sparrow" "Ripper" "Sundance" "Toad" "Twitch" "Farmer" "Weasel" "Target Practice" "Invisible" "Beach Boy" "Princess" "The Mute" "Carpenter"}
+}
+
+SIA = {
+	male = {
+		names = {
+			Somsak Prasert Somchai Chaiyan Anan Preecha Boonmee Sombun Thongchai Wichian Thanom Charoen Kriangkrai Samran Rungroj Damrong Chatchai Phairoj Suphot Arthit Winai Suthep Wanchai Adisorn Phichit Ekkarat Chaiwat Phaibun Anuwat Somsong Sakda Phisit Thawatchai Santi Yothin Phanom Chaisit Thamrong Pramote Serm Sanit Chirasak Manop Chuan Pitak Narongdet Chaiyaporn Pramuan Sawaeng Charun Udom Somnuk Wichit Phayom Anake Vorachai Thawi
+		}
+	}
+	female = {
+		names = { Somsri Wanpen Wanna Siriporn Sunee Arunee Chintana Ubon Ratana Pornthip Laksami Duangjai Malai Chitralada Kannika Wanwisa Saowanee Buaban Phailin Ratchanee Thongbai Lamai Anchalee Praphai Supaporn Thongtip Chanthra Wilaiporn Nuanchan Chotiros Samorn Sunisa Thongprasri Kwanjai Sujitra Wilaiwan Saifon }
+	}
+	surnames = {
+		Saetang Wongsuwan Chaisuriyong Thongdee Srisombat Phetcharat Rungruangrit Jaidee Boonprakong Siriwattana Phumirat Thongthai Chaiyasit Sinthuvanich Ratchatawee Kwanjaiyen Somsawat Phanitkul Srisuwan Chaiyapruk Phromsawat Thongyai Kittisak Charoenphon Nakrongthong Phetphong Sitthichai Udomkanjana Phaisanrit Thavornsin Rungkarat Saengsawang Chokchai Suwannarat Thongkham Srisangthong Yodsuwan Phanthumachinda Rerkpaisan Wanichkul Phongsupath Pathumthong Srisuriyan Chaiyanupap Phunphon Rungrotthanakul Saengmani Chokvithee Phetchamnong Thongmee Phasukrit Praphasri Somsongkhroh Thong-in Rungreungkit Phaisansilp Chaiwongwanit Thongprasert Phrommin Worachaiyut Chantharangsri Phunphitak Srisangworn Thongbai Chaiwattana Phrommat Rungreungdet Saengchaiyaphum
+	}
+	callsigns = { }
+}
+
+URC = {
+	male = {
+		names = {
+			Carlos Enrique Rafael Santiago Alonso Javier Mateo Esteban Ignacio Vicente Fernando Guillermo Leonardo Manuel Nicolás Óscar Pascual Rodrigo Sergio Tomás Ulises Valentín Wilfredo Xavier Yago Zacarías Adrián Benjamín Cristóbal Daniel Emiliano Federico Gregorio Horacio Ismael Joaquín Lorenzo Marcos Néstor Octavio Pablo Quirino Raúl Simón Teodoro Vidal Winston Armando Baltazar César Damián Eliseo Faustino Geraldo Herminio Iker Julio Klaus Leandro Máximo Norberto Osvaldo Prisco Reynaldo Sabino Timoteo Urbano Venancio Werner Yerik Zósimo Agustín Bernardo Cornelio Demetrio
+		}
+	}
+	female = {
+		names = {
+			Isabela Carmen Beatriz Adriana Lucía Valentina Fernanda Patricia Daniela Renata Alejandra Bianca Carolina Diana Elena Fabiola Gabriela Helena Inés Jimena Karina Laura Mariana Natalia Olivia Paulina Regina Sofía Teresa Úrsula Vanessa Ximena Yolanda Zulema Anaís Belén Celeste Dalia Esmeralda Flor Graciela Iris Julieta Leticia Magdalena Antonieta Brígida Claribel Dorotea Eugenia Feliciana Gisela Hortensia Jacinta Kenia Leonor Margarita Noemí Ofelia Perla Querida Rosalba Silvana Tamara Verónica Wendy Xiomara Yadira Zoila Alba Betsabé Consuelo
+		}
+	}
+	surnames = {
+		Mendoza Zamora Bautista "De La Cruz" "Del Rosario" "Sanchez Lopez" "Perez Rivas" "Garcia Marquez" "Alvarez Montejo" "Castillo Argueta" "Hernandez Barahona" "Lopez Córdoba" "Martinez Escamilla" "Gomez Gallegos" "Ramirez Ibarra" "Diaz Juárez" "Morales Lazo" "Reyes Montenegro" "Ortega Nájera" "Vega Orellana" "Soto Portillo" "Flores Quintanilla" "Chavez Salguero" "Aguilar Solis" "Blanco Téllez" "Castro Ulloa" "Espinoza Valdez" "Fuentes Xicay" "Gutierrez Yanes" "Jiménez Zelaya" "Lara Alvarado" "Moreno Bonilla" "Nuñez Cabrera" "Ortiz Durán" "Paredes Fuentes" "Quintero Gaitán" "Rojas Herrera" "Silva Lorca" "Torres Maldonado" "Ureña Navas" "Valencia Ocampo" "Wong Peñate" "Zelaya Quesada" "Acosta Rivas" "Bermudez Sosa" "Cordero Trejo" "Delgado Umana" "Escobar Villalobos" "Fonseca Xocoy" "Granados Yglesias" "Hidalgo Zambrano" "Irias Alfaro" "Jerez Barrios" "Katz Cáceres" "Luna Dávila" "Méndez Elizondo" "Nieto Fajardo" "Orozco Guzmán" "Ponce Hurtado" "Quintana Izaguirre" "Rios Jerez" "Salazar Kuri" "Tapia Leiva" "Urbina Mena" "Vasquez Narvaez" "Zambrano Ojeda"
+	}
+	callsigns = { }
+}
+
+BUR = {
+	male = {
+		names = {
+			Aung Htun Kyaw Win Zaw Myint Thein Moe Naing Hlaing Ko Tin Than Soe Bo Maung Shwe Nyunt Tun Ye Sein Nyo Min Phyo Thant Thura Myo Zin Khaing Saw Ba Htet Lin Paing Yan Zwe Hein Wai Yee Zeya Thaw Toe Phyu Nanda Pyae Yan Aung
+		}
+	}
+	female = {
+		names = { Khin Su Mya Hla Nu Yin May Thet "Mi Mi" "Mi Swe" Thida Wai Nwe Nilar Hnin Phyu Sandar Cho Aye Zar Yu Pan Ei Kyi Lin Marlar Nyo Ohn Pwint Sein Tin Win Yamin Zin Zun Thuzar Wutyi "Khin Zaw" "Hla Htay" "Mya Mya" }
+	}
+	surnames = {
+		Htun Kyaw Win Aung Myint Thein Zaw Moe Hlaing Naing Tin Than Soe Bo Khin Maung Shwe Nyunt Tun Ye Sein Ko Nyo Min Phyo Thant Thura Myo Zin Khaing Saw Ba Htet Lin Paing Yan Zwe Hein Tun Wai Yee Zeya Thaw Toe Phyu Nanda
+	}
+	callsigns = { }
+}
+
+SLO = {
+	male = {
+		names = { Ján Štefan Jozef Michal Peter Pavol Martin Andrej Ladislav Anton Karol Imrich Alojz Cyril Ľudovít Viliam Arnold Emanuel Gejza Kornel Vojtech Blažej Vincent Rudolf Stanislav Oliver Leonard Marcel Teodor Titus Milan Igor Patrik Richard Erik Matúš }
+		
+		surnames = { Kováč Tóth Molnár Varga Horváth Szabó Oravec Mihálik Holub Gašpar Zeman Jurčík Kučera Král Dvořák Bartoš Polák Švec Kollár Danko Hrušovský Petrík Andraščík Marko Černák Bielik Trnka Líška Štefan Palko Lacko Urbančík Mišík Tomášik Hlaváč }
+	}
+	female = {
+		names = { Mária Anna Márta Zuzana Helena Katarína Eva Alžbeta Jana Lucia Emília Terézia Viera Natália Ivana Hana Gabriela Dagmar Nela Jolana Veronika Klára Adriána Oľga Elena Agáta Diana Lýdia Sofia Monika Viktória Laura Nina Timea Rozália }
+		
+		surnames = { Kováčová Tóthová Molnárová Vargová Horváthová Szabová Oravecová Miháliková Holubová Gašparová Zemanová Jurčíková Kučerová Králová Dvořáková Bartošová Poláková Švecová Kollárová Danková Hrušovská Petríková Andraščíková Marková Černáková Bieliková Trnková Líšková Štefanová Palková Lacková Urbančíková Mišíková Tomášiková Hlaváčová }
+	}
+}
+
+ANZ = {
+	male = {
+		names = { Mohammed Khalid Rashid Ahmed Omar Hassan Ali Saeed Yousuf Ibrahim Abdulrahman Hamdan Sultan Majid Nasser Salem Tariq Faraj Ghanem Jassim Khamis Mahdi Obaid Qasim Saif Talib Ubaid Waleed Zayed Fahd Badr Dhiyab Eisa Faisal Humaid Khalfan Mansour Nahyan Obaid Rashed Saeed Tahnoun Hazza Abdullah Saud Zaki Marwan Nasir Omar Hassan Yahya Hamad Muadh Nawaf Soud Khalifa Mubarak Saqr Thani Obaid Rashed Saeed Tahnoun Hazza }
+		
+		surnames = { "Al Nahyan" "Al Maktoum" "Al Qasimi" "Al Nuaimi" "Al Sharqi" "Al Ketbi" "Al Mansoori" "Al Romaithi" "Al Hammadi" "Al Suwaidi" "Al Kaabi" "Al Mehairi" "Al Dhaheri" "Al Hosani" "Al Junaibi" "Al Kubaisi" "Al Mazrouei" "Al Obeidli" "Al Raisi" "Al Shehhi" "Al Tunaiji" "Al Ameri" "Al Badi" "Al Dhanhani" "Al Falasi" "Al Gergawi" "Al Hemeiri" "Al Jaber" "Al Khoori" "Al Marri" "Al Neyadi" "Al Obaidli" "Al Qubaisi" "Al Remeithi" "Al Saadi" "Al Tayer" "Al Zaabi" "Al Balooshi" "Al Darmaki" "Al Farsi" "Al Hameli" "Al Jaberi" "Al Khaja" "Al Maamari" "Al Nasseri" "Al Owais" "Al Qasimi" "Al Rumaithi" "Al Shamsi" "Al Suwaidi" "Al Tamimi" "Al Ubaidly" "Al Yafei" "Al Zarooni" "Al Ali" "Al Bateen" "Al Dafri" "Al Fahim" "Al Ghafri" "Al Harasi" "Al Jenaibi" "Al Karbi" "Al Mulla" "Al Naqbi" "Al Qamzi" "Al Reyami" "Al Shehhi" "Al Wahaibi" }
+	}
+	female = {
+		names = { Fatima Mariam Shaikha Latifa Aisha Salama Alyazia Shamma Dana Maitha Amna Asma Dalal Hessa Jawaher Khawla Lubna Meera Noura Rania Sheikha Tahani Widad Yasmin Zakia Alia Budoor Fajer Ghaya Halima Jamila Khadija Laila Mouza Nadia Reem Salha Shamsa Alya Bashair Dhabya Farida Hooriya Iman Jumana Kaltham Layla Mahra Noora Qamar Rawdha Samira Tayma Zahra Abeer Alhanouf Buthaina Feryal Hayam Intisar Jawaher Khulood Lamya Mawadda Nada }
+		
+		surnames = { "bint Al Nahyan" "bint Al Maktoum" "bint Al Qasimi" "bint Al Nuaimi" "bint Al Sharqi" "bint Al Ketbi" "bint Al Mansoori" "bint Al Romaithi" "bint Al Hammadi" "bint Al Suwaidi" "bint Al Kaabi" "bint Al Mehairi" "bint Al Dhaheri" "bint Al Hosani" "bint Al Junaibi" "bint Al Kubaisi" "bint Al Mazrouei" "bint Al Obeidli" "bint Al Raisi" "bint Al Shehhi" "bint Al Tunaiji" "bint Al Ameri" "bint Al Badi" "bint Al Dhanhani" "bint Al Falasi" "bint Al Gergawi" "bint Al Hemeiri" "bint Al Jaber" "bint Al Khoori" "bint Al Marri" "bint Al Neyadi" "bint Al Obaidli" "bint Al Qubaisi" "bint Al Remeithi" "bint Al Saadi" "bint Al Tayer" "bint Al Zaabi" "bint Al Balooshi" "bint Al Darmaki" "bint Al Farsi" "bint Al Hameli" "bint Al Jaberi" "bint Al Khaja" "bint Al Maamari" "bint Al Nasseri" "bint Al Owais" "bint Al Qasimi" "bint Al Rumaithi" "bint Al Shamsi" "bint Al Suwaidi" "bint Al Tamimi" "bint Al Ubaidly" "bint Al Yafei" "bint Al Zarooni" "bint Al Ali" "bint Al Bateen" "bint Al Dafri" "bint Al Fahim" "bint Al Ghafri" "bint Al Harasi" "bint Al Jenaibi" "bint Al Karbi" "bint Al Mulla" "bint Al Naqbi" "bint Al Qamzi" "bint Al Reyami" "bint Al Shehhi" "bint Al Wahaibi" }
+	}
+}
+
+ABU = {
+	male = {
+		names = { Mohammed Khalid Rashid Ahmed Omar Hassan Ali Saeed Yousuf Ibrahim Abdulrahman Hamdan Sultan Majid Nasser Salem Tariq Faraj Ghanem Jassim Khamis Mahdi Obaid Qasim Saif Talib Ubaid Waleed Zayed Fahd Badr Dhiyab Eisa Faisal Humaid Khalfan Mansour Nahyan Obaid Rashed }
+		
+		surnames = { "Al Nahyan" "Al Maktoum" "Al Qasimi" "Al Nuaimi" "Al Sharqi" "Al Ketbi" "Al Mansoori" "Al Romaithi" "Al Hammadi" "Al Suwaidi" "Al Kaabi" "Al Mehairi" "Al Dhaheri" "Al Hosani" "Al Junaibi" "Al Kubaisi" "Al Mazrouei" "Al Obeidli" "Al Raisi" "Al Shehhi" }
+	}
+	female = {
+		names = { Fatima Mariam Shaikha Latifa Aisha Salama Alyazia Shamma Dana Maitha Amna Asma Dalal Hessa Jawaher Khawla Lubna Meera Noura Rania Sheikha Tahani Widad Yasmin Zakia Alia Budoor Fajer Ghaya Halima Jamila Khadija Laila Mouza Nadia Reem Salha Shamsa }
+		
+		surnames = { "bint Al Nahyan" "bint Al Maktoum" "bint Al Qasimi" "bint Al Nuaimi" "bint Al Sharqi" "bint Al Ketbi" "bint Al Mansoori" "bint Al Romaithi" "bint Al Hammadi" "bint Al Suwaidi" "bint Al Kaabi" "bint Al Mehairi" "bint Al Dhaheri" "bint Al Hosani" "bint Al Junaibi" "bint Al Kubaisi" "bint Al Mazrouei" "bint Al Obeidli" "bint Al Raisi" "bint Al Shehhi" }
+	}
 }
 
 KUW = { # YEM

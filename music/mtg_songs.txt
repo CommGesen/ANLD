@@ -1,0 +1,90 @@
+
+music_station = "base_music"
+
+music = {
+	song = "claustrophobic_march"
+
+	chance = {
+		factor = 1
+		modifier = {
+			not = { tag = ENG }
+			factor = 0.25
+		}
+		modifier = {
+			has_stability < 0.5
+			factor = 1.5
+		}
+	}
+
+}
+
+music = {
+	song = "communist_america"
+
+	chance = {
+		factor = 1
+		modifier = {
+			not = { has_government = communism }
+			factor = 0
+		}
+		modifier = {
+			tag = USA
+			has_idea_with_trait = communist_revolutionary
+			not = { has_government = communism }
+			factor = 2
+		}
+		modifier = {
+			tag = USA
+			has_government = communism
+			factor = 2
+		}
+	}
+}
+
+music = {
+	song = "confederate_flags"
+
+	chance = {
+		factor = 1
+		modifier = {
+			NOT = {
+				has_government = fascism
+			}
+			factor = 0
+		}
+		modifier = {
+			has_government = fascism
+			factor = 2
+		}
+		modifier = {
+			tag = USA
+			has_idea_with_trait = fascist_demagogue
+			not = { has_government = fascism }
+			factor = 2
+		}
+	}
+}
+
+music = {
+	song = "democratic_movements"
+
+	chance = {
+		factor = 1
+		modifier = {
+			OR = {
+				not = { 
+					OR = { 
+						tag = USA 
+						tag = ENG
+					}
+				}
+				not = { has_government = democratic }
+			}
+			factor = 0
+		}
+		modifier = {
+			has_war = yes
+			factor = 2
+		}
+	}
+}

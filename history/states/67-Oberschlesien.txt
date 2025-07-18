@@ -8,7 +8,7 @@ state={
 		aluminium=13
 	}
 	
-	state_category = city
+	state_category = metropolis
 
 	history={
 		owner = POL
@@ -26,8 +26,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 2
+			arms_factory = 2
+			industrial_complex = 6
 		}
 		add_core_of = POL
 	}

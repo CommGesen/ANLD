@@ -1298,4 +1298,24 @@ spriteTypes = {
 		name = "GFX_report_event_martinist_order_members"
 		texturefile = "gfx/event_pictures/report_event_martinist_order_members.dds"
 	}
+	spriteType = {
+		name = "GFX_news_event_spain_captures_barcelona"
+		texturefile = "gfx/event_pictures/news_event_spain_captures_barcelona.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_spain_captures_lisbon"
+		texturefile = "gfx/event_pictures/news_event_spain_captures_lisbon.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_spain_captures_lisbon"
+		texturefile = "gfx/event_pictures/report_event_spain_captures_lisbon.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_portugal_captures_madrid"
+		texturefile = "gfx/event_pictures/report_event_portugal_captures_madrid.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_portugal_captures_madrid"
+		texturefile = "gfx/event_pictures/news_event_portugal_captures_madrid.dds"
+	}
 }

@@ -3,7 +3,7 @@ state={
 	name="STATE_90" # Kielce
 	manpower = 3777900
 	
-	state_category = town
+	state_category = large_city
 	
 	resources={
 		steel=8
@@ -22,8 +22,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 1
+			arms_factory = 3
+			industrial_complex = 4
 			3586 = {
 				bunker = 1
 			}
