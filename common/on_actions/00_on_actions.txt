@@ -1144,16 +1144,6 @@ on_actions = {
 				set_party_name = { ideology = democratic name = deluge_quebec_democratic_short long_name = deluge_quebec_democratic_long }
 				set_party_name = { ideology = fascism name = deluge_quebec_ultranat_short long_name = deluge_quebec_ultranat_long }
 				set_party_name = { ideology = neutrality name = deluge_quebec_neutrality_short long_name = deluge_quebec_neutrality_long }
-				create_country_leader = {
-					name = "Guillaume I"
-					desc = ""
-					picture = "gfx/leaders/deluge/marquess_of_londonderry.dds"
-					expire = "1965.1.1"
-					ideology = reactionary_ideology
-					traits = {
-						#
-					}
-				}
 			}
 			if = {
 				limit = {
