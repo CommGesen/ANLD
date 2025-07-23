@@ -353,13 +353,15 @@ units = {
 
 air_wings = {
 	64 = {
-		fighter_equipment_0 =  {
+		small_plane_airframe_0 = {
 			owner = "GER" 
 			amount = 18
+			version_name = "He 51"
 		}
-		tac_bomber_equipment_0 =  {
+		medium_plane_airframe_0 = {
 			owner = "GER" 
 			amount = 9
+			version_name = "Do 17"
 		}
 	}
 }

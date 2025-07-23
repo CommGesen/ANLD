@@ -104,6 +104,10 @@ spriteTypes = {
 	texturefile = "gfx/interface/technologies/GGG/cas_0.dds"
 	}
 	SpriteType = {
+	name = "GFX_POL_CAS0_medium" #TODO - pick an actual cas
+	texturefile = "gfx/interface/technologies/GGG/cas_0.dds"
+	}
+	SpriteType = {
 	name = "GFX_CAS1_medium"
 	texturefile = "gfx/interface/technologies/GGG/cas_1.dds"
 	}	

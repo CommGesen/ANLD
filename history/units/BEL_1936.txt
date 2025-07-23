@@ -186,9 +186,11 @@ air_wings = {
 		# 2e Régiment d'Aéronautique 
 		# Consisted of 50 operational Gladiator Is, Hurricanes, CR.42s in 1940
 		# Only had Fairey Fox recon/l bombers that were also used as fighters in 1936, along with trainers
-		fighter_equipment_0 =  {
+		small_plane_airframe_0 =  {
 			owner = "BEL" 
 			amount = 20
+			creator = FRA
+			version_name = "NiD 62" #standin for Fairey Fox
 		}
 	}
 }
@@ -207,15 +209,6 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "BEL"
-		}
-		requested_factories = 1
-		progress = 0.85
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_0
 			creator = "BEL"
 		}
 		requested_factories = 1

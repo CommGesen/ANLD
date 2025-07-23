@@ -172,6 +172,55 @@ AQN = { # Some ENG, FRA and new
 	Stubborn Arrow "The King" Eagle Hangover Striker Chase "One Wing" Pickle Thief Thunder Lightning Storm Target Hawk Fox Dog Sparrow Sunrise "Night Owl" Butcher Cocky Hawkeye Killer Mick Brandy "The Baron" }
 }
 
+URC = {
+	male = {
+		names = { 
+			Alejandro Andrés Aniceto Arturo Bartolomé Basilio Benito Benjamín Bernardo Carlos
+			Daniel Diego Doroteo Eduardo Eugenio Felipe Félix Fermín Fernando Francisco
+			Fruto Jacobo Jesús Joaquín Jorge "José Francisco" "José María" Juan "Juan Antonio" "Juan Pablo"
+			Julio Justo Lisandro Lorenzo Manuel Marcelino Maximiliano Máximo Óscar Pedro
+			Ponciano Próspero Rafael Ramón Santiago Sebastián Tiburcio Tomás Toribio Victoriano
+		}
+	}
+	female = {
+		names = {
+			Adelita Araceli Belén Camila Candelaria Chavela Consuelo Cristina Delfina Esperanza
+			Fidelia Graciela Isadora Isabella Jimena Ximena Luciana Lucrecia María Marisol
+			Noemí Nohemi Valentina Valeria Rocío Socorro Sofía Teófila Amaranta Úrsula Rebeca Remedios
+		}
+	}
+	surnames = { 
+		Aguilar Andino Araujo Arbenz Barahona Barillas Barrios Cabañas Cárdenas Carrera
+		Castellanos Chamorro Chávez Corral Escalón Esquivel Estrada Ezeta Fernández Ferrera
+		Figueroa Garrigó Guzmán Hernández Jerez Jiménez Leiva López Machado Martínez
+		Medina Mejía Menéndez Montes Montiel Morazán Palacios Peralta Quiros Regalado
+		Rosales Sevilla Sinibaldi Soto Terán Ubico Vasconcelos Vigil Zelaya Zeledón
+	}
+	callsigns = { }
+}
+
+ABU = { # YEM
+	male = {
+		names = {  
+			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
+			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
+			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim  Sa'ud Shukri
+			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
+		}
+	}
+	female = {
+		names = { Aisha Layla Noor Amira Fatima Mariam Zara }
+	}
+	surnames = { 
+		"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
+			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid" 
+			"ibn Muhammad" "ibn Mustafa" "ibn Salim"  
+			"ibn Umar" "ibn Uthman" "ibn Yusuf"
+			"al-Najdi" "al-Hijazi"   
+	
+	}
+}
+
 GEO = { # SOV
 	male = {
 		names = { Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady 
@@ -418,23 +467,6 @@ SIA = {
 	callsigns = { }
 }
 
-URC = {
-	male = {
-		names = {
-			Carlos Enrique Rafael Santiago Alonso Javier Mateo Esteban Ignacio Vicente Fernando Guillermo Leonardo Manuel Nicolás Óscar Pascual Rodrigo Sergio Tomás Ulises Valentín Wilfredo Xavier Yago Zacarías Adrián Benjamín Cristóbal Daniel Emiliano Federico Gregorio Horacio Ismael Joaquín Lorenzo Marcos Néstor Octavio Pablo Quirino Raúl Simón Teodoro Vidal Winston Armando Baltazar César Damián Eliseo Faustino Geraldo Herminio Iker Julio Klaus Leandro Máximo Norberto Osvaldo Prisco Reynaldo Sabino Timoteo Urbano Venancio Werner Yerik Zósimo Agustín Bernardo Cornelio Demetrio
-		}
-	}
-	female = {
-		names = {
-			Isabela Carmen Beatriz Adriana Lucía Valentina Fernanda Patricia Daniela Renata Alejandra Bianca Carolina Diana Elena Fabiola Gabriela Helena Inés Jimena Karina Laura Mariana Natalia Olivia Paulina Regina Sofía Teresa Úrsula Vanessa Ximena Yolanda Zulema Anaís Belén Celeste Dalia Esmeralda Flor Graciela Iris Julieta Leticia Magdalena Antonieta Brígida Claribel Dorotea Eugenia Feliciana Gisela Hortensia Jacinta Kenia Leonor Margarita Noemí Ofelia Perla Querida Rosalba Silvana Tamara Verónica Wendy Xiomara Yadira Zoila Alba Betsabé Consuelo
-		}
-	}
-	surnames = {
-		Mendoza Zamora Bautista "De La Cruz" "Del Rosario" "Sanchez Lopez" "Perez Rivas" "Garcia Marquez" "Alvarez Montejo" "Castillo Argueta" "Hernandez Barahona" "Lopez Córdoba" "Martinez Escamilla" "Gomez Gallegos" "Ramirez Ibarra" "Diaz Juárez" "Morales Lazo" "Reyes Montenegro" "Ortega Nájera" "Vega Orellana" "Soto Portillo" "Flores Quintanilla" "Chavez Salguero" "Aguilar Solis" "Blanco Téllez" "Castro Ulloa" "Espinoza Valdez" "Fuentes Xicay" "Gutierrez Yanes" "Jiménez Zelaya" "Lara Alvarado" "Moreno Bonilla" "Nuñez Cabrera" "Ortiz Durán" "Paredes Fuentes" "Quintero Gaitán" "Rojas Herrera" "Silva Lorca" "Torres Maldonado" "Ureña Navas" "Valencia Ocampo" "Wong Peñate" "Zelaya Quesada" "Acosta Rivas" "Bermudez Sosa" "Cordero Trejo" "Delgado Umana" "Escobar Villalobos" "Fonseca Xocoy" "Granados Yglesias" "Hidalgo Zambrano" "Irias Alfaro" "Jerez Barrios" "Katz Cáceres" "Luna Dávila" "Méndez Elizondo" "Nieto Fajardo" "Orozco Guzmán" "Ponce Hurtado" "Quintana Izaguirre" "Rios Jerez" "Salazar Kuri" "Tapia Leiva" "Urbina Mena" "Vasquez Narvaez" "Zambrano Ojeda"
-	}
-	callsigns = { }
-}
-
 BUR = {
 	male = {
 		names = {
@@ -476,42 +508,7 @@ ANZ = {
 	}
 }
 
-ABU = {
-	male = {
-		names = { Mohammed Khalid Rashid Ahmed Omar Hassan Ali Saeed Yousuf Ibrahim Abdulrahman Hamdan Sultan Majid Nasser Salem Tariq Faraj Ghanem Jassim Khamis Mahdi Obaid Qasim Saif Talib Ubaid Waleed Zayed Fahd Badr Dhiyab Eisa Faisal Humaid Khalfan Mansour Nahyan Obaid Rashed }
-		
-		surnames = { "Al Nahyan" "Al Maktoum" "Al Qasimi" "Al Nuaimi" "Al Sharqi" "Al Ketbi" "Al Mansoori" "Al Romaithi" "Al Hammadi" "Al Suwaidi" "Al Kaabi" "Al Mehairi" "Al Dhaheri" "Al Hosani" "Al Junaibi" "Al Kubaisi" "Al Mazrouei" "Al Obeidli" "Al Raisi" "Al Shehhi" }
-	}
-	female = {
-		names = { Fatima Mariam Shaikha Latifa Aisha Salama Alyazia Shamma Dana Maitha Amna Asma Dalal Hessa Jawaher Khawla Lubna Meera Noura Rania Sheikha Tahani Widad Yasmin Zakia Alia Budoor Fajer Ghaya Halima Jamila Khadija Laila Mouza Nadia Reem Salha Shamsa }
-		
-		surnames = { "bint Al Nahyan" "bint Al Maktoum" "bint Al Qasimi" "bint Al Nuaimi" "bint Al Sharqi" "bint Al Ketbi" "bint Al Mansoori" "bint Al Romaithi" "bint Al Hammadi" "bint Al Suwaidi" "bint Al Kaabi" "bint Al Mehairi" "bint Al Dhaheri" "bint Al Hosani" "bint Al Junaibi" "bint Al Kubaisi" "bint Al Mazrouei" "bint Al Obeidli" "bint Al Raisi" "bint Al Shehhi" }
-	}
-}
-
 KUW = { # YEM
-	male = {
-		names = {  
-			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
-			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
-			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim  Sa'ud Shukri
-			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
-		}
-	}
-	female = {
-		names = { }
-	}
-	surnames = { 
-		"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
-			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid" 
-			"ibn Muhammad" "ibn Mustafa" "ibn Salim"  
-			"ibn Umar" "ibn Uthman" "ibn Yusuf"
-			"al-Najdi" "al-Hijazi"   
-	
-	}
-}
-
-ABU = { # YEM
 	male = {
 		names = {  
 			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
@@ -1730,29 +1727,6 @@ NEP_PR = {
 	callsigns = { }
 }
 
-URC = {
-	male = {
-		names = { 
-			Alejandro Andrés Aniceto Arturo Bartolomé Basilio Benito Benjamín Bernardo Carlos
-			Daniel Diego Doroteo Eduardo Eugenio Felipe Félix Fermín Fernando Francisco
-			Fruto Jacobo Jesús Joaquín Jorge "José Francisco" "José María" Juan "Juan Antonio" "Juan Pablo"
-			Julio Justo Lisandro Lorenzo Manuel Marcelino Maximiliano Máximo Óscar Pedro
-			Ponciano Próspero Rafael Ramón Santiago Sebastián Tiburcio Tomás Toribio Victoriano
-		  }
-	}
-	female = {
-		names = { }
-	}
-	surnames = { 
-		Aguilar Andino Araujo Arbenz Barahona Barillas Barrios Cabañas Cárdenas Carrera
-		Castellanos Chamorro Chávez Corral Escalón Esquivel Estrada Ezeta Fernández Ferrera
-		Figueroa Garrigó Guzmán Hernández Jerez Jiménez Leiva López Machado Martínez
-		Medina Mejía Menéndez Montes Montiel Morazán Palacios Peralta Quiros Regalado
-		Rosales Sevilla Sinibaldi Soto Terán Ubico Vasconcelos Vigil Zelaya Zeledón
-	}
-	callsigns = { }
-}
-
 GCB = {
 	male = {
 		names = { 
@@ -2057,4 +2031,3 @@ ALS = { # GER and FRA
 	"Draco" "Fast" "Tiger" "Sparrow" "Ripper" "Sundance" "Toad" "Twitch" "Farmer" "Weasel" "Target Practice" "Invisible" "Beach Boy" "Princess" "The Mute" "Carpenter"
 	}
 }
-

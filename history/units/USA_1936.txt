@@ -516,40 +516,48 @@ units = {
 		
 air_wings = {
 	359 = {
-		tac_bomber_equipment_0 = {
+		medium_plane_airframe_0 = {
 			owner = "USA" 
 			amount = 100
+			version_name = "B-6A"
 		}
-		tac_bomber_equipment_0 = {
+		medium_plane_airframe_0 = {
 			owner = "USA" 
 			amount = 100
+			version_name = "P2Y"
 		}
-		fighter_equipment_0 =  {
+		small_plane_airframe_0 =  {
 			owner = "USA" 
 			amount = 100
+			version_name = "P-26A"
 		}
-		fighter_equipment_0 =  {
+		small_plane_airframe_0 =  {
 			owner = "USA" 
 			amount = 100
+			version_name = "P-26A"
 		}
 	}
 
 	360 = {
-		tac_bomber_equipment_0 = {
+		medium_plane_airframe_0 = {
 			owner = "USA" 
 			amount = 100
+			version_name = "P2Y"
 		}
-		tac_bomber_equipment_0 = {
+		medium_plane_airframe_0 = {
 			owner = "USA" 
 			amount = 100
+			version_name = "B-6A"
 		}
-		fighter_equipment_0 =  {
+		small_plane_airframe_0 =  {
 			owner = "USA" 
 			amount = 100
+			version_name = "P-6"
 		}
-		fighter_equipment_0 =  {
+		small_plane_airframe_0 =  {
 			owner = "USA" 
 			amount = 100
+			version_name = "P-6"
 		}
 	}
 
@@ -561,8 +569,9 @@ air_wings = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = fighter_equipment_0
+			type = small_plane_airframe_1
 			creator = "USA" 
+			version_name = "P-35A"
 		}
 		requested_factories = 1
 		progress = 0.3
@@ -570,8 +579,9 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = CAS_equipment_1
+			type = small_plane_cas_airframe_0
 			creator = "USA" 
+			version_name = "O2U"
 		}
 		requested_factories = 1
 		progress = 0.3
@@ -579,17 +589,9 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = nav_bomber_equipment_1
+			type = medium_plane_airframe_1
 			creator = "USA" 
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
-	}
-	add_equipment_production = {
-		equipment = {
-			type = tac_bomber_equipment_0
-			creator = "USA" 
+			version_name = "B-10"
 		}
 		requested_factories = 1
 		progress = 0.3

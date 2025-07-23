@@ -302,9 +302,9 @@ units = {
 			name_order = 1
 		}
 		location = 13011
-		division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment, L Arm = H-35
+		division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment, L Arm = FCM 36
 		start_experience_factor = 0.3
-		force_equipment_variants = { light_tank_chassis_1 = { owner = "FRA" version_name = "H-35" } }
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "FRA" version_name = "FCM 36" } }
 	}
 
 	# IVe Corps d'Armée (Région Militaire in 1936) -- Le Mans
@@ -388,7 +388,7 @@ units = {
 		location = 11465
 		division_template = "Brigade de Chars de Combat" 		# R-35s
 		start_experience_factor = 0.2
-		force_equipment_variants = { light_tank_chassis_1 = { owner = "FRA" version_name = "H-35"} }
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "FRA" version_name = "FCM 36"} }
 	}
 
 	# Région Militaire de Paris -- Paris
@@ -441,7 +441,7 @@ units = {
 		division_template = "Brigade de Chars de Combat" 		# R-35s
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-		force_equipment_variants = { light_tank_chassis_1 = { owner = "FRA" version_name = "H-35" } }
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "FRA" version_name = "FCM 36" } }
 	}
 
 	# VIIe Corps d'Armée (Région Militaire in 1936) -- Besançon
@@ -656,7 +656,7 @@ units = {
 		location = 6613
 		division_template = "Brigade de Chars de Combat" 			# FT-17s
 		start_experience_factor = 0.2
-		force_equipment_variants = { light_tank_chassis_0 = { owner = "FRA" version_name = "FT Char Cannon" } }
+		force_equipment_variants = { light_tank_chassis_0 = { owner = "FRA" version_name = "FT mod. 31" } }
 	}
 
 
@@ -986,7 +986,7 @@ instant_effect = {
 		equipment = {
 			type = light_tank_chassis_1
 			creator = "FRA" 
-			version_name = "H-35"
+			version_name = "FCM 36"
 		}
 		requested_factories = 1
 		progress = 0.4

@@ -211,17 +211,21 @@ air_wings = {
 	43 = {
 		# 1. Légi Ezred -- Fiat CR.32 fighters
 		# 2. Légi Ezred -- Fiat CR.32 fighters
-		fighter_equipment_0 = {
-			owner = "HUN" 
-				amount = 72
+		small_plane_airframe_0 =  {
+			owner = "BUL"
+			amount = 72
+			creator = "GER" 
+			version_name = "He 51"
 		}
 
 	}
 	154 = {
 		# 3. Légi Ezred -- Caproni Ca.101, WM-16 Budapest light bombers
-		CAS_equipment_1 = {
-			owner = "HUN" 
+		small_plane_cas_airframe_0 = {
+			owner = "HUN"
 			amount = 24
+			creator = "GER" 
+			version_name = "Hs 123"
 		}
 	}
 }
