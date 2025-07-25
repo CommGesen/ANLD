@@ -1,16 +1,5 @@
 armor_generic = {
 
-	blocked_for = {
-		GER
-		JAP
-		ENG
-		USA
-		ITA
-		SOV
-		HUN
-		SIA
-	}
-
 	role = armor
 	
 	upgrade_prio = {
@@ -173,17 +162,6 @@ armor_generic = {
 }
 
 garrison_generic = {
-
-	blocked_for = {
-		GER
-		JAP
-		ENG
-		USA
-		ITA
-		SOV
-		HUN
-		SIA
-	}
 	
 	role = garrison
 	
@@ -224,9 +202,7 @@ garrison_generic = {
 suppression_generic = {
 	
 	role = suppression
-	blocked_for = {
-		SIA
-	}
+	
 	upgrade_prio = {
 		base = 0.5
 
@@ -259,26 +235,6 @@ suppression_generic = {
 }
 
 infantry_generic = {
-
-	blocked_for = {
-		GER
-		JAP
-		ENG
-		USA
-		ITA
-		SOV
-		HUN
-		CHI
-		PRC
-		GXC
-		YUN
-		SHX
-		XSM
-		SIK
-		MEN
-		MAN
-		SIA
-	}
 
 	role = infantry
 	
@@ -348,16 +304,6 @@ infantry_generic = {
 
 mountaineers_generic = {
 
-	blocked_for = {
-		GER
-		JAP
-		ENG
-		USA
-		ITA
-		SOV
-		SIA
-	}
-
 	role = mountaineers
 	
 	upgrade_prio = {
@@ -399,15 +345,6 @@ mountaineers_generic = {
 }
 
 marines_generic = {
-
-	blocked_for = {
-		GER
-		JAP
-		ENG
-		USA
-		ITA
-		SOV
-	}
 
 	role = marines
 	
@@ -490,15 +427,6 @@ marines_generic = {
 
 
 paratrooper_generic = {
-
-	blocked_for = {
-		GER
-		JAP
-		ENG
-		USA
-		ITA
-		SOV
-	}
 
 	role = paratroopers
 	
