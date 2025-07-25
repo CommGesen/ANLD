@@ -291,7 +291,7 @@ every_possible_country = {##Silent Workhorse
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry }
+			#army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -321,7 +321,7 @@ every_possible_country = {##Quartermaster General
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry }
+			#army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -351,7 +351,7 @@ every_possible_country = {##Economist
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry }
+			#army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -381,7 +381,7 @@ every_possible_country = {##Economist
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry }
+			#army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -411,7 +411,7 @@ every_possible_country = {##Financial Expert
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry }
+			#army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -441,7 +441,7 @@ every_possible_country = {##Industry Reformer
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry }
+			#army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -473,7 +473,7 @@ every_possible_country = {##Devoted Corporatist
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry }
+			#army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -503,7 +503,7 @@ every_possible_country = {##Propaganda Expert
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry }
+			#army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -533,7 +533,7 @@ every_possible_country = {##Backroom Backstabber
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry }
+			#army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -563,7 +563,7 @@ every_possible_country = {##Technocrat
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry }
+			#army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -593,7 +593,7 @@ every_possible_country = {##Ideological Crusader
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry }
+			#army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -623,7 +623,7 @@ every_possible_country = {##Popular Figurehead
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry }
+			#army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -655,7 +655,7 @@ every_possible_country = {##Anti-Communist Crusader
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry }
+			#army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -685,7 +685,7 @@ every_possible_country = {##Editor
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry }
+			#army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -715,7 +715,7 @@ every_possible_country = {##Armaments Organizer
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry }
+			#army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -739,7 +739,7 @@ every_possible_country = {###Captain of Industry
 			traits = { captain_of_industry }
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry }
+			#army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -814,7 +814,7 @@ every_possible_country = {###Smooth Talking Charmer
 			traits = { smooth_talking_charmer }
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			#army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -839,7 +839,7 @@ every_possible_country = {##Compassionate Gentleman
 			traits = { compassionate_gentleman }
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			#army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -880,7 +880,7 @@ every_possible_country = {##Colonial Governor
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			#army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -917,7 +917,7 @@ every_possible_country = {##International Secretary
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -953,7 +953,7 @@ every_possible_country = {##Independence Fighter
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -986,7 +986,7 @@ every_possible_country = {##Trades Unionist
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1019,7 +1019,7 @@ every_possible_country = {##Innovative Capitalist
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1052,7 +1052,7 @@ every_possible_country = {##Landed Gentleman
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1085,7 +1085,7 @@ every_possible_country = {##Great War Hero
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1118,7 +1118,7 @@ every_possible_country = {##Cheif of Propaganda
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1155,7 +1155,7 @@ every_possible_country = {##Cheif of Reform 1
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1192,7 +1192,7 @@ every_possible_country = {##Cheif of Drill
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1227,7 +1227,7 @@ every_possible_country = {##Coast Guard
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1262,7 +1262,7 @@ every_possible_country = {##Paramilitary Chief
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1297,7 +1297,7 @@ every_possible_country = {##National Guard
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1332,7 +1332,7 @@ every_possible_country = {##Prince of Terror
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1367,7 +1367,7 @@ every_possible_country = {##Spy Master
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1402,7 +1402,7 @@ every_possible_country = {##Spy Catcher
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1437,7 +1437,7 @@ every_possible_country = {##Infiltration Expert
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1472,7 +1472,7 @@ every_possible_country = {##Disinformation Expert
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1509,7 +1509,7 @@ every_possible_country = {##Army Infantry Leader
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1546,7 +1546,7 @@ every_possible_country = {##Army Special Forces Leader
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1583,7 +1583,7 @@ every_possible_country = {##Army Regrouper
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1620,7 +1620,7 @@ every_possible_country = {##Cavalary
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1657,7 +1657,7 @@ every_possible_country = {##Cavalary
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1694,7 +1694,7 @@ every_possible_country = {##Artillery
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1731,7 +1731,7 @@ every_possible_country = {##Armor
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1768,7 +1768,7 @@ every_possible_country = {##Logistics
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1805,7 +1805,7 @@ every_possible_country = {##Logistics
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1842,7 +1842,7 @@ every_possible_country = {##Air Superiority
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1879,7 +1879,7 @@ every_possible_country = {##Bomber Interception
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1916,7 +1916,7 @@ every_possible_country = {##Air Reform
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1951,7 +1951,7 @@ every_possible_country = {##Air Old Guard
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -1988,7 +1988,7 @@ every_possible_country = {##Air Safety
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2023,7 +2023,7 @@ every_possible_country = {##Army Old Guard
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2058,7 +2058,7 @@ every_possible_country = {##Army Old Guard
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2095,7 +2095,7 @@ every_possible_country = {##Army Offense
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2132,7 +2132,7 @@ every_possible_country = {##Army Defense
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2169,7 +2169,7 @@ every_possible_country = {##Army Maneuver
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2206,7 +2206,7 @@ every_possible_country = {##Army Organization
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2243,7 +2243,7 @@ every_possible_country = {##Army Planning
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2280,7 +2280,7 @@ every_possible_country = {##Army Planning
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2317,7 +2317,7 @@ every_possible_country = {##Army Entrenchment
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2354,7 +2354,7 @@ every_possible_country = {##Army Morale
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2391,7 +2391,7 @@ every_possible_country = {##Amphibious Assault
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2428,7 +2428,7 @@ every_possible_country = {##Army Combined Arms
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2465,7 +2465,7 @@ every_possible_country = {##Army Combined Arms
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2502,7 +2502,7 @@ every_possible_country = {##Army Concealment
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2539,7 +2539,7 @@ every_possible_country = {##Navy Anti-Submarine
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2576,7 +2576,7 @@ every_possible_country = {##Navy Screen
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2613,7 +2613,7 @@ every_possible_country = {##Navy Maneuver
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2650,7 +2650,7 @@ every_possible_country = {##Navy Air Defense
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2687,7 +2687,7 @@ every_possible_country = {##Navy Submarine
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2724,7 +2724,7 @@ every_possible_country = {##Navy Raiding
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2761,7 +2761,7 @@ every_possible_country = {##Navy Capital Ship
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2798,7 +2798,7 @@ every_possible_country = {##Navy Reformer
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2835,7 +2835,7 @@ every_possible_country = {##Navy Decisive Battle
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2872,7 +2872,7 @@ every_possible_country = {##Navy Carrier
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2909,7 +2909,7 @@ every_possible_country = {##Naval Aviation
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2946,7 +2946,7 @@ every_possible_country = {##Naval Strike
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -2983,7 +2983,7 @@ every_possible_country = {##Navy Fleet Logistics
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -3018,7 +3018,7 @@ every_possible_country = {##Navy Old Guard
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -3053,7 +3053,7 @@ every_possible_country = {##Land Theorist
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -3088,7 +3088,7 @@ every_possible_country = {##Air Theorist
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }
@@ -3123,7 +3123,7 @@ every_possible_country = {##Naval Theorist
 			}
 		}
 		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry}
+			army = { small = GFX_idea_generic_captain_of_industry }
 		}
 	}
 }

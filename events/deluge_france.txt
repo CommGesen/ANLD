@@ -2587,3 +2587,110 @@ country_event = {##FRA increases relations with POR
 		custom_effect_tooltip = FRA_custom_effect_tooltip_145
 	}
 }
+
+news_event = {##FRA_vassalize_arabian_tribes global news event
+	id = deluge_france_foreign.19
+	title = deluge_france_foreign.19.t
+	desc = deluge_france_foreign.19.desc
+	picture = GFX_news_event_generic_anglo_iraqi_war_1
+	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
+	option = {
+		name = deluge_france_foreign.19.a
+	}
+}
+
+country_event = {##FRA_vassalisation_of_arabia
+	id = deluge_france_foreign.20
+	title = deluge_france_foreign.20.t
+	desc = deluge_france_foreign.20.desc
+	picture = GFX_report_event_generic_troops_at_rivier_in_iraq
+	is_triggered_only = yes
+	
+	option = { #yes why not
+		name = deluge_france_foreign.20.a
+		
+		FROM = { 
+			country_event = deluge_france_foreign.22
+			puppet = ROOT
+		}
+		
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_major = yes
+			}
+		}
+	}
+	
+	option = { #no why yes
+		name = deluge_france_foreign.20.b
+		
+		FROM = { country_event = deluge_france_foreign.21 }
+		
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {##FRA_vassalisation_of_arabia - they said no
+	id = deluge_france_foreign.21
+	title = deluge_france_foreign.21.t
+	desc = deluge_france_foreign.21.desc
+	picture = GFX_report_event_generic_troops_at_rivier_in_iraq
+	is_triggered_only = yes
+	
+	option = { #declare war
+		name = deluge_france_foreign.21.a
+		
+		declare_war_on = {
+			target = FROM
+			type = puppet_wargoal_focus
+		}
+		
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0.25
+				has_war = yes
+			}
+			modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	option = { #it's not worth it
+		name = deluge_france_foreign.21.b
+		
+		add_political_power = -40
+		add_war_support = -0.02
+		
+		ai_chance = {
+			base = 5
+			modifier = {
+				factor = 0.2
+				any_country = {
+					capital_scope = { is_on_continent = middle_east }
+					has_war_with = ROOT
+				}
+			}
+		}
+	}
+}
+
+country_event = {##FRA_vassalisation_of_arabia - they said yes
+	id = deluge_france_foreign.22
+	title = deluge_france_foreign.22.t
+	desc = deluge_france_foreign.22.desc
+	picture = GFX_report_event_generic_troops_at_rivier_in_iraq
+	is_triggered_only = yes
+	
+	option = { #great
+		name = deluge_france_foreign.22.a
+	}
+}
