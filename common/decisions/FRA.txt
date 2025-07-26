@@ -36,6 +36,7 @@ FRA_dec_cat_foreign_policy = {
 			FROM = {
 				exists = yes
 				has_country_flag = FRA_vassalisation_target
+				NOT = { has_country_flag = FRA_vassalisation_target_delay }
 				NOT = { has_war_with = FRA }
 				NOT = { is_subject_of = FRA }
 			}

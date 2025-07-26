@@ -38,8 +38,21 @@ FRA_transfer_western_africa_effect = {
 	
 }
 set_FRA_vasslisation = {
-	var:vassalisation_target = {
-		set_country_flag = FRA_vassalisation_target
+	if = {
+		limit = { var:vassalisation_target = { is_subject = yes } }
+		var:vassalisation_target = {
+			overlord = { 
+				set_variable = { FRA_vassalisation_subject = PREV }
+				set_temp_variable = { FRA_vassalisation_subject = PREV }
+				country_event = deluge_france_foreign.24
+			}
+		}
 	}
-	custom_effect_tooltip = set_FRA_vasslisation
+	else = {
+		var:vassalisation_target = {
+			country_event = {
+				id = deluge_france_foreign.20
+			}
+		}
+	}
 }

@@ -2705,6 +2705,18 @@ country_event = {##FRA_vassalisation_of_generic - they said no
 		
 		add_political_power = -40
 		add_war_support = -0.02
+		FROM = {
+			if = {
+				limit = { NOT = { has_country_flag = FRA_vassalisation_target } }
+				set_country_flag = {
+					flag = FRA_vassalisation_target_delay
+					days = 100
+					value = 1
+				}
+				set_country_flag = FRA_vassalisation_target
+			}
+		}
+		
 		ai_chance = {
 			base = 5
 			modifier = {
@@ -2726,6 +2738,18 @@ country_event = {##FRA_vassalisation_of_generic - they said no
 		
 		add_political_power = -40
 		add_war_support = -0.02
+		var:curr_FRA_vassalisation_subject = {
+			if = {
+				limit = { NOT = { has_country_flag = FRA_vassalisation_target } }
+				set_country_flag = {
+					flag = FRA_vassalisation_target_delay
+					days = 100
+					value = 1
+				}
+				set_country_flag = FRA_vassalisation_target
+			}
+		}
+		
 		ai_chance = {
 			base = 5
 			modifier = {

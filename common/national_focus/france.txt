@@ -7433,7 +7433,12 @@ focus_tree = {
 			factor = 25
 		}
 		bypass = {
-			
+			# PER = {
+				# OR = {
+					# is_subject = yes
+					# exists = no
+				# }
+			# }
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -7689,7 +7694,12 @@ focus_tree = {
 			factor = 25
 		}
 		bypass = {
-			
+			# BUR = {
+				# OR = {
+					# is_subject = yes
+					# exists = no
+				# }
+			# }
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -7727,7 +7737,12 @@ focus_tree = {
 			factor = 25
 		}
 		bypass = {
-			
+			# SIA = {
+				# OR = {
+					# is_subject = yes
+					# exists = no
+				# }
+			# }
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
