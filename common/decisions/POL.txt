@@ -23457,7 +23457,7 @@ sarmatia_decisions_category = {
 		icon = GFX_decision_eng_trade_unions_demand
 		visible = {
 			NOT = {
-				has_country_flag = deluge_dec_pol_sarmatia_disable_development_decisions
+				has_country_flag = deluge_flag_dec_pol_sarmatia_disable_development_decisions
 			}
 		}
 		available = {
@@ -23468,7 +23468,7 @@ sarmatia_decisions_category = {
 		fire_only_once = no
 		days_re_enable = 0
 		remove_effect = {
-			set_country_flag = deluge_dec_pol_sarmatia_disable_development_decisions
+			set_country_flag = deluge_flag_dec_pol_sarmatia_disable_development_decisions
 			custom_effect_tooltip = POL_custom_effect_tooltip_278
 		}
 		ai_will_do = {
@@ -23478,7 +23478,7 @@ sarmatia_decisions_category = {
 	deluge_dec_pol_sarmatia_enable_development_decisions = {
 		icon = GFX_decision_eng_trade_unions_demand
 		visible = {
-			has_country_flag = deluge_dec_pol_sarmatia_disable_development_decisions
+			has_country_flag = deluge_flag_dec_pol_sarmatia_disable_development_decisions
 		}
 		available = {
 			
@@ -23488,7 +23488,7 @@ sarmatia_decisions_category = {
 		fire_only_once = no
 		days_re_enable = 0
 		remove_effect = {
-			clr_country_flag = deluge_dec_pol_sarmatia_disable_development_decisions
+			clr_country_flag = deluge_flag_dec_pol_sarmatia_disable_development_decisions
 			custom_effect_tooltip = POL_custom_effect_tooltip_279
 		}
 		ai_will_do = {
@@ -23718,7 +23718,7 @@ sarmatia_decisions_category = {
 			POL = {
 				has_completed_focus = POL_develop_sarmatian_lands
 				NOT = {
-					has_country_flag = deluge_dec_pol_sarmatia_disable_development_decisions
+					has_country_flag = deluge_flag_dec_pol_sarmatia_disable_development_decisions
 				}
 			}
 		}

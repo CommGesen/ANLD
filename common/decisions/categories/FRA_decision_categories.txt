@@ -45,9 +45,7 @@ FRA_dec_cat_expand_urbanize_the_countryside = {
 		tag = FRA
 	}
 	visible = {
-		FRA = { 
-			has_completed_focus = FRA_urbanize_countryside
-		}
+		has_completed_focus = FRA_urbanize_countryside
 	}
 	visible_when_empty = no
 }
@@ -59,9 +57,7 @@ FRA_dec_cat_subsidize_the_city_development = {
 		tag = FRA
 	}
 	visible = {
-		FRA = { 
-			has_completed_focus = FRA_subsidize_city_devolopment
-		}
+		has_completed_focus = FRA_subsidize_city_devolopment
 	}
 	on_map_area = {
 		state = 16

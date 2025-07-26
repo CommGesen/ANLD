@@ -7000,6 +7000,7 @@ focus_tree = {
 		available = {
 			has_completed_focus = FRA_may_day_results
 			has_completed_focus = FRA_establish_lon
+			has_completed_focus = FRA_foreign_policy
 			OR = {
 				has_completed_focus = FRA_previous_course
 				has_completed_focus = FRA_creation_of_the_parliament
