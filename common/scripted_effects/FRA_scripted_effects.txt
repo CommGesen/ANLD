@@ -37,3 +37,9 @@ FRA_transfer_central_africa_effect = {
 FRA_transfer_western_africa_effect = {
 	
 }
+set_FRA_vasslisation = {
+	var:vassalisation_target = {
+		set_country_flag = FRA_vassalisation_target
+	}
+	custom_effect_tooltip = set_FRA_vasslisation
+}

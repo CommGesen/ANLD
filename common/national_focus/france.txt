@@ -7422,10 +7422,12 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+		
 		}
 		completion_reward = {
-			
+			add_political_power = 35
+			set_temp_variable = { vassalisation_target = PER }
+			set_FRA_vasslisation = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -7679,7 +7681,9 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_political_power = 35
+			set_temp_variable = { vassalisation_target = BUR }
+			set_FRA_vasslisation = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -7715,7 +7719,9 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_political_power = 35
+			set_temp_variable = { vassalisation_target = SIA }
+			set_FRA_vasslisation = yes
 		}
 		ai_will_do = {
 			factor = 25

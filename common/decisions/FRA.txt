@@ -29,6 +29,57 @@ FRA_dec_cat_foreign_policy = {
 			FROM = { country_event = deluge_france_foreign.20 }
 		}
 	}
+	FRA_vassalisation_of_generic = {
+		targets = { PER SIA BUR }
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				exists = yes
+				has_country_flag = FRA_vassalisation_target
+				NOT = { has_war_with = FRA }
+				NOT = { is_subject_of = FRA }
+			}
+		}
+		icon = GFX_decision_generic_confiscation #change later
+		
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 100
+		days_remove = 60
+		war_with_target_on_complete = yes
+		complete_effect = {
+			if = {
+				limit = { FROM = { is_subject = yes } }
+				FROM = {
+					overlord = { country_event = generic.26 }
+				}
+			}
+			FROM = {
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = { FROM = { is_subject = yes } }
+				FROM = {
+					overlord = { 
+						set_variable = { FRA_vassalisation_subject = PREV }
+						set_temp_variable = { FRA_vassalisation_subject = PREV }
+						country_event = deluge_france_foreign.24
+					}
+				}
+			}
+			else = {
+				FROM = {
+					country_event = {
+						id = deluge_france_foreign.20
+					}
+				}
+			}
+		}
+	}
 	FRA_dec_annex_luxembourg = {
 		icon = GFX_decision_FIN_stop_motti_tactics ##change later
 		fire_only_once = no

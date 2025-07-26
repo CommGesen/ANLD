@@ -346,6 +346,7 @@
  FRA_custom_effect_tooltip_150:0 "Depending whether you research §HNuclear Reactor§! or §HHeavy Water Nuclear Reactor§! the one you researched will be created in §H[20.GetName]§!."
  FRA_custom_effect_tooltip_151:0 "If §Hprovince laying under Versailles§! is controlled and none of experimental facilities were built in [16.GetName] then §HNuclear Research Facility§! will be build there!"
  FRA_custom_effect_tooltip_152:0 "If §Hprovince laying under Rouen§! is controlled and none of experimental facilities were built in [15.GetName] then §HAreodynamic and Avionics Research Facility§! will be build there!"
+ set_FRA_vasslisation: "Unlock Decision: §YVassaliation of [?vassalisation_target.GetNonIdeologyNameDef]§!"
  
  ##FREE TOOLTIP
  FRA_custom_effect_tooltip_57:0 ""
@@ -448,6 +449,7 @@
  ##decisions
  FRA_vassalisation_of_arabia_tt: "Vassalisation of Arabia"
  FRA_vassalisation_of_arabia: "Demand Vassalisation of §Y[FROM.GetNameWithFlag]§!"
+ FRA_vassalisation_of_generic: "Demand Vassalisation of §Y[FROM.GetNameWithFlag]§!"
  FRA_dec_cat_foreign_policy:0 "Foreign Policy"
  FRA_dec_annex_luxembourg:0 "Demand annexation of [BEL.GetName]"
  FRA_dec_demand_luxembourgish_lands:0 "Demand Luxembourgish lands from [FROM.GetName]"
@@ -570,5 +572,5 @@
  FRA_demanded_luxebourgish_rhineland:0 "[FRA.GetName] demanded [786.GetName]"
  FRA_demanded_wallonia:0 "[FRA.GetName] demanded [34.GetName]"
  FRA_annexed_luxembourg:0 "[FRA.GetName] annexed [BEL.GetName]"
- FRA_vassalized_arabian_tribe:0 "[FRA.GetName] vassalized [FROM.FROM.GetName]"
+ FRA_vassalized_nation: "[FRA.GetName] vassalized [FROM.FROM.GetName]"
  
