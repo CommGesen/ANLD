@@ -7469,7 +7469,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = AFG
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7506,7 +7509,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = TUR
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -14003,6 +14009,7 @@ focus_tree = {
 				add_to_variable = { french_bad_army_recon_factor = 0.1}
 			}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_56
+			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -14471,6 +14478,7 @@ focus_tree = {
 			country_event = {
 				id = deluge_france_lore.1
 			}
+			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -14590,6 +14598,7 @@ focus_tree = {
 				add_to_variable = { new_french_army_army_attack_factor = 0.03}
 			}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_60
+			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -15163,6 +15172,7 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
+			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -15252,6 +15262,7 @@ focus_tree = {
 			country_event = {
 				id = deluge_france_lore.8
 			}
+			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -15500,6 +15511,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -15552,6 +15564,7 @@ focus_tree = {
 			custom_effect_tooltip = FRA_custom_effect_tooltip_63
 			navy_experience = 15
 			add_ideas = FRA_marine_de_guerre
+			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -16066,6 +16079,7 @@ focus_tree = {
 				uses = 2
 				category = naval_doctrine
 			}
+			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -16101,10 +16115,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			hidden_effect = {
-				add_to_variable = { french_bad_army_naval_invasion_penalty = -0.15}
-				add_to_variable = { french_bad_army_naval_invasion_capacity = 4}
-			}
+			add_to_variable = { french_bad_army_naval_invasion_penalty = -0.15}
+			add_to_variable = { french_bad_army_naval_invasion_capacity = 4}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_59
 			if = {
 				limit = {
@@ -16132,6 +16144,7 @@ focus_tree = {
 					technology = improved_destroyer
 				}
 			}
+			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -16304,6 +16317,7 @@ focus_tree = {
 					}
 				}
 			}
+			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -16559,6 +16573,7 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = GER_unlocks_big_ben_raid_tt
+			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -16878,6 +16893,7 @@ focus_tree = {
 				uses = 2
 				category = air_doctrine
 			}
+			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
 			factor = 25

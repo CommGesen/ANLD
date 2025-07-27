@@ -13,7 +13,10 @@ focus_tree = {
 		
 		modifier = {
 			add = 0
-			tag = SOV
+			OR = {
+				original_tag = SOV
+				has_country_flag = is_actually_russia
+			}
 		}
 	}
 	
@@ -451,7 +454,7 @@ focus_tree = {
 		id = SOV_the_death_of_the_tsar
 		icon = GFX_focus_generic_russian_flag
 		relative_position_id = SOV_may_day_crisis
-		x = 13
+		x = 14
 		y = 0
 		#prerequisite = { focus = SOV_negotiate_labor_reforms }
 		
@@ -901,10 +904,11 @@ focus_tree = {
 	focus = {
 		id = SOV_the_daughter_of_nicholas
 		icon = GFX_focus_generic_russian_flag
-		relative_position_id = SOV_the_death_of_the_tsar
-		x = 5
-		y = 0
-		#prerequisite = { focus = SOV_regency_charters_enforced }
+		relative_position_id = SOV_the_eight_week_debate
+		x = -3
+		y = 1
+		prerequisite = { focus = SOV_the_eight_week_debate }
+		mutually_exclusive = { focus = SOV_crowned_by_the_synod }
 		
 		cost = @RUS_focus_cost_short
 		
@@ -1115,10 +1119,11 @@ focus_tree = {
 	focus = {
 		id = SOV_crowned_by_the_synod
 		icon = GFX_focus_generic_russian_flag
-		relative_position_id = SOV_the_daughter_of_nicholas
-		x = 6
-		y = 0
-		#prerequisite = { focus = SOV_crowned_by_consent }
+		relative_position_id = SOV_the_eight_week_debate
+		x = 3
+		y = 1
+		prerequisite = { focus = SOV_the_eight_week_debate }
+		mutually_exclusive = { focus = SOV_the_daughter_of_nicholas }
 		
 		cost = @RUS_focus_cost_short
 		
@@ -1353,7 +1358,7 @@ focus_tree = {
 		id = SOV_form_the_transitional_assembly
 		icon = GFX_focus_generic_russian_flag
 		relative_position_id = SOV_provisional_government_declared
-		x = -6
+		x = -7
 		y = 1
 		prerequisite = { focus = SOV_provisional_government_declared }
 		mutually_exclusive = { focus = SOV_restore_order_in_the_capital }
@@ -1564,13 +1569,447 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SOV_approach_the_ukraine
+		id = SOV_the_first_free_election_of_russia
 		icon = GFX_focus_generic_russian_flag
 		relative_position_id = SOV_popular_education_campaign
 		x = 1
 		y = 1
 		prerequisite = { focus = SOV_popular_education_campaign }
 		prerequisite = { focus = SOV_fate_of_the_russian_empire }
+		
+		cost = @RUS_focus_cost_pollong
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	##DENIKIN BRANCH##
+	
+	focus = {
+		id = SOV_the_general_steps_forward
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_the_first_free_election_of_russia
+		x = 0
+		y = 1
+		prerequisite = { focus = SOV_the_first_free_election_of_russia }
+		mutually_exclusive = { focus = SOV_kerenskys_liberal_coalition }
+		
+		cost = @RUS_focus_cost_pollong
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_establish_the_provisional_command_committee
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_the_general_steps_forward
+		x = -2
+		y = 1
+		prerequisite = { focus = SOV_the_general_steps_forward }
+		
+		cost = @RUS_focus_cost_pollong
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_political_stability_through_discipline
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_the_general_steps_forward
+		x = 1
+		y = 1
+		prerequisite = { focus = SOV_the_general_steps_forward }
+		
+		cost = @RUS_focus_cost_pollong
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_duma_under_military_oversight
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_political_stability_through_discipline
+		x = 0
+		y = 1
+		prerequisite = { focus = SOV_political_stability_through_discipline }
+		
+		cost = @RUS_focus_cost_pollong
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_rule_with_uniform_and_ballot
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_establish_the_provisional_command_committee
+		x = -1
+		y = 1
+		prerequisite = { focus = SOV_establish_the_provisional_command_committee }
+		
+		cost = @RUS_focus_cost_pollong
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_reassure_the_landed_class
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_establish_the_provisional_command_committee
+		x = 1
+		y = 1
+		prerequisite = { focus = SOV_establish_the_provisional_command_committee }
+		
+		cost = @RUS_focus_cost_pollong
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_the_future_of_the_russian_church
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_reassure_the_landed_class
+		x = 1
+		y = 1
+		prerequisite = { focus = SOV_reassure_the_landed_class }
+		prerequisite = { focus = SOV_duma_under_military_oversight }
+		
+		cost = @RUS_focus_cost_pollong
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_security_order_sovereignty
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_rule_with_uniform_and_ballot
+		x = 1
+		y = 1
+		prerequisite = { focus = SOV_rule_with_uniform_and_ballot }
+		prerequisite = { focus = SOV_reassure_the_landed_class }
+		
+		cost = @RUS_focus_cost_pollong
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_the_new_russian_military_constitution
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_security_order_sovereignty
+		x = 2
+		y = 1
+		prerequisite = { focus = SOV_security_order_sovereignty }
+		prerequisite = { focus = SOV_the_future_of_the_russian_church }
+		
+		cost = @RUS_focus_cost_pollong
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	##KERENSKY BRANCH##
+	
+	focus = {
+		id = SOV_kerenskys_liberal_coalition
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_the_first_free_election_of_russia
+		x = -6
+		y = 1
+		prerequisite = { focus = SOV_the_first_free_election_of_russia }
+		mutually_exclusive = { focus = SOV_the_general_steps_forward }
+		
+		cost = @RUS_focus_cost_short
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_a_civilian_government_first
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_kerenskys_liberal_coalition
+		x = -2
+		y = 1
+		prerequisite = { focus = SOV_kerenskys_liberal_coalition }
+		
+		cost = @RUS_focus_cost_pol
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_universal_civil_rights
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_kerenskys_liberal_coalition
+		x = 0
+		y = 1
+		prerequisite = { focus = SOV_kerenskys_liberal_coalition }
+		
+		cost = @RUS_focus_cost_pol
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_further_the_1935_agenda
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_kerenskys_liberal_coalition
+		x = 2
+		y = 1
+		prerequisite = { focus = SOV_kerenskys_liberal_coalition }
+		
+		cost = @RUS_focus_cost_pol
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = { has_completed_focus = SOV_ratify_the_1935_agenda }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_empower_the_moderates
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_a_civilian_government_first
+		x = 0
+		y = 1
+		prerequisite = { 
+			focus = SOV_a_civilian_government_first
+			focus = SOV_universal_civil_rights
+		}
+		
+		cost = @RUS_focus_cost_pol
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_restore_judicial_independence
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_universal_civil_rights
+		x = 0
+		y = 1
+		prerequisite = { 
+			focus = SOV_a_civilian_government_first
+			focus = SOV_universal_civil_rights
+		}
+		
+		cost = @RUS_focus_cost_pol
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_support_for_womens_suffrage
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_universal_civil_rights
+		x = 1
+		y = 2
+		prerequisite = { focus = SOV_universal_civil_rights }
+		prerequisite = { focus = SOV_further_the_1935_agenda }
+		
+		cost = @RUS_focus_cost_pol
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_consolidate_the_coalition
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_empower_the_moderates
+		x = 1
+		y = 1
+		prerequisite = { focus = SOV_empower_the_moderates }
+		prerequisite = { focus = SOV_restore_judicial_independence }
+		
+		cost = @RUS_focus_cost_pol
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_the_russian_republic
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_consolidate_the_coalition
+		x = 1
+		y = 1
+		prerequisite = { focus = SOV_consolidate_the_coalition }
+		prerequisite = { focus = SOV_support_for_womens_suffrage }
 		
 		cost = @RUS_focus_cost_pol
 		
@@ -1594,7 +2033,7 @@ focus_tree = {
 		id = SOV_radical_uprising_in_moscow
 		icon = GFX_focus_generic_russian_flag
 		relative_position_id = SOV_provisional_government_declared
-		x = 6
+		x = 7
 		y = 1
 		prerequisite = { focus = SOV_provisional_government_declared }
 		mutually_exclusive = { focus = SOV_restore_order_in_the_capital }
@@ -2141,7 +2580,7 @@ focus_tree = {
 		id = SOV_industrial_modernisation_efforts
 		icon = GFX_focus_generic_russian_flag
 		relative_position_id = SOV_order_restored
-		x = 2
+		x = 0
 		y = 1
 		#prerequisite = { focus = SOV_may_day_crisis }
 		
@@ -2423,9 +2862,9 @@ focus_tree = {
 	focus = {
 		id = SOV_reinstate_the_moscow_bloc
 		icon = GFX_focus_generic_russian_flag
-		relative_position_id = SOV_radical_uprising_in_moscow
-		x = 10
-		y = -2
+		relative_position_id = SOV_the_death_of_the_tsar
+		x = 9
+		y = 0
 		#prerequisite = { focus = SOV_western_technique_with_russian_spirit }
 		
 		cost = @RUS_focus_cost_army
@@ -2806,6 +3245,335 @@ focus_tree = {
 		prerequisite = { focus = SOV_mission_to_scandinavia }
 		
 		cost = @RUS_focus_cost_for
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	##KORNILOV BRANCH##
+	
+	focus = {
+		id = SOV_kornilovs_coup
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_radical_uprising_in_moscow
+		x = 8
+		y = 0
+		#prerequisite = { focus = SOV_bring_ukraine_back_into_the_empire }
+		
+		cost = @RUS_focus_cost_short
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no 
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_secure_tsaritsyn
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_kornilovs_coup
+		x = -2
+		y = 1
+		prerequisite = { focus = SOV_kornilovs_coup }
+		
+		cost = @RUS_focus_cost_pol
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_dismantle_the_bureaucracy
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_secure_tsaritsyn
+		x = -1
+		y = 1
+		prerequisite = { focus = SOV_secure_tsaritsyn }
+		
+		cost = @RUS_focus_cost_pol
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_rally_the_cossack_hosts
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_secure_tsaritsyn
+		x = 1
+		y = 1
+		prerequisite = { focus = SOV_secure_tsaritsyn }
+		
+		cost = @RUS_focus_cost_pol
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_unity_through_obedience
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_rally_the_cossack_hosts
+		x = 1
+		y = 1
+		prerequisite = { focus = SOV_rally_the_cossack_hosts }
+		
+		cost = @RUS_focus_cost_pol
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_a_banner_for_all_russians
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_rally_the_cossack_hosts
+		x = -1
+		y = 1
+		prerequisite = { focus = SOV_rally_the_cossack_hosts }
+		
+		cost = @RUS_focus_cost_pol
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_revive_the_russian_soul
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_rally_the_cossack_hosts
+		x = -3
+		y = 1
+		prerequisite = { focus = SOV_rally_the_cossack_hosts }
+		
+		cost = @RUS_focus_cost_pol
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_the_great_march_east
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_a_banner_for_all_russians
+		x = -1
+		y = 1
+		prerequisite = { focus = SOV_a_banner_for_all_russians }
+		prerequisite = { focus = SOV_revive_the_russian_soul }
+		
+		cost = @RUS_focus_cost_pol
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_the_nation_in_flames
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_kornilovs_coup
+		x = 2
+		y = 1
+		prerequisite = { focus = SOV_kornilovs_coup }
+		
+		cost = @RUS_focus_cost_pol
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_martial_decrees_enforced
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_the_nation_in_flames
+		x = 1
+		y = 1
+		prerequisite = { focus = SOV_the_nation_in_flames }
+		
+		cost = @RUS_focus_cost_pol
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_purge_the_unfaithful
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_the_nation_in_flames
+		x = -1
+		y = 1
+		prerequisite = { focus = SOV_the_nation_in_flames }
+		
+		cost = @RUS_focus_cost_pol
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_the_army_leads_the_state
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_martial_decrees_enforced
+		x = -1
+		y = 1
+		prerequisite = { focus = SOV_martial_decrees_enforced }
+		prerequisite = { focus = SOV_purge_the_unfaithful }
+		
+		cost = @RUS_focus_cost_pol
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_total_war_doctrine
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_the_army_leads_the_state
+		x = -2
+		y = 1
+		prerequisite = { focus = SOV_the_army_leads_the_state }
+		prerequisite = { focus = SOV_unity_through_obedience }
+		
+		cost = @RUS_focus_cost_pol
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		#cancelable = no
+		ai_will_do = {
+			factor = 10
+		}
+		available = {}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_the_iron_order
+		icon = GFX_focus_generic_russian_flag
+		relative_position_id = SOV_total_war_doctrine
+		x = -1
+		y = 1
+		prerequisite = { focus = SOV_total_war_doctrine }
+		prerequisite = { focus = SOV_the_great_march_east }
+		
+		cost = @RUS_focus_cost_pol
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
