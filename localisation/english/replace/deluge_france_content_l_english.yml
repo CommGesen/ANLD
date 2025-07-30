@@ -448,9 +448,8 @@
  tech_ballistic_vests:0 "Ballistic Vests"
  tech_shocktroops:0 "Shocktroops"
  ##decisions
- FRA_vassalisation_of_arabia_tt: "Vassalisation of Arabia"
- FRA_vassalisation_of_arabia: "Demand Vassalisation of §Y[FROM.GetNameWithFlag]§!"
- FRA_vassalisation_of_generic: "Demand Vassalisation of §Y[FROM.GetNameWithFlag]§!"
+ FRA_vassalisation_of_arabia:0 "Demand Vassalisation of §Y[FROM.GetNameWithFlag]§!"
+ FRA_vassalisation_of_iran:0 "Demand Vassalisation of §Y[PER.GetNameWithFlag]§!"
  FRA_dec_cat_foreign_policy:0 "Foreign Policy"
  FRA_dec_annex_luxembourg:0 "Demand annexation of [BEL.GetName]"
  FRA_dec_demand_luxembourgish_lands:0 "Demand Luxembourgish lands from [FROM.GetName]"
@@ -573,5 +572,8 @@
  FRA_demanded_luxebourgish_rhineland:0 "[FRA.GetName] demanded [786.GetName]"
  FRA_demanded_wallonia:0 "[FRA.GetName] demanded [34.GetName]"
  FRA_annexed_luxembourg:0 "[FRA.GetName] annexed [BEL.GetName]"
- FRA_vassalized_nation: "[FRA.GetName] vassalized [FROM.FROM.GetName]"
+ FRA_vassalized_arab_nation: "[FRA.GetName] vassalized [FROM.FROM.GetName]"
+ FRA_transfered_arab_nation:0 "[FROM.GetName] transfered Arab Nation to [FRA.GetName]"
+ FRA_transfered_persia:0 "[FROM.GetName] transfered [PER.GetName] to [FRA.GetName]"
+ FRA_vassalized_PER:0 "[PER.GetName] became vassal of [FRA.GetName]"
  

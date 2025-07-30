@@ -7422,12 +7422,14 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-		
+			
 		}
 		completion_reward = {
 			add_political_power = 35
-			set_temp_variable = { vassalisation_target = PER }
-			set_FRA_vasslisation = yes
+			unlock_decision_category_tooltip = FRA_vassalisation_of_iran_tt
+			country_event = {
+				id = deluge_france_lore.26
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7693,19 +7695,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 35
-			set_temp_variable = { vassalisation_target = BUR }
-			set_FRA_vasslisation = yes
+			unlock_decision_category_tooltip = FRA_vassalisation_of_burma_tt
 		}
 		ai_will_do = {
 			factor = 25
 		}
 		bypass = {
-			# BUR = {
-				# OR = {
-					# is_subject = yes
-					# exists = no
-				# }
-			# }
+			
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -7736,8 +7732,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 35
-			set_temp_variable = { vassalisation_target = SIA }
-			set_FRA_vasslisation = yes
+			unlock_decision_category_tooltip = FRA_vassalisation_of_siam_tt
 		}
 		ai_will_do = {
 			factor = 25

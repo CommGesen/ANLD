@@ -37,26 +37,6 @@ FRA_transfer_central_africa_effect = {
 FRA_transfer_western_africa_effect = {
 	
 }
-set_FRA_vasslisation = {
-	if = {
-		limit = { var:vassalisation_target = { is_subject = yes } }
-		var:vassalisation_target = {
-			overlord = { 
-				set_variable = { FRA_vassalisation_subject = PREV }
-				set_temp_variable = { FRA_vassalisation_subject = PREV }
-				country_event = deluge_france_foreign.24
-			}
-		}
-	}
-	else = {
-		var:vassalisation_target = {
-			country_event = {
-				id = deluge_france_foreign.20
-			}
-		}
-	}
-}
-
 french_bad_army_remove_check = {
 	if = {
 		limit = {
@@ -93,5 +73,74 @@ french_bad_army_remove_check = {
 			check_variable = { french_bad_army_naval_invasion_capacity = 0 }
 		}
 		remove_dynamic_modifier = { modifier = FRA_modifier_obsolete_army }
+	}
+}
+FRA_scripted_effect_decrease_army_conservatism = {
+	if = {
+		limit = { has_idea = FRA_spirit_conservative_high_command }
+		swap_ideas = {
+			remove_idea = FRA_spirit_conservative_high_command
+			add_idea = FRA_spirit_conservative_high_command2
+		}
+	}
+	else_if = {
+		limit = { has_idea = FRA_spirit_conservative_high_command2 }
+		swap_ideas = {
+			remove_idea = FRA_spirit_conservative_high_command2
+			add_idea = FRA_spirit_conservative_high_command3
+		}
+	}
+	else_if = {
+		limit = { has_idea = FRA_spirit_conservative_high_command3 }
+		swap_ideas = {
+			remove_idea = FRA_spirit_conservative_high_command3
+			add_idea = FRA_spirit_conservative_high_command4
+		}
+	}
+	else_if = {
+		limit = { has_idea = FRA_spirit_conservative_high_command4 }
+		swap_ideas = {
+			remove_idea = FRA_spirit_conservative_high_command4
+			add_idea = FRA_spirit_conservative_high_command5
+		}
+	}
+	else_if = {
+		limit = { has_idea = FRA_spirit_conservative_high_command5 }
+		swap_ideas = {
+			remove_idea = FRA_spirit_conservative_high_command5
+			add_idea = FRA_spirit_conservative_high_command6
+		}
+	}
+	else_if = {
+		limit = { has_idea = FRA_spirit_conservative_high_command6 }
+		swap_ideas = {
+			remove_idea = FRA_spirit_conservative_high_command6
+			add_idea = FRA_spirit_conservative_high_command7
+		}
+	}
+	else_if = {
+		limit = { has_idea = FRA_spirit_conservative_high_command7 }
+		swap_ideas = {
+			remove_idea = FRA_spirit_conservative_high_command7
+			add_idea = FRA_spirit_conservative_high_command8
+		}
+	}
+	else_if = {
+		limit = { has_idea = FRA_spirit_conservative_high_command8 }
+		swap_ideas = {
+			remove_idea = FRA_spirit_conservative_high_command8
+			add_idea = FRA_spirit_conservative_high_command9
+		}
+	}
+	else_if = {
+		limit = { has_idea = FRA_spirit_conservative_high_command9 }
+		swap_ideas = {
+			remove_idea = FRA_spirit_conservative_high_command9
+			add_idea = FRA_spirit_conservative_high_command10
+		}
+	}
+	else_if = {
+		limit = { has_idea = FRA_spirit_conservative_high_command10 }
+		remove_ideas = FRA_spirit_conservative_high_command10
 	}
 }
