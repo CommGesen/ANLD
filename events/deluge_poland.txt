@@ -58,6 +58,12 @@ country_event = {#Pilsudski dies country
 				id = deluge_poland.3
 				days = 1
 			}
+			if = {
+				limit = {
+					HUN = { is_ai = yes }
+				}
+				HUN = { country_event = { id = deluge_hungary.5 days = 30 } }
+			}
 		}
 	}
 }

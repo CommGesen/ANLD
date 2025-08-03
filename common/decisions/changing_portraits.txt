@@ -2,7 +2,7 @@ changing_portraits_category = {
 	portraits_edward_rydz_smigly = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			original_tag = POL
 		}
 		visible = {
 			has_character = POL_deluge_edward_rydz_smigly
@@ -36,7 +36,7 @@ changing_portraits_category = {
 	portraits_wladyslaw_sikorski = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			original_tag = POL
 		}
 		visible = {
 			has_character = POL_deluge_wladyslaw_sikorski
@@ -70,7 +70,7 @@ changing_portraits_category = {
 	portraits_jozef_pilsudski = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			original_tag = POL
 		}
 		visible = {
 			has_character = POL_deluge_jozef_pilsudski
@@ -104,7 +104,7 @@ changing_portraits_category = {
 	portraits_napoleon_vi = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			original_tag = FRA
 		}
 		visible = {
 			has_character = FRA_deluge_napoleon_vi
@@ -138,7 +138,7 @@ changing_portraits_category = {
 	portraits_boleslaw_roja = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			original_tag = POL
 		}
 		visible = {
 			has_character = POL_deluge_boleslaw_roja
@@ -172,7 +172,7 @@ changing_portraits_category = {
 	portraits_otto_von_habsburg = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			original_tag = AUS
 		}
 		visible = {
 			has_character = AUS_otto_i
@@ -206,7 +206,7 @@ changing_portraits_category = {
 	portraits_maria_bonaparte = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			original_tag = SPR
 		}
 		visible = {
 			has_character = SPR_deluge_marie_i
@@ -240,7 +240,7 @@ changing_portraits_category = {
 	portraits_abdulmejid_ii = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			original_tag = TUR
 		}
 		visible = {
 			has_character = TUR_abdulmejid_ii
@@ -274,7 +274,7 @@ changing_portraits_category = {
 	portraits_jacques_doriot = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			original_tag = FRA
 		}
 		visible = {
 			has_character = FRA_deluge_jacques_doriot
@@ -308,7 +308,7 @@ changing_portraits_category = {
 	portraits_francois_de_la_rocque = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			original_tag = FRA
 		}
 		visible = {
 			has_character = FRA_deluge_francois_de_la_rocque
@@ -342,7 +342,7 @@ changing_portraits_category = {
 	portraits_marcel_bucard = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			original_tag = FRA
 		}
 		visible = {
 			has_character = FRA_deluge_marcel_bucard
@@ -376,7 +376,7 @@ changing_portraits_category = {
 	portraits_marcel_deat = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			original_tag = FRA
 		}
 		visible = {
 			has_character = FRA_deluge_marcel_deat
@@ -410,7 +410,7 @@ changing_portraits_category = {
 	portraits_maria_josepha_sophia_de_iturbide = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			original_tag = MEX
 		}
 		visible = {
 			has_character = MEX_maria_josepha_sophia_de_iturbide
@@ -444,7 +444,7 @@ changing_portraits_category = {
 	portraits_rene_olry = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			original_tag = FRA
 		}
 		visible = {
 			has_character = FRA_deluge_rene_olry
@@ -478,7 +478,7 @@ changing_portraits_category = {
 	portraits_aubert_frere = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			original_tag = FRA
 		}
 		visible = {
 			has_character = FRA_deluge_aubert_frere
@@ -512,7 +512,7 @@ changing_portraits_category = {
 	portraits_aime_doumenc = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			original_tag = FRA
 		}
 		visible = {
 			has_character = FRA_deluge_aime_doumenc
@@ -546,7 +546,7 @@ changing_portraits_category = {
 	portraits_antoine_marie_benoit_besson = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			original_tag = FRA
 		}
 		visible = {
 			has_character = FRA_deluge_antoine_marie_benoit_besson
@@ -580,7 +580,7 @@ changing_portraits_category = {
 	portraits_henri_giraud = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			original_tag = FRA
 		}
 		visible = {
 			has_character = FRA_deluge_henri_giraud
@@ -614,7 +614,7 @@ changing_portraits_category = {
 	portraits_maxime_weygand = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			original_tag = FRA
 		}
 		visible = {
 			has_character = FRA_deluge_maxime_weygand
@@ -648,7 +648,7 @@ changing_portraits_category = {
 	portraits_maurice_gamelin = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			original_tag = FRA
 		}
 		visible = {
 			has_character = FRA_deluge_maurice_gamelin
@@ -682,7 +682,10 @@ changing_portraits_category = {
 	portraits_philippe_petain = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {
-			
+			OR = {
+				original_tag = POM
+				original_tag = FRA
+			}
 		}
 		visible = {
 			has_character = POM_philippe_petain

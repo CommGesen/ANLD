@@ -97,17 +97,7 @@ country_event = {
 	
 	picture = GFX_report_event_generic_read_write
 	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = ITA
-		has_war_with = CRO
-		NOT = { 103 = { is_claimed_by = ITA } }
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = deluge_italy3opt
@@ -124,23 +114,7 @@ country_event = {
 	
 	picture = GFX_report_event_generic_read_write
 	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = ITA
-		has_war_with = ALB
-		OR = {
-			NOT = { 44 = { is_claimed_by = ITA } }
-			NOT = { 105 = { is_claimed_by = ITA } }
-			NOT = { 973 = { is_claimed_by = ITA } }
-			NOT = { 805 = { is_claimed_by = ITA } }
-			NOT = { 934 = { is_claimed_by = ITA } }
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = deluge_italy4opt

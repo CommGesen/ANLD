@@ -108,6 +108,16 @@ focus_tree = {
 				popularity = 0.20
 			}
 			mark_focus_tree_layout_dirty = yes
+			hidden_effect = {
+				if = {
+					limit = {
+						HUN = { is_ai = yes }
+						NOT = { has_global_flag = POL_deluge_hungary_3 }
+					}
+					HUN = { country_event = { id = deluge_hungary.3 days = 30 } }
+					set_global_flag = POL_deluge_hungary_3
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 50
@@ -2088,6 +2098,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = oczyszczenie_project
 			custom_effect_tooltip = POL_custom_effect_tooltip_1
+			set_country_flag = POL_unlock_integration_category
 		}
 		ai_will_do = {
 			base = 1000
@@ -3564,6 +3575,7 @@ focus_tree = {
 			POL = {
 				add_political_power = 100
 			}
+			set_country_flag = POL_unlock_integration_category
 		}
 		ai_will_do = {
 			factor = 20
@@ -4538,6 +4550,7 @@ focus_tree = {
 			add_to_variable = { POL_zadruga_stability_factor = 0.1}
 			custom_effect_tooltip = POL_custom_effect_tooltip_64
 			custom_effect_tooltip = POL_custom_effect_tooltip_1
+			set_country_flag = POL_unlock_integration_category
 		}
 		ai_will_do = {
 			factor = 20
@@ -4583,6 +4596,7 @@ focus_tree = {
 				}
 				add_opinion_modifier = { target = POL modifier = panslavic_policy }
 			}
+			set_country_flag = POL_unlock_integration_category
 		}
 		ai_will_do = {
 			factor = 20
@@ -5797,6 +5811,7 @@ focus_tree = {
 			retire_character = POL_deluge_janusz_korczak
 			retire_character = POL_deluge_orlik_ruckemann
 			custom_effect_tooltip = POL_custom_effect_tooltip_1
+			set_country_flag = POL_unlock_integration_category
 		}
 		ai_will_do = {
 			factor = 30
@@ -7439,6 +7454,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_4
+			set_country_flag = POL_unlock_seek_enemies_category
 		}
 		ai_will_do = {
 			factor = 40
@@ -7489,6 +7505,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_6
+			set_country_flag = POL_unlock_seek_collaboration_category
 		}
 		ai_will_do = {
 			factor = 40
@@ -7514,6 +7531,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_7
+			set_country_flag = POL_unlock_seek_cooperation_category
 		}
 		ai_will_do = {
 			factor = 40
@@ -7539,6 +7557,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_8
+			set_country_flag = POL_unlock_seek_empire_category
 		}
 		ai_will_do = {
 			factor = 40
@@ -7618,6 +7637,9 @@ focus_tree = {
 					id = deluge_poland_foreign.24
 				}
 			}
+			set_country_flag = POL_unlock_seek_enemies_category
+			set_country_flag = POL_unlock_seek_collaboration_category
+			set_country_flag = POL_unlock_seek_cooperation_category
 		}
 		ai_will_do = {
 			factor = 50
@@ -7688,7 +7710,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = POL_new_foreign_policy }
 		relative_position_id = POL_new_foreign_policy
-		mutually_exclusive = {focus = POL_new_revanchist_policy focus = POL_new_revolution focus = POL_european_cooperation_focus }
+		mutually_exclusive = { focus = POL_new_revanchist_policy focus = POL_new_revolution focus = POL_european_cooperation_focus }
 		search_filters = {FOCUS_FILTER_FOREIGN_AFFAIRS}
 		cost = 5
 		available = {
@@ -7696,6 +7718,14 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = royal_foreign_policy
+			hidden_effect = {
+				if = {
+					limit = {
+						HUN = { is_ai = yes }
+					}
+					HUN = { country_event = { id = deluge_hungary.1 days = 30 } }
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 50
@@ -7729,6 +7759,8 @@ focus_tree = {
 					id = deluge_poland_foreign.26
 				}
 			}
+			set_country_flag = POL_unlock_seek_collaboration_category
+			set_country_flag = POL_unlock_seek_cooperation_category
 		}
 		ai_will_do = {
 			factor = 50
@@ -7977,6 +8009,14 @@ focus_tree = {
 			}
 			POL = {country_event = {id = deluge_poland.13 hours = 3}}
 			mark_focus_tree_layout_dirty = yes
+			hidden_effect = {
+				if = {
+					limit = {
+						HUN = { is_ai = yes }
+					}
+					HUN = { country_event = { id = deluge_hungary.4 days = 30 } }
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -8261,6 +8301,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = POL_custom_effect_tooltip_145
 			custom_effect_tooltip = POL_custom_effect_tooltip_157
+			set_country_flag = POL_unlock_seek_empire_category
 		}
 		ai_will_do = {
 			factor = 40
@@ -8484,6 +8525,7 @@ focus_tree = {
 				popularity = -0.05
 			}
 			custom_effect_tooltip = POL_custom_effect_tooltip_1
+			set_country_flag = POL_unlock_integration_category
 		}
 		ai_will_do = {
 			factor = 40
@@ -8927,6 +8969,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = POL_custom_effect_tooltip_176
 			custom_effect_tooltip = POL_custom_effect_tooltip_157
+			set_country_flag = POL_unlock_seek_empire_category
 		}
 		ai_will_do = {
 			factor = 40
@@ -22326,6 +22369,16 @@ focus_tree = {
 			}
 			POL = {country_event = {id = deluge_poland.42 hours = 3}}
 			mark_focus_tree_layout_dirty = yes
+			hidden_effect = {
+				if = {
+					limit = {
+						HUN = { is_ai = yes }
+						NOT = { has_global_flag = POL_deluge_hungary_3 }
+					}
+					HUN = { country_event = { id = deluge_hungary.3 days = 30 } }
+					set_global_flag = POL_deluge_hungary_3
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 40
@@ -24688,6 +24741,7 @@ focus_tree = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_211
 			custom_effect_tooltip = POL_custom_effect_tooltip_1
 			add_political_power = 75
+			set_country_flag = POL_unlock_integration_category
 		}
 		ai_will_do = {
 			factor = 40

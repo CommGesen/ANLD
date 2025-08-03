@@ -1002,20 +1002,17 @@ country_event = {##Kashubians do a coup in Pomerania
 	title = deluge_pomerania.5.t
 	desc = deluge_pomerania.5.d
 	picture = GFX_report_event_ANZAC_day
+	
 	trigger = {
-		tag = POM
 		is_subject_of = FRA
-		date > 1939.1.1
 		FRA = {
 			NOT = {
 				has_completed_focus = FRA_question_of_pomerania
 			}
 		}
 	}
-	mean_time_to_happen = {
-		days = 10
-	}
-	fire_only_once = yes
+	is_triggered_only = yes
+	
 	option = {
 		name = deluge_pomerania.5.a
 		FRA = {

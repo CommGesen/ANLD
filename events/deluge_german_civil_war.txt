@@ -1563,16 +1563,7 @@ country_event = {
 	picture = GFX_report_event_usa_heavy_cruiser
 	
 	fire_only_once = yes
-	
-	trigger = {
-		tag = FRA
-		has_war = yes
-		NOT = { has_global_flag = interned_german_fleet_has_been_awarded }
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
+	is_triggered_only = yes
 	
 	immediate = {
 		set_global_flag = interned_german_fleet_has_been_awarded

@@ -46,7 +46,11 @@ focus_tree = {
 		available = {}
 		
 		completion_reward = {
-			
+			add_stability = -0.25
+			add_popularity = {
+				ideology = communism
+				popularity = 0.16
+			}
 		}
 	}
 	focus = {

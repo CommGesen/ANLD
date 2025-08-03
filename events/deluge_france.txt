@@ -53,14 +53,9 @@ country_event = {
 	title = deluge_france.3.t
 	desc = deluge_france.3.d
 	picture = GFX_report_event_french_workers_strikes
-	fire_only_once = yes
-	trigger = {
-		tag = FRA
-		has_completed_focus = FRA_devaluate_the_franc
-	}
-	mean_time_to_happen = {
-		days = 70
-	}
+	
+	is_triggered_only = yes
+	
 	option = {
 		name = deluge_france.3.a
 		add_ideas = FRA_spirit_strikes

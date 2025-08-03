@@ -6,15 +6,7 @@ integration_category = {
 		original_tag = POL
 	}
 	visible = {
-		OR = {
-			POL = { has_completed_focus = POL_begin_oczyszczenie_project }
-			POL = { has_completed_focus = POL_start_cultural_integration }
-			POL = { has_completed_focus = POL_lechitic_legacy }
-			POL = { has_completed_focus = POL_torch_for_all_slavs }
-			POL = { has_completed_focus = POL_clean_the_ghettos }
-			POL = { has_completed_focus = POL_fight_jewish_influence }
-			POL = { has_completed_focus = POL_integrate_minorities }
-		}
+		has_country_flag = POL_unlock_integration_category
 	}
 	visible_when_empty = no
 }
@@ -26,12 +18,7 @@ seek_enemies_category = {
 		original_tag = POL
 	}
 	visible = {
-		POL = {
-			OR = {
-				has_completed_focus = POL_seek_enemies
-				has_completed_focus = POL_new_revanchist_policy
-			}
-		}
+		has_country_flag = POL_unlock_seek_enemies_category
 	}
 	visible_when_empty = no
 }
@@ -43,11 +30,7 @@ seek_collaboration_category = {
 		original_tag = POL
 	}
 	visible = {
-		OR = {
-			POL = { has_completed_focus = POL_seek_collaboration }
-			POL = { has_completed_focus = POL_new_revanchist_policy }
-			POL = { has_completed_focus = POL_new_revolution }
-		}
+		has_country_flag = POL_unlock_seek_collaboration_category
 	}
 	visible_when_empty = no
 }
@@ -59,11 +42,7 @@ seek_cooperation_category = {
 		original_tag = POL
 	}
 	visible = {
-		OR = {
-			POL = { has_completed_focus = POL_seek_cooperation }
-			POL = { has_completed_focus = POL_new_revanchist_policy }
-			POL = { has_completed_focus = POL_new_revolution }
-		}
+		has_country_flag = POL_unlock_seek_cooperation_category
 	}
 	visible_when_empty = no
 }
@@ -75,11 +54,7 @@ seek_empire_category = {
 		original_tag = POL
 	}
 	visible = {
-		OR = {
-			POL = { has_completed_focus = POL_seek_empire }
-			POL = { has_completed_focus = POL_rise_of_national_liberal_catholicism }
-			POL = { has_completed_focus = POL_birth_of_new_republic }
-		}
+		has_country_flag = POL_unlock_seek_empire_category
 	}
 	visible_when_empty = no
 }
@@ -91,8 +66,8 @@ torch_for_all_of_slavs_category = {
 		original_tag = POL
 	}
 	visible = {
-		POL = { has_completed_focus = POL_seek_empire }
-		POL = { has_completed_focus = POL_torch_for_all_slavs }
+		has_completed_focus = POL_seek_empire
+		has_completed_focus = POL_torch_for_all_slavs
 	}
 	visible_when_empty = no
 }
@@ -104,8 +79,8 @@ lechitic_legacy_category = {
 		original_tag = POL
 	}
 	visible = {
-		POL = { has_completed_focus = POL_seek_empire }
-		POL = { has_completed_focus = POL_lechitic_legacy }
+		has_completed_focus = POL_seek_empire
+		has_completed_focus = POL_lechitic_legacy
 	}
 	visible_when_empty = no
 }
@@ -118,8 +93,8 @@ seek_allies_category = {
 	}
 	visible = {
 		OR = {
-			POL = { has_completed_focus = POL_seek_allies }
-			POL = { has_completed_focus = POL_new_revanchist_policy }
+			has_completed_focus = POL_seek_allies
+			has_completed_focus = POL_new_revanchist_policy
 		}
 	}
 	visible_when_empty = no
@@ -132,7 +107,7 @@ establish_honor_i_ojczyzna_category = {
 		original_tag = POL
 	}
 	visible = {
-		POL = { has_completed_focus = POL_establish_honor_i_ojczyzna }
+		has_completed_focus = POL_establish_honor_i_ojczyzna
 	}
 	visible_when_empty = no
 }
@@ -144,10 +119,8 @@ army_reform_category = {
 		original_tag = POL
 	}
 	visible = {
-		POL = { 
-			has_completed_focus = POL_start_army_reform 
-			NOT = {has_country_flag = POL_army_problem_solved}
-		}
+		has_completed_focus = POL_start_army_reform 
+		NOT = { has_country_flag = POL_army_problem_solved }
 	}
 	visible_when_empty = no
 }
@@ -189,9 +162,7 @@ expand_cities_category = {
 		original_tag = POL
 	}
 	visible = {
-		POL = { 
-			has_completed_focus = POL_expand_main_polish_cities
-		}
+		has_completed_focus = POL_expand_main_polish_cities
 	}
 	visible_when_empty = no
 }
@@ -215,9 +186,7 @@ restore_holy_sites_category = {
 		original_tag = POL
 	}
 	visible = {
-		POL = { 
-			has_completed_focus = POL_return_of_ancient_faith
-		}
+		has_completed_focus = POL_return_of_ancient_faith
 	}
 	visible_when_empty = no
 }
@@ -229,9 +198,7 @@ expand_urban_regions_category = {
 		original_tag = POL
 	}
 	visible = {
-		POL = { 
-			has_completed_focus = POL_finish_land_reform
-		}
+		has_completed_focus = POL_finish_land_reform
 	}
 	visible_when_empty = no
 }
@@ -243,9 +210,7 @@ export_catholicism_category = {
 		original_tag = POL
 	}
 	visible = {
-		POL = { 
-			has_completed_focus = POL_export_catholicism_abroad
-		}
+		has_completed_focus = POL_export_catholicism_abroad
 	}
 	visible_when_empty = yes
 }
@@ -257,9 +222,7 @@ european_cooperation_category = {
 		original_tag = POL
 	}
 	visible = {
-		POL = { 
-			has_completed_focus = POL_european_cooperation_focus
-		}
+		has_completed_focus = POL_european_cooperation_focus
 	}
 	visible_when_empty = no
 }
@@ -271,9 +234,7 @@ new_revolution_category = {
 		original_tag = POL
 	}
 	visible = {
-		POL = {
-			has_completed_focus = POL_new_revolution
-		}
+		has_completed_focus = POL_new_revolution
 	}
 	visible_when_empty = no
 	on_map_area = {
@@ -539,13 +500,12 @@ european_cooperation_joining_category = {
 	icon = GFX_decision_category_generic_democracy
 	priority = 2
 	allowed = {
-		
-	}
-	visible = {
-		is_in_faction_with = POL
 		NOT = {
 			tag = POL
 		}
+	}
+	visible = {
+		is_in_faction_with = POL
 		has_dynamic_modifier = {
 			modifier = POL_european_cooperation
 		}
@@ -559,9 +519,7 @@ POL_balance_of_power_monarchist_decisions_category = {
 	}
 	priority = 90
 	visible = {
-		POL = {
-			has_completed_focus = POL_monarchists_take_power
-		}
+		has_completed_focus = POL_monarchists_take_power
 	}
 }
 polish_hungarian_union_decisions_category = {
@@ -572,11 +530,9 @@ polish_hungarian_union_decisions_category = {
 		original_tag = POL
 	}
 	visible = {
-		POL = {
-			OR = {
-				has_completed_focus = POL_question_of_capital
-				has_completed_focus = POL_increase_cooperation
-			}
+		OR = {
+			has_completed_focus = POL_question_of_capital
+			has_completed_focus = POL_increase_cooperation
 		}
 	}
 	visible_when_empty = no
@@ -589,9 +545,7 @@ polish_new_order_decisions_category = {
 		original_tag = POL
 	}
 	visible = {
-		POL = {
-			has_completed_focus = POL_new_order
-		}
+		has_completed_focus = POL_new_order
 	}
 	visible_when_empty = no
 }
@@ -603,9 +557,7 @@ wettins_foreign_policy_decisions_category = {
 		original_tag = POL
 	}
 	visible = {
-		POL = {
-			has_completed_focus = POL_saxon_military_duty
-		}
+		has_completed_focus = POL_saxon_military_duty
 	}
 	on_map_area = {
 		state = 5
@@ -690,9 +642,7 @@ sarmatia_decisions_category = {
 		original_tag = POL
 	}
 	visible = {
-		POL = {
-			has_completed_focus = POL_old_eastern_brothers
-		}
+		has_completed_focus = POL_old_eastern_brothers
 	}
 	on_map_area = {
 		state = 199

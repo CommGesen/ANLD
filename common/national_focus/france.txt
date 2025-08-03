@@ -9790,6 +9790,13 @@ focus_tree = {
 			custom_effect_tooltip = FRA_custom_effect_tooltip_1
 			add_stability = -0.05
 			add_political_power = -40
+			hidden_effect = {
+				country_event = {
+					id = deluge_france.3
+					days = 35
+					random_days = 35
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25

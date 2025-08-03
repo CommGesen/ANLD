@@ -26,3 +26,53 @@ POL = {
 		days = 69
 	}
 }
+TUR = {
+	country_event = {
+		id = deluge_turkey.1
+		days = 182
+	}
+}
+SPR = {
+	country_event = {
+		id = deluge_spain.1
+		days = 522
+	}
+}
+POM = {
+	country_event = {
+		id = deluge_pomerania.5
+		days = 1096
+	}
+}
+LOU = {
+	country_event = {
+		id = deluge_louisiana.1
+		days = 1698
+		random_days = 10
+	}
+}
+JAP = {
+	country_event = {
+		id = japanese_diplomacy.10
+		days = 152
+	}
+}
+GRE = {
+	country_event = {
+		id = deluge_greece.1
+		days = 365
+	}
+}
+CHI = {
+	country_event = {
+		id = deluge_china.23
+		days = 244
+		random_days = 90
+	}
+}
+ENG = {
+	country_event = {
+		id = british_diplomacy.5
+		days = 122
+	}
+}

@@ -11,6 +11,13 @@ ideas = {
 			cancel = {
 				#empty
 			}
+			
+			on_add = {
+				country_event = {
+					id = deluge_greece.1
+				}
+			}
+			
 			allowed_civil_war = {
 				always = yes
 			}

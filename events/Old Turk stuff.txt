@@ -7,15 +7,7 @@ country_event = {
 	
 	picture = GFX_deluge_istanbul_small
 	
-	fire_only_once = yes
-	trigger = {
-		TAG = TUR
-		date > 1936.7.1
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = deluge_turkey1opta

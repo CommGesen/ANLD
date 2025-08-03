@@ -5,19 +5,9 @@ country_event = {##ai only - monarchist Hungary fully
 	title = deluge_hungary.1.t
 	desc = deluge_hungary.1.d
 	picture = GFX_polish_flag
-	fire_only_once = yes
-	trigger = {
-		tag = HUN
-		HUN = {
-			is_ai = yes
-		}
-		POL = {
-			has_completed_focus = POL_monarchists_take_power
-		}
-	}
-	mean_time_to_happen = {
-		days = 30
-	}
+	
+	is_triggered_only = yes
+	
 	option = { ##army proclaims Horthy royal regent
 		name = deluge_hungary.1.a
 		set_politics = {
@@ -122,22 +112,9 @@ country_event = {##fascist Hungary
 	title = deluge_hungary.3.t
 	desc = deluge_hungary.3.d
 	picture = GFX_polish_flag
-	fire_only_once = yes
-	trigger = {
-		tag = HUN
-		HUN = {
-			is_ai = yes
-		}
-		POL = {
-			OR = {
-				has_completed_focus = POL_continue_with_sanation
-				has_completed_focus = POL_radicals_takeover
-			}
-		}
-	}
-	mean_time_to_happen = {
-		days = 30
-	}
+	
+	is_triggered_only = yes
+	
 	option = { ##Gömbös becomes prime minister
 		name = deluge_hungary.3.a
 		set_politics = {
@@ -184,19 +161,9 @@ country_event = {##democratic Hungary
 	title = deluge_hungary.4.t
 	desc = deluge_hungary.4.d
 	picture = GFX_polish_flag
-	fire_only_once = yes
-	trigger = {
-		tag = HUN
-		HUN = {
-			is_ai = yes
-		}
-		POL = {
-			has_completed_focus = POL_democracy_prevails
-		}
-	}
-	mean_time_to_happen = {
-		days = 30
-	}
+	
+	is_triggered_only = yes
+	
 	option = { ##István Bethlen
 		name = deluge_hungary.4.a
 		set_politics = {
@@ -254,17 +221,9 @@ country_event = {##Piłsudski died, Emergency Cabient does snap elections
 	title = deluge_hungary.5.t
 	desc = deluge_hungary.5.d
 	picture = GFX_report_event_arrow_cross_party
-	fire_only_once = yes
-	trigger = {
-		tag = HUN
-		HUN = {
-			is_ai = no
-		}
-		has_global_flag = POL_Pilsudski_died
-	}
-	mean_time_to_happen = {
-		days = 30
-	}
+	
+	is_triggered_only = yes
+	
 	option = {#ultranationalists
 		name = deluge_hungary.5.a
 		set_country_flag = HUN_going_fascism

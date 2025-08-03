@@ -4,15 +4,12 @@ country_event = {##SPR gets info that their king Roland I died
 	title = deluge_spain.1.t
 	desc = deluge_spain.1.d
 	picture = GFX_report_event_roland_bonaparte
-	fire_only_once = yes
+	
 	trigger = {
-		tag = SPR
 		has_character = SPR_deluge_ronald_i
-		date > 1937.6.6
 	}
-	mean_time_to_happen = {
-		months = 1
-	}
+	is_triggered_only = yes
+	
 	option = {##woman cannot be a monarch - monarchy abolished, republic established, SPR gets free
 		name = deluge_spain.1.a
 		retire_character = SPR_deluge_ronald_i

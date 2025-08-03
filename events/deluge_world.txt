@@ -101,12 +101,12 @@ news_event = {
 	option = {
 		name = deluge_world2opta
 		trigger = {
-			NOT = { TAG = FROM }
+			NOT = { tag = FROM }
 		}
 	}
 	option = {
 		name = deluge_world2optb
-		trigger = { TAG = FROM }
+		trigger = { tag = FROM }
 	}
 }
 
