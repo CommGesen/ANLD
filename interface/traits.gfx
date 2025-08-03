@@ -64,4 +64,20 @@ spriteTypes = {
 		name = "GFX_trait_radicalism_sympathizer"
 		texturefile = "gfx/interface/traits/personal/trait_communist_sympathizer.dds"
 	}
+	spriteType = {
+		name = "GFX_trait_zouave"
+		texturefile = "gfx/interface/traits/personal/trait_zouave.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_homeland_connoisseur"
+		texturefile = "gfx/interface/traits/personal/trait_homeland_connoisseur.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_alcoholic"
+		texturefile = "gfx/interface/traits/personal/trait_alcoholic.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_polish_military_organization"
+		texturefile = "gfx/interface/traits/personal/trait_polish_military_organization.dds"
+	}
 }
