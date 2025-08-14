@@ -36,3 +36,37 @@ defined_text = {
 		localization_key = POL_ListenToOrliczDreszer_has_not_DreszerDESC
 	}
 }
+defined_text = {
+	name = FRA_anti_democracyNAME
+	text = {
+		trigger = {
+			has_completed_focus = FRA_proudhon_circle
+		}
+		localization_key = FRA_anti_democracyNAME_completed_proudhon_circle
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_completed_focus = FRA_proudhon_circle
+			}
+		}
+		localization_key = FRA_anti_democracyNAME_not_completed_proudhon_circle
+	}
+}
+defined_text = {
+	name = FRA_anti_democracyDESC
+	text = {
+		trigger = {
+			has_completed_focus = FRA_proudhon_circle
+		}
+		localization_key = FRA_anti_democracyDESC_completed_proudhon_circle
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_completed_focus = FRA_proudhon_circle
+			}
+		}
+		localization_key = FRA_anti_democracyDESC_not_completed_proudhon_circle
+	}
+}

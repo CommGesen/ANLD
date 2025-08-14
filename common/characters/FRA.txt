@@ -658,7 +658,7 @@ characters={
 			ideology=national_socialist_ideology
 			expire="1965.1.1.1"
 			traits = {
-				
+				deluge_trait_national_syndycalist
 			}
 			desc = "FRA_deluge_georges_valois_desc"
 		}
@@ -675,9 +675,25 @@ characters={
 			ideology=anarchist_ideology
 			expire="1965.1.1.1"
 			traits = {
-				
+				deluge_trait_anarchist_uniter
 			}
 			desc = "FRA_deluge_sebastien_faure_desc"
+		}
+	}
+	FRA_deluge_emilie_armand={
+		name=FRA_deluge_emilie_armand_name
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/portrait_FRA_emilie_armand.dds"
+			}
+		}
+		country_leader={
+			ideology=anarchist_ideology
+			expire="1999.1.1.1"
+			traits = {
+				deluge_trait_individualist_anarchist
+			}
+			desc = "FRA_deluge_emilie_armand_desc"
 		}
 	}
 	##Boulangists:
@@ -1663,12 +1679,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer infantry_leader infantry_officer brilliant_strategist zouave }
-			skill=3
-			attack_skill=2
-			defense_skill=1
-			planning_skill=3
-			logistics_skill=2
+			traits={ career_officer infantry_leader infantry_officer brilliant_strategist zouave cavalry_leader trait_mountaineer trickster war_hero staunch_democrat }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=4
 			desc = "FRA_deluge_henri_mordacq_desc"
 		}
 		advisor={

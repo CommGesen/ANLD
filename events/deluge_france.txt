@@ -156,7 +156,7 @@ country_event = {
 	desc = deluge_france.6.d
 	picture = GFX_report_event_french_republic
 	is_triggered_only = yes
-	option = {##exile them
+	option = {##exile them to Indochina
 		name = deluge_france.6.a
 		every_possible_country = {
 			limit = { has_character = FRA_deluge_napoleon_vi }
@@ -176,6 +176,29 @@ country_event = {
 			}
 			news_event = {
 				id = deluge_france.25
+			}
+		}
+	}
+	option = {##exile them to EXI
+		name = deluge_france.6.c
+		every_possible_country = {
+			limit = { has_character = FRA_deluge_napoleon_vi }
+			random_character = {
+				limit = { is_character = FRA_deluge_napoleon_vi }
+				set_nationality = EXI
+			}
+		}
+		FRA_deluge_alexandre_berthier = {
+			remove_unit_leader_role = yes
+		}
+		promote_character = FRA_deluge_alexandre_berthier
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.7
+				days = 1
+			}
+			news_event = {
+				id = deluge_france.25 ##change it
 			}
 		}
 	}
@@ -1044,11 +1067,27 @@ country_event = {##possible retirement of d'Esperey
 		name = deluge_france.39.a
 		add_political_power = -25
 		add_command_power = -50
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.54
+				days = 40
+			}
+		}
 	}
 	option = {
 		name = deluge_france.39.b
 		FRA_deluge_louis_franchet_d_esperey = {
 			remove_unit_leader_role = yes
+		}
+		remove_advisor_role = {
+			character = FRA_deluge_louis_franchet_d_esperey
+			slot = army_chief
+		}
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.54
+				days = 40
+			}
 		}
 	}
 }
@@ -1340,10 +1379,1306 @@ country_event = {##fourth guenon event - about taoism
 		add_stability = 0.03
 		hidden_effect = {
 			country_event = {
-				id = deluge_france.54
+				#id = deluge_france.54
 				days = 2
 			}
 		}
+	}
+}
+country_event = {##possible retirement of Henri Mordacq
+	id = deluge_france.54
+	title = deluge_france.54.t
+	desc = deluge_france.54.d
+	picture = GFX_report_event_henri_mordacq
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.54.a
+		add_political_power = -100
+		add_stability = -0.05
+		add_command_power = -75
+		custom_effect_tooltip = FRA_custom_effect_tooltip_153
+		set_country_flag = FRA_flag_convinced_mordacq_first_time
+	}
+	option = {
+		name = deluge_france.54.b
+		FRA_deluge_henri_mordacq = {
+			remove_unit_leader_role = yes
+		}
+		remove_advisor_role = {
+			character = FRA_deluge_henri_mordacq
+			slot = high_command
+		}
+		add_war_support = -0.05
+	}
+}
+country_event = {##army reform isn't done in time and Mordacq retires
+	id = deluge_france.55
+	title = deluge_france.55.t
+	desc = deluge_france.55.d
+	picture = GFX_report_event_henri_mordacq
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		has_character = FRA_deluge_henri_mordacq
+		NOT = {
+			OR = {
+				has_completed_focus = FRA_modernize_high_command
+				has_completed_focus = FRA_shuffle_high_command
+			}
+		}
+		has_country_flag = {
+			flag = FRA_flag_convinced_mordacq_first_time
+			days > 400
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = FRA_flag_convinced_mordacq_first_time
+		}
+	}
+	option = {
+		name = deluge_france.55.a
+		add_war_support = -0.1
+		FRA_deluge_henri_mordacq = {
+			remove_unit_leader_role = yes
+		}
+		remove_advisor_role = {
+			character = FRA_deluge_henri_mordacq
+			slot = high_command
+		}
+		clr_country_flag = FRA_flag_convinced_mordacq_first_time
+	}
+}
+country_event = {##army reform is done in time and Mordacq is happy
+	id = deluge_france.56
+	title = deluge_france.56.t
+	desc = deluge_france.56.d
+	picture = GFX_report_event_henri_mordacq
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		has_character = FRA_deluge_henri_mordacq
+		OR = {
+			has_completed_focus = FRA_modernize_high_command
+			has_completed_focus = FRA_shuffle_high_command
+		}
+		has_country_flag = FRA_flag_convinced_mordacq_first_time
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = FRA_flag_convinced_mordacq_first_time
+		}
+	}
+	option = {
+		name = deluge_france.56.a
+		add_political_power = 40
+		clr_country_flag = FRA_flag_convinced_mordacq_first_time
+	}
+}
+country_event = {##Sebastien Faure's pedophilia affair
+	id = deluge_france.57
+	title = deluge_france.57.t
+	desc = deluge_france.57.d
+	picture = GFX_report_event_faures_school
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {##silence the matter
+		name = deluge_france.57.a
+		add_political_power = -50
+	}
+	option = {##hold Sebastien accountable
+		name = deluge_france.57.b
+		promote_character = FRA_deluge_emilie_armand
+		country_event = {
+			id = deluge_france.58
+			days = 2
+		}
+	}
+}
+country_event = {##sentence for Sebastian Faure
+	id = deluge_france.58
+	title = deluge_france.58.t
+	desc = deluge_france.58.d
+	picture = GFX_report_event_sebastien_faure
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {##death penalty
+		name = deluge_france.58.a
+		retire_character = FRA_deluge_sebastien_faure
+	}
+	option = {##life imprisonment
+		name = deluge_france.58.b
+		add_political_power = -50
+		FRA_deluge_sebastien_faure = {
+			remove_country_leader_role = {
+				ideology = anarchist_ideology
+			}
+		}
+	}
+}
+country_event = {##decolonization - suez canal
+	id = deluge_france.59
+	title = deluge_france.59.t
+	desc = deluge_france.59.d
+	picture = GFX_report_event_suez_canal
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 4
+	option = {##give it to egypt
+		name = deluge_france.59.a
+		trigger = {
+			country_exists = EGY
+			800 = {
+				is_owned_by = ROOT
+			}
+		}
+		800 = {
+			transfer_state_to = EGY
+		}
+	}
+	option = {##give it to ottomans
+		name = deluge_france.59.b
+		trigger = {
+			country_exists = ENG
+			800 = {
+				is_owned_by = ROOT
+			}
+		}
+		800 = {
+			transfer_state_to = TUR
+		}
+	}
+	option = {##keep it
+		name = deluge_france.59.c
+		add_political_power = -10
+		set_country_flag = FRA_kept_suez_during_decolonization
+	}
+}
+country_event = {##decolonization - channel islands
+	id = deluge_france.60
+	title = deluge_france.60.t
+	desc = deluge_france.60.d
+	picture = GFX_report_event_channel_islands
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {##give it to ENG
+		name = deluge_france.60.a
+		trigger = {
+			country_exists = ENG
+			OR = {
+				991 = {
+					is_owned_by = ROOT
+				}
+				990 = {
+					is_owned_by = ROOT
+				}
+				1026 = {
+					is_owned_by = ROOT
+				}
+			}
+		}
+		if = {
+			limit = {
+				990 = {
+					is_owned_by = ROOT
+				}
+			}
+			990 = {
+				transfer_state_to = ENG
+			}
+			if = {
+				limit = {
+					990 = {
+						NOT = {
+							is_core_of = ENG
+						}
+					}
+				}
+				990 = {
+					add_core_of = ENG
+				}
+			}
+		}
+		if = {
+			limit = {
+				1026 = {
+					is_owned_by = ROOT
+				}
+			}
+			1026 = {
+				transfer_state_to = ENG
+			}
+			if = {
+				limit = {
+					1026 = {
+						NOT = {
+							is_core_of = ENG
+						}
+					}
+				}
+				1026 = {
+					add_core_of = ENG
+				}
+			}
+		}
+		if = {
+			limit = {
+				991 = {
+					is_owned_by = ROOT
+				}
+			}
+			991 = {
+				transfer_state_to = ENG
+			}
+			if = {
+				limit = {
+					991 = {
+						NOT = {
+							is_core_of = ENG
+						}
+					}
+				}
+				991 = {
+					add_core_of = ENG
+				}
+			}
+		}
+		add_political_power = 200
+	}
+	option = {##keep them
+		name = deluge_france.60.b
+	}
+}
+country_event = {##decolonization - gibraltar
+	id = deluge_france.61
+	title = deluge_france.61.t
+	desc = deluge_france.61.d
+	picture = GFX_report_event_gibraltar
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {##give it to SPR
+		name = deluge_france.61.a
+		trigger = {
+			country_exists = SPR
+			118 = {
+				is_owned_by = ROOT
+			}
+		}
+		if = {
+			limit = {
+				118 = {
+					is_owned_by = ROOT
+				}
+			}
+			118 = {
+				transfer_state_to = SPR
+			}
+		}
+	}
+	option = {##keep it
+		name = deluge_france.61.b
+		add_political_power = -20
+		SPR = {
+			add_opinion_modifier = {
+				target = FRA
+				modifier = opinion_modifier_hypocrisy_during_decolonization
+			}
+		}
+	}
+}
+country_event = {##decolonization - malta
+	id = deluge_france.62
+	title = deluge_france.62.t
+	desc = deluge_france.62.d
+	picture = GFX_deluge_malta
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {##give it to ITA
+		name = deluge_france.62.a
+		trigger = {
+			country_exists = ITA
+			116 = {
+				is_owned_by = ROOT
+			}
+		}
+		if = {
+			limit = {
+				116 = {
+					is_owned_by = ROOT
+				}
+			}
+			116 = {
+				transfer_state_to = ITA
+			}
+		}
+	}
+	option = {##give them independence
+		name = deluge_france.62.b
+		trigger = {
+			116 = {
+				is_owned_by = ROOT
+			}
+		}
+		if = {
+			limit = {
+				116 = {
+					is_owned_by = ROOT
+				}
+			}
+			116 = {
+				transfer_state_to = MLT
+			}
+		}
+	}
+	option = {##keep it
+		name = deluge_france.62.c
+		add_political_power = -20
+		ITA = {
+			add_opinion_modifier = {
+				target = FRA
+				modifier = opinion_modifier_hypocrisy_during_decolonization
+			}
+		}
+		MLT = {
+			add_opinion_modifier = {
+				target = FRA
+				modifier = opinion_modifier_hypocrisy_during_decolonization
+			}
+		}
+	}
+}
+country_event = {##decolonization - north africa
+	id = deluge_france.63
+	title = deluge_france.63.t
+	desc = deluge_france.63.d
+	picture = GFX_report_event_african_soldiers
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {##fully decolonize it
+		name = deluge_france.63.a
+		if = {
+			limit = {
+				OR = {
+					owns_state = 459
+					owns_state = 460
+					owns_state = 513
+					owns_state = 514
+				}
+			}
+			release = ALG
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 782
+					owns_state = 461
+					owns_state = 290
+					owns_state = 462
+					owns_state = 699
+				}
+			}
+			release = MOR
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 178
+				}
+			}
+			178 = {
+				transfer_state_to = MOR
+				add_core_of = MOR
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 697
+				}
+			}
+			697 = {
+				transfer_state_to = MOR
+				add_core_of = MOR
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 458
+					owns_state = 665
+				}
+			}
+			release = TUN
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 273
+					owns_state = 1022
+					owns_state = 1021
+					owns_state = 448
+					owns_state = 661
+					owns_state = 449
+					owns_state = 662
+					owns_state = 450
+					owns_state = 663
+					owns_state = 451
+				}
+			}
+			release = LBA
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 783
+					owns_state = 551
+					owns_state = 883
+					owns_state = 886
+					owns_state = 549
+					owns_state = 887
+					owns_state = 885
+					owns_state = 884
+				}
+			}
+			release = SUD
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 457
+					owns_state = 456
+					owns_state = 552
+					owns_state = 907
+					owns_state = 452
+					owns_state = 447
+					owns_state = 446
+				}
+			}
+			release = EGY
+		}
+		if = {
+			limit = {
+				FRA = {
+					has_country_flag = FRA_kept_suez_during_decolonization
+				}
+				EGY = {
+					owns_state = 800
+				}
+			}
+			800 = {
+				transfer_state_to = FRA
+			}
+		}
+	}
+	option = {##keep algieria
+		name = deluge_france.62.b
+		add_political_power = -30
+		459 = {
+			add_core_of = FRA
+		}
+		513 = {
+			add_core_of = FRA
+		}
+		460 = {
+			add_core_of = FRA
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 782
+					owns_state = 461
+					owns_state = 290
+					owns_state = 462
+					owns_state = 699
+				}
+			}
+			release = MOR
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 178
+				}
+			}
+			178 = {
+				transfer_state_to = MOR
+				add_core_of = MOR
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 697
+				}
+			}
+			697 = {
+				transfer_state_to = MOR
+				add_core_of = MOR
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 458
+					owns_state = 665
+				}
+			}
+			release = TUN
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 273
+					owns_state = 1022
+					owns_state = 1021
+					owns_state = 448
+					owns_state = 661
+					owns_state = 449
+					owns_state = 662
+					owns_state = 450
+					owns_state = 663
+					owns_state = 451
+				}
+			}
+			release = LBA
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 783
+					owns_state = 551
+					owns_state = 883
+					owns_state = 886
+					owns_state = 549
+					owns_state = 887
+					owns_state = 885
+					owns_state = 884
+				}
+			}
+			release = SUD
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 457
+					owns_state = 456
+					owns_state = 552
+					owns_state = 907
+					owns_state = 452
+					owns_state = 447
+					owns_state = 446
+				}
+			}
+			release = EGY
+		}
+		if = {
+			limit = {
+				FRA = {
+					has_country_flag = FRA_kept_suez_during_decolonization
+				}
+				EGY = {
+					owns_state = 800
+				}
+			}
+			800 = {
+				transfer_state_to = FRA
+			}
+		}
+	}
+	option = {##keep algieria and tunisia
+		name = deluge_france.62.c
+		add_political_power = -50
+		459 = {
+			add_core_of = FRA
+		}
+		513 = {
+			add_core_of = FRA
+		}
+		460 = {
+			add_core_of = FRA
+		}
+		665 = {
+			add_core_of = FRA
+		}
+		458 = {
+			add_core_of = FRA
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 782
+					owns_state = 461
+					owns_state = 290
+					owns_state = 462
+					owns_state = 699
+				}
+			}
+			release = MOR
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 178
+				}
+			}
+			178 = {
+				transfer_state_to = MOR
+				add_core_of = MOR
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 697
+				}
+			}
+			697 = {
+				transfer_state_to = MOR
+				add_core_of = MOR
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 273
+					owns_state = 1022
+					owns_state = 1021
+					owns_state = 448
+					owns_state = 661
+					owns_state = 449
+					owns_state = 662
+					owns_state = 450
+					owns_state = 663
+					owns_state = 451
+				}
+			}
+			release = LBA
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 783
+					owns_state = 551
+					owns_state = 883
+					owns_state = 886
+					owns_state = 549
+					owns_state = 887
+					owns_state = 885
+					owns_state = 884
+				}
+			}
+			release = SUD
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 457
+					owns_state = 456
+					owns_state = 552
+					owns_state = 907
+					owns_state = 452
+					owns_state = 447
+					owns_state = 446
+				}
+			}
+			release = EGY
+		}
+		if = {
+			limit = {
+				FRA = {
+					has_country_flag = FRA_kept_suez_during_decolonization
+				}
+				EGY = {
+					owns_state = 800
+				}
+			}
+			800 = {
+				transfer_state_to = FRA
+			}
+		}
+	}
+}
+country_event = {##decolonization - western, southern and equatorial africa
+	id = deluge_france.64
+	title = deluge_france.64.t
+	desc = deluge_france.64.d
+	picture = GFX_report_event_french_african_infantry_running
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.64.a
+		if = {
+			limit = {
+				OR = {
+					owns_state = 768
+					owns_state = 557
+				}
+			}
+			release = MAU
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 272
+					owns_state = 702
+				}
+			}
+			release = SEN
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 296
+				}
+			}
+			release = GAM
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 556
+				}
+			}
+			release = GUI
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 899
+					owns_state = 770
+					owns_state = 898
+					owns_state = 769
+				}
+			}
+			release = MLI
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 773
+				}
+			}
+			release = BKF
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 771
+				}
+			}
+			release = IVE
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 298
+					owns_state = 700
+				}
+			}
+			release = LIB
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 774
+					owns_state = 775
+				}
+			}
+			release = NGR
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 772
+				}
+			}
+			release = TOG
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 515
+					owns_state = 776
+				}
+			}
+			release = CHD
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 660
+				}
+			}
+			release = CAR
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 274
+				}
+			}
+			release = GHA
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 777
+				}
+			}
+			release = CMN
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 539
+					owns_state = 297
+					owns_state = 705
+				}
+			}
+			release = GAB
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 558
+					owns_state = 902
+					owns_state = 901
+					owns_state = 900
+				}
+			}
+			release = NGA
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 796
+					owns_state = 540
+					owns_state = 892
+					owns_state = 891
+				}
+			}
+			release = ANG
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 895
+					owns_state = 894
+					owns_state = 541
+					owns_state = 893
+				}
+			}
+			release = NAM
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 542
+					owns_state = 275
+					owns_state = 719
+					owns_state = 681
+					owns_state = 703
+					owns_state = 704
+				}
+			}
+			release = SAF
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 981
+					owns_state = 545
+				}
+			}
+			release = ZIM
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 295
+					owns_state = 538
+					owns_state = 718
+					owns_state = 890
+					owns_state = 888
+					owns_state = 889
+				}
+			}
+			release = COG
+		}
+	}
+}
+country_event = {##decolonization - eastern africa and issue of 844
+	id = deluge_france.65
+	title = deluge_france.65.t
+	desc = deluge_france.65.d
+	picture = GFX_report_event_french_african_infantry_running
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {##844 to KEN
+		name = deluge_france.65.a
+		if = {
+			limit = {
+				OR = {
+					owns_state = 544
+					owns_state = 896
+					owns_state = 897
+				}
+			}
+			release = MZB
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 546
+				}
+			}
+			release = TNG
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 548
+				}
+			}
+			release = UGA
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 905
+					owns_state = 547
+					owns_state = 904
+					owns_state = 903
+				}
+			}
+			release = KEN
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 559
+					owns_state = 655
+					owns_state = 268
+					owns_state = 835
+					owns_state = 837
+					owns_state = 836
+					owns_state = 271
+					owns_state = 838
+					owns_state = 839
+					owns_state = 840
+					owns_state = 841
+					owns_state = 843
+					owns_state = 908
+					owns_state = 842
+					owns_state = 550
+				}
+			}
+			release = ETH
+		}
+		844 = {
+			transfer_state_to = KEN
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 543
+					owns_state = 708
+					owns_state = 706
+					owns_state = 707
+					owns_state = 713
+				}
+			}
+			release = MAD
+		}
+	}
+	option = {##844 to ETH
+		name = deluge_france.65.b
+		if = {
+			limit = {
+				OR = {
+					owns_state = 544
+					owns_state = 896
+					owns_state = 897
+				}
+			}
+			release = MZB
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 546
+				}
+			}
+			release = TNG
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 548
+				}
+			}
+			release = UGA
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 905
+					owns_state = 547
+					owns_state = 904
+					owns_state = 903
+				}
+			}
+			release = KEN
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 559
+					owns_state = 655
+					owns_state = 268
+					owns_state = 835
+					owns_state = 837
+					owns_state = 836
+					owns_state = 271
+					owns_state = 838
+					owns_state = 839
+					owns_state = 840
+					owns_state = 841
+					owns_state = 843
+					owns_state = 908
+					owns_state = 842
+					owns_state = 550
+				}
+			}
+			release = ETH
+		}
+		844 = {
+			transfer_state_to = ETH
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 543
+					owns_state = 708
+					owns_state = 706
+					owns_state = 707
+					owns_state = 713
+				}
+			}
+			release = MAD
+		}
+	}
+}
+country_event = {##decolonization - Asia
+	id = deluge_france.66
+	title = deluge_france.66.t
+	desc = deluge_france.66.d
+	picture = GFX_report_event_french_african_infantry_running
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.66.a
+		if = {
+			limit = {
+				BHU = {
+					is_subject_of = ROOT
+				}
+			}
+			set_autonomy = {
+				target = BHU
+				autonomous_state = autonomy_free
+				end_wars = yes
+				end_civil_wars = no
+			}
+			remove_from_faction = BHU
+		}
+		if = {
+			limit = {
+				OR = {
+					owns_state = 422
+					owns_state = 281
+					owns_state = 709
+					owns_state = 710
+				}
+			}
+			release = BHU
+		}
+		if = {
+			limit = {
+				670 = {
+					owner = {
+						OR = {
+							is_subject_of = ROOT
+							tag = ROOT
+						}
+					}
+				}
+			}
+			670 = {
+				transfer_state_to = LAO
+			}
+		}
+		if = {
+			limit = {
+				741 = {
+					owner = {
+						OR = {
+							is_subject_of = ROOT
+							tag = ROOT
+						}
+					}
+				}
+			}
+			741 = {
+				transfer_state_to = CAM
+			}
+		}
+		if = {
+			limit = {
+				728 = {
+					owner = {
+						OR = {
+							is_subject_of = ROOT
+							tag = ROOT
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = CHI
+				}
+				728 = {
+					transfer_state_to = CHI
+				}
+			}
+			else_if = {
+				limit = {
+					country_exists = PRC
+				}
+				728 = {
+					transfer_state_to = PRC
+				}
+			}
+			else = {
+				728 = {
+					transfer_state_to = JAP
+				}
+			}
+		}
+		if = {
+			limit = {
+				743 = {
+					owner = {
+						OR = {
+							is_subject_of = ROOT
+							tag = ROOT
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = CHI
+				}
+				743 = {
+					transfer_state_to = CHI
+				}
+			}
+			else_if = {
+				limit = {
+					country_exists = PRC
+				}
+				743 = {
+					transfer_state_to = PRC
+				}
+			}
+			else = {
+				743 = {
+					transfer_state_to = JAP
+				}
+			}
+		}
+		if = {
+			limit = {
+				VIN = {
+					is_subject_of = ROOT
+				}
+			}
+			set_autonomy = {
+				target = VIN
+				autonomous_state = autonomy_free
+				end_wars = yes
+				end_civil_wars = no
+			}
+			remove_from_faction = VIN
+			VIN = {
+				promote_character = VIN_bao_dai
+			}
+		}
+	}
+}
+news_event = {##start of decolonization
+	id = deluge_france.67
+	title = deluge_france.67.t
+	desc = deluge_france.67.d
+	picture = GFX_news_event_civillians_running_through_soldiers
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.67.a
+	}
+}
+news_event = {##end of decolonization
+	id = deluge_france.68
+	title = deluge_france.68.t
+	desc = deluge_france.68.d
+	picture = GFX_news_event_empty_colonial_french_street
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.68.a
+	}
+}
+country_event = {##choosing leader of french communists
+	id = deluge_france.69
+	title = deluge_france.69.t
+	desc = deluge_france.69.d
+	picture = GFX_report_event_jacques_duclos_alt
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.69.a
+		promote_character = FRA_deluge_maurice_thorez
+		retire_character = FRA_deluge_jacques_duclos
+	}
+	option = {
+		name = deluge_france.69.b
+		promote_character = FRA_deluge_jacques_duclos
+		retire_character = FRA_deluge_maurice_thorez
+	}
+}
+country_event = {##choosing leader of SFIO
+	id = deluge_france.70
+	title = deluge_france.70.t
+	desc = deluge_france.70.d
+	picture = GFX_report_event_french_section_of_workers_internationale
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.70.a
+		promote_character = FRA_deluge_leon_blum
+	}
+	option = {
+		name = deluge_france.70.b
+		promote_character = FRA_deluge_felix_gouin
 	}
 }
 country_event = {##inspection in the army

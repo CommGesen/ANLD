@@ -1,0 +1,94 @@
+coring_india = {
+	core_state_india = {
+		icon = GFX_decision_generic_form_nation
+		state_target = yes
+		fire_only_once = no
+		days_remove = 40
+		cost = 20
+		days_re_enable = 10
+		modifier = {
+			political_power_gain = -0.05
+		}
+		target_trigger = {
+			FROM = {
+				NOT = {
+					is_core_of = ROOT
+				}
+				OR = {
+					state = 710
+					state = 709
+					state = 281
+					state = 422
+					state = 982
+					state = 423
+					state = 320
+					state = 424
+					state = 425
+					state = 983
+					state = 321
+					state = 709
+					state = 427
+					state = 429
+					state = 426
+					state = 984
+					state = 436
+					state = 437
+					state = 428
+					state = 443
+					state = 444
+					state = 1012
+					state = 988
+					state = 445
+					state = 987
+					state = 440
+					state = 989
+					state = 433
+					state = 986
+					state = 787
+					state = 441
+					state = 442
+					state = 439
+					state = 438
+					state = 323
+					state = 985
+					state = 324
+					state = 434
+					state = 432
+					state = 430
+					state = 431
+					state = 435
+					state = 997
+					state = 288
+					state = 998
+					state = 640
+					state = 998
+					state = 999
+					state = 993
+					state = 994
+					state = 996
+					state = 733
+					state = 869
+				}
+			}
+		}
+		visible = {
+			
+		}
+		available = {
+			ROOT = {
+				controls_state = FROM
+			}
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			FROM = {
+				add_core_of = ROOT
+			}
+		}	
+		ai_will_do = {
+			base = 100
+		}
+	}
+}

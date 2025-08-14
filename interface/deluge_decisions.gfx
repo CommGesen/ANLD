@@ -610,6 +610,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_french_popular_party.dds"
 	}
 	spriteType = {
+		name = "GFX_decision_generic_burma"
+		texturefile = "gfx/interface/decisions/decision_generic_burma.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_iran"
+		texturefile = "gfx/interface/decisions/decision_generic_iran.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_siam"
+		texturefile = "gfx/interface/decisions/decision_generic_siam.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_arabia"
+		texturefile = "gfx/interface/decisions/decision_generic_arabia.dds"
+	}
+	spriteType = {
 		name = "GFX_decision_cat_french_popular_party"
 		texturefile = "gfx/interface/decisions/decision_cat_french_popular_party.dds"
 	}

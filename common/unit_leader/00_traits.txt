@@ -333,6 +333,13 @@ leader_traits = {
 			factor = 0
 		}
 	}
+	staunch_democrat = {
+		type = land
+		trait_type = personality_trait
+		new_commander_weight = {
+			factor = 0
+		}
+	}
 	bonaparte_loyalist = { 
 		type = land
 		trait_type = personality_trait

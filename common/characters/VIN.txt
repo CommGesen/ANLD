@@ -21,8 +21,19 @@ characters={
 		}
 		country_leader={
 			ideology=conservative_democracy_ideology
-			expire="1953.3.1.1"
-			id=-1
+			expire="1999.3.1.1"
+		}
+	}
+	VIN_bao_dai={
+		name="Bảo Đại"
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
+			}
+		}
+		country_leader={
+			ideology=reactionary_ideology
+			expire="1999.3.1.1"
 		}
 	}
 	VIN_andre_massena={

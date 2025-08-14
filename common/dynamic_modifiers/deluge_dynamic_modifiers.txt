@@ -494,6 +494,19 @@ FRA_modifier_new_napoleonic_code = {##new_napoleonic_code_
 	non_core_manpower = new_napoleonic_code_non_core_manpower
 	resistance_damage_to_garrison = new_napoleonic_code_resistance_damage_to_garrison
 }
+FRA_modifier_radical_reforms = {##_radical_reforms
+	enable = { always = yes }
+	icon = GFX_idea_FIN_socialist_welfare
+	consumer_goods_factor = consumer_goods_factor_radical_reforms
+	research_speed_factor = research_speed_factor_radical_reforms
+	stability_factor = stability_factor_radical_reforms
+	communism_drift = communism_drift_radical_reforms
+	democratic_acceptance = democratic_acceptance_radical_reforms
+	party_popularity_stability_factor = party_popularity_stability_factor_radical_reforms
+	war_support_factor = war_support_factor_radical_reforms
+	drift_defence_factor = drift_defence_factor_radical_reforms
+	political_power_factor = political_power_factor_radical_reforms
+}
 FRA_modifier_democratic_reforms = {##french_democratic_reforms_
 	enable = { always = yes }
 	icon = GFX_idea_generic_democratic_drift_bonus
@@ -589,9 +602,9 @@ FRA_modifier_eliminated_minorities = {
 		NOT = { is_controlled_by = FRA }
 	}
 	icon = GFX_modifier_reversed_ostsiedlung ##change later
-	monthly_population = -0.2
+	monthly_population = -0.05
 	state_production_speed_buildings_factor = 0.15
-	local_building_slots_factor = 0.05
+	local_building_slots = 2
 }
 TUR_minority_unrest0 = {
 	icon = GFX_modifier_resistance_ott

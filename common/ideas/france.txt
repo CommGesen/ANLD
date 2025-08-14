@@ -1741,7 +1741,7 @@ ideas = {
 		FRA_spirit_new_time_new_men_new_methods = {
 			picture = spirit_le_feu
 			allowed = {
-				original_tag = FRA
+				tag = FRA
 			}
 			available = {
 				
@@ -1757,6 +1757,484 @@ ideas = {
 				army_org_factor = 0.05
 				industrial_capacity_dockyard = 0.05
 				industrial_capacity_factory = 0.05
+			}
+		}
+		FRA_spirit_new_sans_culottes = {
+			picture = spirit_le_feu ##change later
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				mobilization_speed  = 0.2
+				army_morale_factor = 0.05
+				conscription = 0.02
+			}
+		}
+		FRA_spirit_international_cause = {
+			picture = SPR_international_brigades
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				weekly_manpower = 5000
+				subversive_activites_upkeep = -0.4
+			}
+		}
+		FRA_spirit_international_cause_2 = {
+			picture = SPR_international_brigades
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				weekly_manpower = 5000
+				subversive_activites_upkeep = -0.4
+				justify_war_goal_time = -0.25
+				justify_war_goal_when_in_major_war_time = -0.25
+			}
+		}
+		FRA_spirit_international_cause_3 = {
+			picture = SPR_international_brigades
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				weekly_manpower = 5000
+				subversive_activites_upkeep = -0.4
+				opinion_gain_monthly_factor = 0.4
+				guarantee_tension = -1
+				guarantee_cost = -0.9
+				civil_war_involvement_tension = -1
+			}
+		}
+		FRA_spirit_national_syndycalism = {
+			picture = SPR_international_brigades #change later
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.1
+			}
+		}
+		FRA_spirit_decolonization_pressures = {
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				OR = {
+					is_subject = yes
+					AND = {
+						all_state = {
+							is_controlled_by = ROOT
+							NOT = {
+								is_on_continent = europe
+							}
+							is_core_of = ROOT
+						}
+					}
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_weekly = -0.002
+				war_support_weekly = -0.002
+				political_power_factor = -0.15
+			}
+		}
+		FRA_spirit_restoring_our_reputation = {
+			picture = generic_disjointed_gov
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				communism_drift = 0.01
+				political_power_factor = 0.15
+				war_support_weekly = 0.003
+				stability_weekly = 0.003
+			}
+		}
+		FRA_spirit_democracy_suspended = {
+			picture = generic_democracy_banned
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				communism_drift = 0.01
+				stability_factor = 0.1
+			}
+		}
+		FRA_spirit_fight_against_ochlocracy = {
+			picture = generic_democracy_banned
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				democratic_drift = -0.02
+				democratic_acceptance = -80
+				stability_factor = 0.15
+				political_power_factor = -0.05
+			}
+		}
+		FRA_spirit_workers_democracy = {
+			picture = GER_limited_democratic_principles
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				communism_drift = 0.03
+				democratic_drift = 0.01
+				political_power_factor = 0.1
+			}
+		}
+		FRA_spirit_communal_democracy = {
+			picture = GER_limited_democratic_principles
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				communism_drift = 0.02
+				political_power_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		FRA_spirit_from_each_according_to_his_ability = {
+			picture = generic_production_bonus
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		FRA_spirit_from_each_according_to_his_ability_to_each_according_to_his_needs = {
+			picture = generic_production_bonus
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		FRA_spirit_no_gods_no_masters = {
+			picture = SPR_class_war
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_attack_against_major_factor = 0.1
+				army_breakthrough_against_major_factor = 0.05
+				research_speed_factor = 0.03
+			}
+		}
+		FRA_spirit_platformism = {
+			picture = SPR_class_war ##change later
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.1
+				communism_acceptance = 50
+			}
+		}
+		FRA_spirit_platformism2 = {
+			picture = SPR_class_war ##change later
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.05
+				communism_acceptance = 50
+				conscription = 0.005
+				monthly_population = 0.1
+			}
+		}
+		FRA_spirit_platformism3 = {
+			picture = SPR_class_war ##change later
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.2
+				communism_acceptance = 50
+				conscription = 0.005
+				monthly_population = 0.5
+				research_speed_factor = 0.05
+			}
+		}
+		FRA_spirit_synthesis_anarchism = {
+			picture = SPR_class_war ##change later
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				communism_drift = 0.01
+				stability_factor = -0.05
+				war_support_factor = 0.05
+			}
+		}
+		FRA_spirit_synthesis_anarchism2 = {
+			picture = SPR_class_war ##change later
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				communism_drift = 0.01
+				war_support_factor = 0.05
+				consumer_goods_factor = -0.15
+			}
+		}
+		FRA_spirit_synthesis_anarchism3 = {
+			picture = SPR_class_war ##change later
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				communism_drift = 0.02
+				war_support_factor = 0.15
+				consumer_goods_factor = -0.15
+				research_speed_factor = 0.03
+			}
+		}
+		FRA_spirit_cult_of_supreme_being = {
+			picture = SPR_class_war ##change later
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.03
+				stability_factor = 0.1
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
+			}
+		}
+		FRA_spirit_anti_theism = {
+			picture = SPR_class_war ##change later
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.03
+				stability_factor = -0.05
+			}
+		}
+		FRA_spirit_cult_of_reason = {
+			picture = SPR_class_war ##change later
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.06
+				monthly_population = 0.1
 			}
 		}
 	}

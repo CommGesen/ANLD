@@ -18,7 +18,7 @@ FRA_dec_cat_foreign_policy = {
 				target_array = FROM.controlled_states
 			}
 		}
-		icon = GFX_decision_generic_confiscation #change later
+		icon = GFX_decision_generic_arabia
 		cost = 25
 		fire_only_once = no
 		days_re_enable = 100
@@ -84,7 +84,7 @@ FRA_dec_cat_foreign_policy = {
 		}
 	}
 	FRA_vassalisation_of_iran = {
-		icon = GFX_decision_generic_confiscation #change later
+		icon = GFX_decision_generic_iran
 		cost = 25
 		fire_only_once = no
 		days_re_enable = 100
