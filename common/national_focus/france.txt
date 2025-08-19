@@ -3420,7 +3420,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_to_each_according_to_his_needs
-		icon = GFX_focus_generic_anarchist_worker
+		icon = GFX_focus_generic_spanner_hammer
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_from_each_according_to_his_ability }
@@ -3548,7 +3548,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_synthesis_anarchism
-		icon = GFX_focus_generic_sebastien_faure
+		icon = GFX_focus_generic_sebastian_faure
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_no_gods_no_masters }
@@ -4275,7 +4275,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_revolution_by_force
-		icon = GFX_focus_generic_gun_sickle_and_hammer
+		icon = GFX_focus_generic_trotskyism
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_internationalism }
@@ -4467,7 +4467,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_workers_revolution
-		icon = GFX_focus_generic_fists_sickle_and_hammer
+		icon = GFX_focus_generic_gallic_rooster
 		x = -2
 		y = 1
 		prerequisite = { focus = FRA_united_france focus = FRA_pacifits_revolution focus = FRA_revolution_by_force }
@@ -6832,7 +6832,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_watchman_of_global_security
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_watchman_of_the_world
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_duchy_of_luxembourg_integration }
@@ -7516,8 +7516,8 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
-		id = FRA_fortify_giblartar
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		id = FRA_fortify_gibraltar
+		icon = GFX_focus_generic_fortify_gibraltar
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_european_possessions }
@@ -7553,7 +7553,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_develop_corsica
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_develop_corsica
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_european_possessions }
@@ -7589,12 +7589,12 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_fortify_malta
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_fortify_malta
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_develop_corsica }
-		prerequisite = { focus = FRA_fortify_giblartar }
-		relative_position_id = FRA_fortify_giblartar
+		prerequisite = { focus = FRA_fortify_gibraltar }
+		relative_position_id = FRA_fortify_gibraltar
 		search_filters = { }
 		cost = 5
 		#mutually_exclusive = { focus = }
@@ -7853,7 +7853,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_conquer_graveyard_of_empires
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_conquer_graveyard_of_the_empires
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_vassalize_iran }
@@ -8156,7 +8156,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_subjugate_insulindia
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_subjugate_insulindia
 		x = 7
 		y = 1
 		prerequisite = { focus = FRA_asian_department }
@@ -8192,7 +8192,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_subjugate_oceania
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_subjugate_oceania
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_subjugate_insulindia }
@@ -8264,7 +8264,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_conquer_china
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_conquer_china
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_fortify_our_cities_in_china }
@@ -10130,7 +10130,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_reorganized_north_africa
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_reorganized_north_africa
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_demand_egyptian_subjugation }
