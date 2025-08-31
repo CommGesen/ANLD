@@ -666,6 +666,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = FRA_spirit_cult_of_oriflamme
+			unlock_decision_category_tooltip = FRA_dec_cat_empire_of_the_golden_flame
 		}
 		ai_will_do = {
 			factor = 25
@@ -1075,6 +1076,7 @@ focus_tree = {
 			}
 			set_country_flag = cant_change_voting_law
 			custom_effect_tooltip = cant_change_voting_law_tooltip
+			unlock_decision_category_tooltip = FRA_dec_cat_frankish_empire
 		}
 		ai_will_do = {
 			factor = 25
@@ -3279,6 +3281,12 @@ focus_tree = {
 				hours = 10
 			}
 			add_ideas = FRA_spirit_decolonization_pressures
+			hidden_effect = {
+				country_event = {
+					id = deluge_france.73
+					hours = 30
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -3356,13 +3364,13 @@ focus_tree = {
 				}
 			}
 		}
-		#offset = {
-		#	x = 0
-		#	y = 0
-		#	trigger = {
-		#		
-		#	}
-		#}
+		offset = {
+			x = 9
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_anarchist_communist_federation
+			}
+		}
 		available = {
 			has_country_flag = FRA_anarchists_won
 		}
@@ -3371,6 +3379,7 @@ focus_tree = {
 			remove_ideas = FRA_spirit_chaos_in_paris
 			promote_character = FRA_deluge_sebastien_faure
 			set_party_name = { ideology = communism long_name = deluge_party_anarchist_communist_federation_long name = deluge_party_anarchist_communist_federation }
+			set_cosmetic_tag = FRA_united_communes
 		}
 		ai_will_do = {
 			factor = 25
@@ -3593,7 +3602,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_strengthen_the_communes
-		icon = GFX_focus_spr_crush_the_revolution
+		icon = GFX_focus_generic_communist
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_synthesis_anarchism}
@@ -3671,7 +3680,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_new_norms
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_AUS_lawmaking_leniency
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_strengthen_the_communes}
@@ -3880,6 +3889,7 @@ focus_tree = {
 				id = deluge_france.69
 			}
 			set_party_name = { ideology = communism long_name = deluge_party_french_communist_party_long name = deluge_party_french_communist_party }
+			set_cosmetic_tag = FRA_peoples_republic
 		}
 		ai_will_do = {
 			factor = 25
@@ -4208,7 +4218,7 @@ focus_tree = {
 			}
 		}
 		offset = {
-			x = -4
+			x = 5
 			y = 0
 			trigger = {
 				has_completed_focus = FRA_anarchist_communist_federation
@@ -4346,6 +4356,7 @@ focus_tree = {
 			remove_ideas = FRA_spirit_chaos_in_paris
 			promote_character = FRA_deluge_georges_valois
 			set_party_name = { ideology = communism long_name = deluge_party_proudhon_circle_long name = deluge_party_proudhon_circle }
+			set_cosmetic_tag = FRA_national_commune
 		}
 		ai_will_do = {
 			factor = 25
@@ -4500,7 +4511,7 @@ focus_tree = {
 			}
 		}
 		offset = {
-			x = -5
+			x = 4
 			y = 0
 			trigger = {
 				has_completed_focus = FRA_anarchist_communist_federation

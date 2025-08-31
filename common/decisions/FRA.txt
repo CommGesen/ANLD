@@ -6185,3 +6185,659 @@ political_actions = {
 		}
 	}
 }
+FRA_dec_cat_empire_of_the_golden_flame = {
+	FRA_deluge_form_empire_of_the_golden_flame = {
+		icon = GFX_decision_le_feu
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			has_government = fascism
+			has_country_leader = {
+				character = FRA_deluge_maurice_delaunay
+				ruling_only = yes
+			}
+		}
+		available = {
+			has_government = fascism
+			has_country_leader = {
+				character = FRA_deluge_maurice_delaunay
+				ruling_only = yes
+			}
+			controls_state = 16
+			controls_state = 454
+			controls_state = 447
+			controls_state = 2
+			controls_state = 341
+			controls_province = 924
+			has_idea = FRA_spirit_cult_of_oriflamme
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 16
+				state = 454
+				state = 447
+				state = 2
+				state = 341
+				state = 112
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect = {
+			set_cosmetic_tag = FRA_empire_of_the_holy_flame
+			if = {
+				limit = {
+					16 = {
+						NOT = {
+							is_core_of = FRA
+						}
+					}
+				}
+				16 = {
+					add_core_of = FRA
+				} 
+			}
+			if = {
+				limit = {
+					341 = {
+						NOT = {
+							is_core_of = FRA
+						}
+					}
+				}
+				341 = {
+					add_core_of = FRA
+				} 
+			}
+			if = {
+				limit = {
+					340 = {
+						NOT = {
+							is_core_of = FRA
+						}
+					}
+				}
+				340 = {
+					add_core_of = FRA
+				} 
+			}
+			if = {
+				limit = {
+					447 = {
+						NOT = {
+							is_core_of = FRA
+						}
+					}
+				}
+				447 = {
+					add_core_of = FRA
+				} 
+			}
+			if = {
+				limit = {
+					2 = {
+						NOT = {
+							is_core_of = FRA
+						}
+					}
+				}
+				2 = {
+					add_core_of = FRA
+				} 
+			}
+			if = {
+				limit = {
+					112 = {
+						NOT = {
+							is_core_of = FRA
+						}
+					}
+				}
+				112 = {
+					add_core_of = FRA
+				} 
+			}
+			swap_ideas = {
+				remove_idea = FRA_spirit_cult_of_oriflamme
+				add_idea = FRA_spirit_oriflamme_burned_all_evil
+			}
+			set_country_flag = FRA_flag_has_formed_empire_of_golden_flame
+			hidden_effect = {
+				news_event = {
+					id = deluge_france.71
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	FRA_deluge_burning_the_road_to_fatima = {
+		icon = GFX_decision_generic_iberia
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			has_government = fascism
+			has_country_leader = {
+				character = FRA_deluge_maurice_delaunay
+				ruling_only = yes
+			}
+		}
+		available = {
+			has_government = fascism
+			has_country_leader = {
+				character = FRA_deluge_maurice_delaunay
+				ruling_only = yes
+			}
+			custom_trigger_tooltip = {##Spain with Giblartar
+				tooltip = POL_custom_trigger_tooltip_39
+				controls_state = 118
+				controls_state = 169
+				controls_state = 173
+				controls_state = 789
+				controls_state = 168
+				controls_state = 175
+				controls_state = 170
+				controls_state = 41
+				controls_state = 793
+				controls_state = 167
+				controls_state = 177
+				controls_state = 794
+				controls_state = 166
+				controls_state = 165
+				controls_state = 176
+				controls_state = 172
+				controls_state = 792
+				controls_state = 804
+				controls_state = 790
+				controls_state = 171
+				controls_state = 174
+				controls_state = 791
+				controls_state = 788
+				controls_state = 178
+				controls_state = 1027
+				controls_state = 1028
+			}
+			custom_trigger_tooltip = {##Portugal
+				tooltip = POL_custom_trigger_tooltip_40
+				controls_state = 180
+				controls_state = 181
+				controls_state = 112
+				controls_state = 795
+				controls_state = 179
+				controls_state = 698
+				controls_state = 697
+			}
+			has_country_flag = FRA_flag_has_formed_empire_of_golden_flame
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 118
+				state = 169
+				state = 173
+				state = 789
+				state = 168
+				state = 175
+				state = 170
+				state = 41
+				state = 793
+				state = 167
+				state = 177
+				state = 794
+				state = 166
+				state = 165
+				state = 176
+				state = 172
+				state = 792
+				state = 804
+				state = 790
+				state = 171
+				state = 174
+				state = 791
+				state = 788
+				state = 178
+				state = 180
+				state = 181
+				state = 112
+				state = 795
+				state = 179
+				state = 698
+				state = 697
+				state = 1028
+				state = 1027
+			}
+		}
+		cost = 35
+		fire_only_once = yes
+		days_remove = 80
+		remove_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 118
+						state = 169
+						state = 173
+						state = 789
+						state = 168
+						state = 175
+						state = 170
+						state = 41
+						state = 793
+						state = 167
+						state = 177
+						state = 794
+						state = 166
+						state = 165
+						state = 176
+						state = 172
+						state = 792
+						state = 804
+						state = 790
+						state = 171
+						state = 174
+						state = 791
+						state = 788
+						state = 178
+						state = 180
+						state = 181
+						state = 112
+						state = 795
+						state = 179
+						state = 698
+						state = 697
+						state = 1027
+						state = 1028
+					}
+				}
+				add_core_of = FRA
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	FRA_deluge_burning_the_land_of_ra = {
+		icon = GFX_decision_generic_egypt
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			has_government = fascism
+			has_country_leader = {
+				character = FRA_deluge_maurice_delaunay
+				ruling_only = yes
+			}
+		}
+		available = {
+			has_government = fascism
+			has_country_leader = {
+				character = FRA_deluge_maurice_delaunay
+				ruling_only = yes
+			}
+			custom_trigger_tooltip = {##Egypt without Sudan, Suze Canal and Sinai
+				tooltip = FRA_custom_trigger_tooltip_1
+				controls_state = 447
+				controls_state = 907
+				controls_state = 446
+				controls_state = 456
+				controls_state = 457
+				controls_state = 552
+				controls_state = 452
+			}
+			controls_state = 800
+			controls_state = 453
+			has_country_flag = FRA_flag_has_formed_empire_of_golden_flame
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 800
+				state = 453
+				state = 447
+				state = 907
+				state = 446
+				state = 456
+				state = 457
+				state = 552
+				state = 452
+			}
+		}
+		cost = 30
+		fire_only_once = yes
+		days_remove = 70
+		remove_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 800
+						state = 453
+						state = 447
+						state = 907
+						state = 446
+						state = 456
+						state = 457
+						state = 552
+						state = 452
+					}
+				}
+				add_core_of = FRA
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	FRA_deluge_burning_the_road_to_rome = {
+		icon = GFX_decision_generic_italy
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			has_government = fascism
+			has_country_leader = {
+				character = FRA_deluge_maurice_delaunay
+				ruling_only = yes
+			}
+		}
+		available = {
+			has_government = fascism
+			has_country_leader = {
+				character = FRA_deluge_maurice_delaunay
+				ruling_only = yes
+			}
+			controls_state = 162
+			controls_state = 161
+			controls_state = 157
+			controls_state = 2
+			controls_state = 114
+			has_country_flag = FRA_flag_has_formed_empire_of_golden_flame
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 161
+				state = 162
+				state = 157
+				state = 2
+				state = 114
+			}
+		}
+		cost = 35
+		fire_only_once = yes
+		days_remove = 80
+		remove_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 161
+						state = 162
+						state = 157
+						state = 2
+						state = 114
+					}
+				}
+				add_core_of = FRA
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+}
+FRA_dec_cat_frankish_empire = {
+	FRA_deluge_restore_frankish_empire = {
+		icon = GFX_decision_oriflamme
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			has_government = fascism
+			has_country_leader = {
+				character = FRA_deluge_marcel_bucard
+				ruling_only = yes
+			}
+		}
+		available = {
+			has_government = fascism
+			has_country_leader = {
+				character = FRA_deluge_marcel_bucard
+				ruling_only = yes
+			}
+			has_completed_focus = FRA_charlemagnes_legacy
+			custom_trigger_tooltip = {##France
+				tooltip = POL_custom_trigger_tooltip_38
+				controls_state = 42
+				controls_state = 28
+				controls_state = 17
+				controls_state = 18
+				controls_state = 29
+				controls_state = 16
+				controls_state = 15
+				controls_state = 30
+				controls_state = 14
+				controls_state = 23
+				controls_state = 24
+				controls_state = 33
+				controls_state = 27
+				controls_state = 26
+				controls_state = 25
+				controls_state = 19
+				controls_state = 806
+				controls_state = 31
+				controls_state = 22
+				controls_state = 20
+				controls_state = 32
+				controls_state = 21
+				controls_state = 851
+				controls_state = 735
+				controls_state = 158
+				controls_state = 1
+			}
+			custom_trigger_tooltip = {##northern and central Italy
+				tooltip = FRA_custom_trigger_tooltip_2
+				controls_state = 160
+				controls_state = 159
+				controls_state = 161
+				controls_state = 162
+				controls_state = 157
+				controls_state = 2
+			}
+			custom_trigger_tooltip = {##northern Spain
+				tooltip = FRA_custom_trigger_tooltip_3
+				controls_state = 165
+				controls_state = 1027
+				controls_state = 1028
+				controls_state = 172
+				controls_state = 792
+			}
+			custom_trigger_tooltip = {##Switzerland
+				tooltip = POL_custom_trigger_tooltip_37
+				controls_state = 846
+				controls_state = 3
+				controls_state = 802
+				controls_state = 845
+			}
+			custom_trigger_tooltip = {##Holland
+				tooltip = POL_custom_trigger_tooltip_35
+				controls_state = 36
+				controls_state = 35
+				controls_state = 7
+				controls_state = 784
+				controls_state = 6
+				controls_state = 977
+			}
+			custom_trigger_tooltip = {##Grand Duchy of Luxembourg/Belgium
+				tooltip = POL_custom_trigger_tooltip_36
+				controls_state = 786
+				controls_state = 8
+				controls_state = 34
+				controls_state = 980
+			}
+			custom_trigger_tooltip = {###Austria
+				tooltip = POL_custom_trigger_tooltip_31
+				controls_state = 4
+				controls_state = 152
+				controls_state = 153 
+				controls_state = 848 
+				controls_state = 39 
+				controls_state = 850
+				controls_state = 976
+				controls_state = 975
+			}
+			custom_trigger_tooltip = {##Slovenia
+				tooltip = POL_custom_trigger_tooltip_9
+				controls_state = 102
+				controls_state = 736
+				controls_state = 853
+				controls_state = 852
+			}
+			custom_trigger_tooltip = {##Croatia
+				tooltip = POL_custom_trigger_tooltip_10
+				controls_state = 109
+				controls_state = 103
+				controls_state = 104
+				controls_state = 970 
+			}
+			controls_state = 974
+			controls_state = 155
+			custom_trigger_tooltip = {##Czechia
+				tooltip = POL_custom_trigger_tooltip_6
+				controls_state = 9
+				controls_state = 69
+				controls_state = 972
+				controls_state = 75
+				controls_state = 74
+			}
+			custom_trigger_tooltip = {##Germany
+				tooltip = POL_custom_trigger_tooltip_30
+				controls_state = 61
+				controls_state = 64
+				controls_state = 68
+				controls_state = 65
+				controls_state = 59
+				controls_state = 56
+				controls_state = 57
+				controls_state = 51
+				controls_state = 55
+				controls_state = 54
+				controls_state = 60
+				controls_state = 50
+				controls_state = 52
+				controls_state = 53
+				controls_state = 978
+			}
+			controls_state = 62
+			controls_state = 58
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 42
+				state = 28
+				state = 17
+				state = 18
+				state = 29
+				state = 16
+				state = 15
+				state = 30
+				state = 14
+				state = 23
+				state = 24
+				state = 33
+				state = 27
+				state = 26
+				state = 25
+				state = 19
+				state = 806
+				state = 31
+				state = 22
+				state = 20
+				state = 32
+				state = 21
+				state = 851
+				state = 735
+				state = 158
+				state = 1
+				state = 160
+				state = 159
+				state = 161
+				state = 162
+				state = 157
+				state = 2
+				state = 165
+				state = 1027
+				state = 1028
+				state = 172
+				state = 792
+				state = 846
+				state = 3
+				state = 802
+				state = 845
+				state = 36
+				state = 35
+				state = 7
+				state = 784
+				state = 6
+				state = 786
+				state = 8
+				state = 34
+				state = 977
+				state = 980
+				state = 4
+				state = 152
+				state = 153 
+				state = 848 
+				state = 39 
+				state = 850
+				state = 976
+				state = 975
+				state = 102
+				state = 736
+				state = 853
+				state = 852
+				state = 109
+				state = 103
+				state = 104
+				state = 970
+				state = 974
+				state = 155
+				state = 9
+				state = 69
+				state = 972
+				state = 75
+				state = 74
+				state = 61
+				state = 64
+				state = 68
+				state = 65
+				state = 59
+				state = 56
+				state = 57
+				state = 51
+				state = 55
+				state = 54
+				state = 60
+				state = 50
+				state = 52
+				state = 53
+				state = 62
+				state = 58
+				state = 978
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect = {
+			set_cosmetic_tag = FRA_frankish
+			add_political_power = 400
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 15000
+				producer = FRA
+			}
+			add_manpower = 50000
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+}

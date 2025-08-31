@@ -94,14 +94,26 @@ FRA_dec_cat_subsidize_the_city_development = {
 	visible_when_empty = no
 }
 FRA_dec_cat_empire_of_the_golden_flame = {
-	icon = GFX_decision_category_gre_investment_decisions #change later
+	icon = GFX_decision_cat_le_feu
 	#picture = GFX_decision_cat_picture_soviet_comecon
 	priority = 2
 	allowed = {
 		tag = FRA
 	}
 	visible = {
-		has_completed_focus = FRA_prophet_saved
+		has_completed_focus = FRA_cult_of_oriflamme
+	}
+	visible_when_empty = no
+}
+FRA_dec_cat_frankish_empire = {
+	icon = GFX_decision_cat_oriflamme
+	#picture = GFX_decision_cat_picture_soviet_comecon
+	priority = 2
+	allowed = {
+		tag = FRA
+	}
+	visible = {
+		has_completed_focus = FRA_francist_movement
 	}
 	visible_when_empty = no
 }

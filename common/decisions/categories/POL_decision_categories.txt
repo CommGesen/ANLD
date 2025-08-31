@@ -238,6 +238,8 @@ new_revolution_category = {
 	}
 	visible_when_empty = no
 	on_map_area = {
+		state = 1028
+		state = 1027
 		state = 10
 		state = 808
 		state = 86

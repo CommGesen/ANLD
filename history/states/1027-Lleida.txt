@@ -1,0 +1,23 @@
+state={
+	id=1027
+	name="STATE_1027"
+
+	history={
+		owner = SPR
+		victory_points = {
+			13225 3
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = SPR
+		add_core_of = CAT
+	}
+
+	provinces={
+		13225 790 11793 11821 915 899 11819
+	}
+	manpower=217678
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

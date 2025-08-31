@@ -768,8 +768,8 @@ characters={
 		country_leader = {
 			ideology = nationalist_stratoracy_ideology
 			traits = {
-				friend_of_poland
 				prince_of_terror
+				friend_of_poland
 			}
 			expire = "1999.1.1.1"
 			desc = "FRA_deluge_maxime_weygand_desc"
@@ -840,7 +840,7 @@ characters={
 		}
 		country_leader={
 			ideology=social_darwinist_ideology
-			traits={  }
+			traits={ deluge_trait_pragmatic }
 			expire="1965.1.1.1"
 			desc = "FRA_deluge_jacques_doriot_desc"
 		}
@@ -928,7 +928,7 @@ characters={
 		}
 		country_leader={
 			ideology=social_darwinist_ideology
-			traits={  }
+			traits={ deluge_extreme_militarist }
 			expire="1965.1.1.1"
 			desc = "FRA_deluge_marcel_bucard_desc"
 		}

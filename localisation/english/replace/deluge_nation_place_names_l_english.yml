@@ -310,7 +310,7 @@
  POL_VICTORY_POINTS_6344: "Żłobn"
  POL_STATE_207: "Witebsk"
  POL_VICTORY_POINTS_11241: "Witebsk"
- #BLR BLR
+ #BLR Belarus
  BLR_STATE_95: "Hrodna"
  BLR_VICTORY_POINTS_9304: "Baranovichi"
  BLR_VICTORY_POINTS_3393: "Hrodna"
@@ -330,13 +330,62 @@
  BLR_VICTORY_POINTS_6344: "Žłobin"
  BLR_STATE_207: "Wiciebsk"
  BLR_VICTORY_POINTS_11241: "Wiciebsk"
- #SPR CAT
+ #SPR Catalogne
  SPR_STATE_165: "Cataluña"
  SPR_VICTORY_POINTS_9764: "Barcelona"
  SPR_VICTORY_POINTS_6927: "Gerona"
  SPR_VICTORY_POINTS_6966: "Tortosa"
- #FRA CAT
+ #FRA Catalogne
  FRA_STATE_165: "Catalogne"
  FRA_VICTORY_POINTS_9764: "Barcelone"
  FRA_VICTORY_POINTS_6927: "Gérone"
  FRA_VICTORY_POINTS_6966: "Tortose"
+ ##generic Basque Country
+ STATE_172: "Nafarroa"
+ VICTORY_POINTS_740: "Bilbo"
+ VICTORY_POINTS_6756: "Gernika"
+ STATE_792: "Euskadi"
+ VICTORY_POINTS_3933: "Iruña"
+ STATE_806: "Pyrénées-Atlantiques"
+ VICTORY_POINTS_9710: "Bayonne"
+ ##NAV Basque Country
+ NAV_STATE_172: "Nafarroa"
+ NAV_VICTORY_POINTS_740: "Bilbo"
+ NAV_VICTORY_POINTS_6756: "Gernika"
+ NAV_STATE_792: "Euskadi"
+ NAV_VICTORY_POINTS_3933: "Iruña"
+ NAV_STATE_806: "Pirinio Atlantikoak"
+ NAV_VICTORY_POINTS_9710: "Baiona"
+ ##FRA Basque Country
+ FRA_STATE_172: "Navarre"
+ FRA_VICTORY_POINTS_740: "Bilbao"
+ FRA_VICTORY_POINTS_6756: "Guernica"
+ FRA_STATE_792: "Pays Basque"
+ FRA_VICTORY_POINTS_3933: "Pampelune"
+ FRA_STATE_806: "Pyrénées-Atlantiques"
+ FRA_VICTORY_POINTS_9710: "Bayonne"
+ ##SPR Basque Country
+ SPR_STATE_172: "Navarra"
+ SPR_VICTORY_POINTS_740: "Bilbao"
+ SPR_VICTORY_POINTS_6756: "Gernika"
+ SPR_STATE_792: "País Vasco"
+ SPR_VICTORY_POINTS_3933: "Pamplona"
+ SPR_STATE_806: "Pirineos Atlánticos"
+ SPR_VICTORY_POINTS_9710: "Bayona"
+ ##Spain
+ STATE_1027: "Lérida"
+ CAT_STATE_1027: "Lleida"
+ VICTORY_POINTS_13225: "Lérida"
+ CAT_VICTORY_POINTS_13225: "Lleida"
+ STATE_794: "Caspe"
+ STATE_1028: "Huesca"
+ CAT_SPR_STATE_1028: "Osca"
+ VICTORY_POINTS_9840: "Huesca"
+ CAT_VICTORY_POINTS_9840: "Osca"
+ STATE_166: "Zaragoza"
+ FRA_STATE_166: "Saragosse"
+ CAT_STATE_166: "Saragossa"
+ VICTORY_POINTS_3816: "Zaragoza"
+ FRA_VICTORY_POINTS_3816: "Saragosse"
+ CAT_VICTORY_POINTS_3816: "Saragossa"
+ 

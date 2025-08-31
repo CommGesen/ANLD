@@ -20,11 +20,11 @@ state={
 			air_base = 1
 		}
 		add_core_of = SPR
-
+		add_core_of = NAV
 	}
 
 	provinces={
-		740 3735 6756 13233 
+		740 3735 6756 13233 13220 
 	}
 	manpower=928094
 	buildings_max_level_factor=1.000

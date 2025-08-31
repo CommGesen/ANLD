@@ -154,6 +154,8 @@
  FRA_spirit_church_purged_desc:0 "Maurice Delaunay's purge is taking its toll."
  FRA_spirit_cult_of_oriflamme:0 "Cult of Oriflamme"
  FRA_spirit_cult_of_oriflamme_desc:0 "The holy banner will now be honored everywhere!"
+ FRA_spirit_oriflamme_burned_all_evil:0 "Oriflamme Burned All Evil"
+ FRA_spirit_oriflamme_burned_all_evil_desc:0 "All evil that opposed the prophet was incinerated by the holy flame."
  FRA_spirit_new_time_new_men_new_methods:0 "New Times, New Men, New Methods"
  FRA_spirit_new_time_new_men_new_methods_desc:0 "New times require new methods and new men!"
  FRA_spirit_developing_railways:0 "Developing Railways"
@@ -220,6 +222,8 @@
  deluge_trait_anarchist_uniter:0 "Anarchist Unifier"
  deluge_trait_national_syndycalist:0 "National Syndicalist"
  deluge_trait_individualist_anarchist:0 "Individualist Anarchist"
+ deluge_trait_pragmatic:0 "Pragmatic"
+ deluge_extreme_militarist:0 "Extreme Militarist"
  ##Tooltips
  FRA_custom_effect_tooltip_1:0 "Modify §HThe Great Depression§! by:\n§H-15%§! Consumer Good Factor!"
  FRA_custom_effect_tooltip_2:0 "Modify §HThe Great Depression§! by:\n§G+10%§! Factory Output,\n§G+10%§! Dockyard Output!"
@@ -391,6 +395,10 @@
  league_of_nations_custom_effect_tooltip_5:0 "Modify §HLeague of Nations§! spirit by:\n§H+25%§! Trade Opinion Factor,\n§R-10%§! Convoy Raiding Efficiency!"
  league_of_nations_custom_effect_tooltip_6:0 "Remove §HLeague of Nations§! spirit!"
  generic_custom_effect_tooltip_1:0 "Current effect:\n"
+ 
+ FRA_custom_trigger_tooltip_1:0 "Controls all of Egypt without Sudan, Sinai or Suez Canal!"
+ FRA_custom_trigger_tooltip_2:0 "Controls all of northern and central Italy."
+ FRA_custom_trigger_tooltip_3:0 "Controls all of far north of Spain."
  ##Opinion Modifiers
  opinion_modifier_former_overlord:0 "Former Overlord"
  opinion_modifier_hypocrisy_during_decolonization:0 "Hypocrisy During Decolonization"
@@ -439,6 +447,7 @@
  FRA_flag_build_dori_ngigmi:0 "Developed Dori-Ngigmi Railway"
  FRA_flag_build_dakar_laayoune_railway:0 "Developed Dakar-Laâyoune Railway"
  FRA_flag_convinced_mordacq_first_time:0 "The emperor persuaded Mordacq not to retire provided he reformed the army."
+ FRA_flag_has_formed_empire_of_golden_flame:0 "Empire of the Golden Flame has been formed!"
  ##Parties:
  FRA_communism_party:0 "FSWI"
  FRA_communism_party_long:0 "French Section of the Workers' International"
@@ -474,6 +483,8 @@
  deluge_party_boulangists_long:0 "Boulangists"
  deluge_party_temporary_military_government:0 "Military"
  deluge_party_temporary_military_government_long:0 "Temporary Military Government"
+ deluge_party_temporary_radical_government:0 "Radicals"
+ deluge_party_temporary_radical_government_long:0 "Temporary Radical Government"
  ##state modifiers:
  FRA_modifier_eliminated_minorities:0 "Eliminated Minorities"
  ##hidden technologies:
@@ -594,6 +605,20 @@
  urbanize_state_FRA:0 "Urbanize [FROM.GetName]"
  FRA_dec_cat_subsidize_the_city_development:0 "Subsidize the City Development"
  FRA_dec_cat_subsidize_the_city_development_desc:0 "Due to our warfare during the Great War and the political turmoil that followed, we did not focus on developing our home cities. It's time to change that and invest in their expansion!"
+ FRA_dec_cat_empire_of_the_golden_flame:0 "Empire of the Golden Flame"
+ FRA_dec_cat_empire_of_the_golden_flame_desc:0 "Our Messiah received revelations, after which he calls for a crusade for the holy places:\n\nFatima – the site of the 1917 apparition,\n\nRome – the capital of Catholicism,\n\nConstantinople – the capital of Orthodoxy,\n\nJerusalem – the capital of all Christianity and Judaism,\n\nAlexandria – a place of once great knowledge created by a great ruler. The lighthouse there indicates the direction indicated by the Oriflamme.\n\nAnd, of course, Paris – the site of the first revelation of the Divine Flame.\n\nWhen the will of the Flame and the Messiah is fulfilled, the entire French nation will be saved."
+ FRA_deluge_burning_the_road_to_fatima:0 "Burning the Road to Fatima"
+ FRA_deluge_burning_the_road_to_fatima_desc:0 "The path to the place of revelation cannot be filled with infidels. We must burn them as if by the Golden Flame, and then replace them with our own people."
+ FRA_deluge_form_empire_of_the_golden_flame:0 "Lighting All of the Scared Lighthouses"
+ FRA_deluge_form_empire_of_the_golden_flame_desc:0 "We have conquered all the places the Messiah has assigned to us. Now we can build beacons in them, marking the direction of the Oriflame, and proclaim the salvation of the French nation."
+ FRA_deluge_burning_the_land_of_ra:0 "Burning the Land of Ra"
+ FRA_deluge_burning_the_land_of_ra_desc:0 "Ra is the ancient Egyptian sun deity. It's possible he was an earlier emissary of the Oriflamme. Therefore, we must investigate this and also populate his lands with our own settlers."
+ FRA_deluge_burning_the_road_to_rome:0 "Burning the Road to Rome"
+ FRA_deluge_burning_the_road_to_rome_desc:0 "The path to the place of revelation cannot be filled with infidels. We must burn them as if by the Golden Flame, and then replace them with our own people."
+ FRA_dec_cat_frankish_empire:0 "Frankish Empire"
+ FRA_dec_cat_frankish_empire_desc:0 ""
+ FRA_deluge_restore_frankish_empire:0 "Restore Frankish Empire"
+ FRA_deluge_restore_frankish_empire_desc:0 ""
  ##autonomy
  BHU_refused_to_support_bourbon_bhopal_revolt:0 "[BHU.GetName] refused to support Bourbon-Bhopal revolt!"
  ##white peace messages

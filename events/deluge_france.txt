@@ -198,7 +198,7 @@ country_event = {
 				days = 1
 			}
 			news_event = {
-				id = deluge_france.25 ##change it
+				id = deluge_france.72
 			}
 		}
 	}
@@ -464,6 +464,14 @@ country_event = {
 	option = {
 		name = deluge_france.15.a
 		set_country_flag = FRA_radicals_took_power
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48 
+		}
+		promote_character = FRA_deluge_leon_blum
+		set_party_name = { ideology = communism long_name = deluge_party_temporary_radical_government_long name = deluge_party_temporary_radical_government }
 	}
 }
 # New democratic parliament is created!
@@ -2679,6 +2687,63 @@ country_event = {##choosing leader of SFIO
 	option = {
 		name = deluge_france.70.b
 		promote_character = FRA_deluge_felix_gouin
+	}
+}
+news_event = {##info for world that FRA formed Empire of the Golden Flame
+	id = deluge_france.71
+	title = deluge_france.71.t
+	desc = deluge_france.71.d
+	picture = GFX_news_event_le_feu_eagle
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france.71.a
+	}
+}
+news_event = {##info for world that imperial family from FRA got exile to EXI
+	id = deluge_france.72
+	title = deluge_france.72.t
+	desc = deluge_france.72.d
+	picture = GFX_news_event_port
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france.72.a
+	}
+}
+country_event = {##fate of Gamelin after radical takeover
+	id = deluge_france.73
+	title = deluge_france.73.t
+	desc = deluge_france.73.d
+	picture = GFX_report_event_maurice_gamelin
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {#he stays in army
+		name = deluge_france.73.a
+		add_political_power = -10
+		add_command_power = -25
+	}
+	option = {#demote him
+		name = deluge_france.73.b
+		add_command_power = 10
+		FRA_deluge_maurice_gamelin = {
+			demote_leader = yes
+		}
+	}
+	option = {#retire him from the army
+		name = deluge_france.73.b
+		add_political_power = 25
+		add_command_power = 45
+		FRA_deluge_maurice_gamelin = {
+			remove_unit_leader_role = yes
+			remove_advisor_role = {
+				slot = high_command
+			}
+		}
+		remove_country_leader_role = {
+			character = FRA_deluge_maurice_gamelin
+			ideology = social_democratic_ideology
+		}
 	}
 }
 country_event = {##inspection in the army

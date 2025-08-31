@@ -1738,6 +1738,27 @@ ideas = {
 				political_power_factor = 0.1
 			}
 		}
+		FRA_spirit_oriflamme_burned_all_evil = {
+			picture = spirit_cult_of_oriflamme
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				fascism_drift = 0.03
+				weekly_manpower = 10000
+				war_support_factor = 0.1
+				political_power_factor = 0.15
+			}
+		}
 		FRA_spirit_new_time_new_men_new_methods = {
 			picture = spirit_le_feu
 			allowed = {
@@ -2056,7 +2077,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_platformism = {
-			picture = SPR_class_war ##change later
+			picture = spirit_nestor_makhno
 			allowed = {
 				tag = FRA
 			}
@@ -2075,7 +2096,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_platformism2 = {
-			picture = SPR_class_war ##change later
+			picture = spirit_nestor_makhno
 			allowed = {
 				tag = FRA
 			}
@@ -2096,7 +2117,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_platformism3 = {
-			picture = SPR_class_war ##change later
+			picture = spirit_nestor_makhno
 			allowed = {
 				tag = FRA
 			}
@@ -2118,7 +2139,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_synthesis_anarchism = {
-			picture = SPR_class_war ##change later
+			picture = spirit_sebastian_faure
 			allowed = {
 				tag = FRA
 			}
@@ -2138,7 +2159,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_synthesis_anarchism2 = {
-			picture = SPR_class_war ##change later
+			picture = spirit_sebastian_faure
 			allowed = {
 				tag = FRA
 			}
@@ -2158,7 +2179,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_synthesis_anarchism3 = {
-			picture = SPR_class_war ##change later
+			picture = spirit_sebastian_faure
 			allowed = {
 				tag = FRA
 			}
@@ -2200,7 +2221,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_anti_theism = {
-			picture = SPR_class_war ##change later
+			picture = spirit_shattered_cross
 			allowed = {
 				tag = FRA
 			}
@@ -2219,7 +2240,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_cult_of_reason = {
-			picture = SPR_class_war ##change later
+			picture = spirit_golden_lightbulb
 			allowed = {
 				tag = FRA
 			}
