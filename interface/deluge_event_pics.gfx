@@ -1391,11 +1391,31 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_french_section_of_workers_internationale.dds"
 	}
 	spriteType = {
-		name = "GFX_news_event_le_feu_eagle"
-		texturefile = "gfx/event_pictures/news_event_le_feu_eagle.dds"
+		name = "GFX_news_event_apparition_in_fatima"
+		texturefile = "gfx/event_pictures/news_event_apparition_in_fatima.dds"
 	}
 	spriteType = {
 		name = "GFX_news_event_port"
 		texturefile = "gfx/event_pictures/news_event_port.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_frankish_empire"
+		texturefile = "gfx/event_pictures/news_event_frankish_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_lighthouse"
+		texturefile = "gfx/event_pictures/report_event_lighthouse.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_jacques_doriot_2"
+		texturefile = "gfx/event_pictures/news_event_jacques_doriot_2.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_event_in_aachen"
+		texturefile = "gfx/event_pictures/report_event_event_in_aachen.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_france_ouragan"
+		texturefile = "gfx/event_pictures/report_event_france_ouragan.dds"
 	}
 }

@@ -663,6 +663,111 @@ characters={
 			desc = "FRA_deluge_georges_valois_desc"
 		}
 	}
+	FRA_deluge_hubert_lagardelle={##Hubert Lagardelle
+		name=FRA_deluge_hubert_lagardelle_name
+		portraits={
+			army={
+				small="GFX_hubert_lagardelle_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_hubert_lagardelle
+			allowed = { tag = FRA }
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_previous_course
+						has_completed_focus = FRA_march_on_paris
+						has_completed_focus = FRA_french_section_of_workers_internationale
+						has_completed_focus = FRA_french_communist_party
+						has_completed_focus = FRA_creation_of_the_parliament
+					}
+				}
+			}
+			cost = 150
+			available = {
+				has_completed_focus = FRA_proudhon_circle
+			}
+			traits  = {
+				deluge_trait_minister_of_labor
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+			ledger = civilian
+		}
+	}
+	FRA_deluge_jacques_bainville={##Jacques Bainville
+		name=FRA_deluge_jacques_bainville_name
+		portraits={
+			army={
+				small="GFX_jacques_bainville_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_jacques_bainville
+			allowed = { tag = FRA }
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_previous_course
+						has_completed_focus = FRA_march_on_paris
+						has_completed_focus = FRA_french_section_of_workers_internationale
+						has_completed_focus = FRA_french_communist_party
+						has_completed_focus = FRA_creation_of_the_parliament
+					}
+				}
+			}
+			cost = 150
+			available = {
+				has_completed_focus = FRA_proudhon_circle
+			}
+			traits  = {
+				deluge_trait_geopolitical_theorist
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+			ledger = civilian
+		}
+	}
+	FRA_deluge_pierre_gilbert_crabos={##Pierre Gilbert Crabos
+		name=FRA_deluge_pierre_gilbert_crabos_name
+		portraits={
+			army={
+				small="GFX_pierre_gilbert_crabos_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_pierre_gilbert_crabos
+			allowed = { tag = FRA }
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_previous_course
+						has_completed_focus = FRA_march_on_paris
+						has_completed_focus = FRA_french_section_of_workers_internationale
+						has_completed_focus = FRA_french_communist_party
+						has_completed_focus = FRA_creation_of_the_parliament
+					}
+				}
+			}
+			cost = 150
+			available = {
+				has_completed_focus = FRA_proudhon_circle
+			}
+			traits  = {
+				journalist
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+			ledger = civilian
+		}
+	}
 	##Anarchists:
 	FRA_deluge_sebastien_faure={
 		name=FRA_deluge_sebastien_faure_name
@@ -787,7 +892,7 @@ characters={
 	FRA_deluge_eugene_deloncle={
 		name=FRA_deluge_eugene_deloncle_name
 		portraits={
-			army={##small portrait to do
+			army={
 				small="GFX_eugene_deloncle_picture_small"
 				large="gfx/leaders/FRA/portrait_FRA_eugene_deloncle.dds"
 			}
@@ -830,6 +935,87 @@ characters={
 			desc = "FRA_deluge_eugene_deloncle_desc"
 		}
 	}
+	FRA_deluge_pierre_taittinger={#Pierre Taittinger
+		name=FRA_deluge_pierre_taittinger_name
+		portraits={
+			army={
+				small="GFX_pierre_taittinger_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_pierre_taittinger
+			allowed = {
+				original_tag = FRA
+			}
+			visible = {
+				FRA = {
+					NOT = {
+						OR = {
+							has_completed_focus = FRA_absolutist_grip
+							has_completed_focus = FRA_the_reformer
+							has_completed_focus = FRA_the_guarantor
+							has_completed_focus = FRA_creation_of_the_parliament
+							has_completed_focus = FRA_another_revolution
+							has_completed_focus = FRA_french_popular_party
+							has_completed_focus = FRA_french_social_party
+							has_completed_focus = FRA_fire_movement
+						}
+					}
+				}
+			}
+			available = {
+				OR = {
+					has_completed_focus = FRA_invite_the_nationalists
+					has_completed_focus = FRA_integrate_young_patriots
+				}
+			}
+			cost = 150
+			traits = {
+				deluge_trait_youth_organizer_taittinger
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	FRA_deluge_georges_loustaunau_lacau={#Georges Loustaunau-Lacau
+		name=FRA_deluge_georges_loustaunau_lacau_name
+		portraits={
+			army={
+				small="GFX_georges_loustaunau_lacau_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_georges_loustaunau_lacau
+			allowed = {
+				original_tag = FRA
+			}
+			visible = {
+				FRA = {
+					NOT = {
+						OR = {
+							has_completed_focus = FRA_absolutist_grip
+							has_completed_focus = FRA_the_reformer
+							has_completed_focus = FRA_the_guarantor
+							has_completed_focus = FRA_towards_republic
+						}
+					}
+				}
+			}
+			available = {
+				has_completed_focus = FRA_boulangists_takeover
+			}
+			cost = 150
+			traits = {
+				deluge_trait_anti_radical
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
 	##French Popular Party:
 	FRA_deluge_jacques_doriot={
 		name=FRA_deluge_jacques_doriot_name
@@ -845,6 +1031,92 @@ characters={
 			desc = "FRA_deluge_jacques_doriot_desc"
 		}
 	}
+	FRA_deluge_maurice_yvan_sicard={#Maurice-Yvan Sicard
+		name=FRA_deluge_maurice_yvan_sicard_name
+		portraits={
+			army={
+				small="GFX_maurice_yvan_sicard_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_maurice_yvan_sicard
+			allowed = {
+				original_tag = FRA
+			}
+			visible = {
+				FRA = {
+					NOT = {
+						OR = {
+							has_completed_focus = FRA_previous_course
+							has_completed_focus = FRA_creation_of_the_parliament
+							has_completed_focus = FRA_another_revolution
+							has_completed_focus = FRA_francist_movement
+							has_completed_focus = FRA_fire_movement
+							has_completed_focus = FRA_french_social_party
+							has_completed_focus = FRA_deats_takeover
+						}
+					}
+				}
+			}
+			available = {
+				has_completed_focus = FRA_french_popular_party
+				NOT = {
+					has_completed_focus = FRA_deats_takeover
+				}
+			}
+			cost = 150
+			traits = {
+				deluge_trait_doriots_shadow
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	FRA_deluge_pierre_pucheu={#Pierre Pucheu
+		name=FRA_deluge_pierre_pucheu_name
+		portraits={
+			army={
+				small="GFX_pierre_pucheu_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_pierre_pucheu
+			allowed = {
+				original_tag = FRA
+			}
+			visible = {
+				FRA = {
+					NOT = {
+						OR = {
+							has_completed_focus = FRA_previous_course
+							has_completed_focus = FRA_creation_of_the_parliament
+							has_completed_focus = FRA_another_revolution
+							has_completed_focus = FRA_francist_movement
+							has_completed_focus = FRA_fire_movement
+							has_completed_focus = FRA_french_social_party
+							has_completed_focus = FRA_deats_takeover
+						}
+					}
+				}
+			}
+			available = {
+				has_completed_focus = FRA_french_popular_party
+				NOT = {
+					has_completed_focus = FRA_deats_takeover
+				}
+			}
+			cost = 150
+			traits = {
+				deluge_trait_nationalist_industrialist
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
 	##National Popular Rally:
 	FRA_deluge_marcel_deat={
 		name=FRA_deluge_marcel_deat_name
@@ -858,6 +1130,86 @@ characters={
 			traits={ pan_european_revolutionary }
 			expire="1965.1.1.1"
 			desc = "FRA_deluge_marcel_deat_desc"
+		}
+	}
+	FRA_deluge_maurice_levillain={#Maurice Levillain
+		name=FRA_deluge_maurice_levillain_name
+		portraits={
+			army={
+				small="GFX_maurice_levillain_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_maurice_levillain
+			allowed = {
+				original_tag = FRA
+			}
+			visible = {
+				FRA = {
+					NOT = {
+						OR = {
+							has_completed_focus = FRA_previous_course
+							has_completed_focus = FRA_creation_of_the_parliament
+							has_completed_focus = FRA_another_revolution
+							has_completed_focus = FRA_francist_movement
+							has_completed_focus = FRA_fire_movement
+							has_completed_focus = FRA_french_social_party
+							has_completed_focus = FRA_total_control
+						}
+					}
+				}
+			}
+			available = {
+				has_completed_focus = FRA_deats_takeover
+			}
+			cost = 150
+			traits = {
+				effective_administrator
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	FRA_deluge_michel_brille={#Michel Brille
+		name=FRA_deluge_michel_brille_name
+		portraits={
+			army={
+				small="GFX_michel_brille_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_michel_brille
+			allowed = {
+				original_tag = FRA
+			}
+			visible = {
+				FRA = {
+					NOT = {
+						OR = {
+							has_completed_focus = FRA_previous_course
+							has_completed_focus = FRA_creation_of_the_parliament
+							has_completed_focus = FRA_another_revolution
+							has_completed_focus = FRA_francist_movement
+							has_completed_focus = FRA_fire_movement
+							has_completed_focus = FRA_french_social_party
+							has_completed_focus = FRA_total_control
+						}
+					}
+				}
+			}
+			available = {
+				has_completed_focus = FRA_deats_takeover
+			}
+			cost = 150
+			traits = {
+				deluge_trait_public_works_engineer
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	##Fire Movement/Le Feu:
@@ -933,6 +1285,45 @@ characters={
 			desc = "FRA_deluge_marcel_bucard_desc"
 		}
 	}
+	FRA_deluge_philippe_henriot={#Philippe Henriot
+		name=FRA_deluge_philippe_henriot_name
+		portraits={
+			army={
+				small="GFX_philippe_henriot_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_philippe_henriot
+			allowed = {
+				original_tag = FRA
+			}
+			visible = {
+				FRA = {
+					NOT = {
+						OR = {
+							has_completed_focus = FRA_previous_course
+							has_completed_focus = FRA_french_social_party
+							has_completed_focus = FRA_french_popular_party
+							has_completed_focus = FRA_fire_movement
+							has_completed_focus = FRA_another_revolution
+							has_completed_focus = FRA_creation_of_the_parliament
+						}
+					}
+				}
+			}
+			available = {
+				has_completed_focus = FRA_francist_movement
+			}
+			cost = 150
+			traits = {
+				deluge_trait_nationalist_propaganda_minister
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
 	##French Social Party:
 	FRA_deluge_francois_de_la_rocque={
 		name=FRA_deluge_francois_de_la_rocque_name
@@ -948,13 +1339,91 @@ characters={
 			desc = "FRA_deluge_francois_de_la_rocque_desc"
 		}
 		corps_commander={
-			traits={ war_hero career_officer infantry_officer }
+			traits={ war_hero career_officer infantry_officer de_la_rocques_follower }
 			skill=2
 			attack_skill=2
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=2
 			desc = "FRA_deluge_francois_de_la_rocque_desc"
+		}
+	}
+	FRA_deluge_jean_mermoz={#Jean Mermoz
+		name=FRA_deluge_jean_mermoz_name
+		portraits={
+			army={
+				small="GFX_jean_mermoz_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_jean_mermoz
+			allowed = {
+				tag = FRA
+			}
+			visible = {
+				FRA = {
+					NOT = {
+						OR = {
+							has_completed_focus = FRA_previous_course
+							has_completed_focus = FRA_francist_movement
+							has_completed_focus = FRA_french_popular_party
+							has_completed_focus = FRA_fire_movement
+							has_completed_focus = FRA_another_revolution
+							has_completed_focus = FRA_creation_of_the_parliament
+						}
+					}
+				}
+			}
+			available = {
+				has_completed_focus = FRA_french_social_party
+			}
+			cost = 150
+			traits = {
+				deluge_trait_minister_of_aviatation
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	FRA_deluge_jean_borotra={#Jean Borotra
+		name=FRA_deluge_jean_borotra_name
+		portraits={
+			army={
+				small="GFX_jean_borotra_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_jean_borotra
+			allowed = {
+				tag = FRA
+			}
+			visible = {
+				FRA = {
+					NOT = {
+						OR = {
+							has_completed_focus = FRA_previous_course
+							has_completed_focus = FRA_francist_movement
+							has_completed_focus = FRA_french_popular_party
+							has_completed_focus = FRA_fire_movement
+							has_completed_focus = FRA_another_revolution
+							has_completed_focus = FRA_creation_of_the_parliament
+						}
+					}
+				}
+			}
+			available = {
+				has_completed_focus = FRA_french_social_party
+			}
+			cost = 150
+			traits = {
+				deluge_trait_commissioner_for_education_and_sports
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	##Radical Party:
@@ -1024,6 +1493,82 @@ characters={
 			ledger = civilian
 		}
 	}
+	FRA_deluge_jean_zay={
+		name=FRA_deluge_jean_zay_name
+		portraits={
+			civilian={
+				small="GFX_jean_zay_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_jean_zay
+			allowed = {
+				tag = FRA
+			}
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_the_dictator
+						has_completed_focus = FRA_the_guarantor
+						has_completed_focus = FRA_democratic_republican_alliance
+						has_completed_focus = FRA_popular_republican_movemenet
+						has_completed_focus = FRA_march_on_paris
+						has_completed_focus = FRA_another_revolution
+					}
+				}
+			}
+			available = {
+				has_completed_focus = FRA_radical_party
+			}
+			cost = 150
+			traits = {
+				deluge_trait_minister_of_education
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			ledger = civilian
+		}
+	}
+	FRA_deluge_edouard_herriot={
+		name=FRA_deluge_edouard_herriot_name
+		portraits={
+			civilian={
+				small="GFX_edouard_herriot_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_edouard_herriot
+			allowed = {
+				tag = FRA
+			}
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_the_dictator
+						has_completed_focus = FRA_the_guarantor
+						has_completed_focus = FRA_democratic_republican_alliance
+						has_completed_focus = FRA_popular_republican_movemenet
+						has_completed_focus = FRA_march_on_paris
+						has_completed_focus = FRA_another_revolution
+					}
+				}
+			}
+			available = {
+				has_completed_focus = FRA_radical_party
+			}
+			cost = 150
+			traits = {
+				deluge_trait_erudite
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			ledger = civilian
+		}
+	}
 	##Democratic Republican Alliance:
 	FRA_deluge_paul_reynaud={
 		name=FRA_deluge_paul_reynaud_name
@@ -1051,6 +1596,120 @@ characters={
 			traits={ treasury_minister }
 			expire="1965.1.1.1"
 			desc = "FRA_deluge_pierre_etienne_flandin_desc"
+		}
+	}
+	FRA_deluge_georges_mandel={
+		name=FRA_deluge_georges_mandel_name
+		portraits={
+			civilian={
+				small="GFX_georges_mandel_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_georges_mandel
+			allowed = {
+				tag = FRA
+			}
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_the_dictator
+						has_completed_focus = FRA_the_guarantor
+						has_completed_focus = FRA_radical_party
+						has_completed_focus = FRA_popular_republican_movemenet
+						has_completed_focus = FRA_march_on_paris
+						has_completed_focus = FRA_another_revolution
+					}
+				}
+			}
+			available = {
+				has_completed_focus = FRA_democratic_republican_alliance
+			}
+			cost = 150
+			traits = {
+				deluge_trait_supporter_of_rearmament
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			ledger = civilian
+		}
+	}
+	FRA_deluge_louis_marin={
+		name=FRA_deluge_louis_marin_name
+		portraits={
+			civilian={
+				small="GFX_louis_marin_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_louis_marin
+			allowed = {
+				tag = FRA
+			}
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_the_dictator
+						has_completed_focus = FRA_the_guarantor
+						has_completed_focus = FRA_radical_party
+						has_completed_focus = FRA_popular_republican_movemenet
+						has_completed_focus = FRA_march_on_paris
+						has_completed_focus = FRA_another_revolution
+					}
+				}
+			}
+			available = {
+				has_completed_focus = FRA_democratic_republican_alliance
+			}
+			cost = 150
+			traits = {
+				deluge_trait_health_minister
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			ledger = civilian
+		}
+	}
+	FRA_deluge_andre_tardieu={
+		name=FRA_deluge_andre_tardieu_name
+		portraits={
+			civilian={
+				small="GFX_andre_tardieu_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_andre_tardieu
+			allowed = {
+				tag = FRA
+			}
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_the_dictator
+						has_completed_focus = FRA_the_guarantor
+						has_completed_focus = FRA_radical_party
+						has_completed_focus = FRA_popular_republican_movemenet
+						has_completed_focus = FRA_march_on_paris
+						has_completed_focus = FRA_another_revolution
+					}
+				}
+			}
+			available = {
+				has_completed_focus = FRA_democratic_republican_alliance
+			}
+			cost = 150
+			traits = {
+				journalist
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			ledger = civilian
 		}
 	}
 	##Popular Republican Movement:
@@ -1081,6 +1740,82 @@ characters={
 			traits={ deluge_trait_fighter_against_corruption }
 			expire="1999.1.1.1"
 			desc = "FRA_deluge_robert_schuman_desc"
+		}
+	}
+	FRA_deluge_paul_coste_floret={
+		name=FRA_deluge_paul_coste_floret_name
+		portraits={
+			civilian={
+				small="GFX_paul_coste_floret_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_paul_coste_floret
+			allowed = {
+				tag = FRA
+			}
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_the_dictator
+						has_completed_focus = FRA_the_guarantor
+						has_completed_focus = FRA_radical_party
+						has_completed_focus = FRA_democratic_republican_alliance
+						has_completed_focus = FRA_march_on_paris
+						has_completed_focus = FRA_another_revolution
+					}
+				}
+			}
+			available = {
+				has_completed_focus = FRA_popular_republican_movemenet
+			}
+			cost = 150
+			traits = {
+				lawyer
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			ledger = civilian
+		}
+	}
+	FRA_deluge_francisque_gay={
+		name=FRA_deluge_francisque_gay_name
+		portraits={
+			civilian={
+				small="GFX_francisque_gay_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_francisque_gay
+			allowed = {
+				tag = FRA
+			}
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_the_dictator
+						has_completed_focus = FRA_the_guarantor
+						has_completed_focus = FRA_radical_party
+						has_completed_focus = FRA_democratic_republican_alliance
+						has_completed_focus = FRA_march_on_paris
+						has_completed_focus = FRA_another_revolution
+					}
+				}
+			}
+			available = {
+				has_completed_focus = FRA_popular_republican_movemenet
+			}
+			cost = 150
+			traits = {
+				deluge_trait_diplomat
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			ledger = civilian
 		}
 	}
 	##shared ultranationalist advisors:
@@ -1926,7 +2661,7 @@ characters={
 			ledger = army
 		}
 		corps_commander={
-			traits={ armor_leader career_officer harsh_leader armor_officer }
+			traits={ armor_leader career_officer harsh_leader armor_officer noble }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -1961,7 +2696,7 @@ characters={
 			ledger = army
 		}
 		corps_commander={
-			traits={ career_officer trait_reckless armor_officer }
+			traits={ career_officer trait_reckless armor_officer noble boulangist }
 			skill=3
 			attack_skill=3
 			defense_skill=2

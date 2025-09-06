@@ -1,6 +1,7 @@
 ﻿add_namespace = deluge_france
 add_namespace = deluge_france_foreign
 add_namespace = deluge_france_lore
+#unsed ID: deluge_france_lore.10, deluge_france_lore.19
 #France gets exposition and triggers news about May Day
 country_event = {
 	id = deluge_france.1
@@ -2693,7 +2694,7 @@ news_event = {##info for world that FRA formed Empire of the Golden Flame
 	id = deluge_france.71
 	title = deluge_france.71.t
 	desc = deluge_france.71.d
-	picture = GFX_news_event_le_feu_eagle
+	picture = GFX_news_event_apparition_in_fatima
 	is_triggered_only = yes
 	major = yes
 	option = {
@@ -2731,7 +2732,7 @@ country_event = {##fate of Gamelin after radical takeover
 		}
 	}
 	option = {#retire him from the army
-		name = deluge_france.73.b
+		name = deluge_france.73.c
 		add_political_power = 25
 		add_command_power = 45
 		FRA_deluge_maurice_gamelin = {
@@ -2743,6 +2744,292 @@ country_event = {##fate of Gamelin after radical takeover
 		remove_country_leader_role = {
 			character = FRA_deluge_maurice_gamelin
 			ideology = social_democratic_ideology
+		}
+	}
+}
+news_event = {##info for world that FRA formed Frankish Empire
+	id = deluge_france.74
+	title = deluge_france.74.t
+	desc = deluge_france.74.d
+	picture = GFX_news_event_frankish_empire
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france.74.a
+	}
+}
+news_event = {##info for world that FRA formed Greater Social State
+	id = deluge_france.75
+	title = deluge_france.75.t
+	desc = deluge_france.75.d
+	picture = GFX_news_event_jacques_doriot_2
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france.75.a
+	}
+}
+country_event = {##after restoring the Frankish Empire players get option to restore Aix-la-Chapelle and even move capital there
+	id = deluge_france.76
+	title = deluge_france.76.t
+	desc = deluge_france.76.d
+	picture = GFX_report_event_event_in_aachen
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {#restore it
+		name = deluge_france.76.a
+		add_victory_points = {
+			province = 9522
+			value = 30
+		}
+		add_victory_points = {
+			province = 587
+			value = -19
+		}
+		784 = {
+			add_building_construction = {
+				type = supply_node
+				province = 9522
+				level = 1
+				instant_build = yes
+			}
+			set_building_level = {
+				type = supply_node
+				level = 0
+				province = 587
+				instant_build = yes
+			}
+		}
+		build_railway = {
+			level = 2
+			path = { 587 9522 11562 11519 }
+			start_province = 587
+			target_province = 11519
+		}
+	}
+	option = {#restore it and move capital there
+		name = deluge_france.76.b
+		add_stability = -0.05
+		add_victory_points = {
+			province = 9522
+			value = 30
+		}
+		add_victory_points = {
+			province = 587
+			value = -19
+		}
+		784 = {
+			add_building_construction = {
+				type = supply_node
+				province = 9522
+				level = 1
+				instant_build = yes
+			}
+			set_building_level = {
+				type = supply_node
+				level = 0
+				province = 587
+				instant_build = yes
+			}
+		}
+		build_railway = {
+			level = 2
+			path = { 587 9522 11562 11519 }
+			start_province = 587
+			target_province = 11519
+		}
+		set_capital = {state = 784}
+	}
+	option = {#don't restore it
+		name = deluge_france.76.c
+		add_political_power = 70
+	}
+}
+news_event = {##Delaunay allies satanists - info for the world
+	id = deluge_france.77
+	title = deluge_france.77.t
+	desc = deluge_france.77.d
+	picture = GFX_news_event_statue_of_lucifer
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.77.a
+	}
+}
+country_event = {##Fighter Competitions
+	id = deluge_france.78
+	title = deluge_france.78.t
+	desc = deluge_france.78.d
+	picture = GFX_report_event_morane
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.78.a
+		country_event = {
+			id = deluge_france_lore.13
+		}
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+			create_equipment_variant = {
+				name = "D.520"
+				type = small_plane_airframe_1
+				modules = {
+					fixed_main_weapon_slot = aircraft_cannon_1_1x
+					fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+					engine_type_slot = engine_1_1x
+				}
+				icon = "GFX_FRA_fighter2_medium_2"
+			}
+		}
+		else = {
+			air_experience = 20
+			add_command_power = 5
+		}
+	}
+	option = {
+		name = deluge_france.78.b
+		country_event = {
+			id = deluge_france_lore.14
+		}
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+			create_equipment_variant = {
+				name = "MB.152"
+				type = small_plane_airframe_1
+				modules = {
+					fixed_main_weapon_slot = aircraft_cannon_1_2x
+					fixed_auxiliary_weapon_slot_1 = light_mg_2x
+					engine_type_slot = engine_1_1x
+				}
+				icon = "GFX_FRA_fighter2_medium"
+			}
+		}
+		else = {
+			air_experience = 5
+			add_command_power = 20
+		}
+	}
+}
+country_event = {##event from thinking tomorrows air superiority focus
+	id = deluge_france.79
+	title = deluge_france.79.t
+	desc = deluge_france.79.d
+	picture = GFX_report_event_france_ouragan
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.79.a
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+			create_equipment_variant = {
+				name = "MB.450 Ouragan"
+				type = small_plane_airframe_4
+				modules = {
+					fixed_main_weapon_slot = aircraft_cannon_2_2x
+					fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+					engine_type_slot = jet_engine_1x
+				}
+				icon = "GFX_FRA_jet_fighter2_medium"
+			}
+			create_equipment_variant = {
+				name = "MB.450 Barougan"
+				type = small_plane_airframe_4
+				modules = {
+					fixed_main_weapon_slot = aircraft_cannon_2_2x
+					fixed_auxiliary_weapon_slot_1 = bomb_locks
+					engine_type_slot = jet_engine_1x
+				}
+				icon = "GFX_FRA_jet_fighter2_medium_2"
+			}
+		}
+		else = {
+			air_experience = 20
+			add_command_power = 5
+		}
+	}
+	option = {
+		name = deluge_france.79.b
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+			create_equipment_variant = {
+				name = "SNCASO 4050 Vautour II"
+				type = medium_plane_fighter_airframe_4
+				modules = {
+					fixed_main_weapon_slot = aircraft_cannon_2_2x
+					fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+					fixed_auxiliary_weapon_slot_2 = bomb_locks
+					engine_type_slot = jet_engine_2x
+				}
+				icon = "GFX_FRA_jet_tactical_bomber2_medium_2"
+			}
+			create_equipment_variant = {
+				name = "SNCASO 4050 Vautour IIB"
+				type = medium_plane_airframe_4
+				modules = {
+					fixed_main_weapon_slot = medium_bomb_bay
+					fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+					engine_type_slot = jet_engine_2x
+				}
+				icon = "GFX_FRA_jet_tactical_bomber2_medium"
+			}
+		}
+		else = {
+			air_experience = 5
+			add_command_power = 20
+		}
+	}
+}
+country_event = {##event about modern tanks
+	id = deluge_france.80
+	title = deluge_france.80.t
+	desc = deluge_france.80.d
+	picture = GFX_report_event_amx50_2
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.80.a
+		if = {
+			limit = {
+				has_dlc = "No Step Back"
+			}
+			create_equipment_variant = {
+				name = "AMX 50"
+				type = modern_tank_chassis_1
+				modules = {
+					main_armament_slot = tank_small_cannon_2
+					turret_type_slot = tank_medium_two_man_tank_turret
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_diesel_engine
+					special_type_slot_1 = sloped_armor
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 8
+					tank_nsb_armor_upgrade = 2
+				}
+				icon = "GFX_FRA_jet_fighter2_medium"
+			}
+			create_equipment_variant = {
+				name = "AMX 50 CA 120 mm"
+				type = modern_tank_destroyer_chassis_1
+				modules = {
+					fixed_main_weapon_slot = aircraft_cannon_2_2x
+					fixed_auxiliary_weapon_slot_1 = bomb_locks
+					engine_type_slot = jet_engine_1x
+				}
+				icon = "GFX_FRA_jet_fighter2_medium_2"
+			}
+		}
+		else = {
+			army_experience = 20
 		}
 	}
 }
@@ -2845,46 +3132,6 @@ country_event = {##Razzle Dazzle
 		name = deluge_france_lore.9.a
 	}
 }
-country_event = {##Fighter Competitions
-	id = deluge_france_lore.10
-	title = deluge_france_lore.10.t
-	desc = deluge_france_lore.10.d
-	picture = GFX_report_event_morane
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = deluge_france_lore.10.a
-		country_event = {
-			id = deluge_france_lore.13
-		}
-		create_equipment_variant = {
-			name = "D.520"
-			type = small_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = aircraft_cannon_1_1x
-				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
-				engine_type_slot = engine_1_1x
-			}
-			icon = "GFX_FRA_fighter2_medium_2"
-		}
-	}
-	option = {
-		name = deluge_france_lore.10.b
-		country_event = {
-			id = deluge_france_lore.14
-		}
-		create_equipment_variant = {
-			name = "MB.152"
-			type = small_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = aircraft_cannon_1_2x
-				fixed_auxiliary_weapon_slot_1 = light_mg_2x
-				engine_type_slot = engine_1_1x
-			}
-			icon = "GFX_FRA_fighter2_medium"
-		}
-	}
-}
 country_event = {##Trials for Multirole Aircraft
 	id = deluge_france_lore.11
 	title = deluge_france_lore.11.t
@@ -2974,17 +3221,6 @@ country_event = {##Delaunay allies satanists
 	is_triggered_only = yes
 	option = {
 		name = deluge_france_lore.18.a
-	}
-}
-news_event = {##Delaunay allies satanists - info for the world
-	id = deluge_france_lore.19
-	title = deluge_france_lore.19.t
-	desc = deluge_france_lore.19.d
-	picture = GFX_news_event_statue_of_lucifer
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = deluge_france_lore.19.a
 	}
 }
 country_event = {##EDF lore event

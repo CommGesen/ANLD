@@ -1213,7 +1213,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_satanists_allied = {
-			picture = FRA_fortification_focus ##change later
+			picture = spirit_inverted_pentagram_purple
 			allowed = {
 				original_tag = FRA
 			}
@@ -1426,7 +1426,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_increase_fighter_production = {
-			picture = FRA_fortification_focus #change later
+			picture = generic_fighter_production_diverted ##change later
 			allowed = {
 				original_tag = FRA
 			}
@@ -1644,6 +1644,36 @@ ideas = {
 				war_support_factor = 0.1
 			}
 		}
+		FRA_spirit_total_control_triumphant = {
+			picture = chi_forced_conscription
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				NOT = {
+					FRA_deluge_jacques_doriot = {
+						is_country_leader = yes
+					}
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.1
+				compliance_growth = 0.07
+				conscription_factor = 0.15
+				communism_acceptance = 20
+				industrial_capacity_factory = 0.08
+				industrial_capacity_dockyard = 0.08
+				production_factory_max_efficiency_factor = 0.1
+				political_power_factor = 0.2
+				war_support_factor = 0.15
+			}
+		}
 		FRA_spirit_french_revolutionary_state = {
 			picture = MEX_revolutionary_army
 			allowed = {
@@ -1781,7 +1811,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_new_sans_culottes = {
-			picture = spirit_le_feu ##change later
+			picture = spirit_liberty_cap
 			allowed = {
 				tag = FRA
 			}
@@ -1864,7 +1894,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_national_syndycalism = {
-			picture = SPR_international_brigades #change later
+			picture = spirit_proudhon_circle_eagle
 			allowed = {
 				tag = FRA
 			}

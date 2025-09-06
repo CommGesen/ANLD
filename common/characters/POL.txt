@@ -163,7 +163,7 @@ characters={
 		country_leader = {
 			ideology = avant_garde_nationalism_ideology
 			expire = "1999.1.1.1"
-			traits = {}
+			traits = { deluge_trait_erudite }
 			desc = "POL_deluge_jan_stachniuk_desc"
 		}
 	}

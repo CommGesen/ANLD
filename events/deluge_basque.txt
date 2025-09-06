@@ -1,0 +1,19 @@
+﻿#The Basque events:
+add_namespace = deluge_basque
+country_event = {##hidden event that helps with relocating capital
+	id = deluge_basque.1
+	title = deluge_basque.1.t
+	desc = deluge_basque.1.d
+	picture = GFX_castle_of_visegrad
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		set_capital = {state = 792}
+	}
+	option = {
+		name = deluge_basque.1.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
