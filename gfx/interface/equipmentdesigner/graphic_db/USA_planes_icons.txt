@@ -1,13 +1,14 @@
 ### designer aircraft ###
 
-POL = {
+USA = {
 	
 ### priority small frame ###
 
 	small_plane_airframe_0 = {
 	pool = {
 			icons = {
-				GFX_POL_early_fighter_medium
+				GFX_USA_early_fighter_medium_2
+				GFX_USA_early_fighter_medium
 			}
 		}
 	}
@@ -15,7 +16,10 @@ POL = {
 	small_plane_airframe_1 = {
 		pool = {
 			icons = {
-				GFX_POL_fighter1_medium
+				GFX_USA_fighter1_medium_4
+				GFX_USA_fighter1_medium_3
+				GFX_USA_fighter1_medium_2
+				GFX_USA_fighter1_medium
 			}
 		}
 	}
@@ -23,7 +27,8 @@ POL = {
 	small_plane_airframe_2 = {
 		pool = {
 			icons = {
-				GFX_POL_fighter2_medium
+				GFX_USA_fighter2_medium_2
+				GFX_USA_fighter2_medium
 			}
 		}
 	}
@@ -31,7 +36,8 @@ POL = {
 	small_plane_airframe_3 = {
 		pool = {
 			icons = {
-				GFX_POL_fighter3_medium
+				GFX_USA_fighter3_medium_2
+				GFX_USA_fighter3_medium
 			}
 		}
 	}
@@ -39,8 +45,7 @@ POL = {
 	small_plane_airframe_4 = {
 		pool = {
 			icons = {
-				GFX_POL_jet_fighter2_medium
-				GFX_POL_jet_fighter2_medium_2
+				GFX_USA_jet_fighter2_medium
 				}
 		}
 	}
@@ -48,7 +53,7 @@ POL = {
 	small_plane_airframe_5 = {
 		pool = {
 			icons = {
-				GFX_POL_supersonic_fighter1_medium
+				GFX_USA_supersonic_fighter1_medium
 				}
 		}
 	}
@@ -58,14 +63,14 @@ POL = {
 	small_plane_cas_airframe_0 = {
 		pool = {
 			icons = {
-				GFX_POL_CAS0_medium
+				GFX_USA_CAS0_medium
 			}
 		}
 	}
 	small_plane_cas_airframe_1 = {
 		pool = {
 			icons = {
-				GFX_POL_CAS1_medium
+				GFX_USA_CAS1_medium
 			}
 		}
 	}
@@ -73,7 +78,7 @@ POL = {
 	small_plane_cas_airframe_2 = {
 		pool = {
 			icons = {
-				GFX_POL_CAS2_medium
+				GFX_USA_CAS2_medium
 			}
 		}
 	}
@@ -81,7 +86,7 @@ POL = {
 	small_plane_cas_airframe_3 = {
 		pool = {
 			icons = {
-				GFX_POL_CAS3_medium
+				GFX_USA_CAS3_medium
 			}
 		}
 	}
@@ -91,7 +96,7 @@ POL = {
 	cv_small_plane_airframe_0 = {
 		pool = {
 			icons = {
-				GFX_POL_cv_early_fighter_medium	
+				GFX_USA_cv_early_fighter_medium	
 			}
 		}
 	}
@@ -99,7 +104,7 @@ POL = {
 	cv_small_plane_airframe_1 = {
 		pool = {
 			icons = {
-				GFX_POL_cv_fighter1_medium	
+				GFX_USA_cv_fighter1_medium	
 			}
 		}
 	}
@@ -107,7 +112,7 @@ POL = {
 	cv_small_plane_airframe_2 = {
 		pool = {
 			icons = {
-				GFX_POL_cv_fighter2_medium	
+				GFX_USA_cv_fighter2_medium	
 			}
 		}
 	}
@@ -115,7 +120,8 @@ POL = {
 	cv_small_plane_airframe_3 = {
 		pool = {
 			icons = {
-				GFX_POL_cv_fighter3_medium	
+				GFX_USA_cv_fighter3_medium_2
+				GFX_USA_cv_fighter3_medium	
 			}
 		}
 	}
@@ -123,8 +129,7 @@ POL = {
 	cv_small_plane_airframe_4 = {
 		pool = {
 			icons = {
-				GFX_POL_cv_jet_fighter2_medium
-				GFX_POL_cv_jet_fighter2_medium_2
+				GFX_USA_cv_jet_fighter2_medium
 
 			}
 		}
@@ -136,7 +141,7 @@ POL = {
 	cv_small_plane_cas_airframe_0 = {
 		pool = {
 			icons = {
-				GFX_POL_cv_CAS1_medium	
+				GFX_USA_cv_CAS0_medium	
 			}
 		}
 	}
@@ -144,7 +149,7 @@ POL = {
 	cv_small_plane_cas_airframe_1 = {
 		pool = {
 			icons = {
-				GFX_POL_cv_CAS1_medium	
+				GFX_USA_cv_CAS1_medium	
 			}
 		}
 	}
@@ -152,7 +157,7 @@ POL = {
 	cv_small_plane_cas_airframe_2 = {
 		pool = {
 			icons = {
-				GFX_POL_cv_CAS2_medium	
+				GFX_USA_cv_CAS2_medium	
 			}
 		}
 	}
@@ -160,7 +165,7 @@ POL = {
 	cv_small_plane_cas_airframe_3 = {
 		pool = {
 			icons = {
-				GFX_POL_cv_CAS3_medium	
+				GFX_USA_cv_CAS3_medium	
 			}
 		}
 	}
@@ -208,7 +213,7 @@ POL = {
 		pool = {
 			weight = 1.1
 			icons = {
-				GFX_POL_cv_naval_bomber1_medium
+				GFX_USA_cv_naval_bomber1_medium
 			}
 		}
 	}
@@ -217,7 +222,7 @@ POL = {
 		pool = {
 			weight = 1.1
 			icons = {
-				GFX_POL_cv_naval_bomber1_medium
+				GFX_USA_cv_naval_bomber1_medium
 			}
 		}
 	}
@@ -225,7 +230,7 @@ POL = {
 		pool = {
 			weight = 1.1
 			icons = {
-				GFX_POL_cv_naval_bomber2_medium
+				GFX_USA_cv_naval_bomber2_medium
 			}
 		}
 	}
@@ -233,7 +238,7 @@ POL = {
 		pool = {
 			weight = 1.1
 			icons = {
-				GFX_POL_cv_naval_bomber3_medium
+				GFX_USA_cv_naval_bomber3_medium
 			}
 		}
 	}	
@@ -244,7 +249,7 @@ POL = {
 	medium_plane_airframe_0 = {
 		pool = {
 			icons = {
-				GFX_POL_early_bomber_medium
+				GFX_USA_early_bomber_medium
 			}
 		}
 	}
@@ -252,8 +257,9 @@ POL = {
 	medium_plane_airframe_1 = {
 		pool = {
 			icons = {
-				GFX_POL_tactical_bomber1_medium
-				GFX_POL_naval_bomber1_medium
+				GFX_USA_tactical_bomber1_medium_3
+				GFX_USA_tactical_bomber1_medium_2
+				GFX_USA_tactical_bomber1_medium
 			}
 		}
 	}
@@ -261,8 +267,9 @@ POL = {
 	medium_plane_airframe_2 = {
 		pool = {
 			icons = {
-				GFX_POL_tactical_bomber2_medium	
-				GFX_POL_naval_bomber2_medium
+				GFX_USA_tactical_bomber2_medium_3
+				GFX_USA_tactical_bomber2_medium_2
+				GFX_USA_tactical_bomber2_medium
 			}
 		}
 	}
@@ -270,10 +277,9 @@ POL = {
 	medium_plane_airframe_3 = {
 		pool = {
 			icons = {
-				GFX_POL_tactical_bomber3_medium
-				GFX_POL_tactical_bomber3_medium_2
-				GFX_POL_tactical_bomber3_medium_3
-				GFX_POL_naval_bomber3_medium
+				GFX_USA_tactical_bomber3_medium_3
+				GFX_USA_tactical_bomber3_medium_2
+				GFX_USA_tactical_bomber3_medium
 			}
 		}
 	}
@@ -282,8 +288,8 @@ POL = {
 		pool = {
 			weight = 1.1
 			icons = {
-				GFX_POL_jet_tactical_bomber1_medium	
-				GFX_POL_jet_tactical_bomber2_medium
+				GFX_USA_jet_tactical_bomber1_medium	
+				GFX_USA_jet_tactical_bomber2_medium
 			}
 		}
 	}	
@@ -293,7 +299,7 @@ POL = {
 	medium_plane_fighter_airframe_1 = {
 		pool = {
 			icons = {
-				GFX_POL_heavy_fighter1_medium
+				GFX_USA_heavy_fighter1_medium
 			}
 		}
 	}
@@ -301,7 +307,7 @@ POL = {
 	medium_plane_fighter_airframe_2 = {
 		pool = {
 			icons = {
-				GFX_POL_heavy_fighter2_medium
+				GFX_USA_heavy_fighter2_medium
 			}
 		}
 	}
@@ -309,7 +315,8 @@ POL = {
 	medium_plane_fighter_airframe_3 = {
 		pool = {
 			icons = {
-				GFX_POL_heavy_fighter3_medium
+				GFX_USA_heavy_fighter3_medium_2
+				GFX_USA_heavy_fighter3_medium
 			}
 		}
 	}	
@@ -330,8 +337,8 @@ POL = {
 			limit = { has_dlc = "La Resistance"}
 			weight = 1.1
 			icons = {
-				GFX_POL_scout_plane1_medium
-				GFX_POL_scout_plane2_medium
+				GFX_USA_scout_plane1_medium
+				GFX_USA_scout_plane2_medium
 			}
 		}
 	}
@@ -343,7 +350,7 @@ POL = {
 		pool = {
 			weight = 1.1
 			icons = {
-				GFX_POL_iw_large_airframe_medium
+				GFX_USA_iw_large_airframe_medium
 			}
 		}
 	}	
@@ -352,7 +359,7 @@ POL = {
 		pool = {
 			weight = 1.1
 			icons = {
-				GFX_POL_strategic_bomber1_medium
+				GFX_USA_strategic_bomber1_medium
 			}
 		}
 	}	
@@ -361,7 +368,7 @@ POL = {
 		pool = {
 			weight = 1.1
 			icons = {
-				GFX_POL_strategic_bomber2_medium
+				GFX_USA_strategic_bomber2_medium
 			}
 		}
 	}	
@@ -370,7 +377,8 @@ POL = {
 		pool = {
 			weight = 1.1
 			icons = {
-				GFX_POL_strategic_bomber3_medium
+				GFX_USA_strategic_bomber3_medium_2
+				GFX_USA_strategic_bomber3_medium
 			}
 		}
 	}
@@ -379,7 +387,7 @@ POL = {
 		pool = {
 			weight = 1.1
 			icons = {
-				GFX_POL_jet_strategic_bomber1_medium
+				GFX_USA_jet_strategic_bomber1_medium
 			}
 		}
 	}

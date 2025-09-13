@@ -7395,7 +7395,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_renovate_ministry_of_colonies
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_outre_mer_badge
 		x = 50
 		y = 0
 		#prerequisite = { focus = }
@@ -7443,7 +7443,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_african_department
-		icon = GFX_focus_generic_africa_naval
+		icon = GFX_focus_FRA_african_department
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_renovate_ministry_of_colonies }
@@ -7494,7 +7494,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_european_possessions
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_european_possessions
 		x = -18
 		y = 1
 		prerequisite = { focus = FRA_renovate_ministry_of_colonies }
@@ -7676,7 +7676,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_asian_department
-		icon = GFX_focus_usa_focus_on_asia
+		icon = GFX_focus_FRA_asian_department
 		x = 14
 		y = 1
 		prerequisite = { focus = FRA_renovate_ministry_of_colonies }
@@ -7906,7 +7906,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_dismantle_ottoman_empire
-		icon = GFX_focus_generic_attack_turkey
+		icon = GFX_focus_generic_dismantle_ottoman_empire
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_vassalize_arabian_tribes }
@@ -8241,7 +8241,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_fortify_our_cities_in_china
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_focus_generic_fortify_cities_in_china
 		x = 10
 		y = 1
 		prerequisite = { focus = FRA_asian_department }
@@ -8361,7 +8361,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_reestablish_the_american_departments
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_reestablish_the_american_departments
 		x = 27
 		y = 1
 		prerequisite = { focus = FRA_renovate_ministry_of_colonies }
@@ -8397,7 +8397,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_prepare_west_africas_infrastructure
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_west_africa_navy
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_reestablish_the_american_departments }
@@ -9055,7 +9055,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_railways_in_eastern_africa
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_railways_in_east_africa
 		x = -11
 		y = 1
 		prerequisite = { focus = FRA_african_department }
@@ -9097,7 +9097,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_fight_eastern_african_warlords
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_fight_east_african_warlords
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_railways_in_eastern_africa }
@@ -9133,7 +9133,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_french_eastern_african_confederation
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_federation_of_french_east_africa
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_railways_in_eastern_africa }
@@ -9169,7 +9169,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_east_african_steel
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_east_african_steel
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_french_eastern_african_confederation focus = FRA_fight_eastern_african_warlords}
@@ -9205,7 +9205,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_claim_south_africa
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_claim_south_africa
 		x = -15
 		y = 1
 		prerequisite = { focus = FRA_african_department }
@@ -9241,7 +9241,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_fight_south_african_warlords
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_fight_south_african_warlords
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_claim_south_africa }
@@ -9277,7 +9277,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_french_southern_african_confederation
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_federation_of_french_south_africa
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_claim_south_africa }
@@ -9313,7 +9313,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_french_southern_african_infrastructure
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_south_african_infrastructures
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_french_southern_african_confederation focus = FRA_fight_south_african_warlords }
@@ -10126,7 +10126,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_fortify_suez_canal
-		icon = GFX_focus_generic_the_suez
+		icon = GFX_focus_generic_fortify_suez
 		x = 8
 		y = 1
 		prerequisite = { focus = FRA_african_department focus = FRA_asian_department }
@@ -11536,7 +11536,7 @@ focus_tree = {
 	}
 	focus = {		
 		id = FRA_militarize_economy
-		icon = GFX_focus_generic_gun_and_bullets
+		icon = GFX_focus_FRA_mobilize_the_economy
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_third_way }

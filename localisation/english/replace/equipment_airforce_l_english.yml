@@ -2,6 +2,7 @@
  #GENERIC
  transport_plane_equipment_1:0 "Inter-War Airliner"
  transport_plane_equipment_1_short:0 "Airliner"
+ transport_plane_equipment_1_desc:0 "A civilian airliner designed to transport passengers and cargo. Such aircraft are most often operated by airlines and other kind of private owners. During wartime, they can be requisitioned for airborne operations with limited performances compared to their military counterparts."
  transport_plane_equipment_2:0 "Transport Plane"
  transport_plane_equipment_2_short:0 "Transport Plane"
  transport_plane_equipment_3:0 "Improved Transport Plane"
@@ -210,7 +211,7 @@
  FRA_jet_strat_bomber_equipment_1:0 "SNCASO SO.4000"
  FRA_jet_strat_bomber_equipment_1_short:0 "SO.4000"
 
-    ### FRENCH AIRFORCE SPECIAL PROJECTS###
+    ### FRENCH AIRFORCE SPECIAL PROJECTS ###
 
     FRA_supersonic_fighter1: "Marcel Bloch Super Mystère B2"
     FRA_supersonic_fighter_equipment_1: "Marcel Bloch Super Mystère B2"
@@ -236,10 +237,127 @@
  #FEDERAL KINGDOM OF AMERICA
  USA_transport_plane_equipment_1:0 "Douglas DC-3"
  USA_transport_plane_equipment_1_short:0 "DC-3"
- USA_transport_plane_equipment_2:0 "Douglas DC-5"
- USA_transport_plane_equipment_2_short:0 "DC-5"
+ USA_transport_plane_equipment_1_desc:0 "The DC-3 is a medium twin engine airliner introduced in 1934. Mainly operated by the American airline Pan Am, it pioneered many air travel routes over the Carribeans and South America. However, the constant challenge between the various American aircraft manufacturers prevented it from establishing its dominance in the commercial aircraft market. Who knows the glorious fate that would have awaited it in a world where America was much larger and more developed..."
+ USA_transport_plane_equipment_2:0 "Douglas C-110"
+ USA_transport_plane_equipment_2_short:0 "C-110"
  USA_transport_plane_equipment_3:0 "Consolidated C-87"
  USA_transport_plane_equipment_3_short:0 "C-87"
 
- USA_helicopter_equipment_1: "Sikorsky H-19"
- USA_helicopter_equipment_1_short: "H-19"
+ USA_fighter_equipment_0:0 "Boeing P-26"
+ USA_fighter_equipment_0_short:0 "P-26"
+ USA_cv_fighter_equipment_0:0 "Boeing F-4B"
+ USA_cv_fighter_equipment_0_short:0 "F-4B"
+ USA_fighter_equipment_1:0 "Curtiss P-36"
+ USA_fighter_equipment_1_short:0 "P-36"
+ USA_cv_fighter_equipment_1:0 "Grumman F3F"
+ USA_cv_fighter_equipment_1_short:0 "F3F"
+ USA_fighter_equipment_2:0 "Curtiss P-40"
+ USA_fighter_equipment_2_short:0 "P-40"
+ USA_cv_fighter_equipment_2:0 "Grumman F4F"
+ USA_cv_fighter_equipment_2_short:0 "F4F"
+ USA_fighter_equipment_3:0 "North American P-51"
+ USA_fighter_equipment_3_short:0 "P-51"
+ USA_cv_fighter_equipment_3:0 "Grumman F6F"
+ USA_cv_fighter_equipment_3_short:0 "F6F"
+
+ USA_jet_fighter_equipment_1:0 "Lockheed P-80"
+ USA_jet_fighter_equipment_1_short:0 "P-80"
+ USA_jet_fighter_equipment_2:0 "North American P-86"
+ USA_jet_fighter_equipment_2_short:0 "P-86"
+
+ USA_CAS_equipment_0:0 "Curtiss A-12"
+ USA_CAS_equipment_0_short:0 "A-12"
+ USA_CAS_equipment_1:0 "Northrop A-17"
+ USA_CAS_equipment_1_short:0 "A-17"
+ USA_cv_CAS_equipment_1:0 "Vought SB2U"
+ USA_cv_CAS_equipment_1_short:0 "SB2U"
+ USA_CAS_equipment_2:0 "Douglas A-24"
+ USA_CAS_equipment_2_short:0 "A-24"
+ USA_cv_CAS_equipment_2:0 "Douglas SBD"
+ USA_cv_CAS_equipment_2_short:0 "SBD"
+ USA_CAS_equipment_3:0 "North American A-36"
+ USA_CAS_equipment_3_short:0 "A-36"
+ USA_cv_CAS_equipment_3:0 "Curtiss SB2C"
+ USA_cv_CAS_equipment_3_short:0 "SB2C"
+
+ USA_heavy_fighter_equipment_1:0 "Bell YFM-1"
+ USA_heavy_fighter_equipment_1_short:0 "YFM-1"
+ USA_heavy_fighter_equipment_2:0 "Lockheed P-38"
+ USA_heavy_fighter_equipment_2_short:0 "P-38"
+ USA_heavy_fighter_equipment_3:0 "Lockheed P-58"
+ USA_heavy_fighter_equipment_3_short:0 "P-58"
+
+ USA_nav_bomber_equipment_1:0 "Douglas TBD-1A"
+ USA_nav_bomber_equipment_1_short:0 "TBD-1A"
+ USA_cv_nav_bomber_equipment_1:0 "Douglas TBD"
+ USA_cv_nav_bomber_equipment_1_short:0 "TBD"
+ USA_nav_bomber_equipment_2:0 "Vultee TBV-1"
+ USA_nav_bomber_equipment_2_short:0 "TBV-1"
+ USA_cv_nav_bomber_equipment_2:0 "Grumman TBF"
+ USA_cv_nav_bomber_equipment_2_short:0 "TBF"
+ USA_nav_bomber_equipment_3:0 "Curtiss BTC"
+ USA_nav_bomber_equipment_3_short:0 "BTC"
+ USA_cv_nav_bomber_equipment_3:0 "Douglas BTD"
+ USA_cv_nav_bomber_equipment_3_short:0 "BTD"
+
+ USA_tac_bomber_equipment_0:0 "Martin B-10"
+ USA_tac_bomber_equipment_0_short:0 "B-10"
+ USA_tac_bomber_equipment_1:0 "Douglas B-18"
+ USA_tac_bomber_equipment_1_short:0 "B-18"
+ USA_tac_bomber_equipment_2:0 "Douglas A-20"
+ USA_tac_bomber_equipment_2_short:0 "A-20"
+ USA_tac_bomber_equipment_3:0 "Douglas A-26"
+ USA_tac_bomber_equipment_3_short:0 "A-26"
+
+ USA_scout_plane_equipment_1:0 "Curtiss Y1B-7"
+ USA_scout_plane_equipment_1_short:0 "Y1B-7"
+ USA_scout_plane_equipment_2:0 "Lockheed F-5"
+ USA_scout_plane_equipment_2_short:0 "F-5"
+
+ USA_jet_tac_bomber_equipment_1:0 "Martin B-51"
+ USA_jet_tac_bomber_equipment_1_short:0 "B-51"
+ USA_jet_tac_bomber_equipment_2:0 "Martin B-57"
+ USA_jet_tac_bomber_equipment_2_short:0 "B-57"
+ 
+ USA_strat_bomber_equipment_0:0 "Witteman-Lewis Long Range Night Bomber"
+ USA_strat_bomber_equipment_0_short:0 "NBL-1
+ USA_strat_bomber_equipment_1:0 "Boeing B-17"
+ USA_strat_bomber_equipment_1_short:0 "B-17"
+ USA_strat_bomber_equipment_2:0 "Consolidated B-24"
+ USA_strat_bomber_equipment_2_short:0 "B-24"
+ USA_strat_bomber_equipment_3:0 "Boeing B-29"
+ USA_strat_bomber_equipment_3_short:0 "B-29"
+
+ USA_jet_strat_bomber_equipment_1:0 "Boeing B-47"
+ USA_jet_strat_bomber_equipment_1_short:0 "B-47"
+
+    ### AMERICAN AIRFORCE SPECIAL PROJECTS###
+
+    USA_supersonic_fighter1: "North American P-100"
+    USA_supersonic_fighter_equipment_1: "North American P-100"
+    USA_supersonic_fighter_equipment_1_short: "P-100"
+    
+    USA_strat_bomber_intercontinental_equipment_1: "Consolidated B-36"
+    USA_strat_bomber_intercontinental_equipment_1_short: "B-36"
+    
+    USA_mothership_equipment_0: "Boeing B-29 FICON"
+    USA_mothership_equipment_0_short: "B-29 FICON"
+
+    USA_helicopter_equipment_1: "Sikorsky H-19"
+    USA_helicopter_equipment_1_short: "H-19"
+
+    USA_ballistic_missile_equipment_1: "MGM-1 Matador"
+    USA_ballistic_missile_equipment_1_short: "MGM-1"
+    USA_ballistic_missile_equipment_2: "PGM-11 Redstone"
+    USA_ballistic_missile_equipment_2_short: "PGM-11"
+
+    USA_guided_missile_equipment_1: "Interstate XBDR"
+    USA_guided_missile_equipment_1_short: "XBDR"
+
+    USA_nuclear_missile_equipment_1: "PGM-17 Thor"
+    USA_nuclear_missile_equipment_1_short: "PGM-17"
+    USA_nuclear_missile_equipment_2: "SM-65 Atlas"
+    USA_nuclear_missile_equipment_2_short: "SM-65"
+
+    USA_sam_missile_equipment_1: "MIM-3 Nike Ajax"
+    USA_sam_missile_equipment_1_short: "MIM-3"
