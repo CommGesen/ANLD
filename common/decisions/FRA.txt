@@ -9360,4 +9360,294 @@ FRA_dec_cat_unite_europe = {
 			base = 100
 		}
 	}
+	deluge_dec_FRA_integrate_uk_into_eu = {
+		icon = GFX_decision_generic_integration
+		fire_only_once = yes
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_deats_takeover
+			has_country_leader = {
+				character = FRA_deluge_marcel_deat
+				ruling_only = yes
+			}
+		}
+		available = {
+			FRA = {has_country_flag = FRA_flag_formed_eu}
+			has_completed_focus = FRA_deats_takeover
+			has_country_leader = {
+				character = FRA_deluge_marcel_deat
+				ruling_only = yes
+			}
+			custom_trigger_tooltip = {##England, Scotland and Wales
+				tooltip = POL_custom_trigger_tooltip_45
+				controls_state = 127
+				controls_state = 123
+				controls_state = 338
+				controls_state = 126
+				controls_state = 125
+				controls_state = 129
+				controls_state = 128
+				controls_state = 122
+				controls_state = 132
+				controls_state = 130
+				controls_state = 131
+				controls_state = 121
+				controls_state = 133
+				controls_state = 136
+				controls_state = 120
+				controls_state = 932
+				controls_state = 931
+			}
+		}
+		cost = 0
+		highlight_states = {
+			highlight_state_targets = {
+				state = 127
+				state = 123
+				state = 338
+				state = 126
+				state = 125
+				state = 129
+				state = 128
+				state = 122
+				state = 132
+				state = 130
+				state = 131
+				state = 121
+				state = 133
+				state = 136
+				state = 120
+				state = 932
+				state = 931
+			}
+		}
+		days_remove = 150
+		modifier = {
+			political_power_gain = -0.1
+		}
+		remove_effect = {
+			hidden_effect = {
+				127 = {
+					add_core_of = FRA
+				}
+				123 = {
+					add_core_of = FRA
+				}
+				338 = {
+					add_core_of = FRA
+				}
+				126 = {
+					add_core_of = FRA
+				}
+				125 = {
+					add_core_of = FRA
+				}
+				129 = {
+					add_core_of = FRA
+				}
+				128 = {
+					add_core_of = FRA
+				}
+				122 = {
+					add_core_of = FRA
+				}
+				132 = {
+					add_core_of = FRA
+				}
+				130 = {
+					add_core_of = FRA
+				}
+				131 = {
+					add_core_of = FRA
+				}
+				121 = {
+					add_core_of = FRA
+				}
+				133 = {
+					add_core_of = FRA
+				}
+				136 = {
+					add_core_of = FRA
+				}
+				120 = {
+					add_core_of = FRA
+				}
+				932 = {
+					add_core_of = FRA
+				}
+				931 = {
+					add_core_of = FRA
+				}
+			}
+			custom_effect_tooltip = POL_custom_effect_tooltip_242
+			hidden_effect = {
+				news_event = {
+					id = deluge_france.93
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	deluge_dec_FRA_integrate_ireland_into_eu = {
+		icon = GFX_decision_generic_integration
+		fire_only_once = yes
+		allowed = {
+			original_tag = POL
+		}
+		visible = {
+			has_completed_focus = FRA_deats_takeover
+			has_country_leader = {
+				character = FRA_deluge_marcel_deat
+				ruling_only = yes
+			}
+		}
+		available = {
+			FRA = {has_country_flag = FRA_flag_formed_eu}
+			has_completed_focus = FRA_deats_takeover
+			has_country_leader = {
+				character = FRA_deluge_marcel_deat
+				ruling_only = yes
+			}
+			controls_state = 119
+			controls_state = 134
+			controls_state = 113
+			controls_state = 135
+		}
+		cost = 0
+		days_remove = 100
+		modifier = {
+			political_power_gain = -0.1
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 119
+				state = 134
+				state = 135
+				state = 113
+			}
+		}
+		remove_effect = {
+			119 = {
+				add_core_of = FRA
+			}
+			134 = {
+				add_core_of = FRA
+			}
+			135 = {
+				add_core_of = FRA
+			}
+			113 = {
+				add_core_of = FRA
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	deluge_dec_FRA_integrate_northern_islands_into_eu = {
+		icon = GFX_decision_generic_integration
+		fire_only_once = yes
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_deats_takeover
+			has_country_leader = {
+				character = FRA_deluge_marcel_deat
+				ruling_only = yes
+			}
+		}
+		available = {
+			FRA = {has_country_flag = FRA_flag_formed_eu}
+			has_completed_focus = FRA_deats_takeover
+			has_country_leader = {
+				character = FRA_deluge_marcel_deat
+				ruling_only = yes
+			}
+			controls_state = 101
+			controls_state = 100
+			controls_state = 337
+			controls_state = 933
+			controls_state = 914
+		}
+		cost = 0
+		highlight_states = {
+			highlight_state_targets = {
+				state = 337
+				state = 101
+				state = 100
+				state = 914
+				state = 933
+			}
+		}
+		days_remove = 75
+		modifier = {
+			political_power_gain = -0.1
+		}
+		remove_effect = {
+			337 = {
+				add_core_of = FRA
+			}
+			101 = {
+				add_core_of = FRA
+			}
+			100 = {
+				add_core_of = FRA
+			}
+			914 = {
+				add_core_of = FRA
+			}
+			933 = {
+				add_core_of = FRA
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	deluge_dec_FRA_integrate_cyprus_into_eu = {
+		icon = GFX_decision_generic_integration
+		fire_only_once = yes
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_deats_takeover
+			has_country_leader = {
+				character = FRA_deluge_marcel_deat
+				ruling_only = yes
+			}
+		}
+		available = {
+			FRA = {has_country_flag = FRA_flag_formed_eu}
+			has_completed_focus = FRA_deats_takeover
+			has_country_leader = {
+				character = FRA_deluge_marcel_deat
+				ruling_only = yes
+			}
+			controls_state = 183
+		}
+		days_remove = 25
+		modifier = {
+			political_power_gain = -0.1
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 183
+			}
+		}
+		cost = 0
+		remove_effect = {
+			183 = {
+				add_core_of = FRA
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
 }

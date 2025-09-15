@@ -1,4 +1,35 @@
 characters={
+	##this stupid guy Clemenceau
+	FRA_deluge_georges_clemenceau={
+		name=FRA_deluge_georges_clemenceau_name
+		portraits={
+			civilian={
+				small="GFX_georges_clemenceau_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_georges_clemenceau
+			allowed = { tag = FRA }
+			can_be_fired = no
+			visible = {
+				NOT = {
+					has_country_flag = FRA_flag_dismissed_clemenceau
+				}
+			}
+			cost = 150
+			available = {
+				NOT = {
+					has_country_flag = FRA_flag_dismissed_clemenceau
+				}
+			}
+			traits = {
+				deluge_trait_derealised_artifact_of_old_world
+			}
+			ai_will_do = { factor = 1.0 }
+			ledger = civilian
+		}
+	}
 	##Bonapartists
 	FRA_deluge_napoleon_vi={
 		name=FRA_deluge_napoleon_vi_name
@@ -1338,15 +1369,7 @@ characters={
 			expire="1965.1.1.1"
 			desc = "FRA_deluge_francois_de_la_rocque_desc"
 		}
-		corps_commander={
-			traits={ war_hero career_officer infantry_officer de_la_rocques_follower }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			desc = "FRA_deluge_francois_de_la_rocque_desc"
-		}
+		#becomes also a general via event during a game
 	}
 	FRA_deluge_jean_mermoz={#Jean Mermoz
 		name=FRA_deluge_jean_mermoz_name

@@ -20,6 +20,10 @@ country_event = {
 		add_stability = -0.05
 		hidden_effect = {
 			news_event = { hours = 6 id = deluge_france.2 }
+			country_event = {
+				id = deluge_france.83
+				days = 10
+			}
 		}
 	}
 }
@@ -1238,14 +1242,8 @@ country_event = {##Ernest Petit becomes a general
 	desc = deluge_france.46.d
 	picture = GFX_report_event_ernest_petit_2
 	fire_only_once = yes
-	trigger = {
-		tag = FRA
-		date > 1936.8.8
-		has_character = FRA_deluge_ernest_petit
-	}
-	mean_time_to_happen = {
-		days = 5
-	}
+	is_triggered_only = yes
+	timeout_days = 4
 	option = {##petit gets promoted
 		name = deluge_france.46.a
 		add_popularity = {
@@ -1262,6 +1260,12 @@ country_event = {##Ernest Petit becomes a general
 			planning_skill=2
 			logistics_skill=3
 			desc = "FRA_deluge_ernest_petit_desc"
+		}
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.85
+				days = 7
+			}
 		}
 	}
 }
@@ -3031,6 +3035,366 @@ country_event = {##event about modern tanks
 		else = {
 			army_experience = 20
 		}
+	}
+}
+country_event = {##Emperor promotes Francois de la Rocque
+	id = deluge_france.81
+	title = deluge_france.81.t
+	desc = deluge_france.81.d
+	picture = GFX_report_event_francois_de_la_rocque
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 4
+	option = {
+		name = deluge_france.81.a
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.02
+		}
+		add_stability = 0.05
+		add_corps_commander_role = {
+			character = FRA_deluge_francois_de_la_rocque
+			traits={ war_hero career_officer infantry_officer de_la_rocques_follower noble }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			desc = "FRA_deluge_francois_de_la_rocque_desc"
+		}
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.88
+				days = 3
+			}
+		}
+	}
+}
+country_event = {##ban on Croix-de-Feu
+	id = deluge_france.82
+	title = deluge_france.82.t
+	desc = deluge_france.82.d
+	picture = GFX_report_event_croix_de_feu_meeting
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 4
+	option = {
+		name = deluge_france.82.a
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+		add_stability = 0.03
+		add_political_power = -40
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.84
+				days = 3
+			}
+		}
+	}
+}
+country_event = {##crackdown on left-wing elements
+	id = deluge_france.83
+	title = deluge_france.83.t
+	desc = deluge_france.83.d
+	picture = GFX_report_event_DEN_sabotage
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 4
+	option = {
+		name = deluge_france.83.a
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+		add_stability = 0.03
+		add_political_power = -40
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.82
+				days = 7
+			}
+		}
+	}
+}
+country_event = {##ban minor nationalist parties
+	id = deluge_france.84
+	title = deluge_france.84.t
+	desc = deluge_france.84.d
+	picture = GFX_report_event_french_patriots_marching
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 4
+	option = {
+		name = deluge_france.84.a
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.02
+		}
+		add_stability = 0.02
+		add_political_power = 15
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.46
+				days = 2
+			}
+		}
+	}
+}
+country_event = {##issue of French Solidarity
+	id = deluge_france.85
+	title = deluge_france.85.t
+	desc = deluge_france.85.d
+	picture = GFX_report_event_francois_coty
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 4
+	option = {
+		name = deluge_france.85.a
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.03
+		}
+		add_political_power = 30
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.86
+				days = 4
+			}
+		}
+	}
+}
+country_event = {##creation of French Social Party
+	id = deluge_france.86
+	title = deluge_france.86.t
+	desc = deluge_france.86.d
+	picture = GFX_report_event_french_social_party_brochure
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 4
+	option = {
+		name = deluge_france.86.a
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.02
+		}
+		add_political_power = -30
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.87
+				days = 5
+			}
+		}
+	}
+}
+country_event = {##quebec supports our radicals
+	id = deluge_france.87
+	title = deluge_france.87.t
+	desc = deluge_france.87.d
+	picture = GFX_report_event_henri_bourassa
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 4
+	option = {
+		name = deluge_france.87.a
+		FRA = {
+			add_opinion_modifier = {
+				target = CAN
+				modifier = opinion_modifier_supports_subversive_movements_in_our_country
+			}
+		}
+		add_stability = -0.03
+		add_popularity = {
+			ideology = communism
+			popularity = 0.03
+		}
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.81
+				days = 6
+			}
+		}
+	}
+}
+country_event = {##Grand Duchess Marie Adelaide rejected a marriage proposal from our emperor
+	id = deluge_france.88
+	title = deluge_france.88.t
+	desc = deluge_france.88.d
+	picture = GFX_report_event_marie_adelaide_nassau_weilburg
+	timeout_days = 4
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.88.a
+		FRA = {
+			add_opinion_modifier = {
+				target = BEL
+				modifier = opinion_modifier_tensions_between_royals
+			}
+		}
+		BEL = {
+			add_opinion_modifier = {
+				target = FRA
+				modifier = opinion_modifier_tensions_between_royals
+			}
+		}
+		add_trait = {
+			character = FRA_deluge_napoleon_vi
+			ideology = bonapartist_ideology
+			trait = deluge_trait_heart_broken
+		}
+		add_political_power = -15
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.89
+				days = 1
+			}
+			country_event = {
+				id = deluge_france.92
+				days = 150
+			}
+		}
+	}
+}
+country_event = {##Maurras criticizes us
+	id = deluge_france.89
+	title = deluge_france.89.t
+	desc = deluge_france.89.d
+	picture = GFX_report_event_charles_maurras
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 4
+	option = {
+		name = deluge_france.89.a
+		FRA = {
+			add_opinion_modifier = {
+				target = LOU
+				modifier = opinion_modifier_criticizes_us
+			}
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.01
+		}
+		add_political_power = -20
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.90
+				days = 1
+			}
+		}
+	}
+}
+country_event = {##citizens support the emperor
+	id = deluge_france.90
+	title = deluge_france.90.t
+	desc = deluge_france.90.d
+	picture = GFX_report_event_french_workers
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 4
+	option = {
+		name = deluge_france.90.a
+		add_political_power = 20
+		add_stability = 0.02
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		remove_trait = {
+			character = FRA_deluge_napoleon_vi
+			ideology = bonapartist_ideology
+			trait = deluge_trait_heart_broken
+		}
+		add_trait = {
+			character = FRA_deluge_napoleon_vi
+			ideology = bonapartist_ideology
+			trait = deluge_trait_emperor_of_the_french
+		}
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.91
+				days = 7
+			}
+		}
+	}
+}
+country_event = {##issue of georges clemencau
+	id = deluge_france.91
+	title = deluge_france.91.t
+	desc = deluge_france.91.d
+	picture = GFX_report_event_georges_clemenceau
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 4
+	option = {##dismiss him now
+		name = deluge_france.91.a
+		add_political_power = 30
+		FRA_deluge_georges_clemenceau = {
+			set_can_be_fired_in_advisor_role = {
+				slot = political_advisor
+				value = yes
+			}
+		}
+		set_country_flag = FRA_flag_dismissed_clemenceau
+		custom_effect_tooltip = FRA_custom_effect_tooltip_161
+		set_country_flag = FRA_flag_the_problem_of_clemenceau_was_raised
+	}
+	option = {##don't dismiss him
+		name = deluge_france.91.b
+		add_political_power = -10
+		set_country_flag = FRA_flag_the_problem_of_clemenceau_was_raised
+	}
+}
+country_event = {##tensions between royal of BEL and FRA are gone
+	id = deluge_france.92
+	title = deluge_france.92.t
+	desc = deluge_france.92.d
+	picture = GFX_report_event_luxembourgish_grand_ducal_palace
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.92.a
+		add_political_power = 30
+		FRA = {
+			remove_opinion_modifier = {
+				target = BEL
+				modifier = opinion_modifier_tensions_between_royals
+			}
+		}
+		BEL = {
+			remove_opinion_modifier = {
+				target = FRA
+				modifier = opinion_modifier_tensions_between_royals
+			}
+		}
+	}
+}
+news_event = {##Deat unifies Europe
+	id = deluge_france.93
+	title = deluge_france.93.t
+	desc = deluge_france.93.d
+	picture = GFX_news_event_marcel_deat_2
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france.93.a
+	}
+}
+news_event = {##FRA disbands LoN via focus
+	id = deluge_france.94
+	title = deluge_france.94.t
+	desc = deluge_france.94.d
+	picture = GFX_news_event_league_of_nations_building
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france.94.a
 	}
 }
 country_event = {##inspection in the army

@@ -1,0 +1,22 @@
+FRA_modifier_operation_cartier = {
+	valid_relation_trigger = {
+		FROM = {
+			capital_scope = {
+				OR = {
+					is_on_continent = south_america
+					is_on_continent = north_america
+				}
+			}
+		}
+		ROOT = {
+			has_country_flag = {
+				flag = FRA_flag_start_of_operation_cartier
+				days < 400
+			}
+		}
+	}
+
+	army_attack_factor = 0.1
+	army_defence_factor = 0.1
+	breakthrough_factor = 0.05
+}

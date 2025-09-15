@@ -106,4 +106,22 @@ opinion_modifiers = {
 	opinion_modifier_hypocrisy_during_decolonization = {
 		value = -35
 	}
+	opinion_modifier_supports_subversive_movements_in_our_country = {
+		value = -40
+	}
+	opinion_modifier_gives_asylum_to_subversives_from_our_country = {
+		value = -20
+	}
+	opinion_modifier_criticizes_us = {
+		value = -15
+	}
+	opinion_modifier_tensions_between_royals = {
+		value = -10
+	}
+	opinion_modifier_enemy_of_a_friend = {
+		value = -10
+	}
+	opinion_modifier_seeing_us_as_colonies = {
+		value = -20
+	}
 }

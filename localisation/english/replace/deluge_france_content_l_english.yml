@@ -240,6 +240,10 @@
  deluge_trait_anti_radical:0 "Anti-Radical"
  deluge_trait_nationalist_propaganda_minister:0 "Nationalist Propaganda Minister"
  deluge_trait_commissioner_for_education_and_sports:0 "Commissioner for Education and Sports"
+ deluge_trait_heart_broken:0 "Heart-Broken"
+ deluge_trait_derealised_artifact_of_old_world:0 "Derealised Artifact of Old World"
+ deluge_trait_imperial_connections_AAT:0 "Imperial Connections"
+ deluge_trait_imperial_connections_non_AAT:0 "Imperial Connections"
  ##Tooltips
  FRA_custom_effect_tooltip_1:0 "Modify §HThe Great Depression§! by:\n§H-15%§! Consumer Good Factor!"
  FRA_custom_effect_tooltip_2:0 "Modify §HThe Great Depression§! by:\n§G+10%§! Factory Output,\n§G+10%§! Dockyard Output!"
@@ -305,9 +309,9 @@
  FRA_custom_effect_tooltip_62:0 "Add technology: §HMAS-1936§!."
  FRA_custom_effect_tooltip_63:0 "Modify §HObsolete Army§! national spirit by:\n§G+5%§! Naval Damage\n§G+5%§! Naval Detection\n§G+10%§! Chance to Score a Critical Hit\n§G+10%§! Fleet Coordination\n§G-10%§! Naval Accident Chance\n§G+10%§! Naval Night-time Attack\n§G+10%§! Convoy Raiding Efficiency\n§G+10%§! Naval AA Attack\n§G+10%§! Naval Max Range Factor\n§G+10%§! Navy Organization\n§G+10%§! Ship Recovery Rate!"
  FRA_custom_effect_tooltip_64:0 "Modify §HObsolete Army§! national spirit by:\n§G+10%§! Naval Damage\n§G+10%§! Naval Detection\n§G+10%§! Chance to Score a Critical Hit\n§G+10%§! Fleet Coordination\n§G-10%§! Naval Accident Chance\n§G+10%§! Naval Night-time Attack\n§G+10%§! Convoy Raiding Efficiency\n§G+10%§! Naval AA Attack\n§G+10%§! Naval Max Range Factor\n§G+10%§! Navy Organization\n§G+10%§! Ship Recovery Rate!"
- FRA_custom_effect_tooltip_65:0 "Unlocks §Hdecisions§! to build §HCoastal Forts§! from §H[14.GetName]§! to §H[29.GetName]§!!"
- FRA_custom_effect_tooltip_66:0 "Unlocks §Hdecisions§! to build §HLand Forts§! across §HItalian§!, §HSwiss§!, §HGerman§!, §HDutch§! and §HLuxembourgish§! borders!"
- FRA_custom_effect_tooltip_67:0 "Unlocks §Hdecisions§! to build §HRadar Stations§! across §HSouthern Coast§! and §HNorthern Coast§!!"
+ FRA_custom_effect_tooltip_65:0 "Gains §Hwargoal§! on every nation that §Howns§! states mentioned below and has §Hcapital§! in either §HSouth§! or §HNorth America§!:\n§H[464.GetName]§!,\n§H[696.GetName]§!,\n§H[465.GetName]§!,\n§H[357.GetName]§!,\n§H[468.GetName]§!,\n§H[798.GetName]§!,\n§H[781.GetName]§!,\n§H[395.GetName]§!,\n§H[498.GetName]§!,\n§H[936.GetName]§!,\n§H[499.GetName]§!."
+ FRA_custom_effect_tooltip_66:0 "This modifier will last for §H400 days§! and will apply to every §HSouth American§! and §HNorth American§! country!"
+ FRA_custom_effect_tooltip_67:0 "Remove §HLeague of Nations§! spirit!"
  FRA_custom_effect_tooltip_68:0 "Modify §HObsolete Army§! national spirit by:\n§G+5%§! Air Attack\n§G+5%§! Air Defence\n§G+5%§! Air Agility\n§G+5%§! Ace Generation Chance\n§G-5%§! Air Accidents Chance\n§G+5%§! Ground Attack Factor\n§G-5%§! Night Operations Penalty\n§G-5%§! Bad Weather Penalty!"
  FRA_custom_effect_tooltip_69:0 "Modify §HObsolete Army§! national spirit by:\n§G+5%§! Air Attack\n§G+5%§! Air Defence\n§G+5%§! Air Agility\n§G+10%§! Ace Generation Chance\n§G-10%§! Air Accidents Chance\n§G+10%§! Ground Attack Factor\n§G-10%§! Night Operations Penalty\n§G-10%§! Bad Weather Penalty!"
  FRA_custom_effect_tooltip_70:0 "Modify §HObsolete Army§! national spirit by:\n§G+10%§! Air Attack\n§G+10%§! Air Defence\n§G+10%§! Air Agility\n§G+10%§! Ace Generation Chance\n§G-10%§! Air Accidents Chance\n§G+10%§! Ground Attack Factor\n§G-10%§! Night Operations Penalty\n§G-10%§! Bad Weather Penalty!"
@@ -401,6 +405,8 @@
  FRA_custom_effect_tooltip_158:0 "Modify §HRadical Reforms§! national spirit by:\n§G+15%§! Political Power Daily Gain,\n§R-30%§! Ideology Drift Defense,\n§R-5%§! War Support!"
  FRA_custom_effect_tooltip_159:0 "Modify §HRadical Reforms§! national spirit by:\n§G+0,02§! Radicalism Daily Support,\n§G+10%§! Ideology Drift Defense,\n§G+10%§! War Support!"
  FRA_custom_effect_tooltip_160:0 "Events about decolonization will pop out during the focus."
+ FRA_custom_effect_tooltip_161:0 "This option will dismiss Georges Clemenceau. Removing Clemenceau from office will push us towards §Grepairing the old order§! and at the same time block the §Roverthrow of the monarchy§!."
+ FRA_custom_effect_tooltip_162:0 "Georges Clemenceau will be removed as an advisor."
  set_FRA_vasslisation: "Unlock Decision: §YVassaliation of [?vassalisation_target.GetNonIdeologyNameDef]§!"
  generic_in_100_days: "In 100 days: "
  
@@ -416,9 +422,17 @@
  FRA_custom_trigger_tooltip_2:0 "Controls all of northern and central Italy."
  FRA_custom_trigger_tooltip_3:0 "Controls all of far north of Spain."
  FRA_custom_trigger_tooltip_4:0 "Controls all of northwest Germany."
+ 
  ##Opinion Modifiers
  opinion_modifier_former_overlord:0 "Former Overlord"
  opinion_modifier_hypocrisy_during_decolonization:0 "Hypocrisy During Decolonization"
+ opinion_modifier_enemy_of_a_friend:0 "Enemy of a Friend"
+ opinion_modifier_tensions_between_royals:0 "Tensions Between Royals"
+ opinion_modifier_criticizes_us:0 "Criticizes Us!"
+ opinion_modifier_gives_asylum_to_subversives_from_our_country:0 "Gives Asylum to Subversives from Our Country!"
+ opinion_modifier_supports_subversive_movements_in_our_country:0 "Support Subversive  Movements in Our Country!"
+ deluge_trait_emperor_of_the_french:0 "Emperor of the French"
+ opinion_modifier_seeing_us_as_colonies:0 "Seeing Us as Colonies!"
  ##Dynamic Modifiers
  FRA_modifier_radical_reforms:0 "Radical Reforms"
  FRA_modifier_lon:0 "League of Nations"
@@ -467,6 +481,9 @@
  FRA_flag_has_formed_empire_of_golden_flame:0 "Empire of the Golden Flame has been formed!"
  FRA_flag_has_formed_frankish_empire:0 "Frankish Empire has been restored!"
  FRA_flag_formed_eu:0 "France formed the European Union!"
+ FRA_flag_the_problem_of_clemenceau_was_raised:0 "The problem of Clemenceau was raised."
+ FRA_flag_dismissed_clemenceau:0 "Emperor has dismissed Clemenceau."
+ FRA_flag_start_of_operation_cartier:0 "Start of Operation Cartier!"
  ##Parties:
  FRA_communism_party:0 "FSWI"
  FRA_communism_party_long:0 "French Section of the Workers' International"
@@ -687,6 +704,10 @@
  FRA_dec_cat_unite_europe:0 "Unite Europe"
  FRA_dec_cat_unite_europe_desc:0 "More and more Europeans are realizing that we are not so different from each other. The dream of a united Europe transcending national, ethnic, and linguistic divisions is possible. This will allow us to more effectively oppose the barbaric Russians from the East, the treacherous Americans, or the simply uncivilized Africans. Uniting all the nations of Europe will require many political maneuvers and military actions. It will require considerable effort, but one day our dream will come true."
  FRA_deluge_deat_united_europe_decision:0 "Fulfilling the Pan-European Dream"
+ deluge_dec_FRA_integrate_uk_into_eu:0 "Integrate British Isles into Europe!"
+ deluge_dec_FRA_integrate_ireland_into_eu:0 "Integrate Ireland into Europe!"
+ deluge_dec_FRA_integrate_northern_islands_into_eu:0 "Integrate Nothern Islands into Europe!"
+ deluge_dec_FRA_integrate_cyprus_into_eu:0 "Integrate Cyprus into Europe!"
  ##autonomy
  BHU_refused_to_support_bourbon_bhopal_revolt:0 "[BHU.GetName] refused to support Bourbon-Bhopal revolt!"
  ##white peace messages
@@ -703,4 +724,7 @@
  FRA_transfered_arab_nation:0 "[FROM.GetName] transfered Arab Nation to [FRA.GetName]"
  FRA_transfered_persia:0 "[FROM.GetName] transfered [PER.GetName] to [FRA.GetName]"
  FRA_vassalized_PER:0 "[PER.GetName] became vassal of [FRA.GetName]"
+ FRA_disbanded_lon:0 "[FRA.GetName] disbanded League of Nations!"
+ ##relation modifiers:
+ FRA_modifier_operation_cartier:0 "Operation Cartier"
  

@@ -1582,4 +1582,63 @@ leader_traits = {
 		army_defence_factor = 0.03
 		training_time_factor = -0.1
 	}
+	deluge_trait_heart_broken = {
+		random = no
+		political_power_factor = -0.15
+		war_support_factor = -0.05
+	}
+	deluge_trait_emperor_of_the_french = {
+		random = no
+		political_power_factor = 0.1
+		war_support_factor = 0.1
+		stability_factor = 0.05
+		neutrality_drift = 0.01
+	}
+	deluge_trait_derealised_artifact_of_old_world = {
+		random = no
+		sprite = 12
+		political_power_factor = -0.1
+		consumer_goods_factor = 0.15
+		research_speed_factor = -0.05
+		political_advisor_cost_factor = 0.35
+		theorist_cost_factor = 0.35
+		chief_of_staff_slot_cost_factor = 0.35
+		army_chief_cost_factor = 0.35
+		navy_chief_cost_factor = 0.35
+		air_chief_cost_factor = 0.35
+		security_chief_slot_cost_factor = 0.35
+		intelligence_chief_slot_cost_factor = 0.35
+		high_command_cost_factor = 0.35
+	}
+	deluge_trait_imperial_connections_AAT = {
+		random = no
+		political_advisor_cost_factor = -0.2
+		theorist_cost_factor = -0.2
+		chief_of_staff_slot_cost_factor = -0.2
+		army_chief_cost_factor = -0.2
+		navy_chief_cost_factor = -0.2
+		air_chief_cost_factor = -0.2
+		security_chief_slot_cost_factor = -0.2
+		intelligence_chief_slot_cost_factor = -0.2
+		high_command_cost_factor = -0.2
+		industrial_concern_cost_factor = -0.2
+		military_industrial_organization_policy_cost = -0.75
+	}
+	deluge_trait_imperial_connections_non_AAT = {
+		random = no
+		political_advisor_cost_factor = -0.2
+		theorist_cost_factor = -0.2
+		chief_of_staff_slot_cost_factor = -0.2
+		army_chief_cost_factor = -0.2
+		navy_chief_cost_factor = -0.2
+		air_chief_cost_factor = -0.2
+		security_chief_slot_cost_factor = -0.2
+		intelligence_chief_slot_cost_factor = -0.2
+		high_command_cost_factor = -0.2
+		industrial_concern_cost_factor = -0.2
+		tank_manufacturer_cost_factor = -0.2
+		naval_manufacturer_cost_factor = -0.2
+		aircraft_manufacturer_cost_factor = -0.2
+		materiel_manufacturer_cost_factor = -0.2
+	}
 }

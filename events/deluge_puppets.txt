@@ -23,6 +23,13 @@ country_event = {
 		NOT = {
 			has_country_flag = flag_puppet_master_ideology_differences_resolved
 		}
+		NOT = {
+			ROOT = {
+				is_subject_of = PREV
+			}
+			is_same_or_close_ideology = no
+			tag = FRA
+		}
 	}
 	
 	mean_time_to_happen = {
