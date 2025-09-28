@@ -76,6 +76,7 @@ FRA_dec_cat_subsidize_the_city_development = {
 		state = 735
 		state = 158
 		state = 20
+		state = 796
 		state = 27
 		state = 18
 		state = 17
@@ -133,14 +134,27 @@ FRA_dec_cat_greater_social_state = {
 	visible_when_empty = no
 }
 FRA_dec_cat_unite_europe = {
-	icon = GFX_decision_category_SOV_permanent_revolution
+	icon = GFX_decision_category_generic_foreign_policy
 	#picture = GFX_decision_cat_picture_soviet_comecon
 	priority = 2
 	allowed = {
 		tag = FRA
 	}
 	visible = {
-		has_completed_focus = FRA_deats_takeover
+		OR = {
+			has_completed_focus = FRA_deats_takeover
+			AND = {
+				OR = {
+					has_completed_focus = FRA_absolutist_grip
+					has_completed_focus = FRA_the_guarantor
+					has_completed_focus = FRA_the_reformer
+					has_completed_focus = FRA_creation_of_the_parliament
+					has_completed_focus = FRA_anarchist_communist_federation
+					has_completed_focus = FRA_french_section_of_workers_internationale
+				}
+				has_completed_focus = FRA_european_unification
+			}
+		}
 	}
 	visible_when_empty = no
 }

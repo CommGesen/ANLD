@@ -681,6 +681,9 @@ country_event = {##Maurice Delaunay assassination attempt
 	is_triggered_only = yes
 	option = {#he dies
 		name = deluge_france.28.a
+		trigger = {
+			always = no
+		}
 		add_stability = -0.2
 		country_event = {
 			id = deluge_france.29
@@ -2271,7 +2274,6 @@ country_event = {##decolonization - western, southern and equatorial africa
 		if = {
 			limit = {
 				OR = {
-					owns_state = 796
 					owns_state = 540
 					owns_state = 892
 					owns_state = 891
@@ -3395,6 +3397,67 @@ news_event = {##FRA disbands LoN via focus
 	major = yes
 	option = {
 		name = deluge_france.94.a
+	}
+}
+country_event = {##hidden event for helping decisions appear 15 days after completing the focus with sending ultimatum
+	id = deluge_france.95
+	title = deluge_france.95.t
+	desc = deluge_france.95.d
+	picture = GFX_report_event_luxembourgish_grand_ducal_palace
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = FRA_flag_15_days_passed_since_completing_vassalization_focus
+		}
+	}
+	option = {
+		name = deluge_france.95.a
+	}
+}
+news_event = {##Bonapartes unite Europe
+	id = deluge_france.96
+	title = deluge_france.96.t
+	desc = deluge_france.96.d
+	picture = GFX_news_event_bonaparte_family
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france.96.a
+	}
+}
+news_event = {##French democrats unite Europe
+	id = deluge_france.97
+	title = deluge_france.97.t
+	desc = deluge_france.97.d
+	picture = GFX_news_event_european_union_politicians
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france.97.a
+	}
+}
+news_event = {##French Anarchists Unite Europe
+	id = deluge_france.98
+	title = deluge_france.98.t
+	desc = deluge_france.98.d
+	picture = GFX_news_event_anarchists
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france.98.a
+	}
+}
+news_event = {##French Socialists Unite Europe
+	id = deluge_france.99
+	title = deluge_france.99.t
+	desc = deluge_france.99.d
+	picture = GFX_news_event_marcel_deat_2
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france.99.a
 	}
 }
 country_event = {##inspection in the army
@@ -4600,7 +4663,6 @@ news_event = {##FRA does focus about vassalization of arabian tribes - global ne
 	picture = GFX_news_event_french_troops_in_syria
 	is_triggered_only = yes
 	major = yes
-	fire_for_sender = no
 	option = {
 		name = deluge_france_foreign.19.a
 	}
@@ -4879,7 +4941,6 @@ news_event = {##news event that FRA vassalize peacefully arabian tribe
 	picture = GFX_news_event_french_african_infantry
 	is_triggered_only = yes
 	major = yes
-	fire_for_sender = yes
 	option = {
 		name = deluge_france_foreign.23.a
 	}
@@ -5153,7 +5214,6 @@ news_event = {##news event that FRA vassalize peacefully arabian tribe
 	picture = GFX_news_event_french_african_infantry
 	is_triggered_only = yes
 	major = yes
-	fire_for_sender = yes
 	option = {
 		name = deluge_france_foreign.27.a
 	}
@@ -5421,7 +5481,6 @@ news_event = {##news event that FRA vassalize peacefully PER
 	picture = GFX_news_event_foreign_troops_in_iran
 	is_triggered_only = yes
 	major = yes
-	fire_for_sender = yes
 	option = {
 		name = deluge_france_foreign.30.a
 	}
@@ -5680,8 +5739,2253 @@ news_event = {##news event that FRA vassalize peacefully PER when PER is puppet
 	picture = GFX_news_event_foreign_troops_in_iran
 	is_triggered_only = yes
 	major = yes
-	fire_for_sender = yes
 	option = {
 		name = deluge_france_foreign.33.a
+	}
+}
+country_event = {##FRA sends ultimatum to vassalize Burma - BUR is independent
+	id = deluge_france_foreign.34
+	title = deluge_france_foreign.34.t
+	desc = deluge_france_foreign.34.d
+	picture = GFX_report_eventh_19th_century_burmese_mission_to_france
+	is_triggered_only = yes
+	option = {#yes why not
+		name = deluge_france_foreign.34.a
+		every_country = {
+			limit = {
+				is_subject_of = ROOT
+			}
+			FROM = {
+				set_autonomy = {
+					target = PREV
+					autonomous_state = autonomy_colony
+					end_wars = yes
+					end_civil_wars = no
+				}
+			}
+		}
+		FROM = {
+			hidden_effect = {
+				add_named_threat = {
+					threat = 2
+					name = FRA_vassalized_BUR
+				}
+			}
+			set_autonomy = {
+				target = ROOT
+				autonomous_state = autonomy_colony
+				end_wars = yes
+				end_civil_wars = no
+			}
+		}
+		hidden_effect = {
+			news_event = {
+				id = deluge_france_foreign.36
+				days = 1
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 10
+				is_major = no
+			}
+			modifier = {
+				add = -10
+				is_major = yes
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {#no why yes
+		name = deluge_france_foreign.34.b
+		hidden_effect = {
+			FROM = { country_event = deluge_france_foreign.35 }
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -10
+				is_major = no
+			}
+			modifier = {
+				add = 10
+				is_major = yes
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+}
+country_event = {##FRA tries to vassalize independent BUR - they said no
+	id = deluge_france_foreign.35
+	title = deluge_france_foreign.35.t
+	desc = deluge_france_foreign.35.d
+	picture = GFX_report_eventh_19th_century_burmese_mission_to_france
+	is_triggered_only = yes
+	option = {#declare war
+		name = deluge_france_foreign.35.a
+		declare_war_on = {
+			target = FROM
+			type = puppet_wargoal_focus
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {#it's not worth it
+		name = deluge_france_foreign.35.b
+		add_political_power = -40
+		add_war_support = -0.02
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+}
+news_event = {##news event that FRA vassalize peacefully BUR
+	id = deluge_france_foreign.36
+	title = deluge_france_foreign.36.t
+	desc = deluge_france_foreign.36.d
+	picture = GFX_news_event_rangoon
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france_foreign.36.a
+	}
+}
+country_event = {##FRA asks overlord to give vassalage of BUR
+	id = deluge_france_foreign.37
+	title = deluge_france_foreign.37.t
+	desc = deluge_france_foreign.37.d
+	picture = GFX_report_eventh_19th_century_burmese_mission_to_france
+	is_triggered_only = yes
+	option = {#yes why not
+		name = deluge_france_foreign.37.a
+		hidden_effect = {
+			news_event = {
+				id = deluge_france_foreign.39
+				days = 1
+			}
+		}
+		FRA = {
+			set_autonomy = {
+				target = BUR
+				autonomous_state = autonomy_colony
+				end_wars = yes
+				end_civil_wars = no
+			}
+			add_named_threat = {
+				threat = 2
+				name = FRA_transfered_burma
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 10
+				is_major = no
+			}
+			modifier = {
+				add = -10
+				is_major = yes
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {#no why yes
+		name = deluge_france_foreign.31.b
+		hidden_effect = {
+			FROM = { 
+				country_event = deluge_france_foreign.38
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -10
+				is_major = no
+			}
+			modifier = {
+				add = 10
+				is_major = yes
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+}
+country_event = {##FRA tries to vassalize Burma via their overlord - they said no
+	id = deluge_france_foreign.38
+	title = deluge_france_foreign.38.t
+	desc = deluge_france_foreign.38.d
+	picture = GFX_report_eventh_19th_century_burmese_mission_to_france
+	is_triggered_only = yes
+	option = {#declare war
+		name = deluge_france_foreign.38.a
+		declare_war_on = {
+			target = FROM
+			type = puppet_wargoal_focus
+		}
+		declare_war_on = {
+			target = BUR
+			type = puppet_wargoal_focus
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {#it's not worth it
+		name = deluge_france_foreign.38.b
+		add_political_power = -40
+		add_war_support = -0.02
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+}
+news_event = {##news event that FRA vassalize peacefully BUR when BUR is puppet
+	id = deluge_france_foreign.39
+	title = deluge_france_foreign.39.t
+	desc = deluge_france_foreign.39.d
+	picture = GFX_news_event_rangoon
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france_foreign.39.a
+	}
+}
+country_event = {##FRA sends ultimatum to vassalize Siam - SIA is independent
+	id = deluge_france_foreign.40
+	title = deluge_france_foreign.40.t
+	desc = deluge_france_foreign.40.d
+	picture = GFX_report_event_frenc_soldiers_in_siam
+	is_triggered_only = yes
+	option = {#yes why not
+		name = deluge_france_foreign.40.a
+		every_country = {
+			limit = {
+				is_subject_of = ROOT
+			}
+			FROM = {
+				set_autonomy = {
+					target = PREV
+					autonomous_state = autonomy_colony
+					end_wars = yes
+					end_civil_wars = no
+				}
+			}
+		}
+		FROM = {
+			hidden_effect = {
+				add_named_threat = {
+					threat = 2
+					name = FRA_vassalized_SIA
+				}
+			}
+			set_autonomy = {
+				target = ROOT
+				autonomous_state = autonomy_colony
+				end_wars = yes
+				end_civil_wars = no
+			}
+		}
+		hidden_effect = {
+			news_event = {
+				id = deluge_france_foreign.42
+				days = 1
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 10
+				is_major = no
+			}
+			modifier = {
+				add = -10
+				is_major = yes
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {#no why yes
+		name = deluge_france_foreign.40.b
+		hidden_effect = {
+			FROM = { country_event = deluge_france_foreign.41 }
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -10
+				is_major = no
+			}
+			modifier = {
+				add = 10
+				is_major = yes
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+}
+country_event = {##FRA tries to vassalize independent SIA - they said no
+	id = deluge_france_foreign.41
+	title = deluge_france_foreign.41.t
+	desc = deluge_france_foreign.41.d
+	picture = GFX_report_event_frenc_soldiers_in_siam
+	is_triggered_only = yes
+	option = {#declare war
+		name = deluge_france_foreign.41.a
+		declare_war_on = {
+			target = FROM
+			type = puppet_wargoal_focus
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {#it's not worth it
+		name = deluge_france_foreign.41.b
+		add_political_power = -40
+		add_war_support = -0.02
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+}
+news_event = {##news event that FRA vassalize peacefully SIA
+	id = deluge_france_foreign.42
+	title = deluge_france_foreign.42.t
+	desc = deluge_france_foreign.42.d
+	picture = GFX_news_event_bangkok
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france_foreign.42.a
+	}
+}
+country_event = {##FRA asks overlord to give vassalage of SIA
+	id = deluge_france_foreign.43
+	title = deluge_france_foreign.43.t
+	desc = deluge_france_foreign.43.d
+	picture = GFX_report_event_frenc_soldiers_in_siam
+	is_triggered_only = yes
+	option = {#yes why not
+		name = deluge_france_foreign.43.a
+		hidden_effect = {
+			news_event = {
+				id = deluge_france_foreign.39
+				days = 1
+			}
+		}
+		FRA = {
+			set_autonomy = {
+				target = SIA
+				autonomous_state = autonomy_colony
+				end_wars = yes
+				end_civil_wars = no
+			}
+			add_named_threat = {
+				threat = 2
+				name = FRA_transfered_siam
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 10
+				is_major = no
+			}
+			modifier = {
+				add = -10
+				is_major = yes
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {#no why yes
+		name = deluge_france_foreign.43.b
+		hidden_effect = {
+			FROM = { 
+				country_event = deluge_france_foreign.38
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -10
+				is_major = no
+			}
+			modifier = {
+				add = 10
+				is_major = yes
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+}
+country_event = {##FRA tries to vassalize Siam via their overlord - they said no
+	id = deluge_france_foreign.44
+	title = deluge_france_foreign.44.t
+	desc = deluge_france_foreign.44.d
+	picture = GFX_report_event_frenc_soldiers_in_siam
+	is_triggered_only = yes
+	option = {#declare war
+		name = deluge_france_foreign.44.a
+		declare_war_on = {
+			target = FROM
+			type = puppet_wargoal_focus
+		}
+		declare_war_on = {
+			target = SIA
+			type = puppet_wargoal_focus
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {#it's not worth it
+		name = deluge_france_foreign.44.b
+		add_political_power = -40
+		add_war_support = -0.02
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+}
+news_event = {##news event that FRA vassalize peacefully SIA when SIA is puppet
+	id = deluge_france_foreign.45
+	title = deluge_france_foreign.45.t
+	desc = deluge_france_foreign.45.d
+	picture = GFX_news_event_bangkok
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france_foreign.45.a
+	}
+}
+country_event = {##FRA sends ultimatum to vassalize Egypt - EGY is independent
+	id = deluge_france_foreign.46
+	title = deluge_france_foreign.46.t
+	desc = deluge_france_foreign.46.d
+	picture = GFX_report_event_french_forces_in_egypt
+	is_triggered_only = yes
+	option = {#yes why not
+		name = deluge_france_foreign.46.a
+		every_country = {
+			limit = {
+				is_subject_of = ROOT
+			}
+			FROM = {
+				set_autonomy = {
+					target = PREV
+					autonomous_state = autonomy_colony
+					end_wars = yes
+					end_civil_wars = no
+				}
+			}
+		}
+		FROM = {
+			hidden_effect = {
+				add_named_threat = {
+					threat = 2
+					name = FRA_vassalized_EGY
+				}
+			}
+			set_autonomy = {
+				target = ROOT
+				autonomous_state = autonomy_colony
+				end_wars = yes
+				end_civil_wars = no
+			}
+		}
+		hidden_effect = {
+			news_event = {
+				id = deluge_france_foreign.48
+				days = 1
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 10
+				is_major = no
+			}
+			modifier = {
+				add = -10
+				is_major = yes
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {#no why yes
+		name = deluge_france_foreign.46.b
+		hidden_effect = {
+			FROM = { country_event = deluge_france_foreign.47 }
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -10
+				is_major = no
+			}
+			modifier = {
+				add = 10
+				is_major = yes
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+}
+country_event = {##FRA tries to vassalize independent EGY - they said no
+	id = deluge_france_foreign.47
+	title = deluge_france_foreign.47.t
+	desc = deluge_france_foreign.47.d
+	picture = GFX_report_event_french_forces_in_egypt
+	is_triggered_only = yes
+	option = {#declare war
+		name = deluge_france_foreign.47.a
+		declare_war_on = {
+			target = FROM
+			type = puppet_wargoal_focus
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {#it's not worth it
+		name = deluge_france_foreign.47.b
+		add_political_power = -40
+		add_war_support = -0.02
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+}
+news_event = {##news event that FRA vassalize peacefully EGY
+	id = deluge_france_foreign.48
+	title = deluge_france_foreign.48.t
+	desc = deluge_france_foreign.48.d
+	picture = GFX_news_event_cairo
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france_foreign.48.a
+	}
+}
+country_event = {##FRA asks overlord to give vassalage of EGY
+	id = deluge_france_foreign.49
+	title = deluge_france_foreign.49.t
+	desc = deluge_france_foreign.49.d
+	picture = GFX_report_event_french_forces_in_egypt
+	is_triggered_only = yes
+	option = {#yes why not
+		name = deluge_france_foreign.43.a
+		hidden_effect = {
+			news_event = {
+				id = deluge_france_foreign.51
+				days = 1
+			}
+		}
+		FRA = {
+			set_autonomy = {
+				target = EGY
+				autonomous_state = autonomy_colony
+				end_wars = yes
+				end_civil_wars = no
+			}
+			add_named_threat = {
+				threat = 2
+				name = FRA_transfered_egypt
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 10
+				is_major = no
+			}
+			modifier = {
+				add = -10
+				is_major = yes
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {#no why yes
+		name = deluge_france_foreign.49.b
+		hidden_effect = {
+			FROM = { 
+				country_event = deluge_france_foreign.50
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -10
+				is_major = no
+			}
+			modifier = {
+				add = 10
+				is_major = yes
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+}
+country_event = {##FRA tries to vassalize Egypt via their overlord - they said no
+	id = deluge_france_foreign.50
+	title = deluge_france_foreign.50.t
+	desc = deluge_france_foreign.50.d
+	picture = GFX_report_event_frenc_soldiers_in_siam
+	is_triggered_only = yes
+	option = {#declare war
+		name = deluge_france_foreign.50.a
+		declare_war_on = {
+			target = FROM
+			type = puppet_wargoal_focus
+		}
+		declare_war_on = {
+			target = SIA
+			type = puppet_wargoal_focus
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {#it's not worth it
+		name = deluge_france_foreign.50.b
+		add_political_power = -40
+		add_war_support = -0.02
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+}
+news_event = {##news event that FRA vassalize peacefully EGY when EGY is puppet
+	id = deluge_france_foreign.51
+	title = deluge_france_foreign.51.t
+	desc = deluge_france_foreign.51.d
+	picture = GFX_news_event_cairo
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france_foreign.51.a
+	}
+}
+country_event = {##FRA sends ultimatum to vassalize Netherlands - HOL is independent
+	id = deluge_france_foreign.52
+	title = deluge_france_foreign.52.t
+	desc = deluge_france_foreign.52.d
+	picture = GFX_report_event_dutch_mill
+	is_triggered_only = yes
+	option = {#yes why not
+		name = deluge_france_foreign.52.a
+		every_country = {
+			limit = {
+				is_subject_of = ROOT
+			}
+			FROM = {
+				set_autonomy = {
+					target = PREV
+					autonomous_state = autonomy_colony
+					end_wars = yes
+					end_civil_wars = no
+				}
+			}
+		}
+		FROM = {
+			hidden_effect = {
+				add_named_threat = {
+					threat = 2
+					name = FRA_vassalized_HOL
+				}
+			}
+			set_autonomy = {
+				target = ROOT
+				autonomous_state = autonomy_colony
+				end_wars = yes
+				end_civil_wars = no
+			}
+		}
+		hidden_effect = {
+			news_event = {
+				id = deluge_france_foreign.54
+				days = 1
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 10
+				is_major = no
+			}
+			modifier = {
+				add = -10
+				is_major = yes
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {#no why yes
+		name = deluge_france_foreign.52.b
+		hidden_effect = {
+			FROM = { country_event = deluge_france_foreign.53 }
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -10
+				is_major = no
+			}
+			modifier = {
+				add = 10
+				is_major = yes
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+}
+country_event = {##FRA tries to vassalize independent HOL - they said no
+	id = deluge_france_foreign.53
+	title = deluge_france_foreign.53.t
+	desc = deluge_france_foreign.53.d
+	picture = GFX_report_event_dutch_mill
+	is_triggered_only = yes
+	option = {#declare war
+		name = deluge_france_foreign.53.a
+		declare_war_on = {
+			target = FROM
+			type = puppet_wargoal_focus
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {#it's not worth it
+		name = deluge_france_foreign.53.b
+		add_political_power = -40
+		add_war_support = -0.02
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+}
+news_event = {##news event that FRA vassalize peacefully HOL
+	id = deluge_france_foreign.54
+	title = deluge_france_foreign.54.t
+	desc = deluge_france_foreign.54.d
+	picture = GFX_news_event_rotterdam
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france_foreign.54.a
+	}
+}
+country_event = {##FRA asks overlord to give vassalage of HOL
+	id = deluge_france_foreign.55
+	title = deluge_france_foreign.55.t
+	desc = deluge_france_foreign.55.d
+	picture = GFX_report_event_dutch_mill
+	is_triggered_only = yes
+	option = {#yes why not
+		name = deluge_france_foreign.55.a
+		hidden_effect = {
+			news_event = {
+				id = deluge_france_foreign.57
+				days = 1
+			}
+		}
+		FRA = {
+			set_autonomy = {
+				target = SIA
+				autonomous_state = autonomy_colony
+				end_wars = yes
+				end_civil_wars = no
+			}
+			add_named_threat = {
+				threat = 2
+				name = FRA_transfered_holland
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 10
+				is_major = no
+			}
+			modifier = {
+				add = -10
+				is_major = yes
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {#no why yes
+		name = deluge_france_foreign.55.b
+		hidden_effect = {
+			FROM = { 
+				country_event = deluge_france_foreign.56
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -10
+				is_major = no
+			}
+			modifier = {
+				add = 10
+				is_major = yes
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+}
+country_event = {##FRA tries to vassalize HOL via their overlord - they said no
+	id = deluge_france_foreign.56
+	title = deluge_france_foreign.56.t
+	desc = deluge_france_foreign.56.d
+	picture = GFX_report_event_dutch_mill
+	is_triggered_only = yes
+	option = {#declare war
+		name = deluge_france_foreign.56.a
+		declare_war_on = {
+			target = FROM
+			type = puppet_wargoal_focus
+		}
+		declare_war_on = {
+			target = HOL
+			type = puppet_wargoal_focus
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {#it's not worth it
+		name = deluge_france_foreign.56.b
+		add_political_power = -40
+		add_war_support = -0.02
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+}
+news_event = {##news event that FRA vassalize peacefully HOL when HOL is puppet
+	id = deluge_france_foreign.57
+	title = deluge_france_foreign.57.t
+	desc = deluge_france_foreign.57.d
+	picture = GFX_news_event_rotterdam
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france_foreign.57.a
+	}
+}
+country_event = {##FRA invites country to eu
+	id = deluge_france_foreign.58
+	title = deluge_france_foreign.58.t
+	desc = deluge_france_foreign.58.d
+	picture = GFX_report_event_european_union_politicians
+	is_triggered_only = yes
+	option = {#Reject
+		name = deluge_france_foreign.58.a
+		hidden_effect = {
+			FRA = {
+				country_event = {
+					id = deluge_france_foreign.59
+				}
+			}
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {#join
+		name = deluge_france_foreign.58.b
+		FRA = { add_to_faction = ROOT }
+		if = {
+			limit = {
+				FRA = {
+					has_completed_focus = FRA_military_european_treaty
+				}
+			}
+			add_ideas = FRA_spirit_eu_military_cooperation
+		}
+		hidden_effect = {
+			news_event = {
+				id = deluge_france_foreign.60
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+}
+country_event = {##FRA gets info that country rejected the invite
+	id = deluge_france_foreign.59
+	title = deluge_france_foreign.59.t
+	desc = deluge_france_foreign.59.d
+	picture = GFX_report_event_european_union_politicians
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_foreign.59.a
+		ai_chance = {
+			base = 30
+		}
+	}
+}
+news_event = {##world info that country joined
+	id = deluge_france_foreign.60
+	title = deluge_france_foreign.60.t
+	desc = deluge_france_foreign.60.d
+	picture = GFX_report_event_european_union_politicians
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_foreign.60.a
+		ai_chance = {
+			base = 30
+		}
 	}
 }

@@ -8,6 +8,9 @@
  motorized_manufacturer:0 "Motorized Manufacturer"
  mechanized_manufacturer:0 "Mechanized Manufacturer"
  ##SPIRITS
+ FRA_spirit_irredentism:0 "Irredentism"
+ FRA_spirit_eu_military_cooperation:0 "European Military Cooperation"
+ FRA_spirit_eu_economic_cooperation:0 "European Economic Cooperation"
  FRA_spirit_spirit_of_the_east:0 "Spirit of the East"
  FRA_spirit_spirit_of_the_east_2:0 "Spirit of the East"
  FRA_spirit_spirit_of_the_east_3:0 "Spirit of the East"
@@ -390,8 +393,6 @@
  FRA_custom_effect_tooltip_143:0 "Unlocks §Hdecisions§! to §Hdemand major countries subjugation!§!"
  FRA_custom_effect_tooltip_144:0 "[POR.GetName] will gain §H100 political power§!!"
  FRA_custom_effect_tooltip_145:0 "We gained positive opinion modifier about [FRA.GetName]!"
- FRA_custom_effect_tooltip_146:0 "Unlocks decisions to develop §Hrailways§! and §Hports§! in Africa!"
- FRA_custom_effect_tooltip_147:0 "Unlocks decisions to increase §Haluminum§! mining in West Africa"
  FRA_custom_effect_tooltip_148:0 "§HMaurice Delaunay§! will be called §HFrançois-Henry Prométhée§!!"
  FRA_custom_effect_tooltip_149:0 "Unlocks §HAlsthom§! industrial concern!"
  FRA_custom_effect_tooltip_150:0 "Depending whether you research §HNuclear Reactor§! or §HHeavy Water Nuclear Reactor§! the one you researched will be created in §H[20.GetName]§!."
@@ -407,6 +408,8 @@
  FRA_custom_effect_tooltip_160:0 "Events about decolonization will pop out during the focus."
  FRA_custom_effect_tooltip_161:0 "This option will dismiss Georges Clemenceau. Removing Clemenceau from office will push us towards §Grepairing the old order§! and at the same time block the §Roverthrow of the monarchy§!."
  FRA_custom_effect_tooltip_162:0 "Georges Clemenceau will be removed as an advisor."
+ FRA_custom_effect_tooltip_163:0 "If you have 4 §HAIP§!:\n[458.GetName]:\n§G+2§! §Hcivillian factoriy§!,\n§G+2§! §Hbuilding slot§!,\n§G+2§! §Hinfrastructure§!,\n§G+150 000§! §Hpeople§!.\n[665.GetName]:\n§G+1§! §Hcivillian factory§!,\n§G+1§! §Hbuilding slot§!,\n§G+2§! §Hinfrastructure§!,\n§G+100 000§! §Hpeople§!.\nIf you have 3 §HAIP§!:\n[458.GetName]:\n§G+2§! §Hcivillian factoriy§!,\n§G+2§! §Hbuilding slot§!,\n§G+1§! §Hinfrastructure§!,\n§G+100 000§! §Hpeople§!.\n[665.GetName]:\n§G+1§! §Hcivillian factory§!,\n§G+1§! §Hbuilding slot§!,\n§G+1§! §Hinfrastructure§!,\n§G+50 000§! §Hpeople§!.\nIf you have 2 §HAIP§!:\n[458.GetName]:\n§G+1§! §Hcivillian factoriy§!,\n§G+1§! §Hbuilding slot§!,\n§G+1§! §Hinfrastructure§!,\n§G+100 000§! §Hpeople§!.\n[665.GetName]:\n§G+1§! §Hinfrastructure§!,\n§G+50 000§! §Hpeople§!.\nIf you have 1 §HAIP§!:\n[458.GetName]:\n§G+1§! §Hinfrastructure§!,\n§G+1§! §Hbuilding slot§!,\n§G+75 000§! §Hpeople§!.\n[665.GetName]:\n§G+1§! §Hinfrastructure§!,\n§G+40 000§! §Hpeople§!."
+ 
  set_FRA_vasslisation: "Unlock Decision: §YVassaliation of [?vassalisation_target.GetNonIdeologyNameDef]§!"
  generic_in_100_days: "In 100 days: "
  
@@ -418,10 +421,15 @@
  league_of_nations_custom_effect_tooltip_6:0 "Remove §HLeague of Nations§! spirit!"
  generic_custom_effect_tooltip_1:0 "Current effect:\n"
  
+ generic_custom_trigger_tooltip_1:0 "§RThis content will be avaiable in the future!§!"
  FRA_custom_trigger_tooltip_1:0 "Controls all of Egypt without Sudan, Sinai or Suez Canal!"
  FRA_custom_trigger_tooltip_2:0 "Controls all of northern and central Italy."
  FRA_custom_trigger_tooltip_3:0 "Controls all of far north of Spain."
  FRA_custom_trigger_tooltip_4:0 "Controls all of northwest Germany."
+ 
+ ##FREE
+ FRA_custom_effect_tooltip_147:0 ""
+ FRA_custom_effect_tooltip_146:0 ""
  
  ##Opinion Modifiers
  opinion_modifier_former_overlord:0 "Former Overlord"
@@ -433,6 +441,11 @@
  opinion_modifier_supports_subversive_movements_in_our_country:0 "Support Subversive  Movements in Our Country!"
  deluge_trait_emperor_of_the_french:0 "Emperor of the French"
  opinion_modifier_seeing_us_as_colonies:0 "Seeing Us as Colonies!"
+ opinion_modifier_protector_from_british:0 "Protected us from [ENG.GetName]!"
+ 
+ ##Faction names
+ FRA_faction_name_eu:0 "European Union"
+ 
  ##Dynamic Modifiers
  FRA_modifier_radical_reforms:0 "Radical Reforms"
  FRA_modifier_lon:0 "League of Nations"
@@ -452,6 +465,7 @@
  FRA_modifier_social_first:0 "Social d'abord!"
  FRA_modifier_social_first_desc:0 "Social d'abord means "social first" and thought created by François de La Rocque that opposes French Action's "politics first"."
  FRA_modifier_new_french_army:0 "La Grande Armée Renaissante"
+ 
  ##Flags:
  FRA_flag_absolute_emperor:0 "Emperor gained absolute power!"
  FRA_flag_boulangist_coup:0 "Boulangist coup succeeded!"
@@ -484,6 +498,14 @@
  FRA_flag_the_problem_of_clemenceau_was_raised:0 "The problem of Clemenceau was raised."
  FRA_flag_dismissed_clemenceau:0 "Emperor has dismissed Clemenceau."
  FRA_flag_start_of_operation_cartier:0 "Start of Operation Cartier!"
+ FRA_flag_built_supply_depot_in_equatorial_africa:0 "Expanded Military Logistics in [660.GetName]"
+ FRA_flag_constructed_supply_hun_in_uganda:0 "Expanded Military Logistics in [548.GetName]"
+ FRA_flag_constructed_supply_hun_in_northern_congo:0 "Expanded Military Logistics in [538.GetName]"
+ FRA_flag_constructed_port_in_eyl:0 "Built Port in Eyl"
+ FRA_flag_constructed_supply_hub_in_south_sudan:0 "Expanded Military Logistics in [884.GetName]"
+ FRA_flag_constructed_supply_hub_in_central_sudan:0 "Expanded Military Logistics in Central Sudan"
+ FRA_flag_established_tech_group:0 "Established International Maria Skłodowska-Curie Institute."
+ 
  ##Parties:
  FRA_communism_party:0 "FSWI"
  FRA_communism_party_long:0 "French Section of the Workers' International"
@@ -521,16 +543,28 @@
  deluge_party_temporary_military_government_long:0 "Temporary Military Government"
  deluge_party_temporary_radical_government:0 "Radicals"
  deluge_party_temporary_radical_government_long:0 "Temporary Radical Government"
+ 
  ##state modifiers:
  FRA_modifier_eliminated_minorities:0 "Eliminated Minorities"
+ 
  ##hidden technologies:
  ballistic_vests_custom_effect_tooltip:0 "Add technology: §HBallistic Vests§! that grants §G+10%§! defense to all §Hinfrantry§! and §Hspecial forces§!!"
  shocktroops_custom_effect_tooltip:0 "Add technology: §HShocktroops§! that grants §G+5%§! breakthrough to all §Hinfrantry§! and §Hspecial forces§!!"
  tech_ballistic_vests:0 "Ballistic Vests"
  tech_shocktroops:0 "Shocktroops"
+ ##tech groups:
+ deluge_french_faction_tech_group_name:0 "International Maria Skłodowska-Curie Institute"
+ deluge_french_faction_tech_group_desc:0 ""
+ 
  ##decisions
+ FRA_vassalisation_of_eu_members:0 "Demand submission of [FROM.GetName]"
+ FRA_dec_join_FRA_tech_group:0 "Join §OInternational Maria Skłodowska-Curie Institute§!"
  FRA_vassalisation_of_arabia:0 "Demand Vassalisation of §Y[FROM.GetNameWithFlag]§!"
  FRA_vassalisation_of_iran:0 "Demand Vassalisation of §Y[PER.GetNameWithFlag]§!"
+ FRA_vassalisation_of_burma:0 "Demand Vassalisation of §Y[BUR.GetNameWithFlag]§!"
+ FRA_vassalisation_of_siam:0 "Demand Vassalisation of §Y[SIA.GetNameWithFlag]§!"
+ FRA_vassalisation_of_egypt:0 "Demand Vassalisation of §Y[EGY.GetNameWithFlag]§!"
+ FRA_vassalisation_of_holland:0 "Demand Vassalisation of §Y[HOL.GetNameWithFlag]§!"
  FRA_dec_cat_foreign_policy:0 "Foreign Policy"
  FRA_dec_annex_luxembourg:0 "Demand annexation of [BEL.GetName]"
  FRA_dec_demand_luxembourgish_lands:0 "Demand Luxembourgish lands from [FROM.GetName]"
@@ -638,6 +672,12 @@
  FRA_dec_radar_south_desc:0 "We must build radars on the northern coast!"
  FRA_dec_cat_expand_urbanize_the_countryside:0 "Urbanize the Countryside"
  FRA_dec_cat_expand_urbanize_the_countryside_desc:0 "Urbanization is the future of our country, extreme conservatives have held us back from this progress for too long, it's time to turn villages into cities!"
+ deluge_dec_FRA_develop_706:0 "Develop [706.GetName]"
+ deluge_dec_FRA_develop_707:0 "Develop [707.GetName]"
+ deluge_dec_FRA_develop_708:0 "Develop [708.GetName]"
+ deluge_dec_FRA_develop_709:0 "Develop [709.GetName]"
+ deluge_dec_FRA_develop_710:0 "Develop [710.GetName]"
+ deluge_dec_FRA_develop_713:0 "Develop [713.GetName]"
  urbanize_state_FRA:0 "Urbanize [FROM.GetName]"
  FRA_dec_cat_subsidize_the_city_development:0 "Subsidize the City Development"
  FRA_dec_cat_subsidize_the_city_development_desc:0 "Due to our warfare during the Great War and the political turmoil that followed, we did not focus on developing our home cities. It's time to change that and invest in their expansion!"
@@ -703,17 +743,70 @@
  FRA_deluge_doriot_franconize_state_desc:0 "[FROM.GetName] must be Frenchified! This is the Leader's will, and this must become reality!"
  FRA_dec_cat_unite_europe:0 "Unite Europe"
  FRA_dec_cat_unite_europe_desc:0 "More and more Europeans are realizing that we are not so different from each other. The dream of a united Europe transcending national, ethnic, and linguistic divisions is possible. This will allow us to more effectively oppose the barbaric Russians from the East, the treacherous Americans, or the simply uncivilized Africans. Uniting all the nations of Europe will require many political maneuvers and military actions. It will require considerable effort, but one day our dream will come true."
- FRA_deluge_deat_united_europe_decision:0 "Fulfilling the Pan-European Dream"
+ FRA_deluge_united_europe_decision:0 "Fulfilling the Pan-European Dream"
  deluge_dec_FRA_integrate_uk_into_eu:0 "Integrate British Isles into Europe!"
  deluge_dec_FRA_integrate_ireland_into_eu:0 "Integrate Ireland into Europe!"
  deluge_dec_FRA_integrate_northern_islands_into_eu:0 "Integrate Nothern Islands into Europe!"
  deluge_dec_FRA_integrate_cyprus_into_eu:0 "Integrate Cyprus into Europe!"
+ FRA_dec_libreville_bata_railway:0 "Libreville-Batá Railway"
+ FRA_dec_malabo_port:0 "Port in Santa Isabel"
+ FRA_dec_equatorial_african_supply_hub:0 "Military Logistics in [660.GetName]"
+ FRA_dec_chad_supply_hub:0 "Military Logistics in [776.GetName]"
+ FRA_dec_libreville_luanda_railway:0 "Libreville-Luanda Railway"
+ FRA_dec_south_congo_supply_hub:0 "Military Logistics in Southern Congo"
+ FRA_dec_north_congo_supply_hub:0 "Military Logistics in Northern Congo"
+ FRA_dec_rubber_extraction_in_equateur_province:0 "Rubber Extraction in Équateur Province"
+ FRA_dec_rubber_extraction_in_stanleyville:0 "Rubber Extraction in [718.GetName]"
+ FRA_dec_rubber_extraction_in_gustafville:0 "Rubber Extraction in [295.GetName]"
+ FRA_dec_rubber_extraction_in_lusambo:0 "Rubber Extraction in [888.GetName]"
+ FRA_dec_rubber_extraction_in_889:0 "Rubber Extraction in [889.GetName]"
+ FRA_dec_rubber_extraction_near_tshopo_river:0 "Rubber Extraction near Tshopo River"
+ FRA_dec_rubber_extraction_in_sangha_region:0 "Rubber Extraction in Sangha Region"
+ FRA_dec_rubber_extraction_in_likouala_region:0 "Rubber Extraction in Likouala Region"
+ FRA_dec_rubber_extraction_in_ivindo_river_basin:0 "Rubber Extraction in Ivindo River Basin"
+ FRA_dec_rubber_extraction_in_upper_ogooue_basin:0 "Rubber Extraction in Upper Ogooué Basin"
+ FRA_dec_rubber_extraction_in_coastal_regions_of_cameroon:0 "Rubber Extraction in Coastal Regions of [777.GetName]"
+ FRA_dec_rubber_extraction_in_inner_regions_of_cameroon:0 "Rubber Extraction in Inner Regions of [777.GetName]"
+ FRA_dec_rubber_extraction_in_lobaye_prefecture:0 "Rubber Extraction in Lobaye Prefecture"
+ FRA_dec_rubber_extraction_in_prefecture_of_mambere_kadei:0 "Rubber Extraction in Mambéré-Kadéï Prefecture"
+ FRA_dec_rubber_extraction_in_uige_province:0 "Rubber Extraction in Uíge Province"
+ FRA_dec_luanda_lusaka_railway:0 "Luanda-Lusaka Railway"
+ FRA_dec_luanda_walvis_bay_railway:0 "Luanda-Walvis Bay Railway"
+ FRA_dec_beira_nacal_railway:0 "Beira-Nacala Railway"
+ FRA_dec_beira_lourenco_marques_railway:0 "Beira-Lourenço Marques Railway"
+ FRA_dec_dar_es_salaam_nacala_railway:0 "Dar Es Salaam-Nacala Railway"
+ FRA_dec_supply_hub_in_uganda:0 "Military Logistics in [548.GetName]"
+ FRA_dec_connect_congo_and_uganda:0 "Connect [538.GetName] and [548.GetName]"
+ FRA_dec_supply_hub_in_south_sudan:0 "Military Logistics in [884.GetName]"
+ FRA_dec_eyl_mogadishu_railway:0 "Eyl-Mogadishu Railway"
+ FRA_dec_port_in_eyl:0 "Port in Eyl"
+ FRA_dec_connect_south_sudan_and_north_sudan:0 "Connect South and North of Sudan"
+ FRA_dec_connect_central_sudan_and_660:0 "Connect Central Sudan and [660.GetName]"
+ FRA_dec_supply_hub_in_central_sudan:0 "Military Logistics in Central Sudan"
+ FRA_dec_gold_extraction_in_tanganyika:0 "Gold Extraction in Tanganyika"
+ FRA_dec_diamonds_extraction_in_tanganyika:0 "Diamonds Extraction in Tanganyika"
+ FRA_dec_gold_extraction_in_kenya:0 "Gold Extraction in Kenya"
+ FRA_dec_sodium_extraction_in_kenya:0 "Sodium Extraction in Kenya"
+ FRA_dec_tungsten_extraction_in_uganda:0 "Tungsten Mines in Uganda"
+ FRA_dec_copper_extraction_in_uganda:0 "Copper Extraction in Uganda"
+ FRA_dec_chromium_extraction_in_blue_nile:0 "Chromium Extraction in Blue Nile"
+ FRA_dec_salt_extraction_in_afar:0 "Salt Extraction in Afar"
+ FRA_dec_gold_extraction_in_welega:0 "Gold Extraction in Welega"
+ FRA_dec_gold_extraction_in_gojjam:0 "Gold Extraction in Gojjam"
+ FRA_dec_gold_extraction_in_sidamo:0 "Gold Extraction in Sidamo"
+ FRA_dec_salt_extraction_in_somalia:0 "Salt Extraction in Somalia"
+ FRA_dec_salt_extraction_in_eritrea:0 "Salt Extraction in Eritrea"
+ FRA_dec_potassium_extraction_in_eritrea:0 "Potassium Extraction in Eritrea"
+ FRA_deluge_dec_invite_to_eu:0 "Invite [FROM.GetName] to European Union"
+ 
  ##autonomy
  BHU_refused_to_support_bourbon_bhopal_revolt:0 "[BHU.GetName] refused to support Bourbon-Bhopal revolt!"
+ 
  ##white peace messages
  BHU_won_against_FRA:0 "French India won their independence against France!"
  LBA_won_against_FRA:0 "Senussi Order pushed France out of Libya!"
  LBA_white_peaced_FRA:0 "Senussi Order and France signed white peace!"
+ 
  ##world tension
  FRA_demanded_ardennes:0 "[FRA.GetName] demanded [980.GetName]"
  FRA_demanded_luxebourg:0 "[FRA.GetName] demanded [8.GetName]"
@@ -725,6 +818,14 @@
  FRA_transfered_persia:0 "[FROM.GetName] transfered [PER.GetName] to [FRA.GetName]"
  FRA_vassalized_PER:0 "[PER.GetName] became vassal of [FRA.GetName]"
  FRA_disbanded_lon:0 "[FRA.GetName] disbanded League of Nations!"
+ FRA_transfered_burma:0 "[FROM.GetName] transfered [BUR.GetName] to [FRA.GetName]"
+ FRA_vassalized_BUR:0 "[FRA.GetName] vassalized [BUR.GetName]"
+ FRA_vassalized_SIA:0 "[FRA.GetName] vassalized [SIA.GetName]"
+ FRA_transfered_siam:0 "[FROM.GetName] transfered [SIA.GetName] to [FRA.GetName]"
+ FRA_vassalized_EGY:0 "[FRA.GetName] vassalized [EGY.GetName]"
+ FRA_transfered_egypt:0 "[FROM.GetName] transfered [EGY.GetName] to [FRA.GetName]"
+ FRA_vassalized_HOL:0 "[FRA.GetName] vassalized [HOL.GetName]"
+ FRA_transfered_holland:0 "[FROM.GetName] transfered [HOL.GetName] to [FRA.GetName]"
  ##relation modifiers:
  FRA_modifier_operation_cartier:0 "Operation Cartier"
  

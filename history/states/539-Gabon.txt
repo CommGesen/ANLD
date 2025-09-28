@@ -16,23 +16,23 @@ state={
 		victory_points = {
 			5139 2 
 		}
+		victory_points = {
+			2115 1 
+		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 1
 			5139 = {
 				naval_base = 1
-
 			}
-
 		}
-
 	}
 
 	provinces={
-		2192 3109 5139 8193 8207 10948 12975 6008 13210
+		2192 3109 5139 8193 8207 10948 12975 6008 13210 2115
 	}
-	manpower=864000
+	manpower=919000
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

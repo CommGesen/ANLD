@@ -10,6 +10,9 @@ FRA_vassalisation_of_siam_tt = {
 FRA_vassalisation_of_burma_tt = {
 	allowed = { always = no }
 }
+FRA_vassalisation_of_egypt_tt = {
+	allowed = { always = no }
+}
 FRA_development_of_india_tt = {
 	allowed = { always = no }
 }
@@ -20,5 +23,26 @@ FRA_building_fortifications_tt = {
 	allowed = { always = no }
 }
 FRA_building_coastal_fortifications_tt = {
+	allowed = { always = no }
+}
+FRA_developing_madagascar_islands_tt = {
+	allowed = { always = no }
+}
+FRA_bauxite_mining_tt = {
+	allowed = { always = no }
+}
+FRA_developing_railways_tt = {
+	allowed = { always = no }
+}
+FRA_rubber_extraction_tt = {
+	allowed = { always = no }
+}
+FRA_steel_extraction_tt = {
+	allowed = { always = no }
+}
+FRA_resource_extraction_tt = {
+	allowed = { always = no }
+}
+FRA_invite_to_eu_tt = {
 	allowed = { always = no }
 }

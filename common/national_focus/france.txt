@@ -593,6 +593,10 @@ focus_tree = {
 		#}
 		available = {
 			has_country_flag = FRA_flag_final_counter_coup_has_occured
+			custom_trigger_tooltip = {
+				tooltip = generic_custom_trigger_tooltip_1
+				always = no
+			}
 		}
 		completion_reward = {
 			if = {
@@ -7113,7 +7117,7 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			is_subject = no
 		}
 		completion_reward = {
 			
@@ -7179,7 +7183,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_watchman_of_global_security }
 		relative_position_id = FRA_watchman_of_global_security
 		search_filters = { }
-		cost = 1
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -7192,7 +7196,6 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			is_subject = no
 			country_exists = IRE
 			IRE = {
 				NOT = {
@@ -7201,7 +7204,12 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			
+			IRE = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = opinion_modifier_protector_from_british
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7264,7 +7272,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_watchman_of_global_security }
 		relative_position_id = FRA_watchman_of_global_security
 		search_filters = { }
-		cost = 1
+		cost = 8
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -7286,8 +7294,44 @@ focus_tree = {
 				}
 			}
 		}
+		select_effect = {
+			if = {
+				limit = { HOL = { is_subject = yes } }
+				HOL = {
+					overlord = { country_event = generic.26 }
+				}
+			}
+			HOL = {
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
 		completion_reward = {
-			
+			if = {
+				limit = { HOL = { is_subject = yes } }
+				HOL = {
+					overlord = {
+						country_event = {
+							id = deluge_france_foreign.55
+						}
+					}
+				}
+			}
+			else = {
+				HOL = {
+					country_event = {
+						id = deluge_france_foreign.52
+					}
+				}
+			}
+			set_country_flag = FRA_flag_15_days_passed_since_completing_vassalization_focus
+			hidden_effect = {
+				country_event = {
+					id = deluge_france.95
+					days = 15
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7295,6 +7339,7 @@ focus_tree = {
 		bypass = {
 			
 		}
+		will_lead_to_war_with = HOL
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -7307,7 +7352,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_demand_netherlands_submission }
 		relative_position_id = FRA_demand_netherlands_submission
 		search_filters = { }
-		cost = 1
+		cost = 10
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -7320,10 +7365,39 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			OR = {
+				HOL = {
+					is_subject_of = FRA
+				}
+				AND = {
+					has_full_control_of_state = 784
+					has_full_control_of_state = 977
+					has_full_control_of_state = 6
+					has_full_control_of_state = 35
+					has_full_control_of_state = 36
+					has_full_control_of_state = 7
+				}
+			}
 		}
 		completion_reward = {
-			
+			784 = {
+				add_core_of = FRA
+			}
+			977 = {
+				add_core_of = FRA
+			}
+			6 = {
+				add_core_of = FRA
+			}
+			35 = {
+				add_core_of = FRA
+			}
+			36 = {
+				add_core_of = FRA
+			}
+			7 = {
+				add_core_of = FRA
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7331,8 +7405,7 @@ focus_tree = {
 		bypass = {
 			
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
+		cancel_if_invalid = yes
 		available_if_capitulated = yes
 	}
 	focus = {
@@ -7343,7 +7416,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_watchman_of_global_security }
 		relative_position_id = FRA_watchman_of_global_security
 		search_filters = { }
-		cost = 1
+		cost = 6
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -7359,7 +7432,20 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_to_tech_sharing_group = deluge_french_faction_tech_group
+			every_country = {
+				limit = {
+					NOT = {
+						tag = FRA
+					}
+					OR = {
+						is_subject_of = FRA
+						is_in_faction_with = FRA
+					}
+				}
+				add_to_tech_sharing_group = deluge_french_faction_tech_group
+			}
+			set_country_flag = FRA_flag_established_tech_group
 		}
 		ai_will_do = {
 			factor = 25
@@ -7379,7 +7465,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_shared_scientific_projects }
 		relative_position_id = FRA_shared_scientific_projects
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { focus = FRA_expand_european_cooperation}
 		allow_branch = {
 			
@@ -7392,10 +7478,10 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			is_subject = no
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_spirit_irredentism
 		}
 		ai_will_do = {
 			factor = 25
@@ -7415,7 +7501,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_shared_scientific_projects }
 		relative_position_id = FRA_shared_scientific_projects
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { focus = FRA_irredentism }
 		allow_branch = {
 			
@@ -7428,10 +7514,21 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			is_subject = no
+			OR = {
+				has_completed_focus = FRA_deats_takeover
+				has_completed_focus = FRA_absolutist_grip
+				has_completed_focus = FRA_the_guarantor
+				has_completed_focus = FRA_the_reformer
+				has_completed_focus = FRA_creation_of_the_parliament
+				has_completed_focus = FRA_anarchist_communist_federation
+				has_completed_focus = FRA_french_section_of_workers_internationale
+			}
 		}
 		completion_reward = {
-			
+			set_faction_name = FRA_faction_name_eu
+			unlock_decision_category_tooltip = FRA_invite_to_eu_tt
+			add_political_power = 35
 		}
 		ai_will_do = {
 			factor = 25
@@ -7451,7 +7548,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_expand_european_cooperation }
 		relative_position_id = FRA_expand_european_cooperation
 		search_filters = { }
-		cost = 1
+		cost = 7
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -7464,10 +7561,22 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			is_subject = no
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_spirit_eu_military_cooperation
+			every_country = {
+				limit = {
+					NOT = {
+						tag = FRA
+					}
+					is_in_faction_with = FRA
+					capital_scope = {
+						is_on_continent = europe
+					}
+				}
+				add_ideas = FRA_spirit_eu_military_cooperation
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7482,13 +7591,13 @@ focus_tree = {
 	focus = {
 		id = FRA_further_cooperation
 		icon = GFX_focus_generic_blue_red_handshake
-		x = 0
+		x = -1
 		y = 1
 		prerequisite = { focus = FRA_military_european_treaty }
 		relative_position_id = FRA_military_european_treaty
 		search_filters = { }
-		cost = 1
-		#mutually_exclusive = { focus = }
+		cost = 7
+		mutually_exclusive = { focus = FRA_european_unification }
 		allow_branch = {
 			
 		}
@@ -7500,10 +7609,22 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			is_subject = no
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_spirit_eu_economic_cooperation
+			every_country = {
+				limit = {
+					NOT = {
+						tag = FRA
+					}
+					is_in_faction_with = FRA
+					capital_scope = {
+						is_on_continent = europe
+					}
+				}
+				add_ideas = FRA_spirit_eu_economic_cooperation
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7518,13 +7639,13 @@ focus_tree = {
 	focus = {
 		id = FRA_european_unification
 		icon = GFX_focus_generic_the_council_of_europe
-		x = 0
+		x = 1
 		y = 1
-		prerequisite = { focus = FRA_further_cooperation }
-		relative_position_id = FRA_further_cooperation
+		prerequisite = { focus = FRA_military_european_treaty }
+		relative_position_id = FRA_military_european_treaty
 		search_filters = { }
-		cost = 1
-		#mutually_exclusive = { focus = }
+		cost = 7
+		mutually_exclusive = { focus = FRA_further_cooperation }
 		allow_branch = {
 			
 		}
@@ -7536,10 +7657,10 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			is_subject = no
 		}
 		completion_reward = {
-			
+			unlock_decision_category_tooltip = FRA_dec_cat_unite_europe
 		}
 		ai_will_do = {
 			factor = 25
@@ -7674,7 +7795,17 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			every_state = {
+				limit = {
+					is_controlled_by = FRA
+					is_on_continent = europe
+					NOT = {
+						is_core_of = FRA
+					}
+				}
+				add_compliance = 5
+				add_resistance = -5
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7707,16 +7838,49 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_full_control_of_state = 118
 		}
 		completion_reward = {
-			
+			116 = {
+				add_manpower = 10000
+				add_compliance = 0.1
+				add_resistance = -0.1
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 6
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					instant_build = yes
+					province = 4135
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
 		}
 		bypass = {
-			
+			NOT = {
+				has_full_control_of_state = 118
+			}
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -7730,7 +7894,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_european_possessions }
 		relative_position_id = FRA_european_possessions
 		search_filters = { }
-		cost = 5
+		cost = 8
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -7743,16 +7907,52 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_full_control_of_state = 1
 		}
 		completion_reward = {
-			
+			1 = {
+				add_manpower = 100000
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 3838
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
 		}
 		bypass = {
-			
+			NOT = {
+				has_full_control_of_state = 1
+			}
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -7767,7 +7967,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_fortify_gibraltar }
 		relative_position_id = FRA_fortify_gibraltar
 		search_filters = { }
-		cost = 5
+		cost = 8
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -7780,16 +7980,49 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_full_control_of_state = 116
 		}
 		completion_reward = {
-			
+			116 = {
+				add_manpower = 100000
+				add_compliance = 0.1
+				add_resistance = -0.1
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 4
+					instant_build = yes
+					province = 12003
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
 		}
 		bypass = {
-			
+			NOT = {
+				has_full_control_of_state = 116
+			}
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -8227,7 +8460,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_develop_india }
 		relative_position_id = FRA_develop_india
 		search_filters = { }
-		cost = 5
+		cost = 8
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -8240,10 +8473,40 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_full_control_of_state = 422
 		}
 		completion_reward = {
-			
+			422 = {
+				add_manpower = 600000
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					instant_build = yes
+					province = 7260
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
+					province = 10201
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8276,10 +8539,18 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_full_control_of_state = 422
+			NOT = {
+				422 = {
+					is_core_of = FRA
+				}
+			}
 		}
 		completion_reward = {
-			
+			422 = {
+				add_core_of = FRA
+				add_manpower = -500000
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8299,7 +8570,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_develop_india }
 		relative_position_id = FRA_develop_india
 		search_filters = { }
-		cost = 5
+		cost = 8
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -8312,10 +8583,34 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_full_control_of_state = 281
 		}
 		completion_reward = {
-			
+			281 = {
+				add_manpower = 100000
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 4
+					instant_build = yes
+					province = 4967
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8348,10 +8643,18 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_full_control_of_state = 281
+			NOT = {
+				281 = {
+					is_core_of = FRA
+				}
+			}
 		}
 		completion_reward = {
-			
+			281 = {
+				add_core_of = FRA
+				add_manpower = -50000
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8463,10 +8766,65 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			is_subject = no
+			date > 1937.6.1
 		}
 		completion_reward = {
-			
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 672
+						owns_state = 335
+						owns_state = 334
+						owns_state = 333
+						owns_state = 673
+						owns_state = 667
+						owns_state = 721
+						owns_state = 668
+						owns_state = 627
+						owns_state = 628
+						owns_state = 626
+						owns_state = 624
+						owns_state = 327
+						owns_state = 623
+						owns_state = 625
+						owns_state = 738
+					}
+					NOT = {
+						tag = FRA
+					}
+					NOT = {
+						is_subject_of = FRA
+					}
+					capital_scope = {
+						OR = {
+							state = 423
+							state = 672
+							state = 335
+							state = 334
+							state = 333
+							state = 673
+							state = 667
+							state = 721
+							state = 668
+							state = 627
+							state = 628
+							state = 626
+							state = 624
+							state = 327
+							state = 623
+							state = 625
+							state = 738
+						}
+					}
+				}
+				FRA = {
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = PREV
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8499,10 +8857,82 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			is_subject = no
+			date > 1937.6.1
 		}
 		completion_reward = {
-			
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 669
+						owns_state = 979
+						owns_state = 523
+						owns_state = 737
+						owns_state = 634
+						owns_state = 635
+						owns_state = 734
+						owns_state = 521
+						owns_state = 872
+						owns_state = 520
+						owns_state = 674
+						owns_state = 870
+						owns_state = 522
+						owns_state = 871
+						owns_state = 519
+						owns_state = 285
+						owns_state = 873
+						owns_state = 517
+						owns_state = 518
+						owns_state = 284
+						owns_state = 723
+						owns_state = 636
+						owns_state = 726
+						owns_state = 643
+						owns_state = 641
+					}
+					NOT = {
+						tag = FRA
+					}
+					NOT = {
+						is_subject_of = FRA
+					}
+					capital_scope = {
+						OR = {
+							state = 669
+							state = 979
+							state = 523
+							state = 737
+							state = 634
+							state = 635
+							state = 734
+							state = 521
+							state = 872
+							state = 520
+							state = 674
+							state = 870
+							state = 522
+							state = 871
+							state = 519
+							state = 285
+							state = 873
+							state = 517
+							state = 518
+							state = 284
+							state = 723
+							state = 636
+							state = 726
+							state = 643
+							state = 641
+						}
+					}
+				}
+				FRA = {
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = PREV
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -9224,7 +9654,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			custom_effect_tooltip = FRA_custom_effect_tooltip_146
+			unlock_decision_category_tooltip = FRA_developing_railways_tt
 			add_timed_idea = {
 				idea = FRA_spirit_developing_railways
 				days = 60
@@ -9360,7 +9790,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_railways_in_western_africa }
 		relative_position_id = FRA_railways_in_western_africa
 		search_filters = { }
-		cost = 10
+		cost = 7
 		mutually_exclusive = { focus = FRA_french_western_african_confederation}
 		allow_branch = {
 			
@@ -9555,7 +9985,146 @@ focus_tree = {
 			factor = 25
 		}
 		bypass = {
-			
+			NOT = {
+				OR = {
+					AND = {
+						controls_state = 768
+						768 = {
+							NOT = {
+								is_core_of = ROOT
+							}
+						}
+					}
+					AND = {
+						controls_state = 272
+						272 = {
+							NOT = {
+								is_core_of = ROOT
+							}
+						}
+					}
+					AND = {
+						controls_state = 556
+						556 = {
+							NOT = {
+								is_core_of = ROOT
+							}
+						}
+					}
+					AND = {
+						controls_state = 296
+						296 = {
+							NOT = {
+								is_core_of = ROOT
+							}
+						}
+					}
+					AND = {
+						controls_state = 770
+						770 = {
+							NOT = {
+								is_core_of = ROOT
+							}
+						}
+					}
+					AND = {
+						controls_state = 899
+						899 = {
+							NOT = {
+								is_core_of = ROOT
+							}
+						}
+					}
+					AND = {
+						controls_state = 298
+						298 = {
+							NOT = {
+								is_core_of = ROOT
+							}
+						}
+					}
+					AND = {
+						controls_state = 771
+						771 = {
+							NOT = {
+								is_core_of = ROOT
+							}
+						}
+					}
+					AND = {
+						controls_state = 773
+						773 = {
+							NOT = {
+								is_core_of = ROOT
+							}
+						}
+					}
+					AND = {
+						controls_state = 274
+						274 = {
+							NOT = {
+								is_core_of = ROOT
+							}
+						}
+					}
+					AND = {
+						controls_state = 774
+						774 = {
+							NOT = {
+								is_core_of = ROOT
+							}
+						}
+					}
+					AND = {
+						controls_state = 772
+						772 = {
+							NOT = {
+								is_core_of = ROOT
+							}
+						}
+					}
+					AND = {
+						controls_state = 558
+						558 = {
+							NOT = {
+								is_core_of = ROOT
+							}
+						}
+					}
+					AND = {
+						controls_state = 902
+						902 = {
+							NOT = {
+								is_core_of = ROOT
+							}
+						}
+					}
+					AND = {
+						controls_state = 900
+						900 = {
+							NOT = {
+								is_core_of = ROOT
+							}
+						}
+					}
+					AND = {
+						controls_state = 901
+						901 = {
+							NOT = {
+								is_core_of = ROOT
+							}
+						}
+					}
+					AND = {
+						controls_state = 702
+						702 = {
+							NOT = {
+								is_core_of = ROOT
+							}
+						}
+					}
+				}
+			}
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -9582,7 +10151,10 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			custom_trigger_tooltip = {
+				tooltip = generic_custom_trigger_tooltip_1
+				always = no
+			}
 		}
 		completion_reward = {
 			
@@ -9621,7 +10193,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			custom_effect_tooltip = FRA_custom_effect_tooltip_147
+			unlock_decision_category_tooltip = FRA_bauxite_mining_tt
 			add_political_power = 50
 		}
 		ai_will_do = {
@@ -9642,7 +10214,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_african_department }
 		relative_position_id = FRA_african_department
 		search_filters = { }
-		cost = 5
+		cost = 7
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -9660,10 +10232,109 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			custom_effect_tooltip = FRA_custom_effect_tooltip_146
+			unlock_decision_category_tooltip = FRA_developing_railways_tt
 			add_timed_idea = {
 				idea = FRA_spirit_developing_railways
 				days = 60
+			}
+			random_state = {
+				limit = {
+					OR = {
+						is_controlled_by = FRA
+						any_country = {
+							is_subject_of = FRA
+							controls_state = THIS
+						}
+					}
+					infrastructure < 4
+					OR = {
+						state = 889
+						state = 890
+						state = 718
+						state = 538
+						state = 888
+						state = 295
+						state = 540
+						state = 705
+						state = 297
+						state = 539
+						state = 660
+						state = 515
+						state = 776
+						state = 777
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					OR = {
+						is_controlled_by = FRA
+						any_country = {
+							is_subject_of = FRA
+							controls_state = THIS
+						}
+					}
+					infrastructure < 4
+					OR = {
+						state = 889
+						state = 890
+						state = 718
+						state = 538
+						state = 888
+						state = 295
+						state = 540
+						state = 705
+						state = 297
+						state = 539
+						state = 660
+						state = 515
+						state = 776
+						state = 777
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					OR = {
+						is_controlled_by = FRA
+						any_country = {
+							is_subject_of = FRA
+							controls_state = THIS
+						}
+					}
+					infrastructure < 4
+					OR = {
+						state = 889
+						state = 890
+						state = 718
+						state = 538
+						state = 888
+						state = 295
+						state = 540
+						state = 705
+						state = 297
+						state = 539
+						state = 660
+						state = 515
+						state = 776
+						state = 777
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 		ai_will_do = {
@@ -9684,7 +10355,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_railways_in_equatorial_africa }
 		relative_position_id = FRA_railways_in_equatorial_africa
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = { focus = FRA_french_equatorial_african_confederation}
 		allow_branch = {
 			
@@ -9697,19 +10368,272 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			OR = {
+				AND = {
+					controls_state = 777
+					777 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 776
+					776 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 515
+					515 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 660
+					660 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 539
+					539 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 297
+					297 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 705
+					705 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 540
+					540 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 295
+					295 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 888
+					888 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 538
+					538 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 718
+					718 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 890
+					890 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 889
+					889 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			every_state = {
+				limit = {
+					is_controlled_by = FRA
+					NOT = {
+						is_core_of = FRA
+					}
+					OR = {
+						state = 889
+						state = 890
+						state = 718
+						state = 538
+						state = 888
+						state = 295
+						state = 540
+						state = 705
+						state = 297
+						state = 539
+						state = 660
+						state = 515
+						state = 776
+						state = 777
+					}
+				}
+				add_resistance = -15
+				add_compliance = 30
+			}
 		}
 		ai_will_do = {
 			factor = 25
 		}
 		bypass = {
-			
+			NOT = {
+			OR = {
+				AND = {
+					controls_state = 777
+					777 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 776
+					776 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 515
+					515 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 660
+					660 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 539
+					539 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 297
+					297 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 705
+					705 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 540
+					540 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 295
+					295 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 888
+					888 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 538
+					538 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 718
+					718 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 890
+					890 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 889
+					889 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+			}
+			}
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 		available_if_capitulated = yes
 	}
 	focus = {
@@ -9733,7 +10657,10 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			custom_trigger_tooltip = {
+				tooltip = generic_custom_trigger_tooltip_1
+				always = no
+			}
 		}
 		completion_reward = {
 			
@@ -9772,7 +10699,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			unlock_decision_category_tooltip = FRA_rubber_extraction_tt
+			add_political_power = 50
 		}
 		ai_will_do = {
 			factor = 25
@@ -9792,7 +10720,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_african_department }
 		relative_position_id = FRA_african_department
 		search_filters = { }
-		cost = 5
+		cost = 7
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -9810,10 +10738,160 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			custom_effect_tooltip = FRA_custom_effect_tooltip_146
+			unlock_decision_category_tooltip = FRA_developing_railways_tt
 			add_timed_idea = {
 				idea = FRA_spirit_developing_railways
 				days = 60
+			}
+			random_state = {
+				limit = {
+					OR = {
+						is_controlled_by = FRA
+						any_country = {
+							is_subject_of = FRA
+							controls_state = THIS
+						}
+					}
+					infrastructure < 4
+					OR = {
+						state = 844
+						state = 903
+						state = 905
+						state = 547
+						state = 904
+						state = 548
+						state = 546
+						state = 559
+						state = 655
+						state = 268
+						state = 837
+						state = 836
+						state = 835
+						state = 271
+						state = 838
+						state = 839
+						state = 840
+						state = 841
+						state = 843
+						state = 842
+						state = 908
+						state = 550
+						state = 906
+						state = 883
+						state = 551
+						state = 783
+						state = 886
+						state = 549
+						state = 887
+						state = 885
+						state = 884
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					OR = {
+						is_controlled_by = FRA
+						any_country = {
+							is_subject_of = FRA
+							controls_state = THIS
+						}
+					}
+					infrastructure < 4
+					OR = {
+						state = 844
+						state = 903
+						state = 905
+						state = 547
+						state = 904
+						state = 548
+						state = 546
+						state = 559
+						state = 655
+						state = 268
+						state = 837
+						state = 836
+						state = 835
+						state = 271
+						state = 838
+						state = 839
+						state = 840
+						state = 841
+						state = 843
+						state = 842
+						state = 908
+						state = 550
+						state = 906
+						state = 883
+						state = 551
+						state = 783
+						state = 886
+						state = 549
+						state = 887
+						state = 885
+						state = 884
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					OR = {
+						is_controlled_by = FRA
+						any_country = {
+							is_subject_of = FRA
+							controls_state = THIS
+						}
+					}
+					infrastructure < 4
+					OR = {
+						state = 844
+						state = 903
+						state = 905
+						state = 547
+						state = 904
+						state = 548
+						state = 546
+						state = 559
+						state = 655
+						state = 268
+						state = 837
+						state = 836
+						state = 835
+						state = 271
+						state = 838
+						state = 839
+						state = 840
+						state = 841
+						state = 843
+						state = 842
+						state = 908
+						state = 550
+						state = 906
+						state = 883
+						state = 551
+						state = 783
+						state = 886
+						state = 549
+						state = 887
+						state = 885
+						state = 884
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 		ai_will_do = {
@@ -9834,7 +10912,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_railways_in_eastern_africa }
 		relative_position_id = FRA_railways_in_eastern_africa
 		search_filters = { }
-		cost = 5
+		cost = 7
 		mutually_exclusive = { focus = FRA_french_eastern_african_confederation}
 		allow_branch = {
 			
@@ -9847,16 +10925,558 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			OR = {
+				AND = {
+					controls_state = 271
+					271 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 835
+					835 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 836
+					836 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 837
+					837 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 268
+					268 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 655
+					655 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 559
+					559 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 546
+					546 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 548
+					548 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 904
+					904 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 547
+					547 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 905
+					905 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 903
+					903 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 844
+					844 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 838
+					838 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 839
+					839 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 840
+					840 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 841
+					841 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 842
+					842 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 843
+					843 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 908
+					908 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 550
+					550 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 906
+					906 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 883
+					883 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 551
+					551 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 783
+					783 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 886
+					886 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 549
+					549 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 887
+					887 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 885
+					885 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 884
+					884 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			every_state = {
+				limit = {
+					is_controlled_by = FRA
+					NOT = {
+						is_core_of = FRA
+					}
+					OR = {
+						state = 844
+						state = 903
+						state = 905
+						state = 547
+						state = 904
+						state = 548
+						state = 546
+						state = 559
+						state = 655
+						state = 268
+						state = 837
+						state = 836
+						state = 835
+						state = 271
+						state = 838
+						state = 839
+						state = 840
+						state = 841
+						state = 843
+						state = 842
+						state = 908
+						state = 550
+						state = 906
+						state = 883
+						state = 551
+						state = 783
+						state = 886
+						state = 549
+						state = 887
+						state = 885
+						state = 884
+					}
+				}
+				add_resistance = -15
+				add_compliance = 30
+			}
 		}
 		ai_will_do = {
 			factor = 25
 		}
 		bypass = {
-			
+			NOT = {
+			OR = {
+				AND = {
+					controls_state = 271
+					271 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 835
+					835 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 836
+					836 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 837
+					837 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 268
+					268 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 655
+					655 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 559
+					559 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 546
+					546 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 548
+					548 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 904
+					904 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 547
+					547 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 905
+					905 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 903
+					903 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 844
+					844 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 838
+					838 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 839
+					839 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 840
+					840 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 841
+					841 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 842
+					842 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 843
+					843 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 908
+					908 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 550
+					550 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 906
+					906 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 883
+					883 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 551
+					551 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 783
+					783 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 886
+					886 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 549
+					549 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 887
+					887 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 885
+					885 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 884
+					884 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+			}
+			}
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -9883,7 +11503,10 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			custom_trigger_tooltip = {
+				tooltip = generic_custom_trigger_tooltip_1
+				always = no
+			}
 		}
 		completion_reward = {
 			
@@ -9922,7 +11545,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			unlock_decision_category_tooltip = FRA_resource_extraction_tt
+			add_political_power = 50
 		}
 		ai_will_do = {
 			factor = 25
@@ -9958,7 +11582,70 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			every_state = {
+				limit = {
+					OR = {
+						state = 892
+						state = 891
+						state = 981
+						state = 545
+						state = 897
+						state = 896
+						state = 544
+						state = 275
+						state = 542
+						state = 681
+						state = 719
+						state = 893
+						state = 541
+						state = 894
+						state = 895
+					}
+					NOT = {
+						owner = {
+							OR = {
+								tag = FRA
+								is_subject_of = FRA
+							}
+						}
+					}
+				}
+				add_claim_by = FRA
+			}
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 892
+						owns_state = 891
+						owns_state = 981
+						owns_state = 545
+						owns_state = 897
+						owns_state = 896
+						owns_state = 544
+						owns_state = 275
+						owns_state = 542
+						owns_state = 681
+						owns_state = 719
+						owns_state = 893
+						owns_state = 541
+						owns_state = 894
+						owns_state = 895
+					}
+					NOT = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				FRA = {
+					create_wargoal = {
+						type = take_claimed_state
+						generator = {892 891 981 545 897 896 554 275 542 681 719 893 541 894 895 }
+						target = PREV
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -9991,16 +11678,292 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			OR = {
+				AND = {
+					controls_state = 892
+					892 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 891
+					891 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 981
+					981 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 545
+					545 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 897
+					897 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 896
+					896 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 544
+					544 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 275
+					275 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 542
+					542 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 681
+					681 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 719
+					719 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 893
+					893 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 541
+					541 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 894
+					894 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 895
+					895 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			every_state = {
+				limit = {
+					OR = {
+						is_controlled_by = FRA
+						any_country = {
+							is_subject_of = FRA
+							controls_state = THIS
+						}
+					}
+					NOT = {
+						is_core_of = FRA
+					}
+					OR = {
+						state = 892
+						state = 891
+						state = 981
+						state = 545
+						state = 897
+						state = 896
+						state = 544
+						state = 275
+						state = 542
+						state = 681
+						state = 719
+						state = 893
+						state = 541
+						state = 894
+						state = 895
+					}
+				}
+				add_resistance = -15
+				add_compliance = 30
+			}
 		}
 		ai_will_do = {
 			factor = 25
 		}
 		bypass = {
-			
+			NOT = {
+			OR = {
+				AND = {
+					controls_state = 892
+					892 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 891
+					891 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 981
+					981 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 545
+					545 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 897
+					897 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 896
+					896 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 544
+					544 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 275
+					275 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 542
+					542 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 681
+					681 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 719
+					719 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 893
+					893 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 541
+					541 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 894
+					894 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				AND = {
+					controls_state = 895
+					895 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+			}
+			}
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -10027,7 +11990,10 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			custom_trigger_tooltip = {
+				tooltip = generic_custom_trigger_tooltip_1
+				always = no
+			}
 		}
 		completion_reward = {
 			
@@ -10066,12 +12032,131 @@ focus_tree = {
 			NOT = {
 				has_idea = FRA_spirit_developing_railways
 			}
+			OR = {
+				controls_state = 892
+				controls_state = 891
+				controls_state = 981
+				controls_state = 545
+				controls_state = 897
+				controls_state = 896
+				controls_state = 544
+				controls_state = 275
+				controls_state = 542
+				controls_state = 681
+				controls_state = 719
+				controls_state = 893
+				controls_state = 541
+				controls_state = 894
+				controls_state = 895
+			}
 		}
 		completion_reward = {
-			custom_effect_tooltip = FRA_custom_effect_tooltip_146
+			unlock_decision_category_tooltip = FRA_developing_railways_tt
 			add_timed_idea = {
 				idea = FRA_spirit_developing_railways
 				days = 60
+			}
+			random_state = {
+				limit = {
+					OR = {
+						is_controlled_by = FRA
+						any_country = {
+							is_subject_of = FRA
+							controls_state = THIS
+						}
+					}
+					infrastructure < 4
+					OR = {
+						state = 892
+						state = 891
+						state = 981
+						state = 545
+						state = 897
+						state = 896
+						state = 544
+						state = 275
+						state = 542
+						state = 681
+						state = 719
+						state = 893
+						state = 541
+						state = 894
+						state = 895
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					OR = {
+						is_controlled_by = FRA
+						any_country = {
+							is_subject_of = FRA
+							controls_state = THIS
+						}
+					}
+					infrastructure < 4
+					OR = {
+						state = 892
+						state = 891
+						state = 981
+						state = 545
+						state = 897
+						state = 896
+						state = 544
+						state = 275
+						state = 542
+						state = 681
+						state = 719
+						state = 893
+						state = 541
+						state = 894
+						state = 895
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					OR = {
+						is_controlled_by = FRA
+						any_country = {
+							is_subject_of = FRA
+							controls_state = THIS
+						}
+					}
+					infrastructure < 4
+					OR = {
+						state = 892
+						state = 891
+						state = 981
+						state = 545
+						state = 897
+						state = 896
+						state = 544
+						state = 275
+						state = 542
+						state = 681
+						state = 719
+						state = 893
+						state = 541
+						state = 894
+						state = 895
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 		ai_will_do = {
@@ -10245,24 +12330,6 @@ focus_tree = {
 			543 = {
 				is_fully_controlled_by = FRA
 			}
-			713 = {
-				is_fully_controlled_by = FRA
-			}
-			706 = {
-				is_fully_controlled_by = FRA
-			}
-			707 = {
-				is_fully_controlled_by = FRA
-			}
-			708 = {
-				is_fully_controlled_by = FRA
-			}
-			709 = {
-				is_fully_controlled_by = FRA
-			}
-			710 = {
-				is_fully_controlled_by = FRA
-			}
 		}
 		completion_reward = {
 			543 = {
@@ -10282,60 +12349,7 @@ focus_tree = {
 				province = 5128
 				value = 4
 			}
-			713 = {
-				add_core_of = FRA
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					instant_build = yes
-					province = 5128
-				}
-			}
-			706 = {
-				add_core_of = FRA
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					instant_build = yes
-					province = 5128
-				}
-			}
-			707 = {
-				add_core_of = FRA
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					instant_build = yes
-					province = 5128
-				}
-			}
-			708 = {
-				add_core_of = FRA
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					instant_build = yes
-					province = 5128
-				}
-			}
-			709 = {
-				add_core_of = FRA
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					instant_build = yes
-					province = 5128
-				}
-			}
-			710 = {
-				add_core_of = FRA
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					instant_build = yes
-					province = 5128
-				}
-			}
+			unlock_decision_category_tooltip = FRA_developing_madagascar_islands_tt
 		}
 		ai_will_do = {
 			factor = 25
@@ -10368,7 +12382,15 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			460 = {
+				is_fully_controlled_by = FRA
+			}
+			459 = {
+				is_fully_controlled_by = FRA
+			}
+			513 = {
+				is_fully_controlled_by = FRA
+			}
 		}
 		completion_reward = {
 			custom_effect_tooltip = FRA_custom_effect_tooltip_142
@@ -10560,8 +12582,8 @@ focus_tree = {
 		bypass = {
 			
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 		available_if_capitulated = yes
 	}
 	focus = {
@@ -10615,8 +12637,8 @@ focus_tree = {
 		bypass = {
 			
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 		available_if_capitulated = yes
 	}
 	focus = {
@@ -10700,7 +12722,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_african_department }
 		relative_position_id = FRA_african_department
 		search_filters = { }
-		cost = 5
+		cost = 7
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -10713,10 +12735,159 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			458 = {
+				is_fully_controlled_by = FRA
+			}
+			665 = {
+				is_fully_controlled_by = FRA
+			}
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_custom_effect_tooltip_163
+			if = {
+				limit = {
+					has_variable = deluge_var_fra_african_investments
+					NOT = {
+						has_completed_focus = FRA_develop_algeria
+					}
+				}
+				custom_effect_tooltip = generic_custom_effect_tooltip_1
+			}
+			if = {
+				limit = {
+					check_variable = { deluge_var_fra_african_investments > 3 }
+					NOT = {
+						has_completed_focus = FRA_develop_tunisia
+					}
+				}
+				458 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					add_manpower = 150000
+				}
+				665 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					add_manpower = 100000
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { deluge_var_fra_african_investments > 2 }
+					check_variable = { deluge_var_fra_african_investments < 4 }
+					NOT = {
+						has_completed_focus = FRA_develop_tunisia
+					}
+				}
+				458 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_manpower = 100000
+				}
+				665 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_manpower = 50000
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { deluge_var_fra_african_investments > 1 }
+					check_variable = { deluge_var_fra_african_investments < 3 }
+					NOT = {
+						has_completed_focus = FRA_develop_tunisia
+					}
+				}
+				458 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_manpower = 100000
+				}
+				665 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_manpower = 50000
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { deluge_var_fra_african_investments > 0 }
+					check_variable = { deluge_var_fra_african_investments < 2 }
+					NOT = {
+						has_completed_focus = FRA_develop_tunisia
+					}
+				}
+				458 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_manpower = 75000
+				}
+				665 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_manpower = 25000
+				}
+			}
+			add_to_variable = {
+				var = deluge_var_fra_african_investments
+				value = -1
+				tooltip = FRA_custom_effect_tooltip_140
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -10724,8 +12895,8 @@ focus_tree = {
 		bypass = {
 			
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 		available_if_capitulated = yes
 	}
 	focus = {
@@ -10749,10 +12920,20 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			458 = {
+				is_fully_controlled_by = FRA
+			}
+			665 = {
+				is_fully_controlled_by = FRA
+			}
 		}
 		completion_reward = {
-			
+			458 = {
+				add_core_of = FRA
+			}
+			665 = {
+				add_core_of = FRA
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -10760,8 +12941,8 @@ focus_tree = {
 		bypass = {
 			
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 		available_if_capitulated = yes
 	}
 	focus = {
@@ -10954,7 +13135,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			add_political_power = 35
+			unlock_decision_category_tooltip = FRA_vassalisation_of_egypt_tt
 		}
 		ai_will_do = {
 			factor = 25
@@ -10987,7 +13169,10 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			custom_trigger_tooltip = {
+				tooltip = generic_custom_trigger_tooltip_1
+				always = no
+			}
 		}
 		completion_reward = {
 			
@@ -13428,6 +15613,17 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				prioritize = { 20 }
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 796 }
 				limit = {
 					infrastructure < 5
 				}

@@ -2288,6 +2288,65 @@ ideas = {
 				monthly_population = 0.1
 			}
 		}
+		FRA_spirit_irredentism = {
+			picture = scw_intervention_nationalists_focus
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				justify_war_goal_time = -0.25
+				annex_cost_factor = -0.2
+				puppet_cost_factor = -0.15
+			}
+		}
+		FRA_spirit_eu_military_cooperation = {
+			picture = tur_coordinated_balkan_armed_forces
+			allowed = {
+				
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				experience_gain_army_factor = 0.05
+				army_org_factor = 0.03
+			}
+		}
+		FRA_spirit_eu_economic_cooperation = {
+			picture = HABSBURG_economy
+			allowed = {
+				
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
 	}
 	tank_manufacturer = {
 		designer = yes

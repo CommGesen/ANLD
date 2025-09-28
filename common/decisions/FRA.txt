@@ -1,7 +1,89 @@
+foreign_politics = {
+	FRA_dec_join_FRA_tech_group = {
+		icon = GFX_decision_generic_research
+		cost = 5
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			FRA = {
+				has_country_flag = FRA_flag_established_tech_group
+			}
+			NOT = {
+				is_in_tech_sharing_group = deluge_french_faction_tech_group
+			}
+			OR = {
+				is_in_faction_with = FRA
+				is_subject_of = FRA
+			}
+		}
+		available = {
+			FRA = {
+				has_country_flag = FRA_flag_established_tech_group
+			}
+			NOT = {
+				is_in_tech_sharing_group = deluge_french_faction_tech_group
+			}
+			OR = {
+				is_in_faction_with = FRA
+				is_subject_of = FRA
+			}
+		}
+		complete_effect = {
+			add_to_tech_sharing_group = deluge_french_faction_tech_group
+		}
+	}
+}
 FRA_dec_cat_foreign_policy = {
+	FRA_deluge_dec_invite_to_eu = {
+		target_root_trigger = {
+			has_completed_focus = FRA_expand_european_cooperation
+			is_subject = no
+		}
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				exists = yes
+				capital_scope = {
+					is_on_continent = europe
+				}
+				NOT = {
+					is_subject_of = FRA
+				}
+				NOT = {
+					is_in_faction_with = FRA
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				target_array = FROM.controlled_states
+			}
+		}
+		icon = GFX_decision_hol_exchange_intelligence_data
+		cost = 10
+		fire_only_once = no
+		days_re_enable = 5
+		days_remove = 10
+		available = {
+			FROM = {
+				NOT = {
+					has_war_with = ROOT
+				}
+				has_capitulated = no
+			}
+		}
+		remove_effect = {
+			FROM = {
+				country_event = {
+					id = deluge_france_foreign.58
+				}
+			}
+		}
+	}
 	FRA_vassalisation_of_arabia = {
 		target_root_trigger = {
 			has_completed_focus = FRA_vassalize_arabian_tribes
+			is_subject = no
 		}
 		targets = { QAT SAU OMA YEM IRQ SYR LEB PAL ANZ ABU HEJ KUR }
 		targets_dynamic = yes
@@ -122,6 +204,7 @@ FRA_dec_cat_foreign_policy = {
 					has_capitulated = yes
 				}
 			}
+			is_subject = no
 		}
 		complete_effect = {
 			if = {
@@ -156,6 +239,305 @@ FRA_dec_cat_foreign_policy = {
 			}
 		}
 	}
+	FRA_vassalisation_of_burma = {
+		icon = GFX_decision_generic_burma
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 100
+		days_remove = 60
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				target_array = BUR.controlled_states
+			}
+		}
+		visible = {
+			country_exists = BUR
+			NOT = {
+				BUR = {
+					is_subject_of = FRA
+				}
+			}
+			FRA = {
+				has_completed_focus = FRA_vassalize_burma
+			}
+		}
+		available = {
+			NOT = {
+				BUR = {
+					has_war_with = FRA
+				}
+			}
+			NOT = {
+				BUR = {
+					has_capitulated = yes
+				}
+			}
+			is_subject = no
+		}
+		complete_effect = {
+			if = {
+				limit = { BUR = { is_subject = yes } }
+				BUR = {
+					overlord = { country_event = generic.26 }
+				}
+			}
+			BUR = {
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = { BUR = { is_subject = yes } }
+				BUR = {
+					overlord = {
+						country_event = {
+							id = deluge_france_foreign.37
+						}
+					}
+				}
+			}
+			else = {
+				BUR = {
+					country_event = {
+						id = deluge_france_foreign.34
+					}
+				}
+			}
+		}
+	}
+	FRA_vassalisation_of_siam = {
+		icon = GFX_decision_generic_siam
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 100
+		days_remove = 60
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				target_array = SIA.controlled_states
+			}
+		}
+		visible = {
+			country_exists = SIA
+			NOT = {
+				SIA = {
+					is_subject_of = FRA
+				}
+			}
+			FRA = {
+				has_completed_focus = FRA_vassalize_siam
+			}
+		}
+		available = {
+			NOT = {
+				SIA = {
+					has_war_with = FRA
+				}
+			}
+			NOT = {
+				SIA = {
+					has_capitulated = yes
+				}
+			}
+			is_subject = no
+		}
+		complete_effect = {
+			if = {
+				limit = { SIA = { is_subject = yes } }
+				SIA = {
+					overlord = { country_event = generic.26 }
+				}
+			}
+			SIA = {
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = { SIA = { is_subject = yes } }
+				SIA = {
+					overlord = {
+						country_event = {
+							id = deluge_france_foreign.43
+						}
+					}
+				}
+			}
+			else = {
+				SIA = {
+					country_event = {
+						id = deluge_france_foreign.40
+					}
+				}
+			}
+		}
+	}
+	FRA_vassalisation_of_egypt = {
+		icon = GFX_decision_generic_egypt_2
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 100
+		days_remove = 60
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				target_array = EGY.controlled_states
+			}
+		}
+		visible = {
+			country_exists = EGY
+			NOT = {
+				EGY = {
+					is_subject_of = FRA
+				}
+			}
+			FRA = {
+				has_completed_focus = FRA_demand_egyptian_subjugation
+			}
+		}
+		available = {
+			NOT = {
+				EGY = {
+					has_war_with = FRA
+				}
+			}
+			NOT = {
+				EGY = {
+					has_capitulated = yes
+				}
+			}
+			is_subject = no
+		}
+		complete_effect = {
+			if = {
+				limit = { EGY = { is_subject = yes } }
+				EGY = {
+					overlord = { country_event = generic.26 }
+				}
+			}
+			EGY = {
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = { EGY = { is_subject = yes } }
+				EGY = {
+					overlord = {
+						country_event = {
+							id = deluge_france_foreign.49
+						}
+					}
+				}
+			}
+			else = {
+				EGY = {
+					country_event = {
+						id = deluge_france_foreign.46
+					}
+				}
+			}
+		}
+	}
+	FRA_vassalisation_of_holland = {
+		icon = GFX_decision_generic_netherlands
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 100
+		days_remove = 60
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				target_array = HOL.controlled_states
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = FRA_flag_15_days_passed_since_completing_vassalization_focus
+			}
+			country_exists = SIA
+			HOL = {
+				SIA = {
+					is_subject_of = FRA
+				}
+			}
+			FRA = {
+				has_completed_focus = FRA_demand_netherlands_submission
+			}
+		}
+		available = {
+			NOT = {
+				HOL = {
+					has_war_with = FRA
+				}
+			}
+			NOT = {
+				HOL = {
+					has_capitulated = yes
+				}
+			}
+			is_subject = no
+		}
+		complete_effect = {
+			if = {
+				limit = { HOL = { is_subject = yes } }
+				HOL = {
+					overlord = { country_event = generic.26 }
+				}
+			}
+			HOL = {
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = { HOL = { is_subject = yes } }
+				HOL = {
+					overlord = {
+						country_event = {
+							id = deluge_france_foreign.55
+						}
+					}
+				}
+			}
+			else = {
+				HOL = {
+					country_event = {
+						id = deluge_france_foreign.52
+					}
+				}
+			}
+		}
+	}
 	FRA_dec_annex_luxembourg = {
 		icon = GFX_decision_FIN_stop_motti_tactics ##change later
 		fire_only_once = no
@@ -178,6 +560,7 @@ FRA_dec_cat_foreign_policy = {
 			NOT = {
 				has_war_with = BEL
 			}
+			is_subject = no
 		}
 		complete_effect = {
 			BEL = {
@@ -259,6 +642,7 @@ FRA_dec_cat_foreign_policy = {
 			NOT = {
 				has_war_with = FROM
 			}
+			is_subject = no
 		}
 		complete_effect = {
 			FROM = {
@@ -314,6 +698,7 @@ FRA_dec_cat_foreign_policy = {
 			NOT = {
 				has_country_flag = FRA_flag_is_demanding_major_subjugation
 			}
+			is_subject = no
 		}
 		complete_effect = {
 			FROM = {
@@ -337,6 +722,656 @@ FRA_dec_cat_foreign_policy = {
 	}
 }
 FRA_dec_cat_colonial_developement = {
+	deluge_dec_FRA_develop_706 = {
+		icon = GFX_decision_generic_construction
+		fire_only_once = yes
+		days_remove = 75
+		cost = 35
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_francify_madagascar
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			has_full_control_of_state = 706
+		}
+		remove_effect = {
+			706 = {
+				if = {
+					limit = {
+						NOT = {
+							is_core_of = FRA
+						}
+					}
+					add_core_of = FRA
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 13017
+				}
+			}
+		}	
+		ai_will_do = {
+			base = 100
+		}
+	}
+	deluge_dec_FRA_develop_707 = {
+		icon = GFX_decision_generic_construction
+		fire_only_once = yes
+		days_remove = 75
+		cost = 35
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_francify_madagascar
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			has_full_control_of_state = 707
+		}
+		remove_effect = {
+			707 = {
+				if = {
+					limit = {
+						NOT = {
+							is_core_of = FRA
+						}
+					}
+					add_core_of = FRA
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 13018
+				}
+			}
+		}	
+		ai_will_do = {
+			base = 100
+		}
+	}
+	deluge_dec_FRA_develop_708 = {
+		icon = GFX_decision_generic_construction
+		fire_only_once = yes
+		days_remove = 75
+		cost = 35
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_francify_madagascar
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			has_full_control_of_state = 708
+		}
+		remove_effect = {
+			708 = {
+				if = {
+					limit = {
+						NOT = {
+							is_core_of = FRA
+						}
+					}
+					add_core_of = FRA
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 13072
+				}
+			}
+		}	
+		ai_will_do = {
+			base = 100
+		}
+	}
+	deluge_dec_FRA_develop_709 = {
+		icon = GFX_decision_generic_construction
+		fire_only_once = yes
+		days_remove = 75
+		cost = 35
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_francify_madagascar
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			has_full_control_of_state = 709
+		}
+		remove_effect = {
+			709 = {
+				if = {
+					limit = {
+						NOT = {
+							is_core_of = FRA
+						}
+					}
+					add_core_of = FRA
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 2188
+				}
+			}
+		}	
+		ai_will_do = {
+			base = 100
+		}
+	}
+	deluge_dec_FRA_develop_710 = {
+		icon = GFX_decision_generic_construction
+		fire_only_once = yes
+		days_remove = 75
+		cost = 35
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_francify_madagascar
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			has_full_control_of_state = 710
+		}
+		remove_effect = {
+			710 = {
+				if = {
+					limit = {
+						NOT = {
+							is_core_of = FRA
+						}
+					}
+					add_core_of = FRA
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 13019
+				}
+			}
+		}	
+		ai_will_do = {
+			base = 100
+		}
+	}
+	deluge_dec_FRA_develop_713 = {
+		icon = GFX_decision_generic_construction
+		fire_only_once = yes
+		days_remove = 75
+		cost = 35
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_francify_madagascar
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			has_full_control_of_state = 713
+		}
+		remove_effect = {
+			713 = {
+				if = {
+					limit = {
+						NOT = {
+							is_core_of = FRA
+						}
+					}
+					add_core_of = FRA
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 2165
+				}
+			}
+		}	
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_libreville_bata_railway = {
+		icon = GFX_decision_generic_train
+		fire_only_once = yes
+		days_remove = 4
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_railways_in_equatorial_africa
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				controls_province = 5139
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				controls_province = 8244
+			}
+			num_of_available_civilian_factories > 0
+		}
+		remove_effect = {
+			build_railway = {
+				level = 3
+				build_only_on_allied = no
+				path = { 8244 5139 }
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 539
+				state = 297
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_libreville_luanda_railway = {
+		icon = GFX_decision_generic_train
+		fire_only_once = yes
+		days_remove = 15
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_railways_in_equatorial_africa
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				controls_province = 10968
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 539
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 540
+			}
+			num_of_available_civilian_factories > 0
+		}
+		remove_effect = {
+			build_railway = {
+				level = 3
+				build_only_on_allied = no
+				path = { 5139 8207 12975 2115 10968 8219 8248 }
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 539
+				state = 540
+				state = 295
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_malabo_port = {
+		icon = GFX_decision_SWE_set_navy_budget
+		fire_only_once = yes
+		days_remove = 15
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_railways_in_equatorial_africa
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				controls_province = 1903
+			}
+			num_of_available_civilian_factories > 0
+		}
+		remove_effect = {
+			297 = {
+				add_building_construction = {
+					type = naval_base
+					level = 4
+					instant_build = yes
+					province = 1903
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 297
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_equatorial_african_supply_hub = {
+		icon = GFX_decision_generic_operation
+		fire_only_once = yes
+		days_remove = 15
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_railways_in_equatorial_africa
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 539
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 660
+			}
+			num_of_available_civilian_factories > 0
+		}
+		remove_effect = {
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				path = { 5139 10948 3109 6008 12830 11108 3165 }
+			}
+			660 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 3165
+				}
+			}
+			set_country_flag = FRA_flag_built_supply_depot_in_equatorial_africa
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 660
+				state = 539
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_chad_supply_hub = {
+		icon = GFX_decision_generic_operation
+		fire_only_once = yes
+		days_remove = 15
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_railways_in_equatorial_africa
+			}
+		}
+		available = {
+			has_country_flag = FRA_flag_built_supply_depot_in_equatorial_africa
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 660
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 776
+			}
+			num_of_available_civilian_factories > 0
+		}
+		remove_effect = {
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				path = { 11108 1974 1883 3181 4897 }
+			}
+			776 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 4897
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 660
+				state = 776
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_south_congo_supply_hub = {
+		icon = GFX_decision_generic_operation
+		fire_only_once = yes
+		days_remove = 15
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_railways_in_equatorial_africa
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 888
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 295
+			}
+			num_of_available_civilian_factories > 0
+		}
+		remove_effect = {
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				path = { 5117 12945 12896 4128 7716 2024 1731 1929 1516 }
+			}
+			888 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 1516
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 295
+				state = 888
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_north_congo_supply_hub = {
+		icon = GFX_decision_generic_operation
+		fire_only_once = yes
+		days_remove = 15
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_railways_in_equatorial_africa
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 295
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 538
+			}
+			num_of_available_civilian_factories > 0
+		}
+		remove_effect = {
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				path = { 5117 13370 12775 8016 8048 }
+			}
+			538 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 8048
+				}
+			}
+			set_country_flag = FRA_flag_constructed_supply_hun_in_northern_congo
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 295
+				state = 538
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
 	FRA_dec_kenieba_abidjan_railway = {
 		icon = GFX_decision_generic_train
 		fire_only_once = yes
@@ -354,26 +1389,32 @@ FRA_dec_cat_colonial_developement = {
 			}
 		}
 		available = {
-			OR = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
 				has_full_control_of_state = 899
-				any_country = {
-					is_subject_of = FRA
-					has_full_control_of_state = 899
-				}
 			}
-			OR = {
-				has_full_control_of_state = 556
-				any_country = {
+			any_country = {
+				OR = {
+					tag = FRA
 					is_subject_of = FRA
-					has_full_control_of_state = 556
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
 				}
-			}
-			OR = {
 				has_full_control_of_state = 771
-				any_country = {
+			}
+			any_country = {
+				OR = {
+					tag = FRA
 					is_subject_of = FRA
-					has_full_control_of_state = 771
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
 				}
+				has_full_control_of_state = 556
 			}
 			num_of_available_civilian_factories > 0
 		}
@@ -412,19 +1453,23 @@ FRA_dec_cat_colonial_developement = {
 			}
 		}
 		available = {
-			OR = {
-				has_full_control_of_state = 298
-				any_country = {
+			any_country = {
+				OR = {
+					tag = FRA
 					is_subject_of = FRA
-					has_full_control_of_state = 298
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
 				}
-			}
-			OR = {
 				has_full_control_of_state = 771
-				any_country = {
+			}
+			any_country = {
+				OR = {
+					tag = FRA
 					is_subject_of = FRA
-					has_full_control_of_state = 771
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
 				}
+				has_full_control_of_state = 298
 			}
 			num_of_available_civilian_factories > 0
 		}
@@ -462,26 +1507,32 @@ FRA_dec_cat_colonial_developement = {
 			}
 		}
 		available = {
-			OR = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
 				has_full_control_of_state = 699
-				any_country = {
-					is_subject_of = FRA
-					has_full_control_of_state = 699
-				}
 			}
-			OR = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
 				has_full_control_of_state = 768
-				any_country = {
-					is_subject_of = FRA
-					has_full_control_of_state = 768
-				}
 			}
-			OR = {
-				has_full_control_of_state = 272
-				any_country = {
+			any_country = {
+				OR = {
+					tag = FRA
 					is_subject_of = FRA
-					has_full_control_of_state = 272
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
 				}
+				has_full_control_of_state = 272
 			}
 			num_of_available_civilian_factories > 0
 		}
@@ -521,12 +1572,14 @@ FRA_dec_cat_colonial_developement = {
 			}
 		}
 		available = {
-			OR = {
-				controls_province = 5034
-				any_country = {
+			any_country = {
+				OR = {
+					tag = FRA
 					is_subject_of = FRA
-					controls_province = 5034
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
 				}
+				controls_province = 5034
 			}
 			num_of_available_civilian_factories > 2
 			has_country_flag = FRA_flag_build_dakar_laayoune_railway
@@ -567,26 +1620,32 @@ FRA_dec_cat_colonial_developement = {
 			}
 		}
 		available = {
-			OR = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
 				has_full_control_of_state = 899
-				any_country = {
-					is_subject_of = FRA
-					has_full_control_of_state = 899
-				}
 			}
-			OR = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
 				has_full_control_of_state = 272
-				any_country = {
-					is_subject_of = FRA
-					has_full_control_of_state = 272
-				}
 			}
-			OR = {
-				has_full_control_of_state = 296
-				any_country = {
+			any_country = {
+				OR = {
+					tag = FRA
 					is_subject_of = FRA
-					has_full_control_of_state = 296
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
 				}
+				has_full_control_of_state = 296
 			}
 			num_of_available_civilian_factories > 0
 		}
@@ -625,26 +1684,32 @@ FRA_dec_cat_colonial_developement = {
 			}
 		}
 		available = {
-			OR = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
 				has_full_control_of_state = 899
-				any_country = {
-					is_subject_of = FRA
-					has_full_control_of_state = 899
-				}
 			}
-			OR = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
 				has_full_control_of_state = 556
-				any_country = {
-					is_subject_of = FRA
-					has_full_control_of_state = 556
-				}
 			}
-			OR = {
-				has_full_control_of_state = 700
-				any_country = {
+			any_country = {
+				OR = {
+					tag = FRA
 					is_subject_of = FRA
-					has_full_control_of_state = 700
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
 				}
+				has_full_control_of_state = 700
 			}
 			num_of_available_civilian_factories > 0
 		}
@@ -690,6 +1755,15 @@ FRA_dec_cat_colonial_developement = {
 					controls_province = 1909
 				}
 			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				controls_province = 1909
+			}
 			num_of_available_civilian_factories > 2
 		}
 		remove_effect = {
@@ -728,33 +1802,41 @@ FRA_dec_cat_colonial_developement = {
 			}
 		}
 		available = {
-			OR = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
 				has_full_control_of_state = 899
-				any_country = {
-					is_subject_of = FRA
-					has_full_control_of_state = 899
-				}
 			}
-			OR = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
 				has_full_control_of_state = 770
-				any_country = {
-					is_subject_of = FRA
-					has_full_control_of_state = 770
-				}
 			}
-			OR = {
-				has_full_control_of_state = 773
-				any_country = {
+			any_country = {
+				OR = {
+					tag = FRA
 					is_subject_of = FRA
-					has_full_control_of_state = 773
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
 				}
-			}
-			OR = {
 				has_full_control_of_state = 772
-				any_country = {
+			}
+			any_country = {
+				OR = {
+					tag = FRA
 					is_subject_of = FRA
-					has_full_control_of_state = 772
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
 				}
+				has_full_control_of_state = 773
 			}
 			num_of_available_civilian_factories > 0
 		}
@@ -795,19 +1877,23 @@ FRA_dec_cat_colonial_developement = {
 			}
 		}
 		available = {
-			OR = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
 				has_full_control_of_state = 772
-				any_country = {
-					is_subject_of = FRA
-					has_full_control_of_state = 772
-				}
 			}
-			OR = {
-				has_full_control_of_state = 558
-				any_country = {
+			any_country = {
+				OR = {
+					tag = FRA
 					is_subject_of = FRA
-					has_full_control_of_state = 558
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
 				}
+				has_full_control_of_state = 558
 			}
 			num_of_available_civilian_factories > 0
 		}
@@ -845,19 +1931,23 @@ FRA_dec_cat_colonial_developement = {
 			}
 		}
 		available = {
-			OR = {
-				has_full_control_of_state = 773
-				any_country = {
+			any_country = {
+				OR = {
+					tag = FRA
 					is_subject_of = FRA
-					has_full_control_of_state = 773
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
 				}
-			}
-			OR = {
 				has_full_control_of_state = 774
-				any_country = {
+			}
+			any_country = {
+				OR = {
+					tag = FRA
 					is_subject_of = FRA
-					has_full_control_of_state = 774
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
 				}
+				has_full_control_of_state = 773
 			}
 			has_country_flag = FRA_flag_developed_kenieba_lome_railway
 			num_of_available_civilian_factories > 0
@@ -897,19 +1987,23 @@ FRA_dec_cat_colonial_developement = {
 			}
 		}
 		available = {
-			OR = {
-				has_full_control_of_state = 774
-				any_country = {
+			any_country = {
+				OR = {
+					tag = FRA
 					is_subject_of = FRA
-					has_full_control_of_state = 774
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
 				}
-			}
-			OR = {
 				has_full_control_of_state = 902
-				any_country = {
+			}
+			any_country = {
+				OR = {
+					tag = FRA
 					is_subject_of = FRA
-					has_full_control_of_state = 902
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
 				}
+				has_full_control_of_state = 774
 			}
 			num_of_available_civilian_factories > 0
 			has_country_flag = FRA_flag_build_dori_ngigmi
@@ -931,6 +2025,2096 @@ FRA_dec_cat_colonial_developement = {
 			highlight_state_targets = {
 				state = 774
 				state = 902
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_luanda_lusaka_railway = {
+		icon = GFX_decision_generic_train
+		fire_only_once = yes
+		days_remove = 15
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_french_southern_african_infrastructure
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 540
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 981
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 891
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 545
+			}
+			num_of_available_civilian_factories > 0
+		}
+		remove_effect = {
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				path = { 5199 697 10538 1552 2126 12981 13373 8248 }
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 545
+				state = 981
+				state = 891
+				state = 540
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_luanda_walvis_bay_railway = {
+		icon = GFX_decision_generic_train
+		fire_only_once = yes
+		days_remove = 15
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_french_southern_african_infrastructure
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 892
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 540
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 894
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 541
+			}
+			num_of_available_civilian_factories > 0
+		}
+		remove_effect = {
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				path = { 2207 10978 12921 12985 12958 5158 8248 }
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 541
+				state = 894
+				state = 892
+				state = 540
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_beira_nacal_railway = {
+		icon = GFX_decision_generic_train
+		fire_only_once = yes
+		days_remove = 15
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_french_southern_african_infrastructure
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 896
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 897
+			}
+			num_of_available_civilian_factories > 0
+		}
+		remove_effect = {
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				path = { 2123 5164 12971 2120 }
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 896
+				state = 897
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_beira_lourenco_marques_railway = {
+		icon = GFX_decision_generic_train
+		fire_only_once = yes
+		days_remove = 15
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_french_southern_african_infrastructure
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 544
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 896
+			}
+			num_of_available_civilian_factories > 0
+		}
+		remove_effect = {
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				path = { 8245 5177 12935 2120 }
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 896
+				state = 544
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_dar_es_salaam_nacala_railway = {
+		icon = GFX_decision_generic_train
+		fire_only_once = yes
+		days_remove = 15
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_railways_in_eastern_africa
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 546
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 897
+			}
+			num_of_available_civilian_factories > 0
+		}
+		remove_effect = {
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				path = { 2196 8182 12944 2202 2123 }
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 897
+				state = 546
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_supply_hub_in_uganda = {
+		icon = GFX_decision_generic_operation
+		fire_only_once = yes
+		days_remove = 15
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_railways_in_eastern_africa
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 548
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 904
+			}
+			num_of_available_civilian_factories > 0
+		}
+		remove_effect = {
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				path = { 5160 12929 7088 }
+			}
+			548 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 7088
+				}
+			}
+			set_country_flag = FRA_flag_constructed_supply_hun_in_uganda
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 548
+				state = 904
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_port_in_eyl = {
+		icon = GFX_decision_SWE_set_navy_budget
+		fire_only_once = yes
+		days_remove = 15
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_railways_in_eastern_africa
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 268
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 655
+			}
+			num_of_available_civilian_factories > 0
+		}
+		remove_effect = {
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				path = { 12759 12814 4909 10818 }
+			}
+			655 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 10818
+				}
+			}
+			add_victory_points = {
+				province = 10818
+				value = 1
+			}
+			set_country_flag = FRA_flag_constructed_port_in_eyl
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 655
+				state = 268
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_eyl_mogadishu_railway = {
+		icon = GFX_decision_generic_train
+		fire_only_once = yes
+		days_remove = 15
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_railways_in_eastern_africa
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 559
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 655
+			}
+			num_of_available_civilian_factories > 0
+			has_country_flag = FRA_flag_constructed_port_in_eyl
+		}
+		remove_effect = {
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				path = { 12991 5065 12840 10818 }
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 655
+				state = 559
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_connect_congo_and_uganda = {
+		icon = GFX_decision_generic_operation
+		fire_only_once = yes
+		days_remove = 15
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_railways_in_eastern_africa
+				has_completed_focus = FRA_railways_in_equatorial_africa
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 548
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 890
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 538
+			}
+			num_of_available_civilian_factories > 0
+			has_country_flag = FRA_flag_constructed_supply_hun_in_uganda
+			has_country_flag = FRA_flag_constructed_supply_hun_in_northern_congo
+		}
+		remove_effect = {
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				path = { 8048 1950 12847 12783 7088 }
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 538
+				state = 890
+				state = 548
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_supply_hub_in_south_sudan = {
+		icon = GFX_decision_generic_operation
+		fire_only_once = yes
+		days_remove = 15
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_railways_in_eastern_africa
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 904
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 884
+			}
+			num_of_available_civilian_factories > 0
+		}
+		remove_effect = {
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				path = { 5160 11145 10859 10877 }
+			}
+			884 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 10877
+				}
+			}
+			set_country_flag = FRA_flag_constructed_supply_hub_in_south_sudan
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 884
+				state = 904
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_connect_south_sudan_and_north_sudan = {
+		icon = GFX_decision_generic_train
+		fire_only_once = yes
+		days_remove = 15
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_railways_in_eastern_africa
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 884
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 886
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				controls_province = 12806
+			}
+			num_of_available_civilian_factories > 0
+			has_country_flag = FRA_flag_constructed_supply_hub_in_south_sudan
+		}
+		remove_effect = {
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				path = { 10877 12800 12887 1914 12806 }
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 886
+				state = 884
+				state = 551
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_supply_hub_in_central_sudan = {
+		icon = GFX_decision_generic_operation
+		fire_only_once = yes
+		days_remove = 15
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_railways_in_eastern_africa
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 549
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 884
+			}
+			num_of_available_civilian_factories > 0
+			has_country_flag = FRA_flag_constructed_supply_hub_in_south_sudan
+		}
+		remove_effect = {
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				path = { 10877 12744 10827 8052 }
+			}
+			549 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 8052
+				}
+			}
+			set_country_flag = FRA_flag_constructed_supply_hub_in_central_sudan
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 884
+				state = 549
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_connect_central_sudan_and_660 = {
+		icon = GFX_decision_generic_train
+		fire_only_once = yes
+		days_remove = 15
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_railways_in_eastern_africa
+			}
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 549
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 887
+			}
+			any_country = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+					gives_military_access_to = FRA
+					is_in_faction_with = FRA
+				}
+				has_full_control_of_state = 660
+			}
+			num_of_available_civilian_factories > 0
+			has_country_flag = FRA_flag_constructed_supply_hub_in_central_sudan
+			has_country_flag = FRA_flag_built_supply_depot_in_equatorial_africa
+		}
+		remove_effect = {
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				path = { 3165 5084 10857 8052 }
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 660
+				state = 887
+				state = 549
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_gold_extraction_in_tanganyika = {
+		icon = GFX_decision_generic_construction ##change later
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_east_african_steel
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 546
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 546
+				}
+			}
+			num_of_available_civilian_factories > 1
+		}
+		remove_effect = {
+			546 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 546
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_diamonds_extraction_in_tanganyika = {
+		icon = GFX_decision_generic_construction ##change later
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 4
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_east_african_steel
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 546
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 546
+				}
+			}
+			num_of_available_civilian_factories > 3
+		}
+		remove_effect = {
+			546 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 546
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_gold_extraction_in_kenya = {
+		icon = GFX_decision_generic_construction ##change later
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_east_african_steel
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 547
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 547
+				}
+			}
+			num_of_available_civilian_factories > 1
+		}
+		remove_effect = {
+			547 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 547
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_sodium_extraction_in_kenya = {
+		icon = GFX_decision_generic_construction ##change later
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_east_african_steel
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 904
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 904
+				}
+			}
+			num_of_available_civilian_factories > 1
+		}
+		remove_effect = {
+			904 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 904
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_tungsten_extraction_in_uganda = {
+		icon = GFX_decision_tungsten
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_east_african_steel
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 548
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 548
+				}
+			}
+			num_of_available_civilian_factories > 1
+		}
+		remove_effect = {
+			add_resource = {
+				type = tungsten
+				amount = 20
+				state = 548
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 548
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_copper_extraction_in_uganda = {
+		icon = GFX_decision_generic_construction ##change later
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_east_african_steel
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 548
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 548
+				}
+			}
+			num_of_available_civilian_factories > 1
+		}
+		remove_effect = {
+			548 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 548
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_chromium_extraction_in_blue_nile = {
+		icon = GFX_decision_chromium
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_east_african_steel
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 886
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 886
+				}
+			}
+			num_of_available_civilian_factories > 1
+		}
+		remove_effect = {
+			add_resource = {
+				type = chromium
+				amount = 20
+				state = 886
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 886
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_salt_extraction_in_afar = {
+		icon = GFX_decision_generic_construction ##change later
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_east_african_steel
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 908
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 908
+				}
+			}
+			num_of_available_civilian_factories > 1
+		}
+		remove_effect = {
+			908 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 908
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_gold_extraction_in_welega = {
+		icon = GFX_decision_generic_construction ##change later
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_east_african_steel
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 839
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 839
+				}
+			}
+			num_of_available_civilian_factories > 1
+		}
+		remove_effect = {
+			839 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 839
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_gold_extraction_in_gojjam = {
+		icon = GFX_decision_generic_construction ##change later
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_east_african_steel
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 840
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 840
+				}
+			}
+			num_of_available_civilian_factories > 1
+		}
+		remove_effect = {
+			840 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 840
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_gold_extraction_in_sidamo = {
+		icon = GFX_decision_generic_construction ##change later
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_east_african_steel
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 837
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 837
+				}
+			}
+			num_of_available_civilian_factories > 1
+		}
+		remove_effect = {
+			837 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 837
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_salt_extraction_in_somalia = {
+		icon = GFX_decision_generic_construction ##change later
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 4
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_east_african_steel
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 268
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 268
+				}
+			}
+			OR = {
+				has_full_control_of_state = 655
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 655
+				}
+			}
+			num_of_available_civilian_factories > 3
+		}
+		remove_effect = {
+			655 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			268 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 268
+				state = 655
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_salt_extraction_in_eritrea = {
+		icon = GFX_decision_generic_construction ##change later
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_east_african_steel
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 550
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 550
+				}
+			}
+			num_of_available_civilian_factories > 1
+		}
+		remove_effect = {
+			550 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 550
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_potassium_extraction_in_eritrea = {
+		icon = GFX_decision_generic_construction ##change later
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_east_african_steel
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 550
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 550
+				}
+			}
+			num_of_available_civilian_factories > 1
+		}
+		remove_effect = {
+			550 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 550
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_rubber_extraction_in_equateur_province = {
+		icon = GFX_decision_rubber
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_equatorial_african_rubber
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 538
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 538
+				}
+			}
+			num_of_available_civilian_factories > 2
+		}
+		remove_effect = {
+			add_resource = {
+				type = rubber
+				amount = 70
+				state = 538
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 538
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_rubber_extraction_in_stanleyville = {
+		icon = GFX_decision_rubber
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_equatorial_african_rubber
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 718
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 718
+				}
+			}
+			num_of_available_civilian_factories > 2
+		}
+		remove_effect = {
+			add_resource = {
+				type = rubber
+				amount = 70
+				state = 718
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 718
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_rubber_extraction_in_gustafville = {
+		icon = GFX_decision_rubber
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_equatorial_african_rubber
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 295
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 295
+				}
+			}
+			num_of_available_civilian_factories > 2
+		}
+		remove_effect = {
+			add_resource = {
+				type = rubber
+				amount = 30
+				state = 295
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 295
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_rubber_extraction_in_lusambo = {
+		icon = GFX_decision_rubber
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_equatorial_african_rubber
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 888
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 888
+				}
+			}
+			num_of_available_civilian_factories > 2
+		}
+		remove_effect = {
+			add_resource = {
+				type = rubber
+				amount = 30
+				state = 888
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 888
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_rubber_extraction_in_889 = {
+		icon = GFX_decision_rubber
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_equatorial_african_rubber
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 889
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 889
+				}
+			}
+			num_of_available_civilian_factories > 2
+		}
+		remove_effect = {
+			add_resource = {
+				type = rubber
+				amount = 25
+				state = 889
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 889
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_rubber_extraction_near_tshopo_river = {
+		icon = GFX_decision_rubber
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_equatorial_african_rubber
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 890
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 890
+				}
+			}
+			num_of_available_civilian_factories > 2
+		}
+		remove_effect = {
+			add_resource = {
+				type = rubber
+				amount = 60
+				state = 890
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 890
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_rubber_extraction_in_sangha_region = {
+		icon = GFX_decision_rubber
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_equatorial_african_rubber
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 539
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 539
+				}
+			}
+			num_of_available_civilian_factories > 2
+		}
+		remove_effect = {
+			add_resource = {
+				type = rubber
+				amount = 40
+				state = 539
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 539
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_rubber_extraction_in_likouala_region = {
+		icon = GFX_decision_rubber
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_equatorial_african_rubber
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 539
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 539
+				}
+			}
+			num_of_available_civilian_factories > 2
+		}
+		remove_effect = {
+			add_resource = {
+				type = rubber
+				amount = 40
+				state = 539
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 539
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_rubber_extraction_in_ivindo_river_basin = {
+		icon = GFX_decision_rubber
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_equatorial_african_rubber
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 539
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 539
+				}
+			}
+			num_of_available_civilian_factories > 2
+		}
+		remove_effect = {
+			add_resource = {
+				type = rubber
+				amount = 35
+				state = 539
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 539
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_rubber_extraction_in_upper_ogooue_basin = {
+		icon = GFX_decision_rubber
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_equatorial_african_rubber
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 539
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 539
+				}
+			}
+			num_of_available_civilian_factories > 2
+		}
+		remove_effect = {
+			add_resource = {
+				type = rubber
+				amount = 35
+				state = 539
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 539
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_rubber_extraction_in_coastal_regions_of_cameroon = {
+		icon = GFX_decision_rubber
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_equatorial_african_rubber
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 777
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 777
+				}
+			}
+			num_of_available_civilian_factories > 2
+		}
+		remove_effect = {
+			add_resource = {
+				type = rubber
+				amount = 25
+				state = 777
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 777
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_rubber_extraction_in_inner_regions_of_cameroon = {
+		icon = GFX_decision_rubber
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_equatorial_african_rubber
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 777
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 777
+				}
+			}
+			num_of_available_civilian_factories > 2
+		}
+		remove_effect = {
+			add_resource = {
+				type = rubber
+				amount = 20
+				state = 777
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 777
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_rubber_extraction_in_lobaye_prefecture = {
+		icon = GFX_decision_rubber
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_equatorial_african_rubber
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 660
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 660
+				}
+			}
+			num_of_available_civilian_factories > 2
+		}
+		remove_effect = {
+			add_resource = {
+				type = rubber
+				amount = 20
+				state = 660
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 660
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_rubber_extraction_in_prefecture_of_mambere_kadei = {
+		icon = GFX_decision_rubber
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_equatorial_african_rubber
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 660
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 660
+				}
+			}
+			num_of_available_civilian_factories > 2
+		}
+		remove_effect = {
+			add_resource = {
+				type = rubber
+				amount = 20
+				state = 660
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 660
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_rubber_extraction_in_uige_province = {
+		icon = GFX_decision_rubber
+		fire_only_once = yes
+		days_remove = 50
+		cost = 20
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_equatorial_african_rubber
+			}
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 540
+				any_country = {
+					is_subject_of = FRA
+					has_full_control_of_state = 540
+				}
+			}
+			num_of_available_civilian_factories > 2
+		}
+		remove_effect = {
+			add_resource = {
+				type = rubber
+				amount = 25
+				state = 540
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 540
 			}
 		}
 		ai_will_do = {
@@ -2145,7 +5329,7 @@ FRA_dec_cat_modernize_french_army={
 			735 = {
 				is_fully_controlled_by = FRA
 			}
-			20 = {
+			796 = {
 				is_fully_controlled_by = FRA
 			}
 			17 = {
@@ -2158,7 +5342,7 @@ FRA_dec_cat_modernize_french_army={
 			735 = {
 				is_fully_controlled_by = FRA
 			}
-			20 = {
+			796 = {
 				is_fully_controlled_by = FRA
 			}
 			17 = {
@@ -2186,7 +5370,7 @@ FRA_dec_cat_modernize_french_army={
 					province = 11573
 				}
 			}
-			20 = {
+			796 = {
 				add_building_construction = {
 					type = bunker
 					level = 2
@@ -6653,6 +9837,7 @@ FRA_dec_cat_frankish_empire = {
 				controls_state = 31
 				controls_state = 22
 				controls_state = 20
+				controls_state = 796
 				controls_state = 32
 				controls_state = 21
 				controls_state = 851
@@ -6778,6 +9963,7 @@ FRA_dec_cat_frankish_empire = {
 				state = 31
 				state = 22
 				state = 20
+				state = 796
 				state = 32
 				state = 21
 				state = 851
@@ -8132,6 +11318,7 @@ FRA_dec_cat_greater_social_state = {
 				controls_state = 31
 				controls_state = 22
 				controls_state = 20
+				controls_state = 796
 				controls_state = 32
 				controls_state = 21
 				controls_state = 851
@@ -8255,6 +11442,7 @@ FRA_dec_cat_greater_social_state = {
 				state = 26
 				state = 25
 				state = 19
+				state = 796
 				state = 806
 				state = 31
 				state = 22
@@ -8338,6 +11526,7 @@ FRA_dec_cat_greater_social_state = {
 					state = 27
 					state = 26
 					state = 25
+					state = 796
 					state = 19
 					state = 806
 					state = 31
@@ -8399,22 +11588,35 @@ FRA_dec_cat_greater_social_state = {
 	}
 }
 FRA_dec_cat_unite_europe = {
-	FRA_deluge_deat_united_europe_decision = {
+	FRA_deluge_united_europe_decision = {
 		icon = GFX_decision_generic_europe
 		fire_only_once = yes
 		allowed = {
 			original_tag = FRA
 		}
 		visible = {
-			has_completed_focus = FRA_deats_takeover
+			OR = {
+				has_completed_focus = FRA_deats_takeover
+				has_completed_focus = FRA_absolutist_grip
+				has_completed_focus = FRA_the_guarantor
+				has_completed_focus = FRA_the_reformer
+				has_completed_focus = FRA_creation_of_the_parliament
+				has_completed_focus = FRA_anarchist_communist_federation
+				has_completed_focus = FRA_french_section_of_workers_internationale
+			}
 		}
 		available = {
 			FRA = {is_subject = no}
-			has_completed_focus = FRA_deats_takeover
-			has_country_leader = {
-				character = FRA_deluge_marcel_deat
-				ruling_only = yes
+			OR = {
+				has_completed_focus = FRA_deats_takeover
+				has_completed_focus = FRA_absolutist_grip
+				has_completed_focus = FRA_the_guarantor
+				has_completed_focus = FRA_the_reformer
+				has_completed_focus = FRA_creation_of_the_parliament
+				has_completed_focus = FRA_anarchist_communist_federation
+				has_completed_focus = FRA_french_section_of_workers_internationale
 			}
+			has_completed_focus = FRA_european_unification
 			custom_trigger_tooltip = {##Poland
 				tooltip = POL_custom_trigger_tooltip_POL
 				controls_state = 5
@@ -8675,6 +11877,7 @@ FRA_dec_cat_unite_europe = {
 				controls_state = 31
 				controls_state = 22
 				controls_state = 20
+				controls_state = 796
 				controls_state = 32
 				controls_state = 21
 				controls_state = 851
@@ -8783,6 +11986,7 @@ FRA_dec_cat_unite_europe = {
 		cost = 0
 		highlight_states = {
 			highlight_state_targets = {
+				state = 796
 				state = 991
 				state = 116
 				state = 990
@@ -9312,6 +12516,7 @@ FRA_dec_cat_unite_europe = {
 						state = 23
 						state = 24
 						state = 33
+						state = 796
 						state = 27
 						state = 26
 						state = 25
@@ -9350,8 +12555,51 @@ FRA_dec_cat_unite_europe = {
 			}
 			add_political_power = 100
 			hidden_effect = {
-				news_event = {
-					id = deluge_poland_foreign.74
+				if = {
+					limit = {
+						has_completed_focus = FRA_deats_takeover
+					}
+					news_event = {
+						id = deluge_france.93
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							has_completed_focus = FRA_the_guarantor
+							has_completed_focus = FRA_absolutist_grip
+						}
+					}
+					news_event = {
+						id = deluge_france.96
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							has_completed_focus = FRA_the_reformer
+							has_completed_focus = FRA_creation_of_the_parliament
+						}
+					}
+					news_event = {
+						id = deluge_france.97
+					}
+				}
+				if = {
+					limit = {
+						has_completed_focus = FRA_french_section_of_workers_internationale
+					}
+					news_event = {
+						id =deluge_france.99
+					}
+				}
+				if = {
+					limit = {
+						has_completed_focus = FRA_anarchist_communist_federation
+					}
+					news_event = {
+						id = deluge_france.98
+					}
 				}
 				set_country_flag = FRA_flag_formed_eu
 			}
@@ -9648,6 +12896,59 @@ FRA_dec_cat_unite_europe = {
 		}
 		ai_will_do = {
 			base = 100
+		}
+	}
+	FRA_vassalisation_of_eu_members = {
+		target_root_trigger = {
+			has_completed_focus = FRA_european_unification
+			NOT = {
+				has_completed_focus = FRA_deats_takeover
+			}
+			is_subject = no
+		}
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				exists = yes
+				is_subject = no
+				is_in_faction_with = FRA
+				capital_scope = {
+					is_on_continent = europe
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				target_array = FROM.controlled_states
+			}
+		}
+		icon = GFX_decision_eng_trade_unions_demand
+		cost = 20
+		fire_only_once = no
+		days_re_enable = 10
+		days_remove = 30
+		war_with_target_on_complete = yes
+		available = {
+			FROM = {
+				NOT = {
+					has_war_with = ROOT
+				}
+				has_capitulated = no
+			}
+		}
+		complete_effect = {
+			FROM = {
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			FROM = {
+				country_event = {
+					id = deluge_france_foreign.20 #change later
+				}
+			}
 		}
 	}
 }

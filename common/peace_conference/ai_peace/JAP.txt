@@ -1,0 +1,94 @@
+peace_ai_desires = {
+    JAP_puppet_rest = {
+        peace_action_type = { puppet }
+        enable = {
+            FROM.FROM.FROM = {
+				NOT = {
+					OR = {
+						##chinese cities
+						state = 803
+						state = 743
+						state = 765
+						state = 326
+						state = 729
+						state = 728
+						##indochina
+						state = 671
+						state = 286
+						state = 741
+						state = 670
+						##pacific islands
+						state = 638
+						state = 639
+						state = 725
+						state = 643
+						state = 636
+						state = 726
+						state = 642
+						state = 727
+						state = 630
+						state = 629
+						state = 631
+						state = 641
+						state = 270
+						##easter island
+						state = 948
+						##galapagos
+						state = 649
+						#attu island
+						state = 650
+						##canadian island - haida gwaii
+						state = 739
+					}
+				}
+            }
+            ROOT = { tag = JAP }
+        }
+        ai_desire = 300
+    }
+    JAP_states_to_annex = {
+        peace_action_type = take_states
+        enable = {
+            FROM.FROM.FROM = {
+				OR = {
+					##chinese cities
+					state = 803
+					state = 743
+					state = 765
+					state = 326
+					state = 729
+					state = 728
+					##indochina
+					state = 671
+					state = 286
+					state = 741
+					state = 670
+					##pacific islands
+					state = 638
+					state = 639
+					state = 725
+					state = 643
+					state = 636
+					state = 726
+					state = 642
+					state = 727
+					state = 630
+					state = 629
+					state = 631
+					state = 641
+					state = 270
+					##easter island
+					state = 948
+					##galapagos
+					state = 649
+					#attu island
+					state = 650
+					##canadian island - haida gwaii
+					state = 739
+				}
+            }
+            ROOT = { tag = JAP }
+        }
+        ai_desire = 150
+    }
+}
