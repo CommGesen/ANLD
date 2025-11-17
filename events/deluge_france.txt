@@ -3220,6 +3220,10 @@ country_event = {##quebec supports our radicals
 				id = deluge_france.81
 				days = 6
 			}
+			country_event = {
+				id = deluge_france.100
+				days = 30
+			}
 		}
 	}
 }
@@ -3453,11 +3457,32 @@ news_event = {##French Socialists Unite Europe
 	id = deluge_france.99
 	title = deluge_france.99.t
 	desc = deluge_france.99.d
-	picture = GFX_news_event_marcel_deat_2
+	picture = GFX_news_event_french_section_of_workers_internationale_2
 	is_triggered_only = yes
 	major = yes
 	option = {
 		name = deluge_france.99.a
+	}
+}
+country_event = {##event about criticism about Nicolas Chauvin
+	id = deluge_france.100
+	title = deluge_france.100.t
+	desc = deluge_france.100.d
+	picture = GFX_report_event_nicolas_chauvin
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.100.a
+		add_political_power = -45
+	}
+	option = {
+		name = deluge_france.100.b
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.04
+		}
+		add_war_support = -0.03
+		add_stability = -0.01
 	}
 }
 country_event = {##inspection in the army
@@ -7202,7 +7227,7 @@ country_event = {##FRA tries to vassalize Egypt via their overlord - they said n
 	id = deluge_france_foreign.50
 	title = deluge_france_foreign.50.t
 	desc = deluge_france_foreign.50.d
-	picture = GFX_report_event_frenc_soldiers_in_siam
+	picture = GFX_report_event_french_forces_in_egypt
 	is_triggered_only = yes
 	option = {#declare war
 		name = deluge_france_foreign.50.a
@@ -7211,7 +7236,7 @@ country_event = {##FRA tries to vassalize Egypt via their overlord - they said n
 			type = puppet_wargoal_focus
 		}
 		declare_war_on = {
-			target = SIA
+			target = EGY
 			type = puppet_wargoal_focus
 		}
 		ai_chance = {
@@ -7601,7 +7626,7 @@ country_event = {##FRA asks overlord to give vassalage of HOL
 		}
 		FRA = {
 			set_autonomy = {
-				target = SIA
+				target = HOL
 				autonomous_state = autonomy_colony
 				end_wars = yes
 				end_civil_wars = no

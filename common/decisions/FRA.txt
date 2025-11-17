@@ -12615,19 +12615,18 @@ FRA_dec_cat_unite_europe = {
 			original_tag = FRA
 		}
 		visible = {
-			has_completed_focus = FRA_deats_takeover
-			has_country_leader = {
-				character = FRA_deluge_marcel_deat
-				ruling_only = yes
+			OR = {
+				has_completed_focus = FRA_deats_takeover
+				has_completed_focus = FRA_absolutist_grip
+				has_completed_focus = FRA_the_guarantor
+				has_completed_focus = FRA_the_reformer
+				has_completed_focus = FRA_creation_of_the_parliament
+				has_completed_focus = FRA_anarchist_communist_federation
+				has_completed_focus = FRA_french_section_of_workers_internationale
 			}
 		}
 		available = {
 			FRA = {has_country_flag = FRA_flag_formed_eu}
-			has_completed_focus = FRA_deats_takeover
-			has_country_leader = {
-				character = FRA_deluge_marcel_deat
-				ruling_only = yes
-			}
 			custom_trigger_tooltip = {##England, Scotland and Wales
 				tooltip = POL_custom_trigger_tooltip_45
 				controls_state = 127
@@ -12747,19 +12746,18 @@ FRA_dec_cat_unite_europe = {
 			original_tag = POL
 		}
 		visible = {
-			has_completed_focus = FRA_deats_takeover
-			has_country_leader = {
-				character = FRA_deluge_marcel_deat
-				ruling_only = yes
+			OR = {
+				has_completed_focus = FRA_deats_takeover
+				has_completed_focus = FRA_absolutist_grip
+				has_completed_focus = FRA_the_guarantor
+				has_completed_focus = FRA_the_reformer
+				has_completed_focus = FRA_creation_of_the_parliament
+				has_completed_focus = FRA_anarchist_communist_federation
+				has_completed_focus = FRA_french_section_of_workers_internationale
 			}
 		}
 		available = {
 			FRA = {has_country_flag = FRA_flag_formed_eu}
-			has_completed_focus = FRA_deats_takeover
-			has_country_leader = {
-				character = FRA_deluge_marcel_deat
-				ruling_only = yes
-			}
 			controls_state = 119
 			controls_state = 134
 			controls_state = 113
@@ -12803,19 +12801,18 @@ FRA_dec_cat_unite_europe = {
 			original_tag = FRA
 		}
 		visible = {
-			has_completed_focus = FRA_deats_takeover
-			has_country_leader = {
-				character = FRA_deluge_marcel_deat
-				ruling_only = yes
+			OR = {
+				has_completed_focus = FRA_deats_takeover
+				has_completed_focus = FRA_absolutist_grip
+				has_completed_focus = FRA_the_guarantor
+				has_completed_focus = FRA_the_reformer
+				has_completed_focus = FRA_creation_of_the_parliament
+				has_completed_focus = FRA_anarchist_communist_federation
+				has_completed_focus = FRA_french_section_of_workers_internationale
 			}
 		}
 		available = {
 			FRA = {has_country_flag = FRA_flag_formed_eu}
-			has_completed_focus = FRA_deats_takeover
-			has_country_leader = {
-				character = FRA_deluge_marcel_deat
-				ruling_only = yes
-			}
 			controls_state = 101
 			controls_state = 100
 			controls_state = 337
@@ -12864,19 +12861,18 @@ FRA_dec_cat_unite_europe = {
 			original_tag = FRA
 		}
 		visible = {
-			has_completed_focus = FRA_deats_takeover
-			has_country_leader = {
-				character = FRA_deluge_marcel_deat
-				ruling_only = yes
+			OR = {
+				has_completed_focus = FRA_deats_takeover
+				has_completed_focus = FRA_absolutist_grip
+				has_completed_focus = FRA_the_guarantor
+				has_completed_focus = FRA_the_reformer
+				has_completed_focus = FRA_creation_of_the_parliament
+				has_completed_focus = FRA_anarchist_communist_federation
+				has_completed_focus = FRA_french_section_of_workers_internationale
 			}
 		}
 		available = {
 			FRA = {has_country_flag = FRA_flag_formed_eu}
-			has_completed_focus = FRA_deats_takeover
-			has_country_leader = {
-				character = FRA_deluge_marcel_deat
-				ruling_only = yes
-			}
 			controls_state = 183
 		}
 		days_remove = 25
