@@ -12268,6 +12268,7 @@ FRA_dec_cat_unite_europe = {
 		}
 		complete_effect = {
 			set_cosmetic_tag = FRA_revolutionary_europe
+			remove_ideas = FRA_spirit_eu_military_cooperation
 			every_state = {
 				limit = {
 					OR = {
@@ -12944,6 +12945,46 @@ FRA_dec_cat_unite_europe = {
 				country_event = {
 					id = deluge_france_foreign.20 #change later
 				}
+			}
+		}
+	}
+	FRA_integration_of_eu_members = {
+		target_root_trigger = {
+			has_completed_focus = FRA_european_unification
+			NOT = {
+				has_completed_focus = FRA_deats_takeover
+			}
+			is_subject = no
+		}
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				exists = yes
+				is_subject_of = FRA
+				capital_scope = {
+					is_on_continent = europe
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				target_array = FROM.controlled_states
+			}
+		}
+		icon = GFX_decision_eng_trade_unions_support
+		cost = 100
+		fire_only_once = no
+		days_re_enable = 10
+		days_remove = 150
+		available = {
+			FROM = {
+				has_capitulated = no
+			}
+		}
+		remove_effect = {
+			annex_country = {
+				target = FROM
+				transfer_troops = yes
 			}
 		}
 	}

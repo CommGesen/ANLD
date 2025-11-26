@@ -557,7 +557,6 @@
  deluge_french_faction_tech_group_desc:0 ""
  
  ##decisions
- FRA_vassalisation_of_eu_members:0 "Demand submission of [FROM.GetName]"
  FRA_dec_join_FRA_tech_group:0 "Join §OInternational Maria Skłodowska-Curie Institute§!"
  FRA_vassalisation_of_arabia:0 "Demand Vassalisation of §Y[FROM.GetNameWithFlag]§!"
  FRA_vassalisation_of_iran:0 "Demand Vassalisation of §Y[PER.GetNameWithFlag]§!"
@@ -798,6 +797,8 @@
  FRA_dec_salt_extraction_in_eritrea:0 "Salt Extraction in Eritrea"
  FRA_dec_potassium_extraction_in_eritrea:0 "Potassium Extraction in Eritrea"
  FRA_deluge_dec_invite_to_eu:0 "Invite [FROM.GetName] to European Union"
+ FRA_vassalisation_of_eu_members:0 "Demand submission of [FROM.GetName]"
+ FRA_integration_of_eu_members:0 "Integrate [FROM.GetName]"
  
  ##autonomy
  BHU_refused_to_support_bourbon_bhopal_revolt:0 "[BHU.GetName] refused to support Bourbon-Bhopal revolt!"
@@ -826,6 +827,7 @@
  FRA_transfered_egypt:0 "[FROM.GetName] transfered [EGY.GetName] to [FRA.GetName]"
  FRA_vassalized_HOL:0 "[FRA.GetName] vassalized [HOL.GetName]"
  FRA_transfered_holland:0 "[FROM.GetName] transfered [HOL.GetName] to [FRA.GetName]"
+ FRA_vassalized_eu_member:0 "[FRA.GetNonIdeologyName] vassalized [FROM.GetNonIdeologyName]"
  ##relation modifiers:
  FRA_modifier_operation_cartier:0 "Operation Cartier"
  

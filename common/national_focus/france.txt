@@ -441,6 +441,7 @@ focus_tree = {
 				OR = {
 					has_completed_focus = FRA_another_revolution
 					has_completed_focus = FRA_creation_of_the_parliament
+					has_completed_focus = FRA_previous_course
 				}
 			}
 		}
@@ -2141,6 +2142,7 @@ focus_tree = {
 				OR = {
 					has_completed_focus = FRA_march_on_paris
 					has_completed_focus = FRA_another_revolution
+					has_completed_focus = FRA_previous_course
 				}
 			}
 		}
@@ -3290,6 +3292,7 @@ focus_tree = {
 				OR = {
 					has_completed_focus = FRA_march_on_paris
 					has_completed_focus = FRA_creation_of_the_parliament
+					has_completed_focus = FRA_previous_course
 				}
 			}
 		}
@@ -7044,6 +7047,82 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
+		id = FRA_restore_dominion_over_spain
+		icon = GFX_focus_focus_fra_intervention_spain
+		x = -4
+		y = 1
+		prerequisite = { focus = FRA_watchman_of_global_security }
+		relative_position_id = FRA_watchman_of_global_security
+		search_filters = { }
+		cost = 7
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			is_subject = no
+			country_exists = SPR
+			can_declare_war_on = SPR
+			SPR = {
+				NOT = {
+					is_subject_of = FRA
+				}
+				NOT = {
+					has_war_with = FRA
+				}
+				NOT = {
+					is_in_faction_with = FRA
+				}
+				NOT = {
+					OR = {
+						has_country_leader = {
+							character = SPR_deluge_marie_i
+							ruling_only = yes
+						}
+						has_country_leader = {
+							character = SPR_deluge_ronald_i
+							ruling_only = yes
+						}
+						has_country_leader = {
+							character = SPR_emilio_mola
+							ruling_only = yes
+						}
+					}
+				}
+			}
+		}
+		select_effect = {
+			SPR = {
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		completion_reward = {
+			declare_war_on = {
+                target = SPR
+                type = puppet_wargoal_focus
+            }
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		will_lead_to_war_with = SPR
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
 		id = FRA_closer_relations_with_portugal
 		icon = GFX_focus_generic_befriend_monarchist_portugal
 		x = -2
@@ -7398,6 +7477,19 @@ focus_tree = {
 			7 = {
 				add_core_of = FRA
 			}
+			if = {
+				limit = {
+					HOL = {
+						is_subject_of = FRA
+					}
+				}
+				FRA = {
+					annex_country = {
+						target = HOL
+						transfer_troops = yes
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7479,6 +7571,17 @@ focus_tree = {
 		#}
 		available = {
 			is_subject = no
+			OR = {
+				has_completed_focus = FRA_total_control
+				has_completed_focus = FRA_absolutist_grip
+				has_completed_focus = FRA_the_guarantor
+				has_completed_focus = FRA_boulangists_takeover
+				has_completed_focus = FRA_french_social_party
+				has_completed_focus = FRA_proudhon_circle
+				has_completed_focus = FRA_francist_movement
+				has_completed_focus = FRA_fire_movement
+				has_completed_focus = FRA_french_communist_party
+			}
 		}
 		completion_reward = {
 			add_ideas = FRA_spirit_irredentism
@@ -7523,6 +7626,7 @@ focus_tree = {
 				has_completed_focus = FRA_creation_of_the_parliament
 				has_completed_focus = FRA_anarchist_communist_federation
 				has_completed_focus = FRA_french_section_of_workers_internationale
+				has_completed_focus = FRA_french_communist_party
 			}
 		}
 		completion_reward = {
@@ -7562,6 +7666,7 @@ focus_tree = {
 		#}
 		available = {
 			is_subject = no
+			num_faction_members > 4
 		}
 		completion_reward = {
 			add_ideas = FRA_spirit_eu_military_cooperation
@@ -7610,6 +7715,7 @@ focus_tree = {
 		#}
 		available = {
 			is_subject = no
+			num_faction_members > 9
 		}
 		completion_reward = {
 			add_ideas = FRA_spirit_eu_economic_cooperation
@@ -15293,7 +15399,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_faciliating_trade focus = FRA_cooperative_enterprasises }
 		relative_position_id = FRA_faciliating_trade
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { }
 		allow_branch = {
 			

@@ -368,9 +368,9 @@ country_event = {##Abdulmejid II
 		name = deluge_portraits.8.b
 		set_portraits = {
 			character = TUR_abdulmejid_ii
-			army = { large ="GFX_portrait_tur_abdulmejid_ii" }
-			civilian = { large ="GFX_portrait_tur_abdulmejid_ii" }
-			navy = { large ="GFX_portrait_tur_abdulmejid_ii" }
+			army = { large ="GFX_portrait_TUR_abdulmejid_ii_Vanilla" }
+			civilian = { large ="GFX_portrait_TUR_abdulmejid_ii_Vanilla" }
+			navy = { large ="GFX_portrait_TUR_abdulmejid_ii_Vanilla" }
 		}
 		ai_chance = {
 			factor = 1

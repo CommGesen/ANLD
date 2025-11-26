@@ -1311,6 +1311,41 @@ focus_tree = {
 				is_historical_focus_on = yes
 			}
 		}
+		select_effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+					NOT = {
+						is_subject_of = ROOT
+					}
+					OR = {
+						owns_state = 800
+						owns_state = 453
+						owns_state = 446
+						owns_state = 907
+						owns_state = 452
+						owns_state = 447
+						owns_state = 457
+						owns_state = 456
+						owns_state = 552
+						owns_state = 551
+						owns_state = 883
+						owns_state = 783
+						owns_state = 549
+						owns_state = 886
+						owns_state = 884
+						owns_state = 885
+						owns_state = 887
+						owns_state = 783
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
 		completion_reward = {
 			add_named_threat = { threat = 2 name = turkey_claims_egypt }
 			
@@ -1320,31 +1355,38 @@ focus_tree = {
 				}
 				add_claim_by = ROOT
 			}
-			
-			if = {
+			every_country = {
 				limit = {
-					NOT = { has_war_with = FRA }
-					any_state = {
-						is_core_of = EGY
-						is_owned_by = FRA
+					NOT = {
+						tag = ROOT
+					}
+					NOT = {
+						is_subject_of = ROOT
+					}
+					OR = {
+						owns_state = 800
+						owns_state = 453
+						owns_state = 446
+						owns_state = 907
+						owns_state = 452
+						owns_state = 447
+						owns_state = 457
+						owns_state = 456
+						owns_state = 552
+						owns_state = 551
+						owns_state = 883
+						owns_state = 783
+						owns_state = 549
+						owns_state = 886
+						owns_state = 884
+						owns_state = 885
+						owns_state = 887
+						owns_state = 783
 					}
 				}
-				FRA = { country_event = deluge_turkey.4 }
-			}
-			
-			if = {
-				limit = {
-					NOT = { has_war_with = SPR }
-					any_state = {
-						is_core_of = EGY
-						is_owned_by = SPR
-					}
-				}
-				SPR = { country_event = deluge_turkey.7 }
+				
 			}
 		}
-		will_lead_to_war_with = FRA
-		will_lead_to_war_with = SPR
 	}
 	
 	

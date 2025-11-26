@@ -7938,6 +7938,14 @@ country_event = {##FRA invites country to eu
 			}
 			add_ideas = FRA_spirit_eu_military_cooperation
 		}
+		if = {
+			limit = {
+				FRA = {
+					has_completed_focus = FRA_further_cooperation
+				}
+			}
+			add_ideas = FRA_spirit_eu_economic_cooperation
+		}
 		hidden_effect = {
 			news_event = {
 				id = deluge_france_foreign.60
@@ -7994,10 +8002,101 @@ country_event = {##FRA gets info that country rejected the invite
 	desc = deluge_france_foreign.59.d
 	picture = GFX_report_event_european_union_politicians
 	is_triggered_only = yes
-	option = {
+	option = {##do nothing
 		name = deluge_france_foreign.59.a
+		add_political_power = -20
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {##attack
+		name = deluge_france_foreign.59.b
+		declare_war_on = {
+			target = FROM
+			type = puppet_wargoal_focus
+		}
 		ai_chance = {
 			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
 		}
 	}
 }
@@ -8005,12 +8104,279 @@ news_event = {##world info that country joined
 	id = deluge_france_foreign.60
 	title = deluge_france_foreign.60.t
 	desc = deluge_france_foreign.60.d
-	picture = GFX_report_event_european_union_politicians
+	picture = GFX_news_event_european_union_politicians
 	is_triggered_only = yes
 	option = {
 		name = deluge_france_foreign.60.a
 		ai_chance = {
 			base = 30
 		}
+	}
+}
+country_event = {##FRA sends ultimatum to vassalize eu member
+	id = deluge_france_foreign.61
+	title = deluge_france_foreign.61.t
+	desc = deluge_france_foreign.61.d
+	picture = GFX_report_event_european_union_politicians
+	is_triggered_only = yes
+	option = {#yes why not
+		name = deluge_france_foreign.61.a
+		every_country = {
+			limit = {
+				is_subject_of = ROOT
+			}
+			FROM = {
+				set_autonomy = {
+					target = PREV
+					autonomous_state = autonomy_colony
+					end_wars = yes
+					end_civil_wars = no
+				}
+			}
+		}
+		FROM = {
+			hidden_effect = {
+				add_named_threat = {
+					threat = 3
+					name = FRA_vassalized_eu_member
+				}
+			}
+			set_autonomy = {
+				target = ROOT
+				autonomous_state = autonomy_colony
+				end_wars = yes
+				end_civil_wars = no
+			}
+		}
+		hidden_effect = {
+			news_event = {
+				id = deluge_france_foreign.63
+				days = 1
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 10
+				is_major = no
+			}
+			modifier = {
+				add = -10
+				is_major = yes
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {#no why yes
+		name = deluge_france_foreign.61.b
+		hidden_effect = {
+			FROM = { country_event = deluge_france_foreign.62 }
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -10
+				is_major = no
+			}
+			modifier = {
+				add = 10
+				is_major = yes
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = -40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = 40
+			}
+		}
+	}
+}
+country_event = {##FRA tries to vassalize eu member - they said no
+	id = deluge_france_foreign.62
+	title = deluge_france_foreign.62.t
+	desc = deluge_france_foreign.62.d
+	picture = GFX_report_event_european_union_politicians
+	is_triggered_only = yes
+	option = {#declare war
+		name = deluge_france_foreign.62.a
+		declare_war_on = {
+			target = FROM
+			type = puppet_wargoal_focus
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+	option = {#it's not worth it
+		name = deluge_france_foreign.62.b
+		add_political_power = -40
+		add_war_support = -0.02
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio > 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM 
+						ratio < 1.5 
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories > ROOT.num_of_factories }
+				add = 40
+			}
+			modifier = {
+				check_variable = { FROM.num_of_factories < ROOT.num_of_factories }
+				add = -40
+			}
+		}
+	}
+}
+news_event = {##news event that FRA vassalize peacefully eu member
+	id = deluge_france_foreign.63
+	title = deluge_france_foreign.63.t
+	desc = deluge_france_foreign.63.d
+	picture = GFX_news_event_european_union_politicians
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = deluge_france_foreign.63.a
 	}
 }

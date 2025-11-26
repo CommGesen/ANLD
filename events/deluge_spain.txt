@@ -5,9 +5,6 @@ country_event = {##SPR gets info that their king Roland I died
 	desc = deluge_spain.1.d
 	picture = GFX_report_event_roland_bonaparte
 	
-	trigger = {
-		has_character = SPR_deluge_ronald_i
-	}
 	is_triggered_only = yes
 	
 	option = {##woman cannot be a monarch - monarchy abolished, republic established, SPR gets free
@@ -513,9 +510,9 @@ country_event = {#FRA gets info that Spain crowned Sixtus
 	option = {##attack
 		name = deluge_spain.10.b
 		set_global_flag = FRA_attacks_SPR_independence
-		add_political_power = -100
-		add_war_support = -0.1
-		add_stability = -0.1
+		add_political_power = -50
+		add_war_support = -0.05
+		add_stability = -0.05
 		FRA = {
 			declare_war_on = {
 				target = SPR
