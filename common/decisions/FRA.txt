@@ -482,9 +482,9 @@ FRA_dec_cat_foreign_policy = {
 			NOT = {
 				has_country_flag = FRA_flag_15_days_passed_since_completing_vassalization_focus
 			}
-			country_exists = SIA
+			country_exists = HOL
 			HOL = {
-				SIA = {
+				NOT = {
 					is_subject_of = FRA
 				}
 			}
@@ -538,8 +538,162 @@ FRA_dec_cat_foreign_policy = {
 			}
 		}
 	}
+	FRA_vassalisation_of_ireland = {
+		icon = GFX_decision_generic_ireland
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 100
+		days_remove = 60
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				target_array = IRE.controlled_states
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = FRA_flag_15_days_passed_since_completing_vassalization_focus
+			}
+			country_exists = IRE
+			IRE = {
+				NOT = {
+					is_subject_of = FRA
+				}
+			}
+			FRA = {
+				has_completed_focus = FRA_dominion_over_ireland
+			}
+		}
+		available = {
+			NOT = {
+				IRE = {
+					has_war_with = FRA
+				}
+			}
+			NOT = {
+				IRE = {
+					has_capitulated = yes
+				}
+			}
+			is_subject = no
+		}
+		complete_effect = {
+			if = {
+				limit = { IRE = { is_subject = yes } }
+				IRE = {
+					overlord = { country_event = generic.26 }
+				}
+			}
+			IRE = {
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = { IRE = { is_subject = yes } }
+				IRE = {
+					overlord = {
+						country_event = {
+							id = deluge_france_foreign.67
+						}
+					}
+				}
+			}
+			else = {
+				IRE = {
+					country_event = {
+						id = deluge_france_foreign.64
+					}
+				}
+			}
+		}
+	}
+	FRA_vassalisation_of_portugal = {
+		icon = GFX_decision_generic_portugal
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 100
+		days_remove = 60
+		allowed = {
+			tag = FRA
+		}
+		modifier = {
+			
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				target_array = POR.controlled_states
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = FRA_flag_15_days_passed_since_completing_vassalization_focus
+			}
+			country_exists = POR
+			POR = {
+				NOT = {
+					is_subject_of = FRA
+				}
+			}
+			FRA = {
+				has_completed_focus = FRA_restore_dominion_over_portugal
+			}
+		}
+		available = {
+			NOT = {
+				POR = {
+					has_war_with = FRA
+				}
+			}
+			NOT = {
+				POR = {
+					has_capitulated = yes
+				}
+			}
+			is_subject = no
+		}
+		complete_effect = {
+			if = {
+				limit = { POR = { is_subject = yes } }
+				POR = {
+					overlord = { country_event = generic.26 }
+				}
+			}
+			POR = {
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = { POR = { is_subject = yes } }
+				POR = {
+					overlord = {
+						country_event = {
+							id = deluge_france_foreign.73
+						}
+					}
+				}
+			}
+			else = {
+				POR = {
+					country_event = {
+						id = deluge_france_foreign.70
+					}
+				}
+			}
+		}
+	}
 	FRA_dec_annex_luxembourg = {
-		icon = GFX_decision_FIN_stop_motti_tactics ##change later
+		icon = GFX_decision_generic_grand_duchy_of_luxembourg
 		fire_only_once = no
 		days_re_enable = 10
 		days_remove = 35
@@ -603,7 +757,7 @@ FRA_dec_cat_foreign_policy = {
 		}
 	}
 	FRA_dec_demand_luxembourgish_lands = {
-		icon = GFX_decision_FIN_stop_motti_tactics ##change later
+		icon = GFX_decision_generic_grand_duchy_of_luxembourg
 		fire_only_once = no
 		days_re_enable = 10
 		days_remove = 35
@@ -711,7 +865,7 @@ FRA_dec_cat_foreign_policy = {
 		remove_effect = {
 			FROM = {
 				country_event = {
-					id = deluge_france_foreign.12
+					id = deluge_france_foreign.76
 				}
 			}
 			clr_country_flag = FRA_flag_is_demanding_major_subjugation
@@ -12943,7 +13097,7 @@ FRA_dec_cat_unite_europe = {
 		remove_effect = {
 			FROM = {
 				country_event = {
-					id = deluge_france_foreign.20 #change later
+					id = deluge_france_foreign.61
 				}
 			}
 		}

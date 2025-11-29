@@ -7219,7 +7219,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_closer_relations_with_portugal }
 		relative_position_id = FRA_closer_relations_with_portugal
 		search_filters = { }
-		cost = 1
+		cost = 8
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -7233,16 +7233,124 @@ focus_tree = {
 		#}
 		available = {
 			is_subject = no
-			country_exists = POR
-			POR = {
-				is_subject = no
-				NOT = {
-					has_war_with = FRA
+			OR = {
+				AND = {
+					country_exists = POR
+					POR = {
+						NOT = {
+							is_subject_of = ROOT
+						}
+						NOT = {
+							has_war_with = FRA
+						}
+					}
+				}
+				OR = {
+					NOT = {
+						OR = {
+							owns_state = 180
+							any_country = {
+								is_subject_of = ROOT
+								owns_state = 180
+							}
+						}
+					}
+					NOT = {
+						OR = {
+							owns_state = 181
+							any_country = {
+								is_subject_of = ROOT
+								owns_state = 181
+							}
+						}
+					}
+					NOT = {
+						OR = {
+							owns_state = 112
+							any_country = {
+								is_subject_of = ROOT
+								owns_state = 112
+							}
+						}
+					}
+					NOT = {
+						OR = {
+							owns_state = 179
+							any_country = {
+								is_subject_of = ROOT
+								owns_state = 179
+							}
+						}
+					}
+					NOT = {
+						OR = {
+							owns_state = 795
+							any_country = {
+								is_subject_of = ROOT
+								owns_state = 795
+							}
+						}
+					}
+					NOT = {
+						OR = {
+							owns_state = 697
+							any_country = {
+								is_subject_of = ROOT
+								owns_state = 697
+							}
+						}
+					}
+					NOT = {
+						OR = {
+							owns_state = 698
+							any_country = {
+								is_subject_of = ROOT
+								owns_state = 698
+							}
+						}
+					}
+				}
+			}
+		}
+		select_effect = {
+			if = {
+				limit = { POR = { is_subject = yes } 
+					POR = {
+						overlord = { country_event = generic.26 }
+					}
+				}
+				POR = {
+					country_event = {
+						id = generic.26
+					}
 				}
 			}
 		}
 		completion_reward = {
-			
+			if = {
+				limit = { POR = { is_subject = yes } }
+				POR = {
+					overlord = {
+						country_event = {
+							id = deluge_france_foreign.73
+						}
+					}
+				}
+			}
+			else = {
+				POR = {
+					country_event = {
+						id = deluge_france_foreign.70
+					}
+				}
+			}
+			set_country_flag = FRA_flag_15_days_passed_since_completing_vassalization_focus
+			hidden_effect = {
+				country_event = {
+					id = deluge_france.95
+					days = 15
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7308,7 +7416,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_closer_relations_with_ireland }
 		relative_position_id = FRA_closer_relations_with_ireland
 		search_filters = { }
-		cost = 1
+		cost = 8
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -7322,16 +7430,101 @@ focus_tree = {
 		#}
 		available = {
 			is_subject = no
-			country_exists = IRE
-			IRE = {
-				is_subject = no
-				NOT = {
-					has_war_with = FRA
+			OR = {
+				AND = {
+					country_exists = IRE
+					IRE = {
+						NOT = {
+							is_subject_of = ROOT
+						}
+						NOT = {
+							has_war_with = FRA
+						}
+					}
+				}
+				OR = {
+					NOT = {
+						OR = {
+							owns_state = 113
+							any_country = {
+								is_subject_of = ROOT
+								owns_state = 113
+							}
+						}
+					}
+					NOT = {
+						OR = {
+							owns_state = 135
+							any_country = {
+								is_subject_of = ROOT
+								owns_state = 135
+							}
+						}
+					}
+					NOT = {
+						OR = {
+							owns_state = 134
+							any_country = {
+								is_subject_of = ROOT
+								owns_state = 134
+							}
+						}
+					}
+					NOT = {
+						OR = {
+							owns_state = 119
+							any_country = {
+								is_subject_of = ROOT
+								owns_state = 119
+							}
+						}
+					}
+				}
+			}
+		}
+		select_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = IRE
+						OR = {
+							owns_state = 113
+							owns_state = 135
+							owns_state = 134
+							owns_state = 119
+						}
+					}
+				}
+				country_event = {
+					id = generic.26
 				}
 			}
 		}
 		completion_reward = {
-			
+			if = {
+				limit = { IRE = { is_subject = yes } }
+				IRE = {
+					overlord = {
+						country_event = {
+							id = deluge_france_foreign.67
+						}
+					}
+				}
+			}
+			else = {
+				IRE = {
+					country_event = {
+						id = deluge_france_foreign.64
+					}
+				}
+			}
+			set_country_flag = FRA_flag_15_days_passed_since_completing_vassalization_focus
+			hidden_effect = {
+				country_event = {
+					id = deluge_france.95
+					days = 15
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7342,6 +7535,7 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = yes
+		will_lead_to_war_with = IRE
 	}
 	focus = {
 		id = FRA_demand_netherlands_submission
@@ -7365,11 +7559,73 @@ focus_tree = {
 		#}
 		available = {
 			is_subject = no
-			country_exists = HOL
-			HOL = {
-				is_subject = no
-				NOT = {
-					has_war_with = FRA
+			OR = {
+				AND = {
+					country_exists = HOL
+					HOL = {
+						NOT = {
+							is_subject_of = ROOT
+						}
+						NOT = {
+							has_war_with = FRA
+						}
+					}
+				}
+				OR = {
+					NOT = {
+						OR = {
+							owns_state = 7
+							any_country = {
+								is_subject_of = ROOT
+								owns_state = 7
+							}
+						}
+					}
+					NOT = {
+						OR = {
+							owns_state = 36
+							any_country = {
+								is_subject_of = ROOT
+								owns_state = 36
+							}
+						}
+					}
+					NOT = {
+						OR = {
+							owns_state = 35
+							any_country = {
+								is_subject_of = ROOT
+								owns_state = 35
+							}
+						}
+					}
+					NOT = {
+						OR = {
+							owns_state = 6
+							any_country = {
+								is_subject_of = ROOT
+								owns_state = 6
+							}
+						}
+					}
+					NOT = {
+						OR = {
+							owns_state = 977
+							any_country = {
+								is_subject_of = ROOT
+								owns_state = 977
+							}
+						}
+					}
+					NOT = {
+						OR = {
+							owns_state = 784
+							any_country = {
+								is_subject_of = ROOT
+								owns_state = 784
+							}
+						}
+					}
 				}
 			}
 		}
@@ -7551,8 +7807,8 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_irredentism
-		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = 1
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 5
 		y = 1
 		prerequisite = { focus = FRA_shared_scientific_projects }
 		relative_position_id = FRA_shared_scientific_projects
@@ -7585,6 +7841,660 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = FRA_spirit_irredentism
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_italian_submission
+		icon = GFX_focus_attack_italy
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_irredentism }
+		relative_position_id = FRA_irredentism
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			is_subject = no
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_croatian_submission
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_italian_submission }
+		relative_position_id = FRA_italian_submission
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			is_subject = no
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_austrian_submission
+		icon = GFX_focus_generic_attack_austria
+		x = -2
+		y = 1
+		prerequisite = { focus = FRA_irredentism }
+		relative_position_id = FRA_irredentism
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			is_subject = no
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_dominium_of_southern_slavs
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 2
+		prerequisite = { focus = FRA_austrian_submission }
+		prerequisite = { focus = FRA_croatian_submission }
+		relative_position_id = FRA_austrian_submission
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			is_subject = no
+		}
+		select_effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+					NOT = {
+						is_subject_of = ROOT
+					}
+					OR = {
+						owns_state = 102
+						owns_state = 853
+						owns_state = 736
+						owns_state = 852
+						owns_state = 109
+						owns_state = 103
+						owns_state = 970
+						owns_state = 104
+						owns_state = 107
+						owns_state = 105
+						owns_state = 45
+						owns_state = 151
+						owns_state = 731
+						owns_state = 847
+						owns_state = 108
+						owns_state = 1020
+						owns_state = 801
+						owns_state = 934
+						owns_state = 805
+						owns_state = 44
+						owns_state = 106
+						owns_state = 211
+						owns_state = 48
+						owns_state = 212
+						owns_state = 77
+						owns_state = 971
+						owns_state = 184
+						owns_state = 341
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 50
+			unlock_decision_category_tooltip = FRA_dominion_of_southern_slavs_tt
+			every_country = {
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+					NOT = {
+						is_subject_of = ROOT
+					}
+					OR = {
+						owns_state = 102
+						owns_state = 853
+						owns_state = 736
+						owns_state = 852
+						owns_state = 109
+						owns_state = 103
+						owns_state = 970
+						owns_state = 104
+						owns_state = 107
+						owns_state = 105
+						owns_state = 45
+						owns_state = 151
+						owns_state = 731
+						owns_state = 847
+						owns_state = 108
+						owns_state = 1020
+						owns_state = 801
+						owns_state = 934
+						owns_state = 805
+						owns_state = 44
+						owns_state = 106
+						owns_state = 211
+						owns_state = 48
+						owns_state = 212
+						owns_state = 77
+						owns_state = 971
+						owns_state = 184
+						owns_state = 341
+					}
+				}
+				ROOT = {
+					create_wargoal = {
+						type = take_state_focus
+						target = PREV
+						generator = { 102 853 736 852 109 103 970 104 107 105 45 151 731 847 108 1020 801 934 805 44 106 211 48 212 77 971 184 341}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_hungarian_submission
+		icon = GFX_focus_generic_attack_hungary
+		x = -4
+		y = 1
+		prerequisite = { focus = FRA_irredentism }
+		relative_position_id = FRA_irredentism
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			is_subject = no
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_reorganize_the_danube
+		icon = GFX_focus_AUS_the_danubian_federation
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_hungarian_submission }
+		prerequisite = { focus = FRA_austrian_submission }
+		relative_position_id = FRA_hungarian_submission
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = generic_custom_trigger_tooltip_1
+				always = no
+			}
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_claim_eastern_rhilenad
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 2
+		y = 1
+		prerequisite = { focus = FRA_irredentism }
+		relative_position_id = FRA_irredentism
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			is_subject = no
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_german_submission
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_claim_eastern_rhilenad }
+		relative_position_id = FRA_claim_eastern_rhilenad
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			is_subject = no
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_restore_duchy_of_warsaw
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 4
+		y = 1
+		prerequisite = { focus = FRA_irredentism }
+		relative_position_id = FRA_irredentism
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			is_subject = no
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_bring_back_eastern_states
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_restore_duchy_of_warsaw }
+		relative_position_id = FRA_restore_duchy_of_warsaw
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			is_subject = no
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_danish_vassalization
+		icon = GFX_focus_generic_attack_denmark
+		x = 6
+		y = 1
+		prerequisite = { focus = FRA_irredentism }
+		relative_position_id = FRA_irredentism
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			is_subject = no
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_swedish_vassalization
+		icon = GFX_focus_generic_attack_sweden
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_danish_vassalization }
+		relative_position_id = FRA_danish_vassalization
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			is_subject = no
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_finish_old_foe
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_bring_back_eastern_states focus = FRA_swedish_vassalization}
+		relative_position_id = FRA_bring_back_eastern_states
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			is_subject = no
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_claim_western_switzerland
+		icon = GFX_focus_attack_switzerland
+		x = 8
+		y = 1
+		prerequisite = { focus = FRA_irredentism }
+		relative_position_id = FRA_irredentism
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			is_subject = no
+		}
+		select_effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = FRA
+					}
+					NOT = {
+						is_subject_of = FRA
+					}
+					OR = {
+						owns_state = 802
+						owns_state = 845
+					}
+				}
+				country_event = {
+					id = generic.26
+				}
+			}
+		}
+		completion_reward = {
+			add_state_claim = 802
+			add_state_claim = 845
+			every_country = {
+				limit = {
+					NOT = {
+						tag = FRA
+					}
+					NOT = {
+						is_subject_of = FRA
+					}
+					OR = {
+						owns_state = 802
+						owns_state = 845
+					}
+				}
+				FRA = {
+					create_wargoal = {
+						type = take_state_focus
+						target = PREV
+						generator = { 802 845 }
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7781,7 +8691,7 @@ focus_tree = {
 	focus = {
 		id = FRA_renovate_ministry_of_colonies
 		icon = GFX_focus_generic_outre_mer_badge
-		x = 50
+		x = 58
 		y = 0
 		#prerequisite = { focus = }
 		#relative_position_id = 
@@ -8136,12 +9046,86 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_notre_mer
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_mediterranean_sea_focus
 		x = 0
 		y = 6
 		prerequisite = { focus = FRA_fortify_malta }
 		prerequisite = { focus = FRA_irredentism }
 		relative_position_id = FRA_fortify_malta
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_state_claim = 183
+			add_state_claim = 182
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_demand_crete
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = -1
+		y = 1
+		prerequisite = { focus = FRA_notre_mer }
+		relative_position_id = FRA_notre_mer
+		search_filters = { }
+		cost = 5
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_demand_cyprus
+		icon = GFX_focus_SOV_ivan_plays_baseball
+		x = 1
+		y = 1
+		prerequisite = { focus = FRA_notre_mer }
+		relative_position_id = FRA_notre_mer
 		search_filters = { }
 		cost = 5
 		#mutually_exclusive = { focus = }
@@ -13296,7 +14280,7 @@ focus_tree = {
 	focus = {
 		id = FRA_devaluate_the_franc
 		icon = GFX_focus_fra_devalue_the_franc
-		x = 85
+		x = 92
 		y = 0
 		#prerequisite = { focus =  }
 		#relative_position_id = 
@@ -17409,7 +18393,7 @@ focus_tree = {
 	focus = {
 		id = FRA_lessons_of_senussi_campaign
 		icon = GFX_focus_generic_senussi_planning
-		x = 117
+		x = 124
 		y = 0
 		#prerequisite = { focus =  }
 		#relative_position_id = 
@@ -17755,7 +18739,12 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			has_intelligence_agency = yes
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				has_intelligence_agency = yes
+			}
 		}
 		completion_reward = {
 			if = {

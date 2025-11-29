@@ -564,6 +564,7 @@
  FRA_vassalisation_of_siam:0 "Demand Vassalisation of §Y[SIA.GetNameWithFlag]§!"
  FRA_vassalisation_of_egypt:0 "Demand Vassalisation of §Y[EGY.GetNameWithFlag]§!"
  FRA_vassalisation_of_holland:0 "Demand Vassalisation of §Y[HOL.GetNameWithFlag]§!"
+ FRA_vassalisation_of_ireland:0 "Demand Vassalisation of §Y[IRE.GetNameWithFlag]§!"
  FRA_dec_cat_foreign_policy:0 "Foreign Policy"
  FRA_dec_annex_luxembourg:0 "Demand annexation of [BEL.GetName]"
  FRA_dec_demand_luxembourgish_lands:0 "Demand Luxembourgish lands from [FROM.GetName]"
@@ -828,6 +829,12 @@
  FRA_vassalized_HOL:0 "[FRA.GetName] vassalized [HOL.GetName]"
  FRA_transfered_holland:0 "[FROM.GetName] transfered [HOL.GetName] to [FRA.GetName]"
  FRA_vassalized_eu_member:0 "[FRA.GetNonIdeologyName] vassalized [FROM.GetNonIdeologyName]"
+ FRA_vassalized_IRE:0 "[FRA.GetName] vassalized [IRE.GetName]"
+ FRA_transfered_ireland:0 "[FROM.GetName] transfered [IRE.GetName] to [FRA.GetName]"
+ FRA_vassalized_POR:0 "[FRA.GetName] vassalized [POR.GetName]"
+ FRA_transfered_portugal:0 "[FROM.GetName] transfered [POR.GetName] to [FRA.GetName]"
+ FRA_vassalized_major:0 "[FRA.GetName] vassalized [ROOT.GetName]"
+ 
  ##relation modifiers:
  FRA_modifier_operation_cartier:0 "Operation Cartier"
  
