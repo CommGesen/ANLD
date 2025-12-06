@@ -1,5 +1,5 @@
 characters={
-	##this stupid guy Clemenceau
+	##this guy Clemenceau
 	FRA_deluge_georges_clemenceau={
 		name=FRA_deluge_georges_clemenceau_name
 		portraits={
@@ -4828,5 +4828,15 @@ characters={
 				large = GFX_portrait_FRA_charles_hueber
 			}
 		}
+		#collaborationist who gets a leader role in on_actions
+	}
+	FRA_deluge_joseph_de_montmorency_beaumont = {##Joseph de Montmorency-Beaumont
+		name = FRA_deluge_joseph_de_montmorency_beaumont_name
+		portraits = {
+			army = {
+				large = GFX_portrait_FRA_joseph_de_montmorency_beaumont_name
+			}
+		}
+		#leader of dominion of southern slavs
 	}
 }

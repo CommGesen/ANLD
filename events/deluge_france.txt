@@ -8272,6 +8272,14 @@ country_event = {##FRA tries to vassalize eu member - they said no
 	is_triggered_only = yes
 	option = {#declare war
 		name = deluge_france_foreign.62.a
+		if = {
+			limit = {
+				FROM = {
+					is_in_faction_with = ROOT
+				}
+			}
+			remove_from_faction = FROM
+		}
 		declare_war_on = {
 			target = FROM
 			type = puppet_wargoal_focus

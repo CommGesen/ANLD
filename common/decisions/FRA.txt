@@ -34,6 +34,370 @@ foreign_politics = {
 	}
 }
 FRA_dec_cat_foreign_policy = {
+	FRA_dec_dominion_of_southern_slavs = {
+		icon = GFX_decision_generic_grand_duchy_of_luxembourg #change later
+		fire_only_once = yes
+		cost = 0
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_dominium_of_southern_slavs
+		}
+		available = {
+			custom_trigger_tooltip = {##Territories highlighted
+				tooltip = generic_custom_trigger_tooltip_2
+				102 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				853 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				852 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				736 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				103 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				970 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				104 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				109 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				151 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				107 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				45 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				847 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				108 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				801 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				105 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				934 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				44 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				805 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				1020 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				731 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				184 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				341 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				212 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				211 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				106 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				48 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				77 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+				971 = {
+					controller = {
+						OR = {
+							tag = FRA
+							is_subject_of = FRA
+						}
+					}
+				}
+			}
+			OR = {
+				NOT = {
+					country_exists = YUG
+				}
+				YUG = {
+					is_subject_of = ROOT
+				}
+			}
+			is_subject = no
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 971
+				state = 77
+				state = 48
+				state = 106
+				state = 212
+				state = 211
+				state = 341
+				state = 184
+				state = 731
+				state = 1020
+				state = 805
+				state = 102
+				state = 853
+				state = 852
+				state = 736
+				state = 103
+				state = 970
+				state = 847
+				state = 104
+				state = 109
+				state = 151
+				state = 107
+				state = 45
+				state = 108
+				state = 801
+				state = 105
+				state = 934
+				state = 44
+			}
+		}
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_core_of = YUG
+				}
+				remove_core_of = YUG
+			}
+			every_state = {
+				limit = {
+					OR = {
+						state = 971
+						state = 77
+						state = 48
+						state = 106
+						state = 212
+						state = 211
+						state = 341
+						state = 184
+						state = 731
+						state = 1020
+						state = 805
+						state = 102
+						state = 853
+						state = 852
+						state = 736
+						state = 103
+						state = 970
+						state = 847
+						state = 104
+						state = 109
+						state = 151
+						state = 107
+						state = 45
+						state = 108
+						state = 801
+						state = 105
+						state = 934
+						state = 44
+					}
+				}
+				transfer_state_to = YUG
+				add_core_of = YUG
+			}
+			set_autonomy = {
+				target = YUG
+				autonomous_state = autonomy_dominion
+				end_wars = no
+				end_civil_wars = no
+			}
+			every_possible_country = {
+				limit = { has_character = FRA_deluge_joseph_de_montmorency_beaumont }
+				random_character = {
+					limit = { is_character = FRA_deluge_joseph_de_montmorency_beaumont }
+					set_nationality = YUG
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = FRA_towards_republic
+				}
+				YUG = {
+					set_cosmetic_tag = YUG_FRA_republican
+				}
+			}
+			else = {
+				YUG = {
+					set_cosmetic_tag = YUG_FRA_monarchist
+				}
+				add_country_leader_role = {
+					character = FRA_deluge_joseph_de_montmorency_beaumont
+					promote_leader = yes
+					country_leader = {
+						ideology = nationalist_stratoracy_ideology
+						expire = "1999.1.1.1"
+						traits = { }
+					}
+				}
+				##add more later
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
 	FRA_deluge_dec_invite_to_eu = {
 		target_root_trigger = {
 			has_completed_focus = FRA_expand_european_cooperation

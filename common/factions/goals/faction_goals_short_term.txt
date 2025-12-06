@@ -1,238 +1,3 @@
-#category = short_term medium_term or long_term
-# ROOT is faction leader, FROM is faction member who opens UI and views goals, completed/cancel/complete_effect do not have FROM scopes
-
-
-######################################################################
-
-###  ##   ##  ### ###  ##  #  #      ## ###  ###  ##  ### ### ###  ##  
-#   #  # #  #  #   #  #  # ## #     #   #  # #   #  #  #  #    #  #  # 
-##  #### #     #   #  #  # # ##      #  ###  ##  #     #  ##   #  #    
-#   #  # #  #  #   #  #  # #  #       # #    #   #  #  #  #    #  #  # 
-#   #  #  ##   #  ###  ##  #  #     ##  #    ###  ##  ### #   ###  ##  
-
-######################################################################
-
-
- ##  #   # ###  ## 
-#  #  # #   #  #   
-####   #    #   #  
-#  #  # #   #    # 
-#  # #   # ### ##  
-
-
-faction_goal_one_germany = {
-	name = one_germany_goal_name
-	description = one_germany_goal_desc
-	category = short_term
-	group = FOCUS_FILTER_ANNEXATION
-	visible = {
-		FROM = {
-			original_tag = GER
-		}
-	}
-	cancel = { 
-		FROM = {
-			NOT = { has_government = fascism }
-		}
-	}
-	completed = {
-		any_country_with_original_tag = {
-			original_tag_to_check = AUS
-			exists = no 
-		}
-		any_country_with_original_tag = {
-			original_tag_to_check = GER
-			controls_state = 4
-		}
-	}
-	complete_effect = {
-		add_faction_power_projection = 50
-		custom_effect_tooltip = THE_FACTION_LEADER
-		add_faction_initiative = 1
-		add_stability = 0.05
-	}
-	ai_will_do = {
-		base = 10
-	}
-}
-
-
-#  #  ##  ##  
-#  # #   #  # 
-#  #  #  #### 
-#  #   # #  # 
- ##  ##  #  # 
-
-
-faction_goal_building_up_guam = {
-	name = building_up_guam_goal_name
-	description = building_up_guam_goal_desc
-	category = short_term
-	group = FOCUS_FILTER_CONSOLIDATION
-	visible = {
-		FROM = { tag = USA}
-	}
-	cancel = { 
-		FROM = { NOT = { controls_state = 638 } }
-	}
-	completed = {
-		638 = { naval_base > 2 }
-	}
-	complete_effect = {
-		add_faction_power_projection = 100 
-		custom_effect_tooltip = THE_FACTION_LEADER
-		add_faction_initiative = 1
-		add_war_support = 0.02
-	}
-	ai_will_do = {
-		base = 10
-	}
-}
-
-
-### #  # ###      ##  #   #   ### ###  ## 
- #  #  # #       #  # #   #    #  #   #   
- #  #### ##      #### #   #    #  ##   #  
- #  #  # #       #  # #   #    #  #     # 
- #  #  # ###     #  # ### ### ### ### ## 
-
-
-### none!
-
-
- ##  #  # ### #  #  ##  
-#  # #  #  #  ## # #  # 
-#    ####  #  # ## #### 
-#  # #  #  #  #  # #  # 
- ##  #  # ### #  # #  # 
-
-
-faction_goal_guerilla_expansion = {
-	name = guerilla_expansion_goal_name
-	description = guerilla_expansion_goal_desc
-	category = short_term
-	group = FOCUS_FILTER_POLITICAL_CHARACTER
-	allowed = {
-	}
-	visible = {
-		FROM = {
-			has_war = yes
-			is_literally_china = yes
-		}
-	}
-	completed = {
-		custom_trigger_tooltip = {
-			tooltip = GUERILLA_TOTAL_ABOVE_THRESHOLD
-			check_variable = { global.guerilla_counter > 4 }
-		}
-	}
-	complete_effect = {
-		add_faction_power_projection = 100
-		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = THE_FACTION_LEADER
-		add_faction_initiative = 1
-		custom_effect_tooltip = generic_skip_one_line_tt
-		every_collection_element = {
-			input = {
-				input = game:scope
-				operators =  { 
-					faction_members 
-					limit = {
-						check_variable = { THIS.guerilla_counter > 2 }
-					}
-				}
-				name = GUERILLA_ABOVE_THRESHOLD
-			}
-			add_faction_influence_ratio = 0.2
-			add_war_support = 0.05
-		}
-	}
-	ai_will_do = {
-		base = 3 # Pretty much everyone should want to do this
-		modifier = {
-			add = 2 # PRC cares more
-			original_tag = PRC
-		}
-	}
-}
-
-faction_goal_north_subjugated = {
-	name = faction_goal_north_subjugated_name
-	description = faction_goal_north_subjugated_desc
-	category = short_term
-	group = FOCUS_FILTER_ANNEXATION
-	visible = {
-		FROM = {
-			original_tag = CHI
-			has_faction_template = faction_template_chinese_united_front 
-			NOT = {
-				has_country_flag = CHI_tour_the_south_flag
-				has_country_flag = CHI_tour_the_west_flag
-			}
-		}
-	}
-	available = {
-		FROM = { has_completed_focus = CHI_tour_the_north }
-	}
-	completed = {
-		NXM = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-		SHX = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-		GSM = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-		HBC = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-		XIC = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-		SND = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-
-	}
-	complete_effect = {
-		add_faction_power_projection = 50
-		every_collection_element = {
-			input = {
-				input = game:scope
-				operators =  { 
-					faction_members
-					limit = {
-						is_subject = yes
-					}
-				}
-				
-				name = ALL_FACTION_MEMBERS
-			}
-			custom_effect_tooltip = ALL_FACTION_MEMBERS
-			add_timed_idea = {
-				idea = idea_CHI_central_government_integration_pressure
-				days = 365
-			}
-		}
-	}
-	ai_will_do = {
-		base = 1
-	}
-}
-
 faction_goal_unlock_research = {
 	name = faction_goal_unlock_research_name
 	description = faction_goal_unlock_research_desc
@@ -308,7 +73,6 @@ faction_goal_unlock_research = {
 		base = 1000 # They should always do this if they can
 	}
 }
-
 faction_goal_unlock_military = {
 	name = faction_goal_unlock_military_name
 	description = faction_goal_unlock_military_desc
@@ -384,142 +148,6 @@ faction_goal_unlock_military = {
 		base = 1000 # They should always do this if they can
 	}
 }
-
-faction_goal_west_subjugated = {
-	name = faction_goal_west_subjugated_name
-	description = faction_goal_west_subjugated_desc
-	category = short_term
-	group = FOCUS_FILTER_ANNEXATION
-	visible = {
-		FROM = {
-			original_tag = CHI
-			has_faction_template = faction_template_chinese_united_front 
-			NOT = {
-				has_country_flag = CHI_tour_the_south_flag
-				has_country_flag = CHI_tour_the_north_flag
-			}
-		}
-	}
-	available = {
-		FROM = { has_completed_focus = CHI_tour_the_west }
-	}
-	completed = {
-		XSM = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-		KHM = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-		SIK = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-		SIC = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-	}
-	complete_effect = {
-		add_faction_power_projection = 50
-		every_collection_element = {
-			input = {
-				input = game:scope
-				operators =  { 
-					faction_members
-					limit = {
-						is_subject = yes
-					}
-				}
-				
-				name = ALL_FACTION_MEMBERS
-			}
-			custom_effect_tooltip = ALL_FACTION_MEMBERS
-			add_timed_idea = {
-				idea = idea_CHI_central_government_integration_pressure
-				days = 365
-			}
-		}
-	}
-	ai_will_do = {
-		base = 1
-	}
-}
-
-faction_goal_south_subjugated = {
-	name = faction_goal_south_subjugated_name
-	description = faction_goal_south_subjugated_desc
-	group = FOCUS_FILTER_ANNEXATION
-	category = short_term
-	visible = {
-		FROM = {
-			original_tag = CHI
-			has_faction_template = faction_template_chinese_united_front 
-			NOT = {
-				has_country_flag = CHI_tour_the_north_flag
-				has_country_flag = CHI_tour_the_west_flag
-			}
-		}
-	}
-	available = {
-		FROM = { has_completed_focus = CHI_tour_the_south }
-	}
-	completed = {
-		GDC = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-		GXC = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-		YUN = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-	}
-	complete_effect = {
-		add_faction_power_projection = 50
-		every_collection_element = {
-			input = {
-				input = game:scope
-				operators =  { 
-					faction_members
-					limit = {
-						is_subject = yes
-					}
-				}
-				
-				name = ALL_FACTION_MEMBERS
-			}
-			custom_effect_tooltip = ALL_FACTION_MEMBERS
-			add_timed_idea = {
-				idea = idea_CHI_central_government_integration_pressure
-				days = 365
-			}
-		}
-	}
-	ai_will_do = {
-		base = 1
-	}
-}
-
-
- ###  ##  ###   ##  #  # 
-   # #  # #  # #  # ## # 
-   # #### ###  #### # ## 
-#  # #  # #    #  # #  # 
- ##  #  # #    #  # #  # 
-
-
 faction_goal_coastal_security = {
 	name = coastal_security_goal_name
 	description = coastal_security_goal_desc
@@ -529,7 +157,7 @@ faction_goal_coastal_security = {
 	}
 	visible = {
 		FROM = {
-			original_tag = JAP
+			tag = JAP
 		}
 	}
 	completed = {
@@ -562,119 +190,6 @@ faction_goal_coastal_security = {
 		}
 	}
 }
-
-
- ##  ##  #   # ### ### ###     #  # #  # ###  ##  #  # 
-#   #  # #   #  #  #    #      #  # ## #  #  #  # ## # 
- #  #  #  # #   #  ##   #      #  # # ##  #  #  # # ## 
-  # #  #  # #   #  #    #      #  # #  #  #  #  # #  # 
-##   ##    #   ### ###  #       ##  #  # ###  ##  #  # 
-
-
-#faction_goal_production_quotas = {
-#	name = production_quotas_goal_name
-#	description = production_quotas_goal_desc
-#	category = short_term
-#	allowed = {
-#		tag = SOV
-#	}
-#	completed = {
-#		
-#		custom_trigger_tooltip = {
-#			tooltip = "TODO Count faction Equipment - tanks - Infantry EQ - Planes"
-#			check_variable = { ROOT.num_equipment@infantry_equipment > 1000}
-#		}
-#		#count_in_collection = {
-#		#	collection = {
-#		#		input = game:scope
-#		#		operators = { faction_members }
-#		#		name = FACTION_NAME
-#		#	}
-#		#	equipment = { infantry_equipment }
-#		#	size > 50000
-#		#}
-#		
-#	}
-#	complete_effect = {
-#		add_faction_power_projection = 200
-#		custom_effect_tooltip = generic_skip_one_line_tt
-#		custom_effect_tooltip = INFLUENCE_ABOVE_30_PERCENT
-#		every_faction_member = {
-#			limit = { faction_influence_ratio > 0.3}
-#			add_political_power = 75
-#		}
-#	}
-#	ai_will_do = {
-#		base = 1
-#		modifier = {
-#			add = 1
-#			date < 1940.1.1
-#		}
-#	}
-#}
-
-faction_goal_stall_the_fascist_threat = {
-	name = stall_the_fascist_threat_goal_name
-	description = stall_the_fascist_threat_goal_desc
-	group = FOCUS_FILTER_INTERNAL_AFFAIRS
-	category = short_term
-	allowed = {
-	}
-	visible = {
-		date < 1938.6.1
-		FROM = {
-			original_tag = SOV
-		}
-	}
-	completed = {
-		OR = {
-			AND = {
-				date > 1939.1.1
-				NOT = { has_global_flag = scw_over }
-			}
-			AND = {
-				has_global_flag = scw_over
-				has_global_flag = republican_victory
-			}
-		}
-	}
-	complete_effect = {
-		add_faction_power_projection = 200
-		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = THE_FACTION_LEADER
-		add_faction_initiative = 1
-		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = ALL_FACTION_MEMBERS
-		every_faction_member = { army_experience = 50 }
-	}
-	ai_will_do = {
-		base = 0
-		modifier = {
-			add = 1
-			SPR_scw_in_progress = yes
-		}
-		modifier = {
-			add = 9 # SOV should always prio this
-			SPR_scw_in_progress = yes
-			original_tag = SOV
-		}
-	}
-}
-
-
-##########################################################
-
- ##  ### #  # ### ###  ###  ##       ##   ##   ##  #    ## 
-#    #   ## # #   #  #  #  #  #     #    #  # #  # #   #   
-# ## ##  # ## ##  ###   #  #        # ## #  # #### #    #  
-#  # #   #  # #   #  #  #  #  #     #  # #  # #  # #     # 
- ##  ### #  # ### #  # ###  ##       ##   ##  #  # ### ##  
-
-##########################################################
-
-
-# Faction Growth
-
 faction_goal_growing_the_faction = {
 	name = growing_the_faction
 	description = growing_the_faction_desc
@@ -708,7 +223,6 @@ faction_goal_growing_the_faction = {
 		}
 	}
 }
-
 faction_goal_spy_master = {
 	name = spy_master_goal_name
 	description = spy_master_goal_desc
@@ -800,37 +314,6 @@ faction_goal_spy_master = {
 		}
 	}
 }
-
-
-#faction_goal_convoy_sufficiency = {
-#	name = convoy_sufficiency_goal_name
-#	description = convoy_sufficiency_goal_desc
-#	completed = {
-#		count_in_collection = {
-#			collection = {
-#				input = game:scope
-#				operators = { faction_members }
-#				name = FACTION_NAME
-#			}
-#			equipment = { convoy }
-#			size > 1000
-#		}
-#	}
-#	complete_effect = {
-#		add_faction_power_projection = 200
-#		custom_effect_tooltip = generic_skip_one_line_tt
-#		every_faction_member = {
-#			tooltip = AT_LEAST_50_MILS
-#			visible_when_empty = yes 
-#			limit = {
-#				num_of_military_factories > 49
-#			}
-#			add_faction_initiative = 1
-#		}
-#		
-#	}
-#}
-
 faction_goal_ensure_military_r_d = {
 	name = ensure_military_r_d_goal_name
 	description = ensure_military_r_d_goal_desc
@@ -1024,10 +507,6 @@ faction_goal_ensure_military_r_d = {
 		base = 1
 	}
 }
-
-
-### Industry
-
 faction_goal_military_infrastructure = {
 	name = military_infrastructure_goal_name
 	description = military_infrastructure_goal_desc
@@ -1090,7 +569,6 @@ faction_goal_military_infrastructure = {
 		}
 	}
 }
-
 faction_goal_a_great_fortress = {
 	name = a_great_fortress_goal_name
 	description = a_great_fortress_goal_desc
@@ -1155,12 +633,6 @@ faction_goal_a_great_fortress = {
 		}
 	}
 }
-
-
-### War Waging
-
-
-
 faction_goal_preemptive_strike_on_fascism = {
 	name = preemptive_strike_on_fascism_goal_name
 	description = preemptive_strike_on_fascism_goal_desc
@@ -1306,10 +778,6 @@ faction_goal_war_on_democracy = {
 		base = 1
 	}
 }
-
-
-### Units
-
 faction_goal_an_armored_fist = {
 	name = an_armored_fist_goal_name
 	description = an_armored_fist_goal_desc
@@ -1398,10 +866,6 @@ faction_goal_an_infantry_army = {
 		base = 1
 	}
 }
-
-### Strategic Resources
-
-# Mexican Oil
 faction_goal_develop_mexican_oil = {
 	name = develop_mexican_oil_goal_name
 	description = develop_mexican_oil_goal_desc
@@ -1491,8 +955,6 @@ faction_goal_develop_mexican_oil = {
 		}
 	}
 }
-
-# Curacao Oil
 faction_goal_develop_curacao_oil = {
 	name = develop_curacao_oil_goal_name
 	description = develop_curacao_oil_goal_desc
@@ -1548,8 +1010,6 @@ faction_goal_develop_curacao_oil = {
 		}
 	}
 }
-
-# Venezuelan Oil
 faction_goal_develop_venezuelan_oil = {
 	name = develop_venezuelan_oil_goal_name
 	description = develop_venezuelan_oil_goal_desc
@@ -1624,8 +1084,6 @@ faction_goal_develop_venezuelan_oil = {
 		}
 	}
 }
-
-# Guyanan Bauxite
 faction_goal_develop_guyanan_bauxite = {
 	name = develop_guyanan_bauxite_goal_name
 	description = develop_guyanan_bauxite_goal_desc
@@ -1693,8 +1151,6 @@ faction_goal_develop_guyanan_bauxite = {
 		}
 	}
 }
-
-# Surinamese Bauxite
 faction_goal_develop_suriname_bauxite = {
 	name = develop_suriname_bauxite_goal_name
 	description = develop_suriname_bauxite_goal_desc
@@ -1762,8 +1218,6 @@ faction_goal_develop_suriname_bauxite = {
 		}
 	}
 }
-
-# Lappland Metals
 faction_goal_develop_lappland_metals = {
 	name = develop_lappland_metals_goal_name
 	description = develop_lappland_metals_goal_desc
@@ -1908,8 +1362,6 @@ faction_goal_develop_lappland_metals = {
 		}
 	}
 }
-
-# Ploiesti Oil Fields
 faction_goal_develop_ploiesti_oil_fields = {
 	name = develop_ploiesti_oil_fields_goal_name
 	description = develop_ploiesti_oil_fields_goal_desc
@@ -1965,8 +1417,6 @@ faction_goal_develop_ploiesti_oil_fields = {
 		}
 	}
 }
-
-# Baku Oil Fields
 faction_goal_develop_baku_oil_fields = {
 	name = develop_baku_oil_fields_goal_name
 	description = develop_baku_oil_fields_goal_desc
@@ -2050,8 +1500,6 @@ faction_goal_develop_baku_oil_fields = {
 		}
 	}
 }
-
-# Iraqi Oil
 faction_goal_develop_iraqi_oil = {
 	name = develop_iraqi_oil_goal_name
 	description = develop_iraqi_oil_goal_desc
@@ -2134,8 +1582,6 @@ faction_goal_develop_iraqi_oil = {
 		}
 	}
 }
-
-# Persian Oil
 faction_goal_develop_persian_oil = {
 	name = develop_persian_oil_goal_name
 	description = develop_persian_oil_goal_desc
@@ -2218,8 +1664,6 @@ faction_goal_develop_persian_oil = {
 		}
 	}
 }
-
-# Chinese Metals
 faction_goal_develop_chinese_metals = {
 	name = develop_chinese_metals_goal_name
 	description = develop_chinese_metals_goal_desc
@@ -2406,8 +1850,6 @@ faction_goal_develop_chinese_metals = {
 		}
 	}
 }
-
-# Malayan Riches
 faction_goal_develop_malayan_riches = {
 	name = develop_malayan_riches_goal_name
 	description = develop_malayan_riches_goal_desc
@@ -2630,8 +2072,6 @@ faction_goal_develop_malayan_riches = {
 		}
 	}
 }
-
-# Indonesian Riches
 faction_goal_develop_indonesian_riches = {
 	name = develop_indonesian_riches_goal_name
 	description = control_indonesian_riches_goal_desc
@@ -2863,10 +2303,6 @@ faction_goal_develop_indonesian_riches = {
 		}
 	}
 }
-
-### Strategic Bases
-
-# Newfoundland
 faction_goal_expand_newfoundland_bases = {
 	name = expand_newfoundland_bases_goal_name
 	description = expand_newfoundland_bases_goal_desc
@@ -2947,8 +2383,6 @@ faction_goal_expand_newfoundland_bases = {
 		}
 	}
 }
-
-# Bermuda
 faction_goal_expand_bermuda_bases = {
 	name = expand_bermuda_bases_goal_name
 	description = expand_bermuda_bases_goal_desc
@@ -3028,8 +2462,6 @@ faction_goal_expand_bermuda_bases = {
 		}
 	}
 }
-
-# Bahamas
 faction_goal_expand_bahamas_bases = {
 	name = expand_bahamas_bases_goal_name
 	description = expand_bahamas_bases_goal_desc
@@ -3126,8 +2558,6 @@ faction_goal_expand_bahamas_bases = {
 		}
 	}
 }
-
-# Panama
 faction_goal_fortify_panama_canal = {
 	name = fortify_panama_canal_goal_name
 	description = control_panama_canal_goal_desc
@@ -3222,8 +2652,6 @@ faction_goal_fortify_panama_canal = {
 		}
 	}
 }
-
-# Trinidad
 faction_goal_expand_trinidad_bases = {
 	name = expand_trinidad_bases_goal_name
 	description = control_trinidad_goal_desc
@@ -3303,8 +2731,6 @@ faction_goal_expand_trinidad_bases = {
 		}
 	}
 }
-
-# Azores
 faction_goal_expand_azores_bases = {
 	name = expand_azores_bases_goal_name
 	description = control_azores_goal_desc
@@ -3385,8 +2811,6 @@ faction_goal_expand_azores_bases = {
 		}
 	}
 }
-
-# Iceland
 faction_goal_expand_iceland_bases = {
 	name = expand_iceland_bases_goal_name
 	description = expand_iceland_bases_goal_desc
@@ -3466,8 +2890,6 @@ faction_goal_expand_iceland_bases = {
 		}
 	}
 }
-
-# Faroe Islands
 faction_goal_expand_faroese_bases = {
 	name = expand_faroese_bases_goal_name
 	description = control_faroe_islands_goal_desc
@@ -3547,8 +2969,6 @@ faction_goal_expand_faroese_bases = {
 		}
 	}
 }
-
-# Narvik
 faction_goal_expand_narvik_bases = {
 	name = expand_narvik_bases_goal_name
 	description = expand_narvik_bases_goal_desc
@@ -3604,8 +3024,6 @@ faction_goal_expand_narvik_bases = {
 		}
 	}
 }
-
-# Danish Belts
 faction_goal_fortify_danish_belts = {
 	name = fortify_danish_belts_goal_name
 	description = fortify_danish_belts_goal_desc
@@ -3749,8 +3167,6 @@ faction_goal_fortify_danish_belts = {
 		}
 	}
 }
-
-# Gibraltar
 faction_goal_fortify_gibraltar = {
 	name = fortify_gibraltar_goal_name
 	description = fortify_gibraltar_goal_desc
@@ -3870,8 +3286,6 @@ faction_goal_fortify_gibraltar = {
 		}
 	}
 }
-
-# Malta
 faction_goal_expand_maltese_bases = {
 	name = expand_maltese_bases_goal_name
 	description = expand_maltese_bases_goal_desc
@@ -3952,8 +3366,6 @@ faction_goal_expand_maltese_bases = {
 		}
 	}
 }
-
-# Crete
 faction_goal_expand_cretan_bases = {
 	name = expand_cretan_bases_goal_name
 	description = expand_cretan_bases_goal_desc
@@ -4034,8 +3446,6 @@ faction_goal_expand_cretan_bases = {
 		}
 	}
 }
-
-# Cyprus
 faction_goal_expand_cypriot_bases = {
 	name = expand_cypriot_bases_goal_name
 	description = expand_cypriot_bases_goal_desc
@@ -4116,8 +3526,6 @@ faction_goal_expand_cypriot_bases = {
 		}
 	}
 }
-
-# Bosporus
 faction_goal_fortify_bosporus = {
 	name = fortify_bosporus_goal_name
 	description = fortify_bosporus_goal_desc
@@ -4221,8 +3629,6 @@ faction_goal_fortify_bosporus = {
 		}
 	}
 }
-
-# Dardanelles
 faction_goal_fortify_dardanelles = {
 	name = fortify_dardanelles_goal_name
 	description = fortify_dardanelles_goal_desc
@@ -4364,8 +3770,6 @@ faction_goal_fortify_dardanelles = {
 		}
 	}
 }
-
-# Suez Canal
 faction_goal_fortify_suez_canal = {
 	name = fortify_suez_canal_goal_name
 	description = fortify_suez_canal_goal_desc
@@ -4499,8 +3903,6 @@ faction_goal_fortify_suez_canal = {
 		}
 	}
 }
-
-# Gulf of Aden
 faction_goal_expand_gulf_of_aden_bases = {
 	name = expand_gulf_of_aden_bases_goal_name
 	description = control_gulf_of_aden_bases_goal_desc
@@ -4580,8 +3982,6 @@ faction_goal_expand_gulf_of_aden_bases = {
 		}
 	}
 }
-
-# Strait of Hormuz
 faction_goal_fortify_strait_of_hormuz = {
 	name = fortify_strait_of_hormuz_goal_name
 	description = fortify_strait_of_hormuz_goal_desc
@@ -4744,8 +4144,6 @@ faction_goal_fortify_strait_of_hormuz = {
 		}
 	}
 }
-
-# Ceylon
 faction_goal_expand_ceylonese_bases = {
 	name = expand_ceylonese_bases_goal_name
 	description = expand_ceylonese_bases_goal_desc
@@ -4825,8 +4223,6 @@ faction_goal_expand_ceylonese_bases = {
 		}
 	}
 }
-
-# Singapore
 faction_goal_expand_singapore_naval_base = {
 	name = expand_singapore_naval_base_goal_name
 	description = expand_singapore_naval_base_goal_desc
@@ -4925,8 +4321,6 @@ faction_goal_expand_singapore_naval_base = {
 		}
 	}
 }
-
-# Manila
 faction_goal_fortify_manila_bay = {
 	name = fortify_manila_bay_goal_name
 	description = fortify_manila_bay_goal_desc
@@ -5003,8 +4397,6 @@ faction_goal_fortify_manila_bay = {
 		}
 	}
 }
-
-# Okinawa
 faction_goal_fortify_okinawa = {
 	name = fortify_okinawa_goal_name
 	description = fortify_okinawa_goal_desc
@@ -5081,8 +4473,6 @@ faction_goal_fortify_okinawa = {
 		}
 	}
 }
-
-# Iwo Jima
 faction_goal_fortify_iwo_jima = {
 	name = fortify_iwo_jima_goal_name
 	description = fortify_iwo_jima_goal_desc
@@ -5155,8 +4545,6 @@ faction_goal_fortify_iwo_jima = {
 		}
 	}
 }
-
-# Caroline Islands
 faction_goal_expand_caroline_islands_bases = {
 	name = expand_caroline_islands_bases_goal_name
 	description = expand_caroline_islands_bases_goal_desc
@@ -5236,8 +4624,6 @@ faction_goal_expand_caroline_islands_bases = {
 		}
 	}
 }
-
-# Guadalcanal
 faction_goal_expand_guadalcanal_bases = {
 	name = expand_guadalcanal_bases_goal_name
 	description = expand_guadalcanal_bases_goal_desc
@@ -5327,8 +4713,6 @@ faction_goal_expand_guadalcanal_bases = {
 		}
 	}
 }
-
-# Wake Island
 faction_goal_expand_wake_island_bases = {
 	name = expand_wake_island_bases_goal_name
 	description = control_wake_island_goal_desc
@@ -5408,8 +4792,6 @@ faction_goal_expand_wake_island_bases = {
 		}
 	}
 }
-
-# Midway Island
 faction_goal_expand_midway_island_bases = {
 	name = expand_midway_island_bases_goal_name
 	description = expand_midway_island_bases_goal_desc
