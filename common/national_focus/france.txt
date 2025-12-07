@@ -7794,6 +7794,9 @@ focus_tree = {
 				add_to_tech_sharing_group = deluge_french_faction_tech_group
 			}
 			set_country_flag = FRA_flag_established_tech_group
+			country_event = {
+				id = deluge_france_foreign.78
+			}
 		}
 		ai_will_do = {
 			factor = 25

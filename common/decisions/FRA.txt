@@ -364,34 +364,196 @@ FRA_dec_cat_foreign_policy = {
 				end_civil_wars = no
 			}
 			every_possible_country = {
-				limit = { has_character = FRA_deluge_joseph_de_montmorency_beaumont }
+				limit = { has_character = FRA_deluge_jean_de_castellane }
 				random_character = {
-					limit = { is_character = FRA_deluge_joseph_de_montmorency_beaumont }
+					limit = { is_character = FRA_deluge_jean_de_castellane }
 					set_nationality = YUG
+				}
+			}
+			every_possible_country = {
+				limit = { has_character = FRA_deluge_emile_naggiar }
+				random_character = {
+					limit = { is_character = FRA_deluge_emile_naggiar }
+					set_nationality = YUG
+				}
+			}
+			YUG = {
+				add_country_leader_role = {
+					character = FRA_deluge_jean_de_castellane
+					promote_leader = yes
+					country_leader = {
+						ideology = bonapartist_ideology
+						expire = "1999.1.1.1"
+						traits = { }
+						desc = "FRA_deluge_jean_de_castellane_desc"
+					}
+				}
+				add_country_leader_role = {
+					character = FRA_deluge_emile_naggiar
+					promote_leader = yes
+					country_leader = {
+						ideology = communist_ideology
+						expire = "1999.1.1.1"
+						traits = { }
+						desc = "FRA_deluge_emile_naggiar_desc"
+					}
+				}
+				set_capital = {state = 345}
+				set_party_name = {
+					ideology = neutrality
+					long_name = deluge_party_de_castellane_long
+					name = deluge_party_de_castellane
+				}
+				set_party_name = {
+					ideology = communism
+					long_name = deluge_party_french_administration_long
+					name = deluge_party_french_administration
 				}
 			}
 			if = {
 				limit = {
 					has_completed_focus = FRA_towards_republic
 				}
+				every_possible_country = {
+					limit = { has_character = FRA_deluge_adolphe_guillaumat }
+					random_character = {
+						limit = { is_character = FRA_deluge_adolphe_guillaumat }
+						set_nationality = YUG
+					}
+				}
 				YUG = {
 					set_cosmetic_tag = YUG_FRA_republican
+					set_party_name = {
+						ideology = fascism
+						long_name = deluge_party_french_administration_long
+						name = deluge_party_french_administration
+					}
+					set_party_name = {
+						ideology = democratic
+						long_name = deluge_party_french_administration_long
+						name = deluge_party_french_administration
+					}
+					add_country_leader_role = {
+						character = FRA_deluge_adolphe_guillaumat
+						promote_leader = yes
+						country_leader = {
+							ideology = nationalist_stratoracy_ideology
+							expire = "1999.1.1.1"
+							traits = { }
+							desc = "FRA_deluge_adolphe_guillaumat_desc"
+						}
+					}
+					add_country_leader_role = {
+						character = FRA_deluge_adolphe_guillaumat
+						promote_leader = yes
+						country_leader = {
+							ideology = centrist_ideology
+							expire = "1999.1.1.1"
+							traits = { }
+							desc = "FRA_deluge_adolphe_guillaumat_desc"
+						}
+					}
 				}
 			}
 			else = {
 				YUG = {
 					set_cosmetic_tag = YUG_FRA_monarchist
+					set_party_name = {
+						ideology = fascism
+						long_name = deluge_party_de_castellane_long
+						name = deluge_party_de_castellane
+					}
+					set_party_name = {
+						ideology = democratic
+						long_name = deluge_party_de_castellane_long
+						name = deluge_party_de_castellane
+					}
+					add_country_leader_role = {
+						character = FRA_deluge_jean_de_castellane
+						promote_leader = yes
+						country_leader = {
+							ideology = nationalist_stratoracy_ideology
+							expire = "1999.1.1.1"
+							traits = { }
+							desc = "FRA_deluge_jean_de_castellane_desc"
+						}
+					}
+					add_country_leader_role = {
+						character = FRA_deluge_jean_de_castellane
+						promote_leader = yes
+						country_leader = {
+							ideology = centrist_ideology
+							expire = "1999.1.1.1"
+							traits = { }
+							desc = "FRA_deluge_jean_de_castellane_desc"
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	FRA_dec_change_dynasty_in_lousiana = {
+		icon = GFX_decision_generic_orleanist_emblem
+		fire_only_once = yes
+		cost = 0
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			has_completed_focus = FRA_previous_course
+			has_completed_focus = FRA_continental_system_focus
+		}
+		available = {
+			LOU = {
+				is_subject_of = FRA
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+		}
+		complete_effect = {
+			every_possible_country = {
+				limit = { has_character = FRA_deluge_alain_de_boissieu }
+				random_character = {
+					limit = { is_character = FRA_deluge_alain_de_boissieu }
+					set_nationality = LOU
+				}
+			}
+			LOU = {
+				add_country_leader_role = {
+					character = FRA_deluge_alain_de_boissieu
+					promote_leader = yes
+					country_leader = {
+						ideology = bonapartist_ideology
+						expire = "1999.1.1.1"
+						traits = { }
+						desc = "FRA_deluge_alain_de_boissieu_desc"
+					}
 				}
 				add_country_leader_role = {
-					character = FRA_deluge_joseph_de_montmorency_beaumont
+					character = FRA_deluge_alain_de_boissieu
 					promote_leader = yes
 					country_leader = {
 						ideology = nationalist_stratoracy_ideology
 						expire = "1999.1.1.1"
 						traits = { }
+						desc = "FRA_deluge_alain_de_boissieu_desc"
 					}
 				}
-				##add more later
+				set_party_name = {
+					ideology = neutrality
+					long_name = deluge_party_de_boissieu_long
+					name = deluge_party_de_boissieu
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = deluge_party_de_boissieu_long
+					name = deluge_party_de_boissieu
+				}
 			}
 		}
 		ai_will_do = {
@@ -5102,6 +5264,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_louis_franchet_d_esperey
+			FRA_deluge_louis_franchet_d_esperey = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30
@@ -5134,6 +5299,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_maxime_weygand
+			FRA_deluge_maxime_weygand = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30
@@ -5166,6 +5334,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_maurice_gamelin
+			FRA_deluge_maurice_gamelin = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30
@@ -5198,6 +5369,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_alphonse_georges
+			FRA_deluge_alphonse_georges = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30
@@ -5230,6 +5404,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_antoine_marie_benoit_besson
+			FRA_deluge_antoine_marie_benoit_besson = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30
@@ -5262,6 +5439,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_charles_huntziger
+			FRA_deluge_charles_huntziger = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30
@@ -5294,6 +5474,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_aime_doumenc
+			FRA_deluge_aime_doumenc = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30
@@ -5326,6 +5509,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_henry_freydenberg
+			FRA_deluge_henry_freydenberg = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30
@@ -5358,6 +5544,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_adolphe_guillaumat
+			FRA_deluge_adolphe_guillaumat = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30
@@ -5390,6 +5579,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_pierre_hering
+			FRA_deluge_pierre_hering = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30
@@ -5422,6 +5614,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_andre_gaston_pretelat
+			FRA_deluge_andre_gaston_pretelat = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30
@@ -5454,6 +5649,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_marcel_garchery
+			FRA_deluge_marcel_garchery = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30
@@ -5486,6 +5684,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_charles_marie_conde
+			FRA_deluge_charles_marie_conde = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30
@@ -5518,6 +5719,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_louis_colson
+			FRA_deluge_louis_colson = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30
@@ -5550,6 +5754,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_robert_touchon
+			FRA_deluge_robert_touchon = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30
@@ -5582,6 +5789,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_victor_bourret
+			FRA_deluge_victor_bourret = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30
@@ -5614,6 +5824,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_jules_buhrer
+			FRA_deluge_jules_buhrer = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30
@@ -5646,6 +5859,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_emile_laure_name
+			FRA_deluge_emile_laure_name = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30
@@ -5678,6 +5894,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_georges_durand_viel
+			FRA_deluge_georges_durand_viel = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30
@@ -5710,6 +5929,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_rene_emile_godfroy
+			FRA_deluge_rene_emile_godfroy = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30
@@ -5742,6 +5964,9 @@ FRA_dec_cat_modernize_french_army={
 				has_completed_focus = FRA_modernize_high_command
 			}
 			has_character = FRA_deluge_emmanuel_ollive
+			FRA_deluge_emmanuel_ollive = {
+				is_unit_leader = yes
+			}
 		}
 		available = {
 			command_power > 30

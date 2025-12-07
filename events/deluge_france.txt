@@ -3471,6 +3471,14 @@ country_event = {##event about criticism about Nicolas Chauvin
 	picture = GFX_report_event_nicolas_chauvin
 	fire_only_once = yes
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = deluge_france.101
+				days = 60
+			}
+		}
+	}
 	option = {
 		name = deluge_france.100.a
 		add_political_power = -45
@@ -3483,6 +3491,30 @@ country_event = {##event about criticism about Nicolas Chauvin
 		}
 		add_war_support = -0.03
 		add_stability = -0.01
+	}
+}
+country_event = {##Napoleon and the jews
+	id = deluge_france.101
+	title = deluge_france.101.t
+	desc = deluge_france.101.d
+	picture = GFX_report_event_napoleon_and_jews
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = deluge_france.101.a
+		add_political_power = 20
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.07
+		}
+	}
+	option = {
+		name = deluge_france.101.b
+		add_political_power = -15
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.04
+		}
 	}
 }
 country_event = {##inspection in the army
@@ -9703,5 +9735,146 @@ news_event = {##news event that FRA vassalize peacefully major
 	major = yes
 	option = {
 		name = deluge_france_foreign.78.a
+	}
+}
+country_event = {##FRA has option to invite POL to research group even when not in faction
+	id = deluge_france_foreign.79
+	title = deluge_france_foreign.79.t
+	desc = deluge_france_foreign.79.d
+	picture = GFX_report_event_university_of_marie_sklodowska_curie
+	is_triggered_only = yes
+	option = {#invite
+		name = deluge_france_foreign.79.a
+		POL = {
+			country_event = {
+				id = deluge_france_foreign.80
+			}
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+		}
+	}
+	option = {#don't invite
+		name = deluge_france_foreign.79.b
+		add_political_power = 10
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+		}
+	}
+}
+country_event = {##FRA invites POL to research group - POL decides
+	id = deluge_france_foreign.80
+	title = deluge_france_foreign.80.t
+	desc = deluge_france_foreign.80.d
+	picture = GFX_report_event_university_of_marie_sklodowska_curie
+	is_triggered_only = yes
+	option = {#Reject
+		name = deluge_france_foreign.80.a
+		hidden_effect = {
+			FRA = {
+				country_event = {
+					id = deluge_france_foreign.81
+				}
+			}
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+		}
+	}
+	option = {#join
+		name = deluge_france_foreign.80.b
+		add_to_tech_sharing_group = deluge_french_faction_tech_group
+		hidden_effect = {
+			FRA = {
+				country_event = {
+					id = deluge_france_foreign.82
+				}
+			}
+		}
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = -20
+				has_opinion = {
+				    target = FROM
+				    value < 30
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+				    target = FROM
+				    value > 30
+				}
+			}
+		}
+	}
+}
+country_event = {##info for FRA that POL didn't join
+	id = deluge_france_foreign.81
+	title = deluge_france_foreign.81.t
+	desc = deluge_france_foreign.81.d
+	picture = GFX_report_event_university_of_marie_sklodowska_curie
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_foreign.81.a
+		ai_chance = {
+			base = 30
+		}
+	}
+}
+country_event = {##info for FRA that POL joined
+	id = deluge_france_foreign.82
+	title = deluge_france_foreign.82.t
+	desc = deluge_france_foreign.82.d
+	picture = GFX_report_event_university_of_marie_sklodowska_curie
+	is_triggered_only = yes
+	option = {
+		name = deluge_france_foreign.82.a
+		ai_chance = {
+			base = 30
+		}
 	}
 }

@@ -3061,24 +3061,6 @@ characters={
 			desc = "FRA_deluge_henri_meric_de_bellefon_desc"
 		}
 	}
-	FRA_deluge_adolphe_guillaumat={
-		name=FRA_deluge_adolphe_guillaumat_name
-		portraits={
-			army={##small and big portrait to do
-				large="gfx/leaders/FRA/portrait_FRA_adolphe_guillaumat.dds" 
-				small="GFX_adolphe_guillaumat_picture_small"
-			}
-		}
-		corps_commander={
-			traits={ old_guard }
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=1
-			desc = "FRA_deluge_adolphe_guillaumat_desc"
-		}
-	}
 	FRA_deluge_charles_nogues={
 		name=FRA_deluge_charles_nogues_name
 		portraits={
@@ -4830,13 +4812,41 @@ characters={
 		}
 		#collaborationist who gets a leader role in on_actions
 	}
-	FRA_deluge_joseph_de_montmorency_beaumont = {##Joseph de Montmorency-Beaumont
-		name = FRA_deluge_joseph_de_montmorency_beaumont_name
+	FRA_deluge_jean_de_castellane = {##Jean de Castellane
+		name = FRA_deluge_jean_de_castellane_name
 		portraits = {
 			army = {
-				large = GFX_portrait_FRA_joseph_de_montmorency_beaumont_name
+				large = large="gfx/leaders/FRA/portrait_FRA_jean_de_castellane.dds"
 			}
 		}
-		#leader of dominion of southern slavs
+		#monarchist leader of dominion of southern slavs
+	}
+	FRA_deluge_adolphe_guillaumat={
+		name=FRA_deluge_adolphe_guillaumat_name
+		portraits={
+			army={
+				large="gfx/leaders/FRA/portrait_FRA_adolphe_guillaumat.dds" 
+				small="GFX_adolphe_guillaumat_picture_small"
+			}
+		}
+		#republican leader of dominion of southern slavs
+	}
+	FRA_deluge_emile_naggiar={#Émile Naggiar
+		name=FRA_deluge_emile_naggiar_name
+		portraits={
+			army={
+				large="gfx/leaders/FRA/portrait_FRA_emile_naggiar.dds" 
+			}
+		}
+		#radical leader of dominion of southern slavs
+	}
+	FRA_deluge_alain_de_boissieu = {##Alain de Boissieu
+		name = FRA_deluge_alain_de_boissieu_name
+		portraits = {
+			army = {
+				large = large="gfx/leaders/FRA/portrait_FRA_alain_de_boissieu.dds"
+			}
+		}
+		#leader of puppet Louisiana
 	}
 }

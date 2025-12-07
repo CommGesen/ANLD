@@ -544,6 +544,12 @@
  deluge_party_temporary_military_government_long:0 "Temporary Military Government"
  deluge_party_temporary_radical_government:0 "Radicals"
  deluge_party_temporary_radical_government_long:0 "Temporary Radical Government"
+ deluge_party_french_administration:0 "French Administration"
+ deluge_party_french_administration_long:0 "French Administration"
+ deluge_party_de_castellane:0 "De Castellane"
+ deluge_party_de_castellane_long:0 "De Castellane Loyalists"
+ deluge_party_de_boissieu:0 "De Boissieu"
+ deluge_party_de_boissieu_long:0 "De Boissieu Loyalists"
  
  ##state modifiers:
  FRA_modifier_eliminated_minorities:0 "Eliminated Minorities"
@@ -558,6 +564,7 @@
  deluge_french_faction_tech_group_desc:0 ""
  
  ##decisions
+ FRA_dec_change_dynasty_in_lousiana:0 "Change Dynasty in §Y[LOU.GetNameWithFlag]§!"
  FRA_dec_join_FRA_tech_group:0 "Join §OInternational Maria Skłodowska-Curie Institute§!"
  FRA_vassalisation_of_arabia:0 "Demand Vassalisation of §Y[FROM.GetNameWithFlag]§!"
  FRA_vassalisation_of_iran:0 "Demand Vassalisation of §Y[PER.GetNameWithFlag]§!"
