@@ -1,0 +1,42 @@
+spriteTypes = {
+	#########################
+	##### Faction Logos #####
+	#########################
+	spriteType = {
+		name = "GFX_faction_logo_continental_system"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_continental_system.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_faction_logo_romanov_emblem"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_romanov_emblem.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_faction_logo_visegrad_group"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_visegrad_group.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_faction_logo_bourbon_emblem"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_bourbon_emblem.dds"
+		noOfFrames = 2
+	}
+	### Faction Logos - Miniatures ###
+	spriteType = {
+		name = "GFX_faction_logo_continental_system_miniature"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_continental_system_miniature.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_logo_romanov_emblem_miniature"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_romanov_emblem_miniature.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_logo_visegrad_group_miniature"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_visegrad_group_miniature.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_logo_bourbon_emblem_miniature"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_bourbon_emblem_miniature.dds"
+	}
+}

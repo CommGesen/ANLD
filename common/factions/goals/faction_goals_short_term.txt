@@ -148,48 +148,6 @@ faction_goal_unlock_military = {
 		base = 1000 # They should always do this if they can
 	}
 }
-faction_goal_coastal_security = {
-	name = coastal_security_goal_name
-	description = coastal_security_goal_desc
-	category = short_term
-	group = FOCUS_FILTER_NAVY_XP
-	allowed = {
-	}
-	visible = {
-		FROM = {
-			tag = JAP
-		}
-	}
-	completed = {
-		has_naval_control = 90
-		has_naval_control = 79
-		has_naval_control = 77
-		has_naval_control = 76
-		has_naval_control = 75
-		has_naval_control = 73
-	}
-	complete_effect = {
-		add_faction_initiative = 1
-		add_faction_power_projection = 500
-		every_collection_element = {
-			input = {
-				input = game:scope
-				operators =  { 
-					faction_members 
-				}	
-				name = ALL_FACTION_MEMBERS
-			}
-			navy_experience = 50
-		}
-	}
-	ai_will_do = {
-		base = 1
-		modifier = {
-			add = 4 # Mid game prio
-			date > 1940.1.1
-		}
-	}
-}
 faction_goal_growing_the_faction = {
 	name = growing_the_faction
 	description = growing_the_faction_desc
@@ -698,7 +656,6 @@ faction_goal_war_on_communism = {
 			has_government = communism
 			is_on_same_continent_as = FROM
 		}
-		NOT = { original_tag = JAP } # they have their own goal 
 	}
 	completed = {
 		OR = {

@@ -1,0 +1,30 @@
+faction_template_republican_internationale = {
+	name = Republican_International
+	icon = GFX_faction_icon_generic_communist
+	manifest = faction_manifest_spread_of_communism
+
+	goals = {
+
+		# Short term goals
+		faction_goal_an_infantry_army
+
+		# Medium term goals
+		faction_goal_a_military_base
+
+		# Long terms
+		faction_goal_defeat_of_anti_communists
+	
+	}
+
+	default_rules = {
+		change_leader_rule_manpower
+		change_leader_rule_industry
+		change_leader_rule_influence
+		government_in_exile_allowed
+		joining_rule_communist_only
+		faction_peace_rule_puppeting_focus
+		war_declaration_rule_any_country
+	}
+	
+}
+

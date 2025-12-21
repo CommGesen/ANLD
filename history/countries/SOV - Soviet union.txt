@@ -143,7 +143,7 @@ set_autonomy = {
 	freedom_level = 0.1
 }
 
-create_faction = All-Russian_Empire
+create_faction_from_template = faction_template_all_russian_empire
 add_to_faction = SOV
 add_to_faction = FIN
 add_to_faction = KHI

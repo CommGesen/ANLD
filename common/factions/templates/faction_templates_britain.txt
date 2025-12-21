@@ -1,0 +1,31 @@
+faction_template_british_commonwealth_of_nations = {
+	name = Commonwealth
+	icon = GFX_faction_logo_generic_13
+	manifest = faction_manifest_protector_of_peace
+
+	goals = {
+
+		# Short term goals
+		faction_goal_unlock_research
+
+		# Medium term goals
+		faction_goal_guardians_of_peace
+
+		# Long terms
+		faction_goal_rule_the_waves
+	
+	}
+
+	default_rules = {
+		joining_rule_non_communist
+		faction_peace_rule_puppeting_focus
+		dismissal_rule_offensive_war
+		change_leader_rule_never
+		goals_only_faction_leader
+		manpower_contribution_medium
+		war_declaration_rule_any_country
+		government_in_exile_allowed
+	}
+	
+}
+

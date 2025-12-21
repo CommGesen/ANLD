@@ -147,7 +147,7 @@ if = {
 	}
 }
 
-create_faction = GEACPS
+create_faction_from_template = faction_template_GEACPS
 add_to_faction = JAP
 
 set_politics = {

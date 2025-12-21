@@ -78,8 +78,8 @@ focus_tree = {
 		}
 		available = {
 			has_completed_focus = FRA_establish_lon
-			has_country_flag = FRA_flag_the_problem_of_clemenceau_was_raised
-			has_idea = FRA_deluge_georges_clemenceau
+			has_country_flag = FRA_flag_the_problem_of_maurin_was_raised
+			has_idea = FRA_deluge_louis_maurin
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -346,17 +346,17 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					FRA_deluge_georges_clemenceau = {
+					FRA_deluge_louis_maurin = {
 						has_advisor_role = political_advisor
 					}
 				}
-				FRA_deluge_georges_clemenceau = {
+				FRA_deluge_louis_maurin = {
 					set_can_be_fired_in_advisor_role = {
 						slot = political_advisor
 						value = yes
 					}
 				}
-				set_country_flag = FRA_flag_dismissed_clemenceau
+				set_country_flag = FRA_flag_dismissed_maurin
 				custom_effect_tooltip = FRA_custom_effect_tooltip_162
 			}
 			promote_character = FRA_deluge_maurice_gamelin
@@ -5106,22 +5106,22 @@ focus_tree = {
 		}
 		available = {
 			has_completed_focus = FRA_establish_lon
-			has_country_flag = FRA_flag_the_problem_of_clemenceau_was_raised
+			has_country_flag = FRA_flag_the_problem_of_maurin_was_raised
 		}
 		completion_reward = {
 			if = {
 				limit = {
-					FRA_deluge_georges_clemenceau = {
+					FRA_deluge_louis_maurin = {
 						has_advisor_role = political_advisor
 					}
 				}
-				FRA_deluge_georges_clemenceau = {
+				FRA_deluge_louis_maurin = {
 					set_can_be_fired_in_advisor_role = {
 						slot = political_advisor
 						value = yes
 					}
 				}
-				set_country_flag = FRA_flag_dismissed_clemenceau
+				set_country_flag = FRA_flag_dismissed_maurin
 				custom_effect_tooltip = FRA_custom_effect_tooltip_162
 			}
 			add_popularity = {

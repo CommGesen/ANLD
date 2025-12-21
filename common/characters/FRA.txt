@@ -1,20 +1,22 @@
 characters={
-	##this guy Clemenceau
-	FRA_deluge_georges_clemenceau={
-		name=FRA_deluge_georges_clemenceau_name
+	##this guy Maurin
+	FRA_deluge_louis_maurin={##Louis Maurin
+		name=FRA_deluge_louis_maurin_name
 		portraits={
 			civilian={
-				small="GFX_georges_clemenceau_picture_small"
+				small="GFX_louis_maurin_picture_small"
 			}
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = FRA_deluge_georges_clemenceau
-			allowed = { tag = FRA }
+			idea_token = FRA_deluge_louis_maurin
+			allowed = {
+				tag = FRA
+			}
 			can_be_fired = no
 			visible = {
 				NOT = {
-					has_country_flag = FRA_flag_dismissed_clemenceau
+					has_country_flag = FRA_flag_dismissed_maurin
 				}
 			}
 			cost = 150
@@ -26,7 +28,9 @@ characters={
 			traits = {
 				deluge_trait_derealised_artifact_of_old_world
 			}
-			ai_will_do = { factor = 1.0 }
+			ai_will_do = {
+				factor = 1.000
+			}
 			ledger = civilian
 		}
 	}
@@ -2326,35 +2330,6 @@ characters={
 			cost = 150
 			traits = {
 				economist
-			}
-			ai_will_do = {
-				factor = 1.000
-			}
-			ledger = civilian
-		}
-	}
-	FRA_deluge_louis_maurin={##Louis Maurin
-		name=FRA_deluge_louis_maurin_name
-		portraits={
-			civilian={##small portrait to do
-				small="GFX_louis_maurin_picture_small"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = FRA_deluge_louis_maurin
-			allowed = {
-				tag = FRA
-			}
-			visible = {
-				
-			}
-			available = {
-				
-			}
-			cost = 150
-			traits = {
-				armaments_organizer
 			}
 			ai_will_do = {
 				factor = 1.000

@@ -1,0 +1,28 @@
+faction_template_GEACPS = {
+	name = GEACPS
+	icon = GFX_faction_logo_japanese_co_prosperity_sphere
+	manifest = faction_manifest_strategic_resource_control
+
+	goals = {
+
+		# Short term goals
+		faction_goal_unlock_military
+
+		# Medium term goals
+		faction_goal_secure_the_oil_supply
+
+		# Long terms
+		faction_goal_defeat_of_communism
+	
+	}
+
+	default_rules = {
+		joining_rule_non_communist
+		joining_rule_asia_pacific_ocenania_only
+		faction_peace_rule_puppeting_focus
+		change_leader_rule_industry
+		dismissal_rule_offensive_war
+	}
+	
+}
+

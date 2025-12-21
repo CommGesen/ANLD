@@ -880,7 +880,7 @@ set_variable = {french_bad_army_naval_invasion_capacity = -6 }
 
 add_dynamic_modifier = { modifier = FRA_modifier_obsolete_army }
 
-create_faction = Continental_System
+create_faction_from_template = faction_template_continental_system
 add_to_faction = FRA
 add_to_faction = BEL
 add_to_faction = POM
@@ -893,7 +893,7 @@ declare_war_on = {
 	type = annex_everything
 }
 ##it is here because adding idea would not work if it would be lower
-recruit_character = FRA_deluge_georges_clemenceau
+recruit_character = FRA_deluge_louis_maurin
 
 add_ideas = {
 	FRA_spirit_le_deluge
@@ -903,7 +903,7 @@ add_ideas = {
 	FRA_spirit_horrors_of_the_great_war
 	robber_barons
 	FRA_spirit_conservative_high_command
-	FRA_deluge_georges_clemenceau
+	FRA_deluge_louis_maurin
 }
 add_timed_idea = {
 	idea = FRA_spirit_senussi_rebellion
@@ -1105,7 +1105,7 @@ recruit_character = FRA_deluge_alexandre_millerand
 
 recruit_character = FRA_deluge_joseph_capus
 recruit_character = FRA_deluge_jacques_rueff
-recruit_character = FRA_deluge_louis_maurin
+#recruit_character = 
 recruit_character = FRA_deluge_louis_renault
 recruit_character = FRA_deluge_francois_hussenot
 

@@ -859,12 +859,6 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			add_political_power = 150
-			if = {
-				limit = {
-					is_in_faction = no
-				}
-				create_faction = "factionLouisiananBloc"
-			}
 		}
 		ai_will_do = {
 			factor = 10

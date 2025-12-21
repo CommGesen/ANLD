@@ -3330,31 +3330,31 @@ country_event = {##citizens support the emperor
 		}
 	}
 }
-country_event = {##issue of georges clemencau
+country_event = {##issue of Louis Maurin
 	id = deluge_france.91
 	title = deluge_france.91.t
 	desc = deluge_france.91.d
-	picture = GFX_report_event_georges_clemenceau
+	picture = GFX_report_event_louis_maurin
 	fire_only_once = yes
 	is_triggered_only = yes
 	timeout_days = 4
 	option = {##dismiss him now
 		name = deluge_france.91.a
 		add_political_power = 30
-		FRA_deluge_georges_clemenceau = {
+		FRA_deluge_louis_maurin = {
 			set_can_be_fired_in_advisor_role = {
 				slot = political_advisor
 				value = yes
 			}
 		}
-		set_country_flag = FRA_flag_dismissed_clemenceau
+		set_country_flag = FRA_flag_dismissed_maurin
 		custom_effect_tooltip = FRA_custom_effect_tooltip_161
-		set_country_flag = FRA_flag_the_problem_of_clemenceau_was_raised
+		set_country_flag = FRA_flag_the_problem_of_maurin_was_raised
 	}
 	option = {##don't dismiss him
 		name = deluge_france.91.b
 		add_political_power = -10
-		set_country_flag = FRA_flag_the_problem_of_clemenceau_was_raised
+		set_country_flag = FRA_flag_the_problem_of_maurin_was_raised
 	}
 }
 country_event = {##tensions between royal of BEL and FRA are gone
