@@ -351,6 +351,31 @@ faction_manifest_asian_dominance = {
 		}
 	}
 }
+faction_manifest_control_all_latin_countries = {
+	name = asian_dominance_goal_name
+	description = asian_dominance_goal_desc
+	is_manifest = yes
+	ratio_progress = {
+		total_amount_collection = collection:states_of_latin_countries
+		completed_amount_collection = collection:faction_states_in_asia
+		range = { 
+			max = 0.80
+		}
+		scale = {
+			stability_factor = 0.1
+		}
+		progress_sections = {
+			manifest_fulfilled = {
+				min = @manifest_fulfilled_value
+	
+				modifier = {
+					war_support_factor = 0.05
+					army_core_defence_factor = 0.1
+				}			
+			}
+		}
+	}
+}
 faction_manifest_middle_east_dominance = {
 	name = middle_east_dominance_goal_name
 	description = middle_east_dominance_goal_desc

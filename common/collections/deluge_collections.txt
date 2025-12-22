@@ -1,0 +1,36 @@
+states_of_latin_countries = {
+	input = game:all_states
+	operators = {
+		limit = {
+			OR = {
+				is_core_of = ROM
+				is_core_of = FRA
+				is_core_of = ITA
+				is_core_of = BEL
+				is_core_of = CAN
+				is_core_of = SPR
+				is_core_of = POR
+			}
+		}
+	}
+	name = COLLECTION_STATES_OF_LATIN_COUNTRIES
+}
+states_of_faction_controlled_latin_countries = {
+	input = game:all_states
+	operators = {
+		limit = {
+			faction_members
+			controlled_states
+			OR = {
+				is_core_of = ROM
+				is_core_of = FRA
+				is_core_of = ITA
+				is_core_of = BEL
+				is_core_of = CAN
+				is_core_of = SPR
+				is_core_of = POR
+			}
+		}
+	}
+	name = COLLECTION_STATES_OF_FACTION_CONTROLLED_LATIN_COUNTRIES
+}

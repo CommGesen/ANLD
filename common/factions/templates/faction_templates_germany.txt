@@ -1,0 +1,55 @@
+faction_template_german_bloc = {
+	name = factionGermanBloc
+	icon = GFX_faction_logo_generic_16
+	manifest = faction_manifest_european_dominance
+
+	goals = {
+
+		# Short term goals
+		faction_goal_unlock_research
+
+		# Medium term goals
+		faction_goal_air_superiority
+
+		# Long terms
+		faction_goal_industrial_domination
+	
+	}
+
+	default_rules = {
+		faction_peace_rule_conquest_focus
+		joining_rule_non_communist
+		change_leader_rule_never
+		goals_only_faction_leader
+		government_in_exile_allowed
+	}
+	
+}
+faction_template_german_international = {
+	name = factionGermanInternational
+	icon = GFX_faction_logo_generic_9
+	manifest = faction_manifest_spread_of_communism
+
+	goals = {
+
+		# Short term goals
+		faction_goal_unlock_research
+
+		# Medium term goals
+		faction_goal_air_superiority
+
+		# Long terms
+		faction_goal_industrial_domination
+	
+	}
+
+	default_rules = {
+		faction_peace_rule_puppeting_focus
+		change_leader_rule_never
+		joining_rule_same_ideology
+		goals_only_faction_leader
+		government_in_exile_allowed
+	}
+	
+}
+

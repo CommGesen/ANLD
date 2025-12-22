@@ -908,7 +908,7 @@ focus_tree = {
 					is_in_faction = no
 					is_subject = no
 				}
-				create_faction = "factionAmericanBloc"
+				create_faction_from_template = faction_template_american_bloc
 			}
 		}
 		ai_will_do = {

@@ -22,6 +22,21 @@ spriteTypes = {
 		texturefile = "gfx/interface/factions/faction_logos/faction_logo_bourbon_emblem.dds"
 		noOfFrames = 2
 	}
+	spriteType = {
+		name = "GFX_faction_logo_eiffel_tower"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_eiffel_tower.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_faction_logo_fire_movement"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_fire_movement.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_faction_logo_francist_movement"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_francist_movement.dds"
+		noOfFrames = 2
+	}
 	### Faction Logos - Miniatures ###
 	spriteType = {
 		name = "GFX_faction_logo_continental_system_miniature"
@@ -38,5 +53,17 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_faction_logo_bourbon_emblem_miniature"
 		texturefile = "gfx/interface/factions/faction_logos/faction_logo_bourbon_emblem_miniature.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_logo_eiffel_tower_miniature"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_eiffel_tower_miniature.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_logo_eiffel_tower_miniature"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_fire_movement_miniature.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_logo_francist_movement_miniature"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_francist_movement_miniature.dds"
 	}
 }

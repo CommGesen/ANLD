@@ -835,8 +835,8 @@ faction_goal_develop_mexican_oil = {
 		OR = {
 			480 = { is_controlled_by_ROOT_or_ally = yes }
 			479 = {	is_controlled_by_ROOT_or_ally = yes }
-			477 = {	is_controlled_by_ROOT_or_ally = yes }
-			476 = {	is_controlled_by_ROOT_or_ally = yes }	
+			376 = {	is_controlled_by_ROOT_or_ally = yes }
+			375 = {	is_controlled_by_ROOT_or_ally = yes }	
 		}
 	}
 	available = {
@@ -846,8 +846,8 @@ faction_goal_develop_mexican_oil = {
 		}
 		480 = { is_controlled_by_ROOT_or_ally = yes }
 		479 = {	is_controlled_by_ROOT_or_ally = yes }
-		477 = {	is_controlled_by_ROOT_or_ally = yes }
-		476 = {	is_controlled_by_ROOT_or_ally = yes }
+		376 = {	is_controlled_by_ROOT_or_ally = yes }
+		375 = {	is_controlled_by_ROOT_or_ally = yes }
 	}
 	completed = {
 		480 = {
@@ -858,11 +858,11 @@ faction_goal_develop_mexican_oil = {
 			CONTROLLER = { has_tech = excavation3 }
 			infrastructure > 4
 		}
-		477 = {
+		375 = {
 			CONTROLLER = { has_tech = excavation3 }
 			infrastructure > 4
 		}
-		476 = {
+		376 = {
 			CONTROLLER = { has_tech = excavation3 }
 			infrastructure > 4
 		}
@@ -874,8 +874,8 @@ faction_goal_develop_mexican_oil = {
 				OR = {
 					state = 480
 					state = 479
-					state = 477
-					state = 476
+					state = 375
+					state = 376
 				}
 			}
 			add_resource = {
@@ -891,8 +891,8 @@ faction_goal_develop_mexican_oil = {
 			OR = {
 				controls_state = 480
 				controls_state = 479
-				controls_state = 477
-				controls_state = 476
+				controls_state = 375
+				controls_state = 376
 			}
 		}
 		modifier = {
@@ -912,64 +912,9 @@ faction_goal_develop_mexican_oil = {
 		}
 	}
 }
-faction_goal_develop_curacao_oil = {
-	name = develop_curacao_oil_goal_name
-	description = develop_curacao_oil_goal_desc
-	category = short_term
-	group = resources_to_market_icon
-	allowed = {
-		
-	}
-	visible = {
-		695 = { is_controlled_by_ROOT_or_ally = yes }
-	}
-	available = {
-		FROM = {
-			has_tech = excavation1
-			has_tech = excavation2
-		}
-	}
-	completed = {
-		695 = {
-			CONTROLLER = { has_tech = excavation3 }
-			infrastructure > 4
-		}
-	}
-	complete_effect = {
-		add_faction_power_projection = 100
-		695 = {
-			add_resource = {
-			    type = oil
-			    amount = 14
-			}
-		}
-	}
-	ai_will_do = {
-		base = 1 # Everyone should always kiiiinda care about oil
-		modifier = {
-			add = 1 # State owners should care more
-			controls_state = 695
-		}
-		modifier = {
-			add = -1 # If the alliance is doing well with fuel avoid taking this...
-			fuel_ratio > 0.9
-			all_allied_country = {
-				fuel_ratio > 0.9
-			}
-		}
-		modifier = {
-			add = 1 # Powers with low fuel should care about oil a bit more
-			fuel_ratio < 0.4
-		}
-		modifier = {
-			add = 1 # Powers with very low fuel should care about oil A LOT
-			fuel_ratio < 0.1
-		}
-	}
-}
-faction_goal_develop_venezuelan_oil = {
-	name = develop_venezuelan_oil_goal_name
-	description = develop_venezuelan_oil_goal_desc
+faction_goal_develop_colombian_oil = {
+	name = develop_colombian_oil_goal_name
+	description = develop_colombian_oil_goal_desc
 	category = short_term
 	group = resources_to_market_icon
 
@@ -980,6 +925,7 @@ faction_goal_develop_venezuelan_oil = {
 		OR = {
 			489 = { is_controlled_by_ROOT_or_ally = yes }
 			307 = {	is_controlled_by_ROOT_or_ally = yes }
+			493 = {	is_controlled_by_ROOT_or_ally = yes }
 		}
 	}
 	available = {
@@ -989,6 +935,7 @@ faction_goal_develop_venezuelan_oil = {
 		}
 		489 = { is_controlled_by_ROOT_or_ally = yes }
 		307 = {	is_controlled_by_ROOT_or_ally = yes }
+		493 = {	is_controlled_by_ROOT_or_ally = yes }
 	}
 	completed = {
 		489 = {
@@ -996,6 +943,10 @@ faction_goal_develop_venezuelan_oil = {
 			infrastructure > 4
 		}
 		307 = {
+			CONTROLLER = { has_tech = excavation3 }
+			infrastructure > 4
+		}
+		493 = {
 			CONTROLLER = { has_tech = excavation3 }
 			infrastructure > 4
 		}
@@ -1007,6 +958,7 @@ faction_goal_develop_venezuelan_oil = {
 				OR = {
 					state = 489
 					state = 307
+					state = 493
 				}
 			}
 			add_resource = {
@@ -1022,6 +974,7 @@ faction_goal_develop_venezuelan_oil = {
 			OR = {
 				controls_state = 489
 				controls_state = 307
+				controls_state = 493
 			}
 		}
 		modifier = {
@@ -3492,7 +3445,8 @@ faction_goal_fortify_bosporus = {
 		
 	}
 	visible = {
-		797 = { is_controlled_by_ROOT_or_ally = yes }
+		340 = { is_controlled_by_ROOT_or_ally = yes }
+		341 = { is_controlled_by_ROOT_or_ally = yes }
 	}
 	available = {
 
@@ -3500,124 +3454,17 @@ faction_goal_fortify_bosporus = {
 	completed = {
 		custom_trigger_tooltip = {
             tooltip = fortify_bosporus_tooltip
-			797 = {
-				any_province_building_level = {
-					province = {
-						id = 9833
-						id = 11829
-					}
-					building = coastal_bunker
-					level > 0
-				}
-				any_province_building_level = {
-					province = {
-						id = 9833
-						id = 11829
-					}
-					building = bunker
-					level > 0
-				}
-			}
-			OR = {
-				divisions_in_state = { state = 797 size > 1 }
-				any_allied_country = {
-					divisions_in_state = { state = 797 size > 1 }
-				}
-			}
-		}
-	}
-	complete_effect = {
-		add_faction_power_projection = 100
-		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = TARGET_STATE_CONTROLLERS
-		every_faction_member = { 
-			visible_when_empty = yes
-			limit = {
-				controls_state = 797
-			}
-			add_faction_initiative = 1
-		}
-		797 = {
-			add_building_construction = {
-				type = anti_air_building
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = coastal_bunker
-				level = 1
-				province = 9833
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = bunker
-				level = 1
-				province = 9833
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = coastal_bunker
-				level = 1
-				province = 11829
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = bunker
-				level = 1
-				province = 11829
-				instant_build = yes
-			}
-		}
-	}
-	ai_will_do = {
-		base = 1
-		modifier = {
-			add = 1 # If major naval power seek to control access
-			has_navy_size = {
-				size > 20
-				type = capital_ship
-			}
-		}
-		modifier = {
-			add = 1 # If at war with SOV prioritize this
-			any_enemy_country = {
-				original_tag = SOV
-			}
-		}
-	}
-}
-faction_goal_fortify_dardanelles = {
-	name = fortify_dardanelles_goal_name
-	description = fortify_dardanelles_goal_desc
-	category = short_term
-	group = FOCUS_FILTER_CONSOLIDATION
-	allowed = {
-		
-	}
-	visible = {
-		OR = {
-			340 = { is_controlled_by_ROOT_or_ally = yes }
-			341 = { is_controlled_by_ROOT_or_ally = yes }
-		}
-	}
-	available = {
-		340 = { is_controlled_by_ROOT_or_ally = yes }
-		341 = { is_controlled_by_ROOT_or_ally = yes }
-	}
-	completed = {
-		custom_trigger_tooltip = {
-            tooltip = fortify_dardanelles_tooltip
 			340 = {
 				any_province_building_level = {
 					province = {
-						id = 6864
+						id = 9833
 					}
 					building = coastal_bunker
 					level > 0
 				}
 				any_province_building_level = {
 					province = {
-						id = 6864
+						id = 9833
 					}
 					building = bunker
 					level > 0
@@ -3626,27 +3473,29 @@ faction_goal_fortify_dardanelles = {
 			341 = {
 				any_province_building_level = {
 					province = {
-						id = 849
+						id = 11829
 					}
 					building = coastal_bunker
 					level > 0
 				}
 				any_province_building_level = {
 					province = {
-						id = 849
+						id = 11829
 					}
 					building = bunker
 					level > 0
 				}
 			}
 			OR = {
-				AND = {
-					divisions_in_state = { state = 797 size > 0 }
-					divisions_in_state = { state = 341 size > 0 }
-				}
+				divisions_in_state = { state = 340 size > 1 }
 				any_allied_country = {
-					divisions_in_state = { state = 797 size > 0 }
-					divisions_in_state = { state = 341 size > 0 }
+					divisions_in_state = { state = 340 size > 1 }
+				}
+			}
+			OR = {
+				divisions_in_state = { state = 341 size > 1 }
+				any_allied_country = {
+					divisions_in_state = { state = 341 size > 1 }
 				}
 			}
 		}
@@ -3674,13 +3523,13 @@ faction_goal_fortify_dardanelles = {
 			add_building_construction = {
 				type = coastal_bunker
 				level = 1
-				province = 6864
+				province = 9833
 				instant_build = yes
 			}
 			add_building_construction = {
 				type = bunker
 				level = 1
-				province = 6864
+				province = 9833
 				instant_build = yes
 			}
 		}
@@ -3691,21 +3540,15 @@ faction_goal_fortify_dardanelles = {
 				instant_build = yes
 			}
 			add_building_construction = {
-				type = naval_base
-				level = 1
-				instant_build = yes
-				province = 849
-			}
-			add_building_construction = {
 				type = coastal_bunker
 				level = 1
-				province = 849
+				province = 11829
 				instant_build = yes
 			}
 			add_building_construction = {
 				type = bunker
 				level = 1
-				province = 849
+				province = 11829
 				instant_build = yes
 			}
 		}
@@ -3722,7 +3565,7 @@ faction_goal_fortify_dardanelles = {
 		modifier = {
 			add = 1 # If at war with SOV prioritize this
 			any_enemy_country = {
-				original_tag = SOV
+				tag = SOV
 			}
 		}
 	}
@@ -3737,7 +3580,7 @@ faction_goal_fortify_suez_canal = {
 		
 	}
 	visible = {
-		446 = { is_controlled_by_ROOT_or_ally = yes }
+		800 = { is_controlled_by_ROOT_or_ally = yes }
 	}
 	available = {
 
@@ -3750,8 +3593,6 @@ faction_goal_fortify_suez_canal = {
 					province = {
 						id = 12049
 						id = 4073
-						id = 1155
-						id = 9947
 					}
 					building = coastal_bunker
 					level > 0
@@ -3760,17 +3601,15 @@ faction_goal_fortify_suez_canal = {
 					province = {
 						id = 12049
 						id = 4073
-						id = 1155
-						id = 9947
 					}
 					building = bunker
 					level > 0
 				}
 			}
 			OR = {
-				divisions_in_state = { state = 446 size > 3 }
+				divisions_in_state = { state = 800 size > 3 }
 				any_allied_country = {
-					divisions_in_state = { state = 446 size > 3 }
+					divisions_in_state = { state = 800 size > 3 }
 				}
 			}
 		}
@@ -3782,11 +3621,11 @@ faction_goal_fortify_suez_canal = {
 		every_faction_member = { 
 			visible_when_empty = yes
 			limit = {
-				controls_state = 446
+				controls_state = 800
 			}
 			add_faction_initiative = 1
 		}
-		446 = {
+		800 = {
 			add_building_construction = {
 				type = anti_air_building
 				level = 1
@@ -3814,30 +3653,6 @@ faction_goal_fortify_suez_canal = {
 				type = bunker
 				level = 1
 				province = 4073
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = coastal_bunker
-				level = 1
-				province = 1155
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = bunker
-				level = 1
-				province = 1155
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = coastal_bunker
-				level = 1
-				province = 9947
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = bunker
-				level = 1
-				province = 9947
 				instant_build = yes
 			}
 		}
@@ -3939,168 +3754,6 @@ faction_goal_expand_gulf_of_aden_bases = {
 		}
 	}
 }
-faction_goal_fortify_strait_of_hormuz = {
-	name = fortify_strait_of_hormuz_goal_name
-	description = fortify_strait_of_hormuz_goal_desc
-	category = short_term
-	group = FOCUS_FILTER_CONSOLIDATION
-	allowed = {
-
-	}
-	visible = {
-		OR = {
-			412 = { is_controlled_by_ROOT_or_ally = yes }
-			1013 = { is_controlled_by_ROOT_or_ally = yes }
-		}
-	}
-	available = {
-		412 = { is_controlled_by_ROOT_or_ally = yes }
-		1013 = { is_controlled_by_ROOT_or_ally = yes }
-	}
-	completed = {
-		custom_trigger_tooltip = {
-            tooltip = fortify_strait_of_hormuz_tooltip
-			412 = {
-				any_province_building_level = {
-					province = {
-						id = 7982
-					}
-					building = coastal_bunker
-					level > 0
-				}
-				any_province_building_level = {
-					province = {
-						id = 7982
-					}
-					building = bunker
-					level > 0
-				}
-			}
-			1013 = {
-				any_province_building_level = {
-					province = {
-						id = 13369
-					}
-					building = coastal_bunker
-					level > 0
-				}
-				any_province_building_level = {
-					province = {
-						id = 13369
-					}
-					building = bunker
-					level > 0
-				}
-			}
-			OR = {
-				AND = {
-					divisions_in_state = { state = 412 size > 0 }
-					divisions_in_state = { state = 1013 size > 0 }
-				}
-				any_allied_country = {
-					divisions_in_state = { state = 412 size > 0 }
-					divisions_in_state = { state = 1013 size > 0 }
-				}
-			}
-		}
-	}
-	complete_effect = {
-		add_faction_power_projection = 100
-		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = TARGET_STATE_CONTROLLERS
-		every_faction_member = { 
-			visible_when_empty = yes
-			limit = {
-				OR = {
-					controls_state = 412
-					controls_state = 1013
-				}
-			}
-			add_faction_initiative = 1
-		}
-		412 = {
-			add_building_construction = {
-				type = anti_air_building
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = coastal_bunker
-				level = 1
-				province = 7982
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = bunker
-				level = 1
-				province = 7982
-				instant_build = yes
-			}
-		}
-		1013 = {
-			add_building_construction = {
-				type = anti_air_building
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = coastal_bunker
-				level = 1
-				province = 13369
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = bunker
-				level = 1
-				province = 13369
-				instant_build = yes
-			}
-		}
-	}
-	ai_will_do = {
-		base = 1
-		modifier = {
-			add = 2 # If convoys being threatened try to secure the suez supply lines better
-			convoy_threat > 0.5
-			collection_size = {
-				input = {
-					input = game:all_states
-					operators = {
-						limit = {
-							is_controlled_by_ROOT_or_ally = yes
-							OR = {
-								is_on_continent = europe
-								is_on_continent = asia
-							}
-						}
-					}
-					name = COLLECTION_FACTION_STATES_IN_EUROPE_OR_ASIA
-				}
-				value > 0
-			}
-			collection_size = {
-				input = {
-					input = game:all_states
-					operators = {
-						limit = {
-							is_controlled_by_ROOT_or_ally = yes 
-							is_on_continent = middle_east
-						}
-					}
-					name = COLLECTION_FACTION_STATES_IN_MIDDLE_EAST
-				}
-				value > 0
-			}
-		}
-		modifier = {
-			add = 1 # If naval power seek to control access
-			has_navy_size = {
-				size > 5
-				type = capital_ship
-			}
-		}
-	}
-}
 faction_goal_expand_ceylonese_bases = {
 	name = expand_ceylonese_bases_goal_name
 	description = expand_ceylonese_bases_goal_desc
@@ -4189,13 +3842,13 @@ faction_goal_expand_singapore_naval_base = {
 		
 	}
 	visible = {
-		1021 = { is_controlled_by_ROOT_or_ally = yes }
+		336 = { is_controlled_by_ROOT_or_ally = yes }
 	}
 	available = {
 
 	}
 	completed = {
-		1021 = {
+		336 = {
 			air_base > 7
 			any_province_building_level = {
 				province = {
@@ -4220,11 +3873,11 @@ faction_goal_expand_singapore_naval_base = {
 		every_faction_member = { 
 			visible_when_empty = yes
 			limit = {
-				controls_state = 1021
+				controls_state = 336
 			}
 			add_faction_initiative = 1
 		}
-		1021 = {
+		336 = {
 			add_building_construction = {
 				type = anti_air_building
 				level = 1
@@ -4270,11 +3923,6 @@ faction_goal_expand_singapore_naval_base = {
 				size > 5
 				type = capital_ship
 			}
-		}
-		modifier = {
-			add = 5 # ENG should really want to do this
-			is_historical_focus_on = yes
-			original_tag = ENG
 		}
 	}
 }

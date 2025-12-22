@@ -3500,7 +3500,7 @@ country_event = {##Napoleon and the jews
 	picture = GFX_report_event_napoleon_and_jews
 	fire_only_once = yes
 	is_triggered_only = yes
-	option = {
+	option = {##stop supporting jews
 		name = deluge_france.101.a
 		add_political_power = 20
 		add_popularity = {
@@ -3508,7 +3508,7 @@ country_event = {##Napoleon and the jews
 			popularity = -0.07
 		}
 	}
-	option = {
+	option = {##still support jews
 		name = deluge_france.101.b
 		add_political_power = -15
 		add_popularity = {

@@ -19,11 +19,9 @@ faction_template_entente_cordiale = {
 	default_rules = {
 		joining_rule_non_communist
 		faction_peace_rule_conquest_focus
-		dismissal_rule_offensive_war
 		change_leader_rule_industry
 		change_leader_rule_influence
 		change_leader_rule_manpower
-		war_declaration_rule_any_country
 	}
 	
 }

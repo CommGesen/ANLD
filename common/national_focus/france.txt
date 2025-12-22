@@ -6758,7 +6758,21 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_completed_focus = FRA_prophet_saved
+				}
+				create_faction_from_template = faction_template_promethean_crusade
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = FRA_francist_movement
+				}
+				create_faction_from_template = faction_template_latin_sphere
+			}
+			else = {
+				create_faction_from_template = faction_template_paris_accords
+			}
 		}
 		ai_will_do = {
 			factor = 25

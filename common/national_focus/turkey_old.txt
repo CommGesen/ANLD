@@ -795,7 +795,7 @@ focus_tree = {
 				limit = {
 					is_in_faction = no
 				}
-				create_faction = "factionTurkishBloc"
+				create_faction_from_template = faction_template_turkish_bloc
 			}
 		}
 		ai_will_do = {

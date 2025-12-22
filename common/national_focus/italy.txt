@@ -918,7 +918,7 @@ focus_tree = {
 					has_cosmetic_tag = ITA_ROME
 					has_government = fascism
 				}
-				create_faction = "factionRomanBloc"
+				create_faction_from_template = faction_template_roman_bloc
 			}
 			
 			if = {
@@ -930,7 +930,7 @@ focus_tree = {
 						NOT = { has_cosmetic_tag = ITA_ROME }
 					}
 				}
-				create_faction = "factionItalianBloc"
+				create_faction_from_template = faction_template_italian_bloc
 			}
 		}
 		ai_will_do = {

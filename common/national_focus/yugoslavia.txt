@@ -776,7 +776,7 @@ focus_tree = {
 						has_global_flag = deluge_balkan_bloc_created
 					}
 				}
-				create_faction = "factionBalkanBloc"
+				create_faction_from_template = faction_template_balkan_bloc
 				set_global_flag = deluge_balkan_bloc_created
 			}
 		}
