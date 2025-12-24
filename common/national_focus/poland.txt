@@ -7670,7 +7670,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			set_faction_name = European_Cooperation
+			create_faction_from_template = faction_template_european_cooperation
 			hidden_effect = {
 				news_event = {
 					id = deluge_poland_foreign.25
@@ -7753,7 +7753,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_190
-			set_faction_name = Revolutionary_Commonwealth
+			create_faction_from_template = faction_template_revolutionary_commonwealth
 			hidden_effect = {
 				news_event = {
 					id = deluge_poland_foreign.26

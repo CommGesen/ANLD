@@ -1,0 +1,30 @@
+joining_rule_non_democratic_non_monarchist = {
+	type = joining_rules
+	visible = {
+		NOT = { has_government = democratic }
+		NOT = { has_government = neutrality }
+	}
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 2 
+			has_government = fascism
+		}
+		modifier = {
+			add = 1
+			has_government = communism
+		}
+	}
+	trigger = {
+		NOT = {
+			has_government = democratic 
+		}
+		NOT = {
+			has_government = neutrality 
+		}
+		IF = {
+			limit = { NOT = { has_rule = can_join_opposite_factions } }
+			has_government = FROM
+		}
+	}
+}

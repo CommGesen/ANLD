@@ -1692,6 +1692,12 @@ focus_tree = {
 				can_generate_female_aces = yes
 			}
 			unlock_decision_category_tooltip = FRA_dec_cat_unite_europe
+			if = {
+				limit = {
+					has_completed_focus = FRA_reorganize_our_sphere
+				}
+				create_faction_from_template = faction_template_pan_european_alliance
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -6755,7 +6761,17 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			OR = {
+				has_completed_focus = FRA_creation_of_the_parliament
+				has_completed_focus = FRA_proudhon_circle
+				has_completed_focus = FRA_anarchist_communist_federation
+				has_completed_focus = FRA_french_communist_party
+				has_completed_focus = FRA_french_section_of_workers_internationale
+				has_completed_focus = FRA_fire_movement
+				has_completed_focus = FRA_francist_movement
+				has_completed_focus = FRA_french_social_party
+				has_completed_focus = FRA_french_popular_party
+			}
 		}
 		completion_reward = {
 			if = {
@@ -6769,6 +6785,34 @@ focus_tree = {
 					has_completed_focus = FRA_francist_movement
 				}
 				create_faction_from_template = faction_template_latin_sphere
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = FRA_deats_takeover
+				}
+				create_faction_from_template = faction_template_pan_european_alliance
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_completed_focus = FRA_anarchist_communist_federation
+						has_completed_focus = FRA_french_communist_party
+						has_completed_focus = FRA_french_section_of_workers_internationale
+					}
+				}
+				create_faction_from_template = faction_template_humanite_unie
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = FRA_proudhon_circle
+				}
+				create_faction_from_template = faction_template_paris_accords_proudhon
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = FRA_creation_of_the_parliament
+				}
+				create_faction_from_template = faction_template_french_republican_alliance
 			}
 			else = {
 				create_faction_from_template = faction_template_paris_accords
@@ -7211,6 +7255,10 @@ focus_tree = {
 		#}
 		available = {
 			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = generic_custom_trigger_tooltip_1
+				always = no
+			}
 		}
 		completion_reward = {
 			
@@ -7891,10 +7939,66 @@ focus_tree = {
 		#}
 		available = {
 			is_subject = no
-			
+			country_exists = ITA
+			NOT = {
+				has_war_with = ITA
+			}
+			NOT = {
+				ITA = {
+					is_subject_of = ROOT
+				}
+			}
+			NOT = {
+				is_in_faction_with = ITA
+			}
+		}
+		select_effect = {
+			set_variable = {
+				var = FRA_currently_targeted_nation_temp
+				value = ITA
+			}
+			ITA = {
+				country_event = {
+					id = generic.26
+				}
+			}
+			if = {
+				limit = {
+					ITA = {
+						is_subject = yes
+					}
+				}
+				ITA = {
+					overlord = {
+						country_event = {
+							id = generic.26
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					ITA = {
+						is_subject = yes
+					}
+				}
+				ITA = {
+					overlord = {
+						country_event = {
+							id = deluge_france_temp.4
+						}
+					}
+				}
+			}
+			else = {
+				ITA = {
+					country_event = {
+						id = deluge_france_temp.1
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7928,10 +8032,66 @@ focus_tree = {
 		#}
 		available = {
 			is_subject = no
-			
+			country_exists = CRO
+			NOT = {
+				has_war_with = CRO
+			}
+			NOT = {
+				CRO = {
+					is_subject_of = ROOT
+				}
+			}
+			NOT = {
+				is_in_faction_with = CRO
+			}
+		}
+		select_effect = {
+			set_variable = {
+				var = FRA_currently_targeted_nation_temp
+				value = CRO
+			}
+			CRO = {
+				country_event = {
+					id = generic.26
+				}
+			}
+			if = {
+				limit = {
+					CRO = {
+						is_subject = yes
+					}
+				}
+				CRO = {
+					overlord = {
+						country_event = {
+							id = generic.26
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					CRO = {
+						is_subject = yes
+					}
+				}
+				CRO = {
+					overlord = {
+						country_event = {
+							id = deluge_france_temp.4
+						}
+					}
+				}
+			}
+			else = {
+				CRO = {
+					country_event = {
+						id = deluge_france_temp.1
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -7965,10 +8125,66 @@ focus_tree = {
 		#}
 		available = {
 			is_subject = no
-			
+			country_exists = AUS
+			NOT = {
+				has_war_with = AUS
+			}
+			NOT = {
+				AUS = {
+					is_subject_of = ROOT
+				}
+			}
+			NOT = {
+				is_in_faction_with = AUS
+			}
+		}
+		select_effect = {
+			set_variable = {
+				var = FRA_currently_targeted_nation_temp
+				value = AUS
+			}
+			AUS = {
+				country_event = {
+					id = generic.26
+				}
+			}
+			if = {
+				limit = {
+					AUS = {
+						is_subject = yes
+					}
+				}
+				AUS = {
+					overlord = {
+						country_event = {
+							id = generic.26
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					AUS = {
+						is_subject = yes
+					}
+				}
+				AUS = {
+					overlord = {
+						country_event = {
+							id = deluge_france_temp.4
+						}
+					}
+				}
+			}
+			else = {
+				AUS = {
+					country_event = {
+						id = deluge_france_temp.1
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8132,10 +8348,66 @@ focus_tree = {
 		#}
 		available = {
 			is_subject = no
-			
+			country_exists = HUN
+			NOT = {
+				has_war_with = HUN
+			}
+			NOT = {
+				HUN = {
+					is_subject_of = ROOT
+				}
+			}
+			NOT = {
+				is_in_faction_with = HUN
+			}
+		}
+		select_effect = {
+			set_variable = {
+				var = FRA_currently_targeted_nation_temp
+				value = HUN
+			}
+			HUN = {
+				country_event = {
+					id = generic.26
+				}
+			}
+			if = {
+				limit = {
+					HUN = {
+						is_subject = yes
+					}
+				}
+				HUN = {
+					overlord = {
+						country_event = {
+							id = generic.26
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					HUN = {
+						is_subject = yes
+					}
+				}
+				HUN = {
+					overlord = {
+						country_event = {
+							id = deluge_france_temp.4
+						}
+					}
+				}
+			}
+			else = {
+				HUN = {
+					country_event = {
+						id = deluge_france_temp.1
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8209,7 +8481,10 @@ focus_tree = {
 		#}
 		available = {
 			is_subject = no
-			
+			custom_trigger_tooltip = {
+				tooltip = generic_custom_trigger_tooltip_1
+				always = no
+			}
 		}
 		completion_reward = {
 			
@@ -8283,10 +8558,66 @@ focus_tree = {
 		#}
 		available = {
 			is_subject = no
-			
+			country_exists = POL
+			NOT = {
+				has_war_with = POL
+			}
+			NOT = {
+				POL = {
+					is_subject_of = ROOT
+				}
+			}
+			NOT = {
+				is_in_faction_with = POL
+			}
+		}
+		select_effect = {
+			set_variable = {
+				var = FRA_currently_targeted_nation_temp
+				value = POL
+			}
+			POL = {
+				country_event = {
+					id = generic.26
+				}
+			}
+			if = {
+				limit = {
+					POL = {
+						is_subject = yes
+					}
+				}
+				POL = {
+					overlord = {
+						country_event = {
+							id = generic.26
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					POL = {
+						is_subject = yes
+					}
+				}
+				POL = {
+					overlord = {
+						country_event = {
+							id = deluge_france_temp.4
+						}
+					}
+				}
+			}
+			else = {
+				POL = {
+					country_event = {
+						id = deluge_france_temp.1
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8298,43 +8629,43 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 	}
-	focus = {
-		id = FRA_bring_back_eastern_states
-		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = 0
-		y = 1
-		prerequisite = { focus = FRA_restore_duchy_of_warsaw }
-		relative_position_id = FRA_restore_duchy_of_warsaw
-		search_filters = { }
-		cost = 5
-		#mutually_exclusive = { focus = }
-		allow_branch = {
-			
-		}
-		#offset = {
-		#	x = 0
-		#	y = 0
-		#	trigger = {
-		#		
-		#	}
-		#}
-		available = {
-			is_subject = no
-			
-		}
-		completion_reward = {
-			
-		}
-		ai_will_do = {
-			factor = 25
-		}
-		bypass = {
-			
-		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-	}
+#	focus = {
+#		id = FRA_bring_back_eastern_states
+#		icon = GFX_focus_SOV_ivan_plays_baseball
+#		x = 0
+#		y = 1
+#		prerequisite = { focus = FRA_restore_duchy_of_warsaw }
+#		relative_position_id = FRA_restore_duchy_of_warsaw
+#		search_filters = { }
+#		cost = 5
+#		#mutually_exclusive = { focus = }
+#		allow_branch = {
+#			
+#		}
+#		#offset = {
+#		#	x = 0
+#		#	y = 0
+#		#	trigger = {
+#		#		
+#		#	}
+#		#}
+#		available = {
+#			is_subject = no
+#			
+#		}
+#		completion_reward = {
+#			
+#		}
+#		ai_will_do = {
+#			factor = 25
+#		}
+#		bypass = {
+#			
+#		}
+#		cancel_if_invalid = no
+#		continue_if_invalid = yes
+#		available_if_capitulated = yes
+#	}
 	focus = {
 		id = FRA_danish_vassalization
 		icon = GFX_focus_generic_attack_denmark
@@ -8357,10 +8688,66 @@ focus_tree = {
 		#}
 		available = {
 			is_subject = no
-			
+			country_exists = DEN
+			NOT = {
+				has_war_with = DEN
+			}
+			NOT = {
+				DEN = {
+					is_subject_of = ROOT
+				}
+			}
+			NOT = {
+				is_in_faction_with = DEN
+			}
+		}
+		select_effect = {
+			set_variable = {
+				var = FRA_currently_targeted_nation_temp
+				value = DEN
+			}
+			DEN = {
+				country_event = {
+					id = generic.26
+				}
+			}
+			if = {
+				limit = {
+					DEN = {
+						is_subject = yes
+					}
+				}
+				DEN = {
+					overlord = {
+						country_event = {
+							id = generic.26
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					DEN = {
+						is_subject = yes
+					}
+				}
+				DEN = {
+					overlord = {
+						country_event = {
+							id = deluge_france_temp.4
+						}
+					}
+				}
+			}
+			else = {
+				DEN = {
+					country_event = {
+						id = deluge_france_temp.1
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8394,10 +8781,66 @@ focus_tree = {
 		#}
 		available = {
 			is_subject = no
-			
+			country_exists = SWE
+			NOT = {
+				has_war_with = SWE
+			}
+			NOT = {
+				SWE = {
+					is_subject_of = ROOT
+				}
+			}
+			NOT = {
+				is_in_faction_with = SWE
+			}
+		}
+		select_effect = {
+			set_variable = {
+				var = FRA_currently_targeted_nation_temp
+				value = SWE
+			}
+			SWE = {
+				country_event = {
+					id = generic.26
+				}
+			}
+			if = {
+				limit = {
+					SWE = {
+						is_subject = yes
+					}
+				}
+				SWE = {
+					overlord = {
+						country_event = {
+							id = generic.26
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			if = {
+				limit = {
+					SWE = {
+						is_subject = yes
+					}
+				}
+				SWE = {
+					overlord = {
+						country_event = {
+							id = deluge_france_temp.4
+						}
+					}
+				}
+			}
+			else = {
+				SWE = {
+					country_event = {
+						id = deluge_france_temp.1
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8412,10 +8855,14 @@ focus_tree = {
 	focus = {
 		id = FRA_finish_old_foe
 		icon = GFX_focus_SOV_ivan_plays_baseball
-		x = 1
+		x = -1
 		y = 1
-		prerequisite = { focus = FRA_bring_back_eastern_states focus = FRA_swedish_vassalization}
-		relative_position_id = FRA_bring_back_eastern_states
+		prerequisite = {
+			#focus = FRA_bring_back_eastern_states
+			focus = FRA_restore_duchy_of_warsaw
+			focus = FRA_swedish_vassalization
+		}
+		relative_position_id = FRA_swedish_vassalization
 		search_filters = { }
 		cost = 5
 		#mutually_exclusive = { focus = }
@@ -8431,10 +8878,45 @@ focus_tree = {
 		#}
 		available = {
 			is_subject = no
-			
+			country_exists = SOV
+			NOT = {
+				has_war_with = SOV
+			}
+			NOT = {
+				SOV = {
+					is_subject_of = ROOT
+				}
+			}
+			NOT = {
+				is_in_faction_with = SOV
+			}
+		}
+		select_effect = {
+			SOV = {
+				country_event = {
+					id = generic.26
+				}
+			}
+			if = {
+				limit = {
+					SOV = {
+						is_subject = yes
+					}
+				}
+				SOV = {
+					overlord = {
+						country_event = {
+							id = generic.26
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SOV
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -8557,7 +9039,14 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			set_faction_name = FRA_faction_name_eu
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = FRA_deats_takeover
+					}
+				}
+				create_faction_from_template = faction_template_french_european_union
+			}
 			unlock_decision_category_tooltip = FRA_invite_to_eu_tt
 			add_political_power = 35
 		}
@@ -9121,7 +9610,10 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			custom_trigger_tooltip = {
+				tooltip = generic_custom_trigger_tooltip_1
+				always = no
+			}
 		}
 		completion_reward = {
 			
@@ -9157,7 +9649,10 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			custom_trigger_tooltip = {
+				tooltip = generic_custom_trigger_tooltip_1
+				always = no
+			}
 		}
 		completion_reward = {
 			
@@ -19758,7 +20253,10 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			custom_trigger_tooltip = {
+				tooltip = generic_custom_trigger_tooltip_1
+				always = no
+			}
 		}
 		completion_reward = {
 			
@@ -21482,6 +21980,10 @@ focus_tree = {
 					has_dlc = "By Blood Alone"
 				}
 				has_tech = aa_cannon_3
+			}
+			custom_trigger_tooltip = {
+				tooltip = generic_custom_trigger_tooltip_1
+				always = no
 			}
 		}
 		completion_reward = {
