@@ -2,6 +2,10 @@
 state={
 	id=881
 	name="STATE_881"
+	
+	resources = {
+		coal = 6 # initial distribution
+	}
 
 	history={
 		owner = SOV

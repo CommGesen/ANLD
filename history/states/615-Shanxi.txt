@@ -6,6 +6,10 @@ state=
 	
 	state_category = town
 	
+	resources = {
+		coal = 19 #initial distribution
+	}
+	
 	history=
 	{
 		owner = CHI

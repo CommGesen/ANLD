@@ -5,6 +5,10 @@ state={
 	
 	state_category = rural
 	
+	resources = {
+		coal = 2 # initial distribution / 60 total
+	}
+	
 	history={
 		victory_points = {
 			3581 3

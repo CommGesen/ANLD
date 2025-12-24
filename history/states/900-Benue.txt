@@ -2,7 +2,11 @@ state={
 	id=900
 	name="STATE_900"
 	manpower = 1163674
-	state_category = pastoral 
+	state_category = pastoral
+	
+	resources = {
+		coal = 2 #initial distribution
+	}
 
 	history={
 		owner = USA

@@ -17,6 +17,11 @@ state={
 		owner = SIA
 		add_core_of = SIA
 	}
+	
+	resources = {
+		coal = 1 #Lowgrade lignite and sub-bituminous coal
+	}
+	
 	manpower=2000000
 	state_category = rural
 	buildings_max_level_factor=1.000

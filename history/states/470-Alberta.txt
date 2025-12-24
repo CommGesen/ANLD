@@ -2,8 +2,8 @@
 state={
 	id=470
 	name="STATE_470"
-	resources={
-		steel=10
+	resources = {
+		coal = 5 # initial distribution = with infra 9.6 / 36 total
 	}
 
 	history={

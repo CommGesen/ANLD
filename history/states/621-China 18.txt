@@ -4,6 +4,10 @@ state={
 	manpower = 1583700
 	
 	state_category = rural
+	
+	resources = {
+		coal = 7 #initial distribution
+	}
 
 	history={
 		owner = CHI

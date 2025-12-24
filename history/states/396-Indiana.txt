@@ -4,6 +4,10 @@ state={
 	name="STATE_396"
 	manpower = 2538501
 	state_category = city
+	
+	resources = {
+		coal = 14 #initial distribution = with infra 44.8 / 1280 total
+	}
 
 	history={
 		owner = USA

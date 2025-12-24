@@ -5,6 +5,10 @@ state={
 	manpower = 727198
 	
 	state_category = town
+	
+	resources = {
+		coal = 2 #initial distribution
+	}
 
 	history={
 		owner = TUR

@@ -5,6 +5,10 @@ state={
 	
 	state_category = rural
 	
+	resources = {
+		coal = 1 #initial distribution
+	}
+	
 	history=
 	{
 		owner = ROM

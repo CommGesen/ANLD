@@ -5,6 +5,10 @@ state={
 	resources={
 		steel=1.000
 	}
+	
+	resources = {
+		coal = 12 # initial distribution / 60 total
+	}
 
 	history={
 		owner = AUS

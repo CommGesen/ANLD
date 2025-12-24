@@ -4,8 +4,8 @@ state={
 	name="STATE_113" # Leinster
 	manpower = 5102000
 	resources={
-		aluminium=2
-		steel=3
+		steel = 2 # was: 3
+		coal = 1 # initial distribution
 	}
 	
 	state_category = metropolis
