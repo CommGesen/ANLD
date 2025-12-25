@@ -553,6 +553,9 @@ FRA_modifier_new_french_army = {##new_french_army_
 	army_armor_attack_factor = new_french_army_army_armor_attack_factor
 	extra_marine_supply_grace = new_french_army_extra_marine_supply_grace
 	paradrop_organization_factor = new_french_army_paradrop_organization_factor
+	navy_submarine_attack_factor = new_french_army_navy_submarine_attack_factor
+	supply_factor = new_french_army_supply_factor
+	land_doctrine_cost_factor = new_french_army_land_doctrine_cost_factor
 }
 POL_religious_sect_of_wierszalin = {
 	enable = { always = yes }

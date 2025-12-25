@@ -871,7 +871,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_armored_reconnaissance_vehicle = {
-			picture = FRA_fortification_focus #change later
+			picture = raj_heavy_vehicles_factory_avadi
 			allowed = {
 				original_tag = FRA
 			}
@@ -1234,7 +1234,7 @@ ideas = {
 			}
 		}
 		FRA_marine_de_guerre = {
-			picture = spirit_mass_production_of_guns #change later
+			picture = generic_navy_cruiser_warfare
 			allowed = {
 				original_tag = FRA
 			}
@@ -1260,6 +1260,238 @@ ideas = {
 					instant = yes
 				}
 				ship_hull_cruiser = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		}
+		FRA_marine_de_guerre_battleship = {
+			picture = generic_navy_cruiser_warfare
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				
+			}
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_heavy = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		}
+		FRA_marine_de_guerre_battleship_2 = {
+			picture = generic_navy_cruiser_warfare
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				
+			}
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_heavy = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				naval_bomber = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		}
+		FRA_marine_de_guerre_battleship_3 = {
+			picture = generic_navy_cruiser_warfare
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				navy_weather_penalty = -0.1
+			}
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_heavy = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				naval_bomber = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		}
+		FRA_marine_de_guerre_carrier = {
+			picture = generic_navy_cruiser_warfare
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				
+			}
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		}
+		FRA_marine_de_guerre_carrier_2 = {
+			picture = generic_navy_cruiser_warfare
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				
+			}
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				cv_small_plane_airframe = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		}
+		FRA_marine_de_guerre_carrier_3 = {
+			picture = generic_navy_cruiser_warfare
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				sortie_efficiency = 0.2
+			}
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				cv_small_plane_airframe = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
@@ -1380,7 +1612,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_aeronautique_nationale = {
-			picture = FRA_fortification_focus #change later
+			picture = idea_generic_air_fighter
 			allowed = {
 				original_tag = FRA
 			}
@@ -1400,7 +1632,7 @@ ideas = {
 			research_bonus = { air_equipment = 0.1}
 		}
 		FRA_spirit_aeronautique_nationale2 = {
-			picture = FRA_fortification_focus #change later
+			picture = idea_generic_air_fighter
 			allowed = {
 				original_tag = FRA
 			}
@@ -1426,7 +1658,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_increase_fighter_production = {
-			picture = generic_fighter_production_diverted ##change later
+			picture = generic_fighter_production_diverted
 			allowed = {
 				original_tag = FRA
 			}
@@ -1472,7 +1704,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_proximity_airdrops = {
-			picture = FRA_fortification_focus #change later
+			picture = generic_air_research
 			allowed = {
 				original_tag = FRA
 			}
@@ -1530,7 +1762,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_forces_speciales = {
-			picture = generic_spy_intel ##change later
+			picture = PER_special_units_division_idea
 			allowed = {
 				original_tag = FRA
 			}

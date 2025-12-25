@@ -16316,7 +16316,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_introduce_corporatism focus = FRA_communal_property }
 		relative_position_id = FRA_introduce_corporatism
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { focus = FRA_decentralize_economy }
 		allow_branch = {
 			
@@ -16371,7 +16371,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_communal_property focus = FRA_mutualism }
 		relative_position_id = FRA_mutualism
 		search_filters = { }
-		cost = 1
+		cost = 5
 		mutually_exclusive = { focus = FRA_centralize_economy }
 		allow_branch = {
 			
@@ -19771,7 +19771,12 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { new_french_army_land_doctrine_cost_factor = -0.05}
+				add_to_variable = { new_french_army_supply_factor = 0.04}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_164
+			army_experience = 10
 		}
 		ai_will_do = {
 			factor = 25
@@ -20651,7 +20656,11 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				add_idea = FRA_marine_de_guerre_battleship
+				remove_idea = FRA_marine_de_guerre
+			}
+			set_grand_doctrine = new_fleet_in_being
 		}
 		ai_will_do = {
 			factor = 25
@@ -20818,7 +20827,11 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			navy_experience = 10
+			swap_ideas = {
+				remove_idea = FRA_marine_de_guerre_battleship
+				add_idea = FRA_marine_de_guerre_battleship_2
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -20854,7 +20867,11 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			navy_experience = 10
+			swap_ideas = {
+				remove_idea = FRA_marine_de_guerre_battleship_2
+				add_idea = FRA_marine_de_guerre_battleship_3
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -20890,7 +20907,11 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				add_idea = FRA_marine_de_guerre_carrier
+				remove_idea = FRA_marine_de_guerre
+			}
+			set_grand_doctrine = new_base_strike
 		}
 		ai_will_do = {
 			factor = 25
@@ -20966,7 +20987,11 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			navy_experience = 10
+			swap_ideas = {
+				remove_idea = FRA_marine_de_guerre_carrier
+				add_idea = FRA_marine_de_guerre_carrier_2
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -21002,7 +21027,11 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			navy_experience = 10
+			swap_ideas = {
+				remove_idea = FRA_marine_de_guerre_carrier_2
+				add_idea = FRA_marine_de_guerre_carrier_3
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -21038,7 +21067,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { new_french_army_navy_submarine_attack_factor = 0.05}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_165
 		}
 		ai_will_do = {
 			factor = 25
@@ -21074,7 +21106,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = { new_french_army_naval_detection = 0.05}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_166
 		}
 		ai_will_do = {
 			factor = 25
