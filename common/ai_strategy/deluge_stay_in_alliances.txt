@@ -24,15 +24,12 @@ deluge_maintain_alliance_with_france = {
 	abort = {
 		OR = {
 			NOT = { is_in_faction_with = FRA }
-			NOT = {
-				FRA = { is_same_or_close_ideology = yes }
-			}
 		}
 	}
 	ai_strategy = {
 		type = alliance
 		id = "FRA"
-		value = 100
+		value = 800
 	}	
 }
 
@@ -138,15 +135,12 @@ deluge_maintain_alliance_with_poland = {
 	abort = {
 		OR = {
 			NOT = { is_in_faction_with = POL }
-			NOT = {
-				POL = { is_same_or_close_ideology = yes }
-			}
 		}
 	}
 	ai_strategy = {
 		type = alliance
 		id = "POL"
-		value = 100
+		value = 800
 	}	
 }
 

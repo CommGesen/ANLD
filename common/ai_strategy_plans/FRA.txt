@@ -1,0 +1,45 @@
+France_guarantor_path = {
+	name = "Emperor maintains status quo!"
+	desc = ""
+
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		OR = {
+			is_historical_focus_on = yes
+			has_game_rule = {
+				rule = FRA_AI_BEHAVIOR
+				option = GUARANTOR
+			}
+			has_country_flag = FRA_guarantor_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		FRA_foreign_policy
+		FRA_devaluate_the_franc
+		FRA_decrease_export
+		
+		FRA_previous_course
+		FRA_nobility_loyalty
+		FRA_improve_living_conditions
+		FRA_reform_the_old
+		FRA_soldiers_loyalty
+		
+		FRA_the_guarantor
+		FRA_old_new_ways
+	}
+
+	ideas = {
+		
+	}
+
+	focus_factors = {
+		
+	}
+
+}

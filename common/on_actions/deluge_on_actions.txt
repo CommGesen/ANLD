@@ -1408,6 +1408,76 @@ on_actions = {
 					}
 				}
 			}
+			FRA = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = FRA_ai_behavior
+							option = RANDOM
+						}
+						is_historical_focus_on = no
+					}
+					random_list = {
+						6 = {
+							set_country_flag = FRA_fire_movement_ai_chosen
+						}
+						6 = {
+							set_country_flag = FRA_francist_movement_ai_chosen
+						}
+						5 = {
+							set_country_flag = FRA_french_social_party_ai_chosen
+						}
+						5 = {
+							set_country_flag = FRA_french_popular_party_ai_chosen
+						}
+						6 = {
+							set_country_flag = FRA_national_popular_rally_ai_chosen
+						}
+						5 = {
+							set_country_flag = FRA_republic_radical_party_ai_chosen
+						}
+						5 = {
+							set_country_flag = FRA_republic_democratic_republican_alliance_ai_chosen
+						}
+						5 = {
+							set_country_flag = FRA_republic_popular_republican_movement_ai_chosen
+						}
+						5 = {
+							set_country_flag = FRA_reformer_radical_party_ai_chosen
+						}
+						5 = {
+							set_country_flag = FRA_reformer_democratic_republican_alliance_ai_chosen
+						}
+						5 = {
+							set_country_flag = FRA_reformer_popular_republican_movement_ai_chosen
+						}
+						5 = {
+							set_country_flag = FRA_guarantor_ai_chosen
+						}
+						5 = {
+							set_country_flag = FRA_absolutist_grip_ai_chosen
+						}
+						6 = {
+							set_country_flag = FRA_boulangists_ai_chosen
+						}
+						6 = {
+							set_country_flag = FRA_proudhon_circle_ai_chosen
+						}
+						5 = {
+							set_country_flag = FRA_anarchists_faure_ai_chosen
+						}
+						5 = {
+							set_country_flag = FRA_anarchists_armand_ai_chosen
+						}
+						5 = {
+							set_country_flag = FRA_french_communist_party_ai_chosen
+						}
+						5 = {
+							set_country_flag = FRA_SFIO_ai_chosen
+						}
+					}
+				}
+			}
 		}
 	}
 	on_state_control_changed = {##cities fall - news events

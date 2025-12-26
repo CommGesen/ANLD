@@ -6724,11 +6724,23 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			
+			has_completed_focus = FRA_previous_course
 		}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.1
+			add_faction_goal_slot = {
+				category  = short_term
+				value = 1 
+			}
+			add_faction_goal_slot = {
+				category  = medium_term
+				value = 1 
+			}
+			add_faction_goal_slot = {
+				category  = long_term
+				value = 1 
+			}
 		}
 		ai_will_do = {
 			factor = 25
