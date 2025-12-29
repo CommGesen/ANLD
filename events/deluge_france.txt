@@ -83,6 +83,31 @@ country_event = {
 			last_election = "1935.12.17"
 			election_frequency = 48 
 		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 1000
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = ABSOLUTIST_GRIP
+					}
+					has_country_flag = FRA_absolutist_grip_ai_chosen
+				}
+			}
+			modifier = {
+				add = -1000
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = FRA_AI_BEHAVIOR
+							option = ABSOLUTIST_GRIP
+						}
+						has_country_flag = FRA_absolutist_grip_ai_chosen
+					}
+				}
+			}
+		}
 	}
 	option = {##boulangists make emperor puppet
 		name = deluge_france.4.b
@@ -102,6 +127,31 @@ country_event = {
 		add_popularity = {
 			ideology = fascism
 			popularity = half_of_monarchism
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -1000
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = ABSOLUTIST_GRIP
+					}
+					has_country_flag = FRA_absolutist_grip_ai_chosen
+				}
+			}
+			modifier = {
+				add = 1000
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = FRA_AI_BEHAVIOR
+							option = ABSOLUTIST_GRIP
+						}
+						has_country_flag = FRA_absolutist_grip_ai_chosen
+					}
+				}
+			}
 		}
 	}
 }
@@ -242,12 +292,102 @@ country_event = {
 			id = deluge_france.13
 			hours = 10
 		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 1000
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REPUBLIC_POPULAR_REPUBLICAN_MOVEMENT
+					}
+					has_country_flag = FRA_republic_popular_republican_movement_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REPUBLIC_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_republic_democratic_republican_alliance_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REPUBLIC_RADICAL_PARTY
+					}
+					has_country_flag = FRA_republic_radical_party_ai_chosen
+				}
+			}
+			modifier = {
+				add = -1000
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = FRA_AI_BEHAVIOR
+							option = REPUBLIC_POPULAR_REPUBLICAN_MOVEMENT
+						}
+						has_country_flag = FRA_republic_popular_republican_movement_ai_chosen
+						has_game_rule = {
+							rule = FRA_AI_BEHAVIOR
+							option = REPUBLIC_DEMOCRATIC_REPUBLICAN_ALLIANCE
+						}
+						has_country_flag = FRA_republic_democratic_republican_alliance_ai_chosen
+						has_game_rule = {
+							rule = FRA_AI_BEHAVIOR
+							option = REPUBLIC_RADICAL_PARTY
+						}
+						has_country_flag = FRA_republic_radical_party_ai_chosen
+					}
+				}
+			}
+		}
 	}
 	option = {##Louvre is not closed - radicals and nationalists paths
 		name = deluge_france.7.b
 		country_event = {
 			id = deluge_france.12
 			hours = 2
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -1000
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REPUBLIC_POPULAR_REPUBLICAN_MOVEMENT
+					}
+					has_country_flag = FRA_republic_popular_republican_movement_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REPUBLIC_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_republic_democratic_republican_alliance_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REPUBLIC_RADICAL_PARTY
+					}
+					has_country_flag = FRA_republic_radical_party_ai_chosen
+				}
+			}
+			modifier = {
+				add = 1000
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = FRA_AI_BEHAVIOR
+							option = REPUBLIC_POPULAR_REPUBLICAN_MOVEMENT
+						}
+						has_country_flag = FRA_republic_popular_republican_movement_ai_chosen
+						has_game_rule = {
+							rule = FRA_AI_BEHAVIOR
+							option = REPUBLIC_DEMOCRATIC_REPUBLICAN_ALLIANCE
+						}
+						has_country_flag = FRA_republic_democratic_republican_alliance_ai_chosen
+						has_game_rule = {
+							rule = FRA_AI_BEHAVIOR
+							option = REPUBLIC_RADICAL_PARTY
+						}
+						has_country_flag = FRA_republic_radical_party_ai_chosen
+					}
+				}
+			}
 		}
 	}
 }
@@ -261,14 +401,53 @@ country_event = {
 	option = {##radical party
 		name = deluge_france.8.a
 		set_country_flag = FRA_flag_radical_party_won
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 1000
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_RADICAL_PARTY
+					}
+					has_country_flag = FRA_reformer_radical_party_ai_chosen
+				}
+			}
+		}
 	}
 	option = {##democratic republican alliance
 		name = deluge_france.8.b
 		set_country_flag = FRA_flag_democratic_republican_alliance_won
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 1000
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_reformer_democratic_republican_alliance_ai_chosen
+				}
+			}
+		}
 	}
 	option = {##popular republican movement
 		name = deluge_france.8.c
 		set_country_flag = FRA_flag_popular_republican_movement_won
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 1000
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_POPULAR_REPUBLICAN_MOVEMENT
+					}
+					has_country_flag = FRA_reformer_popular_republican_movement_ai_chosen
+				}
+			}
+		}
 	}
 }
 # Radical Party chooses its leader
@@ -3573,6 +3752,7 @@ country_event = {##issue of Louis Maurin
 					has_country_flag = FRA_SFIO_ai_chosen
 				}
 			}
+		}
 	}
 }
 country_event = {##tensions between royal of BEL and FRA are gone

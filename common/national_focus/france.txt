@@ -5848,6 +5848,12 @@ focus_tree = {
 				add_to_variable = {new_napoleonic_code_stability_factor = 0.03 }
 			}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_29
+			if = {
+				limit = {
+					has_completed_focus = FRA_absolutist_grip
+				}
+				remove_ideas = FRA_spirit_decadent_society_2
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -17788,7 +17794,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		}
-	focus = {		
+	focus = {
 		id = FRA_expand_military_industry
 		icon = GFX_focus_generic_reorient_production
 		x = 1
@@ -21080,9 +21086,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			hidden_effect = {
-				add_to_variable = { new_french_army_navy_submarine_attack_factor = 0.05}
+				add_to_variable = { new_french_army_naval_detection = 0.05}
 			}
-			custom_effect_tooltip = FRA_custom_effect_tooltip_165
+			custom_effect_tooltip = FRA_custom_effect_tooltip_166
 		}
 		ai_will_do = {
 			factor = 25
@@ -21119,9 +21125,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			hidden_effect = {
-				add_to_variable = { new_french_army_naval_detection = 0.05}
+				add_to_variable = { new_french_army_navy_submarine_attack_factor = 0.05}
 			}
-			custom_effect_tooltip = FRA_custom_effect_tooltip_166
+			custom_effect_tooltip = FRA_custom_effect_tooltip_165
 		}
 		ai_will_do = {
 			factor = 25

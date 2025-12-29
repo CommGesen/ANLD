@@ -3,7 +3,7 @@ France_guarantor_path = {
 	desc = ""
 
 	allowed = {
-		original_tag = FRA
+		tag = FRA
 	}
 	enable = {
 		OR = {
@@ -32,10 +32,1124 @@ France_guarantor_path = {
 		
 		FRA_the_guarantor
 		FRA_old_new_ways
+		FRA_expand_civil_rights
+		FRA_protect_the_citizens
+		FRA_x_crise
+		FRA_reform_education_system
+		FRA_modernize_napoleonic_code
+		
+		FRA_cut_jobs
+		FRA_matignon_agreements
+		FRA_support_small_and_medium_business
+		FRA_tax_reform
+		FRA_reform_central_bank
+		FRA_abandon_gold_standard
+		FRA_increase_social_welfare
+		FRA_reform_administration
+		FRA_budget_deficit_law
+		
+		FRA_laiszes_faire
+		FRA_les_grands_programmes
+		FRA_new_industry_standards
+		
+		FRA_lessons_of_senussi_campaign
+		FRA_a_new_army_budget
+		FRA_traumas_of_the_great_war
+		FRA_post_great_war_challenges
+		FRA_field_the_MAS_36
+		FRA_le_armee_de_demain
+		
+		FRA_de_gaulles_plan
+		FRA_onboard_radios
+		FRA_armored_warfare_tactics
+		FRA_char_de_combat_revalorise
+		FRA_a_modern_army
+		
+		FRA_continental_system_focus
+		FRA_question_of_pomerania
+		FRA_duchy_of_luxembourg_integration
+		FRA_watchman_of_global_security
+		FRA_demand_netherlands_submission
+		FRA_shared_scientific_projects
+		
+		FRA_air_force_modernization
+		FRA_southern_airports_expansion
+		FRA_colonial_air_groups
+		FRA_la_nouvelle_armee_de_l_air
+		FRA_organize_fighter_competition
+		FRA_anti_insurgency_measures
+		FRA_strategic_bombers_development
+		FRA_consolidate_new_doctrines
+		
+		FRA_integration_of_the_netherlands
+		FRA_closer_relations_with_ireland
+		FRA_dominion_over_ireland
+		
+		FRA_review_the_fleet
+		FRA_plans_to_counter_anglo_dominance
+		FRA_expand_naval_facilities
+		FRA_la_royale_fera_face
+		
+		FRA_experience_from_german_civil_war
+		FRA_modernize_high_command
+		
+		FRA_rethink_fleet_protection
+		FRA_pursue_battleship_studies
+		FRA_launch_the_richelieu_class
+		FRA_renew_maritime_patrol_avitation
+		FRA_man_the_guns
+		FRA_blockade_tactics
+		FRA_a_modern_fleet
+		
+		FRA_restore_dominion_over_spain
+		FRA_closer_relations_with_portugal
+		FRA_restore_dominion_over_portugal
+		
+		FRA_womens_rights
+		FRA_abolish_concordat_of_1801
+		
+		FRA_start_rearnament
+		FRA_expand_military_industry
+		FRA_expand_naval_industry
+		FRA_reorganize_military_aviation_industry
+		FRA_nationalize_military_complexes
+		
+		FRA_expand_civilian_industry
+		FRA_electricite_de_france
+		FRA_build_dams
+		FRA_expand_mining_industry
+		FRA_expand_state_refineries
+		
+		FRA_transport_modernization
+		FRA_develop_southern_infrastructure
+		FRA_develop_northern_infrastructure
+		FRA_all_roads_lead_to_paris
+		FRA_urbanize_countryside
+		FRA_subsidize_city_devolopment
+		
+		FRA_promote_consumption
+		FRA_free_competition
+		FRA_faciliating_trade
+		FRA_open_markets
+		FRA_promote_investments_in_the_stockmarket
 	}
 
 	ideas = {
+		FRA_deluge_jules_moch
+		FRA_deluge_francois_coty
+		FRA_deluge_jacques_barnaud
+		FRA_deluge_john_nicoletis
+		FRA_deluge_pierre_amidieu_du_clos
+		FRA_deluge_alexandre_berthier
 		
+		FRA_deluge_charles_huntziger
+		FRA_deluge_rene_olry
+		FRA_deluge_martial_valin
+		FRA_deluge_philippe_leclerc
+		FRA_deluge_maurice_gamelin
+		FRA_deluge_henri_mordacq
+		
+		FRA_deluge_joseph_vuillemin
+		
+		FRA_deluge_francois_darlan
+		
+		FRA_deluge_marie_pierre_koenig
+		
+		FRA_deluge_georges_catroux
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+France_absolutist_grip_path = {
+	name = "Emperor takes full control!"
+	desc = ""
+
+	allowed = {
+		tag = FRA
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_AI_BEHAVIOR
+				option = ABSOLUTIST_GRIP
+			}
+			has_country_flag = FRA_absolutist_grip_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		FRA_foreign_policy
+		FRA_devaluate_the_franc
+		FRA_decrease_export
+		
+		FRA_previous_course
+		FRA_nobility_loyalty
+		FRA_delegalize_trade_unions
+		FRA_partial_reactionism
+		FRA_soldiers_loyalty
+		
+		FRA_the_dictator
+		FRA_absolutist_grip
+		FRA_modernize_napoleonic_code
+		FRA_continue_patriarchy
+		FRA_improve_relations_with_church
+		
+		FRA_supermacist_propaganda
+		FRA_revanchist_rearmament
+		FRA_deal_with_minorities
+		FRA_new_regime
+		
+		FRA_cut_jobs
+		FRA_put_down_strikes
+		FRA_support_small_and_medium_business
+		FRA_tax_reform
+		FRA_reform_central_bank
+		FRA_keep_with_gold
+		FRA_increase_social_welfare
+		FRA_reform_administration
+		FRA_budget_deficit_law
+		
+		FRA_laiszes_faire
+		FRA_les_grands_programmes
+		FRA_new_industry_standards
+		
+		FRA_lessons_of_senussi_campaign
+		FRA_a_new_army_budget
+		FRA_traumas_of_the_great_war
+		FRA_post_great_war_challenges
+		FRA_field_the_MAS_36
+		FRA_le_armee_de_demain
+		
+		FRA_de_gaulles_plan
+		FRA_onboard_radios
+		FRA_armored_warfare_tactics
+		FRA_char_de_combat_revalorise
+		FRA_a_modern_army
+		
+		FRA_continental_system_focus
+		FRA_question_of_pomerania
+		FRA_duchy_of_luxembourg_integration
+		FRA_watchman_of_global_security
+		FRA_demand_netherlands_submission
+		FRA_shared_scientific_projects
+		
+		FRA_air_force_modernization
+		FRA_southern_airports_expansion
+		FRA_colonial_air_groups
+		FRA_la_nouvelle_armee_de_l_air
+		FRA_organize_fighter_competition
+		FRA_anti_insurgency_measures
+		FRA_strategic_bombers_development
+		FRA_consolidate_new_doctrines
+		
+		FRA_integration_of_the_netherlands
+		FRA_closer_relations_with_ireland
+		FRA_dominion_over_ireland
+		
+		FRA_review_the_fleet
+		FRA_plans_to_counter_anglo_dominance
+		FRA_expand_naval_facilities
+		FRA_la_royale_fera_face
+		
+		FRA_experience_from_german_civil_war
+		FRA_modernize_high_command
+		
+		FRA_rethink_fleet_protection
+		FRA_pursue_battleship_studies
+		FRA_launch_the_richelieu_class
+		FRA_renew_maritime_patrol_avitation
+		FRA_man_the_guns
+		FRA_blockade_tactics
+		FRA_a_modern_fleet
+		
+		FRA_restore_dominion_over_spain
+		FRA_closer_relations_with_portugal
+		FRA_restore_dominion_over_portugal
+		
+		FRA_start_rearnament
+		FRA_expand_military_industry
+		FRA_expand_naval_industry
+		FRA_reorganize_military_aviation_industry
+		FRA_nationalize_military_complexes
+		
+		FRA_expand_civilian_industry
+		FRA_electricite_de_france
+		FRA_build_dams
+		FRA_expand_mining_industry
+		FRA_expand_state_refineries
+		
+		FRA_transport_modernization
+		FRA_develop_southern_infrastructure
+		FRA_develop_northern_infrastructure
+		FRA_all_roads_lead_to_paris
+		FRA_urbanize_countryside
+		FRA_subsidize_city_devolopment
+		
+		FRA_promote_consumption
+		FRA_free_competition
+		FRA_faciliating_trade
+		FRA_open_markets
+		FRA_promote_investments_in_the_stockmarket
+	}
+
+	ideas = {
+		FRA_deluge_yves_le_trocquer
+		FRA_deluge_francois_coty
+		FRA_deluge_jacques_rueff
+		FRA_deluge_joseph_athanase_doumer
+		FRA_deluge_pierre_amidieu_du_clos
+		FRA_deluge_alexandre_berthier
+		
+		FRA_deluge_charles_huntziger
+		FRA_deluge_rene_olry
+		FRA_deluge_martial_valin
+		FRA_deluge_philippe_leclerc
+		FRA_deluge_maurice_gamelin
+		FRA_deluge_henri_mordacq
+		
+		FRA_deluge_joseph_vuillemin
+		
+		FRA_deluge_francois_darlan
+		
+		FRA_deluge_marie_pierre_koenig
+		
+		FRA_deluge_georges_catroux
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+France_boulangists_path = {
+	name = "Boulangists take full control!"
+	desc = ""
+
+	allowed = {
+		tag = FRA
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_AI_BEHAVIOR
+				option = BOULANGISTS
+			}
+			has_country_flag = FRA_boulangists_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		FRA_foreign_policy
+		FRA_devaluate_the_franc
+		FRA_decrease_export
+		
+		FRA_previous_course
+		FRA_nobility_loyalty
+		FRA_delegalize_trade_unions
+		FRA_partial_reactionism
+		FRA_soldiers_loyalty
+		
+		FRA_the_dictator
+		FRA_boulangists_takeover
+		FRA_stratocratic_government
+		FRA_invite_the_nationalists
+		FRA_support_rural_life
+		
+		FRA_supermacist_propaganda
+		FRA_revanchist_rearmament
+		FRA_deal_with_minorities
+		FRA_new_regime
+		
+		FRA_cut_jobs
+		FRA_put_down_strikes
+		FRA_support_small_and_medium_business
+		FRA_tax_reform
+		FRA_reform_central_bank
+		FRA_keep_with_gold
+		FRA_increase_social_welfare
+		FRA_reform_administration
+		FRA_budget_deficit_law
+		
+		FRA_third_way
+		FRA_les_grands_programmes
+		FRA_new_industry_standards
+		
+		FRA_lessons_of_senussi_campaign
+		FRA_a_new_army_budget
+		FRA_traumas_of_the_great_war
+		FRA_post_great_war_challenges
+		FRA_field_the_MAS_36
+		FRA_le_armee_de_demain
+		
+		FRA_de_gaulles_plan
+		FRA_onboard_radios
+		FRA_armored_warfare_tactics
+		FRA_char_de_combat_revalorise
+		FRA_a_modern_army
+		
+		FRA_continental_system_focus
+		FRA_question_of_pomerania
+		FRA_duchy_of_luxembourg_integration
+		FRA_watchman_of_global_security
+		FRA_demand_netherlands_submission
+		FRA_shared_scientific_projects
+		
+		FRA_air_force_modernization
+		FRA_southern_airports_expansion
+		FRA_colonial_air_groups
+		FRA_la_nouvelle_armee_de_l_air
+		FRA_organize_fighter_competition
+		FRA_anti_insurgency_measures
+		FRA_strategic_bombers_development
+		FRA_consolidate_new_doctrines
+		
+		FRA_integration_of_the_netherlands
+		FRA_closer_relations_with_ireland
+		FRA_dominion_over_ireland
+		
+		FRA_review_the_fleet
+		FRA_plans_to_counter_anglo_dominance
+		FRA_expand_naval_facilities
+		FRA_la_royale_fera_face
+		
+		FRA_experience_from_german_civil_war
+		FRA_modernize_high_command
+		
+		FRA_rethink_fleet_protection
+		FRA_pursue_battleship_studies
+		FRA_launch_the_richelieu_class
+		FRA_renew_maritime_patrol_avitation
+		FRA_man_the_guns
+		FRA_blockade_tactics
+		FRA_a_modern_fleet
+		
+		FRA_restore_dominion_over_spain
+		FRA_closer_relations_with_portugal
+		FRA_restore_dominion_over_portugal
+		
+		FRA_start_rearnament
+		FRA_expand_military_industry
+		FRA_expand_naval_industry
+		FRA_reorganize_military_aviation_industry
+		FRA_nationalize_military_complexes
+		
+		FRA_expand_civilian_industry
+		FRA_electricite_de_france
+		FRA_build_dams
+		FRA_expand_mining_industry
+		FRA_expand_state_refineries
+		
+		FRA_transport_modernization
+		FRA_develop_southern_infrastructure
+		FRA_develop_northern_infrastructure
+		FRA_all_roads_lead_to_paris
+		FRA_urbanize_countryside
+		FRA_subsidize_city_devolopment
+		
+		FRA_productivist_propaganda
+		FRA_militarize_economy
+		FRA_introduce_corporatism
+		FRA_autarky
+		FRA_puppet_trade_unions
+	}
+
+	ideas = {
+		FRA_deluge_yves_le_trocquer
+		FRA_deluge_francois_coty
+		FRA_deluge_jacques_rueff
+		FRA_deluge_joseph_athanase_doumer
+		FRA_deluge_pierre_amidieu_du_clos
+		FRA_deluge_pierre_taittinger
+		
+		FRA_deluge_charles_huntziger
+		FRA_deluge_rene_olry
+		FRA_deluge_martial_valin
+		FRA_deluge_philippe_leclerc
+		FRA_deluge_maurice_gamelin
+		FRA_deluge_henri_mordacq
+		
+		FRA_deluge_joseph_vuillemin
+		
+		FRA_deluge_francois_darlan
+		
+		FRA_deluge_marie_pierre_koenig
+		
+		FRA_deluge_georges_catroux
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+France_reformer_radical_party_path = {
+	name = "Emperor reforms France into constitutional monarchy! Radical Party wins elections!"
+	desc = ""
+
+	allowed = {
+		tag = FRA
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_AI_BEHAVIOR
+				option = REFORMER_RADICAL_PARTY
+			}
+			has_country_flag = FRA_reformer_radical_party_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		FRA_foreign_policy
+		FRA_devaluate_the_franc
+		FRA_decrease_export
+		
+		FRA_previous_course
+		FRA_nobility_loyalty
+		FRA_improve_living_conditions
+		FRA_reform_the_old
+		FRA_soldiers_loyalty
+		
+		FRA_the_reformer
+		FRA_radical_party
+		FRA_state_serves_the_people
+		FRA_limit_bourgeoisie
+		FRA_limit_corporations
+		FRA_labour_reforms
+		FRA_abolish_old_norms
+		FRA_women_emancipation
+		FRA_secular_institutions
+		FRA_reconciliation_of_generations
+		
+		FRA_cut_jobs
+		FRA_matignon_agreements
+		FRA_support_small_and_medium_business
+		FRA_tax_reform
+		FRA_reform_central_bank
+		FRA_abandon_gold_standard
+		FRA_increase_social_welfare
+		FRA_reform_administration
+		FRA_budget_deficit_law
+		
+		FRA_market_socialism
+		FRA_les_grands_programmes
+		FRA_new_industry_standards
+		
+		FRA_lessons_of_senussi_campaign
+		FRA_a_new_army_budget
+		FRA_traumas_of_the_great_war
+		FRA_post_great_war_challenges
+		FRA_field_the_MAS_36
+		FRA_le_armee_de_demain
+		
+		FRA_gamelins_plan
+		FRA_ballistic_vests
+		FRA_shocktroops
+		FRA_les_300_derniers_metres
+		FRA_a_modern_army
+		
+		FRA_continental_system_focus
+		FRA_question_of_pomerania
+		FRA_duchy_of_luxembourg_integration
+		FRA_watchman_of_global_security
+		FRA_demand_netherlands_submission
+		FRA_shared_scientific_projects
+		
+		FRA_air_force_modernization
+		FRA_southern_airports_expansion
+		FRA_colonial_air_groups
+		FRA_la_nouvelle_armee_de_l_air
+		FRA_organize_fighter_competition
+		FRA_anti_insurgency_measures
+		FRA_strategic_bombers_development
+		FRA_consolidate_new_doctrines
+		
+		FRA_integration_of_the_netherlands
+		FRA_closer_relations_with_ireland
+		FRA_dominion_over_ireland
+		
+		FRA_review_the_fleet
+		FRA_plans_to_counter_anglo_dominance
+		FRA_expand_naval_facilities
+		FRA_la_royale_fera_face
+		
+		FRA_experience_from_german_civil_war
+		FRA_modernize_high_command
+		
+		FRA_rethink_fleet_protection
+		FRA_pursue_battleship_studies
+		FRA_launch_the_richelieu_class
+		FRA_renew_maritime_patrol_avitation
+		FRA_man_the_guns
+		FRA_blockade_tactics
+		FRA_a_modern_fleet
+		
+		FRA_restore_dominion_over_spain
+		FRA_closer_relations_with_portugal
+		FRA_restore_dominion_over_portugal
+		
+		FRA_start_rearnament
+		FRA_expand_military_industry
+		FRA_expand_naval_industry
+		FRA_reorganize_military_aviation_industry
+		FRA_nationalize_military_complexes
+		
+		FRA_expand_civilian_industry
+		FRA_electricite_de_france
+		FRA_build_dams
+		FRA_expand_mining_industry
+		FRA_expand_state_refineries
+		
+		FRA_transport_modernization
+		FRA_develop_southern_infrastructure
+		FRA_develop_northern_infrastructure
+		FRA_all_roads_lead_to_paris
+		FRA_urbanize_countryside
+		FRA_subsidize_city_devolopment
+		
+		FRA_nationalize_key_industries
+		FRA_free_competition
+		FRA_faciliating_trade
+		FRA_open_markets
+		FRA_cooperative_enterprasises
+		FRA_provide_job_to_everyone
+		FRA_promote_investments_in_the_stockmarket
+	}
+
+	ideas = {
+		FRA_deluge_yves_le_trocquer
+		FRA_deluge_georges_bonnet
+		FRA_deluge_jacques_rueff
+		FRA_deluge_joseph_athanase_doumer
+		FRA_deluge_edouard_herriot
+		FRA_deluge_jean_zay
+		
+		FRA_deluge_charles_huntziger
+		FRA_deluge_rene_olry
+		FRA_deluge_martial_valin
+		FRA_deluge_philippe_leclerc
+		FRA_deluge_maurice_gamelin
+		FRA_deluge_henri_mordacq
+		
+		FRA_deluge_joseph_vuillemin
+		
+		FRA_deluge_francois_darlan
+		
+		FRA_deluge_marie_pierre_koenig
+		
+		FRA_deluge_georges_catroux
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+France_reformer_democratic_republican_alliance_path = {
+	name = "Emperor reforms France into constitutional monarchy! Democratic Republican Alliance wins elections!"
+	desc = ""
+
+	allowed = {
+		tag = FRA
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_AI_BEHAVIOR
+				option = REFORMER_DEMOCRATIC_REPUBLICAN_ALLIANCE
+			}
+			has_country_flag = FRA_reformer_democratic_republican_alliance_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		FRA_foreign_policy
+		FRA_devaluate_the_franc
+		FRA_decrease_export
+		
+		FRA_previous_course
+		FRA_nobility_loyalty
+		FRA_improve_living_conditions
+		FRA_reform_the_old
+		FRA_soldiers_loyalty
+		
+		FRA_the_reformer
+		FRA_democratic_republican_alliance
+		FRA_law_and_order
+		FRA_balanced_economic_approach
+		FRA_freedom_of_religion
+		FRA_equality_of_race
+		FRA_no_reaction_no_revolution
+		FRA_women_emancipation
+		FRA_secular_institutions
+		FRA_reconciliation_of_generations
+		
+		FRA_cut_jobs
+		FRA_matignon_agreements
+		FRA_support_small_and_medium_business
+		FRA_tax_reform
+		FRA_reform_central_bank
+		FRA_abandon_gold_standard
+		FRA_increase_social_welfare
+		FRA_reform_administration
+		FRA_budget_deficit_law
+		
+		FRA_laiszes_faire
+		FRA_les_grands_programmes
+		FRA_new_industry_standards
+		
+		FRA_lessons_of_senussi_campaign
+		FRA_a_new_army_budget
+		FRA_traumas_of_the_great_war
+		FRA_post_great_war_challenges
+		FRA_field_the_MAS_36
+		FRA_le_armee_de_demain
+		
+		FRA_gamelins_plan
+		FRA_ballistic_vests
+		FRA_shocktroops
+		FRA_les_300_derniers_metres
+		FRA_a_modern_army
+		
+		FRA_continental_system_focus
+		FRA_question_of_pomerania
+		FRA_duchy_of_luxembourg_integration
+		FRA_watchman_of_global_security
+		FRA_demand_netherlands_submission
+		FRA_shared_scientific_projects
+		
+		FRA_air_force_modernization
+		FRA_southern_airports_expansion
+		FRA_colonial_air_groups
+		FRA_la_nouvelle_armee_de_l_air
+		FRA_organize_fighter_competition
+		FRA_anti_insurgency_measures
+		FRA_strategic_bombers_development
+		FRA_consolidate_new_doctrines
+		
+		FRA_integration_of_the_netherlands
+		FRA_closer_relations_with_ireland
+		FRA_dominion_over_ireland
+		
+		FRA_review_the_fleet
+		FRA_plans_to_counter_anglo_dominance
+		FRA_expand_naval_facilities
+		FRA_la_royale_fera_face
+		
+		FRA_experience_from_german_civil_war
+		FRA_modernize_high_command
+		
+		FRA_rethink_fleet_protection
+		FRA_pursue_battleship_studies
+		FRA_launch_the_richelieu_class
+		FRA_renew_maritime_patrol_avitation
+		FRA_man_the_guns
+		FRA_blockade_tactics
+		FRA_a_modern_fleet
+		
+		FRA_restore_dominion_over_spain
+		FRA_closer_relations_with_portugal
+		FRA_restore_dominion_over_portugal
+		
+		FRA_start_rearnament
+		FRA_expand_military_industry
+		FRA_expand_naval_industry
+		FRA_reorganize_military_aviation_industry
+		FRA_nationalize_military_complexes
+		
+		FRA_expand_civilian_industry
+		FRA_electricite_de_france
+		FRA_build_dams
+		FRA_expand_mining_industry
+		FRA_expand_state_refineries
+		
+		FRA_transport_modernization
+		FRA_develop_southern_infrastructure
+		FRA_develop_northern_infrastructure
+		FRA_all_roads_lead_to_paris
+		FRA_urbanize_countryside
+		FRA_subsidize_city_devolopment
+		
+		FRA_promote_consumption
+		FRA_free_competition
+		FRA_faciliating_trade
+		FRA_open_markets
+		FRA_promote_investments_in_the_stockmarket
+	}
+
+	ideas = {
+		FRA_deluge_yves_le_trocquer
+		FRA_deluge_louis_marin
+		FRA_deluge_jacques_rueff
+		FRA_deluge_joseph_athanase_doumer
+		FRA_deluge_georges_mandel
+		FRA_deluge_gaston_henry_haye
+		
+		FRA_deluge_charles_huntziger
+		FRA_deluge_rene_olry
+		FRA_deluge_martial_valin
+		FRA_deluge_philippe_leclerc
+		FRA_deluge_maurice_gamelin
+		FRA_deluge_henri_mordacq
+		
+		FRA_deluge_joseph_vuillemin
+		
+		FRA_deluge_francois_darlan
+		
+		FRA_deluge_marie_pierre_koenig
+		
+		FRA_deluge_georges_catroux
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+France_reformer_popular_republican_movement_path = {
+	name = "Emperor reforms France into constitutional monarchy! Popular Republican Movement wins elections!"
+	desc = ""
+
+	allowed = {
+		tag = FRA
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_AI_BEHAVIOR
+				option = REFORMER_DEMOCRATIC_REPUBLICAN_ALLIANCE
+			}
+			has_country_flag = FRA_reformer_democratic_republican_alliance_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		FRA_foreign_policy
+		FRA_devaluate_the_franc
+		FRA_decrease_export
+		
+		FRA_previous_course
+		FRA_nobility_loyalty
+		FRA_improve_living_conditions
+		FRA_reform_the_old
+		FRA_soldiers_loyalty
+		
+		FRA_the_reformer
+		FRA_popular_republican_movemenet
+		FRA_law_and_order
+		FRA_partial_women_emancipation
+		FRA_christian_freedom
+		FRA_capitalist_reforms
+		FRA_increase_living_standards
+		FRA_deals_with_church
+		FRA_coalition_with_republican_federation
+		FRA_true_chrisitan_democracy
+		
+		FRA_cut_jobs
+		FRA_matignon_agreements
+		FRA_support_small_and_medium_business
+		FRA_tax_reform
+		FRA_marginalize_central_bank
+		FRA_keep_with_gold
+		FRA_manpower_from_colonies
+		FRA_reform_administration
+		FRA_budget_deficit_law
+		
+		FRA_laiszes_faire
+		FRA_les_grands_programmes
+		FRA_new_industry_standards
+		
+		FRA_lessons_of_senussi_campaign
+		FRA_a_new_army_budget
+		FRA_traumas_of_the_great_war
+		FRA_post_great_war_challenges
+		FRA_field_the_MAS_36
+		FRA_le_armee_de_demain
+		
+		FRA_gamelins_plan
+		FRA_ballistic_vests
+		FRA_shocktroops
+		FRA_les_300_derniers_metres
+		FRA_a_modern_army
+		
+		FRA_continental_system_focus
+		FRA_question_of_pomerania
+		FRA_duchy_of_luxembourg_integration
+		FRA_watchman_of_global_security
+		FRA_demand_netherlands_submission
+		FRA_shared_scientific_projects
+		
+		FRA_air_force_modernization
+		FRA_southern_airports_expansion
+		FRA_colonial_air_groups
+		FRA_la_nouvelle_armee_de_l_air
+		FRA_organize_fighter_competition
+		FRA_anti_insurgency_measures
+		FRA_strategic_bombers_development
+		FRA_consolidate_new_doctrines
+		
+		FRA_integration_of_the_netherlands
+		FRA_closer_relations_with_ireland
+		FRA_dominion_over_ireland
+		
+		FRA_review_the_fleet
+		FRA_plans_to_counter_anglo_dominance
+		FRA_expand_naval_facilities
+		FRA_la_royale_fera_face
+		
+		FRA_experience_from_german_civil_war
+		FRA_modernize_high_command
+		
+		FRA_rethink_fleet_protection
+		FRA_pursue_battleship_studies
+		FRA_launch_the_richelieu_class
+		FRA_renew_maritime_patrol_avitation
+		FRA_man_the_guns
+		FRA_blockade_tactics
+		FRA_a_modern_fleet
+		
+		FRA_restore_dominion_over_spain
+		FRA_closer_relations_with_portugal
+		FRA_restore_dominion_over_portugal
+		
+		FRA_start_rearnament
+		FRA_expand_military_industry
+		FRA_expand_naval_industry
+		FRA_reorganize_military_aviation_industry
+		FRA_nationalize_military_complexes
+		
+		FRA_expand_civilian_industry
+		FRA_electricite_de_france
+		FRA_build_dams
+		FRA_expand_mining_industry
+		FRA_expand_state_refineries
+		
+		FRA_transport_modernization
+		FRA_develop_southern_infrastructure
+		FRA_develop_northern_infrastructure
+		FRA_all_roads_lead_to_paris
+		FRA_urbanize_countryside
+		FRA_subsidize_city_devolopment
+		
+		FRA_promote_consumption
+		FRA_free_competition
+		FRA_faciliating_trade
+		FRA_open_markets
+		FRA_promote_investments_in_the_stockmarket
+	}
+
+	ideas = {
+		FRA_deluge_yves_le_trocquer
+		FRA_deluge_jean_fabry
+		FRA_deluge_jacques_rueff
+		FRA_deluge_joseph_athanase_doumer
+		FRA_deluge_joseph_capus
+		FRA_deluge_gaston_henry_haye
+		
+		FRA_deluge_charles_huntziger
+		FRA_deluge_rene_olry
+		FRA_deluge_martial_valin
+		FRA_deluge_philippe_leclerc
+		FRA_deluge_maurice_gamelin
+		FRA_deluge_henri_mordacq
+		
+		FRA_deluge_joseph_vuillemin
+		
+		FRA_deluge_francois_darlan
+		
+		FRA_deluge_marie_pierre_koenig
+		
+		FRA_deluge_georges_catroux
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+France_republic_popular_republican_movement_path = {
+	name = "Monarchy is abolished and democracy is created! Popular Republican Movement wins elections!"
+	desc = ""
+
+	allowed = {
+		tag = FRA
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_AI_BEHAVIOR
+				option = REPUBLIC_POPULAR_REPUBLICAN_MOVEMENT
+			}
+			has_country_flag = FRA_republic_popular_republican_movement_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		FRA_foreign_policy
+		FRA_devaluate_the_franc
+		FRA_decrease_export
+		
+		FRA_towards_republic
+		FRA_public_opinion
+		FRA_cooperate_with_farmers
+		FRA_cooperate_with_workers
+		FRA_soldiers_solidarity
+		FRA_secure_city_dwellers
+		FRA_secure_city_dwellers
+		
+		FRA_creation_of_the_parliament
+		FRA_popular_republican_movemenet
+		FRA_law_and_order
+		FRA_partial_women_emancipation
+		FRA_christian_freedom
+		FRA_capitalist_reforms
+		FRA_increase_living_standards
+		FRA_deals_with_church
+		FRA_coalition_with_republican_federation
+		FRA_true_chrisitan_democracy
+		
+		FRA_cut_jobs
+		FRA_matignon_agreements
+		FRA_support_small_and_medium_business
+		FRA_tax_reform
+		FRA_marginalize_central_bank
+		FRA_keep_with_gold
+		FRA_manpower_from_colonies
+		FRA_reform_administration
+		FRA_budget_deficit_law
+		
+		FRA_laiszes_faire
+		FRA_les_grands_programmes
+		FRA_new_industry_standards
+		
+		FRA_lessons_of_senussi_campaign
+		FRA_a_new_army_budget
+		FRA_traumas_of_the_great_war
+		FRA_post_great_war_challenges
+		FRA_field_the_MAS_36
+		FRA_le_armee_de_demain
+		
+		FRA_gamelins_plan
+		FRA_ballistic_vests
+		FRA_shocktroops
+		FRA_les_300_derniers_metres
+		FRA_a_modern_army
+		
+		FRA_reorganize_our_sphere
+		FRA_question_of_pomerania
+		FRA_duchy_of_luxembourg_integration
+		FRA_watchman_of_global_security
+		FRA_demand_netherlands_submission
+		FRA_shared_scientific_projects
+		
+		FRA_air_force_modernization
+		FRA_southern_airports_expansion
+		FRA_colonial_air_groups
+		FRA_la_nouvelle_armee_de_l_air
+		FRA_organize_fighter_competition
+		FRA_anti_insurgency_measures
+		FRA_strategic_bombers_development
+		FRA_consolidate_new_doctrines
+		
+		FRA_integration_of_the_netherlands
+		FRA_closer_relations_with_ireland
+		FRA_dominion_over_ireland
+		
+		FRA_review_the_fleet
+		FRA_plans_to_counter_anglo_dominance
+		FRA_expand_naval_facilities
+		FRA_la_royale_fera_face
+		
+		FRA_experience_from_german_civil_war
+		FRA_modernize_high_command
+		
+		FRA_rethink_fleet_protection
+		FRA_pursue_battleship_studies
+		FRA_launch_the_richelieu_class
+		FRA_renew_maritime_patrol_avitation
+		FRA_man_the_guns
+		FRA_blockade_tactics
+		FRA_a_modern_fleet
+		
+		FRA_restore_dominion_over_spain
+		FRA_closer_relations_with_portugal
+		FRA_restore_dominion_over_portugal
+		
+		FRA_start_rearnament
+		FRA_expand_military_industry
+		FRA_expand_naval_industry
+		FRA_reorganize_military_aviation_industry
+		FRA_nationalize_military_complexes
+		
+		FRA_expand_civilian_industry
+		FRA_electricite_de_france
+		FRA_build_dams
+		FRA_expand_mining_industry
+		FRA_expand_state_refineries
+		
+		FRA_transport_modernization
+		FRA_develop_southern_infrastructure
+		FRA_develop_northern_infrastructure
+		FRA_all_roads_lead_to_paris
+		FRA_urbanize_countryside
+		FRA_subsidize_city_devolopment
+		
+		FRA_promote_consumption
+		FRA_free_competition
+		FRA_faciliating_trade
+		FRA_open_markets
+		FRA_promote_investments_in_the_stockmarket
+	}
+
+	ideas = {
+		FRA_deluge_yves_le_trocquer
+		FRA_deluge_jean_fabry
+		FRA_deluge_jacques_rueff
+		FRA_deluge_joseph_athanase_doumer
+		FRA_deluge_joseph_capus
+		FRA_deluge_gaston_henry_haye
+		
+		FRA_deluge_charles_huntziger
+		FRA_deluge_rene_olry
+		FRA_deluge_martial_valin
+		FRA_deluge_philippe_leclerc
+		FRA_deluge_maurice_gamelin
+		FRA_deluge_henri_mordacq
+		
+		FRA_deluge_joseph_vuillemin
+		
+		FRA_deluge_francois_darlan
+		
+		FRA_deluge_marie_pierre_koenig
+		
+		FRA_deluge_georges_catroux
 	}
 
 	focus_factors = {

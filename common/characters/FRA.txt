@@ -2312,7 +2312,7 @@ characters={
 	FRA_deluge_jacques_rueff={##Jacques Rueff
 		name=FRA_deluge_jacques_rueff_name
 		portraits={
-			civilian={##small portrait to do
+			civilian={
 				small="GFX_jacques_rueff_picture_small"
 			}
 		}
@@ -2809,7 +2809,7 @@ characters={
 	FRA_deluge_rene_olry={
 		name=FRA_deluge_rene_olry_name
 		portraits={
-			army={##small portrait to do
+			army={
 				large="GFX_portrait_FRA_rene_olry"
 				small="GFX_rene_olry_picture_small"
 			}
@@ -4511,7 +4511,7 @@ characters={
 	}
 	FRA_deluge_martial_valin={
 		name=FRA_deluge_martial_valin_name
-		portraits={##big and small portrait to do!
+		portraits={
 			army={
 				small="GFX_martial_valin_picture_small"
 				large="gfx/leaders/FRA/portrait_FRA_martial_valin.dds"
