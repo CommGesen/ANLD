@@ -5858,8 +5858,8 @@ FRA_dec_cat_modernize_french_army={
 			FRA = {
 				has_completed_focus = FRA_modernize_high_command
 			}
-			has_character = FRA_deluge_emile_laure_name
-			FRA_deluge_emile_laure_name = {
+			has_character = FRA_deluge_emile_laure
+			FRA_deluge_emile_laure = {
 				is_unit_leader = yes
 			}
 		}
@@ -5868,7 +5868,7 @@ FRA_dec_cat_modernize_french_army={
 		}
 		remove_effect = {
 			remove_trait = {
-				character = FRA_deluge_emile_laure_name
+				character = FRA_deluge_emile_laure
 				trait = old_guard
 			}
 			add_command_power = -30

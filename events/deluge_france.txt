@@ -591,6 +591,71 @@ country_event = {
 			id = deluge_france.14
 			hours = 6
 		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 1000
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRENCH_SOCIAL_PARTY
+					}
+					has_country_flag = FRA_french_social_party_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRENCH_POPULAR_PARTY
+					}
+					has_country_flag = FRA_french_popular_party_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = NATIONAL_POPULAR_RALLY
+					}
+					has_country_flag = FRA_national_popular_rally_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FIRE_MOVEMENT
+					}
+					has_country_flag = FRA_fire_movement_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRANCIST_MOVEMENT
+					}
+					has_country_flag = FRA_francist_movement_ai_chosen
+				}
+			}
+			modifier = {
+				add = -1000
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = FRA_AI_BEHAVIOR
+							option = FRENCH_SOCIAL_PARTY
+						}
+						has_country_flag = FRA_french_social_party_ai_chosen
+						has_game_rule = {
+							rule = FRA_AI_BEHAVIOR
+							option = FRENCH_POPULAR_PARTY
+						}
+						has_country_flag = FRA_french_popular_party_ai_chosen
+						has_game_rule = {
+							rule = FRA_AI_BEHAVIOR
+							option = NATIONAL_POPULAR_RALLY
+						}
+						has_country_flag = FRA_national_popular_rally_ai_chosen
+						has_game_rule = {
+							rule = FRA_AI_BEHAVIOR
+							option = FIRE_MOVEMENT
+						}
+						has_country_flag = FRA_fire_movement_ai_chosen
+						has_game_rule = {
+							rule = FRA_AI_BEHAVIOR
+							option = FRANCIST_MOVEMENT
+						}
+						has_country_flag = FRA_francist_movement_ai_chosen
+					}
+				}
+			}
+		}
 	}
 	option = {##Radicals focus on the right - radical path
 		name = deluge_france.12.b
@@ -598,6 +663,71 @@ country_event = {
 		country_event = {
 			id = deluge_france.15
 			hours = 8
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = -1000
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRENCH_SOCIAL_PARTY
+					}
+					has_country_flag = FRA_french_social_party_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRENCH_POPULAR_PARTY
+					}
+					has_country_flag = FRA_french_popular_party_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = NATIONAL_POPULAR_RALLY
+					}
+					has_country_flag = FRA_national_popular_rally_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FIRE_MOVEMENT
+					}
+					has_country_flag = FRA_fire_movement_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRANCIST_MOVEMENT
+					}
+					has_country_flag = FRA_francist_movement_ai_chosen
+				}
+			}
+			modifier = {
+				add = 1000
+				NOT = {
+					OR = {
+						has_game_rule = {
+							rule = FRA_AI_BEHAVIOR
+							option = FRENCH_SOCIAL_PARTY
+						}
+						has_country_flag = FRA_french_social_party_ai_chosen
+						has_game_rule = {
+							rule = FRA_AI_BEHAVIOR
+							option = FRENCH_POPULAR_PARTY
+						}
+						has_country_flag = FRA_french_popular_party_ai_chosen
+						has_game_rule = {
+							rule = FRA_AI_BEHAVIOR
+							option = NATIONAL_POPULAR_RALLY
+						}
+						has_country_flag = FRA_national_popular_rally_ai_chosen
+						has_game_rule = {
+							rule = FRA_AI_BEHAVIOR
+							option = FIRE_MOVEMENT
+						}
+						has_country_flag = FRA_fire_movement_ai_chosen
+						has_game_rule = {
+							rule = FRA_AI_BEHAVIOR
+							option = FRANCIST_MOVEMENT
+						}
+						has_country_flag = FRA_francist_movement_ai_chosen
+					}
+				}
+			}
 		}
 	}
 }
@@ -669,14 +799,53 @@ country_event = {
 	option = {##radical party
 		name = deluge_france.16.a
 		set_country_flag = FRA_flag_radical_party_won
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 1000
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REPUBLIC_RADICAL_PARTY
+					}
+					has_country_flag = FRA_republic_radical_party_ai_chosen
+				}
+			}
+		}
 	}
 	option = {##democratic republican alliance
 		name = deluge_france.16.b
 		set_country_flag = FRA_flag_democratic_republican_alliance_won
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 1000
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REPUBLIC_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_republic_democratic_republican_alliance_ai_chosen
+				}
+			}
+		}
 	}
 	option = {##popular republican movement
 		name = deluge_france.16.c
 		set_country_flag = FRA_flag_popular_republican_movement_won
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 1000
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REPUBLIC_POPULAR_REPUBLICAN_MOVEMENT
+					}
+					has_country_flag = FRA_republic_popular_republican_movement_ai_chosen
+				}
+			}
+		}
 	}
 }
 # Nationalists took power and choose who will lead France
@@ -689,18 +858,75 @@ country_event = {
 	option = {##Marcel Bucard
 		name = deluge_france.17.a
 		set_country_flag = FRA_marcel_bucard_won
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 1000
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRANCIST_MOVEMENT
+					}
+					has_country_flag = FRA_francist_movement_ai_chosen
+				}
+			}
+		}
 	}
 	option = {##Maurice Delaunay
 		name = deluge_france.17.b
-		#set_country_flag = FRA_maurice_delaunay_won
+		set_country_flag = FRA_maurice_delaunay_won
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 1000
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FIRE_MOVEMENT
+					}
+					has_country_flag = FRA_fire_movement_ai_chosen
+				}
+			}
+		}
 	}
 	option = {##Jacques Doriot
 		name = deluge_france.17.c
 		set_country_flag = FRA_jacques_doriot_won
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 1000
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRENCH_POPULAR_PARTY
+					}
+					has_country_flag = FRA_french_popular_party_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = NATIONAL_POPULAR_RALLY
+					}
+					has_country_flag = FRA_national_popular_rally_ai_chosen
+				}
+			}
+		}
 	}
 	option = {##Francois de La Rocque
 		name = deluge_france.17.e
 		set_country_flag = FRA_francois_de_la_rocque_won
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 1000
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRENCH_SOCIAL_PARTY
+					}
+					has_country_flag = FRA_french_social_party_ai_chosen
+				}
+			}
+		}
 	}
 }
 news_event = {##info for world that France became a republic
@@ -839,18 +1065,67 @@ country_event = {##elections for radicals
 	option = {#French Section of Workers' Internationale
 		name = deluge_france.27.a
 		set_country_flag = FRA_SFIO_won
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 1000
+				has_game_rule = {
+					rule = FRA_AI_BEHAVIOR
+					option = FRENC_SECTION_OF_WORKERS_INTERNATIONALE
+				}
+				has_country_flag = FRA_SFIO_ai_chosen
+			}
+		}
 	}
 	option = {#Anarchists
 		name = deluge_france.27.b
 		set_country_flag = FRA_anarchists_won
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 1000
+				has_game_rule = {
+					rule = FRA_AI_BEHAVIOR
+					option = ANARCHO_COMMUNIST_FEDERATION_FAURE
+				}
+				has_country_flag = FRA_anarchists_faure_ai_chosen
+				has_game_rule = {
+					rule = FRA_AI_BEHAVIOR
+					option = ANARCHO_COMMUNIST_FEDERATION_ARMAND
+				}
+				has_country_flag = FRA_anarchists_armand_ai_chosen
+			}
+		}
 	}
 	option = {#Communist Party
 		name = deluge_france.27.c
 		set_country_flag = FRA_communists_won
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 1000
+				has_game_rule = {
+					rule = FRA_AI_BEHAVIOR
+					option = FRENCH_COMMUNIST_PARTY
+				}
+				has_country_flag = FRA_french_communist_party_ai_chosen
+			}
+		}
 	}
 	option = {#Proudhon Circle
 		name = deluge_france.27.e
 		set_country_flag = FRA_proudhon_circle_won
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 1000
+				has_game_rule = {
+					rule = FRA_AI_BEHAVIOR
+					option = PROUDHON_CIRCLE
+				}
+				has_country_flag = FRA_proudhon_circle_ai_chosen
+			}
+		}
 	}
 }
 country_event = {##Maurice Delaunay assassination attempt
@@ -1688,6 +1963,19 @@ country_event = {##Sebastien Faure's pedophilia affair
 	option = {##silence the matter
 		name = deluge_france.57.a
 		add_political_power = -50
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 1000
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = ANARCHO_COMMUNIST_FEDERATION_FAURE
+					}
+					has_country_flag = FRA_anarchists_faure_ai_chosen
+				}
+			}
+		}
 	}
 	option = {##hold Sebastien accountable
 		name = deluge_france.57.b
@@ -1695,6 +1983,19 @@ country_event = {##Sebastien Faure's pedophilia affair
 		country_event = {
 			id = deluge_france.58
 			days = 2
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 1000
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = ANARCHO_COMMUNIST_FEDERATION_ARMAND
+					}
+					has_country_flag = FRA_anarchists_armand_ai_chosen
+				}
+			}
 		}
 	}
 }

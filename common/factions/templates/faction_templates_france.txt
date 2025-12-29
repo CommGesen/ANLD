@@ -187,6 +187,33 @@ faction_template_french_european_union = {
 	}
 	
 }
+faction_template_humanite_unie = {
+	name = faction_template_humanite_unie_name
+	icon = GFX_faction_logo_generic_9
+	manifest = faction_manifest_spread_of_communism
+
+	goals = {
+
+		# Short term goals
+		faction_goal_unlock_research
+
+		# Medium term goals
+		faction_goal_air_superiority
+
+		# Long terms
+		faction_goal_industrial_domination
+	
+	}
+
+	default_rules = {
+		faction_peace_rule_puppeting_focus
+		government_in_exile_allowed
+		change_leader_rule_industry
+		change_leader_rule_manpower
+		joining_rule_same_ideology
+	}
+	
+}
 faction_template_french_republican_alliance = {
 	name = faction_template_french_republican_alliance_name
 	icon = GFX_faction_logo_generic_12

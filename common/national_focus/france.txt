@@ -482,15 +482,24 @@ focus_tree = {
 		cost = 1
 		mutually_exclusive = { focus = FRA_french_popular_party focus = FRA_french_social_party focus = FRA_francist_movement }
 		allow_branch = {
-			
+			NOT = {
+				OR = {
+					has_completed_focus = FRA_another_revolution
+					has_completed_focus = FRA_creation_of_the_parliament
+					has_completed_focus = FRA_francist_movement
+					has_completed_focus = FRA_french_popular_party
+					has_completed_focus = FRA_french_social_party
+					has_completed_focus = FRA_previous_course
+				}
+			}
 		}
-		#offset = {
-		#	x = 0
-		#	y = 0
-		#	trigger = {
-		#		
-		#	}
-		#}
+		offset = {
+			x = 4
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_fire_movement
+			}
+		}
 		available = {
 			has_country_flag = FRA_maurice_delaunay_won
 			is_subject = no
@@ -517,6 +526,7 @@ focus_tree = {
 			}
 			set_country_flag = cant_change_voting_law
 			custom_effect_tooltip = cant_change_voting_law_tooltip
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -583,7 +593,16 @@ focus_tree = {
 		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
-			
+			NOT = {
+				OR = {
+					has_completed_focus = FRA_prophet_saved
+					has_completed_focus = FRA_francist_movement
+					has_completed_focus = FRA_french_popular_party
+					has_completed_focus = FRA_french_social_party
+					has_completed_focus = FRA_another_revolution
+					has_completed_focus = FRA_previous_course
+				}
+			}
 		}
 		#offset = {
 		#	x = 0
@@ -614,6 +633,7 @@ focus_tree = {
 			else = {
 				add_political_power = 10
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -636,15 +656,24 @@ focus_tree = {
 		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
-			
+			NOT = {
+				OR = {
+					has_completed_focus = FRA_abandon_western_culture
+					has_completed_focus = FRA_francist_movement
+					has_completed_focus = FRA_french_popular_party
+					has_completed_focus = FRA_french_social_party
+					has_completed_focus = FRA_another_revolution
+					has_completed_focus = FRA_previous_course
+				}
+			}
 		}
-		#offset = {
-		#	x = 0
-		#	y = 0
-		#	trigger = {
-		#		
-		#	}
-		#}
+		offset = {
+			x = -2
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_prophet_saved
+			}
+		}
 		available = {
 			has_country_flag = FRA_flag_prophet_survived
 		}
@@ -658,6 +687,7 @@ focus_tree = {
 			}
 			add_stability = 0.15
 			add_political_power = 100
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -1016,13 +1046,13 @@ focus_tree = {
 		allow_branch = {
 			
 		}
-		#offset = {
-		#	x = 0
-		#	y = 0
-		#	trigger = {
-		#		
-		#	}
-		#}
+		offset = {
+			x = -2
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_prophet_saved
+			}
+		}
 		available = {
 			has_country_leader = {
 				character = FRA_deluge_maurice_delaunay
@@ -1064,7 +1094,16 @@ focus_tree = {
 		cost = 1
 		mutually_exclusive = { focus = FRA_french_popular_party focus = FRA_french_social_party focus = FRA_fire_movement }
 		allow_branch = {
-			
+			NOT = {
+				OR = {
+					has_completed_focus = FRA_previous_course
+					has_completed_focus = FRA_creation_of_the_parliament
+					has_completed_focus = FRA_another_revolution
+					has_completed_focus = FRA_fire_movement
+					has_completed_focus = FRA_french_popular_party
+					has_completed_focus = FRA_french_social_party
+				}
+			}
 		}
 		#offset = {
 		#	x = 0
@@ -1105,6 +1144,7 @@ focus_tree = {
 			set_country_flag = cant_change_voting_law
 			custom_effect_tooltip = cant_change_voting_law_tooltip
 			unlock_decision_category_tooltip = FRA_dec_cat_frankish_empire
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -1439,7 +1479,16 @@ focus_tree = {
 		cost = 1
 		mutually_exclusive = { focus = FRA_fire_movement focus = FRA_french_social_party focus = FRA_francist_movement }
 		allow_branch = {
-			
+			NOT = {
+				OR = {
+					has_completed_focus = FRA_previous_course
+					has_completed_focus = FRA_creation_of_the_parliament
+					has_completed_focus = FRA_another_revolution
+					has_completed_focus = FRA_fire_movement
+					has_completed_focus = FRA_francist_movement
+					has_completed_focus = FRA_french_social_party
+				}
+			}
 		}
 		#offset = {
 		#	x = 0
@@ -1475,6 +1524,7 @@ focus_tree = {
 			set_country_flag = cant_change_voting_law
 			custom_effect_tooltip = cant_change_voting_law_tooltip
 			unlock_decision_category_tooltip = FRA_dec_cat_greater_social_state
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -1571,13 +1621,20 @@ focus_tree = {
 		allow_branch = {
 			
 		}
-		#offset = {
-		#	x = 0
-		#	y = 0
-		#	trigger = {
-		#		
-		#	}
-		#}
+		offset = {
+			x = -2
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_prophet_saved
+			}
+		}
+		offset = {
+			x = 4
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_fire_movement
+			}
+		}
 		available = {
 			
 		}
@@ -1850,7 +1907,16 @@ focus_tree = {
 		cost = 1
 		mutually_exclusive = { focus = FRA_french_popular_party focus = FRA_fire_movement focus = FRA_francist_movement }
 		allow_branch = {
-			
+			NOT = {
+				OR = {
+					has_completed_focus = FRA_previous_course
+					has_completed_focus = FRA_creation_of_the_parliament
+					has_completed_focus = FRA_another_revolution
+					has_completed_focus = FRA_fire_movement
+					has_completed_focus = FRA_french_popular_party
+					has_completed_focus = FRA_francist_movement
+				}
+			}
 		}
 		#offset = {
 		#	x = 0
@@ -1894,6 +1960,7 @@ focus_tree = {
 			}
 			set_country_flag = cant_change_voting_law
 			custom_effect_tooltip = cant_change_voting_law_tooltip
+			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -1918,13 +1985,20 @@ focus_tree = {
 		allow_branch = {
 			
 		}
-		#offset = {
-		#	x = 0
-		#	y = 0
-		#	trigger = {
-		#		
-		#	}
-		#}
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_fire_movement
+			}
+		}
+		offset = {
+			x = -2
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_prophet_saved
+			}
+		}
 		available = {
 			
 		}
@@ -2274,13 +2348,13 @@ focus_tree = {
 		allow_branch = {
 			
 		}
-		#offset = {
-		#	x = 0
-		#	y = 0
-		#	trigger = {
-		#		
-		#	}
-		#}
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_march_on_paris
+			}
+		}
 		available = {
 			
 		}
@@ -3364,6 +3438,8 @@ focus_tree = {
 					has_completed_focus = FRA_anarchist_communist_federation
 					has_completed_focus = FRA_french_communist_party
 					has_completed_focus = FRA_proudhon_circle
+					has_completed_focus = FRA_march_on_paris
+					has_completed_focus = FRA_creation_of_the_parliament
 				}
 			}
 		}
@@ -3411,6 +3487,8 @@ focus_tree = {
 					has_completed_focus = FRA_proudhon_circle
 					has_completed_focus = FRA_french_communist_party
 					has_completed_focus = FRA_french_section_of_workers_internationale
+					has_completed_focus = FRA_march_on_paris
+					has_completed_focus = FRA_creation_of_the_parliament
 				}
 			}
 		}
@@ -3919,6 +3997,8 @@ focus_tree = {
 					has_completed_focus = FRA_proudhon_circle
 					has_completed_focus = FRA_anarchist_communist_federation
 					has_completed_focus = FRA_french_section_of_workers_internationale
+					has_completed_focus = FRA_march_on_paris
+					has_completed_focus = FRA_creation_of_the_parliament
 				}
 			}
 		}
@@ -4084,6 +4164,9 @@ focus_tree = {
 				OR = {
 					has_completed_focus = FRA_proudhon_circle
 					has_completed_focus = FRA_anarchist_communist_federation
+					has_completed_focus = FRA_march_on_paris
+					has_completed_focus = FRA_creation_of_the_parliament
+					has_completed_focus = FRA_previous_course
 				}
 			}
 		}
@@ -4251,13 +4334,13 @@ focus_tree = {
 		cost = 8
 		#mutually_exclusive = { focus = }
 		allow_branch = {
-			
-		}
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				has_completed_focus = FRA_proudhon_circle
+			NOT = {
+				OR = {
+					has_completed_focus = FRA_proudhon_circle
+					has_completed_focus = FRA_previous_course
+					has_completed_focus = FRA_march_on_paris
+					has_completed_focus = FRA_creation_of_the_parliament
+				}
 			}
 		}
 		offset = {
@@ -4301,9 +4384,7 @@ focus_tree = {
 		cost = 6
 		mutually_exclusive = { focus = FRA_revolution_by_force }
 		allow_branch = {
-			NOT = {
-				has_completed_focus = FRA_proudhon_circle
-			}
+			
 		}
 		#offset = {
 		#	x = 0
@@ -4313,9 +4394,7 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			NOT = {
-				has_completed_focus = FRA_proudhon_circle
-			}
+			
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -4388,6 +4467,8 @@ focus_tree = {
 					has_completed_focus = FRA_french_communist_party
 					has_completed_focus = FRA_french_section_of_workers_internationale
 					has_completed_focus = FRA_anarchist_communist_federation
+					has_completed_focus = FRA_march_on_paris
+					has_completed_focus = FRA_creation_of_the_parliament
 				}
 			}
 		}
@@ -4672,7 +4753,12 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_antitheism}
 		allow_branch = {
 			NOT = {
-				has_completed_focus = FRA_anarchist_communist_federation
+				OR = {
+					has_completed_focus = FRA_anarchist_communist_federation
+					has_completed_focus = FRA_previous_course
+					has_completed_focus = FRA_march_on_paris
+					has_completed_focus = FRA_creation_of_the_parliament
+				}
 			}
 		}
 		#offset = {
@@ -4794,7 +4880,12 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_equally_educate_all}
 		allow_branch = {
 			NOT = {
-				has_completed_focus = FRA_anarchist_communist_federation
+				OR = {
+					has_completed_focus = FRA_anarchist_communist_federation
+					has_completed_focus = FRA_previous_course
+					has_completed_focus = FRA_march_on_paris
+					has_completed_focus = FRA_creation_of_the_parliament
+				}
 			}
 		}
 		#offset = {
@@ -4837,7 +4928,12 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_socialist_core_curriculum}
 		allow_branch = {
 			NOT = {
-				has_completed_focus = FRA_proudhon_circle
+				OR = {
+					has_completed_focus = FRA_proudhon_circle
+					has_completed_focus = FRA_previous_course
+					has_completed_focus = FRA_march_on_paris
+					has_completed_focus = FRA_creation_of_the_parliament
+				}
 			}
 		}
 		#offset = {
@@ -4879,7 +4975,12 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_fully_democratic_education}
 		allow_branch = {
 			NOT = {
-				has_completed_focus = FRA_anarchist_communist_federation
+				OR = {
+					has_completed_focus = FRA_anarchist_communist_federation
+					has_completed_focus = FRA_previous_course
+					has_completed_focus = FRA_march_on_paris
+					has_completed_focus = FRA_creation_of_the_parliament
+				}
 			}
 		}
 		offset = {
@@ -4922,7 +5023,12 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_socialist_realism}
 		allow_branch = {
 			NOT = {
-				has_completed_focus = FRA_proudhon_circle
+				OR = {
+					has_completed_focus = FRA_proudhon_circle
+					has_completed_focus = FRA_previous_course
+					has_completed_focus = FRA_march_on_paris
+					has_completed_focus = FRA_creation_of_the_parliament
+				}
 			}
 		}
 		#offset = {
@@ -4965,7 +5071,12 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_freedom_of_art}
 		allow_branch = {
 			NOT = {
-				has_completed_focus = FRA_anarchist_communist_federation
+				OR = {
+					has_completed_focus = FRA_anarchist_communist_federation
+					has_completed_focus = FRA_previous_course
+					has_completed_focus = FRA_march_on_paris
+					has_completed_focus = FRA_creation_of_the_parliament
+				}
 			}
 		}
 		#offset = {
@@ -6461,13 +6572,41 @@ focus_tree = {
 		allow_branch = {
 			
 		}
-		#offset = {
-		#	x = 0
-		#	y = 0
-		#	trigger = {
-		#		
-		#	}
-		#}
+		offset = {
+			x = -28
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_prophet_saved
+			}
+		}
+		offset = {
+			x = -29
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_proudhon_circle
+			}
+		}
+		offset = {
+			x = -27
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_french_communist_party
+			}
+		}
+		offset = {
+			x = -27
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_french_section_of_workers_internationale
+			}
+		}
+		offset = {
+			x = -24
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_anarchist_communist_federation
+			}
+		}
 		available = {
 			
 		}
@@ -9227,13 +9366,34 @@ focus_tree = {
 				has_completed_focus = FRA_decolonisation
 			}
 		}
-		#offset = {
-		#	x = 0
-		#	y = 0
-		#	trigger = {
-		#		
-		#	}
-		#}
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				
+			}
+		}
+		offset = {
+			x = -28
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_prophet_saved
+			}
+		}
+		offset = {
+			x = -29
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_proudhon_circle
+			}
+		}
+		offset = {
+			x = -27
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_french_communist_party
+			}
+		}
 		available = {
 			has_completed_focus = FRA_may_day_results
 			has_completed_focus = FRA_establish_lon
@@ -14827,6 +14987,48 @@ focus_tree = {
 		#		
 		#	}
 		#}
+		offset = {
+			x = -28
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_prophet_saved
+			}
+		}
+		offset = {
+			x = -29
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_proudhon_circle
+			}
+		}
+		offset = {
+			x = -27
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_french_communist_party
+			}
+		}
+		offset = {
+			x = -47
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_decolonisation
+			}
+		}
+		offset = {
+			x = -27
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_french_section_of_workers_internationale
+			}
+		}
+		offset = {
+			x = -24
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_anarchist_communist_federation
+			}
+		}
 		available = {
 			has_completed_focus = FRA_may_day_results
 			has_completed_focus = FRA_establish_lon
@@ -16307,7 +16509,9 @@ focus_tree = {
 			}
 		}
 		available = {
-			
+			NOT = {
+				has_completed_focus = FRA_anarchist_communist_federation
+			}
 		}
 		completion_reward = {
 			hidden_effect = {
@@ -18940,6 +19144,48 @@ focus_tree = {
 		#		
 		#	}
 		#}
+		offset = {
+			x = -28
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_prophet_saved
+			}
+		}
+		offset = {
+			x = -29
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_proudhon_circle
+			}
+		}
+		offset = {
+			x = -27
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_french_communist_party
+			}
+		}
+		offset = {
+			x = -47
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_decolonisation
+			}
+		}
+		offset = {
+			x = -27
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_french_section_of_workers_internationale
+			}
+		}
+		offset = {
+			x = -24
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_anarchist_communist_federation
+			}
+		}
 		available = {
 			NOT = {
 				has_war_with = LBA
