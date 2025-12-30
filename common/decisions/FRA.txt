@@ -127,15 +127,7 @@ FRA_dec_cat_foreign_policy = {
 						}
 					}
 				}
-				45 = {
-					controller = {
-						OR = {
-							tag = FRA
-							is_subject_of = FRA
-						}
-					}
-				}
-				847 = {
+				185 = {
 					controller = {
 						OR = {
 							tag = FRA
@@ -301,12 +293,11 @@ FRA_dec_cat_foreign_policy = {
 				state = 736
 				state = 103
 				state = 970
-				state = 847
+				state = 185
 				state = 104
 				state = 109
 				state = 151
 				state = 107
-				state = 45
 				state = 108
 				state = 801
 				state = 105
@@ -341,12 +332,11 @@ FRA_dec_cat_foreign_policy = {
 						state = 736
 						state = 103
 						state = 970
-						state = 847
 						state = 104
 						state = 109
 						state = 151
 						state = 107
-						state = 45
+						state = 185
 						state = 108
 						state = 801
 						state = 105
