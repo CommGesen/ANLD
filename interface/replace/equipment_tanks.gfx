@@ -344,7 +344,27 @@ spriteTypes = {
 	texturefile = "gfx/interface/technologies/GGG/super_heavy_tank_chassis.dds"
 	}
 
+	### ARMORED VEHICLES ###
+
+	SpriteType = {
+	name = "GFX_armored_support_vehicle_medium"
+	texturefile = "gfx/interface/technologies/GGG/armored_support_vehicle.dds"
+	}
+	SpriteType = {
+	name = "GFX_armored_support_vehicle_recovery_1_medium"
+	texturefile = "gfx/interface/technologies/GGG/armored_support_vehicle.dds" #armored_support_vehicle_recovery
+	}
+	SpriteType = {
+	name = "GFX_armored_support_vehicle_crossing_medium"
+	texturefile = "gfx/interface/technologies/GGG/armored_support_vehicle.dds" #armored_support_vehicle_crossing
+	}
+	SpriteType = {
+	name = "GFX_armored_support_vehicle_command_medium"
+	texturefile = "gfx/interface/technologies/GGG/armored_support_vehicle.dds" #armored_support_vehicle_command
+	}
+
 	### VARIANTS ###
+
 	SpriteType = {
 	name = "GFX_basic_medium_tank_medium_2"
 	texturefile = "gfx/interface/technologies/GGG/basic_medium_tank_2.dds"
@@ -716,6 +736,25 @@ spriteTypes = {
 	texturefile = "gfx/interface/technologies/POL/POL_super_heavy_tank_chassis.dds"
 	}
 
+	### ARMORED VEHICLES ###
+
+	SpriteType = {
+	name = "GFX_POL_armored_support_vehicle_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_armored_support_vehicle.dds"
+	}
+	SpriteType = {
+	name = "GFX_POL_armored_support_vehicle_recovery_1_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_armored_support_vehicle.dds" #POL_armored_support_vehicle_recovery
+	}
+	SpriteType = {
+	name = "GFX_POL_armored_support_vehicle_crossing_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_armored_support_vehicle.dds" #POL_armored_support_vehicle_crossing
+	}
+	SpriteType = {
+	name = "GFX_POL_armored_support_vehicle_command_medium"
+	texturefile = "gfx/interface/technologies/POL/POL_armored_support_vehicle.dds" #POL_armored_support_vehicle_command
+	}
+
 	### VARIANTS ###
 
 	SpriteType = {
@@ -1074,6 +1113,25 @@ spriteTypes = {
 	texturefile = "gfx/interface/technologies/FRA/FRA_super_heavy_tank_chassis.dds"
 	}
 
+	### ARMORED VEHICLES ###
+
+	SpriteType = {
+	name = "GFX_FRA_armored_support_vehicle_medium"
+	texturefile = "gfx/interface/technologies/FRA/FRA_armored_support_vehicle.dds"
+	}
+	SpriteType = {
+	name = "GFX_FRA_armored_support_vehicle_recovery_1_medium"
+	texturefile = "gfx/interface/technologies/FRA/FRA_armored_support_vehicle.dds" #FRA_armored_support_vehicle_recovery
+	}
+	SpriteType = {
+	name = "GFX_FRA_armored_support_vehicle_crossing_medium"
+	texturefile = "gfx/interface/technologies/FRA/FRA_armored_support_vehicle.dds" #FRA_armored_support_vehicle_crossing
+	}
+	SpriteType = {
+	name = "GFX_FRA_armored_support_vehicle_command_medium"
+	texturefile = "gfx/interface/technologies/FRA/FRA_armored_support_vehicle.dds" #FRA_armored_support_vehicle_command
+	}
+
 	### VARIANTS ###
 
 	SpriteType = {
@@ -1178,6 +1236,429 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_FRA_super_heavy_tank_medium_2"
 	texturefile = "gfx/interface/technologies/FRA/FRA_super_heavy_tank-2.dds"
+	}
+
+	### AMERICA ###
+
+    ### NON-DLC TECH TREE ###
+
+    ### LIGHT TANKS ###
+
+    SpriteType = {
+	name = "GFX_USA_gwtank_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_gw_light_tank.dds"
+	}
+	SpriteType = {
+	name = "GFX_USA_gw_light_tank_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_gw_light_tank.dds"
+	}
+    SpriteType = {
+	name = "GFX_USA_iwtank_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_iw_light_tank.dds"
+	}
+    
+    SpriteType = {
+	name = "GFX_USA_basic_light_tank_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_basic_light_tank-1.dds"
+	}
+	SpriteType = {
+	name = "GFX_USA_basic_light_spaa_medium"
+	texturefile = gfx/interface/technologies/USA/USA_basic_light_tank_spaa.dds
+	}
+	SpriteType = {
+	name = "GFX_USA_basic_light_art_medium"
+	texturefile = gfx/interface/technologies/USA/USA_basic_light_tank_art.dds
+	}
+	SpriteType = {
+	name = "GFX_USA_basic_light_td_medium"
+	texturefile = gfx/interface/technologies/USA/USA_basic_light_tank_td.dds
+	}
+
+    SpriteType = {
+	name = "GFX_USA_improved_light_tank_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_improved_light_tank-1.dds"
+	}
+	SpriteType = {
+	name = "GFX_USA_improved_light_spaa_medium"
+	texturefile = gfx/interface/technologies/USA/USA_improved_light_tank_spaa.dds
+	}
+	SpriteType = {
+	name = "GFX_USA_improved_light_art_medium"
+	texturefile = gfx/interface/technologies/USA/USA_improved_light_tank_art.dds
+	}
+	SpriteType = {
+	name = "GFX_USA_improved_light_td_medium"
+	texturefile = gfx/interface/technologies/USA/USA_improved_light_tank_td-1.dds
+	}
+
+    SpriteType = {
+	name = "GFX_USA_advanced_light_tank_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_advanced_light_tank-1.dds"
+	}
+	SpriteType = {
+	name = "GFX_USA_advanced_light_spaa_medium"
+	texturefile = gfx/interface/technologies/USA/USA_advanced_light_tank_spaa.dds
+	}
+	SpriteType = {
+	name = "GFX_USA_advanced_light_art_medium"
+	texturefile = gfx/interface/technologies/USA/USA_advanced_light_tank_art-1.dds
+	}
+	SpriteType = {
+	name = "GFX_USA_advanced_light_td_medium"
+	texturefile = gfx/interface/technologies/USA/USA_advanced_light_tank_td-1.dds
+	}
+
+    ### AMPHIBIOUS TANKS ###
+
+    SpriteType = {
+	name = "GFX_USA_amphibious_tank_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_amphibious_tank_1-1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_USA_amphibious_tank_2_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_amphibious_tank_2-1.dds"
+	}
+
+    ### MEDIUM TANKS ###
+		
+	SpriteType = {
+	name = "GFX_USA_gw_medium_tank_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_iw_medium_tank-1.dds"
+	}
+    
+    SpriteType = {
+	name = "GFX_USA_basic_medium_tank_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_basic_medium_tank-1.dds"
+	}
+	SpriteType = {
+	name = "GFX_USA_basic_medium_spaa_medium"
+	texturefile = gfx/interface/technologies/USA/USA_basic_medium_tank_spaa.dds
+	}	
+	SpriteType = {
+	name = "GFX_USA_basic_medium_art_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_basic_medium_tank_art.dds"
+	}
+	SpriteType = {
+	name = "GFX_USA_basic_medium_td_medium"
+	texturefile = gfx/interface/technologies/USA/USA_basic_medium_tank_td-1.dds
+	}
+
+    SpriteType = {
+	name = "GFX_USA_improved_medium_tank_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_improved_medium-1.dds"
+	}
+	SpriteType = {
+	name = "GFX_USA_improved_medium_spaa_medium"
+	texturefile = gfx/interface/technologies/USA/USA_improved_medium_spaa-1.dds
+	}
+    SpriteType = {
+	name = "GFX_USA_improved_medium_art_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_improved_medium_art.dds"
+	}
+	SpriteType = {
+	name = "GFX_USA_improved_medium_td_medium"
+	texturefile = gfx/interface/technologies/USA/USA_improved_medium_td-1.dds
+	}
+	
+	SpriteType = {
+	name = "GFX_USA_advanced_medium_tank_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_advanced_medium_tank-1.dds"
+	}
+    SpriteType = {
+	name = "GFX_USA_advanced_medium_spaa_medium"
+	texturefile = gfx/interface/technologies/USA/USA_advanced_medium_tank_spaa.dds
+	}
+	SpriteType = {
+	name = "GFX_USA_advanced_medium_art_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_advanced_medium_tank_art-1.dds"
+	}
+	SpriteType = {
+	name = "GFX_USA_advanced_medium_td_medium"
+	texturefile = gfx/interface/technologies/USA/USA_advanced_medium_tank_td.dds
+	}
+
+    ### MODERN TANKS ###
+
+    SpriteType = {
+	name = "GFX_USA_main_battle_tank_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_main_battle_tank-1.dds"
+	}
+    SpriteType = {
+    name = "GFX_USA_modern_spaa_medium"
+    texturefile = gfx/interface/technologies/USA/USA_main_battle_tank_spaa.dds
+    }
+    SpriteType = {
+    name = "GFX_USA_modern_art_medium"
+    texturefile = gfx/interface/technologies/USA/USA_main_battle_tank_art.dds 
+    }
+    SpriteType = {
+    name = "GFX_USA_modern_td_medium"
+    texturefile = gfx/interface/technologies/USA/USA_main_battle_tank_td.dds 
+    }
+
+    ### HEAVY TANKS ###
+
+    SpriteType = {
+	name = "GFX_USA_gw_heavy_tank_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_iw_heavy_tank-1.dds"
+	}
+    
+    SpriteType = {
+	name = "GFX_USA_basic_heavy_tank_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_basic_heavy_tank.dds"
+	}
+	SpriteType = {
+	name = "GFX_USA_basic_heavy_spaa_medium"
+	texturefile = gfx/interface/technologies/USA/USA_basic_heavy_tank_spaa.dds
+	}	
+	SpriteType = {
+	name = "GFX_USA_basic_heavy_art_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_basic_heavy_tank_art.dds"
+	}
+    SpriteType = {
+	name = "GFX_USA_basic_heavy_td_medium"
+	texturefile = gfx/interface/technologies/USA/USA_basic_heavy_tank_td.dds
+	}
+	
+	SpriteType = {
+	name = "GFX_USA_improved_heavy_tank_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_improved_heavy_tank.dds"
+	}
+	SpriteType = {
+	name = "GFX_USA_improved_heavy_spaa_medium"
+	texturefile = gfx/interface/technologies/USA/USA_improved_heavy_tank_spaa.dds
+	}
+	SpriteType = {
+	name = "GFX_USA_improved_heavy_art_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_improved_heavy_tank_art.dds"
+	}
+	SpriteType = {
+	name = "GFX_USA_improved_heavy_td_medium"
+	texturefile = gfx/interface/technologies/USA/USA_improved_heavy_tank_td.dds
+	}
+	
+	SpriteType = {
+	name = "GFX_USA_advanced_heavy_tank_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_advanced_heavy_tank.dds"
+	}
+    SpriteType = {
+	name = "GFX_USA_advanced_heavy_spaa_medium"
+	texturefile = gfx/interface/technologies/USA/USA_advanced_heavy_tank_spaa.dds
+	}
+	SpriteType = {
+	name = "GFX_USA_advanced_heavy_art_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_advanced_heavy_tank_art.dds"
+	}
+	SpriteType = {
+	name = "GFX_USA_advanced_heavy_td_medium"
+	texturefile = gfx/interface/technologies/USA/USA_advanced_heavy_tank_td.dds
+	}
+
+    ### SUPER HEAVY TANKS ###
+
+    SpriteType = {
+	name = "GFX_USA_super_heavy_tank_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_super_heavy_tank.dds"
+	}
+	SpriteType = {
+	name = "GFX_USA_super_heavy_spaa_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_super_heavy_tank_spaa.dds"
+	}
+    SpriteType = {
+	name = "GFX_USA_super_heavy_art_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_super_heavy_tank.dds"
+	}
+    SpriteType = {
+	name = "GFX_USA_super_heavy_td_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_super_heavy_tank.dds"
+	}
+
+    ### EQUIPMENT DESIGNER DLC ###
+
+    ### LIGHT TANKS CHASSIS ###
+	
+    SpriteType = {
+	name = "GFX_USA_gwtank_chassis_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_iw_light_tank_chassis.dds"
+	}
+    SpriteType = {
+	name = "GFX_USA_light_tank_chassis_0_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_iw_light_tank_chassis.dds"
+	}
+    
+    SpriteType = {
+	name = "GFX_USA_basic_light_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_basic_light_tank_chassis.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_USA_improved_light_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_improved_light_tank_chassis.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_USA_advanced_light_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_advanced_light_tank_chassis.dds"
+	}
+
+    ### AMPHIBIOUS TANKS ###
+
+    SpriteType = {
+	name = "GFX_USA_amphibious_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_amphibious_tank_chassis.dds"
+	}
+
+    ### MEDIUM TANKS CHASSIS & FLAMETHROWER ###
+
+    SpriteType = {
+	name = "GFX_USA_medium_tank_chassis_0_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_iw_medium_tank_chassis.dds"
+	}
+    
+    SpriteType = {
+	name = "GFX_USA_basic_medium_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_basic_medium_tank_chassis.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_USA_improved_medium_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_improved_medium_tank_chassis.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_USA_advanced_medium_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_advanced_medium_tank_chassis.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_USA_improved_light_fl_medium"
+	texturefile = gfx/interface/technologies/USA/USA_improved_light_flame.dds
+	}
+
+    SpriteType = {
+	name = "GFX_USA_improved_medium_fl_medium"
+	texturefile = gfx/interface/technologies/USA/USA_improved_medium_flame.dds
+	}
+
+	SpriteType = {
+	name = "GFX_USA_improved_heavy_fl_medium"
+	texturefile = gfx/interface/technologies/USA/USA_improved_heavy_flame.dds
+	}
+
+    ### MODERN TANK CHASSIS ###
+
+    SpriteType = {
+	name = "GFX_USA_main_battle_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_main_battle_tank_chassis.dds"
+	}
+
+    ### HEAVY TANK CHASSIS ###
+
+    SpriteType = {
+	name = "GFX_USA_heavy_tank_chassis_0_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_iw_heavy_tank_chassis.dds"
+	}
+    
+    SpriteType = {
+	name = "GFX_USA_basic_heavy_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_basic_heavy_tank_chassis.dds"
+	}
+    
+    SpriteType = {
+	name = "GFX_USA_improved_heavy_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_improved_heavy_tank_chassis.dds"
+	}
+    
+    SpriteType = {
+	name = "GFX_USA_advanced_heavy_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_advanced_heavy_tank_chassis.dds"
+	}
+
+    ### SUPER HEAVY CHASSIS ###
+
+    SpriteType = {
+	name = "GFX_USA_super_heavy_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_super_heavy_tank_chassis.dds"
+	}
+
+	### ARMORED SUPPORT VEHICLES ###
+
+	SpriteType = {
+	name = "GFX_USA_armored_support_vehicle_medium"
+	texturefile = "gfx/interface/technologies/USA/USA_armored_support_vehicle.dds"
+	}
+
+	### VARIANTS ###
+
+	SpriteType = {
+	name = "GFX_USA_basic_light_tank_medium_2"
+	texturefile = "gfx/interface/technologies/USA/USA_basic_light_tank-2.dds"
+	}
+	SpriteType = {
+	name = "GFX_USA_improved_light_tank_medium_2"
+	texturefile = "gfx/interface/technologies/USA/USA_improved_light_tank-2.dds"
+	}
+	SpriteType = {
+	name = "GFX_USA_improved_light_td_medium_2"
+	texturefile = gfx/interface/technologies/USA/USA_improved_light_tank_td-1.dds
+	}
+
+	SpriteType = {
+	name = "GFX_USA_advanced_light_tank_medium_2"
+	texturefile = "gfx/interface/technologies/USA/USA_advanced_light_tank-2.dds"
+	}
+	SpriteType = {
+	name = "GFX_USA_advanced_light_tank_medium_3"
+	texturefile = "gfx/interface/technologies/USA/USA_advanced_light_tank-3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_USA_advanced_light_art_medium_2"
+	texturefile = gfx/interface/technologies/USA/USA_advanced_light_tank_art-2.dds
+	}
+
+	SpriteType = {
+	name = "GFX_USA_gw_medium_tank_medium_2"
+	texturefile = "gfx/interface/technologies/USA/USA_iw_medium_tank-2.dds"
+	}
+	SpriteType = {
+	name = "GFX_USA_gw_medium_tank_medium_3"
+	texturefile = "gfx/interface/technologies/USA/USA_iw_medium_tank-3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_USA_improved_medium_spaa_medium_2"
+	texturefile = gfx/interface/technologies/USA/USA_improved_medium_spaa-2.dds
+	}
+
+	SpriteType = {
+	name = "GFX_USA_advanced_medium_tank_medium_2"
+	texturefile = "gfx/interface/technologies/USA/USA_advanced_medium_tank-2.dds"
+	}
+	SpriteType = {
+	name = "GFX_USA_advanced_medium_tank_medium_3"
+	texturefile = "gfx/interface/technologies/USA/USA_advanced_medium_tank-3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_USA_advanced_medium_art_medium_2"
+	texturefile = "gfx/interface/technologies/USA/USA_advanced_medium_tank_art-2.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_USA_amphibious_tank_2_medium_2"
+	texturefile = "gfx/interface/technologies/USA/USA_amphibious_tank_2-2.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_USA_main_battle_tank_medium_2"
+	texturefile = "gfx/interface/technologies/USA/USA_main_battle_tank-2.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_USA_gw_heavy_tank_medium_2"
+	texturefile = "gfx/interface/technologies/USA/USA_iw_heavy_tank-2.dds"
 	}
 
 }
