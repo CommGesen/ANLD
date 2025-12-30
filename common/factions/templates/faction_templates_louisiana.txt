@@ -1,6 +1,6 @@
 faction_template_entente_cordiale = {
 	name = Entente_Cordiale
-	icon = GFX_faction_logo_bourbon_emblem
+	icon = GFX_faction_logo_generic_10 #GFX_faction_logo_bourbon_emblem
 	manifest = faction_manifest_conquest_of_territory
 
 	goals = {

@@ -1,6 +1,6 @@
 faction_template_all_russian_empire = {
 	name = All-Russian_Empire
-	icon = GFX_faction_logo_romanov_emblem
+	icon = GFX_faction_logo_generic_democratic #GFX_faction_logo_romanov_emblem
 	manifest = faction_manifest_containment_of_communism
 
 	goals = {

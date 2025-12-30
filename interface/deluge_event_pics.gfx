@@ -1550,4 +1550,20 @@ spriteTypes = {
 		name = "GFX_report_event_louis_maurin"
 		texturefile = "gfx/event_pictures/report_event_louis_maurin.dds"
 	}
+	spriteType = {
+		name = "GFX_rreport_event_referendum_denied"
+		texturefile = "gfx/event_pictures/report_event_referendum_denied.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_referendum_submitted"
+		texturefile = "gfx/event_pictures/report_event_referendum_submitted.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_referendum_accepted"
+		texturefile = "gfx/event_pictures/report_event_referendum_accepted.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_cnrs_funded"
+		texturefile = "gfx/event_pictures/report_event_cnrs_funded.dds"
+	}
 }
