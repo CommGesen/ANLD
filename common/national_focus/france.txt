@@ -7582,7 +7582,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_restore_dominion_over_spain
-		icon = GFX_focus_focus_fra_intervention_spain
+		icon = GFX_focus_generic_spanish_submission
 		x = -4
 		y = 1
 		prerequisite = { focus = FRA_watchman_of_global_security }
@@ -8488,7 +8488,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_croatian_submission
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_croatian_submission
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_italian_submission }
@@ -8674,7 +8674,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_dominium_of_southern_slavs
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_slavic_dominion
 		x = 1
 		y = 2
 		prerequisite = { focus = FRA_austrian_submission }
@@ -8940,7 +8940,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_claim_eastern_rhilenad
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_FRA_demand_rhineland
 		x = 2
 		y = 1
 		prerequisite = { focus = FRA_irredentism }
@@ -8980,7 +8980,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_german_submission
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_german_submission
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_claim_eastern_rhilenad }
@@ -9017,7 +9017,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_restore_duchy_of_warsaw
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_duchy_of_warsaw
 		x = 4
 		y = 1
 		prerequisite = { focus = FRA_irredentism }
@@ -9333,7 +9333,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_finish_old_foe
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_burn_russia
 		x = -1
 		y = 1
 		prerequisite = {
@@ -10167,7 +10167,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_demand_crete
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_demand_crete
 		x = -1
 		y = 1
 		prerequisite = { focus = FRA_notre_mer }
@@ -10206,7 +10206,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_demand_cyprus
-		icon = GFX_focus_SOV_ivan_plays_baseball
+		icon = GFX_focus_generic_demand_cyprus
 		x = 1
 		y = 1
 		prerequisite = { focus = FRA_notre_mer }
