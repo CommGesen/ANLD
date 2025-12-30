@@ -1566,4 +1566,32 @@ spriteTypes = {
 		name = "GFX_report_event_cnrs_funded"
 		texturefile = "gfx/event_pictures/report_event_cnrs_funded.dds"
 	}
+	spriteType = {
+		name = "GFX_news_event_french_nuclear_tests"
+		texturefile = "gfx/event_pictures/news_event_french_nuclear_tests.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_alpes_rocket_base"
+		texturefile = "gfx/event_pictures/report_event_alpes_rocket_base.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_cea_funded"
+		texturefile = "gfx/event_pictures/report_event_cea_funded.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_edf_funded"
+		texturefile = "gfx/event_pictures/report_event_edf_funded.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_lrba_funded"
+		texturefile = "gfx/event_pictures/report_event_lrba_funded.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_nuclear_tests"
+		texturefile = "gfx/event_pictures/report_event_nuclear_tests.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_reactor_g_built"
+		texturefile = "gfx/event_pictures/report_event_reactor_g_built.dds"
+	}
 }
