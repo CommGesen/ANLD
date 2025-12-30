@@ -19252,6 +19252,7 @@ focus_tree = {
 		available = {
 			is_special_project_completed = sp:sp_rockets_ballistic_missile
 			has_full_control_of_state = 32
+			has_completed_focus = FRA_fortifications_programs
 		}
 		completion_reward = {
 			country_event = {
