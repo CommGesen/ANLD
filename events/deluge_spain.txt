@@ -236,6 +236,16 @@ country_event = {#FRA gets info that Spain abolished monarchy
 		add_political_power = -100
 		add_war_support = -0.1
 		add_stability = -0.1
+		if = {
+			limit = {
+				SPR = {
+					is_in_faction_with = FRA
+				}
+			}
+			FRA = {
+				remove_from_faction = SPR
+			}
+		}
 		FRA = {
 			declare_war_on = {
 				target = SPR
@@ -513,6 +523,16 @@ country_event = {#FRA gets info that Spain crowned Sixtus
 		add_political_power = -50
 		add_war_support = -0.05
 		add_stability = -0.05
+		if = {
+			limit = {
+				SPR = {
+					is_in_faction_with = FRA
+				}
+			}
+			FRA = {
+				remove_from_faction = SPR
+			}
+		}
 		FRA = {
 			declare_war_on = {
 				target = SPR

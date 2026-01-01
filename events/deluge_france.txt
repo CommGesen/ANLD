@@ -479,6 +479,12 @@ country_event = {
 		}
 		set_country_flag = cant_change_voting_law
 		custom_effect_tooltip = cant_change_voting_law_tooltip
+		if = {
+			limit = {
+				has_completed_focus = FRA_the_reformer
+			}
+			add_ideas = FRA_spirit_emperor_napoleon
+		}
 	}
 	option = {##Albert Sarraut
 		name = deluge_france.9.b
@@ -502,6 +508,12 @@ country_event = {
 		}
 		set_country_flag = cant_change_voting_law
 		custom_effect_tooltip = cant_change_voting_law_tooltip
+		if = {
+			limit = {
+				has_completed_focus = FRA_the_reformer
+			}
+			add_ideas = FRA_spirit_emperor_napoleon
+		}
 	}
 }
 # Democratic Republican Alliance chooses its leader
@@ -533,6 +545,12 @@ country_event = {
 		}
 		set_country_flag = cant_change_voting_law
 		custom_effect_tooltip = cant_change_voting_law_tooltip
+		if = {
+			limit = {
+				has_completed_focus = FRA_the_reformer
+			}
+			add_ideas = FRA_spirit_emperor_napoleon
+		}
 	}
 	option = {##Pierre-Étienne Flandin
 		name = deluge_france.10.b
@@ -556,6 +574,12 @@ country_event = {
 		}
 		set_country_flag = cant_change_voting_law
 		custom_effect_tooltip = cant_change_voting_law_tooltip
+		if = {
+			limit = {
+				has_completed_focus = FRA_the_reformer
+			}
+			add_ideas = FRA_spirit_emperor_napoleon
+		}
 	}
 }
 # Chaos and riots in Paris
@@ -1495,6 +1519,12 @@ country_event = {
 		}
 		set_country_flag = cant_change_voting_law
 		custom_effect_tooltip = cant_change_voting_law_tooltip
+		if = {
+			limit = {
+				has_completed_focus = FRA_the_reformer
+			}
+			add_ideas = FRA_spirit_emperor_napoleon
+		}
 	}
 	option = {##Robert Schuman
 		name = deluge_france.38.b
@@ -1518,6 +1548,12 @@ country_event = {
 		}
 		set_country_flag = cant_change_voting_law
 		custom_effect_tooltip = cant_change_voting_law_tooltip
+		if = {
+			limit = {
+				has_completed_focus = FRA_the_reformer
+			}
+			add_ideas = FRA_spirit_emperor_napoleon
+		}
 	}
 }
 country_event = {##possible retirement of d'Esperey
@@ -4502,7 +4538,7 @@ country_event = {##Cyraneica forces France out of the Libya
 				is_owned_by = FRA
 			}
 			LBA = {
-				transfer_state = PREV
+				transfer_state_to = PREV
 			}
 		}
 		LBA={

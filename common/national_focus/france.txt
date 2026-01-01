@@ -237,7 +237,18 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			has_army_experience > 20
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				custom_trigger_tooltip = {
+					tooltip = FRA_custom_trigger_tooltip_5
+					always = yes
+				}
+			}
+			else = {
+				has_army_experience > 20
+			}
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -414,6 +425,32 @@ focus_tree = {
 					target = LOU
 					modifier = opinion_modifier_criticizes_us
 				}
+			}
+			if = {
+				limit = {
+					has_global_flag = FRA_senussi_rebellion_ongoing
+				}
+				custom_effect_tooltip = FRA_custom_effect_tooltip_147
+				every_state = {
+					limit = {
+						OR = {
+							state = 449
+							state = 661
+							state = 662
+							state = 448
+							state = 273
+						}
+						is_owned_by = FRA
+					}
+					transfer_state_to = LBA
+				}
+				LBA={
+					white_peace = FRA
+					drop_cosmetic_tag = yes
+					set_country_flag = LBA_has_unified_libya
+				}
+				clr_global_flag = FRA_senussi_rebellion_ongoing
+				set_global_flag = FRA_senussi_rebellion_lost
 			}
 		}
 		ai_will_do = {
@@ -5531,7 +5568,18 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			has_army_experience > 20
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				custom_trigger_tooltip = {
+					tooltip = FRA_custom_trigger_tooltip_5
+					always = yes
+				}
+			}
+			else = {
+				has_army_experience > 20
+			}
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -7343,7 +7391,15 @@ focus_tree = {
 			factor = 25
 		}
 		bypass = {
-			
+			OR = {
+				date > 1939.1.1
+				has_global_flag = POM_issue_solved
+				POM = {
+					NOT = {
+						is_subject_of = FRA
+					}
+				}
+			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
