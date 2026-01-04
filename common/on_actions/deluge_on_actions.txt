@@ -1125,21 +1125,49 @@ on_actions = {
 					}
 				}
 				POL = {
-					remove_country_leader_role = {
-						character = POL_deluge_swietlicki
-						ideology = social_darwinist_ideology
+					if = {
+						limit = {
+							POL_deluge_swietlicki = {
+								can_be_country_leader = yes
+							}
+						}
+						remove_country_leader_role = {
+							character = POL_deluge_swietlicki
+							ideology = social_darwinist_ideology
+						}
 					}
-					remove_country_leader_role = {
-						character = POL_deluge_boleslaw_bierut
-						ideology = jacobin_ideology
+					if = {
+						limit = {
+							POL_deluge_boleslaw_bierut = {
+								can_be_country_leader = yes
+							}
+						}
+						remove_country_leader_role = {
+							character = POL_deluge_boleslaw_bierut
+							ideology = jacobin_ideology
+						}
 					}
-					remove_country_leader_role = {
-						character = POL_deluge_wladyslaw_studnicki
-						ideology = reactionary_ideology
+					if = {
+						limit = {
+							POL_deluge_wladyslaw_studnicki = {
+								can_be_country_leader = yes
+							}
+						}
+						remove_country_leader_role = {
+							character = POL_deluge_wladyslaw_studnicki
+							ideology = reactionary_ideology
+						}
 					}
-					remove_country_leader_role = {
-						character = POL_deluge_waclaw_krzeptowski
-						ideology = democratic_agrarianism_ideology
+					if = {
+						limit = {
+							POL_deluge_waclaw_krzeptowski = {
+								can_be_country_leader = yes
+							}
+						}
+						remove_country_leader_role = {
+							character = POL_deluge_waclaw_krzeptowski
+							ideology = democratic_agrarianism_ideology
+						}
 					}
 					set_party_name = { ideology = fascism name = POL_NMO_name_short long_name = POL_NMO_name_long }
 					set_party_name = { ideology = neutrality name = POL_UAS_name_short long_name = POL_UAS_name_long }
@@ -1213,21 +1241,49 @@ on_actions = {
 					NOT = { has_global_flag = FRA_no_longer_subject }
 					is_subject = no
 				}
-				remove_country_leader_role = {
-					character = FRA_deluge_francois_darlan
-					ideology = nationalist_stratoracy_ideology
+				if = {
+					limit = {
+						FRA_deluge_francois_darlan = {
+							can_be_country_leader = yes
+						}
+					}
+					remove_country_leader_role = {
+						character = FRA_deluge_francois_darlan
+						ideology = nationalist_stratoracy_ideology
+					}
 				}
-				remove_country_leader_role = {
-					character = FRA_deluge_pierre_laval
-					ideology = conservative_radicalism
+				if = {
+					limit = {
+						FRA_deluge_pierre_laval = {
+							can_be_country_leader = yes
+						}
+					}
+					remove_country_leader_role = {
+						character = FRA_deluge_pierre_laval
+						ideology = conservative_radicalism
+					}
 				}
-				remove_country_leader_role = {
-					character = FRA_deluge_charles_hueber
-					ideology = social_democratic_ideology
+				if = {
+					limit = {
+						FRA_deluge_charles_hueber = {
+							can_be_country_leader = yes
+						}
+					}
+					remove_country_leader_role = {
+						character = FRA_deluge_charles_hueber
+						ideology = social_democratic_ideology
+					}
 				}
-				remove_country_leader_role = {
-					character = FRA_deluge_pierre_amidieu_du_clos
-					ideology = national_integralism_ideology
+				if = {
+					limit = {
+						FRA_deluge_pierre_amidieu_du_clos = {
+							can_be_country_leader = yes
+						}
+					}
+					remove_country_leader_role = {
+						character = FRA_deluge_pierre_amidieu_du_clos
+						ideology = national_integralism_ideology
+					}
 				}
 				set_global_flag = FRA_no_longer_subject
 			}
