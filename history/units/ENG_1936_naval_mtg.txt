@@ -48,8 +48,7 @@
 			ship = { name = "HMS Fortune" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "H Class" } } }
 		}				
 		task_force = {				
-			name = "Reserve Fleet"			
-			base = 9458 
+			name = "Reserve Fleet"
 			location = 9458
 			ship = { name = "HMS Queen Elizabeth" definition = battleship start_experience_factor = 0.1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth Class" } } }	
 			ship = { name = "HMS Valiant" definition = battleship start_experience_factor = 0.1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth Class" } } }		
@@ -66,8 +65,7 @@
 			ship = { name = "HMS Vanity" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V Class" } } }	
 		}						
 		task_force = {
-			name = "Channel Force"			
-			base = 9458 
+			name = "Channel Force"			 
 			location = 9458 # Portsmouth
 			ship = { name = "HMS Courageous" definition = carrier start_experience_factor = 0.1 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = ENG version_name = "Courageous Class" } }
 			}
@@ -91,7 +89,6 @@
 		}
 		task_force = {				
 			name = "Humber Force"			
-			base = 11297
 			location = 11297 # Hull
 			### 7th Destroyer Flotilla
 			# Destroyer Division 13
@@ -107,7 +104,6 @@
 		}				
 		task_force = {				
 			name = "Northern Patrol"	
-			base = 11064 
 			location = 11064 # Scapa Flow
 			# 7th Cruiser Squadron
 			ship = { name = "HMS Diomede" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Danae Class" } } }
@@ -120,7 +116,6 @@
 		}				
 		task_force = {				
 			name = "Rosyth Escort Force"
-			base = 6300
 			location = 6300 # Rosyth
 			# Rosyth Destroyer Division
 			ship = { name = "HMS Wallace" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V Class" } } }			
@@ -129,7 +124,6 @@
 		}				
 		task_force = {				
 			name = "Nore Fleet"
-			base = 3501
 			location = 3501 # Dover
 			ship = { name = "HMS London" definition = heavy_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 			ship = { name = "HMS Curacoa" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
@@ -154,7 +148,6 @@
 		}				
 		task_force = {				
 			name = "Portsmouth Fleet"
-			base = 9458 
 			location = 9458 # Portsmouth
 			ship = { name = "HMS Suffolk" definition = heavy_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }	
 			### 9th Destroyer Flotilla
@@ -169,7 +162,6 @@
 		}				
 		task_force = {
 			name = "Western Approaches Fleet"
-			base = 540
 			location = 540 # Plymouth
 			# Western Approaches Destroyer Division
 			ship = { name = "HMS Montrose" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V Class" } } }	
@@ -192,7 +184,6 @@
 		}				
 		task_force = {				
 			name = "North Atlantic Fleet"
-			base = 540
 			location = 540
 			ship = { name = "HMS Colombo" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
 			ship = { name = "HMS Capetown" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
@@ -211,8 +202,7 @@
 			ship = { name = "HMS Wrestler" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V Class" } } }	
 		}				
 		task_force = {				
-			name = "2nd Submarine Flotilla"			
-			base = 11064 
+			name = "2nd Submarine Flotilla"			 
 			location = 11064 # Scapa Flow
 			# Submarine Division 21
 			ship = { name = "HMS Oxley" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O Class" } } } 
@@ -227,7 +217,6 @@
 		}
 		task_force = {				
 			name = "5th Submarine Flotilla"			
-			base = 9458 
 			location = 9458 # Portsmouth
 			# Submarine Division 51
 			ship = { name = "HMS Oberon" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O Class" } } }	
@@ -242,18 +231,10 @@
 			ship = { name = "HMS H44" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O Class" } } }	
 			ship = { name = "HMS H49" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O Class" } } }	
 			ship = { name = "HMS H50" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O Class" } } }	
-		}				
-	}
-	
-	fleet = {
-		name = "Mediterranean Command"
-		naval_base = 12003 # Malta
-		
-		### MEDITERRANIAN FLEET ###			
+		}
 		task_force = {				
-			name = "Mediterranean Fleet"
-			base = 12003
-			location = 12003 # Malta
+			name = "Home Fleet"
+			location = 3369
 			ship = { name = "HMS Warspite" definition = battleship start_experience_factor = 0.1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth Class" } } }			
 			ship = { name = "HMS Devonshire" definition = heavy_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 			ship = { name = "HMS Shropshire" definition = heavy_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
@@ -284,16 +265,14 @@
 		}				
 		task_force = {				
 			name = "1st Submarine Flotilla"			
-			base = 12003
-			location = 12003 # Malta
+			location = 3369
 			# Submarine Division 11
 			ship = { name = "HMS Sealion" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }		
 			ship = { name = "HMS Shark" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }		
 			ship = { name = "HMS Osiris" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O Class" } } }	
 			ship = { name = "HMS Oswald" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O Class" } } }			
-		}				
+		}
 	}
-	
 	fleet = {
 		name = "Atlantic Command"
 		naval_base = 13010  # Bermuda
@@ -301,7 +280,6 @@
 		### NORTH AND SOUTH AMERICAS ###			
 		task_force = {				
 			name = "America and West Indies Fleet"
-			base = 13010
 			location = 13010  # Bermuda
 			ship = { name = "HMS Berwick" definition = heavy_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 			ship = { name = "HMS York" definition = heavy_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }	
@@ -309,8 +287,7 @@
 		}				
 		task_force = {				
 			name = "South Atlantic Fleet"
-			base = 13016
-			location = 13016 # St Helena
+			location = 13010
 			ship = { name = "HMS Neptune" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }	
 			ship = { name = "HMS Dauntless" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Danae Class" } } }
 			# Destroyer Division 4
@@ -327,7 +304,6 @@
 		### FAR EAST ###			
 		task_force = {				
 			name = "East Indies Fleet"
-			base = 12299
 			location = 12299 # Singapore
 			ship = { name = "HMS Danae" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Danae Class" } } }
 			ship = { name = "HMS Durban" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Danae Class" } } }
@@ -335,7 +311,6 @@
 		}				
 		task_force = {				
 			name = "China Fleet"
-			base = 10062
 			location = 10062 # Hong Kong			
 			ship = { name = "HMS Kent" definition = heavy_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }	
 			ship = { name = "HMS Dorsetshire" definition = heavy_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } }	}
@@ -346,7 +321,6 @@
 		}
 		task_force = {
 			name = "4th Submarine Flotilla"
-			base = 12299
 			location = 12299 # Singapore
 			ship = { name = "HMS Westcott" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V Class" } } }	
 			# Submarine Division 41

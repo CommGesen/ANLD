@@ -1268,7 +1268,6 @@ focus_tree = {
 		cost = 10
 		available = {
 			is_subject = no
-			NOT = { is_in_faction_with = EGY }
 			any_state = {
 				is_core_of = EGY
 				NOT = { is_owned_by = ROOT }
@@ -1283,32 +1282,6 @@ focus_tree = {
 						has_wargoal_against = PREV
 					}
 				}
-			}
-			modifier = {
-				factor = 5
-				OR = {
-					has_war_with = FRA
-					has_war_with = SPR
-				}
-			}
-			modifier = { # France or Spain must be at war with someone other than Turkey to give her the opportunity to seize the provinces
-				factor = 0
-				NOT = {
-					OR = {
-						AND = {
-							FRA = { has_war = yes }
-							NOT = { has_war_with = FRA }
-						}
-						AND = {
-							SPR = { has_war = yes }
-							NOT = { has_war_with = SPR }
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				is_historical_focus_on = yes
 			}
 		}
 		select_effect = {
@@ -1384,7 +1357,9 @@ focus_tree = {
 						owns_state = 783
 					}
 				}
-				
+				country_event = {
+					id = deluge_turkey.7
+				}
 			}
 		}
 	}

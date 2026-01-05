@@ -18,9 +18,9 @@ states_of_latin_countries = {
 states_of_faction_controlled_latin_countries = {
 	input = game:all_states
 	operators = {
+		faction_members
+		controlled_states
 		limit = {
-			faction_members
-			controlled_states
 			OR = {
 				is_core_of = ROM
 				is_core_of = FRA

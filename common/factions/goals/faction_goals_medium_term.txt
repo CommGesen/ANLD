@@ -13,26 +13,28 @@ faction_goal_undo_versailles = {
 				has_army_manpower = {
 					size > 1000000
 				}
-				is_controlled_by_ROOT_or_ally = 28
-				is_controlled_by_ROOT_or_ally = 85
-				is_controlled_by_ROOT_or_ally = 86
-				is_controlled_by_ROOT_or_ally = 188
-				is_controlled_by_ROOT_or_ally = 762
-				is_controlled_by_ROOT_or_ally = 807
-				is_controlled_by_ROOT_or_ally = 912
+				controls_state = 62
+				controls_state = 85
+				controls_state = 63
+				controls_state = 68
+				controls_state = 73
+				controls_state = 71
+				controls_state = 70
+				controls_state = 664
 			}
 			any_allied_country = {
 				tag = POL
 				has_army_manpower = {
 					size > 1000000
 				}
-				is_controlled_by_ROOT_or_ally = 28
-				is_controlled_by_ROOT_or_ally = 85
-				is_controlled_by_ROOT_or_ally = 86
-				is_controlled_by_ROOT_or_ally = 188
-				is_controlled_by_ROOT_or_ally = 762
-				is_controlled_by_ROOT_or_ally = 807
-				is_controlled_by_ROOT_or_ally = 912
+				controls_state = 62
+				controls_state = 85
+				controls_state = 63
+				controls_state = 68
+				controls_state = 73
+				controls_state = 71
+				controls_state = 70
+				controls_state = 664
 			}
 		}
 	}

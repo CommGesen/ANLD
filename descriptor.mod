@@ -3,6 +3,7 @@ tags={
 	"Alternative History"
 }
 name="Après Nous Le Déluge"
+replace_path="common/abilities"
 replace_path="common/ai_equipment"
 replace_path="common/ai_focuses"
 replace_path="common/ai_strategy"

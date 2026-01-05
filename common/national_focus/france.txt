@@ -3147,6 +3147,90 @@ focus_tree = {
 		available_if_capitulated = yes
 	}
 	focus = {
+		id = FRA_radical_party
+		icon = GFX_focus_generic_marianne
+		x = 12
+		y = 1
+		prerequisite = { focus = FRA_creation_of_the_parliament focus = FRA_the_reformer }
+		relative_position_id = FRA_creation_of_the_parliament
+		search_filters = { }
+		cost = 2
+		mutually_exclusive = { focus = FRA_popular_republican_movemenet focus = FRA_democratic_republican_alliance}
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = FRA_another_revolution
+					has_completed_focus = FRA_march_on_paris
+					has_completed_focus = FRA_popular_republican_movemenet
+					has_completed_focus = FRA_democratic_republican_alliance
+					has_completed_focus = FRA_the_guarantor
+					has_completed_focus = FRA_the_dictator
+				}
+			}
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_previous_course
+			}
+		}
+		offset = {
+			x = 10
+			y = -1
+			trigger = {
+				has_completed_focus = FRA_the_reformer
+			}
+		}
+		offset = {
+			x = -8
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_creation_of_the_parliament
+			}
+		}
+		offset = {
+			x = -4
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_creation_of_the_parliament
+				has_completed_focus = FRA_radical_party
+			}
+		}
+		offset = {
+			x = -4
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_the_reformer
+				has_completed_focus = FRA_radical_party
+			}
+		}
+		available = {
+			has_country_flag = FRA_flag_radical_party_won
+			is_subject = no
+		}
+		completion_reward = {
+			country_event = {
+				id = deluge_france.9
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = FRA_modifier_democratic_reforms }
+				add_to_variable = { french_democratic_reforms_democratic_drift = 0.02}
+			}
+			custom_effect_tooltip = FRA_custom_effect_tooltip_42
+			mark_focus_tree_layout_dirty = yes
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
 		id = FRA_women_emancipation
 		icon = GFX_focus_FRA_womens_rights
 		x = -2
@@ -3257,90 +3341,6 @@ focus_tree = {
 			remove_ideas = FRA_spirit_horrors_of_the_great_war
 			add_political_power = 100
 			add_stability = 0.1
-		}
-		ai_will_do = {
-			factor = 25
-		}
-		bypass = {
-			
-		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-	}
-	focus = {
-		id = FRA_radical_party
-		icon = GFX_focus_generic_marianne
-		x = 12
-		y = 1
-		prerequisite = { focus = FRA_creation_of_the_parliament focus = FRA_the_reformer }
-		relative_position_id = FRA_creation_of_the_parliament
-		search_filters = { }
-		cost = 2
-		mutually_exclusive = { focus = FRA_popular_republican_movemenet focus = FRA_democratic_republican_alliance}
-		allow_branch = {
-			NOT = {
-				OR = {
-					has_completed_focus = FRA_another_revolution
-					has_completed_focus = FRA_march_on_paris
-					has_completed_focus = FRA_popular_republican_movemenet
-					has_completed_focus = FRA_democratic_republican_alliance
-					has_completed_focus = FRA_the_guarantor
-					has_completed_focus = FRA_the_dictator
-				}
-			}
-		}
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = FRA_previous_course
-			}
-		}
-		offset = {
-			x = 10
-			y = -1
-			trigger = {
-				has_completed_focus = FRA_the_reformer
-			}
-		}
-		offset = {
-			x = -8
-			y = 0
-			trigger = {
-				has_completed_focus = FRA_creation_of_the_parliament
-			}
-		}
-		offset = {
-			x = -4
-			y = 0
-			trigger = {
-				has_completed_focus = FRA_creation_of_the_parliament
-				has_completed_focus = FRA_radical_party
-			}
-		}
-		offset = {
-			x = -4
-			y = 0
-			trigger = {
-				has_completed_focus = FRA_the_reformer
-				has_completed_focus = FRA_radical_party
-			}
-		}
-		available = {
-			has_country_flag = FRA_flag_radical_party_won
-			is_subject = no
-		}
-		completion_reward = {
-			country_event = {
-				id = deluge_france.9
-			}
-			hidden_effect = {
-				add_dynamic_modifier = { modifier = FRA_modifier_democratic_reforms }
-				add_to_variable = { french_democratic_reforms_democratic_drift = 0.02}
-			}
-			custom_effect_tooltip = FRA_custom_effect_tooltip_42
-			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
 			factor = 25
@@ -7908,9 +7908,13 @@ focus_tree = {
 		}
 		select_effect = {
 			if = {
-				limit = { POR = { is_subject = yes } 
+				limit = { POR = { is_subject = yes } }
 					POR = {
-						overlord = { country_event = generic.26 }
+						overlord = {
+							country_event = {
+								id = generic.26
+							}
+						}
 					}
 				}
 				POR = {

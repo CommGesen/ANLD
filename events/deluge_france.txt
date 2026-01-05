@@ -4537,9 +4537,7 @@ country_event = {##Cyraneica forces France out of the Libya
 				}
 				is_owned_by = FRA
 			}
-			LBA = {
-				transfer_state_to = PREV
-			}
+			transfer_state_to = LBA
 		}
 		LBA={
 			white_peace = FRA

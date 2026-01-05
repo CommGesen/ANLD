@@ -85,9 +85,6 @@ types = {
 		arrow = {
 			type = air
 		}
-        unit_model = {
-            type = equipment
-        }
 
 		success_factors = {
 			success = {
@@ -325,11 +322,6 @@ types = {
 
 		launch_sound = raid_launch_nuclear_missile
 
-        unit_model = {
-            type = equipment
-            scale = 0.5
-        }
-
 		success_factors = {
 			success = {
 				base = 0.8
@@ -493,9 +485,6 @@ types = {
 		arrow = {
 			type = air
 		}
-        unit_model = {
-            type = equipment
-        }
 
 		success_factors = {
 			success = {
@@ -744,11 +733,6 @@ types = {
 		}
 
 		launch_sound = raid_launch_nuclear_missile
-
-        unit_model = {
-            type = equipment
-            scale = 0.5
-        }
 
 		success_factors = {
 			success = {

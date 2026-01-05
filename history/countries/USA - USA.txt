@@ -102,14 +102,13 @@ if = {
 		early_ship_hull_carrier = 1
 		basic_battery = 1
 		basic_light_battery = 1
-		basic_medium_battery = 1
 		basic_heavy_battery = 1
 		basic_torpedo = 1
 		sonar = 1
 		basic_depth_charges = 1
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
-		improved_airplane_launcher = 1
+		#improved_airplane_launcher = 1 #this tech is wrong - causes error
 	}
 	set_naval_oob = "USA_1936_naval_mtg"
 }

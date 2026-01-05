@@ -12,13 +12,19 @@ state={
 			industrial_complex = 1
 			air_base = 1
 			4180 = {
-				naval_base = 5
+				naval_base = 8
+				naval_headquarters = {
+					level = 1
+					allowed = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
 			}
 		}
 		add_core_of = HAW
 		victory_points = {
 			4180 2
-		 }
+		}
 	}
 
 	provinces={
