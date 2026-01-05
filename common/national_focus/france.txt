@@ -7909,11 +7909,10 @@ focus_tree = {
 		select_effect = {
 			if = {
 				limit = { POR = { is_subject = yes } }
-					POR = {
-						overlord = {
-							country_event = {
-								id = generic.26
-							}
+				POR = {
+					overlord = {
+						country_event = {
+							id = generic.26
 						}
 					}
 				}
