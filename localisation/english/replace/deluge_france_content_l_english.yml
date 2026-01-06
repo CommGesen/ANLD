@@ -309,7 +309,7 @@
  FRA_custom_effect_tooltip_53:0 "[LBA.GetName] will be able to force us into white peace!"
  FRA_custom_effect_tooltip_54:0 "Effects will depend on the outcome of the campaign!"
  FRA_custom_effect_tooltip_55:0 "Add new national spirit §HNew French Army§! that gives:\n§H+7%§! Consumer Goods Factor!"
- FRA_custom_effect_tooltip_56:0 "Modify §HObsolete Army§! national spirit by:\n§G+10%§! Division Attack\n§G+5%§! Division Defence\n§G+5%§! Division Organization\n§G+5%§! Division Recovery Rate\n§G+5%§! Division Speed\n§G+5%§! Division Breakthrough\n§G-5%§! Experienced Soldier Losses\n§G+5%§! Land Night Attack\n§G+10%§! Division Reconnaissnce\n§G+10%§! Max Entrenchement!"
+ FRA_custom_effect_tooltip_56:0 "Modify §HObsolete Army§! national spirit by:\n§G+2,5%§! Division Attack\n§G+2,5%§! Division Defence\n§G+2,5%§! Division Organization\n§G+2,5%§! Division Recovery Rate\n§G+2,5%§! Division Speed\n§G+2,5%§! Division Breakthrough\n§G-2,5%§! Experienced Soldier Losses\n§G+2,5%§! Land Night Attack\n§G+2,5%§! Division Reconnaissnce\n§G+2,5%§! Max Entrenchement!"
  FRA_custom_effect_tooltip_57:0 "Add §HRadical Reforms§! national spirit that for now grants nothing."
  FRA_custom_effect_tooltip_58:0 "Modify §HObsolete Army§! national spirit by:\n§G-10%§! Naval Invasion Penalty\n§G+2%§! Naval Invasion Capacity!"
  FRA_custom_effect_tooltip_59:0 "Modify §HObsolete Army§! national spirit by:\n§G-15%§! Naval Invasion Penalty\n§G+4%§! Naval Invasion Capacity!"
@@ -321,9 +321,8 @@
  FRA_custom_effect_tooltip_65:0 "Gains §Hwargoal§! on every nation that §Howns§! states mentioned below and has §Hcapital§! in either §HSouth§! or §HNorth America§!:\n§H[464.GetName]§!,\n§H[696.GetName]§!,\n§H[465.GetName]§!,\n§H[357.GetName]§!,\n§H[468.GetName]§!,\n§H[798.GetName]§!,\n§H[781.GetName]§!,\n§H[395.GetName]§!,\n§H[498.GetName]§!,\n§H[936.GetName]§!,\n§H[499.GetName]§!."
  FRA_custom_effect_tooltip_66:0 "This modifier will last for §H400 days§! and will apply to every §HSouth American§! and §HNorth American§! country!"
  FRA_custom_effect_tooltip_67:0 "Remove §HLeague of Nations§! spirit!"
- FRA_custom_effect_tooltip_68:0 "Modify §HObsolete Army§! national spirit by:\n§G+5%§! Air Attack\n§G+5%§! Air Defence\n§G+5%§! Air Agility\n§G+5%§! Ace Generation Chance\n§G-5%§! Air Accidents Chance\n§G+5%§! Ground Attack Factor\n§G-5%§! Night Operations Penalty\n§G-5%§! Bad Weather Penalty!"
- FRA_custom_effect_tooltip_69:0 "Modify §HObsolete Army§! national spirit by:\n§G+5%§! Air Attack\n§G+5%§! Air Defence\n§G+5%§! Air Agility\n§G+10%§! Ace Generation Chance\n§G-10%§! Air Accidents Chance\n§G+10%§! Ground Attack Factor\n§G-10%§! Night Operations Penalty\n§G-10%§! Bad Weather Penalty!"
- FRA_custom_effect_tooltip_70:0 "Modify §HObsolete Army§! national spirit by:\n§G+10%§! Air Attack\n§G+10%§! Air Defence\n§G+10%§! Air Agility\n§G+10%§! Ace Generation Chance\n§G-10%§! Air Accidents Chance\n§G+10%§! Ground Attack Factor\n§G-10%§! Night Operations Penalty\n§G-10%§! Bad Weather Penalty!"
+ FRA_custom_effect_tooltip_68:0 "Modify §HObsolete Army§! national spirit by:\n§G+2,5%§! Air Attack\n§G+2,5%§! Air Defence\n§G+2,5%§! Air Agility\n§G+2,5%§! Ace Generation Chance\n§G-2,5%§! Air Accidents Chance\n§G+2,5%§! Ground Attack Factor\n§G-2,5%§! Night Operations Penalty\n§G-2,5%§! Bad Weather Penalty!"
+ FRA_custom_effect_tooltip_70:0 "Modify §HObsolete Army§! national spirit by:\n§G+5%§! Air Attack\n§G+5%§! Air Defence\n§G+5%§! Air Agility\n§G+5%§! Ace Generation Chance\n§G-5%§! Air Accidents Chance\n§G+5%§! Ground Attack Factor\n§G-5%§! Night Operations Penalty\n§G-5%§! Bad Weather Penalty!"
  FRA_custom_effect_tooltip_71:0 "Modify §HNew French Army§! national spirit by:\n§G+10%§! Strategic Bombing Efficiency!"
  FRA_custom_effect_tooltip_72:0 "Modify §HNew French Army§! national spirit by:\n§G+10%§! Max Entrenchement!"
  FRA_custom_effect_tooltip_73:0 "Modify §HNew French Army§! national spirit by:\n§G+10%§! Artillery Attack!"
@@ -441,6 +440,7 @@
  
  ##FREE
  FRA_custom_effect_tooltip_146:0 ""
+ FRA_custom_effect_tooltip_69:0 ""
  
  ##Opinion Modifiers
  opinion_modifier_former_overlord:0 "Former Overlord"
@@ -853,6 +853,7 @@
  FRA_vassalized_POR:0 "[FRA.GetName] vassalized [POR.GetName]"
  FRA_transfered_portugal:0 "[FROM.GetName] transfered [POR.GetName] to [FRA.GetName]"
  FRA_vassalized_major:0 "[FRA.GetName] vassalized [ROOT.GetName]"
+ FRA_atomic_test_in_algieria:0 "French Atomic Test in Algeria"
  
  ##relation modifiers:
  FRA_modifier_operation_cartier:0 "Operation Cartier"

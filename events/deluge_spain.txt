@@ -17,16 +17,27 @@ country_event = {##SPR gets info that their king Roland I died
 			last_election = "1935.12.17"
 			election_frequency = 48 
 		}
-		FRA = {
-			set_autonomy = {
-				target = SPR
-				autonomous_state = autonomy_free
-				end_wars = yes
-				end_civil_wars = no
+		if = {
+			limit = {
+				is_subject_of = FRA
 			}
-			country_event = {
-				id = deluge_spain.5
-				days = 10
+			every_country = {
+				limit = {
+					has_war_with = ROOT
+				}
+				white_peace = ROOT
+			}
+			FRA = {
+				set_autonomy = {
+					target = SPR
+					autonomous_state = autonomy_free
+					end_wars = yes
+					end_civil_wars = no
+				}
+				country_event = {
+					id = deluge_spain.5
+					days = 10
+				}
 			}
 		}
 		hidden_effect = {
@@ -61,16 +72,27 @@ country_event = {##SPR gets info that their king Roland I died
 			}
 			promote_character = SPR_sixtus_of_bourbon_parma
 			set_party_name = { ideology = neutrality long_name = SPR_bourbon_parma_loyalists_party_long name = SPR_bourbon_parma_loyalists_party_short }
-			FRA = {
-				set_autonomy = {
-					target = SPR
-					autonomous_state = autonomy_free
-					end_wars = yes
-					end_civil_wars = no
+			if = {
+				limit = {
+					is_subject_of = FRA
 				}
-				country_event = {
-					id = deluge_spain.10
-					hours = 10
+				every_country = {
+					limit = {
+						has_war_with = ROOT
+					}
+					white_peace = ROOT
+				}
+				FRA = {
+					set_autonomy = {
+						target = SPR
+						autonomous_state = autonomy_free
+						end_wars = yes
+						end_civil_wars = no
+					}
+					country_event = {
+						id = deluge_spain.10
+						hours = 10
+					}
 				}
 			}
 			hidden_effect = {
@@ -191,6 +213,62 @@ country_event = {#FRA gets info that Spain abolished monarchy
 			modifier = {
 				add = 50
 				ROOT = {
+					NOT = {
+						has_completed_focus = FRA_traumas_of_the_great_war
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					has_completed_focus = FRA_traumas_of_the_great_war
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					NOT = {
+						has_completed_focus = FRA_post_great_war_challenges
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					has_completed_focus = FRA_post_great_war_challenges
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					NOT = {
+						has_completed_focus = FRA_le_armee_de_demain
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					has_completed_focus = FRA_le_armee_de_demain
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					NOT = {
+						has_completed_focus = FRA_a_modern_army
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					has_completed_focus = FRA_a_modern_army
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
 					strength_ratio = {
 						tag = FROM 
 						ratio < 1.5 
@@ -260,6 +338,62 @@ country_event = {#FRA gets info that Spain abolished monarchy
 		}
 		ai_chance = {
 			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					NOT = {
+						has_completed_focus = FRA_traumas_of_the_great_war
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					has_completed_focus = FRA_traumas_of_the_great_war
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					NOT = {
+						has_completed_focus = FRA_post_great_war_challenges
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					has_completed_focus = FRA_post_great_war_challenges
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					NOT = {
+						has_completed_focus = FRA_le_armee_de_demain
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					has_completed_focus = FRA_le_armee_de_demain
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					NOT = {
+						has_completed_focus = FRA_a_modern_army
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					has_completed_focus = FRA_a_modern_army
+				}
+			}
 			modifier = {
 				add = -50
 				ROOT = {
@@ -365,9 +499,16 @@ country_event = {#POR has option to puppet SPR by SPR crowning sixtus, but may l
 				id = deluge_spain.9
 			}
 		}
-		FRA = {
-			country_event = {
-				id = deluge_spain.10
+		if = {
+			limit = {
+				SPR = {
+					is_subject_of = FRA
+				}
+			}
+			FRA = {
+				country_event = {
+					id = deluge_spain.10
+				}
 			}
 		}
 		hidden_effect = {
@@ -397,16 +538,27 @@ country_event = {#POR rejected so SPR looks at other options
 			last_election = "1935.12.17"
 			election_frequency = 48 
 		}
-		FRA = {
-			country_event = {
-				id = deluge_spain.5
-				days = 10
+		if = {
+			limit = {
+				is_subject_of = FRA
 			}
-			set_autonomy = {
-				target = SPR
-				autonomous_state = autonomy_free
-				end_wars = yes
-				end_civil_wars = no
+			FRA = {
+				every_country = {
+					limit = {
+						has_war_with = ROOT
+					}
+					white_peace = ROOT
+				}
+				country_event = {
+					id = deluge_spain.5
+					days = 10
+				}
+				set_autonomy = {
+					target = SPR
+					autonomous_state = autonomy_free
+					end_wars = yes
+					end_civil_wars = no
+				}
 			}
 		}
 		hidden_effect = {
@@ -475,6 +627,62 @@ country_event = {#FRA gets info that Spain crowned Sixtus
 		add_political_power = 100
 		ai_chance = {
 			base = 10
+			modifier = {
+				add = 50
+				ROOT = {
+					NOT = {
+						has_completed_focus = FRA_traumas_of_the_great_war
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					has_completed_focus = FRA_traumas_of_the_great_war
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					NOT = {
+						has_completed_focus = FRA_post_great_war_challenges
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					has_completed_focus = FRA_post_great_war_challenges
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					NOT = {
+						has_completed_focus = FRA_le_armee_de_demain
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					has_completed_focus = FRA_le_armee_de_demain
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					NOT = {
+						has_completed_focus = FRA_a_modern_army
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					has_completed_focus = FRA_a_modern_army
+				}
+			}
 			modifier = {
 				add = 50
 				ROOT = {
@@ -547,6 +755,62 @@ country_event = {#FRA gets info that Spain crowned Sixtus
 		}
 		ai_chance = {
 			base = 10
+			modifier = {
+				add = -50
+				ROOT = {
+					NOT = {
+						has_completed_focus = FRA_traumas_of_the_great_war
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					has_completed_focus = FRA_traumas_of_the_great_war
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					NOT = {
+						has_completed_focus = FRA_post_great_war_challenges
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					has_completed_focus = FRA_post_great_war_challenges
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					NOT = {
+						has_completed_focus = FRA_le_armee_de_demain
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					has_completed_focus = FRA_le_armee_de_demain
+				}
+			}
+			modifier = {
+				add = -50
+				ROOT = {
+					NOT = {
+						has_completed_focus = FRA_a_modern_army
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					has_completed_focus = FRA_a_modern_army
+				}
+			}
 			modifier = {
 				add = -50
 				ROOT = {
@@ -788,16 +1052,29 @@ country_event = {#FRA rejected so SPR looks at other options
 			last_election = "1935.12.17"
 			election_frequency = 48 
 		}
-		FRA = {
-			country_event = {
-				id = deluge_spain.5
-				days = 10
+		if = {
+			limit = {
+				SPR = {
+					is_subject_of = FRA
+				}
 			}
-			set_autonomy = {
-				target = SPR
-				autonomous_state = autonomy_free
-				end_wars = yes
-				end_civil_wars = no
+			every_country = {
+				limit = {
+					has_war_with = ROOT
+				}
+				white_peace = ROOT
+			}
+			FRA = {
+				country_event = {
+					id = deluge_spain.5
+					days = 10
+				}
+				set_autonomy = {
+					target = SPR
+					autonomous_state = autonomy_free
+					end_wars = yes
+					end_civil_wars = no
+				}
 			}
 		}
 		hidden_effect = {
@@ -886,16 +1163,29 @@ country_event = {#SPR has only 2 options left
 			last_election = "1935.12.17"
 			election_frequency = 48 
 		}
-		FRA = {
-			country_event = {
-				id = deluge_spain.5
-				days = 10
+		if = {
+			limit = {
+				SPR = {
+					is_subject_of = FRA
+				}
 			}
-			set_autonomy = {
-				target = SPR
-				autonomous_state = autonomy_free
-				end_wars = yes
-				end_civil_wars = no
+			every_country = {
+				limit = {
+					has_war_with = ROOT
+				}
+				white_peace = ROOT
+			}
+			FRA = {
+				country_event = {
+					id = deluge_spain.5
+					days = 10
+				}
+				set_autonomy = {
+					target = SPR
+					autonomous_state = autonomy_free
+					end_wars = yes
+					end_civil_wars = no
+				}
 			}
 		}
 		hidden_effect = {
@@ -981,6 +1271,20 @@ country_event = {#SPR gets possibility to white peace FRA
 				}
 			}
 			165 = {
+				transfer_state_to = SPR
+			}
+		}
+		if = {
+			limit = {
+				118 = {
+					OR = {
+						is_controlled_by = SPR
+						is_controlled_by = ENG
+						is_controlled_by = POR
+					}
+				}
+			}
+			118 = {
 				transfer_state_to = SPR
 			}
 		}

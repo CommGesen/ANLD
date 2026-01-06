@@ -1777,7 +1777,7 @@ country_event = {##first event from Guenon content
 		add_ideas = FRA_spirit_spirit_of_the_east
 	}
 }
-country_event = {##first french nuclear test
+country_event = {##french nuclear test in Algieria
 	id = deluge_france.48
 	title = deluge_france.48.t
 	desc = deluge_france.48.d
@@ -1787,37 +1787,33 @@ country_event = {##first french nuclear test
 		name = deluge_france.48.a
 		add_breakthrough_progress = {
 			specialization = specialization_nuclear
-			value = 0.5
+			value = 0.9
+		}
+		FRA = {
+			add_named_threat = {
+				threat = 5
+				name = FRA_atomic_test_in_algieria
+			}
 		}
 		hidden_effect = {
 			country_event = {
 				id = deluge_france.49
-				days = 7
+				days = 1
 			}
 		}
 	}
 }
-country_event = {##second french nuclear test
+news_event = {##news event for previous country event
 	id = deluge_france.49
 	title = deluge_france.49.t
 	desc = deluge_france.49.d
-	picture = GFX_report_event_nuclear_tests
+	picture = GFX_news_event_french_nuclear_tests
 	is_triggered_only = yes
 	option = {
 		name = deluge_france.49.a
-		add_breakthrough_progress = {
-			specialization = specialization_nuclear
-			value = 0.5
-		}
-		hidden_effect = {
-			country_event = {
-				id = deluge_france.50
-				days = 7
-			}
-		}
 	}
 }
-country_event = {##third french nuclear test
+country_event = {##free ID!
 	id = deluge_france.50
 	title = deluge_france.50.t
 	desc = deluge_france.50.d
@@ -1825,10 +1821,6 @@ country_event = {##third french nuclear test
 	is_triggered_only = yes
 	option = {
 		name = deluge_france.50.a
-		add_breakthrough_progress = {
-			specialization = specialization_nuclear
-			value = 0.5
-		}
 	}
 }
 country_event = {##second guenon event - about celtic and nordic paganism
@@ -2355,6 +2347,7 @@ country_event = {##decolonization - north africa
 				OR = {
 					owns_state = 273
 					owns_state = 1022
+					owns_state = 1029
 					owns_state = 1021
 					owns_state = 448
 					owns_state = 661
@@ -2470,6 +2463,7 @@ country_event = {##decolonization - north africa
 				OR = {
 					owns_state = 273
 					owns_state = 1022
+					owns_state = 1029
 					owns_state = 1021
 					owns_state = 448
 					owns_state = 661
@@ -2583,6 +2577,7 @@ country_event = {##decolonization - north africa
 					owns_state = 273
 					owns_state = 1022
 					owns_state = 1021
+					owns_state = 1029
 					owns_state = 448
 					owns_state = 661
 					owns_state = 449
@@ -4534,18 +4529,18 @@ country_event = {##Cyraneica forces France out of the Libya
 					state = 661
 					state = 448
 					state = 273
+					state = 1029
+					state = 1022
 				}
 				is_owned_by = FRA
 			}
 			transfer_state_to = LBA
 		}
 		LBA={
-			white_peace = FRA
 			drop_cosmetic_tag = yes
 			set_country_flag = LBA_has_unified_libya
 		}
 		FRA={
-			white_peace = LBA
 			white_peace = {
 				tag = LBA
 				message = LBA_won_against_FRA
@@ -4621,6 +4616,66 @@ country_event = {##LBA forces peace with France
 				is_controlled_by = LBA
 			}
 			transfer_state_to = LBA
+		}
+		if = {
+			limit = {
+				LBA = {
+					owns_state = 661
+				}
+			}
+			273 = {
+				transfer_state_to = LBA
+			}
+		}
+		if = {
+			limit = {
+				LBA = {
+					owns_state = 662
+				}
+			}
+			1029 = {
+				transfer_state_to = LBA
+			}
+		}
+		if = {
+			limit = {
+				LBA = {
+					owns_state = 663
+				}
+			}
+			1022 = {
+				transfer_state_to = LBA
+			}
+		}
+		if = {
+			limit = {
+				FRA = {
+					owns_state = 661
+				}
+			}
+			273 = {
+				transfer_state_to = FRA
+			}
+		}
+		if = {
+			limit = {
+				FRA = {
+					owns_state = 662
+				}
+			}
+			1029 = {
+				transfer_state_to = FRA
+			}
+		}
+		if = {
+			limit = {
+				FRA = {
+					owns_state = 663
+				}
+			}
+			1022 = {
+				transfer_state_to = FRA
+			}
 		}
 		FRA={
 			white_peace = {

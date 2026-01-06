@@ -270,14 +270,6 @@ economy_decisions = {
 
 		ai_will_do = {
 			base = 0
-			modifier = {
-				add = 1
-				has_stability > 0.74
-				NOT = {
-					original_tag = SWE
-					has_idea = SWE_hungershield
-				}
-			}
 		}
 
 		complete_effect = {

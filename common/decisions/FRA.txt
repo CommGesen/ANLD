@@ -13000,7 +13000,7 @@ FRA_dec_cat_unite_europe = {
 			}
 		}
 		complete_effect = {
-			set_cosmetic_tag = FRA_revolutionary_europe
+			set_cosmetic_tag = FRA_united_europe
 			remove_ideas = FRA_spirit_eu_military_cooperation
 			every_state = {
 				limit = {

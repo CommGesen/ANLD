@@ -482,7 +482,7 @@ FRA_modifier_obsolete_army = {##french_bad_army_
 }
 FRA_modifier_new_napoleonic_code = {##new_napoleonic_code_
 	enable = { always = yes }
-	icon = GFX_idea_generic_constitutional_guarantee
+	icon = GFX_idea_generic_constitutional_guarantees
 	consumer_goods_factor = new_napoleonic_code_consumer_goods_factor
 	political_power_factor = new_napoleonic_code_political_power_factor
 	monthly_population = new_napoleonic_code_monthly_population

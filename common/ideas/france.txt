@@ -1612,7 +1612,7 @@ ideas = {
 			}
 		}
 		FRA_spirit_aeronautique_nationale = {
-			picture = idea_generic_air_fighter
+			picture = generic_air_fighter
 			allowed = {
 				original_tag = FRA
 			}
@@ -1632,7 +1632,7 @@ ideas = {
 			research_bonus = { air_equipment = 0.1}
 		}
 		FRA_spirit_aeronautique_nationale2 = {
-			picture = idea_generic_air_fighter
+			picture = generic_air_fighter
 			allowed = {
 				original_tag = FRA
 			}

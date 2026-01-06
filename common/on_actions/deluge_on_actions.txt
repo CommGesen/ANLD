@@ -953,14 +953,7 @@ on_actions = {
 				}
 				every_country = {
 					limit = {
-						is_subject_of = FRA
-						has_war_with = BHU
-					}
-					white_peace = BHU
-				}
-				every_country = {
-					limit = {
-						is_in_faction_with = FRA
+						#is_subject_of = FRA
 						has_war_with = BHU
 					}
 					white_peace = BHU

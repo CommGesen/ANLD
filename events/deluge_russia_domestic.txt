@@ -262,7 +262,7 @@ country_event = {
 		}
 		has_idea = deluge_russia_incompetent_military
 		NOT = {
-			has_idea = rasputin
+			#has_idea = rasputin
 			has_global_flag = flag_russia_resolved_incompetent_military
 		}
 	}
@@ -470,7 +470,7 @@ country_event = {
 	
 	trigger = {
 		tag = SOV
-		has_idea = rasputin
+		#has_idea = rasputin
 		has_idea = vostorgov
 	}
 		
@@ -483,7 +483,7 @@ country_event = {
 		
 		set_global_flag = flag_rasputins_influence_defeated
 		
-		remove_ideas = rasputin
+		#remove_ideas = rasputin
 		
 		ai_chance = {
 			factor = 1
