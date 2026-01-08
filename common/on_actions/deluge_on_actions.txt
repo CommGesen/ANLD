@@ -1177,6 +1177,26 @@ on_actions = {
 				limit = {
 					is_subject = yes
 				}
+				if = {
+					limit = {
+						OR = {
+							has_cosmetic_tag = FRA_francism
+							has_cosmetic_tag = FRA_social_state
+							has_cosmetic_tag = FRA_holy_state
+							has_cosmetic_tag = FRA_revolutionary_state
+							has_cosmetic_tag = FRA_sultanate
+							has_cosmetic_tag = FRA_caliphate
+							has_cosmetic_tag = FRA_frankish
+							has_cosmetic_tag = FRA_greater_social_state
+							has_cosmetic_tag = FRA_empire_of_the_holy_flame
+							has_cosmetic_tag = FRA_united_communes
+							has_cosmetic_tag = FRA_peoples_republic
+							has_cosmetic_tag = FRA_national_commune
+							has_cosmetic_tag = FRA_united_europe
+						}
+					}
+					drop_cosmetic_tag = yes
+				}
 				add_country_leader_role = {#Francois Darlan
 					character = FRA_deluge_francois_darlan
 					promote_leader = yes
