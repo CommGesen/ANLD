@@ -5989,9 +5989,6 @@ FRA_dec_cat_modernize_french_army={
 			FRA = {
 				has_completed_focus = FRA_build_the_maginot_line
 			}
-			158 = {
-				is_fully_controlled_by = FRA
-			}
 		}
 		available = {
 			check_variable = { maginot_level_ita < 4 }
@@ -6058,15 +6055,6 @@ FRA_dec_cat_modernize_french_army={
 			check_variable = { maginot_level_swi < 4 }
 			FRA = {
 				has_completed_focus = FRA_build_the_maginot_line
-			}
-			735 = {
-				is_fully_controlled_by = FRA
-			}
-			796 = {
-				is_fully_controlled_by = FRA
-			}
-			17 = {
-				is_fully_controlled_by = FRA
 			}
 		}
 		available = {
@@ -6163,12 +6151,6 @@ FRA_dec_cat_modernize_french_army={
 			FRA = {
 				has_completed_focus = FRA_build_the_maginot_line
 			}
-			28 = {
-				is_fully_controlled_by = FRA
-			}
-			42 = {
-				is_fully_controlled_by = FRA
-			}
 		}
 		available = {
 			check_variable = { maginot_level_ger < 4 }
@@ -6253,15 +6235,6 @@ FRA_dec_cat_modernize_french_army={
 			FRA = {
 				has_completed_focus = FRA_build_the_maginot_line
 			}
-			OR = {
-				786 = {
-					is_fully_controlled_by = FRA
-				}
-				any_subject_country = {
-					is_subject_of = FRA
-					controls_state = 786
-				}
-			}
 		}
 		available = {
 			check_variable = { maginot_level_ger_bel < 4 }
@@ -6330,36 +6303,6 @@ FRA_dec_cat_modernize_french_army={
 			FRA = {
 				has_completed_focus = FRA_build_the_maginot_line
 			}
-			OR = {
-				786 = {
-					is_fully_controlled_by = FRA
-				}
-				any_subject_country = {
-					is_subject_of = FRA
-					controls_state = 786
-				}
-			}
-			OR = {
-				8 = {
-					is_fully_controlled_by = FRA
-				}
-				any_subject_country = {
-					is_subject_of = FRA
-					controls_state = 8
-				}
-			}
-			OR = {
-				34 = {
-					is_fully_controlled_by = FRA
-				}
-				any_subject_country = {
-					is_subject_of = FRA
-					controls_state = 34
-				}
-			}
-			29 = {
-				is_fully_controlled_by = FRA
-			}
 		}
 		available = {
 			check_variable = { maginot_level_hol < 4 }
@@ -6391,7 +6334,7 @@ FRA_dec_cat_modernize_french_army={
 					controls_state = 34
 				}
 			}
-			29 = {
+			1030 = {
 				is_fully_controlled_by = FRA
 			}
 		}
@@ -6438,7 +6381,7 @@ FRA_dec_cat_modernize_french_army={
 					province = 3576
 				}
 			}
-			29 = {
+			1030 = {
 				add_building_construction = {
 					type = bunker
 					level = 2
@@ -6505,18 +6448,6 @@ FRA_dec_cat_modernize_french_army={
 			FRA = {
 				has_completed_focus = FRA_build_the_maginot_line
 			}
-			42 = {
-				is_fully_controlled_by = FRA
-			}
-			28 = {
-				is_fully_controlled_by = FRA
-			}
-			18 = {
-				is_fully_controlled_by = FRA
-			}
-			29 = {
-				is_fully_controlled_by = FRA
-			}
 		}
 		available = {
 			check_variable = { maginot_level_bel < 4 }
@@ -6524,13 +6455,16 @@ FRA_dec_cat_modernize_french_army={
 			42 = {
 				is_fully_controlled_by = FRA
 			}
-			28 = {
+			1031 = {
 				is_fully_controlled_by = FRA
 			}
 			18 = {
 				is_fully_controlled_by = FRA
 			}
 			29 = {
+				is_fully_controlled_by = FRA
+			}
+			1030 = {
 				is_fully_controlled_by = FRA
 			}
 		}
@@ -6543,7 +6477,7 @@ FRA_dec_cat_modernize_french_army={
 					province = 9575
 				}
 			}
-			28 = {
+			1031 = {
 				add_building_construction = {
 					type = bunker
 					level = 2
@@ -6584,6 +6518,8 @@ FRA_dec_cat_modernize_french_army={
 					instant_build = yes
 					province = 11606
 				}
+			}
+			1030 = {
 				add_building_construction = {
 					type = bunker
 					level = 2
@@ -6617,20 +6553,14 @@ FRA_dec_cat_modernize_french_army={
 			FRA = {
 				has_completed_focus = FRA_fortify_the_english_channel
 			}
-			29 = {
-				is_fully_controlled_by = FRA
-			}
-			15 = {
-				is_fully_controlled_by = FRA
-			}
-			14 = {
-				is_fully_controlled_by = FRA
-			}
 		}
 		available = {
 			check_variable = { fra_coastal_fort_level_north < 4 }
 			num_of_available_civilian_factories > 1
 			29 = {
+				is_fully_controlled_by = FRA
+			}
+			1030 = {
 				is_fully_controlled_by = FRA
 			}
 			15 = {
@@ -6641,7 +6571,7 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		remove_effect = {
-			29 = {
+			1030 = {
 				add_building_construction = {
 					type = coastal_bunker
 					level = 2
@@ -6666,6 +6596,8 @@ FRA_dec_cat_modernize_french_army={
 					instant_build = yes
 					province = 9500
 				}
+			}
+			29 = {
 				add_building_construction = {
 					type = coastal_bunker
 					level = 2
@@ -7036,15 +6968,6 @@ FRA_dec_cat_modernize_french_army={
 			check_variable = { fra_radar_var_north < 3 }
 			FRA = {
 				has_completed_focus = FRA_barrages_david
-			}
-			29 = {
-				is_fully_controlled_by = FRA
-			}
-			15 = {
-				is_fully_controlled_by = FRA
-			}
-			14 = {
-				is_fully_controlled_by = FRA
 			}
 		}
 		available = {
@@ -8939,7 +8862,7 @@ FRA_dec_cat_subsidize_the_city_development = {
 		fire_only_once = yes
 		highlight_states = {
 			highlight_state_targets = {
-				state = 28
+				state = 1031
 			}
 		}
 		available = {
@@ -8961,7 +8884,7 @@ FRA_dec_cat_subsidize_the_city_development = {
 				province = 9559
 				value = 10
 			}
-			28 = {
+			1031 = {
 				add_building_construction = {
 					type = anti_air_building
 					level = 1
@@ -8977,7 +8900,7 @@ FRA_dec_cat_subsidize_the_city_development = {
 			add_resource = {
 				type = tungsten
 				amount = 20
-				state = 28
+				state = 1031
 			}
 		}
 		ai_will_do = {
@@ -9401,7 +9324,7 @@ FRA_dec_cat_subsidize_the_city_development = {
 			}
 		}
 		allowed = {
-			original_tag = FRA
+			tag = FRA
 		}
 		days_remove = 60
 		modifier = {
@@ -10577,6 +10500,8 @@ FRA_dec_cat_frankish_empire = {
 				controls_state = 735
 				controls_state = 158
 				controls_state = 1
+				controls_state = 1030
+				controls_state = 1031
 			}
 			custom_trigger_tooltip = {##northern and central Italy
 				tooltip = FRA_custom_trigger_tooltip_2
@@ -10676,6 +10601,8 @@ FRA_dec_cat_frankish_empire = {
 		}
 		highlight_states = {
 			highlight_state_targets = {
+				state = 1030
+				state = 1031
 				state = 42
 				state = 28
 				state = 17
@@ -12031,6 +11958,7 @@ FRA_dec_cat_greater_social_state = {
 			has_completed_focus = FRA_total_control
 			custom_trigger_tooltip = {##France
 				tooltip = POL_custom_trigger_tooltip_38
+				controls_state = 1030
 				controls_state = 42
 				controls_state = 28
 				controls_state = 17
@@ -12045,6 +11973,7 @@ FRA_dec_cat_greater_social_state = {
 				controls_state = 33
 				controls_state = 27
 				controls_state = 26
+				controls_state = 1030
 				controls_state = 25
 				controls_state = 19
 				controls_state = 806
@@ -12138,6 +12067,8 @@ FRA_dec_cat_greater_social_state = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 2
+				state = 1030
+				state = 1031
 				state = 4
 				state = 219
 				state = 10
@@ -12244,6 +12175,8 @@ FRA_dec_cat_greater_social_state = {
 					is_core_of = FRA
 				}
 				OR = {
+					state = 1030
+					state = 1031
 					state = 42
 					state = 28
 					state = 17
@@ -12620,6 +12553,8 @@ FRA_dec_cat_unite_europe = {
 				controls_state = 990
 				controls_state = 1026
 				controls_state = 991
+				controls_state = 1030
+				controls_state = 1031
 			}
 			custom_trigger_tooltip = {##Spain with Giblartar
 				tooltip = POL_custom_trigger_tooltip_39
@@ -12719,6 +12654,8 @@ FRA_dec_cat_unite_europe = {
 		cost = 0
 		highlight_states = {
 			highlight_state_targets = {
+				state = 1030
+				state = 1031
 				state = 796
 				state = 991
 				state = 116
@@ -13005,6 +12942,7 @@ FRA_dec_cat_unite_europe = {
 			every_state = {
 				limit = {
 					OR = {
+						state = 1031
 						state = 116
 						state = 1016
 						state = 991
@@ -13020,6 +12958,7 @@ FRA_dec_cat_unite_europe = {
 						state = 1020
 						state = 1028
 						state = 1027
+						state = 1030
 						state = 910
 						state = 978
 						state = 970

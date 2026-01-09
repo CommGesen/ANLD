@@ -19,7 +19,6 @@ faction_template_republican_internationale = {
 	default_rules = {
 		change_leader_rule_manpower
 		change_leader_rule_industry
-		change_leader_rule_influence
 		government_in_exile_allowed
 		joining_rule_communist_only
 		faction_peace_rule_puppeting_focus

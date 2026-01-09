@@ -1,0 +1,44 @@
+
+state={
+	id=29
+	name="STATE_29"
+	manpower = 2200000
+	
+	state_category = rural
+	resources={
+		aluminium = 8
+		coal = 10
+	}
+
+	history={
+		owner = FRA
+		victory_points = {
+			6585 1
+		}
+		victory_points = {
+			454 3
+		}
+		victory_points = {
+			3447 1
+		}
+		victory_points = {
+			11606 1
+		}
+		victory_points = {
+			9561 1
+		}
+		victory_points = {
+			11420 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = FRA
+		add_core_of = NMD
+	}
+
+	provinces={
+		454 3402 3447 6585 9561 11420 11549
+	}
+}

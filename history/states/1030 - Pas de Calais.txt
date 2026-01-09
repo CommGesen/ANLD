@@ -1,0 +1,49 @@
+
+state={
+	id=1030
+	name="STATE_1030"
+	manpower = 2350000
+	
+	state_category = large_city
+	resources={
+		steel = 24
+		coal = 20
+	}
+
+	history={
+		owner = FRA
+		victory_points = {
+			575 3
+		}
+		victory_points = {
+			11483 20
+		}
+		victory_points = {
+			11548 2
+		}
+		victory_points = {
+			6504 1
+		}
+		victory_points = {
+			11606 1
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 10
+			anti_air_building = 1
+			575 = {
+				naval_base = 6
+			}
+			11548 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = FRA
+		add_core_of = NMD
+	}
+
+	provinces={
+		575 3476 3536 6504 9500 11483 11548 11606 6446
+	}
+}

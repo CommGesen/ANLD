@@ -28,3 +28,33 @@ joining_rule_non_democratic_non_monarchist = {
 		}
 	}
 }
+joining_rule_non_nationalist_non_radical = {
+	type = joining_rules
+	visible = {
+		NOT = { has_government = communism }
+		NOT = { has_government = fascism }
+	}
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 2 
+			has_government = democratic
+		}
+		modifier = {
+			add = 1
+			has_government = neutrality
+		}
+	}
+	trigger = {
+		NOT = {
+			has_government = fascism 
+		}
+		NOT = {
+			has_government = communism 
+		}
+		IF = {
+			limit = { NOT = { has_rule = can_join_opposite_factions } }
+			has_government = FROM
+		}
+	}
+}

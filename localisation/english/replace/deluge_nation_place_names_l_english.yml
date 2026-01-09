@@ -330,17 +330,16 @@
  BLR_VICTORY_POINTS_6344: "Žłobin"
  BLR_STATE_207: "Wiciebsk"
  BLR_VICTORY_POINTS_11241: "Wiciebsk"
- #SPR Catalogne
+ #Catalogne
  SPR_STATE_165: "Cataluña"
  SPR_VICTORY_POINTS_9764: "Barcelona"
  SPR_VICTORY_POINTS_6927: "Gerona"
  SPR_VICTORY_POINTS_6966: "Tortosa"
- #FRA Catalogne
  FRA_STATE_165: "Catalogne"
  FRA_VICTORY_POINTS_9764: "Barcelone"
  FRA_VICTORY_POINTS_6927: "Gérone"
  FRA_VICTORY_POINTS_6966: "Tortose"
- ##generic Basque Country
+ ##Basque Country
  STATE_172: "Nafarroa"
  VICTORY_POINTS_740: "Bilbo"
  VICTORY_POINTS_6756: "Gernika"
@@ -348,7 +347,6 @@
  VICTORY_POINTS_3933: "Iruña"
  STATE_806: "Pyrénées-Atlantiques"
  VICTORY_POINTS_9710: "Bayonne"
- ##NAV Basque Country
  NAV_STATE_172: "Nafarroa"
  NAV_VICTORY_POINTS_740: "Bilbo"
  NAV_VICTORY_POINTS_6756: "Gernika"
@@ -356,7 +354,6 @@
  NAV_VICTORY_POINTS_3933: "Iruña"
  NAV_STATE_806: "Pirinio Atlantikoak"
  NAV_VICTORY_POINTS_9710: "Baiona"
- ##FRA Basque Country
  FRA_STATE_172: "Navarre"
  FRA_VICTORY_POINTS_740: "Bilbao"
  FRA_VICTORY_POINTS_6756: "Guernica"
@@ -364,7 +361,6 @@
  FRA_VICTORY_POINTS_3933: "Pampelune"
  FRA_STATE_806: "Pyrénées-Atlantiques"
  FRA_VICTORY_POINTS_9710: "Bayonne"
- ##SPR Basque Country
  SPR_STATE_172: "Navarra"
  SPR_VICTORY_POINTS_740: "Bilbao"
  SPR_VICTORY_POINTS_6756: "Gernika"
@@ -388,4 +384,7 @@
  VICTORY_POINTS_3816: "Zaragoza"
  FRA_VICTORY_POINTS_3816: "Saragosse"
  CAT_VICTORY_POINTS_3816: "Saragossa"
+ ##France
+ STATE_1030: "Pas-de-Calais"
+ STATE_1031:0 "Lorraine"
  

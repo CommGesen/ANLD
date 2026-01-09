@@ -2101,6 +2101,7 @@ focus_tree = {
 			controls_state = 158
 			controls_state = 42
 			controls_state = 28
+			controls_state = 1031
 		}
 		completion_reward = {
 			add_manpower = -400000
@@ -2131,6 +2132,11 @@ focus_tree = {
 				}
 			}
 			28 = {
+				add_dynamic_modifier = {
+					modifier = FRA_modifier_eliminated_minorities
+				}
+			}
+			1031 = {
 				add_dynamic_modifier = {
 					modifier = FRA_modifier_eliminated_minorities
 				}
@@ -4794,6 +4800,7 @@ focus_tree = {
 			controls_state = 158
 			controls_state = 42
 			controls_state = 28
+			controls_state = 1031
 		}
 		completion_reward = {
 			add_stability = 0.1
@@ -4824,6 +4831,11 @@ focus_tree = {
 				}
 			}
 			28 = {
+				add_dynamic_modifier = {
+					modifier = FRA_modifier_eliminated_minorities
+				}
+			}
+			1031 = {
 				add_dynamic_modifier = {
 					modifier = FRA_modifier_eliminated_minorities
 				}
@@ -6555,6 +6567,7 @@ focus_tree = {
 			controls_state = 158
 			controls_state = 42
 			controls_state = 28
+			controls_state = 1031
 		}
 		completion_reward = {
 			14 = {
@@ -6588,6 +6601,12 @@ focus_tree = {
 				}
 			}
 			28 = {
+				add_manpower = -10000
+				add_dynamic_modifier = {
+					modifier = FRA_modifier_eliminated_minorities
+				}
+			}
+			1031 = {
 				add_manpower = -10000
 				add_dynamic_modifier = {
 					modifier = FRA_modifier_eliminated_minorities

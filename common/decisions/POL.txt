@@ -14795,6 +14795,8 @@ new_revolution_category = {
 				controls_state = 17
 				controls_state = 18
 				controls_state = 29
+				controls_state = 1030
+				controls_state = 1031
 				controls_state = 16
 				controls_state = 15
 				controls_state = 30
@@ -15156,6 +15158,8 @@ new_revolution_category = {
 				state = 28
 				state = 17
 				state = 18
+				state = 1030
+				state = 1031
 				state = 29
 				state = 16
 				state = 15
@@ -15204,6 +15208,7 @@ new_revolution_category = {
 			every_state = {
 				limit = {
 					OR = {
+						state = 1030
 						state = 116
 						state = 1016
 						state = 991
@@ -15437,6 +15442,7 @@ new_revolution_category = {
 						state = 791
 						state = 788
 						state = 178
+						state = 1031
 						state = 42
 						state = 28
 						state = 17
@@ -24762,6 +24768,16 @@ wettins_foreign_policy_decisions_category = {
 					}
 				}
 				OR = {
+					controls_state = 1031
+					AND = {
+						1031 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
 					controls_state = 42
 					AND = {
 						42 = {
@@ -24785,6 +24801,16 @@ wettins_foreign_policy_decisions_category = {
 					controls_state = 29
 					AND = {
 						29 = {
+							controller = {
+								is_subject_of = POL
+							}
+						}
+					}
+				}
+				OR = {
+					controls_state = 1030
+					AND = {
+						1030 = {
 							controller = {
 								is_subject_of = POL
 							}

@@ -1,13 +1,12 @@
 
 state={
 	id=28
-	name="STATE_28" # Alsace-Lorraine
-	manpower = 1915600
+	name="STATE_28"
+	manpower = 2100000
 	
 	state_category = city
 	resources={
-		steel = 42 #was 100 # was: 236
-		coal = 5 # initial distribution / 140 total
+		steel = 12
 	}
 
 	history={
@@ -19,9 +18,6 @@ state={
 			9503 20
 		}
 		victory_points = {
-			9559 5
-		}
-		victory_points = {
 			6529 1
 		}
 		victory_points = {
@@ -29,7 +25,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 2
+			industrial_complex = 1
 			air_base = 5
 		}
 		add_core_of = FRA
@@ -37,6 +33,6 @@ state={
 	}
 
 	provinces={
-		549 678 1346 3629 6529 9503 9559 11502 
+		549 678 1346 6529 9503 
 	}
 }
