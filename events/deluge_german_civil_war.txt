@@ -4937,21 +4937,7 @@ country_event = {
 		
 		add_opinion_modifier = { target = SWE modifier = assistance_in_civil_war_modifier }
 		
-		if = {
-			limit = {
-				has_idea = otto_wels
-			}
-			add_political_power = 150
-		}
 		
-		if = {
-			limit = {
-				NOT = {
-					has_idea = otto_wels
-				}
-			}
-			add_ideas = otto_wels
-		}
 		
 		ai_chance = {
 			factor = 1
@@ -5019,21 +5005,7 @@ country_event = {
 		modify_global_flag = { flag = flag_german_support_for_social_democrats value = -1 }
 		custom_effect_tooltip = tooltip_decreases_support_social_democrats
 		
-		if = {
-			limit = {
-				NOT = {
-					has_idea = otto_wels
-				}
-			}
-			add_political_power = -150
-		}
 		
-		if = {
-			limit = {
-				has_idea = otto_wels
-			}
-			remove_ideas = otto_wels
-		}
 		
 		ai_chance = {
 			factor = 1

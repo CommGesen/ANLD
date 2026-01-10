@@ -35,12 +35,11 @@ country_event = {
 			popularity = -0.1
 		}
 		
-		remove_unit_leader = 200
-		custom_effect_tooltip = remove_political_advisor
-		show_ideas_tooltip = TUR_ataturk
+		#custom_effect_tooltip = remove_political_advisor
+		#show_ideas_tooltip = TUR_ataturk
 		retire_character = TUR_mustafa_kemal_pasha
 		hidden_effect = {
-			remove_ideas = TUR_ataturk
+			#remove_ideas = TUR_ataturk
 			set_global_flag = ataturk_died
 		}
 		hidden_effect = {
@@ -72,12 +71,11 @@ country_event = {
 			popularity = -0.1
 		}
 		
-		remove_unit_leader = 200
-		custom_effect_tooltip = remove_political_advisor
-		show_ideas_tooltip = TUR_ataturk
+		#custom_effect_tooltip = remove_political_advisor
+		#show_ideas_tooltip = TUR_ataturk
 		retire_character = TUR_mustafa_kemal_pasha
 		hidden_effect = {
-			remove_ideas = TUR_ataturk
+			#remove_ideas = TUR_ataturk
 			set_global_flag = ataturk_died
 		}
 		hidden_effect = {

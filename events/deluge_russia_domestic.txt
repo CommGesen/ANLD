@@ -471,7 +471,8 @@ country_event = {
 	trigger = {
 		tag = SOV
 		#has_idea = rasputin
-		has_idea = vostorgov
+		#has_idea = vostorgov
+		always = no
 	}
 		
 	mean_time_to_happen = {

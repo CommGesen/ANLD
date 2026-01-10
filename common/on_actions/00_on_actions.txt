@@ -409,102 +409,6 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					has_government = communism
-				}
-				set_politics = {
-					elections_allowed = yes
-				}
-				add_ideas = universal
-				add_ideas = welfare_state
-			}
-			if = {
-				limit = {
-					has_government = democratic
-				}
-				set_politics = {
-					elections_allowed = yes
-				}
-				add_ideas = restricted
-				add_ideas = robber_barons
-			}
-			if = {
-				limit = {
-					has_government = neutrality
-				}
-				set_politics = {
-					elections_allowed = yes
-				}
-				add_ideas = landed
-				add_ideas = established_religion
-			}
-			if = {
-				limit = {
-					has_government = fascism
-				}
-				set_politics = {
-					elections_allowed = no
-				}
-				add_ideas = novote
-				add_ideas = labour_camps
-			}
-			if = {
-				limit = {
-					has_idea = generic_trades_unionist
-					NOT = { has_government = communism }
-				}
-				remove_ideas = generic_trades_unionist
-			}
-			if = {
-				limit = {
-					has_idea = generic_innovative_capitalist
-					NOT = { has_government = democratic }
-				}
-				remove_ideas = generic_innovative_capitalist
-			}
-			if = {
-				limit = {
-					has_idea = generic_landed_gentleman
-					NOT = { has_government = neutrality }
-				}
-				remove_ideas = generic_landed_gentleman
-			}
-			if = {
-				limit = {
-					has_idea = generic_great_war_hero
-					NOT = { has_government = fascism }
-				}
-				remove_ideas = generic_great_war_hero
-			}
-			if = {
-				limit = {
-					has_idea = generic_deluge_communist_revolutionary
-					NOT = { has_government = communism }
-				}
-				remove_ideas = generic_deluge_communist_revolutionary
-			}
-			if = {
-				limit = {
-					has_idea = generic_deluge_democratic_reformer
-					NOT = { has_government = democratic }
-				}
-				remove_ideas = generic_deluge_democratic_reformer
-			}
-			if = {
-				limit = {
-					has_idea = generic_monarchist_statesman
-					NOT = { has_government = neutrality }
-				}
-				remove_ideas = generic_monarchist_statesman
-			}
-			if = {
-				limit = {
-					has_idea = generic_deluge_fascist_demagogue
-					NOT = { has_government = fascism }
-				}
-				remove_ideas = generic_deluge_fascist_demagogue
-			}
-			if = {
-				limit = {
 					has_idea = bourbon_king
 					NOT = { has_government = neutrality }
 				}
@@ -526,13 +430,6 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					has_idea = emperor_napoleon
-					NOT = { has_government = neutrality }
-				}
-				remove_ideas = emperor_napoleon
-			}
-			if = {
-				limit = {
 					has_idea = ottoman_emperor
 					NOT = { has_government = neutrality }
 				}
@@ -549,18 +446,6 @@ on_actions = {
 					}
 				}
 				remove_ideas = fighting_king
-			}
-			if = {
-				limit = {
-					has_idea = wettin_king
-					NOT = {
-						OR = {
-							has_government = neutrality
-							has_government = fascism
-						}
-					}
-				}
-				remove_ideas = wettin_king
 			}
 			if = {
 				limit = {

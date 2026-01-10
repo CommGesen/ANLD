@@ -44,20 +44,6 @@ country_event = {
 			popularity = 0.5
 		}
 		
-		if = {
-			limit = {
-				has_idea = generic_monarchist_statesman
-			}
-			remove_ideas = generic_monarchist_statesman
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_landed_gentleman
-			}
-			remove_ideas = generic_landed_gentleman
-		}
-		
 		start_civil_war = {
 			ruling_party = fascism
 			ideology = neutrality
@@ -85,20 +71,6 @@ country_event = {
 		if = {
 			limit = { has_idea = deluge_fascism_crackdown_idea }
 			remove_ideas = deluge_fascism_crackdown_idea
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_deluge_fascist_demagogue
-			}
-			remove_ideas = generic_deluge_fascist_demagogue
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_great_war_hero
-			}
-			remove_ideas = generic_great_war_hero
 		}
 		
 		set_politics = {
@@ -163,20 +135,6 @@ country_event = {
 			popularity = 0.5
 		}
 		
-		if = {
-			limit = {
-				has_idea = generic_deluge_communist_revolutionary
-			}
-			remove_ideas = generic_deluge_communist_revolutionary
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_trades_unionist
-			}
-			remove_ideas = generic_trades_unionist
-		}
-		
 		start_civil_war = {
 			ruling_party = fascism
 			ideology = communism
@@ -204,20 +162,6 @@ country_event = {
 		if = {
 			limit = { has_idea = deluge_fascism_crackdown_idea }
 			remove_ideas = deluge_fascism_crackdown_idea
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_deluge_fascist_demagogue
-			}
-			remove_ideas = generic_deluge_fascist_demagogue
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_great_war_hero
-			}
-			remove_ideas = generic_great_war_hero
 		}
 		
 		set_politics = {
@@ -276,20 +220,6 @@ country_event = {
 		name = deluge_revolutions3opta
 		
 		set_country_flag = has_had_civil_war_u_v_d
-
-		if = {
-			limit = {
-				has_idea = generic_deluge_democratic_reformer
-			}
-			remove_ideas = generic_deluge_democratic_reformer
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_innovative_capitalist
-			}
-			remove_ideas = generic_innovative_capitalist
-		}
 		
 		start_civil_war = {
 			ruling_party = fascism
@@ -318,20 +248,6 @@ country_event = {
 		if = {
 			limit = { has_idea = deluge_fascism_crackdown_idea }
 			remove_ideas = deluge_fascism_crackdown_idea
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_deluge_fascist_demagogue
-			}
-			remove_ideas = generic_deluge_fascist_demagogue
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_great_war_hero
-			}
-			remove_ideas = generic_great_war_hero
 		}
 		
 		set_politics = {
@@ -395,20 +311,6 @@ country_event = {
 
 		set_country_flag = has_had_civil_war_m_v_u
 		
-		if = {
-			limit = {
-				has_idea = generic_deluge_fascist_demagogue
-			}
-			remove_ideas = generic_deluge_fascist_demagogue
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_great_war_hero
-			}
-			remove_ideas = generic_great_war_hero
-		}
-		
 		add_popularity = {
 			ideology = neutrality
 			popularity = 0.5
@@ -441,20 +343,6 @@ country_event = {
 		if = {
 			limit = { has_idea = deluge_neutrality_crackdown_idea }
 			remove_ideas = deluge_neutrality_crackdown_idea
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_monarchist_statesman
-			}
-			remove_ideas = generic_monarchist_statesman
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_landed_gentleman
-			}
-			remove_ideas = generic_landed_gentleman
 		}
 		
 		set_politics = {
@@ -528,20 +416,6 @@ country_event = {
 			popularity = 0.5
 		}
 		
-		if = {
-			limit = {
-				has_idea = generic_deluge_communist_revolutionary
-			}
-			remove_ideas = generic_deluge_communist_revolutionary
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_trades_unionist
-			}
-			remove_ideas = generic_trades_unionist
-		}
-		
 		start_civil_war = {
 			ruling_party = neutrality
 			ideology = communism
@@ -564,20 +438,6 @@ country_event = {
 		
 		trigger = {
 			is_subject = no
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_monarchist_statesman
-			}
-			remove_ideas = generic_monarchist_statesman
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_landed_gentleman
-			}
-			remove_ideas = generic_landed_gentleman
 		}
 		
 		if = {
@@ -651,20 +511,6 @@ country_event = {
 			popularity = 0.5
 		}
 		
-		if = {
-			limit = {
-				has_idea = generic_deluge_democratic_reformer
-			}
-			remove_ideas = generic_deluge_democratic_reformer
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_innovative_capitalist
-			}
-			remove_ideas = generic_innovative_capitalist
-		}
-		
 		start_civil_war = {
 			ruling_party = neutrality
 			ideology = democratic
@@ -692,20 +538,6 @@ country_event = {
 		if = {
 			limit = { has_idea = deluge_neutrality_crackdown_idea }
 			remove_ideas = deluge_neutrality_crackdown_idea
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_monarchist_statesman
-			}
-			remove_ideas = generic_monarchist_statesman
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_landed_gentleman
-			}
-			remove_ideas = generic_landed_gentleman
 		}
 		
 		set_politics = {
@@ -770,20 +602,6 @@ country_event = {
 			popularity = 0.5
 		}
 		
-		if = {
-			limit = {
-				has_idea = generic_monarchist_statesman
-			}
-			remove_ideas = generic_monarchist_statesman
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_landed_gentleman
-			}
-			remove_ideas = generic_landed_gentleman
-		}
-		
 		start_civil_war = {
 			ruling_party = democratic
 			ideology = neutrality
@@ -811,20 +629,6 @@ country_event = {
 		if = {
 			limit = { has_idea = deluge_democratic_crackdown_idea }
 			remove_ideas = deluge_democratic_crackdown_idea
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_deluge_democratic_reformer
-			}
-			remove_ideas = generic_deluge_democratic_reformer
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_innovative_capitalist
-			}
-			remove_ideas = generic_innovative_capitalist
 		}
 		
 		set_politics = {
@@ -889,20 +693,6 @@ country_event = {
 			popularity = 0.5
 		}
 		
-		if = {
-			limit = {
-				has_idea = generic_deluge_communist_revolutionary
-			}
-			remove_ideas = generic_deluge_communist_revolutionary
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_trades_unionist
-			}
-			remove_ideas = generic_trades_unionist
-		}
-		
 		start_civil_war = {
 			ruling_party = democratic
 			ideology = communism
@@ -930,20 +720,6 @@ country_event = {
 		if = {
 			limit = { has_idea = deluge_democratic_crackdown_idea }
 			remove_ideas = deluge_democratic_crackdown_idea
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_deluge_democratic_reformer
-			}
-			remove_ideas = generic_deluge_democratic_reformer
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_innovative_capitalist
-			}
-			remove_ideas = generic_innovative_capitalist
 		}
 		
 		set_politics = {
@@ -1008,20 +784,6 @@ country_event = {
 			popularity = 0.5
 		}
 		
-		if = {
-			limit = {
-				has_idea = generic_deluge_fascist_demagogue
-			}
-			remove_ideas = generic_deluge_fascist_demagogue
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_great_war_hero
-			}
-			remove_ideas = generic_great_war_hero
-		}
-		
 		start_civil_war = {
 			ruling_party = democratic
 			ideology = fascism
@@ -1049,20 +811,6 @@ country_event = {
 		if = {
 			limit = { has_idea = deluge_democratic_crackdown_idea }
 			remove_ideas = deluge_democratic_crackdown_idea
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_deluge_democratic_reformer
-			}
-			remove_ideas = generic_deluge_democratic_reformer
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_innovative_capitalist
-			}
-			remove_ideas = generic_innovative_capitalist
 		}
 		
 		set_politics = {
@@ -1127,20 +875,6 @@ country_event = {
 			popularity = 0.5
 		}
 		
-		if = {
-			limit = {
-				has_idea = generic_deluge_fascist_demagogue
-			}
-			remove_ideas = generic_deluge_fascist_demagogue
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_great_war_hero
-			}
-			remove_ideas = generic_great_war_hero
-		}
-		
 		start_civil_war = {
 			ruling_party = communism
 			ideology = fascism
@@ -1168,20 +902,6 @@ country_event = {
 		if = {
 			limit = { has_idea = deluge_communism_crackdown_idea }
 			remove_ideas = deluge_communism_crackdown_idea
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_deluge_communist_revolutionary
-			}
-			remove_ideas = generic_deluge_communist_revolutionary
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_trades_unionist
-			}
-			remove_ideas = generic_trades_unionist
 		}
 		
 		set_politics = {
@@ -1246,20 +966,6 @@ country_event = {
 			popularity = 0.5
 		}
 		
-		if = {
-			limit = {
-				has_idea = generic_monarchist_statesman
-			}
-			remove_ideas = generic_monarchist_statesman
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_landed_gentleman
-			}
-			remove_ideas = generic_landed_gentleman
-		}
-		
 		start_civil_war = {
 			ruling_party = communism
 			ideology = neutrality
@@ -1287,20 +993,6 @@ country_event = {
 		if = {
 			limit = { has_idea = deluge_communism_crackdown_idea }
 			remove_ideas = deluge_communism_crackdown_idea
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_deluge_communist_revolutionary
-			}
-			remove_ideas = generic_deluge_communist_revolutionary
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_trades_unionist
-			}
-			remove_ideas = generic_trades_unionist
 		}
 		
 		set_politics = {
@@ -1365,20 +1057,6 @@ country_event = {
 			popularity = 0.5
 		}
 		
-		if = {
-			limit = {
-				has_idea = generic_deluge_democratic_reformer
-			}
-			remove_ideas = generic_deluge_democratic_reformer
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_innovative_capitalist
-			}
-			remove_ideas = generic_innovative_capitalist
-		}
-		
 		start_civil_war = {
 			ruling_party = communism
 			ideology = democratic
@@ -1406,20 +1084,6 @@ country_event = {
 		if = {
 			limit = { has_idea = deluge_communism_crackdown_idea }
 			remove_ideas = deluge_communism_crackdown_idea
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_deluge_communist_revolutionary
-			}
-			remove_ideas = generic_deluge_communist_revolutionary
-		}
-		
-		if = {
-			limit = {
-				has_idea = generic_trades_unionist
-			}
-			remove_ideas = generic_trades_unionist
 		}
 		
 		set_politics = {

@@ -395,6 +395,13 @@ focus_tree = {
 					end_wars = yes
 					end_civil_wars = no
 				}
+				remove_from_faction = BEL
+				every_country = {
+					limit = {
+						has_war_with = BEL
+					}
+					white_peace = BEL
+				}
 			}
 			if = {
 				limit = {
@@ -409,6 +416,13 @@ focus_tree = {
 					end_wars = yes
 					end_civil_wars = no
 				}
+				remove_from_faction = SPR
+				every_country = {
+					limit = {
+						has_war_with = SPR
+					}
+					white_peace = SPR
+				}
 			}
 			if = {
 				limit = {
@@ -422,6 +436,13 @@ focus_tree = {
 					autonomous_state = autonomy_free
 					end_wars = yes
 					end_civil_wars = no
+				}
+				remove_from_faction = VIN
+				every_country = {
+					limit = {
+						has_war_with = VIN
+					}
+					white_peace = VIN
 				}
 			}
 			add_ideas = FRA_spirit_remnants_of_the_bonapartes_empire
