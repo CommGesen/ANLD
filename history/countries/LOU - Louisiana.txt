@@ -135,6 +135,7 @@ recruit_character = LOU_raimont_thomas
 recruit_character = LOU_jean_martin
 recruit_character = LOU_august_de_saint_arnaud
 recruit_character = LOU_henri_i_bourbon
+recruit_character = FRA_deluge_alain_de_boissieu ##actually FRA
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

@@ -506,13 +506,6 @@ FRA_dec_cat_foreign_policy = {
 			}
 		}
 		complete_effect = {
-			every_possible_country = {
-				limit = { has_character = FRA_deluge_alain_de_boissieu }
-				random_character = {
-					limit = { is_character = FRA_deluge_alain_de_boissieu }
-					set_nationality = LOU
-				}
-			}
 			LOU = {
 				add_country_leader_role = {
 					character = FRA_deluge_alain_de_boissieu
