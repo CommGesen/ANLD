@@ -111,7 +111,7 @@ country_event = {
 				NOT = { has_war_with = ROOT }
 				has_government = communism
 				is_faction_leader = yes
-				NOT = { has_idea = deluge_recently_rejected_applicant }
+				#NOT = { has_idea = deluge_recently_rejected_applicant }
 			}
 		}
 		random_country = {
@@ -120,9 +120,9 @@ country_event = {
 				NOT = { has_war_with = ROOT }
 				has_government = communism
 				is_faction_leader = yes
-				NOT = { has_idea = deluge_recently_rejected_applicant }
+				#NOT = { has_idea = deluge_recently_rejected_applicant }
 			}
-			country_event = russia_expansion.3
+			country_event = {id = russia_expansion.3}
 		}
 		ai_chance = {
 			factor = 100
@@ -138,7 +138,7 @@ country_event = {
 				NOT = { has_war_with = ROOT }
 				has_government = democratic
 				is_faction_leader = yes
-				NOT = { has_idea = deluge_recently_rejected_applicant }
+				#NOT = { has_idea = deluge_recently_rejected_applicant }
 			}
 		}
 		random_country = {
@@ -147,9 +147,9 @@ country_event = {
 				NOT = { has_war_with = ROOT }
 				has_government = democratic
 				is_faction_leader = yes
-				NOT = { has_idea = deluge_recently_rejected_applicant }
+				#NOT = { has_idea = deluge_recently_rejected_applicant }
 			}
-			country_event = russia_expansion.3
+			country_event = {id = russia_expansion.3}
 		}
 		ai_chance = {
 			factor = 1
@@ -165,7 +165,7 @@ country_event = {
 				NOT = { has_war_with = ROOT }
 				has_government = neutrality
 				is_faction_leader = yes
-				NOT = { has_idea = deluge_recently_rejected_applicant }
+				#NOT = { has_idea = deluge_recently_rejected_applicant }
 			}
 		}
 		random_country = {
@@ -174,9 +174,9 @@ country_event = {
 				NOT = { has_war_with = ROOT }
 				has_government = neutrality
 				is_faction_leader = yes
-				NOT = { has_idea = deluge_recently_rejected_applicant }
+				#NOT = { has_idea = deluge_recently_rejected_applicant }
 			}
-			country_event = russia_expansion.3
+			country_event = {id = russia_expansion.3}
 		}
 		ai_chance = {
 			factor = 1
@@ -192,7 +192,7 @@ country_event = {
 				NOT = { has_war_with = ROOT }
 				has_government = fascism
 				is_faction_leader = yes
-				NOT = { has_idea = deluge_recently_rejected_applicant }
+				#NOT = { has_idea = deluge_recently_rejected_applicant }
 			}
 		}
 		random_country = {
@@ -201,9 +201,9 @@ country_event = {
 				NOT = { has_war_with = ROOT }
 				has_government = fascism
 				is_faction_leader = yes
-				NOT = { has_idea = deluge_recently_rejected_applicant }
+				#NOT = { has_idea = deluge_recently_rejected_applicant }
 			}
-			country_event = russia_expansion.3
+			country_event = {id = russia_expansion.3}
 		}
 		ai_chance = {
 			factor = 1
@@ -237,7 +237,7 @@ country_event = {
 		
 		if = {
 			limit = {
-				TAG = DDR
+				tag = DDR
 			}
 			FROM = {
 				add_ai_strategy = {
@@ -250,7 +250,7 @@ country_event = {
 		
 		if = {
 			limit = {
-				TAG = BAL
+				tag = BAL
 			}
 			FROM = {
 				add_ai_strategy = {
@@ -263,7 +263,7 @@ country_event = {
 		
 		if = {
 			limit = {
-				TAG = UKR
+				tag = UKR
 			}
 			FROM = {
 				add_ai_strategy = {
@@ -276,7 +276,7 @@ country_event = {
 		
 		if = {
 			limit = {
-				TAG = CAU
+				tag = CAU
 			}
 			FROM = {
 				add_ai_strategy = {
@@ -301,8 +301,7 @@ country_event = {
 	}
 	option = {
 		name = russia_expansion3optb
-		
-		add_timed_idea = { idea = deluge_recently_rejected_applicant days = 60 }
+		#add_timed_idea = { idea = deluge_recently_rejected_applicant days = 60 }
 		
 		ai_chance = {
 			factor = 0
@@ -320,7 +319,7 @@ country_event = {
 		
 	trigger = {
 		has_global_flag = russian_expansionism_started
-		TAG = TUR
+		tag = TUR
 		is_in_faction = no
 		is_subject = no
 		NOT = { has_war_with = SOV }
@@ -338,7 +337,10 @@ country_event = {
 			SOV = { is_faction_leader = yes }
 		}
 		
-		SOV = { country_event = russia_expansion.5 }
+		SOV = { country_event = {
+			id = russia_expansion.5
+			}
+		}
 		
 		ai_chance = {
 			factor = 3
@@ -373,7 +375,10 @@ country_event = {
 			FRA = { is_faction_leader = yes }
 		}
 		
-		FRA = { country_event = russia_expansion.8 }
+		FRA = { country_event = {
+			id = russia_expansion.8
+			}
+		}
 
 		ai_chance = {
 			factor = 3
@@ -475,7 +480,7 @@ country_event = {
 	option = {
 		name = russia_expansion5optb
 				
-		TUR = { country_event = russia_expansion.7 }
+		TUR = { country_event = {id = russia_expansion.7 }}
 		
 		ai_chance = {
 			factor = 3
@@ -534,7 +539,7 @@ country_event = {
 		}
 		name = russia_expansion7opta
 		
-		FRA = { country_event = russia_expansion.8 }
+		FRA = { country_event = {id = russia_expansion.8} }
 
 		ai_chance = {
 			factor = 3
@@ -565,7 +570,7 @@ country_event = {
 	option = {
 		name = russia_expansion7optb
 		
-		create_faction = "factionTurkishBloc"
+		create_faction_from_template = faction_template_turkish_bloc
 		
 		hidden_effect = {
 			news_event = { hours = 1 id = russia_expansion.11 }
@@ -624,7 +629,7 @@ country_event = {
 	option = {
 		name = russia_expansion8optb
 				
-		TUR = { country_event = russia_expansion.10 }
+		TUR = { country_event = {id = russia_expansion.10} }
 		
 		ai_chance = {
 			factor = 1
@@ -680,7 +685,7 @@ country_event = {
 	option = {
 		name = russia_expansion10opta
 		
-		create_faction = "factionTurkishBloc"
+		create_faction_from_template = faction_template_turkish_bloc
 		
 		hidden_effect = {
 			news_event = { days = 1 id = russia_expansion.11 }
@@ -810,7 +815,6 @@ country_event = {
 		}
 		NOT = { has_war_with = SOV }
 		NOT = { is_in_faction_with = SOV }
-		is_subject = no
 		is_subject = no
 	}
 	

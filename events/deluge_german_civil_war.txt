@@ -4908,22 +4908,6 @@ country_event = {
 		
 		add_opinion_modifier = { target = SWE modifier = assistance_in_civil_war_modifier }
 		
-		if = {
-			limit = {
-				has_idea = ludwig_renn
-			}
-			add_political_power = 150
-		}
-		
-		if = {
-			limit = {
-				NOT = {
-					has_idea = ludwig_renn
-				}
-			}
-			add_ideas = ludwig_renn
-		}
-		
 		ai_chance = {
 			factor = 2
 		}
@@ -4978,22 +4962,6 @@ country_event = {
 		modify_global_flag = { flag = flag_german_support_for_jacobins value = -1 }
 		custom_effect_tooltip = tooltip_decreases_support_jacobins
 		
-		if = {
-			limit = {
-				NOT = {
-					has_idea = ludwig_renn
-				}
-			}
-			add_political_power = -150
-		}
-		
-		if = {
-			limit = {
-				has_idea = ludwig_renn
-			}
-			remove_ideas = ludwig_renn
-		}
-				
 		ai_chance = {
 			factor = 1
 		}
