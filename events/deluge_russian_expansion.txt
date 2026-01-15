@@ -403,7 +403,7 @@ country_event = {
 	option = {
 		name = russia_expansion4optc
 		
-		create_faction = "factionTurkishBloc"
+		create_faction_from_template = faction_template_turkish_bloc
 		
 		hidden_effect = {
 			news_event = { days = 1 id = russia_expansion.11 }

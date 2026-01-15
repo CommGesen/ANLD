@@ -1,7 +1,7 @@
 state = {
 	id = 512
 	name = "STATE_512"
-	manpower = 471000
+	manpower = 380000
 	
 	state_category = rural
 	
@@ -11,8 +11,8 @@ state = {
 
 	history = {
 
-		owner = ARG
-		add_core_of = ARG
+		owner = ARA
+		add_core_of = ARA
 
 		buildings = {
 			infrastructure = 1
@@ -29,7 +29,7 @@ state = {
 	}
 
 	provinces = {
-		2149 2199 8192 10935 10981 12306 12321 12349 12982 
+		2199 10981 12306 12321 12349 12982 
 	}
 
 	local_supplies = 0.0 

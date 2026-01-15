@@ -1,0 +1,19 @@
+characters={
+	ARA_antuine_iii = {
+		name = "Antüine III"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CHL_antoine_iii
+				#small = GFX_portrait_CHL_antoine_iii_small
+			}
+		}
+		country_leader = {
+			#desc=""
+			ideology = bonapartist_ideology
+			expire = "1999.1.1.1"
+			traits  = {
+				
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+faction_template_spanish_bloc = {
+	name = factionSpanishBloc
+	icon = GFX_faction_logo_generic_15
+	manifest = faction_manifest_strength_in_unity
+
+	goals = {
+
+		# Short term goals
+		##they can choose
+
+		# Medium term goals
+		##they can choose
+
+		# Long terms
+		##they can choose
+	
+	}
+
+	default_rules = {
+		change_leader_rule_never
+		goals_only_faction_leader
+		faction_peace_rule_puppeting_focus
+		government_in_exile_allowed
+	}
+	
+}
+

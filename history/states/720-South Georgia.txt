@@ -6,14 +6,17 @@ state={
 	
 	history = {
 		#owner = ENG
-		owner = ARG
+		owner = ARA
 		buildings = {
 			infrastructure = 1
 			10995 = {
 				naval_base = 1
 			}
 		}
-		add_core_of = ARG
+		add_core_of = ARA
+		victory_points = {
+			10995 1
+		}
 	}
 	
 	provinces={

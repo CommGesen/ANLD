@@ -17,7 +17,7 @@ country_event = {
 	option = {
 		name = deluge_china1opta
 		
-		create_faction = "factionTaipingBloc"
+		create_faction_from_template = faction_template_taiping_bloc
 		
 		ai_chance = {
 			factor = 1

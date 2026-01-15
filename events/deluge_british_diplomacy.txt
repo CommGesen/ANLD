@@ -1169,7 +1169,7 @@ country_event = {
 			is_in_faction = no
 		}
 
-		create_faction = "factionSpanishBloc"
+		create_faction_from_template = faction_template_spanish_bloc
 		
 		diplomatic_relation = {
 			country = POR
@@ -1445,7 +1445,7 @@ country_event = {
 			news_event = { days = 1 id = british_diplomacy.21 }
 		}
 
-		create_faction = "factionSpanishBloc"
+		create_faction_from_template = faction_template_spanish_bloc
 		
 		diplomatic_relation = {
 			country = POR

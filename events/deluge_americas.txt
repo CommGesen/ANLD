@@ -111,7 +111,7 @@ country_event = {
 		set_global_flag = latin_royalists_created
 		set_country_flag = leader_latin_royalists
 		
-		create_faction = "factionLatinRoyalists"
+		create_faction_from_template = faction_template_latin_royalists
 		
 		hidden_effect = {
 			news_event = { days = 1 id = deluge_americas.3 }
