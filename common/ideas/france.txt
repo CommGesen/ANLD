@@ -911,9 +911,6 @@ ideas = {
 				land_doctrine_cost_factor = 1
 				air_doctrine_cost_factor = 1
 				naval_doctrine_cost_factor = 1
-				experience_gain_army_unit_factor = -1
-				experience_gain_navy_unit_factor = -1
-				air_mission_xp_gain_factor = -1
 				command_power_gain_mult = -0.8
 			}
 		}
@@ -935,9 +932,6 @@ ideas = {
 				land_doctrine_cost_factor = 0.9
 				air_doctrine_cost_factor = 0.9
 				naval_doctrine_cost_factor = 0.9
-				experience_gain_army_unit_factor = -0.9
-				experience_gain_navy_unit_factor = -0.9
-				air_mission_xp_gain_factor = -0.9
 				command_power_gain_mult = -0.7
 			}
 		}
@@ -959,9 +953,6 @@ ideas = {
 				land_doctrine_cost_factor = 0.8
 				air_doctrine_cost_factor = 0.8
 				naval_doctrine_cost_factor = 0.8
-				experience_gain_army_unit_factor = -0.8
-				experience_gain_navy_unit_factor = -0.8
-				air_mission_xp_gain_factor = -0.8
 				command_power_gain_mult = -0.6
 			}
 		}
@@ -983,9 +974,6 @@ ideas = {
 				land_doctrine_cost_factor = 0.7
 				air_doctrine_cost_factor = 0.7
 				naval_doctrine_cost_factor = 0.7
-				experience_gain_army_unit_factor = -0.7
-				experience_gain_navy_unit_factor = -0.7
-				air_mission_xp_gain_factor = -0.7
 				command_power_gain_mult = -0.5
 			}
 		}
@@ -1007,9 +995,6 @@ ideas = {
 				land_doctrine_cost_factor = 0.6
 				air_doctrine_cost_factor = 0.6
 				naval_doctrine_cost_factor = 0.6
-				experience_gain_army_unit_factor = -0.6
-				experience_gain_navy_unit_factor = -0.6
-				air_mission_xp_gain_factor = -0.6
 				command_power_gain_mult = -0.4
 			}
 		}
@@ -1031,9 +1016,6 @@ ideas = {
 				land_doctrine_cost_factor = 0.5
 				air_doctrine_cost_factor = 0.5
 				naval_doctrine_cost_factor = 0.5
-				experience_gain_army_unit_factor = -0.5
-				experience_gain_navy_unit_factor = -0.5
-				air_mission_xp_gain_factor = -0.5
 				command_power_gain_mult = -0.3
 			}
 		}
@@ -1055,9 +1037,6 @@ ideas = {
 				land_doctrine_cost_factor = 0.4
 				air_doctrine_cost_factor = 0.4
 				naval_doctrine_cost_factor = 0.4
-				experience_gain_army_unit_factor = -0.4
-				experience_gain_navy_unit_factor = -0.4
-				air_mission_xp_gain_factor = -0.4
 				command_power_gain_mult = -0.2
 			}
 		}
@@ -1079,9 +1058,6 @@ ideas = {
 				land_doctrine_cost_factor = 0.3
 				air_doctrine_cost_factor = 0.3
 				naval_doctrine_cost_factor = 0.3
-				experience_gain_army_unit_factor = -0.3
-				experience_gain_navy_unit_factor = -0.3
-				air_mission_xp_gain_factor = -0.3
 				command_power_gain_mult = -0.1
 			}
 		}
@@ -1103,9 +1079,6 @@ ideas = {
 				land_doctrine_cost_factor = 0.2
 				air_doctrine_cost_factor = 0.2
 				naval_doctrine_cost_factor = 0.2
-				experience_gain_army_unit_factor = -0.2
-				experience_gain_navy_unit_factor = -0.2
-				air_mission_xp_gain_factor = -0.2
 			}
 		}
 		FRA_spirit_conservative_high_command10 = {
@@ -1126,9 +1099,6 @@ ideas = {
 				land_doctrine_cost_factor = 0.1
 				air_doctrine_cost_factor = 0.1
 				naval_doctrine_cost_factor = 0.1
-				experience_gain_army_unit_factor = -0.1
-				experience_gain_navy_unit_factor = -0.1
-				air_mission_xp_gain_factor = -0.1
 			}
 		}
 		FRA_production_de_masse = {
@@ -1150,6 +1120,36 @@ ideas = {
 			}
 			equipment_bonus = {
 				infantry_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		}
+		FRA_spirit_tomorrows_air_superiority = {
+			picture = generic_air_interception
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				
+			}
+			modifier = {
+				air_superiority_efficiency = 0.1
+			}
+			equipment_bonus = {
+				small_plane_airframe_4 = {
+					air_agility = 0.05
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				small_plane_airframe_5 = {
+					air_agility = 0.05
 					build_cost_ic = -0.05
 					instant = yes
 				}

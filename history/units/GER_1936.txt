@@ -253,7 +253,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
 		start_experience_factor = 0.1
 	}
-		
+	
 	division= {	
 		#name = "2. Kreuzritter-Freikorps"
 		location = 6487
@@ -261,7 +261,15 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
 		start_experience_factor = 0.1
 	}
-		
+	
+	division= {	
+		#name = "11. Kreuzritter-Freikorps"
+		location = 6487
+		division_template = "Kreuzritter-Freikorps"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
+		start_experience_factor = 0.1
+	}
+	
 	division= {	
 		#name = "3. Kreuzritter-Freikorps"
 		location = 11359
@@ -269,7 +277,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
 		start_experience_factor = 0.1
 	}
-		
+	
 	division= {	
 		#name = "4. Kreuzritter-Freikorps"
 		location = 11545
@@ -344,6 +352,14 @@ units = {
 	
 	division= {	
 		#name = "3. Ersatz-Division"
+		location = 9560
+		division_template = "Ersatz-Division"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
+		start_experience_factor = 0.2
+	}
+	
+	division= {	
+		#name = "4. Ersatz-Division"
 		location = 9560
 		division_template = "Ersatz-Division"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }

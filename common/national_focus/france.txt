@@ -15636,7 +15636,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_devaluate_the_franc }
 		relative_position_id = FRA_devaluate_the_franc
 		search_filters = { }
-		cost = 7
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -15676,7 +15676,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_devaluate_the_franc }
 		relative_position_id = FRA_devaluate_the_franc
 		search_filters = { }
-		cost = 7
+		cost = 5
 		mutually_exclusive = { focus = FRA_abandon_gold_standard }
 		allow_branch = {
 			
@@ -15718,7 +15718,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_devaluate_the_franc }
 		relative_position_id = FRA_devaluate_the_franc
 		search_filters = { }
-		cost = 7
+		cost = 5
 		mutually_exclusive = { focus = FRA_keep_with_gold }
 		allow_branch = {
 			
@@ -15760,7 +15760,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_devaluate_the_franc }
 		relative_position_id = FRA_devaluate_the_franc
 		search_filters = { }
-		cost = 7
+		cost = 5
 		#mutually_exclusive = { focus =  }
 		allow_branch = {
 			
@@ -15801,7 +15801,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_support_small_and_medium_business  }
 		relative_position_id = FRA_support_small_and_medium_business
 		search_filters = { }
-		cost = 7
+		cost = 5
 		#mutually_exclusive = { focus =  }
 		allow_branch = {
 			
@@ -15842,7 +15842,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_decrease_export }
 		relative_position_id = FRA_decrease_export
 		search_filters = { }
-		cost = 7
+		cost = 5
 		#mutually_exclusive = { focus =  }
 		allow_branch = {
 			
@@ -15924,7 +15924,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_cut_jobs }
 		relative_position_id = FRA_cut_jobs
 		search_filters = { }
-		cost = 7
+		cost = 5
 		mutually_exclusive = { focus = FRA_matignon_agreements  }
 		allow_branch = {
 			
@@ -16007,7 +16007,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_keep_with_gold focus = FRA_abandon_gold_standard }
 		relative_position_id = FRA_abandon_gold_standard
 		search_filters = { }
-		cost = 7
+		cost = 5
 		mutually_exclusive = { focus = FRA_increase_social_welfare  }
 		allow_branch = {
 			
@@ -16054,7 +16054,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_manpower_from_colonies focus = FRA_increase_social_welfare }
 		relative_position_id = FRA_increase_social_welfare
 		search_filters = { }
-		cost = 7
+		cost = 5
 		#mutually_exclusive = { focus =   }
 		allow_branch = {
 			
@@ -16094,7 +16094,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_manpower_from_colonies focus = FRA_increase_social_welfare }
 		relative_position_id = FRA_increase_social_welfare
 		search_filters = { }
-		cost = 5
+		cost = 3
 		#mutually_exclusive = { focus =   }
 		allow_branch = {
 			
@@ -16135,7 +16135,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_tax_reform }
 		relative_position_id = FRA_tax_reform
 		search_filters = { }
-		cost = 7
+		cost = 5
 		mutually_exclusive = { focus = FRA_marginalize_central_bank  }
 		allow_branch = {
 			
@@ -16177,7 +16177,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_tax_reform }
 		relative_position_id = FRA_tax_reform
 		search_filters = { }
-		cost = 7
+		cost = 5
 		mutually_exclusive = { focus = FRA_reform_central_bank  }
 		allow_branch = {
 			
@@ -19893,7 +19893,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_lessons_of_senussi_campaign }
 		relative_position_id = FRA_lessons_of_senussi_campaign
 		search_filters = { }
-		cost = 6
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -19934,7 +19934,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_a_new_army_budget }
 		relative_position_id = FRA_a_new_army_budget
 		search_filters = { }
-		cost = 8
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -20044,7 +20044,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_experience_from_german_civil_war }
 		relative_position_id = FRA_experience_from_german_civil_war
 		search_filters = { }
-		cost = 7
+		cost = 5
 		mutually_exclusive = { focus = FRA_modernize_high_command}
 		allow_branch = {
 			
@@ -20113,7 +20113,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_experience_from_german_civil_war }
 		relative_position_id = FRA_experience_from_german_civil_war
 		search_filters = { }
-		cost = 7
+		cost = 5
 		mutually_exclusive = { focus = FRA_shuffle_high_command}
 		allow_branch = {
 			
@@ -20404,7 +20404,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_traumas_of_the_great_war }
 		relative_position_id = FRA_traumas_of_the_great_war
 		search_filters = { }
-		cost = 8
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -20457,7 +20457,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_post_great_war_challenges }
 		relative_position_id = FRA_post_great_war_challenges
 		search_filters = { }
-		cost = 8
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -20522,7 +20522,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_field_the_MAS_36 }
 		relative_position_id = FRA_field_the_MAS_36
 		search_filters = { }
-		cost = 8
+		cost = 5
 		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
@@ -21195,7 +21195,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_traumas_of_the_great_war }
 		relative_position_id = FRA_traumas_of_the_great_war
 		search_filters = { }
-		cost = 6
+		cost = 5
 		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -21212,17 +21212,17 @@ focus_tree = {
 		}
 		completion_reward = {
 			hidden_effect = {
-				add_to_variable = { french_bad_army_naval_accidents_chance = -0.05}
-				add_to_variable = { french_bad_army_convoy_raiding_efficiency_factor = 0.1}
-				add_to_variable = { french_bad_army_navy_anti_air_attack_factor = 0.1}
-				add_to_variable = { french_bad_army_naval_damage_factor = 0.05}
-				add_to_variable = { french_bad_army_naval_detection = 0.05}
-				add_to_variable = { french_bad_army_naval_coordination = 0.05}
-				add_to_variable = { french_bad_army_naval_critical_score_chance_factor = 0.05}
-				add_to_variable = { french_bad_army_naval_night_attack = 0.05}
-				add_to_variable = { french_bad_army_naval_morale_factor = 0.1}
-				add_to_variable = { french_bad_army_navy_org_factor = 0.1}
-				add_to_variable = { french_bad_army_navy_max_range_factor = 0.1}
+				add_to_variable = { french_bad_army_naval_accidents_chance = -0.025}
+				add_to_variable = { french_bad_army_convoy_raiding_efficiency_factor = 0.025}
+				add_to_variable = { french_bad_army_navy_anti_air_attack_factor = 0.025}
+				add_to_variable = { french_bad_army_naval_damage_factor = 0.025}
+				add_to_variable = { french_bad_army_naval_detection = 0.025}
+				add_to_variable = { french_bad_army_naval_coordination = 0.025}
+				add_to_variable = { french_bad_army_naval_critical_score_chance_factor = 0.025}
+				add_to_variable = { french_bad_army_naval_night_attack = 0.025}
+				add_to_variable = { french_bad_army_naval_morale_factor = 0.025}
+				add_to_variable = { french_bad_army_navy_org_factor = 0.025}
+				add_to_variable = { french_bad_army_navy_max_range_factor = 0.025}
 			}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_61
 			navy_experience = 10
@@ -21249,7 +21249,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_review_the_fleet }
 		relative_position_id = FRA_review_the_fleet
 		search_filters = { }
-		cost = 6
+		cost = 5
 		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -21433,7 +21433,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_review_the_fleet }
 		relative_position_id = FRA_review_the_fleet
 		search_filters = { }
-		cost = 7
+		cost = 5
 		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -21499,7 +21499,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_plans_to_counter_anglo_dominance }
 		relative_position_id = FRA_expand_naval_facilities
 		search_filters = { }
-		cost = 8
+		cost = 5
 		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -21516,19 +21516,19 @@ focus_tree = {
 		}
 		completion_reward = {
 			hidden_effect = {
-				add_to_variable = { french_bad_army_naval_accidents_chance = -0.1}
-				add_to_variable = { french_bad_army_convoy_raiding_efficiency_factor = 0.1}
-				add_to_variable = { french_bad_army_navy_anti_air_attack_factor = 0.1}
-				add_to_variable = { french_bad_army_naval_damage_factor = 0.05}
-				add_to_variable = { french_bad_army_naval_detection = 0.05}
-				add_to_variable = { french_bad_army_naval_coordination = 0.1}
-				add_to_variable = { french_bad_army_naval_critical_score_chance_factor = 0.1}
-				add_to_variable = { french_bad_army_naval_night_attack = 0.1}
-				add_to_variable = { french_bad_army_naval_morale_factor = 0.1}
-				add_to_variable = { french_bad_army_navy_org_factor = 0.1}
-				add_to_variable = { french_bad_army_navy_max_range_factor = 0.1}
+				add_to_variable = { french_bad_army_naval_accidents_chance = -0.025}
+				add_to_variable = { french_bad_army_convoy_raiding_efficiency_factor = 0.025}
+				add_to_variable = { french_bad_army_navy_anti_air_attack_factor = 0.025}
+				add_to_variable = { french_bad_army_naval_damage_factor = 0.025}
+				add_to_variable = { french_bad_army_naval_detection = 0.025}
+				add_to_variable = { french_bad_army_naval_coordination = 0.025}
+				add_to_variable = { french_bad_army_naval_critical_score_chance_factor = 0.025}
+				add_to_variable = { french_bad_army_naval_night_attack = 0.025}
+				add_to_variable = { french_bad_army_naval_morale_factor = 0.025}
+				add_to_variable = { french_bad_army_navy_org_factor = 0.025}
+				add_to_variable = { french_bad_army_navy_max_range_factor = 0.025}
 			}
-			custom_effect_tooltip = FRA_custom_effect_tooltip_63
+			custom_effect_tooltip = FRA_custom_effect_tooltip_61
 			navy_experience = 15
 			add_ideas = FRA_marine_de_guerre
 			french_bad_army_remove_check = yes
@@ -22057,17 +22057,17 @@ focus_tree = {
 		}
 		completion_reward = {
 			hidden_effect = {
-				add_to_variable = { french_bad_army_naval_accidents_chance = -0.1}
-				add_to_variable = { french_bad_army_convoy_raiding_efficiency_factor = 0.1}
-				add_to_variable = { french_bad_army_navy_anti_air_attack_factor = 0.1}
-				add_to_variable = { french_bad_army_naval_damage_factor = 0.1}
-				add_to_variable = { french_bad_army_naval_detection = 0.1}
-				add_to_variable = { french_bad_army_naval_coordination = 0.1}
-				add_to_variable = { french_bad_army_naval_critical_score_chance_factor = 0.1}
-				add_to_variable = { french_bad_army_naval_night_attack = 0.1}
-				add_to_variable = { french_bad_army_naval_morale_factor = 0.1}
-				add_to_variable = { french_bad_army_navy_org_factor = 0.1}
-				add_to_variable = { french_bad_army_navy_max_range_factor = 0.1}
+				add_to_variable = { french_bad_army_naval_accidents_chance = -0.05}
+				add_to_variable = { french_bad_army_convoy_raiding_efficiency_factor = 0.05}
+				add_to_variable = { french_bad_army_navy_anti_air_attack_factor = 0.05}
+				add_to_variable = { french_bad_army_naval_damage_factor = 0.05}
+				add_to_variable = { french_bad_army_naval_detection = 0.05}
+				add_to_variable = { french_bad_army_naval_coordination = 0.05}
+				add_to_variable = { french_bad_army_naval_critical_score_chance_factor = 0.05}
+				add_to_variable = { french_bad_army_naval_night_attack = 0.05}
+				add_to_variable = { french_bad_army_naval_morale_factor = 0.05}
+				add_to_variable = { french_bad_army_navy_org_factor = 0.05}
+				add_to_variable = { french_bad_army_navy_max_range_factor = 0.05}
 			}
 			custom_effect_tooltip = FRA_custom_effect_tooltip_64
 			add_doctrine_cost_reduction = {
@@ -22272,7 +22272,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_traumas_of_the_great_war }
 		relative_position_id = FRA_traumas_of_the_great_war
 		search_filters = { }
-		cost = 6
+		cost = 5
 		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -22520,7 +22520,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_southern_airports_expansion }
 		relative_position_id = FRA_southern_airports_expansion
 		search_filters = { }
-		cost = 7
+		cost = 5
 		#mutually_exclusive = {focus = }
 		allow_branch = {
 			
@@ -22927,13 +22927,10 @@ focus_tree = {
 				}
 				has_tech = aa_cannon_3
 			}
-			custom_trigger_tooltip = {
-				tooltip = generic_custom_trigger_tooltip_1
-				always = no
-			}
+			
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_spirit_tomorrows_air_superiority
 		}
 		ai_will_do = {
 			factor = 25

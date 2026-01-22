@@ -8,6 +8,7 @@
  motorized_manufacturer:0 "Motorized Manufacturer"
  mechanized_manufacturer:0 "Mechanized Manufacturer"
  ##SPIRITS
+ FRA_spirit_tomorrows_air_superiority:0 "Tomorrow's Air Superiority"
  FRA_spirit_irredentism:0 "Irredentism"
  FRA_spirit_eu_military_cooperation:0 "European Military Cooperation"
  FRA_spirit_eu_economic_cooperation:0 "European Economic Cooperation"
@@ -314,10 +315,9 @@
  FRA_custom_effect_tooltip_58:0 "Modify §HObsolete Army§! national spirit by:\n§G-10%§! Naval Invasion Penalty\n§G+2%§! Naval Invasion Capacity!"
  FRA_custom_effect_tooltip_59:0 "Modify §HObsolete Army§! national spirit by:\n§G-15%§! Naval Invasion Penalty\n§G+4%§! Naval Invasion Capacity!"
  FRA_custom_effect_tooltip_60:0 "Modify §HNew French Army§! national spirit by:\n§G+3%§! Division Attack\n§G+3%§! Division Defence!"
- FRA_custom_effect_tooltip_61:0 "Modify §HObsolete Army§! national spirit by:\n§G+5%§! Chance to Score a Critical Hit\n§G+5%§! Fleet Coordination\n§G+5%§! Naval Detection\n§G-5%§! Naval Accident Chance\n§G+5%§! Naval Night-time Attack\n§G+5%§! Naval Damage\n§G+10%§! Convoy Raiding Efficiency\n§G+10%§! Naval AA Attack\n§G+10%§! Naval Max Range Factor\n§G+10%§! Navy Organization\n§G+10%§! Ship Recovery Rate!"
+ FRA_custom_effect_tooltip_61:0 "Modify §HObsolete Army§! national spirit by:\n§G+2,5%§! Chance to Score a Critical Hit\n§G+2,5%§! Fleet Coordination\n§G+2,5%§! Naval Detection\n§G-2,5%§! Naval Accident Chance\n§G+2,5%§! Naval Night-time Attack\n§G+2,5%§! Naval Damage\n§G+2,5%§! Convoy Raiding Efficiency\n§G+2,5%§! Naval AA Attack\n§G+2,5%§! Naval Max Range Factor\n§G+2,5%§! Navy Organization\n§G+2,5%§! Ship Recovery Rate!"
  FRA_custom_effect_tooltip_62:0 "Add technology: §HMAS-1936§!."
- FRA_custom_effect_tooltip_63:0 "Modify §HObsolete Army§! national spirit by:\n§G+5%§! Naval Damage\n§G+5%§! Naval Detection\n§G+10%§! Chance to Score a Critical Hit\n§G+10%§! Fleet Coordination\n§G-10%§! Naval Accident Chance\n§G+10%§! Naval Night-time Attack\n§G+10%§! Convoy Raiding Efficiency\n§G+10%§! Naval AA Attack\n§G+10%§! Naval Max Range Factor\n§G+10%§! Navy Organization\n§G+10%§! Ship Recovery Rate!"
- FRA_custom_effect_tooltip_64:0 "Modify §HObsolete Army§! national spirit by:\n§G+10%§! Naval Damage\n§G+10%§! Naval Detection\n§G+10%§! Chance to Score a Critical Hit\n§G+10%§! Fleet Coordination\n§G-10%§! Naval Accident Chance\n§G+10%§! Naval Night-time Attack\n§G+10%§! Convoy Raiding Efficiency\n§G+10%§! Naval AA Attack\n§G+10%§! Naval Max Range Factor\n§G+10%§! Navy Organization\n§G+10%§! Ship Recovery Rate!"
+ FRA_custom_effect_tooltip_64:0 "Modify §HObsolete Army§! national spirit by:\n§G+5%§! Naval Damage\n§G+5%§! Naval Detection\n§G+5%§! Chance to Score a Critical Hit\n§G+5%§! Fleet Coordination\n§G-5%§! Naval Accident Chance\n§G+5%§! Naval Night-time Attack\n§G+5%§! Convoy Raiding Efficiency\n§G+5%§! Naval AA Attack\n§G+5%§! Naval Max Range Factor\n§G+5%§! Navy Organization\n§G+5%§! Ship Recovery Rate!"
  FRA_custom_effect_tooltip_65:0 "Gains §Hwargoal§! on every nation that §Howns§! states mentioned below and has §Hcapital§! in either §HSouth§! or §HNorth America§!:\n§H[464.GetName]§!,\n§H[696.GetName]§!,\n§H[465.GetName]§!,\n§H[357.GetName]§!,\n§H[468.GetName]§!,\n§H[798.GetName]§!,\n§H[781.GetName]§!,\n§H[395.GetName]§!,\n§H[498.GetName]§!,\n§H[936.GetName]§!,\n§H[499.GetName]§!."
  FRA_custom_effect_tooltip_66:0 "This modifier will last for §H400 days§! and will apply to every §HSouth American§! and §HNorth American§! country!"
  FRA_custom_effect_tooltip_67:0 "Remove §HLeague of Nations§! spirit!"
@@ -441,6 +441,7 @@
  ##FREE
  FRA_custom_effect_tooltip_146:0 ""
  FRA_custom_effect_tooltip_69:0 ""
+ FRA_custom_effect_tooltip_63:0 ""
  
  ##Opinion Modifiers
  opinion_modifier_former_overlord:0 "Former Overlord"

@@ -460,6 +460,35 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "DDR" } }
 		start_experience_factor = 0.2
 	}
+	
+	division= {	
+		#name = "7. Schützen-Division"
+		location = 9557
+		division_template = "Schützen-Division"
+		start_experience_factor = 0.3
+	}
+	
+	division= {	
+		#name = "8. Schützen-Division"
+		location = 11529
+		division_template = "Schützen-Division"
+		start_experience_factor = 0.3
+	}
+	
+	division= {	
+		#name = "8. Schützen-Division"
+		location = 11404
+		division_template = "Schützen-Division"
+		start_experience_factor = 0.3
+	}
+	
+	division= {	
+		#name = "8. Schützen-Division"
+		location = 11404
+		division_template = "Schützen-Division"
+		start_experience_factor = 0.3
+	}
+	
 }
 #########################
 ## STARTING PRODUCTION ##
