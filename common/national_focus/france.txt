@@ -11,6 +11,60 @@ focus_tree = {
 	initial_show_position = {
 		focus = FRA_may_day_results
 	}
+	
+	shortcut = {
+		name = FRA_shortcut_military_program
+		target = FRA_lessons_of_senussi_campaign
+		scroll_wheel_factor = 0.9
+		trigger = {}
+	}
+	shortcut = {
+		name = FRA_shortcut_industrial_progress
+		target = FRA_devaluate_the_franc
+		scroll_wheel_factor = 0.9
+		trigger = {}
+	}
+	shortcut = {
+		name = FRA_shortcut_colonial_affairs
+		target = FRA_renovate_ministry_of_colonies
+		scroll_wheel_factor = 0.9
+		trigger = {}
+	}
+	shortcut = {
+		name = FRA_shortcut_foreign_affairs
+		target = FRA_establish_lon
+		scroll_wheel_factor = 0.9
+		trigger = {}
+	}
+	shortcut = {
+		name = FRA_shortcut_political_affairs
+		target = FRA_may_day_results
+		scroll_wheel_factor = 0.9
+		trigger = {
+			NOT = {
+				has_completed_focus = FRA_republic_forever
+				has_completed_focus = FRA_reform_the_old
+			}
+		}
+	}
+	
+	shortcut = {
+		name = FRA_shortcut_political_affairs
+		target = FRA_republic_forever
+		scroll_wheel_factor = 0.9
+		trigger = {
+			has_completed_focus = FRA_republic_forever
+		}
+	}
+	shortcut = {
+		name = FRA_shortcut_political_affairs
+		target = FRA_reform_the_old
+		scroll_wheel_factor = 0.9
+		trigger = {
+			has_completed_focus = FRA_reform_the_old
+		}
+	}
+	
 	focus = {
 		id = FRA_may_day_results
 		icon = GFX_focus_FRA_may_day_results
