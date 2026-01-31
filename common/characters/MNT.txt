@@ -1,0 +1,15 @@
+characters={
+	MNT_danilo_aleksandar_petrovic_njegos={
+		name="Danilo Aleksandar Petrović-Njegoš"
+		portraits={
+			civilian={
+				large="gfx/leaders/MNT/portrait_MNT_danilo_aleksandar_petrovic_njegos.dds"
+			}
+		}
+		country_leader={
+			#desc=""
+			ideology=bonapartist_ideology
+			expire="1965.1.1.1"
+		}
+	}
+}

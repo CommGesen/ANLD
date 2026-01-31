@@ -33,8 +33,13 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 	spriteType = {
-		name = "GFX_faction_logo_francist_movement"
-		texturefile = "gfx/interface/factions/faction_logos/faction_logo_francist_movement.dds"
+		name = "GFX_faction_logo_francist_axe"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_francist_axe.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_faction_logo_hre"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_hre.dds"
 		noOfFrames = 2
 	}
 	### Faction Logos - Miniatures ###
@@ -63,7 +68,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/factions/faction_logos/faction_logo_fire_movement_miniature.dds"
 	}
 	spriteType = {
-		name = "GFX_faction_logo_francist_movement_miniature"
-		texturefile = "gfx/interface/factions/faction_logos/faction_logo_francist_movement_miniature.dds"
+		name = "GFX_faction_logo_francist_axe_miniature"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_francist_axe_miniature.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_logo_hre_miniature"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_hre_miniature.dds"
 	}
 }

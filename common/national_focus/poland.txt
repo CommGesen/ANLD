@@ -44,6 +44,30 @@ focus_tree = {
 	initial_show_position = {
 		focus = POL_death_of_marshal
 	}
+	shortcut = {
+		name = POL_shortcut_army_tree
+		target = POL_start_army_reform
+		scroll_wheel_factor = 0.9
+		trigger = {}
+	}
+	shortcut = {
+		name = POL_shortcut_industrial_tree
+		target = POL_hire_economists
+		scroll_wheel_factor = 0.9
+		trigger = {}
+	}
+	shortcut = {
+		name = POL_shortcut_foreign_affairs
+		target = POL_divide_and_conquer
+		scroll_wheel_factor = 0.9
+		trigger = {}
+	}
+	shortcut = {
+		name = POL_shortcut_internal_affairs
+		target = POL_death_of_marshal
+		scroll_wheel_factor = 0.9
+		trigger = {}
+	}
 
 	focus = {
 		id = POL_death_of_marshal

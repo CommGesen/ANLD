@@ -52,7 +52,7 @@ characters={
 			desc = "POL_deluge_edward_rydz_smigly_desc"
 		}
 		field_marshal = {
-			traits = { war_hero offensive_doctrine trait_reckless media_personality politically_connected }
+			traits = { war_hero offensive_doctrine trait_reckless media_personality politically_connected winter_specialist }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -96,7 +96,7 @@ characters={
 		name = POL_deluge_boleslaw_piasecki_name
 		portraits={
 			civilian={
-				large="gfx/leaders/POL/portrait_POL_boleslaw_piasecki.dds"
+				large="GFX_portrait_POL_boleslaw_piasecki_HPR"
 			}
 		}
 		country_leader = {

@@ -101,6 +101,40 @@ changing_portraits_category = {
 			base = 0
 		}
 	}
+	portraits_boleslaw_piasecki = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+			
+		}
+		visible = {
+			has_character = POL_deluge_boleslaw_piasecki
+			OR = {
+				POL_deluge_boleslaw_piasecki = {
+					is_army_leader = yes
+				}
+				POL_deluge_boleslaw_piasecki = {
+					is_navy_leader = yes
+				}
+				POL_deluge_boleslaw_piasecki = {
+					is_country_leader = yes
+				}
+			}
+		}
+		available = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		complete_effect = {
+			country_event = {
+				id = deluge_portraits.23
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
 	portraits_napoleon_vi = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		allowed = {

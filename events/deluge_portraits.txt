@@ -794,3 +794,47 @@ country_event = {##Philippe Pétain
 		}
 	}
 }
+country_event = {##Bolesław Piasecki
+	id = deluge_portraits.23
+	title = deluge_portraits.23.t
+	desc = deluge_portraits.23.d
+	picture = GFX_report_event_boleslaw_piasecki
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {##Vanilla
+		name = deluge_portraits.23.a
+		set_portraits = {
+			character = POL_deluge_boleslaw_piasecki
+			army = { large ="GFX_POL_boleslaw_piasecki" }
+			civilian = { large ="GFX_POL_boleslaw_piasecki" }
+			navy = { large ="GFX_POL_boleslaw_piasecki" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##ANLD
+		name = deluge_portraits.23.b
+		set_portraits = {
+			character = POL_deluge_boleslaw_piasecki
+			army = { large ="GFX_portrait_POL_boleslaw_piasecki_ANLD" }
+			civilian = { large ="GFX_portrait_POL_boleslaw_piasecki_ANLD" }
+			navy = { large ="GFX_portrait_POL_boleslaw_piasecki_ANLD" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {##Historical Poland Redux
+		name = deluge_portraits.23.c
+		set_portraits = {
+			character = POL_deluge_boleslaw_piasecki
+			army = { large ="GFX_portrait_POL_boleslaw_piasecki_HPR" }
+			civilian = { large ="GFX_portrait_POL_boleslaw_piasecki_HPR" }
+			navy = { large ="GFX_portrait_POL_boleslaw_piasecki_HPR" }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
