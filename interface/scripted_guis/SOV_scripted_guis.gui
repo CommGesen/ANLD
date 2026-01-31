@@ -1,0 +1,176 @@
+# By Scars
+
+guitypes = {
+	containerwindowtype = {
+		name = SOV_siberian_uprising_gui_window
+		size = { width = 100%% height = 355 }
+		
+		containerwindowtype = {
+			name = SOV_text_group
+			position = { x = 175 y = 0 }
+			
+			instantTextboxType = {
+				name = SOV_siberian_uprising_title
+				position = { x = 30 y = 10 }
+				font = hoi_30header
+				text = SOV_siberian_uprising_title
+				pdx_tooltip = SOV_siberian_uprising_title_desc
+				maxWidth = 320
+				maxHeight = 36
+				format = left
+				vertical_alignment = center
+			}
+			
+			instantTextboxType = {
+				name = SOV_siberian_uprising_pp_gain
+				position = { x = 90 y = 95 }
+				font = hoi_30header
+				text = SOV_siberian_uprising_pp
+				pdx_tooltip = SOV_siberian_uprising_pp_desc
+				maxWidth = 320
+				maxHeight = 36
+				format = center
+				vertical_alignment = center
+			}
+			
+			instantTextboxType = {
+				name = SOV_siberian_uprising_cp_gain
+				position = { x = 90 y = 140 }
+				font = hoi_30header
+				text = SOV_siberian_uprising_cp
+				pdx_tooltip = SOV_siberian_uprising_cp_desc
+				maxWidth = 320
+				maxHeight = 36
+				format = center
+				vertical_alignment = center
+			}
+			
+			instantTextboxType = {
+				name = SOV_siberian_uprising_mp_gain
+				position = { x = 90 y = 185 }
+				font = hoi_30header
+				text = SOV_siberian_uprising_mp
+				pdx_tooltip = SOV_siberian_uprising_mp_desc
+				maxWidth = 320
+				maxHeight = 36
+				format = center
+				vertical_alignment = center
+			}
+			
+		}
+		
+		containerwindowtype = {
+			name = SOV_portrait_group
+			position = { x = 10 y = -15 }
+			
+			icontype = {
+				name = SOV_siberian_uprising_leader
+				spritetype = GFX_leader_unknown
+				pdx_tooltip = SOV_siberian_uprising_leader_tt
+				pdx_tooltip_delayed = SOV_siberian_uprising_leader_tt_delayed
+				position = { x = 17 y = 23 }
+			}
+		
+			iconType = {
+				name = SOV_siberian_uprising_leader_bg
+				spriteType = GFX_pol_leader_frame
+				position = { x = 9 y = 9 }
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = SOV_siberian_uprising_leader_name
+				position = { x = 17 y = 227 }
+				font = hoi_18mbs
+				text = "[?SOV.siberian_uprising_leader.GetTokenLocalizedKey]"
+				pdx_tooltip = SOV_siberian_uprising_leader_tt
+				pdx_tooltip_delayed = SOV_siberian_uprising_leader_tt_delayed
+				maxWidth = 155
+				maxHeight = 36
+				format = center
+				vertical_alignment = center
+			}
+		}
+		
+		containerwindowtype = {
+			name = SOV_pie_group
+			position = { x = 180 y = 90 }
+		
+			containerwindowtype = {
+				name = SOV_pie_chart_group
+				position = { x = 25 y = -10 }
+				icontype = {
+					name = SOV_pie_3
+					spritetype = GFX_pie_blue_static
+					position = { x = 9 y = 9 }
+				}
+				icontype = {
+					name = SOV_pie_2
+					quadtexturesprite = GFX_pie_purple
+					position = { x = 9 y = 8 }
+				}
+				icontype = {
+					name = SOV_pie_1
+					quadtexturesprite = GFX_pie_green
+					position = { x = 9 y = 8 }
+				}
+				icontype = {
+					name = SOV_pie_0
+					quadtexturesprite = GFX_pie_red
+					position = { x = 9 y = 8 }
+				}
+				icontype = {
+					name = SOV_pie_overlay
+					spritetype = GFX_pie_overlay
+					position = { x = 0 y = 0 }
+					pdx_tooltip = SOV_pie_faction_tt
+				}
+			}
+		}
+		
+		containerwindowtype = {
+			name = SOV_bar_group
+			position = { x = 25 y = 240 }
+			
+			iconType = {
+				name = SOV_siberian_uprising_military
+				quadtexturesprite = GFX_gui_progress_bar_red
+				position = { x = 0 y = 50 }
+				pdx_tooltip = SOV_siberian_uprising_military_tt
+				pdx_tooltip_delayed = SOV_siberian_uprising_military_tt_delayed
+			}
+			instantTextboxType = {
+				name = SOV_siberian_uprising_military_title
+				position = { x = 30 y = 67 }
+				font = hoi_18mbs
+				text = SOV_siberian_uprising_military_title
+				pdx_tooltip = SOV_siberian_uprising_military_tt
+				pdx_tooltip_delayed = SOV_siberian_uprising_military_tt_delayed
+				maxWidth = 320
+				maxHeight = 36
+				format = left
+				vertical_alignment = center
+			}
+			
+			iconType = {
+				name = SOV_siberian_uprising_legitimacy
+				quadtexturesprite = GFX_gui_progress_bar_green
+				position = { x = 0 y = 0 }
+				pdx_tooltip = SOV_siberian_uprising_legitimacy_tt
+				pdx_tooltip_delayed = SOV_siberian_uprising_legitimacy_tt_delayed
+			}
+			instantTextboxType = {
+				name = SOV_siberian_uprising_legitimacy_title
+				position = { x = 30 y = 17 }
+				font = hoi_18mbs
+				text = SOV_siberian_uprising_legitimacy_title
+				pdx_tooltip = SOV_siberian_uprising_legitimacy_tt
+				pdx_tooltip_delayed = SOV_siberian_uprising_legitimacy_tt_delayed
+				maxWidth = 320
+				maxHeight = 36
+				format = left
+				vertical_alignment = center
+			}
+		}
+	}
+}

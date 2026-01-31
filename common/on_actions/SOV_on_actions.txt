@@ -1,0 +1,19 @@
+on_actions = {
+    on_startup = {
+        effect = {
+			SOV = {
+				clear_array = pie_influence
+				set_variable = { pie_ideology@communism = 0 }
+				set_variable = { pie_ideology@fascism = 1 }
+				set_variable = { pie_ideology@neutrality = 2 }
+				set_variable = { pie_ideology@democratic = 3 }
+				
+				add_to_array = { pie_influence = 15 } # pie_influence^0
+				add_to_array = { pie_influence = 35 } # pie_influence^1
+				add_to_array = { pie_influence = 5 } # pie_influence^2
+				add_to_array = { pie_influence = 45 } # pie_influence^3
+				pie_update_frames = yes
+			}
+        }
+    }
+}

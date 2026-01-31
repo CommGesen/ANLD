@@ -1,0 +1,27 @@
+# By Scars
+
+scripted_gui = {
+	SOV_siberian_uprising_gui = {
+		window_name = SOV_siberian_uprising_gui_window
+		context_type = decision_category
+		dirty = pie_dirty
+
+		properties = {
+			SOV_pie_0 = { frame = pie_influence_0_frame }
+			SOV_pie_1 = { frame = pie_influence_1_frame }
+			SOV_pie_2 = { frame = pie_influence_2_frame }
+			# pie_3 is static
+			
+			SOV_siberian_uprising_leader = { 
+				image = "GFX_portrait_[?SOV.siberian_uprising_leader.GetTokenKey]"
+			}
+			
+			SOV_siberian_uprising_legitimacy = {
+				frame = siberia_legi_current
+			}
+			SOV_siberian_uprising_military = {
+				frame = siberia_mili_current
+			}
+		}
+	}
+}

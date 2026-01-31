@@ -1,0 +1,12 @@
+defined_text = {
+	name = GetSiberianUprisingLeaderTT
+	text = {
+		localization_key = "tt_[?siberian_uprising_leader.GetTokenKey]"
+	}
+}
+defined_text = {
+	name = GetSiberianUprisingLeaderTTDelayed
+	text = {
+		localization_key = "tt_[?siberian_uprising_leader_second.GetTokenKey]_delayed"
+	}
+}

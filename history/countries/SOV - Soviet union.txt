@@ -163,8 +163,6 @@ recruit_character = SOV_viktor_chernov
 recruit_character = SOV_nicholas_ii
 recruit_character = SOV_konstantin_rodzaevsky
 recruit_character = SOV_rasputin
-recruit_character = SOV_alexander_fyodorovich_kerensky
-recruit_character = SOV_lavr_kornilov
 recruit_character = SOV_piotr_wrangal
 recruit_character = SOV_vladimir_kappel
 recruit_character = SOV_piotr_nesterov
@@ -179,6 +177,33 @@ recruit_character = SOV_alexander_kolchak
 recruit_character = SOV_stepan_makarov
 recruit_character = SOV_alexis_vronsky
 recruit_character = SOV_oskar_sablin
+
+recruit_character = SOV_lavr_kornilov
+recruit_character = SOV_aleksandr_kerensky
+recruit_character = SOV_mikhail_alekseyev
+
+set_variable = { siberian_uprising_leader = token:SOV_mikhail_alekseyev }
+set_variable = { siberian_uprising_leader_second = token:SOV_aleksandr_kerensky }
+
+set_variable = { siberia_pp_gain@token:SOV_lavr_kornilov = 0.6 }
+set_variable = { siberia_pp_gain@token:SOV_aleksandr_kerensky = 1 }
+set_variable = { siberia_pp_gain@token:SOV_mikhail_alekseyev = 0.5 }
+
+set_variable = { siberia_pp_current@token:SOV_lavr_kornilov = 50 }
+set_variable = { siberia_pp_current@token:SOV_aleksandr_kerensky = 100 }
+set_variable = { siberia_pp_current@token:SOV_mikhail_alekseyev = 25 }
+
+set_variable = { siberia_cp_gain@token:SOV_lavr_kornilov = 1 }
+set_variable = { siberia_cp_gain@token:SOV_aleksandr_kerensky = 0.25 }
+set_variable = { siberia_cp_gain@token:SOV_mikhail_alekseyev = 0.5 }
+
+set_variable = { siberia_cp_current@token:SOV_lavr_kornilov = 75 }
+set_variable = { siberia_cp_current@token:SOV_aleksandr_kerensky = 10 }
+set_variable = { siberia_cp_current@token:SOV_mikhail_alekseyev = 25 }
+
+set_variable = { siberia_mp_current = 1200 }
+set_variable = { siberia_legi_current = 10 }
+set_variable = { siberia_mili_current = 25 }
 
 ### Ship Variants ###
 if = {

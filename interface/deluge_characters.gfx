@@ -2698,4 +2698,23 @@ spriteTypes = {
 		name = "GFX_georges_clemenceau_picture_small"
 		texturefile = "gfx/interface/ideas/characters/georges_clemenceau_picture_small.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_lavr_kornilov_1"
+		texturefile = "gfx/leaders/SOV/lavr_kornilov.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_lavr_kornilov"
+		texturefile = "gfx/leaders/SOV_temp/lavr_kornilov.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_aleksandr_kerensky"
+		texturefile = "gfx/leaders/SOV_temp/aleksandr_kerensky.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_mikhail_alekseyev"
+		texturefile = "gfx/leaders/SOV_temp/mikhail_alekseyev.png"
+		legacy_lazy_load = no
+	}
 }

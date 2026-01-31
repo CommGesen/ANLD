@@ -169,42 +169,6 @@ characters={
 			ledger = civilian
 		}
 	}
-	SOV_alexander_fyodorovich_kerensky={
-		name="Alexander Fyodorovich Kerensky"
-		portraits={
-			civilian={
-				large="gfx/leaders/SOV/alexander_kerensky.dds"
-				small = GFX_idea_alexander_kerensky
-			}
-		}
-		country_leader={
-			ideology=conservative_democracy_ideology
-			expire="1953.3.1.1"
-			id=-1
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = SOV_alexander_fyodorovich_kerensky
-			allowed = { tag = SOV }
-			visible = {
-				tag = SOV
-			}
-			cost = 150
-			available = { 
-				
-			}
-			traits = {
-				democratic_reformer
-			}
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			ai_will_do = { factor = 1.0 }
-			ledger = civilian
-		}
-	}
 	SOV_nikolai_yezhov={
 		name="Nikolai Yezhov"
 		portraits={
@@ -228,26 +192,6 @@ characters={
 			}
 			ai_will_do = { factor = 1.0 }
 			ledger = army
-		}
-	}
-	SOV_lavr_kornilov={
-		name="Lavr Kornilov"
-		portraits={
-			#army={
-				#small=""
-			#}
-			army={
-				large="gfx/leaders/SOV/lavr_kornilov.dds"
-			}
-		}
-		field_marshal={
-			traits={ old_guard }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=90
 		}
 	}
 	SOV_piotr_wrangal={
@@ -520,6 +464,31 @@ characters={
 			maneuvering_skill=1
 			coordination_skill=1
 			legacy_id=105
+		}
+	}
+	SOV_lavr_kornilov = {
+		name = SOV_lavr_kornilov
+		portraits={
+			army={
+				large = GFX_portrait_SOV_lavr_kornilov
+			}
+		}
+	}
+	SOV_aleksandr_kerensky = {
+		name = SOV_aleksandr_kerensky
+		portraits={
+			civilian={
+				large = GFX_portrait_SOV_aleksandr_kerensky
+				small = GFX_idea_alexander_kerensky
+			}
+		}
+	}
+	SOV_mikhail_alekseyev = {
+		name = SOV_mikhail_alekseyev
+		portraits={
+			army={
+				large = GFX_portrait_SOV_mikhail_alekseyev
+			}
 		}
 	}
 }

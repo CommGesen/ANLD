@@ -1,0 +1,40 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_gui_elements_progress_bar_bg"
+		texturefile = "gfx/gui_elements/progress_bar_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_gui_elements_progress_bar_blue"
+		texturefile = "gfx/gui_elements/progress_bar_blue.dds"
+	}
+	spriteType = {
+		name = "GFX_gui_elements_progress_bar_green"
+		texturefile = "gfx/gui_elements/progress_bar_green.dds"
+	}
+	spriteType = {
+		name = "GFX_gui_elements_progress_bar_red"
+		texturefile = "gfx/gui_elements/progress_bar_red.dds"
+	}
+	progressbartype = {
+		name = "GFX_gui_progress_bar_green"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		textureFile1 = "gfx/interface/prod_progress_bar2.dds"
+		textureFile2 = "gfx/interface/efficiency_progressbar_bg_transparent.dds"
+		effectFile = "gfx/FX/progress.lua"
+		size = { x = 450 y = 70 }
+		horizontal = yes
+		steps = 100
+	}
+	progressbartype = {
+		name = "GFX_gui_progress_bar_red"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		textureFile1 = "gfx/interface/prod_progress_bar2_red.dds"
+		textureFile2 = "gfx/interface/efficiency_progressbar_bg_transparent.dds"
+		effectFile = "gfx/FX/progress.lua"
+		size = { x = 450 y = 70 }
+		horizontal = yes
+		steps = 100
+	}
+}
