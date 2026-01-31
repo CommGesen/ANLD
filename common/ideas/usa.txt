@@ -398,8 +398,8 @@ ideas = {
 			}
 		}
 		
-		galvin = {
-		picture = generic_electronics_concern_3
+		motorola = {
+		picture = motorola
 			allowed = {
 				OR = {
 					original_tag = USA
@@ -408,13 +408,13 @@ ideas = {
 			research_bonus = {
 				industry = 0.05
 			}
-			traits = { galvin_designer_trait }
+			traits = { motorola_designer_trait }
 			modifier = {
 			}
 		}
 
 		frails = {
-			picture = generic_industrial_concern_3
+			picture = federal_railroads_administration
 			allowed = {
 				OR = {
 					original_tag = USA
