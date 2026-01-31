@@ -39,11 +39,6 @@ spriteTypes = {
 		name = "GFX_idea_dosco"
 		texturefile = "gfx/interface/ideas/designers/dosco.dds"
 	}
-	
-	spriteType = {
-		name = "GFX_idea_carnegie"
-		texturefile = "gfx/interface/ideas/designers/carnegie.dds"
-	}
 
 	spriteType = {
 		name = "GFX_idea_verney-carron"
@@ -261,5 +256,48 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_designer_ava"
 		texturefile = "gfx/interface/ideas/designers/designer_ava.dds"
+	}spriteType = {
+		name = "GFX_idea_designer_curtiss_wright"
+		texturefile = "gfx/interface/ideas/designers/designer_curtiss_wright.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_designer_hugues_aircraft"
+		texturefile = "gfx/interface/ideas/designers/designer_hugues_aircraft.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_designer_chance_vought_aircraft"
+		texturefile = "gfx/interface/ideas/designers/designer_chance_vought_aircraft.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_designer_vultee_aircraft"
+		texturefile = "gfx/interface/ideas/designers/designer_vultee_aircraft.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_designer_martin_america"
+		texturefile = "gfx/interface/ideas/designers/designer_martin_america.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_designer_northrop"
+		texturefile = "gfx/interface/ideas/designers/designer_northrop.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_designer_republic_aviation"
+		texturefile = "gfx/interface/ideas/designers/designer_republic_aviation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_designer_sikorsky_aviation"
+		texturefile = "gfx/interface/ideas/designers/designer_sikorsky_aviation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_designer_gmc"
+		texturefile = "gfx/interface/ideas/designers/designer_gmc.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_designer_detroit_arsenal"
+		texturefile = "gfx/interface/ideas/designers/designer_detroit_arsenal.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_designer_brooklyn_navy_yard"
+		texturefile = "gfx/interface/ideas/designers/designer_brooklyn_navy_yard.dds"
 	}
 }
