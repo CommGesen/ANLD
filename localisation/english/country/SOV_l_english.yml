@@ -9,6 +9,7 @@
  SOV_far_eastern_uprising: "Far Eastern Uprising"
  
  SOV_siberian_uprising_title: "The Republican Uprising in Siberia"
+ SOV_siberian_uprising_title_no_DEF: "Republican Uprising in Siberia"
  SOV_siberian_uprising_title_desc: "The Republican Uprising in Siberia"
  
  SOV_siberian_uprising_pp: "£pol_power : [?siberia_pp_current@var:siberian_uprising_leader|0]"
@@ -30,9 +31,9 @@
  SOV_siberian_uprising_leader_tt: "[GetSiberianUprisingLeaderTT]"
  SOV_siberian_uprising_leader_tt_delayed: "[GetSiberianUprisingLeaderTTDelayed]"
  
- tt_SOV_lavr_kornilov: "§Y$SOV_lavr_kornilov$§!\nLeader of the Far Eastern Uprising\n\n§YOld Guard§!\n - Daily Political Power Gain: [?siberia_pp_gain@token:SOV_lavr_kornilov|2=+]\n - Daily Command Power Gain: [?siberia_cp_gain@token:SOV_lavr_kornilov|2=+]"
- tt_SOV_aleksandr_kerensky: "§Y$SOV_aleksandr_kerensky$§!\nLeader of the Far Eastern Uprising\n\n§YLiberal Politician§!\n - Daily Political Power Gain: [?siberia_pp_gain@token:SOV_aleksandr_kerensky|2=+]\n - Daily Command Power Gain: [?siberia_cp_gain@token:SOV_aleksandr_kerensky|2=+]"
- tt_SOV_mikhail_alekseyev: "§Y$SOV_mikhail_alekseyev$§!\nLeader of the Far Eastern Uprising\n\n§YMilitary Politician§!\n - Daily Political Power Gain: [?siberia_pp_gain@token:SOV_mikhail_alekseyev|2=+]\n - Daily Command Power Gain: [?siberia_cp_gain@token:SOV_mikhail_alekseyev|2=+]"
+ tt_SOV_lavr_kornilov: "§Y$SOV_lavr_kornilov$§!\nLeader of the $SOV_siberian_uprising_title_no_DEF$\n\n§YOld Guard§!\n - Daily Political Power Gain: [?siberia_pp_gain@token:SOV_lavr_kornilov|2=+]\n - Daily Command Power Gain: [?siberia_cp_gain@token:SOV_lavr_kornilov|2=+]"
+ tt_SOV_aleksandr_kerensky: "§Y$SOV_aleksandr_kerensky$§!\nLeader of the $SOV_siberian_uprising_title_no_DEF$\n\n§YLiberal Politician§!\n - Daily Political Power Gain: [?siberia_pp_gain@token:SOV_aleksandr_kerensky|2=+]\n - Daily Command Power Gain: [?siberia_cp_gain@token:SOV_aleksandr_kerensky|2=+]"
+ tt_SOV_mikhail_alekseyev: "§Y$SOV_mikhail_alekseyev$§!\nLeader of the $SOV_siberian_uprising_title_no_DEF$\n\n§YMilitary Politician§!\n - Daily Political Power Gain: [?siberia_pp_gain@token:SOV_mikhail_alekseyev|2=+]\n - Daily Command Power Gain: [?siberia_cp_gain@token:SOV_mikhail_alekseyev|2=+]"
  
  tt_SOV_lavr_kornilov_delayed: "§Y$SOV_lavr_kornilov$§!\nSecond in Command\n\n\n\n\n\n\n\n£portrait_SOV_lavr_kornilov\n\n\n\n\n\n\n\n\n§LOld Guard - Inactive§!\n - Daily Political Power Gain: [?siberia_pp_gain@token:SOV_lavr_kornilov|2=+]\n - Daily Command Power Gain: [?siberia_cp_gain@token:SOV_lavr_kornilov|2=+]"
  tt_SOV_aleksandr_kerensky_delayed: "§Y$SOV_aleksandr_kerensky$§!\nSecond in Command\n\n\n\n\n\n\n\n£portrait_SOV_aleksandr_kerensky\n\n\n\n\n\n\n\n\n§LLiberal Politician - Inactive§!\n - Daily Political Power Gain: [?siberia_pp_gain@token:SOV_aleksandr_kerensky|2=+]\n - Daily Command Power Gain: [?siberia_cp_gain@token:SOV_aleksandr_kerensky|2=+]"

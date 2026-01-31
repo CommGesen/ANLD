@@ -15,6 +15,10 @@ spriteTypes = {
 		name = "GFX_gui_elements_progress_bar_red"
 		texturefile = "gfx/gui_elements/progress_bar_red.dds"
 	}
+	spriteType = {
+		name = "GFX_gui_elements_russian_cw_bg"
+		texturefile = "gfx/gui_elements/russian_cw_bg.png"
+	}
 	progressbartype = {
 		name = "GFX_gui_progress_bar_green"
 		color = { 0.0 0.5 0.0 }
