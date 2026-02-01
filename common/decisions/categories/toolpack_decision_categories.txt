@@ -1,0 +1,17 @@
+toolpack_category = {
+
+	icon = generic_formable_nations
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		has_global_flag = tp_is_multiplayer
+		is_ai = no
+	}
+	priority = {
+		base = 0
+	}
+	scripted_gui = toolpack_action_log_main_container
+}
