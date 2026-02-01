@@ -442,6 +442,92 @@ political_actions = {
 		}
 	}
 	
+	activate_the_general_staff = {
+		
+		icon = generic_political_discourse
+		
+		days_remove = 180
+		days_re_enable = 0
+		cost = 0
+		
+		custom_cost_trigger = {
+			has_army_experience > 79.9
+		}
+		custom_cost_text = decision_cost_ArmExp_80
+		
+		complete_effect = {
+			add_command_power = 40
+			hidden_effect = { 
+				army_experience = -80 
+			}
+			set_country_flag = activate_the_general_staff
+		}
+		
+		remove_effect = {
+			clr_country_flag = activate_the_general_staff
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				command_power < 10
+				has_army_experience > 80
+				add = 5
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				has_country_flag = convene_the_war_colleges
+				factor = 0
+			}
+		}
+	}
+	
+	convene_the_war_colleges = {
+		
+		icon = generic_political_discourse
+		
+		days_remove = 180
+		days_re_enable = 0
+		cost = 0
+		
+		custom_cost_trigger = {
+			command_power > 79.9
+		}
+		custom_cost_text = decision_cost_CP_80
+		
+		complete_effect = {
+			army_experience = 40
+			hidden_effect = { 
+				add_command_power = -80
+			}
+			set_country_flag = convene_the_war_colleges
+		}
+		
+		remove_effect = {
+			clr_country_flag = convene_the_war_colleges
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_army_experience < 10
+				command_power > 80
+				add = 5
+			}
+			modifier = {
+				has_war = no
+				factor = 2
+			}
+			modifier = {
+				has_country_flag = convene_the_war_colleges
+				factor = 0
+			}
+		}
+	}
+	
 	germany_integrate_pom = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 		available = {

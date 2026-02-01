@@ -639,3 +639,15 @@
  recruit_king_to_army:0 "The King's Service in the Army"
  recruit_king_to_army_desc:0 "King Augustyn expressed a desire to serve in the army. It will be an honor for us to receive him!"
  heal_rydz_smigly:0 "Heal Edward Rydz-Śmigły"
+ 
+ activate_the_general_staff: "Activate the General Staff"
+ activate_the_general_staff_desc: "The accumulated experience of the army is distilled into doctrine, plans, and authority at the highest levels of command. By empowering the General Staff, battlefield lessons are transformed into decisive operational control."
+ convene_the_war_colleges: "Convene the War Colleges"
+ convene_the_war_colleges_desc: "Senior commanders are ordered to disseminate their authority through expanded instruction and staff exercises. By converting command initiative into education and experimentation, the army sharpens its practical expertise for future conflicts."
+ 
+ decision_cost_CP_80: "£command_power  §Y80§!"
+ decision_cost_CP_80_blocked: "£command_power  §R80§!"
+ decision_cost_CP_80_tooltip: "It costs £command_power §Y80§! to take the decision"
+ decision_cost_ArmExp_80: "£army_experience  §Y80§!"
+ decision_cost_ArmExp_80_blocked: "£army_experience  §R80§!"
+ decision_cost_ArmExp_80_tooltip: "It costs £army_experience §Y80§! to take the decision"
