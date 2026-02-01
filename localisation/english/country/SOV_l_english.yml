@@ -12,11 +12,11 @@
  SOV_siberian_uprising_title_no_DEF: "Republican Uprising in Siberia"
  SOV_siberian_uprising_title_desc: "The Republican Uprising in Siberia"
  
- SOV_siberian_uprising_pp: "£pol_power : [?siberia_pp_current@var:siberian_uprising_leader|0]"
+ SOV_siberian_uprising_pp: "£pol_power  [?siberia_pp_current@var:siberian_uprising_leader|0]"
  SOV_siberian_uprising_pp_desc: "Daily Political Power Gain: [?siberia_pp_gain@var:siberian_uprising_leader|2=+]"
- SOV_siberian_uprising_cp: "£command_power : [?siberia_cp_current@var:siberian_uprising_leader|0]"
+ SOV_siberian_uprising_cp: "£command_power  [?siberia_cp_current@var:siberian_uprising_leader|0]"
  SOV_siberian_uprising_cp_desc: "Daily Command Power Gain: [?siberia_cp_gain@var:siberian_uprising_leader|2=+]"
- SOV_siberian_uprising_mp: "£manpower_texticon : [?siberia_mp_current|1*]"
+ SOV_siberian_uprising_mp: "£manpower_texticon  [?siberia_mp_current|1*]"
  SOV_siberian_uprising_mp_desc: "Available Manpower: [?siberia_mp_current|0+]"
  
  SOV_siberian_uprising_legitimacy_title: "LEGITIMACY: [?siberia_legi_current|%%]"
