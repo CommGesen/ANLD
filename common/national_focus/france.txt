@@ -2102,7 +2102,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_national_state
 		x = -2
 		y = 1
-		prerequisite = { focus = FRA_french_social_party focus = FRA_fire_movement focus = FRA_french_popular_party }
+		prerequisite = { focus = FRA_french_social_party focus = FRA_fire_movement focus = FRA_french_popular_party focus = FRA_francist_movement }
 		relative_position_id = FRA_french_social_party
 		search_filters = { }
 		cost = 5
@@ -2129,6 +2129,13 @@ focus_tree = {
 			y = 0
 			trigger = {
 				has_completed_focus = FRA_french_popular_party
+			}
+		}
+		offset = {
+			x = -8
+			y = 0
+			trigger = {
+				has_completed_focus = FRA_francist_movement
 			}
 		}
 		available = {
@@ -14990,6 +14997,10 @@ focus_tree = {
 		available = {
 			date > 1937.6.1
 			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = generic_custom_trigger_tooltip_1
+				always = no
+			}
 		}
 		completion_reward = {
 			
@@ -15673,7 +15684,8 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
 		}
 		bypass = {
 			
@@ -15713,7 +15725,8 @@ focus_tree = {
 			custom_effect_tooltip = FRA_custom_effect_tooltip_2
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
 		}
 		bypass = {
 			
@@ -15838,7 +15851,8 @@ focus_tree = {
 			custom_effect_tooltip = FRA_custom_effect_tooltip_4
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
 		}
 		bypass = {
 			
@@ -15879,7 +15893,8 @@ focus_tree = {
 			custom_effect_tooltip = FRA_custom_effect_tooltip_5
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
 		}
 		bypass = {
 			
@@ -16131,7 +16146,8 @@ focus_tree = {
 			custom_effect_tooltip = FRA_custom_effect_tooltip_6
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
 		}
 		bypass = {
 			
@@ -16361,7 +16377,8 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
 		}
 		bypass = {
 			
@@ -19930,7 +19947,12 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -19971,7 +19993,12 @@ focus_tree = {
 			custom_effect_tooltip = FRA_custom_effect_tooltip_55
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -20020,7 +20047,12 @@ focus_tree = {
 			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -20081,7 +20113,12 @@ focus_tree = {
 			army_experience = 50
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			has_global_flag = german_civil_war_ended
@@ -20559,7 +20596,12 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -20614,7 +20656,12 @@ focus_tree = {
 			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -21286,7 +21333,13 @@ focus_tree = {
 			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 7000
+			#very important, asap
+			#not 9000 because it is navy
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -21364,7 +21417,13 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 7000
+			#very important, asap
+			#not 9000 because it is navy
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			NOT = {
@@ -21470,7 +21529,13 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 20
+			modifier = {
+				factor = 50
+				any_enemy_country = {
+					check_variable = { THIS.num_ships > ROOT.num_ships }
+				}
+			}
 		}
 		bypass = {
 			
@@ -21535,7 +21600,13 @@ focus_tree = {
 			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 7000
+			#very important, asap
+			#not 9000 because it is navy
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -21588,7 +21659,13 @@ focus_tree = {
 			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 7000
+			#very important, asap
+			#not 9000 because it is navy
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -21628,7 +21705,13 @@ focus_tree = {
 			set_grand_doctrine = new_fleet_in_being
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 7000
+			#very important, asap
+			#not 9000 because it is navy
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -21759,7 +21842,13 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 7000
+			#very important, asap
+			#not 9000 because it is navy
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -21799,7 +21888,13 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 7000
+			#very important, asap
+			#not 9000 because it is navy
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -21839,7 +21934,13 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 7000
+			#very important, asap
+			#not 9000 because it is navy
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -21879,7 +21980,13 @@ focus_tree = {
 			set_grand_doctrine = new_base_strike
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 7000
+			#very important, asap
+			#not 9000 because it is navy
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -21919,7 +22026,13 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 7000
+			#very important, asap
+			#not 9000 because it is navy
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -21959,7 +22072,13 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 7000
+			#very important, asap
+			#not 9000 because it is navy
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -21999,7 +22118,13 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 7000
+			#very important, asap
+			#not 9000 because it is navy
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -22038,7 +22163,13 @@ focus_tree = {
 			custom_effect_tooltip = FRA_custom_effect_tooltip_166
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 7000
+			#very important, asap
+			#not 9000 because it is navy
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -22077,7 +22208,13 @@ focus_tree = {
 			custom_effect_tooltip = FRA_custom_effect_tooltip_165
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 7000
+			#very important, asap
+			#not 9000 because it is navy
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -22133,7 +22270,13 @@ focus_tree = {
 			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 7000
+			#very important, asap
+			#not 9000 because it is navy
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -22198,7 +22341,13 @@ focus_tree = {
 			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 7000
+			#very important, asap
+			#not 9000 because it is navy
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -22234,7 +22383,13 @@ focus_tree = {
 			add_ideas = FRA_spirit_containing_air_threat
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 7000
+			#very important, asap
+			#not 9000 because it is navy
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -22270,7 +22425,13 @@ focus_tree = {
 			add_ideas = FRA_spirit_advanced_sonars
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 7000
+			#very important, asap
+			#not 9000 because it is navy
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -22309,7 +22470,13 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 7000
+			#very important, asap
+			#not 9000 because it is navy
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -22371,7 +22538,12 @@ focus_tree = {
 			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -22445,7 +22617,12 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -22556,7 +22733,12 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -22627,7 +22809,12 @@ focus_tree = {
 			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -22663,7 +22850,12 @@ focus_tree = {
 			add_ideas = FRA_spirit_increase_fighter_production
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -22701,7 +22893,12 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -22737,7 +22934,12 @@ focus_tree = {
 			add_ideas = FRA_spirit_increase_multirole_production
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -22775,7 +22977,12 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -22815,7 +23022,12 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -22855,7 +23067,12 @@ focus_tree = {
 			air_experience = 10
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -22891,7 +23108,12 @@ focus_tree = {
 			add_ideas = FRA_spirit_bidons_speciaux
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -22944,7 +23166,12 @@ focus_tree = {
 			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			

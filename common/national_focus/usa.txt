@@ -1087,21 +1087,43 @@ focus_tree = {
 				}
             	create_wargoal = {
                     type = annex_everything
-                    target = CAN
+                    target = LOU
                     expire = 0
                 }
 			}
 			else_if = {
 				limit = {
-					NOT = { owns_state = 371 }
+					LOU = {
+						exists = no
+					}
 				}
-				random_country = {
-					limit = { owns_state = 371 }
+				every_country = {
+					limit = {
+						OR = {
+							owns_state = 389
+							owns_state = 390
+							owns_state = 384
+							owns_state = 383
+							owns_state = 374
+							owns_state = 392
+							owns_state = 373
+							owns_state = 372
+							owns_state = 799
+							owns_state = 371
+							owns_state = 370
+						}
+						NOT = {
+							tag = ROOT
+						}
+						NOT = {
+							is_subject_of = ROOT
+						}
+					}
 					ROOT = {
 						create_wargoal = {
 							type = take_claimed_state
 							target = PREV
-							generator = { 371 }
+							generator = { 389 390 384 383 374 392 373 372 799 371 370 }
 						}
 					}
 				}

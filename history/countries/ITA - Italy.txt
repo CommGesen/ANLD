@@ -99,30 +99,6 @@ if = {
 	set_naval_oob = "ITA_1936_naval_mtg"
 }
 
-create_import = {
-	resource = rubber
-	factories = 1
-	exporter = INS
-}
-
-create_import = {
-	resource = oil
-	factories = 1
-	exporter = MEX
-}
-
-create_import = {
-	resource = oil
-	factories = 1
-	exporter = LOU
-}
-
-create_import = {
-	resource = chromium
-	factories = 1
-	exporter = SOV
-}
-
 set_politics = {
 	ruling_party = fascism
 	last_election = "1934.3.26"
@@ -144,6 +120,11 @@ add_ideas = {
 	novote
 	italian_king
 }
+
+set_cosmetic_tag = ITA_MURAT_KINGDOM
+
+set_country_flag = deluge_flag_is_monarchy
+
 recruit_character = ITA_benito_mussolini
 recruit_character = ITA_pietro_badoglio
 recruit_character = ITA_emilio_de_bono

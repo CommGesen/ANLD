@@ -4,7 +4,7 @@ state={
 	name="STATE_29"
 	manpower = 2200000
 	
-	state_category = rural
+	state_category = town
 	resources={
 		aluminium = 8
 		coal = 10
@@ -32,7 +32,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			industrial_complex = 2
 		}
 		add_core_of = FRA
 		add_core_of = NMD

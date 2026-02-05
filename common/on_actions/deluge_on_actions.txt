@@ -1171,11 +1171,40 @@ on_actions = {
 			}
 		}
 	}
+	on_daily_ITA = {
+		effect = {
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				if = {
+					limit = {
+						has_country_flag = deluge_flag_is_monarchy
+					}
+					clr_country_flag = deluge_flag_is_monarchy
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_cosmetic_tag = ITA_ROME
+					}
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
 	on_daily_FRA = {
 		effect = {
 			if = {
 				limit = {
 					is_subject = yes
+				}
+				if = {
+					limit = {
+						has_country_flag = deluge_flag_is_monarchy
+					}
+					clr_country_flag = deluge_flag_is_monarchy
 				}
 				if = {
 					limit = {

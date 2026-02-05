@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "División de Infanteria"		# Infantry Division
+	name = "Division d'Infanterie"		# Infantry Division
 	division_names_group = SPAN_INF_02
 
 	regiments = {
@@ -12,7 +12,7 @@
 	}
 }
 division_template = {
-	name = "Brigada Montaña"			# Mountain Brigade
+	name = "Division de Montagne"			# Mountain Brigade
 	division_names_group = SPAN_MNT_02
 	regiments = {
 		mountaineers = { x = 0 y = 0 }	
@@ -24,7 +24,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "División de Caballería"  	# Cavalry Division
+	name = "Division de Cavalerie"  	# Cavalry Division
 	division_names_group = SPAN_CAV_01
 
 	regiments = {
@@ -40,52 +40,51 @@ division_template = {
 units = {
 	division= {
 		division_name = {
-				is_name_ordered = yes
-				name_order = 1
+			is_name_ordered = yes
+			name_order = 1
 		}
 		location = 12321
-		division_template = "Brigada Montaña"
+		division_template = "Division de Montagne"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
-
 	}
-	division= {	# "2da División del Ejercito"
+	division= {
 		division_name = {
-				is_name_ordered = yes
-				name_order = 2
+			is_name_ordered = yes
+			name_order = 2
 		}
 		location = 12306
-		division_template = "División de Infanteria"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.9
 
 	}
-	division= {	# "3era División del Ejercito"
+	division= {
 		division_name = {
-				is_name_ordered = yes
-				name_order = 3
+			is_name_ordered = yes
+			name_order = 3
 		}
 		location = 5215
-		division_template = "División de Infanteria"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.9
 
 	}
-	division= {	# "4ta División del Ejercito"
+	division= {
 		division_name = {
-				is_name_ordered = yes
-				name_order = 4
+			is_name_ordered = yes
+			name_order = 4
 		}
 		location = 10953
-		division_template = "División de Infanteria"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.9
 
 	}
 	division= {	
-		name = "División de Caballería"
+		name = "Division de Cavalerie"
 		location = 5121
-		division_template = "División de Caballería"
+		division_template = "Division de Cavalerie"
 		start_experience_factor = 0.8
 		start_equipment_factor = 0.9
 

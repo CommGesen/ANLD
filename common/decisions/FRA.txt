@@ -5235,7 +5235,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_FIN_stop_motti_tactics
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5252,14 +5252,13 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		available = {
-			command_power > 30
+			
 		}
 		remove_effect = {
 			remove_trait = {
 				character = FRA_deluge_louis_franchet_d_esperey
 				trait = old_guard
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -5270,7 +5269,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_FIN_stop_motti_tactics
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5287,14 +5286,13 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		available = {
-			command_power > 30
+			
 		}
 		remove_effect = {
 			remove_trait = {
 				character = FRA_deluge_maxime_weygand
 				trait = old_guard
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -5305,7 +5303,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_FIN_stop_motti_tactics
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5322,14 +5320,13 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		available = {
-			command_power > 30
+			
 		}
 		remove_effect = {
 			remove_trait = {
 				character = FRA_deluge_maurice_gamelin
 				trait = old_guard
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -5340,7 +5337,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_FIN_stop_motti_tactics
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5357,14 +5354,13 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		available = {
-			command_power > 30
+			
 		}
 		remove_effect = {
 			remove_trait = {
 				character = FRA_deluge_alphonse_georges
 				trait = old_guard
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -5375,7 +5371,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_FIN_stop_motti_tactics
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5392,14 +5388,13 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		available = {
-			command_power > 30
+			
 		}
 		remove_effect = {
 			remove_trait = {
 				character = FRA_deluge_antoine_marie_benoit_besson
 				trait = old_guard
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -5410,7 +5405,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_FIN_stop_motti_tactics
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5427,14 +5422,13 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		available = {
-			command_power > 30
+			
 		}
 		remove_effect = {
 			remove_trait = {
 				character = FRA_deluge_charles_huntziger
 				trait = old_guard
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -5445,7 +5439,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_FIN_stop_motti_tactics
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5462,14 +5456,13 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		available = {
-			command_power > 30
+			
 		}
 		remove_effect = {
 			remove_trait = {
 				character = FRA_deluge_aime_doumenc
 				trait = old_guard
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -5480,7 +5473,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_FIN_stop_motti_tactics
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5497,14 +5490,13 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		available = {
-			command_power > 30
+			
 		}
 		remove_effect = {
 			remove_trait = {
 				character = FRA_deluge_henry_freydenberg
 				trait = old_guard
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -5515,7 +5507,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_FIN_stop_motti_tactics
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5532,14 +5524,13 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		available = {
-			command_power > 30
+			
 		}
 		remove_effect = {
 			remove_trait = {
 				character = FRA_deluge_adolphe_guillaumat
 				trait = old_guard
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -5550,7 +5541,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_FIN_stop_motti_tactics
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5567,14 +5558,13 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		available = {
-			command_power > 30
+			
 		}
 		remove_effect = {
 			remove_trait = {
 				character = FRA_deluge_pierre_hering
 				trait = old_guard
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -5585,7 +5575,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_FIN_stop_motti_tactics
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5602,14 +5592,13 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		available = {
-			command_power > 30
+			
 		}
 		remove_effect = {
 			remove_trait = {
 				character = FRA_deluge_andre_gaston_pretelat
 				trait = old_guard
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -5620,7 +5609,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_FIN_stop_motti_tactics
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5637,14 +5626,13 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		available = {
-			command_power > 30
+			
 		}
 		remove_effect = {
 			remove_trait = {
 				character = FRA_deluge_marcel_garchery
 				trait = old_guard
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -5655,7 +5643,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_FIN_stop_motti_tactics
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5672,14 +5660,13 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		available = {
-			command_power > 30
+			
 		}
 		remove_effect = {
 			remove_trait = {
 				character = FRA_deluge_charles_marie_conde
 				trait = old_guard
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -5690,7 +5677,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_FIN_stop_motti_tactics
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5707,14 +5694,13 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		available = {
-			command_power > 30
+			
 		}
 		remove_effect = {
 			remove_trait = {
 				character = FRA_deluge_louis_colson
 				trait = old_guard
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -5725,7 +5711,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_FIN_stop_motti_tactics
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5742,14 +5728,13 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		available = {
-			command_power > 30
+			
 		}
 		remove_effect = {
 			remove_trait = {
 				character = FRA_deluge_robert_touchon
 				trait = old_guard
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -5760,7 +5745,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_FIN_stop_motti_tactics
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5777,14 +5762,13 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		available = {
-			command_power > 30
+			
 		}
 		remove_effect = {
 			remove_trait = {
 				character = FRA_deluge_victor_bourret
 				trait = old_guard
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -5795,7 +5779,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_FIN_stop_motti_tactics
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5812,14 +5796,13 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		available = {
-			command_power > 30
+			
 		}
 		remove_effect = {
 			remove_trait = {
 				character = FRA_deluge_jules_buhrer
 				trait = old_guard
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -5830,7 +5813,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_FIN_stop_motti_tactics
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5847,14 +5830,13 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		available = {
-			command_power > 30
+			
 		}
 		remove_effect = {
 			remove_trait = {
 				character = FRA_deluge_emile_laure
 				trait = old_guard
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -5865,7 +5847,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_SWE_set_navy_budget
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5882,14 +5864,13 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		available = {
-			command_power > 30
+			
 		}
 		remove_effect = {
 			remove_trait = {
 				character = FRA_deluge_georges_durand_viel
 				trait = old_guard_navy
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -5900,7 +5881,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_SWE_set_navy_budget
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5917,14 +5898,13 @@ FRA_dec_cat_modernize_french_army={
 			}
 		}
 		available = {
-			command_power > 30
+			
 		}
 		remove_effect = {
 			remove_trait = {
 				character = FRA_deluge_rene_emile_godfroy
 				trait = old_guard_navy
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -5935,7 +5915,7 @@ FRA_dec_cat_modernize_french_army={
 		icon = GFX_decision_SWE_set_navy_budget
 		fire_only_once = yes
 		days_remove = 150
-		cost = 150
+		cost = 50
 		allowed = {
 			tag = FRA
 		}
@@ -5959,7 +5939,6 @@ FRA_dec_cat_modernize_french_army={
 				character = FRA_deluge_emmanuel_ollive
 				trait = old_guard_navy
 			}
-			add_command_power = -30
 			FRA_scripted_effect_decrease_army_conservatism = yes
 		}
 		ai_will_do = {
@@ -12480,16 +12459,16 @@ FRA_dec_cat_unite_europe = {
 			}
 			controls_state = 116
 			custom_trigger_tooltip = {##Greece and Turkish European part
-				tooltip = POL_custom_trigger_tooltip_34
-				controls_state = 731
+				tooltip = FRA_custom_trigger_tooltip_6
+				controls_state = 185
 				controls_state = 47
+				controls_state = 731
 				controls_state = 186
 				controls_state = 182
 				controls_state = 184
 				controls_state = 341
 				controls_state = 187
 				controls_state = 164
-				controls_state = 985
 			}
 			custom_trigger_tooltip = {##Holland
 				tooltip = POL_custom_trigger_tooltip_35

@@ -1122,10 +1122,26 @@ focus_tree = {
 			add_state_claim = 7
 			add_state_claim = 35
 			add_state_claim = 6
+			add_state_claim = 977
 			
-			if = { limit = { NOT = { owns_state = 784 } }
-				random_country = {
-					limit = { owns_state = 784 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 784
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							owns_state = 784
+						}
+						NOT = {
+							tag = ROOT
+						}
+						NOT = {
+							is_subject_of = ROOT
+						}
+					}
 					ROOT = {
 						create_wargoal = {
 							type = take_core_state
@@ -1135,14 +1151,33 @@ focus_tree = {
 					}
 				}
 			}
-			if = { limit = { NOT = { owns_state = 36 } }
-				random_country = {
-					limit = { owns_state = 36 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 36
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							owns_state = 36
+							owns_state = 7
+							owns_state = 6
+							owns_state = 35
+							owns_state = 977
+						}
+						NOT = {
+							tag = ROOT
+						}
+						NOT = {
+							is_subject_of = ROOT
+						}
+					}
 					ROOT = {
 						create_wargoal = {
 							type = take_claimed_state
 							target = PREV
-							generator = { 36 7 35 6 }
+							generator = { 36 7 35 6 977 }
 						}
 					}
 				}
@@ -1227,17 +1262,30 @@ focus_tree = {
 			
 			add_named_threat = { threat = 3 name = germany_claims_france }
 
-			add_state_core = 786
-			add_state_core = 42
-			add_state_core = 28
-			add_state_core = 1031
-			add_state_claim = 8
-			add_state_claim = 17
-			add_state_claim = 34
-			
-			if = { limit = { NOT = { owns_state = 42 } }
-				random_country = {
-					limit = { owns_state = 42 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 42
+						owns_state = 28
+						owns_state = 786
+						owns_state = 1031
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							owns_state = 42
+							owns_state = 28
+							owns_state = 786
+							owns_state = 1031
+						}
+						NOT = {
+							tag = ROOT
+						}
+						NOT = {
+							is_subject_of = ROOT
+						}
+					}
 					ROOT = {
 						create_wargoal = {
 							type = take_core_state
@@ -1247,14 +1295,33 @@ focus_tree = {
 					}
 				}
 			}
-			if = { limit = { NOT = { owns_state = 17 } }
-				random_country = {
-					limit = { owns_state = 17 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 980
+						owns_state = 8
+						owns_state = 34
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							owns_state = 980
+							owns_state = 34
+							owns_state = 8
+						}
+						NOT = {
+							tag = ROOT
+						}
+						NOT = {
+							is_subject_of = ROOT
+						}
+					}
 					ROOT = {
 						create_wargoal = {
 							type = take_claimed_state
 							target = PREV
-							generator = { 8 17 34 }
+							generator = { 8 980 34 }
 						}
 					}
 				}
@@ -1330,35 +1397,95 @@ focus_tree = {
 			add_state_core = 4
 			add_state_core = 152
 			add_state_core = 153
-			add_state_core = 39
+			add_state_core = 976
+			add_state_core = 975
+			add_state_core = 848
+
+			add_state_claim = 850
+			add_state_claim = 39
+			add_state_claim = 852
+			add_state_claim = 736
+			add_state_claim = 853
+			add_state_claim = 102
+			add_state_claim = 972
 			add_state_claim = 69
-			add_state_claim = 72
-			add_state_claim = 74
 			add_state_claim = 9
 			add_state_claim = 75
-			add_state_claim = 102
-			add_state_claim = 736
-			
-			if = { limit = { NOT = { owns_state = 4 } }
-				random_country = {
-					limit = { owns_state = 4 }
+			add_state_claim = 74
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 4
+						owns_state = 152
+						owns_state = 976
+						owns_state = 975
+						owns_state = 848
+						owns_state = 153
+					}
+				}
+				every_country = {
+					limit = { 
+						OR = {
+							owns_state = 4
+							owns_state = 152
+							owns_state = 976
+							owns_state = 975
+							owns_state = 848
+							owns_state = 153
+						}
+						NOT = {
+							tag = ROOT
+						}
+						NOT = {
+							is_subject_of = ROOT
+						}
+					}
 					ROOT = {
 						create_wargoal = {
 							type = take_core_state
 							target = PREV
-							generator = { 4 152 153 39 }
+							generator = { 4 152 153 976 975 848 }
 						}
 					}
 				}
 			}
-			if = { limit = { NOT = { owns_state = 72 } }
-				random_country = {
-					limit = { owns_state = 72 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 850
+						owns_state = 39
+						owns_state = 852
+						owns_state = 736
+						owns_state = 853
+						owns_state = 102
+						owns_state = 972
+						owns_state = 69
+						owns_state = 9
+						owns_state = 75
+						owns_state = 74
+					} 
+				}
+				every_country = {
+					limit = {
+						OR = {
+							owns_state = 850
+							owns_state = 39
+							owns_state = 852
+							owns_state = 736
+							owns_state = 853
+							owns_state = 102
+							owns_state = 972
+							owns_state = 69
+							owns_state = 9
+							owns_state = 75
+							owns_state = 74
+						}
+					}
 					ROOT = {
 						create_wargoal = {
 							type = take_claimed_state
 							target = PREV
-							generator = { 72 74 9 75 69 }
+							generator = { 850 39 852 736 853 102 972 69 9 75 74 }
 						}
 					}
 				}

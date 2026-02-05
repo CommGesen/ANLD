@@ -615,15 +615,15 @@ country_event = {
 		
 		if = {
 			limit = {
-				owns_state = 39
+				owns_state = 850
 			}
-			ITA = { transfer_state = 39 }
+			ITA = { transfer_state = 850 }
 		}
 		if = {
 			limit = {
-				owns_state = 153
+				owns_state = 39
 			}
-			ITA = { transfer_state = 153 }
+			ITA = { transfer_state = 39 }
 		}
 		if = {
 			limit = {
@@ -633,33 +633,9 @@ country_event = {
 		}
 		if = {
 			limit = {
-				owns_state = 102
-			}
-			ITA = { transfer_state = 102 }
-		}
-		if = {
-			limit = {
-				owns_state = 850
-			}
-			ITA = { transfer_state = 850 }
-		}
-		if = {
-			limit = {
-				owns_state = 848
-			}
-			ITA = { transfer_state = 848 }
-		}
-		if = {
-			limit = {
 				owns_state = 852
 			}
 			ITA = { transfer_state = 852 }
-		}
-		if = {
-			limit = {
-				owns_state = 853
-			}
-			ITA = { transfer_state = 853 }
 		}
 		ai_chance = {
 			factor = 1
@@ -1163,8 +1139,13 @@ country_event = {
 			has_war = no
 		}
 		
-		ENG = { country_event = deluge_italy.23 }
-		
+		116 = {
+			owner = {
+				country_event = {
+					id = deluge_italy.23
+				}
+			}
+		}
 		add_named_threat = { threat = -1 name = deluge_pacifism_threat }
 		
 		ai_chance = {
@@ -1252,180 +1233,38 @@ country_event = {
 	}
 	
 	option = {
-		name = deluge_italy22optb
-			
+		name = deluge_italy22optb	
 		add_named_threat = { threat = 5 name = italy_claims_malta }
-		
-		remove_opinion_modifier = { target = ENG modifier = great_war_alliance_modifier }
 		
 		navy_experience = 50
 		army_experience = 25
 		air_experience = 25
 		
-		custom_effect_tooltip = tooltip_defence_malta
-
-		hidden_effect = {
-			if = {
-				limit = {
-					NOT = {
-						ENG = {
-							divisions_in_state = {
-								state = 116
-								size > 0
-							}
+		#custom_effect_tooltip = tooltip_defence_malta
+		random_list = {
+			55 = {
+				add_manpower = -300
+				116 = {
+					owner = {
+						country_event = {
+							id = deluge_italy.27
 						}
 					}
 				}
-				random_list = {
-					95 = {
-						add_manpower = -50
-						ENG = { country_event = deluge_italy.27 } # Success
-					}
-					5 = {
-						add_manpower = -300
-						ENG = { country_event = deluge_italy.29 } # Failure
-					}
-				}
+				# Success
 			}
-			
-			if = {
-				limit = {
-					ENG = {
-						divisions_in_state = {
-							state = 116
-							size > 0
-						}
-					}
-					NOT = {
-						ENG = {
-							divisions_in_state = {
-								state = 116
-								size > 1
-							}
+			45 = {
+				add_manpower = -1200
+				116 = {
+					owner = {
+						country_event = {
+							id = deluge_italy.29
 						}
 					}
 				}
-				random_list = {
-					80 = {
-						add_manpower = -150
-						ENG = { country_event = deluge_italy.27 } # Success
-					}
-					20 = {
-						add_manpower = -500
-						ENG = { country_event = deluge_italy.29 } # Failure
-					}
-				}
-			}
-			
-			if = {
-				limit = {
-					ENG = {
-						divisions_in_state = {
-							state = 116
-							size > 1
-						}
-					}
-					NOT = {
-						ENG = {
-							divisions_in_state = {
-								state = 116
-								size > 2
-							}
-						}
-					}
-				}
-				random_list = {
-					60 = {
-						add_manpower = -300
-						ENG = { country_event = deluge_italy.27 } # Success
-					}
-					40 = {
-						add_manpower = -1200
-						ENG = { country_event = deluge_italy.29 } # Failure
-					}
-				}
-			}
-			
-			if = {
-				limit = {
-					ENG = {
-						divisions_in_state = {
-							state = 116
-							size > 2
-						}
-					}
-					NOT = {
-						ENG = {
-							divisions_in_state = {
-								state = 116
-								size > 4
-							}
-						}
-					}
-				}
-				random_list = {
-					40 = {
-						add_manpower = -1000
-						ENG = { country_event = deluge_italy.27 } # Success
-					}
-					60 = {
-						add_manpower = -3000
-						ENG = { country_event = deluge_italy.29 } # Failure
-					}
-				}
-			}
-					
-			if = {
-				limit = {
-					ENG = {
-						divisions_in_state = {
-							state = 116
-							size > 4
-						}
-					}
-					NOT = {
-						ENG = {
-							divisions_in_state = {
-								state = 116
-								size > 6
-							}
-						}
-					}
-				}
-				random_list = {
-					20 = {
-						add_manpower = -2000
-						ENG = { country_event = deluge_italy.27 } # Success
-					}
-					80 = {
-						add_manpower = -6000
-						ENG = { country_event = deluge_italy.29 } # Failure
-					}
-				}
-			}
-					
-			if = {
-				limit = {
-					ENG = {
-						divisions_in_state = {
-							state = 116
-							size > 6
-						}
-					}
-				}
-				random_list = {
-					5 = {
-						add_manpower = -3000
-						ENG = { country_event = deluge_italy.27 } # Success
-					}
-					95 = {
-						add_manpower = -12000
-						ENG = { country_event = deluge_italy.29 } # Failure
-					}
-				}
+				# Failure
 			}
 		}
-		
 		ai_chance = {
 			factor = 1
 			
@@ -1484,7 +1323,7 @@ country_event = {
 					limit = {
 						is_in_faction_with = ITA
 					}
-					remove_from_faction = THIS
+					add_to_faction = THIS
 				}
 			}
 		}
@@ -1493,11 +1332,11 @@ country_event = {
 		
 		ITA = {
 			transfer_state = 116
-			add_ai_strategy = {
-				type = alliance
-				id = "ENG"
-				value = 9999
-			}
+			#add_ai_strategy = {
+			#	type = alliance
+			#	id = "ROOT"
+			#	value = 9999
+			#}
 		}
 
 		add_political_power = 75
@@ -1650,8 +1489,6 @@ country_event = {
 	option = {
 		name = deluge_italy27opta
 		
-		remove_opinion_modifier = { target = ITA modifier = great_war_alliance_modifier }
-		
 		116 = {
 			remove_building = {
 				type = infrastructure
@@ -1733,34 +1570,6 @@ news_event = {
 	
 	option = {
 		name = deluge_italy28opta
-		trigger = {
-			OR = {
-				original_tag = ENG
-				is_in_faction_with = ENG
-			}
-		}
-	}
-	option = {
-		name = deluge_italy28optb
-		trigger = {
-			OR = {
-				original_tag = ITA
-				is_in_faction_with = ITA
-			}
-		}
-	}
-	option = {
-		name = deluge_italy28optc
-		trigger = {
-			NOT = {
-				OR = {
-					original_tag = ENG
-					original_tag = ITA
-					is_in_faction_with = ENG
-					is_in_faction_with = ITA
-				}
-			}
-		}
 	}
 }
 
@@ -1809,34 +1618,6 @@ news_event = {
 	
 	option = {
 		name = deluge_italy30opta
-		trigger = {
-			OR = {
-				original_tag = ENG
-				is_in_faction_with = ENG
-			}
-		}
-	}
-	option = {
-		name = deluge_italy30optb
-		trigger = {
-			OR = {
-				original_tag = ITA
-				is_in_faction_with = ITA
-			}
-		}
-	}
-	option = {
-		name = deluge_italy30optc
-		trigger = {
-			NOT = {
-				OR = {
-					original_tag = ENG
-					original_tag = ITA
-					is_in_faction_with = ENG
-					is_in_faction_with = ITA
-				}
-			}
-		}
 	}
 }
 

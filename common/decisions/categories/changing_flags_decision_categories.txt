@@ -1,0 +1,14 @@
+changing_flags_category = {
+	icon = GFX_decision_category_generic_formable_nations
+	#picture = 
+	priority = -9
+	allowed = {
+		
+	}
+	visible = {
+		NOT = {
+			has_country_flag = flags_decisions_hidden
+		}
+	}
+	visible_when_empty = no
+}

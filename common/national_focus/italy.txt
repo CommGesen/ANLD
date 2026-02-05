@@ -189,7 +189,8 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			#set_global_flag = flag_italy_form_republic
-			set_country_flag = country_deposed_monarch
+			#set_country_flag = country_deposed_monarch
+			clr_country_flag = deluge_flag_is_monarchy
 			add_political_power = 150
 			
 			if = {
@@ -199,15 +200,13 @@ focus_tree = {
 				remove_ideas = italian_king
 			}
 
-			hidden_effect = {
-				set_cosmetic_tag = ITA_REPUB
-			}
+			set_cosmetic_tag = ITA
 			
 			if = {
 				limit = {
 					has_government = communism
 				}
-				custom_effect_tooltip = tooltip_italy_republic_communism
+				#custom_effect_tooltip = tooltip_italy_republic_communism
 				news_event = { days = 1 id = deluge_italy.12 }
 			}
 
@@ -215,7 +214,7 @@ focus_tree = {
 				limit = {
 					has_government = democratic
 				}
-				custom_effect_tooltip = tooltip_italy_republic_democratic
+				#custom_effect_tooltip = tooltip_italy_republic_democratic
 				news_event = { days = 1 id = deluge_italy.13 }
 			}
 
@@ -223,14 +222,14 @@ focus_tree = {
 				limit = {
 					has_government = neutrality
 				}
-				custom_effect_tooltip = tooltip_italy_republic_neutrality
+				#custom_effect_tooltip = tooltip_italy_republic_neutrality
 			}
 
 			if = {
 				limit = {
 					has_government = fascism
 				}
-				custom_effect_tooltip = tooltip_italy_republic_fascism
+				#custom_effect_tooltip = tooltip_italy_republic_fascism
 				news_event = { days = 1 id = deluge_italy.14 }
 			}
 		}
@@ -965,12 +964,14 @@ focus_tree = {
 			add_state_claim = 103
 			add_state_claim = 104
 			add_state_claim = 109
+			add_state_claim = 970
 			if = { 
 				limit = { 
 					NOT = {
 						owns_state = 109
 						owns_state = 103
 						owns_state = 104
+						owns_state = 970
 					} 
 				}
 				every_country = {
@@ -979,13 +980,14 @@ focus_tree = {
 							owns_state = 109
 							owns_state = 103
 							owns_state = 104
+							owns_state = 970
 						}
 					}
 					ROOT = {
 						create_wargoal = {
-							type = annex_everything #take_claimed_state
+							type = take_claimed_state
 							target = PREV
-							#generator = { 109 103 104 805 934 }
+							generator = { 970 103 104 805 }
 						}
 					}
 				}
@@ -1084,35 +1086,35 @@ focus_tree = {
 			add_named_threat = { threat = 1 name = italy_claims_albania }
 			
 			add_state_claim = 44
-			add_state_claim = 105
-			add_state_claim = 973
 			add_state_claim = 805
 			add_state_claim = 934
+			add_state_claim = 801
+			add_state_claim = 1020
 			if = { 
 				limit = { 
 					NOT = {
 						owns_state = 44
-						owns_state = 105
-						owns_state = 973
 						owns_state = 805
 						owns_state = 934
+						owns_state = 801
+						owns_state = 1020
 					} 
 				}
 				every_country = {
 					limit = {
 						OR ={
 							owns_state = 44
-							owns_state = 105
-							owns_state = 973
 							owns_state = 805
 							owns_state = 934
+							owns_state = 801
+							owns_state = 1020
 						}
 					}
 					ROOT = {
 						create_wargoal = {
 							type = annex_everything #take_claimed_state
 							target = PREV
-							#generator = { 44 105 973 805 934 }
+							#generator = { 44 805 934 801 1020 }
 						}
 					}
 				}
@@ -1386,10 +1388,10 @@ focus_tree = {
 		completion_reward = {
 			AUS = { country_event = { id = deluge_italy.15 } }
 			add_named_threat = { threat = 3 name = italy_claims_austria }
-			add_state_claim = 853
-			add_state_claim = 153
-			add_state_claim = 102
-			add_state_claim = 848
+			add_state_claim = 850
+			add_state_claim = 39
+			add_state_claim = 736
+			add_state_claim = 852
 		}
 		will_lead_to_war_with = AUS
 	}
@@ -1481,9 +1483,9 @@ focus_tree = {
 		available_if_capitulated = no
 		cost = 10
 		available = {
-			ENG = { owns_state = 116 }
-			NOT = { has_war_with = ENG }
-			NOT = { is_in_faction_with = ENG }
+			NOT = {
+				owns_state = 116
+			}
 			is_subject = no
 		}
 		ai_will_do = {
@@ -1509,7 +1511,7 @@ focus_tree = {
 			country_event = { id = deluge_italy.22 }
 			add_state_claim = 116
 		}
-		will_lead_to_war_with = ENG
+		#will_lead_to_war_with = 
 	}
 	
 	focus = {
