@@ -672,12 +672,12 @@ France_fire_movement_path = {
 	}
 
 	ideas = {
-		FRA_deluge_yves_le_trocquer = 15
+		FRA_deluge_antonin_artaud = 15
 		FRA_deluge_pierre_laval = 15
 		FRA_deluge_jacques_rueff = 15
 		FRA_deluge_joseph_athanase_doumer = 15
 		FRA_deluge_jean_fabry = 15
-		FRA_deluge_joseph_darnand = 15
+		FRA_deluge_marcel_petiot = 15
 		
 		FRA_deluge_charles_huntziger = 25
 		FRA_deluge_rene_olry = 25
@@ -911,7 +911,7 @@ France_french_section_of_workers_internationale_path = {
 		
 	}
 }
-France_anarchists_faure_path = {
+France_anarchists_synthesis_path = {
 	name = "Monarchy is abolished and radicals take power! Anarchists will rule with Faure as leader!"
 	desc = ""
 	allowed = {
@@ -921,9 +921,9 @@ France_anarchists_faure_path = {
 		OR = {
 			has_game_rule = {
 				rule = FRA_AI_BEHAVIOR
-				option = ANARCHO_COMMUNIST_FEDERATION_FAURE
+				option = ANARCHO_COMMUNIST_FEDERATION_SYNTHESIS
 			}
-			has_country_flag = FRA_anarchists_faure_ai_chosen
+			has_country_flag = FRA_anarchists_synthesis_ai_chosen
 		}
 	}
 	abort = {
@@ -935,9 +935,9 @@ France_anarchists_faure_path = {
 	ideas = {
 		FRA_deluge_yves_le_trocquer = 15
 		FRA_deluge_jacques_rueff = 15
-		FRA_deluge_joseph_athanase_doumer = 15
-		FRA_deluge_jean_fabry = 15
-		FRA_deluge_paul_jourdain = 15
+		FRA_deluge_benoit_broutchoux = 15
+		FRA_deluge_pierre_monatte = 15
+		FRA_deluge_rene_de_marmande = 15
 		FRA_deluge_joseph_capus = 15
 		
 		FRA_deluge_charles_huntziger = 25
@@ -959,8 +959,8 @@ France_anarchists_faure_path = {
 		
 	}
 }
-France_anarchists_armand_path = {
-	name = "Monarchy is abolished and radicals take power! Anarchists will rule with Armand as leader!"
+France_anarchists_egoists_path = {
+	name = "Monarchy is abolished and radicals take power! Anarcho-Egoists will rule!"
 	desc = ""
 	allowed = {
 		tag = FRA
@@ -969,9 +969,9 @@ France_anarchists_armand_path = {
 		OR = {
 			has_game_rule = {
 				rule = FRA_AI_BEHAVIOR
-				option = ANARCHO_COMMUNIST_FEDERATION_ARMAND
+				option = ANARCHO_COMMUNIST_FEDERATION_EGOISTS
 			}
-			has_country_flag = FRA_anarchists_armand_ai_chosen
+			has_country_flag = FRA_anarchists_egoists_ai_chosen
 		}
 	}
 	abort = {
@@ -983,9 +983,58 @@ France_anarchists_armand_path = {
 	ideas = {
 		FRA_deluge_yves_le_trocquer = 15
 		FRA_deluge_jacques_rueff = 15
-		FRA_deluge_joseph_athanase_doumer = 15
-		FRA_deluge_jean_fabry = 15
-		FRA_deluge_paul_jourdain = 15
+		FRA_deluge_benoit_broutchoux = 15
+		FRA_deluge_pierre_monatte = 15
+		FRA_deluge_rene_de_marmande = 15
+		FRA_deluge_joseph_capus = 15
+		
+		FRA_deluge_charles_huntziger = 25
+		FRA_deluge_rene_olry = 25
+		FRA_deluge_martial_valin = 25
+		FRA_deluge_philippe_leclerc = 25
+		FRA_deluge_paul_legentilhomme = 25
+		FRA_deluge_henri_mordacq = 25
+		
+		FRA_deluge_joseph_vuillemin = 20
+		
+		FRA_deluge_francois_darlan = 20
+		
+		FRA_deluge_marie_pierre_koenig = 20
+		
+		FRA_deluge_georges_catroux = 20
+	}
+	focus_factors = {
+		
+	}
+}
+
+France_anarchists_platformism_path = {
+	name = "Monarchy is abolished and radicals take power! Platformists will rule!"
+	desc = ""
+	allowed = {
+		tag = FRA
+	}
+	enable = {
+		OR = {
+			has_game_rule = {
+				rule = FRA_AI_BEHAVIOR
+				option = ANARCHO_COMMUNIST_FEDERATION_PLATFORMISTS
+			}
+			has_country_flag = FRA_anarchists_platformists_ai_chosen
+		}
+	}
+	abort = {
+		
+	}
+	ai_national_focuses = {
+		
+	}
+	ideas = {
+		FRA_deluge_yves_le_trocquer = 15
+		FRA_deluge_jacques_rueff = 15
+		FRA_deluge_benoit_broutchoux = 15
+		FRA_deluge_pierre_monatte = 15
+		FRA_deluge_rene_de_marmande = 15
 		FRA_deluge_joseph_capus = 15
 		
 		FRA_deluge_charles_huntziger = 25

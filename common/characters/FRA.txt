@@ -184,7 +184,7 @@ characters={
 	FRA_deluge_paul_de_cassagnac={
 		name=FRA_deluge_paul_de_cassagnac_name
 		portraits={
-			civilian={##small portrait to do
+			civilian={
 				small="GFX_paul_de_cassagnac_picture_small"
 			}
 		}
@@ -217,8 +217,9 @@ characters={
 	FRA_deluge_francois_coty={
 		name=FRA_deluge_francois_coty_name
 		portraits={
-			civilian={##small portrait to do
+			civilian={
 				small="GFX_francois_coty_picture_small"
+				large="gfx/leaders/FRA/portrait_FRA_francois_coty.dds"
 			}
 		}
 		advisor={
@@ -392,6 +393,8 @@ characters={
 						has_completed_focus = FRA_french_communist_party
 						has_completed_focus = FRA_proudhon_circle
 						has_completed_focus = FRA_creation_of_the_parliament
+						has_completed_focus = FRA_anarchist_communist_federation
+						has_completed_focus = FRA_french_popular_party
 					}
 				}
 			}
@@ -428,6 +431,7 @@ characters={
 						has_completed_focus = FRA_french_communist_party
 						has_completed_focus = FRA_proudhon_circle
 						has_completed_focus = FRA_creation_of_the_parliament
+						has_completed_focus = FRA_anarchist_communist_federation
 					}
 				}
 			}
@@ -461,6 +465,7 @@ characters={
 						has_completed_focus = FRA_french_communist_party
 						has_completed_focus = FRA_proudhon_circle
 						has_completed_focus = FRA_creation_of_the_parliament
+						has_completed_focus = FRA_anarchist_communist_federation
 					}
 				}
 			}
@@ -494,6 +499,7 @@ characters={
 						has_completed_focus = FRA_french_communist_party
 						has_completed_focus = FRA_proudhon_circle
 						has_completed_focus = FRA_creation_of_the_parliament
+						has_completed_focus = FRA_anarchist_communist_federation
 					}
 				}
 			}
@@ -565,6 +571,7 @@ characters={
 						has_completed_focus = FRA_french_section_of_workers_internationale
 						has_completed_focus = FRA_proudhon_circle
 						has_completed_focus = FRA_creation_of_the_parliament
+						has_completed_focus = FRA_anarchist_communist_federation
 					}
 				}
 			}
@@ -598,6 +605,7 @@ characters={
 						has_completed_focus = FRA_french_section_of_workers_internationale
 						has_completed_focus = FRA_proudhon_circle
 						has_completed_focus = FRA_creation_of_the_parliament
+						has_completed_focus = FRA_anarchist_communist_federation
 					}
 				}
 			}
@@ -631,6 +639,7 @@ characters={
 						has_completed_focus = FRA_french_section_of_workers_internationale
 						has_completed_focus = FRA_proudhon_circle
 						has_completed_focus = FRA_creation_of_the_parliament
+						has_completed_focus = FRA_anarchist_communist_federation
 					}
 				}
 			}
@@ -666,6 +675,7 @@ characters={
 						has_completed_focus = FRA_french_section_of_workers_internationale
 						has_completed_focus = FRA_proudhon_circle
 						has_completed_focus = FRA_creation_of_the_parliament
+						has_completed_focus = FRA_anarchist_communist_federation
 					}
 				}
 			}
@@ -718,6 +728,7 @@ characters={
 						has_completed_focus = FRA_french_section_of_workers_internationale
 						has_completed_focus = FRA_french_communist_party
 						has_completed_focus = FRA_creation_of_the_parliament
+						has_completed_focus = FRA_anarchist_communist_federation
 					}
 				}
 			}
@@ -753,6 +764,7 @@ characters={
 						has_completed_focus = FRA_french_section_of_workers_internationale
 						has_completed_focus = FRA_french_communist_party
 						has_completed_focus = FRA_creation_of_the_parliament
+						has_completed_focus = FRA_anarchist_communist_federation
 					}
 				}
 			}
@@ -788,6 +800,7 @@ characters={
 						has_completed_focus = FRA_french_section_of_workers_internationale
 						has_completed_focus = FRA_french_communist_party
 						has_completed_focus = FRA_creation_of_the_parliament
+						has_completed_focus = FRA_anarchist_communist_federation
 					}
 				}
 			}
@@ -835,6 +848,147 @@ characters={
 				deluge_trait_individualist_anarchist
 			}
 			desc = "FRA_deluge_emilie_armand_desc"
+		}
+	}
+	FRA_deluge_albert_camus={
+		name=FRA_deluge_albert_camus_name
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/portrait_FRA_albert_camus.dds"
+			}
+		}
+		country_leader={
+			ideology=anarchist_ideology
+			expire="1999.1.1.1"
+			traits = {
+				deluge_trait_nihilist
+				deluge_trait_brilliant_writer
+			}
+			desc = "FRA_deluge_albert_camus_desc"
+		}
+	}
+	FRA_deluge_aristide_lapeyre={#Aristide Lapeyre
+		name=FRA_deluge_aristide_lapeyre_name
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/portrait_FRA_aristide_lapeyre.dds"
+			}
+		}
+		country_leader={
+			ideology=anarchist_ideology
+			expire="1999.1.1.1"
+			traits = {
+				deluge_trait_neomalthusianist
+			}
+			desc = "FRA_deluge_aristide_lapeyre_desc"
+		}
+	}
+	FRA_deluge_benoit_broutchoux={#Benoît Broutchoux
+		name=FRA_deluge_benoit_broutchoux_name
+		portraits={
+			civilian={
+				small="GFX_benoit_broutchoux_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_benoit_broutchoux
+			allowed = { tag = FRA }
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_previous_course
+						has_completed_focus = FRA_march_on_paris
+						has_completed_focus = FRA_french_section_of_workers_internationale
+						has_completed_focus = FRA_french_communist_party
+						has_completed_focus = FRA_creation_of_the_parliament
+						has_completed_focus = FRA_proudhon_circle
+					}
+				}
+			}
+			cost = 150
+			available = {
+				has_completed_focus = FRA_anarchist_communist_federation
+			}
+			traits  = {
+				deluge_trait_syndicalist_trade_unionist
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+			ledger = civilian
+		}
+	}
+	FRA_deluge_pierre_monatte={#Pierre Monatte
+		name=FRA_deluge_pierre_monatte_name
+		portraits={
+			civilian={
+				small="GFX_pierre_monatte_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_pierre_monatte
+			allowed = { tag = FRA }
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_previous_course
+						has_completed_focus = FRA_march_on_paris
+						has_completed_focus = FRA_french_section_of_workers_internationale
+						has_completed_focus = FRA_french_communist_party
+						has_completed_focus = FRA_creation_of_the_parliament
+						has_completed_focus = FRA_proudhon_circle
+					}
+				}
+			}
+			cost = 150
+			available = {
+				has_completed_focus = FRA_anarchist_communist_federation
+			}
+			traits  = {
+				deluge_revolutionary_syndycalist
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+			ledger = civilian
+		}
+	}
+	FRA_deluge_rene_de_marmande={#René de Marmande
+		name=FRA_deluge_rene_de_marmande_name
+		portraits={
+			civilian={
+				small="GFX_rene_de_marmande_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_rene_de_marmande
+			allowed = { tag = FRA }
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = FRA_previous_course
+						has_completed_focus = FRA_march_on_paris
+						has_completed_focus = FRA_french_section_of_workers_internationale
+						has_completed_focus = FRA_french_communist_party
+						has_completed_focus = FRA_creation_of_the_parliament
+						has_completed_focus = FRA_proudhon_circle
+					}
+				}
+			}
+			cost = 150
+			available = {
+				has_completed_focus = FRA_anarchist_communist_federation
+			}
+			traits  = {
+				deluge_trait_connection_with_the_remnants_of_the_bourgeoisie
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+			ledger = civilian
 		}
 	}
 	##Boulangists:
@@ -976,6 +1130,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_pierre_taittinger_picture_small"
+				large="gfx/leaders/FRA/portrait_FRA_pierre_taittinger.dds"
 			}
 		}
 		advisor={
@@ -1261,6 +1416,86 @@ characters={
 			traits={ mentally_ill paranoid }
 			expire="1965.1.1.1"
 			desc = "FRA_deluge_maurice_delaunay_desc"
+		}
+	}
+	FRA_deluge_marcel_petiot={#Marcel Petiot
+		name=FRA_deluge_marcel_petiot_name
+		portraits={
+			civilian={
+				small="GFX_marcel_petiot_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_marcel_petiot
+			allowed = {
+				original_tag = FRA
+			}
+			visible = {
+				FRA = {
+					NOT = {
+						OR = {
+							has_completed_focus = FRA_previous_course
+							has_completed_focus = FRA_creation_of_the_parliament
+							has_completed_focus = FRA_another_revolution
+							has_completed_focus = FRA_francist_movement
+							has_completed_focus = FRA_french_social_party
+							has_completed_focus = FRA_french_popular_party
+							has_completed_focus = FRA_abandon_western_culture
+						}
+					}
+				}
+			}
+			available = {
+				has_completed_focus = FRA_new_esoteric_organizations
+			}
+			cost = 150
+			traits = {
+				deluge_trait_doctor_satan
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	FRA_deluge_antonin_artaud={#Antonin Artaud
+		name=FRA_deluge_antonin_artaud_name
+		portraits={
+			civilian={
+				small="GFX_antonin_artaud_picture_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_deluge_antonin_artaud
+			allowed = {
+				original_tag = FRA
+			}
+			visible = {
+				FRA = {
+					NOT = {
+						OR = {
+							has_completed_focus = FRA_previous_course
+							has_completed_focus = FRA_creation_of_the_parliament
+							has_completed_focus = FRA_another_revolution
+							has_completed_focus = FRA_francist_movement
+							has_completed_focus = FRA_french_social_party
+							has_completed_focus = FRA_french_popular_party
+							has_completed_focus = FRA_abandon_western_culture
+						}
+					}
+				}
+			}
+			available = {
+				has_completed_focus = FRA_new_times_new_men_new_methods
+			}
+			cost = 150
+			traits = {
+				deluge_trait_creator_of_the_theatre_of_cruelty
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	FRA_deluge_dumesnil_de_gramont={

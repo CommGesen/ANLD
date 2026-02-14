@@ -2879,7 +2879,7 @@ country_event = {##Rydz-Śmigły kills himself if Warsaw was lost
 		}
 		has_country_leader =  {
 			character = POL_deluge_edward_rydz_smigly
-			ruling_only = no
+			ruling_only = yes
 		}
 		POL_deluge_edward_rydz_smigly = {
 			NOT = {

@@ -271,7 +271,7 @@ ideas = {
 			modifier = {
 				war_support_factor = -0.1
 				political_power_gain = -0.15
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.3
 				fascism_drift = 0.03
 			}
 		}
@@ -2338,6 +2338,75 @@ ideas = {
 				research_speed_factor = 0.03
 			}
 		}
+		FRA_spirit_egoism = {
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		FRA_spirit_egoism_2 = {
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.2
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				monthly_population = 0.05
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
+				conscription = 0.01
+			}
+		}
+		FRA_spirit_egoism_3 = {
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				tag = FRA
+			}
+			available = {
+				
+			}
+			cancel = {
+				is_subject = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.4
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				monthly_population = 0.25
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
+				conscription = 0.015
+				research_speed_factor = 0.05
+			}
+		}
 		FRA_spirit_platformism = {
 			picture = spirit_nestor_makhno
 			allowed = {
@@ -2372,10 +2441,14 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				stability_factor = -0.05
+				stability_factor = 0.1
 				communism_acceptance = 50
-				conscription = 0.005
-				monthly_population = 0.1
+				army_attack_against_major_factor = 0.1
+				army_defence_against_major_factor = 0.1
+				political_power_factor = 0.15
+				democratic_acceptance = 20
+				neutrality_acceptance = -80
+				fascism_acceptance = -80
 			}
 		}
 		FRA_spirit_platformism3 = {
@@ -2393,11 +2466,17 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				stability_factor = -0.2
 				communism_acceptance = 50
-				conscription = 0.005
-				monthly_population = 0.5
-				research_speed_factor = 0.05
+				army_attack_against_major_factor = 0.1
+				army_defence_against_major_factor = 0.1
+				political_power_factor = 0.15
+				democratic_acceptance = 20
+				neutrality_acceptance = -80
+				fascism_acceptance = -80
+				research_speed_factor = 0.03
+				war_support_factor = 0.1
+				communism_drift = 0.01
+				production_speed_buildings_factor = 0.1
 			}
 		}
 		FRA_spirit_synthesis_anarchism = {
@@ -2459,6 +2538,7 @@ ideas = {
 				war_support_factor = 0.15
 				consumer_goods_factor = -0.15
 				research_speed_factor = 0.03
+				monthly_population = 0.15
 			}
 		}
 		FRA_spirit_cult_of_supreme_being = {

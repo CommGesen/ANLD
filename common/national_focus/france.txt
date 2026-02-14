@@ -144,7 +144,43 @@ focus_tree = {
 			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			modifier = {
+				factor = 0
+				OR = {
+					is_historical_focus_on = yes
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = GUARANTOR
+					}
+					has_country_flag = FRA_guarantor_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = ABSOLUTIST_GRIP
+					}
+					has_country_flag = FRA_absolutist_grip_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = BOULANGISTS
+					}
+					has_country_flag = FRA_boulangists_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_RADICAL_PARTY
+					}
+					has_country_flag = FRA_reformer_radical_party_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_reformer_democratic_republican_alliance_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_reformer_democratic_republican_alliance_ai_chosen
+				}
+			}
 		}
 		bypass = {
 			
@@ -183,7 +219,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -222,7 +258,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -261,7 +297,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -316,7 +352,7 @@ focus_tree = {
 			army_experience = -20
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -371,7 +407,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -540,7 +576,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -3969,7 +4005,7 @@ focus_tree = {
 		relative_position_id = FRA_no_gods_no_masters
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = { focus = FRA_synthesis_anarchism}
+		mutually_exclusive = { focus = FRA_synthesis_anarchism focus = FRA_anarcho_egoism }
 		allow_branch = {
 			
 		}
@@ -3981,15 +4017,97 @@ focus_tree = {
 		#	}
 		#}
 		available = {
-			NOT = {
+			has_country_leader = {
+				character = FRA_deluge_aristide_lapeyre
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			add_ideas = FRA_spirit_platformism
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_expel_left_wing_totalitarians
+		icon = GFX_focus_generic_eye_stabbed
+		x = 0
+		y = 1
+		prerequisite = { focus = FRA_platofrmism }
+		relative_position_id = FRA_platofrmism
+		search_filters = { }
+		cost = 6
+		#mutually_exclusive = { focus = }
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_spirit_platformism
+				add_idea = FRA_spirit_platformism2
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+			
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+	}
+	focus = {
+		id = FRA_anarcho_egoism
+		icon = GFX_focus_JAP_raise_the_red_flag_high
+		x = -3
+		y = 1
+		prerequisite = { focus = FRA_no_gods_no_masters }
+		relative_position_id = FRA_no_gods_no_masters
+		search_filters = { }
+		cost = 5
+		mutually_exclusive = { focus = FRA_synthesis_anarchism focus = FRA_platofrmism}
+		allow_branch = {
+			
+		}
+		#offset = {
+		#	x = 0
+		#	y = 0
+		#	trigger = {
+		#		
+		#	}
+		#}
+		available = {
+			OR = {
 				has_country_leader = {
-					character = FRA_deluge_sebastien_faure
+					character = FRA_deluge_albert_camus
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = FRA_deluge_emilie_armand
 					ruling_only = yes
 				}
 			}
 		}
 		completion_reward = {
-			add_ideas = FRA_spirit_platformism
+			add_ideas = FRA_spirit_egoism
 		}
 		ai_will_do = {
 			factor = 25
@@ -4010,7 +4128,7 @@ focus_tree = {
 		relative_position_id = FRA_no_gods_no_masters
 		search_filters = { }
 		cost = 5
-		mutually_exclusive = { focus = FRA_platofrmism}
+		mutually_exclusive = { focus = FRA_platofrmism focus = FRA_anarcho_egoism }
 		allow_branch = {
 			
 		}
@@ -4090,11 +4208,11 @@ focus_tree = {
 		icon = GFX_focus_spr_masters_of_our_own_fate
 		x = 0
 		y = 1
-		prerequisite = { focus = FRA_platofrmism }
-		relative_position_id = FRA_platofrmism
+		prerequisite = { focus = FRA_anarcho_egoism }
+		relative_position_id = FRA_anarcho_egoism
 		search_filters = { }
 		cost = 6
-		#mutually_exclusive = { focus = FRA_strengthen_the_communes}
+		#mutually_exclusive = { focus = }
 		allow_branch = {
 			
 		}
@@ -4110,8 +4228,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = FRA_spirit_platformism
-				add_idea = FRA_spirit_platformism2
+				remove_idea = FRA_spirit_egoism
+				add_idea = FRA_spirit_egoism_2
 			}
 		}
 		ai_will_do = {
@@ -4127,9 +4245,9 @@ focus_tree = {
 	focus = {
 		id = FRA_new_norms
 		icon = GFX_focus_AUS_lawmaking_leniency
-		x = 0
+		x = -1
 		y = 1
-		prerequisite = { focus = FRA_strengthen_the_communes}
+		prerequisite = { focus = FRA_strengthen_the_communes focus = FRA_expel_left_wing_totalitarians }
 		relative_position_id = FRA_strengthen_the_communes
 		search_filters = { }
 		cost = 6
@@ -4148,9 +4266,20 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = FRA_spirit_synthesis_anarchism2
-				add_idea = FRA_spirit_synthesis_anarchism3
+			if = {
+				limit = {
+					has_completed_focus = FRA_platofrmism
+				}
+				swap_ideas = {
+					remove_idea = FRA_spirit_platformism2
+					add_idea = FRA_spirit_platformism3
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = FRA_spirit_synthesis_anarchism2
+					add_idea = FRA_spirit_synthesis_anarchism3
+				}
 			}
 		}
 		ai_will_do = {
@@ -4188,8 +4317,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-				add_idea = FRA_spirit_platformism3
-				remove_idea = FRA_spirit_platformism2
+				remove_idea = FRA_spirit_egoism_2
+				add_idea = FRA_spirit_egoism_3
 			}
 		}
 		ai_will_do = {
@@ -5576,7 +5705,8 @@ focus_tree = {
 			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
-			factor = 25
+			base = 90000
+			
 		}
 		bypass = {
 			
@@ -5643,7 +5773,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -5708,7 +5838,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -15768,7 +15898,74 @@ focus_tree = {
 			custom_effect_tooltip = FRA_custom_effect_tooltip_11
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 0
+				##paths that don't have this
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = PROUDHON_CIRCLE
+					}
+					has_country_flag = FRA_proudhon_circle_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRENCH_COMMUNIST_PARTY
+					}
+					has_country_flag = FRA_french_communist_party_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRENC_SECTION_OF_WORKERS_INTERNATIONALE
+					}
+					has_country_flag = FRA_SFIO_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = ANARCHO_COMMUNIST_FEDERATION_SYNTHESIS
+					}
+					has_country_flag = FRA_anarchists_synthesis_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = ANARCHO_COMMUNIST_FEDERATION_EGOISTS
+					}
+					has_country_flag = FRA_anarchists_egoists_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = ANARCHO_COMMUNIST_FEDERATION_PLATFORMISTS
+					}
+					has_country_flag = FRA_anarchists_platformists_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRANCIST_MOVEMENT
+					}
+					has_country_flag = FRA_francist_movement_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FIRE_MOVEMENT
+					}
+					has_country_flag = FRA_fire_movement_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = NATIONAL_POPULAR_RALLY
+					}
+					has_country_flag = FRA_national_popular_rally_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRENCH_SOCIAL_PARTY
+					}
+					has_country_flag = FRA_french_social_party_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REPUBLIC_RADICAL_PARTY
+					}
+					has_country_flag = FRA_republic_radical_party_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_RADICAL_PARTY
+					}
+					has_country_flag = FRA_reformer_radical_party_ai_chosen
+				}
+			}
 		}
 		bypass = {
 			
@@ -15810,7 +16007,55 @@ focus_tree = {
 			custom_effect_tooltip = FRA_custom_effect_tooltip_12
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 0
+				##paths that don't have this
+				OR = {
+					is_historical_focus_on = yes
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = GUARANTOR
+					}
+					has_country_flag = FRA_guarantor_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = ABSOLUTIST_GRIP
+					}
+					has_country_flag = FRA_absolutist_grip_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = BOULANGISTS
+					}
+					has_country_flag = FRA_boulangists_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_reformer_democratic_republican_alliance_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_reformer_democratic_republican_alliance_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REPUBLIC_POPULAR_REPUBLICAN_MOVEMENT
+					}
+					has_country_flag = FRA_republic_popular_republican_movement_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REPUBLIC_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_republic_democratic_republican_alliance_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRENCH_SOCIAL_PARTY
+					}
+					has_country_flag = FRA_french_social_party_ai_chosen
+				}
+			}
 		}
 		bypass = {
 			
@@ -15902,7 +16147,7 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = yes
-		}
+	}
 	focus = {
 		id = FRA_cut_jobs
 		icon = GFX_focus_generic_reduce_employment
@@ -15934,7 +16179,8 @@ focus_tree = {
 			custom_effect_tooltip = FRA_custom_effect_tooltip_3
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
 		}
 		bypass = {
 			
@@ -15976,7 +16222,49 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 0
+				##paths that don't have this
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = ABSOLUTIST_GRIP
+					}
+					has_country_flag = FRA_absolutist_grip_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = BOULANGISTS
+					}
+					has_country_flag = FRA_boulangists_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = NATIONAL_POPULAR_RALLY
+					}
+					has_country_flag = FRA_national_popular_rally_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FIRE_MOVEMENT
+					}
+					has_country_flag = FRA_fire_movement_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRANCIST_MOVEMENT
+					}
+					has_country_flag = FRA_francist_movement_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = PROUDHON_CIRCLE
+					}
+					has_country_flag = FRA_proudhon_circle_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRENCH_COMMUNIST_PARTY
+					}
+					has_country_flag = FRA_french_communist_party_ai_chosen
+				}
+			}
 		}
 		bypass = {
 			
@@ -16017,7 +16305,75 @@ focus_tree = {
 			add_political_power = -75
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 0
+				##paths that don't have this
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = ANARCHO_COMMUNIST_FEDERATION_SYNTHESIS
+					}
+					has_country_flag = FRA_anarchists_synthesis_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = ANARCHO_COMMUNIST_FEDERATION_EGOISTS
+					}
+					has_country_flag = FRA_anarchists_egoists_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = ANARCHO_COMMUNIST_FEDERATION_PLATFORMISTS
+					}
+					has_country_flag = FRA_anarchists_platformists_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRENC_SECTION_OF_WORKERS_INTERNATIONALE
+					}
+					has_country_flag = FRA_SFIO_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRENCH_SOCIAL_PARTY
+					}
+					has_country_flag = FRA_french_social_party_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REPUBLIC_RADICAL_PARTY
+					}
+					has_country_flag = FRA_republic_radical_party_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REPUBLIC_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_republic_democratic_republican_alliance_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REPUBLIC_POPULAR_REPUBLICAN_MOVEMENT
+					}
+					has_country_flag = FRA_republic_popular_republican_movement_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_reformer_democratic_republican_alliance_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_reformer_democratic_republican_alliance_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_RADICAL_PARTY
+					}
+					has_country_flag = FRA_reformer_radical_party_ai_chosen
+					is_historical_focus_on = yes
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = GUARANTOR
+					}
+					has_country_flag = FRA_guarantor_ai_chosen
+				}
+			}
 		}
 		bypass = {
 			
@@ -16059,7 +16415,65 @@ focus_tree = {
 			custom_effect_tooltip = FRA_custom_effect_tooltip_14
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 0
+				##paths that don't have this
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = ANARCHO_COMMUNIST_FEDERATION_SYNTHESIS
+					}
+					has_country_flag = FRA_anarchists_synthesis_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = ANARCHO_COMMUNIST_FEDERATION_EGOISTS
+					}
+					has_country_flag = FRA_anarchists_egoists_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = ANARCHO_COMMUNIST_FEDERATION_PLATFORMISTS
+					}
+					has_country_flag = FRA_anarchists_platformists_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REPUBLIC_RADICAL_PARTY
+					}
+					has_country_flag = FRA_republic_radical_party_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REPUBLIC_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_republic_democratic_republican_alliance_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REPUBLIC_POPULAR_REPUBLICAN_MOVEMENT
+					}
+					has_country_flag = FRA_republic_popular_republican_movement_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_reformer_democratic_republican_alliance_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_reformer_democratic_republican_alliance_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_RADICAL_PARTY
+					}
+					has_country_flag = FRA_reformer_radical_party_ai_chosen
+					is_historical_focus_on = yes
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = GUARANTOR
+					}
+					has_country_flag = FRA_guarantor_ai_chosen
+				}
+			}
 		}
 		bypass = {
 			
@@ -16106,7 +16520,64 @@ focus_tree = {
 			custom_effect_tooltip = FRA_custom_effect_tooltip_15
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 0
+				##paths that don't have this
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = ABSOLUTIST_GRIP
+					}
+					has_country_flag = FRA_absolutist_grip_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = BOULANGISTS
+					}
+					has_country_flag = FRA_boulangists_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRENCH_SOCIAL_PARTY
+					}
+					has_country_flag = FRA_french_social_party_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRENCH_SOCIAL_PARTY
+					}
+					has_country_flag = FRA_french_social_party_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = NATIONAL_POPULAR_RALLY
+					}
+					has_country_flag = FRA_national_popular_rally_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FIRE_MOVEMENT
+					}
+					has_country_flag = FRA_fire_movement_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRANCIST_MOVEMENT
+					}
+					has_country_flag = FRA_francist_movement_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = PROUDHON_CIRCLE
+					}
+					has_country_flag = FRA_proudhon_circle_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRENCH_COMMUNIST_PARTY
+					}
+					has_country_flag = FRA_french_communist_party_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = FRENC_SECTION_OF_WORKERS_INTERNATIONALE
+					}
+					has_country_flag = FRA_SFIO_ai_chosen
+				}
+			}
 		}
 		bypass = {
 			
@@ -16188,7 +16659,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 0
 		}
 		bypass = {
 			
@@ -16230,7 +16701,8 @@ focus_tree = {
 			custom_effect_tooltip = FRA_custom_effect_tooltip_9
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
 		}
 		bypass = {
 			
@@ -16272,7 +16744,8 @@ focus_tree = {
 			custom_effect_tooltip = FRA_custom_effect_tooltip_8
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
 		}
 		bypass = {
 			
@@ -16334,14 +16807,16 @@ focus_tree = {
 					has_completed_focus = FRA_marginalize_central_bank
 				}
 				custom_effect_tooltip = FRA_custom_effect_tooltip_19
-				add_to_variable = {new_french_economy_production_factory_efficiency_gain_factor = 0.05 }
+				add_to_variable = {new_french_economy_production_factory_efficiency_gain_factor = -0.05 }
+				add_to_variable = {new_french_economy_production_factory_max_efficiency_factor = 0.1 }
 			}
 			if = {
 				limit = {
 					has_completed_focus = FRA_reform_central_bank
 				}
 				custom_effect_tooltip = FRA_custom_effect_tooltip_20
-				add_to_variable = {new_french_economy_production_speed_buildings_factor = 0.05 }
+				add_to_variable = {new_french_economy_consumer_goods_factor = -0.08 }
+				add_to_variable = {new_french_economy_production_factory_max_efficiency_factor = 0.05 }
 			}
 			if = {
 				limit = {
@@ -20101,6 +20576,7 @@ focus_tree = {
 						count > 0
 					}
 				}
+				has_war = yes
 			}
 		}
 		completion_reward = {
@@ -20709,7 +21185,12 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -20750,7 +21231,12 @@ focus_tree = {
 			army_experience = 10
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -20791,7 +21277,12 @@ focus_tree = {
 			army_experience = 10
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -20840,7 +21331,12 @@ focus_tree = {
 			custom_effect_tooltip = FRA_custom_effect_tooltip_78
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -20885,7 +21381,12 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -20922,7 +21423,12 @@ focus_tree = {
 			army_experience = 10
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -20963,7 +21469,12 @@ focus_tree = {
 			army_experience = 10
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -21006,7 +21517,12 @@ focus_tree = {
 			add_ideas = FRA_spirit_armored_reconnaissance_vehicle
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -21051,7 +21567,12 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -21093,7 +21614,12 @@ focus_tree = {
 			army_experience = 10
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -21136,7 +21662,12 @@ focus_tree = {
 			army_experience = 10
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -21184,7 +21715,12 @@ focus_tree = {
 			army_experience = 20
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -21240,7 +21776,12 @@ focus_tree = {
 			french_bad_army_remove_check = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			#very important, asap
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		bypass = {
 			
@@ -23214,7 +23755,13 @@ focus_tree = {
 			add_ideas = FRA_spirit_tomorrows_air_superiority
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 50
+			modifier = {
+				factor = 100
+				any_enemy_country = {
+					check_variable = {THIS.deployed_airforce_manpower_k > ROOT.deployed_airforce_manpower_k }
+				}
+			}
 		}
 		bypass = {
 			
