@@ -1,0 +1,34 @@
+﻿l_english:
+  
+#TALL-EIS replacement Localisation
+ branch_intelligence: "Department Upgrades"
+ branch_defense: "Domestic Operations"
+ branch_operation: "Department Expansions"
+ branch_operative: "Agency Disciplines"
+ upgrade_training_centers: "Operative Recruitment"
+ upgrade_portable_radios: "Communications Protocol"
+ upgrade_commando_training: "Special Activities"
+ upgrade_commando_training_desc:1 "§LThe primary goal of any agency is the gathering of information.  That said, it is not unheard of for agents in pursuit of this task to find themselves, by virtue of their clandestine nature, in a position to perform tasks of a far more aggressive and active nature.  Acts of sabotage, assassination, hostage rescue, and many other forms of covert operation can be performed by embedded agents, though at great risk to those agents safety.§!"
+
+ #operation_infiltrate_civilian_desc: "§LThe [From.GetAdjective] government has numerous weakpoints through which we might infiltrate an agent into its operations. Doing so would give us valuable insight into the internal workings of [From.GetNameDef] as well as giving us an opportunity to utilize this agent in future operations against [From.GetNameDef].§!\n §LLevel 1 of the civ department must be compleate to perform this mission.§!"
+ 
+
+#Agency Upgrades
+ upgrade_interrogation_techniques: "Internal Security"
+ upgrade_interrogation_techniques_desc: "§LAddressing places within our own government and military easily exploited by foreign intelligence services is the best defense against the hostile actions of enemy operatives.  By educating personnel in all fields of security, and monitoring trusted personnel for risks in areas such as financial stress, political views, or vulnerability to blackmail we can counter the efforts of our enemies.§!"
+ upgrade_civil_intel: "Civil Intelligence"
+ upgrade_civil_intel_desc: "§LNot all intelligence gathering efforts inherently target an enemy military.  Industrial development, production and excavation of strategic natural resources, changes in infrastructure, education, and even radical shifts in popular sentiment are all critical factors in a nations character in war.§!"
+ upgrade_military_intel: "Military Intelligence"
+ upgrade_military_intel_desc: "§LThe surplus or deficit of supply, the status of their military reserve, the number and character of its active or potential personnel, the character of its leadership, ability of its support, and the disposition of enemy forces.  These things we must know if we are to succeed in conflict against our opponent.§!"
+ upgrade_maritime_intel: "Maritime Intelligence"
+ upgrade_maritime_intel_desc: "§LKnowing the numbers and disposition of enemy naval forces is critical to the success of any sea-going conflict.  Monitoring conversations between naval personnel, gathering records pertaining to fuel or munitions consumption, even the simple measure of counting number of ships at port could easily lead to the success or failure of any naval conflict.§!"
+ upgrade_air_recon: "Aerial  Reconnaissance"
+ upgrade_air_recon_desc: "§LThough a relatively new aspect of warfare, the projection of air power has quickly become vital to the success of any modern military conflict.  Knowing the strength, range, ability, numbers, movement, and location of enemy air power can rapidly change the scope of any air battle.  And thereby critically shift the balance of any conflict beneath such a contested sky.§!" 
+ upgrade_psycho_warfare: "Contacts & Informants"
+ upgrade_psycho_warfare_desc: "§LHUMINT, or Human Intelligence; intelligence gathered by means of interpersonal contact and provided by human sources.  Diplomatic reporting by accredited diplomats, first hand accounts by soldiers or refugees, reports from our own agents, or even the interrogations of POW's all contribute to HUMINT.§!"
+ upgrade_portable_radios: "Signals & Communications"
+ upgrade_portable_radios_desc: "§LCOMINT, or Communications Intelligence; intelligence-gathering by the interception of signals, either by direct communications or the analysis of signals (known as SIGINT).§!"
+ upgrade_blueprint_stealing: "Technical & Research"
+ upgrade_blueprint_stealing_desc: "§LMASINT, or Measurement and Signature Intelligence; governs a technical form of intelligence gathering, and serves to detect, track, identify or describe the distinctive characteristics of fixed or dynamic target sources.  These include scientific or technical data derived from the analysis of sensing instruments, be they radar, acoustic, or even simple practical analysis of weapons and equipment gathered from the armed forces of foreign nations.§!" 
+ upgrade_suicide_pills: "Operations Security"
+ upgrade_suicide_pills_desc: "§LOr OPSEC; the process of protecting individual pieces of data that could be grouped together to reveal critical information deemed essential by senior leaders.  This process includes the development of countermeasures ranging form complex security protocols, to the simple precaution of making key personnel wary of attempts at eavesdropping.§!"

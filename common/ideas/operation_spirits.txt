@@ -1,0 +1,385 @@
+ideas = {
+	country = {
+		foreign_industrial_sabotage = {
+			picture = FRA_factory_strikes
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.10
+				production_factory_max_efficiency_factor = -0.20
+				industrial_capacity_dockyard = -0.15
+				industrial_capacity_factory = -0.15	
+				production_speed_arms_factory_factor = -0.15
+				production_speed_dockyard_factor = -0.15
+				production_speed_industrial_complex_factor = -0.15
+				repair_speed_arms_factory_factor = -0.25
+				repair_speed_dockyard_factor = -0.25
+				
+			}
+		}
+		foreign_industrial_sabotage2 = {
+			picture = FRA_factory_strikes
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.20
+				production_factory_max_efficiency_factor = -0.25
+				industrial_capacity_dockyard = -0.30
+				industrial_capacity_factory = -0.30
+				production_speed_arms_factory_factor = -0.30
+				production_speed_dockyard_factor = -0.30
+				production_speed_industrial_complex_factor = -0.30
+				repair_speed_arms_factory_factor = -0.50
+				repair_speed_dockyard_factor = -0.50
+				
+			}
+		}
+		foreign_infastructure_sabotage = {
+			picture = idea_generic_build_infrastructure
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_infrastructure_factor = -0.15
+				production_speed_rail_way_factor = -0.15
+				production_speed_supply_node_factor = -0.15
+				production_speed_naval_base_factor = -0.15
+				production_speed_radar_station_factor = -0.15
+				production_speed_air_base_factor = -0.15
+				repair_speed_infrastructure_factor = -0.25
+				repair_speed_rail_way_factor = -0.25
+				repair_speed_supply_node_factor = -0.25
+				repair_speed_naval_base_factor = -0.25
+				repair_speed_radar_station_factor = -0.25
+				repair_speed_air_base_factor = -0.25
+				supply_consumption_factor = 0.15
+				attrition = 0.15
+				
+			}
+		}
+		foreign_infastructure_sabotage2 = {
+			picture = idea_generic_build_infrastructure
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_infrastructure_factor = -0.30
+				production_speed_rail_way_factor = -0.30
+				production_speed_supply_node_factor = -0.30
+				production_speed_naval_base_factor = -0.30
+				production_speed_radar_station_factor = -0.30
+				production_speed_air_base_factor = -0.30
+				repair_speed_infrastructure_factor = -0.50
+				repair_speed_rail_way_factor = -0.50
+				repair_speed_supply_node_factor = -0.50
+				repair_speed_naval_base_factor = -0.50
+				repair_speed_radar_station_factor = -0.50
+				repair_speed_air_base_factor = -0.50
+				supply_consumption_factor = 0.30
+				attrition = 0.30
+				
+			}
+		}
+		foreign_resource_sabotage = {
+			picture = FRA_factory_strikes
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_lack_of_resource_penalty_factor = 0.20
+				local_resources_factor = -0.50
+			}
+		}
+		
+		foreign_resource_sabotage2 = {
+			picture = FRA_factory_strikes
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_lack_of_resource_penalty_factor = 0.50
+				local_resources_factor = -0.80
+			}
+		}
+	
+		foreign_army_sabotage = {
+			picture = generic_army_problems
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.10
+				army_defence_factor = -0.10
+				army_speed_factor = -0.15
+				army_org_factor = -0.05
+				army_morale_factor = -0.10
+				planning_speed = -0.15
+			}
+		}
+	
+		foreign_army_sabotage2 = {
+			picture = generic_army_problems
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.20
+				army_defence_factor = -0.20
+				army_speed_factor = -0.30
+				army_org_factor = -0.10
+				army_morale_factor = -0.20
+				planning_speed = -0.30
+			}
+		}
+	
+		foreign_navy_sabotage = {
+			picture = generic_sea_focused_navy
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				navy_org_factor = -0.05
+				naval_damage_factor = -0.10
+				naval_defense_factor = -0.10
+				navy_max_range_factor = -0.15
+				naval_coordination = -0.10
+			}
+		}
+	
+		foreign_navy_sabotage2 = {
+			picture = generic_sea_focused_navy
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				navy_org_factor = -0.10
+				naval_damage_factor = -0.20
+				naval_defense_factor = -0.20
+				navy_max_range_factor = -0.30
+				naval_coordination = -0.20
+			}
+		}
+		
+		foreign_air_sabotage = {
+			picture = air_war_plans_division_focus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				air_attack_factor = -0.10
+				air_defence_factor = -0.10
+				air_accidents_factor = 0.15
+				air_range_factor = -0.10
+				air_mission_efficiency = -0.10
+			}
+		}
+		
+		foreign_air_sabotage2 = {
+			picture = air_war_plans_division_focus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				air_attack_factor = -0.20
+				air_defence_factor = -0.20
+				air_accidents_factor = 0.30
+				air_range_factor = -0.20
+				air_mission_efficiency = -0.20
+			}
+		}
+		
+		oper_isolated = {
+			picture = isolation
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				ai_get_ally_desire_factor = -2000
+				join_faction_tension = 1
+			}
+		}
+		
+		oper_antiwar_sentiment = {
+			picture = generic_intel_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				ai_get_ally_desire_factor = -200
+				ai_focus_peaceful_factor = 200
+				ai_join_ally_desire_factor = -2000
+				war_support_factor = -0.05
+				
+			}
+		}
+		
+		oper_antiwar_sentiment2 = {
+			picture = generic_intel_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				ai_get_ally_desire_factor = -400
+				ai_focus_peaceful_factor = 400
+				ai_join_ally_desire_factor = -4000
+				war_support_factor = -0.1
+				
+			}
+		}
+		
+		oper_prowar_sentiment = {
+			picture = generic_intel_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				ai_get_ally_desire_factor = 200
+				ai_focus_peaceful_factor = -200
+				ai_join_ally_desire_factor = 2000
+				war_support_factor = 0.05
+				
+			}
+		}
+		
+		oper_prowar_sentiment2 = {
+			picture = generic_intel_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				ai_get_ally_desire_factor = 400
+				ai_focus_peaceful_factor = -400
+				ai_join_ally_desire_factor = 4000
+				war_support_factor = 0.1
+				
+			}
+		}
+	}
+}

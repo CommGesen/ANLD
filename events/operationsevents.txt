@@ -1,0 +1,96 @@
+﻿
+add_namespace = operations
+
+country_event = {
+	id = operations.1
+	title = "Our Leader is Murdered"
+	desc = operations.1.d
+	picture = GFX_report_event_generic_funeral
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		ai_chance = { factor = 20}
+		name = operations.1.a
+		hidden_effect = {
+		country_event = { id = operations.2 days = 30 }
+		}
+		
+	}
+	option = {
+		ai_chance = { factor = 80}
+		name = operations.1.b
+	}
+}
+
+country_event = {
+	id = operations.2
+	title = "Foreign Intervention Discovered"
+	desc = operations.2.d
+	picture = GFX_report_event_generic_funeral
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		ai_chance = { factor = 80}
+		name = operations.2.a
+		
+		
+	}
+	option = {
+		ai_chance = { factor = 20}
+		name = operations.2.b
+		add_stability = -0.05
+		create_wargoal = {
+				target = ROOT
+				type = annex_everything
+				expire = 0
+				}
+	}
+	}
+	
+	country_event = {
+	id = operations.3
+	title = "Isolation ending"
+	desc = "Other nations are interacting with us again"
+	picture = GFX_report_event_generic_funeral
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = "Good"
+		every_other_country = {
+			limit = {
+				exists = yes
+				}
+			add_ai_strategy = {
+				type = protect
+					id = ROOT
+					value = 500
+				}
+			}
+		
+		
+	}
+	
+	}
+	
+	country_event = {
+	id = operations.4
+	title = "Battle at the border"
+	desc = operations.4.d
+	picture = GFX_report_event_generic_funeral
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		ai_chance = { factor = 10}
+		name = operations.4.a
+		
+		
+	}
+	option = {
+		ai_chance = { factor = 90}
+		name = operations.4.b
+		add_war_support = 0.05
+		ROOT = { 
+		declare_war_on = { type = annex_everything	target = event_target:bait_operation_target }
+		}
+	}
+	}
