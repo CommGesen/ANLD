@@ -1669,10 +1669,10 @@ country_event = {##Livestocks attacks in the Vosges
 		controls_province = 11488
 		controls_province = 11642
 		controls_province = 521
-		date > 1937.1.1
+		date > 1938.1.1
 	}
 	mean_time_to_happen = {
-		days = 1200
+		days = 600
 	}
 	option = {##silence the journalists
 		name = deluge_france.42.a
