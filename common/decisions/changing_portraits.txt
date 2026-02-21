@@ -781,40 +781,40 @@ changing_portraits_category = {
 			base = 0
 		}
 	}
-	portraits_albert_camus = {
-		icon = GFX_decision_SWI_elect_confederation_president
-		allowed = {
-			
-		}
-		visible = {
-			has_character = FRA_deluge_albert_camus
-			OR = {
-				FRA_deluge_albert_camus = {
-					is_army_leader = yes
-				}
-				FRA_deluge_albert_camus = {
-					is_navy_leader = yes
-				}
-				FRA_deluge_albert_camus = {
-					is_country_leader = yes
-				}
-			}
-		}
-		available = {
-			
-		}
-		cost = 0
-		fire_only_once = no
-		days_re_enable = 0
-		complete_effect = {
-			country_event = {
-				id = deluge_portraits.25
-			}
-		}
-		ai_will_do = {
-			base = 0
-		}
-	}
+	#portraits_albert_camus = {
+	#	icon = GFX_decision_SWI_elect_confederation_president
+	#	allowed = {
+	#		
+	#	}
+	#	visible = {
+	#		has_character = FRA_deluge_albert_camus
+	#		OR = {
+	#			FRA_deluge_albert_camus = {
+	#				is_army_leader = yes
+	#			}
+	#			FRA_deluge_albert_camus = {
+	#				is_navy_leader = yes
+	#			}
+	#			FRA_deluge_albert_camus = {
+	#				is_country_leader = yes
+	#			}
+	#		}
+	#	}
+	#	available = {
+	#		
+	#	}
+	#	cost = 0
+	#	fire_only_once = no
+	#	days_re_enable = 0
+	#	complete_effect = {
+	#		country_event = {
+	#			id = deluge_portraits.25
+	#		}
+	#	}
+	#	ai_will_do = {
+	#		base = 0
+	#	}
+	#}
 	hide_portraits_decision = {
 		icon = GFX_decision_SWI_dismiss_council
 		allowed = {

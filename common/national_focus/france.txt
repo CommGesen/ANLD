@@ -621,7 +621,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -688,7 +688,7 @@ focus_tree = {
 			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -732,7 +732,7 @@ focus_tree = {
 			custom_effect_tooltip = FRA_custom_effect_tooltip_121
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -851,7 +851,7 @@ focus_tree = {
 			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -888,7 +888,7 @@ focus_tree = {
 			unlock_decision_category_tooltip = FRA_dec_cat_empire_of_the_golden_flame
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -925,7 +925,7 @@ focus_tree = {
 			add_ideas = FRA_spirit_new_time_new_men_new_methods
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -974,7 +974,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
@@ -1308,7 +1308,7 @@ focus_tree = {
 			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -1688,7 +1688,7 @@ focus_tree = {
 			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -1817,7 +1817,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
@@ -2124,7 +2124,7 @@ focus_tree = {
 			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -2181,7 +2181,7 @@ focus_tree = {
 			remove_ideas = FRA_spirit_remnants_of_the_bonapartes_empire
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			NOT = {
@@ -2261,7 +2261,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			NOT = {
@@ -2301,7 +2301,7 @@ focus_tree = {
 			remove_ideas = FRA_spirit_political_instability_2
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			NOT = {
@@ -2339,7 +2339,7 @@ focus_tree = {
 			remove_ideas = FRA_spirit_decadent_society_2
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			NOT = {
@@ -2377,7 +2377,7 @@ focus_tree = {
 			remove_ideas = FRA_spirit_horrors_of_the_great_war
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			NOT = {
@@ -2426,7 +2426,7 @@ focus_tree = {
 			remove_ideas = FRA_spirit_remnants_of_the_bonapartes_empire
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -2510,7 +2510,7 @@ focus_tree = {
 			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
@@ -3106,7 +3106,7 @@ focus_tree = {
 			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
@@ -3356,7 +3356,7 @@ focus_tree = {
 			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
@@ -3765,7 +3765,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -3864,7 +3864,7 @@ focus_tree = {
 			set_cosmetic_tag = FRA_united_communes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -4370,7 +4370,7 @@ focus_tree = {
 			add_ideas = FRA_spirit_communal_democracy
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -4419,7 +4419,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -4470,7 +4470,7 @@ focus_tree = {
 			set_cosmetic_tag = FRA_peoples_republic
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -4540,7 +4540,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -4588,7 +4588,7 @@ focus_tree = {
 			add_ideas = FRA_spirit_workers_democracy
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -4706,7 +4706,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -4762,7 +4762,7 @@ focus_tree = {
 			add_stability = 0.05
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 90000
 		}
 		bypass = {
 			
@@ -5882,7 +5882,22 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = ABSOLUTIST_GRIP
+					}
+					has_country_flag = FRA_absolutist_grip_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = BOULANGISTS
+					}
+					has_country_flag = FRA_boulangists_ai_chosen
+				}
+			}
 		}
 		bypass = {
 			
@@ -5918,7 +5933,7 @@ focus_tree = {
 			add_ideas = FRA_spirit_reforming_the_old
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
@@ -5960,7 +5975,33 @@ focus_tree = {
 			add_political_power = -40
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			modifier = {
+				factor = 0
+				OR = {
+					is_historical_focus_on = yes
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = GUARANTOR
+					}
+					has_country_flag = FRA_guarantor_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_RADICAL_PARTY
+					}
+					has_country_flag = FRA_reformer_radical_party_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_reformer_democratic_republican_alliance_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_reformer_democratic_republican_alliance_ai_chosen
+				}
+			}
 		}
 		bypass = {
 			
@@ -5999,7 +6040,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
@@ -6059,7 +6100,28 @@ focus_tree = {
 			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = BOULANGISTS
+					}
+					has_country_flag = FRA_boulangists_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = ABSOLUTIST_GRIP
+					}
+					has_country_flag = FRA_absolutist_grip_ai_chosen
+					is_historical_focus_on = yes
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = GUARANTOR
+					}
+					has_country_flag = FRA_guarantor_ai_chosen
+				}
+			}
 		}
 		bypass = {
 			
@@ -6119,7 +6181,37 @@ focus_tree = {
 			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = BOULANGISTS
+					}
+					has_country_flag = FRA_boulangists_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = ABSOLUTIST_GRIP
+					}
+					has_country_flag = FRA_absolutist_grip_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_RADICAL_PARTY
+					}
+					has_country_flag = FRA_reformer_radical_party_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_reformer_democratic_republican_alliance_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_reformer_democratic_republican_alliance_ai_chosen
+				}
+			}
 		}
 		bypass = {
 			
@@ -6174,7 +6266,7 @@ focus_tree = {
 			remove_ideas = FRA_spirit_horrors_of_the_great_war
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
@@ -6216,7 +6308,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
@@ -6253,7 +6345,7 @@ focus_tree = {
 			remove_ideas = FRA_spirit_decadent_society_2
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
@@ -6289,7 +6381,7 @@ focus_tree = {
 			add_ideas = FRA_spirit_civil_rights_expanded
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
@@ -6337,7 +6429,7 @@ focus_tree = {
 			custom_effect_tooltip = cant_change_social_order_tooltip
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
@@ -6612,7 +6704,33 @@ focus_tree = {
 			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_RADICAL_PARTY
+					}
+					has_country_flag = FRA_reformer_radical_party_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_reformer_democratic_republican_alliance_ai_chosen
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = REFORMER_DEMOCRATIC_REPUBLICAN_ALLIANCE
+					}
+					has_country_flag = FRA_reformer_democratic_republican_alliance_ai_chosen
+					is_historical_focus_on = yes
+					has_game_rule = {
+						rule = FRA_AI_BEHAVIOR
+						option = GUARANTOR
+					}
+					has_country_flag = FRA_guarantor_ai_chosen
+				}
+			}
 		}
 		bypass = {
 			
@@ -6667,7 +6785,7 @@ focus_tree = {
 			add_ideas = FRA_spirit_new_imperial_council
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
@@ -6898,7 +7016,7 @@ focus_tree = {
 			custom_effect_tooltip = cant_change_voting_law_tooltip
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
@@ -6935,7 +7053,7 @@ focus_tree = {
 			remove_ideas = FRA_spirit_political_instability_2
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
@@ -6973,7 +7091,7 @@ focus_tree = {
 			custom_effect_tooltip = POL_custom_effect_tooltip_advisors
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
@@ -7010,7 +7128,7 @@ focus_tree = {
 			remove_ideas = FRA_spirit_decadent_society_2
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
@@ -7076,7 +7194,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 250
 		}
 		bypass = {
 			
@@ -7448,7 +7566,7 @@ focus_tree = {
 			add_political_power = 150
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
@@ -7497,7 +7615,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
@@ -7585,7 +7703,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
@@ -7630,7 +7748,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			OR = {
@@ -7831,7 +7949,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 9000
 		}
 		bypass = {
 			
