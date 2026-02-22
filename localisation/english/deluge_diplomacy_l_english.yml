@@ -258,3 +258,8 @@
  generic.26.t:0 "[FROM.GetNonIdeologyName] is preparing a casus belli against us!"
  generic.26.d:0 "Urgent intelligence reports! There is information that the [FROM.GetAdjectiveCap] General Staff is preparing a military operation against us. Our moles report that a military provocation may be organized, which will leave the [FROM.GetAdjective] establishment with no other options but to declare war."
  generic.26.a:0 "Then let's make them regret it!"
+ 
+ RECALL_VOLUNTEERS_TITLE: "Recall Volunteers"
+ RECALL_VOLUNTEERS_ACTION_DESC: "If necessary, we can recall volunteers from any country which we have sent them to."
+ RECALL_VOLUNTEERS_TOOLTIP: "§Y[This.GetNameWithFlag]§! §Rhas not been sent any volunteers.§!"
+ RECALL_VOLUNTEERS_TOOLTIP_G: "§Y[This.GetNameWithFlag]§! has been sent volunteers."
